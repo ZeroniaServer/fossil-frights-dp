@@ -16,3 +16,23 @@ Set key cooldown length in ticks. Default is `600` ticks = `30` seconds:
 ```mcfunction
 /scoreboard players set $key ff_key_cd_cfg 600
 ```
+
+Start a specific hazard:
+```mcfunction
+/function fossil_frights:hazard/start/<name>
+```
+
+Start a random inactive hazard:
+```mcfunction
+/function fossil_frights:hazard/start/random
+```
+
+Stop a specific hazard:
+```mcfunction
+/function fossil_frights:hazard/stop/<name>
+```
+
+Stop all active hazards:
+```mcfunction
+/function fossil_frights:hazard/stop/all
+```
