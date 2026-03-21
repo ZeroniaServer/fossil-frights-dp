@@ -1,6 +1,7 @@
 {
   "pack": {
     "description": "Fossil Frights Datapack (Skeleton)",
+    "pack_format": 69,
     "supported_formats": [69, 81]
   }
 }
