@@ -1,0 +1,1 @@
+$item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_name={text:'Storage Key',color:'yellow'},minecraft:lore=[{text:'',extra:['key_cooldown']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:use_cooldown={seconds:$(seconds),cooldown_group:'fossil_frights:storage_key'},minecraft:custom_data={ff_key_cooldown:1b}] 1
