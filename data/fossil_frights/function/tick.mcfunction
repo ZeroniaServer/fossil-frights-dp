@@ -10,4 +10,5 @@ tag @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}] r
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 function fossil_frights:hazard/lava/tick
+function fossil_frights:hazard/curse/tick
 execute as @a at @s run function fossil_frights:player_tick
