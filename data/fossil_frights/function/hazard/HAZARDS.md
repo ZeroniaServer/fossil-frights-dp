@@ -36,9 +36,14 @@ Create these 4 files for a new hazard named `<name>`:
   `function fossil_frights:hazard/stop/<name>`
 
 - `start/random.mcfunction`
-  Add the new active/inactive combinations so random can choose the new hazard
+  Add the new hazard to the inactive count and selection list
 
 ## Important note
 
-`start/random` is currently manual.
-When you add more hazards, you must expand its random-pick cases to include them.
+`start/random` is partially generic.
+When you add more hazards, update:
+
+- the inactive count lines
+- the `random value 1..N` range lines
+- the cursor/select lines
+- add a `start/select_<name>.mcfunction` file
