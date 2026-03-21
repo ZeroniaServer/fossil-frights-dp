@@ -17,4 +17,4 @@ execute if score @s ff_key_anim matches 19..26 as @s[tag=ff_key_anim_north] run 
 execute if score @s ff_key_anim matches 19..26 as @s[tag=ff_key_anim_south] run tp @s ~ ~ ~0.015 ~ ~
 execute if score @s ff_key_anim matches 19..26 as @s[tag=ff_key_anim_west] run tp @s ~-0.015 ~ ~ ~ ~
 execute if score @s ff_key_anim matches 19..26 as @s[tag=ff_key_anim_east] run tp @s ~0.015 ~ ~ ~ ~
-execute if score @s ff_key_anim matches 27.. run kill @s
+execute if score @s ff_key_anim matches 27.. run function fossil_frights:key/anim_finish
