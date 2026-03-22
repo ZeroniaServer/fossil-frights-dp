@@ -1,4 +1,9 @@
 # Open every security gate in reverse.
+scoreboard players set #security_indicator ff_hazard_rng 0
+scoreboard players set #security_indicator_timer ff_hazard_rng 0
+scoreboard players set #security_alarm_timer ff_hazard_rng 0
+function fossil_frights:hazard/security/set_indicator_safe
+
 schedule clear fossil_frights:hazard/security/close_3x3_mid
 schedule clear fossil_frights:hazard/security/close_3x3_bottom
 schedule clear fossil_frights:hazard/security/close_garage_mid
