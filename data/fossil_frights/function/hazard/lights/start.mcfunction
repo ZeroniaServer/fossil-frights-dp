@@ -1,5 +1,7 @@
 # Animate the lights turning off in smaller waves. This file schedules itself until finished.
 execute if score #lights_start_phase ff_hazard_rng matches 0 run schedule clear fossil_frights:hazard/lights/stop
+execute if score #lights_start_phase ff_hazard_rng matches 0 run function fossil_frights:hazard/lights/randomize_levers
+execute if score #lights_start_phase ff_hazard_rng matches 0 run function fossil_frights:hazard/lights/open_breaker_panel
 execute if score #lights_start_phase ff_hazard_rng matches 0 run scoreboard players set #lights_start_phase ff_hazard_rng 1
 scoreboard players operation #lights_phase_now ff_hazard_rng = #lights_start_phase ff_hazard_rng
 

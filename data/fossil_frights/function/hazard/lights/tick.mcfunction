@@ -1,0 +1,1 @@
+execute if score lights ff_hazard_active matches 1 if block -26 71 22 minecraft:lever[face=wall,facing=east,powered=true] if block -26 71 21 minecraft:lever[face=wall,facing=east,powered=true] if block -26 71 20 minecraft:lever[face=wall,facing=east,powered=true] run function fossil_frights:hazard/stop/lights
