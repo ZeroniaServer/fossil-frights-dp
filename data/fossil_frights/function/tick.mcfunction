@@ -11,4 +11,5 @@ execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fo
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
+function fossil_frights:hazard/security/tick
 execute as @a at @s run function fossil_frights:player_tick

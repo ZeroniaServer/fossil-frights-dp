@@ -5,5 +5,6 @@ schedule clear fossil_frights:hazard/security/open_mid
 schedule clear fossil_frights:hazard/security/open_top
 
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_3x3] at @s rotated as @s run fill ^-1 ^0 ^0 ^1 ^0 ^0 minecraft:air replace minecraft:iron_bars
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_3x3] at @s run playsound minecraft:block.piston.contract block @a ~ ~ ~ 1.25 0.95
 
 schedule function fossil_frights:hazard/security/open_mid 4t
