@@ -35,6 +35,11 @@ execute as @e[type=minecraft:armor_stand,tag=ff_gate_open_top,scores={ff_gate_ti
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_wait_close,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_3x3_close_top
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_close_mid,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_3x3_close_mid
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_close_bottom,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_3x3_close_bottom
+execute as @e[type=minecraft:armor_stand,tag=ff_garage_open_mid,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_garage_open_mid
+execute as @e[type=minecraft:armor_stand,tag=ff_garage_open_top,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_garage_open_top
+execute as @e[type=minecraft:armor_stand,tag=ff_garage_wait_close,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_garage_close_top
+execute as @e[type=minecraft:armor_stand,tag=ff_garage_close_mid,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_garage_close_mid
+execute as @e[type=minecraft:armor_stand,tag=ff_garage_close_bottom,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_garage_close_bottom
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_open_top,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_open_top
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_wait_close,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_close_top
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_close_bottom,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_close_bottom
