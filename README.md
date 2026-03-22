@@ -46,3 +46,8 @@ Give yourself a 2x2 security gate armor stand:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='2x2 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_2x2"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]
 ```
+
+Give yourself a 5x6 security gate armor stand:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='5x6 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_5x6"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]
+```

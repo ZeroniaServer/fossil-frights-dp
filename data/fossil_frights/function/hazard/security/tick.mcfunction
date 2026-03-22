@@ -38,3 +38,14 @@ execute as @e[type=minecraft:armor_stand,tag=ff_gate_close_bottom,scores={ff_gat
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_open_top,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_open_top
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_wait_close,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_close_top
 execute as @e[type=minecraft:armor_stand,tag=ff_gate_2x2_close_bottom,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_2x2_close_bottom
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_open_1,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_open_1
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_open_2,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_open_2
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_open_3,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_open_3
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_open_4,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_open_4
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_open_5,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_open_5
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_wait_close,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_5
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_close_4,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_4
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_close_3,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_3
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_close_2,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_2
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_close_1,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_1
+execute as @e[type=minecraft:armor_stand,tag=ff_gate_5x6_close_0,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_5x6_close_0
