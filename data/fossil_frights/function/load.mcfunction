@@ -21,6 +21,7 @@ scoreboard objectives add ff_active_uuid_3 dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
+scoreboard objectives add ff_queue_order dummy
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set $active_set ff_game_state 0
@@ -32,6 +33,8 @@ team add ff_active_gold
 team modify ff_active_gold color gold
 team add ff_dev_mode
 team modify ff_dev_mode color green
+team add ff_queue_mannequin
+team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:hazard/load
 function fossil_frights:game/load

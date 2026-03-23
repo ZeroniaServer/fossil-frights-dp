@@ -52,6 +52,15 @@ End the current game:
 /function fossil_frights:game/end
 ```
 
+While the game is running:
+- adventure players can walk into the yellow queue pad to join the queue
+- joining the queue broadcasts `Player joined the queue`
+- each queued player gets a mannequin at `0 79 -2` facing south, with later joins lined up behind
+- stepping into the yellow pad again while already queued says `You are already in queue.`
+- punching your mannequin removes you from the queue and closes the line up
+- if a queued player logs off, their mannequin is removed and the line closes up automatically
+- the gray spectate pad toggles spectator mode, and leaving spectator from that pad resets you to the world login state at `0 80 0`
+
 Enable dev mode for yourself:
 ```mcfunction
 /team join ff_dev_mode @s
