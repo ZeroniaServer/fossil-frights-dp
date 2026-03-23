@@ -9,6 +9,9 @@ scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_hazard_rng dummy
 scoreboard objectives add ff_gate_timer dummy
+scoreboard objectives add ff_door_angle dummy
+scoreboard objectives add ff_door_target dummy
+scoreboard objectives add ff_door_tick dummy
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
 team add ff_lock_flash_green

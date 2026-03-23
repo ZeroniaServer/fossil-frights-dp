@@ -8,6 +8,7 @@ execute as @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=
 team leave @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}]
 tag @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}] remove ff_lock_flash
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
+execute as @e[type=minecraft:item_display,tag=front_door] at @s run function fossil_frights:animations/door/tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
