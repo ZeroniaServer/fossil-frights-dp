@@ -7,8 +7,12 @@ function fossil_frights:bossbar/setup
 function fossil_frights:join/setup
 function fossil_frights:animations/door/close
 tp @a[tag=ff_active] 20 70 20 0 0
-spawnpoint @a[tag=ff_active] 20 70 20
 gamemode adventure @a[tag=ff_active]
 clear @a[tag=ff_active]
+scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
+scoreboard players set @a[tag=ff_active] ff_key_bar 0
+title @a[tag=ff_active] actionbar ""
 item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
+execute as @a[tag=ff_active] run function fossil_frights:key/give
+execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $game_running ff_game_state 1

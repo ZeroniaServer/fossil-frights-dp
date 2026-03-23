@@ -3,10 +3,13 @@ function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
 function fossil_frights:animations/door/open
 gamemode adventure @a[tag=ff_active]
-clear @a[tag=ff_active] minecraft:carved_pumpkin[minecraft:lore=[{text:'',extra:['security_guard_hat']}]] 1
+scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
+scoreboard players set @a[tag=ff_active] ff_key_bar 0
+title @a[tag=ff_active] actionbar ""
+clear @a[tag=ff_active]
 item replace entity @a[tag=ff_active] armor.head with air
 tp @a[tag=ff_active] 0 80 0 0 0
-spawnpoint @a[tag=ff_active] 0 80 0
+execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 scoreboard players set $active_set ff_game_state 0
