@@ -1,7 +1,9 @@
 execute unless score @s ff_door_angle matches -2147483648..2147483647 run scoreboard players set @s ff_door_angle 0
 execute unless score @s ff_door_target matches -2147483648..2147483647 run scoreboard players set @s ff_door_target 0
 execute unless score @s ff_door_tick matches -2147483648..2147483647 run scoreboard players set @s ff_door_tick 0
-execute unless score @s ff_door_angle = @s ff_door_target run scoreboard players add @s ff_door_tick 1
+execute unless score @s ff_door_delay matches -2147483648..2147483647 run scoreboard players set @s ff_door_delay 0
+execute if score @s ff_door_delay matches 1.. run scoreboard players remove @s ff_door_delay 1
+execute if score @s ff_door_delay matches 0 unless score @s ff_door_angle = @s ff_door_target run scoreboard players add @s ff_door_tick 1
 execute if score @s ff_door_tick matches 4 run scoreboard players set @s ff_door_tick 0
 execute if score @s ff_door_tick matches 1..3 if score @s ff_door_angle < @s ff_door_target run scoreboard players add @s ff_door_angle 1
 execute if score @s ff_door_tick matches 1..3 if score @s ff_door_angle > @s ff_door_target run scoreboard players remove @s ff_door_angle 1
