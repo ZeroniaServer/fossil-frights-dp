@@ -26,6 +26,7 @@ scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
+scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set $active_set ff_game_state 0
@@ -43,5 +44,5 @@ team modify ff_dev_mode color green
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
-function fossil_frights:hazard/load
 function fossil_frights:game/load
+function fossil_frights:reload_reset
