@@ -22,10 +22,17 @@ scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_queue_order dummy
+scoreboard objectives add ff_queue_start trigger
+scoreboard objectives add ff_queue_start_token dummy
+scoreboard objectives add ff_queue_prompt_time dummy
+scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
+scoreboard players set $queue_start_token ff_queue_start_token 0
+scoreboard players set $queue_notify_lock ff_game_state 0
+scoreboard players set $join_pad_mode ff_game_state 0
 gamerule naturalRegeneration false
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green

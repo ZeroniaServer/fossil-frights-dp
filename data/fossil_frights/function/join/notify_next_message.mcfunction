@@ -1,0 +1,1 @@
+tellraw @a[tag=ff_queue_prompt_target,limit=1] [{"text":"You're up next. ","color":"yellow"},{"text":"[Click here to start]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_queue_start set 1"}}]

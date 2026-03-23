@@ -3,6 +3,9 @@ team leave @s
 tag @s remove ff_active
 tag @s remove ff_in_queue
 scoreboard players set @s ff_queue_order 0
+scoreboard players set @s ff_queue_prompt_time 0
+scoreboard players set @s ff_queue_start 0
+scoreboard players set @s ff_queue_start_token 0
 clear @s
 item replace entity @s armor.head with air
 tp @s 0 80 0 0 0
