@@ -37,6 +37,32 @@ Stop all active hazards:
 /function fossil_frights:hazard/stop/all
 ```
 
+Set yourself as the active player:
+```mcfunction
+/function fossil_frights:game/set_active_player
+```
+
+Start the game for the active player:
+```mcfunction
+/function fossil_frights:game/start
+```
+
+End the current game:
+```mcfunction
+/function fossil_frights:game/end
+```
+
+Enable dev mode for yourself:
+```mcfunction
+/team join ff_dev_mode @s
+```
+
+Dev mode players keep their green name on login and bypass the normal login reset flow:
+- no login teleport
+- no inventory clear
+- no forced adventure mode
+- no normal team reset
+
 Give yourself a 3x3 security gate armor stand:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='3x3 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_3x3"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]

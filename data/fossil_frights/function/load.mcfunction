@@ -13,9 +13,24 @@ scoreboard objectives add ff_door_angle dummy
 scoreboard objectives add ff_door_target dummy
 scoreboard objectives add ff_door_tick dummy
 scoreboard objectives add ff_door_delay dummy
+scoreboard objectives add ff_game_state dummy
+scoreboard objectives add ff_active_uuid_0 dummy
+scoreboard objectives add ff_active_uuid_1 dummy
+scoreboard objectives add ff_active_uuid_2 dummy
+scoreboard objectives add ff_active_uuid_3 dummy
+scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add ff_leave_game_seen dummy
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
+scoreboard players set $active_set ff_game_state 0
+scoreboard players set $game_running ff_game_state 0
+gamerule naturalRegeneration false
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
+team add ff_active_gold
+team modify ff_active_gold color gold
+team add ff_dev_mode
+team modify ff_dev_mode color green
 advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:hazard/load
+function fossil_frights:game/load

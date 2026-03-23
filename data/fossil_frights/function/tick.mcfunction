@@ -15,4 +15,5 @@ function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
+function fossil_frights:game/tick
 execute as @a at @s run function fossil_frights:player_tick
