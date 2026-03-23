@@ -5,6 +5,8 @@ execute unless score @s ff_door_delay matches -2147483648..2147483647 run scoreb
 execute if score @s ff_door_delay matches 1.. run scoreboard players remove @s ff_door_delay 1
 execute if score @s ff_door_delay matches 0 if score @s ff_door_angle < @s ff_door_target run scoreboard players add @s ff_door_angle 1
 execute if score @s ff_door_delay matches 0 if score @s ff_door_angle > @s ff_door_target run scoreboard players remove @s ff_door_angle 1
+execute if entity @s[tag=ff_door_closing] if score @s ff_door_delay matches 0 if score @s ff_door_target matches 0 if score @s ff_door_angle matches 0 at @s run particle minecraft:campfire_cosy_smoke 0.5 81.5 8.5 0 2 0 0.01 10
+execute if entity @s[tag=ff_door_closing] if score @s ff_door_delay matches 0 if score @s ff_door_target matches 0 if score @s ff_door_angle matches 0 run tag @s remove ff_door_closing
 execute if entity @s[tag=front_door_left] if score @s ff_door_angle matches 0 run data merge entity @s {start_interpolation:0,interpolation_duration:1,transformation:{right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0.00000000f,0f,1.00000000f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
 execute if entity @s[tag=front_door_left] if score @s ff_door_angle matches 1 run data merge entity @s {start_interpolation:0,interpolation_duration:1,transformation:{right_rotation:[0f,0f,0f,1f],left_rotation:[0f,-0.00095571f,0f,0.99999954f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
 execute if entity @s[tag=front_door_left] if score @s ff_door_angle matches 2 run data merge entity @s {start_interpolation:0,interpolation_duration:1,transformation:{right_rotation:[0f,0f,0f,1f],left_rotation:[0f,-0.00381907f,0f,0.99999271f],translation:[0f,0f,0f],scale:[2f,2f,2f]}}
