@@ -20,6 +20,7 @@ scoreboard objectives add ff_active_uuid_2 dummy
 scoreboard objectives add ff_active_uuid_3 dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
+scoreboard objectives add ff_join_cooldown dummy
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set $active_set ff_game_state 0

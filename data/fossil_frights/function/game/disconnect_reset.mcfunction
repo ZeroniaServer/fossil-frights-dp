@@ -1,6 +1,7 @@
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
+function fossil_frights:join/clear
 function fossil_frights:animations/door/open
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]

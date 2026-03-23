@@ -16,4 +16,5 @@ function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
 function fossil_frights:game/tick
+execute if score $game_running ff_game_state matches 1 run function fossil_frights:join/tick
 execute as @a at @s run function fossil_frights:player_tick
