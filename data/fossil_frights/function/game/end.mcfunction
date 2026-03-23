@@ -7,6 +7,10 @@ scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
 title @a[tag=ff_active] actionbar ""
 clear @a[tag=ff_active]
+clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key:1b}]
+clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_cooldown:1b}]
+item replace entity @a[tag=ff_active] weapon.mainhand with air
+item replace entity @a[tag=ff_active] weapon.offhand with air
 item replace entity @a[tag=ff_active] armor.head with air
 tp @a[tag=ff_active] 0 80 0 0 0
 execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
