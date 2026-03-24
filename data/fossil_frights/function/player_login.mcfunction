@@ -1,6 +1,7 @@
 execute if entity @s[team=ff_dev_mode] run return 0
 team leave @s
 tag @s remove ff_active
+tag @s remove ff_forced_spectate
 tag @s remove ff_in_queue
 scoreboard players set @s ff_queue_order 0
 scoreboard players set @s ff_queue_prompt_time 0
