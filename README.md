@@ -96,3 +96,8 @@ Give yourself a sniffer fright armor stand marker:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='Sniffer Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright","ff_fright_sniffer"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
 ```
+
+Give yourself a bat fright armor stand marker:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Bat Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright","ff_fright_bats"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
+```
