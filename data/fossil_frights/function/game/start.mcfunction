@@ -6,6 +6,7 @@ function fossil_frights:tasks/reset
 function fossil_frights:bossbar/setup
 function fossil_frights:join/setup
 function fossil_frights:animations/door/close
+function fossil_frights:animations/crane/reset
 function fossil_frights:animations/forklift/up
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
