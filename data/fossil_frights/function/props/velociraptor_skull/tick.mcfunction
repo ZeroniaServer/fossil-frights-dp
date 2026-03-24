@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:armor_stand,tag=ff_velociraptor_skull] at @s if entity @a[tag=ff_active,distance=..20,sort=nearest,limit=1] run tp @s ~ ~ ~ facing entity @a[tag=ff_active,distance=..20,sort=nearest,limit=1] eyes
+execute as @e[type=minecraft:armor_stand,tag=ff_velociraptor_skull] if entity @a[tag=ff_active,distance=..20,sort=nearest,limit=1] run data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+execute as @e[type=minecraft:armor_stand,tag=ff_velociraptor_skull] if entity @a[tag=ff_active,distance=..20,sort=nearest,limit=1] run data modify entity @s Pose.Head[0] set from entity @s Rotation[1]

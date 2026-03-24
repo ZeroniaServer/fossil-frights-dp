@@ -1,0 +1,2 @@
+summon minecraft:armor_stand ~ ~ ~ {Tags:["ff_velociraptor_skull"],NoGravity:1b,Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,Rotation:[0f,0f]}
+item replace entity @e[type=minecraft:armor_stand,tag=ff_velociraptor_skull,sort=nearest,limit=1] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Velociraptor Skull',italic:false},minecraft:lore=[{text:'',extra:['velociraptor_skull']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
