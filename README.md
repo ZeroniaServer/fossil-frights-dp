@@ -92,3 +92,8 @@ Give yourself a creeper fright armor stand marker:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='Creeper Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright_creeper"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
 ```
+
+Give yourself a skeleton fright armor stand marker:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Skeleton Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright_skeleton"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
+```

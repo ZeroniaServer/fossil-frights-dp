@@ -11,6 +11,7 @@ function fossil_frights:animations/forklift/up
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
+function fossil_frights:frights/skeleton/reset
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
 clear @a[tag=ff_active]
@@ -25,6 +26,7 @@ scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $creeper_fright ff_game_state 0
+scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1
