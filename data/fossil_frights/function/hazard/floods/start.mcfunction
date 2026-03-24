@@ -57,6 +57,7 @@ setblock -1 75 42 minecraft:water
 setblock -19 75 44 minecraft:water
 #Basement Misc
 setblock -19 72 10 minecraft:water
+setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]
 
 
 #Play sounds to player

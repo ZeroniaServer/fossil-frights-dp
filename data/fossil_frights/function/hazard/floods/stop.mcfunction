@@ -56,3 +56,4 @@ setblock -1 75 42 minecraft:air
 setblock -19 75 44 minecraft:air
 #Basement Misc
 setblock -19 72 10 minecraft:air
+setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=false,facing=north]
