@@ -3,7 +3,9 @@ function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
 function fossil_frights:animations/door/open
 function fossil_frights:animations/crane/reset
+function fossil_frights:frights/sniffer/reset
 function fossil_frights:join/reset
+scoreboard players set @a ff_fright_timer 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 scoreboard players set $active_set ff_game_state 0

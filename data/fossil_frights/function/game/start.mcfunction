@@ -17,5 +17,7 @@ title @a[tag=ff_active] actionbar ""
 item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
 execute as @a[tag=ff_active] run function fossil_frights:key/give
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
+scoreboard players set $sniffer_fright ff_game_state 0
+scoreboard players set @a ff_fright_timer 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1

@@ -26,6 +26,7 @@ scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
+scoreboard objectives add ff_fright_timer dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
@@ -36,6 +37,7 @@ scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
+scoreboard players set $sniffer_fright ff_game_state 0
 gamerule naturalRegeneration false
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green

@@ -91,3 +91,8 @@ Give yourself a 5x6 security gate armor stand:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='5x6 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_5x6"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]
 ```
+
+Give yourself a sniffer fright armor stand marker:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Sniffer Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright","ff_fright_sniffer"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
+```

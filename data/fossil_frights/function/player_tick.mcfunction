@@ -9,6 +9,7 @@ execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
 execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/handle_start_click
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
+execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
 advancement revoke @s only fossil_frights:queue_punch
