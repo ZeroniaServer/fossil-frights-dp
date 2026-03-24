@@ -6,6 +6,7 @@ function fossil_frights:tasks/reset
 function fossil_frights:bossbar/setup
 function fossil_frights:join/setup
 function fossil_frights:animations/door/close
+function fossil_frights:animations/forklift/up
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
 clear @a[tag=ff_active]
@@ -16,3 +17,4 @@ item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[m
 execute as @a[tag=ff_active] run function fossil_frights:key/give
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $game_running ff_game_state 1
+scoreboard players set $forklift_watch ff_game_state 1

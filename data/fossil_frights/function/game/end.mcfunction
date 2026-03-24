@@ -19,6 +19,7 @@ tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
+scoreboard players set $forklift_watch ff_game_state 0
 scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0
