@@ -10,5 +10,5 @@ execute if score #lava_mode ff_hazard_rng matches 1 if score #lava_phase ff_haza
 execute if score #lava_mode ff_hazard_rng matches 0 run function fossil_frights:hazard/lava/apply_stop with storage fossil_frights:hazard_lava
 
 scoreboard players add #z ff_hazard_rng 1
-execute if score #z ff_hazard_rng matches 60.. run function fossil_frights:hazard/lava/next_x
-execute if score #z ff_hazard_rng matches ..59 run function fossil_frights:hazard/lava/scan
+execute if score #z ff_hazard_rng matches 51.. run function fossil_frights:hazard/lava/next_x
+execute if score #z ff_hazard_rng matches ..50 run function fossil_frights:hazard/lava/scan
