@@ -41,6 +41,7 @@ scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
+scoreboard players set $creeper_fright ff_game_state 0
 gamerule naturalRegeneration false
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
