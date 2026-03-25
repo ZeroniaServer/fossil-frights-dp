@@ -11,4 +11,3 @@ tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 tag @s add ff_active
 team join ff_active_gold @s
-tellraw @s {"text":"You are now the active player.","color":"green"}

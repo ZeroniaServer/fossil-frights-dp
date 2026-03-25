@@ -23,6 +23,9 @@ scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_start trigger
+scoreboard objectives add ff_cmd_start trigger
+scoreboard objectives add ff_cmd_leave trigger
+scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy

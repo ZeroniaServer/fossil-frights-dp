@@ -1,5 +1,45 @@
 # Fossil Frights Datapack
 
+## Player Commands
+
+Player-safe commands are exposed through trigger objectives so non-opped players can use them.
+
+Start or queue for the museum:
+```mcfunction
+/start
+/trigger ff_cmd_start set 1
+```
+
+Leave the museum if you are the active player:
+```mcfunction
+/leave
+/trigger ff_cmd_leave set 1
+```
+
+Spectate the active player:
+```mcfunction
+/spectate
+/trigger ff_cmd_spectate set 1
+```
+
+Start the game when you are first in queue and receive the prompt:
+```mcfunction
+/trigger ff_queue_start set 1
+```
+
+# Op commands
+
+Force-end the current game as an operator:
+```mcfunction
+/end
+/function fossil_frights:game/end
+```
+
+Enable dev mode for yourself and switch to creative:
+```mcfunction
+/dev
+```
+
 ## Server Commands
 
 Give active key:
