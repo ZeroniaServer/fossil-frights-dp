@@ -41,6 +41,7 @@ scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
+scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0

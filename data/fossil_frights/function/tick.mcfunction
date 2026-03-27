@@ -10,6 +10,8 @@ tag @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}] r
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=front_door] at @s run function fossil_frights:animations/door/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
+execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
+execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 as @e[tag=crane_operator] at @s run function fossil_frights:animations/crane/check_payment
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:props/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
