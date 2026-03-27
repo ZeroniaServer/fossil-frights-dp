@@ -1,0 +1,1 @@
+function fossil_frights:animations/credits/cleanup

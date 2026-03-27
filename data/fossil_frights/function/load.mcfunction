@@ -33,6 +33,7 @@ scoreboard objectives add ff_fright_timer dummy
 scoreboard objectives add ff_anvil_time dummy
 scoreboard objectives add ff_anvil_result dummy
 scoreboard objectives add ff_anvil_hits dummy
+scoreboard objectives add ff_credits_time dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
