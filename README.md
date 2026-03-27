@@ -142,3 +142,8 @@ Give yourself a placeable velociraptor skull prop armor stand:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='Velociraptor Skull Prop',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_velociraptor_skull"],NoGravity:1b,Invisible:1b,Invulnerable:1b,NoBasePlate:1b,Rotation:[0f,0f],equipment:{head:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:item_name":{text:"Velociraptor Skull",italic:false},"minecraft:lore":[{text:"",extra:["velociraptor_skull"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}}}}]
 ```
+
+Give yourself an anvil station armor stand:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Anvil Station',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["anvil"],NoGravity:1b,Invisible:1b,Invulnerable:1b,NoBasePlate:1b}]
+```

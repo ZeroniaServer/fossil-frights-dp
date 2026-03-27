@@ -1,0 +1,2 @@
+summon minecraft:item_display ~ ~0.02 ~ {Tags:["ff_anvil_display"],item:{id:"minecraft:stone",count:1},item_display:"fixed",Rotation:[0f,0f],transformation:{right_rotation:[0f,0f,0f,1f],scale:[0.54f,0.54f,0.54f],left_rotation:[0.7071068f,0f,0f,0.7071068f],translation:[0f,0f,0f]}}
+summon minecraft:item_display ~ ~0.82 ~ {Tags:["ff_anvil_mace"],item:{id:"minecraft:mace",count:1},item_display:"fixed",Rotation:[0f,0f],teleport_duration:2,interpolation_duration:2,transformation:{right_rotation:[0f,0f,0f,1f],scale:[1f,1f,1.15f],left_rotation:[0f,1f,0f,1f],translation:[0f,0f,0f]}}

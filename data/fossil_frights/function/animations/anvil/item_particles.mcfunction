@@ -1,0 +1,3 @@
+execute if data storage fossil_frights:anvil source {stack:{id:"minecraft:leather"}} run particle minecraft:item{item:{id:"minecraft:leather",count:1}} ~ ~0.86 ~ 0.12 0.06 0.12 0.04 14 force
+execute if data storage fossil_frights:anvil source {stack:{id:"minecraft:sponge"}} run particle minecraft:item{item:{id:"minecraft:sponge",count:1}} ~ ~0.86 ~ 0.12 0.06 0.12 0.04 14 force
+execute unless data storage fossil_frights:anvil source {stack:{id:"minecraft:leather"}} unless data storage fossil_frights:anvil source {stack:{id:"minecraft:sponge"}} run particle minecraft:item{item:{id:"minecraft:barrier",count:1}} ~ ~0.86 ~ 0.12 0.06 0.12 0.04 10 force

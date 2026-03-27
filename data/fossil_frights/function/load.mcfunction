@@ -30,6 +30,9 @@ scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
+scoreboard objectives add ff_anvil_time dummy
+scoreboard objectives add ff_anvil_result dummy
+scoreboard objectives add ff_anvil_hits dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
@@ -57,4 +60,5 @@ team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:game/load
+function fossil_frights:animations/anvil/load
 function fossil_frights:reload_reset
