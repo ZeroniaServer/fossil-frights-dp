@@ -88,7 +88,7 @@ Stop all active hazards:
 ```
 
 
-Set time of shift manually 0-3000
+Set time of shift manually 0-6000
 ```
 /scoreboard players set $day_timer ff_day 0
 ```

@@ -1,5 +1,5 @@
 bossbar remove fossil_frights:bossbar
-bossbar add fossil_frights:bossbar [{"text":"ᴡᴀɪᴛɪɴɢ ᴛᴏ ꜱᴛᴀʀᴛ","color":"white"}]
+function fossil_frights:messages/bossbar/waiting_to_start
 bossbar set fossil_frights:bossbar players @a
 bossbar set fossil_frights:bossbar visible true
 bossbar set fossil_frights:bossbar color white

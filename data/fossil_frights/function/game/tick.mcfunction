@@ -13,5 +13,5 @@ execute if score $game_running ff_game_state matches 1 if score $day_active ff_d
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run scoreboard players operation $day_tmp ff_day -= $day_timer ff_day
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run scoreboard players operation $day_seconds_left ff_day = $day_tmp ff_day
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run scoreboard players operation $day_seconds_left ff_day /= #day_tick ff_day
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:bossbar/update_day_name
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:messages/bossbar/update_day_name
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/day_timeout
