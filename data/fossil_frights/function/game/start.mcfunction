@@ -15,6 +15,7 @@ function fossil_frights:frights/skeleton/reset
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
 clear @a[tag=ff_active]
+effect give @a[tag=ff_active] minecraft:saturation infinite 255 true
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
 title @a[tag=ff_active] actionbar ""
