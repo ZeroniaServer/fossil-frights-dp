@@ -15,6 +15,9 @@ function fossil_frights:frights/skeleton/reset
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
 clear @a[tag=ff_active]
+effect clear @a[tag=ff_active] minecraft:absorption
+effect clear @a[tag=ff_active] minecraft:health_boost
+effect give @a[tag=ff_active] minecraft:instant_health 100 0 true
 effect give @a[tag=ff_active] minecraft:saturation infinite 255 true
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
@@ -31,3 +34,4 @@ scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1
+scoreboard players set $forklift_paid ff_game_state 0
