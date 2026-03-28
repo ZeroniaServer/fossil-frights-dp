@@ -20,8 +20,12 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fo
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
 execute if entity @s[tag=ff_active] run function fossil_frights:key/prevent_drop
+execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_dna:1b}}}} run function fossil_frights:tasks/final/dna/hover_check
+execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_dna:1b}}}} unless score @s ff_dna_use = @s ff_dna_use_seen run function fossil_frights:tasks/final/dna/use
+scoreboard players operation @s ff_dna_use_seen = @s ff_dna_use
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
+advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16

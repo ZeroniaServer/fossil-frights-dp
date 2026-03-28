@@ -4,6 +4,9 @@ scoreboard objectives add ff_key_cooldown dummy
 scoreboard objectives add ff_key_cd_cfg dummy
 scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
+scoreboard objectives add ff_dna_scan dummy
+scoreboard objectives add ff_dna_use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add ff_dna_use_seen dummy
 scoreboard objectives add ff_lock_flash dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
@@ -56,6 +59,8 @@ team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold
 team modify ff_active_gold color gold
+team add ff_dna_hover_yellow
+team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
 team modify ff_dev_mode color green
 team add ff_queue_mannequin

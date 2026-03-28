@@ -47,6 +47,11 @@ Give active key:
 /function fossil_frights:key/give
 ```
 
+Give DNA microfiber cloth:
+```mcfunction
+/function fossil_frights:tasks/final/dna/give
+```
+
 Set the held item as the reward for the lock you are looking at:
 ```mcfunction
 /function fossil_frights:lock/set_held
