@@ -9,7 +9,7 @@ function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
-function fossil_frights:props/velociraptor_skull/reset_rotation
+function fossil_frights:animations/velociraptor_skull/reset_rotation
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
