@@ -83,5 +83,6 @@ team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:game/load
+function fossil_frights:game/worldborder/reset
 function fossil_frights:animations/anvil/load
 function fossil_frights:reload_reset
