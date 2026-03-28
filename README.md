@@ -87,25 +87,10 @@ Stop all active hazards:
 /function fossil_frights:hazard/stop/all
 ```
 
-Set yourself as the active player:
-```mcfunction
-/function fossil_frights:game/set_active_player
+
+Set time of shift manually 0-3000
 ```
-
-Start the game for the active player:
-```mcfunction
-/function fossil_frights:game/start
-```
-
-End the current game:
-```mcfunction
-/function fossil_frights:game/end
-```
-
-
-Enable dev mode for yourself:
-```mcfunction
-/team join ff_dev_mode @s
+/scoreboard players set $day_timer ff_day 0
 ```
 
 Give yourself a 3x3 security gate armor stand:

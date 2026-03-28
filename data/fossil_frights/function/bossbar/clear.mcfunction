@@ -1,3 +1,3 @@
-bossbar set cubeworld:day_five visible false
-bossbar set cubeworld:day_five players
-bossbar remove cubeworld:day_five
+bossbar set fossil_frights:bossbar visible false
+bossbar set fossil_frights:bossbar players
+bossbar remove fossil_frights:bossbar

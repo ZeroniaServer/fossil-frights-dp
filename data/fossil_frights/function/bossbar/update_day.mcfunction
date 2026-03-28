@@ -1,0 +1,1 @@
+function fossil_frights:bossbar/set_day

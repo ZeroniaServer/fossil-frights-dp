@@ -32,6 +32,10 @@ scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set @a ff_fright_timer 0
+scoreboard players set $day_current ff_day 0
+scoreboard players set $day_result ff_day 0
+scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_active ff_day 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0

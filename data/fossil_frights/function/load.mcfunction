@@ -37,9 +37,24 @@ scoreboard objectives add ff_anvil_time dummy
 scoreboard objectives add ff_anvil_result dummy
 scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
+scoreboard objectives add ff_day dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
+scoreboard players set #day_tick ff_day 20
+scoreboard players set #day_minute ff_day 1200
+scoreboard players set #day_full ff_day 6000
+scoreboard players set #ten ff_day 10
+scoreboard players set $day_current ff_day 0
+scoreboard players set $day_result ff_day 0
+scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_active ff_day 0
+scoreboard players set $day_minutes ff_day 0
+scoreboard players set $day_seconds ff_day 0
+scoreboard players set $day_seconds_left ff_day 0
+scoreboard players set $day_sec_tens ff_day 0
+scoreboard players set $day_sec_ones ff_day 0
+scoreboard players set $day_tmp ff_day 0
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
