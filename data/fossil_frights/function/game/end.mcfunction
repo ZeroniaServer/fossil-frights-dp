@@ -2,6 +2,7 @@ function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
 function fossil_frights:game/worldborder/reset
+function fossil_frights:game/time/start_rest
 function fossil_frights:animations/door/open
 function fossil_frights:animations/crane/reset
 function fossil_frights:animations/credits/cleanup
@@ -38,6 +39,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
+scoreboard players set $time_anim_resume_cycle ff_day 0
 scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0
