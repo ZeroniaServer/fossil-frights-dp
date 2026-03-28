@@ -24,6 +24,7 @@ item replace entity @a[tag=ff_active] weapon.offhand with air
 item replace entity @a[tag=ff_active] armor.head with air
 tp @a[tag=ff_active] 0 80 0 0 0
 execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
+execute as @a[tag=ff_active] run function fossil_frights:tasks/final/plushies/restore
 tag @a[tag=ff_active] remove ff_forced_spectate
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]

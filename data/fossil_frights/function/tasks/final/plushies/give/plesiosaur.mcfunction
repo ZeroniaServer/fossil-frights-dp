@@ -1,0 +1,3 @@
+clear @s minecraft:totem_of_undying[minecraft:custom_data={ff_plushie:"plesiosaur"}]
+give @s minecraft:totem_of_undying[minecraft:item_name={text:"Plesiosaur Plushie",color:"gold",italic:false},minecraft:lore=[{text:"",extra:["plesiosaur_plushie"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:equippable={slot:"head"},minecraft:custom_data={ff_plushie:"plesiosaur"}] 1
+tag @s add obtained_plesiosaur_plushie

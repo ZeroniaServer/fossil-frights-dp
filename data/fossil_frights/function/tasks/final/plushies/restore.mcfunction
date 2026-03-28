@@ -1,0 +1,7 @@
+function fossil_frights:tasks/final/plushies/clear_items
+execute if entity @s[tag=obtained_plesiosaur_plushie] run function fossil_frights:tasks/final/plushies/give/plesiosaur
+execute if entity @s[tag=obtained_velociraptor_plushie] run function fossil_frights:tasks/final/plushies/give/velociraptor
+execute if entity @s[tag=obtained_trike_plushie] run function fossil_frights:tasks/final/plushies/give/trike
+execute if entity @s[tag=obtained_t_rex_plushie] run function fossil_frights:tasks/final/plushies/give/t_rex
+execute if entity @s[tag=obtained_pteradactyl_plushie] run function fossil_frights:tasks/final/plushies/give/pteradactyl
+execute if entity @s[tag=obtained_sniffer_plushie] run function fossil_frights:tasks/final/plushies/give/sniffer

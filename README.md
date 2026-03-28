@@ -40,6 +40,11 @@ Enable dev mode for yourself and switch to creative:
 /dev
 ```
 
+Clear all plushie trophies and remove all obtained tags:
+```mcfunction
+/function fossil_frights:tasks/final/plushies/clear
+```
+
 ## Server Commands
 
 Give active key:
