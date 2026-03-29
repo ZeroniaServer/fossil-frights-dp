@@ -7,6 +7,7 @@ tag @a[tag=ff_active] remove ff_active
 execute if score $active_set ff_game_state matches 1 as @a if score @s ff_active_uuid_0 = $active ff_active_uuid_0 if score @s ff_active_uuid_1 = $active ff_active_uuid_1 if score @s ff_active_uuid_2 = $active ff_active_uuid_2 if score @s ff_active_uuid_3 = $active ff_active_uuid_3 run tag @s add ff_active
 execute if score $active_set ff_game_state matches 1 unless entity @a[tag=ff_active] run function fossil_frights:game/handle_active_disconnect
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
+function fossil_frights:game/timer/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 run scoreboard players add $day_flash ff_day 1
 execute if score $day_flash ff_day matches 20.. run scoreboard players set $day_flash ff_day 0
 execute unless score $game_running ff_game_state matches 1 run scoreboard players set $day_flash ff_day 0

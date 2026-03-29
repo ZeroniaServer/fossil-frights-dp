@@ -45,6 +45,8 @@ scoreboard players set #day_tick ff_day 20
 scoreboard players set #day_minute ff_day 1200
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #day_length ff_day 24000
+scoreboard players set #sixty ff_day 60
+scoreboard players set #five ff_day 5
 scoreboard players set #ten ff_day 10
 scoreboard players set #time_step ff_day 120
 scoreboard players set $day_current ff_day 0
@@ -63,6 +65,18 @@ scoreboard players set $time_anim_target ff_day 6000
 scoreboard players set $time_anim_resume_cycle ff_day 0
 scoreboard players set $time_current ff_day 6000
 scoreboard players set $time_dist ff_day 0
+scoreboard players set $timer_ticks ff_day 0
+scoreboard players set $timer_started ff_day 0
+scoreboard players set $timer_frozen ff_day 0
+scoreboard players set $timer_minutes ff_day 0
+scoreboard players set $timer_seconds ff_day 0
+scoreboard players set $timer_centis ff_day 0
+scoreboard players set $timer_min_tens ff_day 0
+scoreboard players set $timer_min_ones ff_day 0
+scoreboard players set $timer_sec_tens ff_day 0
+scoreboard players set $timer_sec_ones ff_day 0
+scoreboard players set $timer_centi_tens ff_day 0
+scoreboard players set $timer_centi_ones ff_day 0
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -93,6 +107,8 @@ advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:game/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
+function fossil_frights:game/timer/setup
+function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/setup
