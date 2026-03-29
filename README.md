@@ -62,6 +62,16 @@ Set the held item as the reward for the lock you are looking at:
 /function fossil_frights:lock/set_held
 ```
 
+Lock the nearest item frame by making it invulnerable, fixed, and invisible. Also applies a 0.5-second glow:
+```mcfunction
+/function itemframe:lock
+```
+
+Unlock the nearest item frame by clearing invulnerable, fixed, and invisible. Also applies a 0.5-second glow:
+```mcfunction
+/function itemframe:unlock
+```
+
 Set key cooldown length in ticks. Default is `600` ticks = `30` seconds:
 ```mcfunction
 /scoreboard players set $key ff_key_cd_cfg 600
