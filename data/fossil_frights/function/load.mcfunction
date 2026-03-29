@@ -59,6 +59,7 @@ scoreboard players set $day_seconds_left ff_day 0
 scoreboard players set $day_sec_tens ff_day 0
 scoreboard players set $day_sec_ones ff_day 0
 scoreboard players set $day_tmp ff_day 0
+scoreboard players set $day_sound_tmp ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $time_anim_active ff_day 0
 scoreboard players set $time_anim_target ff_day 6000
