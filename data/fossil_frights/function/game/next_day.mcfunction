@@ -11,3 +11,4 @@ scoreboard players set $day_flash ff_day 0
 function fossil_frights:bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
+function fossil_frights:game/start_room/day_button/refresh

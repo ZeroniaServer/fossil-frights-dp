@@ -43,3 +43,4 @@ scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
+function fossil_frights:game/start_room/day_button/refresh

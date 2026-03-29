@@ -95,5 +95,7 @@ function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
+function fossil_frights:game/start_room/day_button/setup
+function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:animations/anvil/load
 function fossil_frights:reload_reset

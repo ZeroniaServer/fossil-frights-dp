@@ -46,4 +46,5 @@ scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0
 scoreboard players set $active ff_active_uuid_3 0
 function fossil_frights:game/start_room/day_tracker/refresh
+function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:join/maybe_notify_next
