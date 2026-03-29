@@ -20,6 +20,7 @@ execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_g
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
+execute as @a[tag=ff_active,limit=1] run function fossil_frights:animations/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
