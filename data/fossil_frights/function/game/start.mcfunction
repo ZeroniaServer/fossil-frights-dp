@@ -1,4 +1,4 @@
-execute unless entity @a[tag=ff_active] run tellraw @a {"text":"No active player is set. Run /function fossil_frights:game/set_active_player as the player who should start the game.","color":"red"}
+execute unless entity @a[tag=ff_active] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[tag=ff_active] run return 0
 
 function fossil_frights:game/reset_hazards
@@ -42,6 +42,7 @@ scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
+scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/start_room/day_button/refresh

@@ -1,0 +1,1 @@
+function fossil_frights:messages/game/idle_warning_two_minutes

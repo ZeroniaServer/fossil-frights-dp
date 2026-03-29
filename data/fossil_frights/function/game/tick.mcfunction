@@ -12,6 +12,13 @@ execute if score $game_running ff_game_state matches 1 if score $day_active ff_d
 execute if score $day_flash ff_day matches 20.. run scoreboard players set $day_flash ff_day 0
 execute unless score $game_running ff_game_state matches 1 run scoreboard players set $day_flash ff_day 0
 execute if score $day_active ff_day matches 1 run scoreboard players set $day_flash ff_day 0
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
+execute unless score $game_running ff_game_state matches 1 run scoreboard players set $idle_ticks ff_game_state 0
+execute if score $day_active ff_day matches 1 run scoreboard players set $idle_ticks ff_game_state 0
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 1200 run function fossil_frights:messages/game/idle_warning_two_minutes
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 2400 run function fossil_frights:messages/game/idle_warning_one_minute
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 3400 run function fossil_frights:messages/game/idle_warning_ten_seconds
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 3600.. run function fossil_frights:game/end
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches ..5999 run scoreboard players add $day_timer ff_day 1
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run bossbar set fossil_frights:bossbar value 0
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 store result bossbar fossil_frights:bossbar value run scoreboard players get $day_timer ff_day
