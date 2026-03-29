@@ -57,6 +57,7 @@ scoreboard players set $day_seconds_left ff_day 0
 scoreboard players set $day_sec_tens ff_day 0
 scoreboard players set $day_sec_ones ff_day 0
 scoreboard players set $day_tmp ff_day 0
+scoreboard players set $day_flash ff_day 0
 scoreboard players set $time_anim_active ff_day 0
 scoreboard players set $time_anim_target ff_day 6000
 scoreboard players set $time_anim_resume_cycle ff_day 0
@@ -92,5 +93,7 @@ advancement revoke @a only fossil_frights:lock_click
 function fossil_frights:game/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
+function fossil_frights:game/start_room/day_tracker/setup
+function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:animations/anvil/load
 function fossil_frights:reload_reset

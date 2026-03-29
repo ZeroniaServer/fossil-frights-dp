@@ -4,7 +4,9 @@ execute unless score $day_active ff_day matches 1 run tellraw @a {"text":"No day
 execute unless score $day_active ff_day matches 1 run return 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_flash ff_day 0
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
 execute if score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_victory
 execute unless score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_break
+function fossil_frights:game/start_room/day_tracker/refresh

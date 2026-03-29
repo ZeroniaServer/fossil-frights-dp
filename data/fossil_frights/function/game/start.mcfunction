@@ -7,6 +7,7 @@ function fossil_frights:bossbar/setup
 function fossil_frights:join/setup
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
+function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:animations/door/close
 function fossil_frights:animations/crane/reset
 function fossil_frights:animations/forklift/up
@@ -38,6 +39,7 @@ scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
+scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
