@@ -16,3 +16,6 @@ function fossil_frights:bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
+function fossil_frights:game/start_room/settings/spectator_toggle/refresh
+function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/setting3/refresh

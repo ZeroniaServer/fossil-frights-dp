@@ -118,5 +118,11 @@ function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/setup
 function fossil_frights:game/start_room/day_button/refresh
+function fossil_frights:game/start_room/settings/spectator_toggle/setup
+function fossil_frights:game/start_room/settings/spectator_toggle/refresh
+function fossil_frights:game/start_room/settings/setting2/setup
+function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/setting3/setup
+function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:animations/anvil/load
 function fossil_frights:reload_reset
