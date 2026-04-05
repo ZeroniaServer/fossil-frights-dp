@@ -1,1 +1,1 @@
-tellraw @s {"text":"You cannot start the game while spectating.","color":"red"}
+tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You cannot start the game while spectating.","color":"red"}]

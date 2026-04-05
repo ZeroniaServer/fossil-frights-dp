@@ -8,5 +8,5 @@ execute if entity @a[tag=ff_queue_prompt_target] run scoreboard players operatio
 execute if entity @a[tag=ff_queue_prompt_target] run scoreboard players enable @a[tag=ff_queue_prompt_target] ff_queue_start
 execute if entity @a[tag=ff_queue_prompt_target] run scoreboard players set @a[tag=ff_queue_prompt_target] ff_queue_prompt_time 1200
 execute as @a[tag=ff_queue_prompt_target,limit=1] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
-execute if entity @a[tag=ff_queue_prompt_target] run function fossil_frights:join/notify_next_message
+execute if entity @a[tag=ff_queue_prompt_target] run function fossil_frights:messages/queue/up_next_prompt
 tag @a remove ff_queue_prompt_target

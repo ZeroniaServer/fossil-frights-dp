@@ -1,4 +1,4 @@
-execute if score $active_set ff_game_state matches 1 unless entity @s[tag=ff_active] run tellraw @a [{"selector":"@a[tag=ff_active,limit=1]","color":"gold"},{"text":" is already active.","color":"red"}]
+execute if score $active_set ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:messages/error/active_player_already_set
 execute if score $active_set ff_game_state matches 1 unless entity @s[tag=ff_active] run return 0
 
 scoreboard players set $active_set ff_game_state 1

@@ -1,0 +1,1 @@
+execute if score $day_current ff_day matches 1.. run tellraw @a [{"text":"ℹ ","color":"yellow"},{"selector":"@a[tag=ff_active,limit=1]","color":"gold"},{"text":" made it to day ","color":"yellow"},{"score":{"name":"$day_current","objective":"ff_day"},"color":"yellow"},{"text":".","color":"yellow"}]

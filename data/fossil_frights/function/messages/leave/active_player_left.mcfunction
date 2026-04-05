@@ -1,1 +1,1 @@
-tellraw @a {"text":"The active player left the museum.","color":"yellow"}
+tellraw @a [{"text":"ℹ ","color":"yellow"},{"text":"The active player left the museum.","color":"yellow"}]
