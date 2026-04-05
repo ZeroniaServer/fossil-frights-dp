@@ -1,0 +1,23 @@
+$execute unless entity @a[tag=ff_lb_slot_$(slot),tag=ff_lb_time_entry,limit=1] run return 0
+$scoreboard players operation #lb_slot_$(slot)_time ff_lb_calc = @a[tag=ff_lb_slot_$(slot),limit=1] ff_top_time
+$scoreboard players operation #lb_slot_$(slot)_minutes ff_lb_calc = #lb_slot_$(slot)_time ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_minutes ff_lb_calc /= #lb_twelve_hundred ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_seconds_total ff_lb_calc = #lb_slot_$(slot)_time ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_seconds_total ff_lb_calc /= #lb_twenty ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_seconds ff_lb_calc = #lb_slot_$(slot)_seconds_total ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_seconds ff_lb_calc %= #lb_sixty ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centis ff_lb_calc = #lb_slot_$(slot)_time ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centis ff_lb_calc %= #lb_twenty ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centis ff_lb_calc *= #lb_five ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_min_tens ff_lb_calc = #lb_slot_$(slot)_minutes ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_min_ones ff_lb_calc = #lb_slot_$(slot)_minutes ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_sec_tens ff_lb_calc = #lb_slot_$(slot)_seconds ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_sec_tens ff_lb_calc /= #lb_ten ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_sec_ones ff_lb_calc = #lb_slot_$(slot)_seconds ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_sec_ones ff_lb_calc %= #lb_ten ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centi_tens ff_lb_calc = #lb_slot_$(slot)_centis ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centi_tens ff_lb_calc /= #lb_ten ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centi_ones ff_lb_calc = #lb_slot_$(slot)_centis ff_lb_calc
+$scoreboard players operation #lb_slot_$(slot)_centi_ones ff_lb_calc %= #lb_ten ff_lb_calc

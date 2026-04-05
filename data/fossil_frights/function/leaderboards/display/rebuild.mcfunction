@@ -1,0 +1,3 @@
+function fossil_frights:leaderboards/display/cleanup
+function fossil_frights:leaderboards/display/setup
+function fossil_frights:leaderboards/display/update

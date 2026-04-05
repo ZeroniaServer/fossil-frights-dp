@@ -1,2 +1,3 @@
+function fossil_frights:leaderboards/store_pending_disconnect
 function fossil_frights:messages/leave/active_player_left
 function fossil_frights:game/disconnect_reset

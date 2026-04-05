@@ -16,6 +16,9 @@ execute if score @s ff_cmd_leave matches 1.. run scoreboard players set @s ff_cm
 execute if score @s ff_cmd_spectate matches 1.. run function fossil_frights:command/spectate
 execute if score @s ff_cmd_spectate matches 1.. run scoreboard players enable @s ff_cmd_spectate
 execute if score @s ff_cmd_spectate matches 1.. run scoreboard players set @s ff_cmd_spectate 0
+execute if score @s ff_cmd_stats matches 1.. run function fossil_frights:command/stats
+execute if score @s ff_cmd_stats matches 1.. run scoreboard players enable @s ff_cmd_stats
+execute if score @s ff_cmd_stats matches 1.. run scoreboard players set @s ff_cmd_stats 0
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute run function fossil_frights:tasks/final/plushies/prevent_drop

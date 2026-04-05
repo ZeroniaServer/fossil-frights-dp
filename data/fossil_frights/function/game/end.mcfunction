@@ -14,6 +14,8 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
+execute as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
+function fossil_frights:leaderboards/display/update
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0

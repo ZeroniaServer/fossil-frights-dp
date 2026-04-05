@@ -22,6 +22,11 @@ Spectate the active player:
 /trigger ff_cmd_spectate set 1
 ```
 
+Show your personal museum stats:
+```mcfunction
+/trigger ff_cmd_stats set 1
+```
+
 Start the game when you are first in queue and receive the prompt:
 ```mcfunction
 /trigger ff_queue_start set 1
@@ -95,6 +100,11 @@ Stop a specific hazard:
 Stop all active hazards:
 ```mcfunction
 /function fossil_frights:hazard/stop/all
+```
+
+Give yourself a leaderboard anchor armor stand:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Leaderboard Anchor',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["leader_board"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
 ```
 
 

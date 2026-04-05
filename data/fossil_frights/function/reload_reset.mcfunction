@@ -23,6 +23,8 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 1
+scoreboard players set @a ff_cmd_stats 0
+scoreboard players enable @a ff_cmd_stats
 scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0
@@ -30,3 +32,4 @@ scoreboard players set $active ff_active_uuid_3 0
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
+function fossil_frights:leaderboards/display/rebuild

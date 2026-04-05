@@ -29,6 +29,7 @@ scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add ff_cmd_start trigger
 scoreboard objectives add ff_cmd_leave trigger
 scoreboard objectives add ff_cmd_spectate trigger
+scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
@@ -39,6 +40,10 @@ scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
+scoreboard objectives add ff_top_time dummy
+scoreboard objectives add ff_top_day dummy
+scoreboard objectives add ff_run_count dummy
+scoreboard objectives add ff_lb_calc dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
@@ -79,6 +84,7 @@ scoreboard players set $timer_sec_tens ff_day 0
 scoreboard players set $timer_sec_ones ff_day 0
 scoreboard players set $timer_centi_tens ff_day 0
 scoreboard players set $timer_centi_ones ff_day 0
+scoreboard players set $lb_pending_day ff_day 0
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -97,6 +103,21 @@ scoreboard players set $defeat_anim ff_game_state 0
 scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
+scoreboard players set $stats_top_time ff_lb_calc 0
+scoreboard players set $stats_minutes ff_lb_calc 0
+scoreboard players set $stats_seconds_total ff_lb_calc 0
+scoreboard players set $stats_seconds ff_lb_calc 0
+scoreboard players set $stats_centis ff_lb_calc 0
+scoreboard players set $stats_min_tens ff_lb_calc 0
+scoreboard players set $stats_min_ones ff_lb_calc 0
+scoreboard players set $stats_sec_tens ff_lb_calc 0
+scoreboard players set $stats_sec_ones ff_lb_calc 0
+scoreboard players set $stats_centi_tens ff_lb_calc 0
+scoreboard players set $stats_centi_ones ff_lb_calc 0
+scoreboard players set $lb_pending ff_active_uuid_0 0
+scoreboard players set $lb_pending ff_active_uuid_1 0
+scoreboard players set $lb_pending ff_active_uuid_2 0
+scoreboard players set $lb_pending ff_active_uuid_3 0
 gamerule naturalRegeneration false
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
@@ -125,4 +146,5 @@ function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/setup
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:animations/anvil/load
+function fossil_frights:leaderboards/load
 function fossil_frights:reload_reset
