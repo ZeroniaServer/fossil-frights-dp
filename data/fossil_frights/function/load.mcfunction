@@ -37,6 +37,7 @@ scoreboard objectives add ff_anvil_time dummy
 scoreboard objectives add ff_anvil_result dummy
 scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
+scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
@@ -92,6 +93,8 @@ scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
+scoreboard players set $defeat_anim ff_game_state 0
+scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 gamerule naturalRegeneration false

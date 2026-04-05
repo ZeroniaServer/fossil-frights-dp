@@ -1,0 +1,2 @@
+execute if score $defeat_anim ff_game_state matches 1 if entity @e[tag=animation_boss,limit=1] if entity @a[tag=ff_active,limit=1] run rotate @n[tag=animation_boss] facing entity @a[tag=ff_active,limit=1] feet
+execute if score $defeat_anim ff_game_state matches 1 if entity @e[tag=animation_boss,limit=1] if entity @a[tag=ff_active,limit=1] run schedule function fossil_frights:animations/defeat/everytick 1t
