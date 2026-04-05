@@ -7,6 +7,7 @@ Player-safe commands are exposed through trigger objectives so non-opped players
 Start or queue for the museum:
 ```mcfunction
 /start
+/join
 /trigger ff_cmd_start set 1
 ```
 
@@ -24,6 +25,7 @@ Spectate the active player:
 
 Show your personal museum stats:
 ```mcfunction
+/stats
 /trigger ff_cmd_stats set 1
 ```
 
