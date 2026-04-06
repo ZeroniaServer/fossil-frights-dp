@@ -1,5 +1,5 @@
-$execute unless entity @a[tag=ff_lb_slot_$(slot),tag=ff_lb_time_entry,limit=1] run return 0
-$scoreboard players operation #lb_slot_$(slot)_time ff_lb_calc = @a[tag=ff_lb_slot_$(slot),limit=1] ff_top_time
+$execute unless entity @e[type=mannequin,tag=ff_lb_entry,tag=ff_lb_slot_$(slot),tag=ff_lb_time_entry,limit=1] run return 0
+$scoreboard players operation #lb_slot_$(slot)_time ff_lb_calc = @e[type=mannequin,tag=ff_lb_entry,tag=ff_lb_slot_$(slot),limit=1] ff_top_time
 $scoreboard players operation #lb_slot_$(slot)_minutes ff_lb_calc = #lb_slot_$(slot)_time ff_lb_calc
 $scoreboard players operation #lb_slot_$(slot)_minutes ff_lb_calc /= #lb_twelve_hundred ff_lb_calc
 $scoreboard players operation #lb_slot_$(slot)_seconds_total ff_lb_calc = #lb_slot_$(slot)_time ff_lb_calc

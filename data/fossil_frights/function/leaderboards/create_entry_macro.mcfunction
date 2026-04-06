@@ -1,0 +1,1 @@
+$summon mannequin 0 -64 0 {Tags:["ff_lb_entry","ff_lb_sync_target","ff_lb_new"],Silent:1b,PersistenceRequired:1b,NoGravity:1b,Invulnerable:1b,pose:"standing",Rotation:[0f,0f],profile:{name:"$(name)",id:[I;$(u0),$(u1),$(u2),$(u3)]}}

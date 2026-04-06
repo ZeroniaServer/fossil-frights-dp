@@ -1,17 +1,18 @@
-tag @a remove ff_lb_best
-tag @a remove ff_lb_ranked
-tag @a remove ff_lb_time_entry
-tag @a remove ff_lb_day_entry
-tag @a remove ff_lb_slot_1
-tag @a remove ff_lb_slot_2
-tag @a remove ff_lb_slot_3
-tag @a remove ff_lb_slot_4
-tag @a remove ff_lb_slot_5
-tag @a remove ff_lb_slot_6
-tag @a remove ff_lb_slot_7
-tag @a remove ff_lb_slot_8
-tag @a remove ff_lb_slot_9
-tag @a remove ff_lb_slot_10
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_best
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_ranked
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_time_entry
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_day_entry
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_scan_done
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_1
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_2
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_3
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_4
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_5
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_6
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_7
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_8
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_9
+tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_10
 function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_1
 function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_2
 function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_3

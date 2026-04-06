@@ -34,4 +34,5 @@ effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true
 effect give @s minecraft:instant_health 100 0 true
 function fossil_frights:tasks/final/plushies/restore
-function fossil_frights:leaderboards/display/update
+function fossil_frights:leaderboards/sync_entry
+function fossil_frights:leaderboards/display/refresh

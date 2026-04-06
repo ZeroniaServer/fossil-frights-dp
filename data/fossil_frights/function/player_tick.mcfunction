@@ -6,6 +6,11 @@ execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+scoreboard players enable @s ff_queue_start
+scoreboard players enable @s ff_cmd_start
+scoreboard players enable @s ff_cmd_leave
+scoreboard players enable @s ff_cmd_spectate
+scoreboard players enable @s ff_cmd_stats
 execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/handle_start_click
 execute if score @s ff_cmd_start matches 1.. run function fossil_frights:command/start
 execute if score @s ff_cmd_start matches 1.. run scoreboard players enable @s ff_cmd_start
