@@ -1,1 +1,1 @@
-tellraw @a [{"text":"⚠ ","color":"red"},{"text":"Another player is already active.","color":"red"}]
+tellraw @s [{"text":"⚠ ","color":"red"},{"text":"Another player is already active.","color":"red"}]

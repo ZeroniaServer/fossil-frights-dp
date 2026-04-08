@@ -1,1 +1,1 @@
-tellraw @a [{"text":"⚠ ","color":"red"},{"text":"Day 10 is already the final day.","color":"red"}]
+tellraw @s [{"text":"⚠ ","color":"red"},{"text":"Day 10 is already the final day.","color":"red"}]
