@@ -1,6 +1,9 @@
 scoreboard players set @s ff_parkour_running 0
 scoreboard players set @s ff_parkour_time 0
+scoreboard players set @s ff_parkour_min 0
 scoreboard players set @s ff_parkour_sec 0
+scoreboard players set @s ff_parkour_sec_tens 0
+scoreboard players set @s ff_parkour_sec_ones 0
 scoreboard players set @s ff_parkour_centi 0
 scoreboard players set @s ff_parkour_centi_tens 0
 scoreboard players set @s ff_parkour_centi_ones 0

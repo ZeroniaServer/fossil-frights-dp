@@ -6,7 +6,10 @@ execute unless score @s ff_parkour_time matches -2147483648..2147483647 run scor
 execute unless score @s ff_parkour_best matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_best 0
 execute unless score @s ff_parkour_running matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_running 0
 execute unless score @s ff_parkour_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_restart_seen 0
+execute unless score @s ff_parkour_min matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_min 0
 execute unless score @s ff_parkour_sec matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_sec 0
+execute unless score @s ff_parkour_sec_tens matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_sec_tens 0
+execute unless score @s ff_parkour_sec_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_sec_ones 0
 execute unless score @s ff_parkour_centi matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi 0
 execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_tens 0
 execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
