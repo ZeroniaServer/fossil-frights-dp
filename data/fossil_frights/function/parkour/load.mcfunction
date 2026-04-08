@@ -17,6 +17,6 @@ scoreboard players add $parkour_best_sec ff_parkour_display 0
 scoreboard players add $parkour_best_centi ff_parkour_display 0
 scoreboard players add $parkour_best_centi_tens ff_parkour_display 0
 scoreboard players add $parkour_best_centi_ones ff_parkour_display 0
-setblock -3 75 -25 minecraft:light_weighted_pressure_plate
-setblock 11 75 -20 minecraft:light_weighted_pressure_plate
+setblock -18 75 -21 minecraft:light_weighted_pressure_plate
+setblock -36 95 -43 minecraft:light_weighted_pressure_plate
 function fossil_frights:parkour/display/rebuild
