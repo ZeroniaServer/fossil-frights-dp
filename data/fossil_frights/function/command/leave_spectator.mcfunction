@@ -1,0 +1,1 @@
+function fossil_frights:join/spectator_lobby_exit
