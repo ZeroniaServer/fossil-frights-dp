@@ -1,0 +1,5 @@
+function fossil_frights:parkour/update_display
+function fossil_frights:messages/parkour/completed
+function fossil_frights:parkour/update_personal_best
+function fossil_frights:parkour/check_best
+function fossil_frights:parkour/reset_player

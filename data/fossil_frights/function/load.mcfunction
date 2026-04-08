@@ -136,6 +136,7 @@ advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
+function fossil_frights:parkour/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/setup

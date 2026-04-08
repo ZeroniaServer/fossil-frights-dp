@@ -31,6 +31,7 @@ execute if score @s ff_cmd_spectate matches 1.. run scoreboard players set @s ff
 execute if score @s ff_cmd_stats matches 1.. run function fossil_frights:command/stats
 execute if score @s ff_cmd_stats matches 1.. run scoreboard players enable @s ff_cmd_stats
 execute if score @s ff_cmd_stats matches 1.. run scoreboard players set @s ff_cmd_stats 0
+execute run function fossil_frights:parkour/player_tick
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute run function fossil_frights:tasks/final/plushies/prevent_drop
@@ -46,4 +47,4 @@ advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
-execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick"}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step
+execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick"}} unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{ff_parkour_restart:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step

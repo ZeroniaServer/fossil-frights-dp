@@ -57,6 +57,11 @@ Clear all plushie trophies and remove all obtained tags:
 /function fossil_frights:tasks/final/plushies/clear
 ```
 
+Reset the parkour best-time display back to "No times yet":
+```mcfunction
+/function fossil_frights:parkour/reset
+```
+
 ## Server Commands
 
 Give active key:

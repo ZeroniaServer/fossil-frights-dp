@@ -1,0 +1,1 @@
+summon minecraft:text_display 0 76.75 -26 {Tags:["ff_parkour_board","ff_parkour_board_empty"],billboard:"fixed",Rotation:[0f,0f],background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:-1b,brightness:{sky:15,block:15},alignment:"center",text:[{"text":"No times yet","color":"#F6E7B0","italic":false}]}

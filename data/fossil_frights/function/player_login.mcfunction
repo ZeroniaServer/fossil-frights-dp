@@ -2,6 +2,14 @@ execute if entity @s[team=ff_dev_mode] run return 0
 execute unless score @s ff_top_time matches -2147483648..2147483647 run scoreboard players set @s ff_top_time 0
 execute unless score @s ff_top_day matches -2147483648..2147483647 run scoreboard players set @s ff_top_day 0
 execute unless score @s ff_run_count matches -2147483648..2147483647 run scoreboard players set @s ff_run_count 0
+execute unless score @s ff_parkour_time matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_time 0
+execute unless score @s ff_parkour_best matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_best 0
+execute unless score @s ff_parkour_running matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_running 0
+execute unless score @s ff_parkour_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_restart_seen 0
+execute unless score @s ff_parkour_sec matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_sec 0
+execute unless score @s ff_parkour_centi matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi 0
+execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_tens 0
+execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
 execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
@@ -37,6 +45,7 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true
 effect give @s minecraft:instant_health 100 0 true
+execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
 function fossil_frights:tasks/final/plushies/restore
 function fossil_frights:leaderboards/sync_entry
 function fossil_frights:leaderboards/display/refresh
