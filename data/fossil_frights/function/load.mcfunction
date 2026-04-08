@@ -30,6 +30,9 @@ scoreboard objectives add ff_cmd_start trigger
 scoreboard objectives add ff_cmd_leave trigger
 scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_cmd_stats trigger
+scoreboard objectives add ff_cmd_invite trigger
+scoreboard objectives add ff_invite_sel trigger
+scoreboard objectives add ff_gui dummy
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
@@ -130,6 +133,7 @@ team modify ff_dev_mode color green
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
+advancement revoke @a only fossil_frights:multiplayer_click
 function fossil_frights:game/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
@@ -143,6 +147,7 @@ function fossil_frights:game/start_room/settings/spectator_toggle/setup
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/setup
 function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/multiplayer/setup
 function fossil_frights:game/start_room/settings/setting3/setup
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:animations/anvil/load

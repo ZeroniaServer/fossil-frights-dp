@@ -29,6 +29,11 @@ Show your personal museum stats:
 /trigger ff_cmd_stats set 1
 ```
 
+Open the invite dialog to invite another online player:
+```mcfunction
+/trigger ff_cmd_invite set 1
+```
+
 Start the game when you are first in queue and receive the prompt:
 ```mcfunction
 /trigger ff_queue_start set 1

@@ -24,6 +24,10 @@ scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave
 scoreboard players enable @s ff_cmd_spectate
 scoreboard players enable @s ff_cmd_stats
+scoreboard players set @s ff_cmd_invite 0
+scoreboard players enable @s ff_cmd_invite
+scoreboard players set @s ff_invite_sel 0
+scoreboard players enable @s ff_invite_sel
 clear @s
 item replace entity @s armor.head with air
 tp @s 0 80 0 0 0

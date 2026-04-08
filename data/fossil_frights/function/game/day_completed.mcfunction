@@ -18,3 +18,6 @@ execute if score $day_current ff_day matches 10 run function fossil_frights:mess
 execute unless score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_break
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
+function fossil_frights:game/start_room/settings/spectator_toggle/refresh
+function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/setting3/refresh
