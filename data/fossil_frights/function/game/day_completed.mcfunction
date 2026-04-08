@@ -6,6 +6,7 @@ scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
+function fossil_frights:tasks/reset
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
@@ -21,3 +22,4 @@ function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:tasks/tracker/hide

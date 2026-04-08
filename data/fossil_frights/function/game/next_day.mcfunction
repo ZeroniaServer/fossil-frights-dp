@@ -11,6 +11,9 @@ scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 1
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
+function fossil_frights:tasks/encoder/start_day
+function fossil_frights:tasks/tracker/show
+function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/timer_bars/close
 execute as @a[tag=ff_active] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start

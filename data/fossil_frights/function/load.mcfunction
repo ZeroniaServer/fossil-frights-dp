@@ -45,6 +45,8 @@ scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
+scoreboard objectives add ff_task_state dummy
+scoreboard objectives add ff_task_tracker dummy
 scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
@@ -123,6 +125,8 @@ scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
+scoreboard objectives modify ff_task_tracker displayname {"text":"Task Tracker","color":"yellow"}
+scoreboard objectives modify ff_task_tracker numberformat blank
 gamerule naturalRegeneration true
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
@@ -143,6 +147,7 @@ function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/setup
 function fossil_frights:game/timer/reset
+function fossil_frights:tasks/load
 function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/setup
