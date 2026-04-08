@@ -20,6 +20,7 @@ function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 tp @a[tag=ff_active] 20 70 20 0 0
 gamemode adventure @a[tag=ff_active]
+execute as @a[tag=ff_active] run function fossil_frights:player/protection_disable
 clear @a[tag=ff_active]
 effect clear @a[tag=ff_active] minecraft:absorption
 effect clear @a[tag=ff_active] minecraft:health_boost

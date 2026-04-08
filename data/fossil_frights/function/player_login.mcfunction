@@ -17,6 +17,7 @@ execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s
 tag @s remove ff_active
@@ -44,6 +45,7 @@ item replace entity @s armor.head with air
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
 gamemode adventure @s
+function fossil_frights:player/protection_enable
 effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true

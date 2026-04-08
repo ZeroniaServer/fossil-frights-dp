@@ -31,6 +31,16 @@ execute if score @s ff_cmd_spectate matches 1.. run scoreboard players set @s ff
 execute if score @s ff_cmd_stats matches 1.. run function fossil_frights:command/stats
 execute if score @s ff_cmd_stats matches 1.. run scoreboard players enable @s ff_cmd_stats
 execute if score @s ff_cmd_stats matches 1.. run scoreboard players set @s ff_cmd_stats 0
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active] run function fossil_frights:player/respawn_active
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/respawn_lobby
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/respawn_lobby
+execute unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
+execute if entity @s[tag=ff_damage_guard] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active,gamemode=!spectator] run function fossil_frights:player/protection_disable
+execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/protection_enable
+execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/protection_enable
+execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:resistance"}]}] run function fossil_frights:player/respawn_lobby
+execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_lobby
+execute if entity @s[tag=ff_active,gamemode=!spectator] if score $game_running ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_active
 execute run function fossil_frights:parkour/player_tick
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/security_camera/forced_spectate_exit

@@ -23,6 +23,8 @@ scoreboard objectives add ff_active_uuid_2 dummy
 scoreboard objectives add ff_active_uuid_3 dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
+scoreboard objectives add ff_deaths deathCount
+scoreboard objectives add ff_deaths_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_start trigger
@@ -121,7 +123,7 @@ scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
-gamerule naturalRegeneration false
+gamerule naturalRegeneration true
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold
