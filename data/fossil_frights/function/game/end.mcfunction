@@ -18,7 +18,7 @@ function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
 function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
-execute as @a[gamemode=spectator,tag=!ff_active] run function fossil_frights:join/spectator_lobby_exit
+execute as @a[gamemode=spectator,tag=!ff_active,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
 execute as @a[tag=ff_active] run function fossil_frights:player/protection_enable
