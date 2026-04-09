@@ -135,6 +135,8 @@ team add ff_dna_hover_yellow
 team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
 team modify ff_dev_mode color green
+team add ff_game_start_dummy
+team modify ff_game_start_dummy collisionRule never
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click

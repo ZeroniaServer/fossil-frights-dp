@@ -12,6 +12,7 @@ function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/timer_bars/open
 function fossil_frights:animations/door/close
+execute as @a[tag=ff_active] at @s run function fossil_frights:animations/game_start/run
 function fossil_frights:animations/crane/reset
 function fossil_frights:animations/forklift/up
 function fossil_frights:frights/puffer/reset

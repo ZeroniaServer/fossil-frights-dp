@@ -1,6 +1,7 @@
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
+function fossil_frights:animations/game_start/stop
 function fossil_frights:animations/defeat/stop
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
