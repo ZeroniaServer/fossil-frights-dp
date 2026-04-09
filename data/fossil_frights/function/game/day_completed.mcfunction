@@ -17,6 +17,7 @@ execute if score $day_current ff_day matches 10 as @a[tag=ff_active] run functio
 execute if score $day_current ff_day matches 10 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_time
 execute if score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_victory
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
+execute if score $day_current ff_day matches 10 run function fossil_frights:game/victory/celebrate
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt
 execute unless score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_break
 function fossil_frights:game/start_room/day_tracker/refresh

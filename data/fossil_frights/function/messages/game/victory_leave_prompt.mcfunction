@@ -1,1 +1,1 @@
-tellraw @a[tag=ff_active] [{"text":"⭐ ","color":"gold"},{"text":"Congratulations, you beat the game. ","color":"yellow"},{"text":"[Click here to leave]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"function fossil_frights:game/end"}}]
+tellraw @a[tag=ff_active] [{"text":"⭐ ","color":"gold"},{"text":"Congratulations, you beat the game. ","color":"yellow"},{"text":"[Click here to leave]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_leave set 1"}}]
