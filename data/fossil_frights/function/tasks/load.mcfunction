@@ -2,6 +2,8 @@ function fossil_frights:tasks/tracker/setup
 
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
+scoreboard players set $hazard_pending ff_task_state 0
+scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 11
 scoreboard players set #medium_pool_count ff_task_state 10

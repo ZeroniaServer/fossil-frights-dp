@@ -3,4 +3,4 @@ function fossil_frights:tasks/select/easy
 function fossil_frights:tasks/select/medium
 function fossil_frights:tasks/select/medium
 function fossil_frights:tasks/select/medium
-function fossil_frights:hazard/start/random
+function fossil_frights:tasks/hazard/schedule_random

@@ -1,3 +1,5 @@
+execute if score $medium_task_6_sel ff_task_state matches 1 if score $medium_task_6_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Medium Task 6"
+execute if score $medium_task_6_sel ff_task_state matches 1 if score $medium_task_6_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $medium_task_6_sel ff_task_state matches 1 if score $medium_task_6_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $medium_task_6_sel ff_task_state matches 1 run scoreboard players set $medium_task_6_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh

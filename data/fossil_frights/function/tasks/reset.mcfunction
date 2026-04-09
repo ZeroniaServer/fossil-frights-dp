@@ -1,6 +1,8 @@
 function fossil_frights:tasks/tracker/hide
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
+scoreboard players set $hazard_pending ff_task_state 0
+scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set $security_camera_sel ff_task_state 0
 scoreboard players set $security_camera_done ff_task_state 0
