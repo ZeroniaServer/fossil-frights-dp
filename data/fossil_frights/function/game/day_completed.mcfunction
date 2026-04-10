@@ -2,6 +2,7 @@ execute unless score $game_running ff_game_state matches 1 run function fossil_f
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute unless score $day_active ff_day matches 1 run function fossil_frights:messages/error/no_day_active
 execute unless score $day_active ff_day matches 1 run return 0
+function fossil_frights:tasks/bookcase/clear
 execute as @a[tag=ff_active] run title @s actionbar [{"text":"Day ","color":"gold","italic":false},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"},{"text":" Complete!","color":"gold","italic":false}]
 give @a[tag=ff_active] minecraft:gold_ingot[minecraft:item_name={text:"CubeKoin",color:"gold",italic:false},minecraft:lore=[{text:"",extra:["cubekoin"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
 scoreboard players set $day_active ff_day 0
