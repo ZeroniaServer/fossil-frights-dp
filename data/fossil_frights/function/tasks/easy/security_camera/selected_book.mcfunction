@@ -1,4 +1,3 @@
-# Replace the summon command below with your generated written book item entity.
-# Keep the ff_task_book_temp tag so the shared bookshelf inserter can find it.
-summon item 18 72 29 {Tags:["ff_task_book_temp"],PickupDelay:32767,Age:-32768,Item:{id:"minecraft:written_book",count:1,components:{"minecraft:item_name":{text:"Security Camera",italic:false},"minecraft:custom_data":{ff_task_book:"security_camera"}}}}
+summon item 18 72 29 {Tags:["ff_task_book_temp"],PickupDelay:32767,Age:-32768,Item:{id:"minecraft:written_book",count:1,components:{written_book_content:{title:"ᴄʜᴇᴄᴋ ꜱᴇᴄᴜʀɪᴛʏ",author:"ғᴏssɪʟ ғʀɪɢʜᴛs",pages:[[{"text":"ᴄʜᴇᴄᴋ ꜱᴇᴄᴜʀɪᴛʏ\n"},{"text":"-------------------\n"},{"text":"ʙᴀꜱᴇᴍᴇɴᴛ ● "},{"text":"ᴇᴀꜱʏ\n","color":"green"},{"text":"\nThere's been some weird camera glitches lately, check the security system and make sure the cameras are still working as normal."}]]},custom_name:{"text":"ᴄʜᴇᴄᴋ ꜱᴇᴄᴜʀɪᴛʏ","color":"green","italic":false},lore:[{"text":"","extra":["task_easy"]}],enchantment_glint_override:false,tooltip_display:{hidden_components:["lore","written_book_content"]},max_stack_size:99,custom_data:{ff_task_book:"check_security"}}}}
+function fossil_frights:tasks/bookcase/insert_selected_book
 function fossil_frights:tasks/bookcase/insert_selected_book
