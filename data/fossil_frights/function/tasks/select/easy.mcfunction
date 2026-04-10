@@ -1,6 +1,6 @@
 # Pick exactly one unique easy task from the remaining unselected pool.
 scoreboard players set #task_remaining ff_task_state 0
-execute unless score $security_camera_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $check_security_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $easy_task_1_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $easy_task_2_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $easy_task_3_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -28,9 +28,9 @@ execute if score #task_remaining ff_task_state matches 11 store result score #ta
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
 
-execute unless score $security_camera_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $security_camera_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/security_camera/selected
-execute unless score $security_camera_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $check_security_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $check_security_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/check_security/selected
+execute unless score $check_security_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $easy_task_1_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $easy_task_1_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/easy_task_1/selected
 execute unless score $easy_task_1_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

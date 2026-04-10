@@ -4,8 +4,8 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set $security_camera_sel ff_task_state 0
-scoreboard players set $security_camera_done ff_task_state 0
+scoreboard players set $check_security_sel ff_task_state 0
+scoreboard players set $check_security_done ff_task_state 0
 scoreboard players set $easy_task_1_sel ff_task_state 0
 scoreboard players set $easy_task_1_done ff_task_state 0
 scoreboard players set $easy_task_2_sel ff_task_state 0
@@ -72,7 +72,7 @@ scoreboard players set $hard_task_10_done ff_task_state 0
 scoreboard players set $final_task_sel ff_task_state 0
 scoreboard players set $final_task_done ff_task_state 0
 
-scoreboard players reset $tt_security_camera ff_task_tracker
+scoreboard players reset $tt_check_security ff_task_tracker
 scoreboard players reset $tt_easy_task_1 ff_task_tracker
 scoreboard players reset $tt_easy_task_2 ff_task_tracker
 scoreboard players reset $tt_easy_task_3 ff_task_tracker
@@ -105,7 +105,7 @@ scoreboard players reset $tt_hard_task_9 ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
-function fossil_frights:tasks/easy/security_camera/reset
+function fossil_frights:tasks/easy/check_security/reset
 function fossil_frights:tasks/easy/easy_task_1/reset
 function fossil_frights:tasks/easy/easy_task_2/reset
 function fossil_frights:tasks/easy/easy_task_3/reset

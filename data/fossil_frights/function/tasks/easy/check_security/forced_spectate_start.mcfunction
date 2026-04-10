@@ -1,5 +1,5 @@
-tp @e[type=mannequin,tag=ff_security_camera_dummy] 0 -200 0
-kill @e[type=mannequin,tag=ff_security_camera_dummy]
+tp @e[type=mannequin,tag=ff_check_security_dummy] 0 -200 0
+kill @e[type=mannequin,tag=ff_check_security_dummy]
 setblock -28 70 38 air
 setblock -27 70 36 air
 data remove storage fossil_frights:forced_spectate return
@@ -13,10 +13,10 @@ execute store result storage fossil_frights:forced_spectate mannequin.u0 int 1 r
 execute store result storage fossil_frights:forced_spectate mannequin.u1 int 1 run data get entity @s UUID[1] 1
 execute store result storage fossil_frights:forced_spectate mannequin.u2 int 1 run data get entity @s UUID[2] 1
 execute store result storage fossil_frights:forced_spectate mannequin.u3 int 1 run data get entity @s UUID[3] 1
-function fossil_frights:tasks/easy/security_camera/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
+function fossil_frights:tasks/easy/check_security/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate
 gamemode spectator @s
-execute if entity @e[type=minecraft:armor_stand,tag=security_camera,limit=1] run spectate @e[type=minecraft:armor_stand,tag=security_camera,sort=random,limit=1] @s
+execute if entity @e[type=minecraft:armor_stand,tag=check_security,limit=1] run spectate @e[type=minecraft:armor_stand,tag=check_security,sort=random,limit=1] @s
 setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]

@@ -2,7 +2,7 @@ function fossil_frights:tasks/tracker/hide
 function fossil_frights:tasks/tracker/update_title
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if entity @a[limit=1] run function fossil_frights:tasks/tracker/show
 
-scoreboard players reset $tt_security_camera ff_task_tracker
+scoreboard players reset $tt_check_security ff_task_tracker
 scoreboard players reset $tt_easy_task_1 ff_task_tracker
 scoreboard players reset $tt_easy_task_2 ff_task_tracker
 scoreboard players reset $tt_easy_task_3 ff_task_tracker
@@ -35,9 +35,9 @@ scoreboard players reset $tt_hard_task_9 ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
-execute if score $security_camera_sel ff_task_state matches 1 run scoreboard players operation $tt_security_camera ff_task_tracker = #line_security_camera ff_task_state
-execute if score $security_camera_sel ff_task_state matches 1 unless score $security_camera_done ff_task_state matches 1 run scoreboard players display name $tt_security_camera ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Security Camera","italic":false}]
-execute if score $security_camera_done ff_task_state matches 1 run scoreboard players display name $tt_security_camera ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Security Camera","color":"gray","italic":false,"strikethrough":true}]
+execute if score $check_security_sel ff_task_state matches 1 run scoreboard players operation $tt_check_security ff_task_tracker = #line_check_security ff_task_state
+execute if score $check_security_sel ff_task_state matches 1 unless score $check_security_done ff_task_state matches 1 run scoreboard players display name $tt_check_security ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Check Security","italic":false}]
+execute if score $check_security_done ff_task_state matches 1 run scoreboard players display name $tt_check_security ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Check Security","color":"gray","italic":false,"strikethrough":true}]
 execute if score $easy_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_1 ff_task_tracker = #line_easy_task_1 ff_task_state
 execute if score $easy_task_1_sel ff_task_state matches 1 unless score $easy_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 1","italic":false}]
 execute if score $easy_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 1","color":"gray","italic":false,"strikethrough":true}]

@@ -10,10 +10,10 @@ scoreboard players set #medium_pool_count ff_task_state 10
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
 
-scoreboard players set $security_camera_avail ff_task_state 1
-scoreboard players set $security_camera_sel ff_task_state 0
-scoreboard players set $security_camera_done ff_task_state 0
-scoreboard players set #line_security_camera ff_task_state 32
+scoreboard players set $check_security_avail ff_task_state 1
+scoreboard players set $check_security_sel ff_task_state 0
+scoreboard players set $check_security_done ff_task_state 0
+scoreboard players set #line_check_security ff_task_state 32
 
 scoreboard players set $easy_task_1_avail ff_task_state 1
 scoreboard players set $easy_task_1_sel ff_task_state 0
