@@ -102,6 +102,7 @@ scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
+scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0

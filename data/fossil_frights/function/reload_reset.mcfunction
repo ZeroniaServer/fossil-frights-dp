@@ -27,6 +27,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 1
+scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set @a ff_cmd_stats 0
 scoreboard players enable @a ff_cmd_stats
 scoreboard players set $active ff_active_uuid_0 0
