@@ -10,6 +10,7 @@ function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
+function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a run function fossil_frights:parkour/reset_player
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
