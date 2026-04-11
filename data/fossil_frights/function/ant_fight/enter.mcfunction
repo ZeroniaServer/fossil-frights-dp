@@ -6,3 +6,4 @@ attribute @s minecraft:scale base set 0.5
 clear @s
 give @s minecraft:snowball[minecraft:item_name={text:"Infinileaf",color:"green",italic:false},minecraft:lore=[{text:"",extra:["infinileaf"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_ant_leaf:1b}] 1
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
+scoreboard players set @s ff_ant_immunity 20
