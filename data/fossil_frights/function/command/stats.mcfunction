@@ -12,6 +12,7 @@ scoreboard players set $stats_parkour_sec_ones ff_lb_calc 0
 scoreboard players set $stats_parkour_centi_tens ff_lb_calc 0
 scoreboard players set $stats_parkour_centi_ones ff_lb_calc 0
 scoreboard players set $stats_ant_score ff_lb_calc 0
+scoreboard players set $stats_ant_top_score ff_lb_calc 0
 scoreboard players set $stats_minutes ff_lb_calc 0
 scoreboard players set $stats_seconds_total ff_lb_calc 0
 scoreboard players set $stats_seconds ff_lb_calc 0
@@ -26,6 +27,7 @@ execute if score @s ff_top_time matches 1.. run scoreboard players operation $st
 execute if score @s ff_top_day matches 1.. run scoreboard players operation $stats_top_day ff_lb_calc = @s ff_top_day
 scoreboard players operation $stats_run_total ff_lb_calc = @s ff_run_count
 scoreboard players operation $stats_ant_score ff_lb_calc = @s ff_ant_score
+scoreboard players operation $stats_ant_top_score ff_lb_calc = @s ff_ant_top_score
 execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_best ff_lb_calc = @s ff_parkour_best
 execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_minutes ff_lb_calc = $stats_parkour_best ff_lb_calc
 execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_minutes ff_lb_calc /= #100 ff_parkour_math
@@ -79,3 +81,4 @@ execute if score @s ff_parkour_best matches 1.. if score $stats_parkour_minutes 
 execute if score @s ff_parkour_best matches 1.. unless score $stats_parkour_minutes ff_lb_calc matches 1.. run tellraw @s [{"text":"Parkour: ","color":"yellow"},{"score":{"name":"$stats_parkour_seconds","objective":"ff_lb_calc"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"$stats_parkour_centi_tens","objective":"ff_lb_calc"},"color":"white"},{"score":{"name":"$stats_parkour_centi_ones","objective":"ff_lb_calc"},"color":"white"},{"text":"s","color":"white"}]
 execute unless score @s ff_parkour_best matches 1.. run tellraw @s [{"text":"Parkour: ","color":"yellow"},{"text":"--.--s","color":"gray"}]
 tellraw @s [{"text":"Ant Score: ","color":"yellow"},{"score":{"name":"$stats_ant_score","objective":"ff_lb_calc"},"color":"white"}]
+tellraw @s [{"text":"Ant Top Score: ","color":"yellow"},{"score":{"name":"$stats_ant_top_score","objective":"ff_lb_calc"},"color":"white"}]

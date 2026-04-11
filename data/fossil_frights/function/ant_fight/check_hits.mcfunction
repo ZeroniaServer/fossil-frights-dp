@@ -6,3 +6,4 @@ execute unless score $ant_hit_valid ff_ant_fight matches 1.. run return 0
 execute if score @s ff_ant_score matches 1.. run scoreboard players remove @s ff_ant_score 1
 kill @e[type=minecraft:snowball,tag=ff_ant_marked,distance=..1.5,limit=1,sort=nearest]
 function fossil_frights:ant_fight/exit_restore
+title @s actionbar {"text":"-1 Ant Score","color":"red"}
