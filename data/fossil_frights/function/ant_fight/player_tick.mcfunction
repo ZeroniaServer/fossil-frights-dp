@@ -1,0 +1,11 @@
+execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,tag=!ff_active] run function fossil_frights:ant_fight/exit
+execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:ant_fight/mark_projectile
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_hits
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/prevent_drop
+execute if entity @s[tag=ff_ant_fight] unless data entity @s {Inventory:[{id:"minecraft:snowball",components:{"minecraft:custom_data":{ff_ant_leaf:1b}}}]} run give @s minecraft:snowball[minecraft:item_name={text:"Infinileaf",color:"green",italic:false},minecraft:lore=[{text:"",extra:["infinileaf"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_ant_leaf:1b}] 1
+execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_score 0
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_best
+execute if entity @s[tag=ff_ant_fight] run title @s actionbar [{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]
+execute if entity @s[tag=ff_ant_fight] run return 0
+execute if entity @s[gamemode=adventure,tag=!ff_active] positioned -20.5 76.5 100.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
+execute if entity @s[gamemode=adventure,tag=!ff_active] positioned -52.5 77.5 95.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter

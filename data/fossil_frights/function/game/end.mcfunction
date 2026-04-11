@@ -21,6 +21,7 @@ function fossil_frights:messages/game/exit_day_reached
 execute as @a[gamemode=spectator,tag=!ff_active,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
+execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
 execute as @a[tag=ff_active] run function fossil_frights:player/protection_enable
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0

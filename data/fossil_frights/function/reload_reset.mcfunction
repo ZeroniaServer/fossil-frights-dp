@@ -12,6 +12,7 @@ function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a run function fossil_frights:parkour/reset_player
+execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
 tag @a[tag=ff_active] remove ff_active

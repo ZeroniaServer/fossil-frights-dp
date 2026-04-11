@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ff_ant_fight\"]}"
+        },
+        "damage": {
+          "direct_entity": {
+            "type": "minecraft:snowball"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:ant_fight/hit_attacker"
+  }
+}

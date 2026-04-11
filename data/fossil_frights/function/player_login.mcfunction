@@ -13,6 +13,9 @@ execute unless score @s ff_parkour_sec_ones matches -2147483648..2147483647 run 
 execute unless score @s ff_parkour_centi matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi 0
 execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_tens 0
 execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
+execute unless score @s ff_ant_fight matches -2147483648..2147483647 run scoreboard players set @s ff_ant_fight 0
+execute unless score @s ff_ant_leaf_seen matches -2147483648..2147483647 run scoreboard players set @s ff_ant_leaf_seen 0
+execute unless score @s ff_ant_score matches -2147483648..2147483647 run scoreboard players set @s ff_ant_score 0
 execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
@@ -23,7 +26,10 @@ team leave @s
 tag @s remove ff_active
 tag @s remove ff_forced_spectate
 tag @s remove ff_in_queue
+tag @s remove ff_ant_fight
 scoreboard players set @s ff_queue_order 0
+scoreboard players set @s ff_ant_fight 0
+scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
@@ -41,7 +47,10 @@ scoreboard players enable @s ff_cmd_invite
 scoreboard players set @s ff_invite_sel 0
 scoreboard players enable @s ff_invite_sel
 clear @s
+clear @s minecraft:snowball[minecraft:custom_data={ff_ant_leaf:1b}]
 item replace entity @s armor.head with air
+attribute @s minecraft:scale base set 1
+title @s actionbar ""
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
 gamemode adventure @s
