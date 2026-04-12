@@ -9,6 +9,6 @@ scoreboard players set @s ff_parkour_centi 0
 scoreboard players set @s ff_parkour_centi_tens 0
 scoreboard players set @s ff_parkour_centi_ones 0
 clear @s
-item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_name={text:"Restart Course",color:"green",italic:false},minecraft:lore=[{text:"",extra:["parkour_restart"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_parkour_restart:1b}] 1
+item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_name={text:"Parkour Restart",color:"gold",italic:false},minecraft:lore=[{text:"Restart ",color:"yellow",italic:false,extra:[{text:"- Right Click",color:"white",italic:false}]},{text:"End ",color:"red",italic:false,extra:[{text:"- Drop",color:"white",italic:false}]}],minecraft:item_model="fossil-frights:general_items/parkour_restart",minecraft:custom_data={ff_parkour_restart:1b}] 1
 scoreboard players operation @s ff_parkour_restart_seen = @s ff_parkour_restart_use
 function fossil_frights:parkour/update_display
