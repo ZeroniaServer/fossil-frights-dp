@@ -7,7 +7,7 @@ clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base set 1
 title @s actionbar ""
-tp @s 0 80 0 0 0
+function fossil_frights:util/fade/queue/tutorial_exit
 spawnpoint @s 0 80 0
 gamemode adventure @s
 function fossil_frights:player/protection_enable

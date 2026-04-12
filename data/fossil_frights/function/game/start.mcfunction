@@ -13,14 +13,13 @@ function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/timer_bars/open
 function fossil_frights:animations/door/close
-execute as @a[tag=ff_active] at @s run function fossil_frights:animations/game_start/run
 function fossil_frights:animations/crane/reset
 function fossil_frights:animations/forklift/up
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
-tp @a[tag=ff_active] 20 70 20 0 0
+execute as @a[tag=ff_active] run function fossil_frights:util/fade/queue/game_start
 gamemode adventure @a[tag=ff_active]
 execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
 execute as @a[tag=ff_active] run function fossil_frights:player/protection_disable
