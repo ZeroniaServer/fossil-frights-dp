@@ -1,3 +1,4 @@
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 scoreboard players set @s ff_parkour_running 1
 scoreboard players set @s ff_parkour_time 0
 scoreboard players set @s ff_parkour_min 0

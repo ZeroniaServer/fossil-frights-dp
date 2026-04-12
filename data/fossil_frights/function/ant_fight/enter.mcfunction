@@ -1,4 +1,5 @@
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 scoreboard players add @s ff_ant_score 0
 tag @s add ff_ant_fight
 scoreboard players set @s ff_ant_fight 1

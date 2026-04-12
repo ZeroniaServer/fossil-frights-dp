@@ -13,6 +13,7 @@ function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a run function fossil_frights:parkour/reset_player
+execute as @a run function fossil_frights:temple_run/reset_player
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 function fossil_frights:join/reset

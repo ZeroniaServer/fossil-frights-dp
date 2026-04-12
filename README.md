@@ -68,12 +68,18 @@ Reset the parkour best-time display back to "No times yet":
 /function fossil_frights:parkour/reset
 ```
 
+Reset the Temple Run best-time display back to "No times yet":
+```mcfunction
+/function fossil_frights:temple_run/reset
+```
+
 Set a player's saved stats manually:
 ```mcfunction
 /scoreboard players set <player> ff_top_time <value>
 /scoreboard players set <player> ff_top_day <value>
 /scoreboard players set <player> ff_run_count <value>
 /scoreboard players set <player> ff_parkour_best <value>
+/scoreboard players set <player> ff_temple_run_best <value>
 
 ```
 

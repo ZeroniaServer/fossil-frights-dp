@@ -2,6 +2,8 @@ scoreboard players set $tutorial_blocked ff_tutorial 0
 execute if entity @s[tag=ff_active] run function fossil_frights:messages/error/cannot_watch_tutorial_while_active
 execute if entity @s[tag=ff_active] run scoreboard players set $tutorial_blocked ff_tutorial 1
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:messages/error/cannot_watch_tutorial_while_parkour
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:messages/error/cannot_watch_tutorial_while_temple_run
+execute if score @s ff_temple_run_running matches 1.. run scoreboard players set $tutorial_blocked ff_tutorial 1
 execute if score @s ff_parkour_running matches 1.. run scoreboard players set $tutorial_blocked ff_tutorial 1
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:messages/error/cannot_watch_tutorial_while_ant_fight
 execute if entity @s[tag=ff_ant_fight] run scoreboard players set $tutorial_blocked ff_tutorial 1

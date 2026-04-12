@@ -1,0 +1,14 @@
+execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
+scoreboard players set @s ff_temple_run_running 1
+scoreboard players set @s ff_temple_run_time 0
+scoreboard players set @s ff_temple_run_min 0
+scoreboard players set @s ff_temple_run_sec 0
+scoreboard players set @s ff_temple_run_sec_tens 0
+scoreboard players set @s ff_temple_run_sec_ones 0
+scoreboard players set @s ff_temple_run_centi 0
+scoreboard players set @s ff_temple_run_centi_tens 0
+scoreboard players set @s ff_temple_run_centi_ones 0
+clear @s
+item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_name={text:"Restart Course",color:"green",italic:false},minecraft:lore=[{text:"",extra:["temple_run_restart"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_temple_run_restart:1b}] 1
+scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
+function fossil_frights:temple_run/update_display

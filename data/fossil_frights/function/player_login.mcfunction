@@ -13,6 +13,17 @@ execute unless score @s ff_parkour_sec_ones matches -2147483648..2147483647 run 
 execute unless score @s ff_parkour_centi matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi 0
 execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_tens 0
 execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
+execute unless score @s ff_temple_run_time matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_time 0
+execute unless score @s ff_temple_run_best matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_best 0
+execute unless score @s ff_temple_run_running matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_running 0
+execute unless score @s ff_temple_run_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_restart_seen 0
+execute unless score @s ff_temple_run_min matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_min 0
+execute unless score @s ff_temple_run_sec matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_sec 0
+execute unless score @s ff_temple_run_sec_tens matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_sec_tens 0
+execute unless score @s ff_temple_run_sec_ones matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_sec_ones 0
+execute unless score @s ff_temple_run_centi matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_centi 0
+execute unless score @s ff_temple_run_centi_tens matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_centi_tens 0
+execute unless score @s ff_temple_run_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_centi_ones 0
 execute unless score @s ff_ant_fight matches -2147483648..2147483647 run scoreboard players set @s ff_ant_fight 0
 execute unless score @s ff_ant_leaf_seen matches -2147483648..2147483647 run scoreboard players set @s ff_ant_leaf_seen 0
 execute unless score @s ff_ant_score matches -2147483648..2147483647 run scoreboard players set @s ff_ant_score 0
@@ -66,6 +77,7 @@ effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true
 effect give @s minecraft:instant_health 100 0 true
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 function fossil_frights:tasks/final/plushies/restore
 function fossil_frights:leaderboards/sync_entry
 function fossil_frights:leaderboards/display/refresh
