@@ -1,3 +1,4 @@
+execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if entity @s[tag=ff_active] run function fossil_frights:messages/error/already_active
 execute if entity @s[tag=ff_active] run return 0
 execute if entity @s[gamemode=spectator] run function fossil_frights:messages/error/cannot_start_while_spectating

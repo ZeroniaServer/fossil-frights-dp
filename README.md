@@ -29,6 +29,12 @@ Show your personal museum stats:
 /trigger ff_cmd_stats set 1
 ```
 
+Watch the tutorial:
+```mcfunction
+/tutorial
+/trigger ff_cmd_tutorial set 1
+```
+
 Open the invite dialog to invite another online player:
 ```mcfunction
 /trigger ff_cmd_invite set 1

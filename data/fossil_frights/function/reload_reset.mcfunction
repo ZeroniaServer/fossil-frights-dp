@@ -14,6 +14,7 @@ function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a run function fossil_frights:parkour/reset_player
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
+execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
 tag @a[tag=ff_active] remove ff_active
@@ -30,6 +31,8 @@ scoreboard players set $join_pad_mode ff_game_state 1
 scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set @a ff_cmd_stats 0
 scoreboard players enable @a ff_cmd_stats
+scoreboard players set @a ff_cmd_tutorial 0
+scoreboard players enable @a ff_cmd_tutorial
 scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0

@@ -1,4 +1,5 @@
 scoreboard players set $queue_notify_lock ff_game_state 1
+execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 function fossil_frights:join/remove_player_from_queue

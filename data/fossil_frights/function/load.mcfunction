@@ -33,7 +33,11 @@ scoreboard objectives add ff_cmd_leave trigger
 scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
+scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_invite_sel trigger
+scoreboard objectives add ff_tutorial dummy
+scoreboard objectives add ff_tutorial_scene dummy
+scoreboard objectives add ff_tutorial_tick dummy
 scoreboard objectives add ff_gui dummy
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy

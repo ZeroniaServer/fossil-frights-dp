@@ -27,8 +27,12 @@ tag @s remove ff_active
 tag @s remove ff_forced_spectate
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
+tag @s remove ff_tutorial
 scoreboard players set @s ff_queue_order 0
 scoreboard players set @s ff_ant_fight 0
+scoreboard players set @s ff_tutorial 0
+scoreboard players set @s ff_tutorial_scene 0
+scoreboard players set @s ff_tutorial_tick 0
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
 scoreboard players set @s ff_queue_start 0
@@ -37,11 +41,13 @@ scoreboard players set @s ff_cmd_start 0
 scoreboard players set @s ff_cmd_leave 0
 scoreboard players set @s ff_cmd_spectate 0
 scoreboard players set @s ff_cmd_stats 0
+scoreboard players set @s ff_cmd_tutorial 0
 scoreboard players enable @s ff_queue_start
 scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave
 scoreboard players enable @s ff_cmd_spectate
 scoreboard players enable @s ff_cmd_stats
+scoreboard players enable @s ff_cmd_tutorial
 scoreboard players set @s ff_cmd_invite 0
 scoreboard players enable @s ff_cmd_invite
 scoreboard players set @s ff_invite_sel 0
