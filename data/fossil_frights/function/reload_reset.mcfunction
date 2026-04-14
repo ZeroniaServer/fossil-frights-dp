@@ -35,6 +35,8 @@ scoreboard players set @a ff_cmd_stats 0
 scoreboard players enable @a ff_cmd_stats
 scoreboard players set @a ff_cmd_tutorial 0
 scoreboard players enable @a ff_cmd_tutorial
+scoreboard players set @a ff_cmd_info 0
+scoreboard players enable @a ff_cmd_info
 scoreboard players set @a ff_cmd_invite 0
 scoreboard players enable @a ff_cmd_invite
 scoreboard players set @a ff_invite_sel 0

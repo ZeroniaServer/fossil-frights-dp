@@ -35,6 +35,7 @@ scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
+scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -168,8 +169,10 @@ team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
+advancement revoke @a only fossil_frights:info_lectern_click
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
+function fossil_frights:command/info/lectern_setup
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
 function fossil_frights:ant_fight/load
