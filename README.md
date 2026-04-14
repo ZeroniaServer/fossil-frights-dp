@@ -35,20 +35,19 @@ Watch the tutorial:
 /trigger ff_cmd_tutorial set 1
 ```
 
+Open the gameplay info dialog:
+```mcfunction
+/info
+/trigger ff_cmd_info set 1
+```
+
 Open the invite dialog to invite another online player:
 ```mcfunction
+/invite
 /trigger ff_cmd_invite set 1
 ```
 
-Accept a pending invite from chat:
-```mcfunction
-/trigger ff_invite_accept set <token>
-```
 
-Start the game when you are first in queue and receive the prompt:
-```mcfunction
-/trigger ff_queue_start set 1
-```
 
 # Op commands
 
@@ -78,6 +77,44 @@ Reset the Temple Run best-time display back to "No times yet":
 /function fossil_frights:temple_run/reset
 ```
 
+Reset the Ant Fight best-score display back to "No scores yet":
+```mcfunction
+/function fossil_frights:ant_fight/reset
+```
+
+Reset one online player's saved stats back to `0` / `--`:
+```mcfunction
+/resetstats <player>
+/execute as <player> run function fossil_frights:admin/reset_stats
+```
+
+Hard reset the main leaderboard, including offline scoreboard holders and every stored leaderboard entry:
+```mcfunction
+/resetleaderboard
+/function fossil_frights:admin/reset_leaderboard
+```
+
+Reset one online player's main leaderboard entry:
+```mcfunction
+/resetleaderboardentry <player>
+/execute as <player> run function fossil_frights:admin/reset_leaderboard_entry
+```
+
+Reset one player's saved stats by exact name, even if they are offline:
+```mcfunction
+/function fossil_frights:admin/reset_stats_name_macro {name:"PlayerName"}
+```
+
+Reset one player's main leaderboard entry by exact name, even if they are offline:
+```mcfunction
+/function fossil_frights:admin/reset_leaderboard_entry_name_macro {name:"PlayerName"}
+```
+
+Reset the visible main leaderboard entry currently in a slot, from `1` to `10`:
+```mcfunction
+/function fossil_frights:admin/reset_leaderboard_slot_macro {slot:1}
+```
+
 Set a player's saved stats manually:
 ```mcfunction
 /scoreboard players set <player> ff_top_time <value>
@@ -86,6 +123,8 @@ Set a player's saved stats manually:
 /scoreboard players set <player> ff_duo_best <value>
 /scoreboard players set <player> ff_parkour_best <value>
 /scoreboard players set <player> ff_temple_run_best <value>
+/scoreboard players set <player> ff_ant_score <value>
+/scoreboard players set <player> ff_ant_top_score <value>
 
 ```
 
