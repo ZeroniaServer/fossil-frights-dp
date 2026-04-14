@@ -1,1 +1,1 @@
-tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"You have been invited by ","color":"yellow"},{"selector":"@a[tag=ff_invite_caller,limit=1]","color":"yellow"},{"text":".","color":"yellow"}]
+$tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"You have been invited by ","color":"yellow"},{"selector":"@a[tag=ff_invite_caller,limit=1]","color":"yellow"},{"text":". ","color":"yellow"},{"text":"[Click here to accept]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_invite_accept set $(token)"}}]

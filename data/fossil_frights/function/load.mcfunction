@@ -21,6 +21,7 @@ scoreboard objectives add ff_active_uuid_0 dummy
 scoreboard objectives add ff_active_uuid_1 dummy
 scoreboard objectives add ff_active_uuid_2 dummy
 scoreboard objectives add ff_active_uuid_3 dummy
+scoreboard objectives add ff_run_order dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_deaths deathCount
@@ -35,6 +36,7 @@ scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_invite_sel trigger
+scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
 scoreboard objectives add ff_tutorial_scene dummy
 scoreboard objectives add ff_tutorial_tick dummy
@@ -54,6 +56,7 @@ scoreboard objectives add ff_task_tracker dummy
 scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
+scoreboard objectives add ff_duo_best dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_fade_tp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
@@ -104,6 +107,13 @@ scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $run_multiplayer ff_game_state 0
+scoreboard players set $run_roster_count ff_game_state 0
+scoreboard players set $active_online ff_game_state 0
+scoreboard players set $login_is_run_member ff_game_state 0
+scoreboard players set $login_was_multiplayer ff_game_state 0
+scoreboard players set $invite_pending ff_game_state 0
+scoreboard players set $invite_token ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
@@ -117,6 +127,17 @@ scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set $stats_top_time ff_lb_calc 0
+scoreboard players set $stats_duo_best ff_lb_calc 0
+scoreboard players set $stats_duo_minutes ff_lb_calc 0
+scoreboard players set $stats_duo_seconds_total ff_lb_calc 0
+scoreboard players set $stats_duo_seconds ff_lb_calc 0
+scoreboard players set $stats_duo_centis ff_lb_calc 0
+scoreboard players set $stats_duo_min_tens ff_lb_calc 0
+scoreboard players set $stats_duo_min_ones ff_lb_calc 0
+scoreboard players set $stats_duo_sec_tens ff_lb_calc 0
+scoreboard players set $stats_duo_sec_ones ff_lb_calc 0
+scoreboard players set $stats_duo_centi_tens ff_lb_calc 0
+scoreboard players set $stats_duo_centi_ones ff_lb_calc 0
 scoreboard players set $stats_minutes ff_lb_calc 0
 scoreboard players set $stats_seconds_total ff_lb_calc 0
 scoreboard players set $stats_seconds ff_lb_calc 0

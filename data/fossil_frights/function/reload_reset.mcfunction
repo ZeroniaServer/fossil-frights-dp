@@ -20,6 +20,7 @@ function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+function fossil_frights:game/roster/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -34,6 +35,12 @@ scoreboard players set @a ff_cmd_stats 0
 scoreboard players enable @a ff_cmd_stats
 scoreboard players set @a ff_cmd_tutorial 0
 scoreboard players enable @a ff_cmd_tutorial
+scoreboard players set @a ff_cmd_invite 0
+scoreboard players enable @a ff_cmd_invite
+scoreboard players set @a ff_invite_sel 0
+scoreboard players enable @a ff_invite_sel
+scoreboard players set @a ff_invite_accept 0
+scoreboard players enable @a ff_invite_accept
 scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0

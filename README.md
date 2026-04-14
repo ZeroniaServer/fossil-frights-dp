@@ -40,6 +40,11 @@ Open the invite dialog to invite another online player:
 /trigger ff_cmd_invite set 1
 ```
 
+Accept a pending invite from chat:
+```mcfunction
+/trigger ff_invite_accept set <token>
+```
+
 Start the game when you are first in queue and receive the prompt:
 ```mcfunction
 /trigger ff_queue_start set 1
@@ -78,6 +83,7 @@ Set a player's saved stats manually:
 /scoreboard players set <player> ff_top_time <value>
 /scoreboard players set <player> ff_top_day <value>
 /scoreboard players set <player> ff_run_count <value>
+/scoreboard players set <player> ff_duo_best <value>
 /scoreboard players set <player> ff_parkour_best <value>
 /scoreboard players set <player> ff_temple_run_best <value>
 

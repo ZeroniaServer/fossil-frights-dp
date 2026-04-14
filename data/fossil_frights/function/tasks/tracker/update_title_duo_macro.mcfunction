@@ -1,0 +1,1 @@
+$scoreboard objectives modify ff_task_tracker displayname [{"player":"$(name1)","hat":true},{"text":" + ","color":"yellow","italic":false},{"player":"$(name2)","hat":true},{"text":" Tasks","color":"yellow","italic":false}]

@@ -13,12 +13,16 @@ scoreboard players enable @s ff_cmd_spectate
 scoreboard players enable @s ff_cmd_stats
 scoreboard players enable @s ff_cmd_invite
 scoreboard players enable @s ff_cmd_tutorial
+scoreboard players enable @s ff_invite_accept
 execute if score @s ff_cmd_invite matches 1.. run function fossil_frights:command/invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players enable @s ff_cmd_invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players set @s ff_cmd_invite 0
 execute if score @s ff_invite_sel matches 1.. run function fossil_frights:game/settings/multiplayer/gui/select
 execute if score @s ff_invite_sel matches 1.. run scoreboard players enable @s ff_invite_sel
 execute if score @s ff_invite_sel matches 1.. run scoreboard players set @s ff_invite_sel 0
+execute if score @s ff_invite_accept matches 1.. run function fossil_frights:multiplayer/accept_invite
+execute if score @s ff_invite_accept matches 1.. run scoreboard players enable @s ff_invite_accept
+execute if score @s ff_invite_accept matches 1.. run scoreboard players set @s ff_invite_accept 0
 execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/handle_start_click
 execute if score @s ff_cmd_start matches 1.. run function fossil_frights:command/start
 execute if score @s ff_cmd_start matches 1.. run scoreboard players enable @s ff_cmd_start

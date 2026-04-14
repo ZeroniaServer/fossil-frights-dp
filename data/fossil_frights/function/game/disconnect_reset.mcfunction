@@ -11,10 +11,11 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
-execute as @a[gamemode=spectator] run function fossil_frights:join/spectator_lobby_exit
+execute as @a[gamemode=spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+function fossil_frights:game/roster/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
