@@ -15,6 +15,11 @@ scoreboard players reset $tt_lock_register ff_task_tracker
 scoreboard players reset $tt_static_buildup ff_task_tracker
 scoreboard players reset $tt_reset_salt_level ff_task_tracker
 scoreboard players reset $tt_reset_fountain ff_task_tracker
+scoreboard players reset $tt_visit_jurassic ff_task_tracker
+scoreboard players reset $tt_visit_neogene ff_task_tracker
+scoreboard players reset $tt_visit_silurian ff_task_tracker
+scoreboard players reset $tt_visit_archean ff_task_tracker
+scoreboard players reset $tt_dive_into_well ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
@@ -76,6 +81,21 @@ execute if score $reset_salt_level_done ff_task_state matches 1 run scoreboard p
 execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players operation $tt_reset_fountain ff_task_tracker = #line_reset_fountain ff_task_state
 execute if score $reset_fountain_sel ff_task_state matches 1 unless score $reset_fountain_done ff_task_state matches 1 run scoreboard players display name $tt_reset_fountain ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Fountain","italic":false}]
 execute if score $reset_fountain_done ff_task_state matches 1 run scoreboard players display name $tt_reset_fountain ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Fountain","color":"gray","italic":false,"strikethrough":true}]
+execute if score $visit_jurassic_sel ff_task_state matches 1 run scoreboard players operation $tt_visit_jurassic ff_task_tracker = #line_visit_jurassic ff_task_state
+execute if score $visit_jurassic_sel ff_task_state matches 1 unless score $visit_jurassic_done ff_task_state matches 1 run scoreboard players display name $tt_visit_jurassic ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Jurassic","italic":false}]
+execute if score $visit_jurassic_done ff_task_state matches 1 run scoreboard players display name $tt_visit_jurassic ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Jurassic","color":"gray","italic":false,"strikethrough":true}]
+execute if score $visit_neogene_sel ff_task_state matches 1 run scoreboard players operation $tt_visit_neogene ff_task_tracker = #line_visit_neogene ff_task_state
+execute if score $visit_neogene_sel ff_task_state matches 1 unless score $visit_neogene_done ff_task_state matches 1 run scoreboard players display name $tt_visit_neogene ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Neogene","italic":false}]
+execute if score $visit_neogene_done ff_task_state matches 1 run scoreboard players display name $tt_visit_neogene ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Neogene","color":"gray","italic":false,"strikethrough":true}]
+execute if score $visit_silurian_sel ff_task_state matches 1 run scoreboard players operation $tt_visit_silurian ff_task_tracker = #line_visit_silurian ff_task_state
+execute if score $visit_silurian_sel ff_task_state matches 1 unless score $visit_silurian_done ff_task_state matches 1 run scoreboard players display name $tt_visit_silurian ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Silurian","italic":false}]
+execute if score $visit_silurian_done ff_task_state matches 1 run scoreboard players display name $tt_visit_silurian ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Silurian","color":"gray","italic":false,"strikethrough":true}]
+execute if score $visit_archean_sel ff_task_state matches 1 run scoreboard players operation $tt_visit_archean ff_task_tracker = #line_visit_archean ff_task_state
+execute if score $visit_archean_sel ff_task_state matches 1 unless score $visit_archean_done ff_task_state matches 1 run scoreboard players display name $tt_visit_archean ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Archean","italic":false}]
+execute if score $visit_archean_done ff_task_state matches 1 run scoreboard players display name $tt_visit_archean ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Visit Archean","color":"gray","italic":false,"strikethrough":true}]
+execute if score $dive_into_well_sel ff_task_state matches 1 run scoreboard players operation $tt_dive_into_well ff_task_tracker = #line_dive_into_well ff_task_state
+execute if score $dive_into_well_sel ff_task_state matches 1 unless score $dive_into_well_done ff_task_state matches 1 run scoreboard players display name $tt_dive_into_well ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dive into Well","italic":false}]
+execute if score $dive_into_well_done ff_task_state matches 1 run scoreboard players display name $tt_dive_into_well ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dive into Well","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $medium_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_1 ff_task_tracker = #line_medium_task_1 ff_task_state
 execute if score $medium_task_1_sel ff_task_state matches 1 unless score $medium_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 1","italic":false}]

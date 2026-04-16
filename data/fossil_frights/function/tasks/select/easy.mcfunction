@@ -13,6 +13,11 @@ execute unless score $lock_register_sel ff_task_state matches 1 run scoreboard p
 execute unless score $static_buildup_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $reset_salt_level_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $visit_jurassic_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $visit_neogene_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $visit_silurian_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -28,6 +33,11 @@ execute if score #task_remaining ff_task_state matches 10 store result score #ta
 execute if score #task_remaining ff_task_state matches 11 store result score #task_pick ff_task_state run random value 1..11
 execute if score #task_remaining ff_task_state matches 12 store result score #task_pick ff_task_state run random value 1..12
 execute if score #task_remaining ff_task_state matches 13 store result score #task_pick ff_task_state run random value 1..13
+execute if score #task_remaining ff_task_state matches 14 store result score #task_pick ff_task_state run random value 1..14
+execute if score #task_remaining ff_task_state matches 15 store result score #task_pick ff_task_state run random value 1..15
+execute if score #task_remaining ff_task_state matches 16 store result score #task_pick ff_task_state run random value 1..16
+execute if score #task_remaining ff_task_state matches 17 store result score #task_pick ff_task_state run random value 1..17
+execute if score #task_remaining ff_task_state matches 18 store result score #task_pick ff_task_state run random value 1..18
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -71,3 +81,18 @@ execute unless score $reset_salt_level_sel ff_task_state matches 1 if score #tas
 execute unless score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $reset_fountain_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/reset_fountain/selected
 execute unless score $reset_fountain_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $visit_jurassic_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $visit_jurassic_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/visit_jurassic/selected
+execute unless score $visit_jurassic_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $visit_neogene_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $visit_neogene_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/visit_neogene/selected
+execute unless score $visit_neogene_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $visit_silurian_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $visit_silurian_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/visit_silurian/selected
+execute unless score $visit_silurian_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $visit_archean_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/visit_archean/selected
+execute unless score $visit_archean_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $dive_into_well_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/dive_into_well/selected
+execute unless score $dive_into_well_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
