@@ -40,6 +40,8 @@ scoreboard players set $visit_archean_sel ff_task_state 0
 scoreboard players set $visit_archean_done ff_task_state 0
 scoreboard players set $dive_into_well_sel ff_task_state 0
 scoreboard players set $dive_into_well_done ff_task_state 0
+scoreboard players set $swat_flies_sel ff_task_state 0
+scoreboard players set $swat_flies_done ff_task_state 0
 
 scoreboard players set $medium_task_1_sel ff_task_state 0
 scoreboard players set $medium_task_1_done ff_task_state 0
@@ -104,6 +106,7 @@ scoreboard players reset $tt_visit_neogene ff_task_tracker
 scoreboard players reset $tt_visit_silurian ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_well ff_task_tracker
+scoreboard players reset $tt_swat_flies ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
@@ -144,6 +147,7 @@ function fossil_frights:tasks/easy/visit_neogene/reset
 function fossil_frights:tasks/easy/visit_silurian/reset
 function fossil_frights:tasks/easy/visit_archean/reset
 function fossil_frights:tasks/easy/dive_into_well/reset
+function fossil_frights:tasks/easy/swat_flies/reset
 function fossil_frights:tasks/medium/medium_task_1/reset
 function fossil_frights:tasks/medium/medium_task_2/reset
 function fossil_frights:tasks/medium/medium_task_3/reset

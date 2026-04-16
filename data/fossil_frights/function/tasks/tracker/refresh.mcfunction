@@ -20,6 +20,7 @@ scoreboard players reset $tt_visit_neogene ff_task_tracker
 scoreboard players reset $tt_visit_silurian ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_well ff_task_tracker
+scoreboard players reset $tt_swat_flies ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
@@ -96,6 +97,9 @@ execute if score $visit_archean_done ff_task_state matches 1 run scoreboard play
 execute if score $dive_into_well_sel ff_task_state matches 1 run scoreboard players operation $tt_dive_into_well ff_task_tracker = #line_dive_into_well ff_task_state
 execute if score $dive_into_well_sel ff_task_state matches 1 unless score $dive_into_well_done ff_task_state matches 1 run scoreboard players display name $tt_dive_into_well ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dive into Well","italic":false}]
 execute if score $dive_into_well_done ff_task_state matches 1 run scoreboard players display name $tt_dive_into_well ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dive into Well","color":"gray","italic":false,"strikethrough":true}]
+execute if score $swat_flies_sel ff_task_state matches 1 run scoreboard players operation $tt_swat_flies ff_task_tracker = #line_swat_flies ff_task_state
+execute if score $swat_flies_sel ff_task_state matches 1 unless score $swat_flies_done ff_task_state matches 1 run scoreboard players display name $tt_swat_flies ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Swat Flies","italic":false}]
+execute if score $swat_flies_done ff_task_state matches 1 run scoreboard players display name $tt_swat_flies ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Swat Flies","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $medium_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_1 ff_task_tracker = #line_medium_task_1 ff_task_state
 execute if score $medium_task_1_sel ff_task_state matches 1 unless score $medium_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 1","italic":false}]

@@ -5,7 +5,7 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 18
+scoreboard players set #easy_pool_count ff_task_state 19
 scoreboard players set #medium_pool_count ff_task_state 10
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
@@ -83,6 +83,10 @@ scoreboard players set $dive_into_well_avail ff_task_state 1
 scoreboard players set $dive_into_well_sel ff_task_state 0
 scoreboard players set $dive_into_well_done ff_task_state 0
 scoreboard players set #line_dive_into_well ff_task_state 22
+scoreboard players set $swat_flies_avail ff_task_state 1
+scoreboard players set $swat_flies_sel ff_task_state 0
+scoreboard players set $swat_flies_done ff_task_state 0
+scoreboard players set #line_swat_flies ff_task_state 40
 
 scoreboard players set $medium_task_1_avail ff_task_state 1
 scoreboard players set $medium_task_1_sel ff_task_state 0

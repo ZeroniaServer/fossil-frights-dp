@@ -170,6 +170,7 @@ team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
 advancement revoke @a only fossil_frights:info_lectern_click
+advancement revoke @a only fossil_frights:swat_flies_click
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
 function fossil_frights:command/info/lectern_setup
