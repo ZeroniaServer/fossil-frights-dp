@@ -173,6 +173,7 @@ advancement revoke @a only fossil_frights:info_lectern_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:fix_cracked_egg_click
 advancement revoke @a only fossil_frights:sweep_popcorn_click
+advancement revoke @a only fossil_frights:dig_sand_click
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
 function fossil_frights:command/info/lectern_setup
