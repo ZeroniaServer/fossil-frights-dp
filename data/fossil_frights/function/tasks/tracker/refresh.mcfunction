@@ -6,10 +6,10 @@ scoreboard players reset $tt_check_security ff_task_tracker
 scoreboard players reset $tt_fire_pottery ff_task_tracker
 scoreboard players reset $tt_check_ankylo ff_task_tracker
 scoreboard players reset $tt_climb_the_tower ff_task_tracker
-scoreboard players reset $tt_easy_task_4 ff_task_tracker
-scoreboard players reset $tt_easy_task_5 ff_task_tracker
-scoreboard players reset $tt_easy_task_6 ff_task_tracker
-scoreboard players reset $tt_easy_task_7 ff_task_tracker
+scoreboard players reset $tt_count_shells ff_task_tracker
+scoreboard players reset $tt_count_toes ff_task_tracker
+scoreboard players reset $tt_bathroom_leak ff_task_tracker
+scoreboard players reset $tt_toilet_clog ff_task_tracker
 scoreboard players reset $tt_easy_task_8 ff_task_tracker
 scoreboard players reset $tt_easy_task_9 ff_task_tracker
 scoreboard players reset $tt_easy_task_10 ff_task_tracker
@@ -47,18 +47,18 @@ execute if score $check_ankylo_done ff_task_state matches 1 run scoreboard playe
 execute if score $climb_the_tower_sel ff_task_state matches 1 run scoreboard players operation $tt_climb_the_tower ff_task_tracker = #line_climb_the_tower ff_task_state
 execute if score $climb_the_tower_sel ff_task_state matches 1 unless score $climb_the_tower_done ff_task_state matches 1 run scoreboard players display name $tt_climb_the_tower ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Climb the Tower","italic":false}]
 execute if score $climb_the_tower_done ff_task_state matches 1 run scoreboard players display name $tt_climb_the_tower ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Climb the Tower","color":"gray","italic":false,"strikethrough":true}]
-execute if score $easy_task_4_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_4 ff_task_tracker = #line_easy_task_4 ff_task_state
-execute if score $easy_task_4_sel ff_task_state matches 1 unless score $easy_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 4","italic":false}]
-execute if score $easy_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 4","color":"gray","italic":false,"strikethrough":true}]
-execute if score $easy_task_5_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_5 ff_task_tracker = #line_easy_task_5 ff_task_state
-execute if score $easy_task_5_sel ff_task_state matches 1 unless score $easy_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 5","italic":false}]
-execute if score $easy_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 5","color":"gray","italic":false,"strikethrough":true}]
-execute if score $easy_task_6_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_6 ff_task_tracker = #line_easy_task_6 ff_task_state
-execute if score $easy_task_6_sel ff_task_state matches 1 unless score $easy_task_6_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_6 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 6","italic":false}]
-execute if score $easy_task_6_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_6 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 6","color":"gray","italic":false,"strikethrough":true}]
-execute if score $easy_task_7_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_7 ff_task_tracker = #line_easy_task_7 ff_task_state
-execute if score $easy_task_7_sel ff_task_state matches 1 unless score $easy_task_7_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_7 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 7","italic":false}]
-execute if score $easy_task_7_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_7 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 7","color":"gray","italic":false,"strikethrough":true}]
+execute if score $count_shells_sel ff_task_state matches 1 run scoreboard players operation $tt_count_shells ff_task_tracker = #line_count_shells ff_task_state
+execute if score $count_shells_sel ff_task_state matches 1 unless score $count_shells_done ff_task_state matches 1 run scoreboard players display name $tt_count_shells ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Count Shells","italic":false}]
+execute if score $count_shells_done ff_task_state matches 1 run scoreboard players display name $tt_count_shells ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Count Shells","color":"gray","italic":false,"strikethrough":true}]
+execute if score $count_toes_sel ff_task_state matches 1 run scoreboard players operation $tt_count_toes ff_task_tracker = #line_count_toes ff_task_state
+execute if score $count_toes_sel ff_task_state matches 1 unless score $count_toes_done ff_task_state matches 1 run scoreboard players display name $tt_count_toes ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Count Toes","italic":false}]
+execute if score $count_toes_done ff_task_state matches 1 run scoreboard players display name $tt_count_toes ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Count Toes","color":"gray","italic":false,"strikethrough":true}]
+execute if score $bathroom_leak_sel ff_task_state matches 1 run scoreboard players operation $tt_bathroom_leak ff_task_tracker = #line_bathroom_leak ff_task_state
+execute if score $bathroom_leak_sel ff_task_state matches 1 unless score $bathroom_leak_done ff_task_state matches 1 run scoreboard players display name $tt_bathroom_leak ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Bathroom Leak","italic":false}]
+execute if score $bathroom_leak_done ff_task_state matches 1 run scoreboard players display name $tt_bathroom_leak ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Bathroom Leak","color":"gray","italic":false,"strikethrough":true}]
+execute if score $toilet_clog_sel ff_task_state matches 1 run scoreboard players operation $tt_toilet_clog ff_task_tracker = #line_toilet_clog ff_task_state
+execute if score $toilet_clog_sel ff_task_state matches 1 unless score $toilet_clog_done ff_task_state matches 1 run scoreboard players display name $tt_toilet_clog ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Toilet Clog","italic":false}]
+execute if score $toilet_clog_done ff_task_state matches 1 run scoreboard players display name $tt_toilet_clog ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Toilet Clog","color":"gray","italic":false,"strikethrough":true}]
 execute if score $easy_task_8_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_8 ff_task_tracker = #line_easy_task_8 ff_task_state
 execute if score $easy_task_8_sel ff_task_state matches 1 unless score $easy_task_8_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_8 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 8","italic":false}]
 execute if score $easy_task_8_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_8 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 8","color":"gray","italic":false,"strikethrough":true}]
