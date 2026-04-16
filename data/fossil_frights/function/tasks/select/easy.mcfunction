@@ -8,8 +8,8 @@ execute unless score $count_shells_sel ff_task_state matches 1 run scoreboard pl
 execute unless score $count_toes_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $bathroom_leak_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $toilet_clog_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $easy_task_8_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $easy_task_9_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $polish_bell_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $lock_register_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $easy_task_10_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
@@ -52,12 +52,12 @@ execute unless score $bathroom_leak_sel ff_task_state matches 1 if score #task_d
 execute unless score $toilet_clog_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $toilet_clog_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/toilet_clog/selected
 execute unless score $toilet_clog_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $easy_task_8_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $easy_task_8_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/easy_task_8/selected
-execute unless score $easy_task_8_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $easy_task_9_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $easy_task_9_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/easy_task_9/selected
-execute unless score $easy_task_9_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $polish_bell_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $polish_bell_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/polish_bell/selected
+execute unless score $polish_bell_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $lock_register_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $lock_register_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/lock_register/selected
+execute unless score $lock_register_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $easy_task_10_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $easy_task_10_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/easy_task_10/selected
 execute unless score $easy_task_10_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

@@ -20,10 +20,10 @@ scoreboard players set $bathroom_leak_sel ff_task_state 0
 scoreboard players set $bathroom_leak_done ff_task_state 0
 scoreboard players set $toilet_clog_sel ff_task_state 0
 scoreboard players set $toilet_clog_done ff_task_state 0
-scoreboard players set $easy_task_8_sel ff_task_state 0
-scoreboard players set $easy_task_8_done ff_task_state 0
-scoreboard players set $easy_task_9_sel ff_task_state 0
-scoreboard players set $easy_task_9_done ff_task_state 0
+scoreboard players set $polish_bell_sel ff_task_state 0
+scoreboard players set $polish_bell_done ff_task_state 0
+scoreboard players set $lock_register_sel ff_task_state 0
+scoreboard players set $lock_register_done ff_task_state 0
 scoreboard players set $easy_task_10_sel ff_task_state 0
 scoreboard players set $easy_task_10_done ff_task_state 0
 
@@ -80,8 +80,8 @@ scoreboard players reset $tt_count_shells ff_task_tracker
 scoreboard players reset $tt_count_toes ff_task_tracker
 scoreboard players reset $tt_bathroom_leak ff_task_tracker
 scoreboard players reset $tt_toilet_clog ff_task_tracker
-scoreboard players reset $tt_easy_task_8 ff_task_tracker
-scoreboard players reset $tt_easy_task_9 ff_task_tracker
+scoreboard players reset $tt_polish_bell ff_task_tracker
+scoreboard players reset $tt_lock_register ff_task_tracker
 scoreboard players reset $tt_easy_task_10 ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
@@ -113,8 +113,8 @@ function fossil_frights:tasks/easy/count_shells/reset
 function fossil_frights:tasks/easy/count_toes/reset
 function fossil_frights:tasks/easy/bathroom_leak/reset
 function fossil_frights:tasks/easy/toilet_clog/reset
-function fossil_frights:tasks/easy/easy_task_8/reset
-function fossil_frights:tasks/easy/easy_task_9/reset
+function fossil_frights:tasks/easy/polish_bell/reset
+function fossil_frights:tasks/easy/lock_register/reset
 function fossil_frights:tasks/easy/easy_task_10/reset
 function fossil_frights:tasks/medium/medium_task_1/reset
 function fossil_frights:tasks/medium/medium_task_2/reset
