@@ -5,7 +5,7 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 20
+scoreboard players set #easy_pool_count ff_task_state 22
 scoreboard players set #medium_pool_count ff_task_state 10
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
@@ -91,6 +91,14 @@ scoreboard players set $water_temp_avail ff_task_state 1
 scoreboard players set $water_temp_sel ff_task_state 0
 scoreboard players set $water_temp_done ff_task_state 0
 scoreboard players set #line_water_temp ff_task_state 41
+scoreboard players set $fix_cracked_egg_avail ff_task_state 1
+scoreboard players set $fix_cracked_egg_sel ff_task_state 0
+scoreboard players set $fix_cracked_egg_done ff_task_state 0
+scoreboard players set #line_fix_cracked_egg ff_task_state 42
+scoreboard players set $tnt_test_avail ff_task_state 1
+scoreboard players set $tnt_test_sel ff_task_state 0
+scoreboard players set $tnt_test_done ff_task_state 0
+scoreboard players set #line_tnt_test ff_task_state 43
 
 scoreboard players set $medium_task_1_avail ff_task_state 1
 scoreboard players set $medium_task_1_sel ff_task_state 0

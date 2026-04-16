@@ -1,0 +1,11 @@
+execute unless score $fix_cracked_egg_sel ff_task_state matches 1 run return 0
+execute unless score $fix_cracked_egg_done ff_task_state matches 0 run return 0
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Fix Cracked Egg"
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 positioned 18.5 95.6 58.5 run playsound minecraft:block.amethyst_block.chime master @a[tag=ff_active,distance=..12] ~ ~ ~ 0.7 1.4
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run function fossil_frights:tasks/easy/fix_cracked_egg/display
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 if entity @s[type=minecraft:player] run clear @s minecraft:written_book[minecraft:custom_data~{ff_task_book:"fix_cracked_egg"}] 1
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players set $fix_cracked_egg_done ff_task_state 1
+function fossil_frights:tasks/tracker/refresh
+function fossil_frights:tasks/check_day_complete

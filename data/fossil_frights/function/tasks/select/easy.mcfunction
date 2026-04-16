@@ -20,6 +20,8 @@ execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard p
 execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $swat_flies_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $tnt_test_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -42,6 +44,8 @@ execute if score #task_remaining ff_task_state matches 17 store result score #ta
 execute if score #task_remaining ff_task_state matches 18 store result score #task_pick ff_task_state run random value 1..18
 execute if score #task_remaining ff_task_state matches 19 store result score #task_pick ff_task_state run random value 1..19
 execute if score #task_remaining ff_task_state matches 20 store result score #task_pick ff_task_state run random value 1..20
+execute if score #task_remaining ff_task_state matches 21 store result score #task_pick ff_task_state run random value 1..21
+execute if score #task_remaining ff_task_state matches 22 store result score #task_pick ff_task_state run random value 1..22
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -106,3 +110,9 @@ execute unless score $swat_flies_sel ff_task_state matches 1 if score #task_done
 execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/water_temp/selected
 execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $fix_cracked_egg_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/fix_cracked_egg/selected
+execute unless score $fix_cracked_egg_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $tnt_test_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $tnt_test_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/tnt_test/selected
+execute unless score $tnt_test_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

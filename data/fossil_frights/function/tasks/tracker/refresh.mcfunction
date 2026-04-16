@@ -22,6 +22,8 @@ scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_well ff_task_tracker
 scoreboard players reset $tt_swat_flies ff_task_tracker
 scoreboard players reset $tt_water_temp ff_task_tracker
+scoreboard players reset $tt_fix_cracked_egg ff_task_tracker
+scoreboard players reset $tt_tnt_test ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
@@ -104,6 +106,12 @@ execute if score $swat_flies_done ff_task_state matches 1 run scoreboard players
 execute if score $water_temp_sel ff_task_state matches 1 run scoreboard players operation $tt_water_temp ff_task_tracker = #line_water_temp ff_task_state
 execute if score $water_temp_sel ff_task_state matches 1 unless score $water_temp_done ff_task_state matches 1 run scoreboard players display name $tt_water_temp ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Water Temp","italic":false}]
 execute if score $water_temp_done ff_task_state matches 1 run scoreboard players display name $tt_water_temp ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Water Temp","color":"gray","italic":false,"strikethrough":true}]
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players operation $tt_fix_cracked_egg ff_task_tracker = #line_fix_cracked_egg ff_task_state
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 unless score $fix_cracked_egg_done ff_task_state matches 1 run scoreboard players display name $tt_fix_cracked_egg ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Fix Cracked Egg","italic":false}]
+execute if score $fix_cracked_egg_done ff_task_state matches 1 run scoreboard players display name $tt_fix_cracked_egg ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Fix Cracked Egg","color":"gray","italic":false,"strikethrough":true}]
+execute if score $tnt_test_sel ff_task_state matches 1 run scoreboard players operation $tt_tnt_test ff_task_tracker = #line_tnt_test ff_task_state
+execute if score $tnt_test_sel ff_task_state matches 1 unless score $tnt_test_done ff_task_state matches 1 run scoreboard players display name $tt_tnt_test ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" TNT Test","italic":false}]
+execute if score $tnt_test_done ff_task_state matches 1 run scoreboard players display name $tt_tnt_test ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" TNT Test","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $medium_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_1 ff_task_tracker = #line_medium_task_1 ff_task_state
 execute if score $medium_task_1_sel ff_task_state matches 1 unless score $medium_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 1","italic":false}]

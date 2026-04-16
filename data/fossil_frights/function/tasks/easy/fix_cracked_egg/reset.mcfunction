@@ -1,0 +1,1 @@
+function fossil_frights:tasks/easy/fix_cracked_egg/display
