@@ -6,12 +6,12 @@ scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set $check_security_sel ff_task_state 0
 scoreboard players set $check_security_done ff_task_state 0
-scoreboard players set $easy_task_1_sel ff_task_state 0
-scoreboard players set $easy_task_1_done ff_task_state 0
-scoreboard players set $easy_task_2_sel ff_task_state 0
-scoreboard players set $easy_task_2_done ff_task_state 0
-scoreboard players set $easy_task_3_sel ff_task_state 0
-scoreboard players set $easy_task_3_done ff_task_state 0
+scoreboard players set $fire_pottery_sel ff_task_state 0
+scoreboard players set $fire_pottery_done ff_task_state 0
+scoreboard players set $check_ankylo_sel ff_task_state 0
+scoreboard players set $check_ankylo_done ff_task_state 0
+scoreboard players set $climb_the_tower_sel ff_task_state 0
+scoreboard players set $climb_the_tower_done ff_task_state 0
 scoreboard players set $easy_task_4_sel ff_task_state 0
 scoreboard players set $easy_task_4_done ff_task_state 0
 scoreboard players set $easy_task_5_sel ff_task_state 0
@@ -73,9 +73,9 @@ scoreboard players set $final_task_sel ff_task_state 0
 scoreboard players set $final_task_done ff_task_state 0
 
 scoreboard players reset $tt_check_security ff_task_tracker
-scoreboard players reset $tt_easy_task_1 ff_task_tracker
-scoreboard players reset $tt_easy_task_2 ff_task_tracker
-scoreboard players reset $tt_easy_task_3 ff_task_tracker
+scoreboard players reset $tt_fire_pottery ff_task_tracker
+scoreboard players reset $tt_check_ankylo ff_task_tracker
+scoreboard players reset $tt_climb_the_tower ff_task_tracker
 scoreboard players reset $tt_easy_task_4 ff_task_tracker
 scoreboard players reset $tt_easy_task_5 ff_task_tracker
 scoreboard players reset $tt_easy_task_6 ff_task_tracker
@@ -106,9 +106,9 @@ scoreboard players reset $tt_hard_task_10 ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
 function fossil_frights:tasks/easy/check_security/reset
-function fossil_frights:tasks/easy/easy_task_1/reset
-function fossil_frights:tasks/easy/easy_task_2/reset
-function fossil_frights:tasks/easy/easy_task_3/reset
+function fossil_frights:tasks/easy/fire_pottery/reset
+function fossil_frights:tasks/easy/check_ankylo/reset
+function fossil_frights:tasks/easy/climb_the_tower/reset
 function fossil_frights:tasks/easy/easy_task_4/reset
 function fossil_frights:tasks/easy/easy_task_5/reset
 function fossil_frights:tasks/easy/easy_task_6/reset
