@@ -70,6 +70,7 @@ advancement revoke @s only fossil_frights:multiplayer_click
 advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:swat_flies_click
 advancement revoke @s only fossil_frights:fix_cracked_egg_click
+advancement revoke @s only fossil_frights:sweep_popcorn_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16

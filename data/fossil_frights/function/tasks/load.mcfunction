@@ -5,7 +5,7 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 22
+scoreboard players set #easy_pool_count ff_task_state 23
 scoreboard players set #medium_pool_count ff_task_state 10
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
@@ -99,6 +99,10 @@ scoreboard players set $tnt_test_avail ff_task_state 1
 scoreboard players set $tnt_test_sel ff_task_state 0
 scoreboard players set $tnt_test_done ff_task_state 0
 scoreboard players set #line_tnt_test ff_task_state 43
+scoreboard players set $sweep_popcorn_avail ff_task_state 1
+scoreboard players set $sweep_popcorn_sel ff_task_state 0
+scoreboard players set $sweep_popcorn_done ff_task_state 0
+scoreboard players set #line_sweep_popcorn ff_task_state 44
 
 scoreboard players set $medium_task_1_avail ff_task_state 1
 scoreboard players set $medium_task_1_sel ff_task_state 0
