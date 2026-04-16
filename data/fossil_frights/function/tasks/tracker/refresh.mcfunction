@@ -12,7 +12,9 @@ scoreboard players reset $tt_bathroom_leak ff_task_tracker
 scoreboard players reset $tt_toilet_clog ff_task_tracker
 scoreboard players reset $tt_polish_bell ff_task_tracker
 scoreboard players reset $tt_lock_register ff_task_tracker
-scoreboard players reset $tt_easy_task_10 ff_task_tracker
+scoreboard players reset $tt_static_buildup ff_task_tracker
+scoreboard players reset $tt_reset_salt_level ff_task_tracker
+scoreboard players reset $tt_reset_fountain ff_task_tracker
 scoreboard players reset $tt_medium_task_1 ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
@@ -65,9 +67,15 @@ execute if score $polish_bell_done ff_task_state matches 1 run scoreboard player
 execute if score $lock_register_sel ff_task_state matches 1 run scoreboard players operation $tt_lock_register ff_task_tracker = #line_lock_register ff_task_state
 execute if score $lock_register_sel ff_task_state matches 1 unless score $lock_register_done ff_task_state matches 1 run scoreboard players display name $tt_lock_register ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Lock Register","italic":false}]
 execute if score $lock_register_done ff_task_state matches 1 run scoreboard players display name $tt_lock_register ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Lock Register","color":"gray","italic":false,"strikethrough":true}]
-execute if score $easy_task_10_sel ff_task_state matches 1 run scoreboard players operation $tt_easy_task_10 ff_task_tracker = #line_easy_task_10 ff_task_state
-execute if score $easy_task_10_sel ff_task_state matches 1 unless score $easy_task_10_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_10 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 10","italic":false}]
-execute if score $easy_task_10_done ff_task_state matches 1 run scoreboard players display name $tt_easy_task_10 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Easy Task 10","color":"gray","italic":false,"strikethrough":true}]
+execute if score $static_buildup_sel ff_task_state matches 1 run scoreboard players operation $tt_static_buildup ff_task_tracker = #line_static_buildup ff_task_state
+execute if score $static_buildup_sel ff_task_state matches 1 unless score $static_buildup_done ff_task_state matches 1 run scoreboard players display name $tt_static_buildup ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Static Buildup","italic":false}]
+execute if score $static_buildup_done ff_task_state matches 1 run scoreboard players display name $tt_static_buildup ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Static Buildup","color":"gray","italic":false,"strikethrough":true}]
+execute if score $reset_salt_level_sel ff_task_state matches 1 run scoreboard players operation $tt_reset_salt_level ff_task_tracker = #line_reset_salt_level ff_task_state
+execute if score $reset_salt_level_sel ff_task_state matches 1 unless score $reset_salt_level_done ff_task_state matches 1 run scoreboard players display name $tt_reset_salt_level ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Salt Level","italic":false}]
+execute if score $reset_salt_level_done ff_task_state matches 1 run scoreboard players display name $tt_reset_salt_level ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Salt Level","color":"gray","italic":false,"strikethrough":true}]
+execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players operation $tt_reset_fountain ff_task_tracker = #line_reset_fountain ff_task_state
+execute if score $reset_fountain_sel ff_task_state matches 1 unless score $reset_fountain_done ff_task_state matches 1 run scoreboard players display name $tt_reset_fountain ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Fountain","italic":false}]
+execute if score $reset_fountain_done ff_task_state matches 1 run scoreboard players display name $tt_reset_fountain ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Reset Fountain","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $medium_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_1 ff_task_tracker = #line_medium_task_1 ff_task_state
 execute if score $medium_task_1_sel ff_task_state matches 1 unless score $medium_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 1","italic":false}]
