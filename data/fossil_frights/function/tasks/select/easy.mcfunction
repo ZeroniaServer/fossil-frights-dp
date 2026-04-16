@@ -19,6 +19,7 @@ execute unless score $visit_silurian_sel ff_task_state matches 1 run scoreboard 
 execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $swat_flies_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -40,6 +41,7 @@ execute if score #task_remaining ff_task_state matches 16 store result score #ta
 execute if score #task_remaining ff_task_state matches 17 store result score #task_pick ff_task_state run random value 1..17
 execute if score #task_remaining ff_task_state matches 18 store result score #task_pick ff_task_state run random value 1..18
 execute if score #task_remaining ff_task_state matches 19 store result score #task_pick ff_task_state run random value 1..19
+execute if score #task_remaining ff_task_state matches 20 store result score #task_pick ff_task_state run random value 1..20
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -101,3 +103,6 @@ execute unless score $dive_into_well_sel ff_task_state matches 1 if score #task_
 execute unless score $swat_flies_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $swat_flies_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/swat_flies/selected
 execute unless score $swat_flies_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/water_temp/selected
+execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
