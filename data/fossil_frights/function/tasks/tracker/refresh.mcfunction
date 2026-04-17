@@ -28,8 +28,8 @@ scoreboard players reset $tt_sweep_popcorn ff_task_tracker
 scoreboard players reset $tt_dig_sand ff_task_tracker
 scoreboard players reset $tt_chlorinify ff_task_tracker
 scoreboard players reset $tt_credit_reel ff_task_tracker
-scoreboard players reset $tt_medium_task_3 ff_task_tracker
-scoreboard players reset $tt_medium_task_4 ff_task_tracker
+scoreboard players reset $tt_cool_it ff_task_tracker
+scoreboard players reset $tt_heat_it_up ff_task_tracker
 scoreboard players reset $tt_medium_task_5 ff_task_tracker
 scoreboard players reset $tt_medium_task_6 ff_task_tracker
 scoreboard players reset $tt_medium_task_7 ff_task_tracker
@@ -127,12 +127,12 @@ execute if score $chlorinify_done ff_task_state matches 1 run scoreboard players
 execute if score $credit_reel_sel ff_task_state matches 1 run scoreboard players operation $tt_credit_reel ff_task_tracker = #line_credit_reel ff_task_state
 execute if score $credit_reel_sel ff_task_state matches 1 unless score $credit_reel_done ff_task_state matches 1 run scoreboard players display name $tt_credit_reel ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Credit Reel","italic":false}]
 execute if score $credit_reel_done ff_task_state matches 1 run scoreboard players display name $tt_credit_reel ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Credit Reel","color":"gray","italic":false,"strikethrough":true}]
-execute if score $medium_task_3_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_3 ff_task_tracker = #line_medium_task_3 ff_task_state
-execute if score $medium_task_3_sel ff_task_state matches 1 unless score $medium_task_3_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_3 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 3","italic":false}]
-execute if score $medium_task_3_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_3 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 3","color":"gray","italic":false,"strikethrough":true}]
-execute if score $medium_task_4_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_4 ff_task_tracker = #line_medium_task_4 ff_task_state
-execute if score $medium_task_4_sel ff_task_state matches 1 unless score $medium_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 4","italic":false}]
-execute if score $medium_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 4","color":"gray","italic":false,"strikethrough":true}]
+execute if score $cool_it_sel ff_task_state matches 1 run scoreboard players operation $tt_cool_it ff_task_tracker = #line_cool_it ff_task_state
+execute if score $cool_it_sel ff_task_state matches 1 unless score $cool_it_done ff_task_state matches 1 run scoreboard players display name $tt_cool_it ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Cool It","italic":false}]
+execute if score $cool_it_done ff_task_state matches 1 run scoreboard players display name $tt_cool_it ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Cool It","color":"gray","italic":false,"strikethrough":true}]
+execute if score $heat_it_up_sel ff_task_state matches 1 run scoreboard players operation $tt_heat_it_up ff_task_tracker = #line_heat_it_up ff_task_state
+execute if score $heat_it_up_sel ff_task_state matches 1 unless score $heat_it_up_done ff_task_state matches 1 run scoreboard players display name $tt_heat_it_up ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Heat It Up","italic":false}]
+execute if score $heat_it_up_done ff_task_state matches 1 run scoreboard players display name $tt_heat_it_up ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Heat It Up","color":"gray","italic":false,"strikethrough":true}]
 execute if score $medium_task_5_sel ff_task_state matches 1 run scoreboard players operation $tt_medium_task_5 ff_task_tracker = #line_medium_task_5 ff_task_state
 execute if score $medium_task_5_sel ff_task_state matches 1 unless score $medium_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 5","italic":false}]
 execute if score $medium_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_medium_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Medium Task 5","color":"gray","italic":false,"strikethrough":true}]

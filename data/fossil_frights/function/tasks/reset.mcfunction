@@ -57,10 +57,10 @@ scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
 scoreboard players set $credit_reel_sel ff_task_state 0
 scoreboard players set $credit_reel_done ff_task_state 0
-scoreboard players set $medium_task_3_sel ff_task_state 0
-scoreboard players set $medium_task_3_done ff_task_state 0
-scoreboard players set $medium_task_4_sel ff_task_state 0
-scoreboard players set $medium_task_4_done ff_task_state 0
+scoreboard players set $cool_it_sel ff_task_state 0
+scoreboard players set $cool_it_done ff_task_state 0
+scoreboard players set $heat_it_up_sel ff_task_state 0
+scoreboard players set $heat_it_up_done ff_task_state 0
 scoreboard players set $medium_task_5_sel ff_task_state 0
 scoreboard players set $medium_task_5_done ff_task_state 0
 scoreboard players set $medium_task_6_sel ff_task_state 0
@@ -124,8 +124,8 @@ scoreboard players reset $tt_sweep_popcorn ff_task_tracker
 scoreboard players reset $tt_dig_sand ff_task_tracker
 scoreboard players reset $tt_chlorinify ff_task_tracker
 scoreboard players reset $tt_credit_reel ff_task_tracker
-scoreboard players reset $tt_medium_task_3 ff_task_tracker
-scoreboard players reset $tt_medium_task_4 ff_task_tracker
+scoreboard players reset $tt_cool_it ff_task_tracker
+scoreboard players reset $tt_heat_it_up ff_task_tracker
 scoreboard players reset $tt_medium_task_5 ff_task_tracker
 scoreboard players reset $tt_medium_task_6 ff_task_tracker
 scoreboard players reset $tt_medium_task_7 ff_task_tracker
@@ -170,8 +170,8 @@ function fossil_frights:tasks/easy/sweep_popcorn/reset
 function fossil_frights:tasks/easy/dig_sand/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
-function fossil_frights:tasks/medium/medium_task_3/reset
-function fossil_frights:tasks/medium/medium_task_4/reset
+function fossil_frights:tasks/medium/cool_it/reset
+function fossil_frights:tasks/medium/heat_it_up/reset
 function fossil_frights:tasks/medium/medium_task_5/reset
 function fossil_frights:tasks/medium/medium_task_6/reset
 function fossil_frights:tasks/medium/medium_task_7/reset

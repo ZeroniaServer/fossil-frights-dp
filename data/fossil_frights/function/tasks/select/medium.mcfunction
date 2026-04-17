@@ -2,8 +2,8 @@
 scoreboard players set #task_remaining ff_task_state 0
 execute unless score $chlorinify_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $credit_reel_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $medium_task_3_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $medium_task_4_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $cool_it_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $heat_it_up_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $medium_task_5_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $medium_task_6_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $medium_task_7_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -32,12 +32,12 @@ execute unless score $chlorinify_sel ff_task_state matches 1 if score #task_done
 execute unless score $credit_reel_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $credit_reel_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/credit_reel/selected
 execute unless score $credit_reel_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $medium_task_3_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $medium_task_3_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/medium_task_3/selected
-execute unless score $medium_task_3_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $medium_task_4_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $medium_task_4_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/medium_task_4/selected
-execute unless score $medium_task_4_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $cool_it_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $cool_it_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/cool_it/selected
+execute unless score $cool_it_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $heat_it_up_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $heat_it_up_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/heat_it_up/selected
+execute unless score $heat_it_up_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $medium_task_5_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $medium_task_5_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/medium_task_5/selected
 execute unless score $medium_task_5_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
