@@ -1,4 +1,5 @@
 tag @s remove ff_ant_fight
+function fossil_frights:ant_fight/lobby_sneak/reset
 scoreboard players set @s ff_ant_fight 0
 attribute @s minecraft:scale base set 1
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use

@@ -4,6 +4,11 @@ scoreboard objectives add ff_ant_leaf_seen dummy
 scoreboard objectives add ff_ant_score dummy
 scoreboard objectives add ff_ant_top_score dummy
 scoreboard objectives add ff_ant_immunity dummy
+scoreboard objectives add ff_ant_sneak_time minecraft.custom:minecraft.sneak_time
+scoreboard objectives add ff_ant_sneak_seen dummy
+scoreboard objectives add ff_ant_sneak_ticks dummy
+scoreboard objectives add ff_ant_unsneak_ticks dummy
+scoreboard objectives add ff_ant_blind_ticks dummy
 scoreboard objectives add ff_ant_proj_0 dummy
 scoreboard objectives add ff_ant_proj_1 dummy
 scoreboard objectives add ff_ant_proj_2 dummy

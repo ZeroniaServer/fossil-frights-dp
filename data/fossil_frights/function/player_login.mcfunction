@@ -28,6 +28,11 @@ execute unless score @s ff_temple_run_centi_ones matches -2147483648..2147483647
 execute unless score @s ff_ant_fight matches -2147483648..2147483647 run scoreboard players set @s ff_ant_fight 0
 execute unless score @s ff_ant_leaf_seen matches -2147483648..2147483647 run scoreboard players set @s ff_ant_leaf_seen 0
 execute unless score @s ff_ant_score matches -2147483648..2147483647 run scoreboard players set @s ff_ant_score 0
+scoreboard players add @s ff_ant_sneak_time 0
+execute unless score @s ff_ant_sneak_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_ant_sneak_seen = @s ff_ant_sneak_time
+execute unless score @s ff_ant_sneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_sneak_ticks 0
+execute unless score @s ff_ant_unsneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_unsneak_ticks 0
+execute unless score @s ff_ant_blind_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_blind_ticks 0
 execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
@@ -40,6 +45,7 @@ tag @s remove ff_active
 tag @s remove ff_forced_spectate
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
+tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
 scoreboard players set @s ff_queue_order 0
 scoreboard players set @s ff_ant_fight 0
