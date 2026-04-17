@@ -53,8 +53,8 @@ scoreboard players set $sweep_popcorn_done ff_task_state 0
 scoreboard players set $dig_sand_sel ff_task_state 0
 scoreboard players set $dig_sand_done ff_task_state 0
 
-scoreboard players set $medium_task_1_sel ff_task_state 0
-scoreboard players set $medium_task_1_done ff_task_state 0
+scoreboard players set $chlorinify_sel ff_task_state 0
+scoreboard players set $chlorinify_done ff_task_state 0
 scoreboard players set $medium_task_2_sel ff_task_state 0
 scoreboard players set $medium_task_2_done ff_task_state 0
 scoreboard players set $medium_task_3_sel ff_task_state 0
@@ -122,7 +122,7 @@ scoreboard players reset $tt_fix_cracked_egg ff_task_tracker
 scoreboard players reset $tt_tnt_test ff_task_tracker
 scoreboard players reset $tt_sweep_popcorn ff_task_tracker
 scoreboard players reset $tt_dig_sand ff_task_tracker
-scoreboard players reset $tt_medium_task_1 ff_task_tracker
+scoreboard players reset $tt_chlorinify ff_task_tracker
 scoreboard players reset $tt_medium_task_2 ff_task_tracker
 scoreboard players reset $tt_medium_task_3 ff_task_tracker
 scoreboard players reset $tt_medium_task_4 ff_task_tracker
@@ -168,7 +168,7 @@ function fossil_frights:tasks/easy/fix_cracked_egg/reset
 function fossil_frights:tasks/easy/tnt_test/reset
 function fossil_frights:tasks/easy/sweep_popcorn/reset
 function fossil_frights:tasks/easy/dig_sand/reset
-function fossil_frights:tasks/medium/medium_task_1/reset
+function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/medium_task_2/reset
 function fossil_frights:tasks/medium/medium_task_3/reset
 function fossil_frights:tasks/medium/medium_task_4/reset

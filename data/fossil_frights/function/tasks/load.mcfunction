@@ -108,10 +108,10 @@ scoreboard players set $dig_sand_sel ff_task_state 0
 scoreboard players set $dig_sand_done ff_task_state 0
 scoreboard players set #line_dig_sand ff_task_state 45
 
-scoreboard players set $medium_task_1_avail ff_task_state 1
-scoreboard players set $medium_task_1_sel ff_task_state 0
-scoreboard players set $medium_task_1_done ff_task_state 0
-scoreboard players set #line_medium_task_1 ff_task_state 21
+scoreboard players set $chlorinify_avail ff_task_state 1
+scoreboard players set $chlorinify_sel ff_task_state 0
+scoreboard players set $chlorinify_done ff_task_state 0
+scoreboard players set #line_chlorinify ff_task_state 21
 scoreboard players set $medium_task_2_avail ff_task_state 1
 scoreboard players set $medium_task_2_sel ff_task_state 0
 scoreboard players set $medium_task_2_done ff_task_state 0
