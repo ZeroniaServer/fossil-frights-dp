@@ -112,10 +112,10 @@ scoreboard players set $chlorinify_avail ff_task_state 1
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
 scoreboard players set #line_chlorinify ff_task_state 21
-scoreboard players set $medium_task_2_avail ff_task_state 1
-scoreboard players set $medium_task_2_sel ff_task_state 0
-scoreboard players set $medium_task_2_done ff_task_state 0
-scoreboard players set #line_medium_task_2 ff_task_state 20
+scoreboard players set $credit_reel_avail ff_task_state 1
+scoreboard players set $credit_reel_sel ff_task_state 0
+scoreboard players set $credit_reel_done ff_task_state 0
+scoreboard players set #line_credit_reel ff_task_state 20
 scoreboard players set $medium_task_3_avail ff_task_state 1
 scoreboard players set $medium_task_3_sel ff_task_state 0
 scoreboard players set $medium_task_3_done ff_task_state 0

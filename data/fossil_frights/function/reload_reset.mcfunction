@@ -3,6 +3,7 @@ function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
 function fossil_frights:animations/game_start/stop
 function fossil_frights:animations/defeat/stop
+function fossil_frights:animations/credits/stop
 function fossil_frights:animations/door/open
 function fossil_frights:animations/crane/reset
 function fossil_frights:frights/sniffer/reset
