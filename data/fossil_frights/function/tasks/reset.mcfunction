@@ -61,18 +61,18 @@ scoreboard players set $cool_it_sel ff_task_state 0
 scoreboard players set $cool_it_done ff_task_state 0
 scoreboard players set $heat_it_up_sel ff_task_state 0
 scoreboard players set $heat_it_up_done ff_task_state 0
-scoreboard players set $medium_task_5_sel ff_task_state 0
-scoreboard players set $medium_task_5_done ff_task_state 0
-scoreboard players set $medium_task_6_sel ff_task_state 0
-scoreboard players set $medium_task_6_done ff_task_state 0
-scoreboard players set $medium_task_7_sel ff_task_state 0
-scoreboard players set $medium_task_7_done ff_task_state 0
-scoreboard players set $medium_task_8_sel ff_task_state 0
-scoreboard players set $medium_task_8_done ff_task_state 0
-scoreboard players set $medium_task_9_sel ff_task_state 0
-scoreboard players set $medium_task_9_done ff_task_state 0
-scoreboard players set $medium_task_10_sel ff_task_state 0
-scoreboard players set $medium_task_10_done ff_task_state 0
+scoreboard players set $sponge_up_spill_sel ff_task_state 0
+scoreboard players set $sponge_up_spill_done ff_task_state 0
+scoreboard players set $feed_the_plants_sel ff_task_state 0
+scoreboard players set $feed_the_plants_done ff_task_state 0
+scoreboard players set $refill_coffee_sel ff_task_state 0
+scoreboard players set $refill_coffee_done ff_task_state 0
+scoreboard players set $coffee_refill_sel ff_task_state 0
+scoreboard players set $coffee_refill_done ff_task_state 0
+scoreboard players set $replenish_soap_sel ff_task_state 0
+scoreboard players set $replenish_soap_done ff_task_state 0
+scoreboard players set $restock_plushies_sel ff_task_state 0
+scoreboard players set $restock_plushies_done ff_task_state 0
 
 scoreboard players set $hard_task_1_sel ff_task_state 0
 scoreboard players set $hard_task_1_done ff_task_state 0
@@ -126,12 +126,12 @@ scoreboard players reset $tt_chlorinify ff_task_tracker
 scoreboard players reset $tt_credit_reel ff_task_tracker
 scoreboard players reset $tt_cool_it ff_task_tracker
 scoreboard players reset $tt_heat_it_up ff_task_tracker
-scoreboard players reset $tt_medium_task_5 ff_task_tracker
-scoreboard players reset $tt_medium_task_6 ff_task_tracker
-scoreboard players reset $tt_medium_task_7 ff_task_tracker
-scoreboard players reset $tt_medium_task_8 ff_task_tracker
-scoreboard players reset $tt_medium_task_9 ff_task_tracker
-scoreboard players reset $tt_medium_task_10 ff_task_tracker
+scoreboard players reset $tt_sponge_up_spill ff_task_tracker
+scoreboard players reset $tt_feed_the_plants ff_task_tracker
+scoreboard players reset $tt_refill_coffee ff_task_tracker
+scoreboard players reset $tt_coffee_refill ff_task_tracker
+scoreboard players reset $tt_replenish_soap ff_task_tracker
+scoreboard players reset $tt_restock_plushies ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -172,12 +172,12 @@ function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset
 function fossil_frights:tasks/medium/heat_it_up/reset
-function fossil_frights:tasks/medium/medium_task_5/reset
-function fossil_frights:tasks/medium/medium_task_6/reset
-function fossil_frights:tasks/medium/medium_task_7/reset
-function fossil_frights:tasks/medium/medium_task_8/reset
-function fossil_frights:tasks/medium/medium_task_9/reset
-function fossil_frights:tasks/medium/medium_task_10/reset
+function fossil_frights:tasks/medium/sponge_up_spill/reset
+function fossil_frights:tasks/medium/feed_the_plants/reset
+function fossil_frights:tasks/medium/refill_coffee/reset
+function fossil_frights:tasks/medium/coffee_refill/reset
+function fossil_frights:tasks/medium/replenish_soap/reset
+function fossil_frights:tasks/medium/restock_plushies/reset
 function fossil_frights:tasks/hard/hard_task_1/reset
 function fossil_frights:tasks/hard/hard_task_2/reset
 function fossil_frights:tasks/hard/hard_task_3/reset
