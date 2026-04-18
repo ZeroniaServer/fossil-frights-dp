@@ -86,6 +86,8 @@ scoreboard players set $feed_parrot_done ff_task_state 0
 scoreboard players set $water_crops_sel ff_task_state 0
 scoreboard players set $water_crops_done ff_task_state 0
 scoreboard players set $water_crops_pending ff_task_state 0
+scoreboard players set $picnic_with_trike_sel ff_task_state 0
+scoreboard players set $picnic_with_trike_done ff_task_state 0
 
 scoreboard players set $hard_task_1_sel ff_task_state 0
 scoreboard players set $hard_task_1_done ff_task_state 0
@@ -151,6 +153,7 @@ scoreboard players reset $tt_smelly_toilet ff_task_tracker
 scoreboard players reset $tt_wash_muddy_sherd ff_task_tracker
 scoreboard players reset $tt_feed_parrot ff_task_tracker
 scoreboard players reset $tt_water_crops ff_task_tracker
+scoreboard players reset $tt_picnic_with_trike ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -203,6 +206,7 @@ function fossil_frights:tasks/medium/smelly_toilet/reset
 function fossil_frights:tasks/medium/wash_muddy_sherd/reset
 function fossil_frights:tasks/medium/feed_parrot/reset
 function fossil_frights:tasks/medium/water_crops/reset
+function fossil_frights:tasks/medium/picnic_with_trike/reset
 function fossil_frights:tasks/hard/hard_task_1/reset
 function fossil_frights:tasks/hard/hard_task_2/reset
 function fossil_frights:tasks/hard/hard_task_3/reset
