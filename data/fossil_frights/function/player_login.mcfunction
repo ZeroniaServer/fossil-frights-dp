@@ -54,6 +54,8 @@ scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
+scoreboard players set @s ff_key_cooldown 0
+scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
 scoreboard players set @s ff_cmd_start 0
