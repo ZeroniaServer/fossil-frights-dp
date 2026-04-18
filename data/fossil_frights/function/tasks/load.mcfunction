@@ -6,7 +6,7 @@ scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
-scoreboard players set #medium_pool_count ff_task_state 15
+scoreboard players set #medium_pool_count ff_task_state 16
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
 
@@ -168,6 +168,11 @@ scoreboard players set $feed_parrot_avail ff_task_state 1
 scoreboard players set $feed_parrot_sel ff_task_state 0
 scoreboard players set $feed_parrot_done ff_task_state 0
 scoreboard players set #line_feed_parrot ff_task_state 50
+scoreboard players set $water_crops_avail ff_task_state 1
+scoreboard players set $water_crops_sel ff_task_state 0
+scoreboard players set $water_crops_done ff_task_state 0
+scoreboard players set $water_crops_pending ff_task_state 0
+scoreboard players set #line_water_crops ff_task_state 51
 
 scoreboard players set $hard_task_1_avail ff_task_state 1
 scoreboard players set $hard_task_1_sel ff_task_state 0
