@@ -36,6 +36,9 @@ scoreboard players reset $tt_refill_coffee ff_task_tracker
 scoreboard players reset $tt_coffee_refill ff_task_tracker
 scoreboard players reset $tt_replenish_soap ff_task_tracker
 scoreboard players reset $tt_restock_plushies ff_task_tracker
+scoreboard players reset $tt_revitalize_coral ff_task_tracker
+scoreboard players reset $tt_shark_bait ff_task_tracker
+scoreboard players reset $tt_smelly_toilet ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -151,6 +154,15 @@ execute if score $replenish_soap_done ff_task_state matches 1 run scoreboard pla
 execute if score $restock_plushies_sel ff_task_state matches 1 run scoreboard players operation $tt_restock_plushies ff_task_tracker = #line_restock_plushies ff_task_state
 execute if score $restock_plushies_sel ff_task_state matches 1 unless score $restock_plushies_done ff_task_state matches 1 run scoreboard players display name $tt_restock_plushies ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Restock Plushies","italic":false}]
 execute if score $restock_plushies_done ff_task_state matches 1 run scoreboard players display name $tt_restock_plushies ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Restock Plushies","color":"gray","italic":false,"strikethrough":true}]
+execute if score $revitalize_coral_sel ff_task_state matches 1 run scoreboard players operation $tt_revitalize_coral ff_task_tracker = #line_revitalize_coral ff_task_state
+execute if score $revitalize_coral_sel ff_task_state matches 1 unless score $revitalize_coral_done ff_task_state matches 1 run scoreboard players display name $tt_revitalize_coral ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Revitalize Coral","italic":false}]
+execute if score $revitalize_coral_done ff_task_state matches 1 run scoreboard players display name $tt_revitalize_coral ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Revitalize Coral","color":"gray","italic":false,"strikethrough":true}]
+execute if score $shark_bait_sel ff_task_state matches 1 run scoreboard players operation $tt_shark_bait ff_task_tracker = #line_shark_bait ff_task_state
+execute if score $shark_bait_sel ff_task_state matches 1 unless score $shark_bait_done ff_task_state matches 1 run scoreboard players display name $tt_shark_bait ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Shark Bait","italic":false}]
+execute if score $shark_bait_done ff_task_state matches 1 run scoreboard players display name $tt_shark_bait ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Shark Bait","color":"gray","italic":false,"strikethrough":true}]
+execute if score $smelly_toilet_sel ff_task_state matches 1 run scoreboard players operation $tt_smelly_toilet ff_task_tracker = #line_smelly_toilet ff_task_state
+execute if score $smelly_toilet_sel ff_task_state matches 1 unless score $smelly_toilet_done ff_task_state matches 1 run scoreboard players display name $tt_smelly_toilet ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Smelly Toilet","italic":false}]
+execute if score $smelly_toilet_done ff_task_state matches 1 run scoreboard players display name $tt_smelly_toilet ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Smelly Toilet","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $hard_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_1 ff_task_tracker = #line_hard_task_1 ff_task_state
 execute if score $hard_task_1_sel ff_task_state matches 1 unless score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","italic":false}]

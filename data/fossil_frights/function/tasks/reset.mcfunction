@@ -73,6 +73,12 @@ scoreboard players set $replenish_soap_sel ff_task_state 0
 scoreboard players set $replenish_soap_done ff_task_state 0
 scoreboard players set $restock_plushies_sel ff_task_state 0
 scoreboard players set $restock_plushies_done ff_task_state 0
+scoreboard players set $revitalize_coral_sel ff_task_state 0
+scoreboard players set $revitalize_coral_done ff_task_state 0
+scoreboard players set $shark_bait_sel ff_task_state 0
+scoreboard players set $shark_bait_done ff_task_state 0
+scoreboard players set $smelly_toilet_sel ff_task_state 0
+scoreboard players set $smelly_toilet_done ff_task_state 0
 
 scoreboard players set $hard_task_1_sel ff_task_state 0
 scoreboard players set $hard_task_1_done ff_task_state 0
@@ -132,6 +138,9 @@ scoreboard players reset $tt_refill_coffee ff_task_tracker
 scoreboard players reset $tt_coffee_refill ff_task_tracker
 scoreboard players reset $tt_replenish_soap ff_task_tracker
 scoreboard players reset $tt_restock_plushies ff_task_tracker
+scoreboard players reset $tt_revitalize_coral ff_task_tracker
+scoreboard players reset $tt_shark_bait ff_task_tracker
+scoreboard players reset $tt_smelly_toilet ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -178,6 +187,9 @@ function fossil_frights:tasks/medium/refill_coffee/reset
 function fossil_frights:tasks/medium/coffee_refill/reset
 function fossil_frights:tasks/medium/replenish_soap/reset
 function fossil_frights:tasks/medium/restock_plushies/reset
+function fossil_frights:tasks/medium/revitalize_coral/reset
+function fossil_frights:tasks/medium/shark_bait/reset
+function fossil_frights:tasks/medium/smelly_toilet/reset
 function fossil_frights:tasks/hard/hard_task_1/reset
 function fossil_frights:tasks/hard/hard_task_2/reset
 function fossil_frights:tasks/hard/hard_task_3/reset
