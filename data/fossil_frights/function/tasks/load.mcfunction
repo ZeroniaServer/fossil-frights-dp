@@ -6,7 +6,7 @@ scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
-scoreboard players set #medium_pool_count ff_task_state 17
+scoreboard players set #medium_pool_count ff_task_state 18
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
 
@@ -177,6 +177,10 @@ scoreboard players set $picnic_with_trike_avail ff_task_state 1
 scoreboard players set $picnic_with_trike_sel ff_task_state 0
 scoreboard players set $picnic_with_trike_done ff_task_state 0
 scoreboard players set #line_picnic_with_trike ff_task_state 52
+scoreboard players set $nautilus_guard_avail ff_task_state 1
+scoreboard players set $nautilus_guard_sel ff_task_state 0
+scoreboard players set $nautilus_guard_done ff_task_state 0
+scoreboard players set #line_nautilus_guard ff_task_state 53
 
 scoreboard players set $hard_task_1_avail ff_task_state 1
 scoreboard players set $hard_task_1_sel ff_task_state 0

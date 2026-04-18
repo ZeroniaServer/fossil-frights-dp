@@ -43,6 +43,7 @@ scoreboard players reset $tt_wash_muddy_sherd ff_task_tracker
 scoreboard players reset $tt_feed_parrot ff_task_tracker
 scoreboard players reset $tt_water_crops ff_task_tracker
 scoreboard players reset $tt_picnic_with_trike ff_task_tracker
+scoreboard players reset $tt_nautilus_guard ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -179,6 +180,9 @@ execute if score $water_crops_done ff_task_state matches 1 run scoreboard player
 execute if score $picnic_with_trike_sel ff_task_state matches 1 run scoreboard players operation $tt_picnic_with_trike ff_task_tracker = #line_picnic_with_trike ff_task_state
 execute if score $picnic_with_trike_sel ff_task_state matches 1 unless score $picnic_with_trike_done ff_task_state matches 1 run scoreboard players display name $tt_picnic_with_trike ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Picnic with Trike","italic":false}]
 execute if score $picnic_with_trike_done ff_task_state matches 1 run scoreboard players display name $tt_picnic_with_trike ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Picnic with Trike","color":"gray","italic":false,"strikethrough":true}]
+execute if score $nautilus_guard_sel ff_task_state matches 1 run scoreboard players operation $tt_nautilus_guard ff_task_tracker = #line_nautilus_guard ff_task_state
+execute if score $nautilus_guard_sel ff_task_state matches 1 unless score $nautilus_guard_done ff_task_state matches 1 run scoreboard players display name $tt_nautilus_guard ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Nautilus Guard","italic":false}]
+execute if score $nautilus_guard_done ff_task_state matches 1 run scoreboard players display name $tt_nautilus_guard ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Nautilus Guard","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $hard_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_1 ff_task_tracker = #line_hard_task_1 ff_task_state
 execute if score $hard_task_1_sel ff_task_state matches 1 unless score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","italic":false}]

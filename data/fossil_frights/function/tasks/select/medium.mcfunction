@@ -17,6 +17,7 @@ execute unless score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboar
 execute unless score $feed_parrot_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $water_crops_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $nautilus_guard_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -36,6 +37,7 @@ execute if score #task_remaining ff_task_state matches 14 store result score #ta
 execute if score #task_remaining ff_task_state matches 15 store result score #task_pick ff_task_state run random value 1..15
 execute if score #task_remaining ff_task_state matches 16 store result score #task_pick ff_task_state run random value 1..16
 execute if score #task_remaining ff_task_state matches 17 store result score #task_pick ff_task_state run random value 1..17
+execute if score #task_remaining ff_task_state matches 18 store result score #task_pick ff_task_state run random value 1..18
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -91,3 +93,6 @@ execute unless score $water_crops_sel ff_task_state matches 1 if score #task_don
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/picnic_with_trike/selected
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $nautilus_guard_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $nautilus_guard_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/nautilus_guard/selected
+execute unless score $nautilus_guard_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
