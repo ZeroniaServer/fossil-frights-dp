@@ -44,6 +44,8 @@ scoreboard players reset $tt_feed_parrot ff_task_tracker
 scoreboard players reset $tt_water_crops ff_task_tracker
 scoreboard players reset $tt_picnic_with_trike ff_task_tracker
 scoreboard players reset $tt_nautilus_guard ff_task_tracker
+scoreboard players reset $tt_feed_the_fish ff_task_tracker
+scoreboard players reset $tt_popcorn_buckets ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -183,6 +185,12 @@ execute if score $picnic_with_trike_done ff_task_state matches 1 run scoreboard 
 execute if score $nautilus_guard_sel ff_task_state matches 1 run scoreboard players operation $tt_nautilus_guard ff_task_tracker = #line_nautilus_guard ff_task_state
 execute if score $nautilus_guard_sel ff_task_state matches 1 unless score $nautilus_guard_done ff_task_state matches 1 run scoreboard players display name $tt_nautilus_guard ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Nautilus Guard","italic":false}]
 execute if score $nautilus_guard_done ff_task_state matches 1 run scoreboard players display name $tt_nautilus_guard ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Nautilus Guard","color":"gray","italic":false,"strikethrough":true}]
+execute if score $feed_the_fish_sel ff_task_state matches 1 run scoreboard players operation $tt_feed_the_fish ff_task_tracker = #line_feed_the_fish ff_task_state
+execute if score $feed_the_fish_sel ff_task_state matches 1 unless score $feed_the_fish_done ff_task_state matches 1 run scoreboard players display name $tt_feed_the_fish ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Feed the Fish","italic":false}]
+execute if score $feed_the_fish_done ff_task_state matches 1 run scoreboard players display name $tt_feed_the_fish ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Feed the Fish","color":"gray","italic":false,"strikethrough":true}]
+execute if score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard players operation $tt_popcorn_buckets ff_task_tracker = #line_popcorn_buckets ff_task_state
+execute if score $popcorn_buckets_sel ff_task_state matches 1 unless score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players display name $tt_popcorn_buckets ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Popcorn Buckets","italic":false}]
+execute if score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players display name $tt_popcorn_buckets ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Popcorn Buckets","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $hard_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_1 ff_task_tracker = #line_hard_task_1 ff_task_state
 execute if score $hard_task_1_sel ff_task_state matches 1 unless score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","italic":false}]

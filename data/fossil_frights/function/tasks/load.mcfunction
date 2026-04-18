@@ -6,7 +6,7 @@ scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
-scoreboard players set #medium_pool_count ff_task_state 18
+scoreboard players set #medium_pool_count ff_task_state 20
 scoreboard players set #hard_pool_count ff_task_state 10
 scoreboard players set #final_pool_count ff_task_state 1
 
@@ -181,6 +181,14 @@ scoreboard players set $nautilus_guard_avail ff_task_state 1
 scoreboard players set $nautilus_guard_sel ff_task_state 0
 scoreboard players set $nautilus_guard_done ff_task_state 0
 scoreboard players set #line_nautilus_guard ff_task_state 53
+scoreboard players set $feed_the_fish_avail ff_task_state 1
+scoreboard players set $feed_the_fish_sel ff_task_state 0
+scoreboard players set $feed_the_fish_done ff_task_state 0
+scoreboard players set #line_feed_the_fish ff_task_state 54
+scoreboard players set $popcorn_buckets_avail ff_task_state 1
+scoreboard players set $popcorn_buckets_sel ff_task_state 0
+scoreboard players set $popcorn_buckets_done ff_task_state 0
+scoreboard players set #line_popcorn_buckets ff_task_state 55
 
 scoreboard players set $hard_task_1_avail ff_task_state 1
 scoreboard players set $hard_task_1_sel ff_task_state 0
