@@ -39,6 +39,8 @@ scoreboard players reset $tt_restock_plushies ff_task_tracker
 scoreboard players reset $tt_revitalize_coral ff_task_tracker
 scoreboard players reset $tt_shark_bait ff_task_tracker
 scoreboard players reset $tt_smelly_toilet ff_task_tracker
+scoreboard players reset $tt_wash_muddy_sherd ff_task_tracker
+scoreboard players reset $tt_feed_parrot ff_task_tracker
 scoreboard players reset $tt_hard_task_1 ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
@@ -163,6 +165,12 @@ execute if score $shark_bait_done ff_task_state matches 1 run scoreboard players
 execute if score $smelly_toilet_sel ff_task_state matches 1 run scoreboard players operation $tt_smelly_toilet ff_task_tracker = #line_smelly_toilet ff_task_state
 execute if score $smelly_toilet_sel ff_task_state matches 1 unless score $smelly_toilet_done ff_task_state matches 1 run scoreboard players display name $tt_smelly_toilet ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Smelly Toilet","italic":false}]
 execute if score $smelly_toilet_done ff_task_state matches 1 run scoreboard players display name $tt_smelly_toilet ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Smelly Toilet","color":"gray","italic":false,"strikethrough":true}]
+execute if score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players operation $tt_wash_muddy_sherd ff_task_tracker = #line_wash_muddy_sherd ff_task_state
+execute if score $wash_muddy_sherd_sel ff_task_state matches 1 unless score $wash_muddy_sherd_done ff_task_state matches 1 run scoreboard players display name $tt_wash_muddy_sherd ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Wash Muddy Sherd","italic":false}]
+execute if score $wash_muddy_sherd_done ff_task_state matches 1 run scoreboard players display name $tt_wash_muddy_sherd ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Wash Muddy Sherd","color":"gray","italic":false,"strikethrough":true}]
+execute if score $feed_parrot_sel ff_task_state matches 1 run scoreboard players operation $tt_feed_parrot ff_task_tracker = #line_feed_parrot ff_task_state
+execute if score $feed_parrot_sel ff_task_state matches 1 unless score $feed_parrot_done ff_task_state matches 1 run scoreboard players display name $tt_feed_parrot ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Feed Parrot","italic":false}]
+execute if score $feed_parrot_done ff_task_state matches 1 run scoreboard players display name $tt_feed_parrot ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Feed Parrot","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $hard_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_1 ff_task_tracker = #line_hard_task_1 ff_task_state
 execute if score $hard_task_1_sel ff_task_state matches 1 unless score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","italic":false}]
