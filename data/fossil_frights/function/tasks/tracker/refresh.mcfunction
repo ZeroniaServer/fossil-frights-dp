@@ -46,7 +46,7 @@ scoreboard players reset $tt_picnic_with_trike ff_task_tracker
 scoreboard players reset $tt_nautilus_guard ff_task_tracker
 scoreboard players reset $tt_feed_the_fish ff_task_tracker
 scoreboard players reset $tt_popcorn_buckets ff_task_tracker
-scoreboard players reset $tt_hard_task_1 ff_task_tracker
+scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
 scoreboard players reset $tt_hard_task_4 ff_task_tracker
@@ -192,9 +192,9 @@ execute if score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard pla
 execute if score $popcorn_buckets_sel ff_task_state matches 1 unless score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players display name $tt_popcorn_buckets ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Popcorn Buckets","italic":false}]
 execute if score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players display name $tt_popcorn_buckets ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Popcorn Buckets","color":"gray","italic":false,"strikethrough":true}]
 
-execute if score $hard_task_1_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_1 ff_task_tracker = #line_hard_task_1 ff_task_state
-execute if score $hard_task_1_sel ff_task_state matches 1 unless score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","italic":false}]
-execute if score $hard_task_1_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_1 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 1","color":"gray","italic":false,"strikethrough":true}]
+execute if score $star_gazing_sel ff_task_state matches 1 run scoreboard players operation $tt_star_gazing ff_task_tracker = #line_star_gazing ff_task_state
+execute if score $star_gazing_sel ff_task_state matches 1 unless score $star_gazing_done ff_task_state matches 1 run scoreboard players display name $tt_star_gazing ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Star Gazing","italic":false}]
+execute if score $star_gazing_done ff_task_state matches 1 run scoreboard players display name $tt_star_gazing ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Star Gazing","color":"gray","italic":false,"strikethrough":true}]
 execute if score $hard_task_2_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_2 ff_task_tracker = #line_hard_task_2 ff_task_state
 execute if score $hard_task_2_sel ff_task_state matches 1 unless score $hard_task_2_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_2 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 2","italic":false}]
 execute if score $hard_task_2_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_2 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 2","color":"gray","italic":false,"strikethrough":true}]

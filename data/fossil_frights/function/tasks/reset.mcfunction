@@ -95,8 +95,9 @@ scoreboard players set $feed_the_fish_done ff_task_state 0
 scoreboard players set $popcorn_buckets_sel ff_task_state 0
 scoreboard players set $popcorn_buckets_done ff_task_state 0
 
-scoreboard players set $hard_task_1_sel ff_task_state 0
-scoreboard players set $hard_task_1_done ff_task_state 0
+scoreboard players set $star_gazing_sel ff_task_state 0
+scoreboard players set $star_gazing_done ff_task_state 0
+scoreboard players set $star_gazing_answer ff_task_state 0
 scoreboard players set $hard_task_2_sel ff_task_state 0
 scoreboard players set $hard_task_2_done ff_task_state 0
 scoreboard players set $hard_task_3_sel ff_task_state 0
@@ -163,7 +164,7 @@ scoreboard players reset $tt_picnic_with_trike ff_task_tracker
 scoreboard players reset $tt_nautilus_guard ff_task_tracker
 scoreboard players reset $tt_feed_the_fish ff_task_tracker
 scoreboard players reset $tt_popcorn_buckets ff_task_tracker
-scoreboard players reset $tt_hard_task_1 ff_task_tracker
+scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_hard_task_2 ff_task_tracker
 scoreboard players reset $tt_hard_task_3 ff_task_tracker
 scoreboard players reset $tt_hard_task_4 ff_task_tracker
@@ -219,7 +220,7 @@ function fossil_frights:tasks/medium/picnic_with_trike/reset
 function fossil_frights:tasks/medium/nautilus_guard/reset
 function fossil_frights:tasks/medium/feed_the_fish/reset
 function fossil_frights:tasks/medium/popcorn_buckets/reset
-function fossil_frights:tasks/hard/hard_task_1/reset
+function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/hard_task_2/reset
 function fossil_frights:tasks/hard/hard_task_3/reset
 function fossil_frights:tasks/hard/hard_task_4/reset

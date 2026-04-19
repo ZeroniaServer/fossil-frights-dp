@@ -190,10 +190,11 @@ scoreboard players set $popcorn_buckets_sel ff_task_state 0
 scoreboard players set $popcorn_buckets_done ff_task_state 0
 scoreboard players set #line_popcorn_buckets ff_task_state 55
 
-scoreboard players set $hard_task_1_avail ff_task_state 1
-scoreboard players set $hard_task_1_sel ff_task_state 0
-scoreboard players set $hard_task_1_done ff_task_state 0
-scoreboard players set #line_hard_task_1 ff_task_state 11
+scoreboard players set $star_gazing_avail ff_task_state 1
+scoreboard players set $star_gazing_sel ff_task_state 0
+scoreboard players set $star_gazing_done ff_task_state 0
+scoreboard players set $star_gazing_answer ff_task_state 0
+scoreboard players set #line_star_gazing ff_task_state 11
 scoreboard players set $hard_task_2_avail ff_task_state 1
 scoreboard players set $hard_task_2_sel ff_task_state 0
 scoreboard players set $hard_task_2_done ff_task_state 0
