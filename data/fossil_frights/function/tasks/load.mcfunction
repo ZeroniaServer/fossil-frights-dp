@@ -194,6 +194,7 @@ scoreboard players set $star_gazing_avail ff_task_state 1
 scoreboard players set $star_gazing_sel ff_task_state 0
 scoreboard players set $star_gazing_done ff_task_state 0
 scoreboard players set $star_gazing_answer ff_task_state 0
+scoreboard players set $star_gazing_rotation ff_task_state 0
 scoreboard players set #line_star_gazing ff_task_state 11
 scoreboard players set $hard_task_2_avail ff_task_state 1
 scoreboard players set $hard_task_2_sel ff_task_state 0

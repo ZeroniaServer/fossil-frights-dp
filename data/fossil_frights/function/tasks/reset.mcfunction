@@ -98,6 +98,7 @@ scoreboard players set $popcorn_buckets_done ff_task_state 0
 scoreboard players set $star_gazing_sel ff_task_state 0
 scoreboard players set $star_gazing_done ff_task_state 0
 scoreboard players set $star_gazing_answer ff_task_state 0
+scoreboard players set $star_gazing_rotation ff_task_state 0
 scoreboard players set $hard_task_2_sel ff_task_state 0
 scoreboard players set $hard_task_2_done ff_task_state 0
 scoreboard players set $hard_task_3_sel ff_task_state 0
