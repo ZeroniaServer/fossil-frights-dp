@@ -82,40 +82,22 @@ Reset the Ant Fight best-score display back to "No scores yet":
 /function fossil_frights:ant_fight/reset
 ```
 
-Reset one online player's saved stats back to `0` / `--`:
-```mcfunction
-/resetstats <player>
-/execute as <player> run function fossil_frights:admin/reset_stats
-```
-
 Hard reset the main leaderboard, including offline scoreboard holders and every stored leaderboard entry:
 ```mcfunction
-/resetleaderboard
 /function fossil_frights:admin/reset_leaderboard
 ```
 
-Reset one online player's main leaderboard entry:
+Reset one player's stats by exact name, whether they are online or offline. This also removes them from the leaderboard:
 ```mcfunction
-/resetleaderboardentry <player>
-/execute as <player> run function fossil_frights:admin/reset_leaderboard_entry
+/function fossil_frights:admin/reset_player_stats_macro {name:"PlayerName"}
 ```
 
-Reset one player's saved stats by exact name, even if they are offline:
+Export the current storage-backed leaderboard data directly in chat:
 ```mcfunction
-/function fossil_frights:admin/reset_stats_name_macro {name:"PlayerName"}
+/function fossil_frights:admin/export_leaderboard
 ```
 
-Reset one player's main leaderboard entry by exact name, even if they are offline:
-```mcfunction
-/function fossil_frights:admin/reset_leaderboard_entry_name_macro {name:"PlayerName"}
-```
-
-Reset the visible main leaderboard entry currently in a slot, from `1` to `10`:
-```mcfunction
-/function fossil_frights:admin/reset_leaderboard_slot_macro {slot:1}
-```
-
-Set a player's saved stats manually:
+Set an online player's saved stats manually:
 ```mcfunction
 /scoreboard players set <player> ff_top_time <value>
 /scoreboard players set <player> ff_top_day <value>
@@ -128,7 +110,7 @@ Set a player's saved stats manually:
 
 ```
 
-## Server Commands
+## Developer Commands
 
 Give active key:
 ```mcfunction

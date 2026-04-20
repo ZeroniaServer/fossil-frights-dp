@@ -1,38 +1,53 @@
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_best
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_ranked
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_time_entry
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_day_entry
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_scan_done
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_1
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_2
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_3
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_4
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_5
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_6
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_7
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_8
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_9
-tag @e[type=mannequin,tag=ff_lb_entry] remove ff_lb_slot_10
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_1
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_2
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_3
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_4
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_5
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_6
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_7
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_8
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_9
-function fossil_frights:leaderboards/display/fill_time_slot with storage fossil_frights:leaderboards slot_10
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_1
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_2
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_3
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_4
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_5
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_6
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_7
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_8
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_9
-function fossil_frights:leaderboards/display/fill_day_slot with storage fossil_frights:leaderboards slot_10
+scoreboard players set #lb_slot_1_index ff_lb_calc -1
+scoreboard players set #lb_slot_1_kind ff_lb_calc 0
+scoreboard players set #lb_slot_1_time ff_lb_calc 0
+scoreboard players set #lb_slot_1_day ff_lb_calc 0
+scoreboard players set #lb_slot_2_index ff_lb_calc -1
+scoreboard players set #lb_slot_2_kind ff_lb_calc 0
+scoreboard players set #lb_slot_2_time ff_lb_calc 0
+scoreboard players set #lb_slot_2_day ff_lb_calc 0
+scoreboard players set #lb_slot_3_index ff_lb_calc -1
+scoreboard players set #lb_slot_3_kind ff_lb_calc 0
+scoreboard players set #lb_slot_3_time ff_lb_calc 0
+scoreboard players set #lb_slot_3_day ff_lb_calc 0
+scoreboard players set #lb_slot_4_index ff_lb_calc -1
+scoreboard players set #lb_slot_4_kind ff_lb_calc 0
+scoreboard players set #lb_slot_4_time ff_lb_calc 0
+scoreboard players set #lb_slot_4_day ff_lb_calc 0
+scoreboard players set #lb_slot_5_index ff_lb_calc -1
+scoreboard players set #lb_slot_5_kind ff_lb_calc 0
+scoreboard players set #lb_slot_5_time ff_lb_calc 0
+scoreboard players set #lb_slot_5_day ff_lb_calc 0
+scoreboard players set #lb_slot_6_index ff_lb_calc -1
+scoreboard players set #lb_slot_6_kind ff_lb_calc 0
+scoreboard players set #lb_slot_6_time ff_lb_calc 0
+scoreboard players set #lb_slot_6_day ff_lb_calc 0
+scoreboard players set #lb_slot_7_index ff_lb_calc -1
+scoreboard players set #lb_slot_7_kind ff_lb_calc 0
+scoreboard players set #lb_slot_7_time ff_lb_calc 0
+scoreboard players set #lb_slot_7_day ff_lb_calc 0
+scoreboard players set #lb_slot_8_index ff_lb_calc -1
+scoreboard players set #lb_slot_8_kind ff_lb_calc 0
+scoreboard players set #lb_slot_8_time ff_lb_calc 0
+scoreboard players set #lb_slot_8_day ff_lb_calc 0
+scoreboard players set #lb_slot_9_index ff_lb_calc -1
+scoreboard players set #lb_slot_9_kind ff_lb_calc 0
+scoreboard players set #lb_slot_9_time ff_lb_calc 0
+scoreboard players set #lb_slot_9_day ff_lb_calc 0
+scoreboard players set #lb_slot_10_index ff_lb_calc -1
+scoreboard players set #lb_slot_10_kind ff_lb_calc 0
+scoreboard players set #lb_slot_10_time ff_lb_calc 0
+scoreboard players set #lb_slot_10_day ff_lb_calc 0
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_1
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_2
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_3
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_4
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_5
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_6
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_7
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_8
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_9
+function fossil_frights:leaderboards/display/rank_slot with storage fossil_frights:leaderboards slot_10
 function fossil_frights:leaderboards/display/format_time_slot with storage fossil_frights:leaderboards slot_1
 function fossil_frights:leaderboards/display/format_time_slot with storage fossil_frights:leaderboards slot_2
 function fossil_frights:leaderboards/display/format_time_slot with storage fossil_frights:leaderboards slot_3

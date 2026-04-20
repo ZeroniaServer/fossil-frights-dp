@@ -1,1 +1,1 @@
-execute as @e[type=mannequin,tag=ff_lb_entry,scores={ff_top_day=1..,ff_top_time=0},tag=!ff_lb_ranked,tag=!ff_lb_scan_done,limit=1,sort=arbitrary] run function fossil_frights:leaderboards/display/compare_day_candidate
+# Deprecated: storage-backed leaderboard display no longer ranks mannequin entities.
