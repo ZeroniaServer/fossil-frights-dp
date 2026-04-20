@@ -1,0 +1,5 @@
+function fossil_frights:temple_run/update_display
+function fossil_frights:messages/temple_run/completed
+function fossil_frights:temple_run/update_personal_best
+function fossil_frights:temple_run/check_best
+function fossil_frights:temple_run/reset_player

@@ -1,0 +1,1 @@
+summon minecraft:text_display -31 79 98 {Tags:["ff_ant_board","ff_ant_board_empty"],billboard:"fixed",Rotation:[90f,0f],background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:-1b,brightness:{sky:15,block:15},alignment:"center",text:[{"text":"No scores yet","color":"#F6E7B0","italic":false}]}

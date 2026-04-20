@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/medium/picnic_with_trike/eaten"
+  }
+}

@@ -1,0 +1,1 @@
+scoreboard objectives setdisplay sidebar ff_task_tracker

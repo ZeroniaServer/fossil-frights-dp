@@ -7,7 +7,6 @@ execute store result score $active ff_active_uuid_0 run data get entity @s UUID[
 execute store result score $active ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score $active ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score $active ff_active_uuid_3 run data get entity @s UUID[3] 1
-tag @a[tag=ff_active] remove ff_active
-team leave @a[team=ff_active_gold]
-tag @s add ff_active
-team join ff_active_gold @s
+function fossil_frights:game/roster/reset
+scoreboard players set $active_set ff_game_state 1
+function fossil_frights:game/roster/add_current

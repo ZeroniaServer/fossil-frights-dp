@@ -1,0 +1,1 @@
+$summon mannequin ~ 80 ~ {Tags:["ff_game_start_dummy"],Silent:1b,PersistenceRequired:1b,Invulnerable:1b,NoGravity:0b,noPhysics:1b,pose:"standing",hide_description:true,Rotation:[0f,0f],profile:{id:[I;$(u0),$(u1),$(u2),$(u3)]}}

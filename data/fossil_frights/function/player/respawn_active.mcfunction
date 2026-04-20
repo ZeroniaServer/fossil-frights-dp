@@ -1,0 +1,6 @@
+function fossil_frights:player/protection_disable
+effect clear @s minecraft:absorption
+effect clear @s minecraft:health_boost
+effect give @s minecraft:saturation infinite 255 true
+execute unless data entity @s {Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key:1b}}}]} unless data entity @s {Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} run function fossil_frights:key/give
+execute unless data entity @s {Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]} run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1

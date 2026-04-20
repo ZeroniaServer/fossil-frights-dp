@@ -1,0 +1,16 @@
+scoreboard players operation $temple_run_best_min ff_temple_run_display = $temple_run_best_time ff_temple_run_display
+scoreboard players operation $temple_run_best_min ff_temple_run_display /= #100 ff_temple_run_math
+scoreboard players operation $temple_run_best_min ff_temple_run_display /= #60 ff_temple_run_math
+scoreboard players operation $temple_run_best_sec ff_temple_run_display = $temple_run_best_time ff_temple_run_display
+scoreboard players operation $temple_run_best_sec ff_temple_run_display /= #100 ff_temple_run_math
+execute if score $temple_run_best_min ff_temple_run_display matches 1.. run scoreboard players operation $temple_run_best_sec ff_temple_run_display %= #60 ff_temple_run_math
+scoreboard players operation $temple_run_best_sec_tens ff_temple_run_display = $temple_run_best_sec ff_temple_run_display
+scoreboard players operation $temple_run_best_sec_tens ff_temple_run_display /= #10 ff_temple_run_math
+scoreboard players operation $temple_run_best_sec_ones ff_temple_run_display = $temple_run_best_sec ff_temple_run_display
+scoreboard players operation $temple_run_best_sec_ones ff_temple_run_display %= #10 ff_temple_run_math
+scoreboard players operation $temple_run_best_centi ff_temple_run_display = $temple_run_best_time ff_temple_run_display
+scoreboard players operation $temple_run_best_centi ff_temple_run_display %= #100 ff_temple_run_math
+scoreboard players operation $temple_run_best_centi_tens ff_temple_run_display = $temple_run_best_centi ff_temple_run_display
+scoreboard players operation $temple_run_best_centi_tens ff_temple_run_display /= #10 ff_temple_run_math
+scoreboard players operation $temple_run_best_centi_ones ff_temple_run_display = $temple_run_best_centi ff_temple_run_display
+scoreboard players operation $temple_run_best_centi_ones ff_temple_run_display %= #10 ff_temple_run_math

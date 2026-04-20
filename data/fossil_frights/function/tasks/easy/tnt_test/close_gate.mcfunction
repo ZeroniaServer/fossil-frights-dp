@@ -1,0 +1,5 @@
+execute if block 52 63 65 minecraft:cherry_fence_gate[facing=north] run setblock 52 63 65 minecraft:cherry_fence_gate[facing=north,open=false]
+execute if block 52 63 65 minecraft:cherry_fence_gate[facing=south] run setblock 52 63 65 minecraft:cherry_fence_gate[facing=south,open=false]
+execute if block 52 63 65 minecraft:cherry_fence_gate[facing=east] run setblock 52 63 65 minecraft:cherry_fence_gate[facing=east,open=false]
+execute if block 52 63 65 minecraft:cherry_fence_gate[facing=west] run setblock 52 63 65 minecraft:cherry_fence_gate[facing=west,open=false]
+execute unless block 52 63 65 minecraft:cherry_fence_gate run setblock 52 63 65 minecraft:cherry_fence_gate[open=false]

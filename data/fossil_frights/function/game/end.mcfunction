@@ -1,6 +1,7 @@
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/clear
+function fossil_frights:animations/game_start/stop
 function fossil_frights:animations/defeat/stop
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
@@ -14,12 +15,14 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
-execute as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
-function fossil_frights:leaderboards/display/refresh
+execute if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
+execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
-execute as @a[gamemode=spectator,tag=!ff_active] run function fossil_frights:join/spectator_lobby_exit
+execute as @a[gamemode=spectator,tag=!ff_active,tag=!ff_tutorial,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
+execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
+execute as @a[tag=ff_active] run function fossil_frights:player/protection_enable
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
 title @a[tag=ff_active] actionbar ""
@@ -30,12 +33,13 @@ clear @a[tag=ff_active] minecraft:warped_fungus_on_a_stick[minecraft:custom_data
 item replace entity @a[tag=ff_active] weapon.mainhand with air
 item replace entity @a[tag=ff_active] weapon.offhand with air
 item replace entity @a[tag=ff_active] armor.head with air
-tp @a[tag=ff_active] 0 80 0 0 0
+execute as @a[tag=ff_active] run function fossil_frights:util/fade/queue/game_end
 execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
 execute as @a[tag=ff_active] run function fossil_frights:tasks/final/plushies/restore
 tag @a[tag=ff_active] remove ff_forced_spectate
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+function fossil_frights:game/roster/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -57,4 +61,5 @@ function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next

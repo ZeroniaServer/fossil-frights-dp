@@ -1,6 +1,7 @@
 execute unless entity @a[tag=ff_active] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[tag=ff_active] run return 0
 
+function fossil_frights:tasks/bookcase/clear
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/setup
@@ -18,8 +19,10 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
-tp @a[tag=ff_active] 20 70 20 0 0
+execute as @a[tag=ff_active] run function fossil_frights:util/fade/queue/game_start
 gamemode adventure @a[tag=ff_active]
+execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
+execute as @a[tag=ff_active] run function fossil_frights:player/protection_disable
 clear @a[tag=ff_active]
 effect clear @a[tag=ff_active] minecraft:absorption
 effect clear @a[tag=ff_active] minecraft:health_boost
@@ -50,6 +53,7 @@ scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
+function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh

@@ -1,0 +1,2 @@
+execute if score $swat_flies_sel ff_task_state matches 1 unless score $swat_flies_done ff_task_state matches 1 positioned 0.5 95.6 52.5 run playsound minecraft:entity.bee.loop master @a[tag=ff_active,distance=..24] ~ ~ ~ 0.7 1.8
+execute if score $swat_flies_sel ff_task_state matches 1 unless score $swat_flies_done ff_task_state matches 1 run schedule function fossil_frights:tasks/easy/swat_flies/buzz 40t replace

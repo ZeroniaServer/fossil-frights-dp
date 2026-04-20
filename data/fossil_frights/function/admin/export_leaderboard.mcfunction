@@ -1,0 +1,2 @@
+tellraw @s [{"text":"[Export Leaderboard]","color":"green","clickEvent":{"action":"suggest_command","value":"/data get storage fossil_frights:leaderboards entries"},"hoverEvent":{"action":"show_text","value":{"text":"Click to place the export command in chat.","color":"yellow"}}}]
+tellraw @s [{"text":"Leaderboard storage: ","color":"yellow"},{"nbt":"entries","storage":"fossil_frights:leaderboards","color":"white"}]

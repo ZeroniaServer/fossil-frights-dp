@@ -29,15 +29,25 @@ Show your personal museum stats:
 /trigger ff_cmd_stats set 1
 ```
 
+Watch the tutorial:
+```mcfunction
+/tutorial
+/trigger ff_cmd_tutorial set 1
+```
+
+Open the gameplay info dialog:
+```mcfunction
+/info
+/trigger ff_cmd_info set 1
+```
+
 Open the invite dialog to invite another online player:
 ```mcfunction
+/invite
 /trigger ff_cmd_invite set 1
 ```
 
-Start the game when you are first in queue and receive the prompt:
-```mcfunction
-/trigger ff_queue_start set 1
-```
+
 
 # Op commands
 
@@ -62,16 +72,45 @@ Reset the parkour best-time display back to "No times yet":
 /function fossil_frights:parkour/reset
 ```
 
-Set a player's saved stats manually:
+Reset the Temple Run best-time display back to "No times yet":
+```mcfunction
+/function fossil_frights:temple_run/reset
+```
+
+Reset the Ant Fight best-score display back to "No scores yet":
+```mcfunction
+/function fossil_frights:ant_fight/reset
+```
+
+Hard reset the main leaderboard, including offline scoreboard holders and every stored leaderboard entry:
+```mcfunction
+/function fossil_frights:admin/reset_leaderboard
+```
+
+Reset one player's stats by exact name, whether they are online or offline. This also removes them from the leaderboard:
+```mcfunction
+/function fossil_frights:admin/reset_player_stats_macro {name:"PlayerName"}
+```
+
+Export the current storage-backed leaderboard data directly in chat:
+```mcfunction
+/function fossil_frights:admin/export_leaderboard
+```
+
+Set an online player's saved stats manually:
 ```mcfunction
 /scoreboard players set <player> ff_top_time <value>
 /scoreboard players set <player> ff_top_day <value>
 /scoreboard players set <player> ff_run_count <value>
+/scoreboard players set <player> ff_duo_best <value>
 /scoreboard players set <player> ff_parkour_best <value>
+/scoreboard players set <player> ff_temple_run_best <value>
+/scoreboard players set <player> ff_ant_score <value>
+/scoreboard players set <player> ff_ant_top_score <value>
 
 ```
 
-## Server Commands
+## Developer Commands
 
 Give active key:
 ```mcfunction
@@ -172,6 +211,11 @@ Give yourself a creeper fright armor stand marker:
 Give yourself a skeleton fright armor stand marker:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='Skeleton Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright_skeleton"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
+```
+
+Give yourself a bogged fright armor stand marker:
+```mcfunction
+/give @p minecraft:armor_stand[minecraft:item_name='Bogged Fright Marker',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_fright_bogged"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
 ```
 
 Give yourself a placeable velociraptor skull prop armor stand:

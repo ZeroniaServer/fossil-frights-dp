@@ -21,8 +21,11 @@ scoreboard objectives add ff_active_uuid_0 dummy
 scoreboard objectives add ff_active_uuid_1 dummy
 scoreboard objectives add ff_active_uuid_2 dummy
 scoreboard objectives add ff_active_uuid_3 dummy
+scoreboard objectives add ff_run_order dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
+scoreboard objectives add ff_deaths deathCount
+scoreboard objectives add ff_deaths_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_start trigger
@@ -31,7 +34,13 @@ scoreboard objectives add ff_cmd_leave trigger
 scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
+scoreboard objectives add ff_cmd_tutorial trigger
+scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives add ff_invite_sel trigger
+scoreboard objectives add ff_invite_accept trigger
+scoreboard objectives add ff_tutorial dummy
+scoreboard objectives add ff_tutorial_scene dummy
+scoreboard objectives add ff_tutorial_tick dummy
 scoreboard objectives add ff_gui dummy
 scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
@@ -43,10 +52,15 @@ scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
+scoreboard objectives add ff_task_state dummy
+scoreboard objectives add ff_task_tracker dummy
 scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
+scoreboard objectives add ff_duo_best dummy
 scoreboard objectives add ff_lb_calc dummy
+scoreboard objectives add ff_lb_generation dummy
+scoreboard objectives add ff_fade_tp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set #twenty ff_key_cd_cfg 20
@@ -95,9 +109,17 @@ scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $run_multiplayer ff_game_state 0
+scoreboard players set $run_roster_count ff_game_state 0
+scoreboard players set $active_online ff_game_state 0
+scoreboard players set $login_is_run_member ff_game_state 0
+scoreboard players set $login_was_multiplayer ff_game_state 0
+scoreboard players set $invite_pending ff_game_state 0
+scoreboard players set $invite_token ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
+scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
@@ -107,6 +129,17 @@ scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set $stats_top_time ff_lb_calc 0
+scoreboard players set $stats_duo_best ff_lb_calc 0
+scoreboard players set $stats_duo_minutes ff_lb_calc 0
+scoreboard players set $stats_duo_seconds_total ff_lb_calc 0
+scoreboard players set $stats_duo_seconds ff_lb_calc 0
+scoreboard players set $stats_duo_centis ff_lb_calc 0
+scoreboard players set $stats_duo_min_tens ff_lb_calc 0
+scoreboard players set $stats_duo_min_ones ff_lb_calc 0
+scoreboard players set $stats_duo_sec_tens ff_lb_calc 0
+scoreboard players set $stats_duo_sec_ones ff_lb_calc 0
+scoreboard players set $stats_duo_centi_tens ff_lb_calc 0
+scoreboard players set $stats_duo_centi_ones ff_lb_calc 0
 scoreboard players set $stats_minutes ff_lb_calc 0
 scoreboard players set $stats_seconds_total ff_lb_calc 0
 scoreboard players set $stats_seconds ff_lb_calc 0
@@ -121,7 +154,8 @@ scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
-gamerule naturalRegeneration false
+scoreboard objectives modify ff_task_tracker numberformat blank
+gamerule naturalRegeneration true
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold
@@ -130,17 +164,31 @@ team add ff_dna_hover_yellow
 team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
 team modify ff_dev_mode color green
+team add ff_game_start_dummy
+team modify ff_game_start_dummy collisionRule never
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
+advancement revoke @a only fossil_frights:info_lectern_click
+advancement revoke @a only fossil_frights:swat_flies_click
+advancement revoke @a only fossil_frights:fix_cracked_egg_click
+advancement revoke @a only fossil_frights:sweep_popcorn_click
+advancement revoke @a only fossil_frights:dig_sand_click
+advancement revoke @a only fossil_frights:credit_reel_click
+advancement revoke @a only fossil_frights:feed_the_fish_click
+advancement revoke @a only fossil_frights:popcorn_buckets_click
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
+function fossil_frights:command/info/lectern_setup
 function fossil_frights:parkour/load
+function fossil_frights:temple_run/load
+function fossil_frights:ant_fight/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/setup
 function fossil_frights:game/timer/reset
+function fossil_frights:tasks/load
 function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/setup
