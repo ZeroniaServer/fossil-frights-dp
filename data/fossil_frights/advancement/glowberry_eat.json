@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "eat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:glow_berries"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/glowberry/eaten"
+  }
+}

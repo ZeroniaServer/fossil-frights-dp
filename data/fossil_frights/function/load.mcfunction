@@ -178,6 +178,7 @@ advancement revoke @a only fossil_frights:dig_sand_click
 advancement revoke @a only fossil_frights:credit_reel_click
 advancement revoke @a only fossil_frights:feed_the_fish_click
 advancement revoke @a only fossil_frights:popcorn_buckets_click
+advancement revoke @a only fossil_frights:glowberry_eat
 function fossil_frights:game/load
 function fossil_frights:command/info_board/setup
 function fossil_frights:command/info/lectern_setup

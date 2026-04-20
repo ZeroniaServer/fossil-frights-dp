@@ -25,6 +25,7 @@ execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run functi
 function fossil_frights:tasks/final/plushies/prevent_drop
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
+function fossil_frights:tasks/hard/tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
