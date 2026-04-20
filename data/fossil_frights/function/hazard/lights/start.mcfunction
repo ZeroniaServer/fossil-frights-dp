@@ -82,8 +82,8 @@ execute if score #lights_phase_now ff_hazard_rng matches 7 run playsound minecra
 execute if score #lights_phase_now ff_hazard_rng matches 7 run scoreboard players set #lights_start_phase ff_hazard_rng 0
 
 # Update glowberry trees
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40 cave_vines[berries=false]
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -11 82 40 cave_vines[berries=false]
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 40 cave_vines[berries=false]
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40 cave_vines[berries=false] strict
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -11 82 40 cave_vines[berries=false] strict
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 40 cave_vines[berries=false] strict
 
 
