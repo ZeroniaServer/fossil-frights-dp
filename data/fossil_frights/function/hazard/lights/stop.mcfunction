@@ -66,3 +66,8 @@ execute if score #lights_phase_now ff_hazard_rng matches 7 run fill -28 114 8 22
 execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 23 114 8 73 117 97 minecraft:light[level=15] replace minecraft:light[level=0]
 execute if score #lights_phase_now ff_hazard_rng matches 7 run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 0.8 1.1
 execute if score #lights_phase_now ff_hazard_rng matches 7 run scoreboard players set #lights_stop_phase ff_hazard_rng 0
+
+# Update glowberry trees
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40 cave_vines[berries=true]
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -11 82 40 cave_vines[berries=true]
+execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 40 cave_vines[berries=true]
