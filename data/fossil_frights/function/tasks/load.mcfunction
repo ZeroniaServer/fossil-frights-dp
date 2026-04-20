@@ -204,10 +204,10 @@ scoreboard players set $glowberry_tree_2_watered ff_task_state 0
 scoreboard players set $glowberry_tree_1_pending ff_task_state 0
 scoreboard players set $glowberry_tree_2_pending ff_task_state 0
 scoreboard players set #line_glowberry_trees ff_task_state 10
-scoreboard players set $hard_task_3_avail ff_task_state 1
-scoreboard players set $hard_task_3_sel ff_task_state 0
-scoreboard players set $hard_task_3_done ff_task_state 0
-scoreboard players set #line_hard_task_3 ff_task_state 9
+scoreboard players set $return_the_key_avail ff_task_state 1
+scoreboard players set $return_the_key_sel ff_task_state 0
+scoreboard players set $return_the_key_done ff_task_state 0
+scoreboard players set #line_return_the_key ff_task_state 9
 scoreboard players set $hard_task_4_avail ff_task_state 1
 scoreboard players set $hard_task_4_sel ff_task_state 0
 scoreboard players set $hard_task_4_done ff_task_state 0

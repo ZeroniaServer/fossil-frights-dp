@@ -1,0 +1,2 @@
+advancement revoke @s only fossil_frights:return_the_key_return_click
+function fossil_frights:tasks/hard/return_the_key/complete
