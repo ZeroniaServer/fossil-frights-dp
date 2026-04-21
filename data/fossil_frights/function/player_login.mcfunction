@@ -57,6 +57,8 @@ scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
+scoreboard players set @s ff_bat_bug_timer 0
+scoreboard players set @s ff_bat_bug_bar 0
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
 scoreboard players set @s ff_cmd_start 0

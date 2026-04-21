@@ -19,6 +19,8 @@ execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
+scoreboard players set @a ff_bat_bug_timer 0
+scoreboard players set @a ff_bat_bug_bar 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 function fossil_frights:game/roster/reset

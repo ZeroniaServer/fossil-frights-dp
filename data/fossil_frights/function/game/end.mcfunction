@@ -25,6 +25,8 @@ execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
 execute as @a[tag=ff_active] run function fossil_frights:player/protection_enable
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
+scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
+scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
 clear @a[tag=ff_active]
 clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key:1b}]

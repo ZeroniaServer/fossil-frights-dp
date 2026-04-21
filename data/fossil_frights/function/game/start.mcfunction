@@ -30,6 +30,8 @@ effect give @a[tag=ff_active] minecraft:instant_health 100 0 true
 effect give @a[tag=ff_active] minecraft:saturation infinite 255 true
 scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
+scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
+scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
 item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
 execute as @a[tag=ff_active] run function fossil_frights:key/give

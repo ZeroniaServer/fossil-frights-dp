@@ -16,6 +16,8 @@ function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute as @a[gamemode=spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
+scoreboard players set @a ff_bat_bug_timer 0
+scoreboard players set @a ff_bat_bug_bar 0
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 function fossil_frights:game/roster/reset

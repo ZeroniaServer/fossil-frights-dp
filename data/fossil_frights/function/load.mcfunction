@@ -4,6 +4,8 @@ scoreboard objectives add ff_key_cooldown dummy
 scoreboard objectives add ff_key_cd_cfg dummy
 scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
+scoreboard objectives add ff_bat_bug_timer dummy
+scoreboard objectives add ff_bat_bug_bar dummy
 scoreboard objectives add ff_dna_scan dummy
 scoreboard objectives add ff_dna_use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ff_dna_use_seen dummy
@@ -63,6 +65,7 @@ scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_fade_tp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
+scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 640
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set #day_tick ff_day 20
 scoreboard players set #day_minute ff_day 1200
