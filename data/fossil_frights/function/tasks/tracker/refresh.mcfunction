@@ -49,7 +49,7 @@ scoreboard players reset $tt_popcorn_buckets ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_glowberry_trees ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
-scoreboard players reset $tt_hard_task_4 ff_task_tracker
+scoreboard players reset $tt_skincare_routine ff_task_tracker
 scoreboard players reset $tt_hard_task_5 ff_task_tracker
 scoreboard players reset $tt_hard_task_6 ff_task_tracker
 scoreboard players reset $tt_hard_task_7 ff_task_tracker
@@ -201,9 +201,9 @@ execute if score $glowberry_trees_done ff_task_state matches 1 run scoreboard pl
 execute if score $return_the_key_sel ff_task_state matches 1 run scoreboard players operation $tt_return_the_key ff_task_tracker = #line_return_the_key ff_task_state
 execute if score $return_the_key_sel ff_task_state matches 1 unless score $return_the_key_done ff_task_state matches 1 run scoreboard players display name $tt_return_the_key ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Return the Key","italic":false}]
 execute if score $return_the_key_done ff_task_state matches 1 run scoreboard players display name $tt_return_the_key ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Return the Key","color":"gray","italic":false,"strikethrough":true}]
-execute if score $hard_task_4_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_4 ff_task_tracker = #line_hard_task_4 ff_task_state
-execute if score $hard_task_4_sel ff_task_state matches 1 unless score $hard_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 4","italic":false}]
-execute if score $hard_task_4_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_4 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 4","color":"gray","italic":false,"strikethrough":true}]
+execute if score $skincare_routine_sel ff_task_state matches 1 run scoreboard players operation $tt_skincare_routine ff_task_tracker = #line_skincare_routine ff_task_state
+execute if score $skincare_routine_sel ff_task_state matches 1 unless score $skincare_routine_done ff_task_state matches 1 run scoreboard players display name $tt_skincare_routine ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Skincare Routine","italic":false}]
+execute if score $skincare_routine_done ff_task_state matches 1 run scoreboard players display name $tt_skincare_routine ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Skincare Routine","color":"gray","italic":false,"strikethrough":true}]
 execute if score $hard_task_5_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_5 ff_task_tracker = #line_hard_task_5 ff_task_state
 execute if score $hard_task_5_sel ff_task_state matches 1 unless score $hard_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 5","italic":false}]
 execute if score $hard_task_5_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_5 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 5","color":"gray","italic":false,"strikethrough":true}]

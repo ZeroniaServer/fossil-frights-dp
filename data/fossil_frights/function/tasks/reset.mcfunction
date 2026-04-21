@@ -107,8 +107,9 @@ scoreboard players set $glowberry_tree_1_pending ff_task_state 0
 scoreboard players set $glowberry_tree_2_pending ff_task_state 0
 scoreboard players set $return_the_key_sel ff_task_state 0
 scoreboard players set $return_the_key_done ff_task_state 0
-scoreboard players set $hard_task_4_sel ff_task_state 0
-scoreboard players set $hard_task_4_done ff_task_state 0
+scoreboard players set $skincare_routine_sel ff_task_state 0
+scoreboard players set $skincare_routine_done ff_task_state 0
+scoreboard players set $skincare_routine_pending ff_task_state 0
 scoreboard players set $hard_task_5_sel ff_task_state 0
 scoreboard players set $hard_task_5_done ff_task_state 0
 scoreboard players set $hard_task_6_sel ff_task_state 0
@@ -172,7 +173,7 @@ scoreboard players reset $tt_popcorn_buckets ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_glowberry_trees ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
-scoreboard players reset $tt_hard_task_4 ff_task_tracker
+scoreboard players reset $tt_skincare_routine ff_task_tracker
 scoreboard players reset $tt_hard_task_5 ff_task_tracker
 scoreboard players reset $tt_hard_task_6 ff_task_tracker
 scoreboard players reset $tt_hard_task_7 ff_task_tracker
@@ -228,7 +229,7 @@ function fossil_frights:tasks/medium/popcorn_buckets/reset
 function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/glowberry_trees/reset
 function fossil_frights:tasks/hard/return_the_key/reset
-function fossil_frights:tasks/hard/hard_task_4/reset
+function fossil_frights:tasks/hard/skincare_routine/reset
 function fossil_frights:tasks/hard/hard_task_5/reset
 function fossil_frights:tasks/hard/hard_task_6/reset
 function fossil_frights:tasks/hard/hard_task_7/reset
