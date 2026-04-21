@@ -2,48 +2,38 @@
 
 ## Player Commands
 
-Player-safe commands are exposed through trigger objectives so non-opped players can use them.
-
 Start or queue for the museum:
 ```mcfunction
-/start
-/join
 /trigger ff_cmd_start set 1
 ```
 
-Leave the museum if you are the active player:
+Leave the museum or spectator mode:
 ```mcfunction
-/leave
 /trigger ff_cmd_leave set 1
 ```
 
 Spectate the active player:
 ```mcfunction
-/spectate
 /trigger ff_cmd_spectate set 1
 ```
 
 Show your personal museum stats:
 ```mcfunction
-/stats
 /trigger ff_cmd_stats set 1
 ```
 
 Watch the tutorial:
 ```mcfunction
-/tutorial
 /trigger ff_cmd_tutorial set 1
 ```
 
 Open the gameplay info dialog:
 ```mcfunction
-/info
 /trigger ff_cmd_info set 1
 ```
 
 Open the invite dialog to invite another online player:
 ```mcfunction
-/invite
 /trigger ff_cmd_invite set 1
 ```
 
@@ -53,48 +43,27 @@ Open the invite dialog to invite another online player:
 
 Force-end the current game as an operator:
 ```mcfunction
-/end
 /function fossil_frights:game/end
 ```
 
-Enable dev mode for yourself and switch to creative:
-```mcfunction
-/dev
-```
-
-Clear all plushie trophies and remove all obtained tags:
-```mcfunction
-/function fossil_frights:tasks/final/plushies/clear
-```
-
-Reset the parkour best-time display back to "No times yet":
+Reset the lobby games best-time display back to "No times yet":
 ```mcfunction
 /function fossil_frights:parkour/reset
-```
-
-Reset the Temple Run best-time display back to "No times yet":
-```mcfunction
 /function fossil_frights:temple_run/reset
-```
-
-Reset the Ant Fight best-score display back to "No scores yet":
-```mcfunction
 /function fossil_frights:ant_fight/reset
 ```
 
-Hard reset the main leaderboard, including offline scoreboard holders and every stored leaderboard entry:
+Complete reset the fossil frights game leaderboard:
 ```mcfunction
 /function fossil_frights:admin/reset_leaderboard
 ```
-
-Reset one player's stats by exact name, whether they are online or offline. This also removes them from the leaderboard:
-```mcfunction
-/function fossil_frights:admin/reset_player_stats_macro {name:"PlayerName"}
-```
-
 Export the current storage-backed leaderboard data directly in chat:
 ```mcfunction
 /function fossil_frights:admin/export_leaderboard
+```
+Reset a player's stats (including leaderboard) by exact name, whether they are online or offline:
+```mcfunction
+/function fossil_frights:admin/reset_player_stats_macro {name:"PlayerName"}
 ```
 
 Set an online player's saved stats manually:
@@ -107,19 +76,38 @@ Set an online player's saved stats manually:
 /scoreboard players set <player> ff_temple_run_best <value>
 /scoreboard players set <player> ff_ant_score <value>
 /scoreboard players set <player> ff_ant_top_score <value>
-
 ```
+
+
+Clear all plushie trophies and remove all obtained tags:
+```mcfunction
+/function fossil_frights:tasks/final/plushies/clear
+```
+
 
 ## Developer Commands
 
-Give active key:
+Select Task (while game is running on shift):
 ```mcfunction
-/function fossil_frights:key/give
+/function fossil_frights:tasks/<difficult>/<task_name>selected
 ```
 
-Give DNA microfiber cloth:
+Control Hazards:
 ```mcfunction
-/function fossil_frights:tasks/final/dna/give
+/function fossil_frights:hazard/start/random
+/function fossil_frights:hazard/start/<name>
+/function fossil_frights:hazard/stop/<name>
+/function fossil_frights:hazard/stop/all
+```
+
+Set time of shift manually. (0-6000):
+```
+/scoreboard players set $day_timer ff_day 0
+```
+
+Set key cooldown length in ticks. Default is `600` ticks = `30` seconds:
+```mcfunction
+/scoreboard players set $key ff_key_cd_cfg 600
 ```
 
 Set the held item as the reward for the lock you are looking at:
@@ -137,40 +125,11 @@ Unlock the nearest item frame by clearing invulnerable, fixed, and invisible. Al
 /function itemframe:unlock
 ```
 
-Set key cooldown length in ticks. Default is `600` ticks = `30` seconds:
-```mcfunction
-/scoreboard players set $key ff_key_cd_cfg 600
-```
-
-Start a specific hazard:
-```mcfunction
-/function fossil_frights:hazard/start/<name>
-```
-
-Start a random inactive hazard:
-```mcfunction
-/function fossil_frights:hazard/start/random
-```
-
-Stop a specific hazard:
-```mcfunction
-/function fossil_frights:hazard/stop/<name>
-```
-
-Stop all active hazards:
-```mcfunction
-/function fossil_frights:hazard/stop/all
-```
+# Armour Stands
 
 Give yourself a leaderboard anchor armor stand:
 ```mcfunction
 /give @p minecraft:armor_stand[minecraft:item_name='Leaderboard Anchor',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["leader_board"],NoGravity:1b,Invisible:1b,Invulnerable:1b,Marker:1b}]
-```
-
-
-Set time of shift manually 0-6000
-```
-/scoreboard players set $day_timer ff_day 0
 ```
 
 Give yourself a 3x3 security gate armor stand:
