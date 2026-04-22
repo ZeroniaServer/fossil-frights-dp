@@ -44,7 +44,7 @@ execute if score @s ff_cmd_info matches 1.. run function fossil_frights:command/
 execute if score @s ff_cmd_info matches 1.. run scoreboard players enable @s ff_cmd_info
 execute if score @s ff_cmd_info matches 1.. run scoreboard players set @s ff_cmd_info 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active] run function fossil_frights:player/respawn_active
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active] run function fossil_frights:player/death_active
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/respawn_lobby
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/respawn_lobby
 execute unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
