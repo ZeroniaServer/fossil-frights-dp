@@ -234,10 +234,11 @@ scoreboard players set $deforst_freezer_avail ff_task_state 1
 scoreboard players set $deforst_freezer_sel ff_task_state 0
 scoreboard players set $deforst_freezer_done ff_task_state 0
 scoreboard players set #line_deforst_freezer ff_task_state 5
-scoreboard players set $hard_task_8_avail ff_task_state 1
-scoreboard players set $hard_task_8_sel ff_task_state 0
-scoreboard players set $hard_task_8_done ff_task_state 0
-scoreboard players set #line_hard_task_8 ff_task_state 4
+scoreboard players set $the_lost_code_avail ff_task_state 1
+scoreboard players set $the_lost_code_sel ff_task_state 0
+scoreboard players set $the_lost_code_done ff_task_state 0
+scoreboard players set $the_lost_code_seq ff_task_state 0
+scoreboard players set #line_the_lost_code ff_task_state 4
 scoreboard players set $hard_task_9_avail ff_task_state 1
 scoreboard players set $hard_task_9_sel ff_task_state 0
 scoreboard players set $hard_task_9_done ff_task_state 0

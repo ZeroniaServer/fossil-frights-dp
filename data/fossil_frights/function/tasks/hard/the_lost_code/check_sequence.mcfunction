@@ -1,0 +1,10 @@
+execute if score $the_lost_code_seq ff_task_state matches 1 run function fossil_frights:tasks/hard/the_lost_code/sequences/1_check
+execute if score $the_lost_code_seq ff_task_state matches 2 run function fossil_frights:tasks/hard/the_lost_code/sequences/2_check
+execute if score $the_lost_code_seq ff_task_state matches 3 run function fossil_frights:tasks/hard/the_lost_code/sequences/3_check
+execute if score $the_lost_code_seq ff_task_state matches 4 run function fossil_frights:tasks/hard/the_lost_code/sequences/4_check
+execute if score $the_lost_code_seq ff_task_state matches 5 run function fossil_frights:tasks/hard/the_lost_code/sequences/5_check
+execute if score $the_lost_code_seq ff_task_state matches 6 run function fossil_frights:tasks/hard/the_lost_code/sequences/6_check
+execute if score $the_lost_code_seq ff_task_state matches 7 run function fossil_frights:tasks/hard/the_lost_code/sequences/7_check
+execute if score $the_lost_code_seq ff_task_state matches 8 run function fossil_frights:tasks/hard/the_lost_code/sequences/8_check
+execute if score $the_lost_code_seq ff_task_state matches 9 run function fossil_frights:tasks/hard/the_lost_code/sequences/9_check
+execute if score $the_lost_code_seq ff_task_state matches 10 run function fossil_frights:tasks/hard/the_lost_code/sequences/10_check
