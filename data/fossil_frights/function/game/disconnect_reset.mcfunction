@@ -8,6 +8,7 @@ function fossil_frights:game/time/start_rest
 function fossil_frights:game/timer/reset
 function fossil_frights:animations/door/open
 function fossil_frights:animations/crane/reset
+function fossil_frights:animations/sarcophagus/reset
 function fossil_frights:frights/sniffer/reset
 function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
@@ -27,6 +28,8 @@ scoreboard players set $forklift_watch ff_game_state 0
 scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
+scoreboard players set $sarcophagus_timer ff_game_state 0
+scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0

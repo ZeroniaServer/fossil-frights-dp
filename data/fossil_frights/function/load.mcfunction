@@ -111,6 +111,8 @@ scoreboard players set $forklift_watch ff_game_state 0
 scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
+scoreboard players set $sarcophagus_timer ff_game_state 0
+scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_roster_count ff_game_state 0

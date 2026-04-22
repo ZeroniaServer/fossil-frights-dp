@@ -6,6 +6,7 @@ function fossil_frights:animations/defeat/stop
 function fossil_frights:animations/credits/stop
 function fossil_frights:animations/door/open
 function fossil_frights:animations/crane/reset
+function fossil_frights:animations/sarcophagus/reset
 function fossil_frights:frights/sniffer/reset
 function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
@@ -30,6 +31,8 @@ scoreboard players set $forklift_watch ff_game_state 0
 scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
+scoreboard players set $sarcophagus_timer ff_game_state 0
+scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 1
