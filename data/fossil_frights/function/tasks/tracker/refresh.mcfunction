@@ -52,7 +52,7 @@ scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_skincare_routine ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
-scoreboard players reset $tt_hard_task_7 ff_task_tracker
+scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_hard_task_8 ff_task_tracker
 scoreboard players reset $tt_hard_task_9 ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
@@ -210,9 +210,9 @@ execute if score $feed_the_bats_done ff_task_state matches 1 run scoreboard play
 execute if score $a_c_reset_sel ff_task_state matches 1 run scoreboard players operation $tt_a_c_reset ff_task_tracker = #line_a_c_reset ff_task_state
 execute if score $a_c_reset_sel ff_task_state matches 1 unless score $a_c_reset_done ff_task_state matches 1 run scoreboard players display name $tt_a_c_reset ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" A/C Reset","italic":false}]
 execute if score $a_c_reset_done ff_task_state matches 1 run scoreboard players display name $tt_a_c_reset ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" A/C Reset","color":"gray","italic":false,"strikethrough":true}]
-execute if score $hard_task_7_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_7 ff_task_tracker = #line_hard_task_7 ff_task_state
-execute if score $hard_task_7_sel ff_task_state matches 1 unless score $hard_task_7_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_7 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 7","italic":false}]
-execute if score $hard_task_7_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_7 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 7","color":"gray","italic":false,"strikethrough":true}]
+execute if score $deforst_freezer_sel ff_task_state matches 1 run scoreboard players operation $tt_deforst_freezer ff_task_tracker = #line_deforst_freezer ff_task_state
+execute if score $deforst_freezer_sel ff_task_state matches 1 unless score $deforst_freezer_done ff_task_state matches 1 run scoreboard players display name $tt_deforst_freezer ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Deforst Freezer","italic":false}]
+execute if score $deforst_freezer_done ff_task_state matches 1 run scoreboard players display name $tt_deforst_freezer ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Deforst Freezer","color":"gray","italic":false,"strikethrough":true}]
 execute if score $hard_task_8_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_8 ff_task_tracker = #line_hard_task_8 ff_task_state
 execute if score $hard_task_8_sel ff_task_state matches 1 unless score $hard_task_8_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_8 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 8","italic":false}]
 execute if score $hard_task_8_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_8 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 8","color":"gray","italic":false,"strikethrough":true}]

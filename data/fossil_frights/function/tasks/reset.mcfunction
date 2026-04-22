@@ -115,8 +115,8 @@ scoreboard players set $feed_the_bats_done ff_task_state 0
 scoreboard players set $a_c_reset_sel ff_task_state 0
 scoreboard players set $a_c_reset_done ff_task_state 0
 scoreboard players set $a_c_reset_variant ff_task_state 0
-scoreboard players set $hard_task_7_sel ff_task_state 0
-scoreboard players set $hard_task_7_done ff_task_state 0
+scoreboard players set $deforst_freezer_sel ff_task_state 0
+scoreboard players set $deforst_freezer_done ff_task_state 0
 scoreboard players set $hard_task_8_sel ff_task_state 0
 scoreboard players set $hard_task_8_done ff_task_state 0
 scoreboard players set $hard_task_9_sel ff_task_state 0
@@ -177,7 +177,7 @@ scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_skincare_routine ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
-scoreboard players reset $tt_hard_task_7 ff_task_tracker
+scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_hard_task_8 ff_task_tracker
 scoreboard players reset $tt_hard_task_9 ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
@@ -233,7 +233,7 @@ function fossil_frights:tasks/hard/return_the_key/reset
 function fossil_frights:tasks/hard/skincare_routine/reset
 function fossil_frights:tasks/hard/feed_the_bats/reset
 function fossil_frights:tasks/hard/a_c_reset/reset
-function fossil_frights:tasks/hard/hard_task_7/reset
+function fossil_frights:tasks/hard/deforst_freezer/reset
 function fossil_frights:tasks/hard/hard_task_8/reset
 function fossil_frights:tasks/hard/hard_task_9/reset
 function fossil_frights:tasks/hard/hard_task_10/reset

@@ -230,10 +230,10 @@ scoreboard players set $a_c_timer_active ff_task_state 0
 scoreboard players set $a_c_fan_spin ff_task_state 0
 scoreboard players set $a_c_fan_rot_state ff_task_state 0
 scoreboard players set #line_a_c_reset ff_task_state 6
-scoreboard players set $hard_task_7_avail ff_task_state 1
-scoreboard players set $hard_task_7_sel ff_task_state 0
-scoreboard players set $hard_task_7_done ff_task_state 0
-scoreboard players set #line_hard_task_7 ff_task_state 5
+scoreboard players set $deforst_freezer_avail ff_task_state 1
+scoreboard players set $deforst_freezer_sel ff_task_state 0
+scoreboard players set $deforst_freezer_done ff_task_state 0
+scoreboard players set #line_deforst_freezer ff_task_state 5
 scoreboard players set $hard_task_8_avail ff_task_state 1
 scoreboard players set $hard_task_8_sel ff_task_state 0
 scoreboard players set $hard_task_8_done ff_task_state 0
