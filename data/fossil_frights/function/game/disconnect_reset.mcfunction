@@ -15,6 +15,8 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
+stopsound @a[tag=ff_active] master fossil-frights:ff_night_shift
+stopsound @a[gamemode=spectator,tag=!ff_tutorial] master fossil-frights:ff_night_shift
 execute as @a[gamemode=spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0

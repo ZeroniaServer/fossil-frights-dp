@@ -19,6 +19,8 @@ function fossil_frights:animations/velociraptor_skull/reset_rotation
 execute if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
+stopsound @a[tag=ff_active] master fossil-frights:ff_night_shift
+stopsound @a[gamemode=spectator,tag=!ff_tutorial] master fossil-frights:ff_night_shift
 execute as @a[gamemode=spectator,tag=!ff_active,tag=!ff_tutorial,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
