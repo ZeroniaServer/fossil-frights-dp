@@ -59,6 +59,15 @@ scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_bat_bug_timer 0
 scoreboard players set @s ff_bat_bug_bar 0
+scoreboard players add @s ff_bb_disc_use 0
+execute unless score @s ff_bb_disc_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_bb_disc_seen = @s ff_bb_disc_use
+execute unless score @s ff_bb_sneak_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
+execute unless score @s ff_bb_sneak_state matches -2147483648..2147483647 run scoreboard players set @s ff_bb_sneak_state 0
+execute unless score @s ff_bb_shift_count matches -2147483648..2147483647 run scoreboard players set @s ff_bb_shift_count 0
+scoreboard players operation @s ff_bb_disc_seen = @s ff_bb_disc_use
+scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
+scoreboard players set @s ff_bb_sneak_state 0
+scoreboard players set @s ff_bb_shift_count 0
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
 scoreboard players set @s ff_cmd_start 0

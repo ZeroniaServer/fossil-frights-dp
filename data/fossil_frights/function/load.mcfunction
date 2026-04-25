@@ -6,6 +6,11 @@ scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_bat_bug_timer dummy
 scoreboard objectives add ff_bat_bug_bar dummy
+scoreboard objectives add ff_bb_disc_use minecraft.used:minecraft.music_disc_creator_music_box
+scoreboard objectives add ff_bb_disc_seen dummy
+scoreboard objectives add ff_bb_sneak_seen dummy
+scoreboard objectives add ff_bb_sneak_state dummy
+scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
 scoreboard objectives add ff_dna_use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ff_dna_use_seen dummy
