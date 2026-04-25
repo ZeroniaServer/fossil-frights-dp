@@ -54,7 +54,7 @@ scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
 scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
-scoreboard players reset $tt_hard_task_9 ff_task_tracker
+scoreboard players reset $tt_fertilize_plant ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
@@ -216,9 +216,9 @@ execute if score $deforst_freezer_done ff_task_state matches 1 run scoreboard pl
 execute if score $the_lost_code_sel ff_task_state matches 1 run scoreboard players operation $tt_the_lost_code ff_task_tracker = #line_the_lost_code ff_task_state
 execute if score $the_lost_code_sel ff_task_state matches 1 unless score $the_lost_code_done ff_task_state matches 1 run scoreboard players display name $tt_the_lost_code ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" The Lost Code","italic":false}]
 execute if score $the_lost_code_done ff_task_state matches 1 run scoreboard players display name $tt_the_lost_code ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" The Lost Code","color":"gray","italic":false,"strikethrough":true}]
-execute if score $hard_task_9_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_9 ff_task_tracker = #line_hard_task_9 ff_task_state
-execute if score $hard_task_9_sel ff_task_state matches 1 unless score $hard_task_9_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_9 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 9","italic":false}]
-execute if score $hard_task_9_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_9 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 9","color":"gray","italic":false,"strikethrough":true}]
+execute if score $fertilize_plant_sel ff_task_state matches 1 run scoreboard players operation $tt_fertilize_plant ff_task_tracker = #line_fertilize_plant ff_task_state
+execute if score $fertilize_plant_sel ff_task_state matches 1 unless score $fertilize_plant_done ff_task_state matches 1 run scoreboard players display name $tt_fertilize_plant ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Fertilize Plant","italic":false}]
+execute if score $fertilize_plant_done ff_task_state matches 1 run scoreboard players display name $tt_fertilize_plant ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Fertilize Plant","color":"gray","italic":false,"strikethrough":true}]
 execute if score $hard_task_10_sel ff_task_state matches 1 run scoreboard players operation $tt_hard_task_10 ff_task_tracker = #line_hard_task_10 ff_task_state
 execute if score $hard_task_10_sel ff_task_state matches 1 unless score $hard_task_10_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_10 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 10","italic":false}]
 execute if score $hard_task_10_done ff_task_state matches 1 run scoreboard players display name $tt_hard_task_10 ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Hard Task 10","color":"gray","italic":false,"strikethrough":true}]

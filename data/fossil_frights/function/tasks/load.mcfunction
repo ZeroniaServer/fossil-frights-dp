@@ -239,10 +239,11 @@ scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
 scoreboard players set #line_the_lost_code ff_task_state 4
-scoreboard players set $hard_task_9_avail ff_task_state 1
-scoreboard players set $hard_task_9_sel ff_task_state 0
-scoreboard players set $hard_task_9_done ff_task_state 0
-scoreboard players set #line_hard_task_9 ff_task_state 3
+scoreboard players set $fertilize_plant_avail ff_task_state 1
+scoreboard players set $fertilize_plant_sel ff_task_state 0
+scoreboard players set $fertilize_plant_done ff_task_state 0
+scoreboard players set $fertilize_plant_pick ff_task_state 0
+scoreboard players set #line_fertilize_plant ff_task_state 3
 scoreboard players set $hard_task_10_avail ff_task_state 1
 scoreboard players set $hard_task_10_sel ff_task_state 0
 scoreboard players set $hard_task_10_done ff_task_state 0

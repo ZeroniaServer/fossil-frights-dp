@@ -120,8 +120,9 @@ scoreboard players set $deforst_freezer_done ff_task_state 0
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
-scoreboard players set $hard_task_9_sel ff_task_state 0
-scoreboard players set $hard_task_9_done ff_task_state 0
+scoreboard players set $fertilize_plant_sel ff_task_state 0
+scoreboard players set $fertilize_plant_done ff_task_state 0
+scoreboard players set $fertilize_plant_pick ff_task_state 0
 scoreboard players set $hard_task_10_sel ff_task_state 0
 scoreboard players set $hard_task_10_done ff_task_state 0
 
@@ -180,7 +181,7 @@ scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
 scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
-scoreboard players reset $tt_hard_task_9 ff_task_tracker
+scoreboard players reset $tt_fertilize_plant ff_task_tracker
 scoreboard players reset $tt_hard_task_10 ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
@@ -236,6 +237,6 @@ function fossil_frights:tasks/hard/feed_the_bats/reset
 function fossil_frights:tasks/hard/a_c_reset/reset
 function fossil_frights:tasks/hard/deforst_freezer/reset
 function fossil_frights:tasks/hard/the_lost_code/reset
-function fossil_frights:tasks/hard/hard_task_9/reset
+function fossil_frights:tasks/hard/fertilize_plant/reset
 function fossil_frights:tasks/hard/hard_task_10/reset
 function fossil_frights:tasks/final/final_task/reset
