@@ -26,4 +26,4 @@ scoreboard players add $temple_run_best_centi_tens ff_temple_run_display 0
 scoreboard players add $temple_run_best_centi_ones ff_temple_run_display 0
 setblock 92 79 82 minecraft:light_weighted_pressure_plate
 setblock 97 80 70 minecraft:light_weighted_pressure_plate
-function fossil_frights:temple_run/display/rebuild
+scoreboard players set $temple_run_display_ready ff_temple_run_display 0

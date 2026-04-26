@@ -11,6 +11,7 @@ scoreboard players set #lb_sixty ff_lb_calc 60
 scoreboard players set #lb_ten ff_lb_calc 10
 scoreboard players set #lb_five ff_lb_calc 5
 scoreboard players set #lb_max_entries ff_lb_calc 50
+scoreboard players set $leaderboard_display_ready ff_lb_calc 0
 execute unless score $current ff_lb_generation matches -2147483648..2147483647 run scoreboard players set $current ff_lb_generation 1
 execute unless data storage fossil_frights:leaderboards entries run data modify storage fossil_frights:leaderboards entries set value []
 execute unless data storage fossil_frights:leaderboards revoked run data modify storage fossil_frights:leaderboards revoked set value []

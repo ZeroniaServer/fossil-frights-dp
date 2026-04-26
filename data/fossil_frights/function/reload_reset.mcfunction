@@ -35,8 +35,9 @@ scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
-scoreboard players set $join_pad_mode ff_game_state 1
+scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $game_start_spawn_mode ff_game_state 0
+scoreboard players set $lobby_displays_ready ff_game_state 0
 scoreboard players set @a ff_cmd_stats 0
 scoreboard players enable @a ff_cmd_stats
 scoreboard players set @a ff_cmd_tutorial 0
@@ -57,4 +58,4 @@ function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
 function fossil_frights:tasks/tracker/hide
-execute if entity @a run function fossil_frights:leaderboards/display/rebuild
+scoreboard players set $leaderboard_display_ready ff_lb_calc 0

@@ -96,6 +96,8 @@ attribute @s minecraft:scale base set 1
 title @s actionbar ""
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
+scoreboard players set $join_pad_mode ff_game_state 0
+scoreboard players set $lobby_displays_ready ff_game_state 0
 gamemode adventure @s
 function fossil_frights:player/protection_enable
 effect clear @s minecraft:absorption

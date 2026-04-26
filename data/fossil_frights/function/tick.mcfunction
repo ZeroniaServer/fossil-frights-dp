@@ -33,6 +33,11 @@ function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
+execute if entity @a[x=-8,y=64,z=0,dx=40,dy=30,dz=40] if score $lobby_displays_ready ff_game_state matches 0 run function fossil_frights:game/lobby_displays/ensure_setup
+execute if entity @a[x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parkour_display_ready ff_parkour_display matches 0 run function fossil_frights:parkour/display/rebuild
+execute if entity @a[x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:temple_run/display/rebuild
+execute if entity @a[x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:ant_fight/display/rebuild
+execute if entity @e[type=minecraft:armor_stand,tag=leader_board,limit=1] if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 function fossil_frights:game/tick
 function fossil_frights:join/tick
 function fossil_frights:util/fade/tick

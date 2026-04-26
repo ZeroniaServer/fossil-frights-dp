@@ -130,6 +130,7 @@ scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $game_start_spawn_mode ff_game_state 0
+scoreboard players set $lobby_displays_ready ff_game_state 0
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
@@ -190,27 +191,13 @@ advancement revoke @a only fossil_frights:feed_the_fish_click
 advancement revoke @a only fossil_frights:popcorn_buckets_click
 advancement revoke @a only fossil_frights:glowberry_eat
 function fossil_frights:game/load
-function fossil_frights:command/info_board/setup
-function fossil_frights:command/info/lectern_setup
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
 function fossil_frights:ant_fight/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
-function fossil_frights:game/timer/setup
 function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
-function fossil_frights:game/start_room/day_tracker/setup
-function fossil_frights:game/start_room/day_tracker/refresh
-function fossil_frights:game/start_room/day_button/setup
-function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectator_toggle/setup
-function fossil_frights:game/start_room/settings/spectator_toggle/refresh
-function fossil_frights:game/start_room/settings/setting2/setup
-function fossil_frights:game/start_room/settings/setting2/refresh
-function fossil_frights:game/start_room/settings/multiplayer/setup
-function fossil_frights:game/start_room/settings/setting3/setup
-function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
 function fossil_frights:reload_reset
