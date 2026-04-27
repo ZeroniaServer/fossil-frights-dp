@@ -122,6 +122,9 @@ scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
 scoreboard players set $pig_wrangler_sel ff_task_state 0
 scoreboard players set $pig_wrangler_done ff_task_state 0
+scoreboard players set $holy_grail_sel ff_task_state 0
+scoreboard players set $holy_grail_done ff_task_state 0
+scoreboard players set $holy_grail_pick ff_task_state 0
 scoreboard players set $fertilize_plant_sel ff_task_state 0
 scoreboard players set $fertilize_plant_done ff_task_state 0
 scoreboard players set $fertilize_plant_pick ff_task_state 0
@@ -188,6 +191,7 @@ scoreboard players reset $tt_a_c_reset ff_task_tracker
 scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
 scoreboard players reset $tt_pig_wrangler ff_task_tracker
+scoreboard players reset $tt_holy_grail ff_task_tracker
 scoreboard players reset $tt_fertilize_plant ff_task_tracker
 scoreboard players reset $tt_basketball_dance ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
@@ -244,6 +248,7 @@ function fossil_frights:tasks/hard/feed_the_bats/reset
 function fossil_frights:tasks/hard/a_c_reset/reset
 function fossil_frights:tasks/hard/deforst_freezer/reset
 function fossil_frights:tasks/hard/the_lost_code/reset
+function fossil_frights:tasks/hard/holy_grail/reset
 function fossil_frights:tasks/hard/fertilize_plant/reset
 function fossil_frights:tasks/hard/basketball_dance/reset
 function fossil_frights:tasks/final/final_task/reset
