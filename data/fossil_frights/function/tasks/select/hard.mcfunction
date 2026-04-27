@@ -10,6 +10,7 @@ execute unless score $deforst_freezer_sel ff_task_state matches 1 run scoreboard
 execute unless score $the_lost_code_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $pig_wrangler_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $holy_grail_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $hoveraptor_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $fertilize_plant_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $basketball_dance_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
@@ -26,6 +27,7 @@ execute if score #task_remaining ff_task_state matches 9 store result score #tas
 execute if score #task_remaining ff_task_state matches 10 store result score #task_pick ff_task_state run random value 1..10
 execute if score #task_remaining ff_task_state matches 11 store result score #task_pick ff_task_state run random value 1..11
 execute if score #task_remaining ff_task_state matches 12 store result score #task_pick ff_task_state run random value 1..12
+execute if score #task_remaining ff_task_state matches 13 store result score #task_pick ff_task_state run random value 1..13
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -60,6 +62,9 @@ execute unless score $pig_wrangler_sel ff_task_state matches 1 if score #task_do
 execute unless score $holy_grail_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $holy_grail_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/holy_grail/selected
 execute unless score $holy_grail_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $hoveraptor_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $hoveraptor_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/hoveraptor/selected
+execute unless score $hoveraptor_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $fertilize_plant_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $fertilize_plant_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/fertilize_plant/selected
 execute unless score $fertilize_plant_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

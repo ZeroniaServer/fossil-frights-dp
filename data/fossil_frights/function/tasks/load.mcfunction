@@ -7,7 +7,7 @@ scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
 scoreboard players set #medium_pool_count ff_task_state 20
-scoreboard players set #hard_pool_count ff_task_state 12
+scoreboard players set #hard_pool_count ff_task_state 13
 scoreboard players set #final_pool_count ff_task_state 1
 
 scoreboard players set $check_security_avail ff_task_state 1
@@ -251,6 +251,10 @@ scoreboard players set $holy_grail_sel ff_task_state 0
 scoreboard players set $holy_grail_done ff_task_state 0
 scoreboard players set $holy_grail_pick ff_task_state 0
 scoreboard players set #line_holy_grail ff_task_state 10
+scoreboard players set $hoveraptor_avail ff_task_state 1
+scoreboard players set $hoveraptor_sel ff_task_state 0
+scoreboard players set $hoveraptor_done ff_task_state 0
+scoreboard players set #line_hoveraptor ff_task_state 9
 scoreboard players set $fertilize_plant_avail ff_task_state 1
 scoreboard players set $fertilize_plant_sel ff_task_state 0
 scoreboard players set $fertilize_plant_done ff_task_state 0
