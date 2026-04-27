@@ -6,7 +6,7 @@ scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
-scoreboard players set #medium_pool_count ff_task_state 20
+scoreboard players set #medium_pool_count ff_task_state 22
 scoreboard players set #hard_pool_count ff_task_state 13
 scoreboard players set #final_pool_count ff_task_state 1
 
@@ -189,6 +189,14 @@ scoreboard players set $popcorn_buckets_avail ff_task_state 1
 scoreboard players set $popcorn_buckets_sel ff_task_state 0
 scoreboard players set $popcorn_buckets_done ff_task_state 0
 scoreboard players set #line_popcorn_buckets ff_task_state 55
+scoreboard players set $bring_brush_avail ff_task_state 1
+scoreboard players set $bring_brush_sel ff_task_state 0
+scoreboard players set $bring_brush_done ff_task_state 0
+scoreboard players set #line_bring_brush ff_task_state 56
+scoreboard players set $brush_delivery_avail ff_task_state 1
+scoreboard players set $brush_delivery_sel ff_task_state 0
+scoreboard players set $brush_delivery_done ff_task_state 0
+scoreboard players set #line_brush_delivery ff_task_state 57
 
 scoreboard players set $star_gazing_avail ff_task_state 1
 scoreboard players set $star_gazing_sel ff_task_state 0
