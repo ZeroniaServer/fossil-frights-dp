@@ -7,7 +7,7 @@ scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 24
 scoreboard players set #medium_pool_count ff_task_state 20
-scoreboard players set #hard_pool_count ff_task_state 10
+scoreboard players set #hard_pool_count ff_task_state 11
 scoreboard players set #final_pool_count ff_task_state 1
 
 scoreboard players set $check_security_avail ff_task_state 1
@@ -239,6 +239,13 @@ scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
 scoreboard players set #line_the_lost_code ff_task_state 4
+scoreboard players set $pig_wrangler_avail ff_task_state 1
+scoreboard players set $pig_wrangler_sel ff_task_state 0
+scoreboard players set $pig_wrangler_done ff_task_state 0
+scoreboard players set $pig_wrangler_pick ff_task_state 0
+scoreboard players set $pig_wrangler_in_pen ff_task_state 0
+scoreboard players set $pig_wrangler_fed ff_task_state 0
+scoreboard players set #line_pig_wrangler ff_task_state 11
 scoreboard players set $fertilize_plant_avail ff_task_state 1
 scoreboard players set $fertilize_plant_sel ff_task_state 0
 scoreboard players set $fertilize_plant_done ff_task_state 0

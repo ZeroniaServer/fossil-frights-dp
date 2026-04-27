@@ -120,6 +120,8 @@ scoreboard players set $deforst_freezer_done ff_task_state 0
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
+scoreboard players set $pig_wrangler_sel ff_task_state 0
+scoreboard players set $pig_wrangler_done ff_task_state 0
 scoreboard players set $fertilize_plant_sel ff_task_state 0
 scoreboard players set $fertilize_plant_done ff_task_state 0
 scoreboard players set $fertilize_plant_pick ff_task_state 0
@@ -185,6 +187,7 @@ scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
 scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
+scoreboard players reset $tt_pig_wrangler ff_task_tracker
 scoreboard players reset $tt_fertilize_plant ff_task_tracker
 scoreboard players reset $tt_basketball_dance ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
