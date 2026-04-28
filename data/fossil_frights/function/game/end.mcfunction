@@ -42,6 +42,7 @@ execute as @a[tag=ff_active] run function fossil_frights:util/fade/queue/game_en
 execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
 execute as @a[tag=ff_active] run function fossil_frights:tasks/final/plushies/restore
 tag @a[tag=ff_active] remove ff_forced_spectate
+tag @a[tag=ff_active] remove ff_muted_chat
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 function fossil_frights:game/roster/reset

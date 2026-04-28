@@ -1,3 +1,4 @@
+tag @s remove ff_muted_chat
 execute if entity @s[team=ff_dev_mode] run return 0
 execute unless score @s ff_top_time matches -2147483648..2147483647 run scoreboard players set @s ff_top_time 0
 execute unless score @s ff_top_day matches -2147483648..2147483647 run scoreboard players set @s ff_top_day 0

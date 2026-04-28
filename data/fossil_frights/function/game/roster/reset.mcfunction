@@ -1,4 +1,5 @@
 kill @e[type=minecraft:marker,tag=ff_run_member]
+tag @a[tag=ff_active] remove ff_muted_chat
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 tag @a remove ff_run_sync_source
