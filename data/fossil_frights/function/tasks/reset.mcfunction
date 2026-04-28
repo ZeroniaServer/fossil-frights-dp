@@ -141,8 +141,6 @@ scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
 
-scoreboard players set $final_task_sel ff_task_state 0
-scoreboard players set $final_task_done ff_task_state 0
 
 scoreboard players reset $tt_check_security ff_task_tracker
 scoreboard players reset $tt_fire_pottery ff_task_tracker
@@ -263,4 +261,3 @@ function fossil_frights:tasks/hard/holy_grail/reset
 function fossil_frights:tasks/hard/hoveraptor/reset
 function fossil_frights:tasks/hard/fertilize_plant/reset
 function fossil_frights:tasks/hard/basketball_dance/reset
-function fossil_frights:tasks/final/final_task/reset

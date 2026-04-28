@@ -280,6 +280,13 @@ scoreboard players set #line_basketball_dance ff_task_state 2
 scoreboard players set $final_task_avail ff_task_state 1
 scoreboard players set $final_task_sel ff_task_state 0
 scoreboard players set $final_task_done ff_task_state 0
+scoreboard players set $final_task_dino ff_task_state 0
+scoreboard players set $final_task_dna_done ff_task_state 0
+scoreboard players set $final_task_fx_timer ff_task_state 0
+scoreboard players set $final_task_preview_delay ff_task_state 0
+scoreboard players set $final_task_item ff_task_state 0
+scoreboard players set $final_task_item_done ff_task_state 0
+scoreboard players set $final_task_centrifuge_timer ff_task_state 0
 scoreboard players set #line_final_task ff_task_state 1
 
 function fossil_frights:tasks/tracker/refresh

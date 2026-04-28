@@ -1,5 +1,6 @@
-# MUST update complete.mcfunction clear line to clear the proper ff_task_book tag; currently placeholder.
-# Replace the summon command below with your generated written book item entity.
-# Keep the ff_task_book_temp tag so the shared bookshelf inserter can find it.
-summon item 18 72 29 {Tags:["ff_task_book_temp"],PickupDelay:32767,Age:-32768,Item:{id:"minecraft:written_book",count:1,components:{"minecraft:item_name":{text:"Final Task",italic:false},"minecraft:custom_data":{ff_task_book:"final_task"}}}}
-function fossil_frights:tasks/bookcase/insert_selected_book
+execute if score $final_task_dino ff_task_state matches 1 run function fossil_frights:tasks/final/final_task/selected_books/pteradactyl
+execute if score $final_task_dino ff_task_state matches 2 run function fossil_frights:tasks/final/final_task/selected_books/plesiosaur
+execute if score $final_task_dino ff_task_state matches 3 run function fossil_frights:tasks/final/final_task/selected_books/trike
+execute if score $final_task_dino ff_task_state matches 4 run function fossil_frights:tasks/final/final_task/selected_books/sniffer
+execute if score $final_task_dino ff_task_state matches 5 run function fossil_frights:tasks/final/final_task/selected_books/t_rex
+execute if score $final_task_dino ff_task_state matches 6 run function fossil_frights:tasks/final/final_task/selected_books/velociraptor

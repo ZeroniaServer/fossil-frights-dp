@@ -1,3 +1,4 @@
+execute if entity @s[tag=ff_final_reward] run return 0
 execute unless data entity @s Thrower run kill @s
 execute store result score $plushie_drop ff_active_uuid_0 run data get entity @s Thrower[0] 1
 execute store result score $plushie_drop ff_active_uuid_1 run data get entity @s Thrower[1] 1
