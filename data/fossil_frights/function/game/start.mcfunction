@@ -2,6 +2,7 @@ execute unless entity @a[tag=ff_active] run function fossil_frights:messages/err
 execute unless entity @a[tag=ff_active] run return 0
 
 function fossil_frights:tasks/bookcase/clear
+function fossil_frights:game/cleanup_dropped_items
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:bossbar/setup
