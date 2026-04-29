@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cookie",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Cookie Jar",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "cookie_jar"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Achievements"
+    },
+    "description": {
+      "text": ""
+    },
+    "background": "minecraft:block/bricks",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "show_page": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:fern",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Carnivorous Fly Trap",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "carnivorous_flytrap"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Lobby"
+    },
+    "description": {
+      "text": ""
+    },
+    "background": "minecraft:block/mud_bricks",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "show_page": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

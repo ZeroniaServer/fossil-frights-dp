@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:carved_pumpkin",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Security Hat",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "security_guard_hat"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Progression"
+    },
+    "description": {
+      "text": ""
+    },
+    "background": "minecraft:block/tuff_bricks",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "show_page": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
