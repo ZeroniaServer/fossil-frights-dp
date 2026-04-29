@@ -1,0 +1,43 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:gold_ingot",
+      "components": {
+        "minecraft:item_name": {
+          "text": "CubeKoin",
+          "color": "gold",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "cubekoin"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Going up!"
+    },
+    "description": {
+      "text": "Pay the rat a toll to ride in the pulley."
+    },
+    "x": 1,
+    "y": 1,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "pay_pulley_toll": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

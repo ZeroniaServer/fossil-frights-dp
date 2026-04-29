@@ -1,0 +1,1 @@
+execute if entity @s[tag=obtained_pteradactyl_plushie,tag=obtained_plesiosaur_plushie,tag=obtained_trike_plushie,tag=obtained_sniffer_plushie,tag=obtained_t_rex_plushie,tag=obtained_velociraptor_plushie] run advancement grant @s only fossil_frights:02_achievements/collect_them_all

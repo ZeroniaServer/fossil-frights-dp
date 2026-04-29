@@ -1,0 +1,23 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_bars"
+    },
+    "title": {
+      "text": "Days without incident 0"
+    },
+    "description": {
+      "text": "Get crushed by a security gate."
+    },
+    "x": 1,
+    "y": 2,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "crushed_by_security_gate": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

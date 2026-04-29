@@ -1,0 +1,42 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:carved_pumpkin",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Security Hat",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "security_guard_hat"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Frightful"
+    },
+    "description": {
+      "text": "Encounter a jump scare."
+    },
+    "x": 0,
+    "y": 1,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "encounter_jump_scare": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

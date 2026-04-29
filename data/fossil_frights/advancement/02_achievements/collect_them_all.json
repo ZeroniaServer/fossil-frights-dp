@@ -1,0 +1,42 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying",
+      "components": {
+        "minecraft:item_name": {
+          "text": "T-Rex Plushie",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "t-rex_plushie"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Collect them all"
+    },
+    "description": {
+      "text": "Collect all 6 plushies."
+    },
+    "x": 0,
+    "y": 3,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "collect_all_plushies": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

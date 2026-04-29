@@ -4,3 +4,4 @@ execute if score $final_task_dino ff_task_state matches 3 as @a[tag=ff_active,li
 execute if score $final_task_dino ff_task_state matches 4 as @a[tag=ff_active,limit=1] run tag @s add obtained_sniffer_plushie
 execute if score $final_task_dino ff_task_state matches 5 as @a[tag=ff_active,limit=1] run tag @s add obtained_t_rex_plushie
 execute if score $final_task_dino ff_task_state matches 6 as @a[tag=ff_active,limit=1] run tag @s add obtained_velociraptor_plushie
+execute as @a[tag=ff_active,limit=1] run function fossil_frights:advancements/checks/collect_them_all

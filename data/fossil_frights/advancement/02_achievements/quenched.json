@@ -1,0 +1,42 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:milk_bucket",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Drink with Straw",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "drink_with_straw"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Quenched"
+    },
+    "description": {
+      "text": "Purchase a drink from the vending machine."
+    },
+    "x": 0,
+    "y": 2,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "purchase_vending_drink": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
