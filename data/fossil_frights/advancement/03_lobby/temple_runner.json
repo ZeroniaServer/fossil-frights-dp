@@ -1,0 +1,43 @@
+{
+  "parent": "fossil_frights:03_lobby/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:warped_fungus_on_a_stick",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Temple Run Restart",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "temple_run_restart"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        },
+        "minecraft:enchantment_glint_override": false
+      }
+    },
+    "title": {
+      "text": "Temple Runner"
+    },
+    "description": {
+      "text": "Complete the Temple Run."
+    },
+    "x": 0,
+    "y": 3,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "complete_temple_run": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "fossil_frights:03_lobby/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:warped_fungus_on_a_stick",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Parkour Restart",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "parkour_restart"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        },
+        "minecraft:enchantment_glint_override": false
+      }
+    },
+    "title": {
+      "text": "Busy Bee"
+    },
+    "description": {
+      "text": "Complete the Lobby Parkour."
+    },
+    "x": 0,
+    "y": 1,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "complete_lobby_parkour": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

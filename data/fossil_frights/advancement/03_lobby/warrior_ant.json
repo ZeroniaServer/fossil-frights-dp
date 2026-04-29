@@ -1,0 +1,31 @@
+{
+  "parent": "fossil_frights:03_lobby/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:snowball",
+      "components": {
+        "minecraft:item_name": {
+          "text": "Infinileaf",
+          "color": "green",
+          "italic": false
+        },
+        "minecraft:enchantment_glint_override": false
+      }
+    },
+    "title": {
+      "text": "Warrior Ant"
+    },
+    "description": {
+      "text": "Get an Ant Score of 10+."
+    },
+    "x": 0,
+    "y": 2,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "ant_score_10": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

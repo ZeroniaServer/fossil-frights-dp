@@ -8,6 +8,7 @@ execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_top_
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_immunity 0
 execute if entity @s[tag=ff_ant_fight,scores={ff_ant_immunity=1..}] run scoreboard players remove @s ff_ant_immunity 1
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score > @s ff_ant_top_score run scoreboard players operation @s ff_ant_top_score = @s ff_ant_score
+execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score matches 10.. run advancement grant @s only fossil_frights:03_lobby/warrior_ant
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_best
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/lobby_sneak_tick
 execute if entity @s[tag=ff_ant_fight] run title @s actionbar [{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]

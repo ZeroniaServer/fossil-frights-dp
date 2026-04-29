@@ -1,4 +1,5 @@
 function fossil_frights:temple_run/update_display
+advancement grant @s only fossil_frights:03_lobby/temple_runner
 function fossil_frights:messages/temple_run/completed
 function fossil_frights:temple_run/update_personal_best
 function fossil_frights:temple_run/check_best
