@@ -1,4 +1,5 @@
 scoreboard players set $invite_found ff_gui 1
+advancement grant @a[tag=ff_invite_caller,limit=1] only fossil_frights:02_achievements/team_player
 scoreboard players add $invite_token ff_game_state 1
 scoreboard players set $invite_pending ff_game_state 1
 scoreboard players operation $invite_target ff_active_uuid_0 = @s ff_active_uuid_0

@@ -2,21 +2,21 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:mangrove_button"
+      "id": "minecraft:tnt"
     },
     "title": {
-      "text": "Days without incident 0"
+      "text": "Hazardous"
     },
     "description": {
-      "text": "Get crushed by a security gate."
+      "text": "Have all 5 hazards active at once."
     },
-    "x": 1,
-    "y": 2,
+    "x": 0,
+    "y": 5,
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "crushed_by_security_gate": {
+    "all_hazards_active": {
       "trigger": "minecraft:impossible"
     }
   }

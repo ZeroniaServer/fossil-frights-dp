@@ -1,0 +1,1 @@
+execute if score lights ff_hazard_active matches 1 if score lava ff_hazard_active matches 1 if score floods ff_hazard_active matches 1 if score security ff_hazard_active matches 1 if score curse ff_hazard_active matches 1 run advancement grant @a[tag=ff_active] only fossil_frights:02_achievements/hazardous

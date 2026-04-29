@@ -10,6 +10,7 @@ execute if score $day_current ff_day matches 1 if score $run_multiplayer ff_game
 execute if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 1
+execute if score $day_current ff_day matches 1 run scoreboard players set $speedrunner_restart_window ff_game_state 100
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh

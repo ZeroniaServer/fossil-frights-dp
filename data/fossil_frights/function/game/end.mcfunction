@@ -1,3 +1,4 @@
+execute if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[tag=ff_active] only fossil_frights:02_achievements/speedrunner
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/final/final_task/close_lab_door
@@ -58,6 +59,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0

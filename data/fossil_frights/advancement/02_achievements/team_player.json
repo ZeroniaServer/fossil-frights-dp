@@ -2,21 +2,21 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:mangrove_button"
+      "id": "minecraft:player_head"
     },
     "title": {
-      "text": "Days without incident 0"
+      "text": "Team Player"
     },
     "description": {
-      "text": "Get crushed by a security gate."
+      "text": "Invite someone to a multiplayer game."
     },
     "x": 1,
-    "y": 2,
+    "y": 3,
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "crushed_by_security_gate": {
+    "invite_multiplayer_player": {
       "trigger": "minecraft:impossible"
     }
   }
