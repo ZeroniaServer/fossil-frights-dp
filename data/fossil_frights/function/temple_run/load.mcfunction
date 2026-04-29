@@ -1,7 +1,8 @@
 scoreboard objectives add ff_temple_run_time dummy
 scoreboard objectives add ff_temple_run_best dummy
 scoreboard objectives add ff_temple_run_running dummy
-scoreboard objectives add ff_temple_run_restart_use minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives remove ff_temple_run_restart_use
+scoreboard objectives add ff_temple_run_restart_use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ff_temple_run_restart_seen dummy
 scoreboard objectives add ff_temple_run_min dummy
 scoreboard objectives add ff_temple_run_sec dummy
