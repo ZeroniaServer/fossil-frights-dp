@@ -38,7 +38,7 @@ scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
 item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
-execute as @a[tag=ff_active] run function fossil_frights:key/give
+execute as @a[tag=ff_active] run function fossil_frights:key/give_waiting
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
@@ -53,6 +53,7 @@ scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
+execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0

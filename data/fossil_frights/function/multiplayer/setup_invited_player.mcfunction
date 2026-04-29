@@ -16,6 +16,6 @@ scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 title @s actionbar ""
 item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
-function fossil_frights:key/give
+function fossil_frights:key/give_waiting
 function fossil_frights:util/fade/queue/game_start
 spawnpoint @s 20 70 20

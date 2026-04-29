@@ -84,4 +84,4 @@ advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
-execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick"}} unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{ff_parkour_restart:1b}}}} unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{ff_temple_run_restart:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step
+execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step

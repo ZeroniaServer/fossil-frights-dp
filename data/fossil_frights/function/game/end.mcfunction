@@ -36,6 +36,7 @@ title @a[tag=ff_active] actionbar ""
 clear @a[tag=ff_active]
 clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key:1b}]
 clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_cooldown:1b}]
+clear @a[tag=ff_active] minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_disabled:1b}]
 clear @a[tag=ff_active] minecraft:warped_fungus_on_a_stick[minecraft:custom_data={ff_dna:1b}]
 item replace entity @a[tag=ff_active] weapon.mainhand with air
 item replace entity @a[tag=ff_active] weapon.offhand with air

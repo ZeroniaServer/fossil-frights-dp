@@ -1,0 +1,1 @@
+function fossil_frights:key/put_disabled_in_hand

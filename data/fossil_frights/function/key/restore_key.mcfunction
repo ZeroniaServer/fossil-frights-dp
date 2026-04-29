@@ -2,7 +2,7 @@ tag @s remove ff_key_restore_hand
 tag @s remove ff_key_restore_done
 execute if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}} run tag @s add ff_key_restore_hand
 execute store result storage fossil_frights:key seconds float 0.05 run scoreboard players get $key ff_key_cd_cfg
-execute if entity @s[tag=ff_key_restore_hand] run function fossil_frights:key/put_active_in_hand with storage fossil_frights:key
+execute if entity @s[tag=ff_key_restore_hand] run function fossil_frights:key/put_ready_in_hand with storage fossil_frights:key
 execute if entity @s[tag=ff_key_restore_hand] run tag @s add ff_key_restore_done
 data modify storage fossil_frights:key slot set value "weapon.offhand"
 execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
@@ -78,8 +78,6 @@ data modify storage fossil_frights:key slot set value "inventory.25"
 execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:34b,id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
 data modify storage fossil_frights:key slot set value "inventory.26"
 execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:35b,id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
-execute unless entity @s[tag=ff_key_restore_done] run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_cooldown:1b}] 1
-execute unless entity @s[tag=ff_key_restore_done] run function fossil_frights:key/give_active with storage fossil_frights:key
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_cooldown:1b}]
 tag @s remove ff_key_restore_hand
 tag @s remove ff_key_restore_done

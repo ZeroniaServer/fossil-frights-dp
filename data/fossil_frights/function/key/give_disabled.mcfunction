@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick[minecraft:item_name={text:'Storage Key',color:'yellow',extra:[{text:' (Disabled)',color:'gray'}]},minecraft:lore=[{text:'',extra:['key_disabled']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:custom_data={ff_key_disabled:1b}] 1
