@@ -1,0 +1,41 @@
+{
+  "parent": "fossil_frights:01_progression/day_10",
+  "display": {
+    "icon": {
+      "id": "minecraft:gold_ingot",
+      "components": {
+        "minecraft:item_name": {
+          "text": "CubeKoin",
+          "color": "gold",
+          "italic": false
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "cubekoin"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Victory"
+    },
+    "description": {
+      "text": "Beat all 10 days."
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "beat_all_10_days": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

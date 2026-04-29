@@ -1,0 +1,11 @@
+execute if score $day_current ff_day matches 1 run advancement grant @s only fossil_frights:01_progression/day_1
+execute if score $day_current ff_day matches 2 run advancement grant @s only fossil_frights:01_progression/day_2
+execute if score $day_current ff_day matches 3 run advancement grant @s only fossil_frights:01_progression/day_3
+execute if score $day_current ff_day matches 4 run advancement grant @s only fossil_frights:01_progression/day_4
+execute if score $day_current ff_day matches 5 run advancement grant @s only fossil_frights:01_progression/day_5
+execute if score $day_current ff_day matches 6 run advancement grant @s only fossil_frights:01_progression/day_6
+execute if score $day_current ff_day matches 7 run advancement grant @s only fossil_frights:01_progression/day_7
+execute if score $day_current ff_day matches 8 run advancement grant @s only fossil_frights:01_progression/day_8
+execute if score $day_current ff_day matches 9 run advancement grant @s only fossil_frights:01_progression/day_9
+execute if score $day_current ff_day matches 10 run advancement grant @s only fossil_frights:01_progression/day_10
+execute if score $day_current ff_day matches 10 run advancement grant @s only fossil_frights:01_progression/victory
