@@ -100,10 +100,7 @@ spawnpoint @s 0 80 0
 scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $lobby_displays_ready ff_game_state 0
 gamemode adventure @s
-function fossil_frights:player/protection_enable
-effect clear @s minecraft:absorption
-effect clear @s minecraft:health_boost
-effect give @s minecraft:saturation infinite 255 true
+function fossil_frights:player/effects/lobby_reset
 effect give @s minecraft:instant_health 100 0 true
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
