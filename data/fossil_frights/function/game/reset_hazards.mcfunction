@@ -4,12 +4,10 @@ scoreboard players set floods ff_hazard_active 0
 scoreboard players set security ff_hazard_active 0
 scoreboard players set curse ff_hazard_active 0
 
-# Use the lighter reset path here. The full hazard/stop/all path runs
-# cinematic stop logic that is too heavy for startup/end resets.
+# Use direct reset logic here. Full hazard stop paths can play animations.
 function fossil_frights:hazard/lights/stop
 
-fill -25 69 18 3 70 50 minecraft:stone replace minecraft:lava
-fill -25 69 18 3 70 50 minecraft:stone replace minecraft:magma_block
+place template minecraft:lava_phase_0 -26 69 17
 scoreboard players set #lava_mode ff_hazard_rng 0
 scoreboard players set #lava_phase ff_hazard_rng 0
 scoreboard players set #lava_anim_phase ff_hazard_rng 0
