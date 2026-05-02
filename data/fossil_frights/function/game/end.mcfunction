@@ -60,6 +60,7 @@ scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
+scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0

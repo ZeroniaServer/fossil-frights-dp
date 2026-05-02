@@ -4,46 +4,46 @@
 
 Start or queue for the museum:
 ```mcfunction
-/trigger ff_cmd_start set 1
+/trigger ff_cmd_start
 ```
 
 Leave the museum or spectator mode:
 ```mcfunction
-/trigger ff_cmd_leave set 1
+/trigger ff_cmd_leave
 ```
 
 Spectate the active player:
 ```mcfunction
-/trigger ff_cmd_spectate set 1
+/trigger ff_cmd_spectate
 ```
 
 Show your personal museum stats:
 ```mcfunction
-/trigger ff_cmd_stats set 1
+/trigger ff_cmd_stats
 ```
 
 Watch the tutorial:
 ```mcfunction
-/trigger ff_cmd_tutorial set 1
+/trigger ff_cmd_tutorial
 ```
 
 Open the gameplay info dialog:
 ```mcfunction
-/trigger ff_cmd_info set 1
+/trigger ff_cmd_info
 ```
 
 Open the invite dialog to invite another online player:
 ```mcfunction
-/trigger ff_cmd_invite set 1
+/trigger ff_cmd_invite
 ```
 
 
 
 # Op commands
 
-Force-end the current game as an operator:
+Open the admin menu:
 ```mcfunction
-/function fossil_frights:game/end
+/function fossil_frights:command/admin/show
 ```
 
 Reset the lobby games best-time display back to "No times yet":
@@ -77,7 +77,6 @@ Set an online player's saved stats manually:
 /scoreboard players set <player> ff_ant_score <value>
 /scoreboard players set <player> ff_ant_top_score <value>
 ```
-
 
 Clear all plushie trophies and remove all obtained tags:
 ```mcfunction
