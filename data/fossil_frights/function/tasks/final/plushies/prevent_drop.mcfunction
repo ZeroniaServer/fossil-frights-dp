@@ -1,3 +1,4 @@
+execute if score $present ff_plugin matches 1 run return 0
 execute as @e[type=minecraft:item,tag=!ff_final_reward,nbt={Item:{id:"minecraft:totem_of_undying",components:{"minecraft:custom_data":{ff_plushie:"plesiosaur"}}}}] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/plesiosaur
 execute as @e[type=minecraft:item,tag=!ff_final_reward,nbt={Item:{id:"minecraft:totem_of_undying",components:{"minecraft:custom_data":{ff_plushie:"velociraptor"}}}}] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/velociraptor
 execute as @e[type=minecraft:item,tag=!ff_final_reward,nbt={Item:{id:"minecraft:totem_of_undying",components:{"minecraft:custom_data":{ff_plushie:"trike"}}}}] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/trike

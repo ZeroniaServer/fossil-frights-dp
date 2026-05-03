@@ -67,6 +67,7 @@ scoreboard objectives add ff_run_count dummy
 scoreboard objectives add ff_duo_best dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
+scoreboard objectives add ff_plugin dummy
 scoreboard objectives add ff_fade_tp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600

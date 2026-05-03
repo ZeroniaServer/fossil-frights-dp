@@ -46,6 +46,11 @@ Open the admin menu:
 /function fossil_frights:command/admin/show
 ```
 
+Clear all plushie trophies and remove all obtained tags:
+```mcfunction
+/function fossil_frights:tasks/final/plushies/clear
+```
+
 Reset the lobby games best-time display back to "No times yet":
 ```mcfunction
 /function fossil_frights:parkour/reset
@@ -53,14 +58,13 @@ Reset the lobby games best-time display back to "No times yet":
 /function fossil_frights:ant_fight/reset
 ```
 
-Complete reset the fossil frights game leaderboard:
+ Important: If using the Fossil Frights plugin on a server, the datapack will delegate leaderboard handling to the plugin to properly store player stats in `leaderboard.yml`. Please use refer to the plugin and use `/admin leaderboard` rather then the commands below.  
+
+Completely reset the fossil frights game leaderboard:
 ```mcfunction
 /function fossil_frights:admin/reset_leaderboard
 ```
-Export the current storage-backed leaderboard data directly in chat:
-```mcfunction
-/function fossil_frights:admin/export_leaderboard
-```
+
 Reset a player's stats (including leaderboard) by exact name, whether they are online or offline:
 ```mcfunction
 /function fossil_frights:admin/reset_player_stats_macro {name:"PlayerName"}
@@ -77,12 +81,6 @@ Set an online player's saved stats manually:
 /scoreboard players set <player> ff_ant_score <value>
 /scoreboard players set <player> ff_ant_top_score <value>
 ```
-
-Clear all plushie trophies and remove all obtained tags:
-```mcfunction
-/function fossil_frights:tasks/final/plushies/clear
-```
-
 
 ## Developer Commands
 
@@ -112,16 +110,6 @@ Set key cooldown length in ticks. Default is `600` ticks = `30` seconds:
 Set the held item as the reward for the lock you are looking at:
 ```mcfunction
 /function fossil_frights:lock/set_held
-```
-
-Lock the nearest item frame by making it invulnerable, fixed, and invisible. Also applies a 0.5-second glow:
-```mcfunction
-/function itemframe:lock
-```
-
-Unlock the nearest item frame by clearing invulnerable, fixed, and invisible. Also applies a 0.5-second glow:
-```mcfunction
-/function itemframe:unlock
 ```
 
 # Armour Stands
