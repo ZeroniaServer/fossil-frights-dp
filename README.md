@@ -65,8 +65,6 @@ Tracked stat objectives:
 
 The datapack still updates scoreboards during gameplay, but immediately calls the plugin sync hook after leaderboard stat changes. The plugin writes the result to `leaderboard.yml`, then rebuilds datapack storage for the in-world board.
 
-
-
 Plugin admin commands:
 
 | Action | Command |
@@ -91,7 +89,7 @@ Edit `leaderboard.yml`, then run `/admin leaderboard reload`; values apply immed
 | Day timeout | Marks defeat and runs defeat animation |
 | Victory | Day `10` complete freezes timer, updates top day/time or duo time, runs victory celebration |
 | Leave / End | Updates solo day if applicable, resets game state, returns players to lobby |
-| Active disconnect | Stores pending day progress, resets game, lets player reclaim if they rejoin |
+| Active disconnect | Ends the run and resets game state; datapack-only may apply pending day stats on next login |
 
 ## Placement Utilities
 
