@@ -61,9 +61,11 @@ Tracked stat objectives:
 
 ### Plugin Present
 
-`plugins/FossilFrights/leaderboard.yml` is the source of truth.
+When Fossil Frights plugin is installed `plugins/FossilFrights/leaderboard.yml` becomes the source of truth.
 
-The datapack still updates scoreboards during gameplay, but immediately calls the plugin sync hook after leaderboard stat changes. The plugin writes the result to `leaderboard.yml`, then rebuilds datapack storage for the in-world board.
+The datapack functions as normal updating the scoreboards during gameplay, but immediately calls the plugin sync hook. The plugin writes the result to `leaderboard.yml`, then rebuilds datapack storage for the in-world board, this means the leaderboard is human readable, editable, and can be saved in the form of a file. 
+
+Rationale: The plugin is not available to singleplayer installs, hence the fully functional datapack leaderboard. The plugin avoids duplicating leaderboard management, but rather just builds upon the data saving allowing for a more robust solution in competitive gameplay and public servers. 
 
 Plugin admin commands:
 
