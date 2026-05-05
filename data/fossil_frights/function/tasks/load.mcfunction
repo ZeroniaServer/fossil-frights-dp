@@ -5,7 +5,7 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 25
+scoreboard players set #easy_pool_count ff_task_state 26
 scoreboard players set #medium_pool_count ff_task_state 22
 scoreboard players set #hard_pool_count ff_task_state 13
 scoreboard players set #final_pool_count ff_task_state 1
@@ -111,6 +111,10 @@ scoreboard players set $fix_mars_avail ff_task_state 1
 scoreboard players set $fix_mars_sel ff_task_state 0
 scoreboard players set $fix_mars_done ff_task_state 0
 scoreboard players set #line_fix_mars ff_task_state 46
+scoreboard players set $make_some_noise_avail ff_task_state 1
+scoreboard players set $make_some_noise_sel ff_task_state 0
+scoreboard players set $make_some_noise_done ff_task_state 0
+scoreboard players set #line_make_some_noise ff_task_state 47
 
 scoreboard players set $chlorinify_avail ff_task_state 1
 scoreboard players set $chlorinify_sel ff_task_state 0

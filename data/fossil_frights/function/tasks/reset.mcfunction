@@ -54,6 +54,8 @@ scoreboard players set $dig_sand_sel ff_task_state 0
 scoreboard players set $dig_sand_done ff_task_state 0
 scoreboard players set $fix_mars_sel ff_task_state 0
 scoreboard players set $fix_mars_done ff_task_state 0
+scoreboard players set $make_some_noise_sel ff_task_state 0
+scoreboard players set $make_some_noise_done ff_task_state 0
 
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
@@ -236,6 +238,7 @@ function fossil_frights:tasks/easy/tnt_test/reset
 function fossil_frights:tasks/easy/sweep_popcorn/reset
 function fossil_frights:tasks/easy/dig_sand/reset
 function fossil_frights:tasks/easy/fix_mars/reset
+function fossil_frights:tasks/easy/make_some_noise/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset

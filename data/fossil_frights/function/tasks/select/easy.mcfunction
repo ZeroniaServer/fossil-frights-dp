@@ -25,6 +25,7 @@ execute unless score $tnt_test_sel ff_task_state matches 1 run scoreboard player
 execute unless score $sweep_popcorn_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $dig_sand_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $fix_mars_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $make_some_noise_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -52,6 +53,7 @@ execute if score #task_remaining ff_task_state matches 22 store result score #ta
 execute if score #task_remaining ff_task_state matches 23 store result score #task_pick ff_task_state run random value 1..23
 execute if score #task_remaining ff_task_state matches 24 store result score #task_pick ff_task_state run random value 1..24
 execute if score #task_remaining ff_task_state matches 25 store result score #task_pick ff_task_state run random value 1..25
+execute if score #task_remaining ff_task_state matches 26 store result score #task_pick ff_task_state run random value 1..26
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -131,3 +133,6 @@ execute unless score $dig_sand_sel ff_task_state matches 1 if score #task_done f
 execute unless score $fix_mars_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $fix_mars_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/fix_mars/selected
 execute unless score $fix_mars_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $make_some_noise_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $make_some_noise_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/make_some_noise/selected
+execute unless score $make_some_noise_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
