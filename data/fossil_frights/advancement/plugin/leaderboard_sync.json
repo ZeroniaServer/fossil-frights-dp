@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "sync": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -61,8 +61,16 @@ Tracked stat objectives:
 
 ### Plugin Present
 
-The datapack maintains functionality over the stats and leaderboard, but immediately calls the plugin sync hook. Enabling the game via the plugin to read and write to `leaderboard.yml`, becoming the source of truth, while not replacing the datapack functionalities.
+The datapack always manages stats/leaderboard, but when the plugin present it helps with storage via `leaderboard.yml` file.
 
+| Process | Behavior |
+| --- | --- |
+| 1. Player stat changes | Datapack updates scoreboards |
+| 2. Plugin sync | Datapack calls the plugin sync hook instead of writing leaderboard storage |
+| 3. File storage | Plugin writes `plugins/FossilFrights/leaderboard.yml` |
+| 4. Board render | Plugin rebuilds datapack display storage from `leaderboard.yml` |
+
+`leaderboard.yml` is the source of truth while the plugin is present.
 
 Plugin admin commands:
 
@@ -72,11 +80,10 @@ Plugin admin commands:
 | Reset file-backed leaderboard | `/admin leaderboard reset` |
 | Remove player from Fossil Frights leaderboard | `/admin leaderboard remove <player>` |
 
-To edit players online/offline players stats more directly: 
 
 Edit `leaderboard.yml`, then run `/admin leaderboard reload`; values apply immediately
 
-> Avoid datapack leaderboard reset/stat edit commands while the plugin is present. Destructive datapack commands are guarded and will stop with a warning.
+> Avoid datapack leaderboard reset/stat edit commands while the plugin is present. 
 
 ## Game Flow
 

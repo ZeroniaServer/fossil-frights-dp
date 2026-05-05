@@ -4,6 +4,6 @@ scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
-function fossil_frights:leaderboards/sync_entry
+execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/sync_entry
 execute if score $present ff_plugin matches 1 run function fossil_frights:leaderboards/plugin/sync_current
 function fossil_frights:leaderboards/display/refresh

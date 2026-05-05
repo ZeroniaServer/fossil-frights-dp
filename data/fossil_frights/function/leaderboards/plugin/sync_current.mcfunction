@@ -1,3 +1,1 @@
-tag @s add ff_plugin_leaderboard_sync
-ffleaderboard sync_tagged
-tag @s remove ff_plugin_leaderboard_sync
+advancement grant @s only fossil_frights:plugin/leaderboard_sync
