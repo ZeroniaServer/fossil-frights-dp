@@ -22,6 +22,7 @@ execute unless score $feed_the_fish_sel ff_task_state matches 1 run scoreboard p
 execute unless score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $bring_brush_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $brush_delivery_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $ancient_portal_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
@@ -46,6 +47,7 @@ execute if score #task_remaining ff_task_state matches 19 store result score #ta
 execute if score #task_remaining ff_task_state matches 20 store result score #task_pick ff_task_state run random value 1..20
 execute if score #task_remaining ff_task_state matches 21 store result score #task_pick ff_task_state run random value 1..21
 execute if score #task_remaining ff_task_state matches 22 store result score #task_pick ff_task_state run random value 1..22
+execute if score #task_remaining ff_task_state matches 23 store result score #task_pick ff_task_state run random value 1..23
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -116,3 +118,6 @@ execute unless score $bring_brush_sel ff_task_state matches 1 if score #task_don
 execute unless score $brush_delivery_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $brush_delivery_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/brush_delivery/selected
 execute unless score $brush_delivery_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $ancient_portal_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $ancient_portal_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/ancient_portal/selected
+execute unless score $ancient_portal_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
