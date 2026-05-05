@@ -73,6 +73,7 @@ advancement revoke @s only fossil_frights:multiplayer_click
 advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:swat_flies_click
 advancement revoke @s only fossil_frights:fix_cracked_egg_click
+advancement revoke @s only fossil_frights:fix_mars_click
 advancement revoke @s only fossil_frights:sweep_popcorn_click
 advancement revoke @s only fossil_frights:dig_sand_click
 advancement revoke @s only fossil_frights:credit_reel_click
