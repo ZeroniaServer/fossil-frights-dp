@@ -197,6 +197,16 @@ scoreboard players set $brush_delivery_avail ff_task_state 1
 scoreboard players set $brush_delivery_sel ff_task_state 0
 scoreboard players set $brush_delivery_done ff_task_state 0
 scoreboard players set #line_brush_delivery ff_task_state 57
+scoreboard players set $fix_sculker_avail ff_task_state 1
+scoreboard players set $fix_sculker_sel ff_task_state 0
+scoreboard players set $fix_sculker_done ff_task_state 0
+scoreboard players set #line_fix_sculker ff_task_state 58
+scoreboard players set $ancient_portal_avail ff_task_state 1
+scoreboard players set $ancient_portal_sel ff_task_state 0
+scoreboard players set $ancient_portal_done ff_task_state 0
+scoreboard players set $ancient_portal_timer ff_task_state 0
+scoreboard players set $ancient_portal_dest ff_task_state 0
+scoreboard players set #line_ancient_portal ff_task_state 59
 
 scoreboard players set $star_gazing_avail ff_task_state 1
 scoreboard players set $star_gazing_sel ff_task_state 0

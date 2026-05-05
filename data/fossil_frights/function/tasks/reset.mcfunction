@@ -98,6 +98,8 @@ scoreboard players set $bring_brush_sel ff_task_state 0
 scoreboard players set $bring_brush_done ff_task_state 0
 scoreboard players set $brush_delivery_sel ff_task_state 0
 scoreboard players set $brush_delivery_done ff_task_state 0
+scoreboard players set $fix_sculker_sel ff_task_state 0
+scoreboard players set $fix_sculker_done ff_task_state 0
 scoreboard players set $ancient_portal_sel ff_task_state 0
 scoreboard players set $ancient_portal_done ff_task_state 0
 
@@ -190,6 +192,7 @@ scoreboard players reset $tt_feed_the_fish ff_task_tracker
 scoreboard players reset $tt_popcorn_buckets ff_task_tracker
 scoreboard players reset $tt_bring_brush ff_task_tracker
 scoreboard players reset $tt_brush_delivery ff_task_tracker
+scoreboard players reset $tt_fix_sculker ff_task_tracker
 scoreboard players reset $tt_ancient_portal ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_glowberry_trees ff_task_tracker
@@ -252,6 +255,7 @@ function fossil_frights:tasks/medium/feed_the_fish/reset
 function fossil_frights:tasks/medium/popcorn_buckets/reset
 function fossil_frights:tasks/medium/bring_brush/reset
 function fossil_frights:tasks/medium/brush_delivery/reset
+function fossil_frights:tasks/medium/fix_sculker/reset
 function fossil_frights:tasks/medium/ancient_portal/reset
 function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/glowberry_trees/reset
