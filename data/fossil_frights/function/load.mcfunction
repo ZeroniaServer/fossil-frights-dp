@@ -142,6 +142,7 @@ scoreboard players set $defeat_anim ff_game_state 0
 scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
+scoreboard players set $bogged_fright ff_game_state 0
 scoreboard players set $stats_top_time ff_lb_calc 0
 scoreboard players set $stats_duo_best ff_lb_calc 0
 scoreboard players set $stats_duo_minutes ff_lb_calc 0

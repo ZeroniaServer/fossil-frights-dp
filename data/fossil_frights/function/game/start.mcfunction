@@ -46,6 +46,7 @@ scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
+scoreboard players set $bogged_fright ff_game_state 0
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
