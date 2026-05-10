@@ -1,1 +1,1 @@
-# No task-specific reset needed.
+function fossil_frights:tasks/easy/reset_salt_level/sign_ok

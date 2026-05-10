@@ -37,7 +37,7 @@ scoreboard players set @a[tag=ff_active] ff_key_bar 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
-item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
+item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:equippable={slot:"head"}] 1
 execute as @a[tag=ff_active] run function fossil_frights:key/give_waiting
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $sniffer_fright ff_game_state 0
@@ -53,6 +53,10 @@ scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
+scoreboard players set $museum_map_claims ff_game_state 0
+scoreboard players set $museum_map_flash ff_game_state 0
+tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_click
+tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $run_admin_modified ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh

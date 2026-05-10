@@ -124,6 +124,8 @@ scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $run_roster_count ff_game_state 0
+scoreboard players set $museum_map_claims ff_game_state 0
+scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
 scoreboard players set $login_is_run_member ff_game_state 0
 scoreboard players set $login_was_multiplayer ff_game_state 0
