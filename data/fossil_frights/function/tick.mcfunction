@@ -1,4 +1,5 @@
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
+execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:seasonal/playtests/confetti/tick
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 kill @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=..0}]

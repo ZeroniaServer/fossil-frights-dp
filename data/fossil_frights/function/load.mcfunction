@@ -43,6 +43,12 @@ scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
+scoreboard objectives remove confetti
+scoreboard objectives remove ff_confetti_use
+scoreboard objectives add ff_confetti_use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add ff_confetti_seen dummy
+scoreboard objectives add ff_confetti_uses dummy
+scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -207,4 +213,5 @@ function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
+function fossil_frights:seasonal/playtests/confetti/load
 function fossil_frights:reload_reset
