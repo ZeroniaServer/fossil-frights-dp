@@ -172,7 +172,7 @@ scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
-gamerule naturalRegeneration true
+function fossil_frights:game/apply_gamerules
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold

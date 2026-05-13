@@ -1,0 +1,12 @@
+gamerule doFireTick false
+gamerule mobGriefing false
+gamerule randomTickSpeed 0
+gamerule sendCommandFeedback false
+gamerule commandBlockOutput false
+gamerule announceAdvancements false
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule disableRaids true
+gamerule doInsomnia false
+gamerule naturalRegeneration true
