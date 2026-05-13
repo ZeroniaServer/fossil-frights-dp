@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "bottle_returned": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glass_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/potion/drank"
+  }
+}
