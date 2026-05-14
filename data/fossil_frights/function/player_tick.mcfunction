@@ -88,6 +88,8 @@ advancement revoke @s only fossil_frights:start_room_glass_box_click
 advancement revoke @s only fossil_frights:return_the_key_pickup_click
 advancement revoke @s only fossil_frights:return_the_key_return_click
 advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
+advancement revoke @s only fossil_frights:final_task_centrifuge_click
+advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
