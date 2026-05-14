@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_start_room_glass_box_click\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:game/start_room/glass_box/clicked"
+  }
+}

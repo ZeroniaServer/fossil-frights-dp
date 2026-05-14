@@ -205,8 +205,10 @@ advancement revoke @a only fossil_frights:popcorn_buckets_click
 advancement revoke @a only fossil_frights:anvil_click
 advancement revoke @a only fossil_frights:crane_payment_click
 advancement revoke @a only fossil_frights:sarcophagus_payment_click
+advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:glowberry_eat
 function fossil_frights:animations/interactions/load
+function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
