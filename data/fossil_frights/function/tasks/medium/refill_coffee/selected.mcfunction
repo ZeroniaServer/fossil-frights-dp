@@ -2,4 +2,5 @@ execute if score $refill_coffee_sel ff_task_state matches 0 run scoreboard playe
 execute if score $refill_coffee_sel ff_task_state matches 0 run function fossil_frights:tasks/medium/refill_coffee/selected_book
 scoreboard players set $refill_coffee_sel ff_task_state 1
 scoreboard players set $refill_coffee_done ff_task_state 0
+function fossil_frights:tasks/medium/refill_coffee/spawn
 function fossil_frights:tasks/tracker/refresh

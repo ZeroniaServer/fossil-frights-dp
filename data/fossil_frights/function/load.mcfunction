@@ -202,10 +202,22 @@ advancement revoke @a only fossil_frights:dig_sand_click
 advancement revoke @a only fossil_frights:credit_reel_click
 advancement revoke @a only fossil_frights:feed_the_fish_click
 advancement revoke @a only fossil_frights:popcorn_buckets_click
+advancement revoke @a only fossil_frights:ancient_portal_click
+advancement revoke @a only fossil_frights:coffee_refill_click
+advancement revoke @a only fossil_frights:feed_parrot_click
+advancement revoke @a only fossil_frights:feed_the_plants_click
+advancement revoke @a only fossil_frights:fix_sculker_click
+advancement revoke @a only fossil_frights:refill_coffee_click
+advancement revoke @a only fossil_frights:replenish_soap_click
+advancement revoke @a only fossil_frights:restock_plushies_click
+advancement revoke @a only fossil_frights:revitalize_coral_click
+advancement revoke @a only fossil_frights:shark_bait_click
+advancement revoke @a only fossil_frights:sponge_up_spill_click
 advancement revoke @a only fossil_frights:anvil_click
 advancement revoke @a only fossil_frights:crane_payment_click
 advancement revoke @a only fossil_frights:sarcophagus_payment_click
 advancement revoke @a only fossil_frights:start_room_glass_box_click
+advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
 function fossil_frights:animations/interactions/load
 function fossil_frights:game/start_room/glass_box/setup
