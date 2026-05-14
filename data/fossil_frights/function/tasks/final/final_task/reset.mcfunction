@@ -8,6 +8,7 @@ scoreboard players set $final_task_item ff_task_state 0
 scoreboard players set $final_task_item_done ff_task_state 0
 scoreboard players set $final_task_centrifuge_timer ff_task_state 0
 kill @e[type=minecraft:item_display,tag=ff_final_preview]
+function fossil_frights:tasks/final/final_task/markers/cleanup
 function fossil_frights:tasks/final/final_task/screen/cleanup
 clear @a[tag=ff_active] minecraft:warped_fungus_on_a_stick[minecraft:custom_data={ff_dna:1b}]
 execute as @a[tag=ff_active] run function fossil_frights:tasks/final/plushies/clear_items
