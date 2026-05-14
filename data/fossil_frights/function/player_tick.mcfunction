@@ -81,6 +81,9 @@ advancement revoke @s only fossil_frights:dig_sand_click
 advancement revoke @s only fossil_frights:credit_reel_click
 advancement revoke @s only fossil_frights:feed_the_fish_click
 advancement revoke @s only fossil_frights:popcorn_buckets_click
+advancement revoke @s only fossil_frights:anvil_click
+advancement revoke @s only fossil_frights:crane_payment_click
+advancement revoke @s only fossil_frights:sarcophagus_payment_click
 advancement revoke @s only fossil_frights:return_the_key_pickup_click
 advancement revoke @s only fossil_frights:return_the_key_return_click
 advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
