@@ -129,6 +129,7 @@ scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
+scoreboard players set $run_everyone_mode ff_game_state 0
 scoreboard players set $run_roster_count ff_game_state 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0

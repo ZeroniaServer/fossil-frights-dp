@@ -4,8 +4,10 @@ tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 tag @a remove ff_run_sync_source
 tag @a remove ff_run_login_source
+tag @a remove ff_run_remove_source
 tag @a remove ff_title_first
 scoreboard players set $run_multiplayer ff_game_state 0
+scoreboard players set $run_everyone_mode ff_game_state 0
 scoreboard players set $run_roster_count ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
 scoreboard players set $login_is_run_member ff_game_state 0
