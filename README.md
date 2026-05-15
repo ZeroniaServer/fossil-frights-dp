@@ -96,12 +96,3 @@ Edit `leaderboard.yml`, then run `/admin leaderboard reload`; values apply immed
 | Victory | Day `10` complete freezes timer, updates top day/time or duo time, runs victory celebration |
 | Leave / End | Updates solo day if applicable, resets game state, returns players to lobby |
 | Active disconnect | Ends the run and resets game state; datapack-only may apply pending day stats on next login |
-
-## Placement Utilities
-
-| Object | Command |
-| --- | --- |
-| 3x3 gate | `/give @p minecraft:armor_stand[minecraft:item_name='3x3 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_3x3"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]` |
-| 2x2 gate | `/give @p minecraft:armor_stand[minecraft:item_name='2x2 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_2x2"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]` |
-| 5x6 gate | `/give @p minecraft:armor_stand[minecraft:item_name='5x6 Gate',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_gate_5x6"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]` |
-| Garage door | `/give @p minecraft:armor_stand[minecraft:item_name='Garage Door',minecraft:entity_data={id:"minecraft:armor_stand",Tags:["ff_garage_3x3"],NoGravity:1b,Invisible:1b,Invulnerable:1b}]` |
