@@ -34,6 +34,7 @@ function fossil_frights:tasks/hard/tick
 function fossil_frights:tasks/final/final_task/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
+execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
 execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick

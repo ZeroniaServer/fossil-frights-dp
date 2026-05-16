@@ -1,0 +1,10 @@
+execute if score #floods_valve_rotation ff_hazard_rng matches 0 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [0.7071068f,0f,0f,0.7071068f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 1 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [0.6532815f,0.2705981f,0.2705981f,0.6532815f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 2 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [0.5f,0.5f,0.5f,0.5f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 3 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [0.2705981f,0.6532815f,0.6532815f,0.2705981f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 4 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [0f,0.7071068f,0.7071068f,0f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 5 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [-0.2705981f,0.6532815f,0.6532815f,-0.2705981f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 6 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [-0.5f,0.5f,0.5f,-0.5f]
+execute if score #floods_valve_rotation ff_hazard_rng matches 7 run data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.left_rotation set value [-0.6532815f,0.2705981f,0.2705981f,-0.6532815f]
+data modify entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] transformation.right_rotation set value [0f,0f,0f,1f]
+data merge entity @e[type=minecraft:item_display,tag=floods_shutoff_valve,limit=1] {start_interpolation:0,interpolation_duration:4}
