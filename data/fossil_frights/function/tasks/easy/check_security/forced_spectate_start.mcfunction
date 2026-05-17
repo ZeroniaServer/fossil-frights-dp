@@ -16,7 +16,7 @@ execute store result storage fossil_frights:forced_spectate mannequin.u3 int 1 r
 function fossil_frights:tasks/easy/check_security/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate
 gamemode spectator @s
-execute if entity @e[type=minecraft:armor_stand,tag=security_camera,limit=1] run spectate @e[type=minecraft:armor_stand,tag=security_camera,sort=random,limit=1] @s
+execute if entity @e[tag=security_camera,limit=1] run minecraft:spectate @e[tag=security_camera,sort=random,limit=1] @s
 setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]

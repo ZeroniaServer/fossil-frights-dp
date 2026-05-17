@@ -6,8 +6,8 @@ scoreboard players set #curse_blinks ff_hazard_rng 0
 scoreboard players set #curse_effect_timer ff_hazard_rng 0
 scoreboard players set #curse_indicator ff_hazard_rng 0
 scoreboard players set #curse_indicator_timer ff_hazard_rng 0
-effect clear @a minecraft:levitation
-tag @a remove ff_curse_room_now
+effect clear @a[tag=ff_active] minecraft:levitation
+tag @a[tag=ff_active] remove ff_curse_room_now
 tag @a remove ff_curse_room_seen
 function fossil_frights:hazard/curse/clear_selected
 function fossil_frights:hazard/curse/restore_all

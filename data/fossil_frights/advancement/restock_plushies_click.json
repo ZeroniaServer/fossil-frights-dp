@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_restock_plushies_click\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/medium/restock_plushies/clicked"
+  }
+}

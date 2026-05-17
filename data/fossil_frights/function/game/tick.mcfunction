@@ -9,14 +9,15 @@ execute if score $day_active ff_day matches 1 run scoreboard players set $day_fl
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
 execute unless score $game_running ff_game_state matches 1 run scoreboard players set $idle_ticks ff_game_state 0
 execute if score $day_active ff_day matches 1 run scoreboard players set $idle_ticks ff_game_state 0
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 1200 run function fossil_frights:messages/game/idle_warning_two_minutes
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 2400 run function fossil_frights:messages/game/idle_warning_one_minute
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 3400 run function fossil_frights:messages/game/idle_warning_ten_seconds
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 3600.. run function fossil_frights:game/end
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if score $idle_ticks ff_game_state matches 1200 run function fossil_frights:messages/game/idle_warning_two_minutes
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if score $idle_ticks ff_game_state matches 2400 run function fossil_frights:messages/game/idle_warning_one_minute
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if score $idle_ticks ff_game_state matches 3400 run function fossil_frights:messages/game/idle_warning_ten_seconds
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if score $idle_ticks ff_game_state matches 3600.. run function fossil_frights:game/end
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches 10 if score $idle_ticks ff_game_state matches 600.. run function fossil_frights:game/end
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:game/settings/toggle_spectators/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run function fossil_frights:game/settings/setting2/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run function fossil_frights:game/settings/setting3/tick
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches ..5999 run scoreboard players add $day_timer ff_day 1
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $timer_frozen ff_day matches 0 if score $day_timer ff_day matches ..5999 run scoreboard players add $day_timer ff_day 1
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run bossbar set fossil_frights:bossbar value 0
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 store result bossbar fossil_frights:bossbar value run scoreboard players get $day_timer ff_day
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run scoreboard players operation $day_tmp ff_day = #day_full ff_day

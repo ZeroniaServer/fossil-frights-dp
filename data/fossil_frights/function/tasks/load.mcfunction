@@ -5,7 +5,7 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 24
+scoreboard players set #easy_pool_count ff_task_state 26
 scoreboard players set #medium_pool_count ff_task_state 22
 scoreboard players set #hard_pool_count ff_task_state 13
 scoreboard players set #final_pool_count ff_task_state 1
@@ -107,6 +107,14 @@ scoreboard players set $dig_sand_avail ff_task_state 1
 scoreboard players set $dig_sand_sel ff_task_state 0
 scoreboard players set $dig_sand_done ff_task_state 0
 scoreboard players set #line_dig_sand ff_task_state 45
+scoreboard players set $fix_mars_avail ff_task_state 1
+scoreboard players set $fix_mars_sel ff_task_state 0
+scoreboard players set $fix_mars_done ff_task_state 0
+scoreboard players set #line_fix_mars ff_task_state 46
+scoreboard players set $make_some_noise_avail ff_task_state 1
+scoreboard players set $make_some_noise_sel ff_task_state 0
+scoreboard players set $make_some_noise_done ff_task_state 0
+scoreboard players set #line_make_some_noise ff_task_state 47
 
 scoreboard players set $chlorinify_avail ff_task_state 1
 scoreboard players set $chlorinify_sel ff_task_state 0
@@ -197,6 +205,16 @@ scoreboard players set $brush_delivery_avail ff_task_state 1
 scoreboard players set $brush_delivery_sel ff_task_state 0
 scoreboard players set $brush_delivery_done ff_task_state 0
 scoreboard players set #line_brush_delivery ff_task_state 57
+scoreboard players set $fix_sculker_avail ff_task_state 1
+scoreboard players set $fix_sculker_sel ff_task_state 0
+scoreboard players set $fix_sculker_done ff_task_state 0
+scoreboard players set #line_fix_sculker ff_task_state 58
+scoreboard players set $ancient_portal_avail ff_task_state 1
+scoreboard players set $ancient_portal_sel ff_task_state 0
+scoreboard players set $ancient_portal_done ff_task_state 0
+scoreboard players set $ancient_portal_timer ff_task_state 0
+scoreboard players set $ancient_portal_dest ff_task_state 0
+scoreboard players set #line_ancient_portal ff_task_state 59
 
 scoreboard players set $star_gazing_avail ff_task_state 1
 scoreboard players set $star_gazing_sel ff_task_state 0

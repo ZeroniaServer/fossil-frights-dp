@@ -26,6 +26,8 @@ scoreboard players reset $tt_fix_cracked_egg ff_task_tracker
 scoreboard players reset $tt_tnt_test ff_task_tracker
 scoreboard players reset $tt_sweep_popcorn ff_task_tracker
 scoreboard players reset $tt_dig_sand ff_task_tracker
+scoreboard players reset $tt_fix_mars ff_task_tracker
+scoreboard players reset $tt_make_some_noise ff_task_tracker
 scoreboard players reset $tt_chlorinify ff_task_tracker
 scoreboard players reset $tt_credit_reel ff_task_tracker
 scoreboard players reset $tt_cool_it ff_task_tracker
@@ -130,6 +132,12 @@ execute if score $sweep_popcorn_done ff_task_state matches 1 run scoreboard play
 execute if score $dig_sand_sel ff_task_state matches 1 run scoreboard players operation $tt_dig_sand ff_task_tracker = #line_dig_sand ff_task_state
 execute if score $dig_sand_sel ff_task_state matches 1 unless score $dig_sand_done ff_task_state matches 1 run scoreboard players display name $tt_dig_sand ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dig Sand","italic":false}]
 execute if score $dig_sand_done ff_task_state matches 1 run scoreboard players display name $tt_dig_sand ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Dig Sand","color":"gray","italic":false,"strikethrough":true}]
+execute if score $fix_mars_sel ff_task_state matches 1 run scoreboard players operation $tt_fix_mars ff_task_tracker = #line_fix_mars ff_task_state
+execute if score $fix_mars_sel ff_task_state matches 1 unless score $fix_mars_done ff_task_state matches 1 run scoreboard players display name $tt_fix_mars ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Fix Mars","italic":false}]
+execute if score $fix_mars_done ff_task_state matches 1 run scoreboard players display name $tt_fix_mars ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Fix Mars","color":"gray","italic":false,"strikethrough":true}]
+execute if score $make_some_noise_sel ff_task_state matches 1 run scoreboard players operation $tt_make_some_noise ff_task_tracker = #line_make_some_noise ff_task_state
+execute if score $make_some_noise_sel ff_task_state matches 1 unless score $make_some_noise_done ff_task_state matches 1 run scoreboard players display name $tt_make_some_noise ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Make Some Noise","italic":false}]
+execute if score $make_some_noise_done ff_task_state matches 1 run scoreboard players display name $tt_make_some_noise ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_easy"},{"text":" Make Some Noise","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $chlorinify_sel ff_task_state matches 1 run scoreboard players operation $tt_chlorinify ff_task_tracker = #line_chlorinify ff_task_state
 execute if score $chlorinify_sel ff_task_state matches 1 unless score $chlorinify_done ff_task_state matches 1 run scoreboard players display name $tt_chlorinify ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Chlorinify","italic":false}]
@@ -197,6 +205,14 @@ execute if score $bring_brush_done ff_task_state matches 1 run scoreboard player
 execute if score $brush_delivery_sel ff_task_state matches 1 run scoreboard players operation $tt_brush_delivery ff_task_tracker = #line_brush_delivery ff_task_state
 execute if score $brush_delivery_sel ff_task_state matches 1 unless score $brush_delivery_done ff_task_state matches 1 run scoreboard players display name $tt_brush_delivery ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Brush Delivery","italic":false}]
 execute if score $brush_delivery_done ff_task_state matches 1 run scoreboard players display name $tt_brush_delivery ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Brush Delivery","color":"gray","italic":false,"strikethrough":true}]
+
+execute if score $fix_sculker_sel ff_task_state matches 1 run scoreboard players operation $tt_fix_sculker ff_task_tracker = #line_fix_sculker ff_task_state
+execute if score $fix_sculker_sel ff_task_state matches 1 unless score $fix_sculker_done ff_task_state matches 1 run scoreboard players display name $tt_fix_sculker ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Fix Sculker","italic":false}]
+execute if score $fix_sculker_done ff_task_state matches 1 run scoreboard players display name $tt_fix_sculker ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Fix Sculker","color":"gray","italic":false,"strikethrough":true}]
+
+execute if score $ancient_portal_sel ff_task_state matches 1 run scoreboard players operation $tt_ancient_portal ff_task_tracker = #line_ancient_portal ff_task_state
+execute if score $ancient_portal_sel ff_task_state matches 1 unless score $ancient_portal_done ff_task_state matches 1 run scoreboard players display name $tt_ancient_portal ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Ancient Portal","italic":false}]
+execute if score $ancient_portal_done ff_task_state matches 1 run scoreboard players display name $tt_ancient_portal ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Ancient Portal","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $star_gazing_sel ff_task_state matches 1 run scoreboard players operation $tt_star_gazing ff_task_tracker = #line_star_gazing ff_task_state
 execute if score $star_gazing_sel ff_task_state matches 1 unless score $star_gazing_done ff_task_state matches 1 run scoreboard players display name $tt_star_gazing ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Star Gazing","italic":false}]

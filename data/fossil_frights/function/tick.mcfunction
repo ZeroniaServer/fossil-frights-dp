@@ -1,10 +1,11 @@
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
+execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:seasonal/playtests/confetti/tick
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 kill @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=..0}]
-execute as @e[type=minecraft:item_frame,tag=ff_dna_hover] run data merge entity @s {Glowing:0b}
-team leave @e[type=minecraft:item_frame,tag=ff_dna_hover]
-tag @e[type=minecraft:item_frame,tag=ff_dna_hover] remove ff_dna_hover
+execute as @e[type=minecraft:item_display,tag=ff_dna_hover] run data merge entity @s {Glowing:0b}
+team leave @e[type=minecraft:item_display,tag=ff_dna_hover]
+tag @e[type=minecraft:item_display,tag=ff_dna_hover] remove ff_dna_hover
 execute as @e[type=minecraft:item_frame,tag=ff_lock_glow] run data merge entity @s {Glowing:0b}
 tag @e[type=minecraft:item_frame,tag=ff_lock_glow] remove ff_lock_glow
 execute as @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=1..}] run data merge entity @s {Glowing:1b}
@@ -14,10 +15,12 @@ team leave @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=
 tag @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}] remove ff_lock_flash
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=front_door] at @s run function fossil_frights:animations/door/tick
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/bookcase/day_1_marker/tick
+function fossil_frights:command/museum_map/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
 execute if score $speedrunner_restart_window ff_game_state matches 1.. run scoreboard players remove $speedrunner_restart_window ff_game_state 1
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
-execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 as @e[tag=crane_operator] at @s run function fossil_frights:animations/crane/check_payment
+execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/crane/check_payment
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/sarcophagus/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
@@ -29,7 +32,9 @@ function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
 function fossil_frights:tasks/final/final_task/tick
+execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
+execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
 execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
@@ -39,7 +44,7 @@ execute if entity @a[x=-8,y=64,z=0,dx=40,dy=30,dz=40] if score $lobby_displays_r
 execute if entity @a[x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parkour_display_ready ff_parkour_display matches 0 run function fossil_frights:parkour/display/rebuild
 execute if entity @a[x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:temple_run/display/rebuild
 execute if entity @a[x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:ant_fight/display/rebuild
-execute if entity @e[type=minecraft:armor_stand,tag=leader_board,limit=1] if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
+execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 function fossil_frights:game/tick
 function fossil_frights:join/tick
 function fossil_frights:util/fade/tick

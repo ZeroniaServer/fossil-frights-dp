@@ -1,5 +1,7 @@
 tag @s remove ff_muted_chat
 execute if entity @s[team=ff_dev_mode] run return 0
+experience set @s 0 levels
+experience set @s 0 points
 execute unless score @s ff_top_time matches -2147483648..2147483647 run scoreboard players set @s ff_top_time 0
 execute unless score @s ff_top_day matches -2147483648..2147483647 run scoreboard players set @s ff_top_day 0
 execute unless score @s ff_run_count matches -2147483648..2147483647 run scoreboard players set @s ff_run_count 0
@@ -40,6 +42,7 @@ execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
 function fossil_frights:leaderboards/check_login_resets
 execute if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/roster/handle_member_login
+execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s
@@ -105,5 +108,5 @@ effect give @s minecraft:instant_health 100 0 true
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 function fossil_frights:tasks/final/plushies/restore
-function fossil_frights:leaderboards/sync_entry
-function fossil_frights:leaderboards/display/refresh
+execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/sync_entry
+execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/display/refresh

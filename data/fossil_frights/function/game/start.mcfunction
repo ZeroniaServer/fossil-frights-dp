@@ -5,6 +5,7 @@ function fossil_frights:tasks/bookcase/clear
 function fossil_frights:game/cleanup_dropped_items
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
+function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
 function fossil_frights:tasks/final/final_task/close_lab_door
 function fossil_frights:tasks/final/final_task/reset
 function fossil_frights:bossbar/setup
@@ -14,6 +15,7 @@ function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
+function fossil_frights:game/start_room/glass_box/reset
 function fossil_frights:game/start_room/timer_bars/open
 function fossil_frights:animations/door/close
 function fossil_frights:animations/crane/reset
@@ -37,7 +39,7 @@ scoreboard players set @a[tag=ff_active] ff_key_bar 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
-item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']}] 1
+item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:equippable={slot:"head"}] 1
 execute as @a[tag=ff_active] run function fossil_frights:key/give_waiting
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $sniffer_fright ff_game_state 0
@@ -46,13 +48,19 @@ scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
+scoreboard players set $bogged_fright ff_game_state 0
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
+scoreboard players set $museum_map_claims ff_game_state 0
+scoreboard players set $museum_map_flash ff_game_state 0
+tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_click
+tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
+scoreboard players set $run_admin_modified ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1

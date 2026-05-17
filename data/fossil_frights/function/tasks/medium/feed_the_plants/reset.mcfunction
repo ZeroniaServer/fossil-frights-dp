@@ -1,1 +1,2 @@
-# Placeholder reset hook for future task-specific cleanup.
+function fossil_frights:tasks/medium/feed_the_plants/cleanup
+advancement revoke @a only fossil_frights:feed_the_plants_click

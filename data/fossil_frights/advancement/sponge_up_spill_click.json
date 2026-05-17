@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_sponge_up_spill_click\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/medium/sponge_up_spill/clicked"
+  }
+}

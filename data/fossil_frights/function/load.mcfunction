@@ -43,6 +43,12 @@ scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
+scoreboard objectives remove confetti
+scoreboard objectives remove ff_confetti_use
+scoreboard objectives add ff_confetti_use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add ff_confetti_seen dummy
+scoreboard objectives add ff_confetti_uses dummy
+scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -67,6 +73,7 @@ scoreboard objectives add ff_run_count dummy
 scoreboard objectives add ff_duo_best dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
+scoreboard objectives add ff_plugin dummy
 scoreboard objectives add ff_fade_tp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
@@ -121,7 +128,11 @@ scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
+scoreboard players set $run_admin_modified ff_game_state 0
+scoreboard players set $run_everyone_mode ff_game_state 0
 scoreboard players set $run_roster_count ff_game_state 0
+scoreboard players set $museum_map_claims ff_game_state 0
+scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
 scoreboard players set $login_is_run_member ff_game_state 0
 scoreboard players set $login_was_multiplayer ff_game_state 0
@@ -140,6 +151,7 @@ scoreboard players set $defeat_anim ff_game_state 0
 scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
+scoreboard players set $bogged_fright ff_game_state 0
 scoreboard players set $stats_top_time ff_lb_calc 0
 scoreboard players set $stats_duo_best ff_lb_calc 0
 scoreboard players set $stats_duo_minutes ff_lb_calc 0
@@ -167,7 +179,7 @@ scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
-gamerule naturalRegeneration true
+function fossil_frights:game/apply_gamerules
 team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold
@@ -185,12 +197,31 @@ advancement revoke @a only fossil_frights:multiplayer_click
 advancement revoke @a only fossil_frights:info_lectern_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:fix_cracked_egg_click
+advancement revoke @a only fossil_frights:fix_mars_click
 advancement revoke @a only fossil_frights:sweep_popcorn_click
 advancement revoke @a only fossil_frights:dig_sand_click
 advancement revoke @a only fossil_frights:credit_reel_click
 advancement revoke @a only fossil_frights:feed_the_fish_click
 advancement revoke @a only fossil_frights:popcorn_buckets_click
+advancement revoke @a only fossil_frights:ancient_portal_click
+advancement revoke @a only fossil_frights:coffee_refill_click
+advancement revoke @a only fossil_frights:feed_parrot_click
+advancement revoke @a only fossil_frights:feed_the_plants_click
+advancement revoke @a only fossil_frights:fix_sculker_click
+advancement revoke @a only fossil_frights:refill_coffee_click
+advancement revoke @a only fossil_frights:replenish_soap_click
+advancement revoke @a only fossil_frights:restock_plushies_click
+advancement revoke @a only fossil_frights:revitalize_coral_click
+advancement revoke @a only fossil_frights:shark_bait_click
+advancement revoke @a only fossil_frights:sponge_up_spill_click
+advancement revoke @a only fossil_frights:anvil_click
+advancement revoke @a only fossil_frights:crane_payment_click
+advancement revoke @a only fossil_frights:sarcophagus_payment_click
+advancement revoke @a only fossil_frights:start_room_glass_box_click
+advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
+function fossil_frights:animations/interactions/load
+function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
@@ -201,4 +232,5 @@ function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
+function fossil_frights:seasonal/playtests/confetti/load
 function fossil_frights:reload_reset

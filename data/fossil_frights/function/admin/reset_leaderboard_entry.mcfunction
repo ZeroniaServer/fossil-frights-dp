@@ -1,3 +1,5 @@
+execute if score $present ff_plugin matches 1 run tellraw @s [{"text":"Fossil Frights plugin is managing leaderboard data. Use /admin leaderboard remove <player> instead.","color":"red"}]
+execute if score $present ff_plugin matches 1 run return 0
 scoreboard players set @s ff_top_time 0
 scoreboard players set @s ff_top_day 0
 scoreboard players set @s ff_run_count 0

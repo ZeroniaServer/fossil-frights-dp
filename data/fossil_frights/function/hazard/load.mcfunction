@@ -2,4 +2,4 @@
 # Add one hazard count increment here for each new hazard.
 
 scoreboard players set #hazard_count ff_hazard_rng 5
-function fossil_frights:hazard/stop/all
+function fossil_frights:game/reset_hazards

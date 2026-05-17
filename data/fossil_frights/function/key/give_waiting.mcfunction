@@ -1,1 +1,4 @@
-function fossil_frights:key/put_disabled_in_hand
+clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key:1b}]
+clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_cooldown:1b}]
+clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={ff_key_disabled:1b}]
+item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[minecraft:item_name={text:'Storage Key',color:'yellow',extra:[{text:' (Disabled)',color:'gray'}]},minecraft:lore=[{text:'',extra:['key_disabled']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:custom_data={ff_key_disabled:1b}] 1

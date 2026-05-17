@@ -16,6 +16,7 @@ function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
+function fossil_frights:sound/stop_night_shift
 execute as @a run function fossil_frights:parkour/reset_player
 execute as @a run function fossil_frights:temple_run/reset_player
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
@@ -37,6 +38,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
+scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0

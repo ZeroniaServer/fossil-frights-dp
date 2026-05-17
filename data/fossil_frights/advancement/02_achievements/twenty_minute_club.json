@@ -1,0 +1,23 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "20 minute club"
+    },
+    "description": {
+      "text": "Beat the game in 20 minutes or less"
+    },
+    "x": 2,
+    "y": 4,
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "beat_under_twenty": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

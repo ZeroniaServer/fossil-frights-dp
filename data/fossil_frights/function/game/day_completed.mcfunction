@@ -18,11 +18,13 @@ function fossil_frights:tasks/reset
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/timer/freeze
+execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day matches ..24000 as @a[tag=ff_active] run advancement grant @s only fossil_frights:02_achievements/twenty_minute_club
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_time
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_duo_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_victory
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
+execute if score $day_current ff_day matches 10 run function fossil_frights:seasonal/playtests/confetti/game_beat_refresh
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/victory/celebrate
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt
 execute unless score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_break

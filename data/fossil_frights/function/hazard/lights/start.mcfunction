@@ -86,4 +86,5 @@ execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40
 execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -11 82 40 cave_vines[berries=false] strict
 execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 40 cave_vines[berries=false] strict
 
-
+# Cafe Campfire
+execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 28 81 30 28 81 26 minecraft:campfire[lit=false]

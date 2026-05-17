@@ -1,4 +1,5 @@
 function fossil_frights:tasks/tracker/hide
+kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
@@ -52,6 +53,10 @@ scoreboard players set $sweep_popcorn_sel ff_task_state 0
 scoreboard players set $sweep_popcorn_done ff_task_state 0
 scoreboard players set $dig_sand_sel ff_task_state 0
 scoreboard players set $dig_sand_done ff_task_state 0
+scoreboard players set $fix_mars_sel ff_task_state 0
+scoreboard players set $fix_mars_done ff_task_state 0
+scoreboard players set $make_some_noise_sel ff_task_state 0
+scoreboard players set $make_some_noise_done ff_task_state 0
 
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
@@ -98,6 +103,10 @@ scoreboard players set $bring_brush_sel ff_task_state 0
 scoreboard players set $bring_brush_done ff_task_state 0
 scoreboard players set $brush_delivery_sel ff_task_state 0
 scoreboard players set $brush_delivery_done ff_task_state 0
+scoreboard players set $fix_sculker_sel ff_task_state 0
+scoreboard players set $fix_sculker_done ff_task_state 0
+scoreboard players set $ancient_portal_sel ff_task_state 0
+scoreboard players set $ancient_portal_done ff_task_state 0
 
 scoreboard players set $star_gazing_sel ff_task_state 0
 scoreboard players set $star_gazing_done ff_task_state 0
@@ -188,6 +197,8 @@ scoreboard players reset $tt_feed_the_fish ff_task_tracker
 scoreboard players reset $tt_popcorn_buckets ff_task_tracker
 scoreboard players reset $tt_bring_brush ff_task_tracker
 scoreboard players reset $tt_brush_delivery ff_task_tracker
+scoreboard players reset $tt_fix_sculker ff_task_tracker
+scoreboard players reset $tt_ancient_portal ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_glowberry_trees ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
@@ -227,6 +238,8 @@ function fossil_frights:tasks/easy/fix_cracked_egg/reset
 function fossil_frights:tasks/easy/tnt_test/reset
 function fossil_frights:tasks/easy/sweep_popcorn/reset
 function fossil_frights:tasks/easy/dig_sand/reset
+function fossil_frights:tasks/easy/fix_mars/reset
+function fossil_frights:tasks/easy/make_some_noise/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset
@@ -249,6 +262,8 @@ function fossil_frights:tasks/medium/feed_the_fish/reset
 function fossil_frights:tasks/medium/popcorn_buckets/reset
 function fossil_frights:tasks/medium/bring_brush/reset
 function fossil_frights:tasks/medium/brush_delivery/reset
+function fossil_frights:tasks/medium/fix_sculker/reset
+function fossil_frights:tasks/medium/ancient_portal/reset
 function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/glowberry_trees/reset
 function fossil_frights:tasks/hard/return_the_key/reset

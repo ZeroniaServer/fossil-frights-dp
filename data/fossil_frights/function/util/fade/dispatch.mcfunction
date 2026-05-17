@@ -6,6 +6,7 @@ execute if entity @s[tag=ff_fade_spectator_enter] run function fossil_frights:ut
 execute if entity @s[tag=ff_fade_spectator_exit] run function fossil_frights:util/fade/actions/spectator_exit
 execute if entity @s[tag=ff_fade_defeat_room] run function fossil_frights:util/fade/actions/defeat_room
 execute if entity @s[tag=ff_fade_sarcophagus] run function fossil_frights:util/fade/actions/sarcophagus
+execute if entity @s[tag=ff_fade_ancient_portal] run function fossil_frights:util/fade/actions/ancient_portal
 
 tag @s remove ff_fade_tp_active
 scoreboard players set @s ff_fade_tp 0
@@ -17,3 +18,4 @@ tag @s remove ff_fade_spectator_enter
 tag @s remove ff_fade_spectator_exit
 tag @s remove ff_fade_defeat_room
 tag @s remove ff_fade_sarcophagus
+tag @s remove ff_fade_ancient_portal

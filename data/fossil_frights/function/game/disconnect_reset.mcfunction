@@ -18,8 +18,7 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
-stopsound @a[tag=ff_active] master fossil-frights:ff_night_shift
-stopsound @a[gamemode=spectator,tag=!ff_tutorial] master fossil-frights:ff_night_shift
+function fossil_frights:sound/stop_night_shift
 execute as @a[gamemode=spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator_lobby_exit
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0
@@ -38,6 +37,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0

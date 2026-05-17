@@ -9,5 +9,6 @@ execute if score $final_task_sel ff_task_state matches 1 if score $final_task_do
 execute if score $final_task_sel ff_task_state matches 1 if score $final_task_done ff_task_state matches 0 run clear @a[tag=ff_active] minecraft:written_book[minecraft:custom_data~{ff_task_book:"velociraptor_clone"}] 1
 execute if score $final_task_sel ff_task_state matches 1 run scoreboard players set $final_task_done ff_task_state 1
 scoreboard players set $final_task_preview_delay ff_task_state 0
+function fossil_frights:tasks/final/final_task/markers/cleanup
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

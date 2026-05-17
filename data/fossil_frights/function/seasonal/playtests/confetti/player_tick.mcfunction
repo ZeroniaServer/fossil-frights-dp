@@ -1,0 +1,8 @@
+scoreboard players add @s ff_confetti_use 0
+scoreboard players add @s ff_confetti_uses 0
+execute unless score @s ff_confetti_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_confetti_seen = @s ff_confetti_use
+execute if score @s ff_confetti_use < @s ff_confetti_seen run scoreboard players operation @s ff_confetti_seen = @s ff_confetti_use
+execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_confetti_remote:1b}}}} unless score @s ff_confetti_use = @s ff_confetti_seen run function fossil_frights:seasonal/playtests/confetti/use
+scoreboard players operation @s ff_confetti_seen = @s ff_confetti_use
+execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_confetti_remote:1b}}}} unless data entity @s {Inventory:[{Slot:103b}]} run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:"Confetti Cannon",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["confetti_cannon"]}],minecraft:enchantments={"minecraft:binding_curse":1},minecraft:tooltip_display={hidden_components:["minecraft:lore","minecraft:enchantments"]},minecraft:enchantment_glint_override=false,minecraft:custom_data={ff_confetti_cannon_hat:1b}] 1
+execute unless data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_confetti_remote:1b}}}} if items entity @s armor.head minecraft:carved_pumpkin[minecraft:custom_data~{ff_confetti_cannon_hat:1b}] run item replace entity @s armor.head with air

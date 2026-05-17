@@ -2,7 +2,8 @@ execute unless score $hoveraptor_sel ff_task_state matches 1 run return 0
 execute unless score $hoveraptor_done ff_task_state matches 0 run return 0
 data modify storage fossil_frights:tasks complete.task_name set value "Hoveraptor"
 function fossil_frights:tasks/hard/hoveraptor/set_frame_hoverboard
-kill @s
+execute if entity @s[type=minecraft:item] run kill @s
+function fossil_frights:tasks/hard/hoveraptor/cleanup
 execute positioned 21.5 104.5 42.5 run particle minecraft:dust{color:[0.2f,0.55f,1f],scale:1.2f} ~ ~0.35 ~ 0.28 0.28 0.28 0.01 24 force
 execute positioned 21.5 104.5 42.5 run particle minecraft:enchant ~ ~0.35 ~ 0.25 0.35 0.25 0.6 18 force
 execute positioned 21.5 104.5 42.5 run playsound minecraft:block.beacon.power_select master @a[tag=ff_active,distance=..24] ~ ~ ~ 0.8 1.5

@@ -15,6 +15,7 @@ scoreboard players enable @s ff_cmd_invite
 scoreboard players enable @s ff_cmd_tutorial
 scoreboard players enable @s ff_cmd_info
 scoreboard players enable @s ff_invite_accept
+function fossil_frights:seasonal/playtests/confetti/player_tick
 execute if score @s ff_cmd_invite matches 1.. run function fossil_frights:command/invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players enable @s ff_cmd_invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players set @s ff_cmd_invite 0
@@ -57,6 +58,7 @@ execute if entity @s[tag=ff_active,gamemode=!spectator] if score $game_running f
 execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute run function fossil_frights:ant_fight/player_tick
+execute run function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
@@ -73,14 +75,33 @@ advancement revoke @s only fossil_frights:multiplayer_click
 advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:swat_flies_click
 advancement revoke @s only fossil_frights:fix_cracked_egg_click
+advancement revoke @s only fossil_frights:fix_mars_click
 advancement revoke @s only fossil_frights:sweep_popcorn_click
 advancement revoke @s only fossil_frights:dig_sand_click
 advancement revoke @s only fossil_frights:credit_reel_click
 advancement revoke @s only fossil_frights:feed_the_fish_click
 advancement revoke @s only fossil_frights:popcorn_buckets_click
+advancement revoke @s only fossil_frights:ancient_portal_click
+advancement revoke @s only fossil_frights:coffee_refill_click
+advancement revoke @s only fossil_frights:feed_parrot_click
+advancement revoke @s only fossil_frights:feed_the_plants_click
+advancement revoke @s only fossil_frights:fix_sculker_click
+advancement revoke @s only fossil_frights:refill_coffee_click
+advancement revoke @s only fossil_frights:replenish_soap_click
+advancement revoke @s only fossil_frights:restock_plushies_click
+advancement revoke @s only fossil_frights:revitalize_coral_click
+advancement revoke @s only fossil_frights:shark_bait_click
+advancement revoke @s only fossil_frights:sponge_up_spill_click
+advancement revoke @s only fossil_frights:anvil_click
+advancement revoke @s only fossil_frights:crane_payment_click
+advancement revoke @s only fossil_frights:sarcophagus_payment_click
+advancement revoke @s only fossil_frights:start_room_glass_box_click
 advancement revoke @s only fossil_frights:return_the_key_pickup_click
 advancement revoke @s only fossil_frights:return_the_key_return_click
 advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
+advancement revoke @s only fossil_frights:hoveraptor_click
+advancement revoke @s only fossil_frights:final_task_centrifuge_click
+advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
