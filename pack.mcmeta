@@ -3,5 +3,17 @@
     "description": "Fossil Frights Datapack (Skeleton)",
     "pack_format": 69,
     "supported_formats": [69, 81]
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "^minecraft$",
+        "path": "recipe/.*"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "advancement/.*"
+      }
+    ]
   }
 }
