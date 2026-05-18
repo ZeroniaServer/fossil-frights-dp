@@ -7,7 +7,7 @@ function fossil_frights:tasks/bookcase/clear
 execute as @a[tag=ff_active] run title @s actionbar [{"text":"Day ","color":"gold","italic":false},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"},{"text":" Complete!","color":"gold","italic":false}]
 give @a[tag=ff_active] minecraft:gold_ingot[minecraft:item_name={text:"CubeKoin",color:"gold",italic:false},minecraft:lore=[{text:"",extra:["cubekoin"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
 execute as @a[tag=ff_active] run function fossil_frights:advancements_progression_grant_day_completed
-execute as @a at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
+execute as @a at @s run playsound fossil-frights:ff_day_complete music @s ~ ~ ~ 1.5 1
 schedule function fossil_frights:sound/stop_night_shift 8t replace
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 0

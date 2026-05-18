@@ -1,1 +1,1 @@
-stopsound @a master fossil-frights:ff_night_shift
+stopsound @a music fossil-frights:ff_night_shift
