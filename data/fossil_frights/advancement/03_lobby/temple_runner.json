@@ -2,7 +2,7 @@
   "parent": "fossil_frights:03_lobby/root",
   "display": {
     "icon": {
-      "id": "minecraft:warped_fungus_on_a_stick",
+      "id": "minecraft:paper",
       "components": {
         "minecraft:item_name": {
           "text": "Temple Run Restart",
@@ -21,6 +21,7 @@
             "minecraft:lore"
           ]
         },
+        "minecraft:item_model": "fossil-frights:general_items/temple_run_restart",
         "minecraft:enchantment_glint_override": false
       }
     },

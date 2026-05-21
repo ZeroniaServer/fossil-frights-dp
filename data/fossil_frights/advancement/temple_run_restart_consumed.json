@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_temple_run_restart:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:temple_run/restart_consumed"
+  }
+}

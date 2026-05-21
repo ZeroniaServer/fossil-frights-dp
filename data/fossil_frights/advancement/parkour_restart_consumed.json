@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_parkour_restart:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:parkour/restart_consumed"
+  }
+}
