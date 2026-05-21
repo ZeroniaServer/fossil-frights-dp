@@ -184,6 +184,8 @@ team add ff_lock_flash_green
 team modify ff_lock_flash_green color green
 team add ff_active_gold
 team modify ff_active_gold color gold
+team add ff_lobby_no_collision
+team modify ff_lobby_no_collision collisionRule never
 team add ff_dna_hover_yellow
 team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
