@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You are already entering the museum.","color":"red"}]
+tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You have already entered the museum.","color":"red"}]
