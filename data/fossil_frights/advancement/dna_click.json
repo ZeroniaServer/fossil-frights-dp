@@ -7,8 +7,11 @@
           "equipment": {
             "mainhand": {
               "items": [
-                "minecraft:warped_fungus_on_a_stick"
-              ]
+                "minecraft:amethyst_shard"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{ff_dna:1b}"
+              }
             }
           }
         },

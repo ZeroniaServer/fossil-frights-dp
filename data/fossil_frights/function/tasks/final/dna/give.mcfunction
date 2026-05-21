@@ -1,1 +1,1 @@
-give @s minecraft:warped_fungus_on_a_stick[minecraft:item_name={text:"Microfiber Cloth",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["microfiber_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_dna:1b}] 1
+give @s minecraft:amethyst_shard[minecraft:item_name={text:"Microfiber Cloth",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["microfiber_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_dna:1b}] 1

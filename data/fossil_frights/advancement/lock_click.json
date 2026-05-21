@@ -7,8 +7,11 @@
           "equipment": {
             "mainhand": {
               "items": [
-                "minecraft:carrot_on_a_stick"
-              ]
+                "minecraft:echo_shard"
+              ],
+              "predicates": {
+                "minecraft:custom_data": "{ff_key:1b}"
+              }
             }
           }
         },

@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:paper"
+            "minecraft:amethyst_shard"
           ],
           "predicates": {
             "minecraft:custom_data": "{ff_temple_run_restart:1b}"

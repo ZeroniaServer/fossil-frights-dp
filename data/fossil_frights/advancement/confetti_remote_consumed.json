@@ -5,16 +5,16 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:amethyst_shard"
+            "minecraft:echo_shard"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_parkour_restart:1b}"
+            "minecraft:custom_data": "{ff_confetti_remote:1b}"
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "fossil_frights:parkour/restart_consumed"
+    "function": "fossil_frights:seasonal/playtests/confetti/use_consumed"
   }
 }

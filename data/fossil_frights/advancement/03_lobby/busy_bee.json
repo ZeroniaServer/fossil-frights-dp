@@ -2,7 +2,7 @@
   "parent": "fossil_frights:03_lobby/root",
   "display": {
     "icon": {
-      "id": "minecraft:paper",
+      "id": "minecraft:amethyst_shard",
       "components": {
         "minecraft:item_name": {
           "text": "Parkour Restart",

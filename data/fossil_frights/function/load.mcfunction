@@ -12,8 +12,6 @@ scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
-scoreboard objectives add ff_dna_use minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add ff_dna_use_seen dummy
 scoreboard objectives add ff_lock_flash dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
@@ -44,9 +42,6 @@ scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives remove confetti
-scoreboard objectives remove ff_confetti_use
-scoreboard objectives add ff_confetti_use minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add ff_confetti_seen dummy
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_invite_sel trigger

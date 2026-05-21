@@ -66,9 +66,7 @@ execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if entity @s[tag=ff_active] run function fossil_frights:key/prevent_drop
-execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_dna:1b}}}} run function fossil_frights:tasks/final/dna/hover_check
-execute if data entity @s {SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:custom_data":{ff_dna:1b}}}} unless score @s ff_dna_use = @s ff_dna_use_seen run function fossil_frights:tasks/final/dna/use
-scoreboard players operation @s ff_dna_use_seen = @s ff_dna_use
+execute if data entity @s {SelectedItem:{id:"minecraft:amethyst_shard",components:{"minecraft:custom_data":{ff_dna:1b}}}} run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
 advancement revoke @s only fossil_frights:multiplayer_click
@@ -105,4 +103,4 @@ advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
-execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step
+execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:raycast_step
