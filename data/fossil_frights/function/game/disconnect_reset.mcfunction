@@ -19,7 +19,7 @@ function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 function fossil_frights:sound/stop_night_shift
-execute as @a[gamemode=spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator_lobby_exit
+function fossil_frights:game/reset_spectators
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0
 scoreboard players set @a ff_bat_bug_bar 0

@@ -14,14 +14,15 @@ execute if score $day_current ff_day matches 1 run scoreboard players set $speed
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
+clear @a[tag=ff_active] minecraft:written_book
 function fossil_frights:tasks/bookcase/clear
 function fossil_frights:tasks/encoder/start_day
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/timer_bars/close
 execute as @a[tag=ff_active] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
-execute if block 10 71 25 minecraft:lever[powered=true] as @a[tag=ff_active] at @s run playsound fossil-frights:ff_night_shift music @s ~ ~ ~ 1 1
-execute if block 10 71 25 minecraft:lever[powered=true] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift music @s ~ ~ ~ 1 1
+execute if block 10 71 25 minecraft:lever[powered=true] as @a[tag=ff_active] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
+execute if block 10 71 25 minecraft:lever[powered=true] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start
 function fossil_frights:bossbar/set_day
 function fossil_frights:game/time/start_night

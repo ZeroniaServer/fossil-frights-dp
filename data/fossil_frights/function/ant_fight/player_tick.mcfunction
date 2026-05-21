@@ -2,7 +2,8 @@ execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,tag=!
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:ant_fight/mark_projectile
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_hits
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/prevent_drop
-execute if entity @s[tag=ff_ant_fight] unless data entity @s {Inventory:[{id:"minecraft:snowball",components:{"minecraft:custom_data":{ff_ant_leaf:1b}}}]} run give @s minecraft:snowball[minecraft:item_name={text:"Infinileaf",color:"green",italic:false},minecraft:lore=[{text:"Shoot ",color:"dark_green",italic:false,extra:[{text:"- Right Click",color:"white",italic:false}]},{text:"Leave ",color:"red",italic:false,extra:[{text:"- Drop",color:"white",italic:false}]}],minecraft:use_cooldown={seconds:0.25f,cooldown_group:"fossil_frights:infinileaf"},minecraft:custom_data={ff_ant_leaf:1b}] 1
+execute if entity @s[tag=ff_ant_fight] run item replace entity @s weapon.offhand with air
+execute if entity @s[tag=ff_ant_fight] unless data entity @s {Inventory:[{id:"minecraft:snowball",components:{"minecraft:custom_data":{ff_ant_leaf:1b}}}]} run give @s minecraft:snowball[minecraft:item_name={text:"Infinileaf",color:"green",italic:false},minecraft:lore=[{text:"Shoot ",color:"dark_green",italic:false,extra:[{text:"- Right Click",color:"white",italic:false}]},{text:"Leave ",color:"red",italic:false,extra:[{text:"- Drop",color:"white",italic:false}]}],minecraft:use_cooldown={seconds:0.25f,cooldown_group:"fossil_frights:infinileaf"},minecraft:max_stack_size=1,minecraft:custom_data={ff_ant_leaf:1b}] 1
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_top_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_immunity 0

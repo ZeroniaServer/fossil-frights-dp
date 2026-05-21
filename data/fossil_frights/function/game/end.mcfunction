@@ -23,7 +23,7 @@ function fossil_frights:sound/stop_night_shift
 execute if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
-execute as @a[gamemode=spectator,tag=!ff_active,tag=!ff_tutorial,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
+function fossil_frights:game/reset_spectators
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[tag=ff_active]
 execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
