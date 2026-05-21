@@ -43,6 +43,7 @@ execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
 function fossil_frights:leaderboards/check_login_resets
 execute if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/roster/handle_member_login
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
+execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:hazards players @a
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s

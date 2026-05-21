@@ -5,3 +5,4 @@ scoreboard players set #lights_stop_phase ff_hazard_rng 0
 scoreboard players set #lights_start_phase ff_hazard_rng 0
 
 function fossil_frights:hazard/lights/stop
+function fossil_frights:bossbar/update_hazards
