@@ -1,6 +1,7 @@
 scoreboard objectives add ff_parkour_time dummy
 scoreboard objectives add ff_parkour_best dummy
 scoreboard objectives add ff_parkour_running dummy
+scoreboard objectives add ff_parkour_start_plate dummy
 scoreboard objectives remove ff_parkour_restart_use
 scoreboard objectives add ff_parkour_restart_use minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ff_parkour_restart_seen dummy
