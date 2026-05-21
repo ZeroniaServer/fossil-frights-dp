@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:lock/clicked"
+    "function": "fossil_frights:key/lock/clicked"
   }
 }

@@ -1,5 +1,7 @@
 scoreboard players operation $day_result ff_day = $day_current ff_day
-function fossil_frights:sound/stop_night_shift
+stopsound @a music fossil-frights:ff_night_shift
+stopsound @a master fossil-frights:ff_night_shift
+stopsound @a record fossil-frights:ff_night_shift
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 6000
 function fossil_frights:tasks/reset
