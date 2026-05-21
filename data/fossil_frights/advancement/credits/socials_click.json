@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:seasonal/playtests/confetti/socials_click"
+    "function": "fossil_frights:credits/socials_click"
   }
 }

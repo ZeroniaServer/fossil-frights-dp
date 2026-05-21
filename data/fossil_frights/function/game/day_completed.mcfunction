@@ -23,8 +23,9 @@ execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_gam
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_time
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_duo_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_victory
+execute if score $day_current ff_day matches 10 run scoreboard players set $victory_complete ff_game_state 1
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
-execute if score $day_current ff_day matches 10 run function fossil_frights:seasonal/playtests/confetti/game_beat_refresh
+execute if score $day_current ff_day matches 10 run function fossil_frights:items/confetti_cannon/give_all
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/victory/celebrate
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/reset_spectators
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt

@@ -6,4 +6,4 @@ playsound minecraft:block.dispenser.dispense block @a[distance=..18] ~ ~ ~ 0.45 
 particle minecraft:item{item:{id:"minecraft:red_concrete_powder",count:1}} ^ ^ ^0.45 0.08 0.05 0.08 0.16 10 force
 particle minecraft:item{item:{id:"minecraft:blue_concrete_powder",count:1}} ^ ^ ^0.5 0.08 0.05 0.08 0.16 10 force
 particle minecraft:item{item:{id:"minecraft:yellow_concrete_powder",count:1}} ^ ^ ^0.55 0.08 0.05 0.08 0.16 10 force
-function fossil_frights:seasonal/playtests/confetti/frame_1
+function fossil_frights:items/confetti_cannon/frame_1

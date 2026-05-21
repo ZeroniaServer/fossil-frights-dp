@@ -1,0 +1,5 @@
+scoreboard players add @s ff_confetti_uses 0
+execute if entity @s[tag=ff_confetti_remote_update_pending] run function fossil_frights:items/confetti_cannon/update_remote_damage
+tag @s remove ff_confetti_remote_update_pending
+execute if data entity @s {SelectedItem:{id:"minecraft:diamond_hoe",components:{"minecraft:custom_data":{ff_confetti_remote:1b}}}} unless data entity @s {Inventory:[{Slot:103b}]} run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:"Confetti Cannon",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["confetti_cannon"]}],minecraft:enchantments={"minecraft:binding_curse":1},minecraft:tooltip_display={hidden_components:["minecraft:lore","minecraft:enchantments"]},minecraft:enchantment_glint_override=false,minecraft:custom_data={ff_confetti_cannon_hat:1b}] 1
+execute unless data entity @s {SelectedItem:{id:"minecraft:diamond_hoe",components:{"minecraft:custom_data":{ff_confetti_remote:1b}}}} if items entity @s armor.head minecraft:carved_pumpkin[minecraft:custom_data~{ff_confetti_cannon_hat:1b}] run item replace entity @s armor.head with air

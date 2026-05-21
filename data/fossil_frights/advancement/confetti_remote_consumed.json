@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": [
-            "minecraft:echo_shard"
+            "minecraft:diamond_hoe"
           ],
           "predicates": {
             "minecraft:custom_data": "{ff_confetti_remote:1b}"
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:seasonal/playtests/confetti/use_consumed"
+    "function": "fossil_frights:items/confetti_cannon/use_consumed"
   }
 }

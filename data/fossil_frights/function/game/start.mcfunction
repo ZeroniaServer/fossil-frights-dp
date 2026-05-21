@@ -61,6 +61,7 @@ tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_
 tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
 scoreboard players set $run_admin_modified ff_game_state 0
+scoreboard players set $victory_complete ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1

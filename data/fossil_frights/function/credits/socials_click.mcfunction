@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:seasonal/playtests/confetti/socials_click
+advancement revoke @s only fossil_frights:credits/socials_click
 tellraw @s [\
     "\n",\
     {color:"gray",text:"============ "},{color:"green",text:"Zeronia"},{color:"gray",text:" ============"},"\n",\
