@@ -1,2 +1,1 @@
 $summon armor_stand -33 79.5 80 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["animation_boss_chair","game_over_animation"],Passengers:[{id:"minecraft:mannequin",profile:$(boss_skin),NoGravity:1b,hide_description:true,Invulnerable:1b,CustomNameVisible:1b,Rotation:[-180F,0F],Tags:["animation_boss","game_over_animation"],CustomName:"Boss",attributes:[{id:"minecraft:scale",base:1.2}]}],Rotation:[-180F,0F]}
-
