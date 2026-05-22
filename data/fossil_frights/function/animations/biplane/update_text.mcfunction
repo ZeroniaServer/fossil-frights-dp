@@ -1,0 +1,1 @@
+$execute as @e[tag=ff_biplane_text] run data merge entity @s {text:"$(input_text)"}

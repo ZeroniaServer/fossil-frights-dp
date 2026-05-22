@@ -1,0 +1,1 @@
+function fossil_frights:animations/biplane/update_text {input_text:"67"}
