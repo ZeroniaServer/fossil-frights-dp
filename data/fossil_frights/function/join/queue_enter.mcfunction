@@ -1,4 +1,5 @@
-execute if entity @s[tag=ff_in_queue] run function fossil_frights:messages/error/already_in_queue
+execute if entity @s[tag=ff_in_queue] if score @s ff_msg_cooldown matches 0 run function fossil_frights:messages/error/already_in_queue
+execute if entity @s[tag=ff_in_queue] if score @s ff_msg_cooldown matches 0 run scoreboard players set @s ff_msg_cooldown 200
 execute if entity @s[tag=ff_in_queue] run scoreboard players set @s ff_join_cooldown 40
 execute if entity @s[tag=ff_in_queue] run return 0
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end

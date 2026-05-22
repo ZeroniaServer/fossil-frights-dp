@@ -15,6 +15,8 @@ scoreboard players enable @s ff_cmd_invite
 scoreboard players enable @s ff_cmd_tutorial
 scoreboard players enable @s ff_cmd_info
 scoreboard players enable @s ff_invite_accept
+scoreboard players add @s ff_msg_cooldown 0
+execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
 function fossil_frights:items/confetti_cannon/player_tick
 execute if score @s ff_cmd_invite matches 1.. run function fossil_frights:command/invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players enable @s ff_cmd_invite

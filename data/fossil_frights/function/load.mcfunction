@@ -32,6 +32,7 @@ scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_deaths deathCount
 scoreboard objectives add ff_deaths_seen dummy
 scoreboard objectives add ff_join_cooldown dummy
+scoreboard objectives add ff_msg_cooldown dummy
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add ff_cmd_start trigger
