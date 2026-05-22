@@ -15,6 +15,7 @@ scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 clear @a[tag=ff_active] minecraft:written_book
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:written_book"}}]
 function fossil_frights:tasks/bookcase/clear
 function fossil_frights:tasks/encoder/start_day
 function fossil_frights:tasks/tracker/show
