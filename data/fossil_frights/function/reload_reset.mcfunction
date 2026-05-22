@@ -67,3 +67,4 @@ function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
 function fossil_frights:tasks/tracker/hide
 scoreboard players set $leaderboard_display_ready ff_lb_calc 0
+function fossil_frights:animations/crane/hide_parkour_route
