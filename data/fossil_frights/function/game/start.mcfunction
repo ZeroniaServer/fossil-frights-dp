@@ -39,8 +39,10 @@ scoreboard players set @a[tag=ff_active] ff_key_bar 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
+tag @a[tag=ff_active] remove ff_map_auto_given
 item replace entity @a[tag=ff_active] armor.head with minecraft:carved_pumpkin[minecraft:item_name={text:'Security Hat',italic:false},minecraft:lore=[{text:'',extra:['security_guard_hat']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:equippable={slot:"head"}] 1
 execute as @a[tag=ff_active] run function fossil_frights:key/give_waiting
+execute as @a[tag=ff_active,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0

@@ -22,6 +22,7 @@ scoreboard objectives add ff_door_target dummy
 scoreboard objectives add ff_door_tick dummy
 scoreboard objectives add ff_door_delay dummy
 scoreboard objectives add ff_game_state dummy
+scoreboard objectives add ff_map_region dummy
 scoreboard objectives add ff_active_uuid_0 dummy
 scoreboard objectives add ff_active_uuid_1 dummy
 scoreboard objectives add ff_active_uuid_2 dummy
@@ -193,6 +194,8 @@ team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
+advancement revoke @a only fossil_frights:museum_map_click
+advancement revoke @a only fossil_frights:map_region
 advancement revoke @a only fossil_frights:info_lectern_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:fix_cracked_egg_click

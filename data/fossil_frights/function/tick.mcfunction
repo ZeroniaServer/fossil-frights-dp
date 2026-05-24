@@ -16,7 +16,7 @@ tag @e[type=minecraft:item_frame,tag=ff_lock_flash,scores={ff_lock_flash=..0}] r
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=front_door] at @s run function fossil_frights:animations/door/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/bookcase/day_1_marker/tick
-function fossil_frights:command/museum_map/tick
+function fossil_frights:map/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
 execute if score $speedrunner_restart_window ff_game_state matches 1.. run scoreboard players remove $speedrunner_restart_window ff_game_state 1
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1

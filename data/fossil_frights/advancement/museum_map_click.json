@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:command/museum_map/clicked"
+    "function": "fossil_frights:map/clicked"
   }
 }
