@@ -48,5 +48,5 @@ execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fo
 function fossil_frights:game/tick
 function fossil_frights:join/tick
 function fossil_frights:util/fade/tick
-execute as @e[type=minecraft:armor_stand,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
+execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player_tick

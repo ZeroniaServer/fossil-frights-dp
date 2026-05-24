@@ -11,5 +11,5 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true
 gamemode spectator @s
-spectate @e[type=minecraft:armor_stand,tag=ff_tutorial_camera_current,limit=1] @s
+spectate @e[type=minecraft:text_display,tag=ff_tutorial_camera_current,limit=1] @s
 function fossil_frights:util/fade/queue/tutorial_enter

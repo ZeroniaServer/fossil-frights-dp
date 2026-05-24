@@ -23,7 +23,7 @@ execute as @a run function fossil_frights:parkour/reset_player
 execute as @a run function fossil_frights:temple_run/reset_player
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
-kill @e[type=minecraft:armor_stand,tag=ff_tutorial_camera]
+kill @e[type=minecraft:text_display,tag=ff_tutorial_camera]
 function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0
