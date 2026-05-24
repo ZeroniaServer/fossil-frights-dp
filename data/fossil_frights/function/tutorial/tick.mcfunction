@@ -1,4 +1,5 @@
 execute unless entity @s[tag=ff_fade_tp_active] run scoreboard players add @s ff_tutorial_tick 1
+execute unless entity @s[tag=ff_fade_tp_active] run function fossil_frights:tutorial/camera/select_owned
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 1 run function fossil_frights:tutorial/scene/join
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 2 run function fossil_frights:tutorial/scene/intro
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 3 run function fossil_frights:tutorial/scene/day_tracker

@@ -1,4 +1,5 @@
 tag @s remove ff_tutorial
+function fossil_frights:tutorial/camera/kill_owned
 scoreboard players set @s ff_tutorial 0
 scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0

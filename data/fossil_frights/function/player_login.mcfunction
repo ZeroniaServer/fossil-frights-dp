@@ -42,6 +42,7 @@ execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:leaderboards/check_login_resets
 execute if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/roster/handle_member_login
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
@@ -97,6 +98,7 @@ scoreboard players set @s ff_invite_sel 0
 scoreboard players enable @s ff_invite_sel
 scoreboard players set @s ff_invite_accept 0
 scoreboard players enable @s ff_invite_accept
+execute unless entity @s[tag=tutorial_complete] run tellraw @s [{"text":"ℹ ","color":"#F2B8FF"},{"text":"Watch the in-game tutorial to help get started! ","color":"#F2B8FF"},{"text":"[Click here to start]","color":"#FF55FF","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_tutorial set 1"}}]
 clear @s
 clear @s minecraft:snowball[minecraft:custom_data={ff_ant_leaf:1b}]
 item replace entity @s armor.head with air
