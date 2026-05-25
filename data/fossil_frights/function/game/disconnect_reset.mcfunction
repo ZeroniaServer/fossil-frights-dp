@@ -27,6 +27,8 @@ scoreboard players set @a ff_bat_bug_timer 0
 scoreboard players set @a ff_bat_bug_bar 0
 execute as @a[tag=ff_active] run function fossil_frights:player/effects/lobby_reset
 tag @a[tag=ff_active] remove ff_muted_chat
+tag @a[tag=ff_active] remove ff_map_claimed
+tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
 function fossil_frights:game/roster/reset

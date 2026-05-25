@@ -1,4 +1,6 @@
 tag @s remove ff_muted_chat
+tag @s remove ff_map_claimed
+tag @s remove ff_map_auto_given
 execute if entity @s[team=ff_dev_mode] run return 0
 experience set @s 0 levels
 experience set @s 0 points
