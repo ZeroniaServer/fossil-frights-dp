@@ -1,0 +1,1 @@
+data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{custom_color:3847130},"minecraft:custom_name":{italic:0b,color:"#10ACEE",text:"Water Balloon"}}}

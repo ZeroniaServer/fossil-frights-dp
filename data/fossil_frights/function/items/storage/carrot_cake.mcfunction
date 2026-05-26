@@ -1,0 +1,1 @@
+data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:carrot",count:1,components:{"minecraft:lore":[{extra:["carrot_cake"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:item_name":{italic:0b,color:"gold",text:"Carrot Cake"}}}

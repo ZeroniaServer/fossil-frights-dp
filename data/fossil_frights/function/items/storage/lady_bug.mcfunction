@@ -1,0 +1,1 @@
+data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:spider_eye",count:1,components:{"minecraft:lore":[{extra:["lady_bug"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:custom_name":{italic:0b,color:"red",text:"Lady Bug"},"minecraft:custom_data":{itemID:"lady_bug"}}}

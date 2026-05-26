@@ -1,0 +1,1 @@
+data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:brain_coral_fan",count:1,components:{"minecraft:lore":[{extra:["pink_jelly"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:custom_data":{itemID:"pink_coral_jelly"},"minecraft:item_name":{italic:0b,color:"light_purple",text:"Pink Jelly"}}}

@@ -12,7 +12,6 @@ scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
-scoreboard objectives add ff_lock_flash dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_hazard_rng dummy
@@ -178,8 +177,6 @@ scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
 function fossil_frights:game/apply_gamerules
-team add ff_lock_flash_green
-team modify ff_lock_flash_green color green
 team add ff_active_gold
 team modify ff_active_gold color gold
 team add ff_lobby_no_collision
@@ -223,6 +220,7 @@ advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
 function fossil_frights:animations/interactions/load
+function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
 function fossil_frights:parkour/load

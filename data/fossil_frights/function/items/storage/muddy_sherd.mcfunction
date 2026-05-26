@@ -1,0 +1,1 @@
+data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:miner_pottery_sherd",count:1,components:{"minecraft:lore":[{extra:["muddy_sherd"],text:""}],"minecraft:custom_name":{italic:0b,color:"gold",text:"Muddy Sherd"},"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:custom_data":{itemID:"muddy_sherd"}}}
