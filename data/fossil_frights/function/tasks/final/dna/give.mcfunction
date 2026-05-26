@@ -1,1 +1,1 @@
-give @s minecraft:amethyst_shard[minecraft:item_name={text:"Microfiber Cloth",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["microfiber_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:custom_data={ff_dna:1b}] 1
+function fossil_frights:items/dna/give_microfiber_cloth

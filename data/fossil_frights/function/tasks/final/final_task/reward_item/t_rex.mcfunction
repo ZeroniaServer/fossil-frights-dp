@@ -1,1 +1,4 @@
-summon minecraft:item -19.5 109.4 61.00 {Tags:["ff_final_reward"],PickupDelay:12,Age:0,Motion:[0.0,-0.08,-0],Item:{id:"minecraft:totem_of_undying",Count:1,components:{"minecraft:item_name":{text:"T-Rex Plushie",color:"gold",italic:false},"minecraft:lore":[{text:"",extra:["t-rex_plushie"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:equippable":{slot:"head"},"minecraft:custom_data":{ff_plushie:"t_rex"}}}}
+function fossil_frights:items/plushies/definitions/t_rex
+summon minecraft:item -19.5 109.4 61.00 {Tags:["ff_final_reward","ff_final_reward_new"],PickupDelay:12,Age:0,Motion:[0.0,-0.08,-0],Item:{id:"minecraft:stone",count:1}}
+data modify entity @e[type=minecraft:item,tag=ff_final_reward_new,limit=1,sort=nearest] Item set from storage fossil_frights:items definitions.plushies.t_rex
+tag @e[type=minecraft:item,tag=ff_final_reward_new,limit=1,sort=nearest] remove ff_final_reward_new

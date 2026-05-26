@@ -1,0 +1,1 @@
+item replace entity @s weapon.mainhand with minecraft:paper[minecraft:item_name={text:"Sniffer DNA Cloth",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["sniffer_dna_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1

@@ -1,3 +1,6 @@
 function fossil_frights:animations/vending_machine/success_effects
-summon minecraft:item 26.5 81.5 16.5 {PickupDelay:10,Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_name":{text:"Raptor Rush",color:"green",italic:false},"minecraft:item_model":"fossil-frights:food/raptor_rush","minecraft:lore":[{text:"Tastes like raspberries.",color:"yellow",italic:true}],"minecraft:potion_contents":{custom_color:3458905,custom_effects:[{id:"minecraft:speed",amplifier:4,duration:300}]},"!minecraft:use_remainder":{},"minecraft:custom_data":{ff_vending_machine:1b,ff_drink:"raptor_rush"}}}}
+function fossil_frights:items/drinks/definitions/raptor_rush
+summon minecraft:item 26.5 81.5 16.5 {Tags:["ff_vending_drink_new"],PickupDelay:10,Item:{id:"minecraft:stone",count:1}}
+data modify entity @e[type=minecraft:item,tag=ff_vending_drink_new,limit=1,sort=nearest] Item set from storage fossil_frights:items definitions.drinks.raptor_rush
+tag @e[type=minecraft:item,tag=ff_vending_drink_new,limit=1,sort=nearest] remove ff_vending_drink_new
 title @s actionbar [{"text":"Purchased: ","color":"yellow"},{"text":"Raptor Rush","color":"green"}]

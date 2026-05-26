@@ -1,2 +1,2 @@
 clear @s minecraft:totem_of_undying[minecraft:custom_data={ff_plushie:"pteradactyl"}]
-give @s minecraft:totem_of_undying[minecraft:item_name={text:"Pteradactyl Plushie",color:"gold",italic:false},minecraft:lore=[{text:"",extra:["pteradactyl_plushie"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:equippable={slot:"head"},minecraft:custom_data={ff_plushie:"pteradactyl"}] 1
+function fossil_frights:items/plushies/give/pteradactyl

@@ -1,3 +1,6 @@
 function fossil_frights:animations/vending_machine/success_effects
-summon minecraft:item 26.5 81.5 16.5 {PickupDelay:10,Item:{id:"minecraft:potion",count:1,components:{"minecraft:custom_name":{text:"Jurassic Juice",color:"gold",italic:false},"minecraft:item_model":"fossil-frights:food/jurassic_juice","minecraft:lore":[{text:"A tropical refreshment!",color:"yellow",italic:true}],"minecraft:potion_contents":{custom_color:15895592,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:24000}]},"!minecraft:use_remainder":{},"minecraft:custom_data":{ff_vending_machine:1b,ff_drink:"jurassic_juice"}}}}
+function fossil_frights:items/drinks/definitions/jurassic_juice
+summon minecraft:item 26.5 81.5 16.5 {Tags:["ff_vending_drink_new"],PickupDelay:10,Item:{id:"minecraft:stone",count:1}}
+data modify entity @e[type=minecraft:item,tag=ff_vending_drink_new,limit=1,sort=nearest] Item set from storage fossil_frights:items definitions.drinks.jurassic_juice
+tag @e[type=minecraft:item,tag=ff_vending_drink_new,limit=1,sort=nearest] remove ff_vending_drink_new
 title @s actionbar [{"text":"Purchased: ","color":"yellow"},{"text":"Jurassic Juice","color":"gold"}]

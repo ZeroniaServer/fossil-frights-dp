@@ -1,0 +1,1 @@
+data modify storage fossil_frights:items definitions.anvil_outputs.microfiber_cloth set value {id:"minecraft:amethyst_shard",count:1,components:{"minecraft:item_name":{text:"Microfiber Cloth",color:"yellow",italic:false},"minecraft:lore":[{text:"",extra:["microfiber_cloth"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:custom_data":{ff_dna:1b}}}
