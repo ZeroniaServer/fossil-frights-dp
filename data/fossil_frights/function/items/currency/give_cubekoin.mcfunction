@@ -1,1 +1,1 @@
-give @s minecraft:gold_ingot[minecraft:item_name={text:"CubeKoin",color:"gold",italic:false},minecraft:lore=[{text:"",extra:["cubekoin"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
+give @s minecraft:gold_ingot[minecraft:item_name={text:"CubeKoin",color:"gold",italic:false},minecraft:custom_model_data={floats:[1]},minecraft:lore=[{text:"",extra:["cubekoin"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1

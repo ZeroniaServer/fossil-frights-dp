@@ -1,1 +1,1 @@
-item replace entity @s weapon.mainhand with minecraft:paper[minecraft:item_name={text:"Pteradactyl DNA Cloth",color:"yellow",italic:false},minecraft:lore=[{text:"",extra:["pteradactyl_dna_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
+item replace entity @s weapon.mainhand with minecraft:paper[minecraft:item_name={text:"Pteradactyl DNA Cloth",color:"yellow",italic:false},minecraft:custom_model_data={floats:[39]},minecraft:lore=[{text:"",extra:["pteradactyl_dna_cloth"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
