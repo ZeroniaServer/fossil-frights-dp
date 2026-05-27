@@ -233,3 +233,4 @@ function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
 function fossil_frights:reload_reset
+function fossil_frights:tasks/easy/check_security/camera_setup

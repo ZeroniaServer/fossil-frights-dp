@@ -62,7 +62,7 @@ execute run function fossil_frights:temple_run/player_tick
 execute run function fossil_frights:ant_fight/player_tick
 execute run function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
-execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s unless entity @e[type=!minecraft:player,distance=..0.1,limit=1] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
+execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:input/sneak run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
