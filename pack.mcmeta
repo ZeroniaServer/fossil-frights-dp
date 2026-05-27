@@ -1,8 +1,8 @@
 {
   "pack": {
     "description": "Fossil Frights Datapack (Skeleton)",
-    "min_format": 88,
-    "max_format": 88,
+    "pack_format": 88,
+    "supported_formats": [88, 88]
   },
   "filter": {
     "block": [
