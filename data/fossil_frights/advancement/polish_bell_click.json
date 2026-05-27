@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_polish_bell_click\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/easy/polish_bell/clicked"
+  }
+}
