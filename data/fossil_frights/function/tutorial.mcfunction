@@ -1,1 +1,0 @@
-function fossil_frights:command/tutorial

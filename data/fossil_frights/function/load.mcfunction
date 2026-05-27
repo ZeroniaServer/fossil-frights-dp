@@ -126,8 +126,8 @@ scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
-scoreboard players set $run_everyone_mode ff_game_state 0
-scoreboard players set $run_roster_count ff_game_state 0
+scoreboard players set $party_mode_active ff_game_state 0
+scoreboard players set $party_member_count ff_game_state 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
@@ -232,5 +232,5 @@ function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
-function fossil_frights:reload_reset
+function fossil_frights:game/reload_reset
 function fossil_frights:tasks/easy/check_security/camera_setup

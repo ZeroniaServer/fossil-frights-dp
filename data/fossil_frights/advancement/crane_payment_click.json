@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:animations/crane/clicked"
+    "function": "fossil_frights:animations/cubekoin/crane/clicked"
   }
 }

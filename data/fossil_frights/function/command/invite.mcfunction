@@ -6,8 +6,8 @@ execute if score $day_current ff_day matches 1.. run function fossil_frights:mes
 execute if score $day_current ff_day matches 1.. run return 0
 execute if score $day_active ff_day matches 1 run function fossil_frights:messages/error/must_invite_before_starting_game
 execute if score $day_active ff_day matches 1 run return 0
-execute if score $run_roster_count ff_game_state matches 2.. run function fossil_frights:messages/multiplayer/party_full
-execute if score $run_roster_count ff_game_state matches 2.. run return 0
+execute if score $party_member_count ff_game_state matches 2.. run function fossil_frights:messages/multiplayer/party_full
+execute if score $party_member_count ff_game_state matches 2.. run return 0
 execute if score $invite_pending ff_game_state matches 1 run function fossil_frights:messages/multiplayer/invite_already_sent
 execute if score $invite_pending ff_game_state matches 1 run return 0
 function fossil_frights:game/settings/multiplayer/gui/open

@@ -3,8 +3,8 @@ execute unless entity @s[tag=ff_active] run return 0
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 1.. run return 0
-execute if score $run_roster_count ff_game_state matches 2.. run function fossil_frights:messages/multiplayer/party_full
-execute if score $run_roster_count ff_game_state matches 2.. run return 0
+execute if score $party_member_count ff_game_state matches 2.. run function fossil_frights:messages/multiplayer/party_full
+execute if score $party_member_count ff_game_state matches 2.. run return 0
 execute if score $invite_pending ff_game_state matches 1 run function fossil_frights:messages/multiplayer/invite_already_sent
 execute if score $invite_pending ff_game_state matches 1 run return 0
 scoreboard players operation $invite_slot ff_gui = @s ff_invite_sel

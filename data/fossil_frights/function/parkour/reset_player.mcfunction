@@ -10,5 +10,5 @@ scoreboard players set @s ff_parkour_centi_ones 0
 execute if data entity @s {SelectedItem:{id:"minecraft:amethyst_shard",components:{"minecraft:custom_data":{ff_parkour_restart:1b}}}} run item replace entity @s weapon.mainhand with air
 execute if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:amethyst_shard",components:{"minecraft:custom_data":{ff_parkour_restart:1b}}}]} run item replace entity @s weapon.offhand with air
 clear @s minecraft:amethyst_shard[minecraft:custom_data={ff_parkour_restart:1b}]
-function fossil_frights:tasks/final/plushies/restore
+execute unless entity @s[tag=ff_skip_plushie_restore] run function fossil_frights:tasks/final/plushies/restore
 title @s actionbar ""

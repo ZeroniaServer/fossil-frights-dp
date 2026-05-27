@@ -5,4 +5,4 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 $scoreboard players set $day_timer ff_day $(time)
 scoreboard players set $idle_ticks ff_game_state 0
-function fossil_frights:bossbar/update_day
+function fossil_frights:game/bossbar/update_day

@@ -16,4 +16,4 @@ scoreboard players set #lava_anim_timer ff_hazard_rng 0
 function fossil_frights:hazard/floods/stop
 function fossil_frights:hazard/security/stop
 function fossil_frights:hazard/curse/stop
-function fossil_frights:bossbar/update_hazards
+function fossil_frights:game/bossbar/update_hazards

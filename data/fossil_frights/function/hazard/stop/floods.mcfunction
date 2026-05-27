@@ -6,4 +6,4 @@ scoreboard players set #floods_turn_on ff_hazard_rng 0
 scoreboard players set #floods_valve_cooldown ff_hazard_rng 40
 
 function fossil_frights:hazard/floods/stop
-function fossil_frights:bossbar/update_hazards
+function fossil_frights:game/bossbar/update_hazards

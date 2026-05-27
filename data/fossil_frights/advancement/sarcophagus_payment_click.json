@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:animations/sarcophagus/clicked"
+    "function": "fossil_frights:animations/cubekoin/sarcophagus/clicked"
   }
 }

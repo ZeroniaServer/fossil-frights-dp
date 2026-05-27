@@ -1,8 +1,0 @@
-execute positioned 52 68 60 if score $crane_rat_cooldown ff_game_state matches 0 if entity @a[tag=ff_active,distance=..1.5,limit=1] run tellraw @p[tag=ff_active,distance=..1.5,limit=1] ["<",{"color":"dark_aqua","text":"Sculk Creature"},"> Hey pal, if you can't drop me ",{"color":"gold","text":"2 CubeKoins "},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"},", you're gonna have to parkour your own way up."]
-execute positioned 52 68 60 if score $crane_rat_cooldown ff_game_state matches 0 if entity @a[tag=ff_active,distance=..1.5,limit=1] run function fossil_frights:animations/crane/display_parkour_route
-execute positioned 52 68 60 if score $crane_rat_cooldown ff_game_state matches 0 if entity @a[tag=ff_active,distance=..1.5,limit=1] run scoreboard players set $crane_rat_cooldown ff_game_state 400
-tag @e[type=minecraft:item,tag=ff_crane_payment_candidate] remove ff_crane_payment_candidate
-execute positioned 52 68 60 if entity @e[type=minecraft:item,distance=..1.5,nbt={Item:{id:"minecraft:gold_ingot",count:2}},limit=1] run function fossil_frights:animations/crane/pay_stack_two
-execute positioned 52 68 60 run tag @e[type=minecraft:item,distance=..1.5,nbt={Item:{id:"minecraft:gold_ingot",count:1}},sort=nearest,limit=1] add ff_crane_payment_candidate
-execute positioned 52 68 60 if score $crane_wait ff_game_state matches 0 if entity @e[type=minecraft:item,distance=..1.5,nbt={Item:{id:"minecraft:gold_ingot",count:1}},tag=!ff_crane_payment_candidate,limit=1] run function fossil_frights:animations/crane/pay_two_singles
-tag @e[type=minecraft:item,tag=ff_crane_payment_candidate] remove ff_crane_payment_candidate

@@ -1,4 +1,4 @@
-function fossil_frights:command/info_board/setup
+function fossil_frights:game/start_room/info_board/setup
 function fossil_frights:command/info/lectern_setup
 function fossil_frights:game/timer/setup
 function fossil_frights:game/timer/update_display

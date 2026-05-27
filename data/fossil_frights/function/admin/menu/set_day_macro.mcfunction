@@ -10,4 +10,4 @@ scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:bossbar/set_break
+function fossil_frights:game/bossbar/set_break

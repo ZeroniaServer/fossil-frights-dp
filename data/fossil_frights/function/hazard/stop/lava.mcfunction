@@ -4,4 +4,4 @@ scoreboard players set lava ff_hazard_active 0
 setblock -1 71 15 minecraft:coal_block
 
 function fossil_frights:hazard/lava/stop
-function fossil_frights:bossbar/update_hazards
+function fossil_frights:game/bossbar/update_hazards

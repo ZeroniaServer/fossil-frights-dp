@@ -25,7 +25,7 @@ execute as @a[tag=ff_active] at @s run playsound minecraft:block.note_block.plin
 execute if block 10 71 25 minecraft:lever[powered=true] as @a[tag=ff_active] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if block 10 71 25 minecraft:lever[powered=true] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start
-function fossil_frights:bossbar/set_day
+function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh

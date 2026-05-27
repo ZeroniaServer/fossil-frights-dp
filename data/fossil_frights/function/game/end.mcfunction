@@ -3,15 +3,15 @@ function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/final/final_task/close_lab_door
 function fossil_frights:tasks/final/final_task/reset
-function fossil_frights:bossbar/clear
+function fossil_frights:game/bossbar/clear
 function fossil_frights:animations/game_start/stop
 execute unless score $defeat_anim ff_game_state matches 1 run function fossil_frights:animations/defeat/stop
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/timer/reset
 function fossil_frights:animations/door/open
-function fossil_frights:animations/crane/reset
-function fossil_frights:animations/sarcophagus/reset
+function fossil_frights:animations/cubekoin/crane/reset
+function fossil_frights:animations/cubekoin/sarcophagus/reset
 function fossil_frights:animations/credits/cleanup
 function fossil_frights:frights/sniffer/reset
 function fossil_frights:frights/bats/reset
@@ -52,7 +52,7 @@ tag @a[tag=ff_active] remove ff_map_claimed
 tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
-function fossil_frights:game/roster/reset
+function fossil_frights:game/party_mode/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0

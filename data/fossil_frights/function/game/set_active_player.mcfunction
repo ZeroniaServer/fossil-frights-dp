@@ -7,6 +7,6 @@ execute store result score $active ff_active_uuid_0 run data get entity @s UUID[
 execute store result score $active ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score $active ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score $active ff_active_uuid_3 run data get entity @s UUID[3] 1
-function fossil_frights:game/roster/reset
+function fossil_frights:game/party_mode/reset
 scoreboard players set $active_set ff_game_state 1
-function fossil_frights:game/roster/add_current
+function fossil_frights:game/party_mode/add_current
