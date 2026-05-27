@@ -72,6 +72,8 @@ scoreboard players set $feed_the_plants_sel ff_task_state 0
 scoreboard players set $feed_the_plants_done ff_task_state 0
 scoreboard players set $refill_coffee_sel ff_task_state 0
 scoreboard players set $refill_coffee_done ff_task_state 0
+scoreboard players set $refill_ice_sel ff_task_state 0
+scoreboard players set $refill_ice_done ff_task_state 0
 scoreboard players set $coffee_refill_sel ff_task_state 0
 scoreboard players set $coffee_refill_done ff_task_state 0
 scoreboard players set $replenish_soap_sel ff_task_state 0
@@ -182,6 +184,7 @@ scoreboard players reset $tt_heat_it_up ff_task_tracker
 scoreboard players reset $tt_sponge_up_spill ff_task_tracker
 scoreboard players reset $tt_feed_the_plants ff_task_tracker
 scoreboard players reset $tt_refill_coffee ff_task_tracker
+scoreboard players reset $tt_refill_ice ff_task_tracker
 scoreboard players reset $tt_coffee_refill ff_task_tracker
 scoreboard players reset $tt_replenish_soap ff_task_tracker
 scoreboard players reset $tt_restock_plushies ff_task_tracker
@@ -247,6 +250,7 @@ function fossil_frights:tasks/medium/heat_it_up/reset
 function fossil_frights:tasks/medium/sponge_up_spill/reset
 function fossil_frights:tasks/medium/feed_the_plants/reset
 function fossil_frights:tasks/medium/refill_coffee/reset
+function fossil_frights:tasks/medium/refill_ice/reset
 function fossil_frights:tasks/medium/coffee_refill/reset
 function fossil_frights:tasks/medium/replenish_soap/reset
 function fossil_frights:tasks/medium/restock_plushies/reset

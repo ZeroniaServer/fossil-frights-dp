@@ -209,6 +209,7 @@ advancement revoke @a only fossil_frights:feed_parrot_click
 advancement revoke @a only fossil_frights:feed_the_plants_click
 advancement revoke @a only fossil_frights:fix_sculker_click
 advancement revoke @a only fossil_frights:refill_coffee_click
+advancement revoke @a only fossil_frights:refill_ice_click
 advancement revoke @a only fossil_frights:replenish_soap_click
 advancement revoke @a only fossil_frights:restock_plushies_click
 advancement revoke @a only fossil_frights:revitalize_coral_click

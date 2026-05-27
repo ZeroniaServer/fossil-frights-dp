@@ -35,6 +35,7 @@ scoreboard players reset $tt_heat_it_up ff_task_tracker
 scoreboard players reset $tt_sponge_up_spill ff_task_tracker
 scoreboard players reset $tt_feed_the_plants ff_task_tracker
 scoreboard players reset $tt_refill_coffee ff_task_tracker
+scoreboard players reset $tt_refill_ice ff_task_tracker
 scoreboard players reset $tt_coffee_refill ff_task_tracker
 scoreboard players reset $tt_replenish_soap ff_task_tracker
 scoreboard players reset $tt_restock_plushies ff_task_tracker
@@ -160,6 +161,9 @@ execute if score $feed_the_plants_done ff_task_state matches 1 run scoreboard pl
 execute if score $refill_coffee_sel ff_task_state matches 1 run scoreboard players operation $tt_refill_coffee ff_task_tracker = #line_refill_coffee ff_task_state
 execute if score $refill_coffee_sel ff_task_state matches 1 unless score $refill_coffee_done ff_task_state matches 1 run scoreboard players display name $tt_refill_coffee ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Refill Coffee","italic":false}]
 execute if score $refill_coffee_done ff_task_state matches 1 run scoreboard players display name $tt_refill_coffee ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Refill Coffee","color":"gray","italic":false,"strikethrough":true}]
+execute if score $refill_ice_sel ff_task_state matches 1 run scoreboard players operation $tt_refill_ice ff_task_tracker = #line_refill_ice ff_task_state
+execute if score $refill_ice_sel ff_task_state matches 1 unless score $refill_ice_done ff_task_state matches 1 run scoreboard players display name $tt_refill_ice ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Refill Ice","italic":false}]
+execute if score $refill_ice_done ff_task_state matches 1 run scoreboard players display name $tt_refill_ice ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Refill Ice","color":"gray","italic":false,"strikethrough":true}]
 execute if score $coffee_refill_sel ff_task_state matches 1 run scoreboard players operation $tt_coffee_refill ff_task_tracker = #line_coffee_refill ff_task_state
 execute if score $coffee_refill_sel ff_task_state matches 1 unless score $coffee_refill_done ff_task_state matches 1 run scoreboard players display name $tt_coffee_refill ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Coffee Refill","italic":false}]
 execute if score $coffee_refill_done ff_task_state matches 1 run scoreboard players display name $tt_coffee_refill ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_medium"},{"text":" Coffee Refill","color":"gray","italic":false,"strikethrough":true}]

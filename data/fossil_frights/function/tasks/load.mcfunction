@@ -6,7 +6,7 @@ scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 26
-scoreboard players set #medium_pool_count ff_task_state 22
+scoreboard players set #medium_pool_count ff_task_state 25
 scoreboard players set #hard_pool_count ff_task_state 13
 scoreboard players set #final_pool_count ff_task_state 1
 
@@ -215,6 +215,10 @@ scoreboard players set $ancient_portal_done ff_task_state 0
 scoreboard players set $ancient_portal_timer ff_task_state 0
 scoreboard players set $ancient_portal_dest ff_task_state 0
 scoreboard players set #line_ancient_portal ff_task_state 59
+scoreboard players set $refill_ice_avail ff_task_state 1
+scoreboard players set $refill_ice_sel ff_task_state 0
+scoreboard players set $refill_ice_done ff_task_state 0
+scoreboard players set #line_refill_ice ff_task_state 60
 
 scoreboard players set $star_gazing_avail ff_task_state 1
 scoreboard players set $star_gazing_sel ff_task_state 0
