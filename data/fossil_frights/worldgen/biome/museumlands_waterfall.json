@@ -6,7 +6,6 @@
   ],
   "downfall": 0.0,
   "effects": {
-    "exit_type": "surface",
     "fog_color": 9488294,
     "foliage_color": 5939514,
     "grass_color": 7060286,
@@ -17,9 +16,6 @@
     "water_fog_color": 2855832
   },
   "features": [
-    [],
-    [],
-    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -31,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -64,7 +58,6 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
-    [],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
@@ -81,8 +74,7 @@
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
-    ],
-    []
+    ]
   ],
   "has_precipitation": true,
   "spawn_costs": {},
