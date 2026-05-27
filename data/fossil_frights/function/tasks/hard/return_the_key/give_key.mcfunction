@@ -1,4 +1,5 @@
-function fossil_frights:items/task_rewards/give_vault_key
+function fossil_frights:items/other/vault_key
+function fossil_frights:items/util/give_from_storage {path:"definitions.other.vault_key"}
 execute positioned -2 82 66 run playsound minecraft:block.chest.open master @a[tag=ff_active,distance=..14] ~ ~ ~ 0.8 1.2
 execute positioned -2 82 66 run playsound minecraft:item.trident.return master @a[tag=ff_active,distance=..14] ~ ~ ~ 0.7 1.8
 execute positioned -2 82 66 run particle minecraft:glow ~ ~ ~ 0.45 0.55 0.45 0.02 24 force

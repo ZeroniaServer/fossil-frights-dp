@@ -1,0 +1,1 @@
+data modify storage fossil_frights:items definitions.anvil.hoverboard set value {id:"minecraft:sentry_armor_trim_smithing_template",count:1,components:{"minecraft:item_name":{text:"Hoverboard",color:"aqua",italic:false},"minecraft:custom_data":{itemID:"hoverboard"}}}

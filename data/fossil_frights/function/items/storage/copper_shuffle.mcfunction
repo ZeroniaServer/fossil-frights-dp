@@ -1,1 +1,1 @@
-data modify entity @s item.components."minecraft:custom_data".ff_reward set value {id:"minecraft:copper_ingot",count:1,components:{"minecraft:item_model":"minecraft:music_disc_creator_music_box","minecraft:item_name":"Copper Shuffle"}}
+data modify storage fossil_frights:items definitions.storage.copper_shuffle set value {id:"minecraft:copper_ingot",count:1,components:{"minecraft:item_model":"minecraft:music_disc_creator_music_box","minecraft:item_name":"Copper Shuffle"}}

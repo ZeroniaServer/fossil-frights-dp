@@ -6,4 +6,4 @@ effect give @s minecraft:slowness 12 2 true
 effect give @s minecraft:blindness 4 1 true
 execute if data entity @s {Inventory:[{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_disabled:1b}}}]} run function fossil_frights:key/refresh
 execute unless data entity @s {Inventory:[{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}]} unless data entity @s {Inventory:[{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} unless data entity @s {Inventory:[{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_disabled:1b}}}]} run function fossil_frights:key/give
-execute unless data entity @s {Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]} run function fossil_frights:items/equipment/security_hat
+execute unless data entity @s {Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin"}]} run function fossil_frights:player/equip_security_hat

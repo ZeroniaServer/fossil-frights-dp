@@ -41,7 +41,7 @@ scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
 title @a[tag=ff_active] actionbar ""
 tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_map_claimed
-execute as @a[tag=ff_active] run function fossil_frights:items/equipment/security_hat
+execute as @a[tag=ff_active] run function fossil_frights:player/equip_security_hat
 execute as @a[tag=ff_active] run function fossil_frights:key/give_waiting
 execute as @a[tag=ff_active,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
 execute as @a[tag=ff_active] at @s run spawnpoint @s 20 70 20

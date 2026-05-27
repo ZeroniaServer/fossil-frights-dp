@@ -5,7 +5,7 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/bookcase/clear
 execute as @a[tag=ff_active] run title @s actionbar [{"text":"Day ","color":"gold","italic":false},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"},{"text":" Complete!","color":"gold","italic":false}]
-execute as @a[tag=ff_active] run function fossil_frights:items/currency/give_cubekoin
+execute as @a[tag=ff_active] run function fossil_frights:game/give_cubekoin
 execute as @a[tag=ff_active] run function fossil_frights:advancements_progression_grant_day_completed
 execute as @a at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
 stopsound @a music fossil-frights:ff_night_shift
@@ -27,7 +27,7 @@ execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_gam
 execute if score $day_current ff_day matches 10 run function fossil_frights:bossbar/set_victory
 execute if score $day_current ff_day matches 10 run scoreboard players set $victory_complete ff_game_state 1
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
-execute if score $day_current ff_day matches 10 run function fossil_frights:items/confetti_cannon/give_all
+execute if score $day_current ff_day matches 10 run function fossil_frights:items/other/confetti_cannon/give_all
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/victory/celebrate
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/reset_spectators
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt

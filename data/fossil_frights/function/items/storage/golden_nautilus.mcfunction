@@ -1,2 +1,1 @@
-function fossil_frights:items/storage/definitions/golden_nautilus
-data modify entity @s item.components."minecraft:custom_data".ff_reward set from storage fossil_frights:items definitions.golden_nautilus
+data modify storage fossil_frights:items definitions.storage.golden_nautilus set value {id:"minecraft:nautilus_shell",count:1,components:{"minecraft:custom_model_data":{floats:[1]},"minecraft:equippable":{slot:"head"},"minecraft:lore":[{extra:["golden_nautilus"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:custom_data":{itemID:"golden_nautilus"},"minecraft:item_name":{italic:0b,color:"gold",text:"Golden Nautilus"}}}

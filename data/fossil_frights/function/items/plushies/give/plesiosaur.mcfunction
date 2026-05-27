@@ -1,1 +1,0 @@
-give @s minecraft:totem_of_undying[minecraft:item_name={text:"Plesiosaur Plushie",color:"gold",italic:false},minecraft:custom_model_data={floats:[1]},minecraft:lore=[{text:"",extra:["plesiosaur_plushie"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:equippable={slot:"head"},minecraft:custom_data={ff_plushie:"plesiosaur"}] 1
