@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "cotton_candy"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "light_purple",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "text": "Cotton Candy"
+                    }
+                  ],
+                  "text": ""
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "cotton_candy_pink"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

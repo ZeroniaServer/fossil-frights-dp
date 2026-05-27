@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone_meal",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "fertilizer"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:custom_name": {
+                  "italic": false,
+                  "color": "dark_green",
+                  "text": "Fertilizer"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "fertilizer"
+                },
+                "minecraft:item_name": {
+                  "color": "dark_green",
+                  "text": "Fertilizer"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

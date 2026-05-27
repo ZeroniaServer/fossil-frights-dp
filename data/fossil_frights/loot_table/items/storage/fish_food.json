@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "fish_food"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "italic": false,
+                  "color": "red",
+                  "text": "Fish Food"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "fish_food"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

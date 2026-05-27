@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 3847130
+                },
+                "minecraft:custom_name": {
+                  "italic": false,
+                  "color": "#10ACEE",
+                  "text": "Water Balloon"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

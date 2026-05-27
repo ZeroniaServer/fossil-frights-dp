@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brush",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "yellow",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "text": "Brush"
+                    }
+                  ],
+                  "text": ""
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

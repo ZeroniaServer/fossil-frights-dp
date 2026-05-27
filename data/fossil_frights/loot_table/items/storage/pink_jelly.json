@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brain_coral_fan",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "pink_jelly"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "pink_coral_jelly"
+                },
+                "minecraft:item_name": {
+                  "italic": false,
+                  "color": "light_purple",
+                  "text": "Pink Jelly"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

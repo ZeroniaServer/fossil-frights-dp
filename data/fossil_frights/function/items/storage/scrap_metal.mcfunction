@@ -1,1 +1,0 @@
-data modify storage fossil_frights:items definitions.storage.scrap_metal set value {id:"minecraft:iron_ingot",count:1,components:{"minecraft:custom_model_data":{floats:[1]},"minecraft:lore":[{extra:["scrap_metal"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:item_name":{italic:0b,color:"dark_aqua",text:"Scrap Metal"}}}

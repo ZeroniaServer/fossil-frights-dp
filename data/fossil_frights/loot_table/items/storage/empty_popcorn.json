@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "empty_popcorn"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "italic": false,
+                  "color": "yellow",
+                  "text": "Empty Popcorn Bucket"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "empty_popcorn"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

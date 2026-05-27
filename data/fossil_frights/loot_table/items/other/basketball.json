@@ -1,0 +1,83 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:profile": {
+                  "name": "HeadDatabase",
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGRmNTVjMjRmZTgyMWI3MGU2MDUwY2ZlZDY4MTdkZWQ1YmVmMzdmNGY1ZGFjY2I4N2Q5MDA4Y2RhZjgzYmRmMCJ9fX0="
+                    }
+                  ],
+                  "id": [
+                    67411088,
+                    -739686879,
+                    -1666252790,
+                    -1441693150
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      {
+                        "italic": false,
+                        "underlined": false,
+                        "bold": false,
+                        "color": "yellow",
+                        "obfuscated": false,
+                        "strikethrough": false,
+                        "text": "Here catch! Thanks for making me dance"
+                      }
+                    ],
+                    "text": ""
+                  },
+                  {
+                    "extra": [
+                      {
+                        "italic": false,
+                        "underlined": false,
+                        "bold": false,
+                        "color": "gold",
+                        "obfuscated": false,
+                        "strikethrough": false,
+                        "text": "-Copper Golem"
+                      }
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "gold",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "text": "Basketball"
+                    }
+                  ],
+                  "text": ""
+                },
+                "minecraft:custom_data": {
+                  "itemID": "basketball"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

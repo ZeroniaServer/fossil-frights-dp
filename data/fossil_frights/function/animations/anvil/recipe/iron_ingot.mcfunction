@@ -1,3 +1,2 @@
-function fossil_frights:items/anvil/hoverboard
-data modify storage fossil_frights:anvil result.stack set from storage fossil_frights:items definitions.anvil.hoverboard
+function fossil_frights:items/util/load_to_storage {loot:"items/anvil/hoverboard",storage:"fossil_frights:anvil",path:"result.stack"}
 scoreboard players set @s ff_anvil_result 1

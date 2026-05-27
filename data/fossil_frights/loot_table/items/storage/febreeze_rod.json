@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:breeze_rod",
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "febreeze_rod"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "aqua",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "text": "Febreeze Rod"
+                    }
+                  ],
+                  "text": ""
+                },
+                "minecraft:custom_data": {
+                  "itemID": "febreeze_rod"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

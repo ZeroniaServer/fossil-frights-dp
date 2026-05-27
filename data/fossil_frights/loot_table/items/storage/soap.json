@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    2
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "soap"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "soap"
+                },
+                "minecraft:item_name": {
+                  "italic": false,
+                  "color": "light_purple",
+                  "text": "Soap"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

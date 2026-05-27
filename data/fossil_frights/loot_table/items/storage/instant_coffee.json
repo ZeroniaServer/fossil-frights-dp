@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    38
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "instant_coffee"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "instant_coffee"
+                },
+                "minecraft:item_name": {
+                  "italic": false,
+                  "color": "red",
+                  "text": "Instant Coffee"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:lore": [
+                  {
+                    "extra": [
+                      "golden_nautilus"
+                    ],
+                    "text": ""
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "golden_nautilus"
+                },
+                "minecraft:item_name": {
+                  "italic": false,
+                  "color": "gold",
+                  "text": "Golden Nautilus"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

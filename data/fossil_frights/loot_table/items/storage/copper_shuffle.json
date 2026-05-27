@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:music_disc_creator_music_box",
+                "minecraft:item_name": "Copper Shuffle"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

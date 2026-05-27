@@ -1,1 +1,0 @@
-data modify storage fossil_frights:items definitions.storage.carrot_cake set value {id:"minecraft:carrot",count:1,components:{"minecraft:custom_model_data":{floats:[1]},"minecraft:lore":[{extra:["carrot_cake"],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]},"minecraft:item_name":{italic:0b,color:"gold",text:"Carrot Cake"}}}

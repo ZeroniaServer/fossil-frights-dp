@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Fossil Fizz",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:item_model": "fossil-frights:food/fossil_fizz",
+                "minecraft:lore": [
+                  {
+                    "text": "Carbonated for 60 million years, probably safe...",
+                    "color": "yellow",
+                    "italic": true
+                  }
+                ],
+                "minecraft:potion_contents": {
+                  "custom_color": 5949690,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:dolphins_grace",
+                      "amplifier": 0,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:water_breathing",
+                      "amplifier": 0,
+                      "duration": 24000
+                    }
+                  ]
+                },
+                "!minecraft:use_remainder": {},
+                "minecraft:custom_data": {
+                  "ff_vending_machine": true,
+                  "ff_drink": "fossil_fizz"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

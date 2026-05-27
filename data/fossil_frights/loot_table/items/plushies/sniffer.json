@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Sniffer Plushie",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    7
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "sniffer_plushie"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "ff_plushie": "sniffer"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

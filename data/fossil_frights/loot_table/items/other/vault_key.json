@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_trial_key",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Vault Key",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "ff_vault_key": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Hoverboard",
+                  "color": "aqua",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "itemID": "hoverboard"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
