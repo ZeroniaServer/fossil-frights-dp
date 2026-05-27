@@ -10,8 +10,6 @@
     "description": {
       "text": "Restart a run within 5 seconds of starting the first day."
     },
-    "x": 1,
-    "y": 4,
     "show_toast": true,
     "announce_to_chat": true
   },

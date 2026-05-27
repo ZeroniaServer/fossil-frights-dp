@@ -31,8 +31,6 @@
     "description": {
       "text": "Complete the Lobby Parkour."
     },
-    "x": 0,
-    "y": 1,
     "show_toast": true,
     "announce_to_chat": true
   },

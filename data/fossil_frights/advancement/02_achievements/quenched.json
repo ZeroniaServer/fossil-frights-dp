@@ -29,8 +29,6 @@
     "description": {
       "text": "Purchase a drink from the vending machine."
     },
-    "x": 0,
-    "y": 2,
     "show_toast": true,
     "announce_to_chat": true
   },

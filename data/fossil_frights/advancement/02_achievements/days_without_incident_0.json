@@ -10,8 +10,6 @@
     "description": {
       "text": "Get crushed by a security gate."
     },
-    "x": 1,
-    "y": 2,
     "show_toast": true,
     "announce_to_chat": true
   },

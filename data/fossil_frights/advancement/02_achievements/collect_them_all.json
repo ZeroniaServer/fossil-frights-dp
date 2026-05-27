@@ -29,8 +29,6 @@
     "description": {
       "text": "Collect all 6 plushies."
     },
-    "x": 0,
-    "y": 3,
     "show_toast": true,
     "announce_to_chat": true
   },

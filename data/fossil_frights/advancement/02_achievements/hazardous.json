@@ -10,8 +10,6 @@
     "description": {
       "text": "Have all 5 hazards active at once."
     },
-    "x": 0,
-    "y": 5,
     "show_toast": true,
     "announce_to_chat": true
   },

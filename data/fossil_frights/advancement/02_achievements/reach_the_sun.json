@@ -10,8 +10,6 @@
     "description": {
       "text": "Somehow make your way to the sun in the dome above the brontosaurus."
     },
-    "x": 1,
-    "y": 5,
     "show_toast": true,
     "announce_to_chat": true
   },

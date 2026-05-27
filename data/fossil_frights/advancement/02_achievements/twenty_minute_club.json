@@ -10,8 +10,6 @@
     "description": {
       "text": "Beat the game in 20 minutes or less"
     },
-    "x": 2,
-    "y": 4,
     "show_toast": true,
     "announce_to_chat": true
   },

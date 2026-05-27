@@ -30,8 +30,6 @@
     "description": {
       "text": "Pay the rat a toll to ride in the pulley."
     },
-    "x": 1,
-    "y": 1,
     "show_toast": true,
     "announce_to_chat": true
   },

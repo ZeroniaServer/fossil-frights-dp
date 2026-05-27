@@ -18,8 +18,6 @@
     "description": {
       "text": "Get an Ant Score of 10+."
     },
-    "x": 0,
-    "y": 2,
     "show_toast": true,
     "announce_to_chat": true
   },
