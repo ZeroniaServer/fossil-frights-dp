@@ -14,7 +14,7 @@ function fossil_frights:tasks/easy/check_security/spawn_dummy_macro with storage
 tag @s add ff_forced_spectate
 gamemode spectator @s
 execute unless entity @e[type=cave_spider,tag=security_camera] run function fossil_frights:tasks/easy/check_security/camera_setup
-execute if entity @e[tag=security_camera,limit=1] run minecraft:spectate @e[type=cave_spider,tag=security_camera,sort=random,limit=1] @s
+execute if entity @e[tag=security_camera,limit=1] run spectate @e[type=cave_spider,tag=security_camera,sort=random,limit=1] @s
 setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]
