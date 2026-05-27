@@ -195,6 +195,7 @@ advancement revoke @a only fossil_frights:museum_map_click
 advancement revoke @a only fossil_frights:map_region
 advancement revoke @a only fossil_frights:info_lectern_click
 advancement revoke @a only fossil_frights:swat_flies_click
+advancement revoke @a only fossil_frights:check_security_click
 advancement revoke @a only fossil_frights:polish_bell_click
 advancement revoke @a only fossil_frights:fix_cracked_egg_click
 advancement revoke @a only fossil_frights:fix_mars_click
