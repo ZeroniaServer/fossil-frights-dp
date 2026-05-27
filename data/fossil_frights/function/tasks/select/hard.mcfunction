@@ -15,7 +15,7 @@ execute unless score $fertilize_plant_sel ff_task_state matches 1 run scoreboard
 execute unless score $basketball_dance_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
-execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run random value 1..1
+execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run scoreboard players get #task_remaining ff_task_state
 execute if score #task_remaining ff_task_state matches 2 store result score #task_pick ff_task_state run random value 1..2
 execute if score #task_remaining ff_task_state matches 3 store result score #task_pick ff_task_state run random value 1..3
 execute if score #task_remaining ff_task_state matches 4 store result score #task_pick ff_task_state run random value 1..4
