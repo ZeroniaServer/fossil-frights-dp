@@ -1,0 +1,23 @@
+scoreboard players operation $speedrun_delta_abs ff_lb_calc = @s ff_speedrun_delta
+scoreboard players operation $speedrun_delta_minutes ff_lb_calc = $speedrun_delta_abs ff_lb_calc
+scoreboard players operation $speedrun_delta_minutes ff_lb_calc /= #day_minute ff_day
+scoreboard players operation $speedrun_delta_seconds ff_lb_calc = $speedrun_delta_abs ff_lb_calc
+scoreboard players operation $speedrun_delta_seconds ff_lb_calc /= #day_tick ff_day
+scoreboard players operation $speedrun_delta_seconds ff_lb_calc %= #sixty ff_day
+scoreboard players operation $speedrun_delta_centis ff_lb_calc = $speedrun_delta_abs ff_lb_calc
+scoreboard players operation $speedrun_delta_centis ff_lb_calc %= #day_tick ff_day
+scoreboard players operation $speedrun_delta_centis ff_lb_calc *= #five ff_day
+scoreboard players operation $speedrun_delta_min_tens ff_lb_calc = $speedrun_delta_minutes ff_lb_calc
+scoreboard players operation $speedrun_delta_min_tens ff_lb_calc /= #ten ff_day
+scoreboard players operation $speedrun_delta_min_tens ff_lb_calc %= #ten ff_day
+scoreboard players operation $speedrun_delta_min_ones ff_lb_calc = $speedrun_delta_minutes ff_lb_calc
+scoreboard players operation $speedrun_delta_min_ones ff_lb_calc %= #ten ff_day
+scoreboard players operation $speedrun_delta_sec_tens ff_lb_calc = $speedrun_delta_seconds ff_lb_calc
+scoreboard players operation $speedrun_delta_sec_tens ff_lb_calc /= #ten ff_day
+scoreboard players operation $speedrun_delta_sec_ones ff_lb_calc = $speedrun_delta_seconds ff_lb_calc
+scoreboard players operation $speedrun_delta_sec_ones ff_lb_calc %= #ten ff_day
+scoreboard players operation $speedrun_delta_centi_tens ff_lb_calc = $speedrun_delta_centis ff_lb_calc
+scoreboard players operation $speedrun_delta_centi_tens ff_lb_calc /= #ten ff_day
+scoreboard players operation $speedrun_delta_centi_ones ff_lb_calc = $speedrun_delta_centis ff_lb_calc
+scoreboard players operation $speedrun_delta_centi_ones ff_lb_calc %= #ten ff_day
+

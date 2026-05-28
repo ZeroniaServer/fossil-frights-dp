@@ -38,6 +38,8 @@ scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
+scoreboard players set @a[tag=ff_active] ff_speedrun_delta 0
+scoreboard players set @a[tag=ff_active] ff_speedrun_sign 0
 title @a[tag=ff_active] actionbar ""
 tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_map_claimed
@@ -72,8 +74,10 @@ scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
+function fossil_frights:game/settings/speedrun_toggle/reset
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:game/start_room/settings/speedrun_toggle/refresh

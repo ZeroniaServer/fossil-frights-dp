@@ -25,6 +25,9 @@ function fossil_frights:game/reset_spectators
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0
 scoreboard players set @a ff_bat_bug_bar 0
+scoreboard players set @a ff_speedrun_delta 0
+scoreboard players set @a ff_speedrun_sign 0
+title @a subtitle ""
 execute as @a[tag=ff_active] run function fossil_frights:player/effects/lobby_reset
 tag @a[tag=ff_active] remove ff_muted_chat
 tag @a[tag=ff_active] remove ff_map_claimed
@@ -56,5 +59,6 @@ function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next

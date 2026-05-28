@@ -31,6 +31,9 @@ function fossil_frights:join/reset
 scoreboard players set @a ff_fright_timer 0
 scoreboard players set @a ff_bat_bug_timer 0
 scoreboard players set @a ff_bat_bug_bar 0
+scoreboard players set @a ff_speedrun_delta 0
+scoreboard players set @a ff_speedrun_sign 0
+title @a subtitle ""
 tag @a[tag=ff_active] remove ff_muted_chat
 tag @a remove ff_map_claimed
 tag @a remove ff_map_auto_given
@@ -71,6 +74,7 @@ scoreboard players set $active ff_active_uuid_3 0
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
+function fossil_frights:game/settings/speedrun_toggle/reset
 function fossil_frights:tasks/tracker/hide
 scoreboard players set $leaderboard_display_ready ff_lb_calc 0
 function fossil_frights:animations/cubekoin/crane/hide_parkour_route

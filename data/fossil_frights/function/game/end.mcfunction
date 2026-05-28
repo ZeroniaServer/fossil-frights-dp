@@ -34,6 +34,9 @@ scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
 scoreboard players set @a[tag=ff_active] ff_key_bar 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
 scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
+scoreboard players set @a[tag=ff_active] ff_speedrun_delta 0
+scoreboard players set @a[tag=ff_active] ff_speedrun_sign 0
+title @a[tag=ff_active] subtitle ""
 title @a[tag=ff_active] actionbar ""
 clear @a[tag=ff_active]
 clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data={ff_key:1b}]
@@ -79,5 +82,6 @@ function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next

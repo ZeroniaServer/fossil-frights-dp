@@ -66,6 +66,18 @@ scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
 scoreboard objectives add ff_duo_best dummy
+scoreboard objectives add ff_day1_best dummy
+scoreboard objectives add ff_day2_best dummy
+scoreboard objectives add ff_day3_best dummy
+scoreboard objectives add ff_day4_best dummy
+scoreboard objectives add ff_day5_best dummy
+scoreboard objectives add ff_day6_best dummy
+scoreboard objectives add ff_day7_best dummy
+scoreboard objectives add ff_day8_best dummy
+scoreboard objectives add ff_day9_best dummy
+scoreboard objectives add ff_day10_best dummy
+scoreboard objectives add ff_speedrun_delta dummy
+scoreboard objectives add ff_speedrun_sign dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_plugin dummy
@@ -170,6 +182,18 @@ scoreboard players set $stats_sec_tens ff_lb_calc 0
 scoreboard players set $stats_sec_ones ff_lb_calc 0
 scoreboard players set $stats_centi_tens ff_lb_calc 0
 scoreboard players set $stats_centi_ones ff_lb_calc 0
+scoreboard players set $speedrun_delta_abs ff_lb_calc 0
+scoreboard players set $speedrun_delta_minutes ff_lb_calc 0
+scoreboard players set $speedrun_delta_seconds ff_lb_calc 0
+scoreboard players set $speedrun_delta_centis ff_lb_calc 0
+scoreboard players set $speedrun_delta_min_tens ff_lb_calc 0
+scoreboard players set $speedrun_delta_min_ones ff_lb_calc 0
+scoreboard players set $speedrun_delta_sec_tens ff_lb_calc 0
+scoreboard players set $speedrun_delta_sec_ones ff_lb_calc 0
+scoreboard players set $speedrun_delta_centi_tens ff_lb_calc 0
+scoreboard players set $speedrun_delta_centi_ones ff_lb_calc 0
+scoreboard players set $speedrun_compare ff_lb_calc 0
+scoreboard players set $speedrun_sign ff_lb_calc 0
 scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0

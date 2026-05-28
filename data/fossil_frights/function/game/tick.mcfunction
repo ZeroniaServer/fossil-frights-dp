@@ -17,6 +17,7 @@ execute if score $game_running ff_game_state matches 1 if score $day_active ff_d
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:game/settings/toggle_spectators/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run function fossil_frights:game/settings/setting2/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run function fossil_frights:game/settings/setting3/tick
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run function fossil_frights:game/settings/speedrun_toggle/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $timer_frozen ff_day matches 0 if score $day_timer ff_day matches ..5999 run scoreboard players add $day_timer ff_day 1
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run bossbar set fossil_frights:bossbar value 0
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 store result bossbar fossil_frights:bossbar value run scoreboard players get $day_timer ff_day
@@ -34,4 +35,5 @@ function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
+function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/day_timeout
