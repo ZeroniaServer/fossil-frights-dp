@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_temple_run_teleporter_click\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:temple_run/teleporter_click"
+  }
+}

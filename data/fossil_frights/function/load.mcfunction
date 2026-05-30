@@ -217,6 +217,8 @@ advancement revoke @a only fossil_frights:multiplayer_click
 advancement revoke @a only fossil_frights:museum_map_click
 advancement revoke @a only fossil_frights:map_region
 advancement revoke @a only fossil_frights:info_lectern_click
+advancement revoke @a only fossil_frights:temple_run_teleporter_click
+advancement revoke @a only fossil_frights:ant_fight_teleporter_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:check_security_click
 advancement revoke @a only fossil_frights:polish_bell_click

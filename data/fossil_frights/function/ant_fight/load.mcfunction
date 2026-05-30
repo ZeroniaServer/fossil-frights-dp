@@ -17,3 +17,4 @@ scoreboard objectives add ff_ant_display dummy
 scoreboard players add $ant_best_exists ff_ant_display 0
 scoreboard players add $ant_best_score ff_ant_display 0
 scoreboard players set $ant_display_ready ff_ant_display 0
+function fossil_frights:ant_fight/teleporter_setup

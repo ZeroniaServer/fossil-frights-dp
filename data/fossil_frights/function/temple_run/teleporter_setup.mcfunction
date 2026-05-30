@@ -1,0 +1,6 @@
+kill @e[type=minecraft:interaction,tag=ff_temple_run_teleporter]
+kill @e[type=minecraft:item_display,tag=ff_temple_run_teleporter_display]
+kill @e[type=minecraft:text_display,tag=ff_temple_run_teleporter_display]
+summon minecraft:interaction 24.5 80 1.5 {Tags:["ff_temple_run_teleporter","ff_temple_run_teleporter_click"],width:1.0f,height:2.0f,response:1b}
+summon minecraft:item_display 24.5 82.05 1.5 {Tags:["ff_temple_run_teleporter","ff_temple_run_teleporter_display","ff_temple_run_teleporter_icon"],billboard:"fixed",Rotation:[90f,0f],brightness:{sky:15,block:15},transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[0.75f,0.75f,0.75f],right_rotation:[0f,0f,0f,1f]},item:{id:"minecraft:amethyst_shard",count:1,components:{"minecraft:item_model":"fossil-frights:general_items/temple_run_teleporter","minecraft:item_name":{text:"Temple Run Teleporter",color:"yellow",italic:false}}}}
+summon minecraft:text_display 24.5 81.05 1.5 {Tags:["ff_temple_run_teleporter","ff_temple_run_teleporter_display","ff_temple_run_teleporter_text"],billboard:"fixed",Rotation:[90f,0f],background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:255,brightness:{sky:15,block:15},alignment:"center",line_width:120,text:[{text:"Temple Run\n",color:"yellow",italic:false},{text:"Teleporter",color:"white",italic:false}]}
