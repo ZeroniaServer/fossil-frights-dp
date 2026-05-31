@@ -2,7 +2,7 @@
 
 # --- First Floor ---
 #Cafe
-setblock 21 87 14 minecraft:water
+setblock 21 87 15 minecraft:water
 setblock 25 87 37 minecraft:water
 setblock 16 87 40 minecraft:water
 #Gift Shop
@@ -20,8 +20,8 @@ setblock -2 90 49 minecraft:water
 
 # --- Second Floor ---
 #Eggxhibbit
-setblock -17 100 32 minecraft:water
-setblock -18 100 40 minecraft:water
+setblock -21 100 26 minecraft:water
+setblock -18 100 41 minecraft:water
 setblock -24 100 57 minecraft:water
 #Aviary
 setblock -13 108 68 minecraft:water
@@ -53,7 +53,7 @@ setblock -14 75 18 minecraft:water
 setblock -9 75 25 minecraft:water
 setblock -2 76 27 minecraft:water
 #Fossil Restoration Room
-setblock -1 75 42 minecraft:water
+setblock -2 75 42 minecraft:water
 setblock -19 75 44 minecraft:water
 #Basement Misc
 setblock -19 72 10 minecraft:water

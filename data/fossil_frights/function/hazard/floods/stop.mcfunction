@@ -1,7 +1,7 @@
 # Remove the water sources
 # --- First Floor ---
 #Cafe
-setblock 21 87 14 minecraft:air
+setblock 21 87 15 minecraft:air
 setblock 25 87 37 minecraft:air
 setblock 16 87 40 minecraft:air
 #Gift Shop
@@ -19,8 +19,8 @@ setblock -2 90 49 minecraft:air
 
 # --- Second Floor ---
 #Eggxhibbit
-setblock -17 100 32 minecraft:air
-setblock -18 100 40 minecraft:air
+setblock -21 100 26 minecraft:air
+setblock -18 100 41 minecraft:air
 setblock -24 100 57 minecraft:air
 #Aviary
 setblock -13 108 68 minecraft:air
@@ -52,7 +52,7 @@ setblock -14 75 18 minecraft:air
 setblock -9 75 25 minecraft:air
 setblock -2 76 27 minecraft:air
 #Fossil Restoration Room
-setblock -1 75 42 minecraft:air
+setblock -2 75 42 minecraft:air
 setblock -19 75 44 minecraft:air
 #Basement Misc
 setblock -19 72 10 minecraft:air
