@@ -12,6 +12,8 @@ scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
+scoreboard objectives add ff_security_camera dummy
+scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_hazard_rng dummy
@@ -213,6 +215,8 @@ team add ff_game_start_dummy
 team modify ff_game_start_dummy collisionRule never
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
+team add ff_security_camera
+team modify ff_security_camera collisionRule never
 advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:multiplayer_click
 advancement revoke @a only fossil_frights:museum_map_click

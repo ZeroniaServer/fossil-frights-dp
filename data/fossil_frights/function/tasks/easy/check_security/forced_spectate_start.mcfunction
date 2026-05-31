@@ -13,8 +13,11 @@ execute at @s summon marker run function fossil_frights:tasks/easy/check_securit
 function fossil_frights:tasks/easy/check_security/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate
 gamemode spectator @s
-execute unless entity @e[type=cave_spider,tag=security_camera] run function fossil_frights:tasks/easy/check_security/camera_setup
-execute if entity @e[tag=security_camera,limit=1] run spectate @e[type=cave_spider,tag=security_camera,sort=random,limit=1] @s
+team join ff_security_camera @e[type=cave_spider,tag=security_camera]
+scoreboard players set @s ff_security_camera 1
+scoreboard players set @s ff_security_camera_nav 0
+function fossil_frights:tasks/easy/check_security/select_camera
+function fossil_frights:tasks/easy/check_security/show_nav
 setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]

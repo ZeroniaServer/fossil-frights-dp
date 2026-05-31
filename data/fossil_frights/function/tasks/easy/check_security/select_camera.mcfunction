@@ -1,0 +1,5 @@
+execute if score @s ff_security_camera matches 1 if entity @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=1},limit=1] run spectate @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=1},limit=1] @s
+execute if score @s ff_security_camera matches 2 if entity @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=2},limit=1] run spectate @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=2},limit=1] @s
+execute if score @s ff_security_camera matches 3 if entity @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=3},limit=1] run spectate @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=3},limit=1] @s
+execute if score @s ff_security_camera matches 4 if entity @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=4},limit=1] run spectate @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=4},limit=1] @s
+execute if score @s ff_security_camera matches 5 if entity @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=5},limit=1] run spectate @e[type=cave_spider,tag=security_camera,scores={ff_security_camera=5},limit=1] @s
