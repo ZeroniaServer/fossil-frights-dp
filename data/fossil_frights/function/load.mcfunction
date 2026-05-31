@@ -138,6 +138,7 @@ scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
+scoreboard players set $party_button_lock ff_game_state 0
 scoreboard players set $party_member_count ff_game_state 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0

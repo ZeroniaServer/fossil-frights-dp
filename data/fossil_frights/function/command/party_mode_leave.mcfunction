@@ -1,4 +1,4 @@
-function fossil_frights:messages/leave/player_left
+function fossil_frights:messages/multiplayer/party_left
 function fossil_frights:game/party_mode/remove_current
 tag @s remove ff_active
 team leave @s

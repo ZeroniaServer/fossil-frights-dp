@@ -8,6 +8,7 @@ tag @a remove ff_run_remove_source
 tag @a remove ff_title_first
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
+scoreboard players set $party_button_lock ff_game_state 0
 scoreboard players set $party_member_count ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
 scoreboard players set $login_is_run_member ff_game_state 0

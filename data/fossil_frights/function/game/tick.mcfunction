@@ -1,4 +1,5 @@
 function fossil_frights:game/party_mode/sync
+function fossil_frights:game/party_mode/tick
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
 function fossil_frights:game/timer/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[tag=ff_active,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/next_day
@@ -34,6 +35,7 @@ execute if score $game_running ff_game_state matches 1 if score $day_active ff_d
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/party_mode/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/day_timeout

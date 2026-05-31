@@ -1,4 +1,9 @@
 scoreboard players remove @a[scores={ff_join_cooldown=1..}] ff_join_cooldown 1
+execute if entity @a if score $game_running ff_game_state matches 1 if score $party_mode_active ff_game_state matches 1 unless score $join_pad_mode ff_game_state matches 3 run function fossil_frights:join/party_setup
+execute if score $game_running ff_game_state matches 1 if score $party_mode_active ff_game_state matches 1 run scoreboard players set $join_pad_mode ff_game_state 3
+execute if score $game_running ff_game_state matches 1 if score $party_mode_active ff_game_state matches 1 run function fossil_frights:join/show/party
+execute if score $game_running ff_game_state matches 1 if score $party_mode_active ff_game_state matches 1 as @a[x=-2.125,y=80,z=7,dx=5.125,dy=4,dz=2,gamemode=adventure,tag=!ff_fade_tp_active,scores={ff_join_cooldown=0}] run function fossil_frights:join/party_enter
+execute if score $game_running ff_game_state matches 1 if score $party_mode_active ff_game_state matches 1 run return 0
 execute if entity @a if score $game_running ff_game_state matches 1 unless score $join_pad_mode ff_game_state matches 2 run function fossil_frights:join/setup
 execute if entity @a if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 1 unless score $join_pad_mode ff_game_state matches 2 run function fossil_frights:join/setup
 execute if entity @a if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 0 if entity @a[tag=ff_in_queue] unless score $join_pad_mode ff_game_state matches 2 run function fossil_frights:join/setup
