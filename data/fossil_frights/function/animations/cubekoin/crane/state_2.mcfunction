@@ -1,14 +1,1 @@
-fill 50 68 58 52 88 59 air
-fill 51 75 59 51 88 59 minecraft:iron_chain[axis=y]
-setblock 51 74 59 minecraft:grindstone[face=floor,facing=north]
-setblock 51 73 59 minecraft:spruce_slab[type=top]
-setblock 50 73 59 minecraft:oak_trapdoor[facing=west,open=true]
-setblock 52 73 59 minecraft:oak_trapdoor[facing=east,open=true]
-setblock 51 73 58 minecraft:oak_trapdoor[facing=north,open=true]
-setblock 50 72 59 minecraft:oak_trapdoor[facing=west,open=true]
-setblock 52 72 59 minecraft:oak_trapdoor[facing=east,open=true]
-setblock 51 72 58 minecraft:oak_trapdoor[facing=north,open=true]
-setblock 50 71 59 minecraft:spruce_trapdoor[facing=west,open=true]
-setblock 52 71 59 minecraft:spruce_trapdoor[facing=east,open=true]
-setblock 51 71 58 minecraft:spruce_trapdoor[facing=north,open=true]
-setblock 51 70 59 minecraft:spruce_slab[type=top]
+place template minecraft:crane_2 50 68 58 none none 1.0 0 strict
