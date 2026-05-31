@@ -9,6 +9,7 @@ function fossil_frights:animations/credits/stop
 function fossil_frights:animations/door/open
 function fossil_frights:animations/cubekoin/crane/reset
 function fossil_frights:animations/cubekoin/sarcophagus/reset
+function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/sniffer/reset
 function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
