@@ -1,0 +1,2 @@
+data merge entity @e[type=minecraft:item_display,tag=ff_sculkadillo,limit=1] {item:{id:"minecraft:nautilus_shell",count:1,components:{"minecraft:custom_model_data":{floats:[6]},"minecraft:lore":[{text:"",extra:["sculkadillo_triggered"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}}}
+execute as @e[type=minecraft:item_display,tag=ff_sculkadillo,limit=1] at @s run playsound minecraft:block.piston.extend block @a[distance=..16] ~ ~ ~ 0.6 1.2
