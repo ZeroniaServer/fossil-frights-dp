@@ -17,6 +17,7 @@ execute if score $speedrunner_restart_window ff_game_state matches 1.. run score
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
 execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/cubekoin/crane/payment/check
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/cubekoin/sarcophagus/tick
+execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/payment/crab/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick

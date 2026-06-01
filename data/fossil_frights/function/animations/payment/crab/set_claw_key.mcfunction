@@ -1,0 +1,1 @@
+data merge entity @e[type=minecraft:item_display,tag=ff_crab_claw,limit=1] {item:{id:"minecraft:nautilus_shell",count:1,components:{"minecraft:custom_model_data":{floats:[4]},"minecraft:lore":[{text:"",extra:["crab_claw_key"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}}}

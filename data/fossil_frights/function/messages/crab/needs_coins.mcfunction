@@ -1,0 +1,1 @@
+tellraw @s [{"text":"<","color":"white"},{"text":"Crab","color":"blue"},{"text":"> If you have ","color":"white"},{"text":"2 CubeKoins ","color":"gold"},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"},{"text":" I can polish that key for you, should have it reset right away!","color":"white"}]

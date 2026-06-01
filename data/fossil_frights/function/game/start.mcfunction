@@ -21,6 +21,7 @@ function fossil_frights:game/start_room/timer_bars/open
 function fossil_frights:animations/door/close
 function fossil_frights:animations/cubekoin/crane/reset
 function fossil_frights:animations/cubekoin/sarcophagus/reset
+function fossil_frights:animations/payment/crab/reset
 function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon

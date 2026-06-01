@@ -4,6 +4,7 @@ scoreboard objectives add ff_key_cooldown dummy
 scoreboard objectives add ff_key_cd_cfg dummy
 scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
+scoreboard objectives add ff_crab_timer dummy
 scoreboard objectives add ff_bat_bug_timer dummy
 scoreboard objectives add ff_bat_bug_bar dummy
 scoreboard objectives add ff_bb_disc_use minecraft.used:minecraft.music_disc_creator_music_box
@@ -249,6 +250,7 @@ advancement revoke @a only fossil_frights:sponge_up_spill_click
 advancement revoke @a only fossil_frights:anvil_click
 advancement revoke @a only fossil_frights:crane_payment_click
 advancement revoke @a only fossil_frights:sarcophagus_payment_click
+advancement revoke @a only fossil_frights:crab_click
 advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat

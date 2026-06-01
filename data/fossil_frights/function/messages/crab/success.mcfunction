@@ -1,0 +1,1 @@
+tellraw @s [{"text":"<","color":"white"},{"text":"Crab","color":"blue"},{"text":"> Thanks for the ","color":"white"},{"text":"2 CubeKoins ","color":"gold"},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"},{"text":"! Here's your polished key.","color":"white"}]
