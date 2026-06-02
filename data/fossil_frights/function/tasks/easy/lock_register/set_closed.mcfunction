@@ -1,0 +1,1 @@
+data merge entity @e[type=minecraft:item_display,tag=ff_cash_register,limit=1] {item:{id:"minecraft:bell",count:1,components:{"minecraft:lore":[{text:"",extra:["cash_register"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}}}
