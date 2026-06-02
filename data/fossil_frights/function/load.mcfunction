@@ -227,6 +227,7 @@ advancement revoke @a only fossil_frights:temple_run_teleporter_click
 advancement revoke @a only fossil_frights:ant_fight_teleporter_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:check_security_click
+advancement revoke @a only fossil_frights:lock_register_click
 advancement revoke @a only fossil_frights:polish_bell_click
 advancement revoke @a only fossil_frights:fix_cracked_egg_click
 advancement revoke @a only fossil_frights:fix_mars_click

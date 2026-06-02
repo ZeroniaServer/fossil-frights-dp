@@ -1,1 +1,1 @@
-setblock -19 81 37 minecraft:waxed_copper_golem_statue[copper_golem_pose=standing]
+setblock -26 81 34 minecraft:waxed_copper_golem_statue[copper_golem_pose=standing,facing=east]
