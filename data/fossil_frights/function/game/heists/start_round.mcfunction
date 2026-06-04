@@ -5,6 +5,7 @@ execute unless entity @a[tag=ff_heist_thief] run return 0
 execute unless entity @a[tag=ff_heist_guard] run function fossil_frights:messages/error/heists_need_players
 execute unless entity @a[tag=ff_heist_guard] run return 0
 scoreboard players set $heist_round_active ff_game_state 1
+scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_timer ff_heist 12000
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
