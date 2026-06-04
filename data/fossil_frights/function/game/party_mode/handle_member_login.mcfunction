@@ -7,6 +7,6 @@ execute if score $heist_mode_active ff_game_state matches 1 run return 0
 scoreboard players set $login_was_multiplayer ff_game_state 0
 execute if score $run_multiplayer ff_game_state matches 1 run scoreboard players set $login_was_multiplayer ff_game_state 1
 execute if score $run_multiplayer ff_game_state matches 1 unless score $party_mode_active ff_game_state matches 1 run function fossil_frights:messages/multiplayer/duo_player_left
-execute if score $run_multiplayer ff_game_state matches 1 unless score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/end
+execute if score $run_multiplayer ff_game_state matches 1 unless score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/reset
 execute if score $login_was_multiplayer ff_game_state matches 1 run return 0
-function fossil_frights:game/handle_active_disconnect
+function fossil_frights:game/reset/active_disconnect
