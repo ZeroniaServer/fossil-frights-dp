@@ -1,3 +1,4 @@
+execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $active_set ff_game_state matches 0 run return 0
 execute as @a store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
 execute as @a store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1

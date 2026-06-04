@@ -21,6 +21,7 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
+function fossil_frights:game/heists/reset_blocks
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift
 stopsound @a record fossil-frights:ff_night_shift
@@ -57,7 +58,9 @@ tag @a[tag=ff_active] remove ff_map_claimed
 tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+team leave @a[team=ff_heist_thieves]
 function fossil_frights:game/party_mode/reset
+function fossil_frights:game/heists/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -84,6 +87,7 @@ function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh
 function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/party_mode/refresh
+function fossil_frights:game/start_room/settings/heists/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide

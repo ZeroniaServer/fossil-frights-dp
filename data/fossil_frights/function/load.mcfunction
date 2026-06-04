@@ -85,6 +85,8 @@ scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_plugin dummy
 scoreboard objectives add ff_fade_tp dummy
+scoreboard objectives add ff_heist dummy
+scoreboard objectives add ff_heist_sidebar dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
@@ -97,6 +99,10 @@ scoreboard players set #sixty ff_day 60
 scoreboard players set #five ff_day 5
 scoreboard players set #ten ff_day 10
 scoreboard players set #time_step ff_day 120
+scoreboard players set #heist_full ff_heist 12000
+scoreboard players set #heist_goal ff_heist 1000
+scoreboard players set #heist_tick ff_heist 20
+scoreboard players set #heist_sixty ff_heist 60
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
@@ -143,6 +149,10 @@ scoreboard players set $victory_complete ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
 scoreboard players set $party_button_lock ff_game_state 0
 scoreboard players set $party_member_count ff_game_state 0
+scoreboard players set $heist_mode_active ff_game_state 0
+scoreboard players set $heist_round_active ff_game_state 0
+scoreboard players set $heist_button_lock ff_game_state 0
+scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
@@ -203,9 +213,13 @@ scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
+scoreboard objectives modify ff_heist numberformat blank
+scoreboard objectives modify ff_heist_sidebar numberformat blank
 function fossil_frights:game/apply_gamerules
 team add ff_active_gold
 team modify ff_active_gold color gold
+team add ff_heist_thieves
+team modify ff_heist_thieves color red
 team add ff_lobby_no_collision
 team modify ff_lobby_no_collision collisionRule never
 team add ff_dna_hover_yellow

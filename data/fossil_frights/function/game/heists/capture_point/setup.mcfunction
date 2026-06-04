@@ -1,0 +1,2 @@
+kill @e[type=minecraft:item_display,tag=ff_heist_capture_point]
+summon minecraft:item_display 0.5 79.52375 12.5125 {Tags:["ff_heist_capture_point"],brightness:{sky:15,block:15},item_display:"fixed",item:{id:"minecraft:red_stained_glass",count:1,components:{"minecraft:item_name":{text:"Capture Point",italic:false},"minecraft:lore":[{text:"",extra:["capture_point"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}},transformation:{right_rotation:[1f,0f,0f,0f],left_rotation:[0.7071068f,0f,0f,0.7071068f],translation:[0f,0f,0f],scale:[4.977902f,4.977902f,1f]}}

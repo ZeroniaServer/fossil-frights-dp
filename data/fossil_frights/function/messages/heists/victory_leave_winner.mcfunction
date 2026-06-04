@@ -1,0 +1,1 @@
+tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"Congratulations. The game will reset in 30 seconds. ","color":"yellow"},{"text":"[Leave Now]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_leave set 1"}}]

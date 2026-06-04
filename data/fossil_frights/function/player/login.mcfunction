@@ -58,6 +58,8 @@ execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:leaderboards/check_login_resets
+tag @s remove ff_heist_guard
+tag @s remove ff_heist_thief
 execute if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/party_mode/handle_member_login
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:hazards players @a

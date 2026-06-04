@@ -1,5 +1,6 @@
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/no_game_running
 execute unless score $game_running ff_game_state matches 1 run return 0
+execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start_round
 execute if score $day_active ff_day matches 1 run function fossil_frights:messages/error/day_already_active
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:messages/error/final_day_reached

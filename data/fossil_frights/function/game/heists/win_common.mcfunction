@@ -1,0 +1,7 @@
+scoreboard players set $heist_round_active ff_game_state 0
+scoreboard players set $heist_players_ready ff_game_state 0
+scoreboard players set $day_active ff_day 0
+scoreboard players set $day_current ff_day 10
+scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $victory_complete ff_game_state 1
+function fossil_frights:game/bossbar/set_victory

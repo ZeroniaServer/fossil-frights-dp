@@ -35,7 +35,9 @@ tag @a[tag=ff_active] remove ff_map_claimed
 tag @a[tag=ff_active] remove ff_map_auto_given
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+team leave @a[team=ff_heist_thieves]
 function fossil_frights:game/party_mode/reset
+function fossil_frights:game/heists/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0
@@ -45,7 +47,10 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $speedrunner_restart_window ff_game_state 0
+scoreboard players set $victory_complete ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
+scoreboard players set $day_result ff_day 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0

@@ -1,0 +1,1 @@
+particle minecraft:crimson_spore 0.5 80.00 12.5 1.2 0.35 1.2 0 2 force

@@ -13,6 +13,8 @@ function fossil_frights:game/start_room/settings/setting2/refresh
 function fossil_frights:game/start_room/settings/multiplayer/setup
 function fossil_frights:game/start_room/settings/party_mode/setup
 function fossil_frights:game/start_room/settings/party_mode/refresh
+function fossil_frights:game/start_room/settings/heists/setup
+function fossil_frights:game/start_room/settings/heists/refresh
 function fossil_frights:game/start_room/settings/setting3/setup
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:game/start_room/settings/speedrun_toggle/setup
@@ -27,5 +29,6 @@ execute unless entity @e[type=minecraft:text_display,tag=ff_spectator_toggle_lab
 execute unless entity @e[type=minecraft:text_display,tag=ff_setting2_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:interaction,tag=ff_multiplayer_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_party_mode_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
+execute unless entity @e[type=minecraft:text_display,tag=ff_heists_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_setting3_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_speedrun_toggle_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
