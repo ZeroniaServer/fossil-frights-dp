@@ -15,6 +15,7 @@ scoreboard players display name $loot ff_heist_sidebar [{"text":"Loot stolen","c
 function fossil_frights:game/heists/generate_loot
 function fossil_frights:game/heists/release_thieves
 function fossil_frights:game/heists/waiting_text/hide
+function fossil_frights:game/heists/capture_point/show
 function fossil_frights:animations/door/close
 function fossil_frights:join/clear
 function fossil_frights:join/setup
