@@ -1,0 +1,25 @@
+scoreboard players operation @s ff_heist_punch_bar = #heist_punch_cooldown ff_heist
+scoreboard players operation @s ff_heist_punch_bar -= @s ff_heist_punch_cd
+scoreboard players operation @s ff_heist_punch_bar *= #heist_tick ff_heist
+scoreboard players operation @s ff_heist_punch_bar /= #heist_punch_cooldown ff_heist
+execute if score @s ff_heist_punch_bar matches 0 run title @s actionbar [{"text":"||||||||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 20 run title @s actionbar [{"text":"||||||||||||||||||||","color":"gold"}]
+execute if score @s ff_heist_punch_bar matches 19 run title @s actionbar [{"text":"|||||||||||||||||||","color":"gold"},{"text":"|","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 18 run title @s actionbar [{"text":"||||||||||||||||||","color":"gold"},{"text":"||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 17 run title @s actionbar [{"text":"|||||||||||||||||","color":"gold"},{"text":"|||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 16 run title @s actionbar [{"text":"||||||||||||||||","color":"gold"},{"text":"||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 15 run title @s actionbar [{"text":"|||||||||||||||","color":"gold"},{"text":"|||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 14 run title @s actionbar [{"text":"||||||||||||||","color":"gold"},{"text":"||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 13 run title @s actionbar [{"text":"|||||||||||||","color":"gold"},{"text":"|||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 12 run title @s actionbar [{"text":"||||||||||||","color":"gold"},{"text":"||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 11 run title @s actionbar [{"text":"|||||||||||","color":"gold"},{"text":"|||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 10 run title @s actionbar [{"text":"||||||||||","color":"gold"},{"text":"||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 9 run title @s actionbar [{"text":"|||||||||","color":"gold"},{"text":"|||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 8 run title @s actionbar [{"text":"||||||||","color":"gold"},{"text":"||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 7 run title @s actionbar [{"text":"|||||||","color":"gold"},{"text":"|||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 6 run title @s actionbar [{"text":"||||||","color":"gold"},{"text":"||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 5 run title @s actionbar [{"text":"|||||","color":"gold"},{"text":"|||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 4 run title @s actionbar [{"text":"||||","color":"gold"},{"text":"||||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 3 run title @s actionbar [{"text":"|||","color":"gold"},{"text":"|||||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 2 run title @s actionbar [{"text":"||","color":"gold"},{"text":"||||||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 1 run title @s actionbar [{"text":"|","color":"gold"},{"text":"|||||||||||||||||||","color":"white"}]

@@ -1,5 +1,10 @@
 function fossil_frights:game/heists/clear_join_pads
 function fossil_frights:game/heists/capture_point/clear
+effect clear @a[tag=ff_heist_thief] minecraft:invisibility
+scoreboard players set @a ff_heist_punch_cd 0
+scoreboard players set @a ff_heist_punch_bar 0
+scoreboard players set @a ff_heist_punch_fx 0
+scoreboard players set @a ff_heist_invis_ticks 0
 tag @a remove ff_heist_guard
 tag @a remove ff_heist_thief
 team leave @a[team=ff_heist_thieves]

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "punch_guard": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ff_heist_guard\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:game/heists/punch_guard"
+  }
+}
