@@ -37,7 +37,128 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_invisimask": true
+                  "ff_heist_invisimask": true,
+                  "ff_heist_invisimask_variant": "creeper"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Invisimask",
+                  "italic": false
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    5
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "invisimask"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "ff_heist_invisimask": true,
+                  "ff_heist_invisimask_variant": "skeleton"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Invisimask",
+                  "italic": false
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    6
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "invisimask"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "ff_heist_invisimask": true,
+                  "ff_heist_invisimask_variant": "zombie"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Invisimask",
+                  "italic": false
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    7
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "invisimask"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "ff_heist_invisimask": true,
+                  "ff_heist_invisimask_variant": "enderman"
                 }
               }
             }
