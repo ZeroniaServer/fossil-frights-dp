@@ -223,6 +223,8 @@ team add ff_active_gold
 team modify ff_active_gold color gold
 team add ff_heist_thieves
 team modify ff_heist_thieves color red
+team modify ff_heist_thieves nametagVisibility hideForOtherTeams
+team modify ff_heist_thieves seeFriendlyInvisibles true
 team add ff_lobby_no_collision
 team modify ff_lobby_no_collision collisionRule never
 team add ff_dna_hover_yellow

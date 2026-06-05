@@ -22,6 +22,7 @@ scoreboard players display name $loot ff_heist_sidebar [{"text":"Loot stolen","c
 tag @a[tag=ff_active] add ff_heist_guard
 team join ff_active_gold @a[tag=ff_heist_guard]
 execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
+execute as @a[tag=ff_heist_guard] at @s run spawnpoint @s 20 70 20
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset

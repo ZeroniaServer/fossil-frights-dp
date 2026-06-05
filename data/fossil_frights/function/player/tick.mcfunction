@@ -60,7 +60,9 @@ execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless score $gam
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/protection_enable
 execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:resistance"}]}] run function fossil_frights:player/respawn_lobby
 execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_lobby
-execute if entity @s[tag=ff_active,gamemode=!spectator] if score $game_running ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_active
+execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_thief
+execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_guard
+execute if entity @s[tag=ff_active,gamemode=!spectator,tag=!ff_heist_thief,tag=!ff_heist_guard] if score $game_running ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_active
 execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute run function fossil_frights:ant_fight/player_tick
@@ -72,7 +74,7 @@ execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
-execute if entity @s[tag=ff_active] run function fossil_frights:key/prevent_drop
+execute if entity @s[tag=ff_active,tag=!ff_heist_thief,tag=!ff_heist_guard] run function fossil_frights:key/prevent_drop
 execute if data entity @s {SelectedItem:{id:"minecraft:amethyst_shard",components:{"minecraft:custom_data":{ff_dna:1b}}}} run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click

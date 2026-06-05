@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "Loot Book",
+                  "author": "Fossil Frights",
+                  "pages": [
+                    [
+                      {
+                        "text": "WIP"
+                      }
+                    ]
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "Loot Book",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "ff_heist_loot_book": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
