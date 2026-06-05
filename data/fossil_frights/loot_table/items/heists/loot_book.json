@@ -28,7 +28,7 @@
                   "italic": false
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_loot_book": 1
+                  "ff_heist_loot_book": true
                 }
               }
             }

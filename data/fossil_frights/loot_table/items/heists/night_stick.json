@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Night Stick",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:item_model": "fossil-frights:general_items/night_stick",
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "night_stick"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:attribute_modifiers"
+                  ]
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "fossil_frights:night_stick_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "fossil_frights:night_stick_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "ff_heist_night_stick": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

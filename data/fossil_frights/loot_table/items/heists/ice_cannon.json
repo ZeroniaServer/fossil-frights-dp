@@ -12,32 +12,35 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisi Mask",
+                  "text": "Ice Cannon",
+                  "color": "aqua",
                   "italic": false
                 },
                 "minecraft:custom_model_data": {
                   "floats": [
-                    3
+                    4
                   ]
                 },
                 "minecraft:lore": [
                   {
                     "text": "",
                     "extra": [
-                      "invisi_mask"
+                      "ice_cannon"
                     ]
                   }
                 ],
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore"
+                    "minecraft:lore",
+                    "minecraft:enchantments"
                   ]
                 },
-                "minecraft:equippable": {
-                  "slot": "head"
-                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
-                  "ff_heist_invisi_mask": true
+                  "ff_heist_ice_cannon_hat": true
                 }
               }
             }

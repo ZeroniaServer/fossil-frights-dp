@@ -1,3 +1,4 @@
+execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start_round
 execute unless entity @a[tag=ff_active] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[tag=ff_active] run return 0
 

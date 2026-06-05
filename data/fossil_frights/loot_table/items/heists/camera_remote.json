@@ -6,25 +6,26 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:diamond_hoe",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisi Mask",
+                  "text": "Camera Remote",
+                  "color": "yellow",
                   "italic": false
                 },
                 "minecraft:custom_model_data": {
                   "floats": [
-                    3
+                    2
                   ]
                 },
                 "minecraft:lore": [
                   {
                     "text": "",
                     "extra": [
-                      "invisi_mask"
+                      "camera_remote"
                     ]
                   }
                 ],
@@ -33,11 +34,20 @@
                     "minecraft:lore"
                   ]
                 },
-                "minecraft:equippable": {
-                  "slot": "head"
+                "minecraft:use_cooldown": {
+                  "seconds": 0.25,
+                  "cooldown_group": "fossil_frights:camera_remote"
+                },
+                "minecraft:max_damage": 10,
+                "minecraft:damage": 0,
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_invisi_mask": true
+                  "ff_heist_camera_remote": true
                 }
               }
             }

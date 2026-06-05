@@ -23,4 +23,3 @@ execute unless score @s ff_active_uuid_2 = $invite_target ff_active_uuid_2 run r
 execute unless score @s ff_active_uuid_3 = $invite_target ff_active_uuid_3 run function fossil_frights:messages/multiplayer/not_your_invite
 execute unless score @s ff_active_uuid_3 = $invite_target ff_active_uuid_3 run return 0
 function fossil_frights:game/party_mode/add_invited_player
-
