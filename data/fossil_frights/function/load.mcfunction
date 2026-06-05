@@ -109,7 +109,7 @@ scoreboard players set #heist_goal ff_heist 1000
 scoreboard players set #heist_tick ff_heist 20
 scoreboard players set #heist_sixty ff_heist 60
 scoreboard players set #heist_punch_cooldown ff_heist 400
-scoreboard players set #heist_invis_duration ff_heist 200
+scoreboard players set #heist_invis_duration ff_heist 160
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $day_current ff_day 0
