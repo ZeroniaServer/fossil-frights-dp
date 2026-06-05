@@ -2,6 +2,8 @@ execute unless score $game_running ff_game_state matches 1 unless entity @a[tag=
 execute unless score $game_running ff_game_state matches 1 unless entity @a[tag=ff_active] run return 0
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:admin/menu/show_no_game
 execute unless score $game_running ff_game_state matches 1 run return 0
+execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/show
+execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $day_active ff_day matches 1 run function fossil_frights:admin/menu/show_day_active
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:admin/menu/show_victory

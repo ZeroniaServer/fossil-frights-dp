@@ -1,6 +1,7 @@
 execute unless entity @a[tag=ff_heist_guard] run return run function fossil_frights:game/heists/thieves_win
 execute unless entity @a[tag=ff_heist_thief] run return run function fossil_frights:game/heists/guards_win
 execute if score $heist_loot ff_heist matches 1000.. run return run function fossil_frights:game/heists/thieves_win
+execute if score $timer_frozen ff_day matches 1 run return 0
 scoreboard players remove $heist_timer ff_heist 1
 scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist
 scoreboard players operation $heist_elapsed ff_heist -= $heist_timer ff_heist

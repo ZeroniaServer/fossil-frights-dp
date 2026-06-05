@@ -1,0 +1,2 @@
+function fossil_frights:messages/error/heists_add_loot_not_implemented
+function fossil_frights:admin/menu/heists/show

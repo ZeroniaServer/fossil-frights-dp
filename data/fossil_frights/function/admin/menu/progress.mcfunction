@@ -1,3 +1,5 @@
+execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/progress
+execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute unless score $game_running ff_game_state matches 1 unless entity @a[tag=ff_active] run function fossil_frights:messages/error/no_active_player
 execute unless score $game_running ff_game_state matches 1 unless entity @a[tag=ff_active] run return 0
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:game/start
