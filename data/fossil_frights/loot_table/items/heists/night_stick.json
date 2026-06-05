@@ -36,7 +36,7 @@
                   {
                     "id": "fossil_frights:night_stick_damage",
                     "type": "minecraft:attack_damage",
-                    "amount": 6,
+                    "amount": 9,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },

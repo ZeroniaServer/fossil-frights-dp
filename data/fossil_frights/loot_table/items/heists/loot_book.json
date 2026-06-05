@@ -27,6 +27,22 @@
                   "color": "gold",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "loot_book"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:written_book_content",
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "ff_heist_loot_book": true
                 }

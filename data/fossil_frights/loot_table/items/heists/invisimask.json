@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisi Mask",
+                  "text": "Invisimask",
                   "italic": false
                 },
                 "minecraft:custom_model_data": {
@@ -24,7 +24,7 @@
                   {
                     "text": "",
                     "extra": [
-                      "invisi_mask"
+                      "invisimask"
                     ]
                   }
                 ],
@@ -37,7 +37,7 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_invisi_mask": true
+                  "ff_heist_invisimask": true
                 }
               }
             }
