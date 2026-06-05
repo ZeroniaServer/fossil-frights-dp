@@ -72,6 +72,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0

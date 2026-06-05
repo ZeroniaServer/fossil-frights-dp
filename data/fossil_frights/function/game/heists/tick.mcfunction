@@ -11,6 +11,9 @@ execute as @a[tag=ff_heist_thief] run tag @s add ff_active
 team join ff_active_gold @a[tag=ff_heist_guard]
 team join ff_heist_thieves @a[tag=ff_heist_thief]
 execute if score $heist_round_active ff_game_state matches 0 run scoreboard players add $heist_wait_ticks ff_heist 1
+execute if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_in_queue] unless score $heist_wait_queue_present ff_heist matches 1 if score $heist_wait_ticks ff_heist matches 3600.. run scoreboard players set $heist_wait_ticks ff_heist 2400
+execute if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_in_queue] run scoreboard players set $heist_wait_queue_present ff_heist 1
+execute if score $heist_round_active ff_game_state matches 0 unless entity @a[tag=ff_in_queue] run scoreboard players set $heist_wait_queue_present ff_heist 0
 execute if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 1200 run function fossil_frights:messages/game/idle_warning_two_minutes
 execute if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 2400 run function fossil_frights:messages/game/idle_warning_one_minute
 execute if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 3400 run function fossil_frights:messages/game/idle_warning_ten_seconds

@@ -104,6 +104,7 @@ scoreboard players set #heist_goal ff_heist 1000
 scoreboard players set #heist_tick ff_heist 20
 scoreboard players set #heist_sixty ff_heist 60
 scoreboard players set $heist_wait_ticks ff_heist 0
+scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
@@ -143,6 +144,7 @@ scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 0
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $speedrunner_restart_window ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
 scoreboard players set $run_admin_modified ff_game_state 0

@@ -12,6 +12,9 @@ execute if score $day_active ff_day matches 1 run scoreboard players set $day_fl
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
 execute unless score $game_running ff_game_state matches 1 run scoreboard players set $idle_ticks ff_game_state 0
 execute if score $day_active ff_day matches 1 run scoreboard players set $idle_ticks ff_game_state 0
+execute if entity @a[tag=ff_in_queue] unless score $idle_queue_present ff_game_state matches 1 if score $idle_ticks ff_game_state matches 3600.. run scoreboard players set $idle_ticks ff_game_state 2400
+execute if entity @a[tag=ff_in_queue] run scoreboard players set $idle_queue_present ff_game_state 1
+execute unless entity @a[tag=ff_in_queue] run scoreboard players set $idle_queue_present ff_game_state 0
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if entity @a[tag=ff_in_queue] if score $idle_ticks ff_game_state matches 1200 run function fossil_frights:messages/game/idle_warning_two_minutes
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if entity @a[tag=ff_in_queue] if score $idle_ticks ff_game_state matches 2400 run function fossil_frights:messages/game/idle_warning_one_minute
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 if entity @a[tag=ff_in_queue] if score $idle_ticks ff_game_state matches 3400 run function fossil_frights:messages/game/idle_warning_ten_seconds

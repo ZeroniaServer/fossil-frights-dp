@@ -71,6 +71,7 @@ scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
+scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/settings/apply_active_preferences
