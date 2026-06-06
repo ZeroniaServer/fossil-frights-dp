@@ -5,6 +5,7 @@ execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exi
 tag @s remove ff_in_queue
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
+tag @s remove ff_camera_remote_active
 tag @s remove ff_settings_spectator_deny
 tag @s remove ff_settings_music_off
 tag @s remove ff_muted_chat

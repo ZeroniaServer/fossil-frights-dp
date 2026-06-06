@@ -57,6 +57,7 @@ execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
 execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
 execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
 function fossil_frights:tutorial/camera/kill_owned
+function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets
 tag @s remove ff_heist_guard
 tag @s remove ff_heist_thief
@@ -68,6 +69,7 @@ execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s 
 team leave @s
 tag @s remove ff_active
 tag @s remove ff_forced_spectate
+tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
 tag @s remove ff_ant_lobby_blind

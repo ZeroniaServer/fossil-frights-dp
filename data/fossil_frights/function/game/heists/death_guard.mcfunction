@@ -1,3 +1,4 @@
+function fossil_frights:items/heists/camera_remote/exit
 tp @s 20 70 20 0 0
 spawnpoint @s 20 70 20
 function fossil_frights:player/protection_disable
@@ -14,4 +15,5 @@ scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_ice_cannon_cd 0
 scoreboard players set @s ff_glowtrap_cd 0
+scoreboard players set @s ff_camera_remote_cd 0
 function fossil_frights:game/heists/loadout/guard

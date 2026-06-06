@@ -30,6 +30,54 @@
                     "minecraft:lore"
                   ]
                 },
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "fossil_frights:camera_remote"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:amethyst_shard",
+                  "count": 1,
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "Camera Remote",
+                      "color": "yellow",
+                      "italic": false
+                    },
+                    "minecraft:item_model": "fossil-frights:general_items/camera_remote",
+                    "minecraft:lore": [
+                      {
+                        "text": "",
+                        "extra": [
+                          "camera_remote"
+                        ]
+                      }
+                    ],
+                    "minecraft:tooltip_display": {
+                      "hidden_components": [
+                        "minecraft:lore"
+                      ]
+                    },
+                    "minecraft:use_cooldown": {
+                      "seconds": 1,
+                      "cooldown_group": "fossil_frights:camera_remote"
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "ff_heist_camera_remote": true
+                    }
+                  }
+                },
                 "minecraft:custom_data": {
                   "ff_heist_camera_remote": true
                 }

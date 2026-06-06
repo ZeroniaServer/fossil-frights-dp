@@ -1,6 +1,7 @@
 tag @s remove ff_active
 team leave @s
 tag @s remove ff_forced_spectate
+tag @s remove ff_camera_remote_active
 tag @s remove ff_muted_chat
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0

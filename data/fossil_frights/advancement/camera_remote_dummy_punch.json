@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:mannequin",
+          "nbt": "{Tags:[\"ff_camera_remote_dummy\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/heists/camera_remote/dummy_punched"
+  }
+}

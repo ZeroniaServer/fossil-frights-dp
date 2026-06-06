@@ -69,8 +69,10 @@ execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute run function fossil_frights:ant_fight/player_tick
 execute run function fossil_frights:advancements/checks/reach_the_sun
+execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:tasks/easy/check_security/camera_tick
+execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:input/sneak run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
@@ -117,6 +119,8 @@ advancement revoke @s only fossil_frights:final_task_centrifuge_click
 advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
 advancement revoke @s only fossil_frights:ice_frozen_hurt
+advancement revoke @s only fossil_frights:camera_remote_consumed
+advancement revoke @s only fossil_frights:camera_remote_dummy_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
 execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
