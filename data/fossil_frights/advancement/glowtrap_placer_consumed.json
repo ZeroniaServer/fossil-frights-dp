@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:amethyst_shard"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_heist_glowtrap_placer:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/heists/glowtrap/use_consumed"
+  }
+}

@@ -13,4 +13,5 @@ effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_ice_cannon_cd 0
+scoreboard players set @s ff_glowtrap_cd 0
 function fossil_frights:game/heists/loadout/guard

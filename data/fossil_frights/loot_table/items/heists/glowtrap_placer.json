@@ -30,6 +30,54 @@
                     "minecraft:lore"
                   ]
                 },
+                "minecraft:use_cooldown": {
+                  "seconds": 60,
+                  "cooldown_group": "fossil_frights:glowtrap_placer"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:amethyst_shard",
+                  "count": 1,
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "Glowtrap Placer",
+                      "color": "green",
+                      "italic": false
+                    },
+                    "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
+                    "minecraft:lore": [
+                      {
+                        "text": "",
+                        "extra": [
+                          "glowtrap_placer"
+                        ]
+                      }
+                    ],
+                    "minecraft:tooltip_display": {
+                      "hidden_components": [
+                        "minecraft:lore"
+                      ]
+                    },
+                    "minecraft:use_cooldown": {
+                      "seconds": 60,
+                      "cooldown_group": "fossil_frights:glowtrap_placer"
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "ff_heist_glowtrap_placer": true
+                    }
+                  }
+                },
                 "minecraft:custom_data": {
                   "ff_heist_glowtrap_placer": true
                 }

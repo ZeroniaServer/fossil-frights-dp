@@ -1,0 +1,10 @@
+execute positioned ~-1.5 ~-1.5 ~-1.5 run effect give @a[tag=ff_heist_thief,gamemode=!spectator,dx=3,dy=3,dz=3] minecraft:glowing 8 0 true
+execute positioned ~-1.5 ~-1.5 ~-1.5 run effect give @a[tag=ff_heist_thief,gamemode=!spectator,dx=3,dy=3,dz=3] minecraft:slowness 2 1 true
+execute positioned ~-1.5 ~-1.5 ~-1.5 run effect give @a[tag=ff_heist_thief,gamemode=!spectator,dx=3,dy=3,dz=3] minecraft:blindness 4 0 true
+particle minecraft:sculk_soul ~ ~0.1 ~ 0.55 0.25 0.55 0.04 36 force
+particle minecraft:sculk_soul ~ ~0.1 ~ 0.3 0.15 0.3 0.02 18 force
+particle minecraft:soul_fire_flame ~ ~0.1 ~ 0.24 0.12 0.24 0.01 10 force
+execute as @a[tag=ff_heist_guard] at @s run playsound minecraft:block.sculk_shrieker.shriek player @s ~ ~ ~ 0.7 1.25
+execute as @a[tag=ff_heist_guard] at @s run playsound minecraft:block.respawn_anchor.deplete player @s ~ ~ ~ 0.35 1.5
+playsound minecraft:block.respawn_anchor.deplete player @a[tag=ff_heist_thief,distance=..12] ~ ~ ~ 0.65 1.2
+kill @s

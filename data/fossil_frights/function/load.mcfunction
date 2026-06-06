@@ -49,6 +49,8 @@ scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_ice_cannon_cd dummy
 scoreboard objectives add ff_ice_cannon_age dummy
+scoreboard objectives add ff_glowtrap_cd dummy
+scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
