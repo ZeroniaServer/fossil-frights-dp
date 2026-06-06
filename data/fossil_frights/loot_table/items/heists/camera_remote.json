@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_hoe",
+          "name": "minecraft:amethyst_shard",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -16,11 +16,7 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    2
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:general_items/camera_remote",
                 "minecraft:lore": [
                   {
                     "text": "",
@@ -33,18 +29,6 @@
                   "hidden_components": [
                     "minecraft:lore"
                   ]
-                },
-                "minecraft:use_cooldown": {
-                  "seconds": 0.25,
-                  "cooldown_group": "fossil_frights:camera_remote"
-                },
-                "minecraft:max_damage": 10,
-                "minecraft:damage": 0,
-                "minecraft:consumable": {
-                  "consume_seconds": 0.001,
-                  "animation": "none",
-                  "sound": "minecraft:entity.item.pickup",
-                  "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
                   "ff_heist_camera_remote": true

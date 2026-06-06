@@ -6,32 +6,43 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:amethyst_shard",
+          "name": "minecraft:carved_pumpkin",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Glowtrap Placer",
-                  "color": "green",
+                  "text": "Security Hat",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
                 "minecraft:lore": [
                   {
                     "text": "",
                     "extra": [
-                      "glowtrap_placer"
+                      "security_guard_hat"
                     ]
                   }
                 ],
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore"
+                    "minecraft:lore",
+                    "minecraft:enchantments"
                   ]
                 },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
                 "minecraft:custom_data": {
-                  "ff_heist_glowtrap_placer": true
+                  "ff_heist_security_hat": true
                 }
               }
             }

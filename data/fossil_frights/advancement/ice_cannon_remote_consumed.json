@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:diamond_hoe",
+            "minecraft:amethyst_shard"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_heist_ice_cannon_remote:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/heists/ice_cannon/use_consumed"
+  }
+}

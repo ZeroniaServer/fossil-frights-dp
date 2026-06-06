@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_hoe",
+          "name": "minecraft:amethyst_shard",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -16,11 +16,7 @@
                   "color": "aqua",
                   "italic": false
                 },
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    3
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
                 "minecraft:lore": [
                   {
                     "text": "",
@@ -35,16 +31,52 @@
                   ]
                 },
                 "minecraft:use_cooldown": {
-                  "seconds": 0.25,
+                  "seconds": 3,
                   "cooldown_group": "fossil_frights:ice_cannon_remote"
                 },
-                "minecraft:max_damage": 10,
-                "minecraft:damage": 0,
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,
                   "animation": "none",
                   "sound": "minecraft:entity.item.pickup",
                   "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:amethyst_shard",
+                  "count": 1,
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "Ice Cannon Remote",
+                      "color": "aqua",
+                      "italic": false
+                    },
+                    "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
+                    "minecraft:lore": [
+                      {
+                        "text": "",
+                        "extra": [
+                          "ice_cannon_remote"
+                        ]
+                      }
+                    ],
+                    "minecraft:tooltip_display": {
+                      "hidden_components": [
+                        "minecraft:lore"
+                      ]
+                    },
+                    "minecraft:use_cooldown": {
+                      "seconds": 3,
+                      "cooldown_group": "fossil_frights:ice_cannon_remote"
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "ff_heist_ice_cannon_remote": true
+                    }
+                  }
                 },
                 "minecraft:custom_data": {
                   "ff_heist_ice_cannon_remote": true

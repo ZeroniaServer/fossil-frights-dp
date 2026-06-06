@@ -62,6 +62,7 @@ execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[n
 execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_lobby
 execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_thief
 execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_guard
+execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:items/heists/ice_cannon/player_tick
 execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/thief_tick
 execute if entity @s[tag=ff_active,gamemode=!spectator,tag=!ff_heist_thief,tag=!ff_heist_guard] if score $game_running ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_active
 execute run function fossil_frights:parkour/player_tick
