@@ -47,13 +47,10 @@ scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
-scoreboard objectives add ff_ice_cannon_cd dummy
 scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
-scoreboard objectives add ff_glowtrap_cd dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
-scoreboard objectives add ff_camera_remote_cd dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -117,9 +114,6 @@ scoreboard players set #heist_tick ff_heist 20
 scoreboard players set #heist_sixty ff_heist 60
 scoreboard players set #heist_punch_cooldown ff_heist 400
 scoreboard players set #heist_invis_duration ff_heist 160
-scoreboard players set #heist_ice_cannon_cooldown ff_heist 60
-scoreboard players set #heist_glowtrap_cooldown ff_heist 900
-scoreboard players set #heist_camera_remote_cooldown ff_heist 20
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $day_current ff_day 0

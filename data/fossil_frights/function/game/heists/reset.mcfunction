@@ -14,9 +14,6 @@ scoreboard players set @a ff_heist_punch_cd 0
 scoreboard players set @a ff_heist_punch_bar 0
 scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players set @a ff_heist_invis_ticks 0
-scoreboard players set @a ff_ice_cannon_cd 0
-scoreboard players set @a ff_glowtrap_cd 0
-scoreboard players set @a ff_camera_remote_cd 0
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
 tag @a remove ff_heist_guard
