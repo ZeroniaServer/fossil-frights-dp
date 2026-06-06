@@ -1,5 +1,6 @@
 function fossil_frights:game/heists/clear_join_pads
 function fossil_frights:game/heists/capture_point/clear
+function fossil_frights:game/heists/loot/reset
 kill @e[type=minecraft:marker,tag=ff_ice_cannon]
 kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block]
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze]

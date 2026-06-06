@@ -17,8 +17,7 @@ scoreboard players set $heist_minutes ff_heist 10
 scoreboard players set $heist_seconds ff_heist 0
 scoreboard players set $heist_sec_tens ff_heist 0
 scoreboard players set $heist_sec_ones ff_heist 0
-scoreboard players set $loot ff_heist_sidebar 0
-scoreboard players display name $loot ff_heist_sidebar [{"text":"Loot stolen","color":"gold","italic":false}]
+scoreboard players reset $loot ff_heist_sidebar
 tag @a[tag=ff_active] add ff_heist_guard
 team join ff_active_gold @a[tag=ff_heist_guard]
 execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard

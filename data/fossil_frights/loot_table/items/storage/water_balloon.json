@@ -23,6 +23,9 @@
                   "italic": false,
                   "color": "#10ACEE",
                   "text": "Water Balloon"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "water_balloon"
                 }
               }
             }

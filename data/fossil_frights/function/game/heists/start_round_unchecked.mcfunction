@@ -4,10 +4,9 @@ scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_timer ff_heist 12000
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
-scoreboard objectives modify ff_heist_sidebar displayname [{"text":"$ ","color":"gold"},{"score":{"name":"$heist_loot","objective":"ff_heist"},"color":"white"},{"text":"/1000","color":"gold"}]
+function fossil_frights:game/heists/loot/header
 scoreboard objectives setdisplay sidebar ff_heist_sidebar
-scoreboard players set $loot ff_heist_sidebar 0
-scoreboard players display name $loot ff_heist_sidebar [{"text":"Loot stolen","color":"gold","italic":false}]
+scoreboard players reset $loot ff_heist_sidebar
 execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[tag=ff_heist_guard] at @s run spawnpoint @s 20 70 20
 execute as @a[tag=ff_heist_thief] run function fossil_frights:game/heists/loadout/thief

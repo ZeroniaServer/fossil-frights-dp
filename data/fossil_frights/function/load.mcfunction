@@ -96,6 +96,8 @@ scoreboard objectives add ff_heist_punch_bar dummy
 scoreboard objectives add ff_heist_punch_fx dummy
 scoreboard objectives add ff_heist_invis_ticks dummy
 scoreboard objectives add ff_heist_reward dummy
+scoreboard objectives add ff_heist_loot_state dummy
+scoreboard objectives add ff_heist_loot_value dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
@@ -116,6 +118,10 @@ scoreboard players set #heist_punch_cooldown ff_heist 400
 scoreboard players set #heist_invis_duration ff_heist 160
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
+scoreboard players set $heist_flash ff_heist 0
+scoreboard players set $heist_sidebar_slot ff_heist 12
+scoreboard players set $heist_med_selected ff_heist 0
+scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
