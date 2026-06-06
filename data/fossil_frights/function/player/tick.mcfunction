@@ -116,6 +116,7 @@ advancement revoke @s only fossil_frights:hoveraptor_click
 advancement revoke @s only fossil_frights:final_task_centrifuge_click
 advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
+advancement revoke @s only fossil_frights:ice_frozen_hurt
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
 execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step

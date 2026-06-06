@@ -1,3 +1,6 @@
+execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5]
+attribute @s minecraft:jump_strength base set 0.42
+tag @s remove ff_ice_frozen
 tp @s -1.00 109.00 55.5 180 0
 spawnpoint @s -1 109 55
 function fossil_frights:player/protection_disable
@@ -10,6 +13,7 @@ effect clear @s minecraft:health_boost
 effect clear @s minecraft:slowness
 effect clear @s minecraft:blindness
 effect clear @s minecraft:invisibility
+effect clear @s minecraft:speed
 effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0

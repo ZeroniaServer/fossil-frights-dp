@@ -49,6 +49,7 @@ scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_ice_cannon_cd dummy
 scoreboard objectives add ff_ice_cannon_age dummy
+scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_glowtrap_cd dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_invite_sel trigger
@@ -285,6 +286,7 @@ advancement revoke @a only fossil_frights:crab_click
 advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
+advancement revoke @a only fossil_frights:ice_frozen_hurt
 function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup

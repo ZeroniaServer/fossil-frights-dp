@@ -1,4 +1,4 @@
-effect give @a[tag=ff_heist_thief,gamemode=!spectator,distance=..2.5] minecraft:slowness 3 9 true
+execute as @a[tag=ff_heist_thief,gamemode=!spectator,distance=..2.5] at @s run function fossil_frights:items/heists/ice_cannon/freeze_player
 particle minecraft:snowflake ~ ~ ~ 0.45 0.45 0.45 0.03 55 force
 particle minecraft:dust{color:[0.62f,0.9f,1.0f],scale:1.0f} ~ ~ ~ 0.42 0.32 0.42 0.01 28 force
 particle minecraft:dust{color:[0.85f,0.96f,1.0f],scale:0.75f} ~ ~ ~ 0.35 0.25 0.35 0.01 20 force

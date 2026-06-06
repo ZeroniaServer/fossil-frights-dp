@@ -1,3 +1,6 @@
+execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5]
+attribute @s minecraft:jump_strength base set 0.42
+tag @s remove ff_ice_frozen
 clear @s
 item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.offhand with air
@@ -9,5 +12,6 @@ scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players set @s ff_heist_invis_ticks 0
 effect clear @s minecraft:invisibility
+effect clear @s minecraft:speed
 loot replace entity @s armor.head loot fossil_frights:items/heists/invisimask
 loot replace entity @s container.0 loot fossil_frights:items/heists/loot_book
