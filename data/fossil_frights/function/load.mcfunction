@@ -52,6 +52,7 @@ scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_glowtrap_cd dummy
 scoreboard objectives add ff_glowtrap_age dummy
+scoreboard objectives add ff_glowtrap_fx dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
