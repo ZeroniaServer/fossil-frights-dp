@@ -31,7 +31,7 @@
                   ]
                 },
                 "minecraft:use_cooldown": {
-                  "seconds": 3,
+                  "seconds": 1,
                   "cooldown_group": "fossil_frights:ice_cannon_remote"
                 },
                 "minecraft:consumable": {
@@ -64,7 +64,7 @@
                       ]
                     },
                     "minecraft:use_cooldown": {
-                      "seconds": 3,
+                      "seconds": 1,
                       "cooldown_group": "fossil_frights:ice_cannon_remote"
                     },
                     "minecraft:consumable": {

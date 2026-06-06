@@ -31,7 +31,7 @@
                   ]
                 },
                 "minecraft:use_cooldown": {
-                  "seconds": 45,
+                  "seconds": 1,
                   "cooldown_group": "fossil_frights:glowtrap_placer"
                 },
                 "minecraft:consumable": {
@@ -64,7 +64,7 @@
                       ]
                     },
                     "minecraft:use_cooldown": {
-                      "seconds": 45,
+                      "seconds": 1,
                       "cooldown_group": "fossil_frights:glowtrap_placer"
                     },
                     "minecraft:consumable": {
