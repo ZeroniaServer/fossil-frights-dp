@@ -60,9 +60,6 @@ execute store result score $heist_roll ff_heist run random value 1..100
 execute if score $heist_roll ff_heist matches ..35 run function fossil_frights:game/heists/loot/select/medium/credit_reel
 execute if score $heist_med_selected ff_heist matches 4.. run return 0
 execute store result score $heist_roll ff_heist run random value 1..100
-execute if score $heist_roll ff_heist matches ..35 run function fossil_frights:game/heists/loot/select/medium/lady_bug
-execute if score $heist_med_selected ff_heist matches 4.. run return 0
-execute store result score $heist_roll ff_heist run random value 1..100
 execute if score $heist_roll ff_heist matches ..35 run function fossil_frights:game/heists/loot/select/medium/muddy_sherd
 execute if score $heist_med_selected ff_heist matches 4.. run return 0
 execute store result score $heist_roll ff_heist run random value 1..100
@@ -111,8 +108,6 @@ execute if score $heist_med_selected ff_heist matches 4.. run return 0
 function fossil_frights:game/heists/loot/select/medium/cotton_candy
 execute if score $heist_med_selected ff_heist matches 4.. run return 0
 function fossil_frights:game/heists/loot/select/medium/credit_reel
-execute if score $heist_med_selected ff_heist matches 4.. run return 0
-function fossil_frights:game/heists/loot/select/medium/lady_bug
 execute if score $heist_med_selected ff_heist matches 4.. run return 0
 function fossil_frights:game/heists/loot/select/medium/muddy_sherd
 execute if score $heist_med_selected ff_heist matches 4.. run return 0

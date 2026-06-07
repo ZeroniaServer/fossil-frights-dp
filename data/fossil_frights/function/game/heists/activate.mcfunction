@@ -36,6 +36,7 @@ function fossil_frights:animations/door/open
 tp @a[tag=ff_active] 20 70 20 0 0
 function fossil_frights:game/heists/day_tracker/hide
 function fossil_frights:game/heists/waiting_text/show
+function fossil_frights:game/heists/oxidized_bars/show
 function fossil_frights:game/heists/capture_point/setup
 function fossil_frights:join/heists/setup
 scoreboard players set $heist_wait_queue_present ff_heist 0

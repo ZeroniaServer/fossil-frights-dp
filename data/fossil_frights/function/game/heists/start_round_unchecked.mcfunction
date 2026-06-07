@@ -14,6 +14,7 @@ execute as @a[tag=ff_heist_thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/generate_loot
 function fossil_frights:game/heists/release_thieves
 function fossil_frights:game/heists/waiting_text/hide
+function fossil_frights:game/heists/oxidized_bars/clear
 function fossil_frights:game/heists/capture_point/show
 function fossil_frights:animations/door/close
 function fossil_frights:join/clear

@@ -1,6 +1,14 @@
 scoreboard players set $heist_sidebar_slot ff_heist 50
-scoreboard players reset $loot_placeholder_hard_1 ff_heist_sidebar
-scoreboard players reset $loot_placeholder_hard_2 ff_heist_sidebar
+scoreboard players reset $loot_basketball ff_heist_sidebar
+scoreboard players reset $loot_lady_bug ff_heist_sidebar
+scoreboard players reset $loot_lost_key ff_heist_sidebar
+scoreboard players reset $loot_hoverboard ff_heist_sidebar
+scoreboard players reset $loot_sniffer_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_trike_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_t_rex_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_velociraptor_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_plesiosaur_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_pteradactyl_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_febreeze_rod ff_heist_sidebar
 scoreboard players reset $loot_fertilizer ff_heist_sidebar
 scoreboard players reset $loot_water_balloon ff_heist_sidebar
@@ -21,7 +29,6 @@ scoreboard players reset $loot_brush ff_heist_sidebar
 scoreboard players reset $loot_sponge ff_heist_sidebar
 scoreboard players reset $loot_cotton_candy ff_heist_sidebar
 scoreboard players reset $loot_credit_reel ff_heist_sidebar
-scoreboard players reset $loot_lady_bug ff_heist_sidebar
 scoreboard players reset $loot_muddy_sherd ff_heist_sidebar
 scoreboard players reset $loot_carrot_cake ff_heist_sidebar
 scoreboard players reset $loot_cookie ff_heist_sidebar
@@ -113,8 +120,6 @@ execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $l
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $loot_cotton_candy ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 200 run scoreboard players operation $loot_credit_reel ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 if score $loot_lady_bug ff_heist_loot_value matches 200 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 if score $loot_lady_bug ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 1..3 if score $loot_muddy_sherd ff_heist_loot_value matches 200 run scoreboard players operation $loot_muddy_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 1..3 if score $loot_muddy_sherd ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 200 run scoreboard players operation $loot_carrot_cake ff_heist_sidebar = $heist_sidebar_slot ff_heist
@@ -161,15 +166,29 @@ execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $l
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $loot_cotton_candy ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 250 run scoreboard players operation $loot_credit_reel ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 if score $loot_lady_bug ff_heist_loot_value matches 250 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 if score $loot_lady_bug ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 1..3 if score $loot_muddy_sherd ff_heist_loot_value matches 250 run scoreboard players operation $loot_muddy_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 1..3 if score $loot_muddy_sherd ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 250 run scoreboard players operation $loot_carrot_cake ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_cookie ff_heist_loot_state matches 1..3 if score $loot_cookie ff_heist_loot_value matches 250 run scoreboard players operation $loot_cookie ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_cookie ff_heist_loot_state matches 1..3 if score $loot_cookie ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_placeholder_hard_1 ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_placeholder_hard_1 ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_placeholder_hard_1 ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_placeholder_hard_2 ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_placeholder_hard_2 ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_placeholder_hard_2 ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_basketball ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_lost_key ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lost_key ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_lost_key ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_hoverboard ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_sniffer_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_trike_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_t_rex_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_velociraptor_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_plesiosaur_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_pteradactyl_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1

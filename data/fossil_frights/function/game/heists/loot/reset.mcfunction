@@ -2,6 +2,7 @@ scoreboard players set $heist_flash ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 12
 scoreboard players set $heist_low_selected ff_heist 0
 scoreboard players set $heist_med_selected ff_heist 0
+scoreboard players set $heist_high_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_state 0
 scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_value 0
@@ -126,9 +127,6 @@ scoreboard players reset $loot_cotton_candy ff_heist_sidebar
 scoreboard players set $loot_credit_reel ff_heist_loot_state 0
 scoreboard players set $loot_credit_reel ff_heist_loot_value 0
 scoreboard players reset $loot_credit_reel ff_heist_sidebar
-scoreboard players set $loot_lady_bug ff_heist_loot_state 0
-scoreboard players set $loot_lady_bug ff_heist_loot_value 0
-scoreboard players reset $loot_lady_bug ff_heist_sidebar
 scoreboard players set $loot_muddy_sherd ff_heist_loot_state 0
 scoreboard players set $loot_muddy_sherd ff_heist_loot_value 0
 scoreboard players reset $loot_muddy_sherd ff_heist_sidebar
@@ -138,12 +136,36 @@ scoreboard players reset $loot_carrot_cake ff_heist_sidebar
 scoreboard players set $loot_cookie ff_heist_loot_state 0
 scoreboard players set $loot_cookie ff_heist_loot_value 0
 scoreboard players reset $loot_cookie ff_heist_sidebar
-scoreboard players set $loot_placeholder_hard_1 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_hard_1 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_hard_1 ff_heist_sidebar
-scoreboard players set $loot_placeholder_hard_2 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_hard_2 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_hard_2 ff_heist_sidebar
+scoreboard players set $loot_lady_bug ff_heist_loot_state 0
+scoreboard players set $loot_lady_bug ff_heist_loot_value 0
+scoreboard players reset $loot_lady_bug ff_heist_sidebar
+scoreboard players set $loot_basketball ff_heist_loot_state 0
+scoreboard players set $loot_basketball ff_heist_loot_value 0
+scoreboard players reset $loot_basketball ff_heist_sidebar
+scoreboard players set $loot_lost_key ff_heist_loot_state 0
+scoreboard players set $loot_lost_key ff_heist_loot_value 0
+scoreboard players reset $loot_lost_key ff_heist_sidebar
+scoreboard players set $loot_hoverboard ff_heist_loot_state 0
+scoreboard players set $loot_hoverboard ff_heist_loot_value 0
+scoreboard players reset $loot_hoverboard ff_heist_sidebar
+scoreboard players set $loot_sniffer_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_sniffer_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_sniffer_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_trike_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_trike_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_trike_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_t_rex_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_t_rex_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_t_rex_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_velociraptor_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_velociraptor_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_velociraptor_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_plesiosaur_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_pteradactyl_dna_cloth ff_heist_sidebar
 scoreboard players set $loot_spyglass ff_heist_loot_state 0
 scoreboard players set $loot_spyglass ff_heist_loot_value 0
 scoreboard players reset $loot_spyglass ff_heist_sidebar

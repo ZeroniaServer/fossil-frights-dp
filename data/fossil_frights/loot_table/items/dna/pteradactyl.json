@@ -21,6 +21,9 @@
                     39
                   ]
                 },
+                "minecraft:custom_data": {
+                  "itemID": "pteradactyl_dna_cloth"
+                },
                 "minecraft:max_stack_size": 1,
                 "minecraft:lore": [
                   {

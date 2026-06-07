@@ -17,7 +17,8 @@
                   "italic": false
                 },
                 "minecraft:custom_data": {
-                  "ff_vault_key": true
+                  "ff_vault_key": true,
+                  "itemID": "vault_key"
                 }
               }
             }
