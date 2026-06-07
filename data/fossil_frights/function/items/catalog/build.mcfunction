@@ -54,6 +54,5 @@ function fossil_frights:items/catalog/from_loot {loot:"items/drinks/veloci_tea",
 function fossil_frights:items/catalog/from_loot {loot:"items/other/cubekoin",page:"page_2",slot:19}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/vault_key",page:"page_2",slot:20}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/basketball",page:"page_2",slot:21}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/security_hat",page:"page_2",slot:22}
+function fossil_frights:items/catalog/from_loot {loot:"items/other/storage_key",page:"page_2",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/confetti_cannon/remote",page:"page_2",slot:23}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/confetti_cannon/cannon",page:"page_2",slot:24}
