@@ -7,5 +7,7 @@ scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
 execute if score $loot_golden_nautilus ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
 execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/medium/golden_nautilus
 execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/golden_nautilus
+function fossil_frights:game/heists/loot/low/sync
+function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
 function fossil_frights:admin/menu/mark_modified

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Poster Tube",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "poster_tube"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "poster_tube",
+                  "ff_heist_low_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 scoreboard players set $heist_flash ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 12
+scoreboard players set $heist_low_selected ff_heist 0
 scoreboard players set $heist_med_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_state 0
@@ -20,6 +21,51 @@ scoreboard players reset $loot_placeholder_easy_5 ff_heist_sidebar
 scoreboard players set $loot_placeholder_easy_6 ff_heist_loot_state 0
 scoreboard players set $loot_placeholder_easy_6 ff_heist_loot_value 0
 scoreboard players reset $loot_placeholder_easy_6 ff_heist_sidebar
+scoreboard players set $loot_coffee ff_heist_loot_state 0
+scoreboard players set $loot_coffee ff_heist_loot_value 0
+scoreboard players reset $loot_coffee ff_heist_sidebar
+scoreboard players set $loot_poster_tube ff_heist_loot_state 0
+scoreboard players set $loot_poster_tube ff_heist_loot_value 0
+scoreboard players reset $loot_poster_tube ff_heist_sidebar
+scoreboard players set $loot_ghast_plushie ff_heist_loot_state 0
+scoreboard players set $loot_ghast_plushie ff_heist_loot_value 0
+scoreboard players reset $loot_ghast_plushie ff_heist_sidebar
+scoreboard players set $loot_piglin_head ff_heist_loot_state 0
+scoreboard players set $loot_piglin_head ff_heist_loot_value 0
+scoreboard players reset $loot_piglin_head ff_heist_sidebar
+scoreboard players set $loot_popcorn ff_heist_loot_state 0
+scoreboard players set $loot_popcorn ff_heist_loot_value 0
+scoreboard players reset $loot_popcorn ff_heist_sidebar
+scoreboard players set $loot_lollipop ff_heist_loot_state 0
+scoreboard players set $loot_lollipop ff_heist_loot_value 0
+scoreboard players reset $loot_lollipop ff_heist_sidebar
+scoreboard players set $loot_fishing_rod ff_heist_loot_state 0
+scoreboard players set $loot_fishing_rod ff_heist_loot_value 0
+scoreboard players reset $loot_fishing_rod ff_heist_sidebar
+scoreboard players set $loot_burger ff_heist_loot_state 0
+scoreboard players set $loot_burger ff_heist_loot_value 0
+scoreboard players reset $loot_burger ff_heist_sidebar
+scoreboard players set $loot_chocolate_cake ff_heist_loot_state 0
+scoreboard players set $loot_chocolate_cake ff_heist_loot_value 0
+scoreboard players reset $loot_chocolate_cake ff_heist_sidebar
+scoreboard players set $loot_ancient_scripture ff_heist_loot_state 0
+scoreboard players set $loot_ancient_scripture ff_heist_loot_value 0
+scoreboard players reset $loot_ancient_scripture ff_heist_sidebar
+scoreboard players set $loot_chondrite ff_heist_loot_state 0
+scoreboard players set $loot_chondrite ff_heist_loot_value 0
+scoreboard players reset $loot_chondrite ff_heist_sidebar
+scoreboard players set $loot_sand_dollar ff_heist_loot_state 0
+scoreboard players set $loot_sand_dollar ff_heist_loot_value 0
+scoreboard players reset $loot_sand_dollar ff_heist_sidebar
+scoreboard players set $loot_trilobite_fossil ff_heist_loot_state 0
+scoreboard players set $loot_trilobite_fossil ff_heist_loot_value 0
+scoreboard players reset $loot_trilobite_fossil ff_heist_sidebar
+scoreboard players set $loot_golden_sword ff_heist_loot_state 0
+scoreboard players set $loot_golden_sword ff_heist_loot_value 0
+scoreboard players reset $loot_golden_sword ff_heist_sidebar
+scoreboard players set $loot_portal_core ff_heist_loot_state 0
+scoreboard players set $loot_portal_core ff_heist_loot_value 0
+scoreboard players reset $loot_portal_core ff_heist_sidebar
 scoreboard players set $loot_febreeze_rod ff_heist_loot_state 0
 scoreboard players set $loot_febreeze_rod ff_heist_loot_value 0
 scoreboard players reset $loot_febreeze_rod ff_heist_sidebar
@@ -98,3 +144,7 @@ scoreboard players reset $loot_placeholder_hard_1 ff_heist_sidebar
 scoreboard players set $loot_placeholder_hard_2 ff_heist_loot_state 0
 scoreboard players set $loot_placeholder_hard_2 ff_heist_loot_value 0
 scoreboard players reset $loot_placeholder_hard_2 ff_heist_sidebar
+scoreboard players set $loot_spyglass ff_heist_loot_state 0
+scoreboard players set $loot_spyglass ff_heist_loot_value 0
+scoreboard players reset $loot_spyglass ff_heist_sidebar
+function fossil_frights:game/heists/loot/low/cleanup

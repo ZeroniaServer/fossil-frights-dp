@@ -4,3 +4,6 @@ function fossil_frights:game/heists/loot/header
 scoreboard players set $loot_cookie ff_heist_loot_state 0
 scoreboard players set $loot_cookie ff_heist_loot_value 0
 scoreboard players reset $loot_cookie ff_heist_sidebar
+function fossil_frights:game/heists/loot/low/sync
+function fossil_frights:game/heists/loot/reorder
+function fossil_frights:game/heists/loot/render

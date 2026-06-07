@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Fishing Rod",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "fishing_rod"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "fishing_rod",
+                  "ff_heist_low_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:baked_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Popcorn",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "popcorn"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "popcorn",
+                  "ff_heist_low_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

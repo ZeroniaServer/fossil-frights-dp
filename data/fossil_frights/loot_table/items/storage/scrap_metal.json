@@ -29,6 +29,9 @@
                     "minecraft:lore"
                   ]
                 },
+                "minecraft:custom_data": {
+                  "itemID": "scrap_metal"
+                },
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "dark_aqua",

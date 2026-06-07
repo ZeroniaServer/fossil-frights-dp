@@ -33,6 +33,9 @@
                   "italic": false,
                   "color": "gold",
                   "text": "Carrot Cake"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "carrot_cake"
                 }
               }
             }

@@ -24,6 +24,9 @@
                     }
                   ],
                   "text": ""
+                },
+                "minecraft:custom_data": {
+                  "itemID": "brush"
                 }
               }
             }
