@@ -1,4 +1,6 @@
 scoreboard players set $heist_flash ff_heist 0
+scoreboard players set $taken_high_prev ff_heist 0
+scoreboard players set $taken_lowmed_prev ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 11
 scoreboard players set $heist_low_selected ff_heist 0
 scoreboard players set $heist_med_selected ff_heist 0
