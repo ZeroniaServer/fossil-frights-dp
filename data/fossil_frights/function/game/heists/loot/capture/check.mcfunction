@@ -48,7 +48,7 @@ execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"br
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"sponge"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sponge"}
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"cotton_candy_pink"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cotton_candy"}
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"credit_reel"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_credit_reel"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"lady_bug"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lady_bug"}
+execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"lady_bug"}}}} run function fossil_frights:game/heists/loot/capture/apply_lady_bug
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"muddy_sherd"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_muddy_sherd"}
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"carrot_cake"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_carrot_cake"}
 execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"cookie"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cookie"}

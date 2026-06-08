@@ -1,5 +1,6 @@
 scoreboard players set $heist_round_active ff_game_state 0
 function fossil_frights:game/heists/loot/low/cleanup
+function fossil_frights:game/heists/loot/high/cleanup
 function fossil_frights:game/heists/oxidized_bars/clear
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $day_active ff_day 0
