@@ -14,3 +14,4 @@ function fossil_frights:game/heists/loot/low/sync/trilobite_fossil
 function fossil_frights:game/heists/loot/low/sync/golden_sword
 function fossil_frights:game/heists/loot/low/sync/portal_core
 function fossil_frights:game/heists/loot/low/sync/spyglass
+function fossil_frights:game/heists/loot/high_heavy/sync

@@ -13,6 +13,8 @@ execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/hei
 effect clear @a[tag=ff_heist_thief] minecraft:invisibility
 effect clear @a[tag=ff_heist_thief] minecraft:speed
 execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[tag=ff_heist_guard] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[tag=ff_heist_thief] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a ff_heist_punch_cd 0
 scoreboard players set @a ff_heist_punch_bar 0
 scoreboard players set @a ff_heist_punch_fx 0

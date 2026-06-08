@@ -16,6 +16,7 @@ clear @s minecraft:amethyst_shard[minecraft:custom_data={ff_dna:1b}]
 item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.offhand with air
 item replace entity @s armor.head with air
+attribute @s minecraft:jump_strength base set 0.42
 spawnpoint @s 0 80 0
 gamemode adventure @s
 function fossil_frights:player/effects/lobby_reset

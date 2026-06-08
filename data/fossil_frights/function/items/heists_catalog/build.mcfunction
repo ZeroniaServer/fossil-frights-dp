@@ -26,3 +26,11 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/golden_sword",page:"page_1",slot:21}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/portal_core",page:"page_1",slot:22}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/spyglass",page:"page_1",slot:23}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/treasure_chest",page:"page_2",slot:0}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/warden",page:"page_2",slot:1}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/crab",page:"page_2",slot:2}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/t_rex_skull",page:"page_2",slot:3}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/raptor_skull",page:"page_2",slot:4}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/biplane",page:"page_2",slot:5}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/vault",page:"page_2",slot:6}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/velociraptor_statue",page:"page_2",slot:7}

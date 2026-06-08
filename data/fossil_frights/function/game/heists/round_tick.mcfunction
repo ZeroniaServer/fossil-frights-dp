@@ -7,6 +7,8 @@ execute if score $heist_flash ff_heist matches 20.. run scoreboard players set $
 function fossil_frights:game/heists/loot/low/update_drops
 function fossil_frights:game/heists/loot/medium_update_drops
 function fossil_frights:game/heists/loot/high_update_drops
+function fossil_frights:game/heists/loot/clear_guard_loot
+function fossil_frights:game/heists/loot/update_pickup_delay
 function fossil_frights:game/heists/loot/update_held
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/high/sync/basketball

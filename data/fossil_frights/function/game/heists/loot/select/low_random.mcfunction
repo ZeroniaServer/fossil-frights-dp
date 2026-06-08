@@ -1,0 +1,16 @@
+execute if score $heist_roll ff_heist matches 1 run function fossil_frights:game/heists/loot/select/low/coffee
+execute if score $heist_roll ff_heist matches 2 run function fossil_frights:game/heists/loot/select/low/poster_tube
+execute if score $heist_roll ff_heist matches 3 run function fossil_frights:game/heists/loot/select/low/ghast_plushie
+execute if score $heist_roll ff_heist matches 4 run function fossil_frights:game/heists/loot/select/low/piglin_head
+execute if score $heist_roll ff_heist matches 5 run function fossil_frights:game/heists/loot/select/low/popcorn
+execute if score $heist_roll ff_heist matches 6 run function fossil_frights:game/heists/loot/select/low/lollipop
+execute if score $heist_roll ff_heist matches 7 run function fossil_frights:game/heists/loot/select/low/fishing_rod
+execute if score $heist_roll ff_heist matches 8 run function fossil_frights:game/heists/loot/select/low/burger
+execute if score $heist_roll ff_heist matches 9 run function fossil_frights:game/heists/loot/select/low/chocolate_cake
+execute if score $heist_roll ff_heist matches 10 run function fossil_frights:game/heists/loot/select/low/ancient_scripture
+execute if score $heist_roll ff_heist matches 11 run function fossil_frights:game/heists/loot/select/low/chondrite
+execute if score $heist_roll ff_heist matches 12 run function fossil_frights:game/heists/loot/select/low/sand_dollar
+execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/low/trilobite_fossil
+execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/low/golden_sword
+execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/low/portal_core
+execute if score $heist_roll ff_heist matches 16 run function fossil_frights:game/heists/loot/select/low/spyglass

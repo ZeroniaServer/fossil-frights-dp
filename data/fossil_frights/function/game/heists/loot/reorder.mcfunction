@@ -190,5 +190,21 @@ execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_pteradactyl_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_treasure_chest ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_warden ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_warden ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_warden ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_crab ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_crab ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_crab ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_t_rex_skull ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_t_rex_skull ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_t_rex_skull ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_raptor_skull ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_raptor_skull ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_raptor_skull ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_biplane ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_biplane ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_biplane ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_vault ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_vault ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_vault ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_velociraptor_statue ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_velociraptor_statue ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_velociraptor_statue ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1

@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Velociraptor",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "velociraptor_statue"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "velociraptor_statue"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

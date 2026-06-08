@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Loot Bag",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "loot_bag"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "ff_heavy_loot_bag": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
