@@ -1,8 +1,3 @@
-execute if score $heist_mode_active ff_game_state matches 1 if score $loot_basketball ff_heist_loot_state matches 1..2 if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:game/heists/loot/high/basketball_player_tick
-execute if score $heist_mode_active ff_game_state matches 1 run return 0
-execute unless score $basketball_dance_sel ff_task_state matches 1 run return 0
-execute unless score $basketball_dance_done ff_task_state matches 0 run return 0
-execute unless score $basketball_dance_timer ff_task_state matches 1.. run return 0
 scoreboard players add @s ff_ant_sneak_time 0
 execute if score @s ff_ant_sneak_time > @s ff_bb_sneak_seen if score @s ff_bb_sneak_state matches 0 run scoreboard players add @s ff_bb_shift_count 1
 execute if score @s ff_ant_sneak_time > @s ff_bb_sneak_seen if score @s ff_bb_sneak_state matches 0 run scoreboard players set @s ff_bb_sneak_state 1

@@ -36,7 +36,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "ff_dna": true
+                  "ff_dna": true,
+                  "itemID": "microfiber_cloth"
                 }
               }
             }

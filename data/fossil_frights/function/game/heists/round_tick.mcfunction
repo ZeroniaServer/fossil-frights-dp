@@ -9,8 +9,10 @@ function fossil_frights:game/heists/loot/medium_update_drops
 function fossil_frights:game/heists/loot/high_update_drops
 function fossil_frights:game/heists/loot/update_held
 function fossil_frights:game/heists/loot/low/sync
+function fossil_frights:game/heists/loot/high/sync/basketball
 function fossil_frights:game/heists/loot/high/sync/lost_key
 function fossil_frights:game/heists/loot/render
+execute if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:tasks/hard/basketball_dance/tick
 scoreboard players remove $heist_timer ff_heist 1
 scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist
 scoreboard players operation $heist_elapsed ff_heist -= $heist_timer ff_heist
