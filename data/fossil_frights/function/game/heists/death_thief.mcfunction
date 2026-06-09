@@ -14,6 +14,8 @@ effect clear @s minecraft:slowness
 effect clear @s minecraft:blindness
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:speed
+effect clear @s minecraft:water_breathing
+effect clear @s minecraft:fire_resistance
 effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
@@ -22,3 +24,4 @@ scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players set @s ff_heist_invis_ticks 0
 function fossil_frights:game/heists/loadout/thief
+function fossil_frights:game/heists/grant_hazard_cookie

@@ -293,6 +293,7 @@ advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
 advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:camera_remote_consumed
+advancement revoke @a only fossil_frights:hazard_cookie_consumed
 advancement revoke @a only fossil_frights:camera_remote_dummy_punch
 function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup

@@ -1,3 +1,5 @@
+execute if score lava ff_hazard_active matches 1 run damage @s 1 minecraft:freeze
+execute if score lava ff_hazard_active matches 1 run return 0
 execute if entity @s[tag=ff_ice_frozen] as @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5,sort=nearest,limit=1] at @s run return run function fossil_frights:items/heists/ice_cannon/freeze_end
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..1.75]
 effect give @s minecraft:slowness 3 9 true

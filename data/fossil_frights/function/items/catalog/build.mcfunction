@@ -56,3 +56,4 @@ function fossil_frights:items/catalog/from_loot {loot:"items/other/vault_key",pa
 function fossil_frights:items/catalog/from_loot {loot:"items/other/basketball",page:"page_2",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/storage_key",page:"page_2",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/confetti_cannon/remote",page:"page_2",slot:23}
+function fossil_frights:items/catalog/from_loot {loot:"items/heists/hazard_cookie",page:"page_2",slot:24}

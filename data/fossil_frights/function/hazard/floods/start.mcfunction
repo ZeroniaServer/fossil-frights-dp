@@ -51,7 +51,6 @@ setblock -8 75 10 minecraft:water
 setblock -14 75 18 minecraft:water
 #Storage Room
 setblock -9 75 25 minecraft:water
-setblock -2 76 27 minecraft:water
 #Fossil Restoration Room
 setblock -2 75 42 minecraft:water
 setblock -19 75 44 minecraft:water

@@ -1,4 +1,7 @@
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
+tag @a remove ff_glowtrap_viewer
+tag @a[tag=ff_heist_guard] add ff_glowtrap_viewer
+execute if score curse ff_hazard_active matches 1 run tag @a[tag=ff_heist_thief] add ff_glowtrap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/other/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick

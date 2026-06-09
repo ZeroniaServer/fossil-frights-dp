@@ -50,7 +50,6 @@ setblock -8 75 10 minecraft:air
 setblock -14 75 18 minecraft:air
 #Storage Room
 setblock -9 75 25 minecraft:air
-setblock -2 76 27 minecraft:air
 #Fossil Restoration Room
 setblock -2 75 42 minecraft:air
 setblock -19 75 44 minecraft:air
