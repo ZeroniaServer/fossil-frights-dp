@@ -4,6 +4,10 @@ scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_timer ff_heist 12000
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
+scoreboard players set $security_by_loot ff_heist 0
+scoreboard players set $high_exact ff_heist 0
+scoreboard players set $high_exact_prev ff_heist 0
+scoreboard players set $reopen_grace ff_heist 0
 function fossil_frights:game/heists/loot/header
 scoreboard objectives setdisplay sidebar ff_heist_sidebar
 scoreboard players reset $loot ff_heist_sidebar

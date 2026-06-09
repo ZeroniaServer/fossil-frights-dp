@@ -117,7 +117,12 @@ execute if score $loot_water_balloon ff_heist_loot_state matches 2.. run scorebo
 execute if score $loot_water_balloon ff_heist_loot_state matches 2.. if score $loot_water_balloon ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
 scoreboard players operation $taken_lowmed ff_heist = $taken_total ff_heist
 scoreboard players operation $taken_lowmed ff_heist -= $taken_high ff_heist
-execute if score $taken_high ff_heist > $taken_high_prev ff_heist run function fossil_frights:game/heists/loot/steal_alert_high
+function fossil_frights:game/heists/loot/high_exact
+execute if score $high_exact ff_heist > $high_exact_prev ff_heist run function fossil_frights:game/heists/loot/steal_alert_high
 execute if score $taken_lowmed ff_heist > $taken_lowmed_prev ff_heist run function fossil_frights:game/heists/loot/steal_alert_lowmed
+execute if score $high_exact ff_heist matches 1.. run scoreboard players set $reopen_grace ff_heist 0
+execute if score $high_exact ff_heist matches 0 run scoreboard players add $reopen_grace ff_heist 1
+execute if score $reopen_grace ff_heist matches 4.. if score $security_by_loot ff_heist matches 1 run function fossil_frights:game/heists/loot/restore_alert_high
+scoreboard players operation $high_exact_prev ff_heist = $high_exact ff_heist
 scoreboard players operation $taken_high_prev ff_heist = $taken_high ff_heist
 scoreboard players operation $taken_lowmed_prev ff_heist = $taken_lowmed ff_heist
