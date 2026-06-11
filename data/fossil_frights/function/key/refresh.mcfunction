@@ -1,9 +1,9 @@
 tag @s remove ff_key_restore_hand
 tag @s remove ff_key_restore_done
 execute store result storage fossil_frights:key seconds float 0.05 run scoreboard players get $key ff_key_cd_cfg
-execute if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}} run tag @s add ff_key_restore_hand
-execute if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}} run tag @s add ff_key_restore_hand
-execute if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_disabled:1b}}}} run tag @s add ff_key_restore_hand
+execute if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_key:1b}] run tag @s add ff_key_restore_hand
+execute if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_key_cooldown:1b}] run tag @s add ff_key_restore_hand
+execute if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_key_disabled:1b}] run tag @s add ff_key_restore_hand
 execute if entity @s[tag=ff_key_restore_hand] run function fossil_frights:key/put_ready_in_hand with storage fossil_frights:key
 execute if entity @s[tag=ff_key_restore_hand] run tag @s add ff_key_restore_done
 data modify storage fossil_frights:key slot set value "weapon.offhand"

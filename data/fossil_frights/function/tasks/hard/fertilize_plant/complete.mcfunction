@@ -1,7 +1,7 @@
 execute unless score $fertilize_plant_sel ff_task_state matches 1 run return 0
 execute unless score $fertilize_plant_done ff_task_state matches 0 run return 0
 execute unless entity @s[tag=ff_active] run return 0
-execute unless data entity @s {SelectedItem:{id:"minecraft:bone_meal"}} unless data entity @s {Inventory:[{Slot:-106b,id:"minecraft:bone_meal"}]} run return 0
+execute unless items entity @s weapon.mainhand minecraft:bone_meal unless data entity @s {Inventory:[{Slot:-106b,id:"minecraft:bone_meal"}]} run return 0
 data modify storage fossil_frights:tasks complete.task_name set value "Fertilize Plant"
 function fossil_frights:tasks/hard/fertilize_plant/effects_selected
 function fossil_frights:tasks/hard/fertilize_plant/restore_all

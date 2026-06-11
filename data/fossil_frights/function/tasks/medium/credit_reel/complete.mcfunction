@@ -1,7 +1,7 @@
 execute unless score $credit_reel_sel ff_task_state matches 1 run return 0
 execute unless score $credit_reel_done ff_task_state matches 0 run return 0
 execute unless entity @s[tag=ff_active] run return 0
-execute unless data entity @s {SelectedItem:{components:{"minecraft:custom_data":{itemID:"credit_reel"}}}} unless data entity @s {Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{itemID:"credit_reel"}}}]} run return 0
+execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"credit_reel"}] unless data entity @s {Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{itemID:"credit_reel"}}}]} run return 0
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Credit Reel"
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 positioned 25.5 77 75 run playsound minecraft:block.note_block.chime master @a[tag=ff_active,distance=..14] ~ ~ ~ 0.8 1.2
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run function fossil_frights:tasks/medium/credit_reel/reel_sound_1

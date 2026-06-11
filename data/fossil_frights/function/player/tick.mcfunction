@@ -79,7 +79,7 @@ execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if entity @s[tag=ff_active,tag=!ff_heist_thief,tag=!ff_heist_guard] run function fossil_frights:key/prevent_drop
-execute if data entity @s {SelectedItem:{id:"minecraft:amethyst_shard",components:{"minecraft:custom_data":{ff_dna:1b}}}} run function fossil_frights:tasks/final/dna/hover_check
+execute if items entity @s weapon.mainhand minecraft:amethyst_shard[custom_data~{ff_dna:1b}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
 advancement revoke @s only fossil_frights:multiplayer_click
@@ -124,4 +124,4 @@ advancement revoke @s only fossil_frights:hazard_cookie_consumed
 advancement revoke @s only fossil_frights:camera_remote_dummy_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
-execute if score @s ff_key_cooldown matches 0 if data entity @s {SelectedItem:{id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}} anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
+execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_key:1b}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
