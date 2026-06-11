@@ -78,6 +78,6 @@ data modify storage fossil_frights:key slot set value "inventory.25"
 execute unless entity @s[tag=ff_key_restore_done] if items entity @s container.34 minecraft:echo_shard[custom_data~{ff_key_cooldown:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
 data modify storage fossil_frights:key slot set value "inventory.26"
 execute unless entity @s[tag=ff_key_restore_done] if items entity @s container.35 minecraft:echo_shard[custom_data~{ff_key_cooldown:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
-clear @s minecraft:echo_shard[minecraft:custom_data={ff_key_cooldown:1b}]
+clear @s minecraft:echo_shard[minecraft:custom_data~{ff_key_cooldown:1b}]
 tag @s remove ff_key_restore_hand
 tag @s remove ff_key_restore_done

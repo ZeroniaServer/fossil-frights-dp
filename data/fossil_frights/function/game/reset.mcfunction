@@ -44,10 +44,10 @@ scoreboard players set @a[tag=ff_active] ff_speedrun_sign 0
 title @a[tag=ff_active] subtitle ""
 title @a[tag=ff_active] actionbar ""
 clear @a[tag=ff_active]
-clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data={ff_key:1b}]
-clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data={ff_key_cooldown:1b}]
-clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data={ff_key_disabled:1b}]
-clear @a[tag=ff_active] minecraft:amethyst_shard[minecraft:custom_data={ff_dna:1b}]
+clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data~{ff_key:1b}]
+clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data~{ff_key_cooldown:1b}]
+clear @a[tag=ff_active] minecraft:echo_shard[minecraft:custom_data~{ff_key_disabled:1b}]
+clear @a[tag=ff_active] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:1b}]
 item replace entity @a[tag=ff_active] weapon.mainhand with air
 item replace entity @a[tag=ff_active] weapon.offhand with air
 item replace entity @a[tag=ff_active] armor.head with air

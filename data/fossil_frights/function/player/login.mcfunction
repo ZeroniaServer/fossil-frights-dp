@@ -118,7 +118,7 @@ scoreboard players set @s ff_invite_accept 0
 scoreboard players enable @s ff_invite_accept
 execute unless entity @s[tag=tutorial_complete] run tellraw @s [{"text":"ℹ ","color":"#F2B8FF"},{"text":"Watch the in-game tutorial to help get started! ","color":"#F2B8FF"},{"text":"[Click here to start]","color":"#FF55FF","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_tutorial set 1"}}]
 clear @s
-clear @s minecraft:snowball[minecraft:custom_data={ff_ant_leaf:1b}]
+clear @s minecraft:snowball[minecraft:custom_data~{ff_ant_leaf:1b}]
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base set 1
 title @s actionbar ""
