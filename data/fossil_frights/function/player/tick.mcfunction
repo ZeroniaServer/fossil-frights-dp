@@ -58,13 +58,13 @@ execute unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players ope
 execute if entity @s[tag=ff_damage_guard] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active,gamemode=!spectator] run function fossil_frights:player/protection_disable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/protection_enable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/protection_enable
-execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:resistance"}]}] run function fossil_frights:player/respawn_lobby
-execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_lobby
-execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_thief
-execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:game/heists/death_guard
+execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless predicate fossil_frights:entity/effects/resistance run function fossil_frights:player/respawn_lobby
+execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:player/respawn_lobby
+execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:game/heists/death_thief
+execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:game/heists/death_guard
 execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:items/heists/ice_cannon/player_tick
 execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/thief_tick
-execute if entity @s[tag=ff_active,gamemode=!spectator,tag=!ff_heist_thief,tag=!ff_heist_guard] if score $game_running ff_game_state matches 1 unless entity @s[nbt={active_effects:[{id:"minecraft:saturation"}]}] run function fossil_frights:player/respawn_active
+execute if entity @s[tag=ff_active,gamemode=!spectator,tag=!ff_heist_thief,tag=!ff_heist_guard] if score $game_running ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:player/respawn_active
 execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute run function fossil_frights:ant_fight/player_tick
