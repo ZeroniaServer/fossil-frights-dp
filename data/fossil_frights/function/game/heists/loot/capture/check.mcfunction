@@ -1,73 +1,73 @@
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"coffee"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_coffee"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:coffee}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_coffee"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"poster_tube"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_poster_tube"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:poster_tube}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_poster_tube"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"ghast_plushie"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ghast_plushie"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:ghast_plushie}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ghast_plushie"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"piglin_head"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_piglin_head"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:piglin_head}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_piglin_head"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"popcorn"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_popcorn"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:popcorn}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_popcorn"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"lollipop"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lollipop"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:lollipop}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lollipop"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"fishing_rod"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fishing_rod"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:fishing_rod}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fishing_rod"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"burger"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_burger"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:burger}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_burger"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"chocolate_cake"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chocolate_cake"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:chocolate_cake}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chocolate_cake"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"ancient_scripture"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ancient_scripture"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:ancient_scripture}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ancient_scripture"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"chondrite"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chondrite"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:chondrite}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chondrite"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"sand_dollar"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sand_dollar"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:sand_dollar}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sand_dollar"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"trilobite_fossil"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trilobite_fossil"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:trilobite_fossil}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trilobite_fossil"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"golden_sword"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_sword"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:golden_sword}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_sword"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"portal_core"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_portal_core"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:portal_core}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_portal_core"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"febreeze_rod"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_febreeze_rod"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"fertilizer"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fertilizer"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"water_balloon"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_water_balloon"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"chlorine_tablet"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chlorine_tablet"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"scrap_metal"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_scrap_metal"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"soap"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_soap"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"dry_ice"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_dry_ice"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"lava_tablet"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fire_tablet"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"golden_nautilus"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_nautilus"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"skeleton_plushie"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_skeleton_plushie"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"fish_food"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fish_food"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"copper_shuffle"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_copper_shuffle"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"instant_coffee"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_instant_coffee"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"empty_popcorn"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_empty_popcorn"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"pink_coral_jelly"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pink_jelly"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"leather"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_leather"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"brush"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_brush"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"sponge"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sponge"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"cotton_candy_pink"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cotton_candy"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"credit_reel"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_credit_reel"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"lady_bug"}}}} run function fossil_frights:game/heists/loot/capture/apply_lady_bug
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"muddy_sherd"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_muddy_sherd"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"carrot_cake"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_carrot_cake"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"cookie"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cookie"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"basketball"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_basketball"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"vault_key"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lost_key"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"hoverboard"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_hoverboard"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"sniffer_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sniffer_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"trike_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trike_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"t_rex_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"velociraptor_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"plesiosaur_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_plesiosaur_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"pteradactyl_dna_cloth"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pteradactyl_dna_cloth"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"spyglass"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:spyglass}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"treasure_chest"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_treasure_chest"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"warden"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_warden"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"crab"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_crab"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"t_rex_skull"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_skull"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"raptor_skull"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_raptor_skull"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"biplane"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_biplane"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"vault"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_vault"}
-execute if data entity @s {Item:{components:{"minecraft:custom_data":{itemID:"velociraptor_statue"}}}} run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_statue"}
+execute if items entity @s contents *[custom_data~{itemID:"coffee"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_coffee"}
+execute if items entity @s contents *[custom_data~{itemID:"coffee"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_coffee"}
+execute if items entity @s contents *[custom_data~{itemID:"poster_tube"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_poster_tube"}
+execute if items entity @s contents *[custom_data~{itemID:"poster_tube"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_poster_tube"}
+execute if items entity @s contents *[custom_data~{itemID:"ghast_plushie"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ghast_plushie"}
+execute if items entity @s contents *[custom_data~{itemID:"ghast_plushie"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ghast_plushie"}
+execute if items entity @s contents *[custom_data~{itemID:"piglin_head"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_piglin_head"}
+execute if items entity @s contents *[custom_data~{itemID:"piglin_head"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_piglin_head"}
+execute if items entity @s contents *[custom_data~{itemID:"popcorn"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_popcorn"}
+execute if items entity @s contents *[custom_data~{itemID:"popcorn"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_popcorn"}
+execute if items entity @s contents *[custom_data~{itemID:"lollipop"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lollipop"}
+execute if items entity @s contents *[custom_data~{itemID:"lollipop"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lollipop"}
+execute if items entity @s contents *[custom_data~{itemID:"fishing_rod"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fishing_rod"}
+execute if items entity @s contents *[custom_data~{itemID:"fishing_rod"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fishing_rod"}
+execute if items entity @s contents *[custom_data~{itemID:"burger"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_burger"}
+execute if items entity @s contents *[custom_data~{itemID:"burger"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_burger"}
+execute if items entity @s contents *[custom_data~{itemID:"chocolate_cake"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chocolate_cake"}
+execute if items entity @s contents *[custom_data~{itemID:"chocolate_cake"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chocolate_cake"}
+execute if items entity @s contents *[custom_data~{itemID:"ancient_scripture"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ancient_scripture"}
+execute if items entity @s contents *[custom_data~{itemID:"ancient_scripture"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ancient_scripture"}
+execute if items entity @s contents *[custom_data~{itemID:"chondrite"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chondrite"}
+execute if items entity @s contents *[custom_data~{itemID:"chondrite"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chondrite"}
+execute if items entity @s contents *[custom_data~{itemID:"sand_dollar"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sand_dollar"}
+execute if items entity @s contents *[custom_data~{itemID:"sand_dollar"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sand_dollar"}
+execute if items entity @s contents *[custom_data~{itemID:"trilobite_fossil"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trilobite_fossil"}
+execute if items entity @s contents *[custom_data~{itemID:"trilobite_fossil"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trilobite_fossil"}
+execute if items entity @s contents *[custom_data~{itemID:"golden_sword"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_sword"}
+execute if items entity @s contents *[custom_data~{itemID:"golden_sword"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_sword"}
+execute if items entity @s contents *[custom_data~{itemID:"portal_core"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_portal_core"}
+execute if items entity @s contents *[custom_data~{itemID:"portal_core"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_portal_core"}
+execute if items entity @s contents *[custom_data~{itemID:"febreeze_rod"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_febreeze_rod"}
+execute if items entity @s contents *[custom_data~{itemID:"fertilizer"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fertilizer"}
+execute if items entity @s contents *[custom_data~{itemID:"water_balloon"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_water_balloon"}
+execute if items entity @s contents *[custom_data~{itemID:"chlorine_tablet"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_chlorine_tablet"}
+execute if items entity @s contents *[custom_data~{itemID:"scrap_metal"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_scrap_metal"}
+execute if items entity @s contents *[custom_data~{itemID:"soap"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_soap"}
+execute if items entity @s contents *[custom_data~{itemID:"dry_ice"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_dry_ice"}
+execute if items entity @s contents *[custom_data~{itemID:"lava_tablet"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fire_tablet"}
+execute if items entity @s contents *[custom_data~{itemID:"golden_nautilus"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_nautilus"}
+execute if items entity @s contents *[custom_data~{itemID:"skeleton_plushie"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_skeleton_plushie"}
+execute if items entity @s contents *[custom_data~{itemID:"fish_food"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fish_food"}
+execute if items entity @s contents *[custom_data~{itemID:"copper_shuffle"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_copper_shuffle"}
+execute if items entity @s contents *[custom_data~{itemID:"instant_coffee"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_instant_coffee"}
+execute if items entity @s contents *[custom_data~{itemID:"empty_popcorn"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_empty_popcorn"}
+execute if items entity @s contents *[custom_data~{itemID:"pink_coral_jelly"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pink_jelly"}
+execute if items entity @s contents *[custom_data~{itemID:"leather"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_leather"}
+execute if items entity @s contents *[custom_data~{itemID:"brush"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_brush"}
+execute if items entity @s contents *[custom_data~{itemID:"sponge"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sponge"}
+execute if items entity @s contents *[custom_data~{itemID:"cotton_candy_pink"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cotton_candy"}
+execute if items entity @s contents *[custom_data~{itemID:"credit_reel"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_credit_reel"}
+execute if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run function fossil_frights:game/heists/loot/capture/apply_lady_bug
+execute if items entity @s contents *[custom_data~{itemID:"muddy_sherd"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_muddy_sherd"}
+execute if items entity @s contents *[custom_data~{itemID:"carrot_cake"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_carrot_cake"}
+execute if items entity @s contents *[custom_data~{itemID:"cookie"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_cookie"}
+execute if items entity @s contents *[custom_data~{itemID:"basketball"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_basketball"}
+execute if items entity @s contents *[custom_data~{itemID:"vault_key"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lost_key"}
+execute if items entity @s contents *[custom_data~{itemID:"hoverboard"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_hoverboard"}
+execute if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sniffer_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trike_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"plesiosaur_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_plesiosaur_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"pteradactyl_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pteradactyl_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
+execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
+execute if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_treasure_chest"}
+execute if items entity @s contents *[custom_data~{itemID:"warden"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_warden"}
+execute if items entity @s contents *[custom_data~{itemID:"crab"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_crab"}
+execute if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_skull"}
+execute if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_raptor_skull"}
+execute if items entity @s contents *[custom_data~{itemID:"biplane"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_biplane"}
+execute if items entity @s contents *[custom_data~{itemID:"vault"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_vault"}
+execute if items entity @s contents *[custom_data~{itemID:"velociraptor_statue"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_statue"}
