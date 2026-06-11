@@ -10,3 +10,4 @@ gamerule doTraderSpawning false
 gamerule disableRaids true
 gamerule doInsomnia false
 gamerule naturalRegeneration true
+gamerule doWeatherCycle false
