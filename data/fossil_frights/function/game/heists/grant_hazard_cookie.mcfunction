@@ -1,4 +1,4 @@
-execute if data entity @s {Inventory:[{components:{"minecraft:custom_data":{ff_hazard_cookie:1b}}}]} run return 0
+execute if predicate fossil_frights:player/inventory/hazard_cookie run return 0
 execute if score $heist_loot ff_heist matches ..899 if score $heist_timer ff_heist matches ..1200 run return run loot give @s loot fossil_frights:items/heists/hazard_cookie
 execute if score $heist_loot ff_heist matches ..799 if score $heist_timer ff_heist matches ..2400 run return run loot give @s loot fossil_frights:items/heists/hazard_cookie
 execute if score $heist_loot ff_heist matches ..699 if score $heist_timer ff_heist matches ..3600 run return run loot give @s loot fossil_frights:items/heists/hazard_cookie
