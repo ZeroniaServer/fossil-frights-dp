@@ -1,1 +1,1 @@
-data modify entity @e[type=minecraft:item_display,tag=ff_hoveraptor,limit=1,sort=nearest] item set value {id:"minecraft:totem_of_undying",count:1,components:{"minecraft:lore":[{text:"",extra:["velociraptor_plushie"]}]}}
+item replace entity @e[type=minecraft:item_display,tag=ff_hoveraptor,limit=1,sort=nearest] contents with minecraft:totem_of_undying[minecraft:lore=[{text:"",extra:["velociraptor_plushie"]}]] 1
