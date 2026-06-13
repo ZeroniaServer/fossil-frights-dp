@@ -4,7 +4,7 @@ scoreboard players set @s ff_ant_fight 0
 attribute @s minecraft:scale base set 1
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 clear @s minecraft:snowball[minecraft:custom_data~{ff_ant_leaf:1b}]
-kill @e[type=minecraft:item,distance=..8,nbt={Item:{id:"minecraft:snowball",components:{"minecraft:custom_data":{ff_ant_leaf:1b}}}}]
+kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/ant_leaf]
 title @s actionbar ""
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
