@@ -33,6 +33,9 @@
                   "hidden_components": [
                     "minecraft:lore"
                   ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "cubekoin"
                 }
               }
             }

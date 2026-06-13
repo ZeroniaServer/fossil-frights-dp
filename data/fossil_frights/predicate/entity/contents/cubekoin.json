@@ -4,7 +4,11 @@
     "predicate": {
         "slots": {
             "contents": {
-                "items": "minecraft:gold_ingot"
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "itemID": "cubekoin"
+                    }
+                }
             }
         }
     }
