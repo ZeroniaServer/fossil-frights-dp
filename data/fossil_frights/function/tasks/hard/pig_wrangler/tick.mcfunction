@@ -1,4 +1,4 @@
-execute if score $pig_wrangler_in_pen ff_task_state matches 0 if entity @e[type=minecraft:pig,tag=ff_pig_wrangler_pig,x=68,y=80,z=52,dx=4,dy=2,dz=8] run scoreboard players set $pig_wrangler_in_pen ff_task_state 1
+execute if score $pig_wrangler_in_pen ff_task_state matches 0 if entity @e[limit=1,type=minecraft:pig,tag=ff_pig_wrangler_pig,x=68,y=80,z=52,dx=4,dy=2,dz=8] run scoreboard players set $pig_wrangler_in_pen ff_task_state 1
 scoreboard players set #pig_wrangler_inlove ff_task_state 0
 execute as @e[type=minecraft:pig,tag=ff_pig_wrangler_pig,limit=1,sort=nearest] store result score #pig_wrangler_inlove ff_task_state run data get entity @s InLove 1
 execute if score #pig_wrangler_inlove ff_task_state matches 1.. run scoreboard players set $pig_wrangler_fed ff_task_state 1

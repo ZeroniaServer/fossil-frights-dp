@@ -1,5 +1,5 @@
 execute unless score $loot_basketball ff_heist_loot_state matches 1..2 run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
 execute if score $basketball_dance_timer ff_task_state matches 1.. run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
-execute if entity @a[tag=ff_heist_thief,gamemode=!spectator,predicate=fossil_frights:player/inventory/basketball] run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
-execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_basketball] run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
+execute if entity @a[limit=1,tag=ff_heist_thief,gamemode=!spectator,predicate=fossil_frights:player/inventory/basketball] run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
+execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_basketball] run kill @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click]
 execute if score $loot_basketball ff_heist_loot_state matches 1..2 unless score $basketball_dance_timer ff_task_state matches 1.. unless entity @a[tag=ff_heist_thief,gamemode=!spectator,predicate=fossil_frights:player/inventory/basketball] unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_basketball] unless entity @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click,limit=1] run function fossil_frights:game/heists/loot/high/spawn/basketball

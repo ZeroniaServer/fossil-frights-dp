@@ -2,7 +2,7 @@ setblock 20 71 28 air
 data merge entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] {text:"",shadow:1b,brightness:{sky:15,block:15}}
 data remove entity @e[type=minecraft:item_display,tag=pressed_start_button,limit=1,sort=nearest] item
 scoreboard players set $heist_players_ready ff_game_state 0
-execute if score $heist_mode_active ff_game_state matches 1 if score $heist_round_active ff_game_state matches 0 if entity @a[tag=ff_heist_thief] if entity @a[tag=ff_heist_guard] run scoreboard players set $heist_players_ready ff_game_state 1
+execute if score $heist_mode_active ff_game_state matches 1 if score $heist_round_active ff_game_state matches 0 if entity @a[limit=1,tag=ff_heist_thief] if entity @a[limit=1,tag=ff_heist_guard] run scoreboard players set $heist_players_ready ff_game_state 1
 execute unless score $game_running ff_game_state matches 1 run setblock 20 71 28 minecraft:warped_button[face=wall,facing=north,powered=false]
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 run setblock 20 71 28 minecraft:warped_button[face=wall,facing=north,powered=false]
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run item replace entity @e[type=minecraft:item_display,tag=pressed_start_button,limit=1] contents with minecraft:warped_button[minecraft:item_name={text:"Pressed Day Button",italic:false},minecraft:lore=[{text:"",extra:["pressed_button"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]}] 1
