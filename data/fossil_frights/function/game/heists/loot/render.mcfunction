@@ -41,12 +41,12 @@ function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_lady_bug"
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_basketball", "lootName": "Basketball"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_lost_key", "lootName": "Lost Key"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_hoverboard", "lootName": "Hoverboard"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_sniffer_dna_cloth", "lootName": "Sniffer DNA Cloth"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_trike_dna_cloth", "lootName": "Trike DNA Cloth"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_t_rex_dna_cloth", "lootName": "T-Rex DNA Cloth"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_velociraptor_dna_cloth", "lootName": "Velociraptor DNA Cloth"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_plesiosaur_dna_cloth", "lootName": "Plesiosaur DNA Cloth"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_pterodactyl_dna_cloth", "lootName": "Pterodactyl DNA Cloth"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_sniffer_dna_cloth", "lootName": "Sniffer DNA"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_trike_dna_cloth", "lootName": "Trike DNA"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_t_rex_dna_cloth", "lootName": "T-Rex DNA"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_velociraptor_dna_cloth", "lootName": "Velociraptor DNA"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_plesiosaur_dna_cloth", "lootName": "Plesiosaur DNA"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_pterodactyl_dna_cloth", "lootName": "Pterodactyl DNA"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_spyglass", "lootName": "Spyglass"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_treasure_chest", "lootName": "Treasure Chest"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_warden", "lootName": "Warden"}
@@ -55,4 +55,4 @@ function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_t_rex_sku
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_raptor_skull", "lootName": "Raptor Skull"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_biplane", "lootName": "Biplane"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_vault", "lootName": "Vault"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_velociraptor_statue", "lootName": "Velociraptor Statue"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"loot_velociraptor_statue", "lootName": "Velociraptor"}
