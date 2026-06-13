@@ -1,4 +1,4 @@
-execute unless entity @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key] unless entity @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_cooldown] unless entity @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_disabled] run return 0
+execute unless entity @e[limit=1,type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key] unless entity @e[limit=1,type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_cooldown] unless entity @e[limit=1,type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_disabled] run return 0
 kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key]
 kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_cooldown]
 kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/key_disabled]

@@ -7,5 +7,5 @@ execute if score @s ff_parkour_running matches 1.. run function fossil_frights:p
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 scoreboard players set $game_start_spawn_mode ff_game_state 0
-execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 0 unless entity @a[tag=ff_in_queue] run function fossil_frights:join/active_enter
+execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 0 unless entity @a[limit=1,tag=ff_in_queue] run function fossil_frights:join/active_enter
 execute unless entity @s[tag=ff_active] run function fossil_frights:join/queue_enter

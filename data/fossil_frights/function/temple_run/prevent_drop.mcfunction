@@ -1,4 +1,4 @@
-execute unless entity @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/temple_run_restart] run return 0
+execute unless entity @e[limit=1,type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/temple_run_restart] run return 0
 data modify storage fossil_frights:uuid this set from entity @e[type=minecraft:item,distance=..8,limit=1,sort=nearest,predicate=fossil_frights:entity/contents/temple_run_restart] Thrower
 execute store result score $temple_run_drop ff_active_uuid_0 run data get storage fossil_frights:uuid this[0]
 execute store result score $temple_run_drop ff_active_uuid_1 run data get storage fossil_frights:uuid this[1]
