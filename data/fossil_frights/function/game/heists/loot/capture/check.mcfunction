@@ -60,7 +60,7 @@ execute if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] ru
 execute if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_dna_cloth"}
 execute if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_dna_cloth"}
 execute if items entity @s contents *[custom_data~{itemID:"plesiosaur_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_plesiosaur_dna_cloth"}
-execute if items entity @s contents *[custom_data~{itemID:"pteradactyl_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pteradactyl_dna_cloth"}
+execute if items entity @s contents *[custom_data~{itemID:"pterodactyl_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pterodactyl_dna_cloth"}
 execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
 execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
 execute if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_treasure_chest"}

@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Pteradactyl Plushie",
+                  "text": "Pterodactyl Plushie",
                   "color": "gold",
                   "italic": false
                 },
@@ -25,7 +25,7 @@
                   {
                     "text": "",
                     "extra": [
-                      "pteradactyl_plushie"
+                      "pterodactyl_plushie"
                     ]
                   }
                 ],
@@ -38,7 +38,7 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "pteradactyl"
+                  "ff_plushie": "pterodactyl"
                 }
               }
             }

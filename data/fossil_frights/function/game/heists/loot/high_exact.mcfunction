@@ -7,7 +7,7 @@ execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 2 run scorebo
 execute if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
-execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
+execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_crab ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_warden ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1

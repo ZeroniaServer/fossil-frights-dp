@@ -34,7 +34,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/plushies/velocirapt
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/trike",page:"page_1",slot:26}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/t_rex",page:"page_2",slot:0}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/gold_t_rex",page:"page_2",slot:1}
-function fossil_frights:items/catalog/from_loot {loot:"items/plushies/pteradactyl",page:"page_2",slot:2}
+function fossil_frights:items/catalog/from_loot {loot:"items/plushies/pterodactyl",page:"page_2",slot:2}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/sniffer",page:"page_2",slot:3}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/leather_boots",page:"page_2",slot:4}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/microfiber_cloth",page:"page_2",slot:5}
@@ -44,7 +44,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/dna/trike",page:"pa
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/t_rex",page:"page_2",slot:9}
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/velociraptor",page:"page_2",slot:10}
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/plesiosaur",page:"page_2",slot:11}
-function fossil_frights:items/catalog/from_loot {loot:"items/dna/pteradactyl",page:"page_2",slot:12}
+function fossil_frights:items/catalog/from_loot {loot:"items/dna/pterodactyl",page:"page_2",slot:12}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/bubbly_bat",page:"page_2",slot:13}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/fossil_fizz",page:"page_2",slot:14}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/jurassic_juice",page:"page_2",slot:15}

@@ -8,7 +8,7 @@ scoreboard players reset $loot_trike_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_t_rex_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_velociraptor_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_plesiosaur_dna_cloth ff_heist_sidebar
-scoreboard players reset $loot_pteradactyl_dna_cloth ff_heist_sidebar
+scoreboard players reset $loot_pterodactyl_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_febreeze_rod ff_heist_sidebar
 scoreboard players reset $loot_fertilizer ff_heist_sidebar
 scoreboard players reset $loot_water_balloon ff_heist_sidebar
@@ -188,8 +188,8 @@ execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1..3 r
 execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_plesiosaur_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_pteradactyl_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_pterodactyl_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_treasure_chest ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_warden ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_warden ff_heist_sidebar = $heist_sidebar_slot ff_heist

@@ -1,5 +1,5 @@
 execute if items entity @s contents *[lore=[{text:"",extra:["sniffer_egg"]}]] run tag @s add ff_dna_hover
-execute if items entity @s contents *[lore=[{text:"",extra:["pteradactyl_egg"]}]] run tag @s add ff_dna_hover
+execute if items entity @s contents *[lore=[{text:"",extra:["pterodactyl_egg"]}]] run tag @s add ff_dna_hover
 execute if items entity @s contents *[lore=[{text:"",extra:["plesiosaur_egg"]}]] run tag @s add ff_dna_hover
 execute if items entity @s contents *[lore=[{text:"",extra:["velociraptor_egg"]}]] run tag @s add ff_dna_hover
 execute if items entity @s contents *[lore=[{text:"",extra:["trike_egg"]}]] run tag @s add ff_dna_hover

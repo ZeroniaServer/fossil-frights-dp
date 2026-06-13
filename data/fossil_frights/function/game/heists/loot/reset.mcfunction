@@ -165,9 +165,9 @@ scoreboard players reset $loot_velociraptor_dna_cloth ff_heist_sidebar
 scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_state 0
 scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_value 0
 scoreboard players reset $loot_plesiosaur_dna_cloth ff_heist_sidebar
-scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_state 0
-scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_value 0
-scoreboard players reset $loot_pteradactyl_dna_cloth ff_heist_sidebar
+scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_loot_state 0
+scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_loot_value 0
+scoreboard players reset $loot_pterodactyl_dna_cloth ff_heist_sidebar
 scoreboard players set $loot_spyglass ff_heist_loot_state 0
 scoreboard players set $loot_spyglass ff_heist_loot_value 0
 scoreboard players reset $loot_spyglass ff_heist_sidebar

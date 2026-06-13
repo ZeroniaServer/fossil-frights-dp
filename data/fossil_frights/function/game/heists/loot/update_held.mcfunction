@@ -46,7 +46,7 @@ execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 2 unless enti
 execute if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_t_rex_dna_cloth] run scoreboard players set $loot_t_rex_dna_cloth ff_heist_loot_state 1
 execute if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_velociraptor_dna_cloth] run scoreboard players set $loot_velociraptor_dna_cloth ff_heist_loot_state 1
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_plesiosaur_dna_cloth] run scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_state 1
-execute if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_pteradactyl_dna_cloth] run scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_state 1
+execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_pterodactyl_dna_cloth] run scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_loot_state 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_treasure_chest] run scoreboard players set $loot_treasure_chest ff_heist_loot_state 1
 execute if score $loot_warden ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_warden] run scoreboard players set $loot_warden ff_heist_loot_state 1
 execute if score $loot_crab ff_heist_loot_state matches 2 unless entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_crab] run scoreboard players set $loot_crab ff_heist_loot_state 1
@@ -119,7 +119,7 @@ execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_fright
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/t_rex_dna_cloth if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_t_rex_dna_cloth ff_heist_loot_state 2
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/velociraptor_dna_cloth if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_velociraptor_dna_cloth ff_heist_loot_state 2
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/plesiosaur_dna_cloth if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_state 2
-execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/pteradactyl_dna_cloth if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_state 2
+execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/pterodactyl_dna_cloth if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_loot_state 2
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/treasure_chest if score $loot_treasure_chest ff_heist_loot_state matches 1..2 run scoreboard players set $loot_treasure_chest ff_heist_loot_state 2
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/warden if score $loot_warden ff_heist_loot_state matches 1..2 run scoreboard players set $loot_warden ff_heist_loot_state 2
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/crab if score $loot_crab ff_heist_loot_state matches 1..2 run scoreboard players set $loot_crab ff_heist_loot_state 2
@@ -136,7 +136,7 @@ execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_trike_dna_c
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_t_rex_dna_cloth] if score $loot_t_rex_dna_cloth ff_heist_loot_state matches 1 run scoreboard players set $loot_t_rex_dna_cloth ff_heist_loot_state 2
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_velociraptor_dna_cloth] if score $loot_velociraptor_dna_cloth ff_heist_loot_state matches 1 run scoreboard players set $loot_velociraptor_dna_cloth ff_heist_loot_state 2
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_plesiosaur_dna_cloth] if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 1 run scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_loot_state 2
-execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_pteradactyl_dna_cloth] if score $loot_pteradactyl_dna_cloth ff_heist_loot_state matches 1 run scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_loot_state 2
+execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_pterodactyl_dna_cloth] if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1 run scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_loot_state 2
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_crab] if score $loot_crab ff_heist_loot_state matches 1 run scoreboard players set $loot_crab ff_heist_loot_state 2
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_warden] if score $loot_warden ff_heist_loot_state matches 1 run scoreboard players set $loot_warden ff_heist_loot_state 2
 execute if entity @e[type=minecraft:item,tag=ff_heist_high_loot_drop_treasure_chest] if score $loot_treasure_chest ff_heist_loot_state matches 1 run scoreboard players set $loot_treasure_chest ff_heist_loot_state 2
@@ -153,7 +153,7 @@ scoreboard players set $loot_trike_dna_cloth ff_heist_flash 0
 scoreboard players set $loot_t_rex_dna_cloth ff_heist_flash 0
 scoreboard players set $loot_velociraptor_dna_cloth ff_heist_flash 0
 scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_flash 0
-scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_flash 0
+scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_flash 0
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/copper_shuffle run scoreboard players set $loot_basketball ff_heist_flash 1
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/scrap_metal run scoreboard players set $loot_hoverboard ff_heist_flash 1
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/sponge run scoreboard players set $loot_sniffer_dna_cloth ff_heist_flash 1
@@ -166,5 +166,5 @@ execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_fright
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/microfiber_cloth run scoreboard players set $loot_velociraptor_dna_cloth ff_heist_flash 1
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/sponge run scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_flash 1
 execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/microfiber_cloth run scoreboard players set $loot_plesiosaur_dna_cloth ff_heist_flash 1
-execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/sponge run scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_flash 1
-execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/microfiber_cloth run scoreboard players set $loot_pteradactyl_dna_cloth ff_heist_flash 1
+execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/sponge run scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_flash 1
+execute as @a[tag=ff_heist_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/microfiber_cloth run scoreboard players set $loot_pterodactyl_dna_cloth ff_heist_flash 1

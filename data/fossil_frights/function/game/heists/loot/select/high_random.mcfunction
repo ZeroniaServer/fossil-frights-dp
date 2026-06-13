@@ -7,7 +7,7 @@ execute if score $heist_roll ff_heist matches 6 run function fossil_frights:game
 execute if score $heist_roll ff_heist matches 7 run function fossil_frights:game/heists/loot/select/high/t_rex_dna_cloth
 execute if score $heist_roll ff_heist matches 8 run function fossil_frights:game/heists/loot/select/high/velociraptor_dna_cloth
 execute if score $heist_roll ff_heist matches 9 run function fossil_frights:game/heists/loot/select/high/plesiosaur_dna_cloth
-execute if score $heist_roll ff_heist matches 10 run function fossil_frights:game/heists/loot/select/high/pteradactyl_dna_cloth
+execute if score $heist_roll ff_heist matches 10 run function fossil_frights:game/heists/loot/select/high/pterodactyl_dna_cloth
 execute if score $heist_roll ff_heist matches 11 run function fossil_frights:game/heists/loot/select/high/treasure_chest
 execute if score $heist_roll ff_heist matches 12 run function fossil_frights:game/heists/loot/select/high/warden
 execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/high/crab
