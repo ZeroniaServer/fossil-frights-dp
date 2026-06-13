@@ -1,0 +1,1 @@
+$summon minecraft:ocelot ~ ~ ~ {Tags:["ff_evolution_driver","$(tag)","ff_evolution_assigned"],Team:"ff_evolution_mannequin",Invulnerable:1b,Silent:1b,PersistenceRequired:1b,active_effects:[{id:"invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.22d},{id:"minecraft:scale",base:0.5d}]}

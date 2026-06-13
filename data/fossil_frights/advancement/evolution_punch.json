@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "mannequin",
+          "nbt": "{Tags:[\"ff_evolution\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/hard/evolution/punched"
+  }
+}

@@ -59,6 +59,7 @@ scoreboard players reset $tt_deforst_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
 scoreboard players reset $tt_fertilize_plant ff_task_tracker
 scoreboard players reset $tt_basketball_dance ff_task_tracker
+scoreboard players reset $tt_evolution ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
 execute if score $check_security_sel ff_task_state matches 1 run scoreboard players operation $tt_check_security ff_task_tracker = #line_check_security ff_task_state
@@ -257,6 +258,9 @@ execute if score $fertilize_plant_done ff_task_state matches 1 run scoreboard pl
 execute if score $basketball_dance_sel ff_task_state matches 1 run scoreboard players operation $tt_basketball_dance ff_task_tracker = #line_basketball_dance ff_task_state
 execute if score $basketball_dance_sel ff_task_state matches 1 unless score $basketball_dance_done ff_task_state matches 1 run scoreboard players display name $tt_basketball_dance ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Basketball Dance","italic":false}]
 execute if score $basketball_dance_done ff_task_state matches 1 run scoreboard players display name $tt_basketball_dance ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Basketball Dance","color":"gray","italic":false,"strikethrough":true}]
+execute if score $evolution_sel ff_task_state matches 1 run scoreboard players operation $tt_evolution ff_task_tracker = #line_evolution ff_task_state
+execute if score $evolution_sel ff_task_state matches 1 unless score $evolution_done ff_task_state matches 1 run scoreboard players display name $tt_evolution ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Evolution","italic":false}]
+execute if score $evolution_done ff_task_state matches 1 run scoreboard players display name $tt_evolution ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"text":" Evolution","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $final_task_sel ff_task_state matches 1 run scoreboard players operation $tt_final_task ff_task_tracker = #line_final_task ff_task_state
 execute if score $final_task_sel ff_task_state matches 1 unless score $final_task_done ff_task_state matches 1 run scoreboard players display name $tt_final_task ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_final"},{"text":" Lab Experiment","italic":false}]
