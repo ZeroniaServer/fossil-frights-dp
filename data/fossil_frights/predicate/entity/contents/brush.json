@@ -4,7 +4,11 @@
     "predicate": {
         "slots": {
             "contents": {
-                "items": "minecraft:brush"
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "itemID": "brush"
+                    }
+                }
             }
         }
     }
