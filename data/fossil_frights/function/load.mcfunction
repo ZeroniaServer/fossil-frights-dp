@@ -234,7 +234,7 @@ scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
-scoreboard objectives modify ff_heist numberformat blank
+scoreboard objectives modify ff_heist numberformat styled {"color":"gold"}
 scoreboard objectives modify ff_heist_sidebar numberformat blank
 function fossil_frights:game/apply_gamerules
 team add ff_active_gold
