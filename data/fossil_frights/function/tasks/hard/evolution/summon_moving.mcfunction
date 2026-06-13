@@ -12,3 +12,4 @@ execute as @e[type=minecraft:ocelot,tag=ff_evolution_start,tag=!ff_evolution_ass
 execute as @e[type=minecraft:ocelot,tag=ff_evolution_1,tag=!ff_evolution_assigned,limit=1] run tag @s add ff_evolution_assigned
 function fossil_frights:tasks/hard/evolution/summon_static
 execute as @e[type=minecraft:mannequin,tag=ff_evolution] run data merge entity @s {Invulnerable:0b}
+effect give @e[type=minecraft:mannequin,tag=ff_evolution] minecraft:regeneration 1000000 10 true
