@@ -4,7 +4,11 @@
     "predicate": {
         "slots": {
             "contents": {
-                "items": "minecraft:leather"
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "itemID": "leather"
+                    }
+                }
             }
         }
     }

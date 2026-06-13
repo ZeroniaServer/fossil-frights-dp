@@ -4,7 +4,11 @@
     "predicate": {
         "slots": {
             "contents": {
-                "items": "minecraft:bone_meal"
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "itemID": "fertilizer"
+                    }
+                }
             }
         }
     }
