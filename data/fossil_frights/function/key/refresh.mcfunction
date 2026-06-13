@@ -7,9 +7,9 @@ execute if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_
 execute if entity @s[tag=ff_key_restore_hand] run function fossil_frights:key/put_ready_in_hand with storage fossil_frights:key
 execute if entity @s[tag=ff_key_restore_hand] run tag @s add ff_key_restore_done
 data modify storage fossil_frights:key slot set value "weapon.offhand"
-execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
-execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_cooldown:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
-execute unless entity @s[tag=ff_key_restore_done] if data entity @s {Inventory:[{Slot:-106b,id:"minecraft:echo_shard",components:{"minecraft:custom_data":{ff_key_disabled:1b}}}]} run function fossil_frights:key/restore_slot with storage fossil_frights:key
+execute unless entity @s[tag=ff_key_restore_done] if items entity @s weapon.offhand minecraft:echo_shard[custom_data~{ff_key:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
+execute unless entity @s[tag=ff_key_restore_done] if items entity @s weapon.offhand minecraft:echo_shard[custom_data~{ff_key_cooldown:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
+execute unless entity @s[tag=ff_key_restore_done] if items entity @s weapon.offhand minecraft:echo_shard[custom_data~{ff_key_disabled:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
 data modify storage fossil_frights:key slot set value "hotbar.0"
 execute unless entity @s[tag=ff_key_restore_done] if items entity @s container.0 minecraft:echo_shard[custom_data~{ff_key:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key
 execute unless entity @s[tag=ff_key_restore_done] if items entity @s container.0 minecraft:echo_shard[custom_data~{ff_key_cooldown:1b}] run function fossil_frights:key/restore_slot with storage fossil_frights:key

@@ -1,7 +1,7 @@
 execute unless score $popcorn_buckets_sel ff_task_state matches 1 run return 0
 execute unless score $popcorn_buckets_done ff_task_state matches 0 run return 0
 execute unless entity @s[tag=ff_active] run return 0
-execute unless items entity @s weapon.mainhand minecraft:phantom_membrane[custom_data~{itemID:"empty_popcorn"}] unless data entity @s {Inventory:[{Slot:-106b,id:"minecraft:phantom_membrane",components:{"minecraft:custom_data":{itemID:"empty_popcorn"}}}]} run return 0
+execute unless items entity @s weapon.mainhand minecraft:phantom_membrane[custom_data~{itemID:"empty_popcorn"}] unless items entity @s weapon.offhand minecraft:phantom_membrane[custom_data~{itemID:"empty_popcorn"}] run return 0
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Popcorn Buckets"
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run function fossil_frights:tasks/medium/popcorn_buckets/cleanup
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76 82.5 run playsound minecraft:block.dispenser.dispense master @a[tag=ff_active,distance=..18] ~ ~ ~ 0.9 1.2

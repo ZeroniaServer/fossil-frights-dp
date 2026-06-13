@@ -9,6 +9,6 @@ function fossil_frights:tasks/messages/show_complete_macro with storage fossil_f
 scoreboard players add $task_completed_total ff_task_state 1
 clear @a[tag=ff_active] minecraft:written_book[minecraft:custom_data~{ff_task_book:"feed_the_bats"}] 1
 scoreboard players set $feed_the_bats_done ff_task_state 1
-kill @e[type=minecraft:item,x=22,y=104,z=84,dx=6,dy=4,dz=6,nbt={Item:{id:"minecraft:spider_eye"}}]
+kill @e[type=minecraft:item,x=22,y=104,z=84,dx=6,dy=4,dz=6,nbt={Item:{components:{"minecraft:custom_data":{itemID:"lady_bug"}}}}]
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
