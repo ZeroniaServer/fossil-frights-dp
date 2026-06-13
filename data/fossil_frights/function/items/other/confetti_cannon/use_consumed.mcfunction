@@ -1,6 +1,16 @@
 advancement revoke @s only fossil_frights:confetti_remote_consumed
 execute unless entity @s[gamemode=adventure] run return 0
-execute store result score @s ff_confetti_uses run data get entity @s SelectedItem.components."minecraft:damage" 1
+scoreboard players set @s ff_confetti_uses 0
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=1] run scoreboard players set @s ff_confetti_uses 1
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=2] run scoreboard players set @s ff_confetti_uses 2
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=3] run scoreboard players set @s ff_confetti_uses 3
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=4] run scoreboard players set @s ff_confetti_uses 4
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=5] run scoreboard players set @s ff_confetti_uses 5
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=6] run scoreboard players set @s ff_confetti_uses 6
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=7] run scoreboard players set @s ff_confetti_uses 7
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=8] run scoreboard players set @s ff_confetti_uses 8
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=9] run scoreboard players set @s ff_confetti_uses 9
+execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:1b},minecraft:damage=10] run scoreboard players set @s ff_confetti_uses 10
 execute at @s run function fossil_frights:items/other/confetti_cannon/fire
 scoreboard players add @s ff_confetti_uses 1
 execute if score @s ff_confetti_uses matches 10.. run function fossil_frights:items/other/confetti_cannon/break_remote
