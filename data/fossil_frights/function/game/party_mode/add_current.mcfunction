@@ -1,7 +1,9 @@
-execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
-execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
-execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
-execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+data modify storage fossil_frights:uuid this set from entity @s UUID
+execute store result score @s ff_active_uuid_0 run data get storage fossil_frights:uuid this[0]
+execute store result score @s ff_active_uuid_1 run data get storage fossil_frights:uuid this[1]
+execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:uuid this[2]
+execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:uuid this[3]
+data remove storage fossil_frights:uuid this
 tag @e[type=minecraft:marker,tag=ff_run_member_new] remove ff_run_member_new
 scoreboard players add $party_member_count ff_game_state 1
 summon minecraft:marker 0 -64 0 {Tags:["ff_run_member","ff_run_member_new"]}

@@ -3,10 +3,12 @@ execute if score $active_set ff_game_state matches 1 unless entity @s[tag=ff_act
 
 scoreboard players set $active_set ff_game_state 1
 scoreboard players set $game_running ff_game_state 0
-execute store result score $active ff_active_uuid_0 run data get entity @s UUID[0] 1
-execute store result score $active ff_active_uuid_1 run data get entity @s UUID[1] 1
-execute store result score $active ff_active_uuid_2 run data get entity @s UUID[2] 1
-execute store result score $active ff_active_uuid_3 run data get entity @s UUID[3] 1
+data modify storage fossil_frights:uuid this set from entity @s UUID
+execute store result score $active ff_active_uuid_0 run data get storage fossil_frights:uuid this[0]
+execute store result score $active ff_active_uuid_1 run data get storage fossil_frights:uuid this[1]
+execute store result score $active ff_active_uuid_2 run data get storage fossil_frights:uuid this[2]
+execute store result score $active ff_active_uuid_3 run data get storage fossil_frights:uuid this[3]
+data remove storage fossil_frights:uuid this
 function fossil_frights:game/party_mode/reset
 scoreboard players set $active_set ff_game_state 1
 function fossil_frights:game/party_mode/add_current

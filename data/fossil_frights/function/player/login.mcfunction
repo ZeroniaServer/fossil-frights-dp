@@ -52,10 +52,12 @@ execute unless score @s ff_ant_sneak_seen matches -2147483648..2147483647 run sc
 execute unless score @s ff_ant_sneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_sneak_ticks 0
 execute unless score @s ff_ant_unsneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_unsneak_ticks 0
 execute unless score @s ff_ant_blind_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_blind_ticks 0
-execute store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
-execute store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
-execute store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
-execute store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+data modify storage fossil_frights:uuid this set from entity @s UUID
+execute store result score @s ff_active_uuid_0 run data get storage fossil_frights:uuid this[0]
+execute store result score @s ff_active_uuid_1 run data get storage fossil_frights:uuid this[1]
+execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:uuid this[2]
+execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:uuid this[3]
+data remove storage fossil_frights:uuid this
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets

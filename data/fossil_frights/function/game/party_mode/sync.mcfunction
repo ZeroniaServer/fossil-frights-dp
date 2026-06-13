@@ -1,9 +1,6 @@
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $active_set ff_game_state matches 0 run return 0
-execute as @a store result score @s ff_active_uuid_0 run data get entity @s UUID[0] 1
-execute as @a store result score @s ff_active_uuid_1 run data get entity @s UUID[1] 1
-execute as @a store result score @s ff_active_uuid_2 run data get entity @s UUID[2] 1
-execute as @a store result score @s ff_active_uuid_3 run data get entity @s UUID[3] 1
+execute as @a run function fossil_frights:game/party_mode/sync_store_uuid
 tag @e[type=minecraft:marker,tag=ff_run_member] remove ff_run_member_online
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
