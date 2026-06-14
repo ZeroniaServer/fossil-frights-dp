@@ -167,6 +167,44 @@
                     ],
                     [
                       {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Common Loot",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Common Loot",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
                         "text": "\n\n\n\n"
                       },
                       {
@@ -201,7 +239,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -218,7 +256,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -259,7 +297,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -276,7 +314,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -314,7 +352,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -331,7 +369,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -369,7 +407,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -386,7 +424,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -424,7 +462,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -441,7 +479,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -479,7 +517,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -496,7 +534,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Low Value",
+                              "text": "Common Loot",
                               "color": "dark_green"
                             }
                           ]
@@ -518,6 +556,61 @@
                       ", Ruins, in the Pond"
                     ],
                     [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Uncommon Loot",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Uncommon Loot",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Uncommon Loot",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
                       {
                         "text": "\n\n\n\n"
                       },
@@ -553,7 +646,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -570,7 +663,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -587,7 +680,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -638,7 +731,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -655,7 +748,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -672,7 +765,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -720,7 +813,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -737,7 +830,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -754,7 +847,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -853,7 +946,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -870,7 +963,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -887,7 +980,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "Medium Value",
+                              "text": "Uncommon Loot",
                               "color": "gold"
                             }
                           ]
@@ -918,6 +1011,61 @@
                       ", Ruins, in the Ancient Ruins by the Well"
                     ],
                     [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Rare Loot",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Rare Loot",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Rare Loot",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
                       {
                         "text": "\n\n\n\n"
                       },
@@ -953,7 +1101,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -970,7 +1118,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -987,7 +1135,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1062,7 +1210,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1079,7 +1227,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1096,7 +1244,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1168,7 +1316,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1185,7 +1333,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1202,7 +1350,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1319,7 +1467,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1336,7 +1484,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1353,7 +1501,7 @@
                           "action": "show_text",
                           "value": [
                             {
-                              "text": "High Value",
+                              "text": "Rare Loot",
                               "color": "red"
                             }
                           ]
@@ -1398,6 +1546,41 @@
                     [
                       "",
                       {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      "",
+                      {
                         "text": "\n\n\n\n"
                       },
                       {
@@ -1408,7 +1591,7 @@
                         "text": "\n      ("
                       },
                       {
-                        "text": "$500-$850",
+                        "text": "$350-$850",
                         "color": "gold"
                       },
                       ")",
