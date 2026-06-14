@@ -6,6 +6,21 @@
             "entity": "this",
             "predicate": {
                 "slots": {
+                    "weapon.mainhand": {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "itemID": "microfiber_cloth"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "slots": {
                     "container.*": {
                         "predicates": {
                             "minecraft:custom_data": {

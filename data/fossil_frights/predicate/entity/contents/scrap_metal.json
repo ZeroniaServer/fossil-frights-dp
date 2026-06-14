@@ -4,15 +4,10 @@
     "predicate": {
         "slots": {
             "contents": {
-                "components": {
-                    "minecraft:lore": [
-                        {
-                            "text": "",
-                            "extra": [
-                                "scrap_metal"
-                            ]
-                        }
-                    ]
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "itemID": "scrap_metal"
+                    }
                 }
             }
         }
