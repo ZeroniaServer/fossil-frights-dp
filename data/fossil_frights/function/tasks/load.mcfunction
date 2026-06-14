@@ -7,7 +7,7 @@ scoreboard players set $hazard_delay ff_task_state 0
 
 scoreboard players set #easy_pool_count ff_task_state 26
 scoreboard players set #medium_pool_count ff_task_state 25
-scoreboard players set #hard_pool_count ff_task_state 13
+scoreboard players set #hard_pool_count ff_task_state 14
 scoreboard players set #final_pool_count ff_task_state 1
 
 scoreboard players set $check_security_avail ff_task_state 1
@@ -298,6 +298,13 @@ scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
 scoreboard players set #line_basketball_dance ff_task_state 2
+scoreboard players set $evolution_sel ff_task_state 0
+scoreboard players set $evolution_done ff_task_state 0
+scoreboard players set $evolution_step ff_task_state 0
+scoreboard players set $evolution_flash_red ff_task_state 0
+scoreboard players set $evolution_hit ff_task_state 0
+scoreboard players set $evolution_was_correct ff_task_state 0
+scoreboard players set #line_evolution ff_task_state 1
 
 scoreboard players set $final_task_avail ff_task_state 1
 scoreboard players set $final_task_sel ff_task_state 0

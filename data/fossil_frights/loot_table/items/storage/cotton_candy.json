@@ -16,14 +16,6 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "cotton_candy"
-                    ],
-                    "text": ""
-                  }
-                ],
                 "minecraft:custom_name": {
                   "extra": [
                     {
@@ -37,11 +29,6 @@
                     }
                   ],
                   "text": ""
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink"

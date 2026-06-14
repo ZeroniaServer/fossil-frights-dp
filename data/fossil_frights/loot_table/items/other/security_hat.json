@@ -20,21 +20,11 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "security_guard_hat"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "security_guard_hat"
                 }
               }
             }

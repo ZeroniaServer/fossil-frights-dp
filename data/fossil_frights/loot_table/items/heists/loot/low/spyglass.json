@@ -16,19 +16,6 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "spyglass"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "spyglass",
                   "ff_heist_low_loot": true

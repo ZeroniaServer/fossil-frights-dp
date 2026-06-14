@@ -16,19 +16,6 @@
                     38
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "instant_coffee"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "instant_coffee"
                 },

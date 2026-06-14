@@ -20,20 +20,11 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "security_guard_hat"
-                    ]
-                  }
-                ],
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore",
                     "minecraft:enchantments"
                   ]
                 },
@@ -42,7 +33,8 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_security_hat": true
+                  "ff_heist_security_hat": true,
+                  "itemID": "security_guard_hat"
                 }
               }
             }

@@ -4,7 +4,7 @@ execute if score $glowberry_trees_done ff_task_state matches 1 run scoreboard pl
 execute if score $glowberry_trees_done ff_task_state matches 1 run return 0
 execute if score $glowberry_tree_2_watered ff_task_state matches 1 run function fossil_frights:tasks/hard/glowberry_trees/tree_2/pending_clear
 execute if score $glowberry_tree_2_watered ff_task_state matches 1 run return 0
-execute unless entity @e[tag=ff_glowberry_tree_2_potion] run function fossil_frights:tasks/hard/glowberry_trees/tree_2/watered
+execute unless entity @e[limit=1,tag=ff_glowberry_tree_2_potion] run function fossil_frights:tasks/hard/glowberry_trees/tree_2/watered
 execute if score $glowberry_tree_2_watered ff_task_state matches 1 run return 0
-execute unless entity @e[tag=ff_glowberry_tree_2_potion,x=-14,y=80,z=38,dx=4,dy=2,dz=4] run function fossil_frights:tasks/hard/glowberry_trees/tree_2/pending_clear
+execute unless entity @e[limit=1,tag=ff_glowberry_tree_2_potion,x=-14,y=80,z=38,dx=4,dy=2,dz=4] run function fossil_frights:tasks/hard/glowberry_trees/tree_2/pending_clear
 execute if entity @e[limit=1,tag=ff_glowberry_tree_2_potion,x=-14,y=80,z=38,dx=4,dy=2,dz=4] run schedule function fossil_frights:tasks/hard/glowberry_trees/tree_2/check_splash 5t

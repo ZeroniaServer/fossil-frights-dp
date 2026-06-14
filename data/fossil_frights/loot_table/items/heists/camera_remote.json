@@ -17,19 +17,6 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/camera_remote",
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "camera_remote"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 1,
                   "cooldown_group": "fossil_frights:camera_remote"
@@ -50,19 +37,6 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/camera_remote",
-                    "minecraft:lore": [
-                      {
-                        "text": "",
-                        "extra": [
-                          "camera_remote"
-                        ]
-                      }
-                    ],
-                    "minecraft:tooltip_display": {
-                      "hidden_components": [
-                        "minecraft:lore"
-                      ]
-                    },
                     "minecraft:use_cooldown": {
                       "seconds": 1,
                       "cooldown_group": "fossil_frights:camera_remote"
@@ -74,12 +48,14 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
-                      "ff_heist_camera_remote": true
+                      "ff_heist_camera_remote": true,
+                      "itemID": "camera_remote"
                     }
                   }
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_camera_remote": true
+                  "ff_heist_camera_remote": true,
+                  "itemID": "camera_remote"
                 }
               }
             }

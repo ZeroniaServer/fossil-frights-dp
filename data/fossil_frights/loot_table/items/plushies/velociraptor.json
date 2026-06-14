@@ -21,24 +21,12 @@
                     2
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "velociraptor_plushie"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "velociraptor"
+                  "ff_plushie": "velociraptor",
+                  "itemID": "velociraptor_plushie"
                 }
               }
             }

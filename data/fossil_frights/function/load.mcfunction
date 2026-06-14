@@ -234,7 +234,7 @@ scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
-scoreboard objectives modify ff_heist numberformat blank
+scoreboard objectives modify ff_heist numberformat styled {"color":"gold"}
 scoreboard objectives modify ff_heist_sidebar numberformat blank
 function fossil_frights:game/apply_gamerules
 team add ff_active_gold
@@ -253,6 +253,8 @@ team add ff_game_start_dummy
 team modify ff_game_start_dummy collisionRule never
 team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
+team add ff_evolution_mannequin
+team modify ff_evolution_mannequin collisionRule never
 team add ff_security_camera
 team modify ff_security_camera collisionRule never
 advancement revoke @a only fossil_frights:lock_click

@@ -16,23 +16,10 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "fertilizer"
-                    ],
-                    "text": ""
-                  }
-                ],
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "dark_green",
                   "text": "Fertilizer"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "fertilizer"

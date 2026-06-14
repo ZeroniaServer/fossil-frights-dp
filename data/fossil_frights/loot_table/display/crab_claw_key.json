@@ -15,18 +15,8 @@
                     4
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "crab_claw_key"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
+                "minecraft:custom_data": {
+                  "itemID": "crab_claw_key"
                 }
               }
             }

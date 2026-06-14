@@ -17,19 +17,6 @@
                   "color": "gold",
                   "italic": false
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "placeholder_hard_2"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "placeholder_hard_2",
                   "ff_heist_loot_placeholder": true

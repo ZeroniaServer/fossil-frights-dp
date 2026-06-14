@@ -26,6 +26,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/golden_sword",page:"page_1",slot:21}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/portal_core",page:"page_1",slot:22}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/spyglass",page:"page_1",slot:23}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/hazard_cookie",page:"page_1",slot:24}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/treasure_chest",page:"page_2",slot:0}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/warden",page:"page_2",slot:1}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/crab",page:"page_2",slot:2}

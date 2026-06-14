@@ -24,21 +24,9 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "loot_bag"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
-                  "ff_heavy_loot_bag": true
+                  "ff_heavy_loot_bag": true,
+                  "itemID": "loot_bag"
                 }
               }
             }

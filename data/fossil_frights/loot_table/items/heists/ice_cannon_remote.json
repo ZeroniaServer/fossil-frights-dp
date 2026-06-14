@@ -17,19 +17,6 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "ice_cannon_remote"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 3,
                   "cooldown_group": "fossil_frights:ice_cannon_remote"
@@ -50,19 +37,6 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
-                    "minecraft:lore": [
-                      {
-                        "text": "",
-                        "extra": [
-                          "ice_cannon_remote"
-                        ]
-                      }
-                    ],
-                    "minecraft:tooltip_display": {
-                      "hidden_components": [
-                        "minecraft:lore"
-                      ]
-                    },
                     "minecraft:use_cooldown": {
                       "seconds": 3,
                       "cooldown_group": "fossil_frights:ice_cannon_remote"
@@ -74,12 +48,14 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
-                      "ff_heist_ice_cannon_remote": true
+                      "ff_heist_ice_cannon_remote": true,
+                      "itemID": "ice_cannon_remote"
                     }
                   }
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_ice_cannon_remote": true
+                  "ff_heist_ice_cannon_remote": true,
+                  "itemID": "ice_cannon_remote"
                 }
               }
             }

@@ -21,24 +21,12 @@
                     3
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "trike_plushie"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "trike"
+                  "ff_plushie": "trike",
+                  "itemID": "trike_plushie"
                 }
               }
             }

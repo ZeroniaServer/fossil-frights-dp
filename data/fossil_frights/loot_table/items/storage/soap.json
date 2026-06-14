@@ -16,19 +16,6 @@
                     2
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "soap"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "soap"
                 },

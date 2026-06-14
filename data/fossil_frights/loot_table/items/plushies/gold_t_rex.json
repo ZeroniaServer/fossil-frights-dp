@@ -21,24 +21,12 @@
                     5
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "gold_t-rex_plushie"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "gold_t_rex"
+                  "ff_plushie": "gold_t_rex",
+                  "itemID": "gold_t-rex_plushie"
                 }
               }
             }

@@ -17,17 +17,8 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/night_stick",
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "night_stick"
-                    ]
-                  }
-                ],
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore",
                     "minecraft:attribute_modifiers"
                   ]
                 },
@@ -49,7 +40,8 @@
                   }
                 ],
                 "minecraft:custom_data": {
-                  "ff_heist_night_stick": true
+                  "ff_heist_night_stick": true,
+                  "itemID": "night_stick"
                 }
               }
             }
