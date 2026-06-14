@@ -16,17 +16,8 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "credit_reel"
-                    ],
-                    "text": ""
-                  }
-                ],
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore",
                     "minecraft:custom_data"
                   ]
                 },

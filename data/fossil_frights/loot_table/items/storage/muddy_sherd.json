@@ -16,23 +16,10 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "muddy_sherd"
-                    ],
-                    "text": ""
-                  }
-                ],
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "gold",
                   "text": "Muddy Sherd"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "muddy_sherd"

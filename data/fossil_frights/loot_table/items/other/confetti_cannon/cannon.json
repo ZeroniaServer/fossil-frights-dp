@@ -21,26 +21,18 @@
                     2
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "confetti_cannon"
-                    ]
-                  }
-                ],
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore",
                     "minecraft:enchantments"
                   ]
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
-                  "ff_confetti_cannon_hat": true
+                  "ff_confetti_cannon_hat": true,
+                  "itemID": "confetti_cannon"
                 }
               }
             }

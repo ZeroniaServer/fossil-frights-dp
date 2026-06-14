@@ -22,19 +22,6 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "vault"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "vault"
                 }

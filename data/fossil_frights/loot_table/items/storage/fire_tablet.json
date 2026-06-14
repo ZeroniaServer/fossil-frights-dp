@@ -16,23 +16,10 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "fire_tablet"
-                    ],
-                    "text": ""
-                  }
-                ],
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "red",
                   "text": "Fire Tablet"
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "lava_tablet"

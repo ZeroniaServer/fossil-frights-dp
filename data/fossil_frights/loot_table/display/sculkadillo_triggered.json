@@ -15,18 +15,8 @@
                     6
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "sculkadillo_triggered"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
+                "minecraft:custom_data": {
+                  "itemID": "sculkadillo_triggered"
                 }
               }
             }

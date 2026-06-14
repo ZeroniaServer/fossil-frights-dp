@@ -21,19 +21,6 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "confetti_remote"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 0.25,
                   "cooldown_group": "fossil_frights:confetti_cannon_remote"
@@ -47,7 +34,8 @@
                   "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
-                  "ff_confetti_remote": true
+                  "ff_confetti_remote": true,
+                  "itemID": "confetti_remote"
                 }
               }
             }

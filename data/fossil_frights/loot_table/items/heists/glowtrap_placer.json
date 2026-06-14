@@ -17,19 +17,6 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "glowtrap_placer"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 60,
                   "cooldown_group": "fossil_frights:glowtrap_placer"
@@ -50,19 +37,6 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
-                    "minecraft:lore": [
-                      {
-                        "text": "",
-                        "extra": [
-                          "glowtrap_placer"
-                        ]
-                      }
-                    ],
-                    "minecraft:tooltip_display": {
-                      "hidden_components": [
-                        "minecraft:lore"
-                      ]
-                    },
                     "minecraft:use_cooldown": {
                       "seconds": 60,
                       "cooldown_group": "fossil_frights:glowtrap_placer"
@@ -74,12 +48,14 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
-                      "ff_heist_glowtrap_placer": true
+                      "ff_heist_glowtrap_placer": true,
+                      "itemID": "glowtrap_placer"
                     }
                   }
                 },
                 "minecraft:custom_data": {
-                  "ff_heist_glowtrap_placer": true
+                  "ff_heist_glowtrap_placer": true,
+                  "itemID": "glowtrap_placer"
                 }
               }
             }

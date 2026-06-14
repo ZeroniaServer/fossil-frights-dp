@@ -16,19 +16,6 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "fish_food"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "red",

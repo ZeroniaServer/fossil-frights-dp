@@ -19,19 +19,6 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "golden_nautilus"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "golden_nautilus"
                 },

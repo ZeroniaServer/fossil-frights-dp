@@ -17,19 +17,6 @@
                   "italic": false
                 },
                 "minecraft:max_stack_size": 1,
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "biplane"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "biplane"
                 },

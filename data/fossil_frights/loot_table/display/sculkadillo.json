@@ -15,18 +15,8 @@
                     5
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "sculkadillo"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
+                "minecraft:custom_data": {
+                  "itemID": "sculkadillo"
                 }
               }
             }

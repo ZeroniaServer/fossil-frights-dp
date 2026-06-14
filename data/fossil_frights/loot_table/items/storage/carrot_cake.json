@@ -16,19 +16,6 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "carrot_cake"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "gold",

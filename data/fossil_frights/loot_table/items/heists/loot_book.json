@@ -17,11 +17,11 @@
                   "pages": [
                     [
                       {
-                        "text": "\n ◆",
+                        "text": "\n \u25c6",
                         "color": "gray"
                       },
                       {
-                        "text": "                       ◆ \n   ",
+                        "text": "                       \u25c6 \n   ",
                         "color": "dark_gray"
                       },
                       {
@@ -35,11 +35,11 @@
                         "font": "fossil-frights:mc10"
                       },
                       {
-                        "text": " ◆",
+                        "text": " \u25c6",
                         "color": "dark_gray"
                       },
                       {
-                        "text": "                       ◆\n\n\n",
+                        "text": "                       \u25c6\n\n\n",
                         "color": "gray"
                       },
                       "",
@@ -171,7 +171,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -188,7 +188,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -233,7 +233,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -250,7 +250,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -291,7 +291,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -308,7 +308,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -346,7 +346,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -363,7 +363,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -401,7 +401,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -418,7 +418,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -456,7 +456,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -473,7 +473,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -511,7 +511,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_green",
                         "hover_event": {
                           "action": "show_text",
@@ -528,7 +528,7 @@
                         }
                       },
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -561,7 +561,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -578,7 +578,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gold",
                         "hover_event": {
                           "action": "show_text",
@@ -595,7 +595,7 @@
                         }
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -640,7 +640,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -657,7 +657,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gold",
                         "hover_event": {
                           "action": "show_text",
@@ -674,7 +674,7 @@
                         }
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -725,7 +725,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -742,7 +742,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gold",
                         "hover_event": {
                           "action": "show_text",
@@ -759,7 +759,7 @@
                         }
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -807,7 +807,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -824,7 +824,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gold",
                         "hover_event": {
                           "action": "show_text",
@@ -841,7 +841,7 @@
                         }
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -940,7 +940,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -957,7 +957,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gold",
                         "hover_event": {
                           "action": "show_text",
@@ -974,7 +974,7 @@
                         }
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1016,7 +1016,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1033,7 +1033,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "red",
                         "hover_event": {
                           "action": "show_text",
@@ -1050,7 +1050,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1095,7 +1095,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1112,7 +1112,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "red",
                         "hover_event": {
                           "action": "show_text",
@@ -1129,7 +1129,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1204,7 +1204,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1221,7 +1221,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "red",
                         "hover_event": {
                           "action": "show_text",
@@ -1238,7 +1238,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1310,7 +1310,7 @@
                         "color": "dark_gray"
                       },
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1327,7 +1327,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "red",
                         "hover_event": {
                           "action": "show_text",
@@ -1344,7 +1344,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1461,7 +1461,7 @@
                     [
                       "",
                       {
-                        "text": "●●",
+                        "text": "\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1478,7 +1478,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "red",
                         "hover_event": {
                           "action": "show_text",
@@ -1495,7 +1495,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1546,7 +1546,7 @@
                     [
                       "",
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1563,7 +1563,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_red",
                         "hover_event": {
                           "action": "show_text",
@@ -1584,7 +1584,7 @@
                         "text": "\n\n\n\n"
                       },
                       {
-                        "text": "       Heavy Loot",
+                        "text": "      \u2009Heavy Loot",
                         "color": "dark_red"
                       },
                       {
@@ -1606,7 +1606,7 @@
                     [
                       "",
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1623,7 +1623,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_red",
                         "hover_event": {
                           "action": "show_text",
@@ -1699,7 +1699,7 @@
                     [
                       "",
                       {
-                        "text": "●●●",
+                        "text": "\u25cf\u25cf\u25cf",
                         "color": "gray",
                         "hover_event": {
                           "action": "show_text",
@@ -1716,7 +1716,7 @@
                         }
                       },
                       {
-                        "text": "●",
+                        "text": "\u25cf",
                         "color": "dark_red",
                         "hover_event": {
                           "action": "show_text",
@@ -1813,24 +1813,16 @@
                   "italic": false,
                   "text": "Loot Book"
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "loot_book"
-                    ]
-                  }
-                ],
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:lore",
                     "minecraft:written_book_content",
                     "minecraft:enchantments"
                   ]
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
-                  "ff_heist_loot_book": true
+                  "ff_heist_loot_book": true,
+                  "itemID": "loot_book"
                 }
               }
             }

@@ -16,21 +16,9 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "key"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
-                  "ff_key": true
+                  "ff_key": true,
+                  "itemID": "key"
                 }
               }
             }

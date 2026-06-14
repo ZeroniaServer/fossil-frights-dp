@@ -20,25 +20,13 @@
                     3
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "invisimask"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
                   "ff_heist_invisimask": true,
-                  "ff_heist_invisimask_variant": "creeper"
+                  "ff_heist_invisimask_variant": "creeper",
+                  "itemID": "invisimask"
                 }
               }
             }
@@ -60,25 +48,13 @@
                     5
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "invisimask"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
                   "ff_heist_invisimask": true,
-                  "ff_heist_invisimask_variant": "skeleton"
+                  "ff_heist_invisimask_variant": "skeleton",
+                  "itemID": "invisimask"
                 }
               }
             }
@@ -100,25 +76,13 @@
                     6
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "invisimask"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
                   "ff_heist_invisimask": true,
-                  "ff_heist_invisimask_variant": "zombie"
+                  "ff_heist_invisimask_variant": "zombie",
+                  "itemID": "invisimask"
                 }
               }
             }
@@ -140,25 +104,13 @@
                     7
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "invisimask"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
                   "ff_heist_invisimask": true,
-                  "ff_heist_invisimask_variant": "enderman"
+                  "ff_heist_invisimask_variant": "enderman",
+                  "itemID": "invisimask"
                 }
               }
             }

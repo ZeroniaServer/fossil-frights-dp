@@ -16,19 +16,6 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "chocolate_cake"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "chocolate_cake",
                   "ff_heist_low_loot": true

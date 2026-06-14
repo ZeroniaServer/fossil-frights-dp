@@ -25,11 +25,6 @@
                   ],
                   "text": ""
                 },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "sponge"
                 }

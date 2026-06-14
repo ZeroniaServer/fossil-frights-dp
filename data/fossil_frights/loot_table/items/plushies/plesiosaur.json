@@ -21,24 +21,12 @@
                     1
                   ]
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "plesiosaur_plushie"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "plesiosaur"
+                  "ff_plushie": "plesiosaur",
+                  "itemID": "plesiosaur_plushie"
                 }
               }
             }

@@ -16,19 +16,6 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "portal_core"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "portal_core",
                   "ff_heist_low_loot": true
