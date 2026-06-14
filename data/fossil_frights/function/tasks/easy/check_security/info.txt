@@ -1,0 +1,11 @@
+this folder is related to 
+  data/fossil_frights/function/items/heists/camera_remote
+  data/fossil_frights/advancement/camera_remote_consumed.json
+  data/fossil_frights/advancement/camera_remote_dummy_punch.json
+  data/fossil_frights/advancement/check_security_click.json
+
+scoreboard values
+   ff_security_camera is the spider's camera id when @s is a camera spider
+   ff_security_camera is the camera that @s is viewing when @s is a player and looking at a camera
+
+    ff_security_camera_nav is the cooldown before @s can view another camera (default is 8)

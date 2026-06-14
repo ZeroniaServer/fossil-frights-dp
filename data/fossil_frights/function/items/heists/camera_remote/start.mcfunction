@@ -27,7 +27,7 @@ tag @s add ff_forced_spectate
 tag @s add ff_camera_remote_active
 gamemode spectator @s
 team join ff_security_camera @e[type=cave_spider,tag=security_camera]
-scoreboard players set @s ff_security_camera 1
+execute store result score @s ff_security_camera run scoreboard players get @n[tag=security_camera] ff_security_camera
 scoreboard players set @s ff_security_camera_nav 0
 function fossil_frights:tasks/easy/check_security/select_camera
 function fossil_frights:tasks/easy/check_security/show_nav
