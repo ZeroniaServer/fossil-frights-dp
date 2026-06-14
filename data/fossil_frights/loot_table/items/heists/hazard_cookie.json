@@ -22,7 +22,7 @@
                   "saturation": 0.4
                 },
                 "minecraft:custom_data": {
-                  "ff_hazard_cookie": 1,
+                  "ff_hazard_cookie": true,
                   "itemID": "hazard_cookie"
                 }
               }
