@@ -15,6 +15,11 @@ scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
+scoreboard objectives add ff_forced_spec_x dummy
+scoreboard objectives add ff_forced_spec_y dummy
+scoreboard objectives add ff_forced_spec_z dummy
+scoreboard objectives add ff_forced_spec_yaw dummy
+scoreboard objectives add ff_forced_spec_pitch dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_hazard_rng dummy
@@ -51,6 +56,7 @@ scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
+scoreboard objectives add ff_glowtrap_scan dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -239,8 +245,10 @@ scoreboard objectives modify ff_heist_sidebar numberformat blank
 function fossil_frights:game/apply_gamerules
 team add ff_active_gold
 team modify ff_active_gold color gold
+team modify ff_active_gold friendlyFire false
 team add ff_heist_thieves
 team modify ff_heist_thieves color red
+team modify ff_heist_thieves friendlyFire false
 team modify ff_heist_thieves nametagVisibility hideForOtherTeams
 team modify ff_heist_thieves seeFriendlyInvisibles true
 team add ff_lobby_no_collision

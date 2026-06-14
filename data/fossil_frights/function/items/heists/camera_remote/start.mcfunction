@@ -8,7 +8,7 @@ data modify storage fossil_frights:forced_spectate mannequin.u2 set from storage
 data modify storage fossil_frights:forced_spectate mannequin.u3 set from storage fossil_frights:forced_spectate UUID[3]
 data modify storage fossil_frights:forced_spectate mannequin.rotation set from entity @s Rotation
 data modify storage fossil_frights:forced_spectate mannequin.name set from entity @s bukkit.lastKnownName
-execute at @s summon marker run function fossil_frights:tasks/easy/check_security/forced_spectate_get_position
+function fossil_frights:tasks/easy/check_security/save_return_position
 execute at @s run function fossil_frights:items/heists/camera_remote/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] armor.head loot fossil_frights:items/heists/security_hat
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] weapon.mainhand loot fossil_frights:items/heists/camera_remote

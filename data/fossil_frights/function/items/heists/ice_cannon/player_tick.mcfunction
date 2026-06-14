@@ -1,4 +1,3 @@
-tag @s remove ff_ice_cannon_shooter
 execute if entity @s[tag=ff_ice_cannon_remote_restore_pending] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/ice_cannon_remote
 tag @s remove ff_ice_cannon_remote_restore_pending
 execute if entity @s[tag=ff_glowtrap_placer_restore_pending] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/glowtrap_placer

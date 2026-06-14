@@ -10,7 +10,7 @@ data modify storage fossil_frights:forced_spectate mannequin.u0 set from storage
 data modify storage fossil_frights:forced_spectate mannequin.u1 set from storage fossil_frights:forced_spectate UUID[1]
 data modify storage fossil_frights:forced_spectate mannequin.u2 set from storage fossil_frights:forced_spectate UUID[2]
 data modify storage fossil_frights:forced_spectate mannequin.u3 set from storage fossil_frights:forced_spectate UUID[3]
-execute at @s summon marker run function fossil_frights:tasks/easy/check_security/forced_spectate_get_position
+function fossil_frights:tasks/easy/check_security/save_return_position
 function fossil_frights:tasks/easy/check_security/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate
 gamemode spectator @s
