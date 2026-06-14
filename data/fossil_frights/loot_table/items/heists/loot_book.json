@@ -12,20 +12,1623 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:written_book_content": {
-                  "title": "Loot Book",
-                  "author": "Fossil Frights",
+                  "title": "",
+                  "author": "",
                   "pages": [
                     [
                       {
-                        "text": "WIP"
+                        "text": "\n ◆",
+                        "color": "gray"
+                      },
+                      {
+                        "text": "                       ◆ \n   ",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "           MUSEUM",
+                        "color": "dark_gray",
+                        "font": "fossil-frights:mc10"
+                      },
+                      {
+                        "text": " LOOT\n",
+                        "color": "gold",
+                        "font": "fossil-frights:mc10"
+                      },
+                      {
+                        "text": " ◆",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "                       ◆\n\n\n",
+                        "color": "gray"
+                      },
+                      "",
+                      {
+                        "text": "Common Loot",
+                        "color": "dark_green",
+                        "underlined": true,
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 2
+                        }
+                      },
+                      {
+                        "text": " ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 2
+                        }
+                      },
+                      {
+                        "text": "$",
+                        "color": "gold",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 2
+                        }
+                      },
+                      {
+                        "text": "$$",
+                        "color": "gray",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 2
+                        }
+                      },
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "text": "Uncommon Loot",
+                        "color": "gold",
+                        "underlined": true,
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 9
+                        }
+                      },
+                      {
+                        "text": " ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 9
+                        }
+                      },
+                      {
+                        "text": "$$",
+                        "color": "gold",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 9
+                        }
+                      },
+                      {
+                        "text": "$",
+                        "color": "gray",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 9
+                        }
+                      },
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "text": "Rare Loot",
+                        "color": "red",
+                        "underlined": true,
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 14
+                        }
+                      },
+                      {
+                        "text": " ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 14
+                        }
+                      },
+                      {
+                        "text": "$$$",
+                        "color": "gold",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 14
+                        }
+                      },
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "text": "Heavy Loot",
+                        "color": "dark_red",
+                        "underlined": true,
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 19
+                        }
+                      },
+                      {
+                        "text": " ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 19
+                        }
+                      },
+                      {
+                        "text": "$$$",
+                        "color": "gold",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 19
+                        }
                       }
+                    ],
+                    [
+                      {
+                        "text": "\n\n\n\n"
+                      },
+                      {
+                        "text": "       Common Loot",
+                        "color": "dark_green"
+                      },
+                      {
+                        "text": "\n           ("
+                      },
+                      {
+                        "text": "$100",
+                        "color": "gold"
+                      },
+                      ")",
+                      {
+                        "text": "\n\n\n\n                           \n            >>>            \n                           ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 3
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "text": "Ancient Portal Core",
+                        "color": "gold"
+                      },
+                      ", Ruins Deep Dark, beside Portal",
+                      {
+                        "text": "\n\nAncient Scripts",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Humans Exhibit, in Display Case",
+                      {
+                        "text": "\n\nBurgers",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Skeletons, at Picnic"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nChocolate Cake",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Cafe, on Display",
+                      {
+                        "text": "\n\nChondrite",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Observatory, Mini Planet in Display Case",
+                      {
+                        "text": "\n\nCoffee",
+                        "color": "gold"
+                      },
+                      ", Coffee Machines in Cafe (1st Floor) or Staff Room (Basement)"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nFishing Rod",
+                        "color": "gold"
+                      },
+                      ", Ruins, by the Pond",
+                      {
+                        "text": "\n\nFossilized Trilobite",
+                        "color": "gold"
+                      },
+                      ", 3rd Floor Phanerozoic, in Display Case",
+                      {
+                        "text": "\n\nGhast Plushie",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Gift Shop, on Display Rack"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nGolden Sword",
+                        "color": "gold"
+                      },
+                      ", Ruins, inside the Well",
+                      {
+                        "text": "\n\nLolly Pop",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Mezzanine, on the Dinobites table",
+                      {
+                        "text": "\n\nPiglin Head",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Stairwell, in the Boss' Office"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nPopcorn",
+                        "color": "gold"
+                      },
+                      ", Theatre, in the Concession Booth",
+                      {
+                        "text": "\n\nPoster Tube",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Gift Shop, in the Poster Display Bin",
+                      {
+                        "text": "\n\nSand Dollar",
+                        "color": "gold"
+                      },
+                      ", 1st Floor Aquarium, on the shells table"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_green",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Low Value",
+                              "color": "dark_green"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nSpyglass",
+                        "color": "gold"
+                      },
+                      ", Ruins, top of the Tower",
+                      {
+                        "text": "\n\nTrident",
+                        "color": "gold"
+                      },
+                      ", Ruins, in the Pond"
+                    ],
+                    [
+                      {
+                        "text": "\n\n\n\n"
+                      },
+                      {
+                        "text": "     Uncommon Loot",
+                        "color": "gold"
+                      },
+                      {
+                        "text": "\n      ("
+                      },
+                      {
+                        "text": "$200-$250",
+                        "color": "gold"
+                      },
+                      ")",
+                      {
+                        "text": "\n\n\n\n                           \n            >>>            \n                           ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 10
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nBasement Storage:\n"
+                      },
+                      {
+                        "text": "Brush\nChlorine Tablet\nCopper Shuffle\nDry Ice\nFebreeze Rod\nFertilizer\nFire Tablet\nFish Food\nGolden Nautilus",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "\n...                    ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 11
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\n...                    \n",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 10
+                        }
+                      },
+                      {
+                        "text": "Instant Coffee\nLeather\nPink Jelly\nPopcorn Buckets\nScrap Metal\nSkeleton Plushies\nSoap\nSponge\nWater Balloon",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nCarrot Cake",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      " & ",
+                      {
+                        "text": "Cookie",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 1st Floor Cafe, at the Counter",
+                      {
+                        "text": "\n\nCotton Candy",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 2nd Floor Mezzanine, Dinobites Snack Counter",
+                      {
+                        "text": "\n\nCredit Reel",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 1st Floor Stairwell, Boss' Office"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Medium Value",
+                              "color": "gold"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nMuddy Sherd",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", Ruins, in the Ancient Ruins by the Well"
+                    ],
+                    [
+                      {
+                        "text": "\n\n\n\n"
+                      },
+                      {
+                        "text": "        Rare Loot",
+                        "color": "red"
+                      },
+                      {
+                        "text": "\n      ("
+                      },
+                      {
+                        "text": "$300-$500",
+                        "color": "gold"
+                      },
+                      ")",
+                      {
+                        "text": "\n\n\n\n                           \n            >>>            \n                           ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 15
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nDNA Cloths require a Microfiber Cloth which is made from a "
+                      },
+                      {
+                        "text": "Sponge",
+                        "color": "#8A8A8A",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 11
+                        }
+                      },
+                      " at the Anvil",
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/plesiosaur_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " Plesiosaur DNA Cloth",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Eggshibit",
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/pteradactyl_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " Pterodactyl DNA Cloth",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Aviary"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/sniffer_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " Sniffer DNA Cloth",
+                        "color": "gold"
+                      },
+                      {
+                        "text": ", 2nd Floor Left Hall\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/t_rex_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " T-Rex DNA Cloth",
+                        "color": "gold"
+                      },
+                      {
+                        "text": ", 2nd Floor Eggshibit\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/trike_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " Trike DNA Cloth",
+                        "color": "gold"
+                      },
+                      {
+                        "text": ", 2nd Floor Eggshibit\n\n"
+                      },
+                      {
+                        "sprite": "fossil-frights:custom/general_items/velociraptor_dna_cloth",
+                        "atlas": "blocks",
+                        "color": "white"
+                      },
+                      {
+                        "text": " Velociraptor DNA Cloth",
+                        "color": "gold"
+                      },
+                      ", 2nd Floor Eggshibit"
+                    ],
+                    [
+                      {
+                        "text": "",
+                        "color": "dark_gray"
+                      },
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nBasketball",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 1st Floor Gift Shop, Play the ",
+                      {
+                        "text": "Copper Shuffle",
+                        "color": "#8A8A8A",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 10
+                        }
+                      },
+                      " & Dance with Coppy",
+                      {
+                        "text": "\n\nHoverboard",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", Forge ",
+                      {
+                        "text": "Scrap Metal",
+                        "color": "#8A8A8A",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 11
+                        }
+                      },
+                      " at the Anvil",
+                      {
+                        "text": "\n\nLady Bug",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Requires ",
+                              "color": "dark_gray"
+                            },
+                            {
+                              "sprite": "fossil-frights:custom/general_items/key",
+                              "atlas": "blocks",
+                              "color": "white"
+                            },
+                            {
+                              "text": "\nMake sure to be Quick!",
+                              "color": "gray"
+                            }
+                          ]
+                        }
+                      },
+                      ", 2nd Floor Aviary, Saber Tooth Squirrel Habitat"
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "High Value",
+                              "color": "red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nLost Key",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", ",
+                      {
+                        "text": "???",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Location Unknown",
+                              "color": "gray"
+                            }
+                          ]
+                        }
+                      },
+                      ", inside the Treasure Chest; ",
+                      {
+                        "text": "perhaps there's a way in through the Pipes..",
+                        "color": "#8A8A8A"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\n\n\n\n"
+                      },
+                      {
+                        "text": "       Heavy Loot",
+                        "color": "dark_red"
+                      },
+                      {
+                        "text": "\n      ("
+                      },
+                      {
+                        "text": "$500-$850",
+                        "color": "gold"
+                      },
+                      ")",
+                      {
+                        "text": "\n\n\n\n                           \n            >>>            \n                           ",
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 20
+                        }
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nBiplane",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 2nd Floor Human Exhibit",
+                      {
+                        "text": "\n\nCrab",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", Basement, in the Restoration Room",
+                      {
+                        "text": "\n\nRaptor Skull",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 1st Floor Skeletons",
+                      {
+                        "text": "\n\nT-Rex Skull",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 2nd Floor Mezzanine, in Display Case"
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "●●●",
+                        "color": "gray",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "●",
+                        "color": "dark_red",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Heavy Loot",
+                              "color": "dark_red"
+                            }
+                          ]
+                        },
+                        "click_event": {
+                          "action": "change_page",
+                          "page": 1
+                        }
+                      },
+                      {
+                        "text": "\n\nTreasure Chest",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", ",
+                      {
+                        "text": "???",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "Location Unknown",
+                              "color": "gray"
+                            }
+                          ]
+                        }
+                      },
+                      ", ",
+                      {
+                        "text": "perhaps there's a way in through the Pipes..",
+                        "color": "#8A8A8A"
+                      },
+                      {
+                        "text": "\n\nVault",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", Basement, in the Restoration Room",
+                      {
+                        "text": "\n\nVelociraptor",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", 3rd Floor Jurassic",
+                      {
+                        "text": "\n\nWarden",
+                        "color": "gold",
+                        "hover_event": {
+                          "action": "show_text",
+                          "value": [
+                            {
+                              "text": "",
+                              "color": "white"
+                            }
+                          ]
+                        }
+                      },
+                      ", Ruins Deep Dark"
                     ]
                   ]
                 },
                 "minecraft:custom_name": {
-                  "text": "Loot Book",
                   "color": "gold",
-                  "italic": false
+                  "italic": false,
+                  "text": "Loot Book"
                 },
                 "minecraft:lore": [
                   {
