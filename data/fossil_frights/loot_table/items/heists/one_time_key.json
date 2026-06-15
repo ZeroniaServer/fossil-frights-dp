@@ -16,6 +16,18 @@
                   "color": "yellow",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Click a lock to gain an item",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "One time use",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_data": {
                   "ff_key": true,
                   "itemID": "key"

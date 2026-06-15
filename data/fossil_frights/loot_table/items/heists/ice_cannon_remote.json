@@ -17,6 +17,23 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
+                "minecraft:lore": [
+                  {
+                    "text": "Shoots an icy projectile to freeze thieves.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "3 second cooldown.",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Does not work during lava hazard.",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:use_cooldown": {
                   "seconds": 3,
                   "cooldown_group": "fossil_frights:ice_cannon_remote"
@@ -37,6 +54,23 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
+                    "minecraft:lore": [
+                      {
+                        "text": "Shoots an icy projectile to freeze thieves.",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "3 second cooldown.",
+                        "color": "red",
+                        "italic": false
+                      },
+                      {
+                        "text": "Does not work during lava hazard.",
+                        "color": "red",
+                        "italic": false
+                      }
+                    ],
                     "minecraft:use_cooldown": {
                       "seconds": 3,
                       "cooldown_group": "fossil_frights:ice_cannon_remote"

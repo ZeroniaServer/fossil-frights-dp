@@ -16,6 +16,13 @@
                   "color": "yellow",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Enables a random hazard to help thieving.",
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ],
                 "minecraft:food": {
                   "can_always_eat": true,
                   "nutrition": 2,

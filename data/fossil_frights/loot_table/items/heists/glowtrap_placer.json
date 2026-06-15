@@ -17,6 +17,23 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
+                "minecraft:lore": [
+                  {
+                    "text": "Right click to place trap. Only visible to guards.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "2.5 second activation time. Applies glow and slow to thieves.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "60 second cooldown.",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:use_cooldown": {
                   "seconds": 60,
                   "cooldown_group": "fossil_frights:glowtrap_placer"
@@ -37,6 +54,23 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
+                    "minecraft:lore": [
+                      {
+                        "text": "Right click to place trap. Only visible to guards.",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "2.5 second activation time. Applies glow and slow to thieves.",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "60 second cooldown.",
+                        "color": "red",
+                        "italic": false
+                      }
+                    ],
                     "minecraft:use_cooldown": {
                       "seconds": 60,
                       "cooldown_group": "fossil_frights:glowtrap_placer"

@@ -15,6 +15,28 @@
                   "text": "Invisimask",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Punch a guard to get a key and turn invisible.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 seconds of invisibility",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 seconds of speed",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 second cooldown",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_model_data": {
                   "floats": [
                     3
@@ -43,6 +65,28 @@
                   "text": "Invisimask",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Punch a guard to get a key and turn invisible.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 seconds of invisibility",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 seconds of speed",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 second cooldown",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_model_data": {
                   "floats": [
                     5
@@ -71,6 +115,28 @@
                   "text": "Invisimask",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Punch a guard to get a key and turn invisible.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 seconds of invisibility",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 seconds of speed",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 second cooldown",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_model_data": {
                   "floats": [
                     6
@@ -99,6 +165,28 @@
                   "text": "Invisimask",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Punch a guard to get a key and turn invisible.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 seconds of invisibility",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 seconds of speed",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "20 second cooldown",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_model_data": {
                   "floats": [
                     7

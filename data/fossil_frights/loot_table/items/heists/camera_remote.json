@@ -17,6 +17,28 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/camera_remote",
+                "minecraft:lore": [
+                  {
+                    "text": "Click to view security cameras.",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Left & Right to Change Camera",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": "Shift to Exit",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  {
+                    "text": "Disabled if lights are out.",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:use_cooldown": {
                   "seconds": 1,
                   "cooldown_group": "fossil_frights:camera_remote"
@@ -37,6 +59,28 @@
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/camera_remote",
+                    "minecraft:lore": [
+                      {
+                        "text": "Click to view security cameras.",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "Left & Right to Change Camera",
+                        "color": "yellow",
+                        "italic": false
+                      },
+                      {
+                        "text": "Shift to Exit",
+                        "color": "yellow",
+                        "italic": false
+                      },
+                      {
+                        "text": "Disabled if lights are out.",
+                        "color": "red",
+                        "italic": false
+                      }
+                    ],
                     "minecraft:use_cooldown": {
                       "seconds": 1,
                       "cooldown_group": "fossil_frights:camera_remote"
