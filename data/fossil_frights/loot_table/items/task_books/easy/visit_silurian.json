@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "ᴠɪꜱɪᴛ ꜱɪʟᴜʀɪᴀɴ",
+                  "author": "ғᴏssɪʟ ғʀɪɢʜᴛs",
+                  "pages": [
+                    [
+                      "ᴠɪꜱɪᴛ ꜱɪʟᴜʀɪᴀɴ\n",
+                      "-------------------\n",
+                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      {
+                        "text": "ᴇᴀꜱʏ\n",
+                        "color": "green"
+                      },
+                      "\nThe start of the Silurian was a cold and dry place. Like my heart, ha! You know what, go check it out, let the excitement for the job be ripped out of you. \n\nIt's around the middle of the timeline."
+                    ]
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "ᴠɪꜱɪᴛ ꜱɪʟᴜʀɪᴀɴ",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "task_easy"
+                    ]
+                  }
+                ],
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:written_book_content"
+                  ]
+                },
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": {
+                  "ff_task_book": "visit_silurian"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
