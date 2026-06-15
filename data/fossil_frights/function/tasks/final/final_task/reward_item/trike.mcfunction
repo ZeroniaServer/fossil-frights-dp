@@ -1,1 +1,1 @@
-execute positioned -19.5 109.4 61.00 run function fossil_frights:util/summon_item {nbt:{Tags:["ff_final_reward"],PickupDelay:12,Age:0,Motion:[0.0,-0.08,-0]},loot_table:"fossil_frights:items/plushies/trike"}
+execute positioned -19.5 109.4 61.00 run function fossil_frights:items/util/summon_item {nbt:{Tags:["ff_final_reward"],PickupDelay:12,Age:0,Motion:[0.0,-0.08,-0]},loot_table:"fossil_frights:items/plushies/trike"}
