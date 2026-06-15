@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dried_kelp",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "itemID": "fly"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "fly"
+                    ]
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": [
+                    "lore"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
