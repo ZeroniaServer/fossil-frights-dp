@@ -16,12 +16,12 @@ attribute @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=neares
 attribute @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] minecraft:knockback_resistance base set 2
 data merge entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] {Health:1000.0f}
 effect give @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] minecraft:regeneration infinite 99 true
-data modify storage fossil_frights:uuid this set from entity @s UUID
-execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_0 run data get storage fossil_frights:uuid this[0]
-execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_1 run data get storage fossil_frights:uuid this[1]
-execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_2 run data get storage fossil_frights:uuid this[2]
-execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_3 run data get storage fossil_frights:uuid this[3]
-data remove storage fossil_frights:uuid this
+data modify storage fossil_frights:nbt uuid set from entity @s UUID
+execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_0 run data get storage fossil_frights:nbt uuid[0]
+execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_1 run data get storage fossil_frights:nbt uuid[1]
+execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
+execute store result score @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
+data remove storage fossil_frights:nbt uuid
 tag @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] remove ff_camera_remote_dummy_new
 tag @s add ff_forced_spectate
 tag @s add ff_camera_remote_active
