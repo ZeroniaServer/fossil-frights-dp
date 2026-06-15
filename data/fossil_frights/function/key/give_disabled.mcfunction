@@ -1,1 +1,1 @@
-give @s minecraft:echo_shard[minecraft:item_name={text:'Storage Key',color:'yellow',extra:[{text:' (Disabled)',color:'gray'}]},minecraft:lore=[{text:'',extra:['key_disabled']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:custom_data={ff_key_disabled:1b}] 1
+loot give @s loot fossil_frights:items/key/storage_key_disabled

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Storage Key",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Click a lock to gain an item",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "30 second cooldown in progress",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                "minecraft:use_cooldown": {
+                  "seconds": 30,
+                  "cooldown_group": "fossil_frights:storage_key"
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    3
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "ff_key_cooldown": true,
+                  "itemID": "key_cooldown"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
 clear @s minecraft:echo_shard[minecraft:custom_data~{ff_key:1b}]
 clear @s minecraft:echo_shard[minecraft:custom_data~{ff_key_cooldown:1b}]
 clear @s minecraft:echo_shard[minecraft:custom_data~{ff_key_disabled:1b}]
-$item replace entity @s weapon.mainhand with minecraft:echo_shard[minecraft:item_name={text:'Storage Key',color:'yellow'},minecraft:lore=[{text:'',extra:['key']}],minecraft:tooltip_display={hidden_components:['minecraft:lore']},minecraft:use_cooldown={seconds:$(seconds),cooldown_group:'fossil_frights:storage_key'},minecraft:custom_data={ff_key:1b}] 1
+loot replace entity @s weapon.mainhand loot fossil_frights:items/key/storage_key

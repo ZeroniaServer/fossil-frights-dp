@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Storage Key",
+                  "color": "yellow",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": " (Disabled)",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Click a lock to gain an item",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "text": "Disabled between shifts",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    4
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "ff_key_disabled": true,
+                  "itemID": "key_disabled"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
