@@ -1,7 +1,9 @@
 tp @s ~ ~ ~ ~ ~
-execute store result score @s ff_forced_spec_x run data get entity @s Pos[0] 1000
-execute store result score @s ff_forced_spec_y run data get entity @s Pos[1] 1000
-execute store result score @s ff_forced_spec_z run data get entity @s Pos[2] 1000
-execute store result score @s ff_forced_spec_yaw run data get entity @s Rotation[0] 1000
-execute store result score @s ff_forced_spec_pitch run data get entity @s Rotation[1] 1000
+data modify storage fossil_frights:nbt entity_data set from entity @s {}
+execute store result score @s ff_forced_spec_x run data get storage fossil_frights:nbt entity_data.Pos[0] 1000
+execute store result score @s ff_forced_spec_y run data get storage fossil_frights:nbt entity_data.Pos[1] 1000
+execute store result score @s ff_forced_spec_z run data get storage fossil_frights:nbt entity_data.Pos[2] 1000
+execute store result score @s ff_forced_spec_yaw run data get storage fossil_frights:nbt entity_data.Rotation[0] 1000
+execute store result score @s ff_forced_spec_pitch run data get storage fossil_frights:nbt entity_data.Rotation[1] 1000
+data remove storage fossil_frights:nbt entity_data
 kill
