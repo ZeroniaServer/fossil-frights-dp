@@ -1,5 +1,5 @@
 execute if score $a_c_reset_sel ff_task_state matches 0 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $a_c_reset_sel ff_task_state matches 0 run function fossil_frights:tasks/hard/a_c_reset/selected_book
+execute if score $a_c_reset_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/task_books/hard/a_c_reset
 scoreboard players set $a_c_reset_sel ff_task_state 1
 scoreboard players set $a_c_reset_done ff_task_state 0
 scoreboard players set $a_c_btn_1_pressed ff_task_state 0

@@ -1,5 +1,5 @@
 execute if score $sponge_up_spill_sel ff_task_state matches 0 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $sponge_up_spill_sel ff_task_state matches 0 run function fossil_frights:tasks/medium/sponge_up_spill/selected_book
+execute if score $sponge_up_spill_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/task_books/medium/sponge_up_spill
 execute if score $sponge_up_spill_sel ff_task_state matches 0 run setblock -15 79 70 minecraft:mangrove_slab[type=bottom,waterlogged=true]
 execute if score $sponge_up_spill_sel ff_task_state matches 0 run setblock -15 79 69 minecraft:mangrove_slab[type=bottom,waterlogged=true]
 execute if score $sponge_up_spill_sel ff_task_state matches 0 run setblock -16 79 69 minecraft:mangrove_slab[type=bottom,waterlogged=true]

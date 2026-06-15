@@ -1,5 +1,5 @@
 execute if score $pig_wrangler_sel ff_task_state matches 0 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $pig_wrangler_sel ff_task_state matches 0 run function fossil_frights:tasks/hard/pig_wrangler/selected_book
+execute if score $pig_wrangler_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/task_books/hard/pig_wrangler
 scoreboard players set $pig_wrangler_sel ff_task_state 1
 scoreboard players set $pig_wrangler_done ff_task_state 0
 scoreboard players set $pig_wrangler_in_pen ff_task_state 0

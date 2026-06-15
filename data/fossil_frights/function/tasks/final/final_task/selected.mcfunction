@@ -12,7 +12,7 @@ function fossil_frights:tasks/final/final_task/markers/setup
 execute store result score $final_task_dino ff_task_state run random value 1..6
 execute store result score $final_task_item ff_task_state run random value 1..11
 function fossil_frights:tasks/final/final_task/open_lab_door
-execute if score $final_task_sel ff_task_state matches 0 run function fossil_frights:tasks/final/final_task/selected_book
+execute if score $final_task_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/task_books/final/final_task
 scoreboard players set $final_task_sel ff_task_state 1
 function fossil_frights:tasks/final/final_task/screen/setup
 function fossil_frights:tasks/tracker/refresh
