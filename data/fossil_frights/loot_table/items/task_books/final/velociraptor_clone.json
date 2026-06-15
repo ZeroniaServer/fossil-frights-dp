@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:written_book_content": {
+                  "title": "ᴠᴇʟᴏᴄɪʀᴀᴘᴛᴏʀ ᴄʟᴏɴᴇ",
+                  "author": "ғᴏssɪʟ ғʀɪɢʜᴛs",
+                  "pages": [
+                    [
+                      "ᴠᴇʟᴏᴄɪʀᴀᴘᴛᴏʀ ᴄʟᴏɴᴇ\n",
+                      "-------------------\n",
+                      "ᴜɴᴋɴᴏᴡɴ ● ",
+                      {
+                        "text": "ɪɴꜱᴀɴᴇ\n",
+                        "color": "gold"
+                      },
+                      "\nWow. So you really made it 10 days. Most people quit after 2. Well, technically I fire them. Anyway.....\n\n(Multiple Pages)\n\n\n\n"
+                    ],
+                    [
+                      "I think I can trust you with this. I left the secret laboratory doors open. It’s between the rings of Earth up on the top floor, in the Ordovician.\n\n\n\n\n\n"
+                    ],
+                    [
+                      "I’m going to need you to clone a dino for me. I’m out of microfiber cloths; you’ll have to flatten a sponge with the anvil, then use that to scrub the velociraptor egg for DNA. \n\n\n\n\n\n"
+                    ],
+                    [
+                      "Now put that DNA cloth in the DNA analyzer, it's that machine with the big empty tank. If it works it will start running, and you'll see a dino in the cloning vat.\n\n\n\n\n\n\n"
+                    ],
+                    [
+                      "Next the check the screen of the Clonomat, it will specify an item it needs. Go grab and toss it into the centrifuge; if the items are correct it will start spinning.\n\n\n\n\n\n"
+                    ],
+                    [
+                      "And uhm, yeah. That's it... If you get this done I'll hire you full-time. I'll start paying you, even. \n\nOh! I almost forgot, the Clonomat produces a plushie as a byproduct. Feel free to keep it, I've got hundreds already."
+                    ]
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "ᴠᴇʟᴏᴄɪʀᴀᴘᴛᴏʀ ᴄʟᴏɴᴇ",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "task_final"
+                    ]
+                  }
+                ],
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:written_book_content"
+                  ]
+                },
+                "minecraft:max_stack_size": 99,
+                "minecraft:custom_data": {
+                  "ff_task_book": "velociraptor_clone"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
