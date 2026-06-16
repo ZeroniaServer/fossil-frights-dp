@@ -110,6 +110,8 @@ scoreboard objectives add ff_heist_loot_state dummy
 scoreboard objectives add ff_heist_loot_value dummy
 scoreboard objectives add ff_heist_flash dummy
 scoreboard objectives add ff_button_unpress_timestamp dummy
+scoreboard objectives add ff_heist_regen_lock dummy
+scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
@@ -309,6 +311,7 @@ advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
 advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:camera_remote_consumed
+advancement revoke @a only fossil_frights:heists_night_stick_hit
 advancement revoke @a only fossil_frights:hazard_cookie_consumed
 advancement revoke @a only fossil_frights:camera_remote_dummy_punch
 function fossil_frights:animations/interactions/load

@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "night_stick_hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:stick",
+                "components": {
+                  "minecraft:custom_data": "{ff_heist_night_stick:1b}"
+                }
+              }
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ff_heist_thief\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:game/heists/night_stick_hit"
+  }
+}

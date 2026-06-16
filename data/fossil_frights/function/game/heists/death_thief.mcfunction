@@ -1,5 +1,6 @@
 execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5]
 attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:entity_interaction_range base set 3
 tag @s remove ff_ice_frozen
 tp @s -1.00 109.00 55.5 180 0
 spawnpoint @s -1 109 55
@@ -23,5 +24,6 @@ scoreboard players set @s ff_heist_punch_cd 0
 scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players set @s ff_heist_invis_ticks 0
+scoreboard players set @s ff_heist_thaw_fx 0
 function fossil_frights:game/heists/loadout/thief
 function fossil_frights:game/heists/grant_hazard_cookie
