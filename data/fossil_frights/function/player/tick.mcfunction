@@ -16,6 +16,10 @@ scoreboard players enable @s ff_cmd_stats
 scoreboard players enable @s ff_cmd_invite
 scoreboard players enable @s ff_cmd_tutorial
 scoreboard players enable @s ff_cmd_info
+scoreboard players enable @s ff_cmd_heists
+scoreboard players enable @s ff_cmd_join_guard
+scoreboard players enable @s ff_cmd_join_thief
+scoreboard players enable @s ff_cmd_spawn
 scoreboard players enable @s ff_invite_accept
 scoreboard players add @s ff_msg_cooldown 0
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
@@ -52,6 +56,18 @@ execute if score @s ff_cmd_tutorial matches 1.. run scoreboard players set @s ff
 execute if score @s ff_cmd_info matches 1.. run function fossil_frights:command/info
 execute if score @s ff_cmd_info matches 1.. run scoreboard players enable @s ff_cmd_info
 execute if score @s ff_cmd_info matches 1.. run scoreboard players set @s ff_cmd_info 0
+execute if score @s ff_cmd_heists matches 1.. run function fossil_frights:command/heists
+execute if score @s ff_cmd_heists matches 1.. run scoreboard players enable @s ff_cmd_heists
+execute if score @s ff_cmd_heists matches 1.. run scoreboard players set @s ff_cmd_heists 0
+execute if score @s ff_cmd_join_guard matches 1.. run function fossil_frights:command/join_guard
+execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players enable @s ff_cmd_join_guard
+execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players set @s ff_cmd_join_guard 0
+execute if score @s ff_cmd_join_thief matches 1.. run function fossil_frights:command/join_thief
+execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players enable @s ff_cmd_join_thief
+execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players set @s ff_cmd_join_thief 0
+execute if score @s ff_cmd_spawn matches 1.. run function fossil_frights:command/spawn
+execute if score @s ff_cmd_spawn matches 1.. run scoreboard players enable @s ff_cmd_spawn
+execute if score @s ff_cmd_spawn matches 1.. run scoreboard players set @s ff_cmd_spawn 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active] run function fossil_frights:player/death_active
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/respawn_lobby

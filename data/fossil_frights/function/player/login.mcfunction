@@ -105,6 +105,10 @@ scoreboard players set @s ff_cmd_spectate 0
 scoreboard players set @s ff_cmd_stats 0
 scoreboard players set @s ff_cmd_tutorial 0
 scoreboard players set @s ff_cmd_info 0
+scoreboard players set @s ff_cmd_heists 0
+scoreboard players set @s ff_cmd_join_guard 0
+scoreboard players set @s ff_cmd_join_thief 0
+scoreboard players set @s ff_cmd_spawn 0
 scoreboard players enable @s ff_queue_start
 scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave
@@ -112,6 +116,10 @@ scoreboard players enable @s ff_cmd_spectate
 scoreboard players enable @s ff_cmd_stats
 scoreboard players enable @s ff_cmd_tutorial
 scoreboard players enable @s ff_cmd_info
+scoreboard players enable @s ff_cmd_heists
+scoreboard players enable @s ff_cmd_join_guard
+scoreboard players enable @s ff_cmd_join_thief
+scoreboard players enable @s ff_cmd_spawn
 scoreboard players set @s ff_cmd_invite 0
 scoreboard players enable @s ff_cmd_invite
 scoreboard players set @s ff_invite_sel 0

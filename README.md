@@ -10,9 +10,13 @@
 | Show personal stats | `/trigger ff_cmd_stats` |
 | Tutorial | `/trigger ff_cmd_tutorial` |
 | Info dialog | `/trigger ff_cmd_info` |
+| Enable Fossil Heists | `/trigger ff_cmd_heists` |
+| Join guard team | `/trigger ff_cmd_join_guard` |
+| Join thief team | `/trigger ff_cmd_join_thief` |
+| Return to spawn | `/trigger ff_cmd_spawn` |
 | Invite dialog | `/trigger ff_cmd_invite` |
 
-Fossil Frights plugin adds aliases: `/start`, `/join`, `/leave`, `/spectate`, `/stats`, `/invite`, `/tutorial`, `/info`.
+Fossil Frights plugin adds aliases: `/start`, `/join`, `/join guard`, `/join thief`, `/leave`, `/spectate`, `/stats`, `/invite`, `/tutorial`, `/info`, `/heists`, `/spawn`.
 
 ## Admin Commands
 

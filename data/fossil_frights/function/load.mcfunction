@@ -50,6 +50,10 @@ scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
+scoreboard objectives add ff_cmd_heists trigger
+scoreboard objectives add ff_cmd_join_guard trigger
+scoreboard objectives add ff_cmd_join_thief trigger
+scoreboard objectives add ff_cmd_spawn trigger
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_ice_cannon_age dummy
