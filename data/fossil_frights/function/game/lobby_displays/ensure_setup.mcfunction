@@ -21,7 +21,8 @@ function fossil_frights:game/start_room/settings/speedrun_toggle/setup
 function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 scoreboard players set $lobby_displays_ready ff_game_state 1
 execute unless entity @e[type=minecraft:text_display,tag=ff_command_info_board,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
-execute unless entity @e[type=minecraft:interaction,tag=ff_info_lectern_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
+execute unless entity @e[type=minecraft:interaction,tag=ff_info_lectern_click,x=16,y=70,z=21,dx=1,dy=1,dz=1,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
+execute unless entity @e[type=minecraft:interaction,tag=ff_info_lectern_click,x=0,y=109,z=55,dx=0,dy=0,dz=0,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_game_timer,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_day_tracker,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
