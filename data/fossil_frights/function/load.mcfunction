@@ -109,6 +109,7 @@ scoreboard objectives add ff_heist_reward dummy
 scoreboard objectives add ff_heist_loot_state dummy
 scoreboard objectives add ff_heist_loot_value dummy
 scoreboard objectives add ff_heist_flash dummy
+scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740

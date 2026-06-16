@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ff_button\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:button/click"
+  }
+}
