@@ -13,6 +13,7 @@ scoreboard objectives setdisplay sidebar ff_heist_sidebar
 scoreboard players reset $loot ff_heist_sidebar
 execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[tag=ff_heist_guard] at @s run spawnpoint @s 20 70 20
+scoreboard players set @a[tag=ff_heist_thief] ff_heist_stolen_keys 0
 execute as @a[tag=ff_heist_thief] run function fossil_frights:game/heists/loadout/thief
 execute as @a[tag=ff_heist_thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/generate_loot

@@ -12,7 +12,6 @@ scoreboard players set @s ff_heist_punch_cd 0
 scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players set @s ff_heist_invis_ticks 0
-scoreboard players set @s ff_heist_stolen_keys 0
 scoreboard players set @s ff_heist_thaw_fx 0
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:speed
