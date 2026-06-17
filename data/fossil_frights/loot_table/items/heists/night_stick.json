@@ -16,6 +16,13 @@
                   "color": "gold",
                   "italic": false
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Stuns thief (prevents regen) for 1 second.",
+                    "color": "white",
+                    "italic": false
+                  }
+                ],
                 "minecraft:item_model": "fossil-frights:general_items/night_stick",
                 "minecraft:tooltip_display": {
                   "hidden_components": [

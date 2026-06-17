@@ -130,6 +130,7 @@ scoreboard players set #heist_tick ff_heist 20
 scoreboard players set #heist_sixty ff_heist 60
 scoreboard players set #heist_punch_cooldown ff_heist 400
 scoreboard players set #heist_invis_duration ff_heist 160
+scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_flash ff_heist 0

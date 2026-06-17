@@ -2,6 +2,7 @@ execute if score $heist_button_lock ff_game_state matches 1.. run scoreboard pla
 execute if score $heist_button_lock ff_game_state matches ..0 run scoreboard players set $heist_button_lock ff_game_state 0
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 unless score $party_mode_active ff_game_state matches 1 unless score $heist_mode_active ff_game_state matches 1 if score $heist_button_lock ff_game_state matches 0 if block 13 71 20 minecraft:warped_button[powered=true] as @p[tag=ff_active,x=8,y=70,z=17,dx=8,dy=4,dz=12,limit=1,sort=nearest] run function fossil_frights:game/heists/activate
 execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+function fossil_frights:game/heists/regen_lock_tick
 function fossil_frights:game/heists/capture_point/tick
 execute if score $victory_complete ff_game_state matches 1 if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches 10 run scoreboard players add $idle_ticks ff_game_state 1
 execute if score $victory_complete ff_game_state matches 1 if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches 10 if score $idle_ticks ff_game_state matches 600.. run function fossil_frights:game/reset
