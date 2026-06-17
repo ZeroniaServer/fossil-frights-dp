@@ -1,6 +1,7 @@
 scoreboard players add @s ff_heist_punch_cd 0
 scoreboard players add @s ff_heist_punch_fx 0
 scoreboard players add @s ff_heist_invis_ticks 0
+scoreboard players add @s ff_heist_stolen_keys 0
 scoreboard players add @s ff_heist_regen_lock 0
 scoreboard players add @s ff_heist_thaw_fx 0
 execute if score @s ff_heist_punch_cd matches 1.. run function fossil_frights:game/heists/show_punch_cooldown
