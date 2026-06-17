@@ -322,6 +322,7 @@ function fossil_frights:game/load
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
 function fossil_frights:ant_fight/load
+function fossil_frights:rollercoaster/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/reset
