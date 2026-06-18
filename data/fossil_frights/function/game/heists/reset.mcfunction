@@ -46,3 +46,4 @@ scoreboard players set $heist_sec_tens ff_heist 0
 scoreboard players set $heist_sec_ones ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
+function fossil_frights:key/lock/setup

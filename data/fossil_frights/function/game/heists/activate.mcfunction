@@ -40,6 +40,7 @@ function fossil_frights:game/heists/oxidized_bars/show
 function fossil_frights:game/heists/capture_point/setup
 function fossil_frights:join/heists/setup
 scoreboard players set $heist_wait_queue_present ff_heist 0
+function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/party_mode/refresh
 function fossil_frights:game/start_room/settings/heists/refresh

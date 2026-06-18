@@ -9,5 +9,6 @@ execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function f
 execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/fish_food
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/reorder
+function fossil_frights:key/lock/setup
 function fossil_frights:game/heists/loot/render
 function fossil_frights:admin/menu/mark_modified
