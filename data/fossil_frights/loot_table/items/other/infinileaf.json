@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Infinileaf",
+                  "color": "green"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Shoot ",
+                    "color": "dark_green",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "- Right Click",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Leave ",
+                    "color": "red",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "- Drop",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:use_cooldown": {
+                  "seconds": 0.25,
+                  "cooldown_group": "fossil_frights:infinileaf"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "itemID": "infinileaf"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
