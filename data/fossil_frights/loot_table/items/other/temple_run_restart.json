@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Temple Run Restart",
+                  "color": "yellow"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Restart ",
+                    "color": "yellow",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "- Right Click",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "End ",
+                    "color": "red",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "- Drop",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:item_model": "fossil-frights:general_items/temple_run_restart",
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:custom_data": {
+                  "itemID": "temple_run_restart"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

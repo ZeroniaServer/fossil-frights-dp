@@ -26,7 +26,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_plushie": "trike",
-                  "itemID": "trike_plushie"
+                  "itemID": "trike_plushie",
+                  "ff_prevent_drop": true
                 }
               }
             }

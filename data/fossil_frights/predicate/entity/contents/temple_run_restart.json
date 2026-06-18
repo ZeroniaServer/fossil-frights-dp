@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "ff_temple_run_restart": true
+                        "itemID": "temple_run_restart"
                     }
                 }
             }

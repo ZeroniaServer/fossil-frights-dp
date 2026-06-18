@@ -332,3 +332,4 @@ function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
 function fossil_frights:game/reload_reset
+execute in minecraft:overworld run forceload add 0 0

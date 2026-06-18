@@ -26,7 +26,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_plushie": "sniffer",
-                  "itemID": "sniffer_plushie"
+                  "itemID": "sniffer_plushie",
+                  "ff_prevent_drop": true
                 }
               }
             }

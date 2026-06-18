@@ -41,8 +41,9 @@
                   ]
                 },
                 "minecraft:custom_data": {
+                  "itemID": "key_disabled",
                   "ff_key_disabled": true,
-                  "itemID": "key_disabled"
+                  "ff_prevent_drop": true
                 }
               }
             }

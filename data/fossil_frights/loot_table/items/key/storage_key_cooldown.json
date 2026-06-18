@@ -38,8 +38,9 @@
                   ]
                 },
                 "minecraft:custom_data": {
+                  "itemID": "key_cooldown",
                   "ff_key_cooldown": true,
-                  "itemID": "key_cooldown"
+                  "ff_prevent_drop": true
                 }
               }
             }

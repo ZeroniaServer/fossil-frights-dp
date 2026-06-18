@@ -10,6 +10,6 @@ scoreboard players set @s ff_temple_run_centi 0
 scoreboard players set @s ff_temple_run_centi_tens 0
 scoreboard players set @s ff_temple_run_centi_ones 0
 clear @s
-item replace entity @s hotbar.0 with minecraft:amethyst_shard[minecraft:item_name={text:"Temple Run Restart",color:"yellow",italic:false},minecraft:lore=[{text:"Restart ",color:"yellow",italic:false,extra:[{text:"- Right Click",color:"white",italic:false}]},{text:"End ",color:"red",italic:false,extra:[{text:"- Drop",color:"white",italic:false}]},{text:"",extra:["temple_run_restart"]}],minecraft:tooltip_display={hidden_components:["minecraft:lore"]},minecraft:item_model="fossil-frights:general_items/temple_run_restart",minecraft:consumable={consume_seconds:0.001,animation:"none",sound:"minecraft:entity.item.pickup",has_consume_particles:false},minecraft:custom_data={ff_temple_run_restart:1b}] 1
+loot replace entity @s hotbar.0 loot fossil_frights:items/other/temple_run_restart
 scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
 function fossil_frights:temple_run/update_display

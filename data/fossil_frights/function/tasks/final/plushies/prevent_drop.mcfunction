@@ -1,8 +1,0 @@
-execute if score $present ff_plugin matches 1 run return 0
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/plesiosaur] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/plesiosaur
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/velociraptor] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/velociraptor
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/trike] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/trike
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/t_rex] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/t_rex
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/gold_t_rex] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/gold_t_rex
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/pterodactyl] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/pterodactyl
-execute as @e[type=minecraft:item,tag=!ff_final_reward,predicate=fossil_frights:entity/contents/plushie/sniffer] at @s run function fossil_frights:tasks/final/plushies/prevent_drop/sniffer

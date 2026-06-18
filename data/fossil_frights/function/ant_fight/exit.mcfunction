@@ -1,4 +1,5 @@
 tag @s remove ff_ant_fight
+tag @s remove ff_dropped_infinileaf
 function fossil_frights:ant_fight/lobby_sneak/reset
 scoreboard players set @s ff_ant_fight 0
 attribute @s minecraft:scale base set 1

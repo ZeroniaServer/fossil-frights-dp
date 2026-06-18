@@ -74,6 +74,7 @@ tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
+tag @s remove ff_dropped_infinileaf
 tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
 scoreboard players set @s ff_queue_order 0

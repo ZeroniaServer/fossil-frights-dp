@@ -26,7 +26,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_plushie": "gold_t_rex",
-                  "itemID": "gold_t-rex_plushie"
+                  "itemID": "gold_t_rex_plushie",
+                  "ff_prevent_drop": true
                 }
               }
             }

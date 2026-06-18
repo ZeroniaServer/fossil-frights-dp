@@ -26,7 +26,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_plushie": "plesiosaur",
-                  "itemID": "plesiosaur_plushie"
+                  "itemID": "plesiosaur_plushie",
+                  "ff_prevent_drop": true
                 }
               }
             }

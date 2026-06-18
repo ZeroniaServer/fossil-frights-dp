@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "ff_parkour_restart": true
+                        "itemID": "parkour_restart"
                     }
                 }
             }

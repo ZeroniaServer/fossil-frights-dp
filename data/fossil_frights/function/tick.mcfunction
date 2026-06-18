@@ -1,3 +1,4 @@
+function fossil_frights:items/dropped_items/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_glowtrap_viewer
 tag @a[tag=ff_heist_guard] add ff_glowtrap_viewer
@@ -29,7 +30,6 @@ execute if score $game_running ff_game_state matches 1 run function fossil_frigh
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
 execute as @a[tag=ff_active] run function fossil_frights:animations/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
-function fossil_frights:tasks/final/plushies/prevent_drop
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
