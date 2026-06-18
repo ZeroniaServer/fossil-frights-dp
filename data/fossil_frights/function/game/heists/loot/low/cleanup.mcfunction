@@ -12,5 +12,5 @@ execute as @e[tag=ff_trilobite] run data merge entity @s {view_range:1f}
 setblock -37 84 78 minecraft:piglin_head[rotation=1]
 execute as @e[tag=fh_golden_sword] run data merge entity @s {view_range:1f}
 execute as @e[tag=portal_core] run data merge entity @s {view_range:1f}
-execute as @e[tag=spyglass] run data merge entity @s {view_range:1f}
+execute as @e[tag=fh_spyglass] run data merge entity @s {view_range:1f}
 function fossil_frights:game/heists/loot/high_heavy/cleanup
