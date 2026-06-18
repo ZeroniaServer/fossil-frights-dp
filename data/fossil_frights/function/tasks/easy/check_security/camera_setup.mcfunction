@@ -16,7 +16,7 @@ scoreboard players set @e[type=cave_spider,tag=security_camera_9] ff_security_ca
 scoreboard players set @e[type=cave_spider,tag=security_camera_1] ff_security_camera 5
 scoreboard players set @e[type=cave_spider,tag=security_camera_3] ff_security_camera 6
 scoreboard players set @e[type=cave_spider,tag=security_camera_7] ff_security_camera 7
-scoreboard players set @e[type=cave_spider,tag=security_camera_8] ff_security_camera 8
+scoreboard players set @e[type=cave_spider,tag=security_camera_5] ff_security_camera 8
 scoreboard players set @e[type=cave_spider,tag=security_camera_4] ff_security_camera 9
-scoreboard players set @e[type=cave_spider,tag=security_camera_5] ff_security_camera 10
+scoreboard players set @e[type=cave_spider,tag=security_camera_8] ff_security_camera 10
 team join ff_security_camera @e[type=cave_spider,tag=security_camera]

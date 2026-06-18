@@ -1,0 +1,45 @@
+execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless entity @s[tag=ff_active] run return 0
+tag @s remove ff_map_region_set
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-15,y=80,z=9,dx=30,dy=8,dz=34] run function fossil_frights:map/region/foyer
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=80,z=14,dx=10,dy=7,dz=23] run function fossil_frights:map/region/gift_shop
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=80,z=14,dx=10,dy=7,dz=29] run function fossil_frights:map/region/cafe
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=21,y=80,z=8,dx=6,dy=5,dz=5] run function fossil_frights:map/region/bathroom_1
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=80,z=44,dx=53,dy=10,dz=17] run function fossil_frights:map/region/skeletons
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=80,z=62,dx=45,dy=10,dz=27] run function fossil_frights:map/region/aquatic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=27,y=78,z=31,dx=46,dy=23,dz=52] run function fossil_frights:map/region/ruins
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=41,y=69,z=32,dx=11,dy=8,dz=10] run function fossil_frights:map/region/ruins
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=34,y=64,z=43,dx=30,dy=13,dz=36] run function fossil_frights:map/region/deep_dark
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=21,y=91,z=9,dx=5,dy=9,dz=14] run function fossil_frights:map/region/humans
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=17,y=92,z=10,dx=3,dy=5,dz=4] run function fossil_frights:map/region/humans
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-27,y=94,z=9,dx=6,dy=5,dz=14] run function fossil_frights:map/region/bathroom_2
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-20,y=94,z=10,dx=2,dy=3,dz=4] run function fossil_frights:map/region/bathroom_2
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=19,y=94,z=66,dx=7,dy=6,dz=24] run function fossil_frights:map/region/terrarium
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=101,z=67,dx=7,dy=7,dz=22] run function fossil_frights:map/region/observatory
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-18,y=94,z=67,dx=36,dy=14,dz=22] run function fossil_frights:map/region/aviary
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=19,y=100,z=69,dx=7,dy=9,dz=20] run function fossil_frights:map/region/aviary
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=94,z=65,dx=7,dy=4,dz=24] run function fossil_frights:map/region/aviary
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-14,y=94,z=9,dx=28,dy=6,dz=33] run function fossil_frights:map/region/balcony
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-19,y=94,z=14,dx=38,dy=6,dz=8] run function fossil_frights:map/region/balcony
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-15,y=94,z=43,dx=30,dy=6,dz=23] run function fossil_frights:map/region/mezzanine
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=94,z=24,dx=10,dy=6,dz=41] run function fossil_frights:map/region/left_hall
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=94,z=23,dx=2,dy=3,dz=0] run function fossil_frights:map/region/left_hall
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=94,z=24,dx=10,dy=6,dz=41] run function fossil_frights:map/region/eggshibit
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-18,y=94,z=23,dx=2,dy=3,dz=0] run function fossil_frights:map/region/eggshibit
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=20,y=76,z=65,dx=6,dy=7,dz=6] run function fossil_frights:map/region/theatre
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=23,y=75,z=72,dx=5,dy=4,dz=11] run function fossil_frights:map/region/theatre
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=7,y=69,z=64,dx=15,dy=9,dz=22] run function fossil_frights:map/region/theatre
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-33,y=68,z=9,dx=39,dy=9,dz=58] run function fossil_frights:map/region/basement
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=75,z=10,dx=5,dy=8,dz=2] run function fossil_frights:map/region/start_room
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=10,y=70,z=13,dx=14,dy=8,dz=16] run function fossil_frights:map/region/start_room
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-21,y=100,z=9,dx=5,dy=9,dz=27] run function fossil_frights:map/region/precambrian
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=100,z=9,dx=4,dy=9,dz=24] run function fossil_frights:map/region/precambrian
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-14,y=103,z=31,dx=28,dy=6,dz=12] run function fossil_frights:map/region/paleozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=103,z=37,dx=25,dy=6,dz=13] run function fossil_frights:map/region/paleozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=104,z=33,dx=4,dy=5,dz=3] run function fossil_frights:map/region/paleozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=23,y=104,z=34,dx=3,dy=5,dz=2] run function fossil_frights:map/region/mesozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=104,z=37,dx=10,dy=5,dz=6] run function fossil_frights:map/region/mesozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=1,y=104,z=44,dx=25,dy=5,dz=6] run function fossil_frights:map/region/mesozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=100,z=9,dx=10,dy=9,dz=24] run function fossil_frights:map/region/cenozoic
+execute unless entity @s[tag=ff_map_region_set] if entity @s[x=16,y=104,z=34,dx=6,dy=5,dz=1] run function fossil_frights:map/region/cenozoic
+tag @s remove ff_map_region_set
