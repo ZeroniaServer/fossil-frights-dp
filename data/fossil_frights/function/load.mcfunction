@@ -109,6 +109,7 @@ scoreboard objectives add ff_heist_stolen_keys dummy
 scoreboard objectives add ff_heist_reward dummy
 scoreboard objectives add ff_heist_loot_state dummy
 scoreboard objectives add ff_heist_loot_value dummy
+scoreboard objectives add ff_heist_reveal dummy
 scoreboard objectives add ff_heist_flash dummy
 scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard objectives add ff_heist_regen_lock dummy

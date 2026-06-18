@@ -1,0 +1,4 @@
+$execute if score $$(lootId) ff_heist_reveal = $heist_reveal_slot ff_heist run scoreboard players operation $$(lootId) ff_heist_sidebar = $$(lootId) ff_heist_reveal
+$execute if score $$(lootId) ff_heist_reveal = $heist_reveal_slot ff_heist run scoreboard players display name $$(lootId) ff_heist_sidebar [{"text":"$","color":"yellow","italic":false},{"score":{"name":"$$(lootId)","objective":"ff_heist_loot_value"},"color":"yellow","italic":false},{"text":" $(lootName)","color":"white","italic":false}]
+$execute if score $$(lootId) ff_heist_reveal = $heist_reveal_slot ff_heist as @a[tag=ff_active,gamemode=!spectator] at @s run playsound minecraft:block.end_portal_frame.fill master @s ~ ~ ~ 1.0 1.2
+$execute if score $$(lootId) ff_heist_reveal = $heist_reveal_slot ff_heist as @a[gamemode=spectator] at @s run playsound minecraft:block.end_portal_frame.fill master @s ~ ~ ~ 1.0 1.2

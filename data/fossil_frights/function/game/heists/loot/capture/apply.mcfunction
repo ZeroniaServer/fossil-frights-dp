@@ -5,7 +5,8 @@ function fossil_frights:game/heists/loot/header
 $scoreboard players set $(key) ff_heist_loot_state 3
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
-playsound minecraft:entity.experience_orb.pickup player @a[tag=ff_heist_thief] ~ ~ ~ 0.7 1.6
+execute as @a[tag=ff_active,gamemode=!spectator] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.7 1.6
+execute as @a[gamemode=spectator] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.7 1.6
 particle minecraft:happy_villager ~ ~0.2 ~ 0.25 0.25 0.25 0 12 force
 kill @s
 execute if score $heist_loot ff_heist matches 1000.. run function fossil_frights:game/heists/thieves_win

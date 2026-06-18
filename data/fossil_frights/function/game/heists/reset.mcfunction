@@ -3,6 +3,9 @@ function fossil_frights:game/heists/oxidized_bars/clear
 function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:game/heists/loot/reset
 function fossil_frights:game/heists/loot/high/cleanup
+schedule clear fossil_frights:game/heists/start_reveal/next
+schedule clear fossil_frights:game/heists/start_reveal/goodluck
+schedule clear fossil_frights:game/heists/start_reveal/go
 kill @e[type=minecraft:marker,tag=ff_ice_cannon]
 kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block]
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze]
@@ -25,6 +28,7 @@ scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set $heist_regen_lock_timer ff_heist 0
+scoreboard players set $timer_frozen ff_day 0
 gamerule naturalRegeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
@@ -46,4 +50,5 @@ scoreboard players set $heist_sec_tens ff_heist 0
 scoreboard players set $heist_sec_ones ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
+scoreboard players reset * ff_heist_reveal
 function fossil_frights:key/lock/setup

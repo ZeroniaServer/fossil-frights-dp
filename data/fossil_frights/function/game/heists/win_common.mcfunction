@@ -1,4 +1,8 @@
 scoreboard players set $heist_round_active ff_game_state 0
+schedule clear fossil_frights:game/heists/start_reveal/next
+schedule clear fossil_frights:game/heists/start_reveal/goodluck
+schedule clear fossil_frights:game/heists/start_reveal/go
+scoreboard players set $timer_frozen ff_day 0
 function fossil_frights:game/heists/loot/low/cleanup
 function fossil_frights:game/heists/loot/high/cleanup
 function fossil_frights:game/heists/oxidized_bars/clear
