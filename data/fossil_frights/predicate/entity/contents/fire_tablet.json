@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "itemID": "lava_tablet"
+                        "itemID": "fire_tablet"
                     }
                 }
             }

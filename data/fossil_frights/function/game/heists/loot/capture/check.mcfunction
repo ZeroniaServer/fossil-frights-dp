@@ -35,7 +35,7 @@ execute if items entity @s contents *[custom_data~{itemID:"chlorine_tablet"}] ru
 execute if items entity @s contents *[custom_data~{itemID:"scrap_metal"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_scrap_metal"}
 execute if items entity @s contents *[custom_data~{itemID:"soap"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_soap"}
 execute if items entity @s contents *[custom_data~{itemID:"dry_ice"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_dry_ice"}
-execute if items entity @s contents *[custom_data~{itemID:"lava_tablet"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fire_tablet"}
+execute if items entity @s contents *[custom_data~{itemID:"fire_tablet"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fire_tablet"}
 execute if items entity @s contents *[custom_data~{itemID:"golden_nautilus"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_nautilus"}
 execute if items entity @s contents *[custom_data~{itemID:"skeleton_plushie"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_skeleton_plushie"}
 execute if items entity @s contents *[custom_data~{itemID:"fish_food"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_fish_food"}
