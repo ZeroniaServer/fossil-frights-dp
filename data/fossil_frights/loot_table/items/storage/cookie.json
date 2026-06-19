@@ -17,7 +17,8 @@
                   "saturation": 0.4
                 },
                 "minecraft:custom_data": {
-                  "itemID": "cookie"
+                  "itemID": "cookie",
+                  "ff_heist_loot": true
                 }
               }
             }

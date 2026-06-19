@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "soap"
+                  "itemID": "soap",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

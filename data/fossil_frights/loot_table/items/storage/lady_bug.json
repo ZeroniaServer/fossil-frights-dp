@@ -22,7 +22,8 @@
                   "text": "Lady Bug"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "lady_bug"
+                  "itemID": "lady_bug",
+                  "ff_heist_loot": true
                 }
               }
             }

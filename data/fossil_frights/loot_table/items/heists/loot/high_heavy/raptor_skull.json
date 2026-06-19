@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "raptor_skull"
+                  "itemID": "raptor_skull",
+                  "ff_heist_loot": true
                 }
               }
             }

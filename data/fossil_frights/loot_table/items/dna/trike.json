@@ -22,7 +22,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "trike_dna_cloth"
+                  "itemID": "trike_dna_cloth",
+                  "ff_heist_loot": true
                 },
                 "minecraft:max_stack_size": 1
               }

@@ -18,7 +18,8 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
-                  "ff_heist_low_loot": true
+                  "ff_heist_low_loot": true,
+                  "ff_heist_loot": true
                 }
               }
             }

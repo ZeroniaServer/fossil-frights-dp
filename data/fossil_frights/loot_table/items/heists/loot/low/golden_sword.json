@@ -18,7 +18,8 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "golden_sword",
-                  "ff_heist_low_loot": true
+                  "ff_heist_low_loot": true,
+                  "ff_heist_loot": true
                 },
                 "minecraft:enchantment_glint_override": true
               }

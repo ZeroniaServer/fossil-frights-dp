@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "pink_coral_jelly"
+                  "itemID": "pink_coral_jelly",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

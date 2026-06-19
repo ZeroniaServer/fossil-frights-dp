@@ -26,7 +26,8 @@
                   "text": ""
                 },
                 "minecraft:custom_data": {
-                  "itemID": "leather"
+                  "itemID": "leather",
+                  "ff_heist_loot": true
                 }
               }
             }

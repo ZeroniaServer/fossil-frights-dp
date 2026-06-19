@@ -17,7 +17,8 @@
                   "italic": false
                 },
                 "minecraft:custom_data": {
-                  "itemID": "hoverboard"
+                  "itemID": "hoverboard",
+                  "ff_heist_loot": true
                 }
               }
             }

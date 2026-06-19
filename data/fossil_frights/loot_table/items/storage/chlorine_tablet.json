@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "chlorine_tablet"
+                  "itemID": "chlorine_tablet",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "crab"
+                  "itemID": "crab",
+                  "ff_heist_loot": true
                 }
               }
             }

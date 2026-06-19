@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "dry_ice"
+                  "itemID": "dry_ice",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

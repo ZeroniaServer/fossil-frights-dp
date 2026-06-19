@@ -22,7 +22,8 @@
                   "text": "Muddy Sherd"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "muddy_sherd"
+                  "itemID": "muddy_sherd",
+                  "ff_heist_loot": true
                 }
               }
             }

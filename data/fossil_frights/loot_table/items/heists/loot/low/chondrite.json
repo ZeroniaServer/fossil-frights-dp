@@ -18,7 +18,8 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "chondrite",
-                  "ff_heist_low_loot": true
+                  "ff_heist_low_loot": true,
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_model": "minecraft:wind_charge"
               }

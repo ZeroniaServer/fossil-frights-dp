@@ -22,7 +22,8 @@
                   "text": "Fish Food"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "fish_food"
+                  "itemID": "fish_food",
+                  "ff_heist_loot": true
                 }
               }
             }

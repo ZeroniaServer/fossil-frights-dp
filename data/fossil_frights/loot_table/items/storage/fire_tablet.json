@@ -22,7 +22,8 @@
                   "text": "Fire Tablet"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "lava_tablet"
+                  "itemID": "lava_tablet",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "color": "red",

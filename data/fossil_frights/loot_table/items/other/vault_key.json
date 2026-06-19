@@ -17,8 +17,9 @@
                   "italic": false
                 },
                 "minecraft:custom_data": {
+                  "itemID": "vault_key",
                   "ff_vault_key": true,
-                  "itemID": "vault_key"
+                  "ff_heist_loot": true
                 }
               }
             }

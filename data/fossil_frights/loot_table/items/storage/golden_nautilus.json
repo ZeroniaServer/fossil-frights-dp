@@ -20,7 +20,8 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "golden_nautilus"
+                  "itemID": "golden_nautilus",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

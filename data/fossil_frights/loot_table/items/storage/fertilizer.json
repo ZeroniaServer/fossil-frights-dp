@@ -22,7 +22,8 @@
                   "text": "Fertilizer"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "fertilizer"
+                  "itemID": "fertilizer",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "color": "dark_green",

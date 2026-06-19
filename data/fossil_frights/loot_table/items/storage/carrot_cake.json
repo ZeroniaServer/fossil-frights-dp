@@ -22,7 +22,8 @@
                   "text": "Carrot Cake"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "carrot_cake"
+                  "itemID": "carrot_cake",
+                  "ff_heist_loot": true
                 }
               }
             }

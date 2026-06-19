@@ -71,7 +71,8 @@
                   "text": ""
                 },
                 "minecraft:custom_data": {
-                  "itemID": "basketball"
+                  "itemID": "basketball",
+                  "ff_heist_loot": true
                 }
               }
             }

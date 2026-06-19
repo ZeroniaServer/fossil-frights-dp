@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "t_rex_skull"
+                  "itemID": "t_rex_skull",
+                  "ff_heist_loot": true
                 }
               }
             }

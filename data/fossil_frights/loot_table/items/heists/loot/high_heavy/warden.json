@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "warden"
+                  "itemID": "warden",
+                  "ff_heist_loot": true
                 }
               }
             }

@@ -31,7 +31,8 @@
                   "text": ""
                 },
                 "minecraft:custom_data": {
-                  "itemID": "cotton_candy_pink"
+                  "itemID": "cotton_candy_pink",
+                  "ff_heist_loot": true
                 }
               }
             }

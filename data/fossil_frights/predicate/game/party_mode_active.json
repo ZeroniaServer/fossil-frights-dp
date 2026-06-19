@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:score",
+        "target": {
+            "type": "minecraft:fixed",
+            "name": "$party_mode_active"
+        },
+        "score": "ff_game_state"
+    },
+    "range": 1
+}

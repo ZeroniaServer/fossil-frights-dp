@@ -25,7 +25,8 @@
                   "text": "Water Balloon"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "water_balloon"
+                  "itemID": "water_balloon",
+                  "ff_heist_loot": true
                 }
               }
             }

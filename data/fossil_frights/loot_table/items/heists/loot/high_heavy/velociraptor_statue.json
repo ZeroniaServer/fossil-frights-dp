@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "velociraptor_statue"
+                  "itemID": "velociraptor_statue",
+                  "ff_heist_loot": true
                 }
               }
             }

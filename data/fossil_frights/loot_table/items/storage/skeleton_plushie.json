@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "skeleton_plushie"
+                  "itemID": "skeleton_plushie",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

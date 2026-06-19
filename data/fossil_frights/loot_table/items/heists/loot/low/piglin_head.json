@@ -18,7 +18,8 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "piglin_head",
-                  "ff_heist_low_loot": true
+                  "ff_heist_low_loot": true,
+                  "ff_heist_loot": true
                 }
               }
             }

@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "vault"
+                  "itemID": "vault",
+                  "ff_heist_loot": true
                 }
               }
             }

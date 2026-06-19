@@ -1,38 +1,20 @@
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run tag @s add ff_heist_high_loot_drop_lady_bug
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"basketball"}] run tag @s add ff_heist_high_loot_drop
+# high
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"basketball"}] run tag @s add ff_heist_high_loot_drop_basketball
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault_key"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault_key"}] run tag @s add ff_heist_high_loot_drop_lost_key
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"hoverboard"}] run tag @s add ff_heist_high_loot_drop
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run tag @s add ff_heist_high_loot_drop_lady_bug
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"hoverboard"}] run tag @s add ff_heist_high_loot_drop_hoverboard
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_sniffer_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_trike_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_t_rex_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_velociraptor_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"plesiosaur_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"plesiosaur_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_plesiosaur_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"pterodactyl_dna_cloth"}] run tag @s add ff_heist_high_loot_drop
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"pterodactyl_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_pterodactyl_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run tag @s add ff_heist_high_loot_drop_treasure_chest
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"warden"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"warden"}] run tag @s add ff_heist_high_loot_drop_warden
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"crab"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"crab"}] run tag @s add ff_heist_high_loot_drop_crab
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run tag @s add ff_heist_high_loot_drop_t_rex_skull
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run tag @s add ff_heist_high_loot_drop
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run tag @s add ff_heist_high_loot_drop_raptor_skull
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"biplane"}] run tag @s add ff_heist_high_loot_drop
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_sniffer_dna_cloth
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_t_rex_dna_cloth
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_trike_dna_cloth
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault_key"}] run tag @s add ff_heist_high_loot_drop_lost_key
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_velociraptor_dna_cloth
+# high_heavy
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"biplane"}] run tag @s add ff_heist_high_loot_drop_biplane
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault"}] run tag @s add ff_heist_high_loot_drop
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"crab"}] run tag @s add ff_heist_high_loot_drop_crab
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run tag @s add ff_heist_high_loot_drop_raptor_skull
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run tag @s add ff_heist_high_loot_drop_t_rex_skull
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run tag @s add ff_heist_high_loot_drop_treasure_chest
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault"}] run tag @s add ff_heist_high_loot_drop_vault
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_statue"}] run tag @s add ff_heist_high_loot_drop
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_statue"}] run tag @s add ff_heist_high_loot_drop_velociraptor_statue
-execute as @e[type=minecraft:item,tag=ff_heist_high_loot_drop,tag=!ff_heist_high_loot_drop_timed] run data merge entity @s {Age:5600s}
-tag @e[type=minecraft:item,tag=ff_heist_high_loot_drop,tag=!ff_heist_high_loot_drop_timed] add ff_heist_high_loot_drop_timed
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"warden"}] run tag @s add ff_heist_high_loot_drop_warden

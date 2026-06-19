@@ -23,7 +23,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "treasure_chest"
+                  "itemID": "treasure_chest",
+                  "ff_heist_loot": true
                 }
               }
             }

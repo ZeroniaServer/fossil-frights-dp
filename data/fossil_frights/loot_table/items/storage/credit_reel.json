@@ -22,7 +22,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "credit_reel"
+                  "itemID": "credit_reel",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

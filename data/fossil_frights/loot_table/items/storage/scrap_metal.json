@@ -17,7 +17,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "scrap_metal"
+                  "itemID": "scrap_metal",
+                  "ff_heist_loot": true
                 },
                 "minecraft:item_name": {
                   "italic": false,

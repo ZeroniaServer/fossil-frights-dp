@@ -22,7 +22,8 @@
                   "text": "Empty Popcorn Bucket"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "empty_popcorn"
+                  "itemID": "empty_popcorn",
+                  "ff_heist_loot": true
                 }
               }
             }
