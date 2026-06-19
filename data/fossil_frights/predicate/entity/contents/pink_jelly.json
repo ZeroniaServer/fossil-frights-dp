@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "itemID": "pink_coral_jelly"
+                        "itemID": "pink_jelly"
                     }
                 }
             }

@@ -9,7 +9,7 @@
                     "container.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "pink_coral_jelly"
+                                "itemID": "pink_jelly"
                             }
                         }
                     }
@@ -24,7 +24,7 @@
                     "weapon.offhand": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "pink_coral_jelly"
+                                "itemID": "pink_jelly"
                             }
                         }
                     }
@@ -39,7 +39,7 @@
                     "armor.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "pink_coral_jelly"
+                                "itemID": "pink_jelly"
                             }
                         }
                     }
@@ -54,7 +54,7 @@
                     "player.cursor": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "pink_coral_jelly"
+                                "itemID": "pink_jelly"
                             }
                         }
                     }
@@ -69,7 +69,7 @@
                     "player.crafting.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "pink_coral_jelly"
+                                "itemID": "pink_jelly"
                             }
                         }
                     }
