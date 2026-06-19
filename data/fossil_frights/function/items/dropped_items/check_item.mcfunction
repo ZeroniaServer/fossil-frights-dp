@@ -12,6 +12,6 @@ execute if items entity @s contents *[custom_data~{itemID:"parkour_restart"}] ru
 execute if items entity @s contents *[custom_data~{ff_prevent_drop:true}] if function fossil_frights:items/dropped_items/check_thrower run function fossil_frights:items/dropped_items/return_item
 execute if items entity @s contents *[custom_data~{ff_prevent_drop:true}] run return run kill @s
 
-execute if predicate fossil_frights:game/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_loot:true}] run data modify entity @s Age set value 5600
-execute if predicate fossil_frights:game/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_loot:true}] run data modify entity @s Age set value -32768
 execute unless predicate fossil_frights:game/heist_mode_active run data modify entity @s Age set value -32768
+execute if predicate fossil_frights:game/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_loot:true}] run data modify entity @s Age set value -32768
+execute if predicate fossil_frights:game/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_loot:true}] run function fossil_frights:items/dropped_items/init_heist_loot

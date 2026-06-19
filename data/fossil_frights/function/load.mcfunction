@@ -115,6 +115,7 @@ scoreboard objectives add ff_heist_flash dummy
 scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy
+scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
@@ -252,6 +253,8 @@ scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0
 scoreboard players set $lb_pending ff_active_uuid_2 0
 scoreboard players set $lb_pending ff_active_uuid_3 0
+scoreboard players set #ten ff_dropped_item_despawn_timestamp 10
+scoreboard players set #twenty ff_dropped_item_despawn_timestamp 20
 scoreboard objectives modify ff_task_tracker numberformat blank
 scoreboard objectives modify ff_heist numberformat styled {"color":"gold"}
 scoreboard objectives modify ff_heist_sidebar numberformat blank
