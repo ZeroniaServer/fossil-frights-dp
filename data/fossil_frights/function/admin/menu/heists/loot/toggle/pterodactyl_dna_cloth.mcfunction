@@ -7,6 +7,7 @@ scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
 execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
 execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/high/pterodactyl_dna_cloth
 execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/pterodactyl_dna_cloth
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:key/lock/setup
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render

@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:interaction,tag=ff_heist_lost_key_click] at @s run function fossil_frights:game/heists/loot/particles/helpers/emit_standard {y:"0.35",dx:"0.1",dy:"0.06",dz:"0.1",count:"1"}
