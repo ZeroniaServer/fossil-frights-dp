@@ -1,0 +1,1 @@
+tellraw @s [{"text":"ℹ ","color":"red"},{"text":"Speedrun: Shows a speedrun delta on screen after each day to better gauge your run time and improve speedruns. (Currently: ","color":"white"},{"text":"Hidden","color":"red"},{"text":")","color":"white"}]

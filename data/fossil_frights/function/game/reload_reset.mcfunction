@@ -22,6 +22,8 @@ scoreboard players set @a ff_cmd_tutorial 0
 scoreboard players enable @a ff_cmd_tutorial
 scoreboard players set @a ff_cmd_info 0
 scoreboard players enable @a ff_cmd_info
+scoreboard players set @a ff_cmd_party 0
+scoreboard players enable @a ff_cmd_party
 scoreboard players set @a ff_cmd_heists 0
 scoreboard players enable @a ff_cmd_heists
 scoreboard players set @a ff_cmd_join_guard 0

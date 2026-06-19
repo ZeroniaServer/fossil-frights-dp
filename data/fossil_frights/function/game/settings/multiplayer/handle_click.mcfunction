@@ -8,4 +8,5 @@ execute if score $party_member_count ff_game_state matches 2.. run function foss
 execute if score $party_member_count ff_game_state matches 2.. run return 0
 execute if score $invite_pending ff_game_state matches 1 run function fossil_frights:messages/multiplayer/invite_already_sent
 execute if score $invite_pending ff_game_state matches 1 run return 0
+function fossil_frights:messages/settings/invite_terminal
 function fossil_frights:game/settings/multiplayer/gui/open

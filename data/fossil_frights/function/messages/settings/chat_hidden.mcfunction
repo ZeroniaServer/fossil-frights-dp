@@ -1,0 +1,1 @@
+tellraw @s [{"text":"ℹ ","color":"red"},{"text":"Chat: Shows or hides the chat of other players on the server, except from teammates.","color":"white"},{"text":"\n   Can be toggled anytime with /mutechat ","color":"gray"},{"text":"(Currently: ","color":"white"},{"text":"Hidden","color":"red"},{"text":")","color":"white"}]

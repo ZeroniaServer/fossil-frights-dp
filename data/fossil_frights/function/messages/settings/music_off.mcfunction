@@ -1,0 +1,1 @@
+tellraw @s [{"text":"ℹ ","color":"red"},{"text":"Music: Turns on or off the custom game music played during your shift.","color":"white"},{"text":"\n   You may alternatively control the volume in 'Jukebox/Noteblocks' ","color":"gray"},{"text":"(Currently: ","color":"white"},{"text":"Off","color":"red"},{"text":")","color":"white"}]

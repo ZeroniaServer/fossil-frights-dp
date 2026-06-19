@@ -16,6 +16,7 @@ scoreboard players enable @s ff_cmd_stats
 scoreboard players enable @s ff_cmd_invite
 scoreboard players enable @s ff_cmd_tutorial
 scoreboard players enable @s ff_cmd_info
+scoreboard players enable @s ff_cmd_party
 scoreboard players enable @s ff_cmd_heists
 scoreboard players enable @s ff_cmd_join_guard
 scoreboard players enable @s ff_cmd_join_thief
@@ -56,6 +57,9 @@ execute if score @s ff_cmd_tutorial matches 1.. run scoreboard players set @s ff
 execute if score @s ff_cmd_info matches 1.. run function fossil_frights:command/info
 execute if score @s ff_cmd_info matches 1.. run scoreboard players enable @s ff_cmd_info
 execute if score @s ff_cmd_info matches 1.. run scoreboard players set @s ff_cmd_info 0
+execute if score @s ff_cmd_party matches 1.. run function fossil_frights:command/party
+execute if score @s ff_cmd_party matches 1.. run scoreboard players enable @s ff_cmd_party
+execute if score @s ff_cmd_party matches 1.. run scoreboard players set @s ff_cmd_party 0
 execute if score @s ff_cmd_heists matches 1.. run function fossil_frights:command/heists
 execute if score @s ff_cmd_heists matches 1.. run scoreboard players enable @s ff_cmd_heists
 execute if score @s ff_cmd_heists matches 1.. run scoreboard players set @s ff_cmd_heists 0

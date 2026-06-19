@@ -14,6 +14,7 @@ function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
 function fossil_frights:game/settings/speedrun_toggle/reset
+function fossil_frights:game/settings/message_sync
 tag @a[tag=ff_active] remove ff_settings_spectator_deny
 tag @a[tag=ff_active] remove ff_settings_music_off
 tag @a[tag=ff_active] remove ff_muted_chat

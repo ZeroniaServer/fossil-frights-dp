@@ -76,6 +76,7 @@ scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/settings/apply_active_preferences
+function fossil_frights:game/settings/message_sync
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh

@@ -1,0 +1,1 @@
+tellraw @s [{"text":"ℹ ","color":"green"},{"text":"Spectators: Allows or denies spectators from watching your run. (Currently: ","color":"white"},{"text":"Allow","color":"green"},{"text":")","color":"white"}]

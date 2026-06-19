@@ -50,6 +50,7 @@ scoreboard objectives add ff_cmd_stats trigger
 scoreboard objectives add ff_cmd_invite trigger
 scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
+scoreboard objectives add ff_cmd_party trigger
 scoreboard objectives add ff_cmd_heists trigger
 scoreboard objectives add ff_cmd_join_guard trigger
 scoreboard objectives add ff_cmd_join_thief trigger
@@ -185,10 +186,12 @@ scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
 scoreboard players set $party_button_lock ff_game_state 0
+scoreboard players set $party_button_prev ff_gui 0
 scoreboard players set $party_member_count ff_game_state 0
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_button_lock ff_game_state 0
+scoreboard players set $heist_button_prev ff_gui 0
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0
