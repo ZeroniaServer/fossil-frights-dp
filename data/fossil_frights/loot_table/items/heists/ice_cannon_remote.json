@@ -82,8 +82,9 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
+                      "itemID": "ice_cannon_remote",
                       "ff_heist_ice_cannon_remote": true,
-                      "itemID": "ice_cannon_remote"
+                      "ff_prevent_drop": true
                     }
                   }
                 },

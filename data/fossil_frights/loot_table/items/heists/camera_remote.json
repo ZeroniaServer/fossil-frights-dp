@@ -92,8 +92,9 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
+                      "itemID": "camera_remote",
                       "ff_heist_camera_remote": true,
-                      "itemID": "camera_remote"
+                      "ff_prevent_drop": true
                     }
                   }
                 },
