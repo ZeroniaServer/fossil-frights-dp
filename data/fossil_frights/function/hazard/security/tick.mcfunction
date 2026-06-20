@@ -13,34 +13,6 @@ scoreboard players remove #security_alarm_timer ff_hazard_rng 1
 execute if score #security_alarm_timer ff_hazard_rng matches ..0 run scoreboard players set #security_alarm_timer ff_hazard_rng 12
 execute if score #security_alarm_timer ff_hazard_rng matches 12 positioned -27 71 40 run playsound minecraft:block.note_block.bit master @a[distance=..20] ~ ~ ~ 3.0 1.3
 
-# If a player is within 3 blocks of an idle gate and near a powered mangrove button,
-# trigger the nearest gate only. Buttons are expected at head height.
-execute as @a at @s positioned ~-2 ~1 ~-2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-1 ~1 ~-2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~ ~1 ~-2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~1 ~1 ~-2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~2 ~1 ~-2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-2 ~1 ~-1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~2 ~1 ~-1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-2 ~1 ~ if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~ ~1 ~ if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~2 ~1 ~ if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-2 ~1 ~1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~2 ~1 ~1 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-2 ~1 ~2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~-1 ~1 ~2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~ ~1 ~2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~1 ~1 ~2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-execute as @a at @s positioned ~2 ~1 ~2 if block ~ ~ ~ minecraft:mangrove_button[powered=true] run function fossil_frights:hazard/security/try_trigger_player_button
-
 scoreboard players remove @e[type=minecraft:marker,tag=ff_gate_busy,scores={ff_gate_timer=1..}] ff_gate_timer 1
 
 execute as @e[type=minecraft:marker,tag=ff_gate_open_mid,scores={ff_gate_timer=..0}] run function fossil_frights:hazard/security/gate_3x3_open_mid
