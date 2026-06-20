@@ -1,3 +1,14 @@
+setblock -16 80 72 minecraft:water_cauldron[level=3] strict
+setblock -9 70 53 minecraft:water_cauldron[level=2] strict
+setblock -10 70 53 minecraft:water_cauldron[level=3] strict
+setblock 21 80 11 minecraft:water_cauldron[level=2] strict
+setblock 21 80 9 minecraft:water_cauldron[level=3] strict
+setblock 26 80 9 minecraft:water_cauldron[level=3] strict
+setblock -23 94 17 minecraft:water_cauldron[level=3] strict
+setblock -23 94 14 minecraft:water_cauldron[level=3] strict
+setblock -25 94 14 minecraft:water_cauldron[level=3] strict
+setblock -25 94 17 minecraft:water_cauldron[level=3] strict
+setblock -8 70 46 minecraft:water_cauldron[level=1] strict
 execute as @e[type=minecraft:item_display,tag=museum_map] run data merge entity @s {Glowing:0b}
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute if score $victory_complete ff_game_state matches 1 run return 0
