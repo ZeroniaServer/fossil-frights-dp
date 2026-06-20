@@ -13,6 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "text": "Invisimask",
+                  "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
@@ -45,6 +46,15 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "invisimask",
                   "ff_heist_invisimask": true,
@@ -64,6 +74,7 @@
               "components": {
                 "minecraft:item_name": {
                   "text": "Invisimask",
+                  "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
@@ -96,6 +107,15 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "invisimask",
                   "ff_heist_invisimask": true,
@@ -115,6 +135,7 @@
               "components": {
                 "minecraft:item_name": {
                   "text": "Invisimask",
+                  "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
@@ -147,6 +168,15 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "invisimask",
                   "ff_heist_invisimask": true,
@@ -166,6 +196,7 @@
               "components": {
                 "minecraft:item_name": {
                   "text": "Invisimask",
+                  "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
@@ -198,6 +229,15 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "invisimask",
                   "ff_heist_invisimask": true,

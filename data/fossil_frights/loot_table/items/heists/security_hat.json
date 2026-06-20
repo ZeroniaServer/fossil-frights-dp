@@ -13,12 +13,16 @@
               "components": {
                 "minecraft:item_name": {
                   "text": "Security Hat",
+                  "color": "white",
                   "italic": false
                 },
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
@@ -29,9 +33,6 @@
                   ]
                 },
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:equippable": {
-                  "slot": "head"
-                },
                 "minecraft:custom_data": {
                   "itemID": "security_guard_hat",
                   "ff_heist_security_hat": true,
