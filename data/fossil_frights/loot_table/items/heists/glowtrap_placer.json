@@ -88,8 +88,9 @@
                   }
                 },
                 "minecraft:custom_data": {
+                  "itemID": "glowtrap_placer",
                   "ff_heist_glowtrap_placer": true,
-                  "itemID": "glowtrap_placer"
+                  "ff_prevent_drop": true
                 }
               }
             }

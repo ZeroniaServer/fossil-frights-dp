@@ -46,9 +46,10 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
+                  "itemID": "invisimask",
                   "ff_heist_invisimask": true,
                   "ff_heist_invisimask_variant": "creeper",
-                  "itemID": "invisimask"
+                  "ff_prevent_drop": true
                 }
               }
             }
@@ -96,9 +97,10 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
+                  "itemID": "invisimask",
                   "ff_heist_invisimask": true,
                   "ff_heist_invisimask_variant": "skeleton",
-                  "itemID": "invisimask"
+                  "ff_prevent_drop": true
                 }
               }
             }
@@ -146,9 +148,10 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
+                  "itemID": "invisimask",
                   "ff_heist_invisimask": true,
                   "ff_heist_invisimask_variant": "zombie",
-                  "itemID": "invisimask"
+                  "ff_prevent_drop": true
                 }
               }
             }
@@ -196,9 +199,10 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
+                  "itemID": "invisimask",
                   "ff_heist_invisimask": true,
                   "ff_heist_invisimask_variant": "enderman",
-                  "itemID": "invisimask"
+                  "ff_prevent_drop": true
                 }
               }
             }

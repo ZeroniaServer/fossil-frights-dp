@@ -47,8 +47,9 @@
                   }
                 ],
                 "minecraft:custom_data": {
+                  "itemID": "night_stick",
                   "ff_heist_night_stick": true,
-                  "itemID": "night_stick"
+                  "ff_prevent_drop": true
                 }
               }
             }

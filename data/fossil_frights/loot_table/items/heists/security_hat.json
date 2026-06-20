@@ -33,8 +33,9 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
+                  "itemID": "security_guard_hat",
                   "ff_heist_security_hat": true,
-                  "itemID": "security_guard_hat"
+                  "ff_prevent_drop": true
                 }
               }
             }
