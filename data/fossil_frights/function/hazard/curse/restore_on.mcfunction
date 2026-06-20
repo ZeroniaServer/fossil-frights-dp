@@ -27,3 +27,4 @@ fill -28 107 8 22 113 97 minecraft:light[level=15] replace minecraft:light[level
 fill 23 107 8 73 113 97 minecraft:light[level=15] replace minecraft:light[level=0]
 fill -28 114 8 22 117 97 minecraft:light[level=15] replace minecraft:light[level=0]
 fill 23 114 8 73 117 97 minecraft:light[level=15] replace minecraft:light[level=0]
+data modify entity @e[limit=1,type=item_display,tag=ff_human_face_cut_out_board] brightness set value {block:11,sky:11}

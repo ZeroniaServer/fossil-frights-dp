@@ -56,6 +56,7 @@ execute if score #lights_phase_now ff_hazard_rng matches 5 run fill -28 100 8 22
 execute if score #lights_phase_now ff_hazard_rng matches 5 run fill 23 100 8 73 106 97 minecraft:redstone_lamp[lit=false] replace minecraft:glowstone
 execute if score #lights_phase_now ff_hazard_rng matches 5 run fill -28 100 8 22 106 97 minecraft:light[level=0] replace minecraft:light[level=15]
 execute if score #lights_phase_now ff_hazard_rng matches 5 run fill 23 100 8 73 106 97 minecraft:light[level=0] replace minecraft:light[level=15]
+execute if score #lights_phase_now ff_hazard_rng matches 5 run data remove entity @n[type=item_display,tag=ff_human_face_cut_out_board] brightness
 execute if score #lights_phase_now ff_hazard_rng matches 5 run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 0.7 1.0
 execute if score #lights_phase_now ff_hazard_rng matches 5 run scoreboard players set #lights_start_phase ff_hazard_rng 6
 execute if score #lights_phase_now ff_hazard_rng matches 5 run schedule function fossil_frights:hazard/lights/start 8t
