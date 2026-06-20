@@ -1,4 +1,6 @@
 tag @s remove ff_ant_fight
+scoreboard players reset @s ff_ant_combo
+scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 tag @s remove ff_dropped_infinileaf
 function fossil_frights:ant_fight/lobby_sneak/reset
 scoreboard players set @s ff_ant_fight 0

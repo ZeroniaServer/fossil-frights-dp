@@ -7,12 +7,16 @@ execute if entity @s[tag=ff_ant_fight] unless predicate fossil_frights:player/in
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_top_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_immunity 0
+execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_combo 0
 execute if entity @s[tag=ff_ant_fight,scores={ff_ant_immunity=1..}] run scoreboard players remove @s ff_ant_immunity 1
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score > @s ff_ant_top_score run scoreboard players operation @s ff_ant_top_score = @s ff_ant_score
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score matches 10.. run advancement grant @s only fossil_frights:03_lobby/warrior_ant
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_best
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/lobby_sneak_tick
-execute if entity @s[tag=ff_ant_fight] run title @s actionbar [{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]
+execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run title @s actionbar ["",{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"}}," ",{"text":"","color":"green","extra":["(+",{"score":{"name":"@s","objective":"ff_ant_combo"}},")"]}]
+execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo
+execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo_shown_until_timestamp
+execute if entity @s[tag=ff_ant_fight] unless score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run title @s actionbar [{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]
 execute if entity @s[tag=ff_ant_fight] run return 0
 execute unless entity @s[gamemode=adventure,tag=!ff_active] if entity @s[tag=ff_ant_lobby_blind] run function fossil_frights:ant_fight/lobby_sneak/reset
 execute if entity @s[gamemode=adventure,tag=!ff_active] positioned -36.5 76 104.5 if entity @s[distance=..24] run function fossil_frights:ant_fight/lobby_sneak_tick

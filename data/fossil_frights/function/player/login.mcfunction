@@ -79,6 +79,8 @@ tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
 scoreboard players set @s ff_queue_order 0
 scoreboard players set @s ff_ant_fight 0
+scoreboard players reset @s ff_ant_combo
+scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 scoreboard players set @s ff_tutorial 0
 scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0

@@ -17,6 +17,8 @@ scoreboard players set @s ff_day10_best 0
 scoreboard players set @s ff_parkour_best 0
 scoreboard players set @s ff_temple_run_best 0
 scoreboard players set @s ff_ant_score 0
+scoreboard players reset @s ff_ant_combo
+scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 scoreboard players set @s ff_ant_top_score 0
 function fossil_frights:leaderboards/sync_entry
 function fossil_frights:leaderboards/display/refresh

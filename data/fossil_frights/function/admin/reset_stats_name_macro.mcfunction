@@ -17,6 +17,8 @@ $scoreboard players set $(name) ff_day10_best 0
 $scoreboard players set $(name) ff_parkour_best 0
 $scoreboard players set $(name) ff_temple_run_best 0
 $scoreboard players set $(name) ff_ant_score 0
+$scoreboard players reset $(name) ff_ant_combo
+$scoreboard players reset $(name) ff_ant_combo_shown_until_timestamp
 $scoreboard players set $(name) ff_ant_top_score 0
 $data remove storage fossil_frights:leaderboards entries[{name:"$(name)"}]
 $data remove storage fossil_frights:leaderboards revoked[{name:"$(name)"}]

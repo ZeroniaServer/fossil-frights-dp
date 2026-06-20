@@ -14,6 +14,8 @@ scoreboard objectives add ff_ant_proj_1 dummy
 scoreboard objectives add ff_ant_proj_2 dummy
 scoreboard objectives add ff_ant_proj_3 dummy
 scoreboard objectives add ff_ant_display dummy
+scoreboard objectives add ff_ant_combo dummy
+scoreboard objectives add ff_ant_combo_shown_until_timestamp dummy
 scoreboard players add $ant_best_exists ff_ant_display 0
 scoreboard players add $ant_best_score ff_ant_display 0
 scoreboard players set $ant_display_ready ff_ant_display 0
