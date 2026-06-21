@@ -26,14 +26,6 @@
                   "ff_prevent_drop": true
                 },
                 "minecraft:lodestone_tracker": {
-                  "target": {
-                    "dimension": "minecraft:overworld",
-                    "pos": [
-                      0,
-                      80,
-                      0
-                    ]
-                  },
                   "tracked": false
                 }
               }

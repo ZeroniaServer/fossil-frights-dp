@@ -1,1 +1,2 @@
-$item replace entity @s container.8 with minecraft:compass[minecraft:item_name={text:"Task Compass",color:"white",italic:false},minecraft:custom_name={text:"Task Compass",color:"white",italic:false},minecraft:enchantment_glint_override=false,minecraft:custom_data={ff_task_compass:true},minecraft:lodestone_tracker={target:{dimension:"minecraft:overworld",pos:[I;$(x),$(y),$(z)]},tracked:false}] 1
+loot replace entity @s hotbar.8 loot fossil_frights:items/compass/task
+$item modify entity @s hotbar.8 {function:"minecraft:set_components",components:{"minecraft:lodestone_tracker":{target:{dimension:"minecraft:overworld",pos:[I;$(x),$(y),$(z)]},tracked:false}}}
