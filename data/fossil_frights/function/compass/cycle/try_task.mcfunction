@@ -1,0 +1,2 @@
+$execute if entity @e[type=minecraft:marker,tag=ff_task_compass_target,tag=$(tag),limit=1] run scoreboard players add @s ff_compass_scan 1
+$execute if entity @e[type=minecraft:marker,tag=ff_task_compass_target,tag=$(tag),limit=1] if score @s ff_compass_scan = @s ff_compass_mode unless score @s ff_compass_found matches 1 run function fossil_frights:compass/cycle/select_task {tag:"$(tag)",label:"$(label)",color:"$(color)",model:"$(model)"}

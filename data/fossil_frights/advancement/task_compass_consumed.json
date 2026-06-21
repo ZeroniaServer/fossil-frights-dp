@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "consume_true": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:compass"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_task_compass:true}"
+          }
+        }
+      }
+    },
+    "consume_byte": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:compass"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{ff_task_compass:1b}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consume_true",
+      "consume_byte"
+    ]
+  ],
+  "rewards": {
+    "function": "fossil_frights:compass/consumed/task"
+  }
+}
