@@ -11,8 +11,31 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:custom_data": {
+                  "ff_task_book": "nautilus_guard"
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_name": {
+                  "text": "ɴᴀᴜᴛɪʟᴜꜱ ɢᴜᴀʀᴅ",
+                  "color": "gold"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "task_medium"
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:written_book_content"
+                  ]
+                },
                 "minecraft:written_book_content": {
-                  "title": "ɴᴀᴜᴛɪʟᴜꜱ ɢᴜᴀʀᴅ",
+                  "title": "",
                   "author": "ғᴏssɪʟ ғʀɪɢʜᴛs",
                   "pages": [
                     [
@@ -27,30 +50,6 @@
                       "\nThe Gold Shark is staring at the nautilus. Stand between the two and equip a gold nautilus on your head, that should divert his attention. \n\n"
                     ]
                   ]
-                },
-                "minecraft:custom_name": {
-                  "text": "ɴᴀᴜᴛɪʟᴜꜱ ɢᴜᴀʀᴅ",
-                  "color": "gold",
-                  "italic": false
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "task_medium"
-                    ]
-                  }
-                ],
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore",
-                    "minecraft:written_book_content"
-                  ]
-                },
-                "minecraft:max_stack_size": 99,
-                "minecraft:custom_data": {
-                  "ff_task_book": "nautilus_guard"
                 }
               }
             }

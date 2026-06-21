@@ -11,8 +11,31 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:custom_data": {
+                  "ff_task_book": "pig_wrangler"
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_name": {
+                  "text": "ᴘɪɢ ᴡʀᴀɴɢʟᴇʀ",
+                  "color": "red"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "task_hard"
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 99,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore",
+                    "minecraft:written_book_content"
+                  ]
+                },
                 "minecraft:written_book_content": {
-                  "title": "ᴘɪɢ ᴡʀᴀɴɢʟᴇʀ",
+                  "title": "",
                   "author": "ғᴏssɪʟ ғʀɪɢʜᴛs",
                   "pages": [
                     [
@@ -30,30 +53,6 @@
                       "him, and bring him back to his pen? He loves carrot cake, so grab one from the café to lure him. And you know what, give him the cake as well please. \n\nBut... ideally once he's safe and sound in his pen."
                     ]
                   ]
-                },
-                "minecraft:custom_name": {
-                  "text": "ᴘɪɢ ᴡʀᴀɴɢʟᴇʀ",
-                  "color": "red",
-                  "italic": false
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "task_hard"
-                    ]
-                  }
-                ],
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore",
-                    "minecraft:written_book_content"
-                  ]
-                },
-                "minecraft:max_stack_size": 99,
-                "minecraft:custom_data": {
-                  "ff_task_book": "pig_wrangler"
                 }
               }
             }
