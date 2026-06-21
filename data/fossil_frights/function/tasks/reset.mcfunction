@@ -133,6 +133,7 @@ scoreboard players set $a_c_reset_done ff_task_state 0
 scoreboard players set $a_c_reset_variant ff_task_state 0
 scoreboard players set $deforst_freezer_sel ff_task_state 0
 scoreboard players set $deforst_freezer_done ff_task_state 0
+scoreboard players set $deforst_freezer_compass_stage ff_compass 0
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
