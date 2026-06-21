@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "ff_key_disabled": true
+                        "itemID": "key_disabled"
                     }
                 }
             }

@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "ff_key": true
+                        "itemID": "key"
                     }
                 }
             }

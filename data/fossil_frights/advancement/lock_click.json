@@ -6,11 +6,10 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "items": [
-                "minecraft:echo_shard"
-              ],
               "predicates": {
-                "minecraft:custom_data": "{ff_key:1b}"
+                "minecraft:custom_data": {
+                  "itemID": "key"
+                }
               }
             }
           }

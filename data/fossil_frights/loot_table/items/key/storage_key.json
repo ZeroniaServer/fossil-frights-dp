@@ -11,6 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "fossil-frights:general_items/key",
                 "minecraft:item_name": {
                   "text": "Storage Key",
                   "color": "yellow",
@@ -32,14 +33,9 @@
                   "seconds": 30,
                   "cooldown_group": "fossil_frights:storage_key"
                 },
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "key",
-                  "ff_key": true,
+                  "ff_any_key": true,
                   "ff_prevent_drop": true
                 }
               }

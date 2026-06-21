@@ -11,6 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "fossil-frights:general_items/key_disabled",
                 "minecraft:item_name": {
                   "text": "Storage Key",
                   "color": "yellow",
@@ -35,14 +36,9 @@
                     "italic": false
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    4
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "key_disabled",
-                  "ff_key_disabled": true,
+                  "ff_any_key": true,
                   "ff_prevent_drop": true
                 }
               }

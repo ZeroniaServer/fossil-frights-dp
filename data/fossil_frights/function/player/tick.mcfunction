@@ -146,4 +146,4 @@ advancement revoke @s only fossil_frights:hazard_cookie_consumed
 advancement revoke @s only fossil_frights:camera_remote_dummy_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
-execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand minecraft:echo_shard[custom_data~{ff_key:1b}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
+execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
