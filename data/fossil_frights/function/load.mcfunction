@@ -117,7 +117,6 @@ scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
 scoreboard objectives add ff_compass dummy
-scoreboard objectives add ff_compass_mode dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
@@ -334,8 +333,6 @@ advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:camera_remote_consumed
 advancement revoke @a only fossil_frights:heists_night_stick_hit
 advancement revoke @a only fossil_frights:hazard_cookie_consumed
-advancement revoke @a only fossil_frights:task_compass_consumed
-advancement revoke @a only fossil_frights:loot_compass_consumed
 advancement revoke @a only fossil_frights:camera_remote_dummy_punch
 function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup

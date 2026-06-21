@@ -144,8 +144,6 @@ advancement revoke @s only fossil_frights:queue_punch
 advancement revoke @s only fossil_frights:ice_frozen_hurt
 advancement revoke @s only fossil_frights:camera_remote_consumed
 advancement revoke @s only fossil_frights:hazard_cookie_consumed
-advancement revoke @s only fossil_frights:task_compass_consumed
-advancement revoke @s only fossil_frights:loot_compass_consumed
 advancement revoke @s only fossil_frights:camera_remote_dummy_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16

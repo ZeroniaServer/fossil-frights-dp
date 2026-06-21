@@ -15,7 +15,6 @@ execute if score $day_current ff_day matches 1 run scoreboard players set $speed
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
-scoreboard players set @a[tag=ff_active] ff_compass_mode 0
 execute as @a[tag=ff_active] run loot replace entity @s container.8 loot fossil_frights:items/compass/task
 clear @a[tag=ff_active] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]

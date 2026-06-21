@@ -11,35 +11,14 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Loot Compass - ",
+                  "text": "Loot Compass",
                   "color": "white",
-                  "italic": false,
-                  "extra": [
-                    {
-                      "text": "Nearest",
-                      "color": "yellow",
-                      "italic": false
-                    }
-                  ]
+                  "italic": false
                 },
                 "minecraft:custom_name": {
-                  "text": "Loot Compass - ",
+                  "text": "Loot Compass",
                   "color": "white",
-                  "italic": false,
-                  "extra": [
-                    {
-                      "text": "Nearest",
-                      "color": "yellow",
-                      "italic": false
-                    }
-                  ]
-                },
-                "minecraft:item_model": "fossil-frights:compass/loot",
-                "minecraft:consumable": {
-                  "consume_seconds": 0.001,
-                  "animation": "none",
-                  "sound": "minecraft:entity.item.pickup",
-                  "has_consume_particles": false
+                  "italic": false
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {

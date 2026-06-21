@@ -14,11 +14,6 @@ function fossil_frights:game/heists/loot/steal_alert
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/high/sync/basketball
 function fossil_frights:game/heists/loot/high/sync/lost_key
-execute if score $heist_flash ff_heist matches 0 run function fossil_frights:game/heists/loot/particles/tick
-execute if score $heist_flash ff_heist matches 4 run function fossil_frights:game/heists/loot/particles/tick
-execute if score $heist_flash ff_heist matches 8 run function fossil_frights:game/heists/loot/particles/tick
-execute if score $heist_flash ff_heist matches 12 run function fossil_frights:game/heists/loot/particles/tick
-execute if score $heist_flash ff_heist matches 16 run function fossil_frights:game/heists/loot/particles/tick
 scoreboard players set $heist_compass_available ff_compass 0
 scoreboard players set $heist_compass_available_hash ff_compass 0
 scoreboard players set $heist_compass_counting ff_compass 1
