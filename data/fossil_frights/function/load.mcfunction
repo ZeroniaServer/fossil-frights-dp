@@ -116,6 +116,7 @@ scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
+scoreboard objectives add ff_task_book_shelf dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
