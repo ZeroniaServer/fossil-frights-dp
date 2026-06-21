@@ -32,9 +32,10 @@
                   "seconds": 30,
                   "cooldown_group": "fossil_frights:storage_key"
                 },
+                "minecraft:item_model": "fossil-frights:general_items/key_cooldown",
                 "minecraft:custom_model_data": {
                   "floats": [
-                    3
+                    0
                   ]
                 },
                 "minecraft:custom_data": {
