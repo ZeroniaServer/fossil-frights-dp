@@ -6,6 +6,7 @@ scoreboard players set $heist_low_selected ff_heist 0
 scoreboard players set $heist_med_selected ff_heist 0
 scoreboard players set $heist_high_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
+scoreboard players set $heist_basement_remaining ff_heist 0
 scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_state 0
 scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_value 0
 scoreboard players reset $loot_placeholder_easy_1 ff_heist_sidebar

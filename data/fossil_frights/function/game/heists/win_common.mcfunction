@@ -6,6 +6,7 @@ scoreboard players set $timer_frozen ff_day 0
 function fossil_frights:game/heists/loot/low/cleanup
 function fossil_frights:game/heists/loot/high/cleanup
 function fossil_frights:game/heists/oxidized_bars/clear
+function fossil_frights:game/heists/loot/reset_basement_lava_lock
 execute as @a[tag=ff_heist_guard] run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[tag=ff_heist_thief] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a ff_heist_stolen_keys 0

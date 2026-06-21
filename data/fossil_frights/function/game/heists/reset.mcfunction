@@ -1,6 +1,7 @@
 function fossil_frights:game/heists/clear_join_pads
 function fossil_frights:game/heists/oxidized_bars/clear
 function fossil_frights:game/heists/capture_point/clear
+function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
 function fossil_frights:game/heists/loot/high/cleanup
 schedule clear fossil_frights:game/heists/start_reveal/next

@@ -4,6 +4,7 @@ scoreboard players set lava ff_hazard_active 0
 scoreboard players set floods ff_hazard_active 0
 scoreboard players set security ff_hazard_active 0
 scoreboard players set curse ff_hazard_active 0
+execute if score $heist_basement_lava_lock ff_heist matches 1.. run scoreboard players set lava ff_hazard_active 1
 
 # Run the raw stop logic for every hazard even if it was not marked active.
 function fossil_frights:hazard/lights/stop

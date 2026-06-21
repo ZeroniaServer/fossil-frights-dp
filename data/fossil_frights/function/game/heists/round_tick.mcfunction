@@ -10,6 +10,7 @@ function fossil_frights:game/heists/loot/high_update_drops
 function fossil_frights:game/heists/loot/clear_guard_loot
 function fossil_frights:game/heists/loot/update_pickup_delay
 function fossil_frights:game/heists/loot/update_held
+function fossil_frights:game/heists/loot/check_basement_only
 function fossil_frights:game/heists/loot/steal_alert
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/high/sync/basketball

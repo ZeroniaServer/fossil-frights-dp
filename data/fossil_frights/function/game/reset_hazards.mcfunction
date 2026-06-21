@@ -16,6 +16,7 @@ scoreboard players set #lava_anim_timer ff_hazard_rng 0
 # Seed manual button cooldowns so the tick gate (matches ..0) can pass.
 scoreboard players set #lava_manual_cooldown ff_hazard_rng 0
 scoreboard players set #curse_manual_cooldown ff_hazard_rng 0
+function fossil_frights:game/heists/loot/reset_basement_lava_lock
 
 function fossil_frights:hazard/floods/stop
 function fossil_frights:hazard/security/stop
