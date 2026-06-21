@@ -101,6 +101,7 @@ execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
 execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
+execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:compass/player_tick
 execute if items entity @s weapon.mainhand minecraft:amethyst_shard[custom_data~{ff_dna:1b}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click

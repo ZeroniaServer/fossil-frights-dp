@@ -1,4 +1,5 @@
 function fossil_frights:tasks/tracker/hide
+kill @e[type=minecraft:marker,tag=ff_task_compass_target]
 kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
@@ -132,6 +133,7 @@ scoreboard players set $a_c_reset_done ff_task_state 0
 scoreboard players set $a_c_reset_variant ff_task_state 0
 scoreboard players set $deforst_freezer_sel ff_task_state 0
 scoreboard players set $deforst_freezer_done ff_task_state 0
+scoreboard players set $deforst_freezer_compass_stage ff_compass 0
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0

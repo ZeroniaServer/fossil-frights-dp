@@ -9,6 +9,11 @@ scoreboard players set $high_exact ff_heist 0
 scoreboard players set $high_exact_prev ff_heist 0
 scoreboard players set $reopen_grace ff_heist 0
 scoreboard players set $timer_frozen ff_day 1
+scoreboard players set $heist_compass_available ff_compass 0
+scoreboard players set $heist_compass_available_prev ff_compass -1
+scoreboard players set $heist_compass_available_hash ff_compass 0
+scoreboard players set $heist_compass_available_hash_prev ff_compass -1
+scoreboard players set $heist_compass_counting ff_compass 0
 schedule clear fossil_frights:game/heists/start_reveal/next
 schedule clear fossil_frights:game/heists/start_reveal/goodluck
 schedule clear fossil_frights:game/heists/start_reveal/go
