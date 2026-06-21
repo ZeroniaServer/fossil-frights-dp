@@ -30,7 +30,7 @@
                 },
                 "minecraft:custom_name": {
                   "text": "ʀᴇᴛᴜʀɴ ᴛʜᴇ ᴋᴇʏ",
-                  "color": "green",
+                  "color": "red",
                   "italic": false
                 },
                 "minecraft:lore": [
