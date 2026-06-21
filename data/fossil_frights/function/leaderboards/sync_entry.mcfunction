@@ -1,6 +1,6 @@
 data remove storage fossil_frights:leaderboards candidate
 data modify storage fossil_frights:leaderboards candidate.uuid set value [I;0,0,0,0]
-data modify storage fossil_frights:leaderboards candidate.name set from entity @s bukkit.lastKnownName
+function fossil_frights:player/util/write_username {to:"storage fossil_frights:leaderboards candidate.name"}
 execute store result storage fossil_frights:leaderboards candidate.uuid[0] int 1 run scoreboard players get @s ff_active_uuid_0
 execute store result storage fossil_frights:leaderboards candidate.uuid[1] int 1 run scoreboard players get @s ff_active_uuid_1
 execute store result storage fossil_frights:leaderboards candidate.uuid[2] int 1 run scoreboard players get @s ff_active_uuid_2

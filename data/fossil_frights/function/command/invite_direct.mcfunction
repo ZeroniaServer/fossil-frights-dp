@@ -13,6 +13,6 @@ execute if score $invite_pending ff_game_state matches 1 run return 0
 execute unless entity @a[tag=ff_plugin_invite_target,limit=1] run function fossil_frights:messages/multiplayer/player_no_longer_online
 execute unless entity @a[tag=ff_plugin_invite_target,limit=1] run return 0
 data remove storage fossil_frights:invite selected
-execute as @a[tag=ff_plugin_invite_target,limit=1] run data modify storage fossil_frights:invite selected.name set from entity @s bukkit.lastKnownName
+execute as @a[tag=ff_plugin_invite_target,limit=1] run function fossil_frights:player/util/write_username {to:"storage fossil_frights:invite selected.name"}
 execute as @a[tag=ff_plugin_invite_target,limit=1] run data modify storage fossil_frights:invite selected.uuid set from entity @s UUID
 function fossil_frights:game/settings/multiplayer/gui/try_send

@@ -5,7 +5,7 @@ execute store result storage fossil_frights:game_start mannequin.u1 int 1 run da
 execute store result storage fossil_frights:game_start mannequin.u2 int 1 run data get storage fossil_frights:nbt uuid[2] 1
 execute store result storage fossil_frights:game_start mannequin.u3 int 1 run data get storage fossil_frights:nbt uuid[3] 1
 data remove storage fossil_frights:nbt uuid
-data modify storage fossil_frights:game_start mannequin.name set from entity @s bukkit.lastKnownName
+function fossil_frights:player/util/write_username {to:"storage fossil_frights:game_start mannequin.name"}
 execute if score $game_start_spawn_mode ff_game_state matches 1 run function fossil_frights:animations/game_start/create_fake_player_macro with storage fossil_frights:game_start mannequin
 execute unless score $game_start_spawn_mode ff_game_state matches 1 run function fossil_frights:animations/game_start/create_fake_player_fixed_macro with storage fossil_frights:game_start mannequin
 function fossil_frights:animations/game_start/apply_name_macro with storage fossil_frights:game_start mannequin
