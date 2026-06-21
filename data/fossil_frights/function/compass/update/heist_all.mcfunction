@@ -1,0 +1,4 @@
+execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless score $heist_round_active ff_game_state matches 1 run return 0
+function fossil_frights:compass/markers/sync_loot
+execute as @a[tag=ff_active] run function fossil_frights:compass/update/player

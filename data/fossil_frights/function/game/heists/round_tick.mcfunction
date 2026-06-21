@@ -19,7 +19,12 @@ execute if score $heist_flash ff_heist matches 4 run function fossil_frights:gam
 execute if score $heist_flash ff_heist matches 8 run function fossil_frights:game/heists/loot/particles/tick
 execute if score $heist_flash ff_heist matches 12 run function fossil_frights:game/heists/loot/particles/tick
 execute if score $heist_flash ff_heist matches 16 run function fossil_frights:game/heists/loot/particles/tick
+scoreboard players set $heist_compass_available ff_compass 0
+scoreboard players set $heist_compass_available_hash ff_compass 0
+scoreboard players set $heist_compass_counting ff_compass 1
 function fossil_frights:game/heists/loot/render
+scoreboard players set $heist_compass_counting ff_compass 0
+function fossil_frights:compass/update/heist_if_changed
 execute if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:tasks/hard/basketball_dance/tick
 scoreboard players remove $heist_timer ff_heist 1
 scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist

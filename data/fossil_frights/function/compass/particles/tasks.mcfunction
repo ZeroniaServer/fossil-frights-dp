@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:marker,tag=ff_task_compass_target,tag=ff_task_visit_area,tag=!ff_task_compass_no_particles] at @s run particle minecraft:raid_omen ~ ~0.5 ~ 0.8 0.35 0.8 0 2 force @a[tag=ff_active]
+execute as @e[type=minecraft:marker,tag=ff_task_compass_target,tag=!ff_task_visit_area,tag=!ff_task_compass_no_particles] at @s run particle minecraft:raid_omen ~ ~0.35 ~ 0.18 0.12 0.18 0 1 force @a[tag=ff_active]

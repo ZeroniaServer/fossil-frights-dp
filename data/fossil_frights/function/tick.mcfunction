@@ -1,4 +1,5 @@
 function fossil_frights:items/dropped_items/tick
+function fossil_frights:compass/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_glowtrap_viewer
 tag @a[tag=ff_heist_guard] add ff_glowtrap_viewer

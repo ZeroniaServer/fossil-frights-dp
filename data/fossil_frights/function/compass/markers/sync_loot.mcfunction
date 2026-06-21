@@ -1,0 +1,53 @@
+kill @e[type=minecraft:marker,tag=ff_loot_compass_target]
+
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_coffee_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_coffee"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_poster_tube_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_poster_tube"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_ghast_plushie_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_ghast_plushie"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_piglin_head_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_piglin_head"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_popcorn_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_popcorn"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_lollipop_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_lollipop"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_fishing_rod_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_fishing_rod"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_burger_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_burger"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_chocolate_cake_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_chocolate_cake"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_ancient_scripture_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_ancient_scripture"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_chondrite_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_chondrite"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_sand_dollar_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_sand_dollar"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_trilobite_fossil_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_trilobite_fossil"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_golden_sword_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_golden_sword"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_portal_core_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_portal_core"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_spyglass_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_spyglass"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_lost_key_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_lost_key"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_basketball_jukebox_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_basketball"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_treasure_chest_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_treasure_chest"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_warden_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_warden"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_crab_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_crab"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_t_rex_skull_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_t_rex_skull"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_raptor_skull_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_raptor_skull"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_biplane_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_biplane"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_vault_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_vault"]}
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_velociraptor_statue_click] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_velociraptor_statue"]}
+
+execute if score $loot_febreeze_rod ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_febreeze_rod] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_febreeze_rod"]}
+execute if score $loot_fertilizer ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_fertilizer] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_fertilizer"]}
+execute if score $loot_water_balloon ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_water_balloon] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_water_balloon"]}
+execute if score $loot_chlorine_tablet ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_chlorine_tablet] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_chlorine_tablet"]}
+execute if score $loot_scrap_metal ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_scrap_metal] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_scrap_metal"]}
+execute if score $loot_soap ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_soap] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_soap"]}
+execute if score $loot_dry_ice ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_dry_ice] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_dry_ice"]}
+execute if score $loot_fire_tablet ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_fire_tablet] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_fire_tablet"]}
+execute if score $loot_golden_nautilus ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_golden_nautilus] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_golden_nautilus"]}
+execute if score $loot_skeleton_plushie ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_skeleton_plushie] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_skeleton_plushie"]}
+execute if score $loot_fish_food ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_fish_food] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_fish_food"]}
+execute if score $loot_copper_shuffle ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_copper_shuffle] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_copper_shuffle"]}
+execute if score $loot_instant_coffee ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_instant_coffee] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_instant_coffee"]}
+execute if score $loot_empty_popcorn ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_empty_popcorn] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_empty_popcorn"]}
+execute if score $loot_pink_jelly ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_pink_jelly] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_pink_jelly"]}
+execute if score $loot_leather ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_leather] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_leather"]}
+execute if score $loot_brush ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_brush] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_brush"]}
+execute if score $loot_sponge ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_sponge] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_sponge"]}
+execute if score $loot_cotton_candy ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_cotton_candy] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_cotton_candy"]}
+execute if score $loot_credit_reel ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_credit_reel] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_credit_reel"]}
+execute if score $loot_lady_bug ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_lady_bug] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_lady_bug"]}
+execute if score $loot_muddy_sherd ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_muddy_sherd] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_muddy_sherd"]}
+execute if score $loot_carrot_cake ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_carrot_cake] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_carrot_cake"]}
+execute if score $loot_cookie ff_heist_loot_state matches 1 as @e[type=minecraft:item_display,tag=ff_lock_cookie] at @s run summon minecraft:marker ~ ~ ~ {Tags:["ff_loot_compass_target","ff_loot_cookie"]}

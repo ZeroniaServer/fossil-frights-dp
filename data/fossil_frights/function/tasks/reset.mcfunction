@@ -1,4 +1,5 @@
 function fossil_frights:tasks/tracker/hide
+kill @e[type=minecraft:marker,tag=ff_task_compass_target]
 kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
