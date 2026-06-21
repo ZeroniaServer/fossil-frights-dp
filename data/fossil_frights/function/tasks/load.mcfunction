@@ -319,3 +319,5 @@ scoreboard players set $final_task_centrifuge_timer ff_task_state 0
 scoreboard players set #line_final_task ff_task_state 1
 
 function fossil_frights:tasks/tracker/refresh
+
+function fossil_frights:tasks/task_book_shelf/reset

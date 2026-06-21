@@ -56,3 +56,4 @@ execute if score $running ff_rollercoaster matches 1 run function fossil_frights
 function fossil_frights:util/fade/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
+function fossil_frights:tasks/task_book_shelf/update
