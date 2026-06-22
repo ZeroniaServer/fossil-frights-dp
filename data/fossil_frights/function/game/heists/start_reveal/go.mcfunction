@@ -9,7 +9,7 @@ bossbar set fossil_frights:bossbar color white
 bossbar set fossil_frights:bossbar style progress
 bossbar set fossil_frights:bossbar max 12000
 bossbar set fossil_frights:bossbar value 0
-gamerule doDaylightCycle true
+gamerule minecraft:advance_time true
 time set 13000
 scoreboard players set $time_anim_active ff_day 0
 scoreboard players set $timer_frozen ff_day 0
