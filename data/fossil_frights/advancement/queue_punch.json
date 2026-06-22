@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "type": "mannequin",
-          "nbt": "{Tags:[\"ff_queue_mannequin\"]}"
+          "entity_type": "minecraft:mannequin",
+          "entity_tags": {
+            "all_of": [
+              "ff_queue_mannequin"
+            ]
+          }
         }
       }
     }

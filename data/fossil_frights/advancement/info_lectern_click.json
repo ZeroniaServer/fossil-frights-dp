@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:interaction",
-          "nbt": "{Tags:[\"ff_info_lectern_click\"]}"
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_info_lectern_click"
+            ]
+          }
         }
       }
     }

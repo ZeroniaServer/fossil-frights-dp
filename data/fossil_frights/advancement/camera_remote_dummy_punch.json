@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:mannequin",
-          "nbt": "{Tags:[\"ff_camera_remote_dummy\"]}"
+          "entity_type": "minecraft:mannequin",
+          "entity_tags": {
+            "all_of": [
+              "ff_camera_remote_dummy"
+            ]
+          }
         }
       }
     }

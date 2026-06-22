@@ -16,8 +16,12 @@
           }
         },
         "entity": {
-          "type": "minecraft:interaction",
-          "nbt": "{Tags:[\"ff_dna_click\"]}"
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_dna_click"
+            ]
+          }
         }
       }
     }

@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:player",
-          "nbt": "{Tags:[\"ff_heist_guard\"]}"
+          "entity_type": "minecraft:player",
+          "entity_tags": {
+            "all_of": [
+              "ff_heist_guard"
+            ]
+          }
         }
       }
     }

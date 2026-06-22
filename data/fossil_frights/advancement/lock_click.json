@@ -15,8 +15,12 @@
           }
         },
         "entity": {
-          "type": "minecraft:interaction",
-          "nbt": "{Tags:[\"ff_lock_click\"]}"
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_lock_click"
+            ]
+          }
         }
       }
     }
