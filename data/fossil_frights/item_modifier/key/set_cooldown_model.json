@@ -1,0 +1,22 @@
+{
+  "function": "minecraft:set_custom_model_data",
+  "floats": {
+    "values": [
+      {
+        "type": "minecraft:sum",
+        "summands": [
+          1,
+          {
+            "type": "minecraft:score",
+            "target": "this",
+            "score": "ff_key_cooldown",
+            "scale": -0.00166666666
+          }
+        ]
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 0,
+    "size": 1
+  }
+}
