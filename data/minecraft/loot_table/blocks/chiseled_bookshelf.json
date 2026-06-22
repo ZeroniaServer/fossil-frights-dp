@@ -1,0 +1,206 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chiseled_bookshelf"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "drop_contents": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "drop_contents": {}
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.*"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "drop_contents": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.0"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:0}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.1"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:1}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.2"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:2}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.3"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:3}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.4"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:4}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:slots",
+          "slot_source": {
+            "type": "minecraft:slot_range",
+            "source": "block_entity",
+            "slots": "container.5"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:custom_data": "{drop_contents:{slot:5}}"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/chiseled_bookshelf"
+}

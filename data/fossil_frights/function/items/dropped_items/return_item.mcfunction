@@ -1,4 +1,3 @@
-setblock 0 0 0 minecraft:air strict
-setblock 0 0 0 minecraft:yellow_shulker_box{} strict
-item replace block 0 0 0 container.0 from entity @s contents
-execute on origin run loot give @s mine 0 0 0 stone[custom_data={drop_contents:true}]
+execute on origin run tag @s[type=minecraft:player] add ff_dropped_items.return_items.player
+loot give @a[limit=1,tag=ff_dropped_items.return_items.player] loot {pools:[{rolls:1,entries:[{type:"minecraft:slots",slot_source:{type:"minecraft:slot_range",source:"this",slots:"contents"}}]}]}
+execute on origin run tag @s remove ff_dropped_items.return_items.player

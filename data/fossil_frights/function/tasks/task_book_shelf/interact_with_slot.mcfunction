@@ -12,20 +12,19 @@ setblock 0 0 0 yellow_shulker_box{} strict
 execute if score #slot_occupied ff_task_book_shelf matches 1 if predicate fossil_frights:player/input/sneak run return run function fossil_frights:tasks/task_book_shelf/pick_up_all
 execute if score #slot_occupied ff_task_book_shelf matches 0 if predicate fossil_frights:player/input/sneak run return run function fossil_frights:tasks/task_book_shelf/insert_all
 
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 0 run item replace block 0 0 0 container.0 from block 18 71 29 container.0
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 0 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:0}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 0 run item replace block 18 71 29 container.0 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 1 run item replace block 0 0 0 container.0 from block 18 71 29 container.1
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 1 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:1}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 1 run item replace block 18 71 29 container.1 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 2 run item replace block 0 0 0 container.0 from block 18 71 29 container.2
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 2 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:2}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 2 run item replace block 18 71 29 container.2 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 3 run item replace block 0 0 0 container.0 from block 18 71 29 container.3
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 3 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:3}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 3 run item replace block 18 71 29 container.3 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 4 run item replace block 0 0 0 container.0 from block 18 71 29 container.4
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 4 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:4}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 4 run item replace block 18 71 29 container.4 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 5 run item replace block 0 0 0 container.0 from block 18 71 29 container.5
+execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 5 run loot give @s mine 18 71 29 stone[custom_data={drop_contents:{slot:5}}]
 execute if score #slot_occupied ff_task_book_shelf matches 1 if score #slot ff_task_book_shelf matches 5 run item replace block 18 71 29 container.5 with air
-execute if score #slot_occupied ff_task_book_shelf matches 1 run playsound minecraft:block.chiseled_bookshelf.pickup player @a
-execute if score #slot_occupied ff_task_book_shelf matches 1 run return run loot give @s mine 0 0 0 stone[custom_data={drop_contents:true}]
+execute if score #slot_occupied ff_task_book_shelf matches 1 run return run playsound minecraft:block.chiseled_bookshelf.pickup player @a
 
 scoreboard players set #mainhand ff_task_book_shelf 0
 execute if items entity @s weapon.mainhand * run scoreboard players set #mainhand ff_task_book_shelf 1
