@@ -135,6 +135,7 @@ execute unless entity @s[tag=tutorial_complete] run tellraw @s [{"text":"ℹ ","
 clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base set 1
+attribute @s minecraft:waypoint_transmit_range base set 0
 title @s actionbar ""
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
