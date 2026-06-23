@@ -297,6 +297,7 @@ scoreboard players set $basketball_dance_timer ff_task_state 0
 scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
+scoreboard players set $basketball_dance_head_tossed_once ff_task_state 0
 scoreboard players set #line_basketball_dance ff_task_state 2
 scoreboard players set $evolution_sel ff_task_state 0
 scoreboard players set $evolution_done ff_task_state 0
@@ -321,3 +322,7 @@ scoreboard players set #line_final_task ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 
 function fossil_frights:tasks/task_book_shelf/reset
+
+setblock -26 81 34 minecraft:waxed_oxidized_copper_golem_statue[copper_golem_pose=standing,facing=east] strict
+execute positioned -26.0 81.0 34.0 run kill @e[limit=1,distance=..0.01,type=minecraft:block_display,tag=ff_coppy_the_copper_golem]
+summon minecraft:block_display -26.0 81.0 34.0 {Tags:["ff_coppy_the_copper_golem"],block_state:{Name:"minecraft:waxed_copper_golem_statue",Properties:{copper_golem_pose:"standing",facing:"east"}}}

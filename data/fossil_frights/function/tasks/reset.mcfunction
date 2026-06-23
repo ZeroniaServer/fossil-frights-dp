@@ -153,6 +153,7 @@ scoreboard players set $basketball_dance_timer ff_task_state 0
 scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
+scoreboard players set $basketball_dance_head_tossed_once ff_task_state 0
 scoreboard players set $evolution_sel ff_task_state 0
 scoreboard players set $evolution_done ff_task_state 0
 scoreboard players set $evolution_step ff_task_state 0
