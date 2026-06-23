@@ -3,7 +3,7 @@ function fossil_frights:game/heists/oxidized_bars/clear
 function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
-kill @e[type=minecraft:marker,tag=ff_loot_compass_target]
+kill @e[type=minecraft:armor_stand,tag=ff_loot_compass_target]
 scoreboard players set $heist_compass_available ff_compass 0
 scoreboard players set $heist_compass_available_prev ff_compass -1
 scoreboard players set $heist_compass_available_hash ff_compass 0
