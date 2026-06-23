@@ -5,6 +5,7 @@ execute as @e[tag=fh_lollipop] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_fishing_rod] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_burger] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_chocolate_cake] run data merge entity @s {view_range:1f}
+execute as @e[tag=fh_popcorn] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_ancient_scriptures] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_chondrite] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_sand_dollar] run data merge entity @s {view_range:1f}

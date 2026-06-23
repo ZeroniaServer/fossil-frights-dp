@@ -3,6 +3,7 @@ scoreboard players set lava ff_hazard_active 0
 scoreboard players set floods ff_hazard_active 0
 scoreboard players set security ff_hazard_active 0
 scoreboard players set curse ff_hazard_active 0
+kill @e[type=minecraft:armor_stand,tag=ff_hazard_compass_target]
 
 # Use direct reset logic here. Full hazard stop paths can play animations.
 function fossil_frights:hazard/lights/stop
