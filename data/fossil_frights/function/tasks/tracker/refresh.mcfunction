@@ -267,4 +267,3 @@ execute if score $final_task_sel ff_task_state matches 1 unless score $final_tas
 execute if score $final_task_done ff_task_state matches 1 run scoreboard players display name $tt_final_task ff_task_tracker [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_final"},{"text":" Lab Experiment","color":"gray","italic":false,"strikethrough":true}]
 
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:compass/markers/sync
-execute if score $game_running ff_game_state matches 1 as @a[tag=ff_active] run function fossil_frights:compass/update/player

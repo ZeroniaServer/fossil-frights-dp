@@ -17,7 +17,6 @@ scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[tag=ff_active] run function fossil_frights:key/refresh
 function fossil_frights:tasks/reset
 function fossil_frights:compass/markers/sync
-execute as @a[tag=ff_active] run function fossil_frights:compass/update/player
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/timer/freeze

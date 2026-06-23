@@ -17,4 +17,3 @@ effect clear @s minecraft:invisibility
 effect clear @s minecraft:speed
 loot replace entity @s armor.head loot fossil_frights:items/heists/invisimask
 loot replace entity @s container.0 loot fossil_frights:items/heists/loot_book
-loot replace entity @s container.1 loot fossil_frights:items/compass/loot

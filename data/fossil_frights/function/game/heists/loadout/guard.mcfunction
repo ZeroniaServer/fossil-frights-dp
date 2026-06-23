@@ -10,4 +10,3 @@ loot replace entity @s container.1 loot fossil_frights:items/heists/ice_cannon_r
 loot replace entity @s container.2 loot fossil_frights:items/heists/glowtrap_placer
 loot replace entity @s container.3 loot fossil_frights:items/heists/camera_remote
 loot replace entity @s container.4 loot fossil_frights:items/heists/loot_book
-loot replace entity @s container.8 loot fossil_frights:items/compass/loot
