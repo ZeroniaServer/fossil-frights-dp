@@ -34,3 +34,4 @@ execute as @s at @s run function fossil_frights:items/heists/camera_remote/get_c
 scoreboard players set @s ff_security_camera_nav 0
 function fossil_frights:tasks/easy/check_security/select_camera
 function fossil_frights:tasks/easy/check_security/show_nav
+execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1

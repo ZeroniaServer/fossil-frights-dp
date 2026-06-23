@@ -11,3 +11,4 @@ setblock -28 70 38 air
 setblock -27 70 36 air
 tp @e[type=mannequin,tag=ff_check_security_dummy] 0 -200 0
 kill @e[type=mannequin,tag=ff_check_security_dummy]
+execute at @s run playsound fossil-frights:camera.close master @s ~ ~ ~ 1 1

@@ -9,3 +9,4 @@ gamemode adventure @s
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 function fossil_frights:items/heists/camera_remote/kill_owned
+execute at @s run playsound fossil-frights:camera.close master @s ~ ~ ~ 1 1
