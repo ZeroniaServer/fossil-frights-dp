@@ -1,3 +1,5 @@
+scoreboard objectives add ff_dummy dummy
+scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
@@ -15,6 +17,7 @@ scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
+scoreboard objectives add ff_security_camera_heist dummy
 scoreboard objectives add ff_forced_spec_x dummy
 scoreboard objectives add ff_forced_spec_y dummy
 scoreboard objectives add ff_forced_spec_z dummy
@@ -120,6 +123,8 @@ scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
+scoreboard players set #360 ff_constant 360
+scoreboard players set #180 ff_constant 180
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
