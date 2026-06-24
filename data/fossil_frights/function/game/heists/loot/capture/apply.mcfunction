@@ -1,12 +1,16 @@
 $execute unless score $(key) ff_heist_loot_state matches 1..2 run return 0
-execute if score $heist_loot ff_heist matches 1000.. run return 0
 $scoreboard players operation $heist_loot ff_heist += $(key) ff_heist_loot_value
 function fossil_frights:game/heists/loot/header
 $scoreboard players set $(key) ff_heist_loot_state 3
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
-execute as @a[tag=ff_active,gamemode=!spectator] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.7 1.6
-execute as @a[gamemode=spectator] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.7 1.6
-particle minecraft:happy_villager ~ ~0.2 ~ 0.25 0.25 0.25 0 12 force
+$scoreboard players operation #capture_value ff_heist_loot_value = $(key) ff_heist_loot_value
+execute as @a[tag=ff_active,gamemode=!spectator] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
+execute as @a[gamemode=spectator,tag=!ff_tutorial] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
+execute as @a[tag=ff_heist_thief,gamemode=!spectator] run scoreboard players set @s ff_msg_cooldown 20
+function fossil_frights:game/heists/loot/capture/announce
+execute as @a[tag=ff_active,gamemode=!spectator] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
+execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
+particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 kill @s
-execute if score $heist_loot ff_heist matches 1000.. run function fossil_frights:game/heists/thieves_win
+execute if score $heist_loot ff_heist matches 1000.. unless score $victory_complete ff_game_state matches 1 run function fossil_frights:game/heists/thieves_win
