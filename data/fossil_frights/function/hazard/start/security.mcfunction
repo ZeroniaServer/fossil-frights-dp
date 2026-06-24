@@ -10,3 +10,6 @@ scoreboard players set #security_alarm_timer ff_hazard_rng 10
 function fossil_frights:hazard/security/set_indicator_alert_0
 
 function fossil_frights:hazard/security/start
+
+execute as @a[tag=ff_active] at @s run function fossil_frights:game/heists/loot/alarm_effects
+execute as @a[gamemode=spectator,tag=!ff_active] at @s run function fossil_frights:game/heists/loot/alarm_effects
