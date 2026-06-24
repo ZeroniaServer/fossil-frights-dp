@@ -147,5 +147,9 @@ advancement revoke @s only fossil_frights:camera_remote_dummy_punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
 execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
-attribute @s[tag=!ff_active] minecraft:waypoint_receive_range base set 0
+attribute @s minecraft:waypoint_transmit_range base set 0
+attribute @s[tag=!ff_active,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[tag=ff_active] minecraft:waypoint_receive_range base set 60000000
+attribute @s[gamemode=spectator] minecraft:waypoint_receive_range base set 60000000
+attribute @s[tag=ff_forced_spectate,gamemode=spectator] minecraft:waypoint_receive_range base set 0
+attribute @s[tag=ff_camera_remote_active,gamemode=spectator] minecraft:waypoint_receive_range base set 0
