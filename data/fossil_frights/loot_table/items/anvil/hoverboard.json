@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Hoverboard",
+                  "translate": "ff.item.hoverboard",
                   "color": "aqua",
                   "italic": false
                 },
