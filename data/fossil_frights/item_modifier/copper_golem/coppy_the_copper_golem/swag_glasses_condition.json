@@ -1,0 +1,41 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "fossil_frights:copper_golem/set_swag_glasses/on",
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$basketball_dance_head_tossed_once"
+          },
+          "score": "ff_task_state"
+        },
+        "range": 1
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "fossil_frights:copper_golem/set_swag_glasses/off",
+    "conditions": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$basketball_dance_head_tossed_once"
+            },
+            "score": "ff_task_state"
+          },
+          "range": 1
+        }
+      }
+    ]
+  }
+]

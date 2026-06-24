@@ -1,0 +1,8 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:block_state": {
+      "copper_golem_pose": "standing"
+    }
+  }
+}

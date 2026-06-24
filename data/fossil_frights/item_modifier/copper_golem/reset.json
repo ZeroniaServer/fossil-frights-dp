@@ -1,0 +1,15 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_model": "fossil-frights:copper_golem/unaffected",
+    "minecraft:custom_model_data": {
+      "flags": [
+        false,
+        false
+      ]
+    },
+    "minecraft:block_state": {
+      "copper_golem_pose": "standing"
+    }
+  }
+}
