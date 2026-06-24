@@ -18,6 +18,7 @@ schedule clear fossil_frights:game/heists/start_reveal/next
 schedule clear fossil_frights:game/heists/start_reveal/goodluck
 schedule clear fossil_frights:game/heists/start_reveal/go
 function fossil_frights:game/heists/loot/header
+function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
 execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
