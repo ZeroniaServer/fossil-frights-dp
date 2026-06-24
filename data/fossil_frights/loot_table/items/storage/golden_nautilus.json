@@ -26,7 +26,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "gold",
-                  "text": "Golden Nautilus"
+                  "translate": "ff.item.golden_nautilus"
                 }
               }
             }

@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "aqua",
-                  "text": "Chlorine Tablet"
+                  "translate": "ff.item.chlorine_tablet"
                 }
               }
             }

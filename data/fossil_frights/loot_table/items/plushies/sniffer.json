@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Sniffer Plushie",
+                  "translate": "ff.item.sniffer_plushie",
                   "color": "gold",
                   "italic": false
                 },

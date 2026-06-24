@@ -28,7 +28,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "white",
-                  "text": "Credit Reel"
+                  "translate": "ff.item.credit_reel"
                 }
               }
             }

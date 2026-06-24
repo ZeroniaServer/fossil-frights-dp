@@ -19,7 +19,7 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "yellow",
-                  "text": "Empty Popcorn Bucket"
+                  "translate": "ff.item.empty_popcorn"
                 },
                 "minecraft:custom_data": {
                   "itemID": "empty_popcorn",

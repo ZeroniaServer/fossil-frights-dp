@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Velociraptor Plushie",
+                  "translate": "ff.item.velociraptor_plushie",
                   "color": "gold",
                   "italic": false
                 },

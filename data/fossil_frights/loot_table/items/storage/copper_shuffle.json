@@ -12,7 +12,20 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:music_disc_creator_music_box",
-                "minecraft:item_name": "Copper Shuffle",
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "gold",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "translate": "ff.item.copper_shuffle"
+                    }
+                  ],
+                  "text": ""
+                },
                 "minecraft:custom_data": {
                   "itemID": "copper_shuffle",
                   "ff_heist_loot": true

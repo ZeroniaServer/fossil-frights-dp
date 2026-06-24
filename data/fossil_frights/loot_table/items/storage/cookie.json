@@ -16,6 +16,20 @@
                   "nutrition": 2,
                   "saturation": 0.4
                 },
+                "minecraft:custom_name": {
+                  "extra": [
+                    {
+                      "italic": false,
+                      "underlined": false,
+                      "bold": false,
+                      "color": "yellow",
+                      "obfuscated": false,
+                      "strikethrough": false,
+                      "translate": "ff.item.cookie"
+                    }
+                  ],
+                  "text": ""
+                },
                 "minecraft:custom_data": {
                   "itemID": "cookie",
                   "ff_heist_loot": true

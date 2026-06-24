@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Pterodactyl Plushie",
+                  "translate": "ff.item.pterodactyl_plushie",
                   "color": "gold",
                   "italic": false
                 },

@@ -22,7 +22,7 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "#10ACEE",
-                  "text": "Water Balloon"
+                  "translate": "ff.item.water_balloon"
                 },
                 "minecraft:custom_data": {
                   "itemID": "water_balloon",

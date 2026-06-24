@@ -19,15 +19,11 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "red",
-                  "text": "Fire Tablet"
+                  "translate": "ff.item.fire_tablet"
                 },
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "color": "red",
-                  "text": "Fire Tablet"
                 }
               }
             }

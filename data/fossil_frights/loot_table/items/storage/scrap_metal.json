@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "dark_aqua",
-                  "text": "Scrap Metal"
+                  "translate": "ff.item.scrap_metal"
                 }
               }
             }
