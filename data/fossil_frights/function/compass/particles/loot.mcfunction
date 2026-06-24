@@ -1,6 +1,6 @@
 execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_compass_lock,limit=2147483647] at @s as @e[type=minecraft:item_display,tag=ff_lock,distance=..0.05,sort=nearest,limit=1] run function fossil_frights:compass/particles/helpers/emit_heist_lock
 
-execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_popcorn,limit=1] positioned 26 76 83 run function fossil_frights:compass/particles/helpers/emit_heist_standard {y:"0",dx:"0.12",dy:"0.12",dz:"0.12",count:"1"}
+execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_popcorn,limit=1] positioned 27 77 83 run function fossil_frights:compass/particles/helpers/emit_heist_standard {y:"0",dx:"0.12",dy:"0.12",dz:"0.12",count:"1"}
 execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_ghast_plushie,limit=2147483647] at @s run function fossil_frights:compass/particles/helpers/emit_heist_standard {y:"0.7",dx:"0.1",dy:"0.06",dz:"0.1",count:"1"}
 execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_poster_tube,limit=2147483647] at @s run function fossil_frights:compass/particles/helpers/emit_heist_standard {y:"1.2",dx:"0.1",dy:"0.06",dz:"0.1",count:"1"}
 execute as @e[type=minecraft:armor_stand,tag=ff_loot_compass_target,tag=ff_loot_trilobite_fossil,limit=2147483647] at @s run function fossil_frights:compass/particles/helpers/emit_heist_standard {y:"1.2",dx:"0.1",dy:"0.06",dz:"0.1",count:"1"}

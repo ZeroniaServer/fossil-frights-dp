@@ -123,6 +123,7 @@ scoreboard objectives add ff_compass_found dummy
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
+scoreboard players set $bat_bug_timer_heist_cfg ff_bat_bug_timer 500
 scoreboard players set #twenty ff_key_cd_cfg 20
 scoreboard players set #day_tick ff_day 20
 scoreboard players set #day_minute ff_day 1200
