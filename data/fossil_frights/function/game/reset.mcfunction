@@ -96,3 +96,4 @@ function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next
+execute as @a at @s run function fossil_frights:game/heists/loot/alarm_effects_stop
