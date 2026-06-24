@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
-                  "text": "Ancient Scripture",
+                  "translate": "ff.item.ancient_scripture",
                   "color": "yellow",
                   "italic": false
                 },

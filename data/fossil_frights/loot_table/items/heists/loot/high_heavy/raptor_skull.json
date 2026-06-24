@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Raptor Skull",
+                  "translate": "ff.item.raptor_skull",
                   "color": "yellow",
                   "italic": false
                 },

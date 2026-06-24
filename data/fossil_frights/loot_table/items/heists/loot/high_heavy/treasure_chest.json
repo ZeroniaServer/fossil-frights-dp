@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Treasure Chest",
+                  "translate": "ff.item.treasure_chest",
                   "color": "yellow",
                   "italic": false
                 },
