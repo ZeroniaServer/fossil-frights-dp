@@ -7,3 +7,8 @@ scoreboard players set @s ff_heist_invis_ticks 0
 tag @s remove ff_heist_guard
 tag @s remove ff_heist_thief
 function fossil_frights:player/lobby_reset_active
+attribute @s minecraft:movement_speed base reset
+attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:entity_interaction_range base set 3
+effect clear @s minecraft:night_vision
+effect clear @s minecraft:slowness
