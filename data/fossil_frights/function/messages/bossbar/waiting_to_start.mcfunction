@@ -1,1 +1,1 @@
-bossbar add fossil_frights:bossbar [{"text":"ᴡᴀɪᴛɪɴɢ ᴛᴏ ꜱᴛᴀʀᴛ","color":"white"}]
+bossbar add fossil_frights:bossbar [{"translate":"ff.bossbar.waiting_to_start","color":"white"}]
