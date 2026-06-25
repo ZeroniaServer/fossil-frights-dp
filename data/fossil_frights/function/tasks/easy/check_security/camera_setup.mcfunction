@@ -20,3 +20,4 @@ scoreboard players set @e[type=cave_spider,tag=security_camera_5] ff_security_ca
 scoreboard players set @e[type=cave_spider,tag=security_camera_4] ff_security_camera 9
 scoreboard players set @e[type=cave_spider,tag=security_camera_8] ff_security_camera 10
 team join ff_security_camera @e[type=cave_spider,tag=security_camera]
+execute as @e[type=cave_spider,tag=security_camera] at @s run scoreboard players operation @n[distance=..5,type=item_display,tag=ff_security_camera_model] ff_security_camera = @s ff_security_camera
