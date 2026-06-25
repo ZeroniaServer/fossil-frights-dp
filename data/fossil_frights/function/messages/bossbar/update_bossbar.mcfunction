@@ -1,0 +1,1 @@
+$bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white","with":[{"translate":"ff.bossbar.day.$(day)"},{"translate":"$(minutes_padding)%s:$(seconds_padding)%s","with":[{"score":{"name":"$time_minutes","objective":"ff_dummy"}},{"score":{"name":"$time_seconds","objective":"ff_dummy"}}],"color":"green","font":"fossil-frights:small_numbers_high"}]}]

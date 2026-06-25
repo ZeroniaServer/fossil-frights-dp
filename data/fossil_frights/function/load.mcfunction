@@ -1,3 +1,5 @@
+scoreboard objectives add ff_dummy dummy
+scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
@@ -120,6 +122,7 @@ scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
+scoreboard players set #60 ff_constant 60
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
