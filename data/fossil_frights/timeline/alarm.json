@@ -10,7 +10,7 @@
   "tracks": {
     "minecraft:visual/block_light_tint": {
       "ease": "in_out_sine",
-      "modifier": "override",
+      "modifier": "multiply",
       "keyframes": [
         {
           "ticks": 0,
