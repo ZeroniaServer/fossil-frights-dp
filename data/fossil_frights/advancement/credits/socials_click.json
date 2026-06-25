@@ -12,8 +12,27 @@
           }
         }
       }
+    },
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_seasonal_confetti_socials_click"
+            ]
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    [
+      "click",
+      "punch"
+    ]
+  ],
   "rewards": {
     "function": "fossil_frights:credits/socials_click"
   }
