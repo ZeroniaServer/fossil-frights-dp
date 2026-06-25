@@ -2,7 +2,7 @@ execute unless score $skincare_routine_sel ff_task_state matches 1 run return 0
 execute unless score $skincare_routine_done ff_task_state matches 0 run return 0
 scoreboard players set $skincare_routine_pending ff_task_state 0
 tag @e[tag=ff_skincare_routine_potion] remove ff_skincare_routine_potion
-data modify storage fossil_frights:tasks complete.task_name set value "Skincare Routine"
+data modify storage fossil_frights:tasks complete.task_name set value "skincare_routine"
 execute positioned 0 107 16 run playsound minecraft:entity.generic.splash block @a[tag=ff_active,distance=..22] ~ ~ ~ 0.85 1.15
 execute positioned 0 107 16 run playsound minecraft:item.bucket.empty block @a[tag=ff_active,distance=..22] ~ ~ ~ 0.55 1.6
 execute positioned 0 107 16 run particle minecraft:splash ~ ~ ~ 0.65 0.45 0.65 0.08 40 force

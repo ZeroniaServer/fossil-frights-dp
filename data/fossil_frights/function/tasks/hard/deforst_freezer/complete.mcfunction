@@ -1,6 +1,6 @@
 execute unless score $deforst_freezer_sel ff_task_state matches 1 run return 0
 execute unless score $deforst_freezer_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Defrost Freezer"
+data modify storage fossil_frights:tasks complete.task_name set value "defrost_freezer"
 execute positioned -13.5 73.5 41.5 run playsound minecraft:block.glass.break block @a[tag=ff_active,distance=..20] ~ ~ ~ 0.45 1.8
 execute positioned -13.5 73.5 41.5 run playsound minecraft:entity.player.hurt_freeze block @a[tag=ff_active,distance=..20] ~ ~ ~ 0.75 1.2
 execute positioned -13.5 73.5 41.5 run particle minecraft:snowflake ~ ~ ~ 0.3 0.35 0.3 0.02 22 force

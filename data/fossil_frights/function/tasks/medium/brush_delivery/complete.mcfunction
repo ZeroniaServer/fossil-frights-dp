@@ -1,6 +1,6 @@
 execute unless score $brush_delivery_sel ff_task_state matches 1 run return 0
 execute unless score $brush_delivery_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Brush Delivery"
+data modify storage fossil_frights:tasks complete.task_name set value "brush_delivery"
 particle minecraft:block{block_state:{Name:"minecraft:sand"}} ~ ~0.08 ~ 0.22 0.08 0.22 0.06 18 force
 particle minecraft:campfire_cosy_smoke ~ ~0.15 ~ 0.0 0.0 0.0 0.0 1 force
 playsound minecraft:item.brush.brushing.sand block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.9 1.1

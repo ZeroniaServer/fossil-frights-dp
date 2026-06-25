@@ -2,7 +2,7 @@ execute unless score $water_crops_sel ff_task_state matches 1 run return 0
 execute unless score $water_crops_done ff_task_state matches 0 run return 0
 scoreboard players set $water_crops_pending ff_task_state 0
 tag @e[tag=ff_water_crops_potion] remove ff_water_crops_potion
-data modify storage fossil_frights:tasks complete.task_name set value "Water Crops"
+data modify storage fossil_frights:tasks complete.task_name set value "water_crops"
 function fossil_frights:tasks/medium/water_crops/grow_3
 schedule function fossil_frights:tasks/medium/water_crops/grow_5 6t
 schedule function fossil_frights:tasks/medium/water_crops/grow_7 12t

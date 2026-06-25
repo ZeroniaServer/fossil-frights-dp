@@ -1,6 +1,6 @@
 execute unless score $feed_the_bats_sel ff_task_state matches 1 run return 0
 execute unless score $feed_the_bats_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Feed the Bats"
+data modify storage fossil_frights:tasks complete.task_name set value "feed_the_bats"
 execute positioned 25.5 106.5 87.5 run playsound minecraft:entity.bat.ambient block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.9 1.0
 execute positioned 25.5 106.5 87.5 run playsound minecraft:entity.generic.eat block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.7 1.4
 execute positioned 25.5 106.5 87.5 run particle minecraft:poof ~ ~0.15 ~ 0.35 0.2 0.35 0.04 18 force
