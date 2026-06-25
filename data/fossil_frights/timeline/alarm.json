@@ -1,0 +1,26 @@
+{
+  "period_ticks": 40,
+  "clock": "fossil_frights:alarm",
+  "time_markers": {
+    "fossil_frights:alarm_off": {
+      "ticks": 0,
+      "show_in_commands": true
+    }
+  },
+  "tracks": {
+    "minecraft:visual/block_light_tint": {
+      "ease": "in_out_sine",
+      "modifier": "override",
+      "keyframes": [
+        {
+          "ticks": 0,
+          "value": "#FFFFFF"
+        },
+        {
+          "ticks": 20,
+          "value": "#FF3F3F"
+        }
+      ]
+    }
+  }
+}

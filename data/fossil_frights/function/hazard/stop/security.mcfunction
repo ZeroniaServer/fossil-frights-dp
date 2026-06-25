@@ -5,4 +5,4 @@ scoreboard players set security ff_hazard_active 0
 function fossil_frights:hazard/security/stop
 function fossil_frights:game/bossbar/update_hazards
 
-function fossil_frights:game/heists/loot/alarm_effects_stop
+scoreboard players set $alarm_effects_on ff_heist 0

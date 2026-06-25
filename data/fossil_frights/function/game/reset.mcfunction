@@ -97,3 +97,4 @@ function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next
 function fossil_frights:door/reset
+scoreboard players set $alarm_effects_on ff_heist 0
