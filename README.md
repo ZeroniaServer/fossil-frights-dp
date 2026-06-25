@@ -23,7 +23,6 @@ Fossil Frights plugin adds aliases: `/start`, `/join`, `/join guard`, `/join thi
 | Action | Command |
 | --- | --- |
 | Admin menu | `/function fossil_frights:command/admin/show` |
-| Clear plushie trophies | `/function fossil_frights:tasks/final/plushies/clear` |
 | Reset parkour display | `/function fossil_frights:parkour/reset` |
 | Reset temple run display | `/function fossil_frights:temple_run/reset` |
 | Reset ant fight display | `/function fossil_frights:ant_fight/reset` |
@@ -88,15 +87,3 @@ Plugin admin commands:
 Edit `leaderboard.yml`, then run `/admin leaderboard reload`; values apply immediately
 
 > Avoid datapack leaderboard reset/stat edit commands while the plugin is present. 
-
-## Game Flow
-
-| Event | Main behavior |
-| --- | --- |
-| Start | Sets active players, clears inventory, resets tasks/hazards/timer, starts at day `0` break |
-| Next day | Advances day, starts day timer, rolls tasks/hazards |
-| Day complete | Clears tasks, awards CubeKoin, updates day progress, starts break |
-| Day timeout | Marks defeat and runs defeat animation |
-| Victory | Day `10` complete freezes timer, updates top day/time or duo time, runs victory celebration |
-| Leave / End | Updates solo day if applicable, resets game state, returns players to lobby |
-| Active disconnect | Ends the run and resets game state; datapack-only may apply pending day stats on next login |
