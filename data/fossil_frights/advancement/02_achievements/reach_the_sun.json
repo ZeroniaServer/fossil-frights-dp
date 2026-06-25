@@ -5,10 +5,10 @@
       "id": "minecraft:sunflower"
     },
     "title": {
-      "text": "Reach the Sun"
+      "translate": "ff.advancement.reach_the_sun"
     },
     "description": {
-      "text": "Somehow make your way to the sun in the dome above the brontosaurus."
+      "translate": "ff.advancement.reach_the_sun.description"
     },
     "show_toast": true,
     "announce_to_chat": true

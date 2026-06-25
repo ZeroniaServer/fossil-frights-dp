@@ -26,10 +26,10 @@
       }
     },
     "title": {
-      "text": "Temple Runner"
+      "translate": "ff.advancement.temple_runner"
     },
     "description": {
-      "text": "Complete the Temple Run."
+      "translate": "ff.advancement.temple_runner.description"
     },
     "show_toast": true,
     "announce_to_chat": true

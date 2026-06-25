@@ -5,10 +5,10 @@
       "id": "minecraft:tnt"
     },
     "title": {
-      "text": "Hazardous"
+      "translate": "ff.advancement.hazardous"
     },
     "description": {
-      "text": "Have all 5 hazards active at once."
+      "translate": "ff.advancement.hazardous.description"
     },
     "show_toast": true,
     "announce_to_chat": true

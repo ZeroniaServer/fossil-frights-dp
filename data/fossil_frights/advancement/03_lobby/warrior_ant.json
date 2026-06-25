@@ -13,10 +13,10 @@
       }
     },
     "title": {
-      "text": "Warrior Ant"
+      "translate": "ff.advancement.warrior_ant"
     },
     "description": {
-      "text": "Get an Ant Score of 10+."
+      "translate": "ff.advancement.warrior_ant.description"
     },
     "show_toast": true,
     "announce_to_chat": true

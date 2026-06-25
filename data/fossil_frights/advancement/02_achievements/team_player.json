@@ -5,10 +5,10 @@
       "id": "minecraft:player_head"
     },
     "title": {
-      "text": "Team Player"
+      "translate": "ff.advancement.team_player"
     },
     "description": {
-      "text": "Invite someone to a multiplayer game."
+      "translate": "ff.advancement.team_player.description"
     },
     "show_toast": true,
     "announce_to_chat": true

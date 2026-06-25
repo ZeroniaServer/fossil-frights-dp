@@ -24,10 +24,10 @@
       }
     },
     "title": {
-      "text": "Frightful"
+      "translate": "ff.advancement.frightful"
     },
     "description": {
-      "text": "Encounter a jump scare."
+      "translate": "ff.advancement.frightful.description"
     },
     "show_toast": true,
     "announce_to_chat": true

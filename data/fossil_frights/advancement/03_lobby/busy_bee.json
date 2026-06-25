@@ -26,10 +26,10 @@
       }
     },
     "title": {
-      "text": "Busy Bee"
+      "translate": "ff.advancement.busy_bee"
     },
     "description": {
-      "text": "Complete the Lobby Parkour."
+      "translate": "ff.advancement.busy_bee.description"
     },
     "show_toast": true,
     "announce_to_chat": true

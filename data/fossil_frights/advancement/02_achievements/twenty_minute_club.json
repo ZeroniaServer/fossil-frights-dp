@@ -5,10 +5,10 @@
       "id": "minecraft:clock"
     },
     "title": {
-      "text": "20 minute club"
+      "translate": "ff.advancement.twenty_minute_club"
     },
     "description": {
-      "text": "Beat the game in 20 minutes or less"
+      "translate": "ff.advancement.twenty_minute_club.description"
     },
     "show_toast": true,
     "announce_to_chat": true

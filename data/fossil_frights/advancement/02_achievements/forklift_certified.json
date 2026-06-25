@@ -5,10 +5,10 @@
       "id": "minecraft:minecart"
     },
     "title": {
-      "text": "Forklift Certified"
+      "translate": "ff.advancement.forklift_certified"
     },
     "description": {
-      "text": "Operate the forklift."
+      "translate": "ff.advancement.forklift_certified.description"
     },
     "show_toast": true,
     "announce_to_chat": true

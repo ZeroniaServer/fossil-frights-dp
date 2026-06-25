@@ -5,10 +5,10 @@
       "id": "minecraft:mangrove_button"
     },
     "title": {
-      "text": "Days without incident 0"
+      "translate": "ff.advancement.days_without_incident_0"
     },
     "description": {
-      "text": "Get crushed by a security gate."
+      "translate": "ff.advancement.days_without_incident_0.description"
     },
     "show_toast": true,
     "announce_to_chat": true
