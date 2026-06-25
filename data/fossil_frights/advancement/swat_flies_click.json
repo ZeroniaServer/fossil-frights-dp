@@ -12,8 +12,27 @@
           }
         }
       }
+    },
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_swat_flies_click"
+            ]
+          }
+        }
+      }
     }
   },
+  "requirements": [
+    [
+      "click",
+      "punch"
+    ]
+  ],
   "rewards": {
     "function": "fossil_frights:tasks/easy/swat_flies/clicked"
   }
