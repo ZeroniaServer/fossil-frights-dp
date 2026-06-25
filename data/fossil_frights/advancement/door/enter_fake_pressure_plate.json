@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:structure_void"
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:door/fake_pressure_plate/enter"
+  }
+}
