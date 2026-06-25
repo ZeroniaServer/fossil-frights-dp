@@ -13,3 +13,4 @@ gamerule minecraft:natural_health_regeneration true
 gamerule minecraft:advance_weather false
 gamerule minecraft:locator_bar true
 gamerule minecraft:mob_drops false
+gamerule minecraft:advance_time true
