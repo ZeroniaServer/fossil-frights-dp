@@ -19,7 +19,7 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "red",
-                  "text": "Fish Food"
+                  "translate": "ff.item.fish_food"
                 },
                 "minecraft:custom_data": {
                   "itemID": "fish_food",

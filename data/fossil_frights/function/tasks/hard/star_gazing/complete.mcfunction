@@ -1,4 +1,4 @@
-execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Star Gazing"
+execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "star_gazing"
 execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 0 run function fossil_frights:tasks/hard/star_gazing/cleanup
 execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1

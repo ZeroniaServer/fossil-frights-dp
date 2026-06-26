@@ -1,6 +1,6 @@
 execute unless score $the_lost_code_sel ff_task_state matches 1 run return 0
 execute unless score $the_lost_code_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "The Lost Code"
+data modify storage fossil_frights:tasks complete.task_name set value "the_lost_code"
 execute as @a[tag=ff_active] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.9 1.0
 execute as @a[tag=ff_active] at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.45 0.7 0.45 0.2 52 force
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete

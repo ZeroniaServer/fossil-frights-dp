@@ -1,6 +1,6 @@
 execute unless score $evolution_sel ff_task_state matches 1 run return 0
 execute unless score $evolution_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Evolution"
+data modify storage fossil_frights:tasks complete.task_name set value "evolution"
 kill @e[type=minecraft:ocelot,tag=ff_evolution_driver]
 execute as @e[type=minecraft:mannequin,tag=ff_evolution] run data merge entity @s {Invulnerable:1b}
 effect clear @e[type=minecraft:mannequin,tag=ff_evolution] minecraft:regeneration

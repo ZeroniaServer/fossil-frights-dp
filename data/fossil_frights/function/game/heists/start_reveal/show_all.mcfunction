@@ -1,57 +1,57 @@
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_coffee", "lootName":"Coffee"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_poster_tube", "lootName":"Poster Tube"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_ghast_plushie", "lootName":"Ghast Plushie"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_piglin_head", "lootName":"Piglin Head"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_popcorn", "lootName":"Popcorn"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_lollipop", "lootName":"Lollipop"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_fishing_rod", "lootName":"Fishing Rod"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_burger", "lootName":"Burger"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_chocolate_cake", "lootName":"Chocolate Cake"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_ancient_scripture", "lootName":"Ancient Scripture"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_chondrite", "lootName":"Chondrite"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_sand_dollar", "lootName":"Sand Dollar"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_trilobite_fossil", "lootName":"Fossilized Trilobite"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_golden_sword", "lootName":"Golden Sword"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_portal_core", "lootName":"Ancient Portal Core"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_febreeze_rod", "lootName":"Febreeze Rod"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_fertilizer", "lootName":"Fertilizer"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_water_balloon", "lootName":"Water Balloon"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_chlorine_tablet", "lootName":"Chlorine Tablet"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_scrap_metal", "lootName":"Scrap Metal"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_soap", "lootName":"Soap"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_dry_ice", "lootName":"Dry Ice"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_fire_tablet", "lootName":"Fire Tablet"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_golden_nautilus", "lootName":"Golden Nautilus"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_skeleton_plushie", "lootName":"Skeleton Plushie"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_fish_food", "lootName":"Fish Food"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_copper_shuffle", "lootName":"Copper Shuffle"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_instant_coffee", "lootName":"Instant Coffee"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_empty_popcorn", "lootName":"Empty Popcorn"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_pink_jelly", "lootName":"Pink Jelly"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_leather", "lootName":"Leather"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_brush", "lootName":"Brush"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_sponge", "lootName":"Sponge"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_cotton_candy", "lootName":"Cotton Candy"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_credit_reel", "lootName":"Credit Reel"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_muddy_sherd", "lootName":"Muddy Sherd"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_carrot_cake", "lootName":"Carrot Cake"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_cookie", "lootName":"Cookie"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_lady_bug", "lootName":"Lady Bug"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_basketball", "lootName":"Basketball"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_lost_key", "lootName":"Lost Key"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_hoverboard", "lootName":"Hoverboard"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_sniffer_dna_cloth", "lootName":"Sniffer DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_trike_dna_cloth", "lootName":"Trike DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_t_rex_dna_cloth", "lootName":"T-Rex DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_velociraptor_dna_cloth", "lootName":"Velociraptor DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_plesiosaur_dna_cloth", "lootName":"Plesiosaur DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_pterodactyl_dna_cloth", "lootName":"Pterodactyl DNA"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_spyglass", "lootName":"Spyglass"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_treasure_chest", "lootName":"Treasure Chest"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_warden", "lootName":"Warden"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_crab", "lootName":"Crab"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_t_rex_skull", "lootName":"T-Rex Skull"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_raptor_skull", "lootName":"Raptor Skull"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_biplane", "lootName":"Biplane"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_vault", "lootName":"Vault"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"loot_velociraptor_statue", "lootName":"Velociraptor"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"coffee"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"poster_tube"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ghast_plushie"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"piglin_head"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"popcorn"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"lollipop"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"fishing_rod"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"burger"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"chocolate_cake"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ancient_scripture"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"chondrite"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"sand_dollar"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"trilobite_fossil"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"golden_sword"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"portal_core"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"febreeze_rod"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"fertilizer"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"water_balloon"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"chlorine_tablet"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"scrap_metal"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"soap"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"dry_ice"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"fire_tablet"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"golden_nautilus"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"skeleton_plushie"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"fish_food"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"copper_shuffle"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"instant_coffee"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"empty_popcorn"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"pink_jelly"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"leather"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"brush"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"sponge"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"cotton_candy"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"credit_reel"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"muddy_sherd"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"carrot_cake"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"cookie"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"lady_bug"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"basketball"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"lost_key"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"hoverboard"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"sniffer_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"trike_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"t_rex_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"velociraptor_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"plesiosaur_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"pterodactyl_dna_cloth"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"spyglass"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"treasure_chest"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"warden"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"crab"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"t_rex_skull"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"raptor_skull"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"biplane"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"vault"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"velociraptor_statue"}

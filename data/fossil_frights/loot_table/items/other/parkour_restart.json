@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Parkour Restart",
+                  "translate": "ff.item.parkour_restart",
                   "color": "gold"
                 },
                 "minecraft:lore": [

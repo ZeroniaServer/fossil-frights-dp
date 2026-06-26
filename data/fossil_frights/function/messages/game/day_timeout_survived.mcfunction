@@ -1,1 +1,1 @@
-tellraw @a [{"text":"⭐ ","color":"gold"},{"selector":"@a[tag=ff_active]","separator":" and ","color":"gold"},{"text":" survived to day ","color":"gold"},{"score":{"name":"$day_result","objective":"ff_day"},"color":"white"},{"text":".","color":"gold"}]
+tellraw @a [{"translate":"ff.survived_to_day","color":"gold","with":[{"selector":"@a[tag=ff_active]","separator":{"translate": "ff.separator"},"color":"gold"},{"score":{"name":"$day_result","objective":"ff_day"},"color":"white"}]}]

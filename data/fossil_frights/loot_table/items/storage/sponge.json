@@ -20,7 +20,7 @@
                       "color": "yellow",
                       "obfuscated": false,
                       "strikethrough": false,
-                      "text": "Sponge"
+                      "translate": "ff.item.sponge"
                     }
                   ],
                   "text": ""

@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Gold T-Rex Plushie",
+                  "translate": "ff.item.gold_t_rex_plushie",
                   "color": "gold",
                   "italic": false
                 },

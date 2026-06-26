@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "T-Rex Skull",
+                  "translate": "ff.item.t_rex_skull",
                   "color": "yellow",
                   "italic": false
                 },

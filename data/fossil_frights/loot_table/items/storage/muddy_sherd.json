@@ -19,7 +19,7 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "gold",
-                  "text": "Muddy Sherd"
+                  "translate": "ff.item.muddy_sherd"
                 },
                 "minecraft:custom_data": {
                   "itemID": "muddy_sherd",

@@ -20,7 +20,7 @@
                       "color": "yellow",
                       "obfuscated": false,
                       "strikethrough": false,
-                      "text": "Brush"
+                      "translate": "ff.item.brush"
                     }
                   ],
                   "text": ""

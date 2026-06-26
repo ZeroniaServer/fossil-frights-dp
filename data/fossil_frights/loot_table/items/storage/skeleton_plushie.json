@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "yellow",
-                  "text": "Skeleton Plushie"
+                  "translate": "ff.item.skeleton_plushie"
                 }
               }
             }

@@ -1,1 +1,1 @@
-tellraw @a [{"text":"⭐ ","color":"gold"},{"selector":"@a[tag=ff_heist_guard]","separator":" and "},{"text":" won playing as ","color":"gold"},{"text":"Guards","color":"gold"},{"text":".","color":"gold"}]
+tellraw @a [{"translate":"ff.guards_win","color":"gold","with":[{"selector":"@a[tag=ff_heist_guard]","separator":{"translate":"ff.separator"}}]}]

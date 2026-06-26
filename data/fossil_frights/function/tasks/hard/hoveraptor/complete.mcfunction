@@ -1,6 +1,6 @@
 execute unless score $hoveraptor_sel ff_task_state matches 1 run return 0
 execute unless score $hoveraptor_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Hoveraptor"
+data modify storage fossil_frights:tasks complete.task_name set value "hoveraptor"
 function fossil_frights:tasks/hard/hoveraptor/set_frame_hoverboard
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/hard/hoveraptor/cleanup

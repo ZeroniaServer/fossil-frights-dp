@@ -1,6 +1,6 @@
 execute unless score $refill_ice_sel ff_task_state matches 1 run return 0
 execute unless score $refill_ice_done ff_task_state matches 0 run return 0
-execute if score $refill_ice_sel ff_task_state matches 1 if score $refill_ice_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Refill Ice"
+execute if score $refill_ice_sel ff_task_state matches 1 if score $refill_ice_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "refill_ice"
 execute if score $refill_ice_sel ff_task_state matches 1 if score $refill_ice_done ff_task_state matches 0 positioned 26 81.5 17 run particle minecraft:snowflake ~ ~ ~ 0.75 1.1 1.45 0.01 14 force
 execute if score $refill_ice_sel ff_task_state matches 1 if score $refill_ice_done ff_task_state matches 0 positioned 26 81.5 17 run particle minecraft:dust{color:[0.62,0.9,1.0],scale:0.8} ~ ~ ~ 0.7 1.0 1.35 0.01 8 force
 execute if score $refill_ice_sel ff_task_state matches 1 if score $refill_ice_done ff_task_state matches 0 positioned 26 81.5 17 run playsound minecraft:block.powder_snow.place block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.8 0.8

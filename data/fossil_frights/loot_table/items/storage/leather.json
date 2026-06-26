@@ -20,7 +20,7 @@
                       "color": "yellow",
                       "obfuscated": false,
                       "strikethrough": false,
-                      "text": "Leather"
+                      "translate": "ff.item.leather"
                     }
                   ],
                   "text": ""

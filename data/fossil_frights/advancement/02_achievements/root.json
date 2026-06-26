@@ -23,7 +23,7 @@
       }
     },
     "title": {
-      "text": "Achievements"
+      "translate": "ff.advancement.achievements"
     },
     "description": {
       "text": ""

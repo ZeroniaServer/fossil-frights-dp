@@ -1,6 +1,6 @@
 execute unless score $sweep_popcorn_sel ff_task_state matches 1 run return 0
 execute unless score $sweep_popcorn_done ff_task_state matches 0 run return 0
-execute if score $sweep_popcorn_sel ff_task_state matches 1 if score $sweep_popcorn_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Sweep Popcorn"
+execute if score $sweep_popcorn_sel ff_task_state matches 1 if score $sweep_popcorn_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "sweep_popcorn"
 execute if score $sweep_popcorn_sel ff_task_state matches 1 if score $sweep_popcorn_done ff_task_state matches 0 positioned 10 69 69 run playsound minecraft:block.grass.break master @a[tag=ff_active,distance=..12] ~ ~ ~ 0.8 1.4
 execute if score $sweep_popcorn_sel ff_task_state matches 1 if score $sweep_popcorn_done ff_task_state matches 0 run function fossil_frights:tasks/easy/sweep_popcorn/cleanup
 execute if score $sweep_popcorn_sel ff_task_state matches 1 if score $sweep_popcorn_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete

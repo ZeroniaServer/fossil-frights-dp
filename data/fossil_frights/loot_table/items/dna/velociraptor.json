@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Velociraptor DNA Cloth",
+                  "translate": "ff.item.velociraptor_dna_cloth_item",
                   "color": "yellow",
                   "italic": false
                 },

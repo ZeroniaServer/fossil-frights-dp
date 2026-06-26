@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Trike Plushie",
+                  "translate": "ff.item.trike_plushie",
                   "color": "gold",
                   "italic": false
                 },

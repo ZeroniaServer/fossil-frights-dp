@@ -19,7 +19,7 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "red",
-                  "text": "Lady Bug"
+                  "translate": "ff.item.lady_bug"
                 },
                 "minecraft:custom_data": {
                   "itemID": "lady_bug",

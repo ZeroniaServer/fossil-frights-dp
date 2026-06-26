@@ -1,6 +1,6 @@
 execute unless score $feed_the_plants_sel ff_task_state matches 1 run return 0
 execute unless score $feed_the_plants_done ff_task_state matches 0 run return 0
-execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Feed the Plants"
+execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "feed_the_plants"
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 at @s run playsound minecraft:entity.generic.eat block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.8 0.8
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 at @s run playsound minecraft:entity.generic.eat block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.8 1.2
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 at @s run playsound minecraft:entity.player.burp block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.45 1.45

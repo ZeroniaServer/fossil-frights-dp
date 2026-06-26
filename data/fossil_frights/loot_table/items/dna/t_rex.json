@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "T-Rex DNA Cloth",
+                  "translate": "ff.item.t_rex_dna_cloth_item",
                   "color": "yellow",
                   "italic": false
                 },

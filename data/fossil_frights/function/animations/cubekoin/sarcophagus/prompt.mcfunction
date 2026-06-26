@@ -1,2 +1,2 @@
-tellraw @p[tag=ff_active,distance=..3,sort=nearest,limit=1] ["<",{"color":"gray","text":"Talking Skull"},"> You want to see the power of my sarcophagus? Drop me a CubeKoin ",{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"}," and I'll show ya."]
+tellraw @p[tag=ff_active,distance=..3,sort=nearest,limit=1] {"translate":"ff.talking_skull.prompt","with":[{"translate":"ff.talking_skull","color":"gray"},{"translate": "%s %s","with":[{"translate":"ff.cubekoin.number","color":"gold","with":["1"]},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"}]}]}
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 400

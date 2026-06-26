@@ -33,7 +33,7 @@ execute if score $day_current ff_day matches 10 run function fossil_frights:game
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/reset_spectators
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt
 execute unless score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_break
-execute as @a[tag=ff_active] run title @s actionbar [{"text":"Day ","color":"gold","italic":false},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"},{"text":" Complete!","color":"gold","italic":false}]
+execute as @a[tag=ff_active] run title @s actionbar [{"translate":"ff.day_complete","color":"gold","italic":false,"with":[{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/spectator_toggle/refresh

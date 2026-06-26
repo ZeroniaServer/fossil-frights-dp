@@ -1,6 +1,6 @@
 execute unless score $sponge_up_spill_sel ff_task_state matches 1 run return 0
 execute unless score $sponge_up_spill_done ff_task_state matches 0 run return 0
-execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Sponge Up Spill"
+execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "sponge_up_spill"
 execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 0 run function fossil_frights:tasks/medium/sponge_up_spill/dry_1
 execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 0 run schedule function fossil_frights:tasks/medium/sponge_up_spill/dry_2 5t
 execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 0 run schedule function fossil_frights:tasks/medium/sponge_up_spill/dry_3 10t

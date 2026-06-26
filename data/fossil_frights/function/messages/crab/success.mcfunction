@@ -1,1 +1,1 @@
-tellraw @s [{"text":"<","color":"white"},{"text":"Crab","color":"blue"},{"text":"> Thanks for the ","color":"white"},{"text":"2 CubeKoins ","color":"gold"},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"},{"text":"! Here's your polished key.","color":"white"}]
+tellraw @s {"translate":"ff.crab.success","with":[{"translate":"ff.crab","color":"blue"},{"translate": "%s %s","with":[{"translate":"ff.cubekoins.number","color":"gold","with":["2"]},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/cubekoin"}]}]}
