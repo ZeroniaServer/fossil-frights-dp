@@ -152,7 +152,7 @@ scoreboard players set $heist_compass_available_prev ff_compass -1
 scoreboard players set $heist_compass_available_hash ff_compass 0
 scoreboard players set $heist_compass_available_hash_prev ff_compass -1
 scoreboard players set $heist_compass_counting ff_compass 0
-scoreboard players set $deforst_freezer_compass_stage ff_compass 0
+scoreboard players set $defrost_freezer_compass_stage ff_compass 0
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0

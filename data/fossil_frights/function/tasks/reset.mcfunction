@@ -131,9 +131,9 @@ scoreboard players set $feed_the_bats_done ff_task_state 0
 scoreboard players set $a_c_reset_sel ff_task_state 0
 scoreboard players set $a_c_reset_done ff_task_state 0
 scoreboard players set $a_c_reset_variant ff_task_state 0
-scoreboard players set $deforst_freezer_sel ff_task_state 0
-scoreboard players set $deforst_freezer_done ff_task_state 0
-scoreboard players set $deforst_freezer_compass_stage ff_compass 0
+scoreboard players set $defrost_freezer_sel ff_task_state 0
+scoreboard players set $defrost_freezer_done ff_task_state 0
+scoreboard players set $defrost_freezer_compass_stage ff_compass 0
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
@@ -217,7 +217,7 @@ scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_skincare_routine ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
-scoreboard players reset $tt_deforst_freezer ff_task_tracker
+scoreboard players reset $tt_defrost_freezer ff_task_tracker
 scoreboard players reset $tt_the_lost_code ff_task_tracker
 scoreboard players reset $tt_pig_wrangler ff_task_tracker
 scoreboard players reset $tt_holy_grail ff_task_tracker
@@ -284,7 +284,7 @@ function fossil_frights:tasks/hard/return_the_key/reset
 function fossil_frights:tasks/hard/skincare_routine/reset
 function fossil_frights:tasks/hard/feed_the_bats/reset
 function fossil_frights:tasks/hard/a_c_reset/reset
-function fossil_frights:tasks/hard/deforst_freezer/reset
+function fossil_frights:tasks/hard/defrost_freezer/reset
 function fossil_frights:tasks/hard/the_lost_code/reset
 function fossil_frights:tasks/hard/holy_grail/reset
 function fossil_frights:tasks/hard/hoveraptor/reset

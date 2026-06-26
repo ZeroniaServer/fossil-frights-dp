@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
-                  "ff_task_book": "deforst_freezer",
+                  "ff_task_book": "defrost_freezer",
                   "ff_task_book_difficulty": "hard",
                   "ff_any_task_book": true
                 },

@@ -260,10 +260,10 @@ scoreboard players set $a_c_timer_active ff_task_state 0
 scoreboard players set $a_c_fan_spin ff_task_state 0
 scoreboard players set $a_c_fan_rot_state ff_task_state 0
 scoreboard players set #line_a_c_reset ff_task_state 6
-scoreboard players set $deforst_freezer_avail ff_task_state 1
-scoreboard players set $deforst_freezer_sel ff_task_state 0
-scoreboard players set $deforst_freezer_done ff_task_state 0
-scoreboard players set #line_deforst_freezer ff_task_state 5
+scoreboard players set $defrost_freezer_avail ff_task_state 1
+scoreboard players set $defrost_freezer_sel ff_task_state 0
+scoreboard players set $defrost_freezer_done ff_task_state 0
+scoreboard players set #line_defrost_freezer ff_task_state 5
 scoreboard players set $the_lost_code_avail ff_task_state 1
 scoreboard players set $the_lost_code_sel ff_task_state 0
 scoreboard players set $the_lost_code_done ff_task_state 0

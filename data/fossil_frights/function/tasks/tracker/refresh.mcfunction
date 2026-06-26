@@ -57,7 +57,7 @@ function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "water
 
 function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "a_c_reset"}
 function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "basketball_dance"}
-function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "deforst_freezer"}
+function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "defrost_freezer"}
 function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "evolution"}
 function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "feed_the_bats"}
 function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "fertilize_plant"}
