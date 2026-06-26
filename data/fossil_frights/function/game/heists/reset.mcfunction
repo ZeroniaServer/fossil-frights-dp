@@ -61,4 +61,3 @@ scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
 scoreboard players reset * ff_heist_reveal
 function fossil_frights:key/lock/setup
-execute as @a at @s run function fossil_frights:game/heists/loot/alarm_effects_stop

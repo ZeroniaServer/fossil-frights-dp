@@ -58,3 +58,4 @@ function fossil_frights:util/fade/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
 function fossil_frights:tasks/task_book_shelf/update
+function fossil_frights:game/alarm_effects/tick

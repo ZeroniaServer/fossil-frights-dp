@@ -13,4 +13,4 @@ execute as @a[tag=ff_active,gamemode=!spectator] at @s run playsound fossil-frig
 execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
 particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 kill @s
-execute if score $heist_loot ff_heist matches 1000.. unless score $victory_complete ff_game_state matches 1 run function fossil_frights:game/heists/thieves_win
+execute if score $heist_loot ff_heist >= #heist_goal ff_heist unless score $victory_complete ff_game_state matches 1 run function fossil_frights:game/heists/thieves_win

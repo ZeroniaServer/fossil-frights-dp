@@ -1,0 +1,2 @@
+kill @e[type=minecraft:armor_stand,tag=ff_seasonal_confetti_socials_click.text]
+summon minecraft:armor_stand -8.3125 78.5 -26.625 {Tags:["ff_seasonal_confetti_socials_click.text"],Invisible:true,Marker:true,Small:true,attributes:[{id:"minecraft:scale",base:0.0625},{id:"minecraft:name_tag_distance",base:2}],CustomNameVisible:true,CustomName:"Punch Me!"}
