@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Temple Run Restart",
+                  "translate": "ff.item.temple_run_restart",
                   "color": "yellow"
                 },
                 "minecraft:lore": [
