@@ -4,10 +4,6 @@
     "icon": {
       "id": "minecraft:carved_pumpkin",
       "components": {
-        "minecraft:item_name": {
-          "text": "Security Hat",
-          "italic": false
-        },
         "minecraft:lore": [
           {
             "text": "",

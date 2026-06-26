@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Vault Key",
+                  "translate": "ff.item.vault_key",
                   "color": "gold",
                   "italic": false
                 },

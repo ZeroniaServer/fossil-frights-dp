@@ -13,7 +13,7 @@
               "components": {
                 "minecraft:item_model": "fossil-frights:general_items/key",
                 "minecraft:item_name": {
-                  "text": "Storage Key",
+                  "translate": "ff.item.storage_key",
                   "color": "yellow",
                   "italic": false
                 },
