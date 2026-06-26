@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Velociraptor",
+                  "translate": "ff.item.velociraptor_statue",
                   "color": "yellow",
                   "italic": false
                 },

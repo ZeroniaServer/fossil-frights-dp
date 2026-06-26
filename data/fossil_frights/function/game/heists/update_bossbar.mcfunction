@@ -1,0 +1,1 @@
+$bossbar set fossil_frights:bossbar name [{"translate":"ff.heists.bossbar","color":"white","with":[{"translate":"$(minutes_padding)%s:$(seconds_padding)%s","font":"fossil-frights:small_numbers_high","color":"green","with":[{"score":{"name":"$time_minutes","objective":"ff_dummy"}},{"score":{"name":"$time_seconds","objective":"ff_dummy"}}]}]}]

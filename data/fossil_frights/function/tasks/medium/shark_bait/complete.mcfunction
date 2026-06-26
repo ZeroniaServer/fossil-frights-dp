@@ -1,6 +1,6 @@
 execute unless score $shark_bait_sel ff_task_state matches 1 run return 0
 execute unless score $shark_bait_done ff_task_state matches 0 run return 0
-execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Shark Bait"
+execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "shark_bait"
 execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 0 positioned -24.5 82.5 74.5 run playsound minecraft:entity.generic.eat block @a[tag=ff_active,distance=..24] ~ ~ ~ 1.4 0.65
 execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 0 positioned -24.5 82.5 74.5 run playsound minecraft:entity.generic.eat block @a[tag=ff_active,distance=..24] ~ ~ ~ 1.4 0.95
 execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 0 positioned -24.5 82.5 74.5 run playsound minecraft:entity.player.burp block @a[tag=ff_active,distance=..24] ~ ~ ~ 0.7 0.75

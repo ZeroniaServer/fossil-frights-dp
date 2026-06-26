@@ -4,15 +4,11 @@
     "icon": {
       "id": "minecraft:written_book",
       "components": {
-        "minecraft:item_name": {
-          "text": "Task Book",
-          "italic": false
-        },
         "minecraft:lore": [
           {
             "text": "",
             "extra": [
-              "task_hard"
+              "task_easy"
             ]
           }
         ],
@@ -25,10 +21,12 @@
       }
     },
     "title": {
-      "text": "Day 7"
+      "translate": "ff.day_count.day",
+      "with": ["7"]
     },
     "description": {
-      "text": "Complete Day 7."
+      "translate": "ff.day_count.complete",
+      "with": ["7"]
     },
     "show_toast": true,
     "announce_to_chat": true

@@ -1,6 +1,6 @@
 execute unless score $fix_sculker_sel ff_task_state matches 1 run return 0
 execute unless score $fix_sculker_done ff_task_state matches 0 run return 0
-execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Fix Sculker"
+execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "fix_sculker"
 execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 0 run setblock 36 68 61 minecraft:sculk_catalyst[bloom=true]
 execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 0 positioned 36.5 68.5 61.5 run particle minecraft:sculk_soul ~ ~ ~ 0.35 0.45 0.35 0.04 18 force
 execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 0 positioned 36.5 68.5 61.5 run particle minecraft:sculk_charge_pop ~ ~ ~ 0.28 0.35 0.28 0.03 22 force

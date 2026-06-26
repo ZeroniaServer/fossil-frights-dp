@@ -19,7 +19,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "gold",
-                  "text": "Carrot Cake"
+                  "translate": "ff.item.carrot_cake"
                 },
                 "minecraft:custom_data": {
                   "itemID": "carrot_cake",

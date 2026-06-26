@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
-                  "text": "Ghast Plushie",
+                  "translate": "ff.item.ghast_plushie",
                   "color": "yellow",
                   "italic": false
                 },

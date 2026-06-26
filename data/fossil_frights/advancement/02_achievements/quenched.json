@@ -24,10 +24,10 @@
       }
     },
     "title": {
-      "text": "Quenched"
+      "translate": "ff.advancement.quenched"
     },
     "description": {
-      "text": "Purchase a drink from the vending machine."
+      "translate": "ff.advancement.quenched.description"
     },
     "show_toast": true,
     "announce_to_chat": true

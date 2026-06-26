@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Sniffer DNA Cloth",
+                  "translate": "ff.item.sniffer_dna_cloth_item",
                   "color": "yellow",
                   "italic": false
                 },

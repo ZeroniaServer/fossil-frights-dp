@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Security Hat",
+                  "text": "ff.item.security_hat",
                   "color": "white",
                   "italic": false
                 },

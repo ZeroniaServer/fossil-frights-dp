@@ -1,6 +1,6 @@
 execute unless score $nautilus_guard_sel ff_task_state matches 1 run return 0
 execute unless score $nautilus_guard_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Nautilus Guard"
+data modify storage fossil_frights:tasks complete.task_name set value "nautilus_guard"
 effect give @s minecraft:mining_fatigue 3 0 true
 particle minecraft:elder_guardian ~ ~ ~ 0 0 0 0 1 force @s
 playsound minecraft:entity.elder_guardian.curse hostile @a[tag=ff_active,distance=..28] ~ ~ ~ 1 1

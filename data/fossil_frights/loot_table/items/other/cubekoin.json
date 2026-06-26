@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "CubeKoin",
+                  "translate": "ff.cubekoin",
                   "color": "gold",
                   "italic": false
                 },

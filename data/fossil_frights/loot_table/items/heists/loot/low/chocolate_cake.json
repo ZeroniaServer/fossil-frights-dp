@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
-                  "text": "Chocolate Cake",
+                  "translate": "ff.item.chocolate_cake",
                   "color": "yellow",
                   "italic": false
                 },

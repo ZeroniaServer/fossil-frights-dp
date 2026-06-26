@@ -1,6 +1,6 @@
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 run return 0
 execute unless score $picnic_with_trike_done ff_task_state matches 0 run return 0
-data modify storage fossil_frights:tasks complete.task_name set value "Picnic with Trike"
+data modify storage fossil_frights:tasks complete.task_name set value "picnic_with_trike"
 playsound minecraft:entity.generic.eat player @a[tag=ff_active,distance=..18] ~ ~ ~ 0.8 1.0
 schedule function fossil_frights:tasks/medium/picnic_with_trike/eat_2 3t
 schedule function fossil_frights:tasks/medium/picnic_with_trike/eat_3 6t

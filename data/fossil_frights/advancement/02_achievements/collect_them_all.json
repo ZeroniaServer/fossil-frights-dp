@@ -24,10 +24,10 @@
       }
     },
     "title": {
-      "text": "Collect them all"
+      "translate": "ff.advancement.collect_them_all"
     },
     "description": {
-      "text": "Collect all 6 plushies."
+      "translate": "ff.advancement.collect_them_all.description"
     },
     "show_toast": true,
     "announce_to_chat": true

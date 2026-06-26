@@ -19,15 +19,11 @@
                 "minecraft:custom_name": {
                   "italic": false,
                   "color": "dark_green",
-                  "text": "Fertilizer"
+                  "translate": "ff.item.fertilizer"
                 },
                 "minecraft:custom_data": {
                   "itemID": "fertilizer",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "color": "dark_green",
-                  "text": "Fertilizer"
                 }
               }
             }

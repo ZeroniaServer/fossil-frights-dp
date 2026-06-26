@@ -25,10 +25,14 @@
       }
     },
     "title": {
-      "text": "Going up!"
+      "translate": "ff.advancement.going_up"
     },
     "description": {
-      "text": "Pay the rat a toll to ride in the pulley."
+      "translate": "ff.advancement.going_up.description",
+      "with": [{
+        "translate": "ff.sculkadillo",
+        "color": "dark_aqua"
+      }]
     },
     "show_toast": true,
     "announce_to_chat": true

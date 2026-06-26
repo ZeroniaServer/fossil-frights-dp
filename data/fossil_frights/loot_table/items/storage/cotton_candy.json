@@ -25,7 +25,7 @@
                       "color": "light_purple",
                       "obfuscated": false,
                       "strikethrough": false,
-                      "text": "Cotton Candy"
+                      "translate": "ff.item.cotton_candy"
                     }
                   ],
                   "text": ""

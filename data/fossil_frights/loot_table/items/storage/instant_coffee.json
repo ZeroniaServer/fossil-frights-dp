@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "red",
-                  "text": "Instant Coffee"
+                  "translate": "ff.item.instant_coffee"
                 }
               }
             }

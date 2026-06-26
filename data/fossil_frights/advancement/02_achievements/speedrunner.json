@@ -5,10 +5,10 @@
       "id": "minecraft:clock"
     },
     "title": {
-      "text": "Speedrunner"
+      "translate": "ff.advancement.speedrunner"
     },
     "description": {
-      "text": "Restart a run within 5 seconds of starting the first day."
+      "translate": "ff.advancement.speedrunner.description"
     },
     "show_toast": true,
     "announce_to_chat": true

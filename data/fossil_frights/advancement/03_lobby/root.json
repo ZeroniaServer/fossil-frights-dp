@@ -23,7 +23,7 @@
       }
     },
     "title": {
-      "text": "Lobby"
+      "translate": "ff.advancement.lobby"
     },
     "description": {
       "text": ""

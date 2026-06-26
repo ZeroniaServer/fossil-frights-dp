@@ -1,6 +1,6 @@
 execute unless score $ancient_portal_sel ff_task_state matches 1 run return 0
 execute unless score $ancient_portal_done ff_task_state matches 0 run return 0
-execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "Ancient Portal"
+execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "ancient_portal"
 execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run scoreboard players set $ancient_portal_timer ff_task_state 300
 execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 positioned 51.5 72.0 51.5 run playsound minecraft:item.bottle.empty block @a[tag=ff_active,distance=..18] ~ ~ ~ 0.75 1.55
 execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete

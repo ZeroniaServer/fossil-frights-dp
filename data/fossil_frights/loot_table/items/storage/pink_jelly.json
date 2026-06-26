@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "light_purple",
-                  "text": "Pink Jelly"
+                  "translate": "ff.item.pink_jelly"
                 }
               }
             }

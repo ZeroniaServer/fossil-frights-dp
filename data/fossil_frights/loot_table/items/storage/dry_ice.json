@@ -23,7 +23,7 @@
                 "minecraft:item_name": {
                   "italic": false,
                   "color": "aqua",
-                  "text": "Dry Ice"
+                  "translate": "ff.item.dry_ice"
                 }
               }
             }
