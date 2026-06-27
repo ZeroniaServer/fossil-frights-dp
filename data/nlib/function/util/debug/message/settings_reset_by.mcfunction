@@ -1,0 +1,1 @@
+$execute if entity @s[type=minecraft:player] run tellraw @a[advancements={nlib:flag/hide_chat={debug=false}}] {translate:'nlib.chat.console', fallback:'[Console] %s', with:[{translate:'nlib.debug.settings_reset_by', fallback:'%s settings reset by %s.', color:red, with:[[{text:'', color:green},$(text)],[{selector:'@s'}]]}]}

@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "reload": {
+      "trigger": "minecraft:impossible"
+    },
+    "debug": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

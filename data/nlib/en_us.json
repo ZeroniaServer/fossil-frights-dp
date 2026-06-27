@@ -1,0 +1,26 @@
+{
+	"nlib.chat.console": "[Console] %s",
+	"nlib.chat.initialize": "%s initialized: %s",
+
+	"nlib": "nlib",
+	"nlib.click_to_visit.link": "Click to visit: %s.",
+
+	"nlib.error.documentation": "[View Documentation]",
+	"nlib.error.reload": "Error identified: %s %s",
+	"nlib.error.1000": "Couldn't load tag %s as one or more functions are invalid.",
+	"nlib.error.1001": "Another datapack is overriding %s's implementation of '%s'",
+
+	"nlib.debug.settings_reset_by": "%s settings reset by %s.",
+
+	"nlib.version.series": "series",
+	"nlib.version.id": "version",
+	"nlib.version.date": "date",
+	"nlib.version.resource_pack.id": "resource version",
+	"nlib.version.resource_pack.date": "resource date",
+
+	"nlib.technical.version": "a1.0.0-12",
+	"nlib.technical.version.date": "June 27th 2026",
+	"nlib.technical.version.line": "• %s = %s",
+	"nlib.technical.version.pipe": "• %s = %s | %s",
+	"nlib.technical.version.box": "[%s | %s | %s]"
+}

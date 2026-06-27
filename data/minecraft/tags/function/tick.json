@@ -1,5 +1,6 @@
 {
   "values": [
-    "fossil_frights:tick"
+    "fossil_frights:tick",
+    "nlib:core/tick"
   ]
 }

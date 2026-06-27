@@ -1,5 +1,6 @@
 {
   "values": [
-    "fossil_frights:load"
+    "fossil_frights:load",
+    "nlib:core/load"
   ]
 }

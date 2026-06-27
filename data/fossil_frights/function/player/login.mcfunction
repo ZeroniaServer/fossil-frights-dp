@@ -113,6 +113,10 @@ scoreboard players set @s ff_cmd_heists 0
 scoreboard players set @s ff_cmd_join_guard 0
 scoreboard players set @s ff_cmd_join_thief 0
 scoreboard players set @s ff_cmd_spawn 0
+scoreboard players set @s ff_cmd_invite 0
+scoreboard players set @s ff_invite_sel 0
+scoreboard players set @s ff_invite_accept 0
+scoreboard players set @s version -2147483648
 scoreboard players enable @s ff_queue_start
 scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave
@@ -125,12 +129,10 @@ scoreboard players enable @s ff_cmd_heists
 scoreboard players enable @s ff_cmd_join_guard
 scoreboard players enable @s ff_cmd_join_thief
 scoreboard players enable @s ff_cmd_spawn
-scoreboard players set @s ff_cmd_invite 0
 scoreboard players enable @s ff_cmd_invite
-scoreboard players set @s ff_invite_sel 0
 scoreboard players enable @s ff_invite_sel
-scoreboard players set @s ff_invite_accept 0
 scoreboard players enable @s ff_invite_accept
+scoreboard players enable @s version
 execute unless entity @s[tag=tutorial_complete] run tellraw @s [{"text":"ℹ ","color":"#F2B8FF"},{"text":"Watch the in-game tutorial to help get started! ","color":"#F2B8FF"},{"text":"[Click here to start]","color":"#FF55FF","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_tutorial set 1"}}]
 clear @s
 item replace entity @s armor.head with air

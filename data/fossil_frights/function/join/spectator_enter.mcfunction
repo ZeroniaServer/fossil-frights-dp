@@ -3,4 +3,5 @@ execute if score $game_running ff_game_state matches 1 unless block 10 71 26 min
 execute unless entity @a[tag=ff_active,limit=1] run return 0
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 gamemode spectator @s
+tag @s add nlib.spectate
 function fossil_frights:util/fade/queue/spectator_enter
