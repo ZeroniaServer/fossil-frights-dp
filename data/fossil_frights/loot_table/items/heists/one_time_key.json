@@ -19,12 +19,12 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Click a lock to gain an item",
+                    "translate": "ff.item.storage_key.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "One time use",
+                    "translate": "ff.item.storage_key.one_time_use",
                     "color": "red",
                     "italic": false
                   }

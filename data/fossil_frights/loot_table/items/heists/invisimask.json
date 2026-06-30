@@ -12,30 +12,39 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisimask",
+                  "translate": "ff.item.invisimask",
                   "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Punch a guard to get a key and turn invisible.",
+                    "translate": "ff.item.invisimask.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "8 seconds of invisibility",
+                    "translate": "ff.item.invisimask.description.2",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text":"8"}
+                    ]
                   },
                   {
-                    "text": "20 seconds of speed",
+                    "translate": "ff.item.invisimask.description.3",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   },
                   {
-                    "text": "20 second cooldown",
+                    "translate": "ff.item.invisimask.description.4",
                     "color": "red",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   }
                 ],
                 "minecraft:custom_model_data": {
@@ -73,30 +82,39 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisimask",
+                  "translate": "ff.item.invisimask",
                   "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Punch a guard to get a key and turn invisible.",
+                    "translate": "ff.item.invisimask.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "8 seconds of invisibility",
+                    "translate": "ff.item.invisimask.description.2",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text":"8"}
+                    ]
                   },
                   {
-                    "text": "20 seconds of speed",
+                    "translate": "ff.item.invisimask.description.3",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   },
                   {
-                    "text": "20 second cooldown",
+                    "translate": "ff.item.invisimask.description.4",
                     "color": "red",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   }
                 ],
                 "minecraft:custom_model_data": {
@@ -134,30 +152,39 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisimask",
+                  "translate": "ff.item.invisimask",
                   "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Punch a guard to get a key and turn invisible.",
+                    "translate": "ff.item.invisimask.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "8 seconds of invisibility",
+                    "translate": "ff.item.invisimask.description.2",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text":"8"}
+                    ]
                   },
                   {
-                    "text": "20 seconds of speed",
+                    "translate": "ff.item.invisimask.description.3",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   },
                   {
-                    "text": "20 second cooldown",
+                    "translate": "ff.item.invisimask.description.4",
                     "color": "red",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   }
                 ],
                 "minecraft:custom_model_data": {
@@ -195,30 +222,39 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Invisimask",
+                  "translate": "ff.item.invisimask",
                   "color": "white",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Punch a guard to get a key and turn invisible.",
+                    "translate": "ff.item.invisimask.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "8 seconds of invisibility",
+                    "translate": "ff.item.invisimask.description.2",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text":"8"}
+                    ]
                   },
                   {
-                    "text": "20 seconds of speed",
+                    "translate": "ff.item.invisimask.description.3",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   },
                   {
-                    "text": "20 second cooldown",
+                    "translate": "ff.item.invisimask.description.4",
                     "color": "red",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
                   }
                 ],
                 "minecraft:custom_model_data": {
