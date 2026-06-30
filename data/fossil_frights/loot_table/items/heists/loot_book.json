@@ -1811,7 +1811,7 @@
                 "minecraft:custom_name": {
                   "color": "gold",
                   "italic": false,
-                  "text": "Loot Book"
+                  "translate": "ff.item.loot_book"
                 },
                 "minecraft:tooltip_display": {
                   "hidden_components": [

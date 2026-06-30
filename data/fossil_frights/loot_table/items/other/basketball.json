@@ -36,7 +36,7 @@
                         "color": "yellow",
                         "obfuscated": false,
                         "strikethrough": false,
-                        "text": "Here catch! Thanks for making me dance"
+                        "translate": "ff.item.basketball.description.1"
                       }
                     ],
                     "text": ""
@@ -50,7 +50,7 @@
                         "color": "gold",
                         "obfuscated": false,
                         "strikethrough": false,
-                        "text": "-Copper Golem"
+                        "translate": "ff.item.basketball.description.2"
                       }
                     ],
                     "text": ""
@@ -65,7 +65,7 @@
                       "color": "gold",
                       "obfuscated": false,
                       "strikethrough": false,
-                      "text": "Basketball"
+                      "translate": "ff.item.basketball"
                     }
                   ],
                   "text": ""

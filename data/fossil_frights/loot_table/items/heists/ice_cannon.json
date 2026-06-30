@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Ice Cannon",
+                  "translate": "ff.item.ice_cannon",
                   "color": "aqua",
                   "italic": false
                 },

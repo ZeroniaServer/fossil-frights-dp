@@ -12,13 +12,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Hazard Cookie",
+                  "translate": "ff.item.hazard_cookie",
                   "color": "yellow",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Enables a random hazard to help thieving.",
+                    "translate": "ff.item.hazard_cookie.description",
                     "color": "yellow",
                     "italic": false
                   }

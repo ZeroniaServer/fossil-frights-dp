@@ -12,13 +12,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Night Stick",
+                  "translate": "ff.item.night_stick",
                   "color": "gold",
                   "italic": false
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Stuns thief (prevents regen) for 1 second.",
+                    "translate": "ff.item.night_stick.description",
                     "color": "white",
                     "italic": false
                   }

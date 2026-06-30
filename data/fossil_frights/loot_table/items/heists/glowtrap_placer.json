@@ -12,24 +12,24 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Glowtrap Placer",
+                  "translate": "ff.item.glowtrap_placer",
                   "color": "green",
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
                 "minecraft:lore": [
                   {
-                    "text": "Right click to place trap. Only visible to guards.",
+                    "translate": "ff.item.glowtrap_placer.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "2.5 second activation time. Applies glow and slow to thieves.",
+                    "translate": "ff.item.glowtrap_placer.description.2",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "60 second cooldown.",
+                    "translate": "ff.item.glowtrap_placer.description.3",
                     "color": "red",
                     "italic": false
                   }
@@ -49,24 +49,24 @@
                   "count": 1,
                   "components": {
                     "minecraft:item_name": {
-                      "text": "Glowtrap Placer",
+                      "translate": "ff.item.glowtrap_placer",
                       "color": "green",
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
                     "minecraft:lore": [
                       {
-                        "text": "Right click to place trap. Only visible to guards.",
+                        "translate": "ff.item.glowtrap_placer.description.1",
                         "color": "white",
                         "italic": false
                       },
                       {
-                        "text": "2.5 second activation time. Applies glow and slow to thieves.",
+                        "translate": "ff.item.glowtrap_placer.description.2",
                         "color": "white",
                         "italic": false
                       },
                       {
-                        "text": "60 second cooldown.",
+                        "translate": "ff.item.glowtrap_placer.description.3",
                         "color": "red",
                         "italic": false
                       }

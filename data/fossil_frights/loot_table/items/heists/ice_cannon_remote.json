@@ -12,24 +12,24 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Ice Cannon Remote",
+                  "translate": "ff.item.ice_cannon_remote",
                   "color": "aqua",
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
                 "minecraft:lore": [
                   {
-                    "text": "Shoots an icy projectile to freeze thieves.",
+                    "translate": "ff.item.ice_cannon_remote.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "3 second cooldown.",
+                    "translate": "ff.item.ice_cannon_remote.description.2",
                     "color": "red",
                     "italic": false
                   },
                   {
-                    "text": "Does not work during lava hazard.",
+                    "translate": "ff.item.ice_cannon_remote.description.3",
                     "color": "red",
                     "italic": false
                   }
@@ -49,24 +49,24 @@
                   "count": 1,
                   "components": {
                     "minecraft:item_name": {
-                      "text": "Ice Cannon Remote",
+                      "translate": "ff.item.ice_cannon_remote",
                       "color": "aqua",
                       "italic": false
                     },
                     "minecraft:item_model": "fossil-frights:general_items/ice_cannon_remote",
                     "minecraft:lore": [
                       {
-                        "text": "Shoots an icy projectile to freeze thieves.",
+                        "translate": "ff.item.ice_cannon_remote.description.1",
                         "color": "white",
                         "italic": false
                       },
                       {
-                        "text": "3 second cooldown.",
+                        "translate": "ff.item.ice_cannon_remote.description.2",
                         "color": "red",
                         "italic": false
                       },
                       {
-                        "text": "Does not work during lava hazard.",
+                        "translate": "ff.item.ice_cannon_remote.description.3",
                         "color": "red",
                         "italic": false
                       }

@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Confetti Cannon",
+                  "translate": "ff.item.confetti_cannon",
                   "color": "yellow",
                   "italic": false
                 },

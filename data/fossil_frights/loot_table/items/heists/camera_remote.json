@@ -12,29 +12,36 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Camera Remote",
+                  "translate": "ff.item.camera_remote",
                   "color": "yellow",
                   "italic": false
                 },
                 "minecraft:item_model": "fossil-frights:general_items/camera_remote",
                 "minecraft:lore": [
                   {
-                    "text": "Click to view security cameras.",
+                    "translate": "ff.item.camera_remote.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "Left & Right to Change Camera",
+                    "translate": "ff.item.camera_remote.description.2",
                     "color": "yellow",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"keybind": "key.attack"},
+                      {"keybind": "key.use"}
+                    ]
                   },
                   {
-                    "text": "Shift to Exit",
+                    "translate": "ff.item.camera_remote.description.3",
                     "color": "yellow",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {"keybind": "key.sneak"}
+                    ]
                   },
                   {
-                    "text": "Disabled if lights are out.",
+                    "translate": "ff.item.camera_remote.description.4",
                     "color": "red",
                     "italic": false
                   }
