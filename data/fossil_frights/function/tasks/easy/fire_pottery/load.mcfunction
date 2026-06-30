@@ -6,3 +6,6 @@ execute positioned 66 81 58 rotated 90 0 run function fossil_frights:items/util/
 setblock 66 81 54 minecraft:barrier strict
 setblock 66 81 56 minecraft:barrier strict
 setblock 66 81 58 minecraft:barrier strict
+
+scoreboard players reset $fire_pottery_baking ff_task_state
+scoreboard players reset $fire_pottery_reset_after_baking ff_task_state
