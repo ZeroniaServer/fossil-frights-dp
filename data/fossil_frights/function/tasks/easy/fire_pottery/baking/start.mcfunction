@@ -1,3 +1,5 @@
+scoreboard players set $fire_pottery_baking ff_task_state 1
+
 setblock 66 79 54 minecraft:campfire[lit=true] strict
 setblock 66 79 56 minecraft:campfire[lit=true] strict
 setblock 66 79 58 minecraft:campfire[lit=true] strict
@@ -51,4 +53,4 @@ schedule function fossil_frights:tasks/easy/fire_pottery/baking/random_flame 36t
 schedule function fossil_frights:tasks/easy/fire_pottery/baking/random_flame 37t append
 schedule function fossil_frights:tasks/easy/fire_pottery/baking/random_flame 38t append
 schedule function fossil_frights:tasks/easy/fire_pottery/baking/random_flame 39t append
-schedule function fossil_frights:tasks/easy/fire_pottery/baking/random_flame 40t append
+schedule function fossil_frights:tasks/easy/fire_pottery/baking/end 40t
