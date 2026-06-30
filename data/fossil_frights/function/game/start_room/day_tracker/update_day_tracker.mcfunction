@@ -1,0 +1,7 @@
+$scoreboard players set $temp ff_dummy $(day)
+scoreboard players operation $temp ff_dummy -= #1 ff_constant
+$data merge entity @e[type=minecraft:text_display,tag=ff_day_tracker_$(day),limit=1] {text:[{"translate":"ff.day_tracker.day",color:'black',"with":[{text:'$(day)',font:'fossil-frights:small_numbers_high'}]}],text_opacity:51b,shadow:0b,brightness:{sky:0,block:0}}
+$execute if score $day_current ff_day matches $(day).. run data merge entity @e[type=minecraft:text_display,tag=ff_day_tracker_$(day),limit=1] {text:[{"translate":'ff.day_tracker.day',color:'white',"with":[{text:'$(day)',font:'fossil-frights:small_numbers_high'}]}],text_opacity:255,shadow:1b,brightness:{sky:15,block:15}}
+$execute if score $day_active ff_day matches 1 if score $day_current ff_day matches $(day) run data merge entity @e[type=minecraft:text_display,tag=ff_day_tracker_$(day),limit=1] {text:[{"translate":'ff.day_tracker.day',color:'white',bold:true,"with":[{text:'$(day)',font:'fossil-frights:small_numbers_high'}]}],text_opacity:255,shadow:1b,brightness:{sky:15,block:15}}
+$execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_flash ff_day matches ..9 if score $day_current ff_day = $temp ff_dummy run data merge entity @e[type=minecraft:text_display,tag=ff_day_tracker_$(day),limit=1] {text:[{"translate":'ff.day_tracker.day',color:'white',bold:true,"with":[{text:'$(day)',font:'fossil-frights:small_numbers_high'}]}],text_opacity:255,shadow:1b,brightness:{sky:15,block:15}}
+scoreboard players reset $temp ff_dummy
