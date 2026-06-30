@@ -1,8 +1,6 @@
 execute unless score $fire_pottery_sel ff_task_state matches 1 run return 0
 execute unless score $fire_pottery_done ff_task_state matches 0 run return 0
-execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run setblock 66 79 54 minecraft:campfire[lit=true]
-execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run setblock 66 79 56 minecraft:campfire[lit=true]
-execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run setblock 66 79 58 minecraft:campfire[lit=true]
+execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run function fossil_frights:tasks/easy/fire_pottery/baking/start
 execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run schedule function fossil_frights:tasks/easy/fire_pottery/light_if_active 1t replace
 execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "fire_pottery"
 execute if score $fire_pottery_sel ff_task_state matches 1 if score $fire_pottery_done ff_task_state matches 0 as @a[tag=ff_active] at @s run playsound minecraft:block.fire.ambient master @s ~ ~ ~ 0.9 1.0
