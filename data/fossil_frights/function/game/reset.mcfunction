@@ -100,4 +100,5 @@ function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/maybe_notify_next
 function fossil_frights:door/reset
 function fossil_frights:tasks/easy/check_security/update_camera_models
+function fossil_frights:tasks/task_book_shelf/reset
 scoreboard players set $alarm_effects_on ff_heist 0

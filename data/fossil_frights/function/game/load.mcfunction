@@ -15,3 +15,4 @@ function fossil_frights:game/reset_hazards
 tag @a[tag=ff_active] remove ff_muted_chat
 tag @a[tag=ff_active] remove ff_active
 team leave @a[team=ff_active_gold]
+function fossil_frights:tasks/task_book_shelf/reset
