@@ -12,5 +12,9 @@ schedule clear fossil_frights:tasks/easy/fire_pottery/baking/bake_pot_3
 schedule clear fossil_frights:tasks/easy/fire_pottery/baking/random_flame
 schedule clear fossil_frights:tasks/easy/fire_pottery/baking/end
 
-execute unless score $fire_pottery_sel ff_task_state matches 0 run item modify entity @e[type=minecraft:item_display,tag=ff_fire_pottery_task_pot] contents fossil_frights:fire_pottery_task/set_clay
 execute unless score $fire_pottery_sel ff_task_state matches 1 run item modify entity @e[type=minecraft:item_display,tag=ff_fire_pottery_task_pot] contents fossil_frights:fire_pottery_task/set_baked
+
+execute unless score $fire_pottery_sel ff_task_state matches 0 run item modify entity @e[type=minecraft:item_display,tag=ff_fire_pottery_task_pot] contents fossil_frights:fire_pottery_task/set_clay
+execute unless score $fire_pottery_sel ff_task_state matches 0 run playsound minecraft:block.decorated_pot.shatter block @a 66 81 56 0.5 0.75
+execute unless score $fire_pottery_sel ff_task_state matches 0 at @e[type=minecraft:item_display,tag=ff_fire_pottery_task_pot] run particle minecraft:item{item:"minecraft:archer_pottery_sherd"} ~ ~0.5 ~ 0.3 0.3 0.3 0.1 10
+execute unless score $fire_pottery_sel ff_task_state matches 0 at @e[type=minecraft:item_display,tag=ff_fire_pottery_task_pot] run particle minecraft:block_crumble{block_state:"minecraft:terracotta"} ~ ~0.5 ~ 0.3 0.4 0.3 1 20
