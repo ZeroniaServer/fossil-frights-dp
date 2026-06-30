@@ -321,6 +321,4 @@ scoreboard players set #line_final_task ff_task_state 1
 
 function fossil_frights:tasks/tracker/refresh
 
-function fossil_frights:tasks/task_book_shelf/reset
-
 function fossil_frights:tasks/hard/basketball_dance/place_coppy_the_copper_golem
