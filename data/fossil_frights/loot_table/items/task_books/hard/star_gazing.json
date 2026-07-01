@@ -35,16 +35,15 @@
                     [
                       "ꜱᴛᴀʀ ɢᴀᴢɪɴɢ\n",
                       "-------------------\n",
-                      "● ᴏʙᴇʀꜱᴠᴀᴛᴏʀʏ\n",
-                      "● ",
+                      "ᴏʙꜱᴇʀᴠᴀᴛᴏʀʏ ● ",
                       {
                         "text": "ʜᴀʀᴅ\n",
                         "color": "red"
                       },
-                      "\nSince you're the only one here at night, I'll need you to go check which star patterns are visible. Look through the telescope and check which constellation you can see. Compare it with the images on "
+                      "\nSince you're the only one here at night, I'll need you to go check which star patterns are visible. Look through the telescope and check which constellation you can see. Compare it with the images on the"
                     ],
                     [
-                      "the walls, and mark which one is visible. You should note depending on the time of year the constellations may appear rotated."
+                      "walls, and mark which one is visible. You should note depending on the time of year the constellations may appear rotated."
                     ]
                   ]
                 }
