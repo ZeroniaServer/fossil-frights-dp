@@ -363,7 +363,7 @@ function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
-function fossil_frights:deep_dark_elevator/load
+function fossil_frights:animations/deep_dark_elevator/load
 function fossil_frights:game/reload_reset
 execute in minecraft:overworld run forceload add 0 0
 execute in minecraft:overworld run forceload add -112 -96 191 100
