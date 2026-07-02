@@ -9,9 +9,9 @@ execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] run
 item modify entity @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] contents {function:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:sum",summands:[84,{type:"minecraft:score",target:{type:"minecraft:fixed",name:"$elevator_height"},score:"ff_deep_dark_elevator",scale:-0.01}]}],mode:"replace_all"}}
 
 # Knock standing players off ("they lose balance") as a fix for falling through when moving up and bumpy ride while moving down.
-execute at @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] positioned ~-0.5 ~1 ~-1.2 as @a[dx=0,predicate=!fossil_frights:entity/has_vehicle] positioned ~ ~ ~0.7 if entity @s[dx=0] at @s run tp @s ~ ~ ~0.3
-execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] at @s positioned ~-0.5 ~0.5 ~-0.5 as @a[dy=3,predicate=!fossil_frights:entity/has_vehicle] run damage @s 0.0000000001 minecraft:mob_attack by @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator]
-execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] at @s positioned ~-0.6875 ~4 ~-0.6875 as @a[dx=0.375,dy=0,dz=0.375,predicate=!fossil_frights:entity/has_vehicle] run damage @s 0.0000000001 minecraft:mob_attack by @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator]
+execute at @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] positioned ~-0.5 ~1 ~-1.2 as @a[dx=0,gamemode=!spectator,predicate=!fossil_frights:entity/has_vehicle] positioned ~ ~ ~0.7 if entity @s[dx=0] at @s run tp @s ~ ~ ~0.3
+execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] at @s positioned ~-0.5 ~0.5 ~-0.5 as @a[dy=3,gamemode=!spectator,predicate=!fossil_frights:entity/has_vehicle] run damage @s 0.0000000001 minecraft:mob_attack by @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator]
+execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] at @s positioned ~-0.6875 ~4 ~-0.6875 as @a[dx=0.375,dy=0,dz=0.375,gamemode=!spectator,predicate=!fossil_frights:entity/has_vehicle] run damage @s 0.0000000001 minecraft:mob_attack by @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator]
 
 # Sounds
 scoreboard players add $clicking_sound_cooldown ff_deep_dark_elevator 1
