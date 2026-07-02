@@ -124,7 +124,11 @@ scoreboard objectives add ff_compass dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
 scoreboard players set #1 ff_constant 1
+scoreboard players set #5 ff_constant 5
+scoreboard players set #10 ff_constant 10
+scoreboard players set #20 ff_constant 20
 scoreboard players set #60 ff_constant 60
+scoreboard players set #100 ff_constant 100
 scoreboard players set #180 ff_constant 180
 scoreboard players set #360 ff_constant 360
 scoreboard players set #hazard_count ff_hazard_rng 5
