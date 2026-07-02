@@ -1,4 +1,4 @@
-execute at @s run playsound fossil-frights:camera.open
+execute at @s run playsound fossil-frights:heists.highlight_thief
 scoreboard players set @s ff_security_camera_heist 50
 
 effect give @p[tag=ff_heist_thief] glowing 3 0 true
