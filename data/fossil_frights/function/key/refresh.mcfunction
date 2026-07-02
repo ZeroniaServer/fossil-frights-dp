@@ -1,6 +1,6 @@
 tag @s remove ff_key_restore_hand
 tag @s remove ff_key_restore_done
-execute store result storage fossil_frights:key seconds float 0.05 run scoreboard players get $key ff_key_cd_cfg
+execute store result storage fossil_frights:key seconds float 0.05 run scoreboard players get $key_cooldown_length ff_key_cd_cfg
 execute if items entity @s weapon.mainhand *[custom_data~{ff_any_key:true}] run tag @s add ff_key_restore_hand
 execute if entity @s[tag=ff_key_restore_hand] run function fossil_frights:key/put_ready_in_hand with storage fossil_frights:key
 execute if entity @s[tag=ff_key_restore_hand] run tag @s add ff_key_restore_done
