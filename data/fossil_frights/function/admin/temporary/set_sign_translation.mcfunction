@@ -1,5 +1,5 @@
-execute unless block ~ ~ ~ #signs run tellraw @s {color:"red",text:"No sign here"}
-execute unless block ~ ~ ~ #signs run return fail
+execute unless block ~ ~ ~ #all_signs run tellraw @s {color:"red",text:"No sign here"}
+execute unless block ~ ~ ~ #all_signs run return fail
 
 data modify storage fossil_frights:sign line_1 set from block ~ ~ ~ front_text.messages[0]
 execute unless data storage fossil_frights:sign line_1{} run data modify storage fossil_frights:sign line_1 set value {}
