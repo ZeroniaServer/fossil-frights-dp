@@ -1,1 +1,6 @@
-data merge block -21 72 48 {is_waxed:0b,front_text:{has_glowing_text:0b,color:"black",messages:[{text:"SALINE MONITOR",color:"white"},{text:"|||||",color:"green",extra:[{text:"|||||||||||||||",color:"gray"}]},{text:"Status: ",color:"white",extra:[{text:"OK",color:"green"}]},{text:"↓ RESET ↓",color:"red"}]},back_text:{has_glowing_text:0b,color:"black",messages:[{text:""},{text:""},{text:""},{text:""}]}}
+data modify block -21 72 48 front_text.messages set value [\
+    {color:"white",translate:"ff.sign.basement.tank_room.saline_monitor.0",with:[{extra:[{color:"green",text:"|||||"},{color:"gray",text:"|||||||||||||||"}],text:""},{color:"green",translate:"ff.sign.basement.tank_room.saline_monitor.ok"}]},\
+    {color:"white",translate:"ff.sign.basement.tank_room.saline_monitor.1",with:[{extra:[{color:"green",text:"|||||"},{color:"gray",text:"|||||||||||||||"}],text:""},{color:"green",translate:"ff.sign.basement.tank_room.saline_monitor.ok"}]},\
+    {color:"white",translate:"ff.sign.basement.tank_room.saline_monitor.2",with:[{extra:[{color:"green",text:"|||||"},{color:"gray",text:"|||||||||||||||"}],text:""},{color:"green",translate:"ff.sign.basement.tank_room.saline_monitor.ok"}]},\
+    {color:"red",translate:"ff.sign.basement.tank_room.saline_monitor.3",with:[{extra:[{color:"green",text:"|||||"},{color:"gray",text:"|||||||||||||||"}],text:""},{color:"green",translate:"ff.sign.basement.tank_room.saline_monitor.ok"}]}\
+]
