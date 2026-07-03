@@ -6,25 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass_bottle",
+          "name": "minecraft:breeze_rod",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:breeze_rod",
                 "minecraft:custom_name": {
-                  "extra": [
-                    {
-                      "italic": false,
-                      "underlined": false,
-                      "bold": false,
-                      "color": "aqua",
-                      "obfuscated": false,
-                      "strikethrough": false,
-                      "translate": "ff.item.febreeze_rod"
-                    }
-                  ],
-                  "text": ""
+                  "color": "aqua",
+                  "italic": false,
+                  "translate": "ff.item.febreeze_rod"
                 },
                 "minecraft:custom_data": {
                   "itemID": "febreeze_rod",
