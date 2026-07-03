@@ -28,13 +28,8 @@
                   "custom_color": 15895592,
                   "custom_effects": [
                     {
-                      "id": "minecraft:slow_falling",
+                      "id": "minecraft:luck",
                       "amplifier": 0,
-                      "duration": 900
-                    },
-                    {
-                      "id": "minecraft:jump_boost",
-                      "amplifier": 2,
                       "duration": 900
                     }
                   ]
