@@ -12,3 +12,5 @@ setblock -8 70 46 minecraft:water_cauldron[level=1] strict
 setblock 55 68 61 minecraft:water_cauldron[level=3] strict
 setblock -16 106 64 minecraft:water_cauldron[level=3] strict
 setblock -17 106 64 minecraft:water_cauldron[level=3] strict
+setblock 16 80 34 minecraft:water_cauldron[level=3] strict
+setblock 16 80 33 minecraft:water_cauldron[level=2] strict
