@@ -6,3 +6,6 @@ execute at @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] pos
 execute at @e[tag=ff_deep_dark_elevator.passenger] run summon minecraft:item_display ~ ~ ~ {Tags:["ff_deep_dark_elevator_seat"],teleport_duration:1,view_range:0}
 execute as @e[tag=ff_deep_dark_elevator.passenger] at @s run ride @s mount @n[type=minecraft:item_display,tag=ff_deep_dark_elevator_seat,distance=..0.1,predicate=!fossil_frights:entity/has_passenger]
 tag @e[tag=ff_deep_dark_elevator.passenger] remove ff_deep_dark_elevator.passenger
+
+setblock 51 77 59 minecraft:air strict
+setblock 51 68 59 minecraft:air strict
