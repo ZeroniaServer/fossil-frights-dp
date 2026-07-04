@@ -1,58 +1,58 @@
 # Remove the water sources
 # --- First Floor ---
 #Cafe
-setblock 21 87 15 minecraft:air
-setblock 25 87 37 minecraft:air
-setblock 16 87 40 minecraft:air
+execute positioned 21 87 15 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 25 87 37 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 16 87 40 run function fossil_frights:hazard/floods/drain_water/start_here
 #Gift Shop
-setblock -25 87 18 minecraft:air
-setblock -19 87 26 minecraft:air
+execute positioned -25 87 18 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -19 87 26 run function fossil_frights:hazard/floods/drain_water/start_here
 #Aquatic Exhibit
-setblock 15 90 63 minecraft:air
-setblock -15 90 64 minecraft:air
-setblock 11 90 70 minecraft:air
-setblock -8 90 70 minecraft:air
-setblock 8 90 86 minecraft:air
-setblock -12 90 87 minecraft:air
+execute positioned 15 90 63 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -15 90 64 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 11 90 70 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -8 90 70 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 8 90 86 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -12 90 87 run function fossil_frights:hazard/floods/drain_water/start_here
 #First Floor Misc
-setblock -2 90 49 minecraft:air
+execute positioned -2 90 49 run function fossil_frights:hazard/floods/drain_water/start_here
 
 # --- Second Floor ---
 #Eggxhibbit
-setblock -21 100 26 minecraft:air
-setblock -18 100 41 minecraft:air
-setblock -24 100 57 minecraft:air
+execute positioned -21 100 26 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -18 100 41 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -24 100 57 run function fossil_frights:hazard/floods/drain_water/start_here
 #Aviary
-setblock -13 108 68 minecraft:air
-setblock -15 108 78 minecraft:air
-setblock 9 108 86 minecraft:air
-setblock 4 108 88 minecraft:air
+execute positioned -13 108 68 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -15 108 78 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 9 108 86 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 4 108 88 run function fossil_frights:hazard/floods/drain_water/start_here
 #Second Floor Misc
-setblock -13 100 14 minecraft:air
-setblock -14 100 22 minecraft:air
-setblock 17 100 25 minecraft:air
-setblock 7 100 37 minecraft:air
-setblock 19 100 46 minecraft:air
-setblock -5 100 54 minecraft:air
-setblock 15 100 63 minecraft:air
+execute positioned -13 100 14 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -14 100 22 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 17 100 25 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 7 100 37 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 19 100 46 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -5 100 54 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 15 100 63 run function fossil_frights:hazard/floods/drain_water/start_here
 
 # --- Third Floor ---
 #Third Floor
-setblock -23 109 23 minecraft:air
-setblock -20 109 35 minecraft:air
-setblock -10 109 40 minecraft:air
-setblock 3 109 34 minecraft:air
-setblock 15 108 45 minecraft:air
+execute positioned -23 109 23 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -20 109 35 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -10 109 40 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 3 109 34 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 15 108 45 run function fossil_frights:hazard/floods/drain_water/start_here
 
 # --- Basement ---
 #Lava Boiler Room
-setblock -8 75 10 minecraft:air
-setblock -14 75 18 minecraft:air
+execute positioned -8 75 10 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -14 75 18 run function fossil_frights:hazard/floods/drain_water/start_here
 #Storage Room
-setblock -9 75 25 minecraft:air
+execute positioned -9 75 25 run function fossil_frights:hazard/floods/drain_water/start_here
 #Fossil Restoration Room
-setblock -2 75 42 minecraft:air
-setblock -19 75 44 minecraft:air
+execute positioned -2 75 42 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -19 75 44 run function fossil_frights:hazard/floods/drain_water/start_here
 #Basement Misc
-setblock -19 72 10 minecraft:air
+execute positioned -19 72 10 run function fossil_frights:hazard/floods/drain_water/start_here
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=false,facing=north]
