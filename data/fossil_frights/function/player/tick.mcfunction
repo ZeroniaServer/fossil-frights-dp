@@ -153,3 +153,5 @@ attribute @s[tag=ff_active] minecraft:waypoint_receive_range base set 60000000
 attribute @s[gamemode=spectator] minecraft:waypoint_receive_range base set 60000000
 attribute @s[tag=ff_forced_spectate,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[tag=ff_camera_remote_active,gamemode=spectator] minecraft:waypoint_receive_range base set 0
+execute if predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier add fossil_frights:fossil_fizz 0.9 add_value
+execute unless predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier remove fossil_frights:fossil_fizz
