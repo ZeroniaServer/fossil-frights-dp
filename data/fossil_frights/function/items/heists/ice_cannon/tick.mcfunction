@@ -1,6 +1,6 @@
 scoreboard players add @s ff_ice_cannon_age 1
 execute if score @s ff_ice_cannon_age matches 60.. run function fossil_frights:items/heists/ice_cannon/impact
-execute positioned ^ ^ ^0.9 unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:cave_air unless block ~ ~ ~ minecraft:void_air unless block ~ ~ ~ minecraft:light run function fossil_frights:items/heists/ice_cannon/impact
+execute positioned ^ ^ ^0.9 unless block ~ ~ ~ #fossil_frights:raycast_ignore run function fossil_frights:items/heists/ice_cannon/impact
 tag @s add ff_ice_cannon_collision_check
 function fossil_frights:items/heists/ice_cannon/check_player_collision
 tag @s remove ff_ice_cannon_collision_check
