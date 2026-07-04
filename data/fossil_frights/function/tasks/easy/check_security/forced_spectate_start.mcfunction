@@ -21,6 +21,6 @@ function fossil_frights:tasks/easy/check_security/select_camera
 function fossil_frights:tasks/easy/check_security/show_nav
 function fossil_frights:tasks/easy/check_security/update_camera_models
 execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1
-setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
-setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side]
+execute unless predicate fossil_frights:world/is_realms run setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
+execute unless predicate fossil_frights:world/is_realms run setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]

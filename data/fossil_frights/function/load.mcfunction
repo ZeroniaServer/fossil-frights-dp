@@ -1,3 +1,4 @@
+execute unless data storage fossil_frights:world settings.realms run data modify storage fossil_frights:world settings.realms set value false
 scoreboard objectives add ff_dummy dummy
 scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_lock_look dummy
