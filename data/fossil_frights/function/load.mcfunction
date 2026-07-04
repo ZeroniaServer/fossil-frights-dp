@@ -123,6 +123,7 @@ scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
+scoreboard objectives add ff_cannot_trigger_lady_bug_revolutionary_until_timestamp dummy
 scoreboard players set #1 ff_constant 1
 scoreboard players set #5 ff_constant 5
 scoreboard players set #10 ff_constant 10
