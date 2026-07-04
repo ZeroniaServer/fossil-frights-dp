@@ -1,3 +1,6 @@
+# Cancel water drainer
+execute as @e[type=minecraft:marker,tag=ff_drain_water] at @s run function fossil_frights:hazard/floods/drain_water/kill
+
 # Set the water sources
 
 # --- First Floor ---
