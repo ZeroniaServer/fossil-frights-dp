@@ -1,1 +1,1 @@
-tellraw @a [{"translate":"ff.survived_to_day","color":"gold","with":[{"selector":"@a[team=ff_guard]","separator":{"translate": "ff.separator"},"color":"gold"},{"score":{"name":"$day_result","objective":"ff_day"},"color":"white"}]}]
+execute if entity @a[team=ff_guard,limit=1] run tellraw @a [{"translate":"ff.survived_to_day","color":"gold","with":[{"selector":"@a[team=ff_guard]","separator":{"translate": "ff.separator"},"color":"gold"},{"score":{"name":"$day_result","objective":"ff_day"},"color":"white"}]}]

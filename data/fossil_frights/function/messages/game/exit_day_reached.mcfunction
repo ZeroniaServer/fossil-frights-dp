@@ -1,2 +1,2 @@
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
-execute if score $day_current ff_day matches 1.. run tellraw @a [{"translate":"ff.exit_day_reached","color":"gold","with":[{"selector":"@a[team=ff_guard]","separator":{"translate":"ff.separator"},"color":"gold"},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]
+execute if score $day_current ff_day matches 1.. if entity @a[team=ff_guard,limit=1] run tellraw @a [{"translate":"ff.exit_day_reached","color":"gold","with":[{"selector":"@a[team=ff_guard]","separator":{"translate":"ff.separator"},"color":"gold"},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]
