@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:join/leave_by_punch"
+    "function": "fossil_frights:join/queue/leave_by_punch"
   }
 }

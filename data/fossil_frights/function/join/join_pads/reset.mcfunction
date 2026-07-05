@@ -7,5 +7,5 @@ scoreboard players set @a ff_queue_prompt_time 0
 scoreboard players set @a ff_queue_prompt_display 0
 tag @a remove ff_in_queue
 tag @a remove ff_join_spectator_zone
-function fossil_frights:join/clear
-function fossil_frights:join/active_setup
+function fossil_frights:join/join_pads/clear
+function fossil_frights:join/join_pads/active_setup

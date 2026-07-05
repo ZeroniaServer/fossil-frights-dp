@@ -1,7 +1,7 @@
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:messages/error/cannot_spawn_while_tutorial
 execute if entity @s[tag=ff_tutorial] run return 0
-execute if entity @s[tag=ff_active] run function fossil_frights:messages/error/cannot_spawn_while_active
-execute if entity @s[tag=ff_active] run return 0
+execute if predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/cannot_spawn_while_active
+execute if predicate fossil_frights:player/is_playing run return 0
 execute if entity @s[tag=ff_in_queue] run function fossil_frights:messages/error/cannot_spawn_while_in_queue
 execute if entity @s[tag=ff_in_queue] run return 0
 execute if entity @s[gamemode=spectator] run function fossil_frights:messages/error/cannot_spawn_while_spectating

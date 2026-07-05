@@ -20,15 +20,15 @@ kill @e[type=minecraft:marker,tag=ff_glowtrap]
 tp @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] 0 -200 0
 kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
-effect clear @a[tag=ff_heist_thief] minecraft:invisibility
-effect clear @a[tag=ff_heist_thief] minecraft:speed
-effect clear @a[tag=ff_heist_thief] minecraft:night_vision
-effect clear @a[tag=ff_heist_thief] minecraft:slowness
+effect clear @a[team=ff_thief] minecraft:invisibility
+effect clear @a[team=ff_thief] minecraft:speed
+effect clear @a[team=ff_thief] minecraft:night_vision
+effect clear @a[team=ff_thief] minecraft:slowness
 execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
-execute as @a[tag=ff_heist_thief] run attribute @s minecraft:entity_interaction_range base set 3
-execute as @a[tag=ff_heist_thief] run attribute @s minecraft:movement_speed base reset
-execute as @a[tag=ff_heist_guard] run attribute @s minecraft:jump_strength base set 0.42
-execute as @a[tag=ff_heist_thief] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range base set 3
+execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
+execute as @a[team=ff_guard] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[team=ff_thief] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a ff_heist_punch_cd 0
 scoreboard players set @a ff_heist_punch_bar 0
 scoreboard players set @a ff_heist_punch_fx 0
@@ -41,9 +41,7 @@ scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
-tag @a remove ff_heist_guard
-tag @a remove ff_heist_thief
-team leave @a[team=ff_heist_thieves]
+team join ff_lobby @a[team=ff_thief]
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_button_lock ff_game_state 0

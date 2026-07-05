@@ -1,3 +1,4 @@
+function fossil_frights:join/lobby
 clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base set 1

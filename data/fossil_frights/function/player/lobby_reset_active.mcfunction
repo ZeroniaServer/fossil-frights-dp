@@ -1,5 +1,4 @@
-tag @s remove ff_active
-team leave @s
+function fossil_frights:join/lobby
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_muted_chat

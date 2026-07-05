@@ -2,8 +2,8 @@ function fossil_frights:items/dropped_items/tick
 function fossil_frights:compass/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_glowtrap_viewer
-tag @a[tag=ff_heist_guard] add ff_glowtrap_viewer
-execute if score curse ff_hazard_active matches 1 run tag @a[tag=ff_heist_thief] add ff_glowtrap_viewer
+tag @a[team=ff_guard] add ff_glowtrap_viewer
+execute if score curse ff_hazard_active matches 1 run tag @a[team=ff_thief] add ff_glowtrap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/other/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
@@ -31,7 +31,7 @@ execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
-execute as @a[tag=ff_active] run function fossil_frights:animations/well/tick
+execute as @a[team=ff_guard] run function fossil_frights:animations/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
@@ -50,9 +50,9 @@ execute if entity @a[limit=1,x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parko
 execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:temple_run/display/rebuild
 execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:ant_fight/display/rebuild
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
-execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,tag=ff_active] run function fossil_frights:game/reset/active_disconnect
+execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
-function fossil_frights:join/tick
+function fossil_frights:join/join_pads/tick
 function fossil_frights:temple_run/teleporter_walk_tick
 function fossil_frights:ant_fight/teleporter_walk_tick
 execute if score $running ff_rollercoaster matches 1 run function fossil_frights:rollercoaster/tick

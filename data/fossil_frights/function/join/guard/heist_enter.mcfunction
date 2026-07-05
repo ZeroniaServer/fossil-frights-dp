@@ -1,9 +1,6 @@
-tag @s remove ff_heist_thief
-tag @s add ff_heist_guard
-tag @s add ff_active
 function fossil_frights:game/heists/setup_current_player
-team leave @s
-team join ff_active_gold @s
+function fossil_frights:join/lobby
+team join ff_guard @s
 function fossil_frights:game/heists/loadout/guard
 function fossil_frights:util/fade/queue/heist_guard
 scoreboard players set @s ff_join_cooldown 40

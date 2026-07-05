@@ -21,11 +21,11 @@ function fossil_frights:game/heists/loot/header
 function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
-execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
-execute as @a[tag=ff_heist_guard] at @s run spawnpoint @s 20 70 20
-scoreboard players set @a[tag=ff_heist_thief] ff_heist_stolen_keys 0
-execute as @a[tag=ff_heist_thief] run function fossil_frights:game/heists/loadout/thief
-execute as @a[tag=ff_heist_thief] at @s run spawnpoint @s -1 109 55
+execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
+execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
+scoreboard players set @a[team=ff_thief] ff_heist_stolen_keys 0
+execute as @a[team=ff_thief] run function fossil_frights:game/heists/loadout/thief
+execute as @a[team=ff_thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/close_release_doors
 function fossil_frights:game/heists/generate_loot
 function fossil_frights:game/heists/start_reveal/capture_order
@@ -35,7 +35,7 @@ function fossil_frights:game/heists/waiting_text/hide
 function fossil_frights:game/heists/oxidized_bars/show
 function fossil_frights:game/heists/capture_point/show
 function fossil_frights:animations/door/close
-function fossil_frights:join/clear
-function fossil_frights:join/setup
+function fossil_frights:join/join_pads/clear
+function fossil_frights:join/join_pads/setup
 scoreboard players set $heist_reveal_slot ff_heist 50
 schedule function fossil_frights:game/heists/start_reveal/next 20t replace

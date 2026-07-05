@@ -10,6 +10,6 @@ scoreboard players operation @s ff_queue_order = $queue_count ff_queue_order
 scoreboard players add @s ff_queue_order 1
 tag @s add ff_in_queue
 function fossil_frights:messages/queue/joined
-function fossil_frights:join/spawn_queue_mannequin
-execute if score @s ff_queue_order matches 1 run function fossil_frights:join/maybe_notify_next
+function fossil_frights:join/queue/spawn_mannequin
+execute if score @s ff_queue_order matches 1 run function fossil_frights:join/queue/maybe_notify_next
 scoreboard players set @s ff_join_cooldown 40

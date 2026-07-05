@@ -1,4 +1,4 @@
-execute unless score $party_mode_active ff_game_state matches 1 if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[tag=ff_active] only fossil_frights:02_achievements/speedrunner
+execute unless score $party_mode_active ff_game_state matches 1 if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[team=ff_guard] only fossil_frights:02_achievements/speedrunner
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
 function fossil_frights:game/reset_hazards
@@ -29,40 +29,64 @@ function fossil_frights:game/heists/reset_blocks
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift
 stopsound @a record fossil-frights:ff_night_shift
-execute if score $run_multiplayer ff_game_state matches 0 as @a[tag=ff_active] run function fossil_frights:leaderboards/update_top_day_from_current
+execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
 function fossil_frights:game/reset_spectators
 scoreboard players set @a ff_fright_timer 0
-gamemode adventure @a[tag=ff_active]
-execute as @a[tag=ff_active] run attribute @s minecraft:scale base set 1
-execute as @a[tag=ff_active] run function fossil_frights:player/effects/lobby_reset
-scoreboard players set @a[tag=ff_active] ff_key_cooldown 0
-scoreboard players set @a[tag=ff_active] ff_key_bar 0
-scoreboard players set @a[tag=ff_active] ff_bat_bug_timer 0
-scoreboard players set @a[tag=ff_active] ff_bat_bug_bar 0
-scoreboard players set @a[tag=ff_active] ff_speedrun_delta 0
-scoreboard players set @a[tag=ff_active] ff_speedrun_sign 0
-title @a[tag=ff_active] subtitle ""
-title @a[tag=ff_active] actionbar ""
-clear @a[tag=ff_active]
-clear @a[tag=ff_active] *[custom_data~{ff_any_key:true}]
-clear @a[tag=ff_active] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:1b}]
-item replace entity @a[tag=ff_active] weapon.mainhand with air
-item replace entity @a[tag=ff_active] weapon.offhand with air
-item replace entity @a[tag=ff_active] armor.head with air
-execute as @a[tag=ff_active] run function fossil_frights:util/fade/queue/game_end
-execute as @a[tag=ff_active] at @s run spawnpoint @s 0 80 0
-execute as @a[tag=ff_active] run function fossil_frights:tasks/final/plushies/restore
+gamemode adventure @a[team=ff_guard]
+gamemode adventure @a[team=ff_thief]
+execute as @a[team=ff_guard] run attribute @s minecraft:scale base set 1
+execute as @a[team=ff_thief] run attribute @s minecraft:scale base set 1
+execute as @a[team=ff_guard] run function fossil_frights:player/effects/lobby_reset
+execute as @a[team=ff_thief] run function fossil_frights:player/effects/lobby_reset
+scoreboard players set @a[team=ff_guard] ff_key_cooldown 0
+scoreboard players set @a[team=ff_thief] ff_key_cooldown 0
+scoreboard players set @a[team=ff_guard] ff_key_bar 0
+scoreboard players set @a[team=ff_thief] ff_key_bar 0
+scoreboard players set @a[team=ff_guard] ff_bat_bug_timer 0
+scoreboard players set @a[team=ff_thief] ff_bat_bug_timer 0
+scoreboard players set @a[team=ff_guard] ff_bat_bug_bar 0
+scoreboard players set @a[team=ff_thief] ff_bat_bug_bar 0
+scoreboard players set @a[team=ff_guard] ff_speedrun_delta 0
+scoreboard players set @a[team=ff_thief] ff_speedrun_delta 0
+scoreboard players set @a[team=ff_guard] ff_speedrun_sign 0
+scoreboard players set @a[team=ff_thief] ff_speedrun_sign 0
+title @a[team=ff_guard] subtitle ""
+title @a[team=ff_thief] subtitle ""
+title @a[team=ff_guard] actionbar ""
+title @a[team=ff_thief] actionbar ""
+clear @a[team=ff_guard]
+clear @a[team=ff_thief]
+clear @a[team=ff_guard] *[custom_data~{ff_any_key:true}]
+clear @a[team=ff_thief] *[custom_data~{ff_any_key:true}]
+clear @a[team=ff_guard] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:1b}]
+clear @a[team=ff_thief] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:1b}]
+item replace entity @a[team=ff_guard] weapon.mainhand with air
+item replace entity @a[team=ff_thief] weapon.mainhand with air
+item replace entity @a[team=ff_guard] weapon.offhand with air
+item replace entity @a[team=ff_thief] weapon.offhand with air
+item replace entity @a[team=ff_guard] armor.head with air
+item replace entity @a[team=ff_thief] armor.head with air
+execute as @a[team=ff_guard] run function fossil_frights:util/fade/queue/game_end
+execute as @a[team=ff_thief] run function fossil_frights:util/fade/queue/game_end
+execute as @a[team=ff_guard] at @s run spawnpoint @s 0 80 0
+execute as @a[team=ff_thief] at @s run spawnpoint @s 0 80 0
+execute as @a[team=ff_guard] run function fossil_frights:tasks/final/plushies/restore
+execute as @a[team=ff_thief] run function fossil_frights:tasks/final/plushies/restore
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
-tag @a[tag=ff_active] remove ff_forced_spectate
-tag @a[tag=ff_active] remove ff_camera_remote_active
-tag @a[tag=ff_active] remove ff_muted_chat
-tag @a[tag=ff_active] remove ff_map_claimed
-tag @a[tag=ff_active] remove ff_map_auto_given
-tag @a[tag=ff_active] remove ff_active
-team leave @a[team=ff_active_gold]
-team leave @a[team=ff_heist_thieves]
+tag @a[team=ff_guard] remove ff_forced_spectate
+tag @a[team=ff_thief] remove ff_forced_spectate
+tag @a[team=ff_guard] remove ff_camera_remote_active
+tag @a[team=ff_thief] remove ff_camera_remote_active
+tag @a[team=ff_guard] remove ff_muted_chat
+tag @a[team=ff_thief] remove ff_muted_chat
+tag @a[team=ff_guard] remove ff_map_claimed
+tag @a[team=ff_thief] remove ff_map_claimed
+tag @a[team=ff_guard] remove ff_map_auto_given
+tag @a[team=ff_thief] remove ff_map_auto_given
+team join ff_lobby @a[team=ff_guard]
+team join ff_lobby @a[team=ff_thief]
 function fossil_frights:game/party_mode/reset
 function fossil_frights:game/heists/reset
 scoreboard players set $active_set ff_game_state 0
@@ -97,7 +121,7 @@ function fossil_frights:game/start_room/settings/heists/refresh
 function fossil_frights:game/start_room/settings/setting3/refresh
 function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
 function fossil_frights:tasks/tracker/hide
-function fossil_frights:join/maybe_notify_next
+function fossil_frights:join/queue/maybe_notify_next
 function fossil_frights:door/reset
 function fossil_frights:tasks/easy/check_security/update_camera_models
 function fossil_frights:tasks/task_book_shelf/reset

@@ -61,15 +61,12 @@ data remove storage fossil_frights:nbt uuid
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets
-tag @s remove ff_heist_guard
-tag @s remove ff_heist_thief
-execute if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/party_mode/handle_member_login
+execute unless entity @s[tag=ff_login_initial] if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/party_mode/handle_member_login
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:hazards players @a
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s
-tag @s remove ff_active
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
@@ -143,6 +140,7 @@ spawnpoint @s 0 80 0
 scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $lobby_displays_ready ff_game_state 0
 gamemode adventure @s
+function fossil_frights:join/lobby
 function fossil_frights:player/effects/lobby_reset
 effect give @s minecraft:instant_health 100 0 true
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end

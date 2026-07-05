@@ -13,11 +13,11 @@ execute if score curse ff_hazard_active matches 1 if score #curse_manual_cooldow
 execute if score curse ff_hazard_active matches 0 run return 0
 
 # Trigger levitation once when a player enters the curse room.
-tag @a[tag=ff_active] remove ff_curse_room_now
-tag @a[tag=ff_active,tag=!ff_heist_thief,x=-23,y=70,z=29,dx=4,dy=6,dz=4] add ff_curse_room_now
-execute as @a[tag=ff_active,tag=!ff_heist_thief,tag=ff_curse_room_now] unless entity @s[tag=ff_curse_room_seen] run effect give @s minecraft:levitation 5 0 true
-tag @a[tag=ff_active,tag=!ff_heist_thief,tag=ff_curse_room_now] add ff_curse_room_seen
-tag @a[tag=ff_active,tag=!ff_heist_thief,tag=ff_curse_room_seen,tag=!ff_curse_room_now] remove ff_curse_room_seen
+tag @a[team=ff_guard] remove ff_curse_room_now
+tag @a[team=ff_guard,x=-23,y=70,z=29,dx=4,dy=6,dz=4] add ff_curse_room_now
+execute as @a[team=ff_guard,tag=ff_curse_room_now] unless entity @s[tag=ff_curse_room_seen] run effect give @s minecraft:levitation 5 0 true
+tag @a[team=ff_guard,tag=ff_curse_room_now] add ff_curse_room_seen
+tag @a[team=ff_guard,tag=ff_curse_room_seen,tag=!ff_curse_room_now] remove ff_curse_room_seen
 
 # State 0 waits 4 seconds between flicker bursts.
 execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 0 run scoreboard players remove #curse_timer ff_hazard_rng 1

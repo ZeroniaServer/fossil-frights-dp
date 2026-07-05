@@ -1,5 +1,5 @@
 execute unless score $game_running ff_game_state matches 1 run return 0
-execute unless entity @s[tag=ff_active] run return 0
+execute unless entity @s[team=ff_guard] run return 0
 tag @s remove ff_map_region_set
 execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-15,y=80,z=9,dx=30,dy=8,dz=34] run function fossil_frights:map/region/foyer
 execute unless entity @s[tag=ff_map_region_set] if entity @s[x=-26,y=80,z=14,dx=10,dy=7,dz=23] run function fossil_frights:map/region/gift_shop

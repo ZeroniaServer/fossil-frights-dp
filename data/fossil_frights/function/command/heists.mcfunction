@@ -1,5 +1,5 @@
-execute unless entity @s[tag=ff_active] run function fossil_frights:messages/error/not_active_player
-execute unless entity @s[tag=ff_active] run return 0
+execute unless predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/not_active_player
+execute unless predicate fossil_frights:player/is_playing run return 0
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/heists_enable_after_start
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute if score $day_active ff_day matches 1 run function fossil_frights:messages/error/heists_enable_before_day

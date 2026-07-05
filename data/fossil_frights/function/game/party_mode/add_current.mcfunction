@@ -15,5 +15,3 @@ scoreboard players operation @e[type=minecraft:marker,tag=ff_run_member_new,limi
 scoreboard players operation @e[type=minecraft:marker,tag=ff_run_member_new,limit=1] ff_active_uuid_2 = @s ff_active_uuid_2
 scoreboard players operation @e[type=minecraft:marker,tag=ff_run_member_new,limit=1] ff_active_uuid_3 = @s ff_active_uuid_3
 tag @e[type=minecraft:marker,tag=ff_run_member_new,limit=1] remove ff_run_member_new
-tag @s add ff_active
-team join ff_active_gold @s

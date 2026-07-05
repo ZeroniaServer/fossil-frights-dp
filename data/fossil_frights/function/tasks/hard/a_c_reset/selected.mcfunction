@@ -15,5 +15,5 @@ data merge entity @e[tag=ac_fan,limit=1] {start_interpolation:0,interpolation_du
 data merge storage fossil_frights:a_c_reset {display:{c1:"white",c2:"white",c3:"white",c4:"white"}}
 execute store result score $a_c_reset_variant ff_task_state run random value 1..3
 function fossil_frights:tasks/hard/a_c_reset/place_variant
-tag @a[tag=ff_active] remove ff_a_c_reset_in_range
+tag @a[team=ff_guard] remove ff_a_c_reset_in_range
 function fossil_frights:tasks/tracker/refresh

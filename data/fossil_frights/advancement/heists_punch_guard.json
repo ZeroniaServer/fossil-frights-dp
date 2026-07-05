@@ -5,11 +5,7 @@
       "conditions": {
         "entity": {
           "entity_type": "minecraft:player",
-          "entity_tags": {
-            "all_of": [
-              "ff_heist_guard"
-            ]
-          }
+          "team": "ff_guard"
         }
       }
     }

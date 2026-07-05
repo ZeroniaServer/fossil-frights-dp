@@ -6,11 +6,11 @@ data modify storage fossil_frights:tasks complete.task_name set value "water_cro
 function fossil_frights:tasks/medium/water_crops/grow_3
 schedule function fossil_frights:tasks/medium/water_crops/grow_5 6t
 schedule function fossil_frights:tasks/medium/water_crops/grow_7 12t
-execute positioned 60.5 82 73.5 run playsound minecraft:entity.generic.splash block @a[tag=ff_active,distance=..22] ~ ~ ~ 0.8 1.4
-execute positioned 60.5 82 73.5 run playsound minecraft:item.crop.plant block @a[tag=ff_active,distance=..22] ~ ~ ~ 0.65 1.2
+execute positioned 60.5 82 73.5 run playsound minecraft:entity.generic.splash block @a[team=ff_guard,distance=..22] ~ ~ ~ 0.8 1.4
+execute positioned 60.5 82 73.5 run playsound minecraft:item.crop.plant block @a[team=ff_guard,distance=..22] ~ ~ ~ 0.65 1.2
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[tag=ff_active] minecraft:written_book[minecraft:custom_data~{ff_task_book:"water_crops"}] 1
+clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"water_crops"}] 1
 scoreboard players set $water_crops_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

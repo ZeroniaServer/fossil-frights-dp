@@ -8,6 +8,6 @@ execute if entity @s[gamemode=spectator] run function fossil_frights:messages/er
 execute if entity @s[gamemode=spectator] run return 0
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if score @s ff_join_cooldown matches 1.. run return 0
-execute if entity @s[tag=ff_heist_guard] run function fossil_frights:messages/error/already_on_team
-execute if entity @s[tag=ff_heist_guard] run return 0
-function fossil_frights:join/heists/guard_enter
+execute if entity @s[team=ff_guard] run function fossil_frights:messages/error/already_on_team
+execute if entity @s[team=ff_guard] run return 0
+function fossil_frights:join/guard/heist_enter

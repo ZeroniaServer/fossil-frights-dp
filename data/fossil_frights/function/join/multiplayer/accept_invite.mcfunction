@@ -12,8 +12,8 @@ execute if score $day_active ff_day matches 1 run function fossil_frights:messag
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $party_member_count ff_game_state matches 2.. run function fossil_frights:messages/multiplayer/party_full
 execute if score $party_member_count ff_game_state matches 2.. run return 0
-execute if entity @s[tag=ff_active] run function fossil_frights:messages/error/already_active
-execute if entity @s[tag=ff_active] run return 0
+execute if predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/already_active
+execute if predicate fossil_frights:player/is_playing run return 0
 execute unless score @s ff_active_uuid_0 = $invite_target ff_active_uuid_0 run function fossil_frights:messages/multiplayer/not_your_invite
 execute unless score @s ff_active_uuid_0 = $invite_target ff_active_uuid_0 run return 0
 execute unless score @s ff_active_uuid_1 = $invite_target ff_active_uuid_1 run function fossil_frights:messages/multiplayer/not_your_invite

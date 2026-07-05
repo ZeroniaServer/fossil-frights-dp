@@ -1,2 +1,2 @@
 function fossil_frights:messages/error/spectating_disabled
-function fossil_frights:join/spectator_exit_reset
+function fossil_frights:join/spectator/exit_reset

@@ -1,5 +1,7 @@
-execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run function fossil_frights:player/login
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
+execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s add ff_login_initial
+execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run function fossil_frights:player/login
+execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s remove ff_login_initial
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run function fossil_frights:player/login
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
 data modify storage fossil_frights:nbt uuid set from entity @s UUID
@@ -38,7 +40,7 @@ execute if score @s ff_invite_sel matches 1.. run scoreboard players set @s ff_i
 execute if score @s ff_invite_accept matches 1.. run function fossil_frights:join/multiplayer/accept_invite
 execute if score @s ff_invite_accept matches 1.. run scoreboard players enable @s ff_invite_accept
 execute if score @s ff_invite_accept matches 1.. run scoreboard players set @s ff_invite_accept 0
-execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/handle_start_click
+execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/queue/handle_start_click
 execute if score @s ff_cmd_start matches 1.. run function fossil_frights:command/start
 execute if score @s ff_cmd_start matches 1.. run scoreboard players enable @s ff_cmd_start
 execute if score @s ff_cmd_start matches 1.. run scoreboard players set @s ff_cmd_start 0
@@ -73,20 +75,20 @@ execute if score @s ff_cmd_spawn matches 1.. run function fossil_frights:command
 execute if score @s ff_cmd_spawn matches 1.. run scoreboard players enable @s ff_cmd_spawn
 execute if score @s ff_cmd_spawn matches 1.. run scoreboard players set @s ff_cmd_spawn 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active] run function fossil_frights:player/death_active
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/respawn_lobby
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/respawn_lobby
+execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 unless predicate fossil_frights:player/is_playing run function fossil_frights:player/respawn_lobby
 execute unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
-execute if entity @s[tag=ff_damage_guard] if score $game_running ff_game_state matches 1 if entity @s[tag=ff_active,gamemode=!spectator] run function fossil_frights:player/protection_disable
+execute if entity @s[tag=ff_damage_guard] if score $game_running ff_game_state matches 1 if entity @s[team=ff_guard,gamemode=!spectator] run function fossil_frights:player/protection_disable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless score $game_running ff_game_state matches 1 run function fossil_frights:player/protection_enable
-execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if score $game_running ff_game_state matches 1 unless entity @s[tag=ff_active] run function fossil_frights:player/protection_enable
+execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if score $game_running ff_game_state matches 1 unless predicate fossil_frights:player/is_playing run function fossil_frights:player/protection_enable
 execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless predicate fossil_frights:entity/effects/resistance run function fossil_frights:player/respawn_lobby
 execute if entity @s[tag=ff_damage_guard,gamemode=!spectator] unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:player/respawn_lobby
-execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation unless score @s ff_heist_regen_lock matches 1.. run function fossil_frights:game/heists/death_thief
-execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:game/heists/death_guard
-execute if entity @s[tag=ff_heist_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:items/heists/ice_cannon/player_tick
-execute if entity @s[tag=ff_heist_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/thief_tick
-execute if entity @s[tag=ff_active,gamemode=!spectator,tag=!ff_heist_thief,tag=!ff_heist_guard] if score $game_running ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:player/respawn_active
+execute if entity @s[team=ff_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation unless score @s ff_heist_regen_lock matches 1.. run function fossil_frights:game/heists/death_thief
+execute if entity @s[team=ff_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:game/heists/death_guard
+execute if entity @s[team=ff_guard,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:items/heists/ice_cannon/player_tick
+execute if entity @s[team=ff_thief,gamemode=!spectator] if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/thief_tick
+execute if entity @s[team=ff_guard,gamemode=!spectator] if score $game_running ff_game_state matches 1 unless score $heist_mode_active ff_game_state matches 1 unless predicate fossil_frights:entity/effects/saturation run function fossil_frights:player/respawn_active
 execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute store result score #gametime ff_ant_combo_shown_until_timestamp run time query gametime
@@ -97,10 +99,10 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fo
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:tasks/easy/check_security/camera_tick
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
-execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
-execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
-execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
-execute if entity @s[tag=ff_active] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
+execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
+execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
+execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
+execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if items entity @s weapon.mainhand minecraft:amethyst_shard[custom_data~{ff_dna:1b}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
@@ -148,8 +150,8 @@ scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
 execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
 attribute @s minecraft:waypoint_transmit_range base set 0
-attribute @s[tag=!ff_active,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
-attribute @s[tag=ff_active] minecraft:waypoint_receive_range base set 60000000
+attribute @s[team=ff_lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
+attribute @s[predicate=fossil_frights:player/is_playing] minecraft:waypoint_receive_range base set 60000000
 attribute @s[gamemode=spectator] minecraft:waypoint_receive_range base set 60000000
 attribute @s[tag=ff_forced_spectate,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[tag=ff_camera_remote_active,gamemode=spectator] minecraft:waypoint_receive_range base set 0

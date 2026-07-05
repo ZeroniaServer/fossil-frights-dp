@@ -1,9 +1,10 @@
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
-execute if entity @s[tag=ff_in_queue] run function fossil_frights:join/remove_player_from_queue
+execute if entity @s[tag=ff_in_queue] run function fossil_frights:join/queue/remove_player
 tag @s remove ff_forced_spectate
 tag @s remove ff_fade_tutorial_exit
+function fossil_frights:join/guard
 gamemode adventure @s
 attribute @s minecraft:scale base set 1
 function fossil_frights:player/protection_disable

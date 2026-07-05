@@ -12,5 +12,4 @@ kill @e[type=minecraft:text_display,tag=ff_join_spectator_label]
 kill @e[type=minecraft:text_display,tag=ff_join_active_label]
 kill @e[type=minecraft:text_display,tag=ff_join_party_label]
 kill @e[type=minecraft:text_display,tag=ff_join_heist_label]
-scoreboard players set @a ff_join_cooldown 0
 tag @a remove ff_join_spectator_zone

@@ -9,7 +9,7 @@ execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish
 execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 0 positioned -22.5 94 19.5 run particle minecraft:poof ~ ~ ~ 0.18 0.1 0.18 0.01 8 force
 execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 0 run clear @a[tag=ff_active] minecraft:written_book[minecraft:custom_data~{ff_task_book:"replenish_soap"}] 1
+execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"replenish_soap"}] 1
 execute if score $replenish_soap_sel ff_task_state matches 1 run scoreboard players set $replenish_soap_done ff_task_state 1
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/tracker/refresh

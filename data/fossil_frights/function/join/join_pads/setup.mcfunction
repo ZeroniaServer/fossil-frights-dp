@@ -16,7 +16,6 @@ summon minecraft:item_display -0.75 79.4925 8.0125 {Tags:["ff_join_spectator_pad
 summon minecraft:text_display 1.75 81.0 8.0 {Tags:["ff_join_queue_label"],billboard:"center",view_range:10f,background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:255,brightness:{sky:15,block:15},text:[{"translate":"ff.join_queue","color":"yellow","italic":false}]}
 summon minecraft:text_display -0.875 81.0 8.0 {Tags:["ff_join_spectator_label"],billboard:"center",view_range:10f,background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:255,brightness:{sky:15,block:15},text:[{"translate":"ff.spectate","color":"gray","italic":false}]}
 
-scoreboard players set @a ff_join_cooldown 0
 tag @a remove ff_join_spectator_zone
-function fossil_frights:join/show/queue
-function fossil_frights:join/show/spectator
+function fossil_frights:join/join_pads/show/queue
+function fossil_frights:join/join_pads/show/spectator

@@ -1,1 +1,1 @@
-execute as @a[gamemode=spectator,tag=!ff_active,tag=!ff_tutorial,team=!ff_dev_mode] run function fossil_frights:join/spectator_lobby_exit
+execute as @a[gamemode=spectator,team=ff_spectator,tag=!ff_tutorial] run function fossil_frights:join/spectator/lobby_exit

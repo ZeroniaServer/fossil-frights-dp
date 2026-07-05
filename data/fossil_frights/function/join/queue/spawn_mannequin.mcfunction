@@ -5,7 +5,7 @@ execute store result storage fossil_frights:queue mannequin.u1 int 1 run data ge
 execute store result storage fossil_frights:queue mannequin.u2 int 1 run data get storage fossil_frights:nbt uuid[2] 1
 execute store result storage fossil_frights:queue mannequin.u3 int 1 run data get storage fossil_frights:nbt uuid[3] 1
 data remove storage fossil_frights:nbt uuid
-function fossil_frights:join/spawn_queue_mannequin_macro with storage fossil_frights:queue mannequin
+function fossil_frights:join/queue/spawn_mannequin_macro with storage fossil_frights:queue mannequin
 attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:max_health base set 1000
 attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:knockback_resistance base set 2
 data merge entity @e[type=mannequin,tag=ff_queue_new,limit=1] {Health:1000.0f}
@@ -19,4 +19,4 @@ execute store result score @e[type=mannequin,tag=ff_queue_new,limit=1] ff_active
 data remove storage fossil_frights:nbt uuid
 team join ff_queue_mannequin @e[type=mannequin,tag=ff_queue_new,limit=1]
 tag @e[type=mannequin,tag=ff_queue_new,limit=1] remove ff_queue_new
-function fossil_frights:join/refresh_queue_positions
+function fossil_frights:join/queue/refresh_positions

@@ -18,28 +18,26 @@ scoreboard players set $heist_seconds ff_heist 0
 scoreboard players set $heist_sec_tens ff_heist 0
 scoreboard players set $heist_sec_ones ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
-tag @a[tag=ff_active] add ff_heist_guard
-team join ff_active_gold @a[tag=ff_heist_guard]
-execute as @a[tag=ff_heist_guard] run function fossil_frights:game/heists/loadout/guard
-execute as @a[tag=ff_heist_guard] at @s run spawnpoint @s 20 70 20
+execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
+execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
 function fossil_frights:game/settings/toggle_spectators/reset
 function fossil_frights:game/settings/setting2/reset
 function fossil_frights:game/settings/setting3/reset
 function fossil_frights:game/settings/speedrun_toggle/reset
 function fossil_frights:game/settings/message_sync
-tag @a[tag=ff_active] remove ff_settings_spectator_deny
-tag @a[tag=ff_active] remove ff_settings_music_off
-tag @a[tag=ff_active] remove ff_muted_chat
-tag @a[tag=ff_active] remove ff_settings_chat_hidden
-tag @a[tag=ff_active] remove ff_settings_speedrun_show
+tag @a[team=ff_guard] remove ff_settings_spectator_deny
+tag @a[team=ff_guard] remove ff_settings_music_off
+tag @a[team=ff_guard] remove ff_muted_chat
+tag @a[team=ff_guard] remove ff_settings_chat_hidden
+tag @a[team=ff_guard] remove ff_settings_speedrun_show
 function fossil_frights:game/start_room/timer_bars/close
 function fossil_frights:animations/door/open
-tp @a[tag=ff_active] 20 70 20 0 0
+tp @a[team=ff_guard] 20 70 20 0 0
 function fossil_frights:game/heists/day_tracker/hide
 function fossil_frights:game/heists/waiting_text/show
 function fossil_frights:game/heists/oxidized_bars/show
 function fossil_frights:game/heists/capture_point/setup
-function fossil_frights:join/heists/setup
+function fossil_frights:join/join_pads/heists/setup
 scoreboard players set $heist_wait_queue_present ff_heist 0
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/day_button/refresh
