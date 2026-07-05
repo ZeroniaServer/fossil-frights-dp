@@ -9,7 +9,7 @@
                     "container.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "ff_museum_map_dynamic": true
+                                "itemID": "museum_map"
                             }
                         }
                     }
@@ -24,7 +24,7 @@
                     "weapon.offhand": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "ff_museum_map_dynamic": true
+                                "itemID": "museum_map"
                             }
                         }
                     }
