@@ -17,7 +17,7 @@ tag @e[type=minecraft:item_display,tag=ff_dna_hover] remove ff_dna_hover
 execute as @e[type=minecraft:item_display,tag=ff_lock_glow] run data merge entity @s {Glowing:0b}
 tag @e[type=minecraft:item_display,tag=ff_lock_glow] remove ff_lock_glow
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
-execute as @e[type=minecraft:item_display,tag=front_door] at @s run function fossil_frights:animations/door/tick
+execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run function fossil_frights:animations/door/tick
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/bookcase/day_1_marker/tick
 function fossil_frights:map/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
