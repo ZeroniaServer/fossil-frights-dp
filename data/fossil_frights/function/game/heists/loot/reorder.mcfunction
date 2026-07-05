@@ -172,6 +172,8 @@ execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $lo
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_cookie ff_heist_loot_state matches 1..3 if score $loot_cookie ff_heist_loot_value matches 250 run scoreboard players operation $loot_cookie ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_cookie ff_heist_loot_state matches 1..3 if score $loot_cookie ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_basketball ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_lost_key ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lost_key ff_heist_sidebar = $heist_sidebar_slot ff_heist
@@ -206,5 +208,3 @@ execute if score $loot_vault ff_heist_loot_state matches 1..3 run scoreboard pla
 execute if score $loot_vault ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_velociraptor_statue ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_velociraptor_statue ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_velociraptor_statue ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lady_bug ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
