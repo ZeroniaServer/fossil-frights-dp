@@ -5,7 +5,7 @@ execute if score $day_active ff_day matches 1 run function fossil_frights:messag
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:messages/error/final_day_reached
 execute if score $day_current ff_day matches 10.. run return 0
-execute unless score $party_mode_active ff_game_state matches 1 if score $day_current ff_day matches 0 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
+execute if score $day_current ff_day matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
 scoreboard players add $day_current ff_day 1
 execute if score $day_current ff_day matches 1 if score $run_multiplayer ff_game_state matches 1 run tp @a[team=ff_guard] 20 70 20 0 0
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
