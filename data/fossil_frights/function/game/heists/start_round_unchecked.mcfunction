@@ -31,7 +31,7 @@ function fossil_frights:game/heists/generate_loot
 function fossil_frights:game/heists/start_reveal/capture_order
 function fossil_frights:game/heists/start_reveal/hide_all
 scoreboard objectives setdisplay sidebar ff_heist_sidebar
-function fossil_frights:game/heists/waiting_text/hide
+function fossil_frights:game/heists/waiting_text/refresh
 function fossil_frights:game/heists/oxidized_bars/show
 function fossil_frights:game/heists/capture_point/show
 function fossil_frights:animations/door/close

@@ -215,6 +215,9 @@ scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_button_lock ff_game_state 0
 scoreboard players set $heist_button_prev ff_gui 0
 scoreboard players set $heist_players_ready ff_game_state 0
+scoreboard players set $heist_thieves_ready ff_game_state 0
+scoreboard players set $heist_ready_click_at ff_button_unpress_timestamp -20
+scoreboard players set $heist_ready_click_diff ff_button_unpress_timestamp 0
 scoreboard players set $museum_map_claims ff_game_state 0
 scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0

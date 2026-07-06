@@ -135,6 +135,7 @@ advancement revoke @s only fossil_frights:anvil_click
 advancement revoke @s only fossil_frights:crane_payment_click
 advancement revoke @s only fossil_frights:sarcophagus_payment_click
 advancement revoke @s only fossil_frights:start_room_glass_box_click
+advancement revoke @s only fossil_frights:heist_waiting_text_click
 advancement revoke @s only fossil_frights:return_the_key_pickup_click
 advancement revoke @s only fossil_frights:return_the_key_return_click
 advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
