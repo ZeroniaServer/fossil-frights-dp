@@ -232,6 +232,7 @@ scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $defeat_anim ff_game_state 0
+scoreboard players set $defeat_lock ff_game_state 0
 scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
