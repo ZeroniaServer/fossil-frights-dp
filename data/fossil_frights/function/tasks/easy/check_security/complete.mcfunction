@@ -6,6 +6,6 @@ execute if score $check_security_sel ff_task_state matches 1 if score $check_sec
 execute if score $check_security_sel ff_task_state matches 1 run scoreboard players set $check_security_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
-execute if entity @s[type=minecraft:player,team=ff_guard] run function fossil_frights:tasks/easy/check_security/forced_spectate_start
-execute unless entity @s[type=minecraft:player,team=ff_guard] as @a[team=ff_guard,sort=nearest,limit=1] at @s run function fossil_frights:tasks/easy/check_security/forced_spectate_start
-execute unless entity @a[team=ff_guard,limit=1] as @p run function fossil_frights:tasks/easy/check_security/forced_spectate_start
+execute if entity @s[type=minecraft:player,team=ff_guard] run function fossil_frights:cameras/forced_spectate_start
+execute unless entity @s[type=minecraft:player,team=ff_guard] as @a[team=ff_guard,sort=nearest,limit=1] at @s run function fossil_frights:cameras/forced_spectate_start
+execute unless entity @a[team=ff_guard,limit=1] as @p run function fossil_frights:cameras/forced_spectate_start

@@ -6,7 +6,7 @@ function fossil_frights:tasks/bookcase/clear
 function fossil_frights:game/cleanup_dropped_items
 function fossil_frights:game/reset_hazards
 function fossil_frights:tasks/reset
-function fossil_frights:tasks/easy/check_security/camera_setup
+function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
 function fossil_frights:tasks/final/final_task/close_lab_door
 function fossil_frights:tasks/final/final_task/reset

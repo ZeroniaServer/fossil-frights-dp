@@ -227,7 +227,7 @@ scoreboard players reset $tt_basketball_dance ff_task_tracker
 scoreboard players reset $tt_evolution ff_task_tracker
 scoreboard players reset $tt_final_task ff_task_tracker
 
-function fossil_frights:tasks/easy/check_security/reset
+function fossil_frights:cameras/reset
 function fossil_frights:tasks/easy/fire_pottery/reset
 function fossil_frights:tasks/easy/check_ankylo/reset
 function fossil_frights:tasks/easy/climb_the_tower/reset

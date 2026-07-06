@@ -8,7 +8,7 @@ data modify storage fossil_frights:forced_spectate mannequin.u2 set from storage
 data modify storage fossil_frights:forced_spectate mannequin.u3 set from storage fossil_frights:forced_spectate UUID[3]
 data modify storage fossil_frights:forced_spectate mannequin.rotation set from entity @s Rotation
 function fossil_frights:player/util/write_username {to:"storage fossil_frights:forced_spectate mannequin.name"}
-function fossil_frights:tasks/easy/check_security/save_return_position
+function fossil_frights:cameras/save_return_position
 execute at @s run function fossil_frights:items/heists/camera_remote/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] armor.head loot fossil_frights:items/heists/security_hat
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] weapon.mainhand loot fossil_frights:items/heists/camera_remote
@@ -33,7 +33,7 @@ execute at @s run function fossil_frights:items/heists/camera_remote/get_camera_
 
 scoreboard players set @s ff_security_camera_nav 0
 scoreboard players set @s ff_security_camera_heist 0
-function fossil_frights:tasks/easy/check_security/select_camera
-function fossil_frights:tasks/easy/check_security/show_nav
-function fossil_frights:tasks/easy/check_security/update_camera_models
+function fossil_frights:cameras/select_camera
+function fossil_frights:cameras/show_nav
+function fossil_frights:cameras/update_camera_models
 execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1

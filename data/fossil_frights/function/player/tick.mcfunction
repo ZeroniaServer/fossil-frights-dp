@@ -95,10 +95,10 @@ execute store result score #gametime ff_ant_combo_shown_until_timestamp run time
 execute run function fossil_frights:ant_fight/player_tick
 execute run function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
-execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
-execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:tasks/easy/check_security/camera_tick
+execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:cameras/forced_spectate_exit
+execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:cameras/camera_tick
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
-execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:tasks/easy/check_security/forced_spectate_exit
+execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
 execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:player/glowberry/make_edible
 execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
