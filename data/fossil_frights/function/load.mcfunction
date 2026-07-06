@@ -289,6 +289,7 @@ team modify ff_thief nametagVisibility hideForOtherTeams
 team modify ff_thief seeFriendlyInvisibles true
 team modify ff_thief collisionRule never
 team add ff_lobby
+team modify ff_lobby friendlyFire false
 team modify ff_lobby collisionRule never
 team add ff_spectator
 team modify ff_spectator color gray
