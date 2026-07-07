@@ -6,7 +6,7 @@ execute as @a run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 tag @a remove ff_skip_plushie_restore
-execute as @a run function fossil_frights:tasks/final/plushies/restore
+execute as @a run function fossil_frights:items/plushies/restore
 kill @e[type=minecraft:text_display,tag=ff_tutorial_camera]
 function fossil_frights:join/join_pads/reset
 tag @a remove ff_map_claimed

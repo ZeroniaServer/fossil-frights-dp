@@ -1,4 +1,4 @@
-execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,team=ff_lobby] run function fossil_frights:ant_fight/exit
+execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] run function fossil_frights:ant_fight/exit
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:ant_fight/mark_projectile
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_hits
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run function fossil_frights:ant_fight/exit_restore
@@ -18,9 +18,9 @@ execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_time
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 execute if entity @s[tag=ff_ant_fight] unless score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run title @s actionbar [{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]
 execute if entity @s[tag=ff_ant_fight] run return 0
-execute unless entity @s[gamemode=adventure,team=ff_lobby] if entity @s[tag=ff_ant_lobby_blind] run function fossil_frights:ant_fight/lobby_sneak/reset
-execute if entity @s[gamemode=adventure,team=ff_lobby] positioned -36.5 76 104.5 if entity @s[distance=..24] run function fossil_frights:ant_fight/lobby_sneak_tick
-execute if entity @s[gamemode=adventure,team=ff_lobby] positioned -36.5 76 104.5 unless entity @s[distance=..24] run function fossil_frights:ant_fight/lobby_sneak/reset
-execute if entity @s[gamemode=adventure,team=ff_lobby] positioned -20.5 76.5 100.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
-execute if entity @s[gamemode=adventure,team=ff_lobby] positioned -52.5 77.5 95.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
-execute if entity @s[gamemode=adventure,team=ff_lobby] positioned -40 74 114 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
+execute unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] if entity @s[tag=ff_ant_lobby_blind] run function fossil_frights:ant_fight/lobby_sneak/reset
+execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -36.5 76 104.5 if entity @s[distance=..24] run function fossil_frights:ant_fight/lobby_sneak_tick
+execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -36.5 76 104.5 unless entity @s[distance=..24] run function fossil_frights:ant_fight/lobby_sneak/reset
+execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -20.5 76.5 100.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
+execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -52.5 77.5 95.5 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
+execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -40 74 114 if entity @s[distance=..1.2] run function fossil_frights:ant_fight/enter
