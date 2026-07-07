@@ -13,6 +13,7 @@ scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players set @s ff_heist_invis_ticks 0
 scoreboard players set @s ff_heist_thaw_fx 0
+scoreboard players set @s ff_heist_paint_fx 0
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:speed
 loot replace entity @s armor.head loot fossil_frights:items/heists/invisimask
