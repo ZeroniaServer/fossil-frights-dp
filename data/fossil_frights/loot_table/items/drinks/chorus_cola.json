@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "translate": "ff.drink.chorus_cola",
+                  "color": "#BA9BBA",
+                  "italic": false
+                },
+                "minecraft:item_model": "fossil-frights:food/chorus_cola",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.drink.chorus_cola.description",
+                    "color": "yellow"
+                  }
+                ],
+                "!minecraft:use_remainder": {},
+                "!minecraft:potion_contents": {},
+                "minecraft:custom_data": {
+                  "ff_vending_machine": true,
+                  "ff_drink": "chorus_cola"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
