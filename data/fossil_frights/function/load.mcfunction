@@ -66,6 +66,9 @@ scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
 scoreboard objectives add ff_glowtrap_scan dummy
+scoreboard objectives add ff_trap_type dummy
+scoreboard objectives add ff_trap_selected dummy
+scoreboard objectives add ff_trap_cooldown dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy
@@ -348,6 +351,7 @@ advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:glowberry_eat
 advancement revoke @a only fossil_frights:ice_frozen_hurt
+advancement revoke @a only fossil_frights:trap_consumed
 advancement revoke @a only fossil_frights:camera_remote_consumed
 advancement revoke @a only fossil_frights:heists_night_stick_hit
 advancement revoke @a only fossil_frights:hazard_cookie_consumed

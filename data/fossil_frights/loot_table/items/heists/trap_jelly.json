@@ -12,31 +12,26 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.glowtrap_placer",
-                  "color": "green",
+                  "translate": "ff.item.trap_jelly",
+                  "color": "#F43CA1",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.glowtrap_placer.description.1",
+                    "translate": "ff.item.trap.description.1",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "translate": "ff.item.glowtrap_placer.description.2",
+                    "translate": "ff.item.trap_jelly.description.2",
                     "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "ff.item.glowtrap_placer.description.3",
-                    "color": "red",
                     "italic": false
                   }
                 ],
-                "minecraft:use_cooldown": {
-                  "seconds": 60,
-                  "cooldown_group": "fossil_frights:glowtrap_placer"
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    104
+                  ]
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,
@@ -49,31 +44,26 @@
                   "count": 1,
                   "components": {
                     "minecraft:item_name": {
-                      "translate": "ff.item.glowtrap_placer",
-                      "color": "green",
+                      "translate": "ff.item.trap_jelly",
+                      "color": "#F43CA1",
                       "italic": false
                     },
-                    "minecraft:item_model": "fossil-frights:general_items/glowtrap_placer",
                     "minecraft:lore": [
                       {
-                        "translate": "ff.item.glowtrap_placer.description.1",
+                        "translate": "ff.item.trap.description.1",
                         "color": "white",
                         "italic": false
                       },
                       {
-                        "translate": "ff.item.glowtrap_placer.description.2",
+                        "translate": "ff.item.trap_jelly.description.2",
                         "color": "white",
-                        "italic": false
-                      },
-                      {
-                        "translate": "ff.item.glowtrap_placer.description.3",
-                        "color": "red",
                         "italic": false
                       }
                     ],
-                    "minecraft:use_cooldown": {
-                      "seconds": 60,
-                      "cooldown_group": "fossil_frights:glowtrap_placer"
+                    "minecraft:custom_model_data": {
+                      "floats": [
+                        104
+                      ]
                     },
                     "minecraft:consumable": {
                       "consume_seconds": 0.001,
@@ -82,14 +72,14 @@
                       "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
-                      "ff_heist_glowtrap_placer": true,
-                      "itemID": "glowtrap_placer"
+                      "ff_heist_trap": true,
+                      "itemID": "trap_jelly"
                     }
                   }
                 },
                 "minecraft:custom_data": {
-                  "itemID": "glowtrap_placer",
-                  "ff_heist_glowtrap_placer": true,
+                  "itemID": "trap_jelly",
+                  "ff_heist_trap": true,
                   "ff_prevent_drop": true
                 }
               }

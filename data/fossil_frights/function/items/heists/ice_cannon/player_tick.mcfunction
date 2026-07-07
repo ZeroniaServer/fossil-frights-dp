@@ -1,7 +1,5 @@
 execute if entity @s[tag=ff_ice_cannon_remote_restore_pending] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/ice_cannon_remote
 tag @s remove ff_ice_cannon_remote_restore_pending
-execute if entity @s[tag=ff_glowtrap_placer_restore_pending] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/glowtrap_placer
-tag @s remove ff_glowtrap_placer_restore_pending
 execute if entity @s[tag=ff_camera_remote_restore_pending] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/camera_remote
 tag @s remove ff_camera_remote_restore_pending
 execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_ice_cannon_remote:1b}] unless items entity @s armor.head * run function fossil_frights:items/heists/ice_cannon/equip_cannon

@@ -16,7 +16,7 @@ schedule clear fossil_frights:game/heists/start_reveal/go
 kill @e[type=minecraft:marker,tag=ff_ice_cannon]
 kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block]
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze]
-kill @e[type=minecraft:marker,tag=ff_glowtrap]
+kill @e[type=minecraft:marker,tag=ff_trap]
 tp @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] 0 -200 0
 kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
@@ -36,6 +36,7 @@ scoreboard players set @a ff_heist_invis_ticks 0
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
+scoreboard players set @a ff_trap_cooldown 0
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true

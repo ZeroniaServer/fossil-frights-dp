@@ -8,13 +8,13 @@
             "minecraft:amethyst_shard"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_heist_glowtrap_placer:1b}"
+            "minecraft:custom_data": "{ff_heist_trap:1b}"
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "fossil_frights:items/heists/glowtrap/use_consumed"
+    "function": "fossil_frights:items/heists/trap/use_consumed"
   }
 }

@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.trap_antigravity",
+                  "color": "#421DD0",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.trap.description.1",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.item.trap_antigravity.description.2",
+                    "color": "white",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    103
+                  ]
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:amethyst_shard",
+                  "count": 1,
+                  "components": {
+                    "minecraft:item_name": {
+                      "translate": "ff.item.trap_antigravity",
+                      "color": "#421DD0",
+                      "italic": false
+                    },
+                    "minecraft:lore": [
+                      {
+                        "translate": "ff.item.trap.description.1",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "translate": "ff.item.trap_antigravity.description.2",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ],
+                    "minecraft:custom_model_data": {
+                      "floats": [
+                        103
+                      ]
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "ff_heist_trap": true,
+                      "itemID": "trap_antigravity"
+                    }
+                  }
+                },
+                "minecraft:custom_data": {
+                  "itemID": "trap_antigravity",
+                  "ff_heist_trap": true,
+                  "ff_prevent_drop": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

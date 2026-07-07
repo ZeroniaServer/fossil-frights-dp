@@ -23,6 +23,8 @@ scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_bat_bug_timer 0
 scoreboard players set @s ff_bat_bug_bar 0
+scoreboard players set @s ff_trap_selected 0
+scoreboard players set @s ff_trap_cooldown 0
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""
