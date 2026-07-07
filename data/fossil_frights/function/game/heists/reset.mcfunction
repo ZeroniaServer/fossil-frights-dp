@@ -36,7 +36,17 @@ scoreboard players set @a ff_heist_invis_ticks 0
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
-scoreboard players set @a ff_trap_cooldown 0
+scoreboard players set @a ff_trap_input_delay 0
+scoreboard players set @a ff_trap_glow_phase 0
+scoreboard players set @a ff_trap_glow_timer 0
+scoreboard players set @a ff_trap_freeze_phase 0
+scoreboard players set @a ff_trap_freeze_timer 0
+scoreboard players set @a ff_trap_antigravity_phase 0
+scoreboard players set @a ff_trap_antigravity_timer 0
+scoreboard players set @a ff_trap_jelly_phase 0
+scoreboard players set @a ff_trap_jelly_timer 0
+scoreboard players set @a ff_trap_explosive_phase 0
+scoreboard players set @a ff_trap_explosive_timer 0
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true

@@ -1,0 +1,11 @@
+execute store result storage fossil_frights:trap_state selected int 1 run scoreboard players get @s ff_trap_selected
+execute store result storage fossil_frights:trap_state glow_phase int 1 run scoreboard players get @s ff_trap_glow_phase
+execute store result storage fossil_frights:trap_state glow_timer int 1 run scoreboard players get @s ff_trap_glow_timer
+execute store result storage fossil_frights:trap_state freeze_phase int 1 run scoreboard players get @s ff_trap_freeze_phase
+execute store result storage fossil_frights:trap_state freeze_timer int 1 run scoreboard players get @s ff_trap_freeze_timer
+execute store result storage fossil_frights:trap_state antigravity_phase int 1 run scoreboard players get @s ff_trap_antigravity_phase
+execute store result storage fossil_frights:trap_state antigravity_timer int 1 run scoreboard players get @s ff_trap_antigravity_timer
+execute store result storage fossil_frights:trap_state jelly_phase int 1 run scoreboard players get @s ff_trap_jelly_phase
+execute store result storage fossil_frights:trap_state jelly_timer int 1 run scoreboard players get @s ff_trap_jelly_timer
+execute store result storage fossil_frights:trap_state explosive_phase int 1 run scoreboard players get @s ff_trap_explosive_phase
+execute store result storage fossil_frights:trap_state explosive_timer int 1 run scoreboard players get @s ff_trap_explosive_timer

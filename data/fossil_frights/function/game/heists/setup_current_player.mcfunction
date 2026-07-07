@@ -24,7 +24,17 @@ scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_bat_bug_timer 0
 scoreboard players set @s ff_bat_bug_bar 0
 scoreboard players set @s ff_trap_selected 0
-scoreboard players set @s ff_trap_cooldown 0
+scoreboard players set @s ff_trap_input_delay 0
+scoreboard players set @s ff_trap_glow_phase 0
+scoreboard players set @s ff_trap_glow_timer 0
+scoreboard players set @s ff_trap_freeze_phase 0
+scoreboard players set @s ff_trap_freeze_timer 0
+scoreboard players set @s ff_trap_antigravity_phase 0
+scoreboard players set @s ff_trap_antigravity_timer 0
+scoreboard players set @s ff_trap_jelly_phase 0
+scoreboard players set @s ff_trap_jelly_timer 0
+scoreboard players set @s ff_trap_explosive_phase 0
+scoreboard players set @s ff_trap_explosive_timer 0
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""

@@ -1,5 +1,9 @@
-execute if score @s ff_trap_selected matches ..0 run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/trap_glow
-execute if score @s ff_trap_selected matches 1 run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/trap_freeze
-execute if score @s ff_trap_selected matches 2 run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/trap_antigravity
-execute if score @s ff_trap_selected matches 3 run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/trap_jelly
-execute if score @s ff_trap_selected matches 4.. run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/trap_explosive
+execute if items entity @s hotbar.0 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_0
+execute if items entity @s hotbar.1 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_1
+execute if items entity @s hotbar.2 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_2
+execute if items entity @s hotbar.3 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_3
+execute if items entity @s hotbar.4 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_4
+execute if items entity @s hotbar.5 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_5
+execute if items entity @s hotbar.6 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_6
+execute if items entity @s hotbar.7 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_7
+execute if items entity @s hotbar.8 *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_8

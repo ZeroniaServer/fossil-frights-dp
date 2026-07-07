@@ -106,7 +106,6 @@ execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches
 execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if items entity @s weapon.mainhand minecraft:amethyst_shard[custom_data~{ff_dna:1b}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
-execute if score @s ff_trap_cooldown matches 1.. run scoreboard players remove @s ff_trap_cooldown 1
 advancement revoke @s only fossil_frights:lock_click
 advancement revoke @s only fossil_frights:multiplayer_click
 advancement revoke @s only fossil_frights:dna_click

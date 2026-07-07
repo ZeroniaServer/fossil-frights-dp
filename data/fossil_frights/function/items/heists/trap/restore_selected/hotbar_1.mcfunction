@@ -1,0 +1,10 @@
+execute if score @s ff_trap_selected matches ..0 if score @s ff_trap_glow_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_glow
+execute if score @s ff_trap_selected matches ..0 unless score @s ff_trap_glow_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_glow_empty
+execute if score @s ff_trap_selected matches 1 if score @s ff_trap_freeze_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_freeze
+execute if score @s ff_trap_selected matches 1 unless score @s ff_trap_freeze_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_freeze_empty
+execute if score @s ff_trap_selected matches 2 if score @s ff_trap_antigravity_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_antigravity
+execute if score @s ff_trap_selected matches 2 unless score @s ff_trap_antigravity_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_antigravity_empty
+execute if score @s ff_trap_selected matches 3 if score @s ff_trap_jelly_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_jelly
+execute if score @s ff_trap_selected matches 3 unless score @s ff_trap_jelly_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_jelly_empty
+execute if score @s ff_trap_selected matches 4.. if score @s ff_trap_explosive_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_explosive
+execute if score @s ff_trap_selected matches 4.. unless score @s ff_trap_explosive_phase matches 0 run loot replace entity @s hotbar.1 loot fossil_frights:items/heists/trap_explosive_empty

@@ -1,4 +1,5 @@
 function fossil_frights:items/heists/camera_remote/exit
+function fossil_frights:items/heists/trap/save_state
 tp @s 20 70 20 0 0
 spawnpoint @s 20 70 20
 function fossil_frights:player/protection_disable
@@ -14,3 +15,4 @@ effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 function fossil_frights:game/heists/loadout/guard
+function fossil_frights:items/heists/trap/load_state
