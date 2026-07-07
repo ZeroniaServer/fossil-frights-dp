@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/veloci_tea",
                 "minecraft:lore": [
                   {
-                    "text": "Technically tea. Glows slightly in the dark.",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.veloci_tea.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {

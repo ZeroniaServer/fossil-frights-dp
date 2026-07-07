@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/bubbly_bat",
                 "minecraft:lore": [
                   {
-                    "text": "A refreshing glow berry brew. Best served chilled.",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.bubbly_bat.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {

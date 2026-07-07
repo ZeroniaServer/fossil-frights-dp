@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/pteranadon_twist",
                 "minecraft:lore": [
                   {
-                    "text": "Side effects may include uncontrollable dance moves.",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.pteranadon_twist.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {

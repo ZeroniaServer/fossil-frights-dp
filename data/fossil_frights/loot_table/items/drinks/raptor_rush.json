@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/raptor_rush",
                 "minecraft:lore": [
                   {
-                    "text": "Tastes like raspberries.",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.raptor_rush.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {

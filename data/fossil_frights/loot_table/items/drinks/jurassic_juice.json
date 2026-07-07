@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/jurassic_juice",
                 "minecraft:lore": [
                   {
-                    "text": "A tropical refreshment!",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.jurassic_juice.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {

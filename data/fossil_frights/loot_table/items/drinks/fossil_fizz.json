@@ -19,9 +19,8 @@
                 "minecraft:item_model": "fossil-frights:food/fossil_fizz",
                 "minecraft:lore": [
                   {
-                    "text": "Carbonated for 60 million years, probably safe...",
-                    "color": "yellow",
-                    "italic": true
+                    "translate": "ff.drink.fossil_fizz.description",
+                    "color": "yellow"
                   }
                 ],
                 "minecraft:potion_contents": {
