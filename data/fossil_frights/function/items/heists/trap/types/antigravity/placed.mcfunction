@@ -1,1 +1,1 @@
-particle minecraft:soul_fire_flame ~ ~ ~ 0.25 0.1 0.25 0 10 force @a[tag=ff_trap_viewer]
+particle minecraft:reverse_portal ~ ~ ~ 0.2 0.1 0.2 0.02 8 force @a[tag=ff_trap_viewer]

@@ -1,0 +1,8 @@
+execute rotated as @s positioned ^1.75 ^0.08 ^0 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.06 0.03 0.06 0 2 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^-1.75 ^0.08 ^0 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.06 0.03 0.06 0 2 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^0 ^0.08 ^1.75 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.06 0.03 0.06 0 2 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^0 ^0.08 ^-1.75 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.06 0.03 0.06 0 2 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^1.24 ^0.08 ^1.24 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.05 0.03 0.05 0 1 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^-1.24 ^0.08 ^1.24 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.05 0.03 0.05 0 1 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^1.24 ^0.08 ^-1.24 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.05 0.03 0.05 0 1 force @a[tag=ff_trap_viewer]
+execute rotated as @s positioned ^-1.24 ^0.08 ^-1.24 run particle minecraft:trial_spawner_detection ~ ~ ~ 0.05 0.03 0.05 0 1 force @a[tag=ff_trap_viewer]

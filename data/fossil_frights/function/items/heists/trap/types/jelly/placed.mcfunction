@@ -1,1 +1,1 @@
-particle minecraft:soul_fire_flame ~ ~ ~ 0.25 0.1 0.25 0 10 force @a[tag=ff_trap_viewer]
+particle minecraft:dripping_obsidian_tear ~ ~ ~ 0.18 0.06 0.18 0.01 6 force @a[tag=ff_trap_viewer]
