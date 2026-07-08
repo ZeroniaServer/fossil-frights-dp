@@ -79,6 +79,7 @@ scoreboard objectives add ff_trap_jelly_phase dummy
 scoreboard objectives add ff_trap_jelly_timer dummy
 scoreboard objectives add ff_trap_explosive_phase dummy
 scoreboard objectives add ff_trap_explosive_timer dummy
+scoreboard objectives add ff_trap_balance dummy
 scoreboard objectives add ff_double_jump_boost_timer dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger

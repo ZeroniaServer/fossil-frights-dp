@@ -1,11 +1,1 @@
-scoreboard players set @s ff_trap_glow_phase 0
-scoreboard players set @s ff_trap_glow_timer 0
-scoreboard players set @s ff_trap_freeze_phase 0
-scoreboard players set @s ff_trap_freeze_timer 0
-scoreboard players set @s ff_trap_antigravity_phase 0
-scoreboard players set @s ff_trap_antigravity_timer 0
-scoreboard players set @s ff_trap_jelly_phase 0
-scoreboard players set @s ff_trap_jelly_timer 0
-scoreboard players set @s ff_trap_explosive_phase 3
-scoreboard players set @s ff_trap_explosive_timer 1200
-execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand
+function fossil_frights:items/heists/trap/balance/apply_round_start
