@@ -21,6 +21,18 @@ function fossil_frights:game/heists/loot/header
 function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
+scoreboard players set @a ff_heist_loot_captured_round 0
+scoreboard players set @a ff_heist_keys_stolen_round 0
+scoreboard players set @a ff_heist_deaths_round 0
+scoreboard players set @a ff_heist_thieves_killed_round 0
+scoreboard players set @a ff_heist_killer_pending 0
+scoreboard players set @a ff_heist_killer_uuid_0 0
+scoreboard players set @a ff_heist_killer_uuid_1 0
+scoreboard players set @a ff_heist_killer_uuid_2 0
+scoreboard players set @a ff_heist_killer_uuid_3 0
+tag @a remove ff_heist_stat_winner
+tag @a remove ff_heist_stat_subject
+tag @a remove ff_heist_kill_target
 execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set @a[team=ff_thief] ff_heist_stolen_keys 0

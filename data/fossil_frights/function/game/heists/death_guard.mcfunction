@@ -1,3 +1,4 @@
+scoreboard players add @s ff_heist_deaths_round 1
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:items/heists/trap/save_state
 tp @s 20 70 20 0 0

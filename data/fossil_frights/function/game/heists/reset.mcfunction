@@ -34,6 +34,15 @@ scoreboard players set @a ff_heist_punch_bar 0
 scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players set @a ff_heist_invis_ticks 0
 scoreboard players set @a ff_heist_stolen_keys 0
+scoreboard players set @a ff_heist_loot_captured_round 0
+scoreboard players set @a ff_heist_keys_stolen_round 0
+scoreboard players set @a ff_heist_deaths_round 0
+scoreboard players set @a ff_heist_thieves_killed_round 0
+scoreboard players set @a ff_heist_killer_pending 0
+scoreboard players set @a ff_heist_killer_uuid_0 0
+scoreboard players set @a ff_heist_killer_uuid_1 0
+scoreboard players set @a ff_heist_killer_uuid_2 0
+scoreboard players set @a ff_heist_killer_uuid_3 0
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set @a ff_heist_paint_fx 0
@@ -53,6 +62,9 @@ scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
+tag @a remove ff_heist_stat_winner
+tag @a remove ff_heist_stat_subject
+tag @a remove ff_heist_kill_target
 team join ff_lobby @a[team=ff_thief]
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0

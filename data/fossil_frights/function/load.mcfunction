@@ -132,6 +132,15 @@ scoreboard objectives add ff_heist_loot_state dummy
 scoreboard objectives add ff_heist_loot_value dummy
 scoreboard objectives add ff_heist_reveal dummy
 scoreboard objectives add ff_heist_flash dummy
+scoreboard objectives add ff_heist_loot_captured_round dummy
+scoreboard objectives add ff_heist_keys_stolen_round dummy
+scoreboard objectives add ff_heist_deaths_round dummy
+scoreboard objectives add ff_heist_thieves_killed_round dummy
+scoreboard objectives add ff_heist_killer_pending dummy
+scoreboard objectives add ff_heist_killer_uuid_0 dummy
+scoreboard objectives add ff_heist_killer_uuid_1 dummy
+scoreboard objectives add ff_heist_killer_uuid_2 dummy
+scoreboard objectives add ff_heist_killer_uuid_3 dummy
 scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy

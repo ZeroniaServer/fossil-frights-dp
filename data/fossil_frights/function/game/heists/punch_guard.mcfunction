@@ -6,6 +6,7 @@ execute if score @s ff_heist_punch_cd matches 1.. run return 0
 scoreboard players operation @s ff_heist_punch_cd = #heist_punch_cooldown ff_heist
 scoreboard players operation @s ff_heist_invis_ticks = #heist_invis_duration ff_heist
 scoreboard players add @s ff_heist_stolen_keys 1
+scoreboard players add @s ff_heist_keys_stolen_round 1
 effect give @s minecraft:invisibility 8 0 true
 effect give @s minecraft:speed 20 0 true
 item modify entity @s armor.head fossil_frights:game/heists/invisimask/hide
