@@ -35,6 +35,7 @@ scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players set @a ff_heist_invis_ticks 0
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set @a ff_heist_loot_captured_round 0
+scoreboard players set @a ff_heist_keyed_loot_captured_round 0
 scoreboard players set @a ff_heist_keys_stolen_round 0
 scoreboard players set @a ff_heist_deaths_round 0
 scoreboard players set @a ff_heist_thieves_killed_round 0

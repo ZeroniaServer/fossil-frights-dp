@@ -133,6 +133,7 @@ scoreboard objectives add ff_heist_loot_value dummy
 scoreboard objectives add ff_heist_reveal dummy
 scoreboard objectives add ff_heist_flash dummy
 scoreboard objectives add ff_heist_loot_captured_round dummy
+scoreboard objectives add ff_heist_keyed_loot_captured_round dummy
 scoreboard objectives add ff_heist_keys_stolen_round dummy
 scoreboard objectives add ff_heist_deaths_round dummy
 scoreboard objectives add ff_heist_thieves_killed_round dummy

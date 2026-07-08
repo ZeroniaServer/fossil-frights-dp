@@ -22,6 +22,7 @@ function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
 scoreboard players set @a ff_heist_loot_captured_round 0
+scoreboard players set @a ff_heist_keyed_loot_captured_round 0
 scoreboard players set @a ff_heist_keys_stolen_round 0
 scoreboard players set @a ff_heist_deaths_round 0
 scoreboard players set @a ff_heist_thieves_killed_round 0

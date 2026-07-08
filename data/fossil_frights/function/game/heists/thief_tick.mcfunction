@@ -2,6 +2,7 @@ scoreboard players add @s ff_heist_punch_cd 0
 scoreboard players add @s ff_heist_punch_fx 0
 scoreboard players add @s ff_heist_invis_ticks 0
 scoreboard players add @s ff_heist_stolen_keys 0
+scoreboard players add @s ff_heist_keyed_loot_captured_round 0
 scoreboard players add @s ff_heist_regen_lock 0
 scoreboard players add @s ff_heist_thaw_fx 0
 scoreboard players add @s ff_heist_paint_fx 0
