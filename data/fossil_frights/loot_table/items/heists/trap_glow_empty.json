@@ -23,6 +23,11 @@
                     "italic": false
                   },
                   {
+                    "translate": "ff.item.trap.description.2",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.item.trap_glow.description.2",
                     "color": "white",
                     "italic": false
@@ -65,6 +70,11 @@
                     "minecraft:lore": [
                       {
                         "translate": "ff.item.trap.description.1",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "translate": "ff.item.trap.description.2",
                         "color": "white",
                         "italic": false
                       },
