@@ -1,7 +1,6 @@
 {
   "values": [
-    "#minecraft:air",
-    "minecraft:light",
+    "#fossil_frights:air_like",
     "minecraft:zombie_head",
     "minecraft:zombie_wall_head"
   ]
