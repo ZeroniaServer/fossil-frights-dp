@@ -12,6 +12,9 @@ execute if score @s ff_glowtrap_age matches 50.. if score @s ff_glowtrap_fx matc
 execute if score @s ff_glowtrap_age matches 50.. if score @s ff_glowtrap_fx matches 15 run function fossil_frights:items/heists/trap/types/explosive/fx/ring
 execute if score @s ff_glowtrap_age matches 50.. if score @s ff_glowtrap_fx matches 20.. run function fossil_frights:items/heists/trap/types/explosive/fx_sparks
 execute if score @s ff_glowtrap_age matches 50.. if score @s ff_glowtrap_fx matches 20.. run scoreboard players set @s ff_glowtrap_fx 0
-execute if score @s ff_glowtrap_age matches 50.. if entity @e[type=minecraft:item,limit=1,distance=..0.75] run function fossil_frights:items/heists/trap/types/explosive/trigger_item
-execute unless entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.5] run return 0
-function fossil_frights:items/heists/trap/types/explosive/trigger
+execute if score @s ff_glowtrap_age matches 50.. if entity @e[type=minecraft:item,limit=1,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger_item
+execute if score @s ff_glowtrap_age matches 50.. unless entity @e[type=minecraft:item,limit=1,distance=..0.6] positioned ~ ~1 ~ if entity @e[type=minecraft:item,limit=1,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger_item
+execute if score @s ff_glowtrap_age matches 50.. unless entity @e[type=minecraft:item,limit=1,distance=..0.6] positioned ~ ~-1 ~ if entity @e[type=minecraft:item,limit=1,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger_item
+execute if entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger
+execute unless entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.6] positioned ~ ~1 ~ if entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger
+execute unless entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.6] positioned ~ ~-1 ~ if entity @a[limit=1,team=ff_thief,gamemode=!spectator,distance=..0.6] run function fossil_frights:items/heists/trap/types/explosive/trigger
