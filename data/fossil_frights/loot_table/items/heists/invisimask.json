@@ -53,7 +53,8 @@
                   ]
                 },
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
@@ -123,7 +124,8 @@
                   ]
                 },
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
@@ -193,7 +195,8 @@
                   ]
                 },
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
@@ -263,7 +266,8 @@
                   ]
                 },
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1

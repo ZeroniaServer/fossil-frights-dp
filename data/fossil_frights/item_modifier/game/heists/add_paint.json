@@ -1,0 +1,17 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "fossil_frights:paint",
+        "pattern": "fossil_frights:paint"
+      }
+    }
+  },
+  {
+    "function": "minecraft:toggle_tooltips",
+    "toggles": {
+      "minecraft:trim": false
+    }
+  }
+]
