@@ -1,0 +1,1 @@
+execute unless entity @a[limit=1,tag=ff_well_teleporting] positioned 46 80 37 if entity @e[type=minecraft:item,distance=..0.6,limit=1,sort=nearest,predicate=fossil_frights:entity/contents/dinocoin] run function fossil_frights:animations/dinocoin/well/trigger

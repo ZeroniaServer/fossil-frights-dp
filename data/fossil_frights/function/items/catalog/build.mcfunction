@@ -51,7 +51,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/drinks/jurassic_jui
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/pteranadon_twist",page:"page_2",slot:16}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/raptor_rush",page:"page_2",slot:17}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/veloci_tea",page:"page_2",slot:18}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/cubekoin",page:"page_2",slot:19}
+function fossil_frights:items/catalog/from_loot {loot:"items/other/dinocoin",page:"page_2",slot:19}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/vault_key",page:"page_2",slot:20}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/basketball",page:"page_2",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/key/storage_key",page:"page_2",slot:22}

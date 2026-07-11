@@ -9,7 +9,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/camer
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot_book",page:"page_1",slot:4}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/invisimask",page:"page_1",slot:5}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/one_time_key",page:"page_1",slot:6}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/other/cubekoin",page:"page_1",slot:7}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/other/dinocoin",page:"page_1",slot:7}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/coffee",page:"page_1",slot:8}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/poster_tube",page:"page_1",slot:9}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/ghast_plushie",page:"page_1",slot:10}

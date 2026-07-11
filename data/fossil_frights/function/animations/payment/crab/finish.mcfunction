@@ -1,6 +1,0 @@
-scoreboard players set @s ff_key_cooldown 0
-function fossil_frights:key/refresh
-function fossil_frights:animations/payment/crab/pose_base
-function fossil_frights:animations/payment/crab/body_base
-function fossil_frights:animations/payment/crab/set_claw
-title @s actionbar {"translate":"ff.crab.key_polished","color":"gold"}

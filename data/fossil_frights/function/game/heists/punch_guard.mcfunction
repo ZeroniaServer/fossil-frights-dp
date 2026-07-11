@@ -13,6 +13,6 @@ execute unless score @s ff_heist_stolen_keys matches 5.. run effect give @s mine
 execute if score @s ff_heist_stolen_keys matches 5.. unless score @s ff_heist_keyed_loot_captured_round matches ..199 run effect give @s minecraft:speed 10 0 true
 item modify entity @s armor.head fossil_frights:game/heists/invisimask/hide
 function fossil_frights:game/heists/reward_key
-function fossil_frights:game/give_cubekoin
+function fossil_frights:game/give_dinocoin
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.8 1.8
 particle minecraft:cloud ~ ~1 ~ 0.25 0.35 0.25 0.02 20

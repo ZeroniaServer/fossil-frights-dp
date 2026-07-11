@@ -4,7 +4,7 @@ execute unless score $day_active ff_day matches 1 run function fossil_frights:me
 execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/bookcase/clear
-execute as @a[team=ff_guard] run function fossil_frights:game/give_cubekoin
+execute as @a[team=ff_guard] run function fossil_frights:game/give_dinocoin
 execute as @a[team=ff_guard] run function fossil_frights:advancements/progression/grant_day_completed
 execute as @a at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
 stopsound @a music fossil-frights:ff_night_shift

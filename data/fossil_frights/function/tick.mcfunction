@@ -23,15 +23,15 @@ function fossil_frights:map/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
 execute if score $speedrunner_restart_window ff_game_state matches 1.. run scoreboard players remove $speedrunner_restart_window ff_game_state 1
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
-execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/cubekoin/crane/payment/check
+execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/dinocoin/crane/payment/check
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/deep_dark_elevator/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/lady_bug_revolutionary/check
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/cubekoin/sarcophagus/tick
-execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/payment/crab/tick
+execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/dinocoin/sarcophagus/tick
+execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
-execute as @a[team=ff_guard] run function fossil_frights:animations/well/tick
+execute as @a[team=ff_guard] run function fossil_frights:animations/dinocoin/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick

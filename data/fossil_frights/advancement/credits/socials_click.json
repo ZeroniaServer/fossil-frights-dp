@@ -34,6 +34,6 @@
     ]
   ],
   "rewards": {
-    "function": "fossil_frights:credits/socials_click"
+    "function": "fossil_frights:animations/credits/socials_click"
   }
 }

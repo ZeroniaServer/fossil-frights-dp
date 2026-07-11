@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:animations/payment/crab/clicked"
+    "function": "fossil_frights:animations/dinocoin/crab/clicked"
   }
 }

@@ -14,9 +14,9 @@ function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/timer/reset
 function fossil_frights:animations/door/open
-function fossil_frights:animations/cubekoin/crane/reset
-function fossil_frights:animations/cubekoin/sarcophagus/reset
-function fossil_frights:animations/payment/crab/reset
+function fossil_frights:animations/dinocoin/crane/reset
+function fossil_frights:animations/dinocoin/sarcophagus/reset
+function fossil_frights:animations/dinocoin/crab/reset
 function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/sniffer/reset
 function fossil_frights:frights/bats/reset
