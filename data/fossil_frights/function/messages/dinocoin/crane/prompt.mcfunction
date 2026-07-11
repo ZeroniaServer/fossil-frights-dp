@@ -1,0 +1,1 @@
+tellraw @s {"translate":"ff.sculkadillo.broke","with":[{"translate":"ff.sculkadillo","color":"dark_aqua"},{"translate":"%s %s", "with": [{"translate":"ff.dinocoins.number","color":"gold","with":["2"]},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/dinocoin"}]}]}

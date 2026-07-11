@@ -23,10 +23,14 @@ function fossil_frights:map/tick
 execute if score $game_running ff_game_state matches 1 if score $forklift_watch ff_game_state matches 1 run function fossil_frights:animations/forklift/tick
 execute if score $speedrunner_restart_window ff_game_state matches 1.. run scoreboard players remove $speedrunner_restart_window ff_game_state 1
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
+execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 as @a[tag=ff_dinocoin_crane_near] positioned 52 68 60 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..1.5] run tag @s remove ff_dinocoin_crane_near
+execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 positioned 52 68 60 as @a[predicate=fossil_frights:player/is_playing,distance=..1.5,tag=!ff_dinocoin_crane_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crane/nearby
 execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/dinocoin/crane/payment/check
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/deep_dark_elevator/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/lady_bug_revolutionary/check
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/dinocoin/sarcophagus/tick
+execute if score $game_running ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] as @a[tag=ff_dinocoin_crab_near] positioned -7.5 71.0 46.5 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..3] run tag @s remove ff_dinocoin_crab_near
+execute if score $game_running ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] positioned -7.5 71.0 46.5 as @a[predicate=fossil_frights:player/is_playing,distance=..3,tag=!ff_dinocoin_crab_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crab/nearby
 execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
