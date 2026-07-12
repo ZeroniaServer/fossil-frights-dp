@@ -23,6 +23,7 @@ function fossil_frights:animations/door/close
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset
+function fossil_frights:animations/dinocoin/vending_machine/setup
 function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon

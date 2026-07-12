@@ -1,4 +1,5 @@
 scoreboard players set $heist_round_active ff_game_state 1
+function fossil_frights:animations/dinocoin/vending_machine/setup
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_timer ff_heist 12000
