@@ -1,6 +1,5 @@
 advancement revoke @s only fossil_frights:vending_machine_click
 execute unless score $game_running ff_game_state matches 1 run return 0
-execute unless score $day_active ff_day matches 1 run return 0
 execute if score $vending_busy ff_game_state matches 1.. run return 0
 execute store result score #vending_coin_count ff_hazard_rng run clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 0
 execute unless score #vending_coin_count ff_hazard_rng matches 1.. run return run function fossil_frights:animations/dinocoin/vending_machine/fail

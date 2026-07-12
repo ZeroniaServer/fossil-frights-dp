@@ -1,1 +1,0 @@
-function fossil_frights:animations/dinocoin/vending_machine/clicked
