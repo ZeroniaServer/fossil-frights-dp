@@ -32,6 +32,16 @@
                       "duration": 2400
                     },
                     {
+                      "id": "minecraft:fire_resistance",
+                      "amplifier": 0,
+                      "duration": 24000
+                    },
+                    {
+                      "id": "minecraft:resistance",
+                      "amplifier": 0,
+                      "duration": 24000
+                    },
+                    {
                       "id": "minecraft:water_breathing",
                       "amplifier": 0,
                       "duration": 24000
