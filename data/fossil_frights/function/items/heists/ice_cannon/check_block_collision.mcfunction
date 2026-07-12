@@ -1,0 +1,22 @@
+execute if block ~ ~ ~ #fossil_frights:ice_projectile_pass_through run return 0
+execute if block ~ ~ ~ minecraft:oak_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:spruce_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:birch_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:jungle_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:acacia_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:dark_oak_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:mangrove_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:cherry_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:bamboo_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:crimson_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:warped_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:exposed_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:weathered_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:oxidized_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:waxed_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:waxed_exposed_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:waxed_weathered_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_door[open=true] run return 0
+execute if block ~ ~ ~ minecraft:iron_door[open=true] run return 0
+function fossil_frights:items/heists/ice_cannon/impact

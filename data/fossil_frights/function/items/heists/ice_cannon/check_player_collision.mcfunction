@@ -1,4 +1,4 @@
 tag @a remove ff_ice_cannon_owner_match
 execute as @a if score @s ff_active_uuid_0 = @e[type=minecraft:marker,tag=ff_ice_cannon,tag=ff_ice_cannon_collision_check,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @e[type=minecraft:marker,tag=ff_ice_cannon,tag=ff_ice_cannon_collision_check,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @e[type=minecraft:marker,tag=ff_ice_cannon,tag=ff_ice_cannon_collision_check,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @e[type=minecraft:marker,tag=ff_ice_cannon,tag=ff_ice_cannon_collision_check,limit=1] ff_active_uuid_3 run tag @s add ff_ice_cannon_owner_match
-execute positioned ~-0.35 ~-0.35 ~-0.35 if entity @a[limit=1,gamemode=!spectator,tag=!ff_ice_cannon_owner_match,dx=0.7,dy=0.7,dz=0.7] run function fossil_frights:items/heists/ice_cannon/impact
+execute positioned ~-0.45 ~-0.55 ~-0.45 if entity @a[limit=1,gamemode=!spectator,tag=!ff_ice_cannon_owner_match,dx=0.9,dy=1.1,dz=0.9] run function fossil_frights:items/heists/ice_cannon/impact
 tag @a remove ff_ice_cannon_owner_match
