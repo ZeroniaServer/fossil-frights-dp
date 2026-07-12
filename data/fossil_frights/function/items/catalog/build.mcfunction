@@ -47,7 +47,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/dna/plesiosaur",pag
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/pterodactyl",page:"page_2",slot:12}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/bubbly_bat",page:"page_2",slot:13}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/fossil_fizz",page:"page_2",slot:14}
-function fossil_frights:items/catalog/from_loot {loot:"items/drinks/jurassic_juice",page:"page_2",slot:15}
+function fossil_frights:items/catalog/from_loot {loot:"items/drinks/chorus_cola",page:"page_2",slot:15}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/pteranadon_twist",page:"page_2",slot:16}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/raptor_rush",page:"page_2",slot:17}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/veloci_tea",page:"page_2",slot:18}

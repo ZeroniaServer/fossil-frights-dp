@@ -3,6 +3,8 @@
 execute store result storage fossil_frights:vending_machine_aj_temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/read with storage fossil_frights:vending_machine_aj_temp args
+execute if score @s aj.fill_choruscola.frame matches 31.. run scoreboard players set @s aj.fill_choruscola.frame 1
 data remove storage fossil_frights:vending_machine_aj_temp args
-$execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players set @s aj.fill_jurassicjuice.frame $(frame)
-execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_jurassicjuice/zzz/apply_frame with storage fossil_frights:vending_machine_aj_temp args
+execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players get @s aj.fill_choruscola.frame
+execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_choruscola/zzz/apply_frame with storage fossil_frights:vending_machine_aj_temp args
+scoreboard players add @s aj.fill_choruscola.frame 1

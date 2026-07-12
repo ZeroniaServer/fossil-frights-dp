@@ -10,7 +10,7 @@ execute if score $vending_current ff_game_state matches 1 run loot give @s loot 
 execute if score $vending_current ff_game_state matches 2 run loot give @s loot fossil_frights:items/drinks/pteranadon_twist
 execute if score $vending_current ff_game_state matches 3 run loot give @s loot fossil_frights:items/drinks/raptor_rush
 execute if score $vending_current ff_game_state matches 4 run loot give @s loot fossil_frights:items/drinks/bubbly_bat
-execute if score $vending_current ff_game_state matches 5 run loot give @s loot fossil_frights:items/drinks/jurassic_juice
+execute if score $vending_current ff_game_state matches 5 run loot give @s loot fossil_frights:items/drinks/chorus_cola
 execute if score $vending_current ff_game_state matches 6 run loot give @s loot fossil_frights:items/drinks/fossil_fizz
 function fossil_frights:animations/dinocoin/vending_machine/select
 schedule function fossil_frights:animations/dinocoin/vending_machine/finish 40t replace

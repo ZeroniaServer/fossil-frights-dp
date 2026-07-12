@@ -3,6 +3,6 @@ data modify storage fossil_frights:animations/dinocoin/vending_machine/rig rig_h
 scoreboard objectives add aj.fill_bubblybat.frame dummy
 scoreboard objectives add aj.fill_pteranadontwist.frame dummy
 scoreboard objectives add aj.fill_fossilfizz.frame dummy
-scoreboard objectives add aj.fill_jurassicjuice.frame dummy
+scoreboard objectives add aj.fill_choruscola.frame dummy
 scoreboard objectives add aj.fill_raptorrush.frame dummy
 scoreboard objectives add aj.fill_velocitea.frame dummy

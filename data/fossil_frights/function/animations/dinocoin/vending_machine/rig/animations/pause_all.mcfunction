@@ -2,6 +2,6 @@
 tag @s remove animation.vending_machine.animation.fill_bubblybat.playing
 tag @s remove animation.vending_machine.animation.fill_pteranadontwist.playing
 tag @s remove animation.vending_machine.animation.fill_fossilfizz.playing
-tag @s remove animation.vending_machine.animation.fill_jurassicjuice.playing
+tag @s remove animation.vending_machine.animation.fill_choruscola.playing
 tag @s remove animation.vending_machine.animation.fill_raptorrush.playing
 tag @s remove animation.vending_machine.animation.fill_velocitea.playing

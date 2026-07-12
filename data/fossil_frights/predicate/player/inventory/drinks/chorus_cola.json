@@ -9,7 +9,7 @@
           "container.*": {
             "predicates": {
               "minecraft:custom_data": {
-                "ff_drink": "jurassic_juice"
+                "ff_drink": "chorus_cola"
               }
             }
           }
@@ -24,7 +24,7 @@
           "weapon.offhand": {
             "predicates": {
               "minecraft:custom_data": {
-                "ff_drink": "jurassic_juice"
+                "ff_drink": "chorus_cola"
               }
             }
           }
@@ -39,7 +39,7 @@
           "armor.*": {
             "predicates": {
               "minecraft:custom_data": {
-                "ff_drink": "jurassic_juice"
+                "ff_drink": "chorus_cola"
               }
             }
           }
@@ -54,7 +54,7 @@
           "player.cursor": {
             "predicates": {
               "minecraft:custom_data": {
-                "ff_drink": "jurassic_juice"
+                "ff_drink": "chorus_cola"
               }
             }
           }
@@ -69,7 +69,7 @@
           "player.crafting.*": {
             "predicates": {
               "minecraft:custom_data": {
-                "ff_drink": "jurassic_juice"
+                "ff_drink": "chorus_cola"
               }
             }
           }
