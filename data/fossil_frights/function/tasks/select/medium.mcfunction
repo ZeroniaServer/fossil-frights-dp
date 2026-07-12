@@ -7,7 +7,7 @@ execute unless score $heat_it_up_sel ff_task_state matches 1 run scoreboard play
 execute unless score $sponge_up_spill_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $feed_the_plants_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $refill_coffee_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $coffee_refill_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $coffee_top_up_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $replenish_soap_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $restock_plushies_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $revitalize_coral_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -77,9 +77,9 @@ execute unless score $feed_the_plants_sel ff_task_state matches 1 if score #task
 execute unless score $refill_coffee_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $refill_coffee_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/refill_coffee/selected
 execute unless score $refill_coffee_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $coffee_refill_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $coffee_refill_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/coffee_refill/selected
-execute unless score $coffee_refill_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $coffee_top_up_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $coffee_top_up_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/coffee_top_up/selected
+execute unless score $coffee_top_up_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $replenish_soap_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $replenish_soap_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/replenish_soap/selected
 execute unless score $replenish_soap_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

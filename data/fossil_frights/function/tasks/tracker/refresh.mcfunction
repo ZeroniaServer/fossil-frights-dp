@@ -33,7 +33,7 @@ function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "ancie
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "bring_brush"}
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "brush_delivery"}
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "chlorinify"}
-function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "coffee_refill"}
+function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "coffee_top_up"}
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "cool_it"}
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "credit_reel"}
 function fossil_frights:tasks/tracker/update_sidebar/medium_task {"task": "feed_parrot"}

@@ -12,14 +12,14 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
-                  "ff_task_book": "coffee_refill",
+                  "ff_task_book": "coffee_top_up",
                   "ff_task_book_difficulty": "medium",
                   "ff_any_task_book": true
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:general_items/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ᴄᴏꜰꜰᴇᴇ ʀᴇꜰɪʟʟ",
+                  "text": "ᴄᴏꜰꜰᴇᴇ ᴛᴏᴘ-ᴜᴘ",
                   "color": "gold"
                 },
                 "minecraft:max_stack_size": 99,
@@ -33,7 +33,7 @@
                   "author": "ғᴏssɪʟ ғʀɪɢʜᴛs",
                   "pages": [
                     [
-                      "ᴄᴏꜰꜰᴇᴇ ʀᴇꜰɪʟʟ\n",
+                      "ᴄᴏꜰꜰᴇᴇ ᴛᴏᴘ-ᴜᴘ\n",
                       "-------------------\n",
                       "ꜱᴛᴀꜰꜰ ʀᴏᴏᴍ ● ",
                       {

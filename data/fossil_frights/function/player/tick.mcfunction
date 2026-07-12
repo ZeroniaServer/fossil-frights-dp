@@ -122,7 +122,7 @@ advancement revoke @s only fossil_frights:credit_reel_click
 advancement revoke @s only fossil_frights:feed_the_fish_click
 advancement revoke @s only fossil_frights:popcorn_buckets_click
 advancement revoke @s only fossil_frights:ancient_portal_click
-advancement revoke @s only fossil_frights:coffee_refill_click
+advancement revoke @s only fossil_frights:coffee_top_up_click
 advancement revoke @s only fossil_frights:feed_parrot_click
 advancement revoke @s only fossil_frights:feed_the_plants_click
 advancement revoke @s only fossil_frights:fix_sculker_click

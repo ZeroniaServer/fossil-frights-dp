@@ -144,10 +144,10 @@ scoreboard players set $refill_coffee_avail ff_task_state 1
 scoreboard players set $refill_coffee_sel ff_task_state 0
 scoreboard players set $refill_coffee_done ff_task_state 0
 scoreboard players set #line_refill_coffee ff_task_state 15
-scoreboard players set $coffee_refill_avail ff_task_state 1
-scoreboard players set $coffee_refill_sel ff_task_state 0
-scoreboard players set $coffee_refill_done ff_task_state 0
-scoreboard players set #line_coffee_refill ff_task_state 14
+scoreboard players set $coffee_top_up_avail ff_task_state 1
+scoreboard players set $coffee_top_up_sel ff_task_state 0
+scoreboard players set $coffee_top_up_done ff_task_state 0
+scoreboard players set #line_coffee_top_up ff_task_state 14
 scoreboard players set $replenish_soap_avail ff_task_state 1
 scoreboard players set $replenish_soap_sel ff_task_state 0
 scoreboard players set $replenish_soap_done ff_task_state 0

@@ -7,7 +7,7 @@
           "entity_type": "minecraft:interaction",
           "entity_tags": {
             "all_of": [
-              "ff_coffee_refill_click"
+              "ff_coffee_top_up_click"
             ]
           }
         }
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:tasks/medium/coffee_refill/clicked"
+    "function": "fossil_frights:tasks/medium/coffee_top_up/clicked"
   }
 }
