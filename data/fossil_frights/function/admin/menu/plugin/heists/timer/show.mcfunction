@@ -1,0 +1,5 @@
+execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:admin/menu/plugin/heists/show
+execute unless score $heist_round_active ff_game_state matches 1 run return 0
+execute if score $timer_frozen ff_day matches 1 run function fossil_frights:admin/menu/plugin/heists/timer/show_paused
+execute if score $timer_frozen ff_day matches 1 run return 0
+function fossil_frights:admin/menu/plugin/heists/timer/show_running

@@ -1,3 +1,5 @@
+execute if score $present ff_plugin matches 1 run function fossil_frights:admin/menu/plugin/heists/show
+execute if score $present ff_plugin matches 1 run return 0
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/show_round
 execute if score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_players_ready ff_game_state 0

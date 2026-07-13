@@ -1,3 +1,5 @@
+execute if score $present ff_plugin matches 1 run function fossil_frights:admin/menu/plugin/heists/loot/show
+execute if score $present ff_plugin matches 1 run return 0
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/no_game_running
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute unless score $heist_mode_active ff_game_state matches 1 run return 0
