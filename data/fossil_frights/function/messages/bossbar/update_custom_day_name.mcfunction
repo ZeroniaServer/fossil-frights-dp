@@ -1,0 +1,1 @@
+$bossbar set fossil_frights:bossbar name [{"text":"ᴄᴜsᴛᴏᴍ ᴅᴀʏ","color":"white"},{"text":" "},{"translate":"$(minutes_padding)%s:$(seconds_padding)%s","with":[{"score":{"name":"$time_minutes","objective":"ff_dummy"}},{"score":{"name":"$time_seconds","objective":"ff_dummy"}}],"color":"green","font":"fossil-frights:small_numbers_high"}]

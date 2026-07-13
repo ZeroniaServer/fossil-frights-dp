@@ -2,6 +2,7 @@ execute unless score $game_running ff_game_state matches 1 run function fossil_f
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute unless score $day_active ff_day matches 1 run function fossil_frights:messages/error/no_day_active
 execute unless score $day_active ff_day matches 1 run return 0
+execute if score $custom_day_active ff_day matches 1 run return run function fossil_frights:game/custom_day_completed
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/bookcase/clear
 execute as @a[team=ff_guard] run function fossil_frights:game/give_dinocoin

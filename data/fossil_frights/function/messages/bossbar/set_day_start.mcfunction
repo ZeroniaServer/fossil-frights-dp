@@ -1,3 +1,5 @@
+execute if score $custom_day_active ff_day matches 1 run bossbar set fossil_frights:bossbar name [{"text":"ᴄᴜsᴛᴏᴍ ᴅᴀʏ","color":"white"},{"text":" "},{"text":"05:00","font":"fossil-frights:small_numbers_high","color":"white"}]
+execute if score $custom_day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 1 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white","with": [{"translate":"ff.bossbar.day.1"},{"text":"05:00","font":"fossil-frights:small_numbers_high","color":"white"}]}]
 execute if score $day_current ff_day matches 2 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white","with": [{"translate":"ff.bossbar.day.2"},{"text":"05:00","font":"fossil-frights:small_numbers_high","color":"white"}]}]
 execute if score $day_current ff_day matches 3 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white","with": [{"translate":"ff.bossbar.day.3"},{"text":"05:00","font":"fossil-frights:small_numbers_high","color":"white"}]}]

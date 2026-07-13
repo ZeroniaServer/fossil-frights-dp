@@ -108,6 +108,7 @@ scoreboard players set $day_result ff_day 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
+scoreboard players set $custom_day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $time_anim_resume_cycle ff_day 0
 scoreboard players set $active ff_active_uuid_0 0

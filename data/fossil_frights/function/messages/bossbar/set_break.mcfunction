@@ -1,3 +1,4 @@
+execute if score $day_current ff_day matches 0 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white", "with": [{"translate": "ff.bossbar.day.1"},{"translate":"ff.bossbar.on_break","color":"yellow"}]}]
 execute if score $day_current ff_day matches 1 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white", "with": [{"translate": "ff.bossbar.day.1"},{"translate":"ff.bossbar.on_break","color":"yellow"}]}]
 execute if score $day_current ff_day matches 2 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white", "with": [{"translate": "ff.bossbar.day.2"},{"translate":"ff.bossbar.on_break","color":"yellow"}]}]
 execute if score $day_current ff_day matches 3 run bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.day","color":"white", "with": [{"translate": "ff.bossbar.day.3"},{"translate":"ff.bossbar.on_break","color":"yellow"}]}]
