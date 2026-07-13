@@ -5,6 +5,6 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 scoreboard players set $admin_task_was_selected ff_gui 0
 execute if score $feed_the_plants_sel ff_task_state matches 1 run scoreboard players set $admin_task_was_selected ff_gui 1
-execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/remove_macro {difficulty:"medium",task:"feed_the_plants"}
+execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/complete_macro {difficulty:"medium",task:"feed_the_plants"}
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/medium/feed_the_plants/selected
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/tracker/refresh

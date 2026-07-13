@@ -5,6 +5,6 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 scoreboard players set $admin_task_was_selected ff_gui 0
 execute if score $skincare_routine_sel ff_task_state matches 1 run scoreboard players set $admin_task_was_selected ff_gui 1
-execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/remove_macro {difficulty:"hard",task:"skincare_routine"}
+execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/complete_macro {difficulty:"hard",task:"skincare_routine"}
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/hard/skincare_routine/selected
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/tracker/refresh

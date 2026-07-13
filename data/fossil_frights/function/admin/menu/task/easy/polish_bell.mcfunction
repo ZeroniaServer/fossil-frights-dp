@@ -5,6 +5,6 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 scoreboard players set $admin_task_was_selected ff_gui 0
 execute if score $polish_bell_sel ff_task_state matches 1 run scoreboard players set $admin_task_was_selected ff_gui 1
-execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/remove_macro {difficulty:"easy",task:"polish_bell"}
+execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/complete_macro {difficulty:"easy",task:"polish_bell"}
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/easy/polish_bell/selected
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/tracker/refresh
