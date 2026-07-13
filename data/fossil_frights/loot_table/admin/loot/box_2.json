@@ -22,14 +22,24 @@
               "function": "minecraft:set_contents",
               "component": "minecraft:container",
               "entries": [
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/treasure_chest" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/warden" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/crab" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/t_rex_skull" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/raptor_skull" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/biplane" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/vault" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/velociraptor_statue" }
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/night_stick" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/ice_cannon_remote" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/trap_glow" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/camera_remote" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot_book" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/invisimask" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/hazard_cookie" },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/other/dinocoin",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": 64
+                    }
+                  ]
+                },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/one_time_key" }
               ]
             }
           ]
