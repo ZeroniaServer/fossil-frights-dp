@@ -5,4 +5,3 @@ execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 function fossil_frights:tasks/hard/the_lost_code/selected
 function fossil_frights:tasks/tracker/refresh
-function fossil_frights:admin/menu/task/show
