@@ -39,16 +39,16 @@
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/pink_jelly" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/leather" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/brush" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/sponge" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/cotton_candy" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/credit_reel" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/lady_bug" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/muddy_sherd" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/carrot_cake" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/cookie" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/plesiosaur" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/velociraptor" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/trike" }
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/basketball" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/vault_key" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/hoverboard" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/leather_boots" }
               ]
             }
           ]
