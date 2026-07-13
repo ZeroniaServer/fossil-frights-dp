@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_shulker_box",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Admin Items 2/2",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/t_rex" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/gold_t_rex" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/pterodactyl" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/plushies/sniffer" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/leather_boots" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/microfiber_cloth" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/hoverboard" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/sniffer" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/trike" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/t_rex" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/velociraptor" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/plesiosaur" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/dna/pterodactyl" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/bubbly_bat" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/fossil_fizz" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/chorus_cola" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/pteranadon_twist" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/raptor_rush" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/drinks/veloci_tea" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/dinocoin" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/vault_key" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/basketball" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/key/storage_key" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/confetti_cannon/remote" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/hazard_cookie" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

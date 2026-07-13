@@ -23,6 +23,8 @@ Fossil Frights plugin adds aliases: `/start`, `/join`, `/join guard`, `/join thi
 | Action | Command |
 | --- | --- |
 | Admin menu | `/function fossil_frights:command/admin/show` |
+| Admin item boxes | `/function fossil_frights:command/admin/item` |
+| Admin heist loot boxes | `/function fossil_frights:command/admin/loot` |
 | Reset parkour display | `/function fossil_frights:parkour/reset` |
 | Reset temple run display | `/function fossil_frights:temple_run/reset` |
 | Reset ant fight display | `/function fossil_frights:ant_fight/reset` |

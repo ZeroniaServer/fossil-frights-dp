@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_shulker_box",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Admin Heist Loot 1/2",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/night_stick" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/ice_cannon_remote" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/trap_glow" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/camera_remote" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot_book" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/invisimask" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/one_time_key" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/dinocoin" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/coffee" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/poster_tube" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/ghast_plushie" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/piglin_head" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/popcorn" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/lollipop" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/fishing_rod" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/burger" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/chocolate_cake" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/ancient_scripture" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/chondrite" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/sand_dollar" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/trilobite_fossil" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/golden_sword" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/portal_core" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/spyglass" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/hazard_cookie" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

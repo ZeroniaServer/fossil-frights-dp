@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_shulker_box",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "Admin Heist Loot 2/2",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/treasure_chest" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/warden" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/crab" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/t_rex_skull" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/raptor_skull" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/biplane" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/vault" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/velociraptor_statue" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
