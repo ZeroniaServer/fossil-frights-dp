@@ -5,6 +5,7 @@ function fossil_frights:compass/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_trap_viewer
 tag @a[team=ff_guard] add ff_trap_viewer
+tag @a[team=ff_spectator] add ff_trap_viewer
 execute if score curse ff_hazard_active matches 1 run tag @a[team=ff_thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/other/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
