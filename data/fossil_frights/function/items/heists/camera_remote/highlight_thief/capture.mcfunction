@@ -1,6 +1,6 @@
-execute at @s run playsound fossil-frights:heists.highlight_thief master @a[team=ff_guard] ~ ~ ~ 1 1
-execute at @s run playsound fossil-frights:heists.highlight_thief master @a[team=ff_thief] ~ ~ ~ 1 1
-execute at @s run playsound fossil-frights:heists.highlight_thief master @a[team=ff_spectator] ~ ~ ~ 1 1
+execute as @a[team=ff_guard] at @s run playsound fossil-frights:heists.highlight_thief master @s ~ ~ ~ 1 1
+execute as @a[team=ff_thief] at @s run playsound fossil-frights:heists.highlight_thief master @s ~ ~ ~ 1 1
+execute as @a[team=ff_spectator] at @s run playsound fossil-frights:heists.highlight_thief master @s ~ ~ ~ 1 1
 advancement grant @s only fossil_frights:02_achievements/heists_under_surveillance
 scoreboard players set @s ff_security_camera_heist 50
 
