@@ -1,6 +1,4 @@
-execute unless score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:messages/error/no_game_running
-execute unless score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run return 0
-execute unless score $game_running ff_game_state matches 1 run function fossil_frights:admin/menu/plugin/show_no_game
+execute unless score $game_running ff_game_state matches 1 run function fossil_frights:admin/menu/quick_start/show
 execute unless score $game_running ff_game_state matches 1 run return 0
 execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:admin/menu/plugin/heists/show
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
