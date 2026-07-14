@@ -353,6 +353,8 @@ advancement revoke @a only fossil_frights:map_region
 advancement revoke @a only fossil_frights:info_lectern_click
 advancement revoke @a only fossil_frights:temple_run_teleporter_click
 advancement revoke @a only fossil_frights:ant_fight_teleporter_click
+advancement revoke @a only fossil_frights:parkour_teleporter_click
+advancement revoke @a only fossil_frights:sulfur_strikers_teleporter_click
 advancement revoke @a only fossil_frights:swat_flies_click
 advancement revoke @a only fossil_frights:check_security_click
 advancement revoke @a only fossil_frights:lock_register_click

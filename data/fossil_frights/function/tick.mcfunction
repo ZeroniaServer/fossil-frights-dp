@@ -63,6 +63,8 @@ function fossil_frights:game/tick
 function fossil_frights:join/join_pads/tick
 function fossil_frights:temple_run/teleporter_walk_tick
 function fossil_frights:ant_fight/teleporter_walk_tick
+function fossil_frights:parkour/teleporter_walk_tick
+function fossil_frights:sulfur_strikers/teleporter_walk_tick
 execute if score $running ff_rollercoaster matches 1 run function fossil_frights:rollercoaster/tick
 function fossil_frights:util/fade/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup

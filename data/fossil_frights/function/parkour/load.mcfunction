@@ -29,3 +29,4 @@ scoreboard players add $parkour_best_centi_ones ff_parkour_display 0
 setblock -18 75 -21 minecraft:light_weighted_pressure_plate
 setblock -36 95 -43 minecraft:light_weighted_pressure_plate
 scoreboard players set $parkour_display_ready ff_parkour_display 0
+function fossil_frights:parkour/teleporter_setup

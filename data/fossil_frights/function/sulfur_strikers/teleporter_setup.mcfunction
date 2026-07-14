@@ -1,0 +1,6 @@
+kill @e[type=minecraft:interaction,tag=ff_sulfur_strikers_teleporter]
+kill @e[type=minecraft:item_display,tag=ff_sulfur_strikers_teleporter_display]
+kill @e[type=minecraft:text_display,tag=ff_sulfur_strikers_teleporter_display]
+summon minecraft:interaction 18.5 80 -4.5 {Tags:["ff_sulfur_strikers_teleporter","ff_sulfur_strikers_teleporter_click"],width:1.0f,height:2.0f,response:1b}
+summon minecraft:item_display 18.5 82.05 -4.5 {Tags:["ff_sulfur_strikers_teleporter","ff_sulfur_strikers_teleporter_display","ff_sulfur_strikers_teleporter_icon"],billboard:"fixed",Rotation:[0f,0f],brightness:{sky:15,block:15},transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[0.75f,0.75f,0.75f],right_rotation:[0f,0f,0f,1f]},item:{id:"minecraft:snowball",count:1,components:{"minecraft:item_model":"fossil-frights:general_items/sulfur_strikers_teleporter"}}}
+summon minecraft:text_display 18.5 81.05 -4.5 {Tags:["ff_sulfur_strikers_teleporter","ff_sulfur_strikers_teleporter_display","ff_sulfur_strikers_teleporter_text"],billboard:"fixed",Rotation:[0f,0f],background:0,default_background:0b,see_through:0b,shadow:1b,text_opacity:255,brightness:{sky:15,block:15},alignment:"center",line_width:120,text:[{"translate":"%s\n%s","with":[{"translate":"ff.lobby.sulfur_strikers",color:"yellow",italic:false},{"translate":"ff.lobby.teleporter",color:"white",italic:false}]}]}

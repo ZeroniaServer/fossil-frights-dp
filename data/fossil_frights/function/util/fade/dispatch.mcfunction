@@ -9,6 +9,8 @@ execute if entity @s[tag=ff_fade_sarcophagus] run function fossil_frights:util/f
 execute if entity @s[tag=ff_fade_ancient_portal] run function fossil_frights:util/fade/actions/ancient_portal
 execute if entity @s[tag=ff_fade_temple_run_teleporter] run function fossil_frights:util/fade/actions/temple_run_teleporter
 execute if entity @s[tag=ff_fade_ant_fight_teleporter] run function fossil_frights:util/fade/actions/ant_fight_teleporter
+execute if entity @s[tag=ff_fade_parkour_teleporter] run function fossil_frights:util/fade/actions/parkour_teleporter
+execute if entity @s[tag=ff_fade_sulfur_strikers_teleporter] run function fossil_frights:util/fade/actions/sulfur_strikers_teleporter
 execute if entity @s[tag=ff_fade_heist_thief] run function fossil_frights:util/fade/actions/heist_thief
 execute if entity @s[tag=ff_fade_heist_guard] run function fossil_frights:util/fade/actions/heist_guard
 
@@ -25,5 +27,7 @@ tag @s remove ff_fade_sarcophagus
 tag @s remove ff_fade_ancient_portal
 tag @s remove ff_fade_temple_run_teleporter
 tag @s remove ff_fade_ant_fight_teleporter
+tag @s remove ff_fade_parkour_teleporter
+tag @s remove ff_fade_sulfur_strikers_teleporter
 tag @s remove ff_fade_heist_thief
 tag @s remove ff_fade_heist_guard

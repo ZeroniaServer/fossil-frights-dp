@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_sulfur_strikers_teleporter_click"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:sulfur_strikers/teleporter_click"
+  }
+}
