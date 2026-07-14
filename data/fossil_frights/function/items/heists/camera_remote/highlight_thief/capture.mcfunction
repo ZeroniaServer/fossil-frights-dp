@@ -1,4 +1,5 @@
 execute at @s run playsound fossil-frights:heists.highlight_thief
+advancement grant @s only fossil_frights:02_achievements/heists_under_surveillance
 scoreboard players set @s ff_security_camera_heist 50
 
 effect give @p[team=ff_thief] glowing 3 0 true

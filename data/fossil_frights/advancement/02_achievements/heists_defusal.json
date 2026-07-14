@@ -1,0 +1,1 @@
+{"parent":"fossil_frights:04_heists/root","display":{"icon":{"id":"minecraft:tnt"},"title":{"text":"Defusal"},"description":{"text":"As a thief, trigger a placed trap using an item."},"show_toast":true,"announce_to_chat":true},"criteria":{"item_triggered_trap":{"trigger":"minecraft:impossible"}}}

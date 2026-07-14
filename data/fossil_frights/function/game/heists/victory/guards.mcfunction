@@ -1,3 +1,4 @@
+advancement grant @a[team=ff_guard] only fossil_frights:02_achievements/heists_guardin
 execute as @a[team=ff_guard] at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.9 1
 title @a[team=ff_guard] times 10 70 20
 execute as @a[team=ff_guard] run function fossil_frights:game/speedrun/show_victory_subtitle

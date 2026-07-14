@@ -1,3 +1,5 @@
+advancement grant @a[team=ff_thief] only fossil_frights:02_achievements/heists_thievin
+function fossil_frights:advancements/heists/check_greedy
 execute as @a[team=ff_thief] at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.9 1
 title @a[team=ff_thief] times 10 70 20
 execute as @a[team=ff_thief] run function fossil_frights:game/speedrun/show_victory_subtitle

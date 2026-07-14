@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": [
+              "capture_point_icon"
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:lore"
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "Fossil Heists"
+    },
+    "description": {
+      "text": ""
+    },
+    "background": "minecraft:block/cut_copper",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "show_page": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

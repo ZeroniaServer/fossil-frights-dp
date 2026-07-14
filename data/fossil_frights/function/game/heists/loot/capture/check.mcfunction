@@ -63,11 +63,19 @@ execute if items entity @s contents *[custom_data~{itemID:"plesiosaur_dna_cloth"
 execute if items entity @s contents *[custom_data~{itemID:"pterodactyl_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_pterodactyl_dna_cloth"}
 execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
 execute if items entity @s contents *[custom_data~{itemID:"spyglass"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_spyglass"}
+execute if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"treasure_chest"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_treasure_chest"}
+execute if items entity @s contents *[custom_data~{itemID:"warden"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"warden"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_warden"}
+execute if items entity @s contents *[custom_data~{itemID:"crab"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"crab"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_crab"}
+execute if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"t_rex_skull"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_t_rex_skull"}
+execute if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"raptor_skull"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_raptor_skull"}
+execute if items entity @s contents *[custom_data~{itemID:"biplane"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"biplane"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_biplane"}
+execute if items entity @s contents *[custom_data~{itemID:"vault"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"vault"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_vault"}
+execute if items entity @s contents *[custom_data~{itemID:"velociraptor_statue"}] run advancement grant @p[team=ff_thief,gamemode=!spectator,distance=..10] only fossil_frights:02_achievements/heists_wow_thats_heavy
 execute if items entity @s contents *[custom_data~{itemID:"velociraptor_statue"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_velociraptor_statue"}
