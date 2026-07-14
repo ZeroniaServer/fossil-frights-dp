@@ -382,6 +382,7 @@ advancement revoke @a only fossil_frights:heists_night_stick_hit
 advancement revoke @a only fossil_frights:hazard_cookie_consumed
 advancement revoke @a only fossil_frights:camera_remote_dummy_punch
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
+function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup

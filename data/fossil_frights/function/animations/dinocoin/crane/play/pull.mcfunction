@@ -1,0 +1,1 @@
+execute positioned 51 68 61 as @e[type=minecraft:item_display,tag=animation.sculkadillo.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/crane/rig/animations/pull/play_exclusive

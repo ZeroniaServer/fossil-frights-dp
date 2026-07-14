@@ -1,0 +1,3 @@
+execute store result score #sculkadillo_idle ff_hazard_rng run random value 1..2
+execute if score #sculkadillo_idle ff_hazard_rng matches 1 positioned 51 68 61 as @e[type=minecraft:item_display,tag=animation.sculkadillo.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/crane/rig/animations/idle_left/play_exclusive
+execute if score #sculkadillo_idle ff_hazard_rng matches 2 positioned 51 68 61 as @e[type=minecraft:item_display,tag=animation.sculkadillo.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/crane/rig/animations/idle_right/play_exclusive

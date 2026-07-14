@@ -6,5 +6,6 @@ execute if score #crane_coin_count ff_game_state matches 2.. run clear @s *[mine
 execute if score #crane_coin_count ff_game_state matches 2.. run function fossil_frights:animations/dinocoin/crane/trigger
 execute if score #crane_coin_count ff_game_state matches 2.. run advancement grant @s only fossil_frights:02_achievements/going_up
 execute if score #crane_coin_count ff_game_state matches 2.. positioned 52 68 60 run tellraw @s {"translate":"ff.sculkadillo.thanks","with":[{"translate":"ff.sculkadillo","color":"dark_aqua"},{"translate":"%s %s", "with": [{"translate":"ff.dinocoins.number","color":"gold","with":["2"]},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/dinocoin"}]},{"translate":"ff.seconds.number","color":"red","with":["10"]}]}
+execute if score #crane_coin_count ff_game_state matches ..1 if score @s ff_msg_cooldown matches 0 run function fossil_frights:animations/dinocoin/crane/play/idle
 execute if score #crane_coin_count ff_game_state matches ..1 if score @s ff_msg_cooldown matches 0 run function fossil_frights:messages/dinocoin/crane/required_2
 execute if score #crane_coin_count ff_game_state matches ..1 if score @s ff_msg_cooldown matches 0 run scoreboard players set @s ff_msg_cooldown 40
