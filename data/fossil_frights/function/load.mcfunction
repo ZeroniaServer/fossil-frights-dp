@@ -153,6 +153,7 @@ scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
 scoreboard objectives add ff_cannot_trigger_lady_bug_revolutionary_until_timestamp dummy
 scoreboard objectives add ff_paint_splat_spawn_timestamp dummy
+scoreboard objectives add ff_sulfur dummy
 scoreboard players set #1 ff_constant 1
 scoreboard players set #5 ff_constant 5
 scoreboard players set #10 ff_constant 10
@@ -258,6 +259,13 @@ scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set $lobby_displays_ready ff_game_state 0
+scoreboard players set $yellow ff_sulfur 0
+scoreboard players set $cyan ff_sulfur 0
+scoreboard players set $type_roll ff_sulfur 0
+scoreboard players set $size_roll ff_sulfur 0
+scoreboard players set $ball_count ff_sulfur 0
+scoreboard players set $score_cooldown ff_sulfur 0
+scoreboard players set $display_ready ff_sulfur 0
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
@@ -390,6 +398,7 @@ function fossil_frights:game/load
 function fossil_frights:parkour/load
 function fossil_frights:temple_run/load
 function fossil_frights:ant_fight/load
+function fossil_frights:sulfur_strikers/load
 function fossil_frights:rollercoaster/load
 function fossil_frights:game/worldborder/reset
 function fossil_frights:game/time/reset

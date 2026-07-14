@@ -28,6 +28,7 @@ Fossil Frights plugin adds aliases: `/start`, `/join`, `/join guard`, `/join thi
 | Reset parkour display | `/function fossil_frights:parkour/reset` |
 | Reset temple run display | `/function fossil_frights:temple_run/reset` |
 | Reset ant fight display | `/function fossil_frights:ant_fight/reset` |
+| Reset sulfur strikers | `/function fossil_frights:sulfur_strikers/reset` |
 
 Fossil Frights plugin adds admin menu alias: `/admin`.
 

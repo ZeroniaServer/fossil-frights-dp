@@ -1,0 +1,7 @@
+execute if score $type_roll ff_sulfur matches 1 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:bamboo_planks"
+execute if score $type_roll ff_sulfur matches 2 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:resin_block"
+execute if score $type_roll ff_sulfur matches 3 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:netherite_block"
+execute if score $type_roll ff_sulfur matches 4 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:white_wool"
+execute if score $type_roll ff_sulfur matches 5 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:grass_block"
+execute if score $type_roll ff_sulfur matches 6 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:soul_soil"
+execute if score $type_roll ff_sulfur matches 7 run data modify storage fossil_frights:sulfur_strikers ball.block set value "minecraft:honeycomb_block"

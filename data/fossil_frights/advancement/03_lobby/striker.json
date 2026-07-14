@@ -1,0 +1,21 @@
+{
+  "parent": "fossil_frights:03_lobby/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:sulfur_cube_bucket"
+    },
+    "title": {
+      "translate": "ff.advancement.striker"
+    },
+    "description": {
+      "translate": "ff.advancement.striker.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "score_in_sulfur_strikers": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
