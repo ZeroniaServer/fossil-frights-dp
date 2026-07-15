@@ -142,6 +142,7 @@ advancement revoke @s only fossil_frights:return_the_key_pickup_click
 advancement revoke @s only fossil_frights:return_the_key_return_click
 advancement revoke @s only fossil_frights:basketball_dance_jukebox_click
 advancement revoke @s only fossil_frights:hoveraptor_click
+advancement revoke @s only fossil_frights:evolution_punch
 advancement revoke @s only fossil_frights:final_task_centrifuge_click
 advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch

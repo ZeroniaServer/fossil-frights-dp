@@ -1,5 +1,4 @@
-scoreboard players set $evolution_hit ff_task_state 0
-scoreboard players set $evolution_was_correct ff_task_state 0
+execute unless score $evolution_hit ff_task_state matches 0 run return 0
 execute if entity @s[tag=ff_evolution_1] run scoreboard players set $evolution_hit ff_task_state 1
 execute if entity @s[tag=ff_evolution_2] run scoreboard players set $evolution_hit ff_task_state 2
 execute if entity @s[tag=ff_evolution_3] run scoreboard players set $evolution_hit ff_task_state 3

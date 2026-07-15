@@ -1,5 +1,31 @@
 {
   "criteria": {
+    "click_hitbox": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_evolution_hitbox"
+            ]
+          }
+        }
+      }
+    },
+    "punch_hitbox": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_evolution_hitbox"
+            ]
+          }
+        }
+      }
+    },
     "punch": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -14,6 +40,13 @@
       }
     }
   },
+  "requirements": [
+    [
+      "click_hitbox",
+      "punch_hitbox",
+      "punch"
+    ]
+  ],
   "rewards": {
     "function": "fossil_frights:tasks/hard/evolution/punched"
   }

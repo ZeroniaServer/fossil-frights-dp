@@ -384,6 +384,7 @@ advancement revoke @a only fossil_frights:sarcophagus_payment_click
 advancement revoke @a only fossil_frights:crab_click
 advancement revoke @a only fossil_frights:start_room_glass_box_click
 advancement revoke @a only fossil_frights:hoveraptor_click
+advancement revoke @a only fossil_frights:evolution_punch
 advancement revoke @a only fossil_frights:glowberry_eat
 advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:trap_consumed
