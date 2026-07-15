@@ -1,1 +1,1 @@
-tellraw @a[team=ff_guard] [{"text":"ℹ ","color":"yellow"},{"text":"Congratulations. The game will reset in 30 seconds. ","color":"yellow"},{"text":"[Leave Now]","color":"green","underlined":true,"click_event":{"action":"run_command","command":"trigger ff_cmd_leave set 1"}}]
+tellraw @a[team=ff_guard] [{"text":"ℹ ","color":"yellow"},{"text":"Congratulations. The game will reset in 30 seconds. ","color":"yellow"},{"translate":"ff.button.leave_now","font":"fossil-frights:chat_buttons","color":"white","click_event":{"action":"run_command","command":"trigger ff_cmd_leave set 1"}}]
