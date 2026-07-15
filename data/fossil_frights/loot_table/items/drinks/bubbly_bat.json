@@ -19,10 +19,25 @@
                 "minecraft:item_model": "fossil-frights:food/bubbly_bat",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.bubbly_bat.effect.levitation",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.bubbly_bat.effect.night_vision",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.bubbly_bat.description",
                     "color": "yellow"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_color": 10181046,
                   "custom_effects": [
