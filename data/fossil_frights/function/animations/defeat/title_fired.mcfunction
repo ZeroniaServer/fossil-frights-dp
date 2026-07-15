@@ -1,3 +1,3 @@
 execute if score $defeat_anim ff_game_state matches 1 if entity @a[team=ff_guard,limit=1] run title @a[team=ff_guard] times 0s 4s 1s
-execute if score $defeat_anim ff_game_state matches 1 if entity @a[team=ff_guard,limit=1] run title @a[team=ff_guard] subtitle "You weren't fast enough"
-execute if score $defeat_anim ff_game_state matches 1 if entity @a[team=ff_guard,limit=1] run title @a[team=ff_guard] title {"bold":true,"color":"red","text":"You're Fired!"}
+execute if score $defeat_anim ff_game_state matches 1 if entity @a[team=ff_guard,limit=1] run title @a[team=ff_guard] title {"bold":true,"color":"red","translate":"ff.boss.title"}
+execute if score $defeat_anim ff_game_state matches 1 if entity @a[team=ff_guard,limit=1] run title @a[team=ff_guard] subtitle {"color":"white","translate":"ff.boss.subtitle"}
