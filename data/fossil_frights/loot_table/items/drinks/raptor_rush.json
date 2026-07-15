@@ -25,7 +25,7 @@
                   },
                   {
                     "translate": "ff.drink.raptor_rush.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
                 "minecraft:tooltip_display": {

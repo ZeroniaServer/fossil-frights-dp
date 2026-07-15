@@ -25,7 +25,7 @@
                   },
                   {
                     "translate": "ff.drink.veloci_tea.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
                 "minecraft:tooltip_display": {

@@ -19,10 +19,20 @@
                 "minecraft:item_model": "fossil-frights:food/chorus_cola",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.chorus_cola.effect.chorus_fruit",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.chorus_cola.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "!minecraft:use_remainder": {},
                 "!minecraft:potion_contents": {},
                 "minecraft:custom_data": {

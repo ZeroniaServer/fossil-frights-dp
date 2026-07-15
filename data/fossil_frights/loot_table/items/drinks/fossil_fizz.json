@@ -19,10 +19,35 @@
                 "minecraft:item_model": "fossil-frights:food/fossil_fizz",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.fossil_fizz.effect.dolphins_grace",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.fossil_fizz.effect.fire_resistance",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.fossil_fizz.effect.resistance",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.fossil_fizz.effect.water_breathing",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.fossil_fizz.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_color": 5949690,
                   "custom_effects": [

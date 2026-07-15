@@ -30,7 +30,7 @@
                   },
                   {
                     "translate": "ff.drink.bubbly_bat.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
                 "minecraft:tooltip_display": {

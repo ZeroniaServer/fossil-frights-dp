@@ -30,7 +30,7 @@
                   },
                   {
                     "translate": "ff.drink.pteranadon_twist.description",
-                    "color": "yellow"
+                    "color": "gray"
                   }
                 ],
                 "minecraft:tooltip_display": {
