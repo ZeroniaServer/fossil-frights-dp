@@ -19,10 +19,20 @@
                 "minecraft:item_model": "fossil-frights:food/raptor_rush",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.raptor_rush.effect.speed",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.raptor_rush.description",
                     "color": "yellow"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_color": 3458905,
                   "custom_effects": [

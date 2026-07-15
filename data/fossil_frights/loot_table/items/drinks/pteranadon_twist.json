@@ -19,10 +19,25 @@
                 "minecraft:item_model": "fossil-frights:food/pteranadon_twist",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.pteranadon_twist.effect.double_jump",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.pteranadon_twist.effect.jump_boost",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.pteranadon_twist.description",
                     "color": "yellow"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_color": 15895592,
                   "custom_effects": [

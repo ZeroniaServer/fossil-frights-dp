@@ -19,10 +19,20 @@
                 "minecraft:item_model": "fossil-frights:food/veloci_tea",
                 "minecraft:lore": [
                   {
+                    "translate": "ff.drink.veloci_tea.effect.speed",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
                     "translate": "ff.drink.veloci_tea.description",
                     "color": "yellow"
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
                 "minecraft:potion_contents": {
                   "custom_color": 16766282,
                   "custom_effects": [
