@@ -10,4 +10,4 @@ execute as @a[tag=ff_ant_fight] if score @s ff_active_uuid_0 = @e[type=minecraft
 execute if score @s ff_ant_score matches 1.. run scoreboard players remove @s ff_ant_score 1
 kill @e[type=minecraft:snowball,tag=ff_ant_marked,distance=..1.25,limit=1,sort=nearest]
 function fossil_frights:ant_fight/exit_restore
-title @s actionbar ["",{"text":"Ant Score: ","color":"#71de75"},{"score":{"name":"@s","objective":"ff_ant_score"}}," ",{"text":"(-1)","color":"red"}]
+title @s actionbar [{"translate":"ff.lobby.ant_fight.ant_score","color":"#71de75","with":[{"translate":"%s %s","with":[{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"},{"text":"(-1)","color":"red"}]}]}]

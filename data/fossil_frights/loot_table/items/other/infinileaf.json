@@ -17,26 +17,32 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Shoot ",
-                    "color": "dark_green",
+                    "translate": "%s - %s",
                     "italic": false,
-                    "extra": [
+                    "color": "white",
+                    "with": [
                       {
-                        "text": "- Right Click",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.infinileaf.lore.shoot",
+                        "color": "dark_green"
+                      },
+                      {
+                        "keybind": "key.use",
+                        "color": "white"
                       }
                     ]
                   },
                   {
-                    "text": "Leave ",
-                    "color": "red",
+                    "translate": "%s - %s",
                     "italic": false,
-                    "extra": [
+                    "color": "white",
+                    "with": [
                       {
-                        "text": "- Drop",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.infinileaf.lore.leave",
+                        "color": "red"
+                      },
+                      {
+                        "keybind": "key.drop",
+                        "color": "white"
                       }
                     ]
                   }

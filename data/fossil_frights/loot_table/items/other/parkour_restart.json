@@ -17,26 +17,32 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Restart ",
-                    "color": "yellow",
+                    "translate": "%s - %s",
                     "italic": false,
-                    "extra": [
+                    "color": "white",
+                    "with": [
                       {
-                        "text": "- Right Click",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.parkour_restart.lore.restart",
+                        "color": "yellow"
+                      },
+                      {
+                        "keybind": "key.use",
+                        "color": "white"
                       }
                     ]
                   },
                   {
-                    "text": "End ",
-                    "color": "red",
+                    "translate": "%s - %s",
                     "italic": false,
-                    "extra": [
+                    "color": "white",
+                    "with": [
                       {
-                        "text": "- Drop",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.parkour_restart.lore.end",
+                        "color": "red"
+                      },
+                      {
+                        "keybind": "key.drop",
+                        "color": "white"
                       }
                     ]
                   }
