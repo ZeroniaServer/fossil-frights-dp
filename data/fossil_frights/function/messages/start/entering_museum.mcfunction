@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ ","color":"green"},{"selector":"@s","color":"green"},{"text":" is entering the museum.","color":"green"}]
+tellraw @a [{"translate":"ff.messages.info","color":"green","with":[{"translate":"ff.messages.info.entering_museum","with":[{"selector":"@s","color":"green"}]}]}]
