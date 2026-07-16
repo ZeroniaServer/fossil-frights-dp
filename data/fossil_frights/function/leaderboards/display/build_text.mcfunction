@@ -1,7 +1,7 @@
 data modify storage fossil_frights:leaderboards display_text_index set value [{"text":"    \n","color":"white"}]
-data modify storage fossil_frights:leaderboards display_text_best set value [{"text":"             \n","color":"white"},{"translate":"ff.lobby.leaderboard.best","color":"#F6E7B0"},{"text":"\n","color":"white"}]
-data modify storage fossil_frights:leaderboards display_text_player set value [{"text":"                    \n","color":"white"},{"translate":"ff.lobby.leaderboard.player","color":"#F6E7B0"},{"text":"\n","color":"white"}]
-data modify storage fossil_frights:leaderboards display_text_background set value [{"text":"\n                                     \n","color":"white"}]
+data modify storage fossil_frights:leaderboards display_text_best set value [{"text":"           \n","color":"white"},{"translate":"ff.lobby.leaderboard.best","color":"#F6E7B0"},{"text":"\n","color":"white"}]
+data modify storage fossil_frights:leaderboards display_text_player set value [{"text":"                        \n","color":"white"},{"translate":"ff.lobby.leaderboard.player","color":"#F6E7B0"},{"text":"\n","color":"white"}]
+data modify storage fossil_frights:leaderboards display_text_background set value [{"text":"\n                                          \n","color":"white"}]
 function fossil_frights:leaderboards/display/append_row with storage fossil_frights:leaderboards slot_1
 function fossil_frights:leaderboards/display/append_row with storage fossil_frights:leaderboards slot_2
 function fossil_frights:leaderboards/display/append_row with storage fossil_frights:leaderboards slot_3
