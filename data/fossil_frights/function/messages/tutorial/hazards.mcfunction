@@ -1,2 +1,2 @@
 tellraw @s [{"text":"-------------------------","color":"dark_gray"}]
-tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"Hazards: ","color":"yellow"},{"text":"Finally there's hazards, lights, floods. Turn them off via the basement.","color":"white"}]
+tellraw @s [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.tutorial_message","color":"white","with":[{"translate":"ff.messages.info.tutorial_message.hazards","color":"yellow"},{"translate":"ff.messages.info.tutorial_message.hazards.description"}]}]}]

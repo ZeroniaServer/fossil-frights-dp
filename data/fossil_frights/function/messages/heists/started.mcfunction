@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ Fossil Heists gamemode started","color":"green"}]
+tellraw @a [{"translate":"ff.messages.info",color:"green",with:[{"translate":"ff.messages.info.fossil_heists_started"}]}]

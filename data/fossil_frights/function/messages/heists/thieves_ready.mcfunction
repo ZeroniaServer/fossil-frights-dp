@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ ","color":"green"},{"text":"Theives ","color":"red"},{"text":"are ready to play.","color":"green"}]
+tellraw @a [{"translate":"ff.messages.info","color":"green","with":[{"translate":"ff.messages.info.team_ready","with":[{"translate":"ff.messages.info.team.thieves","color":"red"}]}]}]

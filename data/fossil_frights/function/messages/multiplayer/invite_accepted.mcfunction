@@ -1,2 +1,2 @@
-tellraw @a [{"text":"ℹ ","color":"yellow"},{"selector":"@s","color":"yellow"},{"text":" joined the run. This run is now multiplayer and will not count toward solo stats or the leaderboard.","color":"yellow"}]
+tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.invite_accepted","with":[{"selector":"@s","color":"yellow"}]}]}]
 

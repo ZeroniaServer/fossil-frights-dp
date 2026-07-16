@@ -1,2 +1,2 @@
 tellraw @s [{"text":"-------------------------","color":"dark_gray"}]
-tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"Easy Tasks: ","color":"yellow"},{"text":"Easy tasks usually require going somewhere, or pressing a button.","color":"white"}]
+tellraw @s [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.tutorial_message","color":"white","with":[{"translate":"ff.messages.info.tutorial_message.easy_tasks","color":"yellow"},{"translate":"ff.messages.info.tutorial_message.easy_tasks.description"}]}]}]

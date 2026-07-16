@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ ","color":"blue"},{"selector":"@s","color":"blue"},{"text":" is now spectating.","color":"blue"}]
+tellraw @a [{"translate":"ff.messages.info","color":"blue","with":[{"translate":"ff.messages.info.now_spectating","with":[{"selector":"@s","color":"blue"}]}]}]

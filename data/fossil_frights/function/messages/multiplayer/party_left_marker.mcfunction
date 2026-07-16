@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ ","color":"yellow"},{"nbt":"CustomName","entity":"@s","interpret":true,"color":"yellow"},{"text":" left the party.","color":"yellow"}]
+tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.party_left","with":[{"nbt":"CustomName","entity":"@s","interpret":true,"color":"yellow"}]}]}]

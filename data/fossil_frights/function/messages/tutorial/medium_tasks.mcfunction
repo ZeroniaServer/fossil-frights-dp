@@ -1,2 +1,2 @@
 tellraw @s [{"text":"-------------------------","color":"dark_gray"}]
-tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"Medium Tasks: ","color":"yellow"},{"text":"Medium tasks are tricker, use your key to get items from the basement, and bring them to the specified location.","color":"white"}]
+tellraw @s [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.tutorial_message","color":"white","with":[{"translate":"ff.messages.info.tutorial_message.medium_tasks","color":"yellow"},{"translate":"ff.messages.info.tutorial_message.medium_tasks.description"}]}]}]

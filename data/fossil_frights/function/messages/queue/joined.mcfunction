@@ -1,1 +1,1 @@
-tellraw @a [{"text":"ℹ ","color":"yellow"},{"selector":"@s","color":"yellow"},{"text":" joined the queue.","color":"yellow"}]
+tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.joined_the_queue","with":[{"selector":"@s","color":"yellow"},{"text":" joined the queue.","color":"yellow"}]}]}]

@@ -1,2 +1,2 @@
 tellraw @s [{"text":"-------------------------","color":"dark_gray"}]
-tellraw @s [{"text":"ℹ ","color":"yellow"},{"text":"Outro: ","color":"yellow"},{"text":"You won't beat the game right away. So, Play, Learn, Explore. Try to beat your personal best (/stats) and eventually compete for the top of the leaderboard.","color":"white"}]
+tellraw @s [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.tutorial_message","color":"white","with":[{"translate":"ff.messages.info.tutorial_message.outro","color":"yellow"},{"translate":"ff.messages.info.tutorial_message.outro.description"}]}]}]
