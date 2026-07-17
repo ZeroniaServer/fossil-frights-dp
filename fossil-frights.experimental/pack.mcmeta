@@ -3,17 +3,5 @@
     "description": "Fossil Frights Experimental",
     "min_format": 107,
     "max_format": 107
-  },
-  "filter": {
-    "block": [
-      {
-        "namespace": "^minecraft$",
-        "path": "recipe/.*"
-      },
-      {
-        "namespace": "^minecraft$",
-        "path": "advancement/.*"
-      }
-    ]
   }
 }
