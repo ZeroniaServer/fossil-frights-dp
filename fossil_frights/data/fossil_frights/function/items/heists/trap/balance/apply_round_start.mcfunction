@@ -10,4 +10,4 @@ execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_b
 execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 0
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 3
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 1200
-execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:1b}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand
+execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand

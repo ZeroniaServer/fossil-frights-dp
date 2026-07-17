@@ -8,7 +8,9 @@
             "minecraft:amethyst_shard"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_heist_trap:1b}"
+            "minecraft:custom_data": {
+              "ff_heist_trap": true
+            }
           }
         }
       }

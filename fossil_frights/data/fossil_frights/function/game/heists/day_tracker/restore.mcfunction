@@ -1,4 +1,4 @@
-execute as @e[type=minecraft:text_display,tag=ff_day_tracker] run data merge entity @s {view_range:10f,text_opacity:51b}
+execute as @e[type=minecraft:text_display,tag=ff_day_tracker] run data merge entity @s {view_range:10,text_opacity:51}
 setblock 24 71 19 minecraft:lime_concrete strict
 setblock 24 71 20 minecraft:lime_concrete strict
 setblock 24 71 21 minecraft:yellow_concrete strict

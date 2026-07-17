@@ -9,7 +9,9 @@
             "minecraft:amethyst_shard"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_heist_ice_cannon_remote:1b}"
+            "minecraft:custom_data": {
+              "ff_heist_ice_cannon_remote": true
+            }
           }
         }
       }

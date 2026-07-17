@@ -1,6 +1,6 @@
 kill @e[type=minecraft:chest_minecart,tag=ff_admin_item_catalog,distance=..2]
-summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_item_catalog","ff_admin_item_page_1"],NoGravity:1b,Invulnerable:1b,Silent:1b}
-summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_item_catalog","ff_admin_item_page_2"],NoGravity:1b,Invulnerable:1b,Silent:1b}
+summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_item_catalog","ff_admin_item_page_1"],NoGravity:true,Invulnerable:true,Silent:true}
+summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_item_catalog","ff_admin_item_page_2"],NoGravity:true,Invulnerable:true,Silent:true}
 
 # Admin Items 1/2
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/febreeze_rod",page:"page_1",slot:0}

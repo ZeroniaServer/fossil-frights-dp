@@ -8,7 +8,9 @@
             "minecraft:amethyst_shard"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_heist_camera_remote:1b}"
+            "minecraft:custom_data": {
+              "ff_heist_camera_remote": true
+            }
           }
         }
       }

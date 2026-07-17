@@ -10,7 +10,9 @@
                 "minecraft:amethyst_shard"
               ],
               "predicates": {
-                "minecraft:custom_data": "{ff_dna:1b}"
+                "minecraft:custom_data": {
+                  "ff_dna": true
+                }
               }
             }
           }

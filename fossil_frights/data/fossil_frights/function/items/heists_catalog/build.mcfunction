@@ -1,6 +1,6 @@
 kill @e[type=minecraft:chest_minecart,tag=ff_admin_loot_catalog,distance=..2]
-summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_loot_catalog","ff_admin_loot_page_1"],NoGravity:1b,Invulnerable:1b,Silent:1b}
-summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_loot_catalog","ff_admin_loot_page_2"],NoGravity:1b,Invulnerable:1b,Silent:1b}
+summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_loot_catalog","ff_admin_loot_page_1"],NoGravity:true,Invulnerable:true,Silent:true}
+summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_loot_catalog","ff_admin_loot_page_2"],NoGravity:true,Invulnerable:true,Silent:true}
 
 # Admin Heist Loot 1/2
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/coffee",page:"page_1",slot:0}

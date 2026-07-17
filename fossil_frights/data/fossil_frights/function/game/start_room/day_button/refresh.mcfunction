@@ -1,4 +1,4 @@
-data merge entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] {text:"",shadow:1b,brightness:{sky:15,block:15}}
+data merge entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] {text:"",shadow:true,brightness:{sky:15,block:15}}
 
 scoreboard players set $heist_players_ready ff_game_state 0
 execute if score $heist_mode_active ff_game_state matches 1 if score $heist_round_active ff_game_state matches 0 if score $heist_thieves_ready ff_game_state matches 1 if entity @a[limit=1,team=ff_thief] if entity @a[limit=1,team=ff_guard] run scoreboard players set $heist_players_ready ff_game_state 1

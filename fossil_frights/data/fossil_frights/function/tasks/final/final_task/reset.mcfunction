@@ -10,5 +10,5 @@ scoreboard players set $final_task_centrifuge_timer ff_task_state 0
 kill @e[type=minecraft:item_display,tag=ff_final_preview]
 function fossil_frights:tasks/final/final_task/markers/cleanup
 function fossil_frights:tasks/final/final_task/screen/cleanup
-clear @a[team=ff_guard] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:1b}]
+clear @a[team=ff_guard] minecraft:amethyst_shard[minecraft:custom_data~{ff_dna:true}]
 execute as @a[team=ff_guard] run function fossil_frights:items/plushies/clear_items

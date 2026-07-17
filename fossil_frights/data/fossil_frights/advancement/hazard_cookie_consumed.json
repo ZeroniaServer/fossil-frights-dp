@@ -8,7 +8,9 @@
             "minecraft:cookie"
           ],
           "predicates": {
-            "minecraft:custom_data": "{ff_hazard_cookie:1b}"
+            "minecraft:custom_data": {
+              "ff_hazard_cookie": true
+            }
           }
         }
       }
