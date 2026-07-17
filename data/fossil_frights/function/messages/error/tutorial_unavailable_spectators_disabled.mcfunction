@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"Tutorial is not available while the player in game has spectators disabled.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.tutorial_unavailable_spectators_disabled"}]}

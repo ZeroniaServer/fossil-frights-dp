@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"A day is already active.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.day_already_active"}]}

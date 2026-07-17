@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"Another player is already active.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.another_player_already_set"}]}

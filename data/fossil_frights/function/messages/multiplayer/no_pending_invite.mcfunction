@@ -1,2 +1,2 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You do not have a pending invite.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.no_pending_invite"}]}
 

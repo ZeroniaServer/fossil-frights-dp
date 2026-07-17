@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You must invite a player before starting the game.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.must_invite_before_starting_game"}]}

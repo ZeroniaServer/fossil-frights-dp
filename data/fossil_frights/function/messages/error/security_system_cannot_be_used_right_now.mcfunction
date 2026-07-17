@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"Security system cannot be used right now.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.security_system_cannot_be_used_right_now"}]}

@@ -1,2 +1,2 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"That invite is no longer valid.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.invite_expired"}]}
 

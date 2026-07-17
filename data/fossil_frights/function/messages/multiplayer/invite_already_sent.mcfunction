@@ -1,2 +1,2 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"An invite has already been sent for this run.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.invite_already_sent"}]}
 

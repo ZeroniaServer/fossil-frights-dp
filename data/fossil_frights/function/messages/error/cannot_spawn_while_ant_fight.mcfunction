@@ -1,1 +1,1 @@
-tellraw @s [{"text":"⚠ ","color":"red"},{"text":"You must exit Ant Hill to use /spawn. Toss your item to exit.","color":"red"}]
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.cannot_spawn_while_ant_fight"}]}
