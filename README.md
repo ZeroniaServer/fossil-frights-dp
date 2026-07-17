@@ -1,4 +1,4 @@
-# Fossil Frights Datapack
+# Fossil Frights Datapacks
 
 ## Player Commands
 
