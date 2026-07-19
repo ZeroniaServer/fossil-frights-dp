@@ -1,3 +1,5 @@
+scoreboard players set $heist_capture_disabled ff_game_state 1
+function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:messages/heists/guards_win
 execute as @a[team=ff_guard] run function fossil_frights:items/other/confetti_cannon/give_remote
 function fossil_frights:game/heists/victory/guards

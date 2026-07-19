@@ -69,6 +69,7 @@ tag @a remove ff_heist_kill_target
 team join ff_lobby @a[team=ff_thief]
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0
+scoreboard players set $heist_capture_disabled ff_game_state 0
 scoreboard players set $heist_button_lock ff_game_state 0
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $heist_thieves_ready ff_game_state 0
