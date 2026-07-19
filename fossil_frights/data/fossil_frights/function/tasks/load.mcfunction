@@ -111,6 +111,7 @@ scoreboard players set $fix_mars_avail ff_task_state 1
 scoreboard players set $fix_mars_sel ff_task_state 0
 scoreboard players set $fix_mars_done ff_task_state 0
 scoreboard players set #line_fix_mars ff_task_state 46
+function fossil_frights:tasks/easy/fix_mars/cleanup
 scoreboard players set $make_some_noise_avail ff_task_state 1
 scoreboard players set $make_some_noise_sel ff_task_state 0
 scoreboard players set $make_some_noise_done ff_task_state 0
