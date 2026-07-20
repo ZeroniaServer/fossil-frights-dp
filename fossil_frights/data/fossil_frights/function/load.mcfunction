@@ -365,6 +365,7 @@ advancement revoke @a only fossil_frights:fix_mars_click
 advancement revoke @a only fossil_frights:sweep_popcorn_click
 advancement revoke @a only fossil_frights:dig_sand_click
 advancement revoke @a only fossil_frights:credit_reel_click
+advancement revoke @a only fossil_frights:tnt_test_click
 advancement revoke @a only fossil_frights:defrost_freezer_click
 advancement revoke @a only fossil_frights:feed_the_fish_click
 advancement revoke @a only fossil_frights:popcorn_buckets_click
