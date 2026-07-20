@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Quick Actions",
+  "external_title": "Fossil Frights Quick Actions",
+  "pause": false,
+  "actions": [
+    {
+      "label": "Admin Menu",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function fossil_frights:admin/menu/show"
+      }
+    },
+    {
+      "label": "Git Pull",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "gitmc:git pull"
+      }
+    }
+  ]
+}
