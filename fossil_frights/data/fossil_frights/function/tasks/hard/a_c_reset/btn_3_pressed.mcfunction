@@ -1,3 +1,6 @@
+execute unless score $a_c_reset_sel ff_task_state matches 1 run return 0
+execute if score $a_c_reset_done ff_task_state matches 1 run return 0
+execute if score $a_c_btn_3_pressed ff_task_state matches 15 run return 0
 scoreboard players set $a_c_btn_3_pressed ff_task_state 15
 data modify storage fossil_frights:a_c_reset display.c3 set value "#55FFFF"
 execute positioned 8 108 57 run playsound minecraft:entity.player.hurt_freeze block @a[team=ff_guard,distance=..18] ~ ~ ~ 0.7 1.4
