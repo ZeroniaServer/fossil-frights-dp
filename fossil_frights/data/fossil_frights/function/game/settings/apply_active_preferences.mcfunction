@@ -4,5 +4,6 @@ execute if entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] run setblo
 execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] run setblock 10 71 25 minecraft:lever[face=wall,facing=east,powered=true]
 execute if entity @a[team=ff_guard,tag=ff_settings_chat_hidden,limit=1] run setblock 10 71 24 minecraft:lever[face=wall,facing=east,powered=false]
 execute unless entity @a[team=ff_guard,tag=ff_settings_chat_hidden,limit=1] run setblock 10 71 24 minecraft:lever[face=wall,facing=east,powered=true]
+execute unless score $present ff_plugin matches 1 run setblock 10 71 24 minecraft:lever[face=wall,facing=east,powered=false]
 execute if entity @a[team=ff_guard,tag=ff_settings_speedrun_show,limit=1] run setblock 10 71 23 minecraft:lever[face=wall,facing=east,powered=true]
 execute unless entity @a[team=ff_guard,tag=ff_settings_speedrun_show,limit=1] run setblock 10 71 23 minecraft:lever[face=wall,facing=east,powered=false]
