@@ -1,7 +1,5 @@
 execute if score security ff_hazard_active matches 0 run return 0
 
-execute if block -28 71 39 minecraft:pale_oak_button[powered=true] positioned -28 71 39 run playsound minecraft:block.beacon.power_select master @a[distance=..24] ~ ~ ~ 1.8 1.25
-execute if block -28 71 39 minecraft:pale_oak_button[powered=true] run function fossil_frights:hazard/stop/security
 execute if score security ff_hazard_active matches 0 run return 0
 scoreboard players remove #security_indicator_timer ff_hazard_rng 1
 execute if score #security_indicator_timer ff_hazard_rng matches ..0 run scoreboard players set #security_indicator_timer ff_hazard_rng 8

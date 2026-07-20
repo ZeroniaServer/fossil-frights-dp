@@ -8,8 +8,6 @@ execute if score curse ff_hazard_active matches 1 if score #curse_indicator_time
 
 # Manual shutdown button for the curse room.
 execute if score #curse_manual_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #curse_manual_cooldown ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 0 if score #curse_manual_cooldown ff_hazard_rng matches ..0 if block -20 71 31 minecraft:crimson_button[powered=true] run return run function fossil_frights:hazard/curse/manual_start
-execute if score curse ff_hazard_active matches 1 if score #curse_manual_cooldown ff_hazard_rng matches ..0 if block -20 71 31 minecraft:crimson_button[powered=true] run function fossil_frights:hazard/curse/manual_stop
 execute if score curse ff_hazard_active matches 0 run return 0
 
 # Trigger levitation once when a player enters the curse room.
