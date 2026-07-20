@@ -32,6 +32,7 @@ tag @a[team=ff_guard] remove ff_muted_chat
 tag @a[team=ff_guard] remove ff_settings_chat_hidden
 tag @a[team=ff_guard] remove ff_settings_speedrun_show
 function fossil_frights:game/start_room/timer_bars/close
+function fossil_frights:game/start_room/settings/api/refresh_labels
 function fossil_frights:animations/door/open
 tp @a[team=ff_guard] 20 70 20 0 0
 function fossil_frights:game/heists/day_tracker/hide
