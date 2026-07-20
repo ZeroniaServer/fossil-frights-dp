@@ -36,4 +36,5 @@ scoreboard players set @s ff_security_camera_heist 0
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
+function fossil_frights:cameras/lights_disabled/update
 execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1

@@ -1,4 +1,5 @@
 execute unless entity @s[tag=ff_camera_remote_active] run return 0
+function fossil_frights:cameras/lights_disabled/hide
 execute store result storage fossil_frights:forced_spectate return.x double 0.00001 run scoreboard players get @s ff_forced_spec_x
 execute store result storage fossil_frights:forced_spectate return.y double 0.001 run scoreboard players get @s ff_forced_spec_y
 execute store result storage fossil_frights:forced_spectate return.z double 0.00001 run scoreboard players get @s ff_forced_spec_z

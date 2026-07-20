@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "camera_overlay": "fossil-frights:misc/disabled_cameras"
+                },
+                "minecraft:custom_data": {
+                  "ff_camera_lights_disabled_overlay": true,
+                  "ff_prevent_drop": true
+                },
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

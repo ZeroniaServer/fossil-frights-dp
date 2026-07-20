@@ -2,6 +2,7 @@ execute as @a[team=ff_guard] at @s run playsound fossil-frights:heists.highlight
 execute as @a[team=ff_thief] at @s run playsound fossil-frights:heists.highlight_thief master @s ~ ~ ~ 1 1
 execute as @a[team=ff_spectator] at @s run playsound fossil-frights:heists.highlight_thief master @s ~ ~ ~ 1 1
 advancement grant @s only fossil_frights:02_achievements/heists_under_surveillance
+execute if score lights ff_hazard_active matches 1 run return 0
 scoreboard players set @s ff_security_camera_heist 50
 
 effect give @p[team=ff_thief] glowing 3 0 true

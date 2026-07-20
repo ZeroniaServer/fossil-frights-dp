@@ -98,6 +98,7 @@ execute run function fossil_frights:ant_fight/player_tick
 execute run function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:cameras/forced_spectate_exit
+execute if entity @s[tag=ff_camera_lights_disabled_overlay,tag=!ff_forced_spectate] run function fossil_frights:cameras/lights_disabled/hide
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:cameras/camera_tick
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit

@@ -20,6 +20,7 @@ scoreboard players set @s ff_security_camera_nav 0
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
+function fossil_frights:cameras/lights_disabled/update
 execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1
 execute unless predicate fossil_frights:world/is_realms run setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
 execute unless predicate fossil_frights:world/is_realms run setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
