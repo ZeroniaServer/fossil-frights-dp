@@ -23,15 +23,15 @@ function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/timer_bars/close
 execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
-execute if block 10 71 25 minecraft:lever[powered=true] as @a[team=ff_guard] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
-execute if block 10 71 25 minecraft:lever[powered=true] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
+execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
+execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start
 function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectator_toggle/refresh
-function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/spectators/refresh
+function fossil_frights:game/start_room/settings/music/refresh
 function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/setting3/refresh
-function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
+function fossil_frights:game/start_room/settings/chat/refresh
+function fossil_frights:game/start_room/settings/speedrun/refresh

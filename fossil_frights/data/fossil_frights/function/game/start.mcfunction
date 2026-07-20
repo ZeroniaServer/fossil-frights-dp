@@ -77,13 +77,13 @@ scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
-function fossil_frights:game/settings/apply_active_preferences
-function fossil_frights:game/settings/message_sync
+function fossil_frights:game/start_room/settings/api/apply_active_preferences
+function fossil_frights:game/start_room/settings/api/sync_message_state
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectator_toggle/refresh
-function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/spectators/refresh
+function fossil_frights:game/start_room/settings/music/refresh
 function fossil_frights:game/start_room/settings/party_mode/refresh
 function fossil_frights:game/start_room/settings/heists/refresh
-function fossil_frights:game/start_room/settings/setting3/refresh
-function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
+function fossil_frights:game/start_room/settings/chat/refresh
+function fossil_frights:game/start_room/settings/speedrun/refresh

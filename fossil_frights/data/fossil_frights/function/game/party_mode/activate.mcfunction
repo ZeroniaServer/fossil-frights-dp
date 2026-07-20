@@ -10,11 +10,11 @@ execute as @a[team=ff_guard] run function fossil_frights:game/party_mode/add_cur
 scoreboard players set $run_multiplayer ff_game_state 1
 scoreboard players set $party_mode_active ff_game_state 1
 scoreboard players set $run_admin_modified ff_game_state 1
-function fossil_frights:game/settings/toggle_spectators/reset
-function fossil_frights:game/settings/setting2/reset
-function fossil_frights:game/settings/setting3/reset
-function fossil_frights:game/settings/speedrun_toggle/reset
-function fossil_frights:game/settings/message_sync
+function fossil_frights:game/start_room/settings/spectators/reset
+function fossil_frights:game/start_room/settings/music/reset
+function fossil_frights:game/start_room/settings/chat/reset
+function fossil_frights:game/start_room/settings/speedrun/reset
+function fossil_frights:game/start_room/settings/api/sync_message_state
 tag @a[team=ff_guard] remove ff_settings_spectator_deny
 tag @a[team=ff_guard] remove ff_settings_music_off
 tag @a[team=ff_guard] remove ff_muted_chat

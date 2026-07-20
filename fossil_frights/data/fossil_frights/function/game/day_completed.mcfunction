@@ -37,9 +37,9 @@ execute unless score $day_current ff_day matches 10 run function fossil_frights:
 execute as @a[team=ff_guard] run title @s actionbar [{"translate":"ff.day_complete","color":"gold","italic":false,"with":[{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectator_toggle/refresh
-function fossil_frights:game/start_room/settings/setting2/refresh
+function fossil_frights:game/start_room/settings/spectators/refresh
+function fossil_frights:game/start_room/settings/music/refresh
 function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/setting3/refresh
-function fossil_frights:game/start_room/settings/speedrun_toggle/refresh
+function fossil_frights:game/start_room/settings/chat/refresh
+function fossil_frights:game/start_room/settings/speedrun/refresh
 function fossil_frights:tasks/tracker/hide

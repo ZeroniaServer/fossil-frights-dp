@@ -14,6 +14,6 @@ execute if score $day_current ff_day matches 7 run function fossil_frights:game/
 execute if score $day_current ff_day matches 8 run function fossil_frights:game/speedrun/update_day8_best
 execute if score $day_current ff_day matches 9 run function fossil_frights:game/speedrun/update_day9_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/speedrun/update_day10_best
-execute if block 10 71 23 minecraft:lever[powered=true] run title @s times 5 40 10
-execute if block 10 71 23 minecraft:lever[powered=true] run function fossil_frights:game/speedrun/show_subtitle
-execute unless block 10 71 23 minecraft:lever[powered=true] run title @s subtitle ""
+execute if entity @s[tag=ff_settings_speedrun_show] run title @s times 5 40 10
+execute if entity @s[tag=ff_settings_speedrun_show] run function fossil_frights:game/speedrun/show_subtitle
+execute unless entity @s[tag=ff_settings_speedrun_show] run title @s subtitle ""

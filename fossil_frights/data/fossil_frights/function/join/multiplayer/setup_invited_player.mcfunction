@@ -18,6 +18,6 @@ scoreboard players set @s ff_key_bar 0
 title @s actionbar ""
 function fossil_frights:player/equip_security_hat
 function fossil_frights:key/give_waiting
-function fossil_frights:game/settings/save_current_to_player
+function fossil_frights:game/start_room/settings/api/copy_active_preferences
 function fossil_frights:util/fade/queue/game_start
 spawnpoint @s 20 70 20

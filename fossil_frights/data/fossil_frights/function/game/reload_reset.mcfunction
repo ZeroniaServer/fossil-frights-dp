@@ -38,10 +38,10 @@ scoreboard players set @a ff_invite_sel 0
 scoreboard players enable @a ff_invite_sel
 scoreboard players set @a ff_invite_accept 0
 scoreboard players enable @a ff_invite_accept
-function fossil_frights:game/settings/toggle_spectators/reset
-function fossil_frights:game/settings/setting2/reset
-function fossil_frights:game/settings/setting3/reset
-function fossil_frights:game/settings/speedrun_toggle/reset
+function fossil_frights:game/start_room/settings/spectators/reset
+function fossil_frights:game/start_room/settings/music/reset
+function fossil_frights:game/start_room/settings/chat/reset
+function fossil_frights:game/start_room/settings/speedrun/reset
 scoreboard players set $leaderboard_display_ready ff_lb_calc 0
 function fossil_frights:animations/dinocoin/crane/hide_parkour_route
 function fossil_frights:game/reset

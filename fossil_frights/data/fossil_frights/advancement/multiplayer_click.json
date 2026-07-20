@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:game/settings/multiplayer/handle_click"
+    "function": "fossil_frights:game/start_room/settings/multiplayer/handle_click"
   }
 }

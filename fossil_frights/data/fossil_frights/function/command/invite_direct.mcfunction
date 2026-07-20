@@ -15,4 +15,4 @@ execute unless entity @a[tag=ff_plugin_invite_target,limit=1] run return 0
 data remove storage fossil_frights:invite selected
 execute as @a[tag=ff_plugin_invite_target,limit=1] run function fossil_frights:player/util/write_username {to:"storage fossil_frights:invite selected.name"}
 execute as @a[tag=ff_plugin_invite_target,limit=1] run data modify storage fossil_frights:invite selected.uuid set from entity @s UUID
-function fossil_frights:game/settings/multiplayer/gui/try_send
+function fossil_frights:game/start_room/settings/multiplayer/gui/try_send

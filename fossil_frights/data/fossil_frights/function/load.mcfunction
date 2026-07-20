@@ -384,6 +384,10 @@ advancement revoke @a only fossil_frights:crane_payment_click
 advancement revoke @a only fossil_frights:sarcophagus_payment_click
 advancement revoke @a only fossil_frights:crab_click
 advancement revoke @a only fossil_frights:start_room_glass_box_click
+advancement revoke @a only fossil_frights:start_room_setting_spectators_click
+advancement revoke @a only fossil_frights:start_room_setting_music_click
+advancement revoke @a only fossil_frights:start_room_setting_chat_click
+advancement revoke @a only fossil_frights:start_room_setting_speedrun_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:evolution_punch
 advancement revoke @a only fossil_frights:glowberry_eat
