@@ -9,5 +9,6 @@ function fossil_frights:tasks/messages/show_complete_macro with storage fossil_f
 scoreboard players add $task_completed_total ff_task_state 1
 clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"defrost_freezer"}] 1
 scoreboard players set $defrost_freezer_done ff_task_state 1
+function fossil_frights:tasks/hard/defrost_freezer/cleanup
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
