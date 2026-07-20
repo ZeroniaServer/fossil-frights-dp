@@ -2,16 +2,9 @@
   "parent": "fossil_frights:01_progression/day_10",
   "display": {
     "icon": {
-      "id": "minecraft:gold_ingot",
+      "id": "minecraft:paper",
       "components": {
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "dinocoin"
-            ]
-          }
-        ]
+        "minecraft:item_model": "fossil-frights:general_items/dinocoin"
       }
     },
     "title": {

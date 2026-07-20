@@ -2,26 +2,9 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:gold_ingot",
+      "id": "minecraft:paper",
       "components": {
-        "minecraft:item_name": {
-          "text": "Dino Coin",
-          "color": "gold",
-          "italic": false
-        },
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "dinocoin"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "fossil-frights:general_items/dinocoin"
       }
     },
     "title": {
