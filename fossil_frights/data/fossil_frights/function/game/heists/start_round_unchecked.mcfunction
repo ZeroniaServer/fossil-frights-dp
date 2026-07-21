@@ -4,6 +4,7 @@ function fossil_frights:animations/dinocoin/vending_machine/setup
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_timer ff_heist 12000
+fill -5 68 8 -3 68 8 magma_block
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players set $security_by_loot ff_heist 0

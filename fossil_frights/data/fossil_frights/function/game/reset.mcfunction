@@ -1,6 +1,7 @@
 execute unless score $party_mode_active ff_game_state matches 1 if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[team=ff_guard] only fossil_frights:02_achievements/speedrunner
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
+fill -5 68 8 -3 68 8 air
 function fossil_frights:game/reset_hazards
 function fossil_frights:game/cleanup_dropped_items
 function fossil_frights:tasks/reset
