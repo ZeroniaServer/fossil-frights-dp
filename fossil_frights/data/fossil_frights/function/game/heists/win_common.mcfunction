@@ -9,6 +9,8 @@ function fossil_frights:game/heists/oxidized_bars/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 execute as @a[team=ff_guard] run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[team=ff_thief] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
+execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $day_active ff_day 0

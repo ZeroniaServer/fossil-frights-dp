@@ -27,6 +27,7 @@ effect clear @a[team=ff_thief] minecraft:slowness
 execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range base set 3
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
+execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
 execute as @a[team=ff_guard] run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[team=ff_thief] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a ff_heist_punch_cd 0
