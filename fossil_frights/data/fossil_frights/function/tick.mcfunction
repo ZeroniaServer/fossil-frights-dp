@@ -31,9 +31,11 @@ execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_g
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/deep_dark_elevator/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/lady_bug_revolutionary/check
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/dinocoin/sarcophagus/tick
-execute if score $game_running ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] as @a[tag=ff_dinocoin_crab_near] positioned -7.5 71.0 46.5 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..3] run tag @s remove ff_dinocoin_crab_near
-execute if score $game_running ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] positioned -7.5 71.0 46.5 as @a[predicate=fossil_frights:player/is_playing,distance=..3,tag=!ff_dinocoin_crab_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crab/nearby
-execute as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
+execute if score $heist_mode_active ff_game_state matches 1 run scoreboard players set @a ff_crab_timer 0
+execute if score $heist_mode_active ff_game_state matches 1 run tag @a remove ff_dinocoin_crab_near
+execute if score $game_running ff_game_state matches 1 unless score $heist_mode_active ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] as @a[tag=ff_dinocoin_crab_near] positioned -7.5 71.0 46.5 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..3] run tag @s remove ff_dinocoin_crab_near
+execute if score $game_running ff_game_state matches 1 unless score $heist_mode_active ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] positioned -7.5 71.0 46.5 as @a[predicate=fossil_frights:player/is_playing,distance=..3,tag=!ff_dinocoin_crab_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crab/nearby
+execute unless score $heist_mode_active ff_game_state matches 1 as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
