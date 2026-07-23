@@ -18,7 +18,6 @@ execute if score $loot_golden_sword ff_heist_loot_state matches 1..2 run return 
 execute if score $loot_portal_core ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_spyglass ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1..2 run return 0
-execute if score $loot_credit_reel ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_cookie ff_heist_loot_state matches 1..2 run return 0
@@ -59,5 +58,6 @@ execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1..2 ru
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_crab ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_vault ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
+execute if score $loot_credit_reel ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 
 execute if score $heist_basement_remaining ff_heist matches 1.. run function fossil_frights:game/heists/loot/activate_basement_lava_lock
