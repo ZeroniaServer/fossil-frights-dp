@@ -15,6 +15,7 @@ execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distanc
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:entity_interaction_range base set 3
 tag @s remove ff_ice_frozen
+function fossil_frights:items/heists/ice_cannon/overlay_hide
 tp @s -1.00 109.00 55.5 180 0
 spawnpoint @s -1 109 55
 function fossil_frights:player/protection_disable

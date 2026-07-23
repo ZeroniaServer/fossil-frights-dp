@@ -12,5 +12,6 @@ execute as @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] run attribute @s minecr
 scoreboard players set @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] ff_heist_thaw_fx 60
 effect clear @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] minecraft:slowness
 tag @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] remove ff_ice_frozen
+execute as @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen_overlay] run function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @a remove ff_ice_freeze_owner
 kill @s

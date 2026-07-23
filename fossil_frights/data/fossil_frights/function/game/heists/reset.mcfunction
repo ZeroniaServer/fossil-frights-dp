@@ -64,6 +64,7 @@ scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
+execute as @a[tag=ff_ice_frozen_overlay] run function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_kill_target

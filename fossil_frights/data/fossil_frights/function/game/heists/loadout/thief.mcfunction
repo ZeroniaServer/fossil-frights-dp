@@ -4,6 +4,7 @@ attribute @s minecraft:entity_interaction_range base set 3
 attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:friction_modifier base reset
 tag @s remove ff_ice_frozen
+function fossil_frights:items/heists/ice_cannon/overlay_hide
 clear @s
 item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.offhand with air

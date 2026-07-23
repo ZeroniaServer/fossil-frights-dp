@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "camera_overlay": "fossil-frights:misc/ice_frozen_overlay"
+    }
+  }
+}

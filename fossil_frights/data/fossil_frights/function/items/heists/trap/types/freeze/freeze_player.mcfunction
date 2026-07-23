@@ -4,6 +4,7 @@ execute if entity @s[tag=ff_ice_frozen] run return 0
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..1.75]
 effect give @s minecraft:slowness 5 9 true
 tag @s add ff_ice_frozen
+function fossil_frights:items/heists/ice_cannon/overlay_show
 attribute @s minecraft:jump_strength base set 0
 attribute @s minecraft:entity_interaction_range base set 0
 attribute @s minecraft:movement_speed base set 0.055
