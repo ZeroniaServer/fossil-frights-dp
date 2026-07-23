@@ -1,4 +1,5 @@
 scoreboard players set @s ff_heist_paint_fx 0
+title @s clear
 clear @s *[custom_data~{ff_paint_armor:true}]
 item modify entity @s hotbar.0 fossil_frights:game/heists/remove_paint
 item modify entity @s hotbar.1 fossil_frights:game/heists/remove_paint
