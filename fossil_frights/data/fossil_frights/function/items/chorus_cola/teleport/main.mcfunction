@@ -38,7 +38,7 @@ execute store result storage fossil_frights:chorus_cola calc.chunk_z_4 int 1 run
 data modify storage fossil_frights:chorus_cola calc.passengers set value []
 execute if score #teleport_distance_max ff_dummy matches 17.. run function fossil_frights:items/chorus_cola/teleport/append_markers_5x5 with storage fossil_frights:chorus_cola calc
 execute if score #teleport_distance_max ff_dummy matches ..16 run function fossil_frights:items/chorus_cola/teleport/append_markers_3x3 with storage fossil_frights:chorus_cola calc
-execute unless data storage fossil_frights:chorus_cola calc.passengers[0] run return fail
+execute unless data storage fossil_frights:chorus_cola calc.passengers[0] run return run function fossil_frights:items/chorus_cola/teleport/fail
 data modify storage fossil_frights:chorus_cola calc.passengers[].id set value "minecraft:marker"
 function fossil_frights:items/chorus_cola/teleport/summon_batch with storage fossil_frights:chorus_cola calc
 execute positioned 0 0 0 as @e[limit=1,distance=..0.01,type=minecraft:item_display,tag=ff_chorus_cola_teleport_location_batch] run function fossil_frights:items/chorus_cola/teleport/selected_batch
