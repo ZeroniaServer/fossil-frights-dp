@@ -14,9 +14,11 @@ execute as @a[tag=ff_ice_freeze_owner] if predicate fossil_frights:entity/effect
 execute as @a[tag=ff_ice_freeze_owner] if predicate fossil_frights:entity/effects/levitation run data modify entity @s Motion[2] set value 0.0d
 tag @a remove ff_ice_freeze_owner
 tag @s remove ff_ice_freeze_syncing
-execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 17 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"1"}}}
-execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 34 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"2"}}}
-execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 50.. run function fossil_frights:items/heists/ice_cannon/freeze_end
-execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 34 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"1"}}}
-execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 67 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"2"}}}
+execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 10 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"1"}}}
+execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 20 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"2"}}}
+execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 30 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"3"}}}
+execute unless entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 41.. run function fossil_frights:items/heists/ice_cannon/freeze_end
+execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 25 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"1"}}}
+execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 50 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"2"}}}
+execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 75 run data merge entity @s {block_state:{Name:"minecraft:frosted_ice",Properties:{age:"3"}}}
 execute if entity @s[tag=ff_trap_freeze_block] if score @s ff_ice_freeze_age matches 100.. run function fossil_frights:items/heists/ice_cannon/freeze_end

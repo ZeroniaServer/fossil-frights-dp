@@ -1,4 +1,4 @@
-particle minecraft:block{block_state:{Name:"minecraft:frosted_ice",Properties:{age:"2"}}} ~ ~ ~ 0.75 0.75 0.75 0.12 80 force
+particle minecraft:dust{color:[0.65f,0.9f,1.0f],scale:1.0f} ~ ~ ~ 0.75 0.75 0.75 0.12 80 force
 particle minecraft:snowflake ~ ~ ~ 0.65 0.65 0.65 0.05 45 force
 particle minecraft:poof ~ ~ ~ 0.45 0.45 0.45 0.08 24 force
 playsound minecraft:block.glass.break player @a[distance=..24] ~ ~ ~ 0.9 0.85
