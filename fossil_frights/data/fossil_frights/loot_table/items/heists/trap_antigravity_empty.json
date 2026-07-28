@@ -20,12 +20,20 @@
                   {
                     "translate": "ff.item.trap.description.1",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      { "keybind": "key.attack", "color": "yellow" },
+                      { "keybind": "key.use", "color": "yellow" }
+                    ]
                   },
                   {
                     "translate": "ff.item.trap.description.2",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      { "keybind": "key.sneak", "color": "yellow" },
+                      { "keybind": "key.use", "color": "yellow" }
+                    ]
                   },
                   {
                     "translate": "ff.item.trap_antigravity.description.2",
@@ -71,12 +79,19 @@
                       {
                         "translate": "ff.item.trap.description.1",
                         "color": "white",
-                        "italic": false
+                        "italic": false,
+                        "with": [
+                          { "keybind": "key.attack", "color": "yellow" },
+                          { "keybind": "key.use", "color": "yellow" }
+                        ]
                       },
                       {
                         "translate": "ff.item.trap.description.2",
                         "color": "white",
-                        "italic": false
+                        "italic": false, "with": [
+                          { "keybind": "key.sneak", "color": "yellow" },
+                          { "keybind": "key.use", "color": "yellow" }
+                        ]
                       },
                       {
                         "translate": "ff.item.trap_antigravity.description.2",

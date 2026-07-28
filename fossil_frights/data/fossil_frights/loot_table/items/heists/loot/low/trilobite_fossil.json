@@ -20,6 +20,9 @@
                   "itemID": "trilobite_fossil",
                   "ff_heist_low_loot": true,
                   "ff_heist_loot": true
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [1.0]
                 }
               }
             }
