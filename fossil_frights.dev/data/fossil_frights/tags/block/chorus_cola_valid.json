@@ -1,0 +1,31 @@
+{
+    "values": [
+        "#fossil_frights:air_like",
+        "#minecraft:slabs",
+        "#minecraft:wool_carpets",
+        "minecraft:moss_carpet",
+        "minecraft:pale_moss_carpet",
+        "minecraft:leaf_litter",
+        "minecraft:tripwire_hook",
+        "#minecraft:stairs",
+        "#minecraft:cauldrons",
+        "#minecraft:buttons",
+        "#minecraft:flowers",
+        "minecraft:small_dripleaf",
+        "minecraft:fern",
+        "minecraft:short_grass",
+        "minecraft:bush",
+        "minecraft:glow_lichen",
+        "minecraft:sculk_vein",
+        "minecraft:short_dry_grass",
+        "minecraft:tall_dry_grass",
+        "#minecraft:all_signs",
+        "#minecraft:rails",
+        "#minecraft:trapdoors",
+        "#minecraft:campfires",
+        "minecraft:dirt_path",
+        "minecraft:lily_pad",
+        "#minecraft:pressure_plates",
+        "minecraft:water"
+    ]
+}

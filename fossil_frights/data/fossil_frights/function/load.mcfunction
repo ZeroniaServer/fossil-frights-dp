@@ -154,6 +154,7 @@ scoreboard objectives add ff_compass_found dummy
 scoreboard objectives add ff_cannot_trigger_lady_bug_revolutionary_until_timestamp dummy
 scoreboard objectives add ff_paint_splat_spawn_timestamp dummy
 scoreboard objectives add ff_sulfur dummy
+scoreboard objectives add ff_chorus_cola_editor dummy
 scoreboard players set #1 ff_constant 1
 scoreboard players set #5 ff_constant 5
 scoreboard players set #10 ff_constant 10
