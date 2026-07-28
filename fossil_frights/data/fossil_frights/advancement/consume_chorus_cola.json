@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "consume_chorus_cola_drink": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "ff_drink": "chorus_cola"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/chorus_cola/consume"
+  }
+}
