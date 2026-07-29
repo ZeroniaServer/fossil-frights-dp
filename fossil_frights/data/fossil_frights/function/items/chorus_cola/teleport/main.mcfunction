@@ -1,14 +1,7 @@
-#execute store result score #choose ff_dummy run random value 0..99
-#execute if score #choose ff_dummy matches 0..4 run scoreboard players set #teleport_distance_max ff_dummy 10
-#execute if score #choose ff_dummy matches 5..29 run scoreboard players set #teleport_distance_max ff_dummy 15
-#execute if score #choose ff_dummy matches 30..79 run scoreboard players set #teleport_distance_max ff_dummy 20
-#execute if score #choose ff_dummy matches 80..89 run scoreboard players set #teleport_distance_max ff_dummy 25
-#execute if score #choose ff_dummy matches 90..99 run scoreboard players set #teleport_distance_max ff_dummy 30
+# 25% nearest, 40% 8 blocks, 25% 16 blocks, 10% 32 blocks
+scoreboard players set #teleport_distance_8 ff_dummy 8
+scoreboard players set #teleport_distance_16 ff_dummy 16
 scoreboard players set #teleport_distance_max ff_dummy 32
-
-scoreboard players operation #teleport_distance_min ff_dummy = #teleport_distance_max ff_dummy
-scoreboard players remove #teleport_distance_min ff_dummy 5
-execute if score #teleport_distance_min ff_dummy matches ..3 run scoreboard players set #teleport_distance_min ff_dummy 3
 
 data modify storage fossil_frights:chorus_cola calc.player_pos set from entity @s Pos
 execute store result score #chunk_x_0 ff_dummy store result score #chunk_x_1 ff_dummy store result score #chunk_x_2 ff_dummy store result score #chunk_x_3 ff_dummy store result score #chunk_x_4 ff_dummy run data get storage fossil_frights:chorus_cola calc.player_pos[0]
@@ -42,7 +35,12 @@ execute unless data storage fossil_frights:chorus_cola calc.passengers[0] run re
 data modify storage fossil_frights:chorus_cola calc.passengers[].id set value "minecraft:marker"
 function fossil_frights:items/chorus_cola/teleport/summon_batch with storage fossil_frights:chorus_cola calc
 execute positioned 0 0 0 as @e[limit=1,distance=..0.01,type=minecraft:item_display,tag=ff_chorus_cola_teleport_location_batch] run function fossil_frights:items/chorus_cola/teleport/selected_batch
-execute store result storage fossil_frights:chorus_cola calc.min int 1 run scoreboard players get #teleport_distance_min ff_dummy
-execute store result storage fossil_frights:chorus_cola calc.max int 1 run scoreboard players get #teleport_distance_max ff_dummy
-function fossil_frights:items/chorus_cola/teleport/choose_marker_and_teleport_player with storage fossil_frights:chorus_cola calc
+execute store result score #choose ff_dummy run random value 1..20
+execute if score #choose ff_dummy matches 1..5 run function fossil_frights:items/chorus_cola/teleport/choose_nearest_marker_and_teleport_player
+execute if score #choose ff_dummy matches 6..13 store result storage fossil_frights:chorus_cola calc.max int 1 run scoreboard players get #teleport_distance_8 ff_dummy
+execute if score #choose ff_dummy matches 6..13 run function fossil_frights:items/chorus_cola/teleport/choose_marker_or_nearest_and_teleport_player with storage fossil_frights:chorus_cola calc
+execute if score #choose ff_dummy matches 14..18 store result storage fossil_frights:chorus_cola calc.max int 1 run scoreboard players get #teleport_distance_16 ff_dummy
+execute if score #choose ff_dummy matches 14..18 run function fossil_frights:items/chorus_cola/teleport/choose_marker_or_32_and_teleport_player with storage fossil_frights:chorus_cola calc
+execute if score #choose ff_dummy matches 19..20 store result storage fossil_frights:chorus_cola calc.max int 1 run scoreboard players get #teleport_distance_max ff_dummy
+execute if score #choose ff_dummy matches 19..20 run function fossil_frights:items/chorus_cola/teleport/choose_marker_and_teleport_player with storage fossil_frights:chorus_cola calc
 kill @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location]
