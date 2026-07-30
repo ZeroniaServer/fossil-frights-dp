@@ -7,7 +7,6 @@ data modify storage fossil_frights:chorus_cola calc.player_pos set from entity @
 execute store result score #chunk_x_0 ff_dummy store result score #chunk_x_1 ff_dummy store result score #chunk_x_2 ff_dummy store result score #chunk_x_3 ff_dummy store result score #chunk_x_4 ff_dummy run data get storage fossil_frights:chorus_cola calc.player_pos[0]
 execute store result score #chunk_z_0 ff_dummy store result score #chunk_z_1 ff_dummy store result score #chunk_z_2 ff_dummy store result score #chunk_z_3 ff_dummy store result score #chunk_z_4 ff_dummy run data get storage fossil_frights:chorus_cola calc.player_pos[2]
 scoreboard players remove #chunk_x_0 ff_dummy 32
-scoreboard players remove #chunk_x_0 ff_dummy 32
 scoreboard players remove #chunk_x_1 ff_dummy 16
 scoreboard players add #chunk_x_2 ff_dummy 0
 scoreboard players add #chunk_x_3 ff_dummy 16
