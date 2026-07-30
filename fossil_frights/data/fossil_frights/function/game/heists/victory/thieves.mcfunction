@@ -3,7 +3,7 @@ function fossil_frights:advancements/heists/check_greedy
 execute as @a[team=ff_thief] at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.9 1
 title @a[team=ff_thief] times 10 70 20
 execute as @a[team=ff_thief] run function fossil_frights:game/speedrun/show_victory_subtitle
-title @a[team=ff_thief] title [{"text":"","font":"fossil-frights:victory_title","italic":false,"shadow_color":0}]
+title @a[team=ff_thief] title [{"text":"","font":"fossil-frights:title_overlays/victory_title","italic":false,"shadow_color":0}]
 tag @a[team=ff_thief] remove ff_map_claimed
 tag @a[team=ff_thief] remove ff_map_auto_given
 function fossil_frights:game/victory/fireworks/museum

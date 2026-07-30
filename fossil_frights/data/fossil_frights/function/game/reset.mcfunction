@@ -1,3 +1,8 @@
+execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 24 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 24 run tp @s 0 80 0 0 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 24 if score $defeat_anim ff_game_state matches 1 run schedule function fossil_frights:animations/defeat/stop 1t
+execute if entity @s[tag=ff_tp_dispatch] run return 0
+
 execute unless score $party_mode_active ff_game_state matches 1 if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[team=ff_guard] only fossil_frights:02_achievements/speedrunner
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
@@ -70,8 +75,14 @@ item replace entity @a[team=ff_guard] weapon.offhand with air
 item replace entity @a[team=ff_thief] weapon.offhand with air
 item replace entity @a[team=ff_guard] armor.head with air
 item replace entity @a[team=ff_thief] armor.head with air
-execute as @a[team=ff_guard] run function fossil_frights:util/fade/queue/game_end
-execute as @a[team=ff_thief] run function fossil_frights:util/fade/queue/game_end
+execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
+execute as @a[team=ff_thief,tag=!ff_fade_tp_active] run title @s times 5 3 10
+execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+execute as @a[team=ff_thief,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+scoreboard players set @a[team=ff_guard,tag=!ff_fade_tp_active] ff_tp_action 24
+scoreboard players set @a[team=ff_thief,tag=!ff_fade_tp_active] ff_tp_action 24
+scoreboard players set @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] ff_tp_delay 18
+tag @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] add ff_fade_tp_active
 execute as @a[team=ff_guard] at @s run spawnpoint @s 0 80 0
 execute as @a[team=ff_thief] at @s run spawnpoint @s 0 80 0
 execute as @a[team=ff_guard] run function fossil_frights:items/plushies/restore

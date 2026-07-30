@@ -13,7 +13,7 @@
               "components": {
                 "minecraft:equippable": {
                   "slot": "head",
-                  "camera_overlay": "fossil-frights:misc/disabled_cameras"
+                  "camera_overlay": "fossil-frights:overlays/disabled_cameras"
                 },
                 "minecraft:custom_data": {
                   "ff_camera_lights_disabled_overlay": true,

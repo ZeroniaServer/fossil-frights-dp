@@ -119,7 +119,12 @@ scoreboard objectives add ff_speedrun_sign dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_plugin dummy
-scoreboard objectives add ff_fade_tp dummy
+scoreboard objectives add ff_tp_delay dummy
+scoreboard objectives add ff_tp_action dummy
+scoreboard players set @a ff_tp_delay 0
+scoreboard players set @a ff_tp_action 0
+tag @a remove ff_tp_dispatch
+tag @a remove ff_fade_tp_active
 scoreboard objectives add ff_heist dummy
 scoreboard objectives add ff_heist_sidebar dummy
 scoreboard objectives add ff_heist_punch_cd dummy

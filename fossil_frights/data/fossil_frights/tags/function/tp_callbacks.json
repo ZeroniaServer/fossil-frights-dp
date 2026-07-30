@@ -1,0 +1,29 @@
+{
+  "values": [
+    "fossil_frights:parkour/restart",
+    "fossil_frights:parkour/teleporter_click",
+    "fossil_frights:parkour/teleporter_walk_tick",
+    "fossil_frights:ant_fight/teleporter_click",
+    "fossil_frights:ant_fight/teleporter_walk_tick",
+    "fossil_frights:temple_run/restart",
+    "fossil_frights:temple_run/teleporter_click",
+    "fossil_frights:temple_run/teleporter_walk_tick",
+    "fossil_frights:sulfur_strikers/teleporter_click",
+    "fossil_frights:sulfur_strikers/teleporter_walk_tick",
+    "fossil_frights:tasks/medium/ancient_portal/teleport_random",
+    "fossil_frights:animations/dinocoin/sarcophagus/start_ride",
+    "fossil_frights:tutorial/start_apply",
+    "fossil_frights:tutorial/stop_silent",
+    "fossil_frights:join/guard/heist_enter",
+    "fossil_frights:join/thief",
+    "fossil_frights:join/spectator/enter",
+    "fossil_frights:join/spectator/exit_reset",
+    "fossil_frights:player/lobby_reset_active",
+    "fossil_frights:animations/defeat/run",
+    "fossil_frights:join/multiplayer/setup_invited_player",
+    "fossil_frights:game/party_mode/setup_current_player",
+    "fossil_frights:game/start",
+    "fossil_frights:game/reset",
+    "fossil_frights:command/spawn"
+  ]
+}

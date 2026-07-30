@@ -1,3 +1,10 @@
+scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
+tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
+execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
+scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
+tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
+tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
+
 function fossil_frights:items/dropped_items/tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/on_tick
@@ -67,7 +74,6 @@ function fossil_frights:ant_fight/teleporter_walk_tick
 function fossil_frights:parkour/teleporter_walk_tick
 function fossil_frights:sulfur_strikers/teleporter_walk_tick
 execute if score $running ff_rollercoaster matches 1 run function fossil_frights:rollercoaster/tick
-function fossil_frights:util/fade/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
 function fossil_frights:tasks/task_book_shelf/update

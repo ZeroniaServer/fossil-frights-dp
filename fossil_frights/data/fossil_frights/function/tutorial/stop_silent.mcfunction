@@ -1,3 +1,8 @@
+execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 14 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 14 run tp @s 0 80 0 0 0
+execute if entity @s[tag=ff_tp_dispatch] run return 0
+
+execute if entity @s[tag=ff_fade_tp_active] run return 0
 tag @s remove ff_tutorial
 function fossil_frights:tutorial/camera/kill_owned
 scoreboard players set @s ff_tutorial 0
@@ -8,7 +13,11 @@ clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base set 1
 title @s actionbar ""
-function fossil_frights:util/fade/queue/tutorial_exit
+title @s times 5 3 10
+title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+scoreboard players set @s ff_tp_action 14
+tag @s add ff_fade_tp_active
+scoreboard players set @s ff_tp_delay 18
 spawnpoint @s 0 80 0
 gamemode adventure @s
 function fossil_frights:player/protection_enable

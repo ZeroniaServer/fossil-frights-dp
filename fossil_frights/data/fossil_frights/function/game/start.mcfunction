@@ -1,3 +1,10 @@
+execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 23 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s add ff_game_start_source
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 if entity @a[limit=1,tag=!ff_game_start_source] at @s run function fossil_frights:animations/game_start/run
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s remove ff_game_start_source
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tp @s 20 70 20 0 0
+execute if entity @s[tag=ff_tp_dispatch] run return 0
+
 execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start_round
 execute unless entity @a[limit=1,team=ff_guard] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[limit=1,team=ff_guard] run return 0
@@ -29,7 +36,11 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
-execute as @a[team=ff_guard] run function fossil_frights:util/fade/queue/game_start
+execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
+execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+scoreboard players set @a[team=ff_guard,tag=!ff_fade_tp_active] ff_tp_action 23
+scoreboard players set @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] ff_tp_delay 18
+tag @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] add ff_fade_tp_active
 gamemode adventure @a[team=ff_guard]
 execute as @a[team=ff_guard] run attribute @s minecraft:scale base set 1
 execute as @a[team=ff_guard] run function fossil_frights:player/protection_disable

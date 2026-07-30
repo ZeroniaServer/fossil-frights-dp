@@ -1,3 +1,4 @@
+execute if entity @s[tag=ff_fade_tp_active] run return 0
 scoreboard players set $queue_notify_lock ff_game_state 1
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
