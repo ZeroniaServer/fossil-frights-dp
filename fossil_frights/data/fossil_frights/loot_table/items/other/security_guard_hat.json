@@ -14,7 +14,7 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
-                "minecraft:item_model": "fossil-frights:general_items/security_guard_hat",
+                "minecraft:item_model": "fossil-frights:items/frights/security_guard_hat",
                 "minecraft:item_name": {
                   "translate": "ff.item.security_hat",
                   "color": "white"

@@ -16,7 +16,7 @@
                   "color": "#BA9BBA",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:food/chorus_cola",
+                "minecraft:item_model": "fossil-frights:items/drinks/chorus_cola",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.chorus_cola.effect.chorus_fruit",

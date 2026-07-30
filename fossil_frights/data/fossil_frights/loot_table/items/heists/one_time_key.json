@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:general_items/key",
+                "minecraft:item_model": "fossil-frights:items/frights/key/key",
                 "minecraft:item_name": {
                   "text": "One-Time Key",
                   "color": "yellow",

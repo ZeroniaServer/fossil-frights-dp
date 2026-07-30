@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:general_items/key_cooldown",
+                "minecraft:item_model": "fossil-frights:items/frights/key/cooldown/key_cooldown",
                 "minecraft:custom_model_data": {
                   "floats": [
                     0

@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:general_items/paint_armor_2",
+                "minecraft:item_model": "fossil-frights:display/misc/paint_armour/paint_armor_2",
                 "minecraft:item_name": {
                   "translate": "ff.item.paint_armor",
                   "color": "#E70095"

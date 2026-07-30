@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:security_camera",
+                "minecraft:item_model": "fossil-frights:display/general/cameras/security_camera",
                 "minecraft:custom_model_data": {
                   "flags": [
                     false

@@ -704,7 +704,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -793,7 +793,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -868,7 +868,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -887,7 +887,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -906,7 +906,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -925,7 +925,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -1001,7 +1001,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -1159,7 +1159,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -1175,7 +1175,7 @@
                         "text": "\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/plesiosaur_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/plesiosaur_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1188,7 +1188,7 @@
                         "text": "\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/pterodactyl_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/pterodactyl_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1258,7 +1258,7 @@
                         "text": "\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/sniffer_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/sniffer_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1270,7 +1270,7 @@
                         "text": ", 2nd Floor Left Hall\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/t_rex_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/t_rex_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1282,7 +1282,7 @@
                         "text": ", 2nd Floor Eggshibit\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/trike_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/trike_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1294,7 +1294,7 @@
                         "text": ", 2nd Floor Eggshibit\n\n"
                       },
                       {
-                        "sprite": "fossil-frights:custom/general_items/velociraptor_dna_cloth",
+                        "sprite": "fossil-frights:items/frights/hard_items/dna/velociraptor_dna_cloth",
                         "atlas": "blocks",
                         "color": "white"
                       },
@@ -1385,7 +1385,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -1422,7 +1422,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             }
@@ -1445,7 +1445,7 @@
                               "color": "dark_gray"
                             },
                             {
-                              "sprite": "fossil-frights:custom/general_items/key",
+                              "sprite": "fossil-frights:items/frights/key/key",
                               "atlas": "blocks",
                               "color": "white"
                             },

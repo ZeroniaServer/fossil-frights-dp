@@ -21,7 +21,7 @@
             "minecraft:lore"
           ]
         },
-        "minecraft:item_model": "fossil-frights:general_items/parkour_restart",
+        "minecraft:item_model": "fossil-frights:items/lobby/parkour_restart",
         "minecraft:enchantment_glint_override": false
       }
     },

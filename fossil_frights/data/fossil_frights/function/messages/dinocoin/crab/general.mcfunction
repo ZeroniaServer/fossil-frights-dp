@@ -1,1 +1,1 @@
-tellraw @s {"translate":"ff.crab.prompt","with":[{"translate":"ff.crab","color":"blue"},{"translate": "%s %s","with":[{"translate":"ff.dinocoins.number","color":"gold","with":["2"]},{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/dinocoin"}]}]}
+tellraw @s {"translate":"ff.crab.prompt","with":[{"translate":"ff.crab","color":"blue"},{"translate": "%s %s","with":[{"translate":"ff.dinocoins.number","color":"gold","with":["2"]},{"atlas":"blocks","sprite":"fossil-frights:items/misc/dinocoin"}]}]}

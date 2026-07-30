@@ -15,7 +15,7 @@
                   "translate": "ff.dinocoin",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:general_items/dinocoin",
+                "minecraft:item_model": "fossil-frights:items/misc/dinocoin",
                 "minecraft:custom_data": {
                   "itemID": "dinocoin"
                 }

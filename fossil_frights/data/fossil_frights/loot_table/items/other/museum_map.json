@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:museum_map",
+                "minecraft:item_model": "fossil-frights:items/map/dynamic_map_item/museum_map",
                 "minecraft:custom_model_data": {
                   "strings": [
                     "foyer"

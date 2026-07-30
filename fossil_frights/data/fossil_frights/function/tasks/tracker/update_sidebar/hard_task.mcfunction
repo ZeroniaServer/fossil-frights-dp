@@ -1,5 +1,5 @@
 $scoreboard players reset $tt_$(task) ff_task_tracker
 
 $execute if score $$(task)_sel ff_task_state matches 1 run scoreboard players operation $tt_$(task) ff_task_tracker = #line_$(task) ff_task_state
-$execute if score $$(task)_sel ff_task_state matches 1 unless score $$(task)_done ff_task_state matches 1 run scoreboard players display name $tt_$(task) ff_task_tracker [{"translate":"%s %s", "with": [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"translate":"ff.task.$(task)","italic":false}]}]
-$execute if score $$(task)_done ff_task_state matches 1 run scoreboard players display name $tt_$(task) ff_task_tracker [{"translate":"%s %s", "with": [{"atlas":"blocks","sprite":"fossil-frights:custom/general_items/task_hard"},{"translate":"ff.task.$(task)","italic":false,"color":"gray","strikethrough":true}]}]
+$execute if score $$(task)_sel ff_task_state matches 1 unless score $$(task)_done ff_task_state matches 1 run scoreboard players display name $tt_$(task) ff_task_tracker [{"translate":"%s %s", "with": [{"atlas":"blocks","sprite":"fossil-frights:items/frights/task_hard"},{"translate":"ff.task.$(task)","italic":false}]}]
+$execute if score $$(task)_done ff_task_state matches 1 run scoreboard players display name $tt_$(task) ff_task_tracker [{"translate":"%s %s", "with": [{"atlas":"blocks","sprite":"fossil-frights:items/frights/task_hard"},{"translate":"ff.task.$(task)","italic":false,"color":"gray","strikethrough":true}]}]

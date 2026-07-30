@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:general_items/key_disabled",
+                "minecraft:item_model": "fossil-frights:items/frights/key/key_disabled",
                 "minecraft:item_name": {
                   "translate": "ff.item.storage_key.modified",
                   "color": "yellow",

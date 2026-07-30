@@ -16,7 +16,7 @@
                   "color": "aqua",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:food/fossil_fizz",
+                "minecraft:item_model": "fossil-frights:items/drinks/fossil_fizz",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.fossil_fizz.effect.dolphins_grace",

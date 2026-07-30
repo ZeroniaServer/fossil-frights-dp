@@ -16,7 +16,7 @@
                   "color": "gold",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:food/pteranadon_twist",
+                "minecraft:item_model": "fossil-frights:items/drinks/pteranadon_twist",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.pteranadon_twist.effect.double_jump",

@@ -16,7 +16,7 @@
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:item_model": "fossil-frights:general_items/camera_remote",
+                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/camera_remote",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.camera_remote.description.1",
@@ -65,7 +65,7 @@
                       "color": "yellow",
                       "italic": false
                     },
-                    "minecraft:item_model": "fossil-frights:general_items/camera_remote",
+                    "minecraft:item_model": "fossil-frights:items/heists/gear/guards/camera_remote",
                     "minecraft:lore": [
                       {
                         "text": "Click to view security cameras.",

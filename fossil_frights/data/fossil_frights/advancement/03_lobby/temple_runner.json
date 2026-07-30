@@ -21,7 +21,7 @@
             "minecraft:lore"
           ]
         },
-        "minecraft:item_model": "fossil-frights:general_items/temple_run_restart",
+        "minecraft:item_model": "fossil-frights:items/lobby/temple_run_restart",
         "minecraft:enchantment_glint_override": false
       }
     },
