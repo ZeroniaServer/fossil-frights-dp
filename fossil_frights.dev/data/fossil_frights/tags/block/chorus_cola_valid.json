@@ -11,6 +11,7 @@
         "#minecraft:cauldrons",
         "#minecraft:buttons",
         "#minecraft:flowers",
+        "#minecraft:crops",
         "minecraft:small_dripleaf",
         "minecraft:fern",
         "minecraft:short_grass",
@@ -24,8 +25,17 @@
         "#minecraft:trapdoors",
         "#minecraft:campfires",
         "minecraft:dirt_path",
+        "minecraft:farmland",
+        "minecraft:mud",
+        "minecraft:soul_sand",
         "minecraft:lily_pad",
         "#minecraft:pressure_plates",
-        "minecraft:water"
+        "minecraft:water",
+        "minecraft:weeping_vines",
+        "minecraft:weeping_vines_plant",
+        "minecraft:twisting_vines",
+        "minecraft:twisting_vines_plant",
+        "minecraft:ladder",
+        "minecraft:vine"
     ]
 }
