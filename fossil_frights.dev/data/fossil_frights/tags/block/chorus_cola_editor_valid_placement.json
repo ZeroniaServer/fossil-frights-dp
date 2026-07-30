@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#fossil_frights:carpets",
+    "#fossil_frights:center_collision_height/15",
+    "#fossil_frights:never_has_solid_collision",
+    "#minecraft:all_signs",
+    "#minecraft:campfires",
+    "#minecraft:cauldrons",
+    "#minecraft:slabs",
+    "#minecraft:stairs",
+    "#minecraft:trapdoors",
+    "minecraft:ladder",
+    "minecraft:lily_pad"
+  ]
+}
