@@ -46,4 +46,5 @@ execute if score #choose ff_dummy matches 14..18 run function fossil_frights:ite
 execute if score #choose ff_dummy matches 19..20 run function fossil_frights:items/chorus_cola/teleport/choose_marker_and_teleport_player with storage fossil_frights:chorus_cola calc
 
 # Kill markers
+tp @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] 0 0 0
 kill @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location]
