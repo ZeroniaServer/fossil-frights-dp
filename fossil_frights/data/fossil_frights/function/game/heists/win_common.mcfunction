@@ -19,3 +19,4 @@ scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 1
 function fossil_frights:key/lock/setup
 function fossil_frights:game/bossbar/set_victory
+execute unless score $heist_timer ff_heist matches ..0 run stopsound @a record fossil-frights:heists.music
