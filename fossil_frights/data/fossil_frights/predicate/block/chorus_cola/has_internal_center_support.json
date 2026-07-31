@@ -1,0 +1,50 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#fossil_frights:chorus_cola/has_internal_center_support"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#minecraft:slabs",
+          "state": {
+            "type": "bottom"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#minecraft:trapdoors",
+          "state": {
+            "half": "bottom",
+            "open": "false"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:snow",
+          "state": {
+            "layers": {
+              "min": "2",
+              "max": "8"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

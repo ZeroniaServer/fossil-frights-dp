@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#fossil_frights:center_collision_height/1",
+    "#fossil_frights:center_collision_height/1.5",
+    "#fossil_frights:center_collision_height/2",
+    "#fossil_frights:center_collision_height/3",
+    "#fossil_frights:center_collision_height/4",
+    "#fossil_frights:center_collision_height/5",
+    "#fossil_frights:center_collision_height/6",
+    "#fossil_frights:center_collision_height/7",
+    "#fossil_frights:center_collision_height/8",
+    "#fossil_frights:center_collision_height/9",
+    "#fossil_frights:center_collision_height/10",
+    "#fossil_frights:center_collision_height/11",
+    "#fossil_frights:center_collision_height/12",
+    "#fossil_frights:center_collision_height/13",
+    "#fossil_frights:center_collision_height/14",
+    "#fossil_frights:center_collision_height/15",
+    "minecraft:snow"
+  ]
+}
