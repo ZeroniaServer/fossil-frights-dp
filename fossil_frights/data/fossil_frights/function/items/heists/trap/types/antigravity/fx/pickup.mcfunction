@@ -1,1 +1,1 @@
-particle minecraft:reverse_portal ~ ~0.08 ~ 0.14 0.08 0.14 0.01 8 force @a[tag=ff_trap_viewer]
+particle minecraft:dragon_breath ~ ~0.08 ~ 0.14 0.08 0.14 0.002 8 force @a[tag=ff_trap_viewer]
