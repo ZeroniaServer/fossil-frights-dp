@@ -1,0 +1,1 @@
+return run tp @s ~ ~ ~
