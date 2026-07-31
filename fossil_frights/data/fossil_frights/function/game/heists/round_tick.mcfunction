@@ -1,5 +1,5 @@
-execute unless entity @a[limit=1,team=ff_guard] run return run function fossil_frights:game/heists/thieves_win
-execute unless entity @a[limit=1,team=ff_thief] run return run function fossil_frights:game/heists/guards_win
+execute if score $heist_admin_bypass_team_check ff_game_state matches 0 unless entity @a[limit=1,team=ff_guard] run return run function fossil_frights:game/heists/thieves_win
+execute if score $heist_admin_bypass_team_check ff_game_state matches 0 unless entity @a[limit=1,team=ff_thief] run return run function fossil_frights:game/heists/guards_win
 execute if score $heist_loot ff_heist >= #heist_goal ff_heist run return run function fossil_frights:game/heists/thieves_win
 execute if score $timer_frozen ff_day matches 1 run return 0
 scoreboard players add $heist_flash ff_heist 1
