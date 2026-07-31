@@ -11,3 +11,4 @@ attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:entity_interaction_range base set 3
 effect clear @s minecraft:night_vision
 effect clear @s minecraft:slowness
+stopsound @s record fossil-frights:heists.music

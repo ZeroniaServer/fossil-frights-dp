@@ -14,4 +14,8 @@ title @a[team=ff_thief] title {"text":" "}
 execute as @a[team=ff_guard,gamemode=!spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
 execute as @a[team=ff_thief,gamemode=!spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
 execute as @a[gamemode=spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
+execute as @a[team=ff_guard,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+execute as @a[team=ff_thief,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+execute as @a[gamemode=spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+
 function fossil_frights:game/heists/start_reveal/go
