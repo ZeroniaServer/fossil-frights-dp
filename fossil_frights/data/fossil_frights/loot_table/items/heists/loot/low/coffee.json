@@ -16,6 +16,7 @@
                   "color": "yellow",
                   "italic": false
                 },
+                "!minecraft:use_remainder": {},
                 "minecraft:custom_data": {
                   "itemID": "coffee",
                   "ff_heist_low_loot": true,
