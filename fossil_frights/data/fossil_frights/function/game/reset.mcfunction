@@ -33,6 +33,7 @@ function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 function fossil_frights:game/heists/reset_blocks
+stopsound @a record fossil-frights:heists.music
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift
 stopsound @a record fossil-frights:ff_night_shift
