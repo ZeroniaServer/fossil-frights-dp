@@ -1,5 +1,5 @@
-execute store result score #roam_blocks_left ff_dummy run random value 0..10
-scoreboard players set #direction ff_dummy -1
+execute store result score #roam_blocks_left ff_dummy run random value 0..8
+scoreboard players set #blocked_direction ff_dummy -1
 execute if score #roam_blocks_left ff_dummy matches 1.. positioned as @s align xyz positioned ~0.5 ~ ~0.5 run function fossil_frights:items/chorus_cola/teleport/roam/loop
 execute positioned as @s align xyz run tp @s ~0.5 ~ ~0.5
 execute positioned as @s run function fossil_frights:items/chorus_cola/teleport/roam/reposition

@@ -86,3 +86,5 @@ execute if score #can_go_down ff_dummy matches 1 \
   positioned ~ ~0 ~ if predicate fossil_frights:block/chorus_cola/has_no_collision positioned ~ ~0 ~ \
   positioned ~ ~1 ~ if predicate fossil_frights:block/chorus_cola/has_no_collision positioned ~ ~-1 ~ \
   run return run tp @s ~ ~-1 ~
+
+return fail
