@@ -1,4 +1,5 @@
 tag @s remove ff_ant_fight
+function fossil_frights:ant_fight/music/stop
 scoreboard players reset @s ff_ant_combo
 scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 tag @s remove ff_dropped_infinileaf

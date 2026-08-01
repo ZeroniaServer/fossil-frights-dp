@@ -1,6 +1,7 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 1 run return 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run tp @s -15.5 75.00 -20.5 90 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run tag @s add ff_skip_plushie_restore
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run function fossil_frights:parkour/music/stop
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run function fossil_frights:parkour/reset_player
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run tag @s remove ff_skip_plushie_restore
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 1 run tag @s add ff_plushie_restore_queued

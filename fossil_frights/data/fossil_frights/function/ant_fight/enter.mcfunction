@@ -9,3 +9,4 @@ clear @s
 loot give @s loot fossil_frights:items/other/infinileaf
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_ant_immunity 35
+function fossil_frights:ant_fight/music/start

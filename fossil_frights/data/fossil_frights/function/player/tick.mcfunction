@@ -91,6 +91,7 @@ execute run function fossil_frights:parkour/player_tick
 execute run function fossil_frights:temple_run/player_tick
 execute store result score #gametime ff_ant_combo_shown_until_timestamp run time query gametime
 execute run function fossil_frights:ant_fight/player_tick
+execute run function fossil_frights:sulfur_strikers/player_tick
 execute run function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:cameras/forced_spectate_exit

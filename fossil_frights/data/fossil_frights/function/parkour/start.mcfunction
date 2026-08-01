@@ -13,3 +13,4 @@ clear @s
 loot replace entity @s hotbar.0 loot fossil_frights:items/other/parkour_restart
 scoreboard players operation @s ff_parkour_restart_seen = @s ff_parkour_restart_use
 function fossil_frights:parkour/update_display
+function fossil_frights:parkour/music/start

@@ -1,6 +1,7 @@
 execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] run function fossil_frights:ant_fight/exit
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:ant_fight/mark_projectile
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/check_hits
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/music/tick
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run function fossil_frights:ant_fight/exit_restore
 execute if entity @s[tag=ff_ant_fight] run item replace entity @s weapon.offhand with air
 execute if entity @s[tag=ff_ant_fight] unless predicate fossil_frights:player/inventory/infinileaf run loot give @s loot fossil_frights:items/other/infinileaf

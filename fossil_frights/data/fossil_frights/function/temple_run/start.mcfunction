@@ -13,3 +13,4 @@ clear @s
 loot replace entity @s hotbar.0 loot fossil_frights:items/other/temple_run_restart
 scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
 function fossil_frights:temple_run/update_display
+function fossil_frights:temple_run/music/start

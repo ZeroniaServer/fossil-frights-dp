@@ -3,6 +3,10 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 19 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
+function fossil_frights:ant_fight/music/stop
+function fossil_frights:parkour/music/stop
+function fossil_frights:temple_run/music/stop
+function fossil_frights:sulfur_strikers/music/stop
 function fossil_frights:join/lobby
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
