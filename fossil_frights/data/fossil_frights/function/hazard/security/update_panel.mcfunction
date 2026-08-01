@@ -1,0 +1,2 @@
+execute if score security ff_hazard_active matches 1 run data modify entity @e[type=minecraft:item_display,tag=security_panel,limit=1] item set value {id:"minecraft:light_blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":{floats:[8.0f]}}}
+execute unless score security ff_hazard_active matches 1 run data modify entity @e[type=minecraft:item_display,tag=security_panel,limit=1] item set value {id:"minecraft:light_blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":{floats:[7.0f]}}}

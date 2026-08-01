@@ -53,3 +53,4 @@ schedule function fossil_frights:hazard/security/close_3x3_mid 4t
 schedule function fossil_frights:hazard/security/close_garage_mid 6t
 schedule function fossil_frights:hazard/security/close_2x2_bottom 4t
 schedule function fossil_frights:hazard/security/close_5x6_row4 9t
+function fossil_frights:hazard/security/update_panel

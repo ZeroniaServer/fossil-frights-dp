@@ -7,6 +7,5 @@ execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fo
 scoreboard players set #security_indicator ff_hazard_rng 0
 scoreboard players set #security_indicator_timer ff_hazard_rng 8
 scoreboard players set #security_alarm_timer ff_hazard_rng 10
-function fossil_frights:hazard/security/set_indicator_alert_0
 
 function fossil_frights:hazard/security/start

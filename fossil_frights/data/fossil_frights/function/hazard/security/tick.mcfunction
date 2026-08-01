@@ -1,12 +1,6 @@
 execute if score security ff_hazard_active matches 0 run return 0
 
 execute if score security ff_hazard_active matches 0 run return 0
-scoreboard players remove #security_indicator_timer ff_hazard_rng 1
-execute if score #security_indicator_timer ff_hazard_rng matches ..0 run scoreboard players set #security_indicator_timer ff_hazard_rng 8
-execute if score #security_indicator_timer ff_hazard_rng matches 8 run scoreboard players add #security_indicator ff_hazard_rng 1
-execute if score #security_indicator ff_hazard_rng matches 2.. run scoreboard players set #security_indicator ff_hazard_rng 0
-execute if score #security_indicator_timer ff_hazard_rng matches 8 if score #security_indicator ff_hazard_rng matches 0 run function fossil_frights:hazard/security/set_indicator_alert_0
-execute if score #security_indicator_timer ff_hazard_rng matches 8 if score #security_indicator ff_hazard_rng matches 1 run function fossil_frights:hazard/security/set_indicator_alert_1
 scoreboard players remove #security_alarm_timer ff_hazard_rng 1
 execute if score #security_alarm_timer ff_hazard_rng matches ..0 run scoreboard players set #security_alarm_timer ff_hazard_rng 12
 execute if score #security_alarm_timer ff_hazard_rng matches 12 positioned -27 71 40 run playsound minecraft:block.note_block.bit master @a[distance=..20] ~ ~ ~ 3.0 1.3
