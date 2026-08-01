@@ -1,14 +1,9 @@
-# Indicator blink while curse is active.
-execute if score curse ff_hazard_active matches 1 run scoreboard players remove #curse_indicator_timer ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_indicator_timer ff_hazard_rng matches ..0 run scoreboard players set #curse_indicator_timer ff_hazard_rng 8
-execute if score curse ff_hazard_active matches 1 if score #curse_indicator_timer ff_hazard_rng matches 8 run scoreboard players add #curse_indicator ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_indicator ff_hazard_rng matches 2.. run scoreboard players set #curse_indicator ff_hazard_rng 0
-execute if score curse ff_hazard_active matches 1 if score #curse_indicator_timer ff_hazard_rng matches 8 if score #curse_indicator ff_hazard_rng matches 0 run function fossil_frights:hazard/curse/set_indicator_alert_0
-execute if score curse ff_hazard_active matches 1 if score #curse_indicator_timer ff_hazard_rng matches 8 if score #curse_indicator ff_hazard_rng matches 1 run function fossil_frights:hazard/curse/set_indicator_alert_1
-
 # Manual shutdown button for the curse room.
 execute if score #curse_manual_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #curse_manual_cooldown ff_hazard_rng 1
 execute if score curse ff_hazard_active matches 0 run return 0
+execute if score #curse_forcefield_sound ff_hazard_rng matches 1.. run scoreboard players remove #curse_forcefield_sound ff_hazard_rng 1
+execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 positioned -20 71 32 run playsound minecraft:block.note_block.chime master @a[distance=..12] ~ ~ ~ 0.35 1.35
+execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 run scoreboard players set #curse_forcefield_sound ff_hazard_rng 80
 
 # Trigger levitation once when a player enters the curse room.
 tag @a[team=ff_guard] remove ff_curse_room_now
