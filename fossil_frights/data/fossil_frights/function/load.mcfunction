@@ -160,8 +160,16 @@ scoreboard objectives add ff_cannot_trigger_lady_bug_revolutionary_until_timesta
 scoreboard objectives add ff_paint_splat_spawn_timestamp dummy
 scoreboard objectives add ff_sulfur dummy
 scoreboard objectives add ff_chorus_cola_editor dummy
+scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
+scoreboard players set #2 ff_constant 2
+scoreboard players set #3 ff_constant 3
+scoreboard players set #4 ff_constant 4
 scoreboard players set #5 ff_constant 5
+scoreboard players set #6 ff_constant 6
+scoreboard players set #7 ff_constant 7
+scoreboard players set #8 ff_constant 8
+scoreboard players set #9 ff_constant 9
 scoreboard players set #10 ff_constant 10
 scoreboard players set #16 ff_constant 16
 scoreboard players set #20 ff_constant 20
