@@ -53,6 +53,8 @@ scoreboard players set @a ff_heist_paint_fx 0
 scoreboard players set @a ff_trap_input_delay 0
 scoreboard players set @a ff_trap_warn 0
 scoreboard players set @a ff_trap_invalid 0
+scoreboard players set @a ff_trap_pickup_feedback 0
+scoreboard players set @a ff_trap_no_pickup_feedback 0
 scoreboard players set @a ff_trap_glow_phase 0
 scoreboard players set @a ff_trap_glow_timer 0
 scoreboard players set @a ff_trap_glow_cooldown 0

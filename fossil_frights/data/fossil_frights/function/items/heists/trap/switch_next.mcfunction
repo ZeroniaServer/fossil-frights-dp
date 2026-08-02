@@ -4,5 +4,7 @@ execute unless entity @s[tag=ff_trap_switched] if score @s ff_trap_selected matc
 execute unless entity @s[tag=ff_trap_switched] if score @s ff_trap_selected matches 2 run function fossil_frights:items/heists/trap/switch/from_antigravity
 execute unless entity @s[tag=ff_trap_switched] if score @s ff_trap_selected matches 3 run function fossil_frights:items/heists/trap/switch/from_jelly
 execute unless entity @s[tag=ff_trap_switched] if score @s ff_trap_selected matches 4.. run function fossil_frights:items/heists/trap/switch/from_explosive
+execute if entity @s[tag=ff_trap_switched] run playsound minecraft:item.bundle.insert player @s ~ ~ ~ 0.5 1.35
+execute unless entity @s[tag=ff_trap_switched] run tag @s remove ff_trap_place_request
 tag @s remove ff_trap_switched
-playsound minecraft:item.bundle.insert player @s ~ ~ ~ 0.5 1.35
+tag @s remove ff_trap_left_cycle
