@@ -23,7 +23,9 @@ function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/timer_bars/close
 execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
+execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard] run stopsound @s music
 execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
+execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[gamemode=spectator,tag=!ff_tutorial] run stopsound @s music
 execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start
 function fossil_frights:game/bossbar/set_day
