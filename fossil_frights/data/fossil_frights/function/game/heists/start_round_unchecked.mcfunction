@@ -20,7 +20,6 @@ scoreboard players set $heist_compass_counting ff_compass 0
 schedule clear fossil_frights:game/heists/start_reveal/next
 schedule clear fossil_frights:game/heists/start_reveal/goodluck
 schedule clear fossil_frights:game/heists/start_reveal/go
-function fossil_frights:game/heists/loot/header
 function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
@@ -44,6 +43,8 @@ execute as @a[team=ff_thief] run function fossil_frights:game/heists/loadout/thi
 execute as @a[team=ff_thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/close_release_doors
 function fossil_frights:game/heists/generate_loot
+execute if score $heist_challenge_all ff_heist matches 1 run function fossil_frights:game/heists/challenge_apply_all
+function fossil_frights:game/heists/loot/header
 function fossil_frights:game/heists/start_reveal/capture_order
 function fossil_frights:game/heists/start_reveal/hide_all
 scoreboard objectives setdisplay sidebar ff_heist_sidebar

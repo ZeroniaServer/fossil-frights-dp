@@ -90,6 +90,7 @@ scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $heist_thieves_ready ff_game_state 0
 scoreboard players set $heist_ready_click_at ff_button_unpress_timestamp -20
 scoreboard players set $heist_loot ff_heist 0
+function fossil_frights:game/heists/challenge_reset
 scoreboard players set $heist_timer ff_heist 0
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0

@@ -11,6 +11,7 @@
 | Tutorial | `/trigger ff_cmd_tutorial` |
 | Info dialog | `/trigger ff_cmd_info` |
 | Enable Fossil Heists | `/trigger ff_cmd_heists` |
+| Set a Heists challenge bounty | `/trigger ff_cmd_challenge [set <amount>] |
 | Join guard team | `/trigger ff_cmd_join_guard` |
 | Join thief team | `/trigger ff_cmd_join_thief` |
 | Return to spawn | `/trigger ff_cmd_spawn` |

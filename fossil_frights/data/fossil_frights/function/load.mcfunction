@@ -56,6 +56,7 @@ scoreboard objectives add ff_cmd_tutorial trigger
 scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives add ff_cmd_party trigger
 scoreboard objectives add ff_cmd_heists trigger
+scoreboard objectives add ff_cmd_challenge trigger
 scoreboard objectives add ff_cmd_join_guard trigger
 scoreboard objectives add ff_cmd_join_thief trigger
 scoreboard objectives add ff_cmd_spawn trigger
@@ -199,6 +200,8 @@ scoreboard players set $bat_bug_timer_heist_cfg ff_bat_bug_timer 500
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #heist_full ff_heist 12000
 scoreboard players set #heist_goal ff_heist 1000
+scoreboard players set $heist_challenge_all ff_heist 0
+scoreboard players set $heist_challenge_total ff_heist 0
 scoreboard players set #heist_tick ff_heist 20
 scoreboard players set #heist_punch_cooldown ff_heist 400
 scoreboard players set #heist_invis_duration ff_heist 160
