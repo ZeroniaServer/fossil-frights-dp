@@ -82,9 +82,9 @@ execute if score #lights_phase_now ff_hazard_rng matches 7 run playsound minecra
 execute if score #lights_phase_now ff_hazard_rng matches 7 run scoreboard players set #lights_start_phase ff_hazard_rng 0
 
 # Security Room
-execute if score #lights_phase_now ff_hazard_rng matches 7 run fill -31 76 35 -35 74 39 minecraft:redstone_lamp[lit=false] replace minecraft:glowstone
-execute if score #lights_phase_now ff_hazard_rng matches 7 run fill -31 75 31 -33 75 31 minecraft:waxed_lightning_rod[powered=true,facing=north] replace minecraft:end_rod strict
-execute if score #lights_phase_now ff_hazard_rng matches 7 run fill -31 75 30 -33 75 30 minecraft:waxed_lightning_rod[powered=true,facing=south] replace minecraft:end_rod strict
+execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 76 35 -35 74 39 minecraft:redstone_lamp[lit=false] replace minecraft:glowstone
+execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 75 31 -33 75 31 minecraft:waxed_lightning_rod[powered=true,facing=north] replace minecraft:end_rod strict
+execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 75 30 -33 75 30 minecraft:waxed_lightning_rod[powered=true,facing=south] replace minecraft:end_rod strict
 
 # Glowberry Trees
 execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40 cave_vines[berries=false] strict
