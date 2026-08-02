@@ -1,4 +1,5 @@
 execute unless score $timer_frozen ff_day matches 1 run function fossil_frights:items/heists/trap/state_tick
+function fossil_frights:items/heists/trap/common/floor_finder_watchdog
 execute if score @s ff_trap_input_delay matches 1.. run scoreboard players remove @s ff_trap_input_delay 1
 execute if score @s ff_trap_warn matches 1.. run scoreboard players remove @s ff_trap_warn 1
 execute if score @s ff_trap_invalid matches 1.. run scoreboard players remove @s ff_trap_invalid 1

@@ -5,4 +5,5 @@ scoreboard players operation @e[type=minecraft:armor_stand,tag=ff_trap_floor_fin
 scoreboard players operation @e[type=minecraft:armor_stand,tag=ff_trap_floor_finder,sort=nearest,limit=1,distance=..0.1] ff_active_uuid_2 = @s ff_active_uuid_2
 scoreboard players operation @e[type=minecraft:armor_stand,tag=ff_trap_floor_finder,sort=nearest,limit=1,distance=..0.1] ff_active_uuid_3 = @s ff_active_uuid_3
 tag @s add ff_trap_place_pending
+scoreboard players set @s ff_trap_pending_ticks 0
 schedule function fossil_frights:items/heists/trap/common/floor_finder_check 1t append
