@@ -1,6 +1,7 @@
 execute unless score $timer_frozen ff_day matches 1 run function fossil_frights:items/heists/trap/state_tick
 execute if score @s ff_trap_input_delay matches 1.. run scoreboard players remove @s ff_trap_input_delay 1
 execute if score @s ff_trap_warn matches 1.. run scoreboard players remove @s ff_trap_warn 1
+execute if score @s ff_trap_invalid matches 1.. run scoreboard players remove @s ff_trap_invalid 1
 execute if score @s ff_trap_input_delay matches ..0 if entity @s[tag=ff_trap_cycle_request] run function fossil_frights:items/heists/trap/switch_next
 execute if score @s ff_trap_input_delay matches ..0 if entity @s[tag=ff_trap_cycle_request] run function fossil_frights:items/heists/trap/restore_selected_mainhand
 execute if score @s ff_trap_input_delay matches ..0 run tag @s remove ff_trap_cycle_request
@@ -9,8 +10,9 @@ execute if score @s ff_trap_input_delay matches ..0 run tag @s remove ff_trap_pl
 execute if entity @s[tag=ff_trap_restore_pending] run function fossil_frights:items/heists/trap/restore_selected_mainhand
 tag @s remove ff_trap_restore_pending
 execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand
-execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] if score @s ff_trap_warn matches 1.. run title @s actionbar {"text":"Too close to another trap","color":"red","italic":false}
-execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] unless score @s ff_trap_warn matches 1.. run function fossil_frights:items/heists/trap/ui/show
+execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] if score @s ff_trap_warn matches 1.. unless score @s ff_trap_invalid matches 1.. run title @s actionbar {"text":"Too close to another trap","color":"red","italic":false}
+execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] if score @s ff_trap_invalid matches 1.. run title @s actionbar {"text":"Not valid block","color":"red","italic":false}
+execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] unless score @s ff_trap_warn matches 1.. unless score @s ff_trap_invalid matches 1.. run function fossil_frights:items/heists/trap/ui/show
 execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run tag @s add ff_trap_ui_active
 execute unless items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] if entity @s[tag=ff_trap_ui_active] run title @s actionbar ""
 execute unless items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run tag @s remove ff_trap_ui_active

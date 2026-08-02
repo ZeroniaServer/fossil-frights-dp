@@ -87,6 +87,7 @@ scoreboard objectives add ff_trap_explosive_cooldown dummy
 scoreboard objectives add ff_trap_ui_progress dummy
 scoreboard objectives add ff_trap_balance dummy
 scoreboard objectives add ff_trap_warn dummy
+scoreboard objectives add ff_trap_invalid dummy
 scoreboard objectives add ff_double_jump_boost_timer dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger

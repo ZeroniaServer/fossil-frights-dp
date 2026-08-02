@@ -3,6 +3,7 @@ execute if score @s ff_parkour_running matches 1.. run function fossil_frights:p
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 tag @s remove ff_in_queue
+tag @s remove ff_trap_place_pending
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
@@ -25,6 +26,8 @@ scoreboard players set @s ff_bat_bug_timer 0
 scoreboard players set @s ff_bat_bug_bar 0
 scoreboard players set @s ff_trap_selected 0
 scoreboard players set @s ff_trap_input_delay 0
+scoreboard players set @s ff_trap_warn 0
+scoreboard players set @s ff_trap_invalid 0
 scoreboard players set @s ff_trap_glow_phase 0
 scoreboard players set @s ff_trap_glow_timer 0
 scoreboard players set @s ff_trap_glow_cooldown 0

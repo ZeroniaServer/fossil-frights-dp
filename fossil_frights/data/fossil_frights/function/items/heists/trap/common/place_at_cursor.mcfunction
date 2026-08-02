@@ -1,4 +1,6 @@
 execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run scoreboard players set @s ff_trap_warn 20
+execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run function fossil_frights:items/heists/trap/common/show_bad_target
+execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run tag @s add ff_trap_restore_pending
 execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run return 0
 summon minecraft:marker ~ ~ ~ {Tags:["ff_trap"],CustomName:"trap"}
 execute if entity @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] run tag @s add ff_trap_placed

@@ -17,6 +17,8 @@ kill @e[type=minecraft:marker,tag=ff_ice_cannon]
 kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block]
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze]
 kill @e[type=minecraft:marker,tag=ff_trap]
+kill @e[type=minecraft:armor_stand,tag=ff_trap_floor_finder]
+tag @a remove ff_trap_place_pending
 tp @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] 0 -200 0
 kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
@@ -49,6 +51,8 @@ scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set @a ff_heist_paint_fx 0
 scoreboard players set @a ff_trap_input_delay 0
+scoreboard players set @a ff_trap_warn 0
+scoreboard players set @a ff_trap_invalid 0
 scoreboard players set @a ff_trap_glow_phase 0
 scoreboard players set @a ff_trap_glow_timer 0
 scoreboard players set @a ff_trap_glow_cooldown 0
