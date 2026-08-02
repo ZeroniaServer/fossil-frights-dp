@@ -1,3 +1,4 @@
+scoreboard players set $trap_ui_six ff_trap_balance 6
 function fossil_frights:items/heists/trap/ui/set_slot_glow
 function fossil_frights:items/heists/trap/ui/set_slot_freeze
 function fossil_frights:items/heists/trap/ui/set_slot_antigravity
