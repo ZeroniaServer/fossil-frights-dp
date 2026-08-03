@@ -57,6 +57,10 @@ scoreboard objectives add ff_cmd_info trigger
 scoreboard objectives add ff_cmd_party trigger
 scoreboard objectives add ff_cmd_heists trigger
 scoreboard objectives add ff_cmd_challenge trigger
+scoreboard objectives add ff_cmd_antfight trigger
+scoreboard objectives add ff_cmd_sulfurstriker trigger
+scoreboard objectives add ff_cmd_templerun trigger
+scoreboard objectives add ff_cmd_parkour trigger
 scoreboard objectives add ff_cmd_join_guard trigger
 scoreboard objectives add ff_cmd_join_thief trigger
 scoreboard objectives add ff_cmd_spawn trigger

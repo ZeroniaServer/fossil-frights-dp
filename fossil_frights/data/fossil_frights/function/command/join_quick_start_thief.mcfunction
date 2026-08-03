@@ -3,5 +3,4 @@ execute if entity @s[gamemode=spectator] run function fossil_frights:messages/er
 execute if entity @s[gamemode=spectator] run return 0
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 function fossil_frights:join/guard/enter
-function fossil_frights:game/heists/activate
-function fossil_frights:join/thief
+tag @s add ff_quick_start_thief

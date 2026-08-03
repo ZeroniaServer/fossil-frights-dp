@@ -3,7 +3,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 16 run
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 16 run spawnpoint @s -1 109 55
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
-execute if entity @s[tag=ff_fade_tp_active] run return 0
+execute if entity @s[tag=ff_fade_tp_active] unless entity @s[tag=ff_quick_start_thief] run return 0
 function fossil_frights:game/heists/setup_current_player
 function fossil_frights:join/lobby
 team join ff_thief @s

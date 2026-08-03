@@ -21,6 +21,10 @@ scoreboard players enable @s ff_cmd_info
 scoreboard players enable @s ff_cmd_party
 scoreboard players enable @s ff_cmd_heists
 scoreboard players enable @s ff_cmd_challenge
+scoreboard players enable @s ff_cmd_antfight
+scoreboard players enable @s ff_cmd_sulfurstriker
+scoreboard players enable @s ff_cmd_templerun
+scoreboard players enable @s ff_cmd_parkour
 scoreboard players enable @s ff_cmd_join_guard
 scoreboard players enable @s ff_cmd_join_thief
 scoreboard players enable @s ff_cmd_spawn
@@ -28,6 +32,7 @@ scoreboard players enable @s ff_invite_accept
 scoreboard players add @s ff_msg_cooldown 0
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
 function fossil_frights:items/other/confetti_cannon/player_tick
+execute if entity @s[tag=ff_quick_start_thief] run function fossil_frights:command/join_quick_start_thief_continue
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
 execute if entity @s[tag=ff_plushie_restore_pending] run function fossil_frights:items/plushies/restore
 tag @s[tag=ff_plushie_restore_pending] remove ff_plushie_restore_pending
@@ -73,6 +78,18 @@ execute if score @s ff_cmd_challenge matches ..-1 run scoreboard players set @s 
 execute if score @s ff_cmd_challenge matches 1.. run function fossil_frights:command/challenge
 execute if score @s ff_cmd_challenge matches 1.. run scoreboard players enable @s ff_cmd_challenge
 execute if score @s ff_cmd_challenge matches 1.. run scoreboard players set @s ff_cmd_challenge 0
+execute if score @s ff_cmd_antfight matches 1.. run function fossil_frights:command/antfight
+execute if score @s ff_cmd_antfight matches 1.. run scoreboard players enable @s ff_cmd_antfight
+execute if score @s ff_cmd_antfight matches 1.. run scoreboard players set @s ff_cmd_antfight 0
+execute if score @s ff_cmd_sulfurstriker matches 1.. run function fossil_frights:command/sulfurstriker
+execute if score @s ff_cmd_sulfurstriker matches 1.. run scoreboard players enable @s ff_cmd_sulfurstriker
+execute if score @s ff_cmd_sulfurstriker matches 1.. run scoreboard players set @s ff_cmd_sulfurstriker 0
+execute if score @s ff_cmd_templerun matches 1.. run function fossil_frights:command/templerun
+execute if score @s ff_cmd_templerun matches 1.. run scoreboard players enable @s ff_cmd_templerun
+execute if score @s ff_cmd_templerun matches 1.. run scoreboard players set @s ff_cmd_templerun 0
+execute if score @s ff_cmd_parkour matches 1.. run function fossil_frights:command/parkour
+execute if score @s ff_cmd_parkour matches 1.. run scoreboard players enable @s ff_cmd_parkour
+execute if score @s ff_cmd_parkour matches 1.. run scoreboard players set @s ff_cmd_parkour 0
 execute if score @s ff_cmd_join_guard matches 1.. run function fossil_frights:command/join_guard
 execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players enable @s ff_cmd_join_guard
 execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players set @s ff_cmd_join_guard 0
