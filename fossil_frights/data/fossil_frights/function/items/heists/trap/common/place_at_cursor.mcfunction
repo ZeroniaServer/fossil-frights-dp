@@ -1,12 +1,6 @@
-execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run scoreboard players set @s ff_trap_warn 20
-execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run function fossil_frights:items/heists/trap/common/show_bad_target
-execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run tag @s add ff_trap_restore_pending
-execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run return 0
-summon minecraft:marker ~ ~ ~ {Tags:["ff_trap"],CustomName:"trap"}
-execute if entity @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] run tag @s add ff_trap_placed
-scoreboard players set @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] ff_glowtrap_age 0
-scoreboard players set @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] ff_glowtrap_fx 0
-scoreboard players operation @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] ff_trap_type = @s ff_trap_selected
-execute if entity @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] run function fossil_frights:items/heists/trap/common/copy_owner_to_marker
-execute as @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] at @s run function fossil_frights:items/heists/trap/placed
-execute if entity @e[type=minecraft:marker,tag=ff_trap,sort=nearest,limit=1,distance=..0.35] run playsound minecraft:block.amethyst_block.place player @a[team=ff_guard] ~ ~ ~ 0.8 1.4
+# Probe the placement position, rather than the guard's position, against the basement volume.
+summon minecraft:marker ~ ~ ~ {Tags:["ff_trap_placement_probe"]}
+execute as @e[type=minecraft:marker,tag=ff_trap_placement_probe,sort=nearest,limit=1,distance=..0.1] if entity @s[x=-33,y=68,z=9,dx=39,dy=9,dz=58] run tag @s add ff_trap_placement_probe.basement
+execute if entity @e[type=minecraft:marker,tag=ff_trap_placement_probe,tag=ff_trap_placement_probe.basement,distance=..0.1] run function fossil_frights:items/heists/trap/common/place_at_cursor/basement
+execute unless entity @e[type=minecraft:marker,tag=ff_trap_placement_probe,tag=ff_trap_placement_probe.basement,distance=..0.1] run function fossil_frights:items/heists/trap/common/place_at_cursor/finish
+kill @e[type=minecraft:marker,tag=ff_trap_placement_probe,distance=..0.1]
