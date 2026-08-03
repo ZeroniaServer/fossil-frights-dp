@@ -11,6 +11,7 @@ execute unless entity @s[team=ff_thief] run return 0
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/challenge_before_start
 execute if score $heist_round_active ff_game_state matches 1 run return 0
 execute if score @s ff_cmd_challenge matches 1 run return run function fossil_frights:game/heists/challenge_set_goal {amount:1500}
+execute if score @s ff_cmd_challenge matches 1000 run return run function fossil_frights:game/heists/challenge_set_goal {amount:1000}
 execute if score @s ff_cmd_challenge matches 1250 run return run function fossil_frights:game/heists/challenge_set_goal {amount:1250}
 execute if score @s ff_cmd_challenge matches 1500 run return run function fossil_frights:game/heists/challenge_set_goal {amount:1500}
 execute if score @s ff_cmd_challenge matches 1750 run return run function fossil_frights:game/heists/challenge_set_goal {amount:1750}
