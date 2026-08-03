@@ -97,6 +97,8 @@ scoreboard objectives add ff_trap_pickup_feedback dummy
 scoreboard objectives add ff_trap_no_pickup_feedback dummy
 scoreboard objectives add ff_trap_pending_ticks dummy
 scoreboard objectives add ff_double_jump_boost_timer dummy
+scoreboard objectives add ff_double_jump_cooldown dummy
+scoreboard objectives add ff_double_jump_ground_ticks dummy
 scoreboard objectives add ff_invite_sel trigger
 scoreboard objectives add ff_invite_accept trigger
 scoreboard objectives add ff_tutorial dummy

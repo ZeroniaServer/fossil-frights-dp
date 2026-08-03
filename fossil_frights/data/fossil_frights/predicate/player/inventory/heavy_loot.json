@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/biplane" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/crab" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/raptor_skull" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/treasure_chest" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/t_rex_skull" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/vault" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/velociraptor_statue" },
+    { "condition": "minecraft:reference", "name": "fossil_frights:player/inventory/warden" }
+  ]
+}
