@@ -1,21 +1,21 @@
-particle dust{color:0xFF0000,scale:1} ~-0.5 ~0.05 ~-0.5 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.4 ~0.05 ~-0.4 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.3 ~0.05 ~-0.3 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.2 ~0.05 ~-0.2 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.1 ~0.05 ~-0.1 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.0 ~0.05 ~0.0 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.1 ~0.05 ~0.1 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.2 ~0.05 ~0.2 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.3 ~0.05 ~0.3 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.4 ~0.05 ~0.4 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.5 ~0.05 ~0.5 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.5 ~0.05 ~-0.5 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.4 ~0.05 ~-0.4 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.3 ~0.05 ~-0.3 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.2 ~0.05 ~-0.2 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~0.1 ~0.05 ~-0.1 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.1 ~0.05 ~0.1 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.2 ~0.05 ~0.2 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.3 ~0.05 ~0.3 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.4 ~0.05 ~0.4 0 0 0 0 1
-particle dust{color:0xFF0000,scale:1} ~-0.5 ~0.05 ~0.5 0 0 0 0 1
+particle dust{color:0xFF0000,scale:1} ~-0.5 ~0.05 ~-0.5 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.4 ~0.05 ~-0.4 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.3 ~0.05 ~-0.3 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.2 ~0.05 ~-0.2 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.1 ~0.05 ~-0.1 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.0 ~0.05 ~0.0 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.1 ~0.05 ~0.1 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.2 ~0.05 ~0.2 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.3 ~0.05 ~0.3 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.4 ~0.05 ~0.4 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.5 ~0.05 ~0.5 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.5 ~0.05 ~-0.5 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.4 ~0.05 ~-0.4 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.3 ~0.05 ~-0.3 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.2 ~0.05 ~-0.2 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~0.1 ~0.05 ~-0.1 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.1 ~0.05 ~0.1 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.2 ~0.05 ~0.2 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.3 ~0.05 ~0.3 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.4 ~0.05 ~0.4 0 0 0 0 1 force @s[team=ff_guard]
+particle dust{color:0xFF0000,scale:1} ~-0.5 ~0.05 ~0.5 0 0 0 0 1 force @s[team=ff_guard]
