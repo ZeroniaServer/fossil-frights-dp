@@ -1,0 +1,10 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "asset_id": "fossil_frights:hidden_invisimask",
+      "camera_overlay": "fossil-frights:overlays/paint"
+    }
+  }
+}

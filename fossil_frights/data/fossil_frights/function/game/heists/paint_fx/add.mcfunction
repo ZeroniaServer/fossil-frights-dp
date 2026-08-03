@@ -1,5 +1,5 @@
 scoreboard players set @s ff_heist_paint_fx 200
-function fossil_frights:game/heists/paint_fx/show_title
+function fossil_frights:game/heists/paint_fx/overlay_show
 
 execute if items entity @s armor.feet * run item modify entity @s armor.feet fossil_frights:game/heists/add_paint
 execute if items entity @s armor.legs * run item modify entity @s armor.legs fossil_frights:game/heists/add_paint
