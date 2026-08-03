@@ -4,5 +4,5 @@ execute unless entity @s[tag=ff_lobby_music_restart] run return 0
 # stopsound @s record fossil-frights:music_loop.temple_run
 playsound fossil-frights:music_loop.temple_run record @s
 stopsound @s music
-scoreboard players set @s ff_lobby_music_ticks 698
+scoreboard players set @s ff_lobby_music_ticks 699
 tag @s remove ff_lobby_music_restart
