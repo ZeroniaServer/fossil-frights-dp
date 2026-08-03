@@ -1,1 +1,1 @@
-tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"text":"Challenge may only be triggered before the game has begun.","color":"red"}]}
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.challenge_before_start"}]}

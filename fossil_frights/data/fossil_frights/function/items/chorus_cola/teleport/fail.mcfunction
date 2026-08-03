@@ -1,1 +1,1 @@
-tellraw @s {color:"red",text:"Teleport failed! No space was found nearby"}
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.chorus_cola_teleport_failed"}]}

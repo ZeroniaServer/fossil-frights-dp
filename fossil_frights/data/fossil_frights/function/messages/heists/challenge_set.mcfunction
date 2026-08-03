@@ -1,1 +1,1 @@
-tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"selector":"@s","color":"yellow"}]},{"text":" set the bounty to $","color":"yellow"},{"score":{"name":"#heist_goal","objective":"ff_heist"},"color":"yellow"},{"text":" for a challenge.","color":"yellow"}]
+tellraw @a {"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.challenge_set","with":[{"selector":"@s","color":"yellow"},{"score":{"name":"#heist_goal","objective":"ff_heist"},"color":"yellow"}]}]}

@@ -1,1 +1,1 @@
-tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"selector":"@s","color":"yellow"}]},{"text":" has set the maximum bounty for a challenge.","color":"yellow"}]
+tellraw @a {"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.info.challenge_max","with":[{"selector":"@s","color":"yellow"}]}]}
