@@ -33,10 +33,10 @@ execute if score $settings_mode ff_game_state matches 2 run data modify entity @
 
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value ""
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value ""
-execute if score $settings_mode ff_game_state matches 0 if score $settings_guard_count ff_game_state matches ..1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value [{text:"sᴏʟᴏ",color:"white"}]
-execute if score $settings_mode ff_game_state matches 0 if score $settings_guard_count ff_game_state matches 2.. run data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value [{text:"ᴅᴜᴏs",color:"white"}]
-execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value [{text:"ᴘʟᴀʏᴇʀs: ",color:"white"},{score:{name:"$settings_guard_count",objective:"ff_game_state"},color:"yellow"}]
-execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value [{text:"ɢᴜᴀʀᴅs: ",color:"gold"},{score:{name:"$settings_guard_count",objective:"ff_game_state"},color:"white"},{text:"\nᴛʜɪᴇᴠᴇs: ",color:"red"},{score:{name:"$settings_thief_count",objective:"ff_game_state"},color:"white"}]
+execute if score $settings_mode ff_game_state matches 0 if score $settings_guard_count ff_game_state matches ..1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value {translate:"ff.settings.board.players.solo",color:"white"}
+execute if score $settings_mode ff_game_state matches 0 if score $settings_guard_count ff_game_state matches 2.. run data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value {translate:"ff.settings.board.players.duos",color:"white"}
+execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value {translate:"ff.settings.board.players.party",color:"white",with:[{score:{name:"$settings_guard_count",objective:"ff_game_state"},color:"yellow"}]}
+execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value {translate:"ff.settings.board.players.heists",color:"white",with:[{score:{name:"$settings_guard_count",objective:"ff_game_state"},color:"gold"},{score:{name:"$settings_thief_count",objective:"ff_game_state"},color:"red"}]}
 
 function fossil_frights:game/start_room/settings/board/refresh_heads
 function fossil_frights:game/start_room/settings/board/refresh_settings
