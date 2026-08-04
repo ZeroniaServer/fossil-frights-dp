@@ -20,6 +20,6 @@ execute if score $heist_round_active ff_game_state matches 0 unless entity @a[li
 execute if score $heist_round_active ff_game_state matches 0 unless entity @a[limit=1,tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 11800 run function fossil_frights:messages/game/idle_warning_ten_seconds
 execute if score $heist_round_active ff_game_state matches 0 if entity @a[limit=1,tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 3600.. run function fossil_frights:game/reset
 execute if score $heist_round_active ff_game_state matches 0 unless entity @a[limit=1,tag=ff_in_queue] if score $heist_wait_ticks ff_heist matches 12000.. run function fossil_frights:game/reset
-execute if score $heist_round_active ff_game_state matches 0 if score $heist_players_ready ff_game_state matches 1 if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/heists/start_round
+execute if score $heist_round_active ff_game_state matches 0 if score $heist_button_lock ff_game_state matches 0 if score $heist_players_ready ff_game_state matches 1 if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/heists/start_round
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/round_tick
 function fossil_frights:game/start_room/day_button/refresh
