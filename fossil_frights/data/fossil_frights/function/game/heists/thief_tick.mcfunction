@@ -25,5 +25,7 @@ execute unless score lights ff_hazard_active matches 1 run effect clear @s minec
 execute if score floods ff_hazard_active matches 1 run effect give @s minecraft:dolphins_grace 2 0 true
 execute if score lava ff_hazard_active matches 1 run effect give @s minecraft:fire_resistance 2 0 true
 function fossil_frights:game/heists/heavy_loot/hold_check
+execute if entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/reduce
+execute unless entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/restore
 execute if score $holding_heavy ff_game_state matches 0 unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
-execute unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:friction_modifier base reset
+execute unless entity @s[tag=ff_ice_frozen] unless score $holding_heavy ff_game_state matches 1 run attribute @s minecraft:air_drag_modifier base reset

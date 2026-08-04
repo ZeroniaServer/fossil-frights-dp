@@ -1,4 +1,6 @@
 scoreboard players add @s ff_heist_deaths_round 1
+attribute @s minecraft:air_drag_modifier base reset
+function fossil_frights:game/heists/jump_boost/restore
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 function fossil_frights:game/heists/paint_fx/clear
 function fossil_frights:items/heists/camera_remote/exit

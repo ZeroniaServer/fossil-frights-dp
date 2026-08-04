@@ -30,6 +30,7 @@ execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base s
 execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range base set 3
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
+execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset
 execute as @a[team=ff_guard] run attribute @s minecraft:jump_strength base set 0.42
 execute as @a[team=ff_thief] run attribute @s minecraft:jump_strength base set 0.42
 scoreboard players set @a ff_heist_punch_cd 0
@@ -76,6 +77,7 @@ scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_ice_frozen
+execute as @a[tag=ff_pteranadon_jump_reduced] run function fossil_frights:game/heists/jump_boost/restore
 execute as @a run function fossil_frights:items/heists/ice_cannon/overlay_hide
 execute as @a run function fossil_frights:game/heists/paint_fx/clear
 tag @a remove ff_heist_stat_winner
