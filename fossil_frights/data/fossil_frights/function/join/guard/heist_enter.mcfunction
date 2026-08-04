@@ -4,7 +4,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 15 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
-function fossil_frights:game/heists/setup_current_player
+function fossil_frights:game/heists/setup/current_player
 function fossil_frights:join/lobby
 team join ff_guard @s
 function fossil_frights:game/heists/loadout/guard

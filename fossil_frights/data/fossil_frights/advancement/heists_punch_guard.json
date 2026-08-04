@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:game/heists/punch_guard"
+    "function": "fossil_frights:game/heists/punch/guard"
   }
 }

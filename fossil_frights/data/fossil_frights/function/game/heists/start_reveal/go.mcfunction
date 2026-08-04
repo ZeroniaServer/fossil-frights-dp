@@ -16,5 +16,5 @@ time of minecraft:overworld resume
 time set 13000
 scoreboard players set $time_anim_active ff_day 0
 scoreboard players set $timer_frozen ff_day 0
-function fossil_frights:game/heists/update_timer_display
+function fossil_frights:game/heists/timer/update_display
 function fossil_frights:messages/heists/started

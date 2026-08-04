@@ -13,7 +13,7 @@ scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[team=ff_guard] run function fossil_frights:key/refresh
 function fossil_frights:tasks/reset
 function fossil_frights:compass/markers/sync
-function fossil_frights:game/worldborder/reset
+function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/bossbar/set_break
 execute as @a[team=ff_guard] run title @s actionbar {"text":"Custom day complete","color":"gold","italic":false}

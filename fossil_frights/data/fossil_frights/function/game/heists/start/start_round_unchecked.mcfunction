@@ -43,8 +43,8 @@ scoreboard players set @a[team=ff_thief] ff_heist_stolen_keys 0
 execute as @a[team=ff_thief] run function fossil_frights:game/heists/loadout/thief
 execute as @a[team=ff_thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/close_release_doors
-function fossil_frights:game/heists/generate_loot
-execute if score $heist_challenge_all ff_heist matches 1 run function fossil_frights:game/heists/challenge_apply_all
+function fossil_frights:game/heists/items/generate_loot
+execute if score $heist_challenge_all ff_heist matches 1 run function fossil_frights:game/heists/challenge/apply_all
 function fossil_frights:game/heists/loot/header
 function fossil_frights:game/heists/start_reveal/capture_order
 function fossil_frights:game/heists/start_reveal/hide_all

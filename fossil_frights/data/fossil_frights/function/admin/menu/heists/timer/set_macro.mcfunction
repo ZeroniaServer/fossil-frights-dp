@@ -8,5 +8,5 @@ scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist
 scoreboard players operation $heist_elapsed ff_heist -= $heist_timer ff_heist
 execute store result bossbar fossil_frights:bossbar value run scoreboard players get $heist_elapsed ff_heist
 scoreboard players set $idle_ticks ff_game_state 0
-function fossil_frights:game/heists/update_timer_display
+function fossil_frights:game/heists/timer/update_display
 function fossil_frights:admin/menu/heists/timer/show

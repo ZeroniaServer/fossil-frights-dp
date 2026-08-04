@@ -11,5 +11,5 @@ execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players op
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players operation @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_uuid_1 = @s ff_active_uuid_1
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players operation @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_uuid_2 = @s ff_active_uuid_2
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players operation @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_uuid_3 = @s ff_active_uuid_3
-execute as @a[tag=ff_heist_kill_target,limit=1] run function fossil_frights:game/heists/night_stick_hit_apply
+execute as @a[tag=ff_heist_kill_target,limit=1] run function fossil_frights:game/heists/items/night_stick_hit_apply
 tag @a[tag=ff_heist_kill_target] remove ff_heist_kill_target

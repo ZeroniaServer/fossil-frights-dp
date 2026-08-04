@@ -7,8 +7,8 @@ execute unless score $party_mode_active ff_game_state matches 1 if score $day_cu
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
 fill -5 68 8 -3 68 8 air
-function fossil_frights:game/reset_hazards
-function fossil_frights:game/cleanup_dropped_items
+function fossil_frights:game/reset/hazards
+function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/final/final_task/close_lab_door
 function fossil_frights:tasks/final/final_task/reset
@@ -16,7 +16,7 @@ function fossil_frights:game/bossbar/clear
 function fossil_frights:animations/game_start/stop
 execute unless score $defeat_anim ff_game_state matches 1 run function fossil_frights:animations/defeat/stop
 function fossil_frights:animations/credits/cleanup
-function fossil_frights:game/worldborder/reset
+function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/timer/reset
 function fossil_frights:animations/door/open
@@ -32,7 +32,7 @@ function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
-function fossil_frights:game/heists/reset_blocks
+function fossil_frights:game/heists/reset/blocks
 stopsound @a record fossil-frights:heists.music
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift
@@ -40,7 +40,7 @@ stopsound @a record fossil-frights:ff_night_shift
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 function fossil_frights:messages/game/exit_day_reached
-function fossil_frights:game/reset_spectators
+function fossil_frights:game/reset/spectators
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[team=ff_guard]
 gamemode adventure @a[team=ff_thief]
@@ -102,7 +102,7 @@ tag @a[team=ff_thief] remove ff_map_auto_given
 team join ff_lobby @a[team=ff_guard]
 team join ff_lobby @a[team=ff_thief]
 function fossil_frights:game/party/reset
-function fossil_frights:game/heists/reset
+function fossil_frights:game/heists/reset/main
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 0

@@ -6,13 +6,13 @@ execute if entity @s[tag=ff_tp_dispatch,tag=ff_join_start_teleport] if score @s 
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s remove ff_join_start_teleport
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
-execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start_round
+execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start/start_round
 execute unless entity @a[limit=1,team=ff_guard] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[limit=1,team=ff_guard] run return 0
 
 function fossil_frights:tasks/bookcase/clear
-function fossil_frights:game/cleanup_dropped_items
-function fossil_frights:game/reset_hazards
+function fossil_frights:game/reset/cleanup_dropped_items
+function fossil_frights:game/reset/hazards
 function fossil_frights:tasks/reset
 function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
@@ -21,7 +21,7 @@ function fossil_frights:tasks/final/final_task/reset
 function fossil_frights:game/bossbar/setup
 function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup
-function fossil_frights:game/worldborder/reset
+function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh

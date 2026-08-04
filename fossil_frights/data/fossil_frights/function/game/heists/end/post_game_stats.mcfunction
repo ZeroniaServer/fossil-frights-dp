@@ -20,8 +20,8 @@ execute if score $heist_thieves_killed_round_max ff_heist_thieves_killed_round m
 execute unless score $heist_post_game_any ff_heist matches 1.. run return 0
 
 tellraw @a {"translate":"ff.heists.stats.title","color":"gold"}
-execute if score $heist_loot_captured_round_max ff_heist_loot_captured_round matches 1.. run function fossil_frights:game/heists/post_game_stats/line_loot
-execute if score $heist_keys_stolen_round_max ff_heist_keys_stolen_round matches 1.. run function fossil_frights:game/heists/post_game_stats/line_keys
-execute if score $heist_deaths_round_max ff_heist_deaths_round matches 1.. run function fossil_frights:game/heists/post_game_stats/line_deaths
-execute if score $heist_thieves_killed_round_max ff_heist_thieves_killed_round matches 1.. run function fossil_frights:game/heists/post_game_stats/line_kills
+execute if score $heist_loot_captured_round_max ff_heist_loot_captured_round matches 1.. run function fossil_frights:game/heists/end/post_game_stats/line_loot
+execute if score $heist_keys_stolen_round_max ff_heist_keys_stolen_round matches 1.. run function fossil_frights:game/heists/end/post_game_stats/line_keys
+execute if score $heist_deaths_round_max ff_heist_deaths_round matches 1.. run function fossil_frights:game/heists/end/post_game_stats/line_deaths
+execute if score $heist_thieves_killed_round_max ff_heist_thieves_killed_round matches 1.. run function fossil_frights:game/heists/end/post_game_stats/line_kills
 tellraw @a {"translate":"ff.heists.stats.separator","color":"gold"}

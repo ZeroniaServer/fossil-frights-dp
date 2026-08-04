@@ -15,7 +15,7 @@ execute if score @s ff_heist_paint_fx matches 1.. run tag @s remove ff_paint_ove
 execute if score @s ff_heist_paint_fx matches 1.. run item modify entity @s armor.head fossil_frights:game/heists/paint_overlay/show_hidden
 execute if score @s ff_heist_paint_fx matches 1.. run tag @s add ff_paint_overlay
 execute unless score @s ff_heist_paint_fx matches 1.. run item modify entity @s armor.head fossil_frights:game/heists/invisimask/hide
-function fossil_frights:game/heists/reward_key
-function fossil_frights:game/give_dinocoin
+function fossil_frights:game/heists/items/reward_key
+function fossil_frights:game/rewards/give_dinocoin
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.8 1.8
 particle minecraft:cloud ~ ~1 ~ 0.25 0.35 0.25 0.02 20

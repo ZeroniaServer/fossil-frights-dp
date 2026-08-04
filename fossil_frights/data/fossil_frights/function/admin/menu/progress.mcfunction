@@ -7,5 +7,5 @@ execute unless score $game_running ff_game_state matches 1 run function fossil_f
 function fossil_frights:admin/menu/mark_modified
 scoreboard players set $admin_was_day_active ff_gui 0
 execute if score $day_active ff_day matches 1 run scoreboard players set $admin_was_day_active ff_gui 1
-execute if score $admin_was_day_active ff_gui matches 1 run function fossil_frights:game/day_completed
-execute if score $admin_was_day_active ff_gui matches 0 run function fossil_frights:game/next_day
+execute if score $admin_was_day_active ff_gui matches 1 run function fossil_frights:game/frights/day/completed
+execute if score $admin_was_day_active ff_gui matches 0 run function fossil_frights:game/frights/day/next

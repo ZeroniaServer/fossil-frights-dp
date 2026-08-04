@@ -6,8 +6,8 @@ scoreboard players add @s ff_heist_keyed_loot_captured_round 0
 scoreboard players add @s ff_heist_regen_lock 0
 scoreboard players add @s ff_heist_thaw_fx 0
 scoreboard players add @s ff_heist_paint_fx 0
-execute if score @s ff_heist_punch_cd matches 1.. if score @s ff_msg_cooldown matches 0 run function fossil_frights:game/heists/show_punch_cooldown
-execute if score @s ff_heist_punch_cd matches 1.. if score @s ff_heist_punch_fx matches ..0 run function fossil_frights:game/heists/punch_cooldown_particle
+execute if score @s ff_heist_punch_cd matches 1.. if score @s ff_msg_cooldown matches 0 run function fossil_frights:game/heists/punch/show_cooldown
+execute if score @s ff_heist_punch_cd matches 1.. if score @s ff_heist_punch_fx matches ..0 run function fossil_frights:game/heists/punch/cooldown_particle
 execute if score @s ff_heist_punch_cd matches 1.. run scoreboard players remove @s ff_heist_punch_cd 1
 execute if score @s ff_heist_punch_cd matches 1.. run scoreboard players remove @s ff_heist_punch_fx 1
 execute if score @s ff_heist_punch_cd matches 0 run scoreboard players set @s ff_heist_punch_fx 0

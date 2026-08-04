@@ -4,7 +4,7 @@ function fossil_frights:game/heists/tick
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
 function fossil_frights:game/timer/tick
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $heist_button_lock ff_game_state matches 0 if score $party_button_lock ff_game_state matches 0 unless score $defeat_lock ff_game_state matches 1.. if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/next_day
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $heist_button_lock ff_game_state matches 0 if score $party_button_lock ff_game_state matches 0 unless score $defeat_lock ff_game_state matches 1.. if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/frights/day/next
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 run scoreboard players add $day_flash ff_day 1
 execute if score $day_flash ff_day matches 20.. run scoreboard players set $day_flash ff_day 0
 execute unless score $game_running ff_game_state matches 1 run scoreboard players set $day_flash ff_day 0
@@ -39,7 +39,7 @@ execute if score $game_running ff_game_state matches 1 if score $day_active ff_d
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 4800..5999 run scoreboard players operation $day_sound_tmp ff_day %= #ticks_per_second ff_constant
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 4800..5999 if score $day_sound_tmp ff_day matches 0 if score $settings_music_off ff_game_state matches 1 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1.5 1
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:tasks/hazard/tick
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:game/worldborder/update_warning
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:game/frights/worldborder/update_warning
 execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 run function fossil_frights:messages/bossbar/update_day_name
 function fossil_frights:game/start_room/day_tracker/refresh
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/day_timeout
+execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/timeout/day

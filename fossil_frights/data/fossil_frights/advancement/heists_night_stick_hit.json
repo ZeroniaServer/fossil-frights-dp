@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:game/heists/night_stick_hit"
+    "function": "fossil_frights:game/heists/items/night_stick_hit"
   }
 }

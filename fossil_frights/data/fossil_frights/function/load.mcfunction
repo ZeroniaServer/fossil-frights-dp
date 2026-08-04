@@ -357,7 +357,6 @@ scoreboard players set $lb_pending ff_active_uuid_3 0
 scoreboard objectives modify ff_task_tracker numberformat blank
 scoreboard objectives modify ff_heist numberformat styled {"color":"gold"}
 scoreboard objectives modify ff_heist_sidebar numberformat blank
-function fossil_frights:game/apply_gamerules
 team add ff_guard
 team modify ff_guard color gold
 team modify ff_guard friendlyFire false
@@ -450,14 +449,30 @@ function fossil_frights:temple_run/load
 function fossil_frights:ant_fight/load
 function fossil_frights:sulfur_strikers/load
 function fossil_frights:rollercoaster/load
-function fossil_frights:game/worldborder/reset
+function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
 function fossil_frights:leaderboards/load
 function fossil_frights:animations/deep_dark_elevator/load
-function fossil_frights:game/reload_reset
+function fossil_frights:game/reset/reload
 execute in minecraft:overworld run forceload add 0 0
 execute in minecraft:overworld run forceload add -112 -96 191 100
 execute in minecraft:overworld run forceload add -112 101 191 271
+gamerule minecraft:fire_spread_radius_around_player 0
+gamerule minecraft:mob_griefing false
+gamerule minecraft:random_tick_speed 0
+gamerule minecraft:send_command_feedback false
+gamerule minecraft:command_block_output false
+gamerule minecraft:show_advancement_messages false
+gamerule minecraft:spawn_mobs false
+gamerule minecraft:spawn_patrols false
+gamerule minecraft:spawn_wandering_traders false
+gamerule minecraft:raids false
+gamerule minecraft:spawn_phantoms false
+gamerule minecraft:natural_health_regeneration true
+gamerule minecraft:advance_weather false
+gamerule minecraft:locator_bar true
+gamerule minecraft:mob_drops false
+gamerule minecraft:advance_time true
