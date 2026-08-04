@@ -20,7 +20,7 @@ function fossil_frights:tasks/reset
 function fossil_frights:compass/markers/sync
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
-execute if score $day_current ff_day matches 10 run function fossil_frights:game/timer/freeze
+execute if score $day_current ff_day matches 10 run function fossil_frights:game/frights/timer/freeze
 execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day matches ..24000 as @a[team=ff_guard] run advancement grant @s only fossil_frights:02_achievements/twenty_minute_club
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_time

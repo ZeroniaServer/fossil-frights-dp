@@ -18,7 +18,7 @@ execute unless score $defeat_anim ff_game_state matches 1 run function fossil_fr
 function fossil_frights:animations/credits/cleanup
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
-function fossil_frights:game/timer/reset
+function fossil_frights:game/frights/timer/reset
 function fossil_frights:animations/door/open
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset

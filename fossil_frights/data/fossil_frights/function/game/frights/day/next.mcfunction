@@ -26,7 +26,7 @@ execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_g
 execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_guard] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator,tag=!ff_tutorial] run stopsound @s music
 execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
-execute if score $day_current ff_day matches 1 run function fossil_frights:game/timer/start
+execute if score $day_current ff_day matches 1 run function fossil_frights:game/frights/timer/start
 function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh

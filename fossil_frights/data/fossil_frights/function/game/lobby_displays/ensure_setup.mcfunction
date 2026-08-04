@@ -1,7 +1,7 @@
 function fossil_frights:command/info_board/setup
 function fossil_frights:command/info/lectern_setup
-function fossil_frights:game/timer/setup
-function fossil_frights:game/timer/update_display
+function fossil_frights:game/frights/timer/setup
+function fossil_frights:game/frights/timer/update_display
 function fossil_frights:game/start_room/day_tracker/setup
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/setup

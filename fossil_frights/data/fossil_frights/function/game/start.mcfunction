@@ -23,7 +23,7 @@ function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/reset
-function fossil_frights:game/timer/reset
+function fossil_frights:game/frights/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/glass_box/reset
 function fossil_frights:animations/door/close
