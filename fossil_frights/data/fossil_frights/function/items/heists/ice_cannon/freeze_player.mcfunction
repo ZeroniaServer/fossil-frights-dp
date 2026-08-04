@@ -1,3 +1,4 @@
+execute if score lava ff_hazard_active matches 1 run function fossil_frights:items/heists/ice_cannon/lava_hit_player
 execute if score lava ff_hazard_active matches 1 run damage @s 1 minecraft:freeze
 execute if score lava ff_hazard_active matches 1 run return 0
 execute if entity @s[tag=ff_ice_frozen] run return 0
