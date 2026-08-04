@@ -1,4 +1,5 @@
 execute unless function fossil_frights:game/start_room/settings/gamemode/can_change run return 0
+execute unless function fossil_frights:game/start_room/settings/gamemode/rate_limit run return 0
 scoreboard players operation $settings_saved_game_running ff_game_state = $game_running ff_game_state
 scoreboard players operation $settings_saved_day_active ff_day = $day_active ff_day
 scoreboard players operation $settings_saved_day_current ff_day = $day_current ff_day
