@@ -1,5 +1,6 @@
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $active_set ff_game_state matches 0 run return 0
+execute if score $party_sync_grace ff_game_state matches 1.. run return run function fossil_frights:game/party/sync_grace
 execute as @a run function fossil_frights:game/party/sync_store_uuid
 tag @e[type=minecraft:marker,tag=ff_run_member] remove ff_run_member_online
 execute as @a run function fossil_frights:game/party/sync_player

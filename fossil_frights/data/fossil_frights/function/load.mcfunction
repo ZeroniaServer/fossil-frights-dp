@@ -33,6 +33,7 @@ scoreboard objectives add ff_door_target dummy
 scoreboard objectives add ff_door_tick dummy
 scoreboard objectives add ff_door_delay dummy
 scoreboard objectives add ff_game_state dummy
+scoreboard objectives add ff_party_sync_grace dummy
 scoreboard objectives add ff_map_region dummy
 scoreboard objectives add ff_active_uuid_0 dummy
 scoreboard objectives add ff_active_uuid_1 dummy

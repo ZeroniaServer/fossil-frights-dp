@@ -12,7 +12,9 @@ execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exi
 execute if entity @s[tag=ff_in_queue] run function fossil_frights:join/queue/remove_player
 tag @s remove ff_forced_spectate
 tag @s remove ff_fade_tutorial_exit
+tag @s add ff_invite_join_source
 function fossil_frights:join/guard
+tag @s remove ff_invite_join_source
 gamemode adventure @s
 attribute @s minecraft:scale base set 1
 function fossil_frights:player/protection_disable

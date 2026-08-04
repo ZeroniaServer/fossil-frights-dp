@@ -1,4 +1,5 @@
 tag @s add ff_invite_caller
+function fossil_frights:game/party/add_current_if_missing
 scoreboard players set $invite_found ff_gui 0
 execute store result score $invite_uuid_0 ff_active_uuid_0 run data get storage fossil_frights:invite selected.uuid[0] 1
 execute store result score $invite_uuid_1 ff_active_uuid_1 run data get storage fossil_frights:invite selected.uuid[1] 1

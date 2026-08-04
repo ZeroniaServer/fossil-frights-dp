@@ -7,6 +7,7 @@ execute if score $party_member_count ff_game_state matches 2.. run function foss
 execute if score $party_member_count ff_game_state matches 2.. run return 0
 execute if score $invite_pending ff_game_state matches 1 run function fossil_frights:messages/duos/invite_already_sent
 execute if score $invite_pending ff_game_state matches 1 run return 0
+function fossil_frights:game/party/add_current_if_missing
 scoreboard players operation $invite_slot ff_gui = @s ff_invite_sel
 scoreboard players remove $invite_slot ff_gui 1
 execute store result storage fossil_frights:invite selected_slot int 1 run scoreboard players get $invite_slot ff_gui

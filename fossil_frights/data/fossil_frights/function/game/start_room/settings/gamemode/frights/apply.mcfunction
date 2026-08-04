@@ -7,8 +7,9 @@ function fossil_frights:game/start_room/settings/gamemode/remove_other_players
 function fossil_frights:game/start_room/settings/gamemode/reset_frights_loadout
 execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/reset
 execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:animations/door/close
-execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/start_room/locked_door/clear
-execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/party/reset
+function fossil_frights:game/party/reset
+function fossil_frights:game/start_room/locked_door/show
+function fossil_frights:game/party/add_current_if_missing
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
