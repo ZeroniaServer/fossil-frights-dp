@@ -16,3 +16,4 @@ execute unless entity @e[type=minecraft:text_display,tag=ff_day_tracker,limit=1]
 execute unless entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:interaction,tag=ff_settings_mode_frights_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute unless entity @e[type=minecraft:interaction,tag=ff_start_room_setting_randomizer_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
+execute unless entity @e[type=minecraft:text_display,tag=ff_settings_mode_frights_icon,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0

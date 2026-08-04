@@ -1,6 +1,7 @@
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_primary_head,limit=1] text set value ""
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_add_player_icon,limit=1] text set value ""
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_add_player_icon,limit=1] transformation.scale set value [1f,1f,1f]
+tp @e[type=minecraft:text_display,tag=ff_settings_add_player_icon,limit=1] 16.125625 72.25 25.84375
 execute if score $settings_mode ff_game_state matches 0 if score $settings_locked ff_game_state matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_add_player_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data remove storage fossil_frights:settings primary
 data remove storage fossil_frights:settings secondary
