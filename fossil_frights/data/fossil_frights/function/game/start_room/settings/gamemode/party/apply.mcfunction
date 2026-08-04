@@ -3,6 +3,7 @@ scoreboard players operation $settings_saved_game_running ff_game_state = $game_
 scoreboard players operation $settings_saved_day_active ff_day = $day_active ff_day
 scoreboard players operation $settings_saved_day_current ff_day = $day_current ff_day
 function fossil_frights:game/start_room/settings/gamemode/remove_other_players
+function fossil_frights:game/start_room/settings/gamemode/reset_frights_loadout
 execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:game/heists/reset
 execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/party/reset
 scoreboard players set $party_mode_active ff_game_state 0
