@@ -2,7 +2,7 @@ scoreboard players set $active ff_active_uuid_0 0
 scoreboard players set $active ff_active_uuid_1 0
 scoreboard players set $active ff_active_uuid_2 0
 scoreboard players set $active ff_active_uuid_3 0
-function fossil_frights:game/party_mode/reset
+function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0

@@ -9,6 +9,6 @@ execute store result score $active ff_active_uuid_1 run data get storage fossil_
 execute store result score $active ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
 execute store result score $active ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
 data remove storage fossil_frights:nbt uuid
-function fossil_frights:game/party_mode/reset
+function fossil_frights:game/party/reset
 scoreboard players set $active_set ff_game_state 1
-function fossil_frights:game/party_mode/add_current
+function fossil_frights:game/party/add_current

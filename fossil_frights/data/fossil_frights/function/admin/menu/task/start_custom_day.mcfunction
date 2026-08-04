@@ -10,14 +10,9 @@ function fossil_frights:tasks/bookcase/clear
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
-function fossil_frights:game/start_room/timer_bars/close
 execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
 function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/settings/board/refresh

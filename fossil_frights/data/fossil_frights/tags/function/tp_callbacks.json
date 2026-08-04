@@ -20,8 +20,8 @@
     "fossil_frights:join/spectator/exit_reset",
     "fossil_frights:player/lobby_reset_active",
     "fossil_frights:animations/defeat/run",
-    "fossil_frights:join/multiplayer/setup_invited_player",
-    "fossil_frights:game/party_mode/setup_current_player",
+    "fossil_frights:join/duos/setup_invited_player",
+    "fossil_frights:game/party/setup_current_player",
     "fossil_frights:game/start",
     "fossil_frights:game/reset",
     "fossil_frights:command/spawn"

@@ -1,5 +1,5 @@
-function fossil_frights:game/party_mode/sync
-function fossil_frights:game/party_mode/tick
+function fossil_frights:game/party/sync
+function fossil_frights:game/party/tick
 function fossil_frights:game/heists/tick
 execute if score $heist_mode_active ff_game_state matches 1 run return 0
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick

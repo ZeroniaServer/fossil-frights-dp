@@ -1,0 +1,1 @@
+{"criteria":{"click":{"trigger":"minecraft:player_interacted_with_entity","conditions":{"entity":{"entity_type":"minecraft:interaction","entity_tags":{"all_of":["ff_settings_add_player_click"]}}}}},"rewards":{"function":"fossil_frights:game/start_room/settings/duos/handle_click"}}

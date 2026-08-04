@@ -1,3 +1,0 @@
-function fossil_frights:game/speedrun/prepare_display
-title @s subtitle [{"text":"-","color":"green"},{"score":{"name":"$speedrun_delta_min_tens","objective":"ff_lb_calc"},"color":"green"},{"score":{"name":"$speedrun_delta_min_ones","objective":"ff_lb_calc"},"color":"green"},{"text":":","color":"green"},{"score":{"name":"$speedrun_delta_sec_tens","objective":"ff_lb_calc"},"color":"green"},{"score":{"name":"$speedrun_delta_sec_ones","objective":"ff_lb_calc"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"$speedrun_delta_centi_tens","objective":"ff_lb_calc"},"color":"green"},{"score":{"name":"$speedrun_delta_centi_ones","objective":"ff_lb_calc"},"color":"green"}]
-

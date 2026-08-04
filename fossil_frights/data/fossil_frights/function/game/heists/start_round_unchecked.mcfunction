@@ -49,7 +49,7 @@ function fossil_frights:game/heists/start_reveal/capture_order
 function fossil_frights:game/heists/start_reveal/hide_all
 scoreboard objectives setdisplay sidebar ff_heist_sidebar
 function fossil_frights:game/heists/waiting_text/refresh
-function fossil_frights:game/heists/oxidized_bars/show
+function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/heists/capture_point/show
 function fossil_frights:animations/door/close
 function fossil_frights:join/join_pads/clear

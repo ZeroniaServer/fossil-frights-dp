@@ -9,4 +9,5 @@ team join ff_guard @s
 scoreboard players set @s ff_join_cooldown 40
 execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 0 run function fossil_frights:game/set_active_player
 execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 1 run function fossil_frights:messages/start/entering_museum
+execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 1 run tag @s add ff_join_start_teleport
 execute if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 1 run function fossil_frights:game/start

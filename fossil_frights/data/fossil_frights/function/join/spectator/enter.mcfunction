@@ -6,8 +6,8 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 17 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] unless score @s ff_tp_action matches 14 run return 0
-execute if score $game_running ff_game_state matches 1 unless block 10 71 26 minecraft:lever[powered=true] run function fossil_frights:messages/error/spectating_disabled
-execute if score $game_running ff_game_state matches 1 unless block 10 71 26 minecraft:lever[powered=true] run return 0
+execute if score $game_running ff_game_state matches 1 if entity @a[team=ff_guard,tag=ff_settings_spectator_deny,limit=1] run function fossil_frights:messages/error/spectating_disabled
+execute if score $game_running ff_game_state matches 1 if entity @a[team=ff_guard,tag=ff_settings_spectator_deny,limit=1] run return 0
 execute unless entity @a[team=ff_guard,limit=1] unless entity @a[team=ff_thief,limit=1] run return 0
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
 team leave @s

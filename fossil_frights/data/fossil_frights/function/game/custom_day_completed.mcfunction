@@ -19,9 +19,5 @@ function fossil_frights:game/bossbar/set_break
 execute as @a[team=ff_guard] run title @s actionbar {"text":"Custom day complete","color":"gold","italic":false}
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:tasks/tracker/hide

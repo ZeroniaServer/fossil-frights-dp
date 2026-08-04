@@ -7,11 +7,8 @@ tag @s remove ff_trap_place_pending
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
-tag @s remove ff_settings_spectator_deny
-tag @s remove ff_settings_music_off
-tag @s remove ff_muted_chat
-tag @s remove ff_settings_chat_hidden
 tag @s remove ff_settings_speedrun_show
+function fossil_frights:game/start_room/settings/copy_preferences
 gamemode adventure @s
 attribute @s minecraft:scale base set 1
 function fossil_frights:player/protection_disable

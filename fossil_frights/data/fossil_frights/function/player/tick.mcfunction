@@ -41,10 +41,10 @@ tag @s[tag=ff_plushie_restore_queued] remove ff_plushie_restore_queued
 execute if score @s ff_cmd_invite matches 1.. run function fossil_frights:command/invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players enable @s ff_cmd_invite
 execute if score @s ff_cmd_invite matches 1.. run scoreboard players set @s ff_cmd_invite 0
-execute if score @s ff_invite_sel matches 1.. run function fossil_frights:game/start_room/settings/multiplayer/gui/select
+execute if score @s ff_invite_sel matches 1.. run function fossil_frights:game/start_room/settings/duos/gui/select
 execute if score @s ff_invite_sel matches 1.. run scoreboard players enable @s ff_invite_sel
 execute if score @s ff_invite_sel matches 1.. run scoreboard players set @s ff_invite_sel 0
-execute if score @s ff_invite_accept matches 1.. run function fossil_frights:join/multiplayer/accept_invite
+execute if score @s ff_invite_accept matches 1.. run function fossil_frights:join/duos/accept_invite
 execute if score @s ff_invite_accept matches 1.. run scoreboard players enable @s ff_invite_accept
 execute if score @s ff_invite_accept matches 1.. run scoreboard players set @s ff_invite_accept 0
 execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/queue/handle_start_click
@@ -130,7 +130,6 @@ execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches
 execute if items entity @s weapon.mainhand minecraft:amethyst_shard[custom_data~{ff_dna:true}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s only fossil_frights:lock_click
-advancement revoke @s only fossil_frights:multiplayer_click
 advancement revoke @s only fossil_frights:dna_click
 advancement revoke @s only fossil_frights:swat_flies_click
 advancement revoke @s only fossil_frights:check_security_click

@@ -101,7 +101,7 @@ tag @a[team=ff_guard] remove ff_map_auto_given
 tag @a[team=ff_thief] remove ff_map_auto_given
 team join ff_lobby @a[team=ff_guard]
 team join ff_lobby @a[team=ff_thief]
-function fossil_frights:game/party_mode/reset
+function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
@@ -130,12 +130,7 @@ scoreboard players set $active ff_active_uuid_2 0
 scoreboard players set $active ff_active_uuid_3 0
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/heists/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:join/queue/maybe_notify_next
 function fossil_frights:door/reset

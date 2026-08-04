@@ -2,7 +2,8 @@ execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 23
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s add ff_game_start_source
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 if entity @a[limit=1,tag=!ff_game_start_source] at @s run function fossil_frights:animations/game_start/run
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s remove ff_game_start_source
-execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tp @s 20 70 20 0 0
+execute if entity @s[tag=ff_tp_dispatch,tag=ff_join_start_teleport] if score @s ff_tp_action matches 23 run tp @s 20 70 20 0 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s remove ff_join_start_teleport
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start_round
@@ -25,7 +26,6 @@ function fossil_frights:game/time/reset
 function fossil_frights:game/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/glass_box/reset
-function fossil_frights:game/start_room/timer_bars/open
 function fossil_frights:animations/door/close
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
@@ -89,13 +89,9 @@ scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
-function fossil_frights:game/start_room/settings/api/apply_active_preferences
-function fossil_frights:game/start_room/settings/api/sync_message_state
+function fossil_frights:game/start_room/settings/apply_preferences
+function fossil_frights:game/start_room/settings/sync_message_state
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/heists/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/locked_door/show
+function fossil_frights:game/start_room/settings/board/refresh

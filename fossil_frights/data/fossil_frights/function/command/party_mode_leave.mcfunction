@@ -1,3 +1,3 @@
-function fossil_frights:messages/multiplayer/party_left
-function fossil_frights:game/party_mode/remove_current
+function fossil_frights:messages/duos/party_left
+function fossil_frights:game/party/remove_current
 function fossil_frights:player/lobby_reset_active

@@ -13,3 +13,5 @@ kill @e[type=minecraft:text_display,tag=ff_join_active_label]
 kill @e[type=minecraft:text_display,tag=ff_join_party_label]
 kill @e[type=minecraft:text_display,tag=ff_join_heist_label]
 tag @a remove ff_join_spectator_zone
+kill @e[type=minecraft:item_display,tag=ff_join_random_pad]
+kill @e[type=minecraft:text_display,tag=ff_join_random_label]

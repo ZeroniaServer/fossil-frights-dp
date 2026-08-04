@@ -3,7 +3,7 @@ function fossil_frights:game/heists/waiting_text/hide
 function fossil_frights:game/heists/release_thieves
 function fossil_frights:items/heists/trap/balance/compute
 execute as @a[team=ff_guard] run function fossil_frights:items/heists/trap/round_start_release
-function fossil_frights:game/heists/oxidized_bars/clear
+function fossil_frights:game/start_room/locked_door/clear
 bossbar remove fossil_frights:bossbar
 bossbar add fossil_frights:bossbar [{"translate":"ff.heists.bossbar","color":"gold","with":["10:00"]}]
 bossbar set fossil_frights:bossbar players @a

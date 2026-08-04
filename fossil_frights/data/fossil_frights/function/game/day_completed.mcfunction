@@ -25,7 +25,7 @@ execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day mat
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_time
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_duo_best
-execute as @a[team=ff_guard] run function fossil_frights:game/speedrun/process_day_best
+execute as @a[team=ff_guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/process_day_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_victory
 execute if score $day_current ff_day matches 10 run scoreboard players set $victory_complete ff_game_state 1
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
@@ -37,9 +37,5 @@ execute unless score $day_current ff_day matches 10 run function fossil_frights:
 execute as @a[team=ff_guard] run title @s actionbar [{"translate":"ff.day_complete","color":"gold","italic":false,"with":[{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:tasks/tracker/hide

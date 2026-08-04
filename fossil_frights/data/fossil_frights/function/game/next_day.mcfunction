@@ -7,7 +7,6 @@ execute if score $day_current ff_day matches 10.. run function fossil_frights:me
 execute if score $day_current ff_day matches 10.. run return 0
 execute if score $day_current ff_day matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
 scoreboard players add $day_current ff_day 1
-execute if score $day_current ff_day matches 1 if score $run_multiplayer ff_game_state matches 1 run tp @a[team=ff_guard] 20 70 20 0 0
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 1
@@ -21,7 +20,7 @@ function fossil_frights:tasks/bookcase/clear
 function fossil_frights:tasks/encoder/start_day
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
-function fossil_frights:game/start_room/timer_bars/close
+function fossil_frights:game/start_room/locked_door/clear
 execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
 execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard] run stopsound @s music
 execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard] at @s run playsound fossil-frights:ff_night_shift record @s ~ ~ ~ 1 1
@@ -32,9 +31,4 @@ function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
-function fossil_frights:game/start_room/settings/spectators/refresh
-function fossil_frights:game/start_room/settings/music/refresh
-function fossil_frights:game/start_room/settings/party_mode/refresh
-function fossil_frights:game/start_room/settings/heists/refresh
-function fossil_frights:game/start_room/settings/chat/refresh
-function fossil_frights:game/start_room/settings/speedrun/refresh
+function fossil_frights:game/start_room/settings/board/refresh

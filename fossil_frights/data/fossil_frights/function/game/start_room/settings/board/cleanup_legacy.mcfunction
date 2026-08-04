@@ -1,0 +1,13 @@
+kill @e[type=minecraft:text_display,tag=ff_spectators_label]
+kill @e[type=minecraft:text_display,tag=ff_music_label]
+kill @e[type=minecraft:text_display,tag=ff_chat_label]
+kill @e[type=minecraft:text_display,tag=ff_speedrun_label]
+kill @e[type=minecraft:text_display,tag=ff_party_mode_label]
+kill @e[type=minecraft:text_display,tag=ff_heists_label]
+kill @e[type=minecraft:interaction,tag=ff_start_room_setting_spectators_click]
+kill @e[type=minecraft:interaction,tag=ff_start_room_setting_music_click]
+kill @e[type=minecraft:interaction,tag=ff_start_room_setting_chat_click]
+kill @e[type=minecraft:interaction,tag=ff_start_room_setting_speedrun_click]
+kill @e[type=minecraft:interaction,tag=ff_multiplayer_click]
+fill 9 71 23 10 71 26 minecraft:air
+fill 15 70 25 15 71 26 minecraft:air replace minecraft:waxed_weathered_copper_bars
