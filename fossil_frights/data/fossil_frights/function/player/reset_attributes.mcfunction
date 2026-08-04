@@ -1,0 +1,5 @@
+attribute @s minecraft:movement_speed base reset
+attribute @s minecraft:friction_modifier base reset
+attribute @s minecraft:air_drag_modifier base reset
+attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:entity_interaction_range base set 3
