@@ -1,0 +1,1 @@
+tellraw @s {"translate":"ff.messages.info","color":"red","with":[{"translate":"ff.messages.info.settings","color":"white","with":[{"translate":"ff.messages.info.settings.random","color":"red"},{"translate":"ff.messages.info.settings.random.description"}]}]}
