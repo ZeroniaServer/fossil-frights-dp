@@ -11,7 +11,6 @@ execute if score $party_mode_active ff_game_state matches 1 run function fossil_
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
 scoreboard players set $run_multiplayer ff_game_state 0
-tag @a remove ff_settings_randomizer_on
 function fossil_frights:join/join_pads/setup
 scoreboard players set $heist_button_lock ff_game_state 40
 scoreboard players set $party_button_lock ff_game_state 40

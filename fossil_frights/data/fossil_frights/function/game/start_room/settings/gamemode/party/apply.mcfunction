@@ -8,8 +8,6 @@ execute if score $heist_mode_active ff_game_state matches 1 run function fossil_
 execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:game/party/reset
 scoreboard players set $party_mode_active ff_game_state 0
 scoreboard players set $heist_mode_active ff_game_state 0
-tag @a[team=ff_guard] remove ff_settings_speedrun_show
-tag @a remove ff_settings_randomizer_on
 function fossil_frights:game/party/activate
 scoreboard players set $heist_button_lock ff_game_state 40
 scoreboard players set $party_button_lock ff_game_state 40

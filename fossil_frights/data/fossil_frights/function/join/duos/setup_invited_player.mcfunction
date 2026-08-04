@@ -26,7 +26,6 @@ scoreboard players set @s ff_key_bar 0
 title @s actionbar ""
 function fossil_frights:player/equip_security_hat
 function fossil_frights:key/give_waiting
-function fossil_frights:game/start_room/settings/copy_preferences
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 21

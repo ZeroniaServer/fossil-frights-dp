@@ -14,6 +14,6 @@ execute if score $day_current ff_day matches 7 run function fossil_frights:game/
 execute if score $day_current ff_day matches 8 run function fossil_frights:game/start_room/settings/speedrun/runtime/update_day8_best
 execute if score $day_current ff_day matches 9 run function fossil_frights:game/start_room/settings/speedrun/runtime/update_day9_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/start_room/settings/speedrun/runtime/update_day10_best
-execute if entity @s[tag=ff_settings_speedrun_show] run title @s times 5 40 10
-execute if entity @s[tag=ff_settings_speedrun_show] run function fossil_frights:game/start_room/settings/speedrun/runtime/show_subtitle
-execute unless entity @s[tag=ff_settings_speedrun_show] run title @s subtitle ""
+execute if score $settings_speedrun_show ff_game_state matches 1 run title @s times 5 40 10
+execute if score $settings_speedrun_show ff_game_state matches 1 run function fossil_frights:game/start_room/settings/speedrun/runtime/show_subtitle
+execute unless score $settings_speedrun_show ff_game_state matches 1 run title @s subtitle ""

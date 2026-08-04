@@ -14,11 +14,11 @@ title @a[team=ff_thief] title {"text":" "}
 execute as @a[team=ff_guard,gamemode=!spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
 execute as @a[team=ff_thief,gamemode=!spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
 execute as @a[gamemode=spectator] at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1.0 1.0
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard,gamemode=!spectator] run stopsound @s music
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_guard,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_thief,gamemode=!spectator] run stopsound @s music
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[team=ff_thief,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[gamemode=spectator] run stopsound @s music
-execute unless entity @a[team=ff_guard,tag=ff_settings_music_off,limit=1] as @a[gamemode=spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_guard,gamemode=!spectator] run stopsound @s music
+execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_guard,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_thief,gamemode=!spectator] run stopsound @s music
+execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_thief,gamemode=!spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
+execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator] run stopsound @s music
+execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator] at @s run playsound fossil-frights:heists.music record @s ~ ~ ~ 1.0 1.0
 
 function fossil_frights:game/heists/start_reveal/go

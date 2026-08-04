@@ -13,9 +13,6 @@ execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exi
 tag @s remove ff_in_queue
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
-tag @s remove ff_settings_speedrun_show
-tag @s remove ff_settings_randomizer_on
-function fossil_frights:game/start_room/settings/copy_preferences
 gamemode adventure @s
 attribute @s minecraft:scale base set 1
 function fossil_frights:player/protection_disable

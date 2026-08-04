@@ -11,7 +11,6 @@ scoreboard players set $run_multiplayer ff_game_state 1
 scoreboard players set $party_mode_active ff_game_state 1
 scoreboard players set $run_admin_modified ff_game_state 1
 function fossil_frights:game/start_room/settings/sync_message_state
-tag @a[team=ff_guard] remove ff_settings_speedrun_show
 function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:animations/door/open
 function fossil_frights:join/join_pads/party/setup

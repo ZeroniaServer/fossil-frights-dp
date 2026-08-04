@@ -24,7 +24,6 @@ scoreboard players reset $loot ff_heist_sidebar
 execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
 function fossil_frights:game/start_room/settings/sync_message_state
-tag @a[team=ff_guard] remove ff_settings_speedrun_show
 function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:animations/door/open
 function fossil_frights:game/heists/day_tracker/hide
