@@ -1,1 +1,1 @@
-tellraw @a {"translate":"ff.messages.gamemode_switched","color":"yellow","with":[{"selector":"@s","color":"yellow"},{"translate":"ff.gamemode.party"}]}
+tellraw @a [{"translate":"ff.messages.info","color":"yellow","with":[{"translate":"ff.messages.gamemode_switched","with":[{"selector":"@s","color":"yellow"},{"translate":"ff.gamemode.party"}]}]}]
