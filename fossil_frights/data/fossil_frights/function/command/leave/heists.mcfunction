@@ -1,3 +1,4 @@
+function fossil_frights:messages/leave/player_left
 effect clear @s minecraft:invisibility
 scoreboard players set $alarm_effects_on ff_heist 0
 scoreboard players set @s ff_heist_punch_cd 0
