@@ -10,5 +10,5 @@ scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 clear @s minecraft:snowball[minecraft:custom_data~{itemID:"infinileaf"}]
 kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/infinileaf]
 title @s actionbar ""
-tp @s 0 80 0 0 0
-spawnpoint @s 0 80 0
+tp @s -31.5 78.00 98.5 275 -10
+function fossil_frights:items/plushies/restore

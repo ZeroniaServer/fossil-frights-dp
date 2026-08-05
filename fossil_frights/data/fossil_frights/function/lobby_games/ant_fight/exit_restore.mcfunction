@@ -1,4 +1,0 @@
-function fossil_frights:lobby_games/ant_fight/exit
-function fossil_frights:items/plushies/restore
-tp @s -31.5 78.00 98.5 275 -10
-spawnpoint @s 0 80 0
