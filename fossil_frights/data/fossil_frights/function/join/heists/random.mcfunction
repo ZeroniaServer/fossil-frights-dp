@@ -5,6 +5,12 @@ execute if score $heist_round_active ff_game_state matches 1.. run return run fu
 execute if entity @s[gamemode=spectator] run function fossil_frights:messages/error/cannot_join_heist_team_while_spectating
 execute if entity @s[gamemode=spectator] run return 0
 execute if score @s ff_join_cooldown matches 1.. run return 0
+# Admin-targeted joins may be coming from another mode or a previous fade
+# transition.  Normalize them to the Heists lobby before balancing teams.
+execute if entity @s[tag=ff_admin_random_target] run team join ff_lobby @s
+execute if entity @s[tag=ff_admin_random_target] run tag @s remove ff_fade_tp_active
+execute if entity @s[tag=ff_admin_random_target] run scoreboard players set @s ff_tp_action 0
+execute if entity @s[tag=ff_admin_random_target] run scoreboard players set @s ff_tp_delay 0
 tag @s add ff_join_random
 scoreboard players set #guards ff_join_balance 0
 scoreboard players set #thieves ff_join_balance 0

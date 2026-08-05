@@ -21,3 +21,4 @@ summon minecraft:text_display -0.875 81.0 8.0 {Tags:["ff_join_spectator_label"],
 tag @a remove ff_join_spectator_zone
 function fossil_frights:join/join_pads/show/queue
 function fossil_frights:join/join_pads/show/spectator
+scoreboard players set $join_pad_mode ff_game_state 2

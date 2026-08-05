@@ -11,3 +11,4 @@ summon minecraft:item_display 1.75 79.4925 8.0125 {Tags:["ff_join_heist_pad"],br
 summon minecraft:text_display -0.875 81.0 8.0 {Tags:["ff_join_heist_label"],billboard:"center",view_range:10,background:0,shadow:true,text_opacity:255,brightness:{sky:15,block:15},text:[{translate:"ff.heists.thieves",color:"red",italic:false}]}
 summon minecraft:text_display 1.75 81.0 8.0 {Tags:["ff_join_heist_label"],billboard:"center",view_range:10,background:0,shadow:true,text_opacity:255,brightness:{sky:15,block:15},text:[{translate:"ff.heists.guards",color:"yellow",italic:false}]}
 function fossil_frights:join/join_pads/heists/show
+scoreboard players set $join_pad_mode ff_game_state 4

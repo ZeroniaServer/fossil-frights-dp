@@ -10,3 +10,4 @@ tag @a remove ff_join_spectator_zone
 summon minecraft:item_display 0.4375 79.4925 8.0125 {Tags:["ff_join_party_pad"],brightness:{sky:15,block:15},item_display:"fixed",item:{id:"minecraft:yellow_stained_glass",count:1,components:{"minecraft:item_name":{text:"Party Beam",italic:false},"minecraft:lore":[{text:"",extra:["queue_beam"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}},transformation:{right_rotation:[1f,0f,0f,0f],left_rotation:[0.7071068f,0f,0f,0.7071068f],translation:[0f,0f,0f],scale:[5.08f,2.02f,1f]}}
 summon minecraft:text_display 0.4375 81.0 8.0 {Tags:["ff_join_party_label"],billboard:"center",view_range:10,background:0,shadow:true,text_opacity:255,brightness:{sky:15,block:15},text:[{text:"ᴊᴏɪɴ ᴘᴀʀᴛʏ",color:"yellow",italic:false}]}
 function fossil_frights:join/join_pads/show/party
+scoreboard players set $join_pad_mode ff_game_state 3
