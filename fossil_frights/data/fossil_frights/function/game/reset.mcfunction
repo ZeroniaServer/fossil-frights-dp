@@ -39,7 +39,7 @@ stopsound @a master fossil-frights:ff_night_shift
 stopsound @a record fossil-frights:ff_night_shift
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
-function fossil_frights:messages/game/exit_day_reached
+execute unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/game/exit_day_reached
 function fossil_frights:game/reset/spectators
 scoreboard players set @a ff_fright_timer 0
 gamemode adventure @a[team=ff_guard]
