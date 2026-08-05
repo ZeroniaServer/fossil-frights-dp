@@ -41,7 +41,6 @@ scoreboard players add @s ff_settings_mode_cooldown 0
 execute if score @s ff_settings_mode_cooldown matches 1.. run scoreboard players remove @s ff_settings_mode_cooldown 1
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
 function fossil_frights:items/other/confetti_cannon/player_tick
-execute if entity @s[tag=ff_quick_start_thief] run function fossil_frights:command/join_quick_start_thief_continue
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
 execute if entity @s[tag=ff_plushie_restore_pending] run function fossil_frights:items/plushies/restore
 tag @s[tag=ff_plushie_restore_pending] remove ff_plushie_restore_pending
@@ -99,10 +98,10 @@ execute if score @s ff_cmd_templerun matches 1.. run scoreboard players set @s f
 execute if score @s ff_cmd_parkour matches 1.. run function fossil_frights:command/parkour
 execute if score @s ff_cmd_parkour matches 1.. run scoreboard players enable @s ff_cmd_parkour
 execute if score @s ff_cmd_parkour matches 1.. run scoreboard players set @s ff_cmd_parkour 0
-execute if score @s ff_cmd_join_guard matches 1.. run function fossil_frights:command/join_guard
+execute if score @s ff_cmd_join_guard matches 1.. run function fossil_frights:command/join/guard
 execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players enable @s ff_cmd_join_guard
 execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players set @s ff_cmd_join_guard 0
-execute if score @s ff_cmd_join_thief matches 1.. run function fossil_frights:command/join_thief
+execute if score @s ff_cmd_join_thief matches 1.. run function fossil_frights:command/join/thief
 execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players enable @s ff_cmd_join_thief
 execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players set @s ff_cmd_join_thief 0
 execute if score @s ff_cmd_spawn matches 1.. run function fossil_frights:command/spawn

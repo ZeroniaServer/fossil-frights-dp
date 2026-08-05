@@ -51,6 +51,7 @@ scoreboard objectives add ff_settings_confirm trigger
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add ff_cmd_start trigger
+scoreboard objectives add ff_join_balance dummy
 scoreboard objectives add ff_cmd_leave trigger
 scoreboard objectives add ff_cmd_spectate trigger
 scoreboard objectives add ff_cmd_stats trigger
