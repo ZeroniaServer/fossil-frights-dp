@@ -143,8 +143,8 @@ gamemode adventure @s
 function fossil_frights:join/lobby
 function fossil_frights:player/effects/lobby_reset
 effect give @s minecraft:instant_health 100 0 true
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
+execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
 function fossil_frights:items/plushies/restore
 execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/sync_entry
 execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/display/refresh

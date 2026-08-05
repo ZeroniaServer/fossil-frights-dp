@@ -7,9 +7,9 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
+execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/exit
 tag @s remove ff_in_queue
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate

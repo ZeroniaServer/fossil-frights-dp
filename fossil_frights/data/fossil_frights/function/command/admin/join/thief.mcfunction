@@ -1,1 +1,1 @@
-function fossil_frights:command/join/thief
+function fossil_frights:join/heists/thief

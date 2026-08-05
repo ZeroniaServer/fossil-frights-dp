@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:temple_run/restart_consumed"
+    "function": "fossil_frights:lobby_games/temple_run/restart_consumed"
   }
 }

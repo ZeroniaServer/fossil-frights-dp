@@ -1,1 +1,0 @@
-function fossil_frights:ant_fight/display/show_best_macro with storage fossil_frights:ant_fight best

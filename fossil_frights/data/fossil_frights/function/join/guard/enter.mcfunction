@@ -1,9 +1,9 @@
 execute if entity @s[tag=ff_fade_tp_active] unless score @s ff_tp_action matches 14 run return 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if score @s ff_tp_action matches 14 run tag @s remove ff_fade_tp_active
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:parkour/end
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:temple_run/end
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:ant_fight/exit
+execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
+execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/exit
 function fossil_frights:join/lobby
 team join ff_guard @s
 scoreboard players set @s ff_join_cooldown 40

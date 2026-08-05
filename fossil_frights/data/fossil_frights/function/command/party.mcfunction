@@ -1,1 +1,1 @@
-function fossil_frights:command/party_mode
+function fossil_frights:command/start/party

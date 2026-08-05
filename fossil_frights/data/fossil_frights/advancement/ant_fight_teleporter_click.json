@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:ant_fight/teleporter_click"
+    "function": "fossil_frights:lobby_games/ant_fight/teleporter_click"
   }
 }

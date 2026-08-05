@@ -1,1 +1,1 @@
-function fossil_frights:command/join/guard
+function fossil_frights:join/heists/guard

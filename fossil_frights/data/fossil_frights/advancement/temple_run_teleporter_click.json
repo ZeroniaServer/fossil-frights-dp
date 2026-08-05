@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:temple_run/teleporter_click"
+    "function": "fossil_frights:lobby_games/temple_run/teleporter_click"
   }
 }

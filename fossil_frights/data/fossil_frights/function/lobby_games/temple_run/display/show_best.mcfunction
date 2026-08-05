@@ -1,0 +1,2 @@
+execute if score $temple_run_best_min ff_temple_run_display matches 1.. run function fossil_frights:lobby_games/temple_run/display/show_best_with_minutes_macro with storage fossil_frights:temple_run best
+execute unless score $temple_run_best_min ff_temple_run_display matches 1.. run function fossil_frights:lobby_games/temple_run/display/show_best_under_minute_macro with storage fossil_frights:temple_run best

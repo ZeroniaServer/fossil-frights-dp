@@ -62,19 +62,19 @@ function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
 execute unless entity @e[type=minecraft:interaction,tag=ff_settings_mode_frights_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute if entity @a[limit=1,x=-8,y=64,z=0,dx=40,dy=30,dz=40] if score $lobby_displays_ready ff_game_state matches 0 run function fossil_frights:game/lobby_displays/ensure_setup
-execute if entity @a[limit=1,x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parkour_display_ready ff_parkour_display matches 0 run function fossil_frights:parkour/display/rebuild
-execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:temple_run/display/rebuild
-execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:ant_fight/display/rebuild
-function fossil_frights:sulfur_strikers/tick
+execute if entity @a[limit=1,x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parkour_display_ready ff_parkour_display matches 0 run function fossil_frights:lobby_games/parkour/display/rebuild
+execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:lobby_games/temple_run/display/rebuild
+execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:lobby_games/ant_fight/display/rebuild
+function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
 function fossil_frights:game/start_room/settings/board/tick
 function fossil_frights:join/join_pads/tick
-function fossil_frights:temple_run/teleporter_walk_tick
-function fossil_frights:ant_fight/teleporter_walk_tick
-function fossil_frights:parkour/teleporter_walk_tick
-function fossil_frights:sulfur_strikers/teleporter_walk_tick
+function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
+function fossil_frights:lobby_games/ant_fight/teleporter_walk_tick
+function fossil_frights:lobby_games/parkour/teleporter_walk_tick
+function fossil_frights:lobby_games/sulfur_strikers/teleporter_walk_tick
 execute if score $running ff_rollercoaster matches 1 run function fossil_frights:rollercoaster/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick

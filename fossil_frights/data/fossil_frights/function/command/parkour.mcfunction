@@ -15,4 +15,4 @@ execute if score @s ff_temple_run_running matches 1.. run function fossil_fright
 execute if score @s ff_temple_run_running matches 1.. run return 0
 execute unless predicate fossil_frights:player/is_lobby_freeplay run function fossil_frights:messages/error/lobby_command_lobby_only
 execute unless predicate fossil_frights:player/is_lobby_freeplay run return 0
-function fossil_frights:parkour/teleporter_click
+function fossil_frights:lobby_games/parkour/teleporter_click

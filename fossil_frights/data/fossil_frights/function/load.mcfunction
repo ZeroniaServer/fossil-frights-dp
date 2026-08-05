@@ -446,10 +446,10 @@ function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
-function fossil_frights:parkour/load
-function fossil_frights:temple_run/load
-function fossil_frights:ant_fight/load
-function fossil_frights:sulfur_strikers/load
+function fossil_frights:lobby_games/parkour/load
+function fossil_frights:lobby_games/temple_run/load
+function fossil_frights:lobby_games/ant_fight/load
+function fossil_frights:lobby_games/sulfur_strikers/load
 function fossil_frights:rollercoaster/load
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/reset
