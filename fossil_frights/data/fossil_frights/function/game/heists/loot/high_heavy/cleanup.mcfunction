@@ -5,6 +5,7 @@ setblock -2 82 66 minecraft:bubble_column[drag=false]
 execute as @e[tag=fh_warden] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_crab] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_trex_skull] run data merge entity @s {view_range:1f}
+fill 1 94 57 2 94 58 minecraft:barrier
 execute as @e[tag=fh_raptor_skull] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_biplane] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_vault] run data merge entity @s {view_range:1f}
