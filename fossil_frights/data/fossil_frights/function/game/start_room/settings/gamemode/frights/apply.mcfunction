@@ -21,5 +21,6 @@ scoreboard players operation $game_running ff_game_state = $settings_saved_game_
 scoreboard players operation $day_active ff_day = $settings_saved_day_active ff_day
 scoreboard players operation $day_current ff_day = $settings_saved_day_current ff_day
 function fossil_frights:game/start_room/settings/board/refresh
+function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:messages/settings/gamemode_frights
 playsound minecraft:block.lever.click master @s ~ ~ ~ 1 1
