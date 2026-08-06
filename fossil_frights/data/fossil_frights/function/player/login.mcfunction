@@ -64,6 +64,8 @@ function fossil_frights:leaderboards/check_login_resets
 execute unless entity @s[tag=ff_login_initial] if score $active_set ff_game_state matches 1 if score $game_running ff_game_state matches 1 run function fossil_frights:game/party/handle_member_login
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:bossbar players @a
 execute if score $game_running ff_game_state matches 1 run bossbar set fossil_frights:hazards players @a
+function fossil_frights:game/bossbar/available/refresh
+function fossil_frights:game/bossbar/available/sync_players
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s

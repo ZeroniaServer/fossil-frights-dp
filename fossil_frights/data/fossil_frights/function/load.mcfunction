@@ -446,6 +446,7 @@ function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
+function fossil_frights:game/bossbar/available/setup
 function fossil_frights:lobby_games/parkour/load
 function fossil_frights:lobby_games/temple_run/load
 function fossil_frights:lobby_games/ant_fight/load
