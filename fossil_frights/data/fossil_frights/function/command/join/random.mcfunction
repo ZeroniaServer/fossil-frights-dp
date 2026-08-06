@@ -1,1 +1,1 @@
-function fossil_frights:command/start
+function fossil_frights:join/heists/random
