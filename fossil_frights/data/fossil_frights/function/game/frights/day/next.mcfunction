@@ -16,7 +16,7 @@ scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[team=ff_guard] run function fossil_frights:key/refresh
 clear @a[team=ff_guard] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]
-function fossil_frights:tasks/bookcase/clear
+function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:tasks/encoder/start_day
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh

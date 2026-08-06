@@ -1,5 +1,5 @@
 function fossil_frights:tasks/hazard/force_pending
-function fossil_frights:tasks/bookcase/clear
+function fossil_frights:tasks/task_book_shelf/clear
 execute as @a at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift

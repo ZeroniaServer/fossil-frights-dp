@@ -10,7 +10,7 @@ execute if score $heist_mode_active ff_game_state matches 1 run return run funct
 execute unless entity @a[limit=1,team=ff_guard] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[limit=1,team=ff_guard] run return 0
 
-function fossil_frights:tasks/bookcase/clear
+function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:game/reset/hazards
 function fossil_frights:tasks/reset
