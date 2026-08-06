@@ -69,7 +69,6 @@ function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
-function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:game/start_room/settings/board/tick
 function fossil_frights:join/join_pads/tick
 function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
@@ -79,5 +78,6 @@ function fossil_frights:lobby_games/sulfur_strikers/teleporter_walk_tick
 execute if score $running ff_rollercoaster matches 1 run function fossil_frights:rollercoaster/tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
+function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
 function fossil_frights:game/heists/alarm_effects/tick
