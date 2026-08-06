@@ -10,7 +10,6 @@ execute if score @s ff_parkour_running matches 1.. run tag @s add ff_parkour_lea
 execute if score @s ff_parkour_running matches 1.. run return run function fossil_frights:lobby_games/parkour/end
 execute if score @s ff_temple_run_running matches 1.. run tag @s add ff_temple_run_leave
 execute if score @s ff_temple_run_running matches 1.. run return run function fossil_frights:lobby_games/temple_run/end
-execute if entity @s[tag=ff_sulfur_strikers] run return run function fossil_frights:lobby_games/sulfur_strikers/end
 execute if entity @s[tag=!ff_game_end_cleanup,tag=ff_in_queue] run function fossil_frights:messages/leave/player_left
 execute if entity @s[tag=ff_in_queue] run return run function fossil_frights:join/queue/remove_player
 function fossil_frights:messages/error/cannot_leave_not_active
