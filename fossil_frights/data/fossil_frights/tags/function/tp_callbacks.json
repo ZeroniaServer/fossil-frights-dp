@@ -1,11 +1,14 @@
 {
   "values": [
     "fossil_frights:lobby_games/parkour/restart",
+    "fossil_frights:lobby_games/parkour/end",
     "fossil_frights:lobby_games/parkour/teleporter_click",
     "fossil_frights:lobby_games/parkour/teleporter_walk_tick",
     "fossil_frights:lobby_games/ant_fight/teleporter_click",
     "fossil_frights:lobby_games/ant_fight/teleporter_walk_tick",
     "fossil_frights:lobby_games/temple_run/restart",
+    "fossil_frights:lobby_games/temple_run/end",
+    "fossil_frights:lobby_games/ant_fight/end",
     "fossil_frights:lobby_games/temple_run/teleporter_click",
     "fossil_frights:lobby_games/temple_run/teleporter_walk_tick",
     "fossil_frights:lobby_games/sulfur_strikers/teleporter_click",

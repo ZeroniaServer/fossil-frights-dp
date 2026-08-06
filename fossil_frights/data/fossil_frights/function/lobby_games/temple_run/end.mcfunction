@@ -1,4 +1,20 @@
+execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 27 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 27 run tp @s 89.5 79.00 82.5 -90 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 27 run function fossil_frights:lobby_games/temple_run/reset_player
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 27 run scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 27 run tag @s remove ff_temple_run_exit_pending
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 27 run tag @s remove ff_temple_run_leave
+execute if entity @s[tag=ff_tp_dispatch] run return 0
+
+execute if entity @s[tag=ff_temple_run_exit_pending] run return 0
 function fossil_frights:lobby_games/temple_run/music/stop
-function fossil_frights:lobby_games/temple_run/reset_player
-scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
-tp @s 89.5 79.00 82.5 -90 0
+execute unless entity @s[tag=ff_temple_run_leave] run function fossil_frights:lobby_games/temple_run/reset_player
+execute unless entity @s[tag=ff_temple_run_leave] run scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
+execute unless entity @s[tag=ff_temple_run_leave] run tp @s 89.5 79.00 82.5 -90 0
+execute unless entity @s[tag=ff_temple_run_leave] run return 0
+title @s times 5 3 10
+title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+scoreboard players set @s ff_tp_action 27
+tag @s add ff_temple_run_exit_pending
+tag @s add ff_fade_tp_active
+scoreboard players set @s ff_tp_delay 18
