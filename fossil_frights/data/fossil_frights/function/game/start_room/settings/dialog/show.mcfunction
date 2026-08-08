@@ -1,0 +1,3 @@
+scoreboard players set @s ff_settings_confirm 0
+scoreboard players enable @s ff_settings_confirm
+$dialog show @s {type:"minecraft:multi_action",title:$(title),body:$(body),columns:2,actions:[{label:{translate:"ff.settings.cancel",color:"white"},action:{type:"run_command",command:"trigger ff_settings_confirm set 0"}},{label:{translate:"$(action_label)",color:"$(action_color)"},action:{type:"run_command",command:"trigger ff_settings_confirm set $(trigger)"}}],exit_action:{label:{translate:"ff.settings.cancel",color:"white"},action:{type:"run_command",command:"trigger ff_settings_confirm set 0"}}}
