@@ -93,3 +93,6 @@ execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 4
 
 # Cafe Campfire
 execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 28 81 30 28 81 26 minecraft:campfire[lit=false]
+
+# Boss's Office / Hallway
+execute if score #lights_phase_now ff_hazard_rng matches 2 run fill -33 85 67 -33 86 79 minecraft:redstone_lamp[lit=false] replace minecraft:glowstone
