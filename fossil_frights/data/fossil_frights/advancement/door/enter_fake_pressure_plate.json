@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:door/fake_pressure_plate/enter"
+    "function": "fossil_frights:interactions/door/fake_pressure_plate/enter"
   }
 }

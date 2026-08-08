@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:button/click"
+    "function": "fossil_frights:interactions/button/click"
   }
 }

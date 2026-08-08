@@ -26,12 +26,12 @@ execute if block ~ ~ ~ minecraft:warped_button run data modify storage fossil_fr
 execute if block ~ ~ ~ minecraft:stone_button run data modify storage fossil_frights:button entity_data.data.ff_button.block_type set value "minecraft:stone_button"
 execute if block ~ ~ ~ minecraft:polished_blackstone_button run data modify storage fossil_frights:button entity_data.data.ff_button.block_type set value "minecraft:polished_blackstone_button"
 
-execute if block ~ ~ ~ #buttons[face=floor] align xyz positioned ~0.5 ~ ~0.5 summon minecraft:interaction run function fossil_frights:button/create/floor_or_ceiling
-execute if block ~ ~ ~ #buttons[face=ceiling] align xyz positioned ~0.5 ~0.749 ~0.5 summon minecraft:interaction run function fossil_frights:button/create/floor_or_ceiling
-execute if block ~ ~ ~ #buttons[face=wall,facing=east] align xyz positioned ~0.0625 ~0.3115 ~0.5 summon minecraft:interaction run function fossil_frights:button/create/wall
-execute if block ~ ~ ~ #buttons[face=wall,facing=south] align xyz positioned ~0.5 ~0.3115 ~0.0625 summon minecraft:interaction run function fossil_frights:button/create/wall
-execute if block ~ ~ ~ #buttons[face=wall,facing=west] align xyz positioned ~0.9375 ~0.3115 ~0.5 summon minecraft:interaction run function fossil_frights:button/create/wall
-execute if block ~ ~ ~ #buttons[face=wall,facing=north] align xyz positioned ~0.5 ~0.3115 ~0.9375 summon minecraft:interaction run function fossil_frights:button/create/wall
+execute if block ~ ~ ~ #buttons[face=floor] align xyz positioned ~0.5 ~ ~0.5 summon minecraft:interaction run function fossil_frights:interactions/button/create/floor_or_ceiling
+execute if block ~ ~ ~ #buttons[face=ceiling] align xyz positioned ~0.5 ~0.749 ~0.5 summon minecraft:interaction run function fossil_frights:interactions/button/create/floor_or_ceiling
+execute if block ~ ~ ~ #buttons[face=wall,facing=east] align xyz positioned ~0.0625 ~0.3115 ~0.5 summon minecraft:interaction run function fossil_frights:interactions/button/create/wall
+execute if block ~ ~ ~ #buttons[face=wall,facing=south] align xyz positioned ~0.5 ~0.3115 ~0.0625 summon minecraft:interaction run function fossil_frights:interactions/button/create/wall
+execute if block ~ ~ ~ #buttons[face=wall,facing=west] align xyz positioned ~0.9375 ~0.3115 ~0.5 summon minecraft:interaction run function fossil_frights:interactions/button/create/wall
+execute if block ~ ~ ~ #buttons[face=wall,facing=north] align xyz positioned ~0.5 ~0.3115 ~0.9375 summon minecraft:interaction run function fossil_frights:interactions/button/create/wall
 
 
 data remove storage fossil_frights:button entity_data

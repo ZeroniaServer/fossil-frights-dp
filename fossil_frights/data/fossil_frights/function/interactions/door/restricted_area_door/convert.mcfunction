@@ -1,0 +1,2 @@
+execute align xyz as @e[dx=0,dy=0,dz=0,type=minecraft:interaction,tag=ff_door.part_0] positioned ~0.5 ~ ~0.5 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:0.5},z:{max:0.5}}}} rotated as @s align xyz positioned ~0.5 ~ ~0.5 run return run function fossil_frights:interactions/door/restricted_area_door/convert_with_direction
+tellraw @s {color:"red",text:"Could not find a custom door in this block"}

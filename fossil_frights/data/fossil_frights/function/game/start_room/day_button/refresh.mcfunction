@@ -23,5 +23,5 @@ execute if score $game_running ff_game_state matches 1 if score $heist_mode_acti
 execute if score $game_running ff_game_state matches 1 if score $heist_mode_active ff_game_state matches 1 if score $heist_round_active ff_game_state matches 0 if score $heist_players_ready ff_game_state matches 1 run scoreboard players set #start_button_active ff_game_state 1
 execute if score $game_running ff_game_state matches 1 if score $heist_mode_active ff_game_state matches 1 if score $heist_round_active ff_game_state matches 0 if score $heist_players_ready ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value {"translate":"ff.start",color:"green"}
 
-execute if score #start_button_active ff_game_state matches 0 positioned 20.0 71.0 28.0 as @e[limit=1,dx=0,dy=0,dz=0,type=minecraft:interaction,tag=ff_button] run function fossil_frights:button/disable
-execute if score #start_button_active ff_game_state matches 1 positioned 20.0 71.0 28.0 as @e[limit=1,dx=0,dy=0,dz=0,type=minecraft:interaction,tag=ff_button] run function fossil_frights:button/enable
+execute if score #start_button_active ff_game_state matches 0 positioned 20.0 71.0 28.0 as @e[limit=1,dx=0,dy=0,dz=0,type=minecraft:interaction,tag=ff_button] run function fossil_frights:interactions/button/disable
+execute if score #start_button_active ff_game_state matches 1 positioned 20.0 71.0 28.0 as @e[limit=1,dx=0,dy=0,dz=0,type=minecraft:interaction,tag=ff_button] run function fossil_frights:interactions/button/enable

@@ -1,7 +1,7 @@
 execute unless block ~ ~ ~ #doors run tellraw @s {color:"red",text:"There is no door block here"}
 execute unless block ~ ~ ~ #doors run return fail
-execute if block ~ ~-1 ~ #minecraft:doors[half=lower] positioned ~ ~-1 ~ run return run function fossil_frights:door/create
-execute if function fossil_frights:door/create/check_occupied run return run tellraw @s {color:"red",text:"This block is already occupied by a custom door"}
+execute if block ~ ~-1 ~ #minecraft:doors[half=lower] positioned ~ ~-1 ~ run return run function fossil_frights:interactions/door/create
+execute if function fossil_frights:interactions/door/create/check_occupied run return run tellraw @s {color:"red",text:"This block is already occupied by a custom door"}
 
 data modify storage fossil_frights:door entity_data set value {Tags:["ff_door","ff_door.new"],data:{ff_door:{}},response:true,width:0.252,height:2.001}
 
@@ -33,9 +33,9 @@ execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_door run data modify stor
 execute if block ~ ~ ~ minecraft:waxed_weathered_copper_door run data modify storage fossil_frights:door entity_data.data.ff_door.block_type set value "minecraft:waxed_weathered_copper_door"
 execute if block ~ ~ ~ minecraft:weathered_copper_door run data modify storage fossil_frights:door entity_data.data.ff_door.block_type set value "minecraft:weathered_copper_door"
 
-execute if block ~ ~ ~ #doors[facing=east] align xyz positioned ~0.5 ~ ~0.5 rotated -90 0 run function fossil_frights:door/create/get_row_orientation
-execute if block ~ ~ ~ #doors[facing=south] align xyz positioned ~0.5 ~ ~0.5 rotated 0 0 run function fossil_frights:door/create/get_row_orientation
-execute if block ~ ~ ~ #doors[facing=west] align xyz positioned ~0.5 ~ ~0.5 rotated 90 0 run function fossil_frights:door/create/get_row_orientation
-execute if block ~ ~ ~ #doors[facing=north] align xyz positioned ~0.5 ~ ~0.5 rotated 180 0 run function fossil_frights:door/create/get_row_orientation
+execute if block ~ ~ ~ #doors[facing=east] align xyz positioned ~0.5 ~ ~0.5 rotated -90 0 run function fossil_frights:interactions/door/create/get_row_orientation
+execute if block ~ ~ ~ #doors[facing=south] align xyz positioned ~0.5 ~ ~0.5 rotated 0 0 run function fossil_frights:interactions/door/create/get_row_orientation
+execute if block ~ ~ ~ #doors[facing=west] align xyz positioned ~0.5 ~ ~0.5 rotated 90 0 run function fossil_frights:interactions/door/create/get_row_orientation
+execute if block ~ ~ ~ #doors[facing=north] align xyz positioned ~0.5 ~ ~0.5 rotated 180 0 run function fossil_frights:interactions/door/create/get_row_orientation
 
 data remove storage fossil_frights:door entity_data
