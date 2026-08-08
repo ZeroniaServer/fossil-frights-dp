@@ -30,11 +30,17 @@ scoreboard players enable @s ff_cmd_join_thief
 scoreboard players enable @s ff_cmd_spawn
 scoreboard players enable @s ff_invite_accept
 execute if score @s ff_settings_confirm matches 1 run function fossil_frights:game/start_room/settings/gamemode/frights/apply
-execute if score @s ff_settings_confirm matches 2 run function fossil_frights:game/start_room/settings/gamemode/party/intro_confirm
-execute if score @s ff_settings_confirm matches 3 run function fossil_frights:game/start_room/settings/gamemode/heists/intro_confirm
+execute if score @s ff_settings_confirm matches 2 run function fossil_frights:game/start_room/settings/gamemode/party/request
+execute if score @s ff_settings_confirm matches 3 run function fossil_frights:game/start_room/settings/gamemode/heists/request
 execute if score @s ff_settings_confirm matches 4 run function fossil_frights:game/start_room/settings/randomizer/enable
 execute if score @s ff_settings_confirm matches 5 run function fossil_frights:game/start_room/settings/gamemode/party/apply
 execute if score @s ff_settings_confirm matches 6 run function fossil_frights:game/start_room/settings/gamemode/heists/apply
+execute if score @s ff_settings_confirm matches 7 run function fossil_frights:game/start_room/settings/gamemode/frights/click
+execute if score @s ff_settings_confirm matches 8 run function fossil_frights:game/start_room/settings/music/click
+execute if score @s ff_settings_confirm matches 9 run function fossil_frights:game/start_room/settings/spectators/click
+execute if score @s ff_settings_confirm matches 10 run function fossil_frights:game/start_room/settings/chat/click
+execute if score @s ff_settings_confirm matches 11 run function fossil_frights:game/start_room/settings/speedrun/click
+execute if score @s ff_settings_confirm matches 12 run function fossil_frights:game/start_room/settings/randomizer/click
 execute if score @s ff_settings_confirm matches 1.. run scoreboard players set @s ff_settings_confirm 0
 scoreboard players add @s ff_msg_cooldown 0
 scoreboard players add @s ff_settings_mode_cooldown 0

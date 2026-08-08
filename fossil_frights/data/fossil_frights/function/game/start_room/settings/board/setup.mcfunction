@@ -28,15 +28,15 @@ summon minecraft:text_display 16.125625 71.26875 25.89375 {Tags:["ff_settings_bo
 summon minecraft:text_display 16.125625 71.26875 25.24375 {Tags:["ff_settings_board_entity","ff_settings_randomizer_label"],billboard:"fixed",Rotation:[270f,0f],background:0,shadow:true,text:"",transformation:{right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]}}
 
 # Buttons
-summon minecraft:interaction 16.00 72.12875 27.71875 {Tags:["ff_settings_board_entity","ff_settings_mode_frights_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 72.12875 27.03125 {Tags:["ff_settings_board_entity","ff_settings_mode_party_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 72.12875 26.34375 {Tags:["ff_settings_board_entity","ff_settings_mode_heists_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 72.12875 27.71875 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_settings_mode_frights_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 72.12875 27.03125 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_settings_mode_party_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 72.12875 26.34375 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_settings_mode_heists_click"],width:0.66f,height:0.66f,response:true}
 summon minecraft:interaction 16.00 72.12875 25.65625 {Tags:["ff_settings_board_entity","ff_settings_add_player_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 71.37375 27.71875 {Tags:["ff_settings_board_entity","ff_start_room_setting_music_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 71.37375 27.03125 {Tags:["ff_settings_board_entity","ff_start_room_setting_spectators_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 71.37375 26.34375 {Tags:["ff_settings_board_entity","ff_start_room_setting_chat_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 71.37375 25.65625 {Tags:["ff_settings_board_entity","ff_start_room_setting_speedrun_click"],width:0.66f,height:0.66f,response:true}
-summon minecraft:interaction 16.00 71.37375 24.96875 {Tags:["ff_settings_board_entity","ff_start_room_setting_randomizer_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 71.37375 27.71875 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_start_room_setting_music_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 71.37375 27.03125 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_start_room_setting_spectators_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 71.37375 26.34375 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_start_room_setting_chat_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 71.37375 25.65625 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_start_room_setting_speedrun_click"],width:0.66f,height:0.66f,response:true}
+summon minecraft:interaction 16.00 71.37375 24.96875 {Tags:["ff_settings_board_entity","ff_settings_info_click","ff_start_room_setting_randomizer_click"],width:0.66f,height:0.66f,response:true}
 
 # Board positions.
 tp @e[type=minecraft:text_display,tag=ff_settings_mode_frights_icon,limit=1] 16.125625 72.25 27.96875

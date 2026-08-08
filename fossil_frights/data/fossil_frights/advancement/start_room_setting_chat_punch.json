@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {"all_of": ["ff_start_room_setting_chat_click"]}
+        }
+      }
+    }
+  },
+  "rewards": {"function": "fossil_frights:game/start_room/settings/chat/info"}
+}

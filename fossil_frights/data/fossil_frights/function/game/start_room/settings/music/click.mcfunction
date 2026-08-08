@@ -7,6 +7,4 @@ execute if score $settings_music_off ff_game_state matches 1 run tag @s add ff_s
 execute unless score $settings_music_off ff_game_state matches 1 run tag @s remove ff_settings_music_off
 tag @s remove ff_settings_toggle_was_disabled
 function fossil_frights:game/start_room/settings/apply_preferences
-execute if score $settings_music_off ff_game_state matches 1 run function fossil_frights:messages/settings/music_off
-execute unless score $settings_music_off ff_game_state matches 1 run function fossil_frights:messages/settings/music_on
 playsound minecraft:block.lever.click master @s ~ ~ ~ 1 1

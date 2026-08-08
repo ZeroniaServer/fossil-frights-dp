@@ -1,0 +1,2 @@
+advancement revoke @s only fossil_frights:settings_mode_frights_punch
+function fossil_frights:messages/settings/frights_dialog

@@ -5,5 +5,4 @@ scoreboard players set $settings_randomizer_on ff_game_state 1
 tag @s add ff_settings_randomizer_on
 function fossil_frights:join/join_pads/randomizer/setup
 function fossil_frights:game/start_room/settings/board/refresh
-function fossil_frights:messages/settings/random_on
 playsound minecraft:block.lever.click master @s ~ ~ ~ 1 1

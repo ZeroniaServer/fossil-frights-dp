@@ -8,6 +8,4 @@ execute if score $settings_speedrun_show ff_game_state matches 1 run tag @s add 
 execute unless score $settings_speedrun_show ff_game_state matches 1 run tag @s remove ff_settings_speedrun_show
 tag @s remove ff_settings_toggle_was_disabled
 function fossil_frights:game/start_room/settings/apply_preferences
-execute if score $settings_speedrun_show ff_game_state matches 1 run function fossil_frights:messages/settings/speedrun_shown
-execute unless score $settings_speedrun_show ff_game_state matches 1 run function fossil_frights:messages/settings/speedrun_hidden
 playsound minecraft:block.lever.click master @s ~ ~ ~ 1 1
