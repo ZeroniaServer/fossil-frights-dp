@@ -2,7 +2,6 @@ execute if score $heist_mode_active ff_game_state matches 1 run return 0
 tp @e[type=mannequin,tag=ff_check_security_dummy] 0 -200 0
 kill @e[type=mannequin,tag=ff_check_security_dummy]
 setblock -28 70 38 air
-setblock -27 70 36 air
 data remove storage fossil_frights:forced_spectate return
 data remove storage fossil_frights:forced_spectate mannequin
 data modify storage fossil_frights:forced_spectate UUID set from entity @s UUID
@@ -23,5 +22,4 @@ function fossil_frights:cameras/update_camera_models
 function fossil_frights:cameras/lights_disabled/update
 execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1
 execute unless predicate fossil_frights:world/is_realms run setblock -28 70 38 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
-execute unless predicate fossil_frights:world/is_realms run setblock -27 70 36 minecraft:redstone_wire[east=side,north=side,south=side,west=side] strict
 setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=true,facing=north]
