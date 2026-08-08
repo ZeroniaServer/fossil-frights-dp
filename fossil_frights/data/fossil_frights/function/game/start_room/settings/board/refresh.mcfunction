@@ -14,6 +14,9 @@ execute as @a[team=ff_guard] run scoreboard players add $settings_guard_count ff
 execute as @a[team=ff_thief] run scoreboard players add $settings_thief_count ff_game_state 1
 
 # Modes
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text set value [{translate:"ff.settings.board.gamemode.frights",color:"white",with:[{translate:"ff.settings.board.gamemode.frights.name",color:"yellow"}]}]
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text set value [{translate:"ff.settings.board.gamemode.party",color:"white",with:[{translate:"ff.settings.board.gamemode.party.name",color:"yellow"}]}]
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text set value [{translate:"ff.settings.board.gamemode.heists",color:"white",with:[{translate:"ff.settings.board.gamemode.heists.name",color:"yellow"}]}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_frights_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_party_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_heists_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
