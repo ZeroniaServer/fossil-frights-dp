@@ -6,6 +6,9 @@ execute as @a[team=ff_guard] if predicate fossil_frights:game/start_room/setting
 execute as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at_add_player run tag @s add ff_settings_hovering
 execute as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at run title @s actionbar {translate:"ff.settings.hover.info",color:"yellow",italic:false}
 execute as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at_add_player run title @s actionbar {translate:"ff.settings.hover.select",color:"yellow",italic:false}
+execute if score $party_mode_active ff_game_state matches 1.. as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at_speedrun run title @s actionbar {translate:"ff.settings.hover.frights_only",color:"gray",italic:false}
+execute if score $heist_mode_active ff_game_state matches 1.. as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at_speedrun run title @s actionbar {translate:"ff.settings.hover.frights_only",color:"gray",italic:false}
+execute unless score $heist_mode_active ff_game_state matches 1.. as @a[team=ff_guard] if predicate fossil_frights:game/start_room/settings/looking_at_randomizer run title @s actionbar {translate:"ff.settings.hover.heists_only",color:"gray",italic:false}
 scoreboard players add $settings_board_tick ff_game_state 1
 execute if score $settings_board_tick ff_game_state matches 10.. run scoreboard players set $settings_board_tick ff_game_state 0
 execute if score $settings_board_tick ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/refresh
