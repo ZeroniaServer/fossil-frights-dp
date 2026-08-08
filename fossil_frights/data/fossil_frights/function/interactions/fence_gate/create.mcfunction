@@ -16,7 +16,6 @@ execute if block ~ ~ ~ #minecraft:fence_gates[powered=false] run data modify sto
 execute if block ~ ~ ~ minecraft:acacia_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:acacia_fence_gate"
 execute if block ~ ~ ~ minecraft:bamboo_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:bamboo_fence_gate"
 execute if block ~ ~ ~ minecraft:birch_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:birch_fence_gate"
-execute if block ~ ~ ~ minecraft:cherry_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:cherry_fence_gate"
 execute if block ~ ~ ~ minecraft:crimson_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:crimson_fence_gate"
 execute if block ~ ~ ~ minecraft:dark_oak_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:dark_oak_fence_gate"
 execute if block ~ ~ ~ minecraft:jungle_fence_gate run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_type set value "minecraft:jungle_fence_gate"
