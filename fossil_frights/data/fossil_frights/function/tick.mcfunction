@@ -69,7 +69,8 @@ function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
-function fossil_frights:game/start_room/settings/board/tick
+execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
+execute unless score $settings_locked ff_game_state matches 0 if entity @a[tag=ff_settings_hovering] run function fossil_frights:game/start_room/settings/board/clear_hover
 function fossil_frights:join/join_pads/tick
 function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
 function fossil_frights:lobby_games/ant_fight/teleporter_walk_tick
