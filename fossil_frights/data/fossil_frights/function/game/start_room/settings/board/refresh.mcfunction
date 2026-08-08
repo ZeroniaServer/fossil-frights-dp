@@ -14,9 +14,15 @@ execute as @a[team=ff_guard] run scoreboard players add $settings_guard_count ff
 execute as @a[team=ff_thief] run scoreboard players add $settings_thief_count ff_game_state 1
 
 # Modes
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text set value [{translate:"ff.settings.board.gamemode.frights",color:"white",with:[{translate:"ff.settings.board.gamemode.frights.name",color:"yellow"}]}]
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text set value [{translate:"ff.settings.board.gamemode.party",color:"white",with:[{translate:"ff.settings.board.gamemode.party.name",color:"yellow"}]}]
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text set value [{translate:"ff.settings.board.gamemode.heists",color:"white",with:[{translate:"ff.settings.board.gamemode.heists.name",color:"yellow"}]}]
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] alignment set value "center"
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] alignment set value "center"
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] alignment set value "center"
+execute as @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] run tp @s 16.125625 72.0625 27.90625
+execute as @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] run tp @s 16.125625 72.0625 27.21875
+execute as @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] run tp @s 16.125625 72.0625 26.53125
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text set value [{translate:"ff.settings.board.gamemode.frights.name",color:"gray"}]
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text set value [{translate:"ff.settings.board.gamemode.party.name",color:"gray"}]
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text set value [{translate:"ff.settings.board.gamemode.heists.name",color:"gray"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_frights_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_party_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_heists_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
@@ -27,12 +33,12 @@ execute if score $settings_mode ff_game_state matches 0 run data modify entity @
 execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_party_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_heists_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text_opacity set value 0b
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text_opacity set value 0b
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text_opacity set value 0b
-execute if score $settings_mode ff_game_state matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text_opacity set value -1b
-execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text_opacity set value -1b
-execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text_opacity set value -1b
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text_opacity set value -1b
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text_opacity set value -1b
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text_opacity set value -1b
+execute if score $settings_mode ff_game_state matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text set value [{translate:"ff.settings.board.gamemode.frights.name",color:"white"}]
+execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text set value [{translate:"ff.settings.board.gamemode.party.name",color:"white"}]
+execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text set value [{translate:"ff.settings.board.gamemode.heists.name",color:"white"}]
 
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_players_label,limit=1] text set value ""
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_team_counts_label,limit=1] text set value ""
