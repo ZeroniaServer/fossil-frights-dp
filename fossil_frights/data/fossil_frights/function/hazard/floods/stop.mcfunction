@@ -3,7 +3,7 @@
 #Cafe
 execute positioned 21 87 15 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned 25 87 37 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned 16 87 40 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 17 87 40 run function fossil_frights:hazard/floods/drain_water/start_here
 #Gift Shop
 execute positioned -25 87 18 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned -19 87 26 run function fossil_frights:hazard/floods/drain_water/start_here
