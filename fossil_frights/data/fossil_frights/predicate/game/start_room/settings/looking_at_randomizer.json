@@ -6,7 +6,11 @@
       "looking_at": {
         "minecraft:entity_type": "minecraft:interaction",
         "minecraft:distance": {"absolute": {"max": 4.0}},
-        "minecraft:nbt": "{Tags:[\"ff_start_room_setting_randomizer_click\"]}"
+        "minecraft:entity_tags": {
+          "all_of": [
+            "ff_start_room_setting_randomizer_click"
+          ]
+        }
       }
     }
   }
