@@ -6,7 +6,7 @@
         "player": [
           {
             "condition": "minecraft:reference",
-            "name": "fossil_frights:map/in_dynamic_region"
+            "name": "fossil_frights:location/in_dynamic_region"
           }
         ]
       }
