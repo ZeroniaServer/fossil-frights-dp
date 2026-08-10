@@ -4,14 +4,17 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "minecraft:glow_berries"
-          ]
+          "items": ["minecraft:glow_berries"],
+          "predicates": {
+            "minecraft:custom_data": {
+              "itemID": "glowberry"
+            }
+          }
         }
       }
     }
   },
   "rewards": {
-    "function": "fossil_frights:player/glowberry/eaten"
+    "function": "fossil_frights:interactions/glowberry/eaten"
   }
 }
