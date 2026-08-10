@@ -1,14 +1,17 @@
-[
-  {
-    "function": "minecraft:reference",
-    "name": "fossil_frights:copper_golem/set_eyes/on"
-  },
-  {
-    "function": "minecraft:reference",
-    "name": "fossil_frights:copper_golem/set_pose/sitting"
-  },
-  {
-    "function": "minecraft:reference",
-    "name": "fossil_frights:copper_golem/coppy_the_copper_golem/swag_glasses_condition"
-  }
-]
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "fossil_frights:copper_golem/set_eyes/on"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "fossil_frights:copper_golem/set_pose/sitting"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "fossil_frights:copper_golem/coppy_the_copper_golem/swag_glasses_condition"
+    }
+  ]
+}
