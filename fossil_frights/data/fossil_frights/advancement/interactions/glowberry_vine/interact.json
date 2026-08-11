@@ -1,16 +1,20 @@
 {
   "criteria": {
-    "click": {
+    "interact": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
           "entity_type": "minecraft:interaction",
-          "entity_tags": { "all_of": ["ff_glowberry"] }
+          "entity_tags": {
+            "all_of": [
+              "ff_glowberry_vine"
+            ]
+          }
         }
       }
     }
   },
   "rewards": {
-    "function": "fossil_frights:interactions/glowberry/click"
+    "function": "fossil_frights:interactions/glowberry_vine/interact"
   }
 }
