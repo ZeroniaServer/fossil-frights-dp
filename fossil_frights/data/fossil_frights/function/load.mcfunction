@@ -440,6 +440,7 @@ advancement revoke @a only fossil_frights:hazard_cookie_consumed
 advancement revoke @a only fossil_frights:camera_remote_dummy_punch
 advancement revoke @a only fossil_frights:curse_hazard_click
 advancement revoke @a only fossil_frights:security_panel_click
+advancement revoke @a only fossil_frights:interactions/glowberry_vine/interact
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
 function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/interactions/load
