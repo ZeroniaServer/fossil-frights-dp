@@ -11,8 +11,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": { "text": "Glowberry", "color": "yellow", "italic": false },
                 "!minecraft:food": {},
+                "minecraft:item_name": {
+                  "translate": "ff.item.glowberry",
+                  "color": "yellow",
+                  "italic": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "glowberry"
                 }
