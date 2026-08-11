@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:settings_add_player_click
+advancement revoke @s only fossil_frights:start_room/settings/add_player_click
 execute unless predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/only_active_players_can_start_multiplayer_games
 execute unless predicate fossil_frights:player/is_playing run return 0
 execute unless score $settings_mode ff_game_state matches 0 run return 0

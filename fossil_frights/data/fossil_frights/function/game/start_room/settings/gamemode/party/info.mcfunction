@@ -1,2 +1,2 @@
-advancement revoke @s only fossil_frights:settings_mode_party_punch
+advancement revoke @s only fossil_frights:start_room/settings/mode_party_punch
 function fossil_frights:messages/settings/party_mode_dialog
