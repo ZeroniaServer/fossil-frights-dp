@@ -1,5 +1,5 @@
 scoreboard players set #gate_crush_lock ff_hazard_rng 0
-place template minecraft:garage_door_3 -4 70 38
+place template fossil_frights:garage_door_3 -4 70 38
 execute positioned -4 70 39 as @a[distance=..0.75] run function fossil_frights:hazard/security/crush_garage_player
 execute positioned -3 70 39 as @a[distance=..0.75] run function fossil_frights:hazard/security/crush_garage_player
 execute positioned -2 70 39 as @a[distance=..0.75] run function fossil_frights:hazard/security/crush_garage_player
