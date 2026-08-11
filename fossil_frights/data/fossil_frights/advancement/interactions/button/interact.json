@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "click": {
+    "interact": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:interactions/button/click"
+    "function": "fossil_frights:interactions/button/interact"
   }
 }
