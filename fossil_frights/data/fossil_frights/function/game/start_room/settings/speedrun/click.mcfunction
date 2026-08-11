@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:start_room_setting_speedrun_click
+advancement revoke @s only fossil_frights:start_room/settings/speedrun_click
 execute unless function fossil_frights:game/start_room/settings/gamemode/can_change run return 0
 execute unless score $settings_mode ff_game_state matches 0 run return 0
 execute if score $settings_speedrun_show ff_game_state matches 1 run tag @s add ff_settings_toggle_was_disabled

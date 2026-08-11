@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:start_room_setting_music_click
+advancement revoke @s only fossil_frights:start_room/settings/music_click
 execute unless function fossil_frights:game/start_room/settings/gamemode/can_change run return 0
 execute if score $settings_music_off ff_game_state matches 1 run tag @s add ff_settings_toggle_was_disabled
 execute if entity @s[tag=ff_settings_toggle_was_disabled] run scoreboard players set $settings_music_off ff_game_state 0
