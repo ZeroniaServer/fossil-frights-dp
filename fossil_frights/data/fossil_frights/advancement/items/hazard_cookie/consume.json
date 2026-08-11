@@ -4,12 +4,9 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "minecraft:cookie"
-          ],
           "predicates": {
             "minecraft:custom_data": {
-              "ff_hazard_cookie": true
+              "itemID": "hazard_cookie"
             }
           }
         }

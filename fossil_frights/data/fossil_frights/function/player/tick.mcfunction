@@ -185,7 +185,7 @@ advancement revoke @s only fossil_frights:final_task_dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch
 advancement revoke @s only fossil_frights:ice_frozen_hurt
 advancement revoke @s only fossil_frights:items/camera_remote/consume
-advancement revoke @s only fossil_frights:hazard_cookie_consumed
+advancement revoke @s only fossil_frights:items/hazard_cookie/consume
 advancement revoke @s only fossil_frights:camera_remote_dummy/punch
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 16
