@@ -7,3 +7,4 @@ execute if items entity @s hotbar.5 *[custom_data~{ff_heist_trap:true}] run func
 execute if items entity @s hotbar.6 *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_6
 execute if items entity @s hotbar.7 *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_7
 execute if items entity @s hotbar.8 *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/restore_selected/hotbar_8
+execute if items entity @s weapon.offhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/restore_selected/offhand
