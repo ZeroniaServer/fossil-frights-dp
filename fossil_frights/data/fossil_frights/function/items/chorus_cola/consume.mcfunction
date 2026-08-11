@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:consume_chorus_cola
+advancement revoke @s only fossil_frights:items/chorus_cola/consume
 
 # Disappear effects
 execute at @s run particle minecraft:portal ~ ~1 ~ 0 0.5 0 0.5 50
