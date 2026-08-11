@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "click": {
+    "enter": {
       "trigger": "minecraft:enter_block",
       "conditions": {
         "block": "minecraft:structure_void"
