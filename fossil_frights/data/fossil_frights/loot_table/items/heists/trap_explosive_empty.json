@@ -23,6 +23,14 @@
                     "italic": false,
                     "with": [
                       { "keybind": "key.attack", "color": "yellow" },
+                      { "keybind": "key.drop", "color": "yellow" }
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.trap.description.cycle",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
                       { "keybind": "key.use", "color": "yellow" }
                     ]
                   },
@@ -87,6 +95,14 @@
                         "italic": false,
                         "with": [
                           { "keybind": "key.attack", "color": "yellow" },
+                          { "keybind": "key.drop", "color": "yellow" }
+                        ]
+                      },
+                      {
+                        "translate": "ff.item.trap.description.cycle",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
                           { "keybind": "key.use", "color": "yellow" }
                         ]
                       },
@@ -145,8 +161,7 @@
                 "minecraft:custom_data": {
                   "itemID": "trap_explosive",
                   "ff_heist_trap": true,
-                  "ff_trap_empty": true,
-                  "ff_prevent_drop": true
+                  "ff_trap_empty": true
                 }
               }
             }

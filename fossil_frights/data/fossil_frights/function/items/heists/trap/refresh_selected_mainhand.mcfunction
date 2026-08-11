@@ -1,4 +1,5 @@
 execute unless items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run return 0
+execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true,ff_prevent_drop:true}] run return run function fossil_frights:items/heists/trap/restore_selected_mainhand
 execute if score @s ff_trap_selected matches ..0 if score @s ff_trap_glow_phase matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"trap_glow",ff_trap_empty:true}] run function fossil_frights:items/heists/trap/restore_selected_mainhand
 execute if score @s ff_trap_selected matches ..0 if score @s ff_trap_glow_phase matches 0 unless items entity @s weapon.mainhand *[custom_data~{itemID:"trap_glow"}] run function fossil_frights:items/heists/trap/restore_selected_mainhand
 execute if score @s ff_trap_selected matches ..0 unless score @s ff_trap_glow_phase matches 0 unless items entity @s weapon.mainhand *[custom_data~{itemID:"trap_glow",ff_trap_empty:true}] run function fossil_frights:items/heists/trap/restore_selected_mainhand
