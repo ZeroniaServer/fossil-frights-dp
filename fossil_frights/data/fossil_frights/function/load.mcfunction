@@ -431,7 +431,7 @@ advancement revoke @a only fossil_frights:start_room_setting_chat_click
 advancement revoke @a only fossil_frights:start_room_setting_speedrun_click
 advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:evolution_punch
-advancement revoke @a only fossil_frights:glowberry_eat
+advancement revoke @a only fossil_frights:items/glowberry/consume
 advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:trap_consumed
 advancement revoke @a only fossil_frights:camera_remote_consumed

@@ -12,8 +12,10 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": { "text": "Glowberry", "color": "yellow", "italic": false },
-                "minecraft:food": { "nutrition": 2, "saturation": 0.1, "can_always_eat": true },
-                "minecraft:custom_data": { "itemID": "glowberry" }
+                "!minecraft:food": {},
+                "minecraft:custom_data": {
+                  "itemID": "glowberry"
+                }
               }
             }
           ]
