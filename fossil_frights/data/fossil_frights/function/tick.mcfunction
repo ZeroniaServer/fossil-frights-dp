@@ -6,6 +6,7 @@ tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
 
 function fossil_frights:items/dropped_items/tick
+function fossil_frights:items/heists/lootbook/tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/on_tick
 function fossil_frights:compass/tick

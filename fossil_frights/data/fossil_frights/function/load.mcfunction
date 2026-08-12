@@ -68,6 +68,7 @@ scoreboard objectives add ff_cmd_parkour trigger
 scoreboard objectives add ff_cmd_join_guard trigger
 scoreboard objectives add ff_cmd_join_thief trigger
 scoreboard objectives add ff_cmd_spawn trigger
+scoreboard objectives add ff_lootbook trigger
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_ice_cannon_age dummy

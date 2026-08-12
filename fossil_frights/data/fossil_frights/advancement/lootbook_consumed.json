@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "ff_heist_loot_book": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/heists/lootbook/use_consumed"
+  }
+}

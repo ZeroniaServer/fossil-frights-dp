@@ -1,0 +1,1 @@
+$data modify storage fossil_frights:lootbook ui.entry set value {type:"minecraft:item",item:$(item),description:{contents:[$(prefix),{translate:"$(name_key)",color:"white"},{text:"\n",color:"gray"},{translate:"$(description_key)",color:"gray"}],width:250},show_decorations:false,show_tooltip:false,width:16,height:16}
