@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:confetti_remote_consumed
+advancement revoke @s only fossil_frights:items/confetti_remote/consume
 execute unless entity @s[gamemode=adventure] run return 0
 scoreboard players set @s ff_confetti_uses 0
 execute if items entity @s weapon.mainhand minecraft:diamond_hoe[minecraft:custom_data~{ff_confetti_remote:true},minecraft:damage=1] run scoreboard players set @s ff_confetti_uses 1

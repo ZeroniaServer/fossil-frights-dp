@@ -4,9 +4,6 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "minecraft:diamond_hoe"
-          ],
           "predicates": {
             "minecraft:custom_data": {
               "ff_confetti_remote": true
