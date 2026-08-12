@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#fossil_frights:air_like",
+    "#fossil_frights:glass_panes",
+    "#fossil_frights:glass_blocks",
+    "#minecraft:bars",
+    "#minecraft:buttons",
+    "#minecraft:all_signs",
+    "#minecraft:trapdoors",
+    "#minecraft:wooden_shelves",
+    "minecraft:barrier",
+    "minecraft:water"
+  ]
+}

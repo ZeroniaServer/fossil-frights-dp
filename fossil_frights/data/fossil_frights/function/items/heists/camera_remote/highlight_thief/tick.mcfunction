@@ -2,7 +2,7 @@
 execute if entity @s[tag=debug] run particle minecraft:bubble ~ ~ ~ 0 0 0 0 1 force
 
 # return if invalid
-execute unless block ~ ~ ~ #fossil_frights:transparent run return fail
+execute unless block ~ ~ ~ #fossil_frights:camera_thief_capture_raycast_ignore run return fail
 execute unless entity @p[team=ff_thief,dx=0] positioned ^ ^ ^0.25 run return run function fossil_frights:items/heists/camera_remote/highlight_thief/tick
 execute unless function fossil_frights:items/heists/camera_remote/highlight_thief/thief_visible run return fail
 
