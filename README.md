@@ -11,13 +11,18 @@
 | Tutorial | `/trigger ff_cmd_tutorial` |
 | Info dialog | `/trigger ff_cmd_info` |
 | Enable Fossil Heists | `/trigger ff_cmd_heists` |
-| Set a Heists challenge bounty | `/trigger ff_cmd_challenge [set <amount>] |
+| Set a Heists challenge bounty | `/trigger ff_cmd_challenge [set <amount>]` |
 | Join guard team | `/trigger ff_cmd_join_guard` |
 | Join thief team | `/trigger ff_cmd_join_thief` |
-| Return to spawn | `/trigger ff_cmd_spawn` |
 | Invite dialog | `/trigger ff_cmd_invite` |
 
-Fossil Frights plugin adds aliases: `/start`, `/join`, `/join guard`, `/join thief`, `/leave`, `/spectate`, `/stats`, `/invite`, `/tutorial`, `/info`, `/heists`, `/spawn`.
+| Return to spawn | `/trigger ff_cmd_spawn` |
+| Tp to Ant Fight | `/trigger ff_cmd_spawn` |
+| Tp to Parkour | `/trigger ff_cmd_parkour` |
+| Tp to Temple Run | `/trigger ff_cmd_templerun` |
+| Tp to Sulfur Strikers | `/trigger ff_cmd_sulfurstrikers` |
+
+Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/antfight`, `/sulfurstriker`, `/templerun`, `/parkour`, `/challenge`, `/stats`, `/invite`, `/tutorial`, `/info`, `/spawn`. 
 
 ## Admin Commands
 
@@ -43,7 +48,7 @@ The datapack stores leaderboard entries in `storage fossil_frights:leaderboards 
 | --- | --- |
 | 1. Player stat changes | Scoreboards update (`ff_top_time`, `ff_top_day`, `ff_run_count`, `ff_duo_best`) |
 | 2. Sync entry | `fossil_frights:leaderboards/sync_entry` copies the player into storage |
-| 3. Board render | Display functions sort storage entries and render text displays at the `leader_board` armor stand |
+| 3. Board render | Display functions sort storage entries and render text displays |
 
 Datapack-only admin commands:
 
