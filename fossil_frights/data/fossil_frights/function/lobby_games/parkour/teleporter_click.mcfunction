@@ -7,7 +7,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 2 run 
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 2 run scoreboard players operation @s ff_parkour_restart_seen = @s ff_parkour_restart_use
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
-advancement revoke @s only fossil_frights:parkour_teleporter_click
+advancement revoke @s only fossil_frights:lobby/parkour_teleporter_click
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute unless entity @s[gamemode=adventure] run return 0
 title @s times 5 3 10

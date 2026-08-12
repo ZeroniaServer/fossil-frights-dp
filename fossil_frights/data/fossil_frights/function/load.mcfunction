@@ -392,10 +392,10 @@ advancement revoke @a only fossil_frights:lock_click
 advancement revoke @a only fossil_frights:museum_map_click
 advancement revoke @a only fossil_frights:map_region
 advancement revoke @a only fossil_frights:info_lectern_click
-advancement revoke @a only fossil_frights:temple_run_teleporter_click
-advancement revoke @a only fossil_frights:ant_fight_teleporter_click
-advancement revoke @a only fossil_frights:parkour_teleporter_click
-advancement revoke @a only fossil_frights:sulfur_strikers_teleporter_click
+advancement revoke @a only fossil_frights:lobby/temple_run_teleporter_click
+advancement revoke @a only fossil_frights:lobby/ant_fight_teleporter_click
+advancement revoke @a only fossil_frights:lobby/parkour_teleporter_click
+advancement revoke @a only fossil_frights:lobby/sulfur_strikers_teleporter_click
 advancement revoke @a only fossil_frights:tasks/easy/swat_flies/click
 advancement revoke @a only fossil_frights:tasks/easy/check_security/click
 advancement revoke @a only fossil_frights:lock_register_click
