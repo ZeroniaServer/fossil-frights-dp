@@ -1,3 +1,6 @@
+execute positioned ^ ^ ^-1 positioned ~ ~0.5 ~ if block ~ ~ ~ #minecraft:signs run return run function fossil_frights:interactions/door/create/summon_sign_row with storage fossil_frights:door
+execute positioned ^ ^ ^-1 positioned ~ ~0.5 ~ if block ~ ~1 ~ #minecraft:signs run return run function fossil_frights:interactions/door/create/summon_sign_row with storage fossil_frights:door
+
 $summon minecraft:interaction ^0.375 ^ ^-0.40625 $(entity_data)
 execute positioned ^0.375 ^ ^-0.40625 run tag @e[distance=..0.01,type=interaction,tag=ff_door.new] add ff_door.part_0
 $summon minecraft:interaction ^0.125 ^ ^-0.40625 $(entity_data)
