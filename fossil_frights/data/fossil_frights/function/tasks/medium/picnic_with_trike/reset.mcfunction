@@ -1,1 +1,1 @@
-advancement revoke @a only fossil_frights:picnic_with_trike_eat
+advancement revoke @a only fossil_frights:tasks/medium/picnic_with_trike/eat

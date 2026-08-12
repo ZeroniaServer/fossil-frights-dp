@@ -5,10 +5,16 @@
       "conditions": {
         "entity": {
           "entity_type": "minecraft:interaction",
-          "entity_tags": {"all_of": ["ff_tnt_test_click"]}
+          "entity_tags": {
+            "all_of": [
+              "ff_defrost_freezer_click"
+            ]
+          }
         }
       }
     }
   },
-  "rewards": {"function": "fossil_frights:tasks/easy/tnt_test/clicked"}
+  "rewards": {
+    "function": "fossil_frights:tasks/hard/defrost_freezer/clicked"
+  }
 }

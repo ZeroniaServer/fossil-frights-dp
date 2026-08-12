@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:final_task_centrifuge_click
+advancement revoke @s only fossil_frights:tasks/final/final_task/centrifuge_click
 execute unless entity @s[team=ff_guard] run return 0
 execute unless score $final_task_sel ff_task_state matches 1 run return 0
 execute unless score $final_task_done ff_task_state matches 0 run return 0

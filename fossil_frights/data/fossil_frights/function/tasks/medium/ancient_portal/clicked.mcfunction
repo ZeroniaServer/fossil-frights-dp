@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:ancient_portal_click
+advancement revoke @s only fossil_frights:tasks/medium/ancient_portal/click
 execute unless score $ancient_portal_sel ff_task_state matches 1 run return 0
 execute unless score $ancient_portal_done ff_task_state matches 0 run return 0
 execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{itemID:"febreeze_rod"}] unless items entity @s weapon.offhand *[minecraft:custom_data~{itemID:"febreeze_rod"}] run return 0

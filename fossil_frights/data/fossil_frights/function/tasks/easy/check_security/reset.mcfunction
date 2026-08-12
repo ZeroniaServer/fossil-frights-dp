@@ -1,1 +1,1 @@
-advancement revoke @a only fossil_frights:check_security_click
+advancement revoke @a only fossil_frights:tasks/easy/check_security/click

@@ -6,9 +6,6 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "items": [
-                "minecraft:amethyst_shard"
-              ],
               "predicates": {
                 "minecraft:custom_data": {
                   "ff_dna": true
