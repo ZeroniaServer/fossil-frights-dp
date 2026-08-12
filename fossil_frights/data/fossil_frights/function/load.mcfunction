@@ -361,24 +361,29 @@ scoreboard objectives modify ff_task_tracker numberformat blank
 scoreboard objectives modify ff_heist numberformat styled {"color":"gold"}
 scoreboard objectives modify ff_heist_sidebar numberformat blank
 team add ff_guard
+team modify ff_guard displayName {"text":"Guards"}
 team modify ff_guard color gold
 team modify ff_guard friendlyFire false
 team modify ff_guard collisionRule never
 team add ff_thief
+team modify ff_thief displayName {"text":"Thieves"}
 team modify ff_thief color red
 team modify ff_thief friendlyFire false
 team modify ff_thief nametagVisibility hideForOtherTeams
 team modify ff_thief seeFriendlyInvisibles true
 team modify ff_thief collisionRule never
 team add ff_lobby
+team modify ff_lobby displayName {"text":"Lobby"}
 team modify ff_lobby friendlyFire false
 team modify ff_lobby collisionRule never
 team add ff_spectator
+team modify ff_spectator displayName {"text":"Spectators"}
 team modify ff_spectator color gray
 team modify ff_spectator collisionRule never
 team add ff_dna_hover_yellow
 team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
+team modify ff_dev_mode displayName {"text":"Developers"}
 team modify ff_dev_mode color green
 team add ff_game_start_dummy
 team modify ff_game_start_dummy collisionRule never
