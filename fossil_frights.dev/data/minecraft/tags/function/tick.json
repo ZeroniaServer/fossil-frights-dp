@@ -1,5 +1,6 @@
 {
   "values": [
+    "fossil_frights:admin/dev/auto_dev",
     "fossil_frights:items/chorus_cola/editor/tick"
   ]
 }

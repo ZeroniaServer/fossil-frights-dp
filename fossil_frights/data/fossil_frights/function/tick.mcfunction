@@ -1,4 +1,6 @@
 scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
+execute as @a[gamemode=adventure] run attribute @s minecraft:block_interaction_range base set 0
+execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_range base set 5
 tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
 execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
