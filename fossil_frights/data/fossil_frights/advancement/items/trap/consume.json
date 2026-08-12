@@ -4,9 +4,6 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": [
-            "minecraft:amethyst_shard"
-          ],
           "predicates": {
             "minecraft:custom_data": {
               "ff_heist_trap": true

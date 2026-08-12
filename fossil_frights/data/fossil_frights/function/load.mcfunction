@@ -433,7 +433,7 @@ advancement revoke @a only fossil_frights:hoveraptor_click
 advancement revoke @a only fossil_frights:evolution_punch
 advancement revoke @a only fossil_frights:items/glowberry/consume
 advancement revoke @a only fossil_frights:ice_frozen_hurt
-advancement revoke @a only fossil_frights:trap_consumed
+advancement revoke @a only fossil_frights:items/trap/consume
 advancement revoke @a only fossil_frights:items/camera_remote/consume
 advancement revoke @a only fossil_frights:heists_night_stick_hit
 advancement revoke @a only fossil_frights:items/hazard_cookie/consume
