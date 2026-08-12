@@ -27,7 +27,7 @@ schedule clear fossil_frights:hazard/security/open_5x6_row5
 
 execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s rotated as @s run fill ^-1 ^0 ^0 ^1 ^0 ^0 minecraft:air replace minecraft:iron_bars
 execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s run playsound minecraft:block.piston.contract block @a ~ ~ ~ 1.25 0.95
-place template fossil_frights:garage_door_2 -4 70 38
+place template fossil_frights:garage_door/2 -4 70 38
 execute positioned -4 70 38 run playsound minecraft:block.piston.contract block @a[distance=..24] ~ ~ ~ 1.25 0.95
 schedule function fossil_frights:hazard/security/garage_open_1 6t
 execute as @e[type=minecraft:marker,tag=ff_gate_2x2] at @s rotated as @s run fill ^-1 ^0 ^0 ^0 ^0 ^0 minecraft:air replace minecraft:iron_bars

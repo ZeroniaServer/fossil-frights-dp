@@ -26,7 +26,7 @@ execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s rotated as @s positio
 execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s rotated as @s positioned ^0 ^2 ^0 as @a[distance=..0.75] run function fossil_frights:hazard/security/crush_player
 execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s rotated as @s positioned ^1 ^2 ^0 as @a[distance=..0.75] run function fossil_frights:hazard/security/crush_player
 execute as @e[type=minecraft:marker,tag=ff_gate_3x3] at @s run playsound minecraft:block.piston.extend block @a ~ ~ ~ 1.25 1.05
-place template fossil_frights:garage_door_1 -4 70 38
+place template fossil_frights:garage_door/1 -4 70 38
 execute positioned -4 70 38 run playsound minecraft:block.piston.extend block @a[distance=..24] ~ ~ ~ 1.25 1.05
 schedule function fossil_frights:hazard/security/garage_close_2 6t
 execute as @e[type=minecraft:marker,tag=ff_gate_2x2] at @s rotated as @s run fill ^-1 ^1 ^0 ^0 ^1 ^0 minecraft:iron_bars

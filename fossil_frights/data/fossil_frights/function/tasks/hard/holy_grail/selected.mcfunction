@@ -5,10 +5,10 @@ scoreboard players set $holy_grail_done ff_task_state 0
 function fossil_frights:tasks/hard/holy_grail/clear_pots
 kill @e[type=minecraft:item_display,x=64,y=82,z=47,dx=0,dy=0,dz=2]
 execute store result score $holy_grail_pick ff_task_state run random value 1..6
-execute if score $holy_grail_pick ff_task_state matches 1 run place template fossil_frights:sherd_1 64 82 47
-execute if score $holy_grail_pick ff_task_state matches 2 run place template fossil_frights:sherd_2 64 82 47
-execute if score $holy_grail_pick ff_task_state matches 3 run place template fossil_frights:sherd_3 64 82 47
-execute if score $holy_grail_pick ff_task_state matches 4 run place template fossil_frights:sherd_4 64 82 47
-execute if score $holy_grail_pick ff_task_state matches 5 run place template fossil_frights:sherd_5 64 82 47
-execute if score $holy_grail_pick ff_task_state matches 6 run place template fossil_frights:sherd_6 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 1 run place template fossil_frights:sherd/1 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 2 run place template fossil_frights:sherd/2 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 3 run place template fossil_frights:sherd/3 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 4 run place template fossil_frights:sherd/4 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 5 run place template fossil_frights:sherd/5 64 82 47
+execute if score $holy_grail_pick ff_task_state matches 6 run place template fossil_frights:sherd/6 64 82 47
 function fossil_frights:tasks/tracker/refresh
