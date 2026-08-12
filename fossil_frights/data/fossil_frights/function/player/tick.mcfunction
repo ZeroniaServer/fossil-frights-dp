@@ -48,6 +48,7 @@ execute if score @s ff_settings_mode_cooldown matches 1.. run scoreboard players
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
 function fossil_frights:items/other/confetti_cannon/player_tick
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
+execute if entity @s[gamemode=spectator,team=!ff_dev_mode] run function fossil_frights:admin/spectator/tick
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_pending
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_queued
 execute if predicate fossil_frights:player/is_playing run function fossil_frights:items/plushies/clear_items
