@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_decorated_pot"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:interactions/decorated_pots/interact"
+  }
+}
