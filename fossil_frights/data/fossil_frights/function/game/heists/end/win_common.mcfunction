@@ -7,8 +7,7 @@ function fossil_frights:game/heists/loot/low/cleanup
 function fossil_frights:game/heists/loot/high/cleanup
 function fossil_frights:game/start_room/locked_door/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
-execute as @a[team=ff_guard] run attribute @s minecraft:jump_strength base set 0.42
-execute as @a[team=ff_thief] run attribute @s minecraft:jump_strength base set 0.42
+execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:jump_strength base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset

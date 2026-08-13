@@ -11,7 +11,7 @@ scoreboard players set @s ff_tutorial_tick 0
 function fossil_frights:tutorial/camera/summon
 clear @s
 item replace entity @s armor.head with air
-attribute @s minecraft:scale base set 1
+attribute @s minecraft:scale base reset
 effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true

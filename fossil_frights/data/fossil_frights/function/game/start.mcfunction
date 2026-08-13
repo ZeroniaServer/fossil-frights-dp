@@ -42,7 +42,7 @@ scoreboard players set @a[team=ff_guard,tag=!ff_fade_tp_active] ff_tp_action 23
 scoreboard players set @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] ff_tp_delay 18
 tag @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] add ff_fade_tp_active
 gamemode adventure @a[team=ff_guard]
-execute as @a[team=ff_guard] run attribute @s minecraft:scale base set 1
+execute as @a[team=ff_guard] run attribute @s minecraft:scale base reset
 execute as @a[team=ff_guard] run function fossil_frights:player/protection_disable
 clear @a[team=ff_guard]
 tag @a[team=ff_guard] remove ff_plushie_restore_pending

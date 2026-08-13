@@ -14,7 +14,7 @@ tag @s remove ff_in_queue
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
 gamemode adventure @s
-attribute @s minecraft:scale base set 1
+attribute @s minecraft:scale base reset
 function fossil_frights:player/protection_disable
 clear @s
 effect clear @s minecraft:absorption

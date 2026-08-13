@@ -11,10 +11,10 @@ execute if predicate fossil_frights:player/inventory/velociraptor_statue run sco
 execute if score $holding_heavy ff_game_state matches 1 run attribute @s minecraft:movement_speed base set 0.055
 execute if score $holding_heavy ff_game_state matches 1 if predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:air_drag_modifier base set 3.0
 execute if score $holding_heavy ff_game_state matches 1 unless predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:air_drag_modifier base reset
-execute if score $holding_heavy ff_game_state matches 1 if predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
+execute if score $holding_heavy ff_game_state matches 1 if predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base reset
 execute if score $holding_heavy ff_game_state matches 1 unless predicate fossil_frights:entity/effects/luck run attribute @s minecraft:jump_strength base set 0
 execute if score $holding_heavy ff_game_state matches 1 if entity @s[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0
 execute if score $holding_heavy ff_game_state matches 1 run loot replace entity @s armor.head loot fossil_frights:items/heists/loot_bag
 execute if score $holding_heavy ff_game_state matches 0 run attribute @s minecraft:movement_speed base reset
-execute if score $holding_heavy ff_game_state matches 0 if entity @s[tag=!ff_ice_frozen] run attribute @s minecraft:jump_strength base set 0.42
+execute if score $holding_heavy ff_game_state matches 0 if entity @s[tag=!ff_ice_frozen] run attribute @s minecraft:jump_strength base reset
 execute if score $holding_heavy ff_game_state matches 0 if items entity @s armor.head minecraft:feather[minecraft:custom_data~{ff_heavy_loot_bag:true}] run loot replace entity @s armor.head loot fossil_frights:items/heists/invisimask

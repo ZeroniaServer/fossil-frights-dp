@@ -12,9 +12,9 @@ scoreboard players set @s ff_heist_killer_uuid_1 0
 scoreboard players set @s ff_heist_killer_uuid_2 0
 scoreboard players set @s ff_heist_killer_uuid_3 0
 execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5]
-attribute @s minecraft:jump_strength base set 0.42
+attribute @s minecraft:jump_strength base reset
 attribute @s minecraft:air_drag_modifier base reset
-attribute @s minecraft:entity_interaction_range base set 3
+attribute @s minecraft:entity_interaction_range base reset
 tag @s remove ff_ice_frozen
 function fossil_frights:game/heists/jump_boost/restore
 function fossil_frights:items/heists/ice_cannon/overlay_hide

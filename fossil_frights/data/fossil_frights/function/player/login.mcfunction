@@ -133,7 +133,7 @@ scoreboard players enable @s ff_invite_accept
 execute unless entity @s[tag=tutorial_complete] run tellraw @s {"translate":"ff.messages.info","color":"#F2B8FF","with":[{"translate":"ff.messages.info.watch_tutorial","with":[{"translate":"%s%s","click_event":{"action":"run_command","command":"trigger ff_cmd_tutorial set 1"},"with":[{"translate":"ff.button.tutorial_start","font":"fossil-frights:chat_buttons","color":"white"},{"translate":"ff.button.tutorial_start.override","color":"yellow","bold":true}]}]}]}
 clear @s
 item replace entity @s armor.head with air
-attribute @s minecraft:scale base set 1
+attribute @s minecraft:scale base reset
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s minecraft:waypoint_receive_range base set 0
 title @s actionbar ""

@@ -16,7 +16,7 @@ tag @s add ff_invite_join_source
 function fossil_frights:join/guard
 tag @s remove ff_invite_join_source
 gamemode adventure @s
-attribute @s minecraft:scale base set 1
+attribute @s minecraft:scale base reset
 function fossil_frights:player/protection_disable
 clear @s
 effect clear @s minecraft:absorption
