@@ -63,6 +63,7 @@ function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
+function fossil_frights:cameras/update_camera_models
 execute unless entity @e[type=minecraft:interaction,tag=ff_settings_mode_frights_click,limit=1] run scoreboard players set $lobby_displays_ready ff_game_state 0
 execute if entity @a[limit=1,x=-8,y=64,z=0,dx=40,dy=30,dz=40] if score $lobby_displays_ready ff_game_state matches 0 run function fossil_frights:game/lobby_displays/ensure_setup
 execute if entity @a[limit=1,x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parkour_display_ready ff_parkour_display matches 0 run function fossil_frights:lobby_games/parkour/display/rebuild
