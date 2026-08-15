@@ -1,21 +1,9 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:carved_pumpkin",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "security_guard_hat"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "fossil-frights:items/frights/security_guard_hat"
       }
     },
     "title": {

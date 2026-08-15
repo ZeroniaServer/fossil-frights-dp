@@ -1,1 +1,24 @@
-{"parent":"fossil_frights:04_heists/root","display":{"icon":{"id":"minecraft:carved_pumpkin","components":{"minecraft:custom_model_data":{"floats":[4]},"minecraft:custom_data":{"itemID":"ice_cannon","ff_heist_ice_cannon_hat":true}}},"title":{"translate":"ff.advancement.heists_freeze"},"description":{"translate":"ff.advancement.heists_freeze.description"},"show_toast":true,"announce_to_chat":true},"criteria":{"long_range_freeze":{"trigger":"minecraft:impossible"}}}
+{
+  "parent": "fossil_frights:04_heists/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon"
+      }
+    },
+    "title": {
+      "translate": "ff.advancement.heists_freeze"
+    },
+    "description": {
+      "translate": "ff.advancement.heists_freeze.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "long_range_freeze": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

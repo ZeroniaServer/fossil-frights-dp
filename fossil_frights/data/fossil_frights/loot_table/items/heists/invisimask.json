@@ -47,11 +47,7 @@
                     ]
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    3
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/creeper",
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:intentionally_empty"
@@ -118,11 +114,7 @@
                     ]
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    5
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/skeleton",
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:intentionally_empty"
@@ -189,11 +181,7 @@
                     ]
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    6
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/zombie",
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:intentionally_empty"
@@ -260,11 +248,7 @@
                     ]
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    7
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/enderman",
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:intentionally_empty"

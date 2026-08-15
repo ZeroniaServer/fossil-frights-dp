@@ -16,11 +16,7 @@
                   "color": "aqua",
                   "italic": false
                 },
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    4
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon",
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },
