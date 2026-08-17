@@ -3,6 +3,7 @@ execute unless score $popcorn_buckets_done ff_task_state matches 0 run return 0
 execute unless entity @s[team=ff_guard] run return 0
 execute unless items entity @s weapon.mainhand minecraft:phantom_membrane[custom_data~{itemID:"empty_popcorn"}] unless items entity @s weapon.offhand minecraft:phantom_membrane[custom_data~{itemID:"empty_popcorn"}] run return 0
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "popcorn_buckets"
+execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76 82.5 run playsound fossil-frights:task.popcorn_buckets master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.9 1.0
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run function fossil_frights:tasks/medium/popcorn_buckets/cleanup
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76 82.5 run playsound minecraft:block.dispenser.dispense master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.9 1.2
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76 82.5 run playsound minecraft:block.note_block.basedrum master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.65 1.8

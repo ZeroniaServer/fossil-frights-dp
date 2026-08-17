@@ -1,6 +1,7 @@
 execute unless score $refill_coffee_sel ff_task_state matches 1 run return 0
 execute unless score $refill_coffee_done ff_task_state matches 0 run return 0
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "refill_coffee"
+execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 positioned 16.5 81.5 23.5 run playsound fossil-frights:task.refill_coffee master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.9 1.0
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 positioned 16.5 81.5 23.5 run particle minecraft:campfire_signal_smoke ~ ~0.2 ~ 0.12 0.08 0.12 0.01 1 force
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 positioned 16.5 81.5 23.5 run particle minecraft:poof ~ ~0.2 ~ 0.2 0.1 0.2 0.01 8 force
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 positioned 16.5 81.5 23.5 run playsound minecraft:block.brewing_stand.brew block @a[team=ff_guard,distance=..18] ~ ~ ~ 0.8 1.15
