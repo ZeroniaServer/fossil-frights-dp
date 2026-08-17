@@ -1,6 +1,7 @@
 execute unless score $cool_it_sel ff_task_state matches 1 run return 0
 execute unless score $cool_it_done ff_task_state matches 0 run return 0
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "cool_it"
+execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 positioned 23.5 103.5 9.5 run playsound fossil-frights:task.cool_it master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.9 1.0
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run setblock 23 103 9 minecraft:ice
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run schedule function fossil_frights:tasks/medium/cool_it/freeze_second 10t
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run summon minecraft:firework_rocket 23.5 104 9.5 {LifeTime:0,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:0,explosions:[{shape:"small_ball",colors:[3847130],fade_colors:[11534335],has_trail:false,has_twinkle:true}]}}}}
