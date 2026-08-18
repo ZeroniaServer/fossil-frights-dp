@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:amethyst_shard",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -49,11 +49,7 @@
                     "italic": false
                   }
                 ],
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    103
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_antigravity",
                 "minecraft:piercing_weapon": {
                   "min_reach": 0.0,
                   "max_reach": 0.0,
@@ -75,7 +71,7 @@
                   "has_consume_particles": false
                 },
                 "minecraft:use_remainder": {
-                  "id": "minecraft:amethyst_shard",
+                  "id": "minecraft:paper",
                   "count": 1,
                   "components": {
                     "minecraft:item_name": {
@@ -116,11 +112,7 @@
                         "italic": false
                       }
                     ],
-                    "minecraft:custom_model_data": {
-                      "floats": [
-                        103
-                      ]
-                    },
+                    "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_antigravity",
                     "minecraft:piercing_weapon": {
                       "min_reach": 0.0,
                       "max_reach": 0.0,

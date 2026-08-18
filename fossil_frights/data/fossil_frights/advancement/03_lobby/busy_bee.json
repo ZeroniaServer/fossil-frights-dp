@@ -2,27 +2,9 @@
   "parent": "fossil_frights:03_lobby/root",
   "display": {
     "icon": {
-      "id": "minecraft:amethyst_shard",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "text": "Parkour Restart",
-          "italic": false
-        },
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "parkour_restart"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        },
-        "minecraft:item_model": "fossil-frights:items/lobby/parkour_restart",
-        "minecraft:enchantment_glint_override": false
+        "minecraft:item_model": "fossil-frights:items/lobby/parkour_restart"
       }
     },
     "title": {
