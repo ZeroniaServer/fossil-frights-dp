@@ -2,7 +2,7 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:paper",
+      "id": "minecraft:stone",
       "components": {
         "minecraft:item_model": "fossil-frights:items/misc/dinocoin"
       }

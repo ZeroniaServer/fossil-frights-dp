@@ -2,7 +2,7 @@
   "parent": "fossil_frights:01_progression/day_9",
   "display": {
     "icon": {
-      "id": "minecraft:paper",
+      "id": "minecraft:stone",
       "components": {
         "minecraft:item_model": "fossil-frights:items/frights/task_book_final"
       }

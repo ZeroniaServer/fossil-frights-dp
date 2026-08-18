@@ -1,1 +1,24 @@
-{"parent":"fossil_frights:04_heists/root","display":{"icon":{"id":"minecraft:paper","components":{"minecraft:item_model":"fossil-frights:items/frights/security_guard_hat"}},"title":{"translate":"ff.advancement.heists_guardin"},"description":{"translate":"ff.advancement.heists_guardin.description"},"show_toast":true,"announce_to_chat":true},"criteria":{"guards_win":{"trigger":"minecraft:impossible"}}}
+{
+  "parent": "fossil_frights:04_heists/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "fossil-frights:items/frights/security_guard_hat"
+      }
+    },
+    "title": {
+      "translate": "ff.advancement.heists_guardin"
+    },
+    "description": {
+      "translate": "ff.advancement.heists_guardin.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "guards_win": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,1 +1,24 @@
-{"parent":"fossil_frights:04_heists/root","display":{"icon":{"id":"minecraft:paper","components":{"minecraft:item_model":"fossil-frights:items/misc/dinocoin"}},"title":{"translate":"ff.advancement.heists_greedy"},"description":{"translate":"ff.advancement.heists_greedy.description"},"show_toast":true,"announce_to_chat":true},"criteria":{"all_loot_stolen_or_captured":{"trigger":"minecraft:impossible"}}}
+{
+  "parent": "fossil_frights:04_heists/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "fossil-frights:items/misc/dinocoin"
+      }
+    },
+    "title": {
+      "translate": "ff.advancement.heists_greedy"
+    },
+    "description": {
+      "translate": "ff.advancement.heists_greedy.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "all_loot_stolen_or_captured": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
