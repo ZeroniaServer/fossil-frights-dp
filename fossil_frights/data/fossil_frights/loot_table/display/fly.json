@@ -5,27 +5,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:dried_kelp",
+          "name": "minecraft:stone",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": {
-                  "itemID": "fly"
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "fly"
-                    ]
-                  }
-                ],
-                "tooltip_display": {
-                  "hidden_components": [
-                    "lore"
-                  ]
-                }
+                "minecraft:item_model": "fossil-frights:display/tasks/swat_flies/fly"
               }
             }
           ]
