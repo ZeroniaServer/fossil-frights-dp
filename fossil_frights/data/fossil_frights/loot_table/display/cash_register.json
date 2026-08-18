@@ -5,13 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bell",
+          "name": "minecraft:stone",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": {
-                  "itemID": "cash_register"
+                "minecraft:item_model": "fossil-frights:display/tasks/lock_register/cash_register",
+                "minecraft:custom_model_data": {
+                  "flags": [
+                    false
+                  ]
                 }
               }
             }
