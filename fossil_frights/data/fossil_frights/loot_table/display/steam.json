@@ -5,12 +5,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:paper",
+          "name": "minecraft:stone",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:items/heists/loot/steam",
+                "minecraft:item_model": "fossil-frights:display/general/steam",
                 "minecraft:custom_model_data": {
                   "colors": [
                     -1
