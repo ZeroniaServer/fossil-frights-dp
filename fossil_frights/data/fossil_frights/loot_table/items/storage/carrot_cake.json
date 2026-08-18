@@ -11,15 +11,15 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.carrot_cake",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "minecraft:carrot",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "gold",
-                  "translate": "ff.item.carrot_cake"
                 },
                 "minecraft:custom_data": {
                   "itemID": "carrot_cake",

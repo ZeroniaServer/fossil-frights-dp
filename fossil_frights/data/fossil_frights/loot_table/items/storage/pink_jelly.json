@@ -6,11 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brain_coral_fan",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.pink_jelly",
+                  "color": "light_purple"
+                },
+                "minecraft:item_model": "minecraft:brain_coral_fan",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
@@ -19,11 +24,6 @@
                 "minecraft:custom_data": {
                   "itemID": "pink_jelly",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "light_purple",
-                  "translate": "ff.item.pink_jelly"
                 }
               }
             }

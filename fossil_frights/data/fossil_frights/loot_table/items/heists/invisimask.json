@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.invisimask",
-                  "color": "white",
-                  "italic": false
+                  "color": "white"
                 },
                 "minecraft:lore": [
                   {
@@ -73,15 +72,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.invisimask",
-                  "color": "white",
-                  "italic": false
+                  "color": "white"
                 },
                 "minecraft:lore": [
                   {
@@ -140,15 +138,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.invisimask",
-                  "color": "white",
-                  "italic": false
+                  "color": "white"
                 },
                 "minecraft:lore": [
                   {
@@ -207,15 +204,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.invisimask",
-                  "color": "white",
-                  "italic": false
+                  "color": "white"
                 },
                 "minecraft:lore": [
                   {

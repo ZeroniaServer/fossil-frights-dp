@@ -2,12 +2,13 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:totem_of_undying",
+      "id": "minecraft:stone",
       "components": {
         "minecraft:item_name": {
           "text": "T-Rex Plushie",
           "italic": false
         },
+        "minecraft:item_model": "minecraft:totem_of_undying",
         "minecraft:lore": [
           {
             "text": "",

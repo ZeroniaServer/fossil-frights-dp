@@ -15,6 +15,7 @@
                   "translate": "ff.item.infinileaf",
                   "color": "green"
                 },
+                "minecraft:item_model": "minecraft:snowball",
                 "minecraft:lore": [
                   {
                     "translate": "%s - %s",

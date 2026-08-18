@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.night_stick",
-                  "color": "gold",
-                  "italic": false
+                  "color": "gold"
                 },
                 "minecraft:lore": [
                   {
@@ -48,7 +47,6 @@
                 ],
                 "minecraft:custom_data": {
                   "itemID": "night_stick",
-                  "ff_heist_night_stick": true,
                   "ff_prevent_drop": true
                 }
               }

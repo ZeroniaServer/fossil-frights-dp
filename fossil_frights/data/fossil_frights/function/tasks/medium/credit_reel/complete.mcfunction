@@ -8,7 +8,7 @@ execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run function fossil_frights:tasks/medium/credit_reel/reel_sound_1
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 positioned 25.5 77 75 run particle minecraft:end_rod ~ ~ ~ 0.45 0.6 0.45 0.03 28 force
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run function fossil_frights:tasks/medium/credit_reel/cleanup
-execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run clear @s minecraft:structure_void[minecraft:custom_data~{itemID:"credit_reel"}] 1
+execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run clear @s *[minecraft:custom_data~{itemID:"credit_reel"}] 1
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run function fossil_frights:animations/credits/start
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $credit_reel_sel ff_task_state matches 1 if score $credit_reel_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1

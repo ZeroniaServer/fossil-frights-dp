@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.fire_tablet",
+                  "color": "red"
+                },
+                "minecraft:item_model": "minecraft:netherite_ingot",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:custom_name": {
-                  "italic": false,
-                  "color": "red",
-                  "translate": "ff.item.fire_tablet"
                 },
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",

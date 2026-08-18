@@ -11,18 +11,20 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.ancient_scripture",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:paper",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    41
+                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "ancient_scripture",
                   "ff_heist_low_loot": true,
                   "ff_heist_loot": true
-                },
-                "minecraft:custom_model_data": {
-                  "floats": [41.0]
                 }
               }
             }

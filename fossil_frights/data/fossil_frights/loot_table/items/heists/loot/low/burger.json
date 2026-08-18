@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_beef",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.burger",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:cooked_beef",
                 "minecraft:custom_data": {
                   "itemID": "burger",
                   "ff_heist_low_loot": true,

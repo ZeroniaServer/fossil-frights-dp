@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.drink.bubbly_bat",
-                  "color": "light_purple",
-                  "italic": false
+                  "color": "light_purple"
                 },
                 "minecraft:item_model": "fossil-frights:items/drinks/bubbly_bat",
                 "minecraft:lore": [
@@ -33,27 +32,28 @@
                     "color": "gray"
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
-                },
-                "minecraft:potion_contents": {
-                  "custom_color": 10181046,
-                  "custom_effects": [
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
                     {
-                      "id": "minecraft:levitation",
-                      "amplifier": 5,
-                      "duration": 100
-                    },
-                    {
-                      "id": "minecraft:night_vision",
-                      "amplifier": 0,
-                      "duration": 6000
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:levitation",
+                          "amplifier": 5,
+                          "duration": 100
+                        },
+                        {
+                          "id": "minecraft:night_vision",
+                          "amplifier": 0,
+                          "duration": 6000
+                        }
+                      ]
                     }
                   ]
                 },
-                "!minecraft:use_remainder": {},
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
                   "ff_drink": "bubbly_bat"

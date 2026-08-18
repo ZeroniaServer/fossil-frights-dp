@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.ice_cannon_remote",
-                  "color": "aqua",
-                  "italic": false
+                  "color": "aqua"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon_remote",
                 "minecraft:lore": [
@@ -46,12 +45,10 @@
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
-                  "count": 1,
                   "components": {
                     "minecraft:item_name": {
                       "translate": "ff.item.ice_cannon_remote",
-                      "color": "aqua",
-                      "italic": false
+                      "color": "aqua"
                     },
                     "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon_remote",
                     "minecraft:lore": [

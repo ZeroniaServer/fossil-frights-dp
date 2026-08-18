@@ -6,23 +6,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:heart_of_the_sea",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.portal_core",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:heart_of_the_sea",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "portal_core",
                   "ff_heist_low_loot": true,
                   "ff_heist_loot": true
-                },
-                "minecraft:custom_model_data": {
-                  "floats": [1.0]
                 }
               }
             }

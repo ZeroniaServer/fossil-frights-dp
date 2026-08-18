@@ -11,15 +11,15 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "color": "gold",
+                  "translate": "ff.museum_map.foyer"
+                },
                 "minecraft:item_model": "fossil-frights:items/map/dynamic_map_item/museum_map",
                 "minecraft:custom_model_data": {
                   "strings": [
                     "foyer"
                   ]
-                },
-                "minecraft:item_name": {
-                  "color": "gold",
-                  "translate": "ff.museum_map.foyer"
                 },
                 "minecraft:custom_data": {
                   "itemID": "museum_map",

@@ -6,23 +6,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:guster_pottery_sherd",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.trilobite_fossil",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:guster_pottery_sherd",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "trilobite_fossil",
                   "ff_heist_low_loot": true,
                   "ff_heist_loot": true
-                },
-                "minecraft:custom_model_data": {
-                  "floats": [1.0]
                 }
               }
             }

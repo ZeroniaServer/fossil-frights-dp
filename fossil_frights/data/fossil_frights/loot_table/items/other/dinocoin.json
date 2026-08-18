@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",

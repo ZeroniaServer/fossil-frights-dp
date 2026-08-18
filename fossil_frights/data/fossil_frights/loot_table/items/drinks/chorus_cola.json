@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.drink.chorus_cola",
-                  "color": "#BA9BBA",
-                  "italic": false
+                  "color": "#BA9BBA"
                 },
                 "minecraft:item_model": "fossil-frights:items/drinks/chorus_cola",
                 "minecraft:lore": [
@@ -28,13 +27,11 @@
                     "color": "gray"
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink"
                 },
-                "!minecraft:use_remainder": {},
-                "!minecraft:potion_contents": {},
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
                   "ff_drink": "chorus_cola"

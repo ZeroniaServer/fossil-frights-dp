@@ -11,11 +11,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.fishing_rod",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:fishing_rod",
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
                   "ff_heist_low_loot": true,

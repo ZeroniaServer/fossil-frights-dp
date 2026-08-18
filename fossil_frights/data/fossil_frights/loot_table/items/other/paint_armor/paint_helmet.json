@@ -11,11 +11,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:display/misc/paint_armour/paint_armor_4",
                 "minecraft:item_name": {
                   "translate": "ff.item.paint_armor",
                   "color": "#E70095"
                 },
+                "minecraft:item_model": "fossil-frights:display/misc/paint_armour/paint_armor_4",
                 "minecraft:equippable": {
                   "slot": "head",
                   "asset_id": "fossil-frights:paint",

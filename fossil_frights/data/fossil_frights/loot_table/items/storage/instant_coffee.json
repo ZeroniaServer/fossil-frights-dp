@@ -11,6 +11,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.instant_coffee",
+                  "color": "red"
+                },
+                "minecraft:item_model": "minecraft:paper",
                 "minecraft:custom_model_data": {
                   "floats": [
                     38
@@ -19,11 +24,6 @@
                 "minecraft:custom_data": {
                   "itemID": "instant_coffee",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "red",
-                  "translate": "ff.item.instant_coffee"
                 }
               }
             }

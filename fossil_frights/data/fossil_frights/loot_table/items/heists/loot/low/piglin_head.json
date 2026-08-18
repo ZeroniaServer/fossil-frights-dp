@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:piglin_head",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.piglin_head",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:piglin_head",
                 "minecraft:custom_data": {
                   "itemID": "piglin_head",
                   "ff_heist_low_loot": true,

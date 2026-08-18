@@ -6,17 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.ice_cannon",
-                  "color": "aqua",
-                  "italic": false
+                  "color": "aqua"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon",
+                "minecraft:equippable": {
+                  "camera_overlay": "minecraft:misc/pumpkinblur",
+                  "slot": "head",
+                  "swappable": false
+                },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },

@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:totem_of_undying",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.sniffer_plushie",
-                  "color": "gold",
-                  "italic": false
+                  "color": "gold"
                 },
+                "minecraft:item_model": "minecraft:totem_of_undying",
                 "minecraft:custom_model_data": {
                   "floats": [
                     7

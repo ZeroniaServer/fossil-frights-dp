@@ -6,30 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cookie",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:food": {
-                  "can_always_eat": true,
-                  "nutrition": 2,
-                  "saturation": 0.4
+                "minecraft:item_name": {
+                  "translate": "ff.item.cookie",
+                  "color": "yellow"
                 },
-                "minecraft:custom_name": {
-                  "extra": [
-                    {
-                      "italic": false,
-                      "underlined": false,
-                      "bold": false,
-                      "color": "yellow",
-                      "obfuscated": false,
-                      "strikethrough": false,
-                      "translate": "ff.item.cookie"
-                    }
-                  ],
-                  "text": ""
-                },
+                "minecraft:item_model": "minecraft:cookie",
+                "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cookie",
                   "ff_heist_loot": true

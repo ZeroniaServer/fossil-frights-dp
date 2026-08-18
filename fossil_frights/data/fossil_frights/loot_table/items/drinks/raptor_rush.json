@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.drink.raptor_rush",
-                  "color": "green",
-                  "italic": false
+                  "color": "green"
                 },
                 "minecraft:item_model": "fossil-frights:items/drinks/raptor_rush",
                 "minecraft:lore": [
@@ -28,22 +27,23 @@
                     "color": "gray"
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
-                },
-                "minecraft:potion_contents": {
-                  "custom_color": 3458905,
-                  "custom_effects": [
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
                     {
-                      "id": "minecraft:speed",
-                      "amplifier": 4,
-                      "duration": 300
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 4,
+                          "duration": 300
+                        }
+                      ]
                     }
                   ]
                 },
-                "!minecraft:use_remainder": {},
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
                   "ff_drink": "raptor_rush"

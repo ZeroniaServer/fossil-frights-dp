@@ -6,15 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.drink.fossil_fizz",
-                  "color": "aqua",
-                  "italic": false
+                  "color": "aqua"
                 },
                 "minecraft:item_model": "fossil-frights:items/drinks/fossil_fizz",
                 "minecraft:lore": [
@@ -43,37 +42,38 @@
                     "color": "gray"
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:potion_contents"
-                  ]
-                },
-                "minecraft:potion_contents": {
-                  "custom_color": 5949690,
-                  "custom_effects": [
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
                     {
-                      "id": "minecraft:dolphins_grace",
-                      "amplifier": 0,
-                      "duration": 2400
-                    },
-                    {
-                      "id": "minecraft:fire_resistance",
-                      "amplifier": 0,
-                      "duration": 24000
-                    },
-                    {
-                      "id": "minecraft:resistance",
-                      "amplifier": 0,
-                      "duration": 24000
-                    },
-                    {
-                      "id": "minecraft:water_breathing",
-                      "amplifier": 0,
-                      "duration": 24000
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:dolphins_grace",
+                          "amplifier": 0,
+                          "duration": 2400
+                        },
+                        {
+                          "id": "minecraft:fire_resistance",
+                          "amplifier": 0,
+                          "duration": 24000
+                        },
+                        {
+                          "id": "minecraft:resistance",
+                          "amplifier": 0,
+                          "duration": 24000
+                        },
+                        {
+                          "id": "minecraft:water_breathing",
+                          "amplifier": 0,
+                          "duration": 24000
+                        }
+                      ]
                     }
                   ]
                 },
-                "!minecraft:use_remainder": {},
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
                   "ff_drink": "fossil_fizz"

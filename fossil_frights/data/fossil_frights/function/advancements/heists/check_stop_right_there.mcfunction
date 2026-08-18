@@ -1,4 +1,4 @@
-execute if items entity @s armor.head minecraft:feather[minecraft:custom_data~{ff_heavy_loot_bag:true}] run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there
+execute if items entity @s armor.head *[minecraft:custom_data~{ff_heavy_loot_bag:true}] run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there
 execute if predicate fossil_frights:player/inventory/coffee if score $loot_coffee ff_heist_loot_state matches 2 run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there
 execute if predicate fossil_frights:player/inventory/poster_tube if score $loot_poster_tube ff_heist_loot_state matches 2 run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there
 execute if predicate fossil_frights:player/inventory/ghast_plushie if score $loot_ghast_plushie ff_heist_loot_state matches 2 run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there

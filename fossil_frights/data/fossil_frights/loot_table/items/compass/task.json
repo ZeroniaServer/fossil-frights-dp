@@ -5,28 +5,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:compass",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "text": "Task Compass",
-                  "color": "white",
-                  "italic": false
+                "minecraft:item_name": "Task Compass",
+                "minecraft:item_model": "minecraft:compass",
+                "minecraft:lodestone_tracker": {
+                  "tracked": false
                 },
-                "minecraft:custom_name": {
-                  "text": "Task Compass",
-                  "color": "white",
-                  "italic": false
-                },
-                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "ff_task_compass": true,
                   "ff_prevent_drop": true
-                },
-                "minecraft:lodestone_tracker": {
-                  "tracked": false
                 }
               }
             }

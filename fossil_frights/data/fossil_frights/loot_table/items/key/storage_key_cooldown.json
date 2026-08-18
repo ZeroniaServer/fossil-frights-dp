@@ -6,21 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:echo_shard",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.storage_key",
+                  "color": "yellow"
+                },
                 "minecraft:item_model": "fossil-frights:items/frights/key/cooldown/key_cooldown",
                 "minecraft:custom_model_data": {
                   "floats": [
                     0
                   ]
-                },
-                "minecraft:item_name": {
-                  "translate": "ff.item.storage_key",
-                  "color": "yellow",
-                  "italic": false
                 },
                 "minecraft:lore": [
                   {

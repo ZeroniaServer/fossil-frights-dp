@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:miner_pottery_sherd",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.muddy_sherd",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "minecraft:miner_pottery_sherd",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:custom_name": {
-                  "italic": false,
-                  "color": "gold",
-                  "translate": "ff.item.muddy_sherd"
                 },
                 "minecraft:custom_data": {
                   "itemID": "muddy_sherd",

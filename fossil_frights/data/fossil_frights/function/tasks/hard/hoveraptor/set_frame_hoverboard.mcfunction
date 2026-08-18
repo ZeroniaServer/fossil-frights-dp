@@ -1,1 +1,1 @@
-item replace entity @e[type=minecraft:item_display,tag=ff_hoveraptor,limit=1,sort=nearest] contents with minecraft:totem_of_undying[minecraft:lore=[{text:"",extra:["velociraptor_plushie_on_hoverboard"]}]] 1
+item replace entity @e[type=minecraft:item_display,tag=ff_hoveraptor,limit=1,sort=nearest] contents with minecraft:stone[minecraft:item_model="minecraft:totem_of_undying",minecraft:lore=[{text:"",extra:["velociraptor_plushie_on_hoverboard"]}]] 1

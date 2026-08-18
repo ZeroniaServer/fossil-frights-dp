@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_hoe",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -16,6 +16,7 @@
                   "color": "yellow",
                   "italic": false
                 },
+                "minecraft:item_model": "minecraft:diamond_hoe",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1

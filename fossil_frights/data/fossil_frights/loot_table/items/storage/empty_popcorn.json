@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:phantom_membrane",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.empty_popcorn",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:phantom_membrane",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:custom_name": {
-                  "italic": false,
-                  "color": "yellow",
-                  "translate": "ff.item.empty_popcorn"
                 },
                 "minecraft:custom_data": {
                   "itemID": "empty_popcorn",

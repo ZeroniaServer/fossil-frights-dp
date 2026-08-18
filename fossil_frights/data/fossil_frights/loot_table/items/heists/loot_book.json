@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.loot_book",
-                  "color": "gold",
-                  "italic": false
+                  "color": "gold"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/lootbook/loot_book",
                 "minecraft:lore": [
@@ -33,12 +32,10 @@
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
-                  "count": 1,
                   "components": {
                     "minecraft:item_name": {
                       "translate": "ff.item.loot_book",
-                      "color": "gold",
-                      "italic": false
+                      "color": "gold"
                     },
                     "minecraft:item_model": "fossil-frights:items/heists/lootbook/loot_book",
                     "minecraft:custom_data": {

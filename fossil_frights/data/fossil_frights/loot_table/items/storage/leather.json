@@ -6,25 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
-                  "extra": [
-                    {
-                      "italic": false,
-                      "underlined": false,
-                      "bold": false,
-                      "color": "yellow",
-                      "obfuscated": false,
-                      "strikethrough": false,
-                      "translate": "ff.item.leather"
-                    }
-                  ],
-                  "text": ""
+                "minecraft:item_name": {
+                  "translate": "ff.item.leather",
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:leather",
                 "minecraft:custom_data": {
                   "itemID": "leather",
                   "ff_heist_loot": true

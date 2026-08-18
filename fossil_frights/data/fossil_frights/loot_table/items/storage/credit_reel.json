@@ -6,29 +6,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_void",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.credit_reel",
+                  "color": "white"
+                },
+                "minecraft:item_model": "minecraft:structure_void",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
                 },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:custom_data"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "credit_reel",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "white",
-                  "translate": "ff.item.credit_reel"
                 }
               }
             }

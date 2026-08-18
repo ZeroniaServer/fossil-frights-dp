@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cake",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.chocolate_cake",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:cake",
                 "minecraft:custom_data": {
                   "itemID": "chocolate_cake",
                   "ff_heist_low_loot": true,

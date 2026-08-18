@@ -6,17 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:netherite_ingot",
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "text": "Hard 1",
-                  "color": "gold",
-                  "italic": false
+                  "color": "gold"
                 },
+                "minecraft:item_model": "minecraft:netherite_ingot",
                 "minecraft:custom_data": {
                   "itemID": "placeholder_hard_1",
                   "ff_heist_loot_placeholder": true

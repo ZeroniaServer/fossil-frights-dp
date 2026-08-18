@@ -6,23 +6,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:slime_ball",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.chondrite",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:slime_ball",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "chondrite",
                   "ff_heist_low_loot": true,
                   "ff_heist_loot": true
-                },
-                "minecraft:custom_model_data": {
-                  "floats": [1.0]
                 }
               }
             }

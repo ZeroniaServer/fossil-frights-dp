@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:spider_eye",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.lady_bug",
+                  "color": "red"
+                },
+                "minecraft:item_model": "minecraft:spider_eye",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:custom_name": {
-                  "italic": false,
-                  "color": "red",
-                  "translate": "ff.item.lady_bug"
                 },
                 "minecraft:custom_data": {
                   "itemID": "lady_bug",

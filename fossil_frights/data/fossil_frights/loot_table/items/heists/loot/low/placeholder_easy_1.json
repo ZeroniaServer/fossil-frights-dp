@@ -11,12 +11,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:amethyst_shard",
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "text": "Easy 1",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "minecraft:amethyst_shard",
                 "minecraft:custom_data": {
                   "itemID": "placeholder_easy_1",
                   "ff_heist_loot_placeholder": true

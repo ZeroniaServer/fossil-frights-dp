@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.trap_freeze",
-                  "color": "#7ED4FF",
-                  "italic": false
+                  "color": "#7ED4FF"
                 },
                 "minecraft:lore": [
                   {
@@ -72,12 +71,10 @@
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
-                  "count": 1,
                   "components": {
                     "minecraft:item_name": {
                       "translate": "ff.item.trap_freeze",
-                      "color": "#7ED4FF",
-                      "italic": false
+                      "color": "#7ED4FF"
                     },
                     "minecraft:lore": [
                       {

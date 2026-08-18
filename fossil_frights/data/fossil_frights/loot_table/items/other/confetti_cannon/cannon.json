@@ -6,17 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.confetti_cannon",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/misc/confetti_cannon",
+                "minecraft:equippable": {
+                  "camera_overlay": "minecraft:misc/pumpkinblur",
+                  "slot": "head",
+                  "swappable": false
+                },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },

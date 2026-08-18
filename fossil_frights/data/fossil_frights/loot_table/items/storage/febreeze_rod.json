@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:breeze_rod",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
-                  "color": "aqua",
-                  "italic": false,
-                  "translate": "ff.item.febreeze_rod"
+                "minecraft:item_name": {
+                  "translate": "ff.item.febreeze_rod",
+                  "color": "aqua"
                 },
+                "minecraft:item_model": "minecraft:breeze_rod",
                 "minecraft:custom_data": {
                   "itemID": "febreeze_rod",
                   "ff_heist_loot": true

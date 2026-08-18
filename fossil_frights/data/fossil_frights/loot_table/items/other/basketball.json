@@ -11,6 +11,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "color": "gold",
+                  "translate": "ff.item.basketball"
+                },
                 "minecraft:item_model": "minecraft:player_head",
                 "minecraft:profile": {
                   "properties": [
@@ -32,10 +36,6 @@
                     "translate": "ff.item.basketball.description.2"
                   }
                 ],
-                "minecraft:item_name": {
-                  "color": "gold",
-                  "translate": "ff.item.basketball"
-                },
                 "minecraft:custom_data": {
                   "itemID": "basketball",
                   "ff_heist_loot": true

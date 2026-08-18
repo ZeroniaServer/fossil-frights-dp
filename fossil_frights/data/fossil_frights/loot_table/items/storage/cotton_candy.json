@@ -6,29 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:sweet_berries",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.cotton_candy",
+                  "color": "light_purple"
+                },
+                "minecraft:item_model": "minecraft:sweet_berries",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
-                },
-                "minecraft:custom_name": {
-                  "extra": [
-                    {
-                      "italic": false,
-                      "underlined": false,
-                      "bold": false,
-                      "color": "light_purple",
-                      "obfuscated": false,
-                      "strikethrough": false,
-                      "translate": "ff.item.cotton_candy"
-                    }
-                  ],
-                  "text": ""
                 },
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink",

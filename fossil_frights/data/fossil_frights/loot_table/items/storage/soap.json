@@ -6,11 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:sugar",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.soap",
+                  "color": "light_purple"
+                },
+                "minecraft:item_model": "minecraft:sugar",
                 "minecraft:custom_model_data": {
                   "floats": [
                     2
@@ -19,11 +24,6 @@
                 "minecraft:custom_data": {
                   "itemID": "soap",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "light_purple",
-                  "translate": "ff.item.soap"
                 }
               }
             }

@@ -6,17 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:echo_shard",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "fossil-frights:items/frights/key/key",
                 "minecraft:item_name": {
                   "text": "One-Time Key",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "fossil-frights:items/frights/key/key",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.storage_key.description.1",

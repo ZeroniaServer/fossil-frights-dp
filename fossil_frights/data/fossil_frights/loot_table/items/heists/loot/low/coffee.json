@@ -6,17 +6,26 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:milk_bucket",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
                   "translate": "ff.item.coffee",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
-                "!minecraft:use_remainder": {},
+                "minecraft:item_model": "minecraft:milk_bucket",
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:clear_all_effects"
+                    }
+                  ]
+                },
                 "minecraft:custom_data": {
                   "itemID": "coffee",
                   "ff_heist_low_loot": true,

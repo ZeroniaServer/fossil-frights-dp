@@ -6,11 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "",
+                "minecraft:item_model": "minecraft:air",
+                "minecraft:tooltip_display": {
+                  "hide_tooltip": true
+                },
                 "minecraft:equippable": {
                   "slot": "head",
                   "camera_overlay": "fossil-frights:overlays/disabled_cameras"
@@ -18,9 +23,6 @@
                 "minecraft:custom_data": {
                   "ff_camera_lights_disabled_overlay": true,
                   "ff_prevent_drop": true
-                },
-                "minecraft:tooltip_display": {
-                  "hide_tooltip": true
                 }
               }
             }

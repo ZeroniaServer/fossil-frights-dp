@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.trap_explosive",
-                  "color": "gray",
-                  "italic": false
+                  "color": "gray"
                 },
                 "minecraft:lore": [
                   {
@@ -77,12 +76,10 @@
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
-                  "count": 1,
                   "components": {
                     "minecraft:item_name": {
                       "translate": "ff.item.trap_explosive",
-                      "color": "gray",
-                      "italic": false
+                      "color": "gray"
                     },
                     "minecraft:lore": [
                       {

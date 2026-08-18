@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ominous_trial_key",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.vault_key",
-                  "color": "gold",
-                  "italic": false
+                  "color": "gold"
                 },
+                "minecraft:item_model": "minecraft:ominous_trial_key",
                 "minecraft:custom_data": {
                   "itemID": "vault_key",
                   "ff_vault_key": true,

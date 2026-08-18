@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.vault",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
-                "minecraft:max_stack_size": 1,
+                "minecraft:item_model": "minecraft:diamond",
                 "minecraft:custom_model_data": {
                   "floats": [
                     1
                   ]
                 },
+                "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "vault",
                   "ff_heist_loot": true

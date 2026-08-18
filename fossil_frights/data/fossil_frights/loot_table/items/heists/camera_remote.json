@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.camera_remote",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/camera_remote",
                 "minecraft:lore": [
@@ -58,12 +57,10 @@
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
-                  "count": 1,
                   "components": {
                     "minecraft:item_name": {
-                      "text": "Camera Remote",
-                      "color": "yellow",
-                      "italic": false
+                      "translate": "ff.item.camera_remote",
+                      "color": "yellow"
                     },
                     "minecraft:item_model": "fossil-frights:items/heists/gear/guards/camera_remote",
                     "minecraft:lore": [

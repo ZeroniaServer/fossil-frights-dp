@@ -6,25 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brush",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
-                  "extra": [
-                    {
-                      "italic": false,
-                      "underlined": false,
-                      "bold": false,
-                      "color": "yellow",
-                      "obfuscated": false,
-                      "strikethrough": false,
-                      "translate": "ff.item.brush"
-                    }
-                  ],
-                  "text": ""
+                "minecraft:item_name": {
+                  "color": "yellow",
+                  "translate": "ff.item.brush"
                 },
+                "minecraft:item_model": "minecraft:brush",
                 "minecraft:custom_data": {
                   "itemID": "brush",
                   "ff_heist_loot": true
