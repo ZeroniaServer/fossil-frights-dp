@@ -6,16 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nautilus_shell",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
+                "minecraft:item_name": {
                   "translate": "ff.item.sand_dollar",
-                  "color": "yellow",
-                  "italic": false
+                  "color": "yellow"
                 },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/sand_dollar",
                 "minecraft:custom_data": {
                   "itemID": "sand_dollar",
                   "ff_heist_low_loot": true,

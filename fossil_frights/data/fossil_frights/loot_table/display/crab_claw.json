@@ -5,19 +5,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nautilus_shell",
+          "name": "minecraft:stone",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    3
-                  ]
-                },
-                "minecraft:custom_data": {
-                  "itemID": "crab_claw"
-                }
+                "minecraft:item_model": "fossil-frights:display/heists/heavy_items/crab_claw"
               }
             }
           ]

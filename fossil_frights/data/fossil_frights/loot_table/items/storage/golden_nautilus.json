@@ -6,27 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nautilus_shell",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
+                "minecraft:item_name": {
+                  "color": "gold",
+                  "translate": "ff.item.golden_nautilus"
                 },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/golden_nautilus",
                 "minecraft:equippable": {
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
                   "itemID": "golden_nautilus",
                   "ff_heist_loot": true
-                },
-                "minecraft:item_name": {
-                  "italic": false,
-                  "color": "gold",
-                  "translate": "ff.item.golden_nautilus"
                 }
               }
             }
