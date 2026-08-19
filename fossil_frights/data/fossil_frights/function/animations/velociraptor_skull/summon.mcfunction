@@ -1,12 +1,1 @@
-summon minecraft:item_display ~ ~ ~ {\
-  Tags: [\
-    "ff_velociraptor_skull"\
-  ],\
-  item: {\
-    id: "minecraft:stone",\
-    components: {\
-      "minecraft:item_model": "fossil-frights:display/exhibits/skeletons/velociraptor_skull"\
-    }\
-  },\
-  transformation: {left_rotation:[0,-0.7071068,0,0.7071068],right_rotation:[0,0,0,1],scale:[1,1,1],translation:[0,0,1]}\
-}
+execute positioned ~ ~ ~ rotated 0 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/skeletons/velociraptor_skull",nbt:{Tags:["ff_velociraptor_skull"],transformation:{left_rotation:[0,-0.7071068,0,0.7071068],right_rotation:[0,0,0,1],scale:[1,1,1],translation:[0,0,1]}}}

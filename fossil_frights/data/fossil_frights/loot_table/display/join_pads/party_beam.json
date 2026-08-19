@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:yellow_stained_glass",
+                "minecraft:item_name": {
+                  "text": "Party Beam",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "",
+                    "extra": [
+                      "queue_beam"
+                    ]
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:lore"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ function fossil_frights:animations/credits/cleanup
 summon minecraft:armor_stand 8.25 67.2 75.5 {Tags:["ff_credits_anchor","ff_credits","credits"],Invisible:true,Invulnerable:true,Marker:true,NoGravity:true,Rotation:[90,0]}
 scoreboard players set @e[type=minecraft:armor_stand,tag=ff_credits_anchor,sort=nearest,limit=1,distance=..0.1] ff_credits_time 0
 
-summon minecraft:item_display 26 78.6 75.0 {Tags:["ff_credits","ff_credits_reel","credits"],brightness:{sky:15,block:15},item_display:"fixed",item:{id:"minecraft:stone",count:1,components:{"minecraft:item_model":"minecraft:structure_void","minecraft:item_name":{text:"Credit Reel",italic:false},"minecraft:lore":[{text:"",extra:["credit_reel"]}],"minecraft:tooltip_display":{hidden_components:["minecraft:lore"]}}},transformation:{right_rotation:[0,0,0,1],left_rotation:[0,0,0,1],translation:[0,0,0],scale:[0.5,0.5,0.5]}}
+execute positioned 26 78.6 75.0 rotated 0 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:items/storage/credit_reel",nbt:{Tags:["ff_credits","ff_credits_reel","credits"],brightness:{sky:15,block:15},item_display:"fixed",transformation:{right_rotation:[0,0,0,1],left_rotation:[0,0,0,1],translation:[0,0,0],scale:[0.5,0.5,0.5]}}}
 scoreboard players set @e[type=minecraft:item_display,tag=ff_credits_reel,sort=nearest,limit=1,x=26,y=78.5,z=74.5,distance=..0.1] ff_credits_time 0
 
 function fossil_frights:animations/credits/summon_lines

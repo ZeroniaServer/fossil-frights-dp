@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "fossil-frights:display/lobby/teleporters/parkour_teleporter"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

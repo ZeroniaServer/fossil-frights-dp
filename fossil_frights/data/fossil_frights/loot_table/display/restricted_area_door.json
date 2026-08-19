@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "fossil-frights:display/general/doors/restricted_area_door",
+                "minecraft:custom_model_data": {
+                  "flags": [
+                    true
+                  ],
+                  "strings": [
+                    "left"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

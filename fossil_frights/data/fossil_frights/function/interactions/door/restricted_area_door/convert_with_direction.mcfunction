@@ -1,4 +1,4 @@
-summon minecraft:item_display ~ ~ ~ {Tags:["ff_door.display","ff_door.display_new"],item:{id:"minecraft:stone",components:{"minecraft:item_model":"fossil-frights:display/general/doors/restricted_area_door","minecraft:custom_model_data":{flags:[1],strings:["left"]}}}}
+execute positioned ~ ~ ~ rotated 0 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/restricted_area_door",nbt:{Tags:["ff_door.display","ff_door.display_new"]}}
 summon minecraft:text_display ~ ~ ~ {Tags:["ff_door.display","ff_door.display_new"],text:["",{translate:"ff.sign.restricted_area.0",color:"gold"},"\n",{translate:"ff.sign.restricted_area.1",color:"gold"},"\n",{translate:"ff.sign.restricted_area.2",color:"white"},"\n",{translate:"ff.sign.restricted_area.3",color:"white"}],background:0}
 execute as @e[tag=ff_door.display_new] run rotate @s ~ ~
 tag @e[tag=ff_door.display_new] remove ff_door.display_new
