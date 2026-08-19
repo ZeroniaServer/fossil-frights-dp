@@ -15,12 +15,7 @@
                   "translate": "ff.item.ancient_scripture",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:paper",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    41
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/ancient_scripture",
                 "minecraft:custom_data": {
                   "itemID": "ancient_scripture",
                   "ff_heist_low_loot": true,

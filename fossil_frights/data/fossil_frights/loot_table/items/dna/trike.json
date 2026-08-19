@@ -15,12 +15,7 @@
                   "translate": "ff.item.trike_dna_cloth_item",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:paper",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    34
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/dna/trike_dna_cloth",
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "trike_dna_cloth",
