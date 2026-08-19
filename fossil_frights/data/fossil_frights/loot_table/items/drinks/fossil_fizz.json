@@ -76,7 +76,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
-                  "ff_drink": "fossil_fizz"
+                  "ff_drink": "fossil_fizz",
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }

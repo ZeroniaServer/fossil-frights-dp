@@ -18,7 +18,8 @@
                 "minecraft:item_model": "minecraft:glow_berries",
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
-                  "itemID": "glowberry"
+                  "itemID": "glowberry",
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }

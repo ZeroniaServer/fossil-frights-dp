@@ -46,7 +46,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
-                  "ff_drink": "veloci_tea"
+                  "ff_drink": "veloci_tea",
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }

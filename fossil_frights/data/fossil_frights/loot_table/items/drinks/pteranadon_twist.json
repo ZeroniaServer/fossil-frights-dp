@@ -56,7 +56,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
-                  "ff_drink": "pteranadon_twist"
+                  "ff_drink": "pteranadon_twist",
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }

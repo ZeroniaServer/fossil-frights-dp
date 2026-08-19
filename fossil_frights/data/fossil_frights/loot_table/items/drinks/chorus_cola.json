@@ -34,7 +34,8 @@
                 },
                 "minecraft:custom_data": {
                   "ff_vending_machine": true,
-                  "ff_drink": "chorus_cola"
+                  "ff_drink": "chorus_cola",
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }

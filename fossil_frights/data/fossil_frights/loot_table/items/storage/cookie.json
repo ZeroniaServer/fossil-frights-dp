@@ -19,7 +19,8 @@
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cookie",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_completes_picnic_with_trike_task": true
                 }
               }
             }
