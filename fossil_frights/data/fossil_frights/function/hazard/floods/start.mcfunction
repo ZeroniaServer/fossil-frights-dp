@@ -6,7 +6,7 @@ execute as @e[type=minecraft:marker,tag=ff_drain_water] at @s run function fossi
 # --- First Floor ---
 #Cafe
 setblock 21 87 15 minecraft:water
-setblock 25 87 37 minecraft:water
+setblock 24 87 37 minecraft:water
 setblock 17 87 40 minecraft:water
 #Gift Shop
 setblock -25 87 18 minecraft:water
@@ -29,7 +29,7 @@ setblock -24 100 57 minecraft:water
 #Aviary
 setblock -13 108 68 minecraft:water
 setblock -15 108 78 minecraft:water
-setblock 9 108 86 minecraft:water
+setblock 9 108 87 minecraft:water
 setblock 4 108 88 minecraft:water
 #Second Floor Misc
 setblock -13 100 14 minecraft:water

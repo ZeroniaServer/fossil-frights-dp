@@ -2,7 +2,7 @@
 # --- First Floor ---
 #Cafe
 execute positioned 21 87 15 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned 25 87 37 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 24 87 37 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned 17 87 40 run function fossil_frights:hazard/floods/drain_water/start_here
 #Gift Shop
 execute positioned -25 87 18 run function fossil_frights:hazard/floods/drain_water/start_here
@@ -25,7 +25,7 @@ execute positioned -24 100 57 run function fossil_frights:hazard/floods/drain_wa
 #Aviary
 execute positioned -13 108 68 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned -15 108 78 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned 9 108 86 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 9 108 87 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned 4 108 88 run function fossil_frights:hazard/floods/drain_water/start_here
 #Second Floor Misc
 execute positioned -13 100 14 run function fossil_frights:hazard/floods/drain_water/start_here
