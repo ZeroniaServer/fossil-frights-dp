@@ -15,12 +15,7 @@
                   "translate": "ff.item.hoverboard",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "minecraft:sentry_armor_trim_smithing_template",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard_item",
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
                   "ff_heist_loot": true
