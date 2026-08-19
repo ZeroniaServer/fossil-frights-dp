@@ -1,0 +1,2 @@
+execute unless score $heist_compass_available ff_compass = $heist_compass_available_prev ff_compass run function fossil_frights:locator_bar/markers/sync_heist_changed
+execute unless score $heist_compass_available_hash ff_compass = $heist_compass_available_hash_prev ff_compass run function fossil_frights:locator_bar/markers/sync_heist_changed

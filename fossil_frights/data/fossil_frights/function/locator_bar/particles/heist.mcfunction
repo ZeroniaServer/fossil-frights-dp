@@ -1,0 +1,2 @@
+function fossil_frights:locator_bar/particles/loot
+function fossil_frights:locator_bar/particles/hazards

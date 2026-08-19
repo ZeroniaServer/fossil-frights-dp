@@ -72,4 +72,4 @@ function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "the_los
 
 function fossil_frights:tasks/tracker/update_sidebar/final_task {"task": "final_task"}
 
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:compass/markers/sync
+execute if score $game_running ff_game_state matches 1 run function fossil_frights:locator_bar/markers/sync

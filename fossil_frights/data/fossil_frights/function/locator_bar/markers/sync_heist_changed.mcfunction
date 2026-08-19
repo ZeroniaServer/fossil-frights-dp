@@ -1,3 +1,3 @@
 scoreboard players operation $heist_compass_available_prev ff_compass = $heist_compass_available ff_compass
 scoreboard players operation $heist_compass_available_hash_prev ff_compass = $heist_compass_available_hash ff_compass
-function fossil_frights:compass/update/heist_all
+function fossil_frights:locator_bar/markers/sync_heist
