@@ -1,3 +1,4 @@
+execute unless function fossil_frights:items/heists/trap/common/can_place_selected run return 0
 execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run scoreboard players set @s ff_trap_warn 20
 execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run function fossil_frights:items/heists/trap/common/show_bad_target
 execute if entity @e[type=minecraft:marker,tag=ff_trap,distance=..7,limit=1] run tag @s add ff_trap_restore_pending

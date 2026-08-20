@@ -1,0 +1,10 @@
+execute if score @s ff_trap_type matches ..0 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_glow_phase 2
+execute if score @s ff_trap_type matches ..0 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_glow_timer 50
+execute if score @s ff_trap_type matches 1 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_freeze_phase 2
+execute if score @s ff_trap_type matches 1 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_freeze_timer 50
+execute if score @s ff_trap_type matches 2 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_antigravity_phase 2
+execute if score @s ff_trap_type matches 2 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_antigravity_timer 50
+execute if score @s ff_trap_type matches 3 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_jelly_phase 2
+execute if score @s ff_trap_type matches 3 run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_jelly_timer 50
+execute if score @s ff_trap_type matches 4.. run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_explosive_phase 2
+execute if score @s ff_trap_type matches 4.. run scoreboard players set @a[tag=ff_trap_state_owner_check,limit=1] ff_trap_explosive_timer 50
