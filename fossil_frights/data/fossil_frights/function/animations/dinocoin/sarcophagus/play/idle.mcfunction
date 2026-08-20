@@ -1,0 +1,1 @@
+execute positioned 80 75 81 as @e[type=minecraft:item_display,tag=animation.talking_skull.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/sarcophagus/rig/animations/idle/play_exclusive

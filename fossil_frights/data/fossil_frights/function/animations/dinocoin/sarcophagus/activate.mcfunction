@@ -1,4 +1,5 @@
 function fossil_frights:messages/dinocoin/sarcophagus/activate
+function fossil_frights:animations/dinocoin/sarcophagus/play/jump
 playsound minecraft:block.grindstone.use block @a[distance=..24,x=79.5,y=75,z=78.5] 79.5 75 78.5 1 1
 setblock 79 75 79 air
 setblock 79 75 78 air

@@ -449,6 +449,7 @@ advancement revoke @a only fossil_frights:security_panel_click
 advancement revoke @a only fossil_frights:interactions/glowberry_vine/interact
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
 function fossil_frights:animations/dinocoin/crane/rig/on_load
+function fossil_frights:animations/dinocoin/sarcophagus/talking_skull_default
 function fossil_frights:animations/interactions/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
