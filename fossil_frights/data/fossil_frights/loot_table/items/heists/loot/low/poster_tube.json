@@ -15,7 +15,7 @@
                   "translate": "ff.item.poster_tube",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:blaze_rod",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/poster_tube",
                 "minecraft:custom_data": {
                   "itemID": "poster_tube",
                   "ff_heist_low_loot": true,
