@@ -3,7 +3,7 @@
 execute store result storage fossil_frights:vending_machine_aj_temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/read with storage fossil_frights:vending_machine_aj_temp args
-execute if score @s aj.jump.frame matches 22.. run scoreboard players set @s aj.jump.frame 1
+execute if score @s aj.jump.frame matches 23.. run scoreboard players set @s aj.jump.frame 1
 data remove storage fossil_frights:vending_machine_aj_temp args
 execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players get @s aj.jump.frame
 execute at @s run function fossil_frights:animations/dinocoin/sarcophagus/rig/animations/jump/zzz/apply_frame with storage fossil_frights:vending_machine_aj_temp args

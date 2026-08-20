@@ -5,5 +5,5 @@ execute if score @s aj.tween_duration matches 0 on passengers run data modify en
 data remove storage fossil_frights:vending_machine_aj_temp args
 execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players get @s aj.jump.frame
 function fossil_frights:animations/dinocoin/sarcophagus/rig/animations/jump/zzz/apply_frame with storage fossil_frights:vending_machine_aj_temp args
-execute if score @s aj.jump.frame matches 21 run return run function fossil_frights:animations/dinocoin/sarcophagus/rig/animations/jump/zzz/loop_mode_stop
+execute if score @s aj.jump.frame matches 22 run return run function fossil_frights:animations/dinocoin/sarcophagus/rig/animations/jump/zzz/loop_mode_stop
 scoreboard players add @s aj.jump.frame 1
