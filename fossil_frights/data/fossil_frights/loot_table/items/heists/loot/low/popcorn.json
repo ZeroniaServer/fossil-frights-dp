@@ -15,7 +15,7 @@
                   "translate": "ff.item.popcorn",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:baked_potato",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/popcorn",
                 "minecraft:custom_data": {
                   "itemID": "popcorn",
                   "ff_heist_low_loot": true,
