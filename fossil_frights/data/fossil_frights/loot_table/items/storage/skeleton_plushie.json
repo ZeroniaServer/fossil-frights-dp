@@ -15,12 +15,7 @@
                   "color": "yellow",
                   "translate": "ff.item.skeleton_plushie"
                 },
-                "minecraft:item_model": "minecraft:bone",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/skeleton_plushie",
                 "minecraft:custom_data": {
                   "itemID": "skeleton_plushie",
                   "ff_heist_loot": true
