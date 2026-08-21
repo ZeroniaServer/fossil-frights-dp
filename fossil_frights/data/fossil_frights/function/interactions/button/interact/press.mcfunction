@@ -8,4 +8,4 @@ execute unless block ~ ~ ~ #minecraft:stone_buttons run schedule function fossil
 execute if block ~ ~ ~ #minecraft:stone_buttons run scoreboard players add @s ff_button_unpress_timestamp 20
 execute if block ~ ~ ~ #minecraft:stone_buttons run schedule function fossil_frights:interactions/button/unpress 20t append
 
-execute align xyz positioned ~0.5 ~ ~0.5 on target run function fossil_frights:interactions/button/interact/run_function with entity @s data.ff_button
+function fossil_frights:interactions/button/interact/run_function with entity @s data.ff_button
