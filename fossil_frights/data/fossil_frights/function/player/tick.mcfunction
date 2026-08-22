@@ -1,7 +1,8 @@
-execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
+scoreboard players add @s ff_leave_game 0
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s add ff_login_initial
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run function fossil_frights:player/login
-execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s remove ff_login_initial
+execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
+tag @s remove ff_login_initial
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run function fossil_frights:player/login
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
 data modify storage fossil_frights:nbt uuid set from entity @s UUID
