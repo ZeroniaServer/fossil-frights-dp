@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "fossil_frights.dev:set_pack_enabled"
+    },
+    {
+      "required": false,
+      "id": "fossil_frights.experimental:set_pack_enabled"
+    }
+  ]
+}
