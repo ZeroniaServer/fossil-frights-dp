@@ -2,6 +2,6 @@
   "values": [
     "fossil_frights:admin/dev/auto_dev",
     "fossil_frights:items/chorus_cola/editor/tick",
-    "fossil_frights.dev:structure_void/tick"
+    "fossil_frights.dev:show_invisible_blocks/tick"
   ]
 }

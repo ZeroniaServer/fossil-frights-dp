@@ -1,9 +1,8 @@
 {
   "values": [
     "#fossil_frights:air_like",
-    "minecraft:zombie_head",
-    "minecraft:zombie_wall_head",
-    "minecraft:barrier",
-    "#minecraft:copper_golem_statues"
+    "#fossil_frights:zombie_heads",
+    "#fossil_frights:weathered_copper_golem_statues",
+    "minecraft:barrier"
   ]
 }
