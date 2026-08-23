@@ -28,6 +28,15 @@ scoreboard players set @a ff_heist_loot_captured_round 0
 scoreboard players set @a ff_heist_keyed_loot_captured_round 0
 scoreboard players set @a ff_heist_keys_stolen_round 0
 scoreboard players set @a ff_heist_deaths_round 0
+tag @a remove ff_heist_stat_participant
+tag @a remove ff_heist_stat_thief
+tag @a remove ff_heist_stat_guard
+tag @a[team=ff_guard] add ff_heist_stat_participant
+tag @a[team=ff_guard] add ff_heist_stat_guard
+tag @a[team=ff_thief] add ff_heist_stat_participant
+tag @a[team=ff_thief] add ff_heist_stat_thief
+execute as @a[team=ff_guard] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
+execute as @a[team=ff_thief] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
 scoreboard players set @a ff_heist_thieves_killed_round 0
 scoreboard players set @a ff_heist_killer_pending 0
 scoreboard players set @a ff_heist_killer_uuid_0 0

@@ -48,6 +48,7 @@ scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_deaths deathCount
 scoreboard objectives add ff_deaths_seen dummy
+scoreboard objectives add ff_heist_deaths_baseline dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_msg_cooldown dummy
 scoreboard objectives add ff_settings_mode_cooldown dummy

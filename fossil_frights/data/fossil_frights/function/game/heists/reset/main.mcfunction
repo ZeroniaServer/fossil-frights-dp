@@ -42,6 +42,7 @@ scoreboard players set @a ff_heist_loot_captured_round 0
 scoreboard players set @a ff_heist_keyed_loot_captured_round 0
 scoreboard players set @a ff_heist_keys_stolen_round 0
 scoreboard players set @a ff_heist_deaths_round 0
+scoreboard players set @a ff_heist_deaths_baseline 0
 scoreboard players set @a ff_heist_thieves_killed_round 0
 scoreboard players set @a ff_heist_killer_pending 0
 scoreboard players set @a ff_heist_killer_uuid_0 0
@@ -83,6 +84,9 @@ execute as @a run function fossil_frights:game/heists/paint_fx/clear
 tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_kill_target
+tag @a remove ff_heist_stat_participant
+tag @a remove ff_heist_stat_thief
+tag @a remove ff_heist_stat_guard
 team join ff_lobby @a[team=ff_thief]
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0

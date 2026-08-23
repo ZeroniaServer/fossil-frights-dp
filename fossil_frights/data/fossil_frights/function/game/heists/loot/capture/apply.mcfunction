@@ -6,7 +6,7 @@ $scoreboard players set $(key) ff_heist_loot_state 3
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
 $scoreboard players operation #capture_value ff_heist_loot_value = $(key) ff_heist_loot_value
-scoreboard players operation @a[team=ff_thief,gamemode=!spectator,sort=nearest,limit=1,distance=..10] ff_heist_loot_captured_round += #capture_value ff_heist_loot_value
+execute on origin if entity @s[type=minecraft:player,team=ff_thief,gamemode=!spectator] run scoreboard players operation @s ff_heist_loot_captured_round += #capture_value ff_heist_loot_value
 execute as @a[team=ff_guard,gamemode=!spectator] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
 execute as @a[team=ff_thief,gamemode=!spectator] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
 execute as @a[gamemode=spectator,tag=!ff_tutorial] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
