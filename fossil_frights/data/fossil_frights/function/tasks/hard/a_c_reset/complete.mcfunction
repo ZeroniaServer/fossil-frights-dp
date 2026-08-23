@@ -1,8 +1,8 @@
 execute unless score $a_c_reset_sel ff_task_state matches 1 run return 0
 execute unless score $a_c_reset_done ff_task_state matches 0 run return 0
 data modify storage fossil_frights:tasks complete.task_name set value "a_c_reset"
-execute positioned -1 107 58 run playsound fossil-frights:task.a_c_reset master @a[team=ff_guard,distance=..18] ~ ~ ~ 0.9 1.0
-execute positioned -1 107 58 run playsound minecraft:block.copper_bulb.turn_on block @a[team=ff_guard,distance=..18] ~ ~ ~ 0.8 1.0
+execute positioned -1 107 58 run playsound fossil-frights:task.a_c_reset master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
+execute positioned -1 107 58 run playsound minecraft:block.copper_bulb.turn_on block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.8 1.0
 scoreboard players set $a_c_fan_timer ff_task_state 8
 function fossil_frights:tasks/hard/a_c_reset/fan_loop
 scoreboard players set $a_c_fan_spin ff_task_state 100

@@ -11,6 +11,9 @@ function fossil_frights:items/dropped_items/tick
 function fossil_frights:items/heists/lootbook/tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/on_tick
+tag @a remove ff_frights_feedback_viewer
+tag @a[team=ff_guard] add ff_frights_feedback_viewer
+tag @a[team=ff_spectator] add ff_frights_feedback_viewer
 function fossil_frights:locator_bar/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_trap_viewer

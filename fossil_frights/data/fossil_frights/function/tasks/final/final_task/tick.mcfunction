@@ -18,10 +18,10 @@ execute if score $final_task_sel ff_task_state matches 1 unless score $final_tas
 execute if score $final_task_sel ff_task_state matches 1 unless score $final_task_done ff_task_state matches 1 if score $final_task_item_done ff_task_state matches 0 if score $final_task_item ff_task_state matches 10 as @e[type=minecraft:item,x=-24,y=106,z=63,dx=2,dy=3,dz=2,limit=1,sort=nearest,predicate=fossil_frights:entity/contents/leather] at @s run function fossil_frights:tasks/final/final_task/item_stage_complete
 execute if score $final_task_sel ff_task_state matches 1 unless score $final_task_done ff_task_state matches 1 if score $final_task_item_done ff_task_state matches 0 if score $final_task_item ff_task_state matches 11 as @e[type=minecraft:item,x=-24,y=106,z=63,dx=2,dy=3,dz=2,limit=1,sort=nearest,predicate=fossil_frights:entity/contents/cotton_candy_pink] at @s run function fossil_frights:tasks/final/final_task/item_stage_complete
 execute if score $final_task_fx_timer ff_task_state matches 1.. run function fossil_frights:tasks/final/final_task/effects_tick
-execute if score $final_task_fx_timer ff_task_state matches 80 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -24.5 107.1 60.5 0.8 1.15
-execute if score $final_task_fx_timer ff_task_state matches 60 run playsound minecraft:block.beacon.ambient block @a[team=ff_guard,distance=..24] -24.5 107.1 60.5 0.5 1.4
-execute if score $final_task_fx_timer ff_task_state matches 40 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -24.5 107.1 60.5 0.8 1.3
-execute if score $final_task_fx_timer ff_task_state matches 20 run playsound minecraft:block.respawn_anchor.charge block @a[team=ff_guard,distance=..24] -24.5 107.1 60.5 0.6 1.45
+execute if score $final_task_fx_timer ff_task_state matches 80 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -24.5 107.1 60.5 0.8 1.15
+execute if score $final_task_fx_timer ff_task_state matches 60 run playsound minecraft:block.beacon.ambient block @a[tag=ff_frights_feedback_viewer,distance=..24] -24.5 107.1 60.5 0.5 1.4
+execute if score $final_task_fx_timer ff_task_state matches 40 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -24.5 107.1 60.5 0.8 1.3
+execute if score $final_task_fx_timer ff_task_state matches 20 run playsound minecraft:block.respawn_anchor.charge block @a[tag=ff_frights_feedback_viewer,distance=..24] -24.5 107.1 60.5 0.6 1.45
 execute if score $final_task_fx_timer ff_task_state matches 1.. run scoreboard players remove $final_task_fx_timer ff_task_state 1
 execute if score $final_task_preview_delay ff_task_state matches 1 run function fossil_frights:tasks/final/final_task/preview/summon
 execute if score $final_task_preview_delay ff_task_state matches 1.. run scoreboard players remove $final_task_preview_delay ff_task_state 1
@@ -32,15 +32,15 @@ execute as @e[type=minecraft:item_display,tag=ff_centrifuge] at @s if score $fin
 execute as @e[type=minecraft:item_display,tag=ff_centrifuge] at @s if score $final_task_centrifuge_timer ff_task_state matches 71..80 run tp @s ~ ~ ~ ~8 0
 execute as @e[type=minecraft:item_display,tag=ff_centrifuge] at @s if score $final_task_centrifuge_timer ff_task_state matches 61..70 run tp @s ~ ~ ~ ~14 0
 execute as @e[type=minecraft:item_display,tag=ff_centrifuge] at @s if score $final_task_centrifuge_timer ff_task_state matches 1..60 run tp @s ~ ~ ~ ~20 0
-execute if score $final_task_centrifuge_timer ff_task_state matches 100 run playsound minecraft:block.beacon.ambient block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.45 0.9
-execute if score $final_task_centrifuge_timer ff_task_state matches 90 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.55 1.0
-execute if score $final_task_centrifuge_timer ff_task_state matches 80 run playsound minecraft:block.respawn_anchor.charge block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.65 1.05
-execute if score $final_task_centrifuge_timer ff_task_state matches 70 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.8 1.15
-execute if score $final_task_centrifuge_timer ff_task_state matches 60 run playsound minecraft:block.beacon.ambient block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.8 1.25
-execute if score $final_task_centrifuge_timer ff_task_state matches 50 run playsound minecraft:block.respawn_anchor.charge block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.9 1.2
-execute if score $final_task_centrifuge_timer ff_task_state matches 40 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 0.9 1.32
-execute if score $final_task_centrifuge_timer ff_task_state matches 30 run playsound minecraft:block.respawn_anchor.charge block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 1.0 1.28
-execute if score $final_task_centrifuge_timer ff_task_state matches 20 run playsound minecraft:block.beacon.ambient block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 1.0 1.4
-execute if score $final_task_centrifuge_timer ff_task_state matches 10 run playsound minecraft:block.conduit.ambient.short block @a[team=ff_guard,distance=..24] -23.5 107.5 64.5 1.1 1.55
+execute if score $final_task_centrifuge_timer ff_task_state matches 100 run playsound minecraft:block.beacon.ambient block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.45 0.9
+execute if score $final_task_centrifuge_timer ff_task_state matches 90 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.55 1.0
+execute if score $final_task_centrifuge_timer ff_task_state matches 80 run playsound minecraft:block.respawn_anchor.charge block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.65 1.05
+execute if score $final_task_centrifuge_timer ff_task_state matches 70 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.8 1.15
+execute if score $final_task_centrifuge_timer ff_task_state matches 60 run playsound minecraft:block.beacon.ambient block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.8 1.25
+execute if score $final_task_centrifuge_timer ff_task_state matches 50 run playsound minecraft:block.respawn_anchor.charge block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.9 1.2
+execute if score $final_task_centrifuge_timer ff_task_state matches 40 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 0.9 1.32
+execute if score $final_task_centrifuge_timer ff_task_state matches 30 run playsound minecraft:block.respawn_anchor.charge block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 1.0 1.28
+execute if score $final_task_centrifuge_timer ff_task_state matches 20 run playsound minecraft:block.beacon.ambient block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 1.0 1.4
+execute if score $final_task_centrifuge_timer ff_task_state matches 10 run playsound minecraft:block.conduit.ambient.short block @a[tag=ff_frights_feedback_viewer,distance=..24] -23.5 107.5 64.5 1.1 1.55
 execute if score $final_task_centrifuge_timer ff_task_state matches 1..70 if score $final_task_dna_done ff_task_state matches 1 if score $final_task_item_done ff_task_state matches 1 unless score $final_task_done ff_task_state matches 1 run function fossil_frights:tasks/final/final_task/centrifuge_complete
 execute if score $final_task_centrifuge_timer ff_task_state matches 1.. run scoreboard players remove $final_task_centrifuge_timer ff_task_state 1
