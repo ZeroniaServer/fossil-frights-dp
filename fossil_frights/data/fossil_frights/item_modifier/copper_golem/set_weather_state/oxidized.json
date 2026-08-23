@@ -1,6 +1,6 @@
 {
   "function": "minecraft:set_components",
   "components": {
-    "minecraft:item_model": "fossil-frights:display/tasks/basketball_dance/copper_golem/oxidized"
+    "minecraft:item_model": "fossil-frights:display/general/copper_golem/oxidized"
   }
 }

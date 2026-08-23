@@ -1,7 +1,7 @@
 {
   "function": "minecraft:set_components",
   "components": {
-    "minecraft:item_model": "fossil-frights:display/tasks/basketball_dance/copper_golem/unaffected",
+    "minecraft:item_model": "fossil-frights:display/general/copper_golem/unaffected",
     "minecraft:custom_model_data": {
       "flags": [
         false,
