@@ -69,6 +69,10 @@ function fossil_frights:game/bossbar/available/sync_players
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s
+tag @s remove ff_tp_dispatch
+tag @s remove ff_fade_tp_active
+tag @s remove ff_join_spectator_zone
+tag @s remove ff_join_start_teleport
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
@@ -85,7 +89,10 @@ scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
+scoreboard players set @s ff_join_cooldown 0
 scoreboard players set @s ff_msg_cooldown 0
+scoreboard players set @s ff_tp_action 0
+scoreboard players set @s ff_tp_delay 0
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_bat_bug_timer 0

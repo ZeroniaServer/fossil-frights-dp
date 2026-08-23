@@ -1,4 +1,6 @@
 scoreboard players add @s ff_leave_game 0
+# Pad selectors require an explicit zero; fresh players start without this score.
+scoreboard players add @s ff_join_cooldown 0
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s add ff_login_initial
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run function fossil_frights:player/login
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
