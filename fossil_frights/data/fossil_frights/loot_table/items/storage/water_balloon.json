@@ -11,8 +11,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_name": {
-                  "italic": false,
+                "!minecraft:potion_contents": {},
+                "minecraft:item_name": {
                   "color": "#10ACEE",
                   "translate": "ff.item.water_balloon"
                 },
