@@ -386,6 +386,10 @@ team add ff_spectator
 team modify ff_spectator displayName {"text":"Spectators"}
 team modify ff_spectator color gray
 team modify ff_spectator collisionRule never
+team add ff_pink_pig
+team modify ff_pink_pig displayName {"text":"Pink Pig"}
+team modify ff_pink_pig color light_purple
+team modify ff_pink_pig collisionRule never
 team add ff_dna_hover_yellow
 team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode

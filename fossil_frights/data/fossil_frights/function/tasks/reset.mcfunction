@@ -139,6 +139,7 @@ scoreboard players set $the_lost_code_done ff_task_state 0
 scoreboard players set $the_lost_code_seq ff_task_state 0
 scoreboard players set $pig_wrangler_sel ff_task_state 0
 scoreboard players set $pig_wrangler_done ff_task_state 0
+scoreboard players set $pig_wrangler_tower_seen ff_task_state 0
 scoreboard players set $holy_grail_sel ff_task_state 0
 scoreboard players set $holy_grail_done ff_task_state 0
 scoreboard players set $holy_grail_pick ff_task_state 0

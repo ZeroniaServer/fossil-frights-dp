@@ -276,6 +276,7 @@ scoreboard players set $pig_wrangler_done ff_task_state 0
 scoreboard players set $pig_wrangler_pick ff_task_state 0
 scoreboard players set $pig_wrangler_in_pen ff_task_state 0
 scoreboard players set $pig_wrangler_fed ff_task_state 0
+scoreboard players set $pig_wrangler_tower_seen ff_task_state 0
 scoreboard players set #line_pig_wrangler ff_task_state 11
 scoreboard players set $holy_grail_avail ff_task_state 1
 scoreboard players set $holy_grail_sel ff_task_state 0
