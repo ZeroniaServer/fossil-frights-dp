@@ -203,8 +203,10 @@ scoreboard players set #20 ff_constant 20
 scoreboard players set #ticks_per_second ff_constant 20
 scoreboard players set #32 ff_constant 32
 scoreboard players set #60 ff_constant 60
+scoreboard players set #80 ff_constant 80
 scoreboard players set #100 ff_constant 100
 scoreboard players set #180 ff_constant 180
+scoreboard players set #200 ff_constant 200
 scoreboard players set #360 ff_constant 360
 scoreboard players set #ticks_per_minute ff_constant 1200
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
