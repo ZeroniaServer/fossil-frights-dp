@@ -181,7 +181,7 @@ advancement revoke @s only fossil_frights:tasks/hard/return_the_key/pickup_click
 advancement revoke @s only fossil_frights:tasks/hard/return_the_key/return_click
 advancement revoke @s only fossil_frights:tasks/hard/basketball_dance/jukebox_click
 advancement revoke @s only fossil_frights:tasks/hard/hoveraptor/click
-advancement revoke @s only fossil_frights:tasks/hard/evolution/click
+advancement revoke @s only fossil_frights:tasks/hard/evolution/punch
 advancement revoke @s only fossil_frights:tasks/final/final_task/centrifuge_click
 advancement revoke @s only fossil_frights:tasks/final/final_task/dna_analyzer_click
 advancement revoke @s only fossil_frights:queue_punch

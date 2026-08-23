@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:tasks/hard/evolution/click
+advancement revoke @s only fossil_frights:tasks/hard/evolution/punch
 execute unless score $evolution_sel ff_task_state matches 1 run return 0
 execute unless score $evolution_done ff_task_state matches 0 run return 0
 execute unless entity @s[team=ff_guard,gamemode=!spectator] run return 0

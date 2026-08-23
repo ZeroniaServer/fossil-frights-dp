@@ -442,7 +442,7 @@ advancement revoke @a only fossil_frights:start_room/settings/music_click
 advancement revoke @a only fossil_frights:start_room/settings/chat_click
 advancement revoke @a only fossil_frights:start_room/settings/speedrun_click
 advancement revoke @a only fossil_frights:tasks/hard/hoveraptor/click
-advancement revoke @a only fossil_frights:tasks/hard/evolution/click
+advancement revoke @a only fossil_frights:tasks/hard/evolution/punch
 advancement revoke @a only fossil_frights:items/glowberry/consume
 advancement revoke @a only fossil_frights:ice_frozen_hurt
 advancement revoke @a only fossil_frights:items/trap/consume
