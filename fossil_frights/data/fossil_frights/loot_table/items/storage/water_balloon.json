@@ -11,9 +11,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {
-                  "translate": "ff.item.water_balloon",
-                  "color": "#10ACEE"
+                "minecraft:custom_name": {
+                  "italic": false,
+                  "color": "#10ACEE",
+                  "translate": "ff.item.water_balloon"
                 },
                 "minecraft:item_model": "minecraft:splash_potion",
                 "minecraft:custom_model_data": {
