@@ -195,7 +195,7 @@ execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s[team=ff_lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[predicate=fossil_frights:player/is_playing] minecraft:waypoint_receive_range base set 60000000
-attribute @s[team=ff_spectator] minecraft:waypoint_receive_range base set 0
+attribute @s[gamemode=spectator] minecraft:waypoint_receive_range base set 60000000
 attribute @s[tag=ff_forced_spectate,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[tag=ff_camera_remote_active,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 execute if predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier add fossil_frights:fossil_fizz 0.9 add_value
