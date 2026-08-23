@@ -14,6 +14,8 @@ team leave @s
 team join ff_spectator @s[team=!ff_dev_mode]
 scoreboard players set @s ff_join_cooldown 40
 gamemode spectator @s
+
+effect give @s minecraft:invisibility infinite 0 true
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 17
