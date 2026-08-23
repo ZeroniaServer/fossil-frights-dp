@@ -1,0 +1,9 @@
+setblock 2 94 58 minecraft:air strict
+setblock 2 95 58 minecraft:air strict
+setblock 1 94 58 minecraft:air strict
+setblock 1 95 57 minecraft:air strict
+setblock 0 94 57 minecraft:air strict
+setblock 1 94 57 minecraft:air strict
+setblock 1 94 56 minecraft:air strict
+setblock 2 94 57 minecraft:air strict
+setblock 0 94 56 minecraft:air strict
