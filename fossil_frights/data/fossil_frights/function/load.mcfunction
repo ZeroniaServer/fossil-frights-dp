@@ -470,7 +470,6 @@ function fossil_frights:lobby_games/parkour/load
 function fossil_frights:lobby_games/temple_run/load
 function fossil_frights:lobby_games/ant_fight/load
 function fossil_frights:lobby_games/sulfur_strikers/load
-function fossil_frights:rollercoaster/load
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/reset
 function fossil_frights:game/frights/timer/reset
