@@ -14,6 +14,7 @@ scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
 scoreboard objectives add ff_bat_bug_timer dummy
 scoreboard objectives add ff_bat_bug_bar dummy
+scoreboard objectives add ff_bat_bug_inventory_count dummy
 scoreboard objectives add ff_bb_disc_use minecraft.used:minecraft.music_disc_creator_music_box
 scoreboard objectives add ff_bb_disc_seen dummy
 scoreboard objectives add ff_bb_sneak_seen dummy
