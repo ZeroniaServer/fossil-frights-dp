@@ -1,3 +1,4 @@
+execute if score $victory_complete ff_game_state matches 1 run return 0
 scoreboard players set $heist_round_active ff_game_state 1
 function fossil_frights:game/start_room/settings/board/refresh
 scoreboard players set $heist_capture_disabled ff_game_state 0

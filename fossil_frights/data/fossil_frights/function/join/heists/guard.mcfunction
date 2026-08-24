@@ -1,3 +1,5 @@
+execute if score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/error/game_in_progress
+execute if score $victory_complete ff_game_state matches 1 run return 0
 execute unless score $heist_mode_active ff_game_state matches 1 run function fossil_frights:messages/error/heists_mode_required_to_join_team
 execute unless score $heist_mode_active ff_game_state matches 1 run return 0
 execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/heists_mode_required_to_join_team
