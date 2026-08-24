@@ -1,5 +1,5 @@
-execute unless score $party_mode_active ff_game_state matches 1 run return 0
-execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/party_mode_active run return 0
+execute unless predicate fossil_frights:game_state/game_running run return 0
 execute if score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/error/game_in_progress
 execute if score $victory_complete ff_game_state matches 1 run return 0
 execute unless entity @s[team=ff_guard] run function fossil_frights:join/guard

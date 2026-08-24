@@ -8,4 +8,4 @@ function fossil_frights:player/lobby_reset_active
 effect clear @s minecraft:night_vision
 effect clear @s minecraft:slowness
 stopsound @s record fossil-frights:heists.music
-execute if score $game_running ff_game_state matches 0 unless entity @a[team=ff_guard,limit=1] unless entity @a[team=ff_thief,limit=1] unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/leave/active_player_left
+execute unless predicate fossil_frights:game_state/game_running unless entity @a[team=ff_guard,limit=1] unless entity @a[team=ff_thief,limit=1] unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/leave/active_player_left

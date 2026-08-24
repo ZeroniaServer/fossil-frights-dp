@@ -1,7 +1,7 @@
 data remove storage fossil_frights:tasks tracker_title
 tag @a remove ff_title_first
-execute if score $party_mode_active ff_game_state matches 1 run scoreboard objectives modify ff_task_tracker displayname [{"translate":"ff.sidebar.tasks.party","color":"yellow","italic":false}]
-execute if score $party_mode_active ff_game_state matches 1 run return 0
+execute if predicate fossil_frights:game_state/party_mode_active run scoreboard objectives modify ff_task_tracker displayname [{"translate":"ff.sidebar.tasks.party","color":"yellow","italic":false}]
+execute if predicate fossil_frights:game_state/party_mode_active run return 0
 execute if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard,limit=1] run tag @s add ff_title_first
 execute if score $run_multiplayer ff_game_state matches 1 as @a[tag=ff_title_first,limit=1] run function fossil_frights:player/util/write_username {to:"storage fossil_frights:tasks tracker_title.name1"}
 execute if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard,tag=!ff_title_first,limit=1] run function fossil_frights:player/util/write_username {to:"storage fossil_frights:tasks tracker_title.name2"}

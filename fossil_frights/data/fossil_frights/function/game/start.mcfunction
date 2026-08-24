@@ -6,7 +6,7 @@ execute if entity @s[tag=ff_tp_dispatch,tag=ff_join_start_teleport] if score @s 
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 23 run tag @s remove ff_join_start_teleport
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
-execute if score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/start/start_round
+execute if predicate fossil_frights:game_state/heist_mode_active run return run function fossil_frights:game/heists/start/start_round
 execute unless entity @a[limit=1,team=ff_guard] run function fossil_frights:messages/error/no_active_player
 execute unless entity @a[limit=1,team=ff_guard] run return 0
 

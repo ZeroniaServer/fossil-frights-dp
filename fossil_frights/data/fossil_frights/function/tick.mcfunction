@@ -8,7 +8,7 @@ tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
 
 function fossil_frights:items/dropped_items/tick
-execute if score $game_running ff_game_state matches 1 if score $heist_mode_active ff_game_state matches 1 as @e[type=minecraft:item,tag=ff_heist_lady_bug_timed_drop] run function fossil_frights:game/heists/loot/high/pickup/lady_bug/ground_tick
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @e[type=minecraft:item,tag=ff_heist_lady_bug_timed_drop] run function fossil_frights:game/heists/loot/high/pickup/lady_bug/ground_tick
 function fossil_frights:items/heists/lootbook/tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/on_tick
@@ -35,24 +35,24 @@ execute as @e[type=minecraft:item_display,tag=ff_lock_glow] run data modify enti
 tag @e[type=minecraft:item_display,tag=ff_lock_glow] remove ff_lock_glow
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run function fossil_frights:animations/door/tick
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/task_book_shelf/day_1_marker/tick
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/task_book_shelf/day_1_marker/tick
 function fossil_frights:map/tick
 execute if score $speedrunner_restart_window ff_game_state matches 1.. run scoreboard players remove $speedrunner_restart_window ff_game_state 1
 execute if score $crane_rat_cooldown ff_game_state matches 1.. run scoreboard players remove $crane_rat_cooldown ff_game_state 1
-execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 as @a[tag=ff_dinocoin_crane_near] positioned 52 68 60 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..1.5] run tag @s remove ff_dinocoin_crane_near
-execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 positioned 52 68 60 as @a[predicate=fossil_frights:player/is_playing,distance=..1.5,tag=!ff_dinocoin_crane_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crane/nearby
-execute if score $game_running ff_game_state matches 1 if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/dinocoin/crane/payment/check
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/deep_dark_elevator/tick
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/lady_bug_revolutionary/check
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/dinocoin/sarcophagus/tick
-execute if score $heist_mode_active ff_game_state matches 1 run scoreboard players set @a ff_crab_timer 0
-execute if score $heist_mode_active ff_game_state matches 1 run tag @a remove ff_dinocoin_crab_near
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 unless score $heist_mode_active ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] as @a[tag=ff_dinocoin_crab_near] positioned -7.5 71.0 46.5 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..3] run tag @s remove ff_dinocoin_crab_near
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 unless score $heist_mode_active ff_game_state matches 1 unless entity @a[scores={ff_crab_timer=1..}] positioned -7.5 71.0 46.5 as @a[predicate=fossil_frights:player/is_playing,distance=..3,tag=!ff_dinocoin_crab_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crab/nearby
-execute unless score $heist_mode_active ff_game_state matches 1 as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:frights/puffer/tick
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/velociraptor_skull/tick
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:animations/anvil/tick
+execute if predicate fossil_frights:game_state/game_running if score $crane_wait ff_game_state matches 0 as @a[tag=ff_dinocoin_crane_near] positioned 52 68 60 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..1.5] run tag @s remove ff_dinocoin_crane_near
+execute if predicate fossil_frights:game_state/game_running if score $crane_wait ff_game_state matches 0 positioned 52 68 60 as @a[predicate=fossil_frights:player/is_playing,distance=..1.5,tag=!ff_dinocoin_crane_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crane/nearby
+execute if predicate fossil_frights:game_state/game_running if score $crane_wait ff_game_state matches 0 run function fossil_frights:animations/dinocoin/crane/payment/check
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/deep_dark_elevator/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/lady_bug_revolutionary/check
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/dinocoin/sarcophagus/tick
+execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set @a ff_crab_timer 0
+execute if predicate fossil_frights:game_state/heist_mode_active run tag @a remove ff_dinocoin_crab_near
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 unless predicate fossil_frights:game_state/heist_mode_active unless entity @a[scores={ff_crab_timer=1..}] as @a[tag=ff_dinocoin_crab_near] positioned -7.5 71.0 46.5 unless entity @s[predicate=fossil_frights:player/is_playing,distance=..3] run tag @s remove ff_dinocoin_crab_near
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 unless predicate fossil_frights:game_state/heist_mode_active unless entity @a[scores={ff_crab_timer=1..}] positioned -7.5 71.0 46.5 as @a[predicate=fossil_frights:player/is_playing,distance=..3,tag=!ff_dinocoin_crab_near,sort=nearest,limit=1] run function fossil_frights:animations/dinocoin/crab/nearby
+execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute as @a[team=ff_guard] run function fossil_frights:animations/dinocoin/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
@@ -75,7 +75,7 @@ execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_
 execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:lobby_games/ant_fight/display/rebuild
 function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
-execute if score $game_running ff_game_state matches 1 unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
+execute if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
 execute unless score $settings_locked ff_game_state matches 0 if entity @a[tag=ff_settings_hovering] run function fossil_frights:game/start_room/settings/board/clear_hover

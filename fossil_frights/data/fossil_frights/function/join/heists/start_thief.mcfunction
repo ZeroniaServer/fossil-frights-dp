@@ -1,7 +1,7 @@
 tag @s add ff_join_start_heists
 execute if score $active_set ff_game_state matches 0 run function fossil_frights:join/guard/enter
 execute unless entity @a[team=ff_guard,limit=1] run function fossil_frights:join/guard/enter
-execute if score $game_running ff_game_state matches 0 run function fossil_frights:game/start
+execute unless predicate fossil_frights:game_state/game_running run function fossil_frights:game/start
 function fossil_frights:game/heists/activate
 # Bootstrap directly into the requested team.  Calling the public command here
 # re-runs lobby/randomizer validation while the game state is still settling and

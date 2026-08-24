@@ -1,9 +1,9 @@
 execute if score $present ff_plugin matches 1 run function fossil_frights:admin/menu/plugin/show
 execute if score $present ff_plugin matches 1 run return 0
-execute unless score $game_running ff_game_state matches 1 run function fossil_frights:admin/menu/quick_start/show
-execute unless score $game_running ff_game_state matches 1 run return 0
-execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/show
-execute if score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/game_running run function fossil_frights:admin/menu/quick_start/show
+execute unless predicate fossil_frights:game_state/game_running run return 0
+execute if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:admin/menu/heists/show
+execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 execute if score $day_active ff_day matches 1 run function fossil_frights:admin/menu/show_day_active
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:admin/menu/show_victory

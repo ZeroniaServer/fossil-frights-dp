@@ -1,5 +1,5 @@
-execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/heists_enable_after_start
-execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/game_running run function fossil_frights:messages/error/heists_enable_after_start
+execute unless predicate fossil_frights:game_state/game_running run return 0
 execute if score $day_active ff_day matches 1 run function fossil_frights:messages/error/heists_enable_before_day
 execute if score $day_active ff_day matches 1 run return 0
 execute unless score $day_current ff_day matches 0 run function fossil_frights:messages/error/heists_enable_before_day

@@ -1,9 +1,9 @@
-execute if score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 5.. run function fossil_frights:command/info/heist/page5
-execute if score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 4 run function fossil_frights:command/info/heist/page4
-execute if score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 3 run function fossil_frights:command/info/heist/page3
-execute if score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 2 run function fossil_frights:command/info/heist/page2
-execute if score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 1 run function fossil_frights:command/info/heist/page1
-execute unless score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 4.. run function fossil_frights:command/info/page4
-execute unless score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 3 run function fossil_frights:command/info/page3
-execute unless score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 2 run function fossil_frights:command/info/page2
-execute unless score $heist_mode_active ff_game_state matches 1 if score @s ff_cmd_info matches 1 run function fossil_frights:command/info/page1
+execute if predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 5.. run function fossil_frights:command/info/heist/page5
+execute if predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 4 run function fossil_frights:command/info/heist/page4
+execute if predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 3 run function fossil_frights:command/info/heist/page3
+execute if predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 2 run function fossil_frights:command/info/heist/page2
+execute if predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 1 run function fossil_frights:command/info/heist/page1
+execute unless predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 4.. run function fossil_frights:command/info/page4
+execute unless predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 3 run function fossil_frights:command/info/page3
+execute unless predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 2 run function fossil_frights:command/info/page2
+execute unless predicate fossil_frights:game_state/heist_mode_active if score @s ff_cmd_info matches 1 run function fossil_frights:command/info/page1

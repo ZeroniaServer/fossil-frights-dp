@@ -1,4 +1,4 @@
 function fossil_frights:leaderboards/store_pending_disconnect
-execute if score $heist_mode_active ff_game_state matches 1 run function fossil_frights:messages/leave/active_player_left
-execute if score $party_mode_active ff_game_state matches 1 run function fossil_frights:messages/leave/active_player_left
+execute if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:messages/leave/active_player_left
+execute if predicate fossil_frights:game_state/party_mode_active run function fossil_frights:messages/leave/active_player_left
 function fossil_frights:game/reset

@@ -1,5 +1,5 @@
-execute if score $heist_mode_active ff_game_state matches 1 if entity @s[team=ff_thief] run return run function fossil_frights:game/heists/death_thief
-execute if score $heist_mode_active ff_game_state matches 1 if entity @s[team=ff_guard] run return run function fossil_frights:game/heists/death_guard
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_thief] run return run function fossil_frights:game/heists/death_thief
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard] run return run function fossil_frights:game/heists/death_guard
 function fossil_frights:player/respawn_active
 execute if entity @s[team=ff_guard] run effect give @s minecraft:blindness 2 1 true
 execute if entity @s[team=ff_guard] run effect give @s minecraft:slowness 8 1 true

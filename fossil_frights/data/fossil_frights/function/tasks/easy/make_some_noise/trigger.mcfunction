@@ -1,4 +1,4 @@
-execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $day_active ff_day matches 1 run return 0
 execute unless score $make_some_noise_sel ff_task_state matches 1 run return 0
 execute unless score $make_some_noise_done ff_task_state matches 0 run return 0

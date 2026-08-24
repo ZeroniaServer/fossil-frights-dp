@@ -2,8 +2,8 @@ execute unless score $invite_pending ff_game_state matches 1 run function fossil
 execute unless score $invite_pending ff_game_state matches 1 run return 0
 execute unless score @s ff_invite_accept = $invite_token ff_game_state run function fossil_frights:messages/duos/invite_expired
 execute unless score @s ff_invite_accept = $invite_token ff_game_state run return 0
-execute unless score $game_running ff_game_state matches 1 run function fossil_frights:messages/error/no_game_running
-execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/game_running run function fossil_frights:messages/error/no_game_running
+execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $active_set ff_game_state matches 1 run function fossil_frights:messages/error/no_active_player
 execute unless score $active_set ff_game_state matches 1 run return 0
 execute if score $day_current ff_day matches 1.. run function fossil_frights:messages/error/must_invite_before_starting_game

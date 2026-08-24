@@ -1,4 +1,4 @@
-execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute if score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/error/game_in_progress
 execute if score $victory_complete ff_game_state matches 1 run return 0
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/show

@@ -1,3 +1,3 @@
 advancement revoke @s only fossil_frights:tasks/easy/check_security/click
-execute if score $heist_mode_active ff_game_state matches 1 run return 0
+execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 function fossil_frights:tasks/easy/check_security/complete

@@ -1,1 +1,1 @@
-execute if score $queue_notify_lock ff_game_state matches 0 if score $game_running ff_game_state matches 0 if score $active_set ff_game_state matches 0 run function fossil_frights:join/queue/notify_next
+execute if score $queue_notify_lock ff_game_state matches 0 unless predicate fossil_frights:game_state/game_running if score $active_set ff_game_state matches 0 run function fossil_frights:join/queue/notify_next

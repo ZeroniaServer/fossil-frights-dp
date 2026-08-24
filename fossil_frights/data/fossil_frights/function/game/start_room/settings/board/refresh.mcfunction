@@ -1,12 +1,12 @@
 scoreboard players set $settings_locked ff_game_state 1
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 0 if score $day_current ff_day matches 0 unless score $heist_round_active ff_game_state matches 1.. run scoreboard players set $settings_locked ff_game_state 0
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches 0 unless score $heist_round_active ff_game_state matches 1.. run scoreboard players set $settings_locked ff_game_state 0
 
 execute if score $settings_locked ff_game_state matches 0 as @e[type=minecraft:text_display,tag=ff_settings_board_entity] run data modify entity @s brightness set value {sky:15,block:15}
 execute if score $settings_locked ff_game_state matches 1 as @e[type=minecraft:text_display,tag=ff_settings_board_entity] run data remove entity @s brightness
 
 scoreboard players set $settings_mode ff_game_state 0
-execute if score $party_mode_active ff_game_state matches 1 run scoreboard players set $settings_mode ff_game_state 1
-execute if score $heist_mode_active ff_game_state matches 1 run scoreboard players set $settings_mode ff_game_state 2
+execute if predicate fossil_frights:game_state/party_mode_active run scoreboard players set $settings_mode ff_game_state 1
+execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set $settings_mode ff_game_state 2
 
 scoreboard players set $settings_guard_count ff_game_state 0
 scoreboard players set $settings_thief_count ff_game_state 0

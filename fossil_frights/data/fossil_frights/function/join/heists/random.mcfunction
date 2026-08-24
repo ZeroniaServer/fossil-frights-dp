@@ -1,10 +1,10 @@
 execute if score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/error/game_in_progress
 execute if score $victory_complete ff_game_state matches 1 run return 0
 tag @s add ff_join_random
-execute unless score $game_running ff_game_state matches 1 store result score #roll ff_join_balance run random value 0..1
-execute unless score $game_running ff_game_state matches 1 if score #roll ff_join_balance matches 0 run return run function fossil_frights:join/heists/start_guard
-execute unless score $game_running ff_game_state matches 1 run return run function fossil_frights:join/heists/start_thief
-execute unless score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:command/start
+execute unless predicate fossil_frights:game_state/game_running store result score #roll ff_join_balance run random value 0..1
+execute unless predicate fossil_frights:game_state/game_running if score #roll ff_join_balance matches 0 run return run function fossil_frights:join/heists/start_guard
+execute unless predicate fossil_frights:game_state/game_running run return run function fossil_frights:join/heists/start_thief
+execute unless predicate fossil_frights:game_state/heist_mode_active run return run function fossil_frights:command/start
 execute if score $heist_round_active ff_game_state matches 1.. run return run function fossil_frights:join/queue/enter
 execute if entity @s[gamemode=spectator] run function fossil_frights:messages/error/cannot_join_heist_team_while_spectating
 execute if entity @s[gamemode=spectator] run return 0

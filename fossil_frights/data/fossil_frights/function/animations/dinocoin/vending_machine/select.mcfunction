@@ -1,10 +1,10 @@
-execute if score $heist_mode_active ff_game_state matches 1 store result score #vending_roll ff_hazard_rng run random value 1..4
-execute unless score $heist_mode_active ff_game_state matches 1 store result score #vending_roll ff_hazard_rng run random value 1..6
-execute if score $heist_mode_active ff_game_state matches 1 if score #vending_roll ff_hazard_rng matches 1 run scoreboard players set $vending_current ff_game_state 2
-execute if score $heist_mode_active ff_game_state matches 1 if score #vending_roll ff_hazard_rng matches 2 run scoreboard players set $vending_current ff_game_state 3
-execute if score $heist_mode_active ff_game_state matches 1 if score #vending_roll ff_hazard_rng matches 3 run scoreboard players set $vending_current ff_game_state 4
-execute if score $heist_mode_active ff_game_state matches 1 if score #vending_roll ff_hazard_rng matches 4 run scoreboard players set $vending_current ff_game_state 5
-execute unless score $heist_mode_active ff_game_state matches 1 run scoreboard players operation $vending_current ff_game_state = #vending_roll ff_hazard_rng
+execute if predicate fossil_frights:game_state/heist_mode_active store result score #vending_roll ff_hazard_rng run random value 1..4
+execute unless predicate fossil_frights:game_state/heist_mode_active store result score #vending_roll ff_hazard_rng run random value 1..6
+execute if predicate fossil_frights:game_state/heist_mode_active if score #vending_roll ff_hazard_rng matches 1 run scoreboard players set $vending_current ff_game_state 2
+execute if predicate fossil_frights:game_state/heist_mode_active if score #vending_roll ff_hazard_rng matches 2 run scoreboard players set $vending_current ff_game_state 3
+execute if predicate fossil_frights:game_state/heist_mode_active if score #vending_roll ff_hazard_rng matches 3 run scoreboard players set $vending_current ff_game_state 4
+execute if predicate fossil_frights:game_state/heist_mode_active if score #vending_roll ff_hazard_rng matches 4 run scoreboard players set $vending_current ff_game_state 5
+execute unless predicate fossil_frights:game_state/heist_mode_active run scoreboard players operation $vending_current ff_game_state = #vending_roll ff_hazard_rng
 playsound fossil-frights:vending_machine.refill block @a[distance=..8,x=26.5,y=81.5,z=16.5] 26.5 81.5 16.5 1.4 1
 execute if score $vending_current ff_game_state matches 1 positioned 27.0 80.0 16.5 as @e[type=minecraft:item_display,tag=animation.vending_machine.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_velocitea/play_exclusive
 execute if score $vending_current ff_game_state matches 2 positioned 27.0 80.0 16.5 as @e[type=minecraft:item_display,tag=animation.vending_machine.root,distance=..4,sort=nearest,limit=1] at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_pteranadontwist/play_exclusive

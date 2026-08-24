@@ -1,5 +1,5 @@
 execute unless function fossil_frights:game/start_room/settings/gamemode/can_change run return 0
-execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 function fossil_frights:game/start_room/settings/gamemode/remove_other_players
 scoreboard players set $settings_randomizer_on ff_game_state 1
 tag @s add ff_settings_randomizer_on

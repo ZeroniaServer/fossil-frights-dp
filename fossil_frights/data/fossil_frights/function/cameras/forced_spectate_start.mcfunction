@@ -1,4 +1,4 @@
-execute if score $heist_mode_active ff_game_state matches 1 run return 0
+execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 tp @e[type=mannequin,tag=ff_check_security_dummy] 0 -200 0
 kill @e[type=mannequin,tag=ff_check_security_dummy]
 setblock -28 70 38 air

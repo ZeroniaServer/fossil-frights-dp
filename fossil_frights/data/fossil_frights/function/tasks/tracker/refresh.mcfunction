@@ -1,6 +1,6 @@
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:tasks/tracker/update_title
-execute if score $game_running ff_game_state matches 1 if score $day_active ff_day matches 1 if entity @a[limit=1] run function fossil_frights:tasks/tracker/show
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if entity @a[limit=1] run function fossil_frights:tasks/tracker/show
 
 function fossil_frights:tasks/tracker/update_sidebar/easy_task {"task": "bathroom_leak"}
 function fossil_frights:tasks/tracker/update_sidebar/easy_task {"task": "check_ankylo"}
@@ -72,4 +72,4 @@ function fossil_frights:tasks/tracker/update_sidebar/hard_task {"task": "the_los
 
 function fossil_frights:tasks/tracker/update_sidebar/final_task {"task": "final_task"}
 
-execute if score $game_running ff_game_state matches 1 run function fossil_frights:locator_bar/markers/sync
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:locator_bar/markers/sync

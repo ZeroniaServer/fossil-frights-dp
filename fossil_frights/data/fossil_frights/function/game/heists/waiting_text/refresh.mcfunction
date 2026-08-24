@@ -1,4 +1,4 @@
-execute unless score $heist_mode_active ff_game_state matches 1 run return run function fossil_frights:game/heists/waiting_text/hide
+execute unless predicate fossil_frights:game_state/heist_mode_active run return run function fossil_frights:game/heists/waiting_text/hide
 execute unless entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] run summon minecraft:text_display -1.0 111.0 53.05 {Tags:["ff_heist_waiting_for_guards"],text:"",billboard:"fixed",Rotation:[0,0],background:1073741824,default_background:true,shadow:true,brightness:{sky:15,block:15},transformation:{right_rotation:[0,0,0,1],left_rotation:[0,0,0,1],translation:[0,0,0],scale:[0.8,0.8,0.8]}}
 scoreboard players operation $heist_flash ff_heist = $heist_wait_ticks ff_heist
 scoreboard players operation $heist_flash ff_heist %= #20 ff_constant

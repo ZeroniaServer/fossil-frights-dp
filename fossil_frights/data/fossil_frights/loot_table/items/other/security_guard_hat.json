@@ -41,7 +41,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "fossil_frights:game/heist_mode_active"
+                  "name": "fossil_frights:game_state/heist_mode_active"
                 }
               ]
             }

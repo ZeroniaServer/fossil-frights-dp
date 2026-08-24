@@ -1,5 +1,5 @@
 advancement revoke @s only fossil_frights:heists_punch_guard
-execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 execute unless entity @s[team=ff_thief,gamemode=!spectator] run return 0
 execute if score @s ff_heist_punch_cd matches 1.. run return 0

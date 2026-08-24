@@ -1,8 +1,8 @@
 tag @e[type=minecraft:armor_stand,tag=ff_task_compass_target] add ff_compass_stale
 
-execute unless score $heist_mode_active ff_game_state matches 1 if score $day_active ff_day matches 0 positioned 20 71 28 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_start_button,tag=ff_task_compass_no_particles",tags:"\"ff_task_compass_target\",\"ff_task_compass_start_button\",\"ff_task_compass_no_particles\"",style:"start_room"}
-execute unless score $heist_mode_active ff_game_state matches 1 if score $day_active ff_day matches 0 run kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_compass_stale]
-execute unless score $heist_mode_active ff_game_state matches 1 if score $day_active ff_day matches 0 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active if score $day_active ff_day matches 0 positioned 20 71 28 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_start_button,tag=ff_task_compass_no_particles",tags:"\"ff_task_compass_target\",\"ff_task_compass_start_button\",\"ff_task_compass_no_particles\"",style:"start_room"}
+execute unless predicate fossil_frights:game_state/heist_mode_active if score $day_active ff_day matches 0 run kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_compass_stale]
+execute unless predicate fossil_frights:game_state/heist_mode_active if score $day_active ff_day matches 0 run return 0
 
 execute if score $check_security_sel ff_task_state matches 1 unless score $check_security_done ff_task_state matches 1 positioned -33 71 36 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_check_security",tags:"\"ff_task_compass_target\",\"ff_task_compass_check_security\"",style:"task_easy"}
 execute if score $fire_pottery_sel ff_task_state matches 1 unless score $fire_pottery_done ff_task_state matches 1 positioned 65 81 53 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_fire_pottery",tags:"\"ff_task_compass_target\",\"ff_task_compass_fire_pottery\"",style:"task_easy"}

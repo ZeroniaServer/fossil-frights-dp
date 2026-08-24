@@ -1,5 +1,5 @@
 execute as @e[type=minecraft:item_display,tag=museum_map] run data modify entity @s Glowing set value false
-execute unless score $game_running ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/game_running run return 0
 execute if score $victory_complete ff_game_state matches 1 run return 0
 execute unless entity @e[type=minecraft:interaction,tag=ff_museum_map_click,limit=1] run return 0
 execute positioned 2.5 80.5 17.5 unless entity @a[limit=1,team=ff_guard,tag=!ff_map_claimed,scores={ff_run_count=10..,ff_top_day=..9},distance=..10] run return 0

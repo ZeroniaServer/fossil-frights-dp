@@ -4,8 +4,8 @@ execute unless predicate fossil_frights:player/is_playing run function fossil_fr
 execute unless predicate fossil_frights:player/is_playing run return 0
 execute if entity @s[gamemode=spectator] run function fossil_frights:messages/error/challenge_heists_only
 execute if entity @s[gamemode=spectator] run return 0
-execute unless score $heist_mode_active ff_game_state matches 1 run function fossil_frights:messages/error/challenge_heists_only
-execute unless score $heist_mode_active ff_game_state matches 1 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:messages/error/challenge_heists_only
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless entity @s[team=ff_thief] run function fossil_frights:messages/error/challenge_only_thieves
 execute unless entity @s[team=ff_thief] run return 0
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/challenge_before_start
