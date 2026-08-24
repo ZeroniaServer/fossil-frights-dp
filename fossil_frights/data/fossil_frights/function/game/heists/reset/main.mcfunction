@@ -4,6 +4,8 @@ function fossil_frights:game/start_room/locked_door/clear
 function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
+function fossil_frights:game/heists/loot/high/pickup/lady_bug/clear_all
+kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/lady_bug]
 kill @e[type=minecraft:armor_stand,tag=ff_loot_compass_target]
 scoreboard players set $heist_compass_available ff_compass 0
 scoreboard players set $heist_compass_available_prev ff_compass -1

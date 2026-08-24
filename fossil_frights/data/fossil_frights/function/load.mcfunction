@@ -215,7 +215,8 @@ scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key_cooldown_length ff_key_cd_cfg 600
 scoreboard players set $bat_bug_timer_cfg ff_bat_bug_timer 740
-scoreboard players set $bat_bug_timer_heist_cfg ff_bat_bug_timer 500
+scoreboard players set $bat_bug_timer_heist_cfg ff_bat_bug_timer 600
+scoreboard players set $heist_lady_bug_despawn_age ff_constant 6000
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #heist_full ff_heist 12000
 scoreboard players set #heist_goal ff_heist 1000

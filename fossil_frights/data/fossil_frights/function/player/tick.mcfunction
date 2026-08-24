@@ -146,7 +146,8 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fos
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:frights/check_radius
-execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
+execute if entity @s[team=ff_guard] if score $game_running ff_game_state matches 1 unless score $heist_mode_active ff_game_state matches 1 run function fossil_frights:tasks/hard/feed_the_bats/player_tick
+execute if entity @s[gamemode=!spectator] if score $game_running ff_game_state matches 1 if score $heist_mode_active ff_game_state matches 1 if predicate fossil_frights:player/is_playing run function fossil_frights:game/heists/loot/high/pickup/lady_bug/player_tick
 execute if score $game_running ff_game_state matches 1 run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if items entity @s weapon.mainhand *[custom_data~{ff_dna:true}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
