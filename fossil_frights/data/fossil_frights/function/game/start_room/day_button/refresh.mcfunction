@@ -6,8 +6,8 @@ execute if predicate fossil_frights:game_state/heist_mode_active if score $heist
 scoreboard players set #start_button_active ff_game_state 0
 execute unless predicate fossil_frights:game_state/game_running run scoreboard players set #start_button_active ff_game_state 1
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 run scoreboard players set #start_button_active ff_game_state 1
-execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value {"translate":"ff.start",color:"green"}
-execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches 1.. run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value {"translate":"ff.next_day",color:"green"}
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value {translate:"ff.start",font:"fossil-frights:small_caps",color:"green"}
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches 1.. run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value {translate:"ff.next_day",font:"fossil-frights:small_caps",color:"green"}
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run scoreboard players set #start_button_active ff_game_state 0
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_day_button_label,limit=1] text set value ""
 execute if predicate fossil_frights:game_state/game_running if score $defeat_lock ff_game_state matches 1.. run scoreboard players set #start_button_active ff_game_state 0

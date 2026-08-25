@@ -1,1 +1,1 @@
-bossbar set fossil_frights:bossbar name [{"translate":"ff.bossbar.victory","color":"white"}]
+bossbar set fossil_frights:bossbar name {font:"fossil-frights:small_caps",translate:"ff.bossbar.victory"}

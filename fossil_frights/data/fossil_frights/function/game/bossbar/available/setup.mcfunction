@@ -1,7 +1,7 @@
 bossbar remove fossil_frights:museum_available_icon
 bossbar remove fossil_frights:museum_available_text
-bossbar add fossil_frights:museum_available_icon [{"text":"\ue125","font":"fossil-frights:icons/museum","color":"white","shadow_color":0}]
-bossbar add fossil_frights:museum_available_text [{"translate":"ff.bossbar.available","color":"white"}]
+bossbar add fossil_frights:museum_available_icon {text:"\ue125",font:"fossil-frights:icons/museum",shadow_color:0}
+bossbar add fossil_frights:museum_available_text {font:"fossil-frights:small_caps",translate:"ff.bossbar.available"}
 bossbar set fossil_frights:museum_available_icon color blue
 bossbar set fossil_frights:museum_available_text color blue
 bossbar set fossil_frights:museum_available_icon style progress

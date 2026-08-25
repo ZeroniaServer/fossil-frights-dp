@@ -1,1 +1,1 @@
-$dialog show @s {type:"minecraft:notice",title:{translate:"ff.lootbook.title",color:"white"},body:$(body),after_action:"close",action:{label:{translate:"ff.lootbook.button.close",color:"red"},width:150}}
+$dialog show @s {type:"minecraft:notice",title:{translate:"ff.lootbook.title",font:"fossil-frights:small_caps"},body:$(body),after_action:"close",action:{label:{translate:"ff.lootbook.button.close",color:"red"},width:150}}

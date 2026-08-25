@@ -5,7 +5,7 @@ function fossil_frights:items/heists/trap/balance/compute
 execute as @a[team=ff_guard] run function fossil_frights:items/heists/trap/round_start_release
 function fossil_frights:game/start_room/locked_door/clear
 bossbar remove fossil_frights:bossbar
-bossbar add fossil_frights:bossbar [{"translate":"ff.heists.bossbar","color":"gold","with":["10:00"]}]
+bossbar add fossil_frights:bossbar [{translate:"ff.heists.bossbar",font:"fossil-frights:small_caps",color:"gold",with:[{text:"10:00",font:"minecraft:default"}]}]
 bossbar set fossil_frights:bossbar players @a
 bossbar set fossil_frights:bossbar visible true
 bossbar set fossil_frights:bossbar color white
