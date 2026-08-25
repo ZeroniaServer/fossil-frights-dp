@@ -1,4 +1,6 @@
 function fossil_frights:tasks/tracker/hide
+function fossil_frights:tasks/tracker/sync_book_order
+
 function fossil_frights:tasks/tracker/update_title
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if entity @a[limit=1] run function fossil_frights:tasks/tracker/show
 

@@ -1,5 +1,5 @@
-# Day 10: 1 final, 3 hard
+# Day 10: 3 hard, 1 final
+function fossil_frights:tasks/select/hard
+function fossil_frights:tasks/select/hard
+function fossil_frights:tasks/select/hard
 function fossil_frights:tasks/select/final
-function fossil_frights:tasks/select/hard
-function fossil_frights:tasks/select/hard
-function fossil_frights:tasks/select/hard
