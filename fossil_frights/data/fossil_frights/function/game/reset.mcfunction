@@ -11,6 +11,7 @@ fill -5 68 8 -3 68 8 air
 function fossil_frights:game/reset/hazards
 function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:tasks/reset
+function fossil_frights:tasks/medium/feed_parrot/cleanup
 function fossil_frights:tasks/final/final_task/close_lab_door
 function fossil_frights:tasks/final/final_task/reset
 function fossil_frights:game/bossbar/clear
