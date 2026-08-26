@@ -83,6 +83,7 @@ scoreboard players set $museum_map_flash ff_game_state 0
 tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_click
 tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
+execute as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register_frights
 fill -5 68 8 -3 68 8 magma_block
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0

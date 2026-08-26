@@ -1,3 +1,4 @@
+function fossil_frights:game/rejoin/cleanup/all
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 24 run return 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 24 run tp @s 0 80 0 0 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 24 if score $defeat_anim ff_game_state matches 1 run schedule function fossil_frights:animations/defeat/stop 1t

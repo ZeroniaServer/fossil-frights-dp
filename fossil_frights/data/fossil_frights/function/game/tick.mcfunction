@@ -1,3 +1,4 @@
+function fossil_frights:game/rejoin/tick
 function fossil_frights:game/party/sync
 function fossil_frights:game/party/tick
 function fossil_frights:game/heists/tick

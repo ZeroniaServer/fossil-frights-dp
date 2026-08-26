@@ -75,7 +75,7 @@ execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_
 execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:lobby_games/ant_fight/display/rebuild
 function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
-execute if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] run function fossil_frights:game/reset/active_disconnect
+execute if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker,tag=ff_rejoin_frights] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
 execute unless score $settings_locked ff_game_state matches 0 if entity @a[tag=ff_settings_hovering] run function fossil_frights:game/start_room/settings/board/clear_hover

@@ -1,5 +1,7 @@
 execute if score $victory_complete ff_game_state matches 1 run return 0
 scoreboard players set $heist_round_active ff_game_state 1
+execute as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register
+execute as @a[team=ff_thief] at @s run function fossil_frights:game/rejoin/state/register
 function fossil_frights:game/start_room/settings/board/refresh
 scoreboard players set $heist_capture_disabled ff_game_state 0
 function fossil_frights:animations/dinocoin/vending_machine/setup

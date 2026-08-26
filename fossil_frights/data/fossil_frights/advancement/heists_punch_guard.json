@@ -8,8 +8,20 @@
           "team": "ff_guard"
         }
       }
+    },
+    "punch_rejoin_guard": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:mannequin",
+          "entity_tags": {
+            "all_of": ["ff_rejoin_ghost", "ff_rejoin_heists_guard"]
+          }
+        }
+      }
     }
   },
+  "requirements": [["punch_guard", "punch_rejoin_guard"]],
   "rewards": {
     "function": "fossil_frights:game/heists/punch/guard"
   }

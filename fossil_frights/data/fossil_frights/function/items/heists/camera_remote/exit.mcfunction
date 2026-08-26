@@ -9,6 +9,7 @@ function fossil_frights:cameras/forced_spectate_return_macro with storage fossil
 gamemode adventure @s
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
+function fossil_frights:game/rejoin/state/clear_camera_current
 function fossil_frights:items/heists/camera_remote/kill_owned
 function fossil_frights:cameras/update_camera_models
 execute at @s run playsound fossil-frights:camera.close master @s ~ ~ ~ 1 1

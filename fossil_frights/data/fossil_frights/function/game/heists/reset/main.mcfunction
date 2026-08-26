@@ -1,3 +1,4 @@
+function fossil_frights:game/rejoin/cleanup/all
 function fossil_frights:join/join_pads/clear
 scoreboard players set $join_pad_mode ff_game_state 0
 function fossil_frights:game/start_room/locked_door/clear

@@ -44,6 +44,15 @@ scoreboard objectives add ff_active_uuid_0 dummy
 scoreboard objectives add ff_active_uuid_1 dummy
 scoreboard objectives add ff_active_uuid_2 dummy
 scoreboard objectives add ff_active_uuid_3 dummy
+scoreboard objectives add ff_rejoin_ticks dummy
+scoreboard objectives add ff_rejoin_minutes dummy
+scoreboard objectives add ff_rejoin_sec_tens dummy
+scoreboard objectives add ff_rejoin_sec_ones dummy
+scoreboard objectives add ff_rejoin_pos_x dummy
+scoreboard objectives add ff_rejoin_pos_y dummy
+scoreboard objectives add ff_rejoin_pos_z dummy
+scoreboard objectives add ff_rejoin_yaw dummy
+scoreboard objectives add ff_rejoin_pitch dummy
 scoreboard objectives add ff_run_order dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
@@ -211,6 +220,7 @@ scoreboard players set #180 ff_constant 180
 scoreboard players set #200 ff_constant 200
 scoreboard players set #360 ff_constant 360
 scoreboard players set #ticks_per_minute ff_constant 1200
+scoreboard players set #rejoin_grace ff_constant 2400
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set $key_cooldown_length ff_key_cd_cfg 600

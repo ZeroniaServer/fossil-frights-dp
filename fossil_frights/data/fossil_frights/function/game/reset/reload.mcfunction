@@ -1,3 +1,4 @@
+function fossil_frights:game/rejoin/cleanup/all
 function fossil_frights:animations/credits/stop
 tag @a add ff_skip_plushie_restore
 execute as @a run function fossil_frights:lobby_games/parkour/reset_player

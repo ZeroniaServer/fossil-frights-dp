@@ -1,3 +1,4 @@
+function fossil_frights:game/rejoin/cleanup/all
 execute as @a at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.9 1
 title @a[team=ff_guard] times 10 70 20
 execute as @a[team=ff_guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/show_victory_subtitle

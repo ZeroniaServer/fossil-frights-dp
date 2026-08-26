@@ -1,6 +1,8 @@
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given
+function fossil_frights:game/rejoin/login_restore
+execute if entity @s[tag=ff_rejoin_restored] run return 0
 execute if entity @s[team=ff_dev_mode] run return 0
 experience set @s 0 levels
 experience set @s 0 points
