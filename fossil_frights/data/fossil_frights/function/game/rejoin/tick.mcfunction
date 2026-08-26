@@ -4,9 +4,9 @@ execute if predicate fossil_frights:game_state/party_mode_active if entity @e[ty
 execute if predicate fossil_frights:game_state/party_mode_active run return 0
 execute if predicate fossil_frights:game_state/heist_mode_active unless score $heist_round_active ff_game_state matches 1 if entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/rejoin/cleanup/all
 execute if predicate fossil_frights:game_state/heist_mode_active unless score $heist_round_active ff_game_state matches 1 run return 0
-execute unless predicate fossil_frights:game_state/heist_mode_active as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register_frights
-execute if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register
-execute if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 as @a[team=ff_thief] at @s run function fossil_frights:game/rejoin/state/register
+execute unless predicate fossil_frights:game_state/heist_mode_active as @a[team=ff_guard,scores={ff_leave_game_seen=-2147483648..2147483647}] at @s run function fossil_frights:game/rejoin/state/register_frights
+execute if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 as @a[team=ff_guard,scores={ff_leave_game_seen=-2147483648..2147483647}] at @s run function fossil_frights:game/rejoin/state/register
+execute if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 as @a[team=ff_thief,scores={ff_leave_game_seen=-2147483648..2147483647}] at @s run function fossil_frights:game/rejoin/state/register
 
 tag @e[type=minecraft:marker,tag=ff_rejoin_marker] remove ff_rejoin_online
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[team=ff_guard] run function fossil_frights:game/rejoin/state/match_frights_online
