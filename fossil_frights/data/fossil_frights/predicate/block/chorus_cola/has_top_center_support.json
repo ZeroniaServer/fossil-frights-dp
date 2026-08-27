@@ -60,7 +60,18 @@
         "block": {
           "blocks": "minecraft:end_rod",
           "state": {
-            "axis": "y"
+            "facing": "down"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:end_rod",
+          "state": {
+            "facing": "up"
           }
         }
       }
