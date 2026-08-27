@@ -59,6 +59,7 @@
                   "max_reach": 0.0,
                   "hitbox_margin": 0.0
                 },
+                "minecraft:piercing_weapon": {},
                 "minecraft:enchantments": {
                   "fossil_frights:trap_click": 1
                 },
