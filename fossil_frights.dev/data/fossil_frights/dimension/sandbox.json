@@ -10,10 +10,7 @@
           "block": "minecraft:air",
           "height": 1
         }
-      ],
-      "structures": {
-        "structures": {}
-      }
+      ]
     }
   }
 }
