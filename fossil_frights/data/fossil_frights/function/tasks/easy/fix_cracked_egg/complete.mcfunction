@@ -1,7 +1,7 @@
 execute unless score $fix_cracked_egg_sel ff_task_state matches 1 run return 0
 execute unless score $fix_cracked_egg_done ff_task_state matches 0 run return 0
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "fix_cracked_egg"
-execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 positioned 18.5 95.6 58.5 run playsound minecraft:entity.egg master @a[tag=ff_frights_feedback_viewer,distance=..12] ~ ~ ~ 0.9 1.0
+execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 positioned 18.5 95.6 58.5 run playsound minecraft:block.sniffer_egg.crack master @a[tag=ff_frights_feedback_viewer,distance=..12] ~ ~ ~ 0.9 1.0
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run function fossil_frights:tasks/easy/fix_cracked_egg/display
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
