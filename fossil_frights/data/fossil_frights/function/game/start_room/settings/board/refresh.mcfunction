@@ -33,9 +33,9 @@ execute if score $settings_mode ff_game_state matches 0 run data modify entity @
 execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_party_icon,limit=1] text set value {text:"",font:"fossil-frights:settings_board"}
 execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_heists_icon,limit=1] text set value {text:"",font:"fossil-frights:settings_board"}
 
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text_opacity set value -1b
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text_opacity set value -1b
-data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text_opacity set value -1b
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text_opacity set value 255
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text_opacity set value 255
+data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text_opacity set value 255
 execute if score $settings_mode ff_game_state matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] text set value {translate:"ff.settings.board.gamemode.frights.name",font:"fossil-frights:small_caps"}
 execute if score $settings_mode ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_party,limit=1] text set value {translate:"ff.settings.board.gamemode.party.name",font:"fossil-frights:small_caps"}
 execute if score $settings_mode ff_game_state matches 2 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_heists,limit=1] text set value {translate:"ff.settings.board.gamemode.heists.name",font:"fossil-frights:small_caps"}
