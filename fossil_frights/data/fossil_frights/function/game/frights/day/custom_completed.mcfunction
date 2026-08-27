@@ -8,6 +8,8 @@ scoreboard players set $custom_day_active ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_stopwatch_active ff_day 0
+stopwatch remove fossil_frights:day_duration
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[team=ff_guard] run function fossil_frights:key/refresh

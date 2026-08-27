@@ -1,6 +1,16 @@
+scoreboard players set $speedrun_stopwatch_active ff_day 0
+scoreboard players set $day_stopwatch_active ff_day 0
+stopwatch remove fossil_frights:speedrun
+stopwatch remove fossil_frights:day_duration
 scoreboard players set $timer_ticks ff_day 0
 scoreboard players set $timer_started ff_day 0
 scoreboard players set $timer_frozen ff_day 0
+scoreboard players set $timer_pause_offset ff_day 0
+scoreboard players set $timer_pause_now ff_day 0
+scoreboard players set $day_timer_offset ff_day 0
+scoreboard players set $day_timer_pause_now ff_day 0
+scoreboard players set $timer_query_now ff_day 0
+scoreboard players set $day_timer_query_now ff_day 0
 scoreboard players set $timer_minutes ff_day 0
 scoreboard players set $timer_seconds ff_day 0
 scoreboard players set $timer_centis ff_day 0

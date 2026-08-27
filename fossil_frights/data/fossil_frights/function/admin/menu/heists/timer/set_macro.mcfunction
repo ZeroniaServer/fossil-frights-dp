@@ -6,6 +6,9 @@ function fossil_frights:admin/menu/mark_modified
 $scoreboard players set $heist_timer ff_heist $(time)
 scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist
 scoreboard players operation $heist_elapsed ff_heist -= $heist_timer ff_heist
+scoreboard players set $heist_elapsed_offset ff_heist 0
+execute if score $heist_stopwatch_active ff_heist matches 1 store success score $heist_stopwatch_active ff_heist store result score $heist_elapsed_offset ff_heist run stopwatch query fossil_frights:heist_round 20
+scoreboard players operation $heist_elapsed_offset ff_heist -= $heist_elapsed ff_heist
 execute store result bossbar fossil_frights:bossbar value run scoreboard players get $heist_elapsed ff_heist
 scoreboard players set $idle_ticks ff_game_state 0
 function fossil_frights:game/heists/timer/update_display

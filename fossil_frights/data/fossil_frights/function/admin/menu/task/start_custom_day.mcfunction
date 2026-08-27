@@ -1,5 +1,9 @@
 scoreboard players set $custom_day_active ff_day 1
 scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_timer_offset ff_day 0
+scoreboard players set $day_stopwatch_active ff_day 0
+stopwatch remove fossil_frights:day_duration
+execute store success score $day_stopwatch_active ff_day run stopwatch create fossil_frights:day_duration
 scoreboard players set $day_active ff_day 1
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0

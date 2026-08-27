@@ -16,5 +16,6 @@ time of minecraft:overworld resume
 time set 13000
 scoreboard players set $time_anim_active ff_day 0
 scoreboard players set $timer_frozen ff_day 0
+execute if score $heist_stopwatch_active ff_heist matches 0 store success score $heist_stopwatch_active ff_heist run stopwatch create fossil_frights:heist_round
 function fossil_frights:game/heists/timer/update_display
 function fossil_frights:messages/heists/started

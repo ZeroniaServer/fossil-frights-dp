@@ -1,4 +1,7 @@
 $execute unless score $(key) ff_heist_loot_state matches 1..2 run return 0
+execute if score $timer_frozen ff_day matches 0 if score $heist_stopwatch_active ff_heist matches 1 run function fossil_frights:game/heists/timer/sync
+execute if score $timer_frozen ff_day matches 0 unless score $heist_stopwatch_active ff_heist matches 1 run return 0
+execute if score $timer_frozen ff_day matches 0 if score $heist_stopwatch_active ff_heist matches 1 if score $heist_timer ff_heist matches ..0 run return run function fossil_frights:game/heists/end/guards_win
 execute if score $heist_elapsed ff_heist matches ..600 run advancement grant @a[team=ff_thief,gamemode=!spectator,sort=nearest,limit=1,distance=..10] only fossil_frights:02_achievements/heists_quick_hands
 $scoreboard players operation $heist_loot ff_heist += $(key) ff_heist_loot_value
 function fossil_frights:game/heists/loot/header

@@ -1,4 +1,6 @@
 function fossil_frights:game/rejoin/cleanup/all
+scoreboard players set $heist_stopwatch_active ff_heist 0
+stopwatch remove fossil_frights:heist_round
 function fossil_frights:join/join_pads/clear
 scoreboard players set $join_pad_mode ff_game_state 0
 function fossil_frights:game/start_room/locked_door/clear
@@ -102,6 +104,8 @@ scoreboard players set $heist_ready_click_at ff_button_unpress_timestamp -20
 scoreboard players set $heist_loot ff_heist 0
 function fossil_frights:game/heists/challenge/reset
 scoreboard players set $heist_timer ff_heist 0
+scoreboard players set $heist_elapsed_offset ff_heist 0
+scoreboard players set $heist_query_now ff_heist 0
 scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_seconds_left ff_heist 0

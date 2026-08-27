@@ -9,6 +9,7 @@ kill @e[type=minecraft:text_display,tag=ff_rejoin_cleanup_match]
 execute if entity @s[tag=ff_rejoin_reincarnate] run tp @e[type=minecraft:mannequin,tag=ff_rejoin_cleanup_match] 0 -200 0
 execute unless entity @s[tag=ff_rejoin_reincarnate] run kill @e[type=minecraft:mannequin,tag=ff_rejoin_cleanup_match]
 kill @e[type=minecraft:armor_stand,tag=ff_rejoin_cleanup_match]
-execute if entity @s[tag=ff_rejoin_paused] run scoreboard players set $timer_frozen ff_day 0
+execute if entity @s[tag=ff_rejoin_paused] if score $timer_started ff_day matches 1 run function fossil_frights:game/frights/timer/start
+execute if entity @s[tag=ff_rejoin_paused] unless score $timer_started ff_day matches 1 run scoreboard players set $timer_frozen ff_day 0
 tag @s remove ff_rejoin_cleanup_source
 kill @s

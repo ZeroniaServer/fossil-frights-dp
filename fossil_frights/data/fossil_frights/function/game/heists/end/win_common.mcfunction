@@ -1,4 +1,6 @@
 scoreboard players set $heist_round_active ff_game_state 0
+scoreboard players set $heist_stopwatch_active ff_heist 0
+stopwatch remove fossil_frights:heist_round
 schedule clear fossil_frights:game/heists/start_reveal/next
 schedule clear fossil_frights:game/heists/start_reveal/goodluck
 schedule clear fossil_frights:game/heists/start_reveal/go
