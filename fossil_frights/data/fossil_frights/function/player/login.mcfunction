@@ -1,6 +1,13 @@
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given
+# Cache player UUID
+data modify storage fossil_frights:nbt uuid set from entity @s UUID
+execute store result score @s ff_active_uuid_0 run data get storage fossil_frights:nbt uuid[0]
+execute store result score @s ff_active_uuid_1 run data get storage fossil_frights:nbt uuid[1]
+execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
+execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
+data remove storage fossil_frights:nbt uuid
 function fossil_frights:game/rejoin/login_restore
 execute if entity @s[tag=ff_rejoin_restored] run return 0
 tag @s add ff_rejoin_login_reset_source
@@ -57,12 +64,6 @@ execute unless score @s ff_ant_sneak_seen matches -2147483648..2147483647 run sc
 execute unless score @s ff_ant_sneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_sneak_ticks 0
 execute unless score @s ff_ant_unsneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_unsneak_ticks 0
 execute unless score @s ff_ant_blind_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_blind_ticks 0
-data modify storage fossil_frights:nbt uuid set from entity @s UUID
-execute store result score @s ff_active_uuid_0 run data get storage fossil_frights:nbt uuid[0]
-execute store result score @s ff_active_uuid_1 run data get storage fossil_frights:nbt uuid[1]
-execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
-execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
-data remove storage fossil_frights:nbt uuid
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets

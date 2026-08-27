@@ -8,12 +8,6 @@ tag @s remove ff_login_initial
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run function fossil_frights:player/login
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
 tag @s remove ff_rejoin_restored
-data modify storage fossil_frights:nbt uuid set from entity @s UUID
-execute store result score @s ff_active_uuid_0 run data get storage fossil_frights:nbt uuid[0]
-execute store result score @s ff_active_uuid_1 run data get storage fossil_frights:nbt uuid[1]
-execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
-execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
-data remove storage fossil_frights:nbt uuid
 scoreboard players enable @s ff_queue_start
 scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave

@@ -48,11 +48,6 @@ scoreboard objectives add ff_rejoin_ticks dummy
 scoreboard objectives add ff_rejoin_minutes dummy
 scoreboard objectives add ff_rejoin_sec_tens dummy
 scoreboard objectives add ff_rejoin_sec_ones dummy
-scoreboard objectives add ff_rejoin_pos_x dummy
-scoreboard objectives add ff_rejoin_pos_y dummy
-scoreboard objectives add ff_rejoin_pos_z dummy
-scoreboard objectives add ff_rejoin_yaw dummy
-scoreboard objectives add ff_rejoin_pitch dummy
 scoreboard objectives add ff_run_order dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy

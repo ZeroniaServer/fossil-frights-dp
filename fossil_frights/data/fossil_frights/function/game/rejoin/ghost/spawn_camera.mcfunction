@@ -4,7 +4,6 @@ execute as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] if score @s f
 tag @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] add ff_rejoin_ghost
 tag @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] add ff_rejoin_heists_guard
 team join ff_guard @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match]
-scoreboard players operation @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] ff_rejoin_ticks = @s ff_rejoin_ticks
 effect give @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] minecraft:resistance infinite 3 true
 execute as @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] at @s run function fossil_frights:game/rejoin/ghost/spawn_display
 tag @e[type=minecraft:mannequin,tag=ff_rejoin_camera_match] remove ff_rejoin_camera_match

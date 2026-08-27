@@ -4,11 +4,10 @@ kill @e[type=mannequin,tag=ff_check_security_dummy]
 setblock -28 70 38 air
 data remove storage fossil_frights:forced_spectate return
 data remove storage fossil_frights:forced_spectate mannequin
-data modify storage fossil_frights:forced_spectate UUID set from entity @s UUID
-data modify storage fossil_frights:forced_spectate mannequin.u0 set from storage fossil_frights:forced_spectate UUID[0]
-data modify storage fossil_frights:forced_spectate mannequin.u1 set from storage fossil_frights:forced_spectate UUID[1]
-data modify storage fossil_frights:forced_spectate mannequin.u2 set from storage fossil_frights:forced_spectate UUID[2]
-data modify storage fossil_frights:forced_spectate mannequin.u3 set from storage fossil_frights:forced_spectate UUID[3]
+execute store result storage fossil_frights:forced_spectate mannequin.u0 int 1 run scoreboard players get @s ff_active_uuid_0
+execute store result storage fossil_frights:forced_spectate mannequin.u1 int 1 run scoreboard players get @s ff_active_uuid_1
+execute store result storage fossil_frights:forced_spectate mannequin.u2 int 1 run scoreboard players get @s ff_active_uuid_2
+execute store result storage fossil_frights:forced_spectate mannequin.u3 int 1 run scoreboard players get @s ff_active_uuid_3
 function fossil_frights:cameras/save_return_position
 function fossil_frights:cameras/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate

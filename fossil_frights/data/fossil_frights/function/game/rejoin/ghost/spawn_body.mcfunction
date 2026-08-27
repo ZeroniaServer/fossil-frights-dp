@@ -5,17 +5,14 @@ execute store result storage fossil_frights:rejoin mannequin.u3 int 1 run scoreb
 data modify storage fossil_frights:rejoin mannequin.rotation set from entity @s Rotation
 function fossil_frights:game/rejoin/ghost/spawn_macro with storage fossil_frights:rejoin mannequin
 data modify entity @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] CustomName set from entity @s CustomName
-data merge entity @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] {CustomNameVisible:1b,Health:1000.0f}
-attribute @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] minecraft:max_health base set 1000
-attribute @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] minecraft:knockback_resistance base set 2
-effect give @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] minecraft:regeneration infinite 99 true
+data merge entity @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] {CustomNameVisible:1b}
+execute as @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] run function fossil_frights:util/protect_mannequin
 effect give @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] minecraft:resistance infinite 3 true
 execute if entity @s[tag=ff_rejoin_frights] run team join ff_guard @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1]
 execute if entity @s[tag=ff_rejoin_heists_guard] run team join ff_guard @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1]
 execute if entity @s[tag=ff_rejoin_heists_thief] run team join ff_thief @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1]
 execute if entity @s[tag=ff_rejoin_heists_guard] run tag @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] add ff_rejoin_heists_guard
 execute if entity @s[tag=ff_rejoin_heists_thief] run tag @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] add ff_rejoin_heists_thief
-scoreboard players operation @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] ff_rejoin_ticks = @s ff_rejoin_ticks
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] ff_active_uuid_0 = @s ff_active_uuid_0
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] ff_active_uuid_1 = @s ff_active_uuid_1
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_rejoin_ghost_new,sort=nearest,limit=1] ff_active_uuid_2 = @s ff_active_uuid_2
