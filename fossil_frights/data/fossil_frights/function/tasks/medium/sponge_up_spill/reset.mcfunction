@@ -1,7 +1,11 @@
 function fossil_frights:tasks/medium/sponge_up_spill/cleanup
 advancement revoke @a only fossil_frights:tasks/medium/sponge_up_spill/click
 execute as @e[type=item_display,tag=ff_task_slippy_sign] run data merge entity @s {view_range:0}
-setblock -15 79 70 minecraft:mangrove_planks
-setblock -15 79 69 minecraft:mangrove_planks
-setblock -16 79 69 minecraft:mangrove_planks
-setblock -16 79 68 minecraft:mangrove_planks
+
+execute if score $sponge_up_spill_done ff_task_state matches 1 run fill -16 79 68 -14 79 71 minecraft:red_nether_bricks
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -15 79 68 minecraft:nether_quartz_ore
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -16 79 69 minecraft:nether_quartz_ore
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -14 79 69 minecraft:nether_quartz_ore
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -15 79 70 minecraft:nether_quartz_ore
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -14 79 71 minecraft:nether_quartz_ore
+execute if score $sponge_up_spill_done ff_task_state matches 1 run setblock -16 79 71 minecraft:nether_quartz_ore
