@@ -1,5 +1,4 @@
 scoreboard players add @s ff_leave_game 0
-# Pad selectors require an explicit zero; fresh players start without this score.
 scoreboard players add @s ff_join_cooldown 0
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run tag @s add ff_login_initial
 execute unless score @s ff_leave_game_seen matches -2147483648..2147483647 run function fossil_frights:player/login
@@ -8,6 +7,14 @@ tag @s remove ff_login_initial
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run function fossil_frights:player/login
 execute unless score @s ff_leave_game = @s ff_leave_game_seen run scoreboard players operation @s ff_leave_game_seen = @s ff_leave_game
 tag @s remove ff_rejoin_restored
+execute unless score @s ff_active_uuid_0 matches -2147483648..2147483647 run tag @s add ff_uuid_cache_repair
+execute if entity @s[tag=ff_uuid_cache_repair] run data modify storage fossil_frights:nbt uuid set from entity @s UUID
+execute if entity @s[tag=ff_uuid_cache_repair] store result score @s ff_active_uuid_0 run data get storage fossil_frights:nbt uuid[0]
+execute if entity @s[tag=ff_uuid_cache_repair] store result score @s ff_active_uuid_1 run data get storage fossil_frights:nbt uuid[1]
+execute if entity @s[tag=ff_uuid_cache_repair] store result score @s ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
+execute if entity @s[tag=ff_uuid_cache_repair] store result score @s ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
+execute if entity @s[tag=ff_uuid_cache_repair] run data remove storage fossil_frights:nbt uuid
+tag @s remove ff_uuid_cache_repair
 scoreboard players enable @s ff_queue_start
 scoreboard players enable @s ff_cmd_start
 scoreboard players enable @s ff_cmd_leave

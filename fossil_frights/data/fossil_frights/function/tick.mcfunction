@@ -1,3 +1,5 @@
+execute in minecraft:overworld if loaded 0 0 0 unless entity 0-0-0-0 run summon minecraft:marker 0 0 0 {UUID:[I;0,0,0,0],Tags:["ff_position_cache"]}
+
 scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
 execute as @a[gamemode=!creative] run attribute @s minecraft:block_interaction_range base set 0
 execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_range base reset
@@ -25,6 +27,7 @@ execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_f
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
 execute as @e[type=minecraft:marker,tag=ff_trap] at @s run function fossil_frights:items/heists/trap/tick
+execute as @a[tag=ff_ice_frozen] run function fossil_frights:items/heists/ice_cannon/cleanup_orphan
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 kill @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=..0}]

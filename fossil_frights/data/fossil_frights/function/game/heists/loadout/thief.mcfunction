@@ -1,4 +1,4 @@
-execute at @s run kill @e[type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5]
+function fossil_frights:items/heists/ice_cannon/remove_owned_display
 attribute @s minecraft:jump_strength base reset
 attribute @s minecraft:entity_interaction_range base reset
 attribute @s minecraft:movement_speed base reset

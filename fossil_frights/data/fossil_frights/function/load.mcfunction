@@ -24,6 +24,7 @@ scoreboard objectives add ff_dna_scan dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
+scoreboard objectives add ff_security_camera_visible dummy
 scoreboard objectives add ff_forced_spec_x dummy
 scoreboard objectives add ff_forced_spec_y dummy
 scoreboard objectives add ff_forced_spec_z dummy

@@ -16,5 +16,8 @@ execute unless entity @a[tag=ff_plugin_invite_target,limit=1] run function fossi
 execute unless entity @a[tag=ff_plugin_invite_target,limit=1] run return 0
 data remove storage fossil_frights:invite selected
 execute as @a[tag=ff_plugin_invite_target,limit=1] run function fossil_frights:player/util/write_username {to:"storage fossil_frights:invite selected.name"}
-execute as @a[tag=ff_plugin_invite_target,limit=1] run data modify storage fossil_frights:invite selected.uuid set from entity @s UUID
+execute as @a[tag=ff_plugin_invite_target,limit=1] run execute store result storage fossil_frights:invite selected.u0 int 1 run scoreboard players get @s ff_active_uuid_0
+execute as @a[tag=ff_plugin_invite_target,limit=1] run execute store result storage fossil_frights:invite selected.u1 int 1 run scoreboard players get @s ff_active_uuid_1
+execute as @a[tag=ff_plugin_invite_target,limit=1] run execute store result storage fossil_frights:invite selected.u2 int 1 run scoreboard players get @s ff_active_uuid_2
+execute as @a[tag=ff_plugin_invite_target,limit=1] run execute store result storage fossil_frights:invite selected.u3 int 1 run scoreboard players get @s ff_active_uuid_3
 function fossil_frights:game/start_room/settings/duos/gui/try_send

@@ -27,6 +27,7 @@ execute at @s run function fossil_frights:items/heists/camera_remote/get_camera_
 
 scoreboard players set @s ff_security_camera_nav 0
 scoreboard players set @s ff_security_camera_heist 0
+scoreboard players set @s ff_security_camera_visible 0
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
