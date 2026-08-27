@@ -1,3 +1,7 @@
+tag @s add ff_rejoin_spawn_source
+execute as @e[type=minecraft:mannequin,tag=ff_rejoin_ghost] if score @s ff_active_uuid_0 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_3 run kill @s
+execute as @e[type=minecraft:text_display,tag=ff_rejoin_display] if score @s ff_active_uuid_0 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @e[type=minecraft:marker,tag=ff_rejoin_spawn_source,limit=1] ff_active_uuid_3 run kill @s
+tag @s remove ff_rejoin_spawn_source
 execute store result storage fossil_frights:rejoin mannequin.u0 int 1 run scoreboard players get @s ff_active_uuid_0
 execute store result storage fossil_frights:rejoin mannequin.u1 int 1 run scoreboard players get @s ff_active_uuid_1
 execute store result storage fossil_frights:rejoin mannequin.u2 int 1 run scoreboard players get @s ff_active_uuid_2
