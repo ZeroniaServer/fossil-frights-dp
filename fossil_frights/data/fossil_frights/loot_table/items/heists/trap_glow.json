@@ -49,7 +49,7 @@
                   }
                 ],
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_glow",
-                "minecraft:piercing_weapon": {
+                "minecraft:attack_range": {
                   "min_reach": 0.0,
                   "max_reach": 0.0,
                   "hitbox_margin": 0.0
@@ -110,7 +110,7 @@
                       }
                     ],
                     "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_glow",
-                    "minecraft:piercing_weapon": {
+                    "minecraft:attack_range": {
                       "min_reach": 0.0,
                       "max_reach": 0.0,
                       "hitbox_margin": 0.0
