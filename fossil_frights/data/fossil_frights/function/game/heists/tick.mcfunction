@@ -6,6 +6,7 @@ function fossil_frights:game/heists/capture_point/tick
 execute if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
 execute if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 600.. run function fossil_frights:game/reset
 execute if score $victory_complete ff_game_state matches 1 run return 0
+execute if score $heist_round_active ff_game_state matches 0 unless entity @a[team=ff_guard] unless entity @a[team=ff_thief] run return run function fossil_frights:game/reset
 execute if score $heist_round_active ff_game_state matches 0 unless entity @a[limit=1,team=ff_thief] run scoreboard players set $heist_thieves_ready ff_game_state 0
 execute if score $heist_round_active ff_game_state matches 0 run function fossil_frights:game/heists/waiting_text/refresh
 execute if score $heist_round_active ff_game_state matches 0 run scoreboard players add $heist_wait_ticks ff_heist 1
