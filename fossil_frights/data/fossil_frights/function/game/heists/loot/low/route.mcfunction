@@ -14,5 +14,4 @@ execute if entity @s[tag=ff_heist_loot_trilobite_fossil_click] if score $loot_tr
 execute if entity @s[tag=ff_heist_loot_golden_sword_click] if score $loot_golden_sword ff_heist_loot_state matches 1 as @p[tag=ff_heist_low_loot_clicker,distance=..10] run function fossil_frights:game/heists/loot/low/collect/golden_sword
 execute if entity @s[tag=ff_heist_loot_portal_core_click] if score $loot_portal_core ff_heist_loot_state matches 1 as @p[tag=ff_heist_low_loot_clicker,distance=..10] run function fossil_frights:game/heists/loot/low/collect/portal_core
 execute if entity @s[tag=ff_heist_loot_spyglass_click] if score $loot_spyglass ff_heist_loot_state matches 1 as @p[tag=ff_heist_low_loot_clicker,distance=..10] run function fossil_frights:game/heists/loot/low/collect/spyglass
-
 function fossil_frights:game/heists/loot/high_heavy/route
