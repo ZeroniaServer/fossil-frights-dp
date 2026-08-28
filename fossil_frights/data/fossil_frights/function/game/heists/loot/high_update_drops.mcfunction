@@ -7,7 +7,7 @@ execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{it
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_sniffer_dna_cloth
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"t_rex_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_t_rex_dna_cloth
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_trike_dna_cloth
-execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"vault_key"}] run tag @s add ff_heist_high_loot_drop_lost_key
+execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"misplaced_scissors"}] run tag @s add ff_heist_high_loot_drop_misplaced_scissors
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"velociraptor_dna_cloth"}] run tag @s add ff_heist_high_loot_drop_velociraptor_dna_cloth
 # high_heavy
 execute as @e[type=minecraft:item] if items entity @s contents *[custom_data~{itemID:"biplane"}] run tag @s add ff_heist_high_loot_drop_biplane

@@ -145,9 +145,9 @@ scoreboard players reset $loot_lady_bug ff_heist_sidebar
 scoreboard players set $loot_basketball ff_heist_loot_state 0
 scoreboard players set $loot_basketball ff_heist_loot_value 0
 scoreboard players reset $loot_basketball ff_heist_sidebar
-scoreboard players set $loot_lost_key ff_heist_loot_state 0
-scoreboard players set $loot_lost_key ff_heist_loot_value 0
-scoreboard players reset $loot_lost_key ff_heist_sidebar
+scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 0
+scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0
+scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
 scoreboard players set $loot_hoverboard ff_heist_loot_state 0
 scoreboard players set $loot_hoverboard ff_heist_loot_value 0
 scoreboard players reset $loot_hoverboard ff_heist_sidebar

@@ -38,7 +38,7 @@ execute if items entity @s contents *[custom_data~{itemID:"muddy_sherd"}] run fu
 execute if items entity @s contents *[custom_data~{itemID:"carrot_cake"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_carrot_cake"}
 execute if items entity @s contents *[custom_data~{itemID:"cookie"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_cookie"}
 execute if items entity @s contents *[custom_data~{itemID:"basketball"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_basketball"}
-execute if items entity @s contents *[custom_data~{itemID:"vault_key"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_lost_key"}
+execute if items entity @s contents *[custom_data~{itemID:"misplaced_scissors"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_misplaced_scissors"}
 execute if items entity @s contents *[custom_data~{itemID:"hoverboard"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_hoverboard"}
 execute if items entity @s contents *[custom_data~{itemID:"sniffer_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sniffer_dna_cloth"}
 execute if items entity @s contents *[custom_data~{itemID:"trike_dna_cloth"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trike_dna_cloth"}

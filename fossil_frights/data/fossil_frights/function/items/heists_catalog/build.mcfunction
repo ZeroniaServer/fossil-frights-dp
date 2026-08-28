@@ -19,6 +19,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/golden_sword",page:"page_1",slot:13}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/portal_core",page:"page_1",slot:14}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/low/spyglass",page:"page_1",slot:15}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/rare/giant_scissors",page:"page_1",slot:16}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/t_rex_skull",page:"page_1",slot:18}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/velociraptor_statue",page:"page_1",slot:19}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/high_heavy/vault",page:"page_1",slot:20}

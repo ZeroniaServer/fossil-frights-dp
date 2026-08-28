@@ -22,7 +22,6 @@ function fossil_frights:game/heists/loot/check_basement_only
 function fossil_frights:game/heists/loot/steal_alert
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/high/sync/basketball
-function fossil_frights:game/heists/loot/high/sync/lost_key
 scoreboard players set $heist_compass_available ff_compass 0
 scoreboard players set $heist_compass_available_hash ff_compass 0
 scoreboard players set $heist_compass_counting ff_compass 1

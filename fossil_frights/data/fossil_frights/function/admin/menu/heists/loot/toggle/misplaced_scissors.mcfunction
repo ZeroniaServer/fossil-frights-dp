@@ -4,9 +4,10 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run return 
 execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/heists_start_round_before_edit_loot
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
-execute if score $loot_lost_key ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
-execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/high/lost_key
-execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/lost_key
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/high/misplaced_scissors
+execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/misplaced_scissors
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:key/lock/setup
 function fossil_frights:game/heists/loot/low/sync
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render

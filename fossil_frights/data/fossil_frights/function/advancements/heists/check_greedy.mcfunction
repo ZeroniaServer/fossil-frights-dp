@@ -44,7 +44,7 @@ execute if score $loot_leather ff_heist_loot_state matches 1 run return 0
 execute if score $loot_brush ff_heist_loot_state matches 1 run return 0
 execute if score $loot_sponge ff_heist_loot_state matches 1 run return 0
 execute if score $loot_basketball ff_heist_loot_state matches 1 run return 0
-execute if score $loot_lost_key ff_heist_loot_state matches 1 run return 0
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1 run return 0
 execute if score $loot_hoverboard ff_heist_loot_state matches 1 run return 0
 execute if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 1 run return 0
 execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 1 run return 0

@@ -1,6 +1,6 @@
 execute if score $heist_roll ff_heist matches 1 run function fossil_frights:game/heists/loot/select/high/lady_bug
 execute if score $heist_roll ff_heist matches 2 run function fossil_frights:game/heists/loot/select/high/basketball
-execute if score $heist_roll ff_heist matches 3 run function fossil_frights:game/heists/loot/select/high/lost_key
+execute if score $heist_roll ff_heist matches 3 run function fossil_frights:game/heists/loot/select/high/misplaced_scissors
 execute if score $heist_roll ff_heist matches 4 run function fossil_frights:game/heists/loot/select/high/hoverboard
 execute if score $heist_roll ff_heist matches 5 run function fossil_frights:game/heists/loot/select/high/sniffer_dna_cloth
 execute if score $heist_roll ff_heist matches 6 run function fossil_frights:game/heists/loot/select/high/trike_dna_cloth

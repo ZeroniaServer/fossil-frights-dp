@@ -38,7 +38,7 @@ function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_cookie"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_lady_bug"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_basketball"}
-function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_lost_key"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_misplaced_scissors"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_hoverboard"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_sniffer_dna_cloth"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_trike_dna_cloth"}

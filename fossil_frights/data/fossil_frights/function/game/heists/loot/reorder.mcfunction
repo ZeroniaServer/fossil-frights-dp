@@ -1,7 +1,7 @@
 scoreboard players set $heist_sidebar_slot ff_heist 50
 scoreboard players reset $loot_basketball ff_heist_sidebar
 scoreboard players reset $loot_lady_bug ff_heist_sidebar
-scoreboard players reset $loot_lost_key ff_heist_sidebar
+scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
 scoreboard players reset $loot_hoverboard ff_heist_sidebar
 scoreboard players reset $loot_sniffer_dna_cloth ff_heist_sidebar
 scoreboard players reset $loot_trike_dna_cloth ff_heist_sidebar
@@ -176,8 +176,8 @@ execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard 
 execute if score $loot_lady_bug ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_basketball ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_basketball ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_lost_key ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_lost_key ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_lost_key ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_misplaced_scissors ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_hoverboard ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_sniffer_dna_cloth ff_heist_sidebar = $heist_sidebar_slot ff_heist

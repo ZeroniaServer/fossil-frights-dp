@@ -38,6 +38,7 @@
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/golden_sword" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/portal_core" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/low/spyglass" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/rare/giant_scissors" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/t_rex_skull" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/velociraptor_statue" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/high_heavy/vault" },

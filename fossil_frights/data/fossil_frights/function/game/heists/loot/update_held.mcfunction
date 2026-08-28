@@ -39,7 +39,7 @@ execute if score $loot_carrot_cake ff_heist_loot_state matches 2 unless entity @
 execute if score $loot_cookie ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_medium_loot_drop_cookie] run scoreboard players set $loot_cookie ff_heist_loot_state 1
 execute if score $loot_lady_bug ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_lady_bug] run scoreboard players set $loot_lady_bug ff_heist_loot_state 1
 execute if score $loot_basketball ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_basketball] run scoreboard players set $loot_basketball ff_heist_loot_state 1
-execute if score $loot_lost_key ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_lost_key] run scoreboard players set $loot_lost_key ff_heist_loot_state 1
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_misplaced_scissors] run scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 1
 execute if score $loot_hoverboard ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_hoverboard] run scoreboard players set $loot_hoverboard ff_heist_loot_state 1
 execute if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_sniffer_dna_cloth] run scoreboard players set $loot_sniffer_dna_cloth ff_heist_loot_state 1
 execute if score $loot_trike_dna_cloth ff_heist_loot_state matches 2 unless entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_trike_dna_cloth] run scoreboard players set $loot_trike_dna_cloth ff_heist_loot_state 1
@@ -112,7 +112,7 @@ execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:pla
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/cookie if score $loot_cookie ff_heist_loot_state matches 1..2 run scoreboard players set $loot_cookie ff_heist_loot_state 2
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/lady_bug if score $loot_lady_bug ff_heist_loot_state matches 1..2 run scoreboard players set $loot_lady_bug ff_heist_loot_state 2
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/basketball if score $loot_basketball ff_heist_loot_state matches 1..2 run scoreboard players set $loot_basketball ff_heist_loot_state 2
-execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/vault_key if score $loot_lost_key ff_heist_loot_state matches 1..2 run scoreboard players set $loot_lost_key ff_heist_loot_state 2
+execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/misplaced_scissors if score $loot_misplaced_scissors ff_heist_loot_state matches 1..2 run scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 2
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/hoverboard if score $loot_hoverboard ff_heist_loot_state matches 1..2 run scoreboard players set $loot_hoverboard ff_heist_loot_state 2
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/sniffer_dna_cloth if score $loot_sniffer_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_sniffer_dna_cloth ff_heist_loot_state 2
 execute as @a[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:player/inventory/trike_dna_cloth if score $loot_trike_dna_cloth ff_heist_loot_state matches 1..2 run scoreboard players set $loot_trike_dna_cloth ff_heist_loot_state 2
@@ -145,7 +145,7 @@ execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_rap
 execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_vault] if score $loot_vault ff_heist_loot_state matches 1 run scoreboard players set $loot_vault ff_heist_loot_state 2
 execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_velociraptor_statue] if score $loot_velociraptor_statue ff_heist_loot_state matches 1 run scoreboard players set $loot_velociraptor_statue ff_heist_loot_state 2
 execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_lady_bug] if score $loot_lady_bug ff_heist_loot_state matches 1 run scoreboard players set $loot_lady_bug ff_heist_loot_state 2
-execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_lost_key] if score $loot_lost_key ff_heist_loot_state matches 1 run scoreboard players set $loot_lost_key ff_heist_loot_state 2
+execute if entity @e[limit=1,type=minecraft:item,tag=ff_heist_high_loot_drop_misplaced_scissors] if score $loot_misplaced_scissors ff_heist_loot_state matches 1 run scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 2
 scoreboard players set $loot_basketball ff_heist_flash 0
 scoreboard players set $loot_hoverboard ff_heist_flash 0
 scoreboard players set $loot_sniffer_dna_cloth ff_heist_flash 0

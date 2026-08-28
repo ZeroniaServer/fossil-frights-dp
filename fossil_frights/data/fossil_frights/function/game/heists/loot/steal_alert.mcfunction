@@ -61,8 +61,8 @@ execute if score $loot_leather ff_heist_loot_state matches 2.. run scoreboard pl
 execute if score $loot_leather ff_heist_loot_state matches 2.. if score $loot_leather ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
 execute if score $loot_lollipop ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_lollipop ff_heist_loot_state matches 2.. if score $loot_lollipop ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
-execute if score $loot_lost_key ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_lost_key ff_heist_loot_state matches 2.. if score $loot_lost_key ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 2.. if score $loot_misplaced_scissors ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_muddy_sherd ff_heist_loot_state matches 2.. if score $loot_muddy_sherd ff_heist_loot_value matches 300.. run scoreboard players add $taken_high ff_heist 1
 execute if score $loot_piglin_head ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1

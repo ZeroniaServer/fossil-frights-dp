@@ -16,4 +16,4 @@ execute if score $loot_raptor_skull ff_heist_loot_state matches 2 run scoreboard
 execute if score $loot_vault ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_velociraptor_statue ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
 execute if score $loot_lady_bug ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
-execute if score $loot_lost_key ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
+execute if score $loot_misplaced_scissors ff_heist_loot_state matches 2 run scoreboard players add $high_exact ff_heist 1
