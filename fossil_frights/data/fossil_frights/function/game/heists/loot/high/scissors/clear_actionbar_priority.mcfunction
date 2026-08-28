@@ -1,0 +1,1 @@
+tag @a remove ff_heist_scissors_actionbar_priority
