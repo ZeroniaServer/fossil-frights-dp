@@ -15,4 +15,4 @@ execute if score $sponge_up_spill_sel ff_task_state matches 1 run scoreboard pla
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/sponge_up_spill/cleanup
 function fossil_frights:tasks/tracker/refresh
-function fossil_frights:tasks/check_day_complete
+schedule function fossil_frights:tasks/check_day_complete 20t
