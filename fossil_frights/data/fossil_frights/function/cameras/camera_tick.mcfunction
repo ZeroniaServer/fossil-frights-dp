@@ -8,5 +8,4 @@ execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights
 execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights:player/input/right run function fossil_frights:cameras/next_camera
 execute if score @s ff_security_camera_heist matches 0 if score @s ff_security_camera_visible matches 0 if entity @s[tag=!ff_camera_lights_disabled_overlay] run function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
-execute unless entity @e[type=cave_spider,tag=security_camera,distance=..2] if entity @s[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
-execute unless entity @e[type=cave_spider,tag=security_camera,distance=..2] if entity @s[tag=!ff_camera_remote_active] run function fossil_frights:cameras/forced_spectate_exit
+function fossil_frights:cameras/select_camera
