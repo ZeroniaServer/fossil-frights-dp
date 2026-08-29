@@ -11,19 +11,17 @@ execute if score $heist_timer ff_heist matches ..0 run return run function fossi
 function fossil_frights:game/heists/timer/update_display
 scoreboard players add $heist_flash ff_heist 1
 execute if score $heist_flash ff_heist matches 20.. run scoreboard players set $heist_flash ff_heist 0
-function fossil_frights:game/heists/loot/low/update_drops
-function fossil_frights:game/heists/loot/medium_update_drops
-function fossil_frights:game/heists/loot/high_update_drops
+function fossil_frights:game/heists/loot/common/update_drops
+function fossil_frights:game/heists/loot/uncommon/update_drops
+function fossil_frights:game/heists/loot/rare/update_drops
+function fossil_frights:game/heists/loot/heavy/update_drops
 function fossil_frights:game/heists/loot/clear_guard_loot
 function fossil_frights:game/heists/loot/update_pickup_delay
 function fossil_frights:game/heists/loot/update_held
-function fossil_frights:game/heists/loot/high/pickup/lady_bug/sync_lock
 function fossil_frights:advancements/heists/check_greedy
 function fossil_frights:game/heists/loot/check_basement_only
 function fossil_frights:game/heists/loot/steal_alert
-function fossil_frights:game/heists/loot/low/sync
-function fossil_frights:game/heists/loot/high/sync/basketball
-function fossil_frights:game/heists/loot/high/scissors/sync
+function fossil_frights:game/heists/loot/sync_all
 scoreboard players set $heist_compass_available ff_compass 0
 scoreboard players set $heist_compass_available_hash ff_compass 0
 scoreboard players set $heist_compass_counting ff_compass 1

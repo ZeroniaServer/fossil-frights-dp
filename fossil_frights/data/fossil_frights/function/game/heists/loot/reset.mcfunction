@@ -1,30 +1,12 @@
 scoreboard players set $heist_flash ff_heist 0
-scoreboard players set $taken_high_prev ff_heist 0
-scoreboard players set $taken_lowmed_prev ff_heist 0
+scoreboard players set $taken_common_uncommon_prev ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 11
-scoreboard players set $heist_low_selected ff_heist 0
-scoreboard players set $heist_med_selected ff_heist 0
-scoreboard players set $heist_high_selected ff_heist 0
+scoreboard players set $heist_common_selected ff_heist 0
+scoreboard players set $heist_uncommon_selected ff_heist 0
+scoreboard players set $heist_rare_selected ff_heist 0
+scoreboard players set $heist_heavy_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $heist_basement_remaining ff_heist 0
-scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_1 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_1 ff_heist_sidebar
-scoreboard players set $loot_placeholder_easy_2 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_2 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_2 ff_heist_sidebar
-scoreboard players set $loot_placeholder_easy_3 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_3 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_3 ff_heist_sidebar
-scoreboard players set $loot_placeholder_easy_4 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_4 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_4 ff_heist_sidebar
-scoreboard players set $loot_placeholder_easy_5 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_5 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_5 ff_heist_sidebar
-scoreboard players set $loot_placeholder_easy_6 ff_heist_loot_state 0
-scoreboard players set $loot_placeholder_easy_6 ff_heist_loot_value 0
-scoreboard players reset $loot_placeholder_easy_6 ff_heist_sidebar
 scoreboard players set $loot_coffee ff_heist_loot_state 0
 scoreboard players set $loot_coffee ff_heist_loot_value 0
 scoreboard players reset $loot_coffee ff_heist_sidebar
@@ -148,7 +130,7 @@ scoreboard players reset $loot_basketball ff_heist_sidebar
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 0
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0
 scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
-function fossil_frights:game/heists/loot/high/scissors/reset_location
+function fossil_frights:game/heists/loot/rare/scissors/reset_location
 scoreboard players set $loot_hoverboard ff_heist_loot_state 0
 scoreboard players set $loot_hoverboard ff_heist_loot_value 0
 scoreboard players reset $loot_hoverboard ff_heist_sidebar
@@ -197,4 +179,4 @@ scoreboard players reset $loot_vault ff_heist_sidebar
 scoreboard players set $loot_velociraptor_statue ff_heist_loot_state 0
 scoreboard players set $loot_velociraptor_statue ff_heist_loot_value 0
 scoreboard players reset $loot_velociraptor_statue ff_heist_sidebar
-function fossil_frights:game/heists/loot/low/cleanup
+function fossil_frights:game/heists/loot/cleanup

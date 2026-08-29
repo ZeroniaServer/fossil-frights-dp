@@ -1,0 +1,10 @@
+execute if score $heist_roll ff_heist matches 1 run function fossil_frights:game/heists/loot/select/rare/lady_bug
+execute if score $heist_roll ff_heist matches 2 run function fossil_frights:game/heists/loot/select/rare/basketball
+execute if score $heist_roll ff_heist matches 3 run function fossil_frights:game/heists/loot/select/rare/misplaced_scissors
+execute if score $heist_roll ff_heist matches 4 run function fossil_frights:game/heists/loot/select/rare/hoverboard
+execute if score $heist_roll ff_heist matches 5 run function fossil_frights:game/heists/loot/select/rare/sniffer_dna_cloth
+execute if score $heist_roll ff_heist matches 6 run function fossil_frights:game/heists/loot/select/rare/trike_dna_cloth
+execute if score $heist_roll ff_heist matches 7 run function fossil_frights:game/heists/loot/select/rare/t_rex_dna_cloth
+execute if score $heist_roll ff_heist matches 8 run function fossil_frights:game/heists/loot/select/rare/velociraptor_dna_cloth
+execute if score $heist_roll ff_heist matches 9 run function fossil_frights:game/heists/loot/select/rare/plesiosaur_dna_cloth
+execute if score $heist_roll ff_heist matches 10 run function fossil_frights:game/heists/loot/select/rare/pterodactyl_dna_cloth

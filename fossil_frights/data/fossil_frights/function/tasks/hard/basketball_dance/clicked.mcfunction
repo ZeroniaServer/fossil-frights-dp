@@ -1,5 +1,5 @@
 advancement revoke @s only fossil_frights:tasks/hard/basketball_dance/jukebox_click
-execute if predicate fossil_frights:game_state/heist_mode_active if score $loot_basketball ff_heist_loot_state matches 1..2 run function fossil_frights:game/heists/loot/high/pickup/basketball
+execute if predicate fossil_frights:game_state/heist_mode_active if score $loot_basketball ff_heist_loot_state matches 1..2 run function fossil_frights:game/heists/loot/rare/pickup/basketball
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless score $basketball_dance_sel ff_task_state matches 1 run return 0
 execute unless score $basketball_dance_done ff_task_state matches 0 run return 0

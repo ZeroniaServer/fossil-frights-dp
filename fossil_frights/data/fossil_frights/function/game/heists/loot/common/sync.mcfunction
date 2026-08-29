@@ -1,0 +1,16 @@
+function fossil_frights:game/heists/loot/common/sync/coffee
+function fossil_frights:game/heists/loot/common/sync/poster_tube
+function fossil_frights:game/heists/loot/common/sync/ghast_plushie
+function fossil_frights:game/heists/loot/common/sync/piglin_head
+function fossil_frights:game/heists/loot/common/sync/popcorn
+function fossil_frights:game/heists/loot/common/sync/lollipop
+function fossil_frights:game/heists/loot/common/sync/fishing_rod
+function fossil_frights:game/heists/loot/common/sync/burger
+function fossil_frights:game/heists/loot/common/sync/chocolate_cake
+function fossil_frights:game/heists/loot/common/sync/ancient_scripture
+function fossil_frights:game/heists/loot/common/sync/chondrite
+function fossil_frights:game/heists/loot/common/sync/sand_dollar
+function fossil_frights:game/heists/loot/common/sync/trilobite_fossil
+function fossil_frights:game/heists/loot/common/sync/golden_sword
+function fossil_frights:game/heists/loot/common/sync/portal_core
+function fossil_frights:game/heists/loot/common/sync/spyglass

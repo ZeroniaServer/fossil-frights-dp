@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.lollipop",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/lollipop",
+                "minecraft:custom_data": {
+                  "itemID": "lollipop",
+                  "ff_heist_common_loot": true,
+                  "ff_heist_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

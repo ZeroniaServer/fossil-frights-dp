@@ -244,7 +244,7 @@ scoreboard players set $heist_wait_ticks ff_heist 0
 scoreboard players set $heist_wait_queue_present ff_heist 0
 scoreboard players set $heist_flash ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 12
-scoreboard players set $heist_med_selected ff_heist 0
+scoreboard players set $heist_uncommon_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $heist_basement_remaining ff_heist 0
 scoreboard players set $heist_basement_lava_lock ff_heist 0

@@ -1,4 +1,4 @@
-execute if predicate fossil_frights:game_state/heist_mode_active if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:game/heists/loot/high/basketball_player_tick
+execute if predicate fossil_frights:game_state/heist_mode_active if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:game/heists/loot/rare/basketball_player_tick
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless entity @s[team=ff_guard] run return 0
 execute unless score $basketball_dance_sel ff_task_state matches 1 run return 0

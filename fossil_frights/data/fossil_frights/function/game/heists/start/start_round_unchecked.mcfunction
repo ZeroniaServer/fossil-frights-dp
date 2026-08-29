@@ -15,8 +15,8 @@ fill -5 68 8 -3 68 8 magma_block
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players set $security_by_loot ff_heist 0
-scoreboard players set $high_exact ff_heist 0
-scoreboard players set $high_exact_prev ff_heist 0
+scoreboard players set $rare_heavy_exact ff_heist 0
+scoreboard players set $rare_heavy_exact_prev ff_heist 0
 scoreboard players set $reopen_grace ff_heist 0
 scoreboard players set $timer_frozen ff_day 1
 scoreboard players set $heist_compass_available ff_compass 0

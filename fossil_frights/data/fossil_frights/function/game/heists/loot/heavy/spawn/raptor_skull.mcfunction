@@ -1,0 +1,2 @@
+kill @e[type=minecraft:interaction,tag=ff_heist_loot_raptor_skull_click]
+summon minecraft:interaction 7 83 46 {width:3,height:1.5,response:true,Tags:["ff_heist_loot_interaction","ff_heist_loot_click","ff_heist_loot_raptor_skull_click"]}

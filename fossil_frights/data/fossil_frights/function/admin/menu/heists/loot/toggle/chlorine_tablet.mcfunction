@@ -5,9 +5,9 @@ execute unless score $heist_round_active ff_game_state matches 1 run function fo
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
 execute if score $loot_chlorine_tablet ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
-execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/medium/chlorine_tablet
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/uncommon/chlorine_tablet
 execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/chlorine_tablet
-function fossil_frights:game/heists/loot/low/sync
+function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:key/lock/setup
 function fossil_frights:game/heists/loot/render

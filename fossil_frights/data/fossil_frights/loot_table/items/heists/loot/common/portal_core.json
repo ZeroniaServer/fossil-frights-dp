@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.portal_core",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:heart_of_the_sea",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "portal_core",
+                  "ff_heist_common_loot": true,
+                  "ff_heist_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,8 +4,8 @@ function fossil_frights:game/heists/loot/header
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 0
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0
 scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
-function fossil_frights:game/heists/loot/high/scissors/reset_location
+function fossil_frights:game/heists/loot/rare/scissors/reset_location
 function fossil_frights:key/lock/setup
-function fossil_frights:game/heists/loot/low/sync
+function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render

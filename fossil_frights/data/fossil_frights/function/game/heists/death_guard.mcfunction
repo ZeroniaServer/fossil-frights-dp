@@ -1,5 +1,5 @@
 scoreboard players add @s ff_heist_deaths_round 1
-function fossil_frights:game/heists/loot/high/pickup/lady_bug/death
+function fossil_frights:game/heists/loot/rare/pickup/lady_bug/death
 attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:air_drag_modifier base reset
 function fossil_frights:game/heists/jump_boost/restore

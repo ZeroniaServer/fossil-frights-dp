@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.golden_sword",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:golden_sword",
+                "minecraft:max_damage": 32,
+                "minecraft:max_stack_size": 1,
+                "minecraft:weapon": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:base_attack_damage",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": 3.0
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "minecraft:base_attack_speed",
+                    "slot": "mainhand",
+                    "operation": "add_value",
+                    "amount": -2.4
+                  }
+                ],
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "itemID": "golden_sword",
+                  "ff_heist_common_loot": true,
+                  "ff_heist_loot": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

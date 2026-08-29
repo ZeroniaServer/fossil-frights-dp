@@ -1,10 +1,10 @@
 function fossil_frights:game/heists/loot/reset
-function fossil_frights:game/heists/loot/select_high
-function fossil_frights:game/heists/loot/select_medium_non_basement
-function fossil_frights:game/heists/loot/select_medium
-function fossil_frights:game/heists/loot/select_low
-function fossil_frights:game/heists/loot/low/sync
-function fossil_frights:game/heists/loot/high/scissors/sync
+function fossil_frights:game/heists/loot/select/uncommon/non_basement
+function fossil_frights:game/heists/loot/select/common
+function fossil_frights:game/heists/loot/select/uncommon
+function fossil_frights:game/heists/loot/select/rare
+function fossil_frights:game/heists/loot/select/heavy
+function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:key/lock/setup
 function fossil_frights:game/heists/loot/render
