@@ -8,4 +8,5 @@ execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights
 execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights:player/input/right run function fossil_frights:cameras/next_camera
 execute if score @s ff_security_camera_heist matches 0 if score @s ff_security_camera_visible matches 0 if entity @s[tag=!ff_camera_lights_disabled_overlay] run function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
+execute if entity @s[tag=ff_camera_thief_visible] if predicate fossil_frights:player/input/backward run return 0
 function fossil_frights:cameras/select_camera
