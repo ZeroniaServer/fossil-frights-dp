@@ -21,6 +21,7 @@ schedule clear fossil_frights:game/heists/start_reveal/go
 kill @e[type=minecraft:marker,tag=ff_ice_cannon]
 kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block]
 kill @e[type=minecraft:block_display,tag=ff_ice_freeze]
+function fossil_frights:items/heists/trap/types/freeze/item/cleanup
 kill @e[type=minecraft:marker,tag=ff_trap]
 kill @e[type=minecraft:armor_stand,tag=ff_trap_floor_finder]
 tag @a remove ff_trap_place_pending

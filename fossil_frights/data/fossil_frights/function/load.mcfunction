@@ -84,6 +84,7 @@ scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
 scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
+scoreboard objectives add ff_trap_item_age dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
 scoreboard objectives add ff_glowtrap_scan dummy
