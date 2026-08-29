@@ -10,18 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:iron_ingot",
-                "minecraft:lore": [
-                  {
-                    "extra": [
-                      "lock"
-                    ],
-                    "text": ""
-                  }
-                ],
-                "minecraft:custom_data": {
-                  "ff_lock_display": true
-                }
+                "minecraft:item_model": "fossil-frights:display/general/lock"
               }
             }
           ]

@@ -34,8 +34,8 @@ kill @e[type=minecraft:interaction,tag=ff_dna_click,scores={ff_lock_click_ttl=..
 execute as @e[type=minecraft:item_display,tag=ff_dna_hover] run data modify entity @s Glowing set value false
 team leave @e[type=minecraft:item_display,tag=ff_dna_hover]
 tag @e[type=minecraft:item_display,tag=ff_dna_hover] remove ff_dna_hover
-execute as @e[type=minecraft:item_display,tag=ff_lock_glow] run data modify entity @s Glowing set value false
-tag @e[type=minecraft:item_display,tag=ff_lock_glow] remove ff_lock_glow
+execute as @e[type=minecraft:item_display,tag=ff_lock_hovered] run data modify entity @s item.components."minecraft:item_model" set value "fossil-frights:display/general/lock"
+tag @e[type=minecraft:item_display,tag=ff_lock_hovered] remove ff_lock_hovered
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run function fossil_frights:animations/door/tick
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 1 run function fossil_frights:tasks/task_book_shelf/day_1_marker/tick
