@@ -1,3 +1,6 @@
+execute unless entity @e[type=cave_spider,tag=security_camera,distance=..0.5] if entity @s[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
+execute unless entity @e[type=cave_spider,tag=security_camera,distance=..0.5] if entity @s[tag=!ff_camera_remote_active] run function fossil_frights:cameras/forced_spectate_exit
+execute unless entity @s[tag=ff_forced_spectate] run return 0
 execute if score @s ff_security_camera_nav matches 1.. run scoreboard players remove @s ff_security_camera_nav 1
 execute if score @s ff_security_camera_visible matches 1.. run scoreboard players remove @s ff_security_camera_visible 1
 function fossil_frights:cameras/lights_disabled/update
