@@ -135,12 +135,12 @@ function fossil_frights:player/effects/tick
 execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/ice_cannon/player_tick
 execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/trap/player_tick
 execute if entity @s[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/thief_tick
-execute run function fossil_frights:lobby_games/parkour/player_tick
-execute run function fossil_frights:lobby_games/temple_run/player_tick
+function fossil_frights:lobby_games/parkour/player_tick
+function fossil_frights:lobby_games/temple_run/player_tick
 execute store result score #gametime ff_ant_combo_shown_until_timestamp run time query gametime
-execute run function fossil_frights:lobby_games/ant_fight/player_tick
-execute run function fossil_frights:lobby_games/sulfur_strikers/player_tick
-execute run function fossil_frights:advancements/checks/reach_the_sun
+function fossil_frights:lobby_games/ant_fight/player_tick
+function fossil_frights:lobby_games/sulfur_strikers/player_tick
+function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[tag=ff_camera_lights_disabled_overlay,tag=!ff_forced_spectate] run function fossil_frights:cameras/lights_disabled/hide
