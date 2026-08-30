@@ -153,48 +153,7 @@ execute if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if items entity @s weapon.mainhand *[custom_data~{ff_dna:true}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
-advancement revoke @s only fossil_frights:misc/lock_click
-advancement revoke @s only fossil_frights:tasks/final/dna/click
-advancement revoke @s only fossil_frights:tasks/easy/swat_flies/click
-advancement revoke @s only fossil_frights:tasks/easy/check_security/click
-advancement revoke @s only fossil_frights:misc/lock_register_click
-advancement revoke @s only fossil_frights:tasks/easy/polish_bell/click
-advancement revoke @s only fossil_frights:tasks/easy/fix_cracked_egg/click
-advancement revoke @s only fossil_frights:tasks/easy/fix_mars/click
-advancement revoke @s only fossil_frights:tasks/easy/sweep_popcorn/click
-advancement revoke @s only fossil_frights:tasks/easy/dig_sand/click
-advancement revoke @s only fossil_frights:tasks/medium/credit_reel/click
-advancement revoke @s only fossil_frights:tasks/medium/feed_the_fish/click
-advancement revoke @s only fossil_frights:tasks/medium/popcorn_buckets/click
-advancement revoke @s only fossil_frights:tasks/medium/ancient_portal/click
-advancement revoke @s only fossil_frights:tasks/medium/coffee_top_up/click
-advancement revoke @s only fossil_frights:tasks/medium/feed_parrot/click
-advancement revoke @s only fossil_frights:tasks/medium/feed_the_plants/click
-advancement revoke @s only fossil_frights:tasks/medium/fix_sculker/click
-advancement revoke @s only fossil_frights:tasks/medium/refill_coffee/click
-advancement revoke @s only fossil_frights:tasks/medium/refill_ice/click
-advancement revoke @s only fossil_frights:tasks/medium/replenish_soap/click
-advancement revoke @s only fossil_frights:tasks/medium/restock_plushies/click
-advancement revoke @s only fossil_frights:tasks/medium/revitalize_coral/click
-advancement revoke @s only fossil_frights:tasks/medium/shark_bait/click
-advancement revoke @s only fossil_frights:tasks/medium/sponge_up_spill/click
-advancement revoke @s only fossil_frights:misc/anvil_click
-advancement revoke @s only fossil_frights:misc/crane_payment_click
-advancement revoke @s only fossil_frights:misc/sarcophagus_payment_click
-advancement revoke @s only fossil_frights:start_room/glass_box_click
-advancement revoke @s only fossil_frights:misc/heist_waiting_text_click
-advancement revoke @s only fossil_frights:tasks/hard/return_the_key/pickup_click
-advancement revoke @s only fossil_frights:tasks/hard/return_the_key/return_click
-advancement revoke @s only fossil_frights:tasks/hard/basketball_dance/jukebox_click
-advancement revoke @s only fossil_frights:tasks/hard/hoveraptor/click
-advancement revoke @s only fossil_frights:tasks/hard/evolution/punch
-advancement revoke @s only fossil_frights:tasks/final/final_task/centrifuge_click
-advancement revoke @s only fossil_frights:tasks/final/final_task/dna_analyzer_click
-advancement revoke @s only fossil_frights:misc/queue_punch
-advancement revoke @s only fossil_frights:misc/ice_frozen_hurt
-advancement revoke @s only fossil_frights:items/camera_remote/consume
-advancement revoke @s only fossil_frights:items/hazard_cookie/consume
-advancement revoke @s only fossil_frights:camera_remote_dummy/punch
+advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
 execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step

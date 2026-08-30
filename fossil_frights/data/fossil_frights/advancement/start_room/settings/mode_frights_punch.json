@@ -1,14 +1,21 @@
 {
+  "parent": "fossil_frights:detection_root",
   "criteria": {
     "punch": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
           "entity_type": "minecraft:interaction",
-          "entity_tags": {"all_of": ["ff_settings_mode_frights_click"]}
+          "entity_tags": {
+            "all_of": [
+              "ff_settings_mode_frights_click"
+            ]
+          }
         }
       }
     }
   },
-  "rewards": {"function": "fossil_frights:game/start_room/settings/gamemode/frights/info"}
+  "rewards": {
+    "function": "fossil_frights:game/start_room/settings/gamemode/frights/info"
+  }
 }

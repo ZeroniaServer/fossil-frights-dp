@@ -1,4 +1,5 @@
 {
+  "parent": "fossil_frights:detection_root",
   "criteria": {
     "click": {
       "trigger": "minecraft:player_interacted_with_entity",

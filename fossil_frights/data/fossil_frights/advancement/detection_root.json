@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "detection_root": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
