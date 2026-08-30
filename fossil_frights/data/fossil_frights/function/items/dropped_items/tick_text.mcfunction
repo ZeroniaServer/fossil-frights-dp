@@ -6,7 +6,7 @@ scoreboard players operation #seconds ff_dropped_item_despawn_timestamp /= #20 f
 scoreboard players operation #deciseconds ff_dropped_item_despawn_timestamp %= #20 ff_constant
 scoreboard players operation #deciseconds ff_dropped_item_despawn_timestamp *= #10 ff_constant
 scoreboard players operation #deciseconds ff_dropped_item_despawn_timestamp /= #20 ff_constant
-data modify entity @s text set value [{color:"red",text:""},{font:"fossil-frights:small_numbers_high",score:{name:"#seconds",objective:"ff_dropped_item_despawn_timestamp"}},".",{font:"fossil-frights:small_numbers_high",score:{name:"#deciseconds",objective:"ff_dropped_item_despawn_timestamp"}},{bold:true,text:"\N{ZERO WIDTH NON-JOINER}\N{ZERO WIDTH NON-JOINER}"}]
+data modify entity @s text set value [{color:"red",text:""},{font:"fossil-frights:small_caps",score:{name:"#seconds",objective:"ff_dropped_item_despawn_timestamp"}},".",{font:"fossil-frights:small_caps",score:{name:"#deciseconds",objective:"ff_dropped_item_despawn_timestamp"}},{bold:true,text:"\N{ZERO WIDTH NON-JOINER}\N{ZERO WIDTH NON-JOINER}"}]
 
 execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:15}} run particle minecraft:raid_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[team=ff_thief]
 execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:15}} run particle minecraft:trial_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[team=ff_guard,gamemode=!spectator]
