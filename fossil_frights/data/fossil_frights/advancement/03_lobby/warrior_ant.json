@@ -5,7 +5,7 @@
       "id": "minecraft:snowball",
       "components": {
         "minecraft:item_name": {
-          "text": "Infinileaf",
+          "translate": "ff.item.infinileaf",
           "color": "green",
           "italic": false
         },

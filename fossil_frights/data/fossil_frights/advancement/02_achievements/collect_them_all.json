@@ -5,7 +5,7 @@
       "id": "minecraft:stone",
       "components": {
         "minecraft:item_name": {
-          "text": "T-Rex Plushie",
+          "translate": "ff.item.t_rex_plushie",
           "italic": false
         },
         "minecraft:item_model": "minecraft:totem_of_undying",

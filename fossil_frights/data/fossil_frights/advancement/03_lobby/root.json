@@ -4,7 +4,7 @@
       "id": "minecraft:fern",
       "components": {
         "minecraft:item_name": {
-          "text": "Carnivorous Fly Trap",
+          "translate": "ff.item.carnivorous_fly_trap",
           "italic": false
         },
         "minecraft:lore": [

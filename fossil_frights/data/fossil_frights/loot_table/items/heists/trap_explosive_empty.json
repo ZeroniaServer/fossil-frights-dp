@@ -48,7 +48,7 @@
                     "italic": false
                   },
                   {
-                    "text": "One time use.",
+                    "translate": "ff.item.storage_key.one_time_use",
                     "color": "red",
                     "italic": false
                   }
@@ -115,7 +115,7 @@
                         "italic": false
                       },
                       {
-                        "text": "One time use.",
+                        "translate": "ff.item.storage_key.one_time_use",
                         "color": "red",
                         "italic": false
                       }

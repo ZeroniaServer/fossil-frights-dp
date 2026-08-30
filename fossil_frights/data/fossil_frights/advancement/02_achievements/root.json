@@ -4,7 +4,7 @@
       "id": "minecraft:cookie",
       "components": {
         "minecraft:item_name": {
-          "text": "Cookie Jar",
+          "translate": "ff.item.cookie_jar",
           "italic": false
         },
         "minecraft:lore": [

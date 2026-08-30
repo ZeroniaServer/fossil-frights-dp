@@ -5,7 +5,7 @@
       "id": "minecraft:milk_bucket",
       "components": {
         "minecraft:item_name": {
-          "text": "Drink with Straw",
+          "translate": "ff.item.drink_with_straw",
           "italic": false
         },
         "minecraft:lore": [

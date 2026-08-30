@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Loot Bag",
+                  "translate": "ff.item.loot_bag",
                   "color": "yellow"
                 },
                 "minecraft:item_model": "minecraft:feather",

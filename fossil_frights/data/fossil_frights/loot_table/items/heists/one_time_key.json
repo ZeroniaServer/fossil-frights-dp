@@ -12,7 +12,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "One-Time Key",
+                  "translate": "ff.item.one_time_key",
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/key/key",
