@@ -21,6 +21,7 @@
                     1
                   ]
                 },
+                "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink",
                   "ff_heist_loot": true
