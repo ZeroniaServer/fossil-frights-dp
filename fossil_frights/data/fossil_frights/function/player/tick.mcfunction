@@ -153,11 +153,11 @@ execute if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:tasks/hard/basketball_dance/player_tick
 execute if items entity @s weapon.mainhand *[custom_data~{ff_dna:true}] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
-advancement revoke @s only fossil_frights:lock_click
+advancement revoke @s only fossil_frights:misc/lock_click
 advancement revoke @s only fossil_frights:tasks/final/dna/click
 advancement revoke @s only fossil_frights:tasks/easy/swat_flies/click
 advancement revoke @s only fossil_frights:tasks/easy/check_security/click
-advancement revoke @s only fossil_frights:lock_register_click
+advancement revoke @s only fossil_frights:misc/lock_register_click
 advancement revoke @s only fossil_frights:tasks/easy/polish_bell/click
 advancement revoke @s only fossil_frights:tasks/easy/fix_cracked_egg/click
 advancement revoke @s only fossil_frights:tasks/easy/fix_mars/click
@@ -178,11 +178,11 @@ advancement revoke @s only fossil_frights:tasks/medium/restock_plushies/click
 advancement revoke @s only fossil_frights:tasks/medium/revitalize_coral/click
 advancement revoke @s only fossil_frights:tasks/medium/shark_bait/click
 advancement revoke @s only fossil_frights:tasks/medium/sponge_up_spill/click
-advancement revoke @s only fossil_frights:anvil_click
-advancement revoke @s only fossil_frights:crane_payment_click
-advancement revoke @s only fossil_frights:sarcophagus_payment_click
+advancement revoke @s only fossil_frights:misc/anvil_click
+advancement revoke @s only fossil_frights:misc/crane_payment_click
+advancement revoke @s only fossil_frights:misc/sarcophagus_payment_click
 advancement revoke @s only fossil_frights:start_room/glass_box_click
-advancement revoke @s only fossil_frights:heist_waiting_text_click
+advancement revoke @s only fossil_frights:misc/heist_waiting_text_click
 advancement revoke @s only fossil_frights:tasks/hard/return_the_key/pickup_click
 advancement revoke @s only fossil_frights:tasks/hard/return_the_key/return_click
 advancement revoke @s only fossil_frights:tasks/hard/basketball_dance/jukebox_click
@@ -190,8 +190,8 @@ advancement revoke @s only fossil_frights:tasks/hard/hoveraptor/click
 advancement revoke @s only fossil_frights:tasks/hard/evolution/punch
 advancement revoke @s only fossil_frights:tasks/final/final_task/centrifuge_click
 advancement revoke @s only fossil_frights:tasks/final/final_task/dna_analyzer_click
-advancement revoke @s only fossil_frights:queue_punch
-advancement revoke @s only fossil_frights:ice_frozen_hurt
+advancement revoke @s only fossil_frights:misc/queue_punch
+advancement revoke @s only fossil_frights:misc/ice_frozen_hurt
 advancement revoke @s only fossil_frights:items/camera_remote/consume
 advancement revoke @s only fossil_frights:items/hazard_cookie/consume
 advancement revoke @s only fossil_frights:camera_remote_dummy/punch

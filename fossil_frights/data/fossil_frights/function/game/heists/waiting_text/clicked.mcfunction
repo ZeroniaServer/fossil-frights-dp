@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:heist_waiting_text_click
+advancement revoke @s only fossil_frights:misc/heist_waiting_text_click
 execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute if score $heist_round_active ff_game_state matches 1.. run return 0
 execute unless entity @s[team=ff_thief] run return 0

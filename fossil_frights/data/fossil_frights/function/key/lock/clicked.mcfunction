@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:lock_click
+advancement revoke @s only fossil_frights:misc/lock_click
 scoreboard players add @s ff_key_cooldown 0
 execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set @s ff_key_cooldown 0
 execute unless score @s ff_key_cooldown matches 0 run return 0

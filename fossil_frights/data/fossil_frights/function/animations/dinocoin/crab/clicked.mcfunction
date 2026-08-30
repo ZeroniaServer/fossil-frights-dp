@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:crab_click
+advancement revoke @s only fossil_frights:misc/crab_click
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $day_active ff_day matches 1 run return 0
 execute if entity @a[limit=1,scores={ff_crab_timer=1..}] run return 0

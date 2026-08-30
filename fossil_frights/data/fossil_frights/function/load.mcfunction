@@ -413,17 +413,17 @@ team add ff_evolution_mannequin
 team modify ff_evolution_mannequin collisionRule never
 team add ff_security_camera
 team modify ff_security_camera collisionRule never
-advancement revoke @a only fossil_frights:lock_click
-advancement revoke @a only fossil_frights:museum_map_click
-advancement revoke @a only fossil_frights:map_region
-advancement revoke @a only fossil_frights:info_lectern_click
+advancement revoke @a only fossil_frights:misc/lock_click
+advancement revoke @a only fossil_frights:misc/museum_map_click
+advancement revoke @a only fossil_frights:misc/map_region
+advancement revoke @a only fossil_frights:misc/info_lectern_click
 advancement revoke @a only fossil_frights:lobby/temple_run_teleporter_click
 advancement revoke @a only fossil_frights:lobby/ant_fight_teleporter_click
 advancement revoke @a only fossil_frights:lobby/parkour_teleporter_click
 advancement revoke @a only fossil_frights:lobby/sulfur_strikers_teleporter_click
 advancement revoke @a only fossil_frights:tasks/easy/swat_flies/click
 advancement revoke @a only fossil_frights:tasks/easy/check_security/click
-advancement revoke @a only fossil_frights:lock_register_click
+advancement revoke @a only fossil_frights:misc/lock_register_click
 advancement revoke @a only fossil_frights:tasks/easy/polish_bell/click
 advancement revoke @a only fossil_frights:tasks/easy/fix_cracked_egg/click
 advancement revoke @a only fossil_frights:tasks/easy/fix_mars/click
@@ -446,10 +446,10 @@ advancement revoke @a only fossil_frights:tasks/medium/restock_plushies/click
 advancement revoke @a only fossil_frights:tasks/medium/revitalize_coral/click
 advancement revoke @a only fossil_frights:tasks/medium/shark_bait/click
 advancement revoke @a only fossil_frights:tasks/medium/sponge_up_spill/click
-advancement revoke @a only fossil_frights:anvil_click
-advancement revoke @a only fossil_frights:crane_payment_click
-advancement revoke @a only fossil_frights:sarcophagus_payment_click
-advancement revoke @a only fossil_frights:crab_click
+advancement revoke @a only fossil_frights:misc/anvil_click
+advancement revoke @a only fossil_frights:misc/crane_payment_click
+advancement revoke @a only fossil_frights:misc/sarcophagus_payment_click
+advancement revoke @a only fossil_frights:misc/crab_click
 advancement revoke @a only fossil_frights:start_room/glass_box_click
 advancement revoke @a only fossil_frights:start_room/settings/spectators_click
 advancement revoke @a only fossil_frights:start_room/settings/music_click
@@ -458,14 +458,14 @@ advancement revoke @a only fossil_frights:start_room/settings/speedrun_click
 advancement revoke @a only fossil_frights:tasks/hard/hoveraptor/click
 advancement revoke @a only fossil_frights:tasks/hard/evolution/punch
 advancement revoke @a only fossil_frights:items/glowberry/consume
-advancement revoke @a only fossil_frights:ice_frozen_hurt
+advancement revoke @a only fossil_frights:misc/ice_frozen_hurt
 advancement revoke @a only fossil_frights:items/trap/consume
 advancement revoke @a only fossil_frights:items/camera_remote/consume
-advancement revoke @a only fossil_frights:heists_night_stick_hit
+advancement revoke @a only fossil_frights:misc/heists_night_stick_hit
 advancement revoke @a only fossil_frights:items/hazard_cookie/consume
 advancement revoke @a only fossil_frights:camera_remote_dummy/punch
-advancement revoke @a only fossil_frights:curse_hazard_click
-advancement revoke @a only fossil_frights:security_panel_click
+advancement revoke @a only fossil_frights:hazards/curse/click
+advancement revoke @a only fossil_frights:hazards/security/click
 advancement revoke @a only fossil_frights:interactions/glowberry_vine/interact
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
 function fossil_frights:animations/dinocoin/crane/rig/on_load

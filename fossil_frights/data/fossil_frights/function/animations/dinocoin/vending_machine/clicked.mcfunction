@@ -1,4 +1,4 @@
-advancement revoke @s only fossil_frights:vending_machine_click
+advancement revoke @s only fossil_frights:misc/vending_machine_click
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute if score $vending_busy ff_game_state matches 1.. run return 0
 execute store result score #vending_coin_count ff_hazard_rng run clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 0

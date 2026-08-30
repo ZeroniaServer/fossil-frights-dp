@@ -1,2 +1,2 @@
-advancement revoke @s only fossil_frights:security_panel_click
+advancement revoke @s only fossil_frights:hazards/security/click
 function fossil_frights:hazard/security/button_click
