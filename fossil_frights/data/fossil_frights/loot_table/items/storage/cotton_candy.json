@@ -24,6 +24,7 @@
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink",
+                  "ff_completes_picnic_with_trike_task": true,
                   "ff_heist_loot": true
                 }
               }
