@@ -1,1 +1,1 @@
-title @s actionbar [{"text":"Requires 1 Dino Coin","color":"red"}]
+title @s actionbar {"translate":"ff.dinocoins.required","color":"red","with":[{"translate":"ff.dinocoin.number","with":["1"]}]}

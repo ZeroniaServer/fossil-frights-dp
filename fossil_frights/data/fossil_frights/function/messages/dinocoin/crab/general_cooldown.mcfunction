@@ -1,1 +1,1 @@
-tellraw @s [{"text":"<","color":"white"},{"text":"Crab","color":"blue"},{"text":"> If it ever needs polishing, let me know.","color":"white"}]
+tellraw @s {"translate":"ff.crab.cooldown","with":[{"translate":"ff.crab","color":"blue"}]}

@@ -1,1 +1,1 @@
-$dialog show @s {type:"minecraft:notice",title:{translate:"ff.plaques.$(name).title",color:"white"},body:[{type:"minecraft:plain_message",contents:{translate:"ff.plaques.$(name).body",color:"white"},width:360}],after_action:"close",action:{label:{text:"Close",color:"white"}}}
+$dialog show @s {type:"minecraft:notice",title:{translate:"ff.plaques.$(name).title",color:"white"},body:[{type:"minecraft:plain_message",contents:{translate:"ff.plaques.$(name).body",color:"white"},width:360}],after_action:"close",action:{label:{translate:"ff.info.button.close",color:"white"}}}
