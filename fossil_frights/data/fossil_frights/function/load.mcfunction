@@ -396,6 +396,7 @@ team add ff_spectator
 team modify ff_spectator displayName {"text":"Spectators"}
 team modify ff_spectator color gray
 team modify ff_spectator collisionRule never
+team modify ff_spectator nametagVisibility never
 team add ff_pink_pig
 team modify ff_pink_pig displayName {"text":"Pink Pig"}
 team modify ff_pink_pig color light_purple
