@@ -1,1 +1,1 @@
-tellraw @a {"translate":"ff.messages.announcement","color":"gold","with":[{"translate":"ff.guards_win","with":[{"selector":"@a[team=ff_guard]","separator":{"translate":"ff.separator"}}]}]}
+tellraw @a {translate:"ff.messages.announcement",color:"gold",with:[{translate:"ff.guards_win",with:[{selector:"@a[team=ff_guard]",separator:{translate:"ff.separator"}},{font:"fossil-frights:small_caps",translate:"ff.heists.guards",color:"yellow"}]}]}

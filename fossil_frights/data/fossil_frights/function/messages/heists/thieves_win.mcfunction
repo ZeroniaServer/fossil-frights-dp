@@ -1,1 +1,1 @@
-tellraw @a {"translate":"ff.messages.announcement","color":"gold","with":[{"translate":"ff.thieves_win","with":[{"selector":"@a[team=ff_thief]","separator":{"translate":"ff.separator"}},{"translate":"ff.heists.thieves","color":"red"}]}]}
+tellraw @a {translate:"ff.messages.announcement",color:"gold",with:[{translate:"ff.thieves_win",with:[{selector:"@a[team=ff_thief]",separator:{translate:"ff.separator"}},{font:"fossil-frights:small_caps",translate:"ff.heists.thieves",color:"red"}]}]}
