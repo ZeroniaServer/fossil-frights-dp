@@ -107,3 +107,4 @@ function fossil_frights:interactions/fence_gate/reset
 function fossil_frights:cameras/update_camera_models
 function fossil_frights:tasks/task_book_shelf/reset
 scoreboard players set $alarm_effects_on ff_heist 0
+schedule function fossil_frights:game/reset_all_interaction_entity_memories 1t
