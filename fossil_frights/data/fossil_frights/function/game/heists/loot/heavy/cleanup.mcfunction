@@ -2,6 +2,7 @@ kill @e[type=minecraft:shulker,tag=fh_treasure_chest_collidebox]
 execute as @e[tag=fh_treasure_chest] run data merge entity @s {view_range:1f}
 setblock -2 82 66 minecraft:bubble_column[drag=false]
 execute as @e[tag=fh_warden] run data merge entity @s {view_range:1f}
+function fossil_frights:game/heists/loot/heavy/warden/place_collision
 execute as @e[tag=fh_crab] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_t_rex_skull] run data merge entity @s {view_range:1f}
 function fossil_frights:game/heists/loot/heavy/t_rex_skull/place_collision
