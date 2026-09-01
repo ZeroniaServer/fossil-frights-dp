@@ -8,6 +8,10 @@
           {
             "condition": "minecraft:reference",
             "name": "fossil_frights:location/near_closed_door"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "fossil_frights:player/is_playing"
           }
         ]
       }
