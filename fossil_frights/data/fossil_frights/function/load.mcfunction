@@ -195,6 +195,7 @@ scoreboard objectives add ff_paint_splat_spawn_timestamp dummy
 scoreboard objectives add ff_sulfur dummy
 scoreboard objectives add ff_lobby_music_ticks dummy
 scoreboard objectives add ff_chorus_cola_editor dummy
+scoreboard objectives add ff_automatic_door_close_timestamp dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2

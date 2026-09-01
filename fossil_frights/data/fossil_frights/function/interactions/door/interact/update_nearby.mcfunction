@@ -1,0 +1,1 @@
+execute as @e[distance=..10,type=minecraft:item_display,tag=ff_door] run function fossil_frights:interactions/door/update_state

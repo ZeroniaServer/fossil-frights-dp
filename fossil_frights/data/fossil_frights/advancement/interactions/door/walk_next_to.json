@@ -1,0 +1,19 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "walk_next_to": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "fossil_frights:location/near_closed_door"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:interactions/door/walk_next_to/search"
+  }
+}

@@ -1,21 +1,42 @@
 {
   "parent": "fossil_frights:detection_root",
   "criteria": {
-    "interact": {
+    "interaction_entity": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
           "entity_type": "minecraft:interaction",
           "entity_tags": {
             "all_of": [
-              "ff_door"
+              "ff_door.interaction"
             ]
           }
         }
       }
+    },
+    "block": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:doors"
+              }
+            }
+          }
+        ]
+      }
     }
   },
+  "requirements": [
+    [
+      "interaction_entity",
+      "block"
+    ]
+  ],
   "rewards": {
-    "function": "fossil_frights:interactions/door/interact"
+    "function": "fossil_frights:interactions/door/interact/interact"
   }
 }
