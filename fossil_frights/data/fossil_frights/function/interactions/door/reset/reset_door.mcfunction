@@ -16,7 +16,6 @@ execute if data storage fossil_frights:door door_data{facing:"west",hinge:"right
 data modify entity @s data.ff_door set from storage fossil_frights:door door_data
 function fossil_frights:interactions/door/reset/set_position with storage fossil_frights:door door_data
 
-
 function fossil_frights:interactions/door/reset/set_item_model with storage fossil_frights:door door_data
 execute if data storage fossil_frights:door door_data{hinge:"left"} run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[false]}}}
 execute if data storage fossil_frights:door door_data{hinge:"right"} run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[true]}}}
@@ -29,3 +28,6 @@ summon minecraft:interaction ~ ~ ~ {Tags:["ff_door.interaction","ff_door.interac
 
 function fossil_frights:interactions/door/state/closed with storage fossil_frights:door door_data
 data remove storage fossil_frights:door door_data
+
+data merge entity @s {width:2,height:2,teleport_duration:2}
+execute on passengers run data merge entity @s[type=text_display] {width:2,height:2,teleport_duration:2}
