@@ -2,7 +2,7 @@ execute unless score $smelly_toilet_sel ff_task_state matches 1 run return 0
 execute unless score $smelly_toilet_done ff_task_state matches 0 run return 0
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "smelly_toilet"
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 positioned 26.5 80.5 9.5 run playsound fossil-frights:task.smelly_toilet master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
-execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 run setblock 24 81 8 minecraft:air
+execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 as @e[type=#fossil_frights:display_entities,tag=ff_smelly_toilet_stall_sign] run data modify entity @s view_range set value 0
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 as @e[limit=1,type=item_display,tag=ff_task_smelly_toilet] run data merge entity @s {start_interpolation:0,interpolation_duration:30,transformation:{scale:[0,0,0]}}
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 positioned 26.5 80.5 9.5 run particle minecraft:cloud ~ ~0.25 ~ 0.45 0.2 0.45 0.02 28 force
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 0 positioned 26.5 80.5 9.5 run particle minecraft:dust{color:[0.75,0.95,1.0],scale:1.1} ~ ~0.25 ~ 0.35 0.2 0.35 0.01 18 force
