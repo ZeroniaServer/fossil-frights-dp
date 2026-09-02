@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ɴᴀᴜᴛɪʟᴜꜱ ɢᴜᴀʀᴅ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.nautilus_guard.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ɴᴀᴜᴛɪʟᴜꜱ ɢᴜᴀʀᴅ",
+                      {
+                        "translate": "ff.task_book.task.nautilus_guard.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.aquatic",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The Gold Shark is staring at the nautilus. Stand between the two and equip a gold nautilus on your head, that should divert his attention. \n\n"
+                      {
+                        "translate": "ff.task_book.task.nautilus_guard.description.0"
+                      }
                     ]
                   ]
                 }

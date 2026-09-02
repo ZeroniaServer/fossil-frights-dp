@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
                 "minecraft:item_name": {
-                  "text": "ᴡᴀᴛᴇʀ ᴛᴇᴍᴘ",
-                  "color": "green"
+                  "color": "green",
+                  "translate": "ff.task_book.task.water_temp.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ᴡᴀᴛᴇʀ ᴛᴇᴍᴘ",
+                      {
+                        "translate": "ff.task_book.task.water_temp.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.terrarium",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The carnivorous plants are very sensitive to water that is too cold or hot. Test the temperature of the water in the terrarium? A simple dip of the toes should be good enough."
+                      {
+                        "translate": "ff.task_book.task.water_temp.description.0"
+                      }
                     ]
                   ]
                 }

@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
                 "minecraft:item_name": {
-                  "text": "ʙᴀꜱᴋᴇᴛʙᴀʟʟ ᴅᴀɴᴄᴇ",
-                  "color": "red"
+                  "color": "red",
+                  "translate": "ff.task_book.task.basketball_dance.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ʙᴀꜱᴋᴇᴛʙᴀʟʟ ᴅᴀɴᴄᴇ",
+                      {
+                        "translate": "ff.task_book.task.basketball_dance.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.gift_shop_and_ruins",
@@ -46,10 +50,14 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "Coppy loves to listen to music, it helps keep him from oxidizing. We have some records in the basement. Grab a disc, play a tune and dance with him! If your moves are "
+                      {
+                        "translate": "ff.task_book.task.basketball_dance.description.0"
+                      }
                     ],
                     [
-                      "groovy enough he'll toss you a basketball. Go dunk a basketball in the ruins basketball court to honor his gift."
+                      {
+                        "translate": "ff.task_book.task.basketball_dance.description.1"
+                      }
                     ]
                   ]
                 }

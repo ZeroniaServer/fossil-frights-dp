@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
                 "minecraft:item_name": {
-                  "text": "ꜰɪx ᴄʀᴀᴄᴋᴇᴅ ᴇɢɢ",
-                  "color": "green"
+                  "color": "green",
+                  "translate": "ff.task_book.task.fix_cracked_egg.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ꜰɪx ᴄʀᴀᴄᴋᴇᴅ ᴇɢɢ",
+                      {
+                        "translate": "ff.task_book.task.fix_cracked_egg.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.floor_2",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The sniffer egg appears to be slightly cracked. Find it and fix it; likely all you have to do is poke it a bit until the cracks are no longer visible."
+                      {
+                        "translate": "ff.task_book.task.fix_cracked_egg.description.0"
+                      }
                     ]
                   ]
                 }

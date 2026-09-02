@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ꜱʜᴀʀᴋ ʙᴀɪᴛ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.shark_bait.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ꜱʜᴀʀᴋ ʙᴀɪᴛ",
+                      {
+                        "translate": "ff.task_book.task.shark_bait.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.aquatic",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The Gold Shark may look like a sculpture, but some evil force makes him come to life. The only way to stop the shark is to feed him a golden nautilus sometimes. Do it. Or else...."
+                      {
+                        "translate": "ff.task_book.task.shark_bait.description.0"
+                      }
                     ]
                   ]
                 }

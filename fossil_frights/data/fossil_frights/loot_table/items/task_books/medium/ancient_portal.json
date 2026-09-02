@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ᴀɴᴄɪᴇɴᴛ ᴘᴏʀᴛᴀʟ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.ancient_portal.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ᴀɴᴄɪᴇɴᴛ ᴘᴏʀᴛᴀʟ",
+                      {
+                        "translate": "ff.task_book.task.ancient_portal.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.deep_dark",
@@ -46,10 +50,14 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The portal in the deep dark is emitting a bad odor, can you please toss in some febreeze? Be careful however: if you shake the canister it may explode, and cause the portal "
+                      {
+                        "translate": "ff.task_book.task.ancient_portal.description.0"
+                      }
                     ],
                     [
-                      "to light. It's dangerous entering the portal as it could teleport you somewhere you don't want to be... or maybe you do want to be there? I don't care, do what you want."
+                      {
+                        "translate": "ff.task_book.task.ancient_portal.description.1"
+                      }
                     ]
                   ]
                 }

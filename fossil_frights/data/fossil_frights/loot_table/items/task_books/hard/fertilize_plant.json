@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
                 "minecraft:item_name": {
-                  "text": "ꜰᴇʀᴛɪʟɪᴢᴇ ᴘʟᴀɴᴛ",
-                  "color": "red"
+                  "color": "red",
+                  "translate": "ff.task_book.task.fertilize_plant.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ꜰᴇʀᴛɪʟɪᴢᴇ ᴘʟᴀɴᴛ",
+                      {
+                        "translate": "ff.task_book.task.fertilize_plant.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.floor_2",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "One of the plants is wilting on the 2nd floor, and its leaves are grey. Water is not bringing it back to life, do you mind giving it some fertilizer?"
+                      {
+                        "translate": "ff.task_book.task.fertilize_plant.description.0"
+                      }
                     ]
                   ]
                 }

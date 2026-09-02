@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
                 "minecraft:item_name": {
-                  "text": "ꜱᴛᴀʀ ɢᴀᴢɪɴɢ",
-                  "color": "red"
+                  "color": "red",
+                  "translate": "ff.task_book.task.star_gazing.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ꜱᴛᴀʀ ɢᴀᴢɪɴɢ",
+                      {
+                        "translate": "ff.task_book.task.star_gazing.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.observatory",
@@ -46,10 +50,14 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "Since you're the only one here at night, I'll need you to go check which star patterns are visible. Look through the telescope and check which constellation you can see. Compare it with the images on the"
+                      {
+                        "translate": "ff.task_book.task.star_gazing.description.0"
+                      }
                     ],
                     [
-                      "walls, and mark which one is visible. You should note depending on the time of year the constellations may appear rotated."
+                      {
+                        "translate": "ff.task_book.task.star_gazing.description.1"
+                      }
                     ]
                   ]
                 }

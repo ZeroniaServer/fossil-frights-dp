@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ᴘᴏᴘᴄᴏʀɴ ʙᴜᴄᴋᴇᴛꜱ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.popcorn_buckets.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ᴘᴏᴘᴄᴏʀɴ ʙᴜᴄᴋᴇᴛꜱ",
+                      {
+                        "translate": "ff.task_book.task.popcorn_buckets.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.theater",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "We're out of popcorn buckets in the theatre concession booth. There should be some more of them in storage, mind bringing one up? Just toss it in the popcorn machine."
+                      {
+                        "translate": "ff.task_book.task.popcorn_buckets.description.0"
+                      }
                     ]
                   ]
                 }

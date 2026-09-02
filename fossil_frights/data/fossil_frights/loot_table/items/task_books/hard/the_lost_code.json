@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
                 "minecraft:item_name": {
-                  "text": "ᴛʜᴇ ʟᴏꜱᴛ ᴄᴏᴅᴇ",
-                  "color": "red"
+                  "color": "red",
+                  "translate": "ff.task_book.task.the_lost_code.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ᴛʜᴇ ʟᴏꜱᴛ ᴄᴏᴅᴇ",
+                      {
+                        "translate": "ff.task_book.task.the_lost_code.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.ruins",
@@ -46,10 +50,14 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The fabled code. A combination of cotton blue and candy pink lost forever in the depths of the jungle temple... too difficult to crack, and forever lost to history. \n\n"
+                      {
+                        "translate": "ff.task_book.task.the_lost_code.description.0"
+                      }
                     ],
                     [
-                      "Anyway please crack the code this shift, or you're fired."
+                      {
+                        "translate": "ff.task_book.task.the_lost_code.description.1"
+                      }
                     ]
                   ]
                 }

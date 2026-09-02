@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ʀᴇᴠɪᴛᴀʟɪᴢᴇ ᴄᴏʀᴀʟ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.revitalize_coral.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ʀᴇᴠɪᴛᴀʟɪᴢᴇ ᴄᴏʀᴀʟ",
+                      {
+                        "translate": "ff.task_book.task.revitalize_coral.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.aquatic",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "Pink coral is very delicate, we have a supply of Pink Jelly in the basement. Can you please grab some and smear it onto the pink fan coral in the Tide Pool Touch Tank?"
+                      {
+                        "translate": "ff.task_book.task.revitalize_coral.description.0"
+                      }
                     ]
                   ]
                 }

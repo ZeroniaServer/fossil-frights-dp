@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
                 "minecraft:item_name": {
-                  "text": "ʜᴏᴠᴇʀᴀᴘᴛᴏʀ",
-                  "color": "red"
+                  "color": "red",
+                  "translate": "ff.task_book.task.hoveraptor.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ʜᴏᴠᴇʀᴀᴘᴛᴏʀ",
+                      {
+                        "translate": "ff.task_book.task.hoveraptor.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.floor_3",
@@ -46,10 +50,14 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "Did you know hoverboards were invented back in the Jurassic period to allow dinosaurs like the velociraptor to travel around quickly? Technically, it was never proven, "
+                      {
+                        "translate": "ff.task_book.task.hoveraptor.description.0"
+                      }
                     ],
                     [
-                      "but a person's misguided belief. You know what... there's some scrap metal in the basement. Bring it to the anvil and forge it into a hoverboard, then bring it to the velociraptor and let him ride it!"
+                      {
+                        "translate": "ff.task_book.task.hoveraptor.description.1"
+                      }
                     ]
                   ]
                 }

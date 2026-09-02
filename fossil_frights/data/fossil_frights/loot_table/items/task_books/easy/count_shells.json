@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
                 "minecraft:item_name": {
-                  "text": "ᴄᴏᴜɴᴛ ꜱʜᴇʟʟꜱ",
-                  "color": "green"
+                  "color": "green",
+                  "translate": "ff.task_book.task.count_shells.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ᴄᴏᴜɴᴛ ꜱʜᴇʟʟꜱ",
+                      {
+                        "translate": "ff.task_book.task.count_shells.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.aquatic",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "We try to keep a close eye, but we notice sometimes people are stealing the shells. Go check and make sure all 5 of them are on the display table."
+                      {
+                        "translate": "ff.task_book.task.count_shells.description.0"
+                      }
                     ]
                   ]
                 }

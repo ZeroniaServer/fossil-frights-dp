@@ -19,8 +19,9 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
-                  "text": "ꜰᴇᴇᴅ ᴘᴀʀʀᴏᴛ",
-                  "color": "gold"
+                  "color": "gold",
+                  "translate": "ff.task_book.task.feed_parrot.name",
+                  "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
@@ -34,7 +35,10 @@
                   "pages": [
                     [
                       "",
-                      "ꜰᴇᴇᴅ ᴘᴀʀʀᴏᴛ",
+                      {
+                        "translate": "ff.task_book.task.feed_parrot.name",
+                        "font": "fossil-frights:small_caps"
+                      },
                       "\n-------------------\n",
                       {
                         "translate": "ff.task_book.location.terrarium",
@@ -46,7 +50,9 @@
                         "font": "fossil-frights:small_caps"
                       },
                       "\n\n",
-                      "The parrot escaped, and we're out of bird feed. Birds are like fish... right? Grab some fish food and put it in the parrots empty nest, hopefully he returns."
+                      {
+                        "translate": "ff.task_book.task.feed_parrot.description.0"
+                      }
                     ]
                   ]
                 }
