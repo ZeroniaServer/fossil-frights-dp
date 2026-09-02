@@ -3,9 +3,9 @@ execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:admin/menu/heists/show
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
-$scoreboard players set $heist_timer ff_heist $(time)
-scoreboard players operation $heist_elapsed ff_heist = #heist_full ff_heist
-scoreboard players operation $heist_elapsed ff_heist -= $heist_timer ff_heist
+$scoreboard players set $heist_elapsed ff_heist $(time)
+scoreboard players operation $heist_timer ff_heist = #heist_full ff_heist
+scoreboard players operation $heist_timer ff_heist -= $heist_elapsed ff_heist
 scoreboard players set $heist_elapsed_offset ff_heist 0
 execute if score $heist_stopwatch_active ff_heist matches 1 store success score $heist_stopwatch_active ff_heist store result score $heist_elapsed_offset ff_heist run stopwatch query fossil_frights:heist_round 20
 scoreboard players operation $heist_elapsed_offset ff_heist -= $heist_elapsed ff_heist
