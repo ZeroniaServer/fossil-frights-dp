@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:type_specific/player": {
+      "looking_at": {
+        "minecraft:entity_type": "minecraft:interaction",
+        "minecraft:distance": {"absolute": {"max": 4.0}},
+        "minecraft:entity_tags": {
+          "all_of": [
+            "ff_start_room_setting_chat_click"
+          ]
+        }
+      }
+    }
+  }
+}

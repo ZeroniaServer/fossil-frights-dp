@@ -19,8 +19,10 @@ data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_icon,limi
 execute if score $settings_chat_hidden ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 execute if score $settings_locked ff_game_state matches 0 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 execute if score $settings_locked ff_game_state matches 0 if score $settings_chat_hidden ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
+execute unless score $present ff_plugin matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_label,limit=1] text set value {translate:"ff.settings.board.chat",font:"fossil-frights:small_caps",color:"green"}
 execute if score $settings_chat_hidden ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_label,limit=1] text set value {translate:"ff.settings.board.chat",font:"fossil-frights:small_caps",color:"red"}
+execute unless score $present ff_plugin matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_settings_chat_label,limit=1] text set value {translate:"ff.settings.board.chat",font:"fossil-frights:small_caps",color:"gray"}
 
 # Speedrun
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_speedrun_icon,limit=1] text set value [{text:"",font:"fossil-frights:settings_board",color:"white"}]

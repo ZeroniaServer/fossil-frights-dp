@@ -1,4 +1,5 @@
 advancement revoke @s only fossil_frights:start_room/settings/chat_click
+execute unless score $present ff_plugin matches 1 run return 0
 execute unless function fossil_frights:game/start_room/settings/gamemode/can_change run return 0
 execute if score $settings_chat_hidden ff_game_state matches 1 run tag @s add ff_settings_toggle_was_disabled
 execute if entity @s[tag=ff_settings_toggle_was_disabled] run scoreboard players set $settings_chat_hidden ff_game_state 0
