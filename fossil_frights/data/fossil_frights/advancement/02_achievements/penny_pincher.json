@@ -4,24 +4,20 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "fossil-frights:display/exhibits/deep_dark/sculkadillo"
+        "minecraft:item_model": "fossil-frights:items/misc/dinocoin"
       }
     },
     "title": {
-      "translate": "ff.advancement.going_up"
+      "translate": "ff.advancement.penny_pincher"
     },
     "description": {
-      "translate": "ff.advancement.going_up.description",
-      "with": [{
-        "translate": "ff.sculkadillo",
-        "color": "dark_aqua"
-      }]
+      "translate": "ff.advancement.penny_pincher.description"
     },
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "pay_pulley_toll": {
+    "complete_run_with_ten_coins": {
       "trigger": "minecraft:impossible"
     }
   }

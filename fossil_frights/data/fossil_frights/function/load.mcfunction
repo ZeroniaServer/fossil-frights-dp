@@ -32,6 +32,7 @@ scoreboard objectives add ff_forced_spec_yaw dummy
 scoreboard objectives add ff_forced_spec_pitch dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
+scoreboard objectives add ff_penny_pincher_coins dummy
 scoreboard objectives add ff_hazard_rng dummy
 scoreboard objectives add ff_gate_timer dummy
 scoreboard objectives add ff_door_angle dummy
