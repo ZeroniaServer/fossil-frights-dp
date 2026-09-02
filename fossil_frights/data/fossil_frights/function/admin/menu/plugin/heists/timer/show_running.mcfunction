@@ -1,1 +1,3 @@
-dialog show @s {type:"minecraft:multi_action",title:{text:"Set Heist Time",color:"gold"},pause:false,after_action:"none",inputs:[{type:"minecraft:number_range",key:"time",label:{text:"Time",color:"yellow"},start:0,end:12000,step:20,initial:0,width:300}],columns:2,actions:[{label:{text:"Set Time",color:"green"},action:{type:"dynamic/run_command",template:"admin heist_set_time $(time)"}},{label:{text:"Pause Timer",color:"yellow"},action:{type:"run_command",command:"admin pause_timer"}}],exit_action:{label:{text:"Back",color:"white"},action:{type:"run_command",command:"admin show"}}}
+execute store result storage fossil_frights:admin heist_time int 1 run scoreboard players get $heist_elapsed ff_heist
+data modify storage fossil_frights:admin macro set value "$"
+function fossil_frights:admin/menu/plugin/heists/timer/show_running_macro with storage fossil_frights:admin

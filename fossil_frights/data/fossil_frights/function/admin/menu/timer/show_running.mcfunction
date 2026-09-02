@@ -1,1 +1,3 @@
-dialog show @s {type:"minecraft:multi_action",title:{text:"Set Time",color:"gold"},pause:false,after_action:"none",inputs:[{type:"minecraft:number_range",key:"time",label:{text:"Time",color:"yellow"},start:0,end:6000,step:20,initial:0,width:300}],columns:2,actions:[{label:{text:"Set Time",color:"green"},action:{type:"dynamic/run_command",template:"function fossil_frights:admin/menu/timer/set_macro {time:$(time)}"}},{label:{text:"Pause Timer",color:"yellow"},action:{type:"run_command",command:"function fossil_frights:admin/menu/timer/pause"}}],exit_action:{label:{text:"Back",color:"white"},action:{type:"run_command",command:"function fossil_frights:admin/menu/show"}}}
+execute store result storage fossil_frights:admin day_time int 1 run scoreboard players get $day_timer ff_day
+data modify storage fossil_frights:admin macro set value "$"
+function fossil_frights:admin/menu/timer/show_running_macro with storage fossil_frights:admin
