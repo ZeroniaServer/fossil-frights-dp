@@ -1,7 +1,7 @@
 execute store result score #gametime ff_automatic_door_close_timestamp store result score #gametime_bumped ff_automatic_door_close_timestamp run time query gametime
 scoreboard players add #gametime_bumped ff_automatic_door_close_timestamp 10
 
-execute as @e[type=minecraft:item_display,tag=ff_door,tag=ff_door.automatic] at @s align xyz positioned ~0.5 ~ ~0.5 if entity @a[distance=..3,gamemode=adventure,predicate=fossil_frights:location/near_door,predicate=fossil_frights:player/is_playing] run scoreboard players operation @s ff_automatic_door_close_timestamp = #gametime_bumped ff_automatic_door_close_timestamp
+execute as @e[type=minecraft:item_display,tag=ff_door,tag=ff_door.automatic] at @s if function fossil_frights:interactions/door/walk_next_to/check_door run scoreboard players operation @s ff_automatic_door_close_timestamp = #gametime_bumped ff_automatic_door_close_timestamp
 execute as @e[type=minecraft:item_display,tag=ff_door,tag=ff_door.automatic] unless score @s ff_automatic_door_close_timestamp > #gametime ff_automatic_door_close_timestamp at @s run function fossil_frights:interactions/door/state/closed with entity @s data.ff_door
 execute as @e[type=minecraft:item_display,tag=ff_door,tag=ff_door.automatic] unless score @s ff_automatic_door_close_timestamp > #gametime ff_automatic_door_close_timestamp run tag @s remove ff_door.automatic
 

@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:entity_tags": {
+      "any_of": [
+        "ff_door.one_way.front",
+        "ff_door.one_way.back"
+      ]
+    }
+  }
+}

@@ -11,7 +11,7 @@
           },
           {
             "condition": "minecraft:reference",
-            "name": "fossil_frights:player/is_playing"
+            "name": "fossil_frights:player/can_automatically_open_doors"
           }
         ]
       }
