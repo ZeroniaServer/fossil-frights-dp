@@ -1,3 +1,5 @@
+execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:bossbar players @a
+execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:hazards players @a
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given
@@ -68,8 +70,6 @@ function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets
 execute unless entity @s[tag=ff_login_initial] if score $active_set ff_game_state matches 1 if predicate fossil_frights:game_state/game_running run function fossil_frights:game/party/handle_member_login
-execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:bossbar players @a
-execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:hazards players @a
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:game/bossbar/available/sync_players
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
