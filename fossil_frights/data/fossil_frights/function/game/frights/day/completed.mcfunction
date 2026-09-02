@@ -29,6 +29,7 @@ execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_gam
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_duo_best
 execute as @a[team=ff_guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/process_day_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_victory
+execute if score $day_current ff_day matches 10 run scoreboard players set $speedrun_victory_blink ff_speedrun_blink -1
 execute if score $day_current ff_day matches 10 run scoreboard players set $victory_complete ff_game_state 1
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/beat_time
 execute if score $day_current ff_day matches 10 run function fossil_frights:items/other/confetti_cannon/give_all

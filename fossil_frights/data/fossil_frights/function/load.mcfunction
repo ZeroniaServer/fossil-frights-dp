@@ -150,6 +150,7 @@ scoreboard objectives add ff_day9_best dummy
 scoreboard objectives add ff_day10_best dummy
 scoreboard objectives add ff_speedrun_delta dummy
 scoreboard objectives add ff_speedrun_sign dummy
+scoreboard objectives add ff_speedrun_blink dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_plugin dummy

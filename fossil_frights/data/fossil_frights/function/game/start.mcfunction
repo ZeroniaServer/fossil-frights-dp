@@ -87,6 +87,7 @@ execute as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state
 fill -5 68 8 -3 68 8 magma_block
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
+scoreboard players set $speedrun_victory_blink ff_speedrun_blink 0
 scoreboard players set $defeat_lock ff_game_state 0
 execute as @a[team=ff_guard] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
