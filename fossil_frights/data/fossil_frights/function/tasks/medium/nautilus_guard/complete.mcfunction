@@ -3,7 +3,6 @@ execute unless score $nautilus_guard_done ff_task_state matches 0 run return 0
 data modify storage fossil_frights:tasks complete.task_name set value "nautilus_guard"
 playsound fossil-frights:task.nautilus_guard master @a[tag=ff_frights_feedback_viewer,distance=..28] ~ ~ ~ 0.9 1.0
 effect give @s minecraft:mining_fatigue 3 0 true
-particle minecraft:elder_guardian ~ ~ ~ 0 0 0 0 1 force @s
 playsound minecraft:entity.elder_guardian.curse hostile @a[tag=ff_frights_feedback_viewer,distance=..28] ~ ~ ~ 1 1
 playsound minecraft:entity.elder_guardian.ambient hostile @a[tag=ff_frights_feedback_viewer,distance=..28] ~ ~ ~ 0.8 0.8
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
