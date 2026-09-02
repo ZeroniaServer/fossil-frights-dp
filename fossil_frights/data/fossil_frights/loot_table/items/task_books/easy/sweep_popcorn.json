@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜱᴡᴇᴇᴘ ᴘᴏᴘᴄᴏʀɴ\n",
-                      "-------------------\n",
-                      "ᴛʜᴇᴀᴛʀᴇ ● ",
+                      "",
+                      "ꜱᴡᴇᴇᴘ ᴘᴏᴘᴄᴏʀɴ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.theater",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nSomeone spilt their popcorn in the theatre, please sweep it up. Unfortunately our broom is missing, so just use your hands or something?"
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Someone spilt their popcorn in the theatre, please sweep it up. Unfortunately our broom is missing, so just use your hands or something?"
                     ]
                   ]
                 }

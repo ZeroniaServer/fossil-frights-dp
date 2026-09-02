@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴇᴠᴏʟᴜᴛɪᴏɴ\n",
-                      "-------------------\n",
-                      "ᴜɴᴋɴᴏᴡɴ ● ",
+                      "",
+                      "ᴇᴠᴏʟᴜᴛɪᴏɴ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.unknown",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe evolution statues from the human exhibit appear to have unfrozen and escaped! Please track them down in the correct order and send them back to the exhibit! They could not have "
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The evolution statues from the human exhibit appear to have unfrozen and escaped! Please track them down in the correct order and send them back to the exhibit! They could not have "
                     ],
                     [
                       "gotten far, so start with the 2nd floor and see if you can find them. Again please send them back in the correct evolutionary order the exhibit usually has them displayed in."

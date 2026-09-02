@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇꜱᴇᴛ ꜱᴀʟᴛ ʟᴇᴠᴇʟ\n",
-                      "-------------------\n",
-                      "ʙᴀꜱᴇᴍᴇɴᴛ ● ",
+                      "",
+                      "ʀᴇꜱᴇᴛ ꜱᴀʟᴛ ʟᴇᴠᴇʟ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.basement",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nCheck the saline levels for the tank, if 'WARN' or 'ALERT' press the reset button and levels should return to 'OK'."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Check the saline levels for the tank, if 'WARN' or 'ALERT' press the reset button and levels should return to 'OK'."
                     ]
                   ]
                 }

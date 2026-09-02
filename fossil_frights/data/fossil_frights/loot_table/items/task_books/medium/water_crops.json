@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴡᴀᴛᴇʀ ᴄʀᴏᴘꜱ\n",
-                      "-------------------\n",
-                      "ʀᴜɪɴꜱ ● ",
+                      "",
+                      "ᴡᴀᴛᴇʀ ᴄʀᴏᴘꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.ruins",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nCan you please water the crops in the trail ruins exhibit, next to the jungle temple? Grab a water balloon and toss it onto the crops. "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Can you please water the crops in the trail ruins exhibit, next to the jungle temple? Grab a water balloon and toss it onto the crops. "
                     ]
                   ]
                 }

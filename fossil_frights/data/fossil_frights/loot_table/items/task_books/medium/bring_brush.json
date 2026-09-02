@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʙʀɪɴɢ ʙʀᴜꜱʜ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴛᴡᴏ ● ",
+                      "",
+                      "ʙʀɪɴɢ ʙʀᴜꜱʜ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.floor_2",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nSomeone keeps stealing the brush from the sandpit on the 2nd floor near the aviary, can you please grab a spare one from the restoration room in the basement?"
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Someone keeps stealing the brush from the sandpit on the 2nd floor near the aviary, can you please grab a spare one from the restoration room in the basement?"
                     ]
                   ]
                 }

@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴡᴀꜱʜ ᴍᴜᴅᴅʏ ꜱʜᴇʀᴅ\n",
-                      "-------------------\n",
-                      "● ʀᴜɪɴꜱ, ᴅᴇᴇᴘ ᴅᴀʀᴋ\n",
-                      "● ",
+                      "",
+                      "ᴡᴀꜱʜ ᴍᴜᴅᴅʏ ꜱʜᴇʀᴅ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.ruins_and_deep_dark",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nI accidentally ordered a box of muddy sherds, it's sitting in one of the ruins. Can you grab one and toss it into the washbasin in the ancient city?"
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "I accidentally ordered a box of muddy sherds, it's sitting in one of the ruins. Can you grab one and toss it into the washbasin in the ancient city?"
                     ]
                   ]
                 }

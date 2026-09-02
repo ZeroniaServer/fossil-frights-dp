@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜰᴇᴇᴅ ᴘᴀʀʀᴏᴛ\n",
-                      "-------------------\n",
-                      "ᴛᴇʀʀᴀʀɪᴜᴍ ● ",
+                      "",
+                      "ꜰᴇᴇᴅ ᴘᴀʀʀᴏᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.terrarium",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe parrot escaped, and we're out of bird feed. Birds are like fish... right? Grab some fish food and put it in the parrots empty nest, hopefully he returns."
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The parrot escaped, and we're out of bird feed. Birds are like fish... right? Grab some fish food and put it in the parrots empty nest, hopefully he returns."
                     ]
                   ]
                 }

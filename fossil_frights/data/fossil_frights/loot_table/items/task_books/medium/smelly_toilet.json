@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜱᴍᴇʟʟʏ ᴛᴏɪʟᴇᴛ\n",
-                      "-------------------\n",
-                      "● ʟᴏᴡᴇʀ ʙᴀᴛʜʀᴏᴏᴍ\n",
-                      "● ",
+                      "",
+                      "ꜱᴍᴇʟʟʏ ᴛᴏɪʟᴇᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.lower_bathroom",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nUnfortunately our janitor is out sick, and one of the toilets on the first floor is super smelly... Can you toss some febreeze in it?"
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Unfortunately our janitor is out sick, and one of the toilets on the first floor is super smelly... Can you toss some febreeze in it?"
                     ]
                   ]
                 }

@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʜᴏᴠᴇʀᴀᴘᴛᴏʀ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ʜᴏᴠᴇʀᴀᴘᴛᴏʀ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nDid you know hoverboards were invented back in the Jurassic period to allow dinosaurs like the velociraptor to travel around quickly? Technically, it was never proven, "
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Did you know hoverboards were invented back in the Jurassic period to allow dinosaurs like the velociraptor to travel around quickly? Technically, it was never proven, "
                     ],
                     [
                       "but a person's misguided belief. You know what... there's some scrap metal in the basement. Bring it to the anvil and forge it into a hoverboard, then bring it to the velociraptor and let him ride it!"

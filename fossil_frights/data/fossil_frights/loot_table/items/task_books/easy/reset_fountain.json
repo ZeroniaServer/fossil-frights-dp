@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇꜱᴇᴛ ꜰᴏᴜɴᴛᴀɪɴ\n",
-                      "-------------------\n",
-                      "ᴀᴠɪᴀʀʏ ● ",
+                      "",
+                      "ʀᴇꜱᴇᴛ ꜰᴏᴜɴᴛᴀɪɴ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.aviary",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nPlease reset the fountain in the aviary, the user manual recommends doing it every so often to keep the pipes clean."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Please reset the fountain in the aviary, the user manual recommends doing it every so often to keep the pipes clean."
                     ]
                   ]
                 }

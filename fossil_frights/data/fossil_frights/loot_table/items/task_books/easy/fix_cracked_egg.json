@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜰɪx ᴄʀᴀᴄᴋᴇᴅ ᴇɢɢ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴛᴡᴏ ● ",
+                      "",
+                      "ꜰɪx ᴄʀᴀᴄᴋᴇᴅ ᴇɢɢ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.floor_2",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe sniffer egg appears to be slightly cracked. Find it and fix it; likely all you have to do is poke it a bit until the cracks are no longer visible."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The sniffer egg appears to be slightly cracked. Find it and fix it; likely all you have to do is poke it a bit until the cracks are no longer visible."
                     ]
                   ]
                 }

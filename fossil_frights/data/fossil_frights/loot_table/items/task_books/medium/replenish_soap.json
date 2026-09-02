@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇᴘʟᴇɴɪꜱʜ ꜱᴏᴀᴘ\n",
-                      "-------------------\n",
-                      "● ᴜᴘᴘᴇʀ ʙᴀᴛʜʀᴏᴏᴍ\n",
-                      "● ",
+                      "",
+                      "ʀᴇᴘʟᴇɴɪꜱʜ ꜱᴏᴀᴘ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.upper_bathroom",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nPeople keep stealing the soap from the second floor bathroom. If the glass soap case is empty, please grab a new bar of soap and toss it into the glass dish. "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "People keep stealing the soap from the second floor bathroom. If the glass soap case is empty, please grab a new bar of soap and toss it into the glass dish. "
                     ]
                   ]
                 }

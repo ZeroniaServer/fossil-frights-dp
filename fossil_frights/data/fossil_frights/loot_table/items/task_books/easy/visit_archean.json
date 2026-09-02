@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴠɪꜱɪᴛ ᴀʀᴄʜᴇᴀɴ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ᴠɪꜱɪᴛ ᴀʀᴄʜᴇᴀɴ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nI like to keep the dripstone spiky but the kids keep touching them. Walk through the Archean exhibit near the start of Earth's Timeline, and make sure everything is looking pointy!"
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "I like to keep the dripstone spiky but the kids keep touching them. Walk through the Archean exhibit near the start of Earth's Timeline, and make sure everything is looking pointy!"
                     ]
                   ]
                 }

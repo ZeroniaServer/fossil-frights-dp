@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇꜱᴛᴏᴄᴋ ᴘʟᴜꜱʜɪᴇꜱ\n",
-                      "-------------------\n",
-                      "ɢɪꜰᴛ ꜱʜᴏᴘ ● ",
+                      "",
+                      "ʀᴇꜱᴛᴏᴄᴋ ᴘʟᴜꜱʜɪᴇꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.gift_shop",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe Skeleton plushies are out of stock in the gift shop, mind grabbing one from storage and bringing it up? Toss it in the open box on the floor. "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The Skeleton plushies are out of stock in the gift shop, mind grabbing one from storage and bringing it up? Toss it in the open box on the floor. "
                     ]
                   ]
                 }

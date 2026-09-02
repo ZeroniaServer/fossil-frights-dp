@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴀɴᴄɪᴇɴᴛ ᴘᴏʀᴛᴀʟ\n",
-                      "-------------------\n",
-                      "ᴅᴇᴇᴘ ᴅᴀʀᴋ ● ",
+                      "",
+                      "ᴀɴᴄɪᴇɴᴛ ᴘᴏʀᴛᴀʟ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.deep_dark",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe portal in the deep dark is emitting a bad odor, can you please toss in some febreeze? Be careful however: if you shake the canister it may explode, and cause the portal "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The portal in the deep dark is emitting a bad odor, can you please toss in some febreeze? Be careful however: if you shake the canister it may explode, and cause the portal "
                     ],
                     [
                       "to light. It's dangerous entering the portal as it could teleport you somewhere you don't want to be... or maybe you do want to be there? I don't care, do what you want."

@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴘᴏᴘᴄᴏʀɴ ʙᴜᴄᴋᴇᴛꜱ\n",
-                      "-------------------\n",
-                      "ᴛʜᴇᴀᴛʀᴇ ● ",
+                      "",
+                      "ᴘᴏᴘᴄᴏʀɴ ʙᴜᴄᴋᴇᴛꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.theater",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nWe're out of popcorn buckets in the theatre concession booth. There should be some more of them in storage, mind bringing one up? Just toss it in the popcorn machine."
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "We're out of popcorn buckets in the theatre concession booth. There should be some more of them in storage, mind bringing one up? Just toss it in the popcorn machine."
                     ]
                   ]
                 }

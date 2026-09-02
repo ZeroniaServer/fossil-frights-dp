@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴛɴᴛ ᴛᴇꜱᴛ\n",
-                      "-------------------\n",
-                      "ᴅᴇᴇᴘ ᴅᴀʀᴋ ● ",
+                      "",
+                      "ᴛɴᴛ ᴛᴇꜱᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.deep_dark",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nRumors are the Precision Excavation Demonstration Unit5000 is broken again. Instead of just demonstrating with fake TNT, it's actually blowing things up. Please test the detonator and make"
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Rumors are the Precision Excavation Demonstration Unit5000 is broken again. Instead of just demonstrating with fake TNT, it's actually blowing things up. Please test the detonator and make"
                     ],
                     [
                       "sure the TNT lights. \n\nJust be sure you don't die! It would be a lot of paperwork."

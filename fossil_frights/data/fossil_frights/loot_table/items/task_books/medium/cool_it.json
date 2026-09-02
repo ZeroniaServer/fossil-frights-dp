@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴄᴏᴏʟ ɪᴛ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ᴄᴏᴏʟ ɪᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThere's some melted ice in the Quaternary exhibit at the end of the timeline, and it's supposed to be ice. \n\nWe've got dry ice in storage, toss some in the puddle?"
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "There's some melted ice in the Quaternary exhibit at the end of the timeline, and it's supposed to be ice. \n\nWe've got dry ice in storage, toss some in the puddle?"
                     ]
                   ]
                 }

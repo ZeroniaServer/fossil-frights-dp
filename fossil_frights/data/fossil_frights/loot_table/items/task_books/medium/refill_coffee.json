@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇꜰɪʟʟ ᴄᴏꜰꜰᴇᴇ\n",
-                      "-------------------\n",
-                      "ᴄᴀꜰᴇ ● ",
+                      "",
+                      "ʀᴇꜰɪʟʟ ᴄᴏꜰꜰᴇᴇ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.cafe",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nApparently the café is out of coffee. There should be some beans or instant coffee or something in the basement. See what you can find, and dump it in the machine."
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Apparently the café is out of coffee. There should be some beans or instant coffee or something in the basement. See what you can find, and dump it in the machine."
                     ]
                   ]
                 }

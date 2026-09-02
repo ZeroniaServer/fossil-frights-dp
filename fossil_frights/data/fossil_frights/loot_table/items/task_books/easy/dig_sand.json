@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴅɪɢ ꜱᴀɴᴅ\n",
-                      "-------------------\n",
-                      "ʀᴜɪɴꜱ ● ",
+                      "",
+                      "ᴅɪɢ ꜱᴀɴᴅ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.ruins",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThere's a sandbox for kids to dig in the desert temple, but there's too much sand piled in the center. Can you move it around? We have no shovels, so just use your hand."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "There's a sandbox for kids to dig in the desert temple, but there's too much sand piled in the center. Can you move it around? We have no shovels, so just use your hand."
                     ]
                   ]
                 }

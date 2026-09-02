@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜱᴡᴀᴛ ꜰʟɪᴇꜱ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴛᴡᴏ ● ",
+                      "",
+                      "ꜱᴡᴀᴛ ꜰʟɪᴇꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.floor_2",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe fresh cow manure in the feces exhibit keeps attracting flies, please swat them away. Just swing your hands wildly... I'm sure it'll scare them off."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The fresh cow manure in the feces exhibit keeps attracting flies, please swat them away. Just swing your hands wildly... I'm sure it'll scare them off."
                     ]
                   ]
                 }

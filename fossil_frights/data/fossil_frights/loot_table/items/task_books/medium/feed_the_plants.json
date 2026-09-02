@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜰᴇᴇᴅ ᴛʜᴇ ᴘʟᴀɴᴛꜱ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴛᴡᴏ ● ",
+                      "",
+                      "ꜰᴇᴇᴅ ᴛʜᴇ ᴘʟᴀɴᴛꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.floor_2",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nOne of the carnivorous plants has gotten very vicious, and keeps attacking customers. Please feed him a cotton candy to help him calm down."
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "One of the carnivorous plants has gotten very vicious, and keeps attacking customers. Please feed him a cotton candy to help him calm down."
                     ]
                   ]
                 }

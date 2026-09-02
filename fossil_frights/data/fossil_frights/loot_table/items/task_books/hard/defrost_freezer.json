@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴅᴇꜰʀᴏꜱᴛ ꜰʀᴇᴇᴢᴇʀ\n",
-                      "-------------------\n",
-                      "ʙᴀꜱᴇᴍᴇɴᴛ ● ",
+                      "",
+                      "ᴅᴇꜰʀᴏꜱᴛ ꜰʀᴇᴇᴢᴇʀ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.basement",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nUgh, my burgers keep getting freezer burnt. Can you please defrost the staff room fridge? Just open the door and the defrost lever should be on the back wall. If your feet get cold, "
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Ugh, my burgers keep getting freezer burnt. Can you please defrost the staff room fridge? Just open the door and the defrost lever should be on the back wall. If your feet get cold, "
                     ],
                     [
                       "you can use the anvil to form some leather into a pair of boots."

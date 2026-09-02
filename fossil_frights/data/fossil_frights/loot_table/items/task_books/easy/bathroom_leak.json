@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʙᴀᴛʜʀᴏᴏᴍ ʟᴇᴀᴋ\n",
-                      "-------------------\n",
-                      "● ᴜᴘᴘᴇʀ ʙᴀᴛʜʀᴏᴏᴍ\n",
-                      "● ",
+                      "",
+                      "ʙᴀᴛʜʀᴏᴏᴍ ʟᴇᴀᴋ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.upper_bathroom",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThere was a report of a flooded toilet in the 2nd floor bathroom. Not sure which stall; please find it and fix it. Usually flushing is a good temporary fix."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "There was a report of a flooded toilet in the 2nd floor bathroom. Not sure which stall; please find it and fix it. Usually flushing is a good temporary fix."
                     ]
                   ]
                 }

@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜱᴛᴀʀ ɢᴀᴢɪɴɢ\n",
-                      "-------------------\n",
-                      "ᴏʙꜱᴇʀᴠᴀᴛᴏʀʏ ● ",
+                      "",
+                      "ꜱᴛᴀʀ ɢᴀᴢɪɴɢ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.observatory",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nSince you're the only one here at night, I'll need you to go check which star patterns are visible. Look through the telescope and check which constellation you can see. Compare it with the images on the"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Since you're the only one here at night, I'll need you to go check which star patterns are visible. Look through the telescope and check which constellation you can see. Compare it with the images on the"
                     ],
                     [
                       "walls, and mark which one is visible. You should note depending on the time of year the constellations may appear rotated."

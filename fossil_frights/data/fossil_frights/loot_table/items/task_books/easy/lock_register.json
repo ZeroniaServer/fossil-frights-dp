@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʟᴏᴄᴋ ʀᴇɢɪꜱᴛᴇʀ\n",
-                      "-------------------\n",
-                      "ɢɪꜰᴛ ꜱʜᴏᴘ ● ",
+                      "",
+                      "ʟᴏᴄᴋ ʀᴇɢɪꜱᴛᴇʀ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.gift_shop",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nPlease lock the cash register in the gift shop, usually just hitting it does the trick."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Please lock the cash register in the gift shop, usually just hitting it does the trick."
                     ]
                   ]
                 }

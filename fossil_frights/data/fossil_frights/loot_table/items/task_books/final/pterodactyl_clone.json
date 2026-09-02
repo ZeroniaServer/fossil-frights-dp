@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴘᴛᴇʀᴏᴅᴀᴄᴛʏʟ ᴄʟᴏɴᴇ\n",
-                      "-------------------\n",
-                      "ᴜɴᴋɴᴏᴡɴ ● ",
+                      "",
+                      "ᴘᴛᴇʀᴏᴅᴀᴄᴛʏʟ ᴄʟᴏɴᴇ",
+                      "\n-------------------\n",
                       {
-                        "text": "ɪɴꜱᴀɴᴇ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.unknown",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nWow. So you really made it 10 days. Most people quit after 2. Well, technically I fire them. Anyway.....\n\n(Multiple Pages)\n\n\n\n"
+                      {
+                        "translate": "ff.task_book.difficulty.final",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Wow. So you really made it 10 days. Most people quit after 2. Well, technically I fire them. Anyway.....\n\n(Multiple Pages)\n\n\n\n"
                     ],
                     [
                       "I think I can trust you with this. I left the secret laboratory doors open. It’s between the rings of Earth up on the top floor, in the Ordovician.\n\n\n\n\n\n"

@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴠɪꜱɪᴛ ᴊᴜʀᴀꜱꜱɪᴄ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ᴠɪꜱɪᴛ ᴊᴜʀᴀꜱꜱɪᴄ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nPlease walk through the Jurassic period near the middle of the Earth's Timeline exhibit, there are rumors people have been picking leaves off the cycads."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Please walk through the Jurassic period near the middle of the Earth's Timeline exhibit, there are rumors people have been picking leaves off the cycads."
                     ]
                   ]
                 }

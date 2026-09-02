@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴀ/ᴄ ʀᴇꜱᴇᴛ\n",
-                      "-------------------\n",
-                      "ᴀᴠɪᴀʀʏ ● ",
+                      "",
+                      "ᴀ/ᴄ ʀᴇꜱᴇᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.aviary",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nWow, is it getting hot in here, please reset the A/C. The controller is near the ceiling in the aviary. I lost the manual, but I think there are four buttons to restart the fan."
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Wow, is it getting hot in here, please reset the A/C. The controller is near the ceiling in the aviary. I lost the manual, but I think there are four buttons to restart the fan."
                     ]
                   ]
                 }

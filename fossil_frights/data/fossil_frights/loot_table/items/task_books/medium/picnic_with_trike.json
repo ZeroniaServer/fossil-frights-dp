@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴘɪᴄɴɪᴄ ᴡɪᴛʜ ᴛʀɪᴋᴇ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴏɴᴇ ● ",
+                      "",
+                      "ᴘɪᴄɴɪᴄ ᴡɪᴛʜ ᴛʀɪᴋᴇ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.floor_1",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe triceratops skeleton has requested you join him for a picnic. Only problem is he doesn't like to share his food. Bring a snack and eat it with him: you can "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The triceratops skeleton has requested you join him for a picnic. Only problem is he doesn't like to share his food. Bring a snack and eat it with him: you can "
                     ],
                     [
                       "have a free cookie from the café if you'd like."

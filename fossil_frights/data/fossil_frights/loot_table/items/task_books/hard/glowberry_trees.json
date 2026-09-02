@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ɢʟᴏᴡʙᴇʀʀʏ ᴛʀᴇᴇꜱ\n",
-                      "-------------------\n",
-                      "ᴜɴᴋɴᴏᴡɴ ● ",
+                      "",
+                      "ɢʟᴏᴡʙᴇʀʀʏ ᴛʀᴇᴇꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.unknown",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nPlease water both glowberry trees. \n\nDO NOT EAT THE GLOWBERRIES! I REPEAT DO NOT EAT THE GLOWBERRIES!"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Please water both glowberry trees. \n\nDO NOT EAT THE GLOWBERRIES! I REPEAT DO NOT EAT THE GLOWBERRIES!"
                     ]
                   ]
                 }

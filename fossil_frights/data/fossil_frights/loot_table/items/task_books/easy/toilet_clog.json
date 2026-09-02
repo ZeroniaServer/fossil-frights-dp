@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴛᴏɪʟᴇᴛ ᴄʟᴏɢ\n",
-                      "-------------------\n",
-                      "● ʟᴏᴡᴇʀ ʙᴀᴛʜʀᴏᴏᴍ\n",
-                      "● ",
+                      "",
+                      "ᴛᴏɪʟᴇᴛ ᴄʟᴏɢ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.lower_bathroom",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nNot sure where but apparently a muffin was shoved in a toilet? I'd start by checking the one near the café. Please flush the muffin and hopefully the leak goes away."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Not sure where but apparently a muffin was shoved in a toilet? I'd start by checking the one near the café. Please flush the muffin and hopefully the leak goes away."
                     ]
                   ]
                 }

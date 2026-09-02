@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʙᴀꜱᴋᴇᴛʙᴀʟʟ ᴅᴀɴᴄᴇ\n",
-                      "-------------------\n",
-                      "● ɢɪꜰᴛ ꜱʜᴏᴘ, ʀᴜɪɴꜱ\n",
-                      "● ",
+                      "",
+                      "ʙᴀꜱᴋᴇᴛʙᴀʟʟ ᴅᴀɴᴄᴇ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.gift_shop_and_ruins",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nCoppy loves to listen to music, it helps keep him from oxidizing. We have some records in the basement. Grab a disc, play a tune and dance with him! If your moves are "
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Coppy loves to listen to music, it helps keep him from oxidizing. We have some records in the basement. Grab a disc, play a tune and dance with him! If your moves are "
                     ],
                     [
                       "groovy enough he'll toss you a basketball. Go dunk a basketball in the ruins basketball court to honor his gift."

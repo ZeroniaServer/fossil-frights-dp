@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜰᴇᴇᴅ ᴛʜᴇ ʙᴀᴛꜱ\n",
-                      "-------------------\n",
-                      "ᴀᴠɪʀᴀʀʏ ● ",
+                      "",
+                      "ꜰᴇᴇᴅ ᴛʜᴇ ʙᴀᴛꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.aviary",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nSo we ran out of bugs... but if we don't feed the bats they'll die… So maybe grab some dried up ladybugs from the tree habitat exhibit and use that as bat food?"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "So we ran out of bugs... but if we don't feed the bats they'll die… So maybe grab some dried up ladybugs from the tree habitat exhibit and use that as bat food?"
                     ]
                   ]
                 }

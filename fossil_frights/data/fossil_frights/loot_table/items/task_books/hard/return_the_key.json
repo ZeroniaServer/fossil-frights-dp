@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʀᴇᴛᴜʀɴ ᴛʜᴇ ᴋᴇʏ\n",
-                      "-------------------\n",
-                      "● ʙᴀꜱᴇᴍᴇɴᴛ, ᴀǫᴜᴀᴛɪᴄ\n",
-                      "● ",
+                      "",
+                      "ʀᴇᴛᴜʀɴ ᴛʜᴇ ᴋᴇʏ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.basement_and_aquatic",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nI like to move the Super Secret Key between a few locations to keep it safe. Currently, it's in the treasure chest. Can you grab it and move it to my vault?"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "I like to move the Super Secret Key between a few locations to keep it safe. Currently, it's in the treasure chest. Can you grab it and move it to my vault?"
                     ]
                   ]
                 }

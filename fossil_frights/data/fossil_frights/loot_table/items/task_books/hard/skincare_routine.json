@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜱᴋɪɴᴄᴀʀᴇ ʀᴏᴜᴛɪɴᴇ\n",
-                      "-------------------\n",
-                      "ʙʀᴏɴᴛᴏꜱᴀᴜʀᴜꜱ ● ",
+                      "",
+                      "ꜱᴋɪɴᴄᴀʀᴇ ʀᴏᴜᴛɪɴᴇ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.brontosaurus",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe Brontosaurus loves his skincare; he wants to look his best before the museum opens up. Please splash his face with water to keep him moist!"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The Brontosaurus loves his skincare; he wants to look his best before the museum opens up. Please splash his face with water to keep him moist!"
                     ]
                   ]
                 }

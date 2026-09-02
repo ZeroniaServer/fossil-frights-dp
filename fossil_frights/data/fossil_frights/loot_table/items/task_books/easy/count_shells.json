@@ -33,15 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴄᴏᴜɴᴛ ꜱʜᴇʟʟꜱ\n",
-                      "-------------------\n",
-                      "● ᴀǫᴜᴀᴛɪᴄ ᴇxʜɪʙɪᴛ\n",
-                      "● ",
+                      "",
+                      "ᴄᴏᴜɴᴛ ꜱʜᴇʟʟꜱ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.aquatic",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nWe try to keep a close eye, but we notice sometimes people are stealing the shells. Go check and make sure all 5 of them are on the display table."
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "We try to keep a close eye, but we notice sometimes people are stealing the shells. Go check and make sure all 5 of them are on the display table."
                     ]
                   ]
                 }

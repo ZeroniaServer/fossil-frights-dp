@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴘɪɢ ᴡʀᴀɴɢʟᴇʀ\n",
-                      "-------------------\n",
-                      "ʀᴜɪɴꜱ ● ",
+                      "",
+                      "ᴘɪɢ ᴡʀᴀɴɢʟᴇʀ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.ruins",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nEvery time I think I've solved that pig problem, the little escape artist proves me wrong... He's gone again! He's probably somewhere near the ruins exhibit, though he has been known to wander farther afield."
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Every time I think I've solved that pig problem, the little escape artist proves me wrong... He's gone again! He's probably somewhere near the ruins exhibit, though he has been known to wander farther afield."
                     ],
                     [
                       "Grab a carrot cake from the café and use it to lure him back to the pen behind the ruins tower. Once he's safe, feed him the cake. He's such a good boy. Well... except for all the escaping.\n\nIf you can't find him, climb the tower and look through the spyglass."

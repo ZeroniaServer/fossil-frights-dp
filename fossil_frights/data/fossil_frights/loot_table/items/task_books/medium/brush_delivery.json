@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʙʀᴜꜱʜ ᴅᴇʟɪᴠᴇʀʏ\n",
-                      "-------------------\n",
-                      "ʀᴜɪɴꜱ ● ",
+                      "",
+                      "ʙʀᴜꜱʜ ᴅᴇʟɪᴠᴇʀʏ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.ruins",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nAre you kidding me?! ANOTHER BRUSH IS STOLEN! GRR! Grab one from the basement restoration room and bring it into the pyramid in the trail ruins. Just toss it in the pit."
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Are you kidding me?! ANOTHER BRUSH IS STOLEN! GRR! Grab one from the basement restoration room and bring it into the pyramid in the trail ruins. Just toss it in the pit."
                     ]
                   ]
                 }

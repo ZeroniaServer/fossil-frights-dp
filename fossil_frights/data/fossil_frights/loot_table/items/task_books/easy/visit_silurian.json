@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ᴠɪꜱɪᴛ ꜱɪʟᴜʀɪᴀɴ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ᴠɪꜱɪᴛ ꜱɪʟᴜʀɪᴀɴ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴇᴀꜱʏ\n",
-                        "color": "green"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nThe start of the Silurian was a cold and dry place. Like my heart, ha! You know what, go check it out, let the excitement for the job be ripped out of you. \n\nIt's around the middle"
+                      {
+                        "translate": "ff.task_book.difficulty.easy",
+                        "color": "green",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "The start of the Silurian was a cold and dry place. Like my heart, ha! You know what, go check it out, let the excitement for the job be ripped out of you. \n\nIt's around the middle"
                     ],
                     [
                       "of the timeline."

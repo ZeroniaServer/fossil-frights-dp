@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ꜰᴇʀᴛɪʟɪᴢᴇ ᴘʟᴀɴᴛ\n",
-                      "-------------------\n",
-                      "ꜰʟᴏᴏʀ ᴛᴡᴏ ● ",
+                      "",
+                      "ꜰᴇʀᴛɪʟɪᴢᴇ ᴘʟᴀɴᴛ",
+                      "\n-------------------\n",
                       {
-                        "text": "ʜᴀʀᴅ\n",
-                        "color": "red"
+                        "translate": "ff.task_book.location.floor_2",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nOne of the plants is wilting on the 2nd floor, and its leaves are grey. Water is not bringing it back to life, do you mind giving it some fertilizer?"
+                      {
+                        "translate": "ff.task_book.difficulty.hard",
+                        "color": "red",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "One of the plants is wilting on the 2nd floor, and its leaves are grey. Water is not bringing it back to life, do you mind giving it some fertilizer?"
                     ]
                   ]
                 }

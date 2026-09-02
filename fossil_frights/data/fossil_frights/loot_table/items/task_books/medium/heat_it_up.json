@@ -33,14 +33,20 @@
                   "author": "",
                   "pages": [
                     [
-                      "ʜᴇᴀᴛ ɪᴛ ᴜᴘ\n",
-                      "-------------------\n",
-                      "ᴛᴏᴘ ꜰʟᴏᴏʀ ● ",
+                      "",
+                      "ʜᴇᴀᴛ ɪᴛ ᴜᴘ",
+                      "\n-------------------\n",
                       {
-                        "text": "ᴍᴇᴅɪᴜᴍ\n",
-                        "color": "gold"
+                        "translate": "ff.task_book.location.floor_3",
+                        "font": "fossil-frights:small_caps"
                       },
-                      "\nOur \"artificial\" lava in the Hadean exhibit is supposed to smoke, but reports say one of them stopped. Grab a fire tablet from the basement and toss into the "
+                      {
+                        "translate": "ff.task_book.difficulty.medium",
+                        "color": "gold",
+                        "font": "fossil-frights:small_caps"
+                      },
+                      "\n\n",
+                      "Our \"artificial\" lava in the Hadean exhibit is supposed to smoke, but reports say one of them stopped. Grab a fire tablet from the basement and toss into the "
                     ],
                     [
                       "correct lava pool, so it starts up again. Fire tablets are expensive, so make sure you choose the right lava - whichever is smoking the least."
