@@ -52,6 +52,10 @@ scoreboard players set @a ff_heist_killer_uuid_3 0
 tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_kill_target
+tag @a remove ff_heist_capture_credit_recipient
+tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
+tag @e[type=minecraft:item] remove ff_heist_capture_credit_snapshot
+tag @e[type=minecraft:item] remove ff_heist_capture_credit_source
 execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set @a[team=ff_thief] ff_heist_stolen_keys 0

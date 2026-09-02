@@ -1,3 +1,5 @@
+function fossil_frights:game/heists/loot/capture/credit/snapshot_owner
+
 data modify entity @s Age set value 5600
 
 execute store result score @s ff_dropped_item_despawn_timestamp run time query gametime
