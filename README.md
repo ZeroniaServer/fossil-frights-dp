@@ -4,23 +4,23 @@
 
 | Action | Command |
 | --- | --- |
-| Start / queue | `/trigger ff_cmd_start` |
-| Leave game / spectator mode | `/trigger ff_cmd_leave` |
-| Spectate active player | `/trigger ff_cmd_spectate` |
-| Show personal stats | `/trigger ff_cmd_stats` |
-| Tutorial | `/trigger ff_cmd_tutorial` |
-| Info dialog | `/trigger ff_cmd_info` |
-| Enable Fossil Heists | `/trigger ff_cmd_heists` |
-| Set a Heists challenge bounty | `/trigger ff_cmd_challenge [set <amount>]` |
-| Join guard team | `/trigger ff_cmd_join_guard` |
-| Join thief team | `/trigger ff_cmd_join_thief` |
-| Invite dialog | `/trigger ff_cmd_invite` |
+| Start / queue | `/trigger start` |
+| Leave game / spectator mode | `/trigger leave` |
+| Spectate active player | `/trigger spectate` |
+| Show personal stats | `/trigger stats` |
+| Tutorial | `/trigger tutorial` |
+| Info dialog | `/trigger info` |
+| Enable Fossil Heists | `/trigger heists` |
+| Set a Heists challenge bounty | `/trigger challenge [set <amount>]` |
+| Join guard team | `/trigger join_guard` |
+| Join thief team | `/trigger join_thief` |
+| Invite dialog | `/trigger invite` |
 
-| Return to spawn | `/trigger ff_cmd_spawn` |
-| Tp to Ant Fight | `/trigger ff_cmd_spawn` |
-| Tp to Parkour | `/trigger ff_cmd_parkour` |
-| Tp to Temple Run | `/trigger ff_cmd_templerun` |
-| Tp to Sulfur Strikers | `/trigger ff_cmd_sulfurstrikers` |
+| Return to spawn | `/trigger spawn` |
+| Tp to Ant Fight | `/trigger spawn` |
+| Tp to Parkour | `/trigger parkour` |
+| Tp to Temple Run | `/trigger templerun` |
+| Tp to Sulfur Strikers | `/trigger sulfurstrikers` |
 
 Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/antfight`, `/sulfurstriker`, `/templerun`, `/parkour`, `/challenge`, `/stats`, `/invite`, `/tutorial`, `/info`, `/spawn`. 
 

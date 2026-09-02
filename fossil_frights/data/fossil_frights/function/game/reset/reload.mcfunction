@@ -18,24 +18,24 @@ scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0
 scoreboard players set $game_start_spawn_mode ff_game_state 0
 scoreboard players set $lobby_displays_ready ff_game_state 0
-scoreboard players set @a ff_cmd_stats 0
-scoreboard players enable @a ff_cmd_stats
-scoreboard players set @a ff_cmd_tutorial 0
-scoreboard players enable @a ff_cmd_tutorial
-scoreboard players set @a ff_cmd_info 0
-scoreboard players enable @a ff_cmd_info
-scoreboard players set @a ff_cmd_party 0
-scoreboard players enable @a ff_cmd_party
-scoreboard players set @a ff_cmd_heists 0
-scoreboard players enable @a ff_cmd_heists
-scoreboard players set @a ff_cmd_join_guard 0
-scoreboard players enable @a ff_cmd_join_guard
-scoreboard players set @a ff_cmd_join_thief 0
-scoreboard players enable @a ff_cmd_join_thief
-scoreboard players set @a ff_cmd_spawn 0
-scoreboard players enable @a ff_cmd_spawn
-scoreboard players set @a ff_cmd_invite 0
-scoreboard players enable @a ff_cmd_invite
+scoreboard players set @a stats 0
+scoreboard players enable @a stats
+scoreboard players set @a tutorial 0
+scoreboard players enable @a tutorial
+scoreboard players set @a info 0
+scoreboard players enable @a info
+scoreboard players set @a party 0
+scoreboard players enable @a party
+scoreboard players set @a heists 0
+scoreboard players enable @a heists
+scoreboard players set @a join_guard 0
+scoreboard players enable @a join_guard
+scoreboard players set @a join_thief 0
+scoreboard players enable @a join_thief
+scoreboard players set @a spawn 0
+scoreboard players enable @a spawn
+scoreboard players set @a invite 0
+scoreboard players enable @a invite
 scoreboard players set @a ff_invite_sel 0
 scoreboard players enable @a ff_invite_sel
 scoreboard players set @a ff_invite_accept 0

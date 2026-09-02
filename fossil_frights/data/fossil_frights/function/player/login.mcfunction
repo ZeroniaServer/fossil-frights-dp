@@ -115,36 +115,36 @@ scoreboard players set @s ff_bb_sneak_state 0
 scoreboard players set @s ff_bb_shift_count 0
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
-scoreboard players set @s ff_cmd_start 0
-scoreboard players set @s ff_cmd_leave 0
-scoreboard players set @s ff_cmd_spectate 0
-scoreboard players set @s ff_cmd_stats 0
-scoreboard players set @s ff_cmd_tutorial 0
-scoreboard players set @s ff_cmd_info 0
-scoreboard players set @s ff_cmd_party 0
-scoreboard players set @s ff_cmd_heists 0
-scoreboard players set @s ff_cmd_join_guard 0
-scoreboard players set @s ff_cmd_join_thief 0
-scoreboard players set @s ff_cmd_spawn 0
+scoreboard players set @s start 0
+scoreboard players set @s leave 0
+scoreboard players set @s spectate 0
+scoreboard players set @s stats 0
+scoreboard players set @s tutorial 0
+scoreboard players set @s info 0
+scoreboard players set @s party 0
+scoreboard players set @s heists 0
+scoreboard players set @s join_guard 0
+scoreboard players set @s join_thief 0
+scoreboard players set @s spawn 0
 scoreboard players enable @s ff_queue_start
-scoreboard players enable @s ff_cmd_start
-scoreboard players enable @s ff_cmd_leave
-scoreboard players enable @s ff_cmd_spectate
-scoreboard players enable @s ff_cmd_stats
-scoreboard players enable @s ff_cmd_tutorial
-scoreboard players enable @s ff_cmd_info
-scoreboard players enable @s ff_cmd_party
-scoreboard players enable @s ff_cmd_heists
-scoreboard players enable @s ff_cmd_join_guard
-scoreboard players enable @s ff_cmd_join_thief
-scoreboard players enable @s ff_cmd_spawn
-scoreboard players set @s ff_cmd_invite 0
-scoreboard players enable @s ff_cmd_invite
+scoreboard players enable @s start
+scoreboard players enable @s leave
+scoreboard players enable @s spectate
+scoreboard players enable @s stats
+scoreboard players enable @s tutorial
+scoreboard players enable @s info
+scoreboard players enable @s party
+scoreboard players enable @s heists
+scoreboard players enable @s join_guard
+scoreboard players enable @s join_thief
+scoreboard players enable @s spawn
+scoreboard players set @s invite 0
+scoreboard players enable @s invite
 scoreboard players set @s ff_invite_sel 0
 scoreboard players enable @s ff_invite_sel
 scoreboard players set @s ff_invite_accept 0
 scoreboard players enable @s ff_invite_accept
-execute unless entity @s[tag=tutorial_complete] run tellraw @s {"translate":"ff.messages.info","color":"#F2B8FF","with":[{"translate":"ff.messages.info.watch_tutorial","with":[{"translate":"%s%s","click_event":{"action":"run_command","command":"trigger ff_cmd_tutorial set 1"},"with":[{"translate":"ff.button.tutorial_start","font":"fossil-frights:chat_buttons","color":"white"},{"translate":"ff.button.tutorial_start.override","color":"yellow","bold":true}]}]}]}
+execute unless entity @s[tag=tutorial_complete] run tellraw @s {"translate":"ff.messages.info","color":"#F2B8FF","with":[{"translate":"ff.messages.info.watch_tutorial","with":[{"translate":"%s%s","click_event":{"action":"run_command","command":"trigger tutorial set 1"},"with":[{"translate":"ff.button.tutorial_start","font":"fossil-frights:chat_buttons","color":"white"},{"translate":"ff.button.tutorial_start.override","color":"yellow","bold":true}]}]}]}
 clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset

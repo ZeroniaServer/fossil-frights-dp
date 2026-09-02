@@ -16,23 +16,23 @@ execute if entity @s[tag=ff_uuid_cache_repair] store result score @s ff_active_u
 execute if entity @s[tag=ff_uuid_cache_repair] run data remove storage fossil_frights:nbt uuid
 tag @s remove ff_uuid_cache_repair
 scoreboard players enable @s ff_queue_start
-scoreboard players enable @s ff_cmd_start
-scoreboard players enable @s ff_cmd_leave
-scoreboard players enable @s ff_cmd_spectate
-scoreboard players enable @s ff_cmd_stats
-scoreboard players enable @s ff_cmd_invite
-scoreboard players enable @s ff_cmd_tutorial
-scoreboard players enable @s ff_cmd_info
-scoreboard players enable @s ff_cmd_party
-scoreboard players enable @s ff_cmd_heists
-scoreboard players enable @s ff_cmd_challenge
-scoreboard players enable @s ff_cmd_antfight
-scoreboard players enable @s ff_cmd_sulfurstriker
-scoreboard players enable @s ff_cmd_templerun
-scoreboard players enable @s ff_cmd_parkour
-scoreboard players enable @s ff_cmd_join_guard
-scoreboard players enable @s ff_cmd_join_thief
-scoreboard players enable @s ff_cmd_spawn
+scoreboard players enable @s start
+scoreboard players enable @s leave
+scoreboard players enable @s spectate
+scoreboard players enable @s stats
+scoreboard players enable @s invite
+scoreboard players enable @s tutorial
+scoreboard players enable @s info
+scoreboard players enable @s party
+scoreboard players enable @s heists
+scoreboard players enable @s challenge
+scoreboard players enable @s antfight
+scoreboard players enable @s sulfurstriker
+scoreboard players enable @s templerun
+scoreboard players enable @s parkour
+scoreboard players enable @s join_guard
+scoreboard players enable @s join_thief
+scoreboard players enable @s spawn
 scoreboard players enable @s ff_invite_accept
 execute if score @s ff_settings_confirm matches 1 run function fossil_frights:game/start_room/settings/gamemode/frights/apply
 execute if score @s ff_settings_confirm matches 2 run function fossil_frights:game/start_room/settings/gamemode/party/request
@@ -61,9 +61,9 @@ execute unless predicate fossil_frights:player/is_playing if entity @s[tag=ff_pl
 tag @s[tag=ff_plushie_restore_pending] remove ff_plushie_restore_pending
 tag @s[tag=ff_plushie_restore_queued] add ff_plushie_restore_pending
 tag @s[tag=ff_plushie_restore_queued] remove ff_plushie_restore_queued
-execute if score @s ff_cmd_invite matches 1.. run function fossil_frights:command/invite
-execute if score @s ff_cmd_invite matches 1.. run scoreboard players enable @s ff_cmd_invite
-execute if score @s ff_cmd_invite matches 1.. run scoreboard players set @s ff_cmd_invite 0
+execute if score @s invite matches 1.. run function fossil_frights:command/invite
+execute if score @s invite matches 1.. run scoreboard players enable @s invite
+execute if score @s invite matches 1.. run scoreboard players set @s invite 0
 execute if score @s ff_invite_sel matches 1.. run function fossil_frights:game/start_room/settings/duos/gui/select
 execute if score @s ff_invite_sel matches 1.. run scoreboard players enable @s ff_invite_sel
 execute if score @s ff_invite_sel matches 1.. run scoreboard players set @s ff_invite_sel 0
@@ -71,57 +71,57 @@ execute if score @s ff_invite_accept matches 1.. run function fossil_frights:joi
 execute if score @s ff_invite_accept matches 1.. run scoreboard players enable @s ff_invite_accept
 execute if score @s ff_invite_accept matches 1.. run scoreboard players set @s ff_invite_accept 0
 execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/queue/handle_start_click
-execute if score @s ff_cmd_start matches 1.. run function fossil_frights:command/start
-execute if score @s ff_cmd_start matches 1.. run scoreboard players enable @s ff_cmd_start
-execute if score @s ff_cmd_start matches 1.. run scoreboard players set @s ff_cmd_start 0
-execute if score @s ff_cmd_leave matches 1.. run function fossil_frights:command/leave
-execute if score @s ff_cmd_leave matches 1.. run scoreboard players enable @s ff_cmd_leave
-execute if score @s ff_cmd_leave matches 1.. run scoreboard players set @s ff_cmd_leave 0
-execute if score @s ff_cmd_spectate matches 1.. run function fossil_frights:command/spectate
-execute if score @s ff_cmd_spectate matches 1.. run scoreboard players enable @s ff_cmd_spectate
-execute if score @s ff_cmd_spectate matches 1.. run scoreboard players set @s ff_cmd_spectate 0
-execute if score @s ff_cmd_stats matches 1.. run function fossil_frights:command/stats
-execute if score @s ff_cmd_stats matches 1.. run scoreboard players enable @s ff_cmd_stats
-execute if score @s ff_cmd_stats matches 1.. run scoreboard players set @s ff_cmd_stats 0
-execute if score @s ff_cmd_tutorial matches 1.. run function fossil_frights:command/tutorial
-execute if score @s ff_cmd_tutorial matches 1.. run scoreboard players enable @s ff_cmd_tutorial
-execute if score @s ff_cmd_tutorial matches 1.. run scoreboard players set @s ff_cmd_tutorial 0
-execute if score @s ff_cmd_info matches 1.. run function fossil_frights:command/info
-execute if score @s ff_cmd_info matches 1.. run scoreboard players enable @s ff_cmd_info
-execute if score @s ff_cmd_info matches 1.. run scoreboard players set @s ff_cmd_info 0
-execute if score @s ff_cmd_party matches 1.. run function fossil_frights:command/party
-execute if score @s ff_cmd_party matches 1.. run scoreboard players enable @s ff_cmd_party
-execute if score @s ff_cmd_party matches 1.. run scoreboard players set @s ff_cmd_party 0
-execute if score @s ff_cmd_heists matches 1.. run function fossil_frights:command/heists
-execute if score @s ff_cmd_heists matches 1.. run scoreboard players enable @s ff_cmd_heists
-execute if score @s ff_cmd_heists matches 1.. run scoreboard players set @s ff_cmd_heists 0
-execute if score @s ff_cmd_challenge matches ..-1 run function fossil_frights:command/challenge
-execute if score @s ff_cmd_challenge matches ..-1 run scoreboard players enable @s ff_cmd_challenge
-execute if score @s ff_cmd_challenge matches ..-1 run scoreboard players set @s ff_cmd_challenge 0
-execute if score @s ff_cmd_challenge matches 1.. run function fossil_frights:command/challenge
-execute if score @s ff_cmd_challenge matches 1.. run scoreboard players enable @s ff_cmd_challenge
-execute if score @s ff_cmd_challenge matches 1.. run scoreboard players set @s ff_cmd_challenge 0
-execute if score @s ff_cmd_antfight matches 1.. run function fossil_frights:command/antfight
-execute if score @s ff_cmd_antfight matches 1.. run scoreboard players enable @s ff_cmd_antfight
-execute if score @s ff_cmd_antfight matches 1.. run scoreboard players set @s ff_cmd_antfight 0
-execute if score @s ff_cmd_sulfurstriker matches 1.. run function fossil_frights:command/sulfurstriker
-execute if score @s ff_cmd_sulfurstriker matches 1.. run scoreboard players enable @s ff_cmd_sulfurstriker
-execute if score @s ff_cmd_sulfurstriker matches 1.. run scoreboard players set @s ff_cmd_sulfurstriker 0
-execute if score @s ff_cmd_templerun matches 1.. run function fossil_frights:command/templerun
-execute if score @s ff_cmd_templerun matches 1.. run scoreboard players enable @s ff_cmd_templerun
-execute if score @s ff_cmd_templerun matches 1.. run scoreboard players set @s ff_cmd_templerun 0
-execute if score @s ff_cmd_parkour matches 1.. run function fossil_frights:command/parkour
-execute if score @s ff_cmd_parkour matches 1.. run scoreboard players enable @s ff_cmd_parkour
-execute if score @s ff_cmd_parkour matches 1.. run scoreboard players set @s ff_cmd_parkour 0
-execute if score @s ff_cmd_join_guard matches 1.. run function fossil_frights:command/join/guard
-execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players enable @s ff_cmd_join_guard
-execute if score @s ff_cmd_join_guard matches 1.. run scoreboard players set @s ff_cmd_join_guard 0
-execute if score @s ff_cmd_join_thief matches 1.. run function fossil_frights:command/join/thief
-execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players enable @s ff_cmd_join_thief
-execute if score @s ff_cmd_join_thief matches 1.. run scoreboard players set @s ff_cmd_join_thief 0
-execute if score @s ff_cmd_spawn matches 1.. run function fossil_frights:command/spawn
-execute if score @s ff_cmd_spawn matches 1.. run scoreboard players enable @s ff_cmd_spawn
-execute if score @s ff_cmd_spawn matches 1.. run scoreboard players set @s ff_cmd_spawn 0
+execute if score @s start matches 1.. run function fossil_frights:command/start
+execute if score @s start matches 1.. run scoreboard players enable @s start
+execute if score @s start matches 1.. run scoreboard players set @s start 0
+execute if score @s leave matches 1.. run function fossil_frights:command/leave
+execute if score @s leave matches 1.. run scoreboard players enable @s leave
+execute if score @s leave matches 1.. run scoreboard players set @s leave 0
+execute if score @s spectate matches 1.. run function fossil_frights:command/spectate
+execute if score @s spectate matches 1.. run scoreboard players enable @s spectate
+execute if score @s spectate matches 1.. run scoreboard players set @s spectate 0
+execute if score @s stats matches 1.. run function fossil_frights:command/stats
+execute if score @s stats matches 1.. run scoreboard players enable @s stats
+execute if score @s stats matches 1.. run scoreboard players set @s stats 0
+execute if score @s tutorial matches 1.. run function fossil_frights:command/tutorial
+execute if score @s tutorial matches 1.. run scoreboard players enable @s tutorial
+execute if score @s tutorial matches 1.. run scoreboard players set @s tutorial 0
+execute if score @s info matches 1.. run function fossil_frights:command/info
+execute if score @s info matches 1.. run scoreboard players enable @s info
+execute if score @s info matches 1.. run scoreboard players set @s info 0
+execute if score @s party matches 1.. run function fossil_frights:command/party
+execute if score @s party matches 1.. run scoreboard players enable @s party
+execute if score @s party matches 1.. run scoreboard players set @s party 0
+execute if score @s heists matches 1.. run function fossil_frights:command/heists
+execute if score @s heists matches 1.. run scoreboard players enable @s heists
+execute if score @s heists matches 1.. run scoreboard players set @s heists 0
+execute if score @s challenge matches ..-1 run function fossil_frights:command/challenge
+execute if score @s challenge matches ..-1 run scoreboard players enable @s challenge
+execute if score @s challenge matches ..-1 run scoreboard players set @s challenge 0
+execute if score @s challenge matches 1.. run function fossil_frights:command/challenge
+execute if score @s challenge matches 1.. run scoreboard players enable @s challenge
+execute if score @s challenge matches 1.. run scoreboard players set @s challenge 0
+execute if score @s antfight matches 1.. run function fossil_frights:command/antfight
+execute if score @s antfight matches 1.. run scoreboard players enable @s antfight
+execute if score @s antfight matches 1.. run scoreboard players set @s antfight 0
+execute if score @s sulfurstriker matches 1.. run function fossil_frights:command/sulfurstriker
+execute if score @s sulfurstriker matches 1.. run scoreboard players enable @s sulfurstriker
+execute if score @s sulfurstriker matches 1.. run scoreboard players set @s sulfurstriker 0
+execute if score @s templerun matches 1.. run function fossil_frights:command/templerun
+execute if score @s templerun matches 1.. run scoreboard players enable @s templerun
+execute if score @s templerun matches 1.. run scoreboard players set @s templerun 0
+execute if score @s parkour matches 1.. run function fossil_frights:command/parkour
+execute if score @s parkour matches 1.. run scoreboard players enable @s parkour
+execute if score @s parkour matches 1.. run scoreboard players set @s parkour 0
+execute if score @s join_guard matches 1.. run function fossil_frights:command/join/guard
+execute if score @s join_guard matches 1.. run scoreboard players enable @s join_guard
+execute if score @s join_guard matches 1.. run scoreboard players set @s join_guard 0
+execute if score @s join_thief matches 1.. run function fossil_frights:command/join/thief
+execute if score @s join_thief matches 1.. run scoreboard players enable @s join_thief
+execute if score @s join_thief matches 1.. run scoreboard players set @s join_thief 0
+execute if score @s spawn matches 1.. run function fossil_frights:command/spawn
+execute if score @s spawn matches 1.. run scoreboard players enable @s spawn
+execute if score @s spawn matches 1.. run scoreboard players set @s spawn 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave
 execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active
