@@ -123,11 +123,11 @@ execute if score @s spawn matches 1.. run function fossil_frights:command/spawn
 execute if score @s spawn matches 1.. run scoreboard players enable @s spawn
 execute if score @s spawn matches 1.. run scoreboard players set @s spawn 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/respawn_lobby
-execute unless score @s ff_deaths = @s ff_deaths_seen if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:player/is_playing run function fossil_frights:player/respawn_lobby
-execute unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
+execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave
+execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active
+execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/respawn_lobby
+execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:player/is_playing run function fossil_frights:player/respawn_lobby
+execute unless entity @s[nbt={Health:0.0f}] unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if entity @s[tag=ff_damage_guard] if predicate fossil_frights:game_state/game_running if entity @s[team=ff_guard,gamemode=!spectator] run function fossil_frights:player/protection_disable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/protection_enable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:player/is_playing run function fossil_frights:player/protection_enable
