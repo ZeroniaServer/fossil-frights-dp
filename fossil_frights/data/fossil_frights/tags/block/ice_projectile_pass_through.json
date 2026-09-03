@@ -1,12 +1,16 @@
 {
   "values": [
     "#fossil_frights:never_has_solid_collision",
+    "#fossil_frights:carpets",
     "#minecraft:all_signs",
-    "#minecraft:wool_carpets",
+    "#minecraft:candles",
+    "#minecraft:chains",
+    "#minecraft:flower_pots",
+    "#minecraft:lanterns",
     "#minecraft:leaves",
-    "#minecraft:trapdoors",
-    "#minecraft:wooden_shelves",
     "minecraft:big_dripleaf",
-    "minecraft:ladder"
+    "minecraft:ladder",
+    "minecraft:sea_pickle",
+    "minecraft:snow"
   ]
 }

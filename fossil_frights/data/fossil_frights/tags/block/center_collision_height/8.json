@@ -1,13 +1,7 @@
 {
   "values": [
+    "#fossil_frights:floor_heads_and_skulls",
     "minecraft:calibrated_sculk_sensor",
-    "minecraft:creeper_head",
-    "minecraft:dragon_head",
-    "minecraft:player_head",
-    "minecraft:piglin_head",
-    "minecraft:sculk_sensor",
-    "minecraft:skeleton_skull",
-    "minecraft:wither_skeleton_skull",
-    "minecraft:zombie_head"
+    "minecraft:sculk_sensor"
   ]
 }
