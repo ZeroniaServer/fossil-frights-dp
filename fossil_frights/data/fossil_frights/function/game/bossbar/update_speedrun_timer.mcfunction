@@ -1,7 +1,7 @@
-execute if predicate fossil_frights:game_state/game_running if score $settings_speedrun_show ff_game_state matches 1 if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer players @a[predicate=fossil_frights:player/is_playing]
-execute if predicate fossil_frights:game_state/game_running if score $settings_speedrun_show ff_game_state matches 1 if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer visible true
-execute if predicate fossil_frights:game_state/game_running unless score $settings_speedrun_show ff_game_state matches 1 run bossbar set fossil_frights:speedrun_timer visible false
-execute if predicate fossil_frights:game_state/game_running unless score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer visible false
+execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer players @a[predicate=fossil_frights:player/is_playing]
+execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer visible true
+execute if predicate fossil_frights:game_state/game_running unless score $settings_speedrun_show ff_game_state matches 1 run function fossil_frights:game/bossbar/clear_speedrun_timer_name
+execute if predicate fossil_frights:game_state/game_running unless score $timer_started ff_day matches 1 run function fossil_frights:game/bossbar/clear_speedrun_timer_name
 execute if predicate fossil_frights:game_state/game_running unless score $victory_complete ff_game_state matches 1 run scoreboard players set $speedrun_victory_blink ff_speedrun_blink 0
 execute if predicate fossil_frights:game_state/game_running if score $settings_speedrun_show ff_game_state matches 1 if score $timer_started ff_day matches 1 if score $victory_complete ff_game_state matches 1 run scoreboard players add $speedrun_victory_blink ff_speedrun_blink 1
 execute if predicate fossil_frights:game_state/game_running if score $settings_speedrun_show ff_game_state matches 1 if score $timer_started ff_day matches 1 if score $victory_complete ff_game_state matches 1 if score $speedrun_victory_blink ff_speedrun_blink matches 20.. run scoreboard players set $speedrun_victory_blink ff_speedrun_blink 0
