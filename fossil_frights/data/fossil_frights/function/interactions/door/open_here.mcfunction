@@ -1,0 +1,1 @@
+execute align xyz positioned ~-0.001 ~-0.001 ~-0.001 as @e[dx=0.002,dy=0.002,dz=0.002,type=minecraft:item_display,tag=ff_door] at @s run return run function fossil_frights:interactions/door/state/open with entity @s data.ff_door
