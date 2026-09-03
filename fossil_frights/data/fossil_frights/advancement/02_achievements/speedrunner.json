@@ -2,7 +2,10 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:clock"
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "fossil-frights:items/drinks/raptor_rush"
+      }
     },
     "title": {
       "translate": "ff.advancement.speedrunner"
