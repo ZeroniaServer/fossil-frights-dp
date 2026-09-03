@@ -13,4 +13,6 @@ execute if block ~ ~ ~ oxidized_copper_door[hinge=left] rotated as @s align xyz 
 execute if block ~ ~ ~ oxidized_copper_door[hinge=right] rotated as @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^-1 ^ ^ if block ~ ~ ~ oxidized_copper_door[hinge=left,open=true] align xyz positioned ~-0.001 ~-0.001 ~-0.001 as @e[limit=1,dx=0.002,dy=0.002,dz=0.002,type=minecraft:item_display,tag=ff_door] positioned as @s run function fossil_frights:interactions/door/state/closed with entity @s data.ff_door
 
 execute store result score @s ff_block_door_interaction_until_timestamp run time query gametime
-scoreboard players add @s ff_block_door_interaction_until_timestamp 2
+scoreboard players add @s ff_block_door_interaction_until_timestamp 3
+execute align xyz as @e[type=minecraft:interaction,dx=0,tag=ff_door.interaction] positioned ~0.5 ~0.5 ~0.5 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:0.5},y:{max:0.5},z:{max:0.5}}}} run data modify entity @s response set value false
+schedule function fossil_frights:interactions/door/state/__cooldown 3t append
