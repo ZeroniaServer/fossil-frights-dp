@@ -11,3 +11,6 @@ $execute if block ~ ~ ~ oxidized_copper_door[hinge=right] align xyz as @e[type=m
 
 execute if block ~ ~ ~ oxidized_copper_door[hinge=left] rotated as @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^1 if block ~ ~ ~ oxidized_copper_door[hinge=right,open=false] align xyz positioned ~-0.001 ~-0.001 ~-0.001 as @e[limit=1,dx=0.002,dy=0.002,dz=0.002,type=minecraft:item_display,tag=ff_door] positioned as @s run function fossil_frights:interactions/door/state/open with entity @s data.ff_door
 execute if block ~ ~ ~ oxidized_copper_door[hinge=right] rotated as @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^1 if block ~ ~ ~ oxidized_copper_door[hinge=left,open=false] align xyz positioned ~-0.001 ~-0.001 ~-0.001 as @e[limit=1,dx=0.002,dy=0.002,dz=0.002,type=minecraft:item_display,tag=ff_door] positioned as @s run function fossil_frights:interactions/door/state/open with entity @s data.ff_door
+
+execute store result score @s ff_block_door_interaction_until_timestamp run time query gametime
+scoreboard players add @s ff_block_door_interaction_until_timestamp 2
