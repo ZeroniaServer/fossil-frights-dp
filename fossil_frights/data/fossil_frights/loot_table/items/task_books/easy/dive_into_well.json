@@ -20,7 +20,7 @@
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
                 "minecraft:item_name": {
                   "color": "green",
-                  "translate": "ff.task_book.task.dive_into_well.name",
+                  "translate": "ff.task.dive_into_well",
                   "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
@@ -36,7 +36,7 @@
                     [
                       "",
                       {
-                        "translate": "ff.task_book.task.dive_into_well.name",
+                        "translate": "ff.task.dive_into_well",
                         "font": "fossil-frights:small_caps"
                       },
                       "\n-------------------\n",

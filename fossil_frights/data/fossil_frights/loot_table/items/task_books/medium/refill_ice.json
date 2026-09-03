@@ -20,7 +20,7 @@
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_medium",
                 "minecraft:item_name": {
                   "color": "gold",
-                  "translate": "ff.task_book.task.refill_ice.name",
+                  "translate": "ff.task.refill_ice",
                   "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
@@ -36,7 +36,7 @@
                     [
                       "",
                       {
-                        "translate": "ff.task_book.task.refill_ice.name",
+                        "translate": "ff.task.refill_ice",
                         "font": "fossil-frights:small_caps"
                       },
                       "\n-------------------\n",

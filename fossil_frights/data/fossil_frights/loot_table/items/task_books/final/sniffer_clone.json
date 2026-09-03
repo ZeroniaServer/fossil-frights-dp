@@ -20,7 +20,7 @@
                 "minecraft:item_model": "fossil-frights:items/frights/task_book_final",
                 "minecraft:item_name": {
                   "color": "gold",
-                  "translate": "ff.task_book.task.sniffer_clone.name",
+                  "translate": "ff.task.sniffer_clone",
                   "font": "fossil-frights:small_caps"
                 },
                 "minecraft:max_stack_size": 99,
@@ -36,7 +36,7 @@
                     [
                       "",
                       {
-                        "translate": "ff.task_book.task.sniffer_clone.name",
+                        "translate": "ff.task.sniffer_clone",
                         "font": "fossil-frights:small_caps"
                       },
                       "\n-------------------\n",
