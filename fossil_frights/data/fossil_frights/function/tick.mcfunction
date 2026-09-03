@@ -95,3 +95,6 @@ execute as @a at @s run function fossil_frights:player/tick
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
 function fossil_frights:game/heists/alarm_effects/tick
+
+bossbar set fossil_frights:resource_pack_disclaimer players
+execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]

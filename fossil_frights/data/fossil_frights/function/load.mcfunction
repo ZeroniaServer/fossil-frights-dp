@@ -460,3 +460,8 @@ gamerule minecraft:advance_weather false
 gamerule minecraft:locator_bar true
 gamerule minecraft:mob_drops false
 gamerule minecraft:advance_time true
+
+# This text is purposefully not translated, so that non-rp players see it
+bossbar add fossil_frights:resource_pack_disclaimer ""
+bossbar set fossil_frights:resource_pack_disclaimer name {color:"#E80018",translate:"ff.empty",fallback:"%1$s",with:[["Please enable the ",{underlined:true,text:"Resource Pack"}]]}
+bossbar set fossil_frights:resource_pack_disclaimer color blue
