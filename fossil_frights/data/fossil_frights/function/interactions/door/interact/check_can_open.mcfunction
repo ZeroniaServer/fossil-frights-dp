@@ -5,4 +5,4 @@ execute unless score #can_open ff_dummy matches 1 if entity @s[tag=ff_door.one_w
 
 execute if score #can_open ff_dummy matches 1 if predicate fossil_frights:entity/door/one_way run function fossil_frights:interactions/door/interact/set_automatic_with_1_second_delay
 
-execute if score #can_open ff_dummy matches 1 if block ~ ~ ~ #doors[open=true] unless predicate fossil_frights:entity/door/one_way if entity @a[limit=1,distance=..3.5,predicate=fossil_frights:location/near_door] run function fossil_frights:interactions/door/interact/set_automatic_with_1_second_delay
+execute if score #can_open ff_dummy matches 1 if block ~ ~ ~ #doors[open=true] unless predicate fossil_frights:entity/door/one_way if entity @a[limit=1,distance=..5,predicate=fossil_frights:location/near_door] run function fossil_frights:interactions/door/interact/set_automatic_with_1_second_delay

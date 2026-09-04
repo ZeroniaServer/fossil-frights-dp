@@ -13,11 +13,37 @@
     },
     {
       "condition": "minecraft:location_check",
+      "offsetX": -2,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:oxidized_copper_door",
+          "state": {
+            "facing": "west"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
       "offsetX": 0,
       "offsetZ": -1,
       "predicate": {
         "block": {
           "blocks": "minecraft:oxidized_copper_door"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetZ": -2,
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:oxidized_copper_door",
+          "state": {
+            "facing": "north"
+          }
         }
       }
     },
@@ -43,11 +69,37 @@
     },
     {
       "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetZ": 2,
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:oxidized_copper_door",
+          "state": {
+            "facing": "south"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
       "offsetX": 1,
       "offsetZ": 0,
       "predicate": {
         "block": {
           "blocks": "minecraft:oxidized_copper_door"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 2,
+      "offsetZ": 0,
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:oxidized_copper_door",
+          "state": {
+            "facing": "east"
+          }
         }
       }
     }
