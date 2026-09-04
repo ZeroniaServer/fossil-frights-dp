@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.invisimask",
+                  "color": "white"
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.invisimask.description.1",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.2",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {"text":"8"}
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.3",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.4",
+                    "color": "red",
+                    "italic": false,
+                    "with": [
+                      {"text": "20"}
+                    ]
+                  }
+                ],
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/creeper",
+                "minecraft:custom_model_data": {
+                  "flags": [
+                    false
+                  ]
+                },
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_data": {
+                  "itemID": "invisimask",
+                  "ff_heist_invisimask": true,
+                  "ff_heist_invisimask_variant": "creeper",
+                  "ff_prevent_drop": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

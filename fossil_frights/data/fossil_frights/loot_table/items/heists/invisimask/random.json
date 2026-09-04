@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/creeper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/enderman"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/skeleton"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/zombie"
+        }
+      ]
+    }
+  ]
+}
