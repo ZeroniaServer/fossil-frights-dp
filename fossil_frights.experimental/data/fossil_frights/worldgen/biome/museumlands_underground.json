@@ -3,6 +3,7 @@
     "minecraft:visual/fog_color": 9488294,
     "minecraft:visual/water_fog_color": 1673871,
     "minecraft:visual/sky_color": 8314623,
+    "minecraft:audio/ambient_sounds": {},
     "minecraft:audio/background_music": {},
     "minecraft:audio/music_volume": 0,
     "minecraft:visual/ambient_particles": [
