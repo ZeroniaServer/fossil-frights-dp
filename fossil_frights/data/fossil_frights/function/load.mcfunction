@@ -200,6 +200,7 @@ scoreboard objectives add ff_chorus_cola_editor dummy
 scoreboard objectives add ff_automatic_door_close_timestamp dummy
 scoreboard objectives add ff_door_shake_stage dummy
 scoreboard objectives add ff_block_door_interaction_until_timestamp dummy
+scoreboard objectives add ff_paint_water_time dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2

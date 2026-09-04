@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#fossil_frights:museum_painted",
+    {
+      "id": "fossil_frights:museum",
+      "required": false
+    }
+  ]
+}
