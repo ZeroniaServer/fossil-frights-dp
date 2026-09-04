@@ -18,8 +18,8 @@
                 "minecraft:item_model": "fossil-frights:items/misc/confetti_cannon",
                 "minecraft:equippable": {
                   "camera_overlay": "minecraft:misc/pumpkinblur",
-                  "slot": "head",
-                  "swappable": false
+                  "equip_sound": "minecraft:intentionally_empty",
+                  "slot": "head"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1

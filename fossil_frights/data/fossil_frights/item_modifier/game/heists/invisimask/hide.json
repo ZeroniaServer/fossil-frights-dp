@@ -3,6 +3,7 @@
   "components": {
     "minecraft:equippable": {
       "slot": "head",
+      "equip_sound": "minecraft:intentionally_empty",
       "asset_id": "fossil_frights:hidden_invisimask"
     }
   }

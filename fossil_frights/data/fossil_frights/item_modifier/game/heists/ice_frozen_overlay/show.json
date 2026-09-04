@@ -3,6 +3,7 @@
   "components": {
     "minecraft:equippable": {
       "slot": "head",
+      "equip_sound": "minecraft:intentionally_empty",
       "camera_overlay": "fossil-frights:overlays/ice_frozen_overlay"
     }
   }

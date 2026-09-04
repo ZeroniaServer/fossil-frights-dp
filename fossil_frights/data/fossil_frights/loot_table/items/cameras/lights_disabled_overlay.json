@@ -18,6 +18,7 @@
                 },
                 "minecraft:equippable": {
                   "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty",
                   "camera_overlay": "fossil-frights:overlays/disabled_cameras"
                 },
                 "minecraft:custom_data": {
