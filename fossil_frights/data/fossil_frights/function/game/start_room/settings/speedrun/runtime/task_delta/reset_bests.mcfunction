@@ -37,3 +37,13 @@ scoreboard players set @s ff_speedrun_button6 0
 scoreboard players set @s ff_speedrun_button7 0
 scoreboard players set @s ff_speedrun_button8 0
 scoreboard players set @s ff_speedrun_button9 0
+scoreboard players set @s ff_day1_best 0
+scoreboard players set @s ff_day2_best 0
+scoreboard players set @s ff_day3_best 0
+scoreboard players set @s ff_day4_best 0
+scoreboard players set @s ff_day5_best 0
+scoreboard players set @s ff_day6_best 0
+scoreboard players set @s ff_day7_best 0
+scoreboard players set @s ff_day8_best 0
+scoreboard players set @s ff_day9_best 0
+scoreboard players set @s ff_day10_best 0
