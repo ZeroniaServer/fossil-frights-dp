@@ -1,0 +1,26 @@
+scoreboard players set $tasks_completed ff_speedrun_live 0
+scoreboard players set $tasks_seen_day ff_speedrun_live 0
+scoreboard players set $tasks_pending ff_speedrun_live 0
+scoreboard players set $day_final_index ff_speedrun_live 0
+scoreboard players set $target_index ff_speedrun_live 1
+scoreboard players set $target_type ff_speedrun_live 0
+scoreboard players set $target_ticks ff_speedrun_live 0
+scoreboard players set $target_available ff_speedrun_live 0
+scoreboard players set $capture_baseline ff_speedrun_live 0
+scoreboard players set $capture_available ff_speedrun_live 0
+scoreboard players set $result_delta ff_speedrun_live 0
+scoreboard players set $result_available ff_speedrun_live 0
+scoreboard players set $result_hold ff_speedrun_live 0
+scoreboard players set $display_delta ff_speedrun_live 0
+scoreboard players set $display_available ff_speedrun_live 0
+scoreboard players set $delta_abs ff_speedrun_live 0
+scoreboard players set $delta_minutes ff_speedrun_live 0
+scoreboard players set $delta_seconds ff_speedrun_live 0
+scoreboard players set $delta_centis ff_speedrun_live 0
+scoreboard players set $delta_min_tens ff_speedrun_live 0
+scoreboard players set $delta_min_ones ff_speedrun_live 0
+scoreboard players set $delta_sec_tens ff_speedrun_live 0
+scoreboard players set $delta_sec_ones ff_speedrun_live 0
+scoreboard players set $delta_centi_tens ff_speedrun_live 0
+scoreboard players set $delta_centi_ones ff_speedrun_live 0
+data modify storage fossil_frights:speedrun runtime set value {task:0,day:0,target:1,type:0}

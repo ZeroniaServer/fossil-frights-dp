@@ -6,6 +6,7 @@ execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:messages/error/final_day_reached
 execute if score $day_current ff_day matches 10.. run return 0
 execute if score $day_current ff_day matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
+execute if score $day_current ff_day matches 1..9 run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/capture_button
 scoreboard players add $day_current ff_day 1
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 scoreboard players set $day_timer ff_day 0
@@ -22,6 +23,7 @@ clear @a[team=ff_guard] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]
 function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:tasks/encoder/start_day
+function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/prepare_day
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/locked_door/clear

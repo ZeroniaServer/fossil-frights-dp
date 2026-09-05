@@ -14,6 +14,7 @@ scoreboard players set @s ff_day7_best 0
 scoreboard players set @s ff_day8_best 0
 scoreboard players set @s ff_day9_best 0
 scoreboard players set @s ff_day10_best 0
+function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/reset_bests
 scoreboard players set @s ff_parkour_best 0
 scoreboard players set @s ff_temple_run_best 0
 scoreboard players set @s ff_ant_score 0

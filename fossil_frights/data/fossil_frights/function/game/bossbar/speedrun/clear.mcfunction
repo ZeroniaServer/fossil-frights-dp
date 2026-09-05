@@ -1,0 +1,6 @@
+bossbar set fossil_frights:speedrun_timer visible false
+bossbar set fossil_frights:speedrun_timer players
+bossbar remove fossil_frights:speedrun_timer
+bossbar set fossil_frights:speedrun_delta visible false
+bossbar set fossil_frights:speedrun_delta players
+bossbar remove fossil_frights:speedrun_delta

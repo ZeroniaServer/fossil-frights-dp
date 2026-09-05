@@ -3,6 +3,7 @@ kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target]
 kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
 scoreboard players set $task_selected_total ff_task_state 0
 scoreboard players set $task_completed_total ff_task_state 0
+scoreboard players set $tasks_seen_day ff_speedrun_live 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
