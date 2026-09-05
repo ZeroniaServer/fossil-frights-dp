@@ -2,7 +2,7 @@
   "function": "minecraft:set_custom_data",
   "tag": {
     "ff_invisimask": {
-      "confetti_cannon": true
+      "confetti_cannon": false
     }
   }
 }
