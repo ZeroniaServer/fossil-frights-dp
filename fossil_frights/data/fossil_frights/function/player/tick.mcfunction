@@ -33,6 +33,7 @@ scoreboard players enable @s parkour
 scoreboard players enable @s join_guard
 scoreboard players enable @s join_thief
 scoreboard players enable @s spawn
+scoreboard players enable @s speedruntask
 scoreboard players enable @s ff_invite_accept
 execute if score @s ff_settings_confirm matches 1 run function fossil_frights:game/start_room/settings/gamemode/frights/apply
 execute if score @s ff_settings_confirm matches 2 run function fossil_frights:game/start_room/settings/gamemode/party/request
@@ -122,6 +123,12 @@ execute if score @s join_thief matches 1.. run scoreboard players set @s join_th
 execute if score @s spawn matches 1.. run function fossil_frights:command/spawn
 execute if score @s spawn matches 1.. run scoreboard players enable @s spawn
 execute if score @s spawn matches 1.. run scoreboard players set @s spawn 0
+execute if score @s speedruntask matches ..-1 run function fossil_frights:command/speedruntask
+execute if score @s speedruntask matches 1.. run function fossil_frights:command/speedruntask
+execute if score @s speedruntask matches ..-1 run scoreboard players enable @s speedruntask
+execute if score @s speedruntask matches 1.. run scoreboard players enable @s speedruntask
+execute if score @s speedruntask matches ..-1 run scoreboard players set @s speedruntask 0
+execute if score @s speedruntask matches 1.. run scoreboard players set @s speedruntask 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active

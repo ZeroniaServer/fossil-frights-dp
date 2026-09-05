@@ -80,6 +80,7 @@ scoreboard objectives add parkour trigger
 scoreboard objectives add join_guard trigger
 scoreboard objectives add join_thief trigger
 scoreboard objectives add spawn trigger
+scoreboard objectives add speedruntask trigger
 scoreboard objectives add ff_lootbook trigger
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy

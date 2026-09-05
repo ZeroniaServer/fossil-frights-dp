@@ -1,0 +1,2 @@
+function fossil_frights:command/speedruntask/clear
+function fossil_frights:messages/speedrun/task_none

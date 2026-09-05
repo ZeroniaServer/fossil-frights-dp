@@ -1,0 +1,1 @@
+function fossil_frights:messages/speedrun/task_usage
