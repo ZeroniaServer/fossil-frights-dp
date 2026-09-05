@@ -1,6 +1,6 @@
-execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer players @a[predicate=fossil_frights:player/is_playing]
+execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer players @a
 execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_timer visible true
-execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_delta players @a[predicate=fossil_frights:player/is_playing]
+execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_delta players @a
 execute if predicate fossil_frights:game_state/game_running if score $timer_started ff_day matches 1 run bossbar set fossil_frights:speedrun_delta visible true
 execute if predicate fossil_frights:game_state/game_running unless score $settings_speedrun_show ff_game_state matches 1 run function fossil_frights:game/bossbar/speedrun/timer/clear_name
 execute if predicate fossil_frights:game_state/game_running unless score $timer_started ff_day matches 1 run function fossil_frights:game/bossbar/speedrun/timer/clear_name

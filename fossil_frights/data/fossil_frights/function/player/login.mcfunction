@@ -1,5 +1,7 @@
 execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:bossbar players @a
 execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:hazards players @a
+execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:speedrun_timer players @a
+execute if predicate fossil_frights:game_state/game_running run bossbar set fossil_frights:speedrun_delta players @a
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given
