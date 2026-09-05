@@ -15,7 +15,7 @@
                   "translate": "ff.item.misplaced_scissors",
                   "color": "red"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/rare/giant_scissors",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/rare/misplaced_scissors",
                 "minecraft:custom_data": {
                   "itemID": "misplaced_scissors",
                   "ff_heist_loot": true
