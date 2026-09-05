@@ -11,17 +11,14 @@
       ],
       "functions": [
         {
-          "function": "minecraft:set_components",
-          "components": {
-            "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask/enderman"
-          }
-        },
-        {
-          "function": "minecraft:set_custom_data",
-          "tag": {
-            "ff_invisimask": {
-              "variant": "enderman"
-            }
+          "function": "minecraft:set_custom_model_data",
+          "strings": {
+            "values": [
+              "enderman"
+            ],
+            "mode": "replace_section",
+            "offset": 0,
+            "size": 1
           }
         }
       ]
