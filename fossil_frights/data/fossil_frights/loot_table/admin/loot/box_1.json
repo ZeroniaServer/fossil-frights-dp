@@ -38,7 +38,7 @@
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/golden_sword" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/portal_core" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/spyglass" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/rare/giant_scissors" },
+                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/rare/misplaced_scissors" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/t_rex_skull" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/velociraptor_statue" },
                 { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/vault" },

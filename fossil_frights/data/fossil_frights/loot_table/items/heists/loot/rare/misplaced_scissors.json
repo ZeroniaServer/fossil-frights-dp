@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.misplaced_scissors",
-                  "color": "red",
-                  "italic": false
+                  "color": "red"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/loot/rare/giant_scissors",
                 "minecraft:custom_data": {
