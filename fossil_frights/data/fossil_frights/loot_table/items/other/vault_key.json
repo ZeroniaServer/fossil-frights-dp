@@ -18,8 +18,7 @@
                 "minecraft:item_model": "minecraft:ominous_trial_key",
                 "minecraft:custom_data": {
                   "itemID": "vault_key",
-                  "ff_vault_key": true,
-                  "ff_heist_loot": true
+                  "ff_vault_key": true
                 }
               }
             }
