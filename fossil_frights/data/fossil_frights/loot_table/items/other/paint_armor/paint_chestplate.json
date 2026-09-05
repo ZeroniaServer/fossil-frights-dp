@@ -19,7 +19,8 @@
                 "minecraft:equippable": {
                   "slot": "chest",
                   "asset_id": "fossil-frights:paint",
-                  "equip_sound": "minecraft:intentionally_empty"
+                  "equip_sound": "minecraft:intentionally_empty",
+                  "camera_overlay": "fossil-frights:overlays/paint"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1

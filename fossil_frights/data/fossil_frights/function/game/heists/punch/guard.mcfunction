@@ -11,10 +11,7 @@ effect give @s minecraft:invisibility 8 0 true
 execute if score @s ff_heist_stolen_keys matches 5.. if score @s ff_heist_keyed_loot_captured_round matches ..199 run effect give @s minecraft:speed 10 1 true
 execute unless score @s ff_heist_stolen_keys matches 5.. run effect give @s minecraft:speed 10 0 true
 execute if score @s ff_heist_stolen_keys matches 5.. unless score @s ff_heist_keyed_loot_captured_round matches ..199 run effect give @s minecraft:speed 10 0 true
-execute if score @s ff_heist_paint_fx matches 1.. run tag @s remove ff_paint_overlay
-execute if score @s ff_heist_paint_fx matches 1.. run item modify entity @s armor.head fossil_frights:game/heists/paint_overlay/show_hidden
-execute if score @s ff_heist_paint_fx matches 1.. run tag @s add ff_paint_overlay
-execute unless score @s ff_heist_paint_fx matches 1.. run item modify entity @s armor.head fossil_frights:game/heists/invisimask/hide
+item modify entity @s armor.head fossil_frights:game/heists/invisimask/hide
 function fossil_frights:game/heists/items/reward_key
 function fossil_frights:game/rewards/give_dinocoin
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.8 1.8
