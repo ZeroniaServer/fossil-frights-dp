@@ -49,6 +49,7 @@
                 "minecraft:item_model": "fossil-frights:items/heists/gear/thief/invisimask",
                 "minecraft:custom_model_data": {
                   "strings": [
+                    "",
                     ""
                   ]
                 },

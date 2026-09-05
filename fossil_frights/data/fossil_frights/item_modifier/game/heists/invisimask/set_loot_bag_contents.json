@@ -1,0 +1,37 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/t_rex_skull"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["t_rex_skull"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/velociraptor_statue"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["velociraptor_statue"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/vault"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["vault"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/biplane"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["biplane"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/raptor_skull"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["raptor_skull"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/crab"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["crab"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/warden"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["warden"],"mode":"replace_section","offset":1,"size":1}
+    },
+    {
+      "conditions": [{"condition":"minecraft:reference","name":"fossil_frights:player/inventory/treasure_chest"}],
+      "function":"minecraft:set_custom_model_data","strings":{"values":["treasure_chest"],"mode":"replace_section","offset":1,"size":1}
+    }
+  ]
+}
