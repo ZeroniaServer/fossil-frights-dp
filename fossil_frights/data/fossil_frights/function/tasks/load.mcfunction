@@ -282,6 +282,7 @@ scoreboard players set $holy_grail_avail ff_task_state 1
 scoreboard players set $holy_grail_sel ff_task_state 0
 scoreboard players set $holy_grail_done ff_task_state 0
 scoreboard players set $holy_grail_pick ff_task_state 0
+scoreboard players set $holy_grail_reward ff_task_state 0
 scoreboard players set #line_holy_grail ff_task_state 10
 scoreboard players set $hoveraptor_avail ff_task_state 1
 scoreboard players set $hoveraptor_sel ff_task_state 0
