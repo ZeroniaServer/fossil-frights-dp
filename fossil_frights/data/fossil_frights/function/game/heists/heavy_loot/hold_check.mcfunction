@@ -17,4 +17,4 @@ execute if score $holding_heavy ff_game_state matches 1 if entity @s[tag=ff_ice_
 execute if score $holding_heavy ff_game_state matches 1 run item modify entity @s armor.head fossil_frights:game/heists/invisimask/add_loot_bag
 execute if score $holding_heavy ff_game_state matches 0 run attribute @s minecraft:movement_speed base reset
 execute if score $holding_heavy ff_game_state matches 0 if entity @s[tag=!ff_ice_frozen] run attribute @s minecraft:jump_strength base reset
-execute if score $holding_heavy ff_game_state matches 0 if items entity @s armor.head *[minecraft:custom_data~{ff_heavy_loot_bag:true}] run item modify entity @s armor.head fossil_frights:game/heists/invisimask/remove_loot_bag
+execute if score $holding_heavy ff_game_state matches 0 if items entity @s armor.head *[minecraft:custom_data~{ff_invisimask:{loot_bag:true}}] run item modify entity @s armor.head fossil_frights:game/heists/invisimask/remove_loot_bag

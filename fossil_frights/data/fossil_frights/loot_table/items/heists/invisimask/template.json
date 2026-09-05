@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.invisimask",
+                  "color": "white"
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.invisimask.description.1",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.2",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      8
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.3",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      20
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.invisimask.description.4",
+                    "color": "red",
+                    "italic": false,
+                    "with": [
+                      20
+                    ]
+                  }
+                ],
+                "!minecraft:item_model": {},
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:enchantments": {
+                  "minecraft:binding_curse": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:custom_data": {
+                  "itemID": "invisimask",
+                  "ff_invisimask": {},
+                  "ff_prevent_drop": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
