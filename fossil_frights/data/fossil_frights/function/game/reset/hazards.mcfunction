@@ -24,4 +24,5 @@ function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:hazard/floods/stop
 function fossil_frights:hazard/security/stop
 function fossil_frights:hazard/curse/stop
+function fossil_frights:hazard/lava/map/update
 function fossil_frights:game/bossbar/update_hazards

@@ -12,6 +12,7 @@ function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/party/add_current_if_missing
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
+function fossil_frights:hazard/lava/map/update
 scoreboard players set $run_multiplayer ff_game_state 0
 function fossil_frights:join/join_pads/setup
 scoreboard players set $heist_button_lock ff_game_state 40
