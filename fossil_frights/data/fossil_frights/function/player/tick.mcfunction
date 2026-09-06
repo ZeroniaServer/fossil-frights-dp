@@ -141,6 +141,7 @@ execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if predicate foss
 function fossil_frights:player/effects/tick
 execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/ice_cannon/player_tick
 execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/trap/player_tick
+execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/guard_tick
 execute if entity @s[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/thief_tick
 function fossil_frights:lobby_games/parkour/player_tick
 function fossil_frights:lobby_games/temple_run/player_tick

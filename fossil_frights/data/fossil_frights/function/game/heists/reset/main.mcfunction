@@ -32,6 +32,7 @@ effect clear @a[team=ff_thief] minecraft:invisibility
 effect clear @a[team=ff_thief] minecraft:speed
 effect clear @a[team=ff_thief] minecraft:night_vision
 effect clear @a[team=ff_thief] minecraft:slowness
+effect clear @a[tag=ff_heist_guard_sneak_glowing] minecraft:glowing
 execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
@@ -57,6 +58,8 @@ scoreboard players set @a ff_heist_killer_uuid_3 0
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set @a ff_heist_paint_fx 0
+scoreboard players set @a ff_heist_guard_sneak_ticks 0
+scoreboard players set @a ff_heist_guard_unsneak_ticks 0
 scoreboard players set @a ff_trap_input_delay 0
 scoreboard players set @a ff_trap_warn 0
 scoreboard players set @a ff_trap_invalid 0
@@ -82,6 +85,7 @@ scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
+tag @a remove ff_heist_guard_sneak_glowing
 tag @a remove ff_ice_frozen
 execute as @a[tag=ff_pteranadon_jump_reduced] run function fossil_frights:game/heists/jump_boost/restore
 execute as @a run function fossil_frights:items/heists/ice_cannon/overlay_hide

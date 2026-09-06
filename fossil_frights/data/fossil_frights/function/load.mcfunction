@@ -230,6 +230,8 @@ scoreboard objectives add ff_button_unpress_timestamp dummy
 scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard objectives add ff_heist_paint_fx dummy
+scoreboard objectives add ff_heist_guard_sneak_ticks dummy
+scoreboard objectives add ff_heist_guard_unsneak_ticks dummy
 scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
 scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy

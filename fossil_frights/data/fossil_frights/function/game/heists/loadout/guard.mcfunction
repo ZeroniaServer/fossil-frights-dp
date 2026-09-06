@@ -16,6 +16,8 @@ scoreboard players set @s ff_trap_jelly_phase 2
 scoreboard players set @s ff_trap_jelly_timer 50
 scoreboard players set @s ff_trap_explosive_phase 2
 scoreboard players set @s ff_trap_explosive_timer 50
+scoreboard players set @s ff_heist_guard_sneak_ticks 0
+scoreboard players set @s ff_heist_guard_unsneak_ticks 0
 function fossil_frights:items/heists/ice_cannon/equip_guard_hat
 loot replace entity @s container.0 loot fossil_frights:items/heists/night_stick
 loot replace entity @s container.1 loot fossil_frights:items/heists/ice_cannon_remote

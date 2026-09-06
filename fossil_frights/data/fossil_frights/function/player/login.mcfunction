@@ -65,6 +65,8 @@ execute unless score @s ff_ant_sneak_seen matches -2147483648..2147483647 run sc
 execute unless score @s ff_ant_sneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_sneak_ticks 0
 execute unless score @s ff_ant_unsneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_unsneak_ticks 0
 execute unless score @s ff_ant_blind_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_blind_ticks 0
+scoreboard players add @s ff_heist_guard_sneak_ticks 0
+scoreboard players add @s ff_heist_guard_unsneak_ticks 0
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets
