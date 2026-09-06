@@ -35,7 +35,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/ice_c
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/trap_glow",page:"page_2",slot:2}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/camera_remote",page:"page_2",slot:3}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot_book",page:"page_2",slot:4}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/invisimask",page:"page_2",slot:9}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/invisimask/random",page:"page_2",slot:9}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/hazard_cookie",page:"page_2",slot:10}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/other/dinocoin",page:"page_2",slot:11}
 item modify entity @e[type=minecraft:chest_minecart,tag=ff_admin_loot_page_2,distance=..2,limit=1] container.11 fossil_frights:admin/dinocoin_stack
