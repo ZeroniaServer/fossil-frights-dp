@@ -15,12 +15,7 @@
                   "translate": "ff.item.t_rex_skull",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:diamond",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/loot_bag",
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "t_rex_skull",
