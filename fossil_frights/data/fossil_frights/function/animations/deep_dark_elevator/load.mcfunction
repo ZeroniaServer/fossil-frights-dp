@@ -1,4 +1,4 @@
 scoreboard objectives add ff_deep_dark_elevator dummy
 scoreboard players set $max_height_from_base ff_deep_dark_elevator 9
-scoreboard players set $duration_ticks ff_deep_dark_elevator 50
+scoreboard players set $duration_ticks ff_deep_dark_elevator 30
 function fossil_frights:animations/deep_dark_elevator/reset
