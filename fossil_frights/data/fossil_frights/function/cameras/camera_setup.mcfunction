@@ -9,6 +9,7 @@ summon cave_spider -3.5 74.7 22.5 {active_effects:[{id:"minecraft:invisibility",
 summon cave_spider -25.5 98.2 59.5 {active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],Silent:true,NoAI:true,NoGravity:true,PersistenceRequired:true,Tags:["security_camera","security_camera_8"],Team:"ff_security_camera",Invulnerable:true,Rotation:[-150,20],attributes:[{id:"scale",base:0.0625}]}
 summon cave_spider 0.5 100.2 10.5 {active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],Silent:true,NoAI:true,NoGravity:true,PersistenceRequired:true,Tags:["security_camera","security_camera_9"],Team:"ff_security_camera",Invulnerable:true,Rotation:[0,40],attributes:[{id:"scale",base:0.0625}]}
 summon cave_spider 50.5 94.2 32.5 {active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],Silent:true,NoAI:true,NoGravity:true,PersistenceRequired:true,Tags:["security_camera","security_camera_10"],Team:"ff_security_camera",Invulnerable:true,Rotation:[0,30],attributes:[{id:"scale",base:0.0625}]}
+summon cave_spider 15 108 49 {active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],Silent:true,NoAI:true,NoGravity:true,PersistenceRequired:true,Tags:["security_camera","security_camera_11"],Team:"ff_security_camera",Invulnerable:true,Rotation:[180,10],attributes:[{id:"scale",base:0.0625}]}
 scoreboard players set @e[type=cave_spider,tag=security_camera_10] ff_security_camera 1
 scoreboard players set @e[type=cave_spider,tag=security_camera_6] ff_security_camera 2
 scoreboard players set @e[type=cave_spider,tag=security_camera_2] ff_security_camera 3
@@ -19,5 +20,6 @@ scoreboard players set @e[type=cave_spider,tag=security_camera_7] ff_security_ca
 scoreboard players set @e[type=cave_spider,tag=security_camera_5] ff_security_camera 8
 scoreboard players set @e[type=cave_spider,tag=security_camera_4] ff_security_camera 9
 scoreboard players set @e[type=cave_spider,tag=security_camera_8] ff_security_camera 10
+scoreboard players set @e[type=cave_spider,tag=security_camera_11] ff_security_camera 11
 team join ff_security_camera @e[type=cave_spider,tag=security_camera]
 execute as @e[type=cave_spider,tag=security_camera] at @s run scoreboard players operation @n[distance=..5,type=item_display,tag=ff_security_camera_model] ff_security_camera = @s ff_security_camera

@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:item_display,tag=ff_security_camera_model] run function fossil_frights:cameras/update_camera_models/check
+execute as @e[tag=ff_security_camera_model] at @s as @e[type=minecraft:item_display,distance=..2] if items entity @s contents *[minecraft:item_model="fossil-frights:display/general/cameras/security_camera"] run function fossil_frights:cameras/update_camera_models/check
