@@ -18,7 +18,8 @@
                 "minecraft:item_model": "fossil-frights:items/frights/security_guard_hat",
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:custom_data": {
                   "itemID": "security_guard_hat",
