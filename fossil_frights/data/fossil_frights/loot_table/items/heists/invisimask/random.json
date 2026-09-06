@@ -5,6 +5,14 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/blaze"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/breeze"
+        },
+        {
+          "type": "minecraft:loot_table",
           "value": "fossil_frights:items/heists/invisimask/creeper"
         },
         {
@@ -13,7 +21,23 @@
         },
         {
           "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/guardian"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/piglin"
+        },
+        {
+          "type": "minecraft:loot_table",
           "value": "fossil_frights:items/heists/invisimask/skeleton"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/slime"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/spider"
         },
         {
           "type": "minecraft:loot_table",
