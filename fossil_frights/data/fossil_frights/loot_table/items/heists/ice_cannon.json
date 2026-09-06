@@ -17,9 +17,8 @@
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon",
                 "minecraft:equippable": {
-                  "camera_overlay": "minecraft:misc/pumpkinblur",
-                  "equip_sound": "minecraft:intentionally_empty",
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
