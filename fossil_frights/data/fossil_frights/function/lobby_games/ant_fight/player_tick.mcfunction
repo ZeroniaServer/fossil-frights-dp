@@ -20,6 +20,7 @@ execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_time
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo
 execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo_shown_until_timestamp
 execute if entity @s[tag=ff_ant_fight] unless score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run title @s actionbar [{"translate":"ff.lobby.ant_fight.ant_score","color":"#71de75","with":[{"score":{"name":"@s","objective":"ff_ant_score"},"color":"white"}]}]
+execute if entity @s[tag=ff_ant_fight] run scoreboard players display numberformat @s ff_ant_score_below_name fixed [" ",{color:"dark_green",translate:"ff.lobby.ant_fight.below_name",font:"fossil-frights:small_caps",with:[{color:"green",score:{name:"@s",objective:"ff_ant_score"}}]}]
 execute if entity @s[tag=ff_ant_fight] run return 0
 execute unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] if entity @s[tag=ff_ant_lobby_blind] run function fossil_frights:lobby_games/ant_fight/lobby_sneak/reset
 execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -36.5 76 104.5 if entity @s[distance=..24] run function fossil_frights:lobby_games/ant_fight/lobby_sneak_tick

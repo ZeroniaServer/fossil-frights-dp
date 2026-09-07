@@ -84,6 +84,7 @@ tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
+attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight
 tag @s remove ff_dropped_infinileaf
 tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
@@ -151,6 +152,7 @@ item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s minecraft:waypoint_receive_range base set 0
+attribute @s minecraft:below_name_distance base set 0
 title @s actionbar ""
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0

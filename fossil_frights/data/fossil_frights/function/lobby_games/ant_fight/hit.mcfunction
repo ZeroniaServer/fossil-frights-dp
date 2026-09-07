@@ -6,6 +6,7 @@ tag @s remove ff_dropped_infinileaf
 function fossil_frights:lobby_games/ant_fight/lobby_sneak/reset
 scoreboard players set @s ff_ant_fight 0
 attribute @s minecraft:scale base reset
+attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight
 scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 clear @s minecraft:snowball[minecraft:custom_data~{itemID:"infinileaf"}]
 kill @e[type=minecraft:item,distance=..8,predicate=fossil_frights:entity/contents/infinileaf]
