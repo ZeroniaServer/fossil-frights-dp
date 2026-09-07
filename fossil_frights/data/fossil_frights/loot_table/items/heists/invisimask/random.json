@@ -5,43 +5,43 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/blaze"
+          "value": "fossil_frights:items/heists/invisimask/variant/blaze"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/breeze"
+          "value": "fossil_frights:items/heists/invisimask/variant/breeze"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/creeper"
+          "value": "fossil_frights:items/heists/invisimask/variant/creeper"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/enderman"
+          "value": "fossil_frights:items/heists/invisimask/variant/enderman"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/guardian"
+          "value": "fossil_frights:items/heists/invisimask/variant/guardian"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/piglin"
+          "value": "fossil_frights:items/heists/invisimask/variant/piglin"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/skeleton"
+          "value": "fossil_frights:items/heists/invisimask/variant/skeleton"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/slime"
+          "value": "fossil_frights:items/heists/invisimask/variant/slime"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/spider"
+          "value": "fossil_frights:items/heists/invisimask/variant/spider"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/heists/invisimask/zombie"
+          "value": "fossil_frights:items/heists/invisimask/variant/zombie"
         }
       ]
     }
