@@ -1,21 +1,35 @@
-execute if score @s ff_bat_bug_bar matches 0 run title @s actionbar [{"text":"||||||||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 20 run title @s actionbar [{"text":"||||||||||||||||||||","color":"red"}]
-execute if score @s ff_bat_bug_bar matches 19 run title @s actionbar [{"text":"|||||||||||||||||||","color":"red"},{"text":"|","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 18 run title @s actionbar [{"text":"||||||||||||||||||","color":"red"},{"text":"||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 17 run title @s actionbar [{"text":"|||||||||||||||||","color":"red"},{"text":"|||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 16 run title @s actionbar [{"text":"||||||||||||||||","color":"red"},{"text":"||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 15 run title @s actionbar [{"text":"|||||||||||||||","color":"red"},{"text":"|||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 14 run title @s actionbar [{"text":"||||||||||||||","color":"red"},{"text":"||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 13 run title @s actionbar [{"text":"|||||||||||||","color":"red"},{"text":"|||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 12 run title @s actionbar [{"text":"||||||||||||","color":"red"},{"text":"||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 11 run title @s actionbar [{"text":"|||||||||||","color":"red"},{"text":"|||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 10 run title @s actionbar [{"text":"||||||||||","color":"red"},{"text":"||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 9 run title @s actionbar [{"text":"|||||||||","color":"red"},{"text":"|||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 8 run title @s actionbar [{"text":"||||||||","color":"red"},{"text":"||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 7 run title @s actionbar [{"text":"|||||||","color":"red"},{"text":"|||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 6 run title @s actionbar [{"text":"||||||","color":"red"},{"text":"||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 5 run title @s actionbar [{"text":"|||||","color":"red"},{"text":"|||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 4 run title @s actionbar [{"text":"||||","color":"red"},{"text":"||||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 3 run title @s actionbar [{"text":"|||","color":"red"},{"text":"|||||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 2 run title @s actionbar [{"text":"||","color":"red"},{"text":"||||||||||||||||||","color":"white"}]
-execute if score @s ff_bat_bug_bar matches 1 run title @s actionbar [{"text":"|","color":"red"},{"text":"|||||||||||||||||||","color":"white"}]
+execute if score @s ff_bat_bug_bar matches 0 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue580"
+execute if score @s ff_bat_bug_bar matches 1 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue581"
+execute if score @s ff_bat_bug_bar matches 2 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue582"
+execute if score @s ff_bat_bug_bar matches 3 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue583"
+execute if score @s ff_bat_bug_bar matches 4 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue584"
+execute if score @s ff_bat_bug_bar matches 5 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue585"
+execute if score @s ff_bat_bug_bar matches 6 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue586"
+execute if score @s ff_bat_bug_bar matches 7 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue587"
+execute if score @s ff_bat_bug_bar matches 8 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue588"
+execute if score @s ff_bat_bug_bar matches 9 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue589"
+execute if score @s ff_bat_bug_bar matches 10 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58a"
+execute if score @s ff_bat_bug_bar matches 11 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58b"
+execute if score @s ff_bat_bug_bar matches 12 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58c"
+execute if score @s ff_bat_bug_bar matches 13 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58d"
+execute if score @s ff_bat_bug_bar matches 14 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58e"
+execute if score @s ff_bat_bug_bar matches 15 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue58f"
+execute if score @s ff_bat_bug_bar matches 16 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue590"
+execute if score @s ff_bat_bug_bar matches 17 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue591"
+execute if score @s ff_bat_bug_bar matches 18 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue592"
+execute if score @s ff_bat_bug_bar matches 19 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue593"
+execute if score @s ff_bat_bug_bar matches 20 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue594"
+execute if score @s ff_bat_bug_bar matches 21 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue595"
+execute if score @s ff_bat_bug_bar matches 22 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue596"
+execute if score @s ff_bat_bug_bar matches 23 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue597"
+execute if score @s ff_bat_bug_bar matches 24 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue598"
+execute if score @s ff_bat_bug_bar matches 25 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue599"
+execute if score @s ff_bat_bug_bar matches 26 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59a"
+execute if score @s ff_bat_bug_bar matches 27 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59b"
+execute if score @s ff_bat_bug_bar matches 28 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59c"
+execute if score @s ff_bat_bug_bar matches 29 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59d"
+execute if score @s ff_bat_bug_bar matches 30 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59e"
+execute if score @s ff_bat_bug_bar matches 31 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59f"
+execute if score @s ff_bat_bug_bar matches 32 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue5a0"
+execute if score @s ff_bat_bug_bar matches 33 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue5a1"
+function fossil_frights:tasks/hard/feed_the_bats/show_timer_bar_macro with storage fossil_frights:lady_bug_ui

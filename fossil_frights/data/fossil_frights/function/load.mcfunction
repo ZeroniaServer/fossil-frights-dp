@@ -264,6 +264,7 @@ scoreboard players set #20 ff_constant 20
 scoreboard players set #31 ff_constant 31
 scoreboard players set #ticks_per_second ff_constant 20
 scoreboard players set #32 ff_constant 32
+scoreboard players set #34 ff_constant 34
 scoreboard players set #60 ff_constant 60
 scoreboard players set #80 ff_constant 80
 scoreboard players set #100 ff_constant 100
