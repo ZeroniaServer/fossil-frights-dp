@@ -14,6 +14,8 @@ function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:game/reset/hazards
 function fossil_frights:tasks/reset
+scoreboard players set $ancient_portal_timer ff_task_state 0
+execute as @e[type=#fossil_frights:display_entities,tag=ff_ancient_portal] run data modify entity @s view_range set value 0
 function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
 function fossil_frights:tasks/final/final_task/close_lab_door
