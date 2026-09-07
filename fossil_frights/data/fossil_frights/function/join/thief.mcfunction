@@ -8,6 +8,7 @@ function fossil_frights:game/heists/setup/current_player
 function fossil_frights:join/lobby
 team join ff_thief @s
 scoreboard players set @s ff_heist_stolen_keys 0
+function fossil_frights:join/thief/assign_invisimask
 function fossil_frights:game/heists/loadout/thief
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}

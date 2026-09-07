@@ -1,0 +1,10 @@
+scoreboard players set #blaze ff_invisimask_variant 1
+scoreboard players set #breeze ff_invisimask_variant 1
+scoreboard players set #creeper ff_invisimask_variant 1
+scoreboard players set #enderman ff_invisimask_variant 1
+scoreboard players set #guardian ff_invisimask_variant 1
+scoreboard players set #piglin ff_invisimask_variant 1
+scoreboard players set #skeleton ff_invisimask_variant 1
+scoreboard players set #slime ff_invisimask_variant 1
+scoreboard players set #spider ff_invisimask_variant 1
+scoreboard players set #zombie ff_invisimask_variant 1
