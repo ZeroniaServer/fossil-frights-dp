@@ -2,7 +2,7 @@ execute unless score $a_c_reset_sel ff_task_state matches 1 run return 0
 execute if score $a_c_reset_done ff_task_state matches 1 run return 0
 execute if score $a_c_btn_1_pressed ff_task_state matches 15 run return 0
 scoreboard players set $a_c_btn_1_pressed ff_task_state 15
-data modify storage fossil_frights:a_c_reset display.c1 set value "#55FFFF"
+data modify storage fossil_frights:a_c_reset display.c1 set value "\ue501"
 execute positioned -9 105 58 run playsound minecraft:entity.player.hurt_freeze block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.7 1.4
 execute positioned -9 105 58 run playsound minecraft:block.powder_snow.break block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.6 1.2
 execute positioned -9 105 58 run particle minecraft:snowflake ~ ~ ~ 0.3 0.3 0.3 0.05 15 force
