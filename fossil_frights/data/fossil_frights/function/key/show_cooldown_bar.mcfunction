@@ -1,21 +1,32 @@
-execute if score @s ff_key_bar matches 0 run title @s actionbar [{"text":"||||||||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 20 run title @s actionbar [{"text":"||||||||||||||||||||","color":"gold"}]
-execute if score @s ff_key_bar matches 19 run title @s actionbar [{"text":"|||||||||||||||||||","color":"gold"},{"text":"|","color":"white"}]
-execute if score @s ff_key_bar matches 18 run title @s actionbar [{"text":"||||||||||||||||||","color":"gold"},{"text":"||","color":"white"}]
-execute if score @s ff_key_bar matches 17 run title @s actionbar [{"text":"|||||||||||||||||","color":"gold"},{"text":"|||","color":"white"}]
-execute if score @s ff_key_bar matches 16 run title @s actionbar [{"text":"||||||||||||||||","color":"gold"},{"text":"||||","color":"white"}]
-execute if score @s ff_key_bar matches 15 run title @s actionbar [{"text":"|||||||||||||||","color":"gold"},{"text":"|||||","color":"white"}]
-execute if score @s ff_key_bar matches 14 run title @s actionbar [{"text":"||||||||||||||","color":"gold"},{"text":"||||||","color":"white"}]
-execute if score @s ff_key_bar matches 13 run title @s actionbar [{"text":"|||||||||||||","color":"gold"},{"text":"|||||||","color":"white"}]
-execute if score @s ff_key_bar matches 12 run title @s actionbar [{"text":"||||||||||||","color":"gold"},{"text":"||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 11 run title @s actionbar [{"text":"|||||||||||","color":"gold"},{"text":"|||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 10 run title @s actionbar [{"text":"||||||||||","color":"gold"},{"text":"||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 9 run title @s actionbar [{"text":"|||||||||","color":"gold"},{"text":"|||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 8 run title @s actionbar [{"text":"||||||||","color":"gold"},{"text":"||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 7 run title @s actionbar [{"text":"|||||||","color":"gold"},{"text":"|||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 6 run title @s actionbar [{"text":"||||||","color":"gold"},{"text":"||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 5 run title @s actionbar [{"text":"|||||","color":"gold"},{"text":"|||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 4 run title @s actionbar [{"text":"||||","color":"gold"},{"text":"||||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 3 run title @s actionbar [{"text":"|||","color":"gold"},{"text":"|||||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 2 run title @s actionbar [{"text":"||","color":"gold"},{"text":"||||||||||||||||||","color":"white"}]
-execute if score @s ff_key_bar matches 1 run title @s actionbar [{"text":"|","color":"gold"},{"text":"|||||||||||||||||||","color":"white"}]
+execute if score @s ff_key_bar matches 0 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue520"
+execute if score @s ff_key_bar matches 1 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue521"
+execute if score @s ff_key_bar matches 2 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue522"
+execute if score @s ff_key_bar matches 3 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue523"
+execute if score @s ff_key_bar matches 4 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue524"
+execute if score @s ff_key_bar matches 5 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue525"
+execute if score @s ff_key_bar matches 6 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue526"
+execute if score @s ff_key_bar matches 7 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue527"
+execute if score @s ff_key_bar matches 8 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue528"
+execute if score @s ff_key_bar matches 9 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue529"
+execute if score @s ff_key_bar matches 10 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52a"
+execute if score @s ff_key_bar matches 11 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52b"
+execute if score @s ff_key_bar matches 12 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52c"
+execute if score @s ff_key_bar matches 13 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52d"
+execute if score @s ff_key_bar matches 14 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52e"
+execute if score @s ff_key_bar matches 15 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue52f"
+execute if score @s ff_key_bar matches 16 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue530"
+execute if score @s ff_key_bar matches 17 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue531"
+execute if score @s ff_key_bar matches 18 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue532"
+execute if score @s ff_key_bar matches 19 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue533"
+execute if score @s ff_key_bar matches 20 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue534"
+execute if score @s ff_key_bar matches 21 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue535"
+execute if score @s ff_key_bar matches 22 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue536"
+execute if score @s ff_key_bar matches 23 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue537"
+execute if score @s ff_key_bar matches 24 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue538"
+execute if score @s ff_key_bar matches 25 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue539"
+execute if score @s ff_key_bar matches 26 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53a"
+execute if score @s ff_key_bar matches 27 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53b"
+execute if score @s ff_key_bar matches 28 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53c"
+execute if score @s ff_key_bar matches 29 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53d"
+execute if score @s ff_key_bar matches 30 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53e"
+function fossil_frights:key/show_cooldown_bar_macro with storage fossil_frights:key_cooldown_ui

@@ -1,25 +1,36 @@
 scoreboard players operation @s ff_heist_punch_bar = #heist_punch_cooldown ff_heist
 scoreboard players operation @s ff_heist_punch_bar -= @s ff_heist_punch_cd
-scoreboard players operation @s ff_heist_punch_bar *= #heist_tick ff_heist
+scoreboard players operation @s ff_heist_punch_bar *= #31 ff_constant
 scoreboard players operation @s ff_heist_punch_bar /= #heist_punch_cooldown ff_heist
-execute if score @s ff_heist_punch_bar matches 0 run title @s actionbar [{"text":"||||||||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 20 run title @s actionbar [{"text":"||||||||||||||||||||","color":"gold"}]
-execute if score @s ff_heist_punch_bar matches 19 run title @s actionbar [{"text":"|||||||||||||||||||","color":"gold"},{"text":"|","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 18 run title @s actionbar [{"text":"||||||||||||||||||","color":"gold"},{"text":"||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 17 run title @s actionbar [{"text":"|||||||||||||||||","color":"gold"},{"text":"|||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 16 run title @s actionbar [{"text":"||||||||||||||||","color":"gold"},{"text":"||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 15 run title @s actionbar [{"text":"|||||||||||||||","color":"gold"},{"text":"|||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 14 run title @s actionbar [{"text":"||||||||||||||","color":"gold"},{"text":"||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 13 run title @s actionbar [{"text":"|||||||||||||","color":"gold"},{"text":"|||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 12 run title @s actionbar [{"text":"||||||||||||","color":"gold"},{"text":"||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 11 run title @s actionbar [{"text":"|||||||||||","color":"gold"},{"text":"|||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 10 run title @s actionbar [{"text":"||||||||||","color":"gold"},{"text":"||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 9 run title @s actionbar [{"text":"|||||||||","color":"gold"},{"text":"|||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 8 run title @s actionbar [{"text":"||||||||","color":"gold"},{"text":"||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 7 run title @s actionbar [{"text":"|||||||","color":"gold"},{"text":"|||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 6 run title @s actionbar [{"text":"||||||","color":"gold"},{"text":"||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 5 run title @s actionbar [{"text":"|||||","color":"gold"},{"text":"|||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 4 run title @s actionbar [{"text":"||||","color":"gold"},{"text":"||||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 3 run title @s actionbar [{"text":"|||","color":"gold"},{"text":"|||||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 2 run title @s actionbar [{"text":"||","color":"gold"},{"text":"||||||||||||||||||","color":"white"}]
-execute if score @s ff_heist_punch_bar matches 1 run title @s actionbar [{"text":"|","color":"gold"},{"text":"|||||||||||||||||||","color":"white"}]
+execute if score @s ff_heist_punch_bar matches 0 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue540"
+execute if score @s ff_heist_punch_bar matches 1 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue541"
+execute if score @s ff_heist_punch_bar matches 2 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue542"
+execute if score @s ff_heist_punch_bar matches 3 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue543"
+execute if score @s ff_heist_punch_bar matches 4 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue544"
+execute if score @s ff_heist_punch_bar matches 5 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue545"
+execute if score @s ff_heist_punch_bar matches 6 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue546"
+execute if score @s ff_heist_punch_bar matches 7 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue547"
+execute if score @s ff_heist_punch_bar matches 8 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue548"
+execute if score @s ff_heist_punch_bar matches 9 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue549"
+execute if score @s ff_heist_punch_bar matches 10 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54a"
+execute if score @s ff_heist_punch_bar matches 11 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54b"
+execute if score @s ff_heist_punch_bar matches 12 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54c"
+execute if score @s ff_heist_punch_bar matches 13 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54d"
+execute if score @s ff_heist_punch_bar matches 14 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54e"
+execute if score @s ff_heist_punch_bar matches 15 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue54f"
+execute if score @s ff_heist_punch_bar matches 16 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue550"
+execute if score @s ff_heist_punch_bar matches 17 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue551"
+execute if score @s ff_heist_punch_bar matches 18 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue552"
+execute if score @s ff_heist_punch_bar matches 19 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue553"
+execute if score @s ff_heist_punch_bar matches 20 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue554"
+execute if score @s ff_heist_punch_bar matches 21 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue555"
+execute if score @s ff_heist_punch_bar matches 22 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue556"
+execute if score @s ff_heist_punch_bar matches 23 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue557"
+execute if score @s ff_heist_punch_bar matches 24 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue558"
+execute if score @s ff_heist_punch_bar matches 25 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue559"
+execute if score @s ff_heist_punch_bar matches 26 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55a"
+execute if score @s ff_heist_punch_bar matches 27 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55b"
+execute if score @s ff_heist_punch_bar matches 28 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55c"
+execute if score @s ff_heist_punch_bar matches 29 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55d"
+execute if score @s ff_heist_punch_bar matches 30 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55e"
+function fossil_frights:game/heists/punch/show_cooldown_macro with storage fossil_frights:thief_cooldown_ui
