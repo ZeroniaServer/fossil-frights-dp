@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:item_display,tag=ff_velociraptor_skull] at @s if entity @a[team=ff_guard,distance=..20,sort=nearest,limit=1,gamemode=!spectator] run tp @s ~ ~ ~ facing entity @a[team=ff_guard,distance=..20,sort=nearest,limit=1,gamemode=!spectator] eyes
+execute as @e[limit=1,type=minecraft:item_display,tag=ff_velociraptor_skull] at @s run function fossil_frights:animations/velociraptor_skull/entity_tick
