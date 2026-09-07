@@ -18,6 +18,7 @@ execute if score @s ff_heist_thaw_fx matches 1.. if score @s ff_heist_thaw_fx ma
 execute if score @s ff_heist_thaw_fx matches 1.. run scoreboard players remove @s ff_heist_thaw_fx 1
 execute if score @s ff_heist_paint_fx matches 1.. run function fossil_frights:game/heists/paint_fx/tick
 execute if score @s ff_heist_invis_ticks matches 1 run function fossil_frights:game/heists/restore_invisimask
+function fossil_frights:game/heists/glowing_fx/tick
 execute if score @s ff_heist_invis_ticks matches 1.. run scoreboard players remove @s ff_heist_invis_ticks 1
 execute if score lights ff_hazard_active matches 1 unless entity @s[predicate=fossil_frights:entity/effects/blindness] run effect give @s minecraft:night_vision infinite 0 true
 execute if score lights ff_hazard_active matches 1 if entity @s[predicate=fossil_frights:entity/effects/blindness] run effect clear @s minecraft:night_vision

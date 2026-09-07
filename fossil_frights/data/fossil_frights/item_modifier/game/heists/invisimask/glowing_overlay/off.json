@@ -1,0 +1,21 @@
+{
+  "function": "minecraft:filtered",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "ff_invisimask": {
+          "frozen": true
+        }
+      }
+    }
+  },
+  "on_fail": {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:intentionally_empty"
+      }
+    }
+  }
+}
