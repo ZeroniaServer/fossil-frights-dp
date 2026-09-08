@@ -1,3 +1,3 @@
 # Keep the forcefield display in sync with the authoritative Curse score.
-execute if score curse ff_hazard_active matches 1 run data modify entity @e[type=minecraft:item_display,tag=ghost_forcefield,limit=1] item set value {id:"minecraft:light_blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":{floats:[6.0f]}}}
-execute unless score curse ff_hazard_active matches 1 run data modify entity @e[type=minecraft:item_display,tag=ghost_forcefield,limit=1] item set value {id:"minecraft:light_blue_stained_glass_pane",count:1,components:{"minecraft:custom_model_data":{floats:[5.0f]}}}
+execute if score curse ff_hazard_active matches 1 run loot replace entity @e[type=minecraft:item_display,tag=ghost_forcefield,limit=1] contents loot fossil_frights:display/curse_hazard/active
+execute unless score curse ff_hazard_active matches 1 run loot replace entity @e[type=minecraft:item_display,tag=ghost_forcefield,limit=1] contents loot fossil_frights:display/curse_hazard/inactive
