@@ -1,0 +1,21 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_pizza_interaction"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:interactions/pizza_box/interact"
+  }
+}

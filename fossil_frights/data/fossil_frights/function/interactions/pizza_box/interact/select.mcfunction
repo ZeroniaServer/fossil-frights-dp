@@ -1,0 +1,1 @@
+execute at @s align xyz positioned ~-0.001 ~-0.001 ~-0.001 as @e[type=minecraft:item_display,tag=ff_pizza_box,dx=0.002,dy=0.002,dz=0.002,limit=1] run function fossil_frights:interactions/pizza_box/consume
