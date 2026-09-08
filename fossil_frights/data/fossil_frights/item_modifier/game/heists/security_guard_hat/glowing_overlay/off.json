@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:equippable": {
+      "slot": "head",
+      "equip_sound": "minecraft:intentionally_empty"
+    }
+  }
+}

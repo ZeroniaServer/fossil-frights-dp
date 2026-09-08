@@ -24,3 +24,4 @@ execute if score $heist_round_active ff_game_state matches 0 unless entity @a[li
 execute if score $heist_round_active ff_game_state matches 0 if score $heist_button_lock ff_game_state matches 0 if score $heist_players_ready ff_game_state matches 1 if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/heists/start/start_round
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/round_tick
 function fossil_frights:game/start_room/day_button/refresh
+function fossil_frights:game/heists/glowing_fx/tick
