@@ -42,3 +42,4 @@ fill 23 107 8 73 113 97 minecraft:light[level=0] replace minecraft:light[level=1
 fill -28 114 8 22 117 97 minecraft:light[level=0] replace minecraft:light[level=15]
 fill 23 114 8 73 117 97 minecraft:light[level=0] replace minecraft:light[level=15]
 data remove entity @e[limit=1,type=item_display,tag=ff_human_face_cut_out_board] brightness
+function fossil_frights:interactions/glowberry_vine/hide

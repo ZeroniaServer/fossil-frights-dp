@@ -7,7 +7,8 @@ scoreboard players set curse ff_hazard_active 0
 function fossil_frights:hazard/curse/update_forcefield
 kill @e[type=minecraft:armor_stand,tag=ff_hazard_compass_target]
 
-# Use direct reset logic here. Full hazard stop paths can play animations.
+# direct resets
+function fossil_frights:interactions/glowberry_vine/reset
 function fossil_frights:hazard/lights/stop
 
 place template fossil_frights:lava/phase_0 -26 69 17

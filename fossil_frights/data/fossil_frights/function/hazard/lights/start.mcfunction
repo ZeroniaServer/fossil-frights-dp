@@ -86,10 +86,8 @@ execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 76 35 -3
 execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 75 31 -33 75 31 minecraft:waxed_lightning_rod[powered=true,facing=north] replace minecraft:end_rod strict
 execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 75 30 -33 75 30 minecraft:waxed_lightning_rod[powered=true,facing=south] replace minecraft:end_rod strict
 
-# Glowberry Trees
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock 13 84 40 cave_vines[berries=false] strict
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -11 82 40 cave_vines[berries=false] strict
-execute if score #lights_phase_now ff_hazard_rng matches 7 run setblock -13 84 40 cave_vines[berries=false] strict
+# Glowberry vines
+execute if score #lights_phase_now ff_hazard_rng matches 7 run function fossil_frights:interactions/glowberry_vine/hide
 
 # Cafe Campfire
 execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 28 81 30 28 81 26 minecraft:campfire[lit=false]

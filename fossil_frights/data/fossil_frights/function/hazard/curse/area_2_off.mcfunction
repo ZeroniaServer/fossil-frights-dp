@@ -4,3 +4,4 @@ fill -28 79 8 22 85 97 minecraft:redstone_lamp[lit=false] replace minecraft:glow
 fill 23 79 8 73 85 97 minecraft:redstone_lamp[lit=false] replace minecraft:glowstone
 fill -28 79 8 22 85 97 minecraft:light[level=0] replace minecraft:light[level=15]
 fill 23 79 8 73 85 97 minecraft:light[level=0] replace minecraft:light[level=15]
+function fossil_frights:interactions/glowberry_vine/hide
