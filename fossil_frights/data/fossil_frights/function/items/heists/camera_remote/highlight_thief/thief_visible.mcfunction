@@ -1,12 +1,9 @@
-execute at @s rotated as @s run tp 0-0-0-0 ~ ~ ~ ~ ~
-execute as 0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
-execute store result score .origin0 ff_dummy run data get storage fossil_frights:position_cache rotation[0] 1
-execute store result score .origin1 ff_dummy run data get storage fossil_frights:position_cache rotation[1] 1
+execute store result score .origin0 ff_dummy run data get entity @s Rotation[0] 1
+execute store result score .origin1 ff_dummy run data get entity @s Rotation[1] 1
 scoreboard players operation .origin0 ff_dummy %= #360 ff_constant
 scoreboard players operation .origin1 ff_dummy %= #180 ff_constant
 
-execute at @s run tp 0-0-0-0 ~ ~ ~
-execute as 0-0-0-0 at @s rotated as @s run function fossil_frights:items/heists/camera_remote/highlight_thief/thief_location
+execute summon minecraft:marker run function fossil_frights:items/heists/camera_remote/highlight_thief/thief_location
 
 scoreboard players operation .degree0 ff_dummy -= .origin0 ff_dummy
 scoreboard players operation .degree0 ff_dummy %= #360 ff_constant
