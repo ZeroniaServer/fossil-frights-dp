@@ -1,1 +1,1 @@
-$item modify entity @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..0.3] contents {function:"minecraft:set_contents",component:"minecraft:container",entries:[{type:"minecraft:loot_table",value:"fossil_frights:$(loot)"}]}
+$item modify entity @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] contents {function:"minecraft:set_contents",component:"minecraft:container",entries:[{type:"minecraft:loot_table",value:"fossil_frights:$(loot)"}]}
