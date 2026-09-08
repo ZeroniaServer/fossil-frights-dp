@@ -15,6 +15,5 @@ execute if block ~ ~ ~ #minecraft:trapdoors[open=true,facing=north] align xyz po
 execute if block ~ ~ ~ #minecraft:trapdoors[open=true,facing=east] align xyz positioned ^ ^ ^-0.9 positioned ~0.5 ~ ~ if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:trapdoors[open=true,facing=south] align xyz positioned ^ ^ ^-0.9 positioned ~ ~ ~0.5 if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:trapdoors[open=true,facing=west] align xyz positioned ^ ^ ^-0.9 positioned ~-0.5 ~ ~ if entity @s[dx=0] run return 0
-execute if block ~ ~ ~ minecraft:crimson_fence_gate[open=true] run return 0
 return 1
 
