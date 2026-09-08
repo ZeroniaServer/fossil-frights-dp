@@ -1,0 +1,1 @@
+$scoreboard players display name $loot_$(lootId) ff_heist_sidebar [{"text":"$","color":"yellow","italic":false},{"score":{"name":"$loot_$(lootId)","objective":"ff_heist_loot_value"},"color":"yellow","italic":false},{"text":" "},{"translate":"ff.item.$(lootId)","color":"$(color)","italic":false}]

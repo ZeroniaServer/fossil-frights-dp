@@ -232,6 +232,17 @@ scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard objectives add ff_heist_paint_fx dummy
 scoreboard objectives add ff_heist_guard_sneak_ticks dummy
 scoreboard objectives add ff_heist_guard_unsneak_ticks dummy
+scoreboard objectives add ff_heist_loot_security_ticks dummy
+scoreboard objectives add ff_heist_loot_security_hold dummy
+scoreboard objectives add ff_heist_loot_security_phase dummy
+scoreboard objectives add ff_heist_loot_security_actionbar dummy
+scoreboard objectives add ff_heist_loot_security_recent dummy
+scoreboard objectives add ff_heist_loot_security_ui dummy
+scoreboard objectives add ff_heist_loot_security_cooldown dummy
+scoreboard objectives add ff_heist_loot_security_progress dummy
+scoreboard objectives add ff_heist_loot_security_flash dummy
+scoreboard objectives add ff_heist_loot_security_lease dummy
+scoreboard objectives add ff_heist_loot_security_locked dummy
 scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
 scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy

@@ -7,6 +7,7 @@ function fossil_frights:game/start_room/locked_door/clear
 function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
+function fossil_frights:game/heists/loot/secure_loot/reset
 function fossil_frights:game/heists/loot/rare/pickup/lady_bug/clear_all
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/lady_bug]
 kill @e[type=minecraft:armor_stand,tag=ff_loot_compass_target]
@@ -60,6 +61,13 @@ scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set @a ff_heist_paint_fx 0
 scoreboard players set @a ff_heist_guard_sneak_ticks 0
 scoreboard players set @a ff_heist_guard_unsneak_ticks 0
+scoreboard players set @a ff_heist_loot_security_ticks 0
+scoreboard players set @a ff_heist_loot_security_hold 0
+scoreboard players set @a ff_heist_loot_security_phase 0
+scoreboard players set @a ff_heist_loot_security_actionbar 0
+scoreboard players set @a ff_heist_loot_security_recent 0
+scoreboard players set @a ff_heist_loot_security_ui 0
+tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
 scoreboard players set @a ff_trap_warn 0
 scoreboard players set @a ff_trap_invalid 0

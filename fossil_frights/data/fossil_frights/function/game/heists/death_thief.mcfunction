@@ -1,4 +1,5 @@
 scoreboard players add @s ff_heist_deaths_round 1
+function fossil_frights:game/heists/loot/secure_loot/clear_player
 function fossil_frights:game/heists/loot/rare/pickup/lady_bug/death
 tag @s add ff_heist_stat_subject
 tag @a remove ff_heist_killer_guard
