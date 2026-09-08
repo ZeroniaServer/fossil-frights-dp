@@ -36,7 +36,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/1"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/1"
           }
         },
         "conditions": [
@@ -55,7 +55,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/2"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/2"
           }
         },
         "conditions": [
@@ -74,7 +74,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/3"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/3"
           }
         },
         "conditions": [
@@ -93,7 +93,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/4"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/4"
           }
         },
         "conditions": [
@@ -112,7 +112,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/5"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/5"
           }
         },
         "conditions": [
@@ -131,7 +131,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/6"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/6"
           }
         },
         "conditions": [
@@ -150,7 +150,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/7"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/7"
           }
         },
         "conditions": [
@@ -169,7 +169,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/8"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/8"
           }
         },
         "conditions": [
@@ -188,7 +188,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/9"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/9"
           }
         },
         "conditions": [
@@ -207,7 +207,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/10"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/10"
           }
         },
         "conditions": [
@@ -226,7 +226,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/11"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/11"
           }
         },
         "conditions": [
@@ -245,7 +245,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/12"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/12"
           }
         },
         "conditions": [
@@ -264,7 +264,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/13"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/13"
           }
         },
         "conditions": [
@@ -283,7 +283,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/14"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/14"
           }
         },
         "conditions": [
@@ -302,7 +302,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/15"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/15"
           }
         },
         "conditions": [
@@ -321,7 +321,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/16"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/16"
           }
         },
         "conditions": [
@@ -340,7 +340,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/17"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/17"
           }
         },
         "conditions": [
@@ -359,7 +359,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/18"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/18"
           }
         },
         "conditions": [
@@ -378,7 +378,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/19"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/19"
           }
         },
         "conditions": [
@@ -397,7 +397,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/20"
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/20"
           }
         },
         "conditions": [
@@ -406,6 +406,386 @@
             "entity": "this",
             "scores": {
               "ff_glowing_fx_frame": 20
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/21"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 21
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/22"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 22
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/23"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 23
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/24"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 24
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/25"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 25
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/26"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 26
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/27"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 27
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/28"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 28
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/29"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 29
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/30"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 30
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/31"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 31
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/32"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 32
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/33"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 33
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/34"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 34
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/35"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 35
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/36"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 36
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/37"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 37
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/38"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 38
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/39"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 39
+            }
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "slot": "head",
+            "equip_sound": "minecraft:intentionally_empty",
+            "camera_overlay": "fossil-frights:overlays/glowing/thief/40"
+          }
+        },
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ff_glowing_fx_frame": 40
             }
           }
         ]
