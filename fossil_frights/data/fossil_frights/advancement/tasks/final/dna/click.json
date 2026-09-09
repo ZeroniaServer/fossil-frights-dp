@@ -1,31 +1,63 @@
 {
   "parent": "fossil_frights:detection_root",
   "criteria": {
-    "click": {
+    "sniffer_egg": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": {
-          "equipment": {
-            "mainhand": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "ff_dna": true
-                }
-              }
-            }
-          }
-        },
         "entity": {
           "entity_type": "minecraft:interaction",
           "entity_tags": {
             "all_of": [
-              "ff_dna_click"
+              "ff_sniffer_egg_interaction"
             ]
           }
         }
       }
     }
+    ,"pterodactyl_egg": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {"all_of": ["ff_pterodactyl_egg_interaction"]}
+        }
+      }
+    },
+    "plesiosaur_egg": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_plesiosaur_egg_interaction"]}}
+      }
+    },
+    "velociraptor_egg": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_velociraptor_egg_interaction"]}}
+      }
+    },
+    "trike_egg": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_trike_egg_interaction"]}}
+      }
+    },
+    "t_rex_egg": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_t_rex_egg_interaction"]}}
+      }
+    }
   },
+  "requirements": [
+    [
+      "sniffer_egg",
+      "pterodactyl_egg",
+      "plesiosaur_egg",
+      "velociraptor_egg",
+      "trike_egg",
+      "t_rex_egg"
+    ]
+  ],
   "rewards": {
     "function": "fossil_frights:tasks/final/dna/clicked"
   }

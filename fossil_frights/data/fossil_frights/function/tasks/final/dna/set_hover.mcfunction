@@ -1,10 +1,12 @@
-execute if entity @s[tag=ff_sniffer_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_pterodactyl_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_plesiosaur_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_velociraptor_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_trike_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_t_rex_egg] run tag @s add ff_dna_hover
-execute if entity @s[tag=ff_dna_hover] run team join ff_dna_hover_yellow @s
-execute if entity @s[tag=ff_dna_hover] run data merge entity @s {Glowing:true}
-execute if entity @s[tag=ff_dna_hover] at @s positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:interaction,tag=ff_dna_click,distance=..0.1,limit=1] run summon minecraft:interaction ~ ~ ~ {width:1.5,height:1.5,response:true,Tags:["ff_dna_click"]}
-execute if entity @s[tag=ff_dna_hover] at @s positioned ~ ~-0.5 ~ run scoreboard players set @e[type=minecraft:interaction,tag=ff_dna_click,distance=..0.1,limit=1] ff_lock_click_ttl 5
+scoreboard players set @s ff_dna_hover_found 1
+tag @s add ff_dna_candidate
+execute as @e[type=minecraft:item_display,tag=ff_dna_hover,tag=!ff_dna_candidate] run function fossil_frights:tasks/final/dna/clear_hover
+tag @e[type=minecraft:item_display,tag=ff_dna_hover,tag=!ff_dna_candidate] remove ff_dna_hover
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_sniffer_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_sniffer_egg"}}
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_pterodactyl_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_pterodactyl_egg"}}
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_plesiosaur_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_plesiosaur_egg"}}
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_velociraptor_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_velociraptor_egg"}}
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_trike_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_trike_egg"}}
+execute unless entity @s[tag=ff_dna_hover] if entity @s[tag=ff_t_rex_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/hovered_t_rex_egg"}}
+tag @s add ff_dna_hover
+tag @s remove ff_dna_candidate

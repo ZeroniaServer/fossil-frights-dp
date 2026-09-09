@@ -1,0 +1,6 @@
+execute if entity @s[tag=ff_sniffer_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/sniffer_egg"}}
+execute if entity @s[tag=ff_pterodactyl_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/pterodactyl_egg"}}
+execute if entity @s[tag=ff_plesiosaur_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/plesiosaur_egg"}}
+execute if entity @s[tag=ff_velociraptor_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/velociraptor_egg"}}
+execute if entity @s[tag=ff_trike_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/trike_egg"}}
+execute if entity @s[tag=ff_t_rex_egg] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/tasks/lab_experiment/eggs/t_rex_egg"}}

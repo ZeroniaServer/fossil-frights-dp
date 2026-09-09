@@ -22,6 +22,7 @@ scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_dna_scan dummy
+scoreboard objectives add ff_dna_hover_found dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
@@ -469,8 +470,6 @@ team add ff_pink_pig
 team modify ff_pink_pig displayName {"text":"Pink Pig"}
 team modify ff_pink_pig color light_purple
 team modify ff_pink_pig collisionRule never
-team add ff_dna_hover_yellow
-team modify ff_dna_hover_yellow color yellow
 team add ff_dev_mode
 team modify ff_dev_mode displayName {"text":"Developers"}
 team modify ff_dev_mode color green
