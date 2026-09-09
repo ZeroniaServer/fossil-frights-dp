@@ -1,6 +1,6 @@
 execute unless block ~ ~ ~ #fossil_frights:raycast_ignore run scoreboard players set @s ff_dna_scan 0
 execute if entity @e[type=minecraft:block_display,tag=ff_sniffer_egg,distance=..0.35,sort=nearest,limit=1] run scoreboard players set @s ff_dna_scan 0
-execute if entity @e[type=minecraft:item_display,tag=ff_sniffer_egg,distance=..0.35,sort=nearest,limit=1] as @e[type=minecraft:item_display,tag=ff_sniffer_egg,distance=..0.35,sort=nearest,limit=1] run function fossil_frights:tasks/final/dna/set_hover
+execute if entity @e[type=minecraft:block_display,tag=ff_sniffer_egg,distance=..0.35,sort=nearest,limit=1] as @e[type=minecraft:block_display,tag=ff_sniffer_egg,distance=..0.35,sort=nearest,limit=1] run function fossil_frights:tasks/final/dna/set_hover
 execute if entity @e[type=minecraft:item_display,tag=ff_plesiosaur_egg,distance=..0.35,sort=nearest,limit=1] run scoreboard players set @s ff_dna_scan 0
 execute if entity @e[type=minecraft:item_display,tag=ff_plesiosaur_egg,distance=..0.35,sort=nearest,limit=1] as @e[type=minecraft:item_display,tag=ff_plesiosaur_egg,distance=..0.35,sort=nearest,limit=1] run function fossil_frights:tasks/final/dna/set_hover
 execute if entity @e[type=minecraft:item_display,tag=ff_pterodactyl_egg,distance=..0.35,sort=nearest,limit=1] run scoreboard players set @s ff_dna_scan 0
