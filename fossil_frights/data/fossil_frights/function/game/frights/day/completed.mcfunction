@@ -9,7 +9,6 @@ execute as @a[team=ff_guard] run function fossil_frights:game/rewards/give_dinoc
 execute if score $day_current ff_day matches 10 as @a[team=ff_guard] store result score @s ff_penny_pincher_coins run clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 0
 execute if score $day_current ff_day matches 10 as @a[team=ff_guard,scores={ff_penny_pincher_coins=10}] run advancement grant @s only fossil_frights:02_achievements/penny_pincher
 execute as @a[team=ff_guard] run function fossil_frights:advancements/progression/grant_day_completed
-function fossil_frights:run_breakdown/event/day_complete
 execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
 stopsound @a music fossil-frights:ff_night_shift
 stopsound @a master fossil-frights:ff_night_shift
