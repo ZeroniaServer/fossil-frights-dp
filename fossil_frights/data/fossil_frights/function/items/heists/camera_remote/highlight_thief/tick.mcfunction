@@ -6,5 +6,5 @@ execute unless function fossil_frights:items/heists/camera_remote/highlight_thie
 
 tag @s add ff_camera_thief_visible
 scoreboard players set @s ff_security_camera_visible 3
-execute if entity @s[tag=!ff_heist_scissors_actionbar_priority] run title @s actionbar {translate:"", fallback:"%s Press %s to Report.", color:gray, with:[{translate:"", fallback:"Thief Visible!", color:yellow},{keybind:"key.back", color:white}]}
+execute if entity @s[tag=!ff_heist_scissors_actionbar_priority,tag=!ff_heist_guard_coin_actionbar_priority] run title @s actionbar {translate:"", fallback:"%s Press %s to Report.", color:gray, with:[{translate:"", fallback:"Thief Visible!", color:yellow},{keybind:"key.back", color:white}]}
 execute if predicate fossil_frights:player/input/backward run function fossil_frights:items/heists/camera_remote/highlight_thief/capture

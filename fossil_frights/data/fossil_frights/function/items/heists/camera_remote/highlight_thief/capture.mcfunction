@@ -6,6 +6,7 @@ execute if score lights ff_hazard_active matches 1 run return 0
 scoreboard players set @s ff_security_camera_heist 50
 
 effect give @p[team=ff_thief] glowing 3 0 true
+execute if entity @a[team=ff_guard,tag=ff_heist_guard_coin_actionbar_priority,limit=1] run return 0
 execute if entity @s[tag=ff_heist_scissors_actionbar_priority] run return 0
 execute if score @s ff_security_camera matches 1 run title @a[team=ff_guard] actionbar {translate:"", fallback:"%s spotted %s in %s", color:gray, with:[{selector:"@s"},{selector:"@p[team=ff_thief]"},{translate:"ff.security_camera.ruins", color:white}]}
 execute if score @s ff_security_camera matches 2 run title @a[team=ff_guard] actionbar {translate:"", fallback:"%s spotted %s in %s", color:gray, with:[{selector:"@s"},{selector:"@p[team=ff_thief]"},{translate:"ff.security_camera.skeleton", color:white}]}

@@ -14,6 +14,9 @@ stopwatch remove fossil_frights:heist_round
 fill -5 68 8 -3 68 8 magma_block
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
+scoreboard players set $heist_guard_coin_stage ff_heist 0
+scoreboard players set $heist_guard_coin_delay ff_heist 0
+scoreboard players set $heist_guard_coin_pending ff_heist 0
 scoreboard players set $security_by_loot ff_heist 0
 scoreboard players set $rare_heavy_exact ff_heist 0
 scoreboard players set $rare_heavy_exact_prev ff_heist 0

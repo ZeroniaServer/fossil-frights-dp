@@ -9,6 +9,7 @@ function fossil_frights:game/heists/timer/sync
 execute unless score $heist_stopwatch_active ff_heist matches 1 run return 0
 execute if score $heist_timer ff_heist matches ..0 run return run function fossil_frights:game/heists/end/guards_win
 function fossil_frights:game/heists/timer/update_display
+function fossil_frights:game/heists/guard_coin/tick
 scoreboard players add $heist_flash ff_heist 1
 execute if score $heist_flash ff_heist matches 20.. run scoreboard players set $heist_flash ff_heist 0
 function fossil_frights:game/heists/loot/common/update_drops

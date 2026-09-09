@@ -16,6 +16,7 @@ execute if entity @s[tag=ff_trap_restore_pending] run function fossil_frights:it
 tag @s remove ff_trap_restore_pending
 execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand
 execute if items entity @s weapon.offhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_offhand
+execute if entity @s[tag=ff_heist_guard_coin_actionbar_priority] run return 0
 execute if score @s ff_trap_no_pickup_feedback matches 1.. run title @s actionbar {"translate":"ff.actionbar.trap.no_trap_to_pickup","color":"red","italic":false}
 execute if score @s ff_trap_pickup_feedback matches 1.. if score @s ff_trap_selected matches ..0 run title @s actionbar {"translate":"ff.actionbar.trap.picked_up","color":"#FFDE24","italic":false}
 execute if score @s ff_trap_pickup_feedback matches 1.. if score @s ff_trap_selected matches 1 run title @s actionbar {"translate":"ff.actionbar.trap.picked_up","color":"#7ED4FF","italic":false}

@@ -1,4 +1,5 @@
 # Progress Frames
+execute if entity @s[tag=ff_heist_guard_coin_actionbar_priority] run return 0
 title @s times 0 7 0
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 0 unless score @s ff_heist_loot_security_ui matches 0 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.780}
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 0 run scoreboard players set @s ff_heist_loot_security_ui 0
