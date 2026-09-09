@@ -156,6 +156,7 @@ scoreboard objectives add ff_speedrun_delta dummy
 scoreboard objectives add ff_speedrun_sign dummy
 scoreboard objectives add ff_speedrun_blink dummy
 scoreboard objectives add ff_speedrun_live dummy
+scoreboard objectives add ff_run_breakdown dummy
 scoreboard objectives add ff_speedrun_task1 dummy
 scoreboard objectives add ff_speedrun_task2 dummy
 scoreboard objectives add ff_speedrun_task3 dummy

@@ -6,4 +6,5 @@ execute if score $timer_frozen ff_day matches 0 run function fossil_frights:game
 execute unless score $speedrun_stopwatch_active ff_day matches 1 run return 0
 scoreboard players operation $tasks_pending ff_speedrun_live = $task_completed_total ff_task_state
 scoreboard players operation $tasks_pending ff_speedrun_live -= $tasks_seen_day ff_speedrun_live
+execute if score $tasks_pending ff_speedrun_live matches 1.. run function fossil_frights:run_breakdown/task/capture_completed
 execute if score $tasks_pending ff_speedrun_live matches 1.. run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/capture_pending

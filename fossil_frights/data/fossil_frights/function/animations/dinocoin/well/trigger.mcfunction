@@ -1,4 +1,5 @@
 kill @s[type=minecraft:item,predicate=fossil_frights:entity/contents/dinocoin]
+function fossil_frights:run_breakdown/event/add {code:"C",id:"01"}
 tag @a[tag=ff_well_teleporting] remove ff_well_teleporting
 tag @a[predicate=fossil_frights:player/is_playing,sort=nearest,limit=1] add ff_well_teleporting
 execute as @a[tag=ff_well_teleporting,limit=1] at @s run particle minecraft:end_rod ~0.75 ~0.1 ~ 0.02 0.03 0.02 0.0 3 force

@@ -1,2 +1,4 @@
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
+execute if score $day_current ff_day matches 1.. if entity @a[team=ff_guard,limit=1] if data storage fossil_frights:run_breakdown current{active:1b,finalized:1b} run function fossil_frights:messages/game/exit_day_reached_run_breakdown_macro with storage fossil_frights:run_breakdown current
+execute if data storage fossil_frights:run_breakdown current{active:1b,finalized:1b} run return 0
 execute if score $day_current ff_day matches 1.. if entity @a[team=ff_guard,limit=1] run tellraw @a {"translate":"ff.messages.announcement","color":"gold","with":[{"translate":"ff.exit_day_reached","with":[{"selector":"@a[team=ff_guard]","separator":{"translate":"ff.separator"},"color":"gold"},{"score":{"name":"$day_current","objective":"ff_day"},"color":"gold"}]}]}

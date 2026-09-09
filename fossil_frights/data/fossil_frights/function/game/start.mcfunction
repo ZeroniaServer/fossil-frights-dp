@@ -98,6 +98,7 @@ scoreboard players set $forklift_watch ff_game_state 1
 scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/start_room/settings/apply_preferences
 function fossil_frights:game/start_room/settings/sync_message_state
+function fossil_frights:run_breakdown/start
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/locked_door/show

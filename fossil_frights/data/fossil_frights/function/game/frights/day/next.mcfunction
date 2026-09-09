@@ -23,6 +23,7 @@ clear @a[team=ff_guard] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]
 function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:tasks/encoder/start_day
+function fossil_frights:run_breakdown/task/reset_day
 function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/prepare_day
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
