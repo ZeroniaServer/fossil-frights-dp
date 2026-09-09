@@ -1,6 +1,6 @@
 tag @s add ff_door
 
-data merge entity @s {teleport_duration:2}
+data merge entity @s {teleport_duration:2,width:2,height:2}
 
 data modify storage fossil_frights:door door_data set value {sound_type:"wooden",model_type:"spruce"}
 

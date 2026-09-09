@@ -29,5 +29,5 @@ summon minecraft:interaction ~ ~ ~ {Tags:["ff_door.interaction","ff_door.interac
 function fossil_frights:interactions/door/state/closed with storage fossil_frights:door door_data
 data remove storage fossil_frights:door door_data
 
-data merge entity @s {width:2,height:2,teleport_duration:2}
+data merge entity @s {teleport_duration:2,width:2,height:2}
 execute on passengers run data merge entity @s[type=text_display] {width:2,height:2,teleport_duration:2}

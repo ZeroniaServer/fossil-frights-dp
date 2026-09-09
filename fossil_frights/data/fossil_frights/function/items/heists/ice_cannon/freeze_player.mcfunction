@@ -15,7 +15,7 @@ attribute @s minecraft:entity_interaction_range base set 0
 attribute @s minecraft:movement_speed base set 0.055
 attribute @s minecraft:friction_modifier base set 0
 scoreboard players set @s ff_heist_thaw_fx 0
-summon minecraft:block_display ~ ~1.0 ~ {Tags:["ff_ice_freeze","ff_ice_freeze_new"],block_state:{Name:"minecraft:frosted_ice",Properties:{age:"0"}},teleport_duration:1,start_interpolation:0,interpolation_duration:2,transformation:{translation:[-1f,-1f,-1f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+summon minecraft:block_display ~ ~ ~ {Tags:["ff_ice_freeze","ff_ice_freeze_new"],block_state:{Name:"minecraft:frosted_ice",Properties:{age:"0"}},teleport_duration:1,start_interpolation:0,interpolation_duration:2,transformation:{right_rotation:[0,0,0,1],scale:[2,2,2],left_rotation:[0,0,0,1],translation:[-1,0,-1]},width:2,height:2}
 function fossil_frights:items/heists/ice_cannon/claim_new_display
 particle minecraft:snowflake ~ ~1.0 ~ 0.55 0.75 0.55 0.03 45 force
 playsound minecraft:block.glass.place player @a[distance=..20] ~ ~ ~ 0.8 1.4
