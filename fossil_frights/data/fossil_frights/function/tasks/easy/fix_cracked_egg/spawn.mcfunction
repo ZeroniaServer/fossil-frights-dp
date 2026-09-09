@@ -1,4 +1,5 @@
 function fossil_frights:tasks/easy/fix_cracked_egg/cleanup
-setblock 18 95 58 minecraft:sniffer_egg[hatch=1]
-data remove entity @e[type=minecraft:item_display,tag=ff_sniffer_egg,limit=1,sort=nearest] item
-summon minecraft:interaction 18.5 95.6 58.5 {width:1.4,height:1.2,response:true,Tags:["ff_fix_cracked_egg","ff_fix_cracked_egg_click"]}
+data modify entity @e[type=minecraft:block_display,tag=ff_sniffer_egg,limit=1,sort=nearest] block_state.Properties.hatch set value "2"
+summon minecraft:interaction 18.5 95 58.5 {width:1.4,height:1.2,response:true,Tags:["ff_fix_cracked_egg","ff_fix_cracked_egg_click"]}
+
+
