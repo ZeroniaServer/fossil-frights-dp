@@ -1,0 +1,151 @@
+# rerender on changes only
+scoreboard players set $heist_loot_render_dirty ff_heist 0
+execute unless score $heist_loot_render_state_coffee ff_heist_loot_state = $loot_coffee ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_poster_tube ff_heist_loot_state = $loot_poster_tube ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_ghast_plushie ff_heist_loot_state = $loot_ghast_plushie ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_piglin_head ff_heist_loot_state = $loot_piglin_head ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_popcorn ff_heist_loot_state = $loot_popcorn ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_lollipop ff_heist_loot_state = $loot_lollipop ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_fishing_rod ff_heist_loot_state = $loot_fishing_rod ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_burger ff_heist_loot_state = $loot_burger ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_chocolate_cake ff_heist_loot_state = $loot_chocolate_cake ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_ancient_scripture ff_heist_loot_state = $loot_ancient_scripture ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_chondrite ff_heist_loot_state = $loot_chondrite ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_sand_dollar ff_heist_loot_state = $loot_sand_dollar ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_trilobite_fossil ff_heist_loot_state = $loot_trilobite_fossil ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_golden_sword ff_heist_loot_state = $loot_golden_sword ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_portal_core ff_heist_loot_state = $loot_portal_core ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_febreeze_rod ff_heist_loot_state = $loot_febreeze_rod ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_fertilizer ff_heist_loot_state = $loot_fertilizer ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_water_balloon ff_heist_loot_state = $loot_water_balloon ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_chlorine_tablet ff_heist_loot_state = $loot_chlorine_tablet ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_scrap_metal ff_heist_loot_state = $loot_scrap_metal ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_soap ff_heist_loot_state = $loot_soap ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_dry_ice ff_heist_loot_state = $loot_dry_ice ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_fire_tablet ff_heist_loot_state = $loot_fire_tablet ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_golden_nautilus ff_heist_loot_state = $loot_golden_nautilus ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_skeleton_plushie ff_heist_loot_state = $loot_skeleton_plushie ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_fish_food ff_heist_loot_state = $loot_fish_food ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_copper_shuffle ff_heist_loot_state = $loot_copper_shuffle ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_instant_coffee ff_heist_loot_state = $loot_instant_coffee ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_empty_popcorn ff_heist_loot_state = $loot_empty_popcorn ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_pink_jelly ff_heist_loot_state = $loot_pink_jelly ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_brush ff_heist_loot_state = $loot_brush ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_sponge ff_heist_loot_state = $loot_sponge ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_cotton_candy ff_heist_loot_state = $loot_cotton_candy ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_credit_reel ff_heist_loot_state = $loot_credit_reel ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_muddy_sherd ff_heist_loot_state = $loot_muddy_sherd ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_carrot_cake ff_heist_loot_state = $loot_carrot_cake ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_cookie ff_heist_loot_state = $loot_cookie ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_basketball ff_heist_loot_state = $loot_basketball ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_misplaced_scissors ff_heist_loot_state = $loot_misplaced_scissors ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_hoverboard ff_heist_loot_state = $loot_hoverboard ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_sniffer_dna_cloth ff_heist_loot_state = $loot_sniffer_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_trike_dna_cloth ff_heist_loot_state = $loot_trike_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_t_rex_dna_cloth ff_heist_loot_state = $loot_t_rex_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_velociraptor_dna_cloth ff_heist_loot_state = $loot_velociraptor_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_plesiosaur_dna_cloth ff_heist_loot_state = $loot_plesiosaur_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_pterodactyl_dna_cloth ff_heist_loot_state = $loot_pterodactyl_dna_cloth ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_spyglass ff_heist_loot_state = $loot_spyglass ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_crab ff_heist_loot_state = $loot_crab ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_t_rex_skull ff_heist_loot_state = $loot_t_rex_skull ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_raptor_skull ff_heist_loot_state = $loot_raptor_skull ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_biplane ff_heist_loot_state = $loot_biplane ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_vault ff_heist_loot_state = $loot_vault ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_velociraptor_statue ff_heist_loot_state = $loot_velociraptor_statue ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_basketball ff_heist_flash = $loot_basketball ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_hoverboard ff_heist_flash = $loot_hoverboard ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_sniffer_dna_cloth ff_heist_flash = $loot_sniffer_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_trike_dna_cloth ff_heist_flash = $loot_trike_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_t_rex_dna_cloth ff_heist_flash = $loot_t_rex_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_velociraptor_dna_cloth ff_heist_flash = $loot_velociraptor_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_plesiosaur_dna_cloth ff_heist_flash = $loot_plesiosaur_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_flash_pterodactyl_dna_cloth ff_heist_flash = $loot_pterodactyl_dna_cloth ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
+scoreboard players set $heist_loot_render_security_active ff_heist 0
+execute if entity @e[type=minecraft:interaction,tag=ff_heist_loot_security_active,limit=1] run scoreboard players set $heist_loot_render_security_active ff_heist 1
+execute unless score $heist_loot_render_security_active ff_heist = $heist_loot_render_security_active_prev ff_heist run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute if score $heist_loot_render_security_active ff_heist matches 1 run scoreboard players set $heist_loot_render_dirty ff_heist 1
+scoreboard players operation $heist_loot_render_security_active_prev ff_heist = $heist_loot_render_security_active ff_heist
+scoreboard players set $heist_loot_render_security_flash ff_heist 0
+execute if entity @e[type=minecraft:interaction,scores={ff_heist_loot_security_flash=1..},limit=1] run scoreboard players set $heist_loot_render_security_flash ff_heist 1
+execute unless score $heist_loot_render_security_flash ff_heist = $heist_loot_render_security_flash_prev ff_heist run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute if score $heist_loot_render_security_flash ff_heist matches 1 run scoreboard players set $heist_loot_render_dirty ff_heist 1
+scoreboard players operation $heist_loot_render_security_flash_prev ff_heist = $heist_loot_render_security_flash ff_heist
+scoreboard players set $heist_loot_render_flash_phase ff_heist 0
+execute if score $heist_flash ff_heist matches 10.. run scoreboard players set $heist_loot_render_flash_phase ff_heist 1
+execute unless score $heist_loot_render_flash_phase ff_heist = $heist_loot_render_flash_phase_prev ff_heist run scoreboard players set $heist_loot_render_dirty ff_heist 1
+scoreboard players operation $heist_loot_render_flash_phase_prev ff_heist = $heist_loot_render_flash_phase ff_heist
+execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_available ff_compass 0
+execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_available_hash ff_compass 0
+execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_counting ff_compass 1
+execute if score $heist_loot_render_dirty ff_heist matches 1 run function fossil_frights:game/heists/loot/render
+execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_counting ff_compass 0
+scoreboard players operation $heist_loot_render_state_coffee ff_heist_loot_state = $loot_coffee ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_poster_tube ff_heist_loot_state = $loot_poster_tube ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_ghast_plushie ff_heist_loot_state = $loot_ghast_plushie ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_piglin_head ff_heist_loot_state = $loot_piglin_head ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_popcorn ff_heist_loot_state = $loot_popcorn ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_lollipop ff_heist_loot_state = $loot_lollipop ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_fishing_rod ff_heist_loot_state = $loot_fishing_rod ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_burger ff_heist_loot_state = $loot_burger ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_chocolate_cake ff_heist_loot_state = $loot_chocolate_cake ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_ancient_scripture ff_heist_loot_state = $loot_ancient_scripture ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_chondrite ff_heist_loot_state = $loot_chondrite ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_sand_dollar ff_heist_loot_state = $loot_sand_dollar ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_trilobite_fossil ff_heist_loot_state = $loot_trilobite_fossil ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_golden_sword ff_heist_loot_state = $loot_golden_sword ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_portal_core ff_heist_loot_state = $loot_portal_core ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_febreeze_rod ff_heist_loot_state = $loot_febreeze_rod ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_fertilizer ff_heist_loot_state = $loot_fertilizer ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_water_balloon ff_heist_loot_state = $loot_water_balloon ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_chlorine_tablet ff_heist_loot_state = $loot_chlorine_tablet ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_scrap_metal ff_heist_loot_state = $loot_scrap_metal ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_soap ff_heist_loot_state = $loot_soap ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_dry_ice ff_heist_loot_state = $loot_dry_ice ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_fire_tablet ff_heist_loot_state = $loot_fire_tablet ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_golden_nautilus ff_heist_loot_state = $loot_golden_nautilus ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_skeleton_plushie ff_heist_loot_state = $loot_skeleton_plushie ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_fish_food ff_heist_loot_state = $loot_fish_food ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_copper_shuffle ff_heist_loot_state = $loot_copper_shuffle ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_instant_coffee ff_heist_loot_state = $loot_instant_coffee ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_empty_popcorn ff_heist_loot_state = $loot_empty_popcorn ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_pink_jelly ff_heist_loot_state = $loot_pink_jelly ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_brush ff_heist_loot_state = $loot_brush ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_sponge ff_heist_loot_state = $loot_sponge ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_cotton_candy ff_heist_loot_state = $loot_cotton_candy ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_credit_reel ff_heist_loot_state = $loot_credit_reel ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_muddy_sherd ff_heist_loot_state = $loot_muddy_sherd ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_carrot_cake ff_heist_loot_state = $loot_carrot_cake ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_cookie ff_heist_loot_state = $loot_cookie ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_basketball ff_heist_loot_state = $loot_basketball ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_misplaced_scissors ff_heist_loot_state = $loot_misplaced_scissors ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_hoverboard ff_heist_loot_state = $loot_hoverboard ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_sniffer_dna_cloth ff_heist_loot_state = $loot_sniffer_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_trike_dna_cloth ff_heist_loot_state = $loot_trike_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_t_rex_dna_cloth ff_heist_loot_state = $loot_t_rex_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_velociraptor_dna_cloth ff_heist_loot_state = $loot_velociraptor_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_plesiosaur_dna_cloth ff_heist_loot_state = $loot_plesiosaur_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_pterodactyl_dna_cloth ff_heist_loot_state = $loot_pterodactyl_dna_cloth ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_spyglass ff_heist_loot_state = $loot_spyglass ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_crab ff_heist_loot_state = $loot_crab ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_t_rex_skull ff_heist_loot_state = $loot_t_rex_skull ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_raptor_skull ff_heist_loot_state = $loot_raptor_skull ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_biplane ff_heist_loot_state = $loot_biplane ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_vault ff_heist_loot_state = $loot_vault ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_velociraptor_statue ff_heist_loot_state = $loot_velociraptor_statue ff_heist_loot_state
+scoreboard players operation $heist_loot_render_flash_basketball ff_heist_flash = $loot_basketball ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_hoverboard ff_heist_flash = $loot_hoverboard ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_sniffer_dna_cloth ff_heist_flash = $loot_sniffer_dna_cloth ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_trike_dna_cloth ff_heist_flash = $loot_trike_dna_cloth ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_t_rex_dna_cloth ff_heist_flash = $loot_t_rex_dna_cloth ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_velociraptor_dna_cloth ff_heist_flash = $loot_velociraptor_dna_cloth ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_plesiosaur_dna_cloth ff_heist_flash = $loot_plesiosaur_dna_cloth ff_heist_flash
+scoreboard players operation $heist_loot_render_flash_pterodactyl_dna_cloth ff_heist_flash = $loot_pterodactyl_dna_cloth ff_heist_flash
