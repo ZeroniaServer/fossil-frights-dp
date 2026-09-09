@@ -249,7 +249,7 @@ scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy
 scoreboard objectives add ff_compass_scan dummy
 scoreboard objectives add ff_compass_found dummy
-scoreboard objectives add ff_cannot_trigger_lady_bug_revolutionary_until_timestamp dummy
+scoreboard objectives add ff_cannot_trigger_npc_messages_until_timestamp dummy
 scoreboard objectives add ff_paint_splat_spawn_timestamp dummy
 scoreboard objectives add ff_sulfur dummy
 scoreboard objectives add ff_lobby_music_ticks dummy
