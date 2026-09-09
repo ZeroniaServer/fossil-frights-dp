@@ -10,10 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:sniffer_egg",
-                "minecraft:custom_data": {
-                  "itemID": "sniffer_egg"
-                }
+                "minecraft:item_model": "fossil-frights:display/tasks/lab_experiment/eggs/sniffer_egg"
               }
             }
           ]
