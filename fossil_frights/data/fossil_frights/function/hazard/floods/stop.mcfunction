@@ -47,7 +47,7 @@ execute positioned 15 108 45 run function fossil_frights:hazard/floods/drain_wat
 # --- Basement ---
 #Lava Boiler Room
 execute positioned -8 75 10 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned -14 75 18 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -13 75 18 run function fossil_frights:hazard/floods/drain_water/start_here
 #Storage Room
 execute positioned -9 75 25 run function fossil_frights:hazard/floods/drain_water/start_here
 #Fossil Restoration Room

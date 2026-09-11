@@ -51,7 +51,7 @@ setblock 15 108 45 minecraft:water
 # --- Basement ---
 #Lava Boiler Room
 setblock -8 75 10 minecraft:water
-setblock -14 75 18 minecraft:water
+setblock -13 75 18 minecraft:water
 #Storage Room
 setblock -9 75 25 minecraft:water
 #Fossil Restoration Room
