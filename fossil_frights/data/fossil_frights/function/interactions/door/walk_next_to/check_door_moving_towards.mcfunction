@@ -1,3 +1,5 @@
+execute unless entity @s[tag=ff_door.automatic_open_requires_movement_towards] run return 1
+
 execute if block ~ ~ ~ #doors[facing=east] as @a[limit=1,tag=ff_door.player] rotated ~ 0 positioned ^ ^ ^10 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:10},z:{max:10}}}} if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:movement":{x:{min:1}}}} run return 1
 execute if block ~ ~ ~ #doors[facing=east] as @a[limit=1,tag=ff_door.player] rotated ~ 0 positioned ^ ^ ^-10 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:10},z:{max:10}}}} if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:movement":{x:{max:-1}}}} run return 1
 
@@ -9,3 +11,5 @@ execute if block ~ ~ ~ #doors[facing=west] as @a[limit=1,tag=ff_door.player] rot
 
 execute if block ~ ~ ~ #doors[facing=north] as @a[limit=1,tag=ff_door.player] rotated ~ 0 positioned ^ ^ ^10 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:10},z:{max:10}}}} if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:movement":{z:{max:-1}}}} run return 1
 execute if block ~ ~ ~ #doors[facing=north] as @a[limit=1,tag=ff_door.player] rotated ~ 0 positioned ^ ^ ^-10 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:10},z:{max:10}}}} if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:movement":{z:{min:1}}}} run return 1
+
+return fail
