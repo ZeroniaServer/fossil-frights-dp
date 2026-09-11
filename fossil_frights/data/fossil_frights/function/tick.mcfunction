@@ -78,6 +78,7 @@ function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 execute unless predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
+execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
 execute unless score $settings_locked ff_game_state matches 0 if entity @a[tag=ff_settings_hovering] run function fossil_frights:game/start_room/settings/board/clear_hover
 function fossil_frights:join/join_pads/tick

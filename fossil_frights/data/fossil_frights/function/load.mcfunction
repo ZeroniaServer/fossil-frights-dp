@@ -131,6 +131,7 @@ scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
+scoreboard objectives add ff_bat_fright_timer dummy
 scoreboard objectives add ff_anvil_time dummy
 scoreboard objectives add ff_anvil_result dummy
 scoreboard objectives add ff_anvil_hits dummy

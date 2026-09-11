@@ -20,3 +20,5 @@ summon minecraft:bat ^ ^1.1 ^0.3 {Tags:["ff_bats_fright","ff_bats_fright_big"],P
 summon minecraft:bat ^ ^1.1 ^0.3 {Tags:["ff_bats_fright","ff_bats_fright_big"],PersistenceRequired:true}
 summon minecraft:bat ^ ^1.1 ^0.3 {Tags:["ff_bats_fright","ff_bats_fright_big"],PersistenceRequired:true}
 execute as @e[type=minecraft:bat,tag=ff_bats_fright_big,sort=nearest,limit=4] run attribute @s minecraft:scale base set 1.5
+execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=!ff_bats_fright_initialized] store result score @s ff_bat_fright_timer run random value 500..700
+tag @e[type=minecraft:bat,tag=ff_bats_fright,tag=!ff_bats_fright_initialized] add ff_bats_fright_initialized
