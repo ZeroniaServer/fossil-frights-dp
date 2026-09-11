@@ -113,3 +113,10 @@ execute if entity @s[tag=ff_front_door.right] if score @s ff_door_angle matches 
 execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 80 9 2 80 9 minecraft:resin_brick_stairs[facing=south,half=top] strict
 execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 81 9 2 85 9 minecraft:resin_brick_stairs[facing=south,half=bottom] strict
 execute if entity @s[tag=ff_front_door.left] unless score @s ff_door_angle matches 0 run fill -2 80 9 2 85 9 minecraft:barrier strict
+
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 50 run fill 3 80 6 3 85 6 minecraft:zombie_wall_head[facing=north,powered=false] strict
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 50 run fill 3 80 7 3 85 7 minecraft:zombie_wall_head[facing=east,powered=false] strict
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 50 run fill -3 80 6 -3 85 6 minecraft:zombie_wall_head[facing=north,powered=false] strict
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 50 run fill -3 80 7 -3 85 7 minecraft:zombie_wall_head[facing=west,powered=false] strict
+execute if entity @s[tag=ff_front_door.left] unless score @s ff_door_angle matches 50 run fill 3 80 6 3 85 7 air strict
+execute if entity @s[tag=ff_front_door.left] unless score @s ff_door_angle matches 50 run fill -3 80 6 -3 85 7 air strict
