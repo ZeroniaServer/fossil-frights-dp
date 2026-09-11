@@ -10,24 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:yellow_stained_glass",
-                "minecraft:item_name": {
-                  "translate": "ff.join.random_team_beam",
-                  "italic": false
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "queue_beam"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                }
+                "minecraft:item_model": "fossil-frights:display/lobby/join_pads/queue_beam"
               }
             }
           ]

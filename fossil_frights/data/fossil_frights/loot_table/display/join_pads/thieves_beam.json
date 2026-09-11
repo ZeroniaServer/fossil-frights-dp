@@ -10,24 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:red_stained_glass",
-                "minecraft:item_name": {
-                  "text": "Thieves Beam",
-                  "italic": false
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "thieves_beam"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
-                  ]
-                }
+                "minecraft:item_model": "fossil-frights:display/lobby/join_pads/thieves_beam"
               }
             }
           ]

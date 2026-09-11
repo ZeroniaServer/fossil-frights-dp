@@ -7,7 +7,7 @@ scoreboard players set @a ff_queue_prompt_time 0
 scoreboard players set @a ff_queue_prompt_display 0
 tag @a remove ff_in_queue
 tag @a remove ff_join_spectator_zone
-execute positioned 0.5 80.0 8.0 rotated 0 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/join_pads/party_beam",nbt:{Tags:["ff_join_party_pad"],brightness:{sky:15,block:15},item_display:"fixed",transformation:{right_rotation:[1,0,0,0],scale:[4.999,1.999,1],left_rotation:[0.7071068,0,0,0.7071068],translation:[0,-0.5075,0]},width:5,height:1}}
+execute positioned 0.5 80.0 8.0 rotated 0 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/join_pads/party_beam",nbt:{Tags:["ff_join_party_pad"],brightness:{sky:15,block:15},transformation:{right_rotation:[0,0,0,1],scale:[4.999,1,1.999],left_rotation:[0,0,0,1],translation:[0,0,0]},width:5,height:1}}
 summon minecraft:text_display 0.4375 81.0 8.0 {Tags:["ff_join_party_label"],billboard:"center",view_range:10,background:0,shadow:true,text_opacity:255,brightness:{sky:15,block:15},text:{translate:"ff.join_party",font:"fossil-frights:small_caps",color:"yellow"},width:2,height:1}
 function fossil_frights:join/join_pads/show/party
 scoreboard players set $join_pad_mode ff_game_state 3
