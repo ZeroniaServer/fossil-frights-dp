@@ -1,1 +1,7 @@
-bossbar set fossil_frights:speedrun_timer name [{text:"\ue442",font:"fossil-frights:speedrun_delta",color:"#aca800"},{text:" "},{score:{name:"$timer_min_tens",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"},{score:{name:"$timer_min_ones",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"},{text:":",font:"fossil-frights:small_caps",color:"#aca800"},{score:{name:"$timer_sec_tens",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"},{score:{name:"$timer_sec_ones",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"},{text:".",font:"fossil-frights:small_caps",color:"#aca800"},{score:{name:"$timer_centi_tens",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"},{score:{name:"$timer_centi_ones",objective:"ff_day"},font:"fossil-frights:small_caps",color:"#aca800"}]
+scoreboard players set #8 ff_dummy 8
+scoreboard players set #20 ff_dummy 20
+execute store result score $timer_anim_frame ff_dummy run scoreboard players get $day_timer ff_day
+scoreboard players operation $timer_anim_frame ff_dummy /= #20 ff_dummy
+scoreboard players operation $timer_anim_frame ff_dummy %= #8 ff_dummy
+execute store result storage fossil_frights:spedrun_timer anim_frame int 1 run scoreboard players get $timer_anim_frame ff_dummy
+function fossil_frights:game/bossbar/speedrun/timer/set_name_macro with storage fossil_frights:spedrun_timer
