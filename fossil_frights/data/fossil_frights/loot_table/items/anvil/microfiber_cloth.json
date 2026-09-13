@@ -16,7 +16,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/dna/microfiber_cloth",
-                "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "ff_dna": true,
                   "itemID": "microfiber_cloth"

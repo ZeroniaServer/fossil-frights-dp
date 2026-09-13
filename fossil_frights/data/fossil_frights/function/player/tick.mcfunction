@@ -160,7 +160,7 @@ execute if entity @s[team=ff_guard] if predicate fossil_frights:game_state/game_
 execute if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:player/is_playing run function fossil_frights:game/heists/loot/rare/pickup/lady_bug/player_tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:tasks/hard/basketball_dance/player_tick
 tag @s add ff_dna_holder
-execute unless items entity @s weapon.mainhand *[custom_data~{ff_dna:true}] run tag @s remove ff_dna_holder
+execute unless items entity @s weapon.* *[custom_data~{ff_dna:true}] run tag @s remove ff_dna_holder
 execute if entity @s[tag=ff_dna_holder] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s from fossil_frights:detection_root
