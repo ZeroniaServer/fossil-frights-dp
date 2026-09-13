@@ -5,8 +5,8 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
-          "equipment": {
-            "mainhand": {
+          "slots": {
+            "weapon.*": {
               "predicates": {
                 "minecraft:custom_data": {
                   "itemID": "key"

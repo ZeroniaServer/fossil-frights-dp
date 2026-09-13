@@ -166,7 +166,7 @@ scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
-execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
+execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s[team=ff_lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[predicate=fossil_frights:player/is_playing] minecraft:waypoint_receive_range base set 60000000
