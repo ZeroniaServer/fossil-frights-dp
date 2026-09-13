@@ -21,7 +21,7 @@ execute if block ~ ~-1 ~ minecraft:decorated_pot[facing=west] run data modify st
 execute if block ~ ~-1 ~ minecraft:decorated_pot[facing=west] run data modify storage fossil_frights:decorated_pot display_data.item.components."minecraft:pot_decorations" append from storage fossil_frights:decorated_pot decorations[3]
 execute if block ~ ~-1 ~ minecraft:decorated_pot[facing=west] run data modify storage fossil_frights:decorated_pot display_data.item.components."minecraft:pot_decorations" append from storage fossil_frights:decorated_pot decorations[1]
 execute positioned ~ ~-1 ~ align xyz positioned ~0.5 ~0 ~0.5 run function fossil_frights:interactions/decorated_pots/create/summon_display with storage fossil_frights:decorated_pot
-execute positioned ~ ~-1 ~ align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:interaction ~ ~ ~ {Tags:["ff_decorated_pot"],width:0.875,height:1.0,response:true}
+execute positioned ~ ~-1 ~ align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:interaction ~ ~ ~ {Tags:["ff_decorated_pot"],width:0.875,height:1.0,response:false}
 setblock ~ ~-1 ~ air strict
 setblock ~ ~-1 ~ weathered_copper_golem_statue strict
 data remove storage fossil_frights:decorated_pot display_data
