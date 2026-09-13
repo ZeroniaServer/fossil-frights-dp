@@ -1,8 +1,18 @@
 {
-  "function": "minecraft:set_custom_data",
-  "tag": {
-    "ff_invisimask": {
-      "hidden": true
+  "function": "minecraft:filtered",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "invisimask"
+      }
+    }
+  },
+  "on_pass": {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "ff_invisimask": {
+        "hidden": true
+      }
     }
   }
 }

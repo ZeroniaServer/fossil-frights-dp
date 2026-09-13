@@ -1,9 +1,19 @@
 {
-  "function": "minecraft:set_components",
-  "components": {
-    "minecraft:equippable": {
-      "slot": "head",
-      "equip_sound": "minecraft:intentionally_empty"
+  "function": "minecraft:filtered",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "security_guard_hat"
+      }
+    }
+  },
+  "on_pass": {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head",
+        "equip_sound": "minecraft:intentionally_empty"
+      }
     }
   }
 }
