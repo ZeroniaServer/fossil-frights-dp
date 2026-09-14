@@ -132,9 +132,6 @@ scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
 scoreboard objectives add ff_bat_fright_timer dummy
-scoreboard objectives add ff_anvil_time dummy
-scoreboard objectives add ff_anvil_result dummy
-scoreboard objectives add ff_anvil_hits dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
