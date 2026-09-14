@@ -2,6 +2,8 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "vehicle": {}
+    "minecraft:passenger": {
+      "minecraft:entity_type": "minecraft:player"
+    }
   }
 }
