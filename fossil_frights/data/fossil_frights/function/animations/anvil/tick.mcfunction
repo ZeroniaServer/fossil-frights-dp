@@ -1,0 +1,1 @@
+execute unless entity @e[limit=1,type=minecraft:item_display,tag=ff_anvil.process] as @e[type=minecraft:item,x=39,y=81,z=62,dx=0,dy=0,dz=0] if items entity @s contents *[minecraft:custom_data~{ff_anvil_ingredient:{}}] if function fossil_frights:animations/anvil/throw/check run function fossil_frights:animations/anvil/throw/use
