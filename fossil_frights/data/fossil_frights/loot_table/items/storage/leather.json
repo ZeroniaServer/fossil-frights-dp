@@ -18,7 +18,10 @@
                 "minecraft:item_model": "minecraft:leather",
                 "minecraft:custom_data": {
                   "itemID": "leather",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_anvil_ingredient": {
+                    "result": "fossil_frights:items/anvil/leather_boots"
+                  }
                 }
               }
             }

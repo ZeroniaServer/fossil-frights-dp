@@ -18,7 +18,10 @@
                 "minecraft:item_model": "minecraft:sponge",
                 "minecraft:custom_data": {
                   "itemID": "sponge",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_anvil_ingredient": {
+                    "result": "fossil_frights:items/anvil/microfiber_cloth"
+                  }
                 }
               }
             }

@@ -1,2 +1,1 @@
-data remove storage fossil_frights:anvil source
-data remove storage fossil_frights:anvil result
+function fossil_frights:animations/anvil/process/stop

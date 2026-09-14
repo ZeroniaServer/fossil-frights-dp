@@ -52,7 +52,6 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
-execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[team=ff_guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
