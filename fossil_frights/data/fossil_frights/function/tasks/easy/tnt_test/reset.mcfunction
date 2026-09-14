@@ -1,2 +1,2 @@
 function fossil_frights:tasks/easy/tnt_test/cleanup
-function fossil_frights:tasks/easy/tnt_test/close_gate
+setblock 45 64 80 air

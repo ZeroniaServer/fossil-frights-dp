@@ -481,6 +481,7 @@ team add ff_security_camera
 team modify ff_security_camera collisionRule never
 advancement revoke @a from fossil_frights:detection_root
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
+function fossil_frights:animations/tasks/easy/tnt_test/detonator/rig/on_load
 function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/dinocoin/sarcophagus/talking_skull_default
 function fossil_frights:animations/interactions/load
