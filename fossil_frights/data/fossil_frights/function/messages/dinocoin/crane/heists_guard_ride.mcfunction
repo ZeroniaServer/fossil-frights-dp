@@ -1,0 +1,1 @@
+tellraw @p[predicate=fossil_frights:player/is_playing,distance=..3,sort=nearest,limit=1] {"translate":"ff.sculkadillo.ride","with":[{"translate":"ff.seconds.number","color":"red","with":["10"]}]}

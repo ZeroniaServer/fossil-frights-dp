@@ -1,3 +1,4 @@
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard] run return 0
 tag @s add ff_was_near_sculkadillo
 
 function fossil_frights:animations/dinocoin/crane/play/idle

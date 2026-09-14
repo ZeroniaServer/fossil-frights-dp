@@ -1,3 +1,4 @@
 function fossil_frights:animations/deep_dark_elevator/reset
 function fossil_frights:animations/dinocoin/crane/sculkadillo_default
 scoreboard players set $crane_wait ff_game_state 0
+scoreboard players set $crane_activation_team ff_game_state 0
