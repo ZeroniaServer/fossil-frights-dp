@@ -28,7 +28,7 @@ function fossil_frights:game/time/reset
 function fossil_frights:game/frights/timer/reset
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/glass_box/reset
-function fossil_frights:animations/door/close
+function fossil_frights:animations/front_door/close
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset

@@ -74,7 +74,7 @@ scoreboard objectives setdisplay sidebar ff_heist_sidebar
 function fossil_frights:game/heists/waiting_text/refresh
 function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/heists/capture_point/show
-function fossil_frights:animations/door/close
+function fossil_frights:animations/front_door/close
 function fossil_frights:join/join_pads/clear
 function fossil_frights:join/join_pads/setup
 scoreboard players set $heist_reveal_slot ff_heist 50

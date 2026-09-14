@@ -25,7 +25,7 @@ function fossil_frights:animations/credits/cleanup
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/frights/timer/reset
-function fossil_frights:animations/door/open
+function fossil_frights:animations/front_door/open
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset

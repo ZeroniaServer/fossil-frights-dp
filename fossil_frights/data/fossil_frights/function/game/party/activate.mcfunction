@@ -12,7 +12,7 @@ scoreboard players set $party_mode_active ff_game_state 1
 scoreboard players set $run_admin_modified ff_game_state 1
 function fossil_frights:game/start_room/settings/sync_message_state
 function fossil_frights:game/start_room/settings/board/refresh
-function fossil_frights:animations/door/open
+function fossil_frights:animations/front_door/open
 function fossil_frights:join/join_pads/party/setup
 function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:messages/duos/party_mode_activated

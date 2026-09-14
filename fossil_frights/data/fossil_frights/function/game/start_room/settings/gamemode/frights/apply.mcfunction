@@ -7,7 +7,7 @@ function fossil_frights:game/start_room/settings/gamemode/remove_other_players
 function fossil_frights:game/start_room/settings/gamemode/reset_frights_loadout
 execute if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/day_tracker/restore
 execute if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/reset/main
-execute if predicate fossil_frights:game_state/party_mode_active run function fossil_frights:animations/door/close
+execute if predicate fossil_frights:game_state/party_mode_active run function fossil_frights:animations/front_door/close
 function fossil_frights:game/party/reset
 function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/party/add_current_if_missing
