@@ -18,11 +18,11 @@ kill @e[type=minecraft:snowball,distance=..1.25,limit=1,sort=nearest]
 function fossil_frights:lobby_games/ant_fight/hit
 
 execute if score #decremented ff_dummy matches 1 run title @s actionbar [{translate:"ff.lobby.ant_fight.ant_score",color:"#71de75",with:[\
-    ["",{score:{name:"@s",objective:"ff_ant_score"},color:"white"}," ",{color:"red",text:"(-1)"},{color:"gray",text:"    "},{translate:"ff.lobby.ant_fight.ant_score.hit_by",color:"aqua",with:[{score:{name:"#ant_fight_attacker_name",objective:"ff_dummy"}}]}]\
+    ["",{score:{name:"@s",objective:"ff_ant_score"},color:"white"}," ",{color:"red",text:"(-1)"},{color:"gray",text:"    "},{translate:"ff.lobby.ant_fight.hit_by",color:"aqua",with:[{score:{name:"#ant_fight_attacker_name",objective:"ff_dummy"}}]}]\
     ]}]
 
 execute if score #decremented ff_dummy matches 0 run title @s actionbar [{translate:"ff.lobby.ant_fight.ant_score",color:"#71de75",with:[\
-    ["",{score:{name:"@s",objective:"ff_ant_score"},color:"white"},{color:"gray",text:"    "},{translate:"ff.lobby.ant_fight.ant_score.hit_by",color:"aqua",with:[{score:{name:"#ant_fight_attacker_name",objective:"ff_dummy"}}]}]\
+    ["",{score:{name:"@s",objective:"ff_ant_score"},color:"white"},{color:"gray",text:"    "},{translate:"ff.lobby.ant_fight.hit_by",color:"aqua",with:[{score:{name:"#ant_fight_attacker_name",objective:"ff_dummy"}}]}]\
     ]}]
 
 scoreboard players reset #ant_fight_attacker_name ff_dummy
