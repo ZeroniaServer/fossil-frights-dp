@@ -11,5 +11,5 @@ playsound minecraft:entity.skeleton.converted_to_stray master @a 18.5 95.5 53.5 
 playsound minecraft:block.bone_block.break master @a 18.5 95.5 53.5 0.8 0.8
 kill @e[type=minecraft:sniffer,tag=ff_sniffer_fright]
 kill @e[type=minecraft:interaction,tag=ff_sniffer_fright_click]
-summon minecraft:sniffer 19.09 95.00 54.56 {Tags:["ff_sniffer_fright"],PersistenceRequired:true,Silent:true,Rotation:[180,0],Passengers:[{id:"minecraft:interaction",Tags:["ff_sniffer_fright_click"],width:2,height:-2,response:true}]}
+summon minecraft:sniffer 19.09 95.00 54.56 {Tags:["ff_sniffer_fright"],PersistenceRequired:true,Silent:true,Rotation:[180,0],Passengers:[{id:"minecraft:interaction",Tags:["ff_sniffer_fright_click"],width:2.5,height:-2,response:true}]}
 attribute @e[type=minecraft:sniffer,tag=ff_sniffer_fright,sort=nearest,limit=1] minecraft:scale base set 1.25
