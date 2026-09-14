@@ -15,6 +15,7 @@
                   "translate": "ff.item.fishing_rod",
                   "color": "yellow"
                 },
+                "unbreakable": {},
                 "minecraft:item_model": "minecraft:fishing_rod",
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
