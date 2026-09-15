@@ -8,7 +8,7 @@
           "entity_type": "minecraft:interaction",
           "entity_tags": {
             "all_of": [
-              "ff_feed_the_plants_click"
+              "ff_feed_the_plants_east"
             ]
           }
         }
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:tasks/medium/feed_the_plants/clicked"
+    "function": "fossil_frights:tasks/medium/feed_the_plants/clicked_east"
   }
 }

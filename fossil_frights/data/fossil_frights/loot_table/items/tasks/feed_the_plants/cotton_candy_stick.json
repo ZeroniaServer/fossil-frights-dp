@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.cotton_candy",
+                  "color": "yellow",
+                  "extra": [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "item.minecraft.stick"
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "cotton_candy_stick"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

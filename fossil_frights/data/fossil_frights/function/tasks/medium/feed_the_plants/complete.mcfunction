@@ -1,6 +1,5 @@
 execute unless score $feed_the_plants_sel ff_task_state matches 1 run return 0
 execute unless score $feed_the_plants_done ff_task_state matches 0 run return 0
-execute as @e[type=minecraft:item_display,tag=animation.carnivorous_flytrap.root,distance=..3,sort=nearest,limit=1] at @s run function fossil_frights:tasks/medium/feed_the_plants/flytrap_fed
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "feed_the_plants"
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 at @s run playsound fossil-frights:task.feed_the_plants master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
 execute if score $feed_the_plants_sel ff_task_state matches 1 if score $feed_the_plants_done ff_task_state matches 0 at @s run playsound minecraft:entity.generic.eat block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.8 0.8

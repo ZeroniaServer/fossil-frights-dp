@@ -1,0 +1,21 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction",
+          "entity_tags": {
+            "all_of": [
+              "ff_feed_the_plants_northwest"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/medium/feed_the_plants/clicked_northwest"
+  }
+}
