@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=ff_feed_the_plants_flytrap_chewing] at @s positioned ~ ~1.65 ~ run particle minecraft:block{block_state:{Name:"minecraft:pink_concrete"}} ~ ~ ~ 0.12 0.14 0.12 0.06 10 force @a[tag=ff_frights_feedback_viewer,distance=..18]
+execute if entity @e[type=minecraft:item_display,tag=ff_feed_the_plants_flytrap_chewing] run schedule function fossil_frights:tasks/medium/feed_the_plants/flytrap_chew 4t replace
