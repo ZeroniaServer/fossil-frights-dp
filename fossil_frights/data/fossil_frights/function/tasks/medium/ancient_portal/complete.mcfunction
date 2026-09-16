@@ -8,6 +8,7 @@ execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_p
 execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $ancient_portal_sel ff_task_state matches 1 if score $ancient_portal_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"ancient_portal"}] 1
 execute if score $ancient_portal_sel ff_task_state matches 1 run scoreboard players set $ancient_portal_done ff_task_state 1
+execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/ancient_portal/cleanup
 function fossil_frights:tasks/tracker/refresh

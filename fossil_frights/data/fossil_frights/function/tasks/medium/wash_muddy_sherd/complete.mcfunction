@@ -8,6 +8,7 @@ execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_mu
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"wash_muddy_sherd"}] 1
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players set $wash_muddy_sherd_done ff_task_state 1
+function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

@@ -10,6 +10,7 @@ execute if score $coffee_top_up_sel ff_task_state matches 1 if score $coffee_top
 execute if score $coffee_top_up_sel ff_task_state matches 1 if score $coffee_top_up_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $coffee_top_up_sel ff_task_state matches 1 if score $coffee_top_up_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"coffee_top_up"}] 1
 execute if score $coffee_top_up_sel ff_task_state matches 1 run scoreboard players set $coffee_top_up_done ff_task_state 1
+execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/coffee_top_up/cleanup
 function fossil_frights:tasks/tracker/refresh

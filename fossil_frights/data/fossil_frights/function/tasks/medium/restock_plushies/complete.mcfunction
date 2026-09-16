@@ -7,6 +7,7 @@ execute if score $restock_plushies_sel ff_task_state matches 1 if score $restock
 execute if score $restock_plushies_sel ff_task_state matches 1 if score $restock_plushies_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"restock_plushies"}] 1
 execute if score $restock_plushies_sel ff_task_state matches 1 run scoreboard players set $restock_plushies_done ff_task_state 1
 execute as @e[type=item_display,tag=ff_deposited_skeleton_plushie] run data merge entity @s {view_range:1}
+execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/restock_plushies/cleanup
 function fossil_frights:tasks/tracker/refresh

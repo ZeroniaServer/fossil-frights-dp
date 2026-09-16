@@ -13,6 +13,7 @@ execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"cool_it"}] 1
 execute if score $cool_it_sel ff_task_state matches 1 run scoreboard players set $cool_it_done ff_task_state 1
+function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
