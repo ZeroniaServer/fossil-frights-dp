@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot",
+          "name": "minecraft:paper",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -15,12 +15,7 @@
                   "translate": "ff.item.carrot_cake",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:carrot",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/carrot_cake",
                 "minecraft:custom_data": {
                   "itemID": "carrot_cake",
                   "ff_heist_loot": true

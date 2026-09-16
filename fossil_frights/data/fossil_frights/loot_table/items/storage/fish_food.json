@@ -15,12 +15,7 @@
                   "translate": "ff.item.fish_food",
                   "color": "red"
                 },
-                "minecraft:item_model": "minecraft:rotten_flesh",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fish_food",
                 "minecraft:custom_data": {
                   "itemID": "fish_food",
                   "ff_heist_loot": true

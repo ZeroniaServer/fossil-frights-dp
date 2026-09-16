@@ -15,12 +15,7 @@
                   "translate": "ff.item.portal_core",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:heart_of_the_sea",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/ancient_portal_core",
                 "minecraft:custom_data": {
                   "itemID": "portal_core",
                   "ff_heist_common_loot": true,

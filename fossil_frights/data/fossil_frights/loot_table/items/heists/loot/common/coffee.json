@@ -15,7 +15,7 @@
                   "translate": "ff.item.coffee",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:milk_bucket",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/coffee",
                 "minecraft:consumable": {
                   "animation": "drink",
                   "has_consume_particles": false,

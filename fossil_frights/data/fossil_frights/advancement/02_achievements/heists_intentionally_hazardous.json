@@ -1,1 +1,41 @@
-{"parent":"fossil_frights:04_heists/root","display":{"icon":{"id":"minecraft:light_blue_stained_glass_pane","components":{"minecraft:item_name":{"translate":"ff.item.wet_floor_sign","color":"yellow","italic":false},"minecraft:lore":[{"text":"","extra":["wet_floor_sign"]}],"minecraft:tooltip_display":{"hidden_components":["minecraft:lore"]},"minecraft:custom_data":{"itemID":"wet_floor_sign"}}},"title":{"translate":"ff.advancement.heists_intentionally_hazardous"},"description":{"translate":"ff.advancement.heists_intentionally_hazardous.description"},"show_toast":true,"announce_to_chat":true},"criteria":{"hazard_triggered":{"trigger":"minecraft:impossible"}}}
+{
+  "parent": "fossil_frights:04_heists/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:light_blue_stained_glass_pane",
+      "components": {
+        "minecraft:item_name": {
+          "translate": "ff.item.wet_floor_sign",
+          "color": "yellow",
+          "italic": false
+        },
+        "minecraft:item_model": "fossil-frights:display/exhibits/basement/wet_floor_sign",
+        "minecraft:lore": [
+          {
+            "text": "",
+            "extra": ["wet_floor_sign"]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": ["minecraft:lore"]
+        },
+        "minecraft:custom_data": {
+          "itemID": "wet_floor_sign"
+        }
+      }
+    },
+    "title": {
+      "translate": "ff.advancement.heists_intentionally_hazardous"
+    },
+    "description": {
+      "translate": "ff.advancement.heists_intentionally_hazardous.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "hazard_triggered": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

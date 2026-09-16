@@ -4,7 +4,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "minecraft:breeze_rod",
+        "minecraft:item_model": "fossil-frights:items/frights/medium_items/febreeze_rod",
         "minecraft:custom_data": {
           "itemID": "febreeze_rod",
           "ff_heist_loot": true

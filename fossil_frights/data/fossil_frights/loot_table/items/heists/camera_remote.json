@@ -27,8 +27,12 @@
                     "color": "yellow",
                     "italic": false,
                     "with": [
-                      {"keybind": "key.attack"},
-                      {"keybind": "key.use"}
+                      {
+                        "keybind": "key.attack"
+                      },
+                      {
+                        "keybind": "key.use"
+                      }
                     ]
                   },
                   {
@@ -36,7 +40,9 @@
                     "color": "yellow",
                     "italic": false,
                     "with": [
-                      {"keybind": "key.sneak"}
+                      {
+                        "keybind": "key.sneak"
+                      }
                     ]
                   },
                   {
@@ -74,8 +80,12 @@
                         "color": "yellow",
                         "italic": false,
                         "with": [
-                          {"keybind": "key.attack"},
-                          {"keybind": "key.use"}
+                          {
+                            "keybind": "key.attack"
+                          },
+                          {
+                            "keybind": "key.use"
+                          }
                         ]
                       },
                       {
@@ -83,7 +93,9 @@
                         "color": "yellow",
                         "italic": false,
                         "with": [
-                          {"keybind": "key.sneak"}
+                          {
+                            "keybind": "key.sneak"
+                          }
                         ]
                       },
                       {

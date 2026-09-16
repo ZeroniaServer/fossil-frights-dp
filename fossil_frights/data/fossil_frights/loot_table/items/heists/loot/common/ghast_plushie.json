@@ -15,7 +15,7 @@
                   "translate": "ff.item.ghast_plushie",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:ghast_tear",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/ghast_plushie",
                 "minecraft:custom_data": {
                   "itemID": "ghast_plushie",
                   "ff_heist_common_loot": true,

@@ -15,12 +15,7 @@
                   "translate": "ff.item.scrap_metal",
                   "color": "dark_aqua"
                 },
-                "minecraft:item_model": "minecraft:iron_ingot",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/scrap_metal",
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
                   "ff_heist_loot": true,

@@ -15,12 +15,7 @@
                   "translate": "ff.item.lady_bug",
                   "color": "red"
                 },
-                "minecraft:item_model": "minecraft:spider_eye",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/lady_bug",
                 "minecraft:custom_data": {
                   "itemID": "lady_bug",
                   "ff_heist_loot": true

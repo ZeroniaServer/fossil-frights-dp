@@ -15,12 +15,7 @@
                   "translate": "ff.item.sniffer_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:totem_of_undying",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    7
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/plushies/sniffer_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

@@ -21,8 +21,14 @@
                     "color": "white",
                     "italic": false,
                     "with": [
-                      { "keybind": "key.attack", "color": "yellow" },
-                      { "keybind": "key.drop", "color": "yellow" }
+                      {
+                        "keybind": "key.attack",
+                        "color": "yellow"
+                      },
+                      {
+                        "keybind": "key.drop",
+                        "color": "yellow"
+                      }
                     ]
                   },
                   {
@@ -30,7 +36,10 @@
                     "color": "white",
                     "italic": false,
                     "with": [
-                      { "keybind": "key.use", "color": "yellow" }
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
                     ]
                   },
                   {
@@ -38,8 +47,14 @@
                     "color": "white",
                     "italic": false,
                     "with": [
-                      { "keybind": "key.sneak", "color": "yellow" },
-                      { "keybind": "key.use", "color": "yellow" }
+                      {
+                        "keybind": "key.sneak",
+                        "color": "yellow"
+                      },
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
                     ]
                   },
                   {
@@ -50,9 +65,9 @@
                 ],
                 "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_empty",
                 "minecraft:attack_range": {
-                  "min_reach": 0.0,
-                  "max_reach": 0.0,
-                  "hitbox_margin": 0.0
+                  "min_reach": 0,
+                  "max_reach": 0,
+                  "hitbox_margin": 0
                 },
                 "minecraft:piercing_weapon": {},
                 "minecraft:enchantments": {
@@ -83,8 +98,14 @@
                         "color": "white",
                         "italic": false,
                         "with": [
-                          { "keybind": "key.attack", "color": "yellow" },
-                          { "keybind": "key.drop", "color": "yellow" }
+                          {
+                            "keybind": "key.attack",
+                            "color": "yellow"
+                          },
+                          {
+                            "keybind": "key.drop",
+                            "color": "yellow"
+                          }
                         ]
                       },
                       {
@@ -92,7 +113,10 @@
                         "color": "white",
                         "italic": false,
                         "with": [
-                          { "keybind": "key.use", "color": "yellow" }
+                          {
+                            "keybind": "key.use",
+                            "color": "yellow"
+                          }
                         ]
                       },
                       {
@@ -100,8 +124,14 @@
                         "color": "white",
                         "italic": false,
                         "with": [
-                          { "keybind": "key.sneak", "color": "yellow" },
-                          { "keybind": "key.use", "color": "yellow" }
+                          {
+                            "keybind": "key.sneak",
+                            "color": "yellow"
+                          },
+                          {
+                            "keybind": "key.use",
+                            "color": "yellow"
+                          }
                         ]
                       },
                       {
@@ -112,9 +142,9 @@
                     ],
                     "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_empty",
                     "minecraft:attack_range": {
-                      "min_reach": 0.0,
-                      "max_reach": 0.0,
-                      "hitbox_margin": 0.0
+                      "min_reach": 0,
+                      "max_reach": 0,
+                      "hitbox_margin": 0
                     },
                     "minecraft:piercing_weapon": {},
                     "minecraft:enchantments": {

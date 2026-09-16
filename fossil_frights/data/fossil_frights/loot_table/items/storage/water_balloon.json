@@ -16,12 +16,7 @@
                   "color": "#10ACEE",
                   "translate": "ff.item.water_balloon"
                 },
-                "minecraft:item_model": "minecraft:splash_potion",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/water_balloon",
                 "minecraft:custom_data": {
                   "itemID": "water_balloon",
                   "ff_heist_loot": true

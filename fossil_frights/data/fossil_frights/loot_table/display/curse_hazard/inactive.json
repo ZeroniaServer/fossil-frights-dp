@@ -10,12 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:light_blue_stained_glass_pane",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    5
-                  ]
-                }
+                "minecraft:item_model": "fossil-frights:display/exhibits/basement/hazards/ghost_forcefield"
               }
             }
           ]

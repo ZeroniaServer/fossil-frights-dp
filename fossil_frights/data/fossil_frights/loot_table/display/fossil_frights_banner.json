@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:creeper_banner_pattern",
+                "minecraft:item_model": "fossil-frights:display/general/signs/logo/fossil_frights",
                 "minecraft:item_name": {
                   "text": "Fossil Frights Banner",
                   "italic": false

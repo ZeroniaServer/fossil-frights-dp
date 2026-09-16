@@ -15,12 +15,7 @@
                   "translate": "ff.item.chlorine_tablet",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "minecraft:sugar",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/chlorine_tablet",
                 "minecraft:custom_data": {
                   "itemID": "chlorine_tablet",
                   "ff_heist_loot": true

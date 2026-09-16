@@ -15,12 +15,7 @@
                   "translate": "ff.item.pink_jelly",
                   "color": "light_purple"
                 },
-                "minecraft:item_model": "minecraft:brain_coral_fan",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/pink_jelly",
                 "minecraft:custom_data": {
                   "itemID": "pink_jelly",
                   "ff_heist_loot": true

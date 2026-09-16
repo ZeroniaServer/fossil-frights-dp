@@ -15,12 +15,7 @@
                   "translate": "ff.item.chondrite",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:slime_ball",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/chondrite",
                 "minecraft:custom_data": {
                   "itemID": "chondrite",
                   "ff_heist_common_loot": true,

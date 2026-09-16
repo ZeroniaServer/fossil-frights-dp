@@ -15,12 +15,7 @@
                   "translate": "ff.item.dry_ice",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "minecraft:ice",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/dry_ice",
                 "minecraft:custom_data": {
                   "itemID": "dry_ice",
                   "ff_heist_loot": true

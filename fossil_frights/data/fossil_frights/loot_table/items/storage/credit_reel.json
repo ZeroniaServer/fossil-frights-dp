@@ -15,12 +15,7 @@
                   "translate": "ff.item.credit_reel",
                   "color": "white"
                 },
-                "minecraft:item_model": "minecraft:structure_void",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/credit_reel",
                 "minecraft:custom_data": {
                   "itemID": "credit_reel",
                   "ff_heist_loot": true

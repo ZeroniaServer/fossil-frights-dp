@@ -15,12 +15,7 @@
                   "translate": "ff.item.muddy_sherd",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:miner_pottery_sherd",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/muddy_sherd",
                 "minecraft:custom_data": {
                   "itemID": "muddy_sherd",
                   "ff_heist_loot": true

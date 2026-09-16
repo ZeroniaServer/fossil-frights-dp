@@ -22,13 +22,34 @@
               "function": "minecraft:set_contents",
               "component": "minecraft:container",
               "entries": [
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/night_stick" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/ice_cannon_remote" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/trap_glow" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/camera_remote" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot_book" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/invisimask/random" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/hazard_cookie" },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/night_stick"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/ice_cannon_remote"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/trap_glow"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/camera_remote"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot_book"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/invisimask/random"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/hazard_cookie"
+                },
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/other/dinocoin",
@@ -39,7 +60,10 @@
                     }
                   ]
                 },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/one_time_key" }
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/one_time_key"
+                }
               ]
             }
           ]

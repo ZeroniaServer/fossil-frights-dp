@@ -8,7 +8,7 @@
           "translate": "ff.item.t_rex_plushie",
           "italic": false
         },
-        "minecraft:item_model": "minecraft:totem_of_undying",
+        "minecraft:item_model": "fossil-frights:items/plushies/t-rex_plushie",
         "minecraft:lore": [
           {
             "text": "",

@@ -22,31 +22,106 @@
               "function": "minecraft:set_contents",
               "component": "minecraft:container",
               "entries": [
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/coffee" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/poster_tube" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/ghast_plushie" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/piglin_head" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/popcorn" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/lollipop" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/fishing_rod" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/burger" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/chocolate_cake" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/chondrite" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/ancient_scripture" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/sand_dollar" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/trilobite_fossil" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/golden_sword" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/portal_core" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/common/spyglass" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/rare/misplaced_scissors" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/t_rex_skull" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/velociraptor_statue" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/vault" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/biplane" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/raptor_skull" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/crab" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/warden" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/heists/loot/heavy/treasure_chest" }
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/coffee"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/poster_tube"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/ghast_plushie"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/piglin_head"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/popcorn"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/lollipop"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/fishing_rod"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/burger"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/chocolate_cake"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/chondrite"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/ancient_scripture"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/sand_dollar"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/trilobite_fossil"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/golden_sword"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/portal_core"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/spyglass"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/rare/misplaced_scissors"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/t_rex_skull"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/velociraptor_statue"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/vault"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/biplane"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/raptor_skull"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/crab"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/warden"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/treasure_chest"
+                }
               ]
             }
           ]

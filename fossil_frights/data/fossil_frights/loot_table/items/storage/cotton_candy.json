@@ -15,12 +15,7 @@
                   "translate": "ff.item.cotton_candy",
                   "color": "light_purple"
                 },
-                "minecraft:item_model": "minecraft:sweet_berries",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/cotton_candy",
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink",

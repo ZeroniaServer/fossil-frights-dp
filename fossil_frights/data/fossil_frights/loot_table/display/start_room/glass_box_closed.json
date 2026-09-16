@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:gray_stained_glass_pane",
+                "minecraft:item_model": "fossil-frights:display/general/glass_box/glass_box_closed",
                 "minecraft:item_name": {
                   "text": "Glass Box",
                   "italic": false

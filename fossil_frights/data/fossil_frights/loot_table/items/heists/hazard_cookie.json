@@ -15,7 +15,7 @@
                   "translate": "ff.item.hazard_cookie",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:cookie",
+                "minecraft:item_model": "fossil-frights:items/heists/gear/thief/hazard_cookie",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.hazard_cookie.description",

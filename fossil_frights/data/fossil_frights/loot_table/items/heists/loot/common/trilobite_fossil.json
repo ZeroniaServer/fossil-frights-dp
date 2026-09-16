@@ -15,12 +15,7 @@
                   "translate": "ff.item.trilobite_fossil",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:guster_pottery_sherd",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/heists/loot/fossilized_trilobite",
                 "minecraft:custom_data": {
                   "itemID": "trilobite_fossil",
                   "ff_heist_common_loot": true,

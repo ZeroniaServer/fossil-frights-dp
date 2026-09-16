@@ -15,12 +15,7 @@
                   "translate": "ff.item.fire_tablet",
                   "color": "red"
                 },
-                "minecraft:item_model": "minecraft:netherite_ingot",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fire_tablet",
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",
                   "ff_heist_loot": true

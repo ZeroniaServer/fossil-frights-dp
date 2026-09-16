@@ -15,12 +15,7 @@
                   "translate": "ff.item.trike_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:totem_of_undying",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    3
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/plushies/trike_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

@@ -15,12 +15,7 @@
                   "translate": "ff.item.empty_popcorn",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:phantom_membrane",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/empty_popcorn",
                 "minecraft:custom_data": {
                   "itemID": "empty_popcorn",
                   "ff_heist_loot": true

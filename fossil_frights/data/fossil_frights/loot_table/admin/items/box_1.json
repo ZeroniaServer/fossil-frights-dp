@@ -22,33 +22,114 @@
               "function": "minecraft:set_contents",
               "component": "minecraft:container",
               "entries": [
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/febreeze_rod" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/fertilizer" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/water_balloon" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/chlorine_tablet" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/scrap_metal" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/soap" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/dry_ice" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/fire_tablet" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/golden_nautilus" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/skeleton_plushie" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/fish_food" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/copper_shuffle" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/instant_coffee" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/empty_popcorn" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/pink_jelly" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/leather" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/brush" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/cotton_candy" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/credit_reel" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/lady_bug" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/muddy_sherd" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/carrot_cake" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/storage/cookie" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/basketball" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/other/vault_key" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/hoverboard" },
-                { "type": "minecraft:loot_table", "value": "fossil_frights:items/anvil/leather_boots" }
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/febreeze_rod"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/fertilizer"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/water_balloon"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/chlorine_tablet"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/scrap_metal"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/soap"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/dry_ice"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/fire_tablet"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/golden_nautilus"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/skeleton_plushie"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/fish_food"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/copper_shuffle"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/instant_coffee"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/empty_popcorn"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/pink_jelly"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/leather"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/brush"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/cotton_candy"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/credit_reel"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/lady_bug"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/muddy_sherd"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/carrot_cake"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/cookie"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/other/basketball"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/other/vault_key"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/anvil/hoverboard"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/anvil/leather_boots"
+                }
               ]
             }
           ]

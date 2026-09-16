@@ -15,12 +15,7 @@
                   "translate": "ff.item.fertilizer",
                   "color": "dark_green"
                 },
-                "minecraft:item_model": "minecraft:bone_meal",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    1
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fertilizer",
                 "minecraft:custom_data": {
                   "itemID": "fertilizer",
                   "ff_heist_loot": true

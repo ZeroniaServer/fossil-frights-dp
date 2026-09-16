@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:sweet_berries",
+                "minecraft:item_model": "fossil-frights:display/tasks/feed_plants/cotton_candy_blue",
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_blue"
                 }

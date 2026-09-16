@@ -15,7 +15,7 @@
                   "translate": "ff.item.chocolate_cake",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:cake",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/chocolate_cake",
                 "minecraft:custom_data": {
                   "itemID": "chocolate_cake",
                   "ff_heist_common_loot": true,

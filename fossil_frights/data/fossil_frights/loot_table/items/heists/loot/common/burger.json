@@ -15,7 +15,7 @@
                   "translate": "ff.item.burger",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:cooked_beef",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/burger",
                 "minecraft:custom_data": {
                   "itemID": "burger",
                   "ff_heist_common_loot": true,

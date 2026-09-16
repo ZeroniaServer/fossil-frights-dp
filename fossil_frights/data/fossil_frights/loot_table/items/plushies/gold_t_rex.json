@@ -15,12 +15,7 @@
                   "translate": "ff.item.gold_t_rex_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:totem_of_undying",
-                "minecraft:custom_model_data": {
-                  "floats": [
-                    5
-                  ]
-                },
+                "minecraft:item_model": "fossil-frights:items/plushies/gold_t-rex_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },
