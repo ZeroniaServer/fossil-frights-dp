@@ -15,7 +15,7 @@
                   "translate": "ff.item.warden",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/warden",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/loot_bag",
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "warden",
