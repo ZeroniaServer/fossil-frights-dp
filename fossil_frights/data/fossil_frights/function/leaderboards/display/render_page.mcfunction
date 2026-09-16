@@ -1,6 +1,12 @@
 function fossil_frights:leaderboards/display/reset_selected
 scoreboard players operation #lb_page_label ff_lb_calc = #lb_page ff_lb_calc
 scoreboard players add #lb_page_label ff_lb_calc 1
+execute if score #lb_page ff_lb_calc matches 0 run data modify storage fossil_frights:leaderboards slot_1.color set value "#F2C14E"
+execute if score #lb_page ff_lb_calc matches 0 run data modify storage fossil_frights:leaderboards slot_2.color set value "#D6D9DF"
+execute if score #lb_page ff_lb_calc matches 0 run data modify storage fossil_frights:leaderboards slot_3.color set value "#B87333"
+execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_frights:leaderboards slot_1.color set value "white"
+execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_frights:leaderboards slot_2.color set value "white"
+execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_frights:leaderboards slot_3.color set value "white"
 function fossil_frights:leaderboards/display/update_navigation
 scoreboard players set #lb_slot_1_rank ff_lb_calc 1
 execute if score #lb_page ff_lb_calc matches 1.. run scoreboard players add #lb_slot_1_rank ff_lb_calc 10
