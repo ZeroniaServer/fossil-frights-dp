@@ -1,4 +1,4 @@
-$data modify storage fossil_frights:leaderboards display_text_index append value {"text":"$(label)","color":"#F6E7B0"}
+$data modify storage fossil_frights:leaderboards display_text_index append value [{"score":{"name":"#lb_slot_$(slot)_rank","objective":"ff_lb_calc"},"color":"#F6E7B0"},{"text":".","color":"#F6E7B0"}]
 $execute if score #lb_slot_$(slot)_kind ff_lb_calc matches 1 run function fossil_frights:leaderboards/display/append_time_value with storage fossil_frights:leaderboards slot_$(slot)
 $execute if score #lb_slot_$(slot)_kind ff_lb_calc matches 2 run function fossil_frights:leaderboards/display/append_day_value with storage fossil_frights:leaderboards slot_$(slot)
 $data modify storage fossil_frights:leaderboards display_text_player append value {"text":"$(name)","color":"$(color)"}

@@ -12,6 +12,8 @@ scoreboard players set #lb_ten ff_lb_calc 10
 scoreboard players set #lb_five ff_lb_calc 5
 scoreboard players set #lb_max_entries ff_lb_calc 50
 scoreboard players set $leaderboard_display_ready ff_lb_calc 0
+scoreboard players set #lb_page ff_lb_calc 0
+scoreboard players set #lb_page_label ff_lb_calc 1
 execute unless score $current ff_lb_generation matches -2147483648..2147483647 run scoreboard players set $current ff_lb_generation 1
 execute unless data storage fossil_frights:leaderboards entries run data modify storage fossil_frights:leaderboards entries set value []
 execute unless data storage fossil_frights:leaderboards revoked run data modify storage fossil_frights:leaderboards revoked set value []
@@ -25,3 +27,4 @@ data modify storage fossil_frights:leaderboards slot_7 set value {slot:"7",label
 data modify storage fossil_frights:leaderboards slot_8 set value {slot:"8",label:"8.",index:-1,kind:0,color:"white"}
 data modify storage fossil_frights:leaderboards slot_9 set value {slot:"9",label:"9.",index:-1,kind:0,color:"white"}
 data modify storage fossil_frights:leaderboards slot_10 set value {slot:"10",label:"10.",index:-1,kind:0,color:"white"}
+data modify storage fossil_frights:leaderboards discard set value {slot:"discard",index:-1,kind:0,color:"white"}

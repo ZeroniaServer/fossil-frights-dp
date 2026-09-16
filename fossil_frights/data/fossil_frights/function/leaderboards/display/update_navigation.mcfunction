@@ -1,0 +1,6 @@
+execute if score #lb_page ff_lb_calc matches 0 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value [{text:"<",font:"fossil-frights:small_caps",color:"#777777"},{text:"  1/5  >",font:"fossil-frights:small_caps",color:"#F6E7B0"}]
+execute if score #lb_page ff_lb_calc matches 1 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value {text:"<  2/5  >",font:"fossil-frights:small_caps",color:"#F6E7B0"}
+execute if score #lb_page ff_lb_calc matches 2 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value {text:"<  3/5  >",font:"fossil-frights:small_caps",color:"#F6E7B0"}
+execute if score #lb_page ff_lb_calc matches 3 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value {text:"<  4/5  >",font:"fossil-frights:small_caps",color:"#F6E7B0"}
+execute if score #lb_page ff_lb_calc matches 4.. as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value [{text:"<  5/5  ",font:"fossil-frights:small_caps",color:"#F6E7B0"},{text:">",font:"fossil-frights:small_caps",color:"#777777"}]
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text_opacity set value -1b

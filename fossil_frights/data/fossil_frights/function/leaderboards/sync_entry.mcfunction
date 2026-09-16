@@ -18,3 +18,4 @@ execute store result storage fossil_frights:leaderboards candidate.run_count int
 function fossil_frights:leaderboards/cache/remove_candidate_name with storage fossil_frights:leaderboards candidate
 execute if score $lb_candidate_time ff_lb_calc matches 1.. run function fossil_frights:leaderboards/cache/insert_candidate
 execute if score $lb_candidate_time ff_lb_calc matches ..0 if score $lb_candidate_day ff_lb_calc matches 1.. run function fossil_frights:leaderboards/cache/insert_candidate
+function fossil_frights:leaderboards/display/refresh
