@@ -1,1 +1,1 @@
-$title @s actionbar {"text":"$(glyph)","font":"fossil-frights:actionbar/thief_ability_cooldown","italic":false}
+$title @s actionbar [{"text":"Invisi","font":"fossil-frights:small_caps","color":"#90cced","italic":false},{"text":"punch","font":"fossil-frights:small_caps","color":"gold","italic":false},{"text":"\uE601","font":"fossil-frights:invisipunch_layout","italic":false},{"text":"$(glyph)","font":"fossil-frights:actionbar/thief_ability_cooldown","color":"white","italic":false},{"text":"\uE602","font":"fossil-frights:invisipunch_layout","italic":false}]
