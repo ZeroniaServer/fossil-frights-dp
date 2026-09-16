@@ -500,12 +500,13 @@ function fossil_frights:game/time/reset
 function fossil_frights:game/frights/timer/reset
 function fossil_frights:tasks/load
 function fossil_frights:animations/anvil/load
-function fossil_frights:leaderboards/load
-function fossil_frights:animations/deep_dark_elevator/load
-function fossil_frights:game/reset/reload
 execute in minecraft:overworld run forceload add 0 0
 execute in minecraft:overworld run forceload add -112 -96 191 100
 execute in minecraft:overworld run forceload add -112 101 191 271
+function fossil_frights:leaderboards/load
+function fossil_frights:leaderboards/display/rebuild
+function fossil_frights:animations/deep_dark_elevator/load
+function fossil_frights:game/reset/reload
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:mob_griefing false
 gamerule minecraft:random_tick_speed 0

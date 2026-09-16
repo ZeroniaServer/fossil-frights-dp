@@ -41,6 +41,6 @@ scoreboard players enable @a ff_invite_sel
 scoreboard players set @a ff_invite_accept 0
 scoreboard players enable @a ff_invite_accept
 function fossil_frights:game/start_room/settings/board/refresh
-scoreboard players set $leaderboard_display_ready ff_lb_calc 0
+function fossil_frights:leaderboards/display/refresh
 function fossil_frights:animations/dinocoin/crane/hide_parkour_route
 function fossil_frights:game/reset

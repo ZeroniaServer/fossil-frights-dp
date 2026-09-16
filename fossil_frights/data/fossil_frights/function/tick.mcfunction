@@ -75,7 +75,6 @@ execute if entity @a[limit=1,x=-24,y=70,z=-30,dx=16,dy=30,dz=16] if score $parko
 execute if entity @a[limit=1,x=82,y=74,z=68,dx=20,dy=20,dz=20] if score $temple_run_display_ready ff_temple_run_display matches 0 run function fossil_frights:lobby_games/temple_run/display/rebuild
 execute if entity @a[limit=1,x=-40,y=72,z=90,dx=24,dy=20,dz=24] if score $ant_display_ready ff_ant_display matches 0 run function fossil_frights:lobby_games/ant_fight/display/rebuild
 function fossil_frights:lobby_games/sulfur_strikers/tick
-execute if score $leaderboard_display_ready ff_lb_calc matches 0 run function fossil_frights:leaderboards/display/rebuild
 execute unless predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
 function fossil_frights:game/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
