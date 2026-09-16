@@ -13,7 +13,6 @@ stopwatch remove fossil_frights:day_duration
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
 execute as @a[team=ff_guard] run function fossil_frights:key/refresh
-function fossil_frights:tasks/reset
 function fossil_frights:locator_bar/markers/sync
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest

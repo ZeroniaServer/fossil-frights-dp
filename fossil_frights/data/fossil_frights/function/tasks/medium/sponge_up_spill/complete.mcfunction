@@ -17,4 +17,4 @@ execute if entity @s[type=minecraft:item] run function fossil_frights:items/util
 execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/sponge_up_spill/cleanup
 function fossil_frights:tasks/tracker/refresh
-schedule function fossil_frights:tasks/check_day_complete 20t
+function fossil_frights:tasks/check_day_complete

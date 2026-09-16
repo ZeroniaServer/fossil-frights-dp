@@ -11,4 +11,4 @@ execute if score $tnt_test_sel ff_task_state matches 1 if score $tnt_test_done f
 execute if score $tnt_test_sel ff_task_state matches 1 run scoreboard players set $tnt_test_done ff_task_state 1
 function fossil_frights:tasks/easy/tnt_test/cleanup
 function fossil_frights:tasks/tracker/refresh
-schedule function fossil_frights:tasks/check_day_complete 25t
+function fossil_frights:tasks/check_day_complete
