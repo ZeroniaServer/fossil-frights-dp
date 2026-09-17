@@ -30,6 +30,8 @@ function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:animations/front_door/open
 function fossil_frights:game/heists/day_tracker/hide
 function fossil_frights:game/heists/waiting_text/show
+setblock 0 109 55 minecraft:lectern[facing=north,has_book=false] strict
+data modify entity @e[limit=1,type=minecraft:item_display,tag=fh_thief_info_book] view_range set value 1
 function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/heists/capture_point/setup
 function fossil_frights:join/join_pads/heists/setup
