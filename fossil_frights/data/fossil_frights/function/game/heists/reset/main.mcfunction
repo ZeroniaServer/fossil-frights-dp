@@ -139,3 +139,6 @@ scoreboard players set $heist_guard_coin_pending ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
 scoreboard players reset * ff_heist_reveal
 function fossil_frights:key/lock/setup
+function fossil_frights:game/heists/waiting_text/hide
+setblock 0 109 55 minecraft:air strict
+data modify entity @e[limit=1,type=minecraft:item_display,tag=fh_thief_info_book] view_range set value 0

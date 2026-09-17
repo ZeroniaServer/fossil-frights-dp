@@ -74,6 +74,8 @@ scoreboard objectives setdisplay sidebar ff_heist_sidebar
 function fossil_frights:game/heists/waiting_text/refresh
 function fossil_frights:game/start_room/locked_door/show
 function fossil_frights:game/heists/capture_point/show
+setblock 0 109 55 minecraft:lectern[facing=north,has_book=false] strict
+data modify entity @e[limit=1,type=minecraft:item_display,tag=fh_thief_info_book] view_range set value 1
 function fossil_frights:animations/front_door/close
 function fossil_frights:join/join_pads/clear
 function fossil_frights:join/join_pads/setup
