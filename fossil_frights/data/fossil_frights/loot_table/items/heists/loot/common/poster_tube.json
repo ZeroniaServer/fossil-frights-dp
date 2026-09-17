@@ -16,6 +16,10 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/loot/poster_tube",
+                "minecraft:enchantments": {
+                  "minecraft:knockback": 2
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "poster_tube",
                   "ff_heist_common_loot": true,

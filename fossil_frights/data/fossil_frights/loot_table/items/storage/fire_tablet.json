@@ -16,6 +16,10 @@
                   "color": "red"
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/fire_tablet",
+                "minecraft:enchantments": {
+                  "minecraft:fire_aspect": 1
+                },
+                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",
                   "ff_heist_loot": true
