@@ -35,8 +35,8 @@ execute unless data storage fossil_frights:chorus_cola calc.passengers[0] run re
 data modify storage fossil_frights:chorus_cola calc.passengers[].id set value "minecraft:marker"
 function fossil_frights:items/chorus_cola/teleport/summon_batch with storage fossil_frights:chorus_cola calc
 execute positioned 0 0 0 as @e[limit=1,distance=..0.01,type=minecraft:item_display,tag=ff_chorus_cola_teleport_location_batch] run function fossil_frights:items/chorus_cola/teleport/selected_batch
-execute if score #max_horizontal_distance ff_dummy matches ..16 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:16}}}} run kill @s
-execute if score #max_horizontal_distance ff_dummy matches 17.. as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:32}}}} run kill @s
+execute if score #max_horizontal_distance ff_dummy matches ..16 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:16}}}} run kill @s
+execute if score #max_horizontal_distance ff_dummy matches 17.. as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:32}}}} run kill @s
 
 # Teleport player
 execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/chorus_cola/teleport/choose_marker/frights
