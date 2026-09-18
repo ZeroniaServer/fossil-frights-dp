@@ -1,0 +1,4 @@
+$execute positioned as @e[limit=1,sort=random,distance=10..,type=minecraft:marker,tag=ff_chorus_cola_teleport_location,predicate=!$(this_room_predicate),predicate=$(teleportable_rooms_predicate)] run return run function fossil_frights:items/chorus_cola/teleport/teleport_player
+$execute positioned as @e[limit=1,sort=random,distance=20..,type=minecraft:marker,tag=ff_chorus_cola_teleport_location,predicate=$(this_room_predicate)] run return run function fossil_frights:items/chorus_cola/teleport/teleport_player
+$execute positioned as @e[limit=1,sort=random,type=minecraft:marker,tag=ff_chorus_cola_teleport_location,predicate=!$(this_room_predicate),predicate=$(teleportable_rooms_predicate)] run return run function fossil_frights:items/chorus_cola/teleport/teleport_player
+function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief/generic_fallback
