@@ -38,6 +38,9 @@ execute positioned 0 0 0 as @e[limit=1,distance=..0.01,type=minecraft:item_displ
 execute if score #max_horizontal_distance ff_dummy matches ..16 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:16}}}} run kill @s
 execute if score #max_horizontal_distance ff_dummy matches 17.. as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:32}}}} run kill @s
 
+# Ignore a_c_vents in heists mode
+execute if predicate fossil_frights:game_state/heist_mode_active run kill @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location,predicate=fossil_frights:location/room/floor_2/a_c_vents]
+
 # Teleport player
 execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/chorus_cola/teleport/choose_marker/frights
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_thief] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief

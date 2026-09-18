@@ -19,7 +19,8 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "vault",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_heist_heavy_loot": true
                 }
               }
             }
