@@ -90,6 +90,9 @@ execute as @a at @s run function fossil_frights:player/tick
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
 function fossil_frights:game/heists/alarm_effects/tick
+execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=ff_ant_fight,gamemode=!spectator]
+execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name
+execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name ff_ant_score_below_name
 
 bossbar set fossil_frights:resource_pack_disclaimer players
 execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]

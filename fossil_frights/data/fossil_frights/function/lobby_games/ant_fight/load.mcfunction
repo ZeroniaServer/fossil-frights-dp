@@ -4,7 +4,6 @@ scoreboard objectives add ff_ant_leaf_seen dummy
 scoreboard objectives add ff_ant_score dummy
 scoreboard objectives add ff_ant_score_below_name dummy
 scoreboard objectives modify ff_ant_score_below_name displayname ""
-scoreboard objectives setdisplay below_name ff_ant_score_below_name
 scoreboard objectives add ff_ant_top_score dummy
 scoreboard objectives add ff_ant_immunity dummy
 scoreboard objectives add ff_ant_sneak_time minecraft.custom:minecraft.sneak_time
