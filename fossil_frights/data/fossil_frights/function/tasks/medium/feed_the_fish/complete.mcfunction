@@ -4,9 +4,8 @@ execute unless entity @s[team=ff_guard] run return 0
 execute unless items entity @s weapon.* *[minecraft:custom_data~{itemID:"fish_food"}] run return 0
 execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "feed_the_fish"
 execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run function fossil_frights:tasks/medium/feed_the_fish/cleanup
-execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 positioned 11 81 66 run playsound minecraft:block.bubble_column.bubble_pop block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
-execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 positioned 11.5 81.4 66.5 run particle minecraft:block{block_state:{Name:"minecraft:dead_brain_coral_block"}} ~ ~ ~ 0.35 0.25 0.35 0.07 34 force
-execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 positioned 11.5 81.2 66.5 run particle minecraft:bubble ~ ~ ~ 0.35 0.25 0.35 0.03 18 force
+execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 positioned 11 81 66 run playsound minecraft:block.bubble_column.whirlpool_inside master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.5 0
+execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run schedule function fossil_frights:tasks/medium/feed_the_fish/particle/spawn_all 1t
 execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $feed_the_fish_sel ff_task_state matches 1 if score $feed_the_fish_done ff_task_state matches 0 run clear @s *[minecraft:custom_data~{itemID:"fish_food"}] 1
