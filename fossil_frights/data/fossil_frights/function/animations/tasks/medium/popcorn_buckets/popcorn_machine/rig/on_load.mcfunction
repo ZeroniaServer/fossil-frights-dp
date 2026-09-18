@@ -1,0 +1,2 @@
+data modify storage fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig rig_hash set value 'fa02ebde3a976c2756fa25673dd2408dea0d8baeb3acbf28e4e0ae8a5edb9f29'
+scoreboard objectives add aj.run.frame dummy

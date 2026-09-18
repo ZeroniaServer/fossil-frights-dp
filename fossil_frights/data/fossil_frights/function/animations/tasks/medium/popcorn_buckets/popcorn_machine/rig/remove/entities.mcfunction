@@ -1,0 +1,1 @@
+kill @e[tag=animation.popcorn_machine.entity]

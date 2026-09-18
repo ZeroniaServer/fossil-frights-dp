@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=animation.popcorn_machine.root] run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/remove/this

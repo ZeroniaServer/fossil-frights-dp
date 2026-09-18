@@ -1,0 +1,1 @@
+$data merge entity $(corn_bone12) {transformation: [0f,0f,0f,0.2969f,0f,0f,0f,0.4688f,0f,0f,0f,0.2344f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

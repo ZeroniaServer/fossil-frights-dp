@@ -1,0 +1,3 @@
+tellraw @a [{text:'',color:red},[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig)'},'\n → '],'ᴇʀʀᴏʀ: ',{text:'No Variants',underlined:true},'\n\n ','This Blueprint has no variants to switch between.','\n']
+function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/remove/this/without_on_remove_function
+scoreboard players set #success aj.i 0

@@ -1,0 +1,2 @@
+tellraw @a [{text:'',color:red},[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig)'},'\n → '],'ᴇʀʀᴏʀ: ',{text:'Argument Cannot Be Empty',underlined:true},'\n\n ','Argument ',{text:animation,color:yellow},{text:' cannot be an empty string.'},'\n']
+function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/remove/this/without_on_remove_function

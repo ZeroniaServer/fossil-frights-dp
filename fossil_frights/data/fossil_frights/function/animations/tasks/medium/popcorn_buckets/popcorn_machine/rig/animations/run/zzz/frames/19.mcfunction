@@ -1,0 +1,3 @@
+$data merge entity $(corn_bone4) {transformation: [-1f,0f,0f,-0.2187f,0f,1f,0f,1.1813f,0f,0f,-1f,-0.2969f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(corn_bone10) {transformation: [-1f,0f,0f,0.3125f,0f,1f,0f,0.9438f,0f,0f,-1f,-0.0312f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(corn_bone14) {transformation: [-1f,0f,0f,0.0781f,0f,1f,0f,0.7063f,0f,0f,-1f,0.2969f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

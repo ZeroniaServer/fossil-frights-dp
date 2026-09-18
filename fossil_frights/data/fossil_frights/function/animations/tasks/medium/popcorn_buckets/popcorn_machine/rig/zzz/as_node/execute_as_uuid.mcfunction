@@ -1,0 +1,3 @@
+scoreboard players set #aj.check aj.i 1
+$execute as $(uuid) run return run $(command)
+tellraw @a [{text:'',color:red},[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig)'},'\n → '],'ᴇʀʀᴏʀ: ',{text:'Node Not Found',underlined:true},'\n\n ','Node ',{nbt:args.name,storage:'fossil_frights:vending_machine_aj_temp',color:aqua},' does not exist!','\n Please ensure that its name is spelled correctly.','\n']

@@ -1,0 +1,2 @@
+execute if entity @s[tag=animation.popcorn_machine.animation.run.playing] run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/run/zzz/on_tick
+execute on passengers run rotate @s ~ ~

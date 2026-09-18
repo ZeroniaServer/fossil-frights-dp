@@ -1,0 +1,4 @@
+$data modify storage fossil_frights:vending_machine_aj_temp args.uuid set from storage fossil_frights:vending_machine_aj_temp entry.data.uuids_by_name.$(name)
+scoreboard players set #aj.check aj.i 0
+function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/zzz/as_node/execute_as_uuid with storage fossil_frights:vending_machine_aj_temp args
+execute if score #aj.check aj.i matches 0 run tellraw @a [{text:'',color:red},[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig)'},'\n → '],'ᴇʀʀᴏʀ: ',{text:'Failed to Execute Command as Node',underlined:true},'\n\n ','Failed to execute command ',{nbt:args.command,storage:'fossil_frights:vending_machine_aj_temp',color:yellow},' as Node ',{nbt:args.name,storage:'fossil_frights:vending_machine_aj_temp',color:aqua},'.','\n Please ensure the command is valid.','\n']

@@ -1,0 +1,3 @@
+$data merge entity $(popcorn_bone) {transformation: [-1f,0f,0f,0.5f,0f,1f,0f,0.3166f,0f,0f,-1f,-0.375f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(corn_bone8) {transformation: [0f,0f,0f,0.2969f,0f,0f,0f,0.4688f,0f,0f,0f,-0.2969f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(corn_bone13) {transformation: [-1f,0f,0f,0.2187f,0f,1f,0f,1.4187f,0f,0f,-1f,0.2969f,0f,0f,0f,1f],start_interpolation: -1,interpolation_duration: 0}

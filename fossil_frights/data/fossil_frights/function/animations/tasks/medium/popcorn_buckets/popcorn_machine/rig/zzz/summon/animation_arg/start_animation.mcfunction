@@ -1,0 +1,1 @@
+$function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/$(animation)/resume

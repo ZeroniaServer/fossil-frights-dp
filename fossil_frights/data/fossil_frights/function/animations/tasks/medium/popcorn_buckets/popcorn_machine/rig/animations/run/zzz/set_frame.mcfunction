@@ -1,0 +1,3 @@
+$function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/run/zzz/frames/$(frame) with storage fossil_frights:vending_machine_aj_temp entry.data.uuids_by_name
+execute on passengers run data modify entity @s start_interpolation set value -1
+return 1

@@ -1,0 +1,1 @@
+function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/zzz/apply_default_pose_to_nodes with storage fossil_frights:vending_machine_aj_temp entry.data.uuids_by_name
