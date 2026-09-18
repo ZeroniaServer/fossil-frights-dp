@@ -1,0 +1,182 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -14.3,
+                    "max": 11.3
+                  },
+                  "y": {
+                    "min": 103.0,
+                    "max": 110.0
+                  },
+                  "z": {
+                    "min": 30.7,
+                    "max": 44.3
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "x": 11.3
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "y": 110.0
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "z": 44.3
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -26.3,
+                    "max": 0.3
+                  },
+                  "y": {
+                    "min": 103.0,
+                    "max": 110.0
+                  },
+                  "z": {
+                    "min": 36.7,
+                    "max": 51.3
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "x": 0.3
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "y": 110.0
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "z": 51.3
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -26.3,
+                    "max": -20.7
+                  },
+                  "y": {
+                    "min": 104.0,
+                    "max": 110.0
+                  },
+                  "z": {
+                    "min": 32.7,
+                    "max": 37.3
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "x": -20.7
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "y": 110.0
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "z": 37.3
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_3/timeline"
+    }
+  ]
+}

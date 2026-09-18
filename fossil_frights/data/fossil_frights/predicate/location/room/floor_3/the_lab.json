@@ -1,0 +1,56 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "position": {
+          "x": {
+            "min": -26.0,
+            "max": -11.0
+          },
+          "y": {
+            "min": 106.0,
+            "max": 110.0
+          },
+          "z": {
+            "min": 51.0,
+            "max": 65.0
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": -11.0
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": 110.0
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "z": 65.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

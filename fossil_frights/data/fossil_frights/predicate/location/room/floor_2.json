@@ -1,0 +1,53 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/balcony"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/upper_bathroom"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/humans"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/left_hall"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/terrarium"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/mezzanine"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/aviary"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/bat_cave"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/observatory"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/eggshibit"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/lady_bugs"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2/a_c_vents"
+    }
+  ]
+}
