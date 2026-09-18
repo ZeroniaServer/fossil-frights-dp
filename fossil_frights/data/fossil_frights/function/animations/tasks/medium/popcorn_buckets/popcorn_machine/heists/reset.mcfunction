@@ -1,0 +1,2 @@
+execute unless entity @e[type=minecraft:item_display,tag=animation.popcorn_machine.root,x=27.375,y=75.5,z=83,distance=..3,limit=1] run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/default
+execute positioned 27.375 75.5 83 as @e[type=minecraft:item_display,tag=animation.popcorn_machine.root,distance=..3,sort=nearest,limit=1] at @s run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/run/set_frame {frame:0}

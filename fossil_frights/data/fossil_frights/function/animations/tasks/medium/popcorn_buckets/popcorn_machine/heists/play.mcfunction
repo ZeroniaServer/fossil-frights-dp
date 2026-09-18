@@ -1,0 +1,1 @@
+execute positioned 27.375 75.5 83 as @e[type=minecraft:item_display,tag=animation.popcorn_machine.root,distance=..3,sort=nearest,limit=1] at @s run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/run/play_exclusive
