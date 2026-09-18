@@ -14,7 +14,7 @@ execute if predicate fossil_frights:location/room/floor_1/skeletons run return r
 execute if predicate fossil_frights:location/room/floor_1/theater run return run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief/try {this_room_predicate:"fossil_frights:location/room/floor_1/theater",teleportable_rooms_predicate:"fossil_frights:location/room/floor_1"}
 
 # ruins
-execute if predicate fossil_frights:location/room/ruins/deep_dark run return run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief/try {this_room_predicate:"fossil_frights:location/room/ruins/deep_dark",teleportable_rooms_predicate:"fossil_frights:location/room/ruins"}
+execute if predicate fossil_frights:location/room/ruins/deep_dark run return run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief/try {this_room_predicate:"fossil_frights:location/room/ruins/deep_dark",teleportable_rooms_predicate:"fossil_frights:location/chorus_cola/heists_thief_teleportable_from/deep_dark"}
 execute if predicate fossil_frights:location/room/ruins run return run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief/try {this_room_predicate:"fossil_frights:location/room/ruins",teleportable_rooms_predicate:"fossil_frights:location/chorus_cola/heists_thief_teleportable_from/ruins"}
 
 # floor 2
