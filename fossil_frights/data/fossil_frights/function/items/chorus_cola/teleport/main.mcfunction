@@ -2,8 +2,8 @@
 scoreboard players set #max_horizontal_distance ff_dummy 32
 
 # Load markers
-execute at @s rotated as @s run tp 0-0-0-0 ~ ~ ~ ~ ~
-execute as 0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
+tp 0-0-0-0-0 ~ ~ ~ ~ ~
+execute as 0-0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
 data modify storage fossil_frights:chorus_cola calc.player_pos set from storage fossil_frights:position_cache position
 execute store result score #chunk_x_0 ff_dummy store result score #chunk_x_1 ff_dummy store result score #chunk_x_2 ff_dummy store result score #chunk_x_3 ff_dummy store result score #chunk_x_4 ff_dummy run data get storage fossil_frights:chorus_cola calc.player_pos[0]
 execute store result score #chunk_z_0 ff_dummy store result score #chunk_z_1 ff_dummy store result score #chunk_z_2 ff_dummy store result score #chunk_z_3 ff_dummy store result score #chunk_z_4 ff_dummy run data get storage fossil_frights:chorus_cola calc.player_pos[2]
