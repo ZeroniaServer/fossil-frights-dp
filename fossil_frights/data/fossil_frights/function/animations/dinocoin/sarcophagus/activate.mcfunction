@@ -5,4 +5,5 @@ setblock 79 75 79 air
 setblock 79 75 78 air
 fill 78 75 78 78 75 79 minecraft:smooth_stone_slab
 scoreboard players set $sarcophagus_timer ff_game_state 300
+scoreboard players set $sarcophagus_item_timer ff_game_state 300
 scoreboard players set $sarcophagus_prompt_cooldown ff_game_state 300
