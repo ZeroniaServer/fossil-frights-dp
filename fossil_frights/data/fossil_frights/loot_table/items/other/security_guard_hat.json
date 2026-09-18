@@ -48,6 +48,10 @@
                   "name": "fossil_frights:game_state/heist_mode_active"
                 }
               ]
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
             }
           ]
         }

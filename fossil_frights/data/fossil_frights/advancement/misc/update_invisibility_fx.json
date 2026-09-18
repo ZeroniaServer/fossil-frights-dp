@@ -1,0 +1,72 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "obtain_invisible_item_while_not_invisible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:team": "ff_thief"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:effects": {
+                  "minecraft:invisibility": {}
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "ff_invisible": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "obtain_any_item_while_invisible": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:team": "ff_thief"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:effects": {
+                "minecraft:invisibility": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_invisible_item_while_not_invisible",
+      "obtain_any_item_while_invisible"
+    ]
+  ],
+  "rewards": {
+    "function": "fossil_frights:game/heists/invisibility_fx/update"
+  }
+}

@@ -25,4 +25,5 @@ execute if score $heist_round_active ff_game_state matches 0 if score $heist_but
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/round_tick
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/heists/glowing_fx/tick
+function fossil_frights:game/heists/invisibility_fx/tick
 execute if items entity @a[gamemode=!spectator] weapon.* minecraft:fishing_rod run schedule function fossil_frights:items/fishing_rod/tick 1t append

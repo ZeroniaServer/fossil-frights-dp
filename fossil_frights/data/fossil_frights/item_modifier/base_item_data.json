@@ -1,0 +1,21 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "ff_invisible": true
+          }
+        }
+      },
+      "on_fail": {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+          "ff_invisible": false
+        }
+      }
+    }
+  ]
+}

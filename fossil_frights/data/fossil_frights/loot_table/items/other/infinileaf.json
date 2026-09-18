@@ -57,6 +57,10 @@
                   "itemID": "infinileaf"
                 }
               }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
             }
           ]
         }

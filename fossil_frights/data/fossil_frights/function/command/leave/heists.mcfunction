@@ -1,4 +1,5 @@
 effect clear @s minecraft:invisibility
+function fossil_frights:game/heists/invisibility_fx/check_player
 scoreboard players set $alarm_effects_on ff_heist 0
 scoreboard players set @s ff_heist_punch_cd 0
 scoreboard players set @s ff_heist_punch_bar 0

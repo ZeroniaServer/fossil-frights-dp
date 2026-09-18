@@ -33,6 +33,7 @@ tp @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] 0 -200 0
 kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
 effect clear @a[team=ff_thief] minecraft:invisibility
+execute as @a[team=ff_thief] run function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @a[team=ff_thief] minecraft:speed
 effect clear @a[team=ff_thief] minecraft:night_vision
 effect clear @a[team=ff_thief] minecraft:slowness

@@ -33,6 +33,10 @@
                   "ff_completes_picnic_with_trike_task": true
                 }
               }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
             }
           ]
         }

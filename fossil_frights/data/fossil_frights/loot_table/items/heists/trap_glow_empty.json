@@ -175,6 +175,10 @@
                   "ff_trap_empty": true
                 }
               }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
             }
           ]
         }

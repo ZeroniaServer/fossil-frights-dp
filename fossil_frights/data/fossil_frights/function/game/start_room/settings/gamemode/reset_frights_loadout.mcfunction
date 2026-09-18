@@ -2,6 +2,7 @@ clear @s
 effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect clear @s minecraft:invisibility
+function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @s minecraft:speed
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
