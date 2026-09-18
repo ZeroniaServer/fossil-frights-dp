@@ -1,3 +1,4 @@
+execute if entity @s[type=minecraft:item,predicate=fossil_frights:entity/contents/dinocoin] run function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s[type=minecraft:item,predicate=fossil_frights:entity/contents/dinocoin]
 function fossil_frights:run_breakdown/event/add {code:"C",id:"01"}
 tag @a[tag=ff_well_teleporting] remove ff_well_teleporting
