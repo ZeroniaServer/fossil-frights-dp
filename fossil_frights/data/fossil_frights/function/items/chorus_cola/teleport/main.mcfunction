@@ -1,9 +1,7 @@
-execute store result score #choose ff_dummy run random value 1..20
-execute if score #choose ff_dummy matches 1..5 run scoreboard players set #teleport_distance_max ff_dummy 16
-execute if score #choose ff_dummy matches 6..13 run scoreboard players set #teleport_distance_max ff_dummy 8
-execute if score #choose ff_dummy matches 14..18 run scoreboard players set #teleport_distance_max ff_dummy 16
-execute if score #choose ff_dummy matches 19..20 run scoreboard players set #teleport_distance_max ff_dummy 32
+# Determine load type (max horizontal distance)
+scoreboard players set #max_horizontal_distance ff_dummy 32
 
+# Load markers
 execute at @s rotated as @s run tp 0-0-0-0 ~ ~ ~ ~ ~
 execute as 0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
 data modify storage fossil_frights:chorus_cola calc.player_pos set from storage fossil_frights:position_cache position
@@ -31,19 +29,20 @@ execute store result storage fossil_frights:chorus_cola calc.chunk_z_2 int 1 run
 execute store result storage fossil_frights:chorus_cola calc.chunk_z_3 int 1 run scoreboard players operation #chunk_z_3 ff_dummy /= #16 ff_constant
 execute store result storage fossil_frights:chorus_cola calc.chunk_z_4 int 1 run scoreboard players operation #chunk_z_4 ff_dummy /= #16 ff_constant
 data modify storage fossil_frights:chorus_cola calc.passengers set value []
-execute if score #teleport_distance_max ff_dummy matches 17.. run function fossil_frights:items/chorus_cola/teleport/append_markers_5x5 with storage fossil_frights:chorus_cola calc
-execute if score #teleport_distance_max ff_dummy matches ..16 run function fossil_frights:items/chorus_cola/teleport/append_markers_3x3 with storage fossil_frights:chorus_cola calc
+execute if score #max_horizontal_distance ff_dummy matches 17.. run function fossil_frights:items/chorus_cola/teleport/append_markers_5x5 with storage fossil_frights:chorus_cola calc
+execute if score #max_horizontal_distance ff_dummy matches ..16 run function fossil_frights:items/chorus_cola/teleport/append_markers_3x3 with storage fossil_frights:chorus_cola calc
 execute unless data storage fossil_frights:chorus_cola calc.passengers[0] run return run function fossil_frights:items/chorus_cola/teleport/fail
 data modify storage fossil_frights:chorus_cola calc.passengers[].id set value "minecraft:marker"
 function fossil_frights:items/chorus_cola/teleport/summon_batch with storage fossil_frights:chorus_cola calc
 execute positioned 0 0 0 as @e[limit=1,distance=..0.01,type=minecraft:item_display,tag=ff_chorus_cola_teleport_location_batch] run function fossil_frights:items/chorus_cola/teleport/selected_batch
+execute if score #max_horizontal_distance ff_dummy matches ..16 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:16}}}} run kill @s
+execute if score #max_horizontal_distance ff_dummy matches 17.. as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:32}}}} run kill @s
 
-execute store result storage fossil_frights:chorus_cola calc.max int 1 run scoreboard players get #teleport_distance_max ff_dummy
-execute if predicate fossil_frights:game_state/heist_mode_active if score #choose ff_dummy matches 1..5 run function fossil_frights:items/chorus_cola/teleport/choose_marker/nearest
-execute if predicate fossil_frights:game_state/heist_mode_active if score #choose ff_dummy matches 6..13 run function fossil_frights:items/chorus_cola/teleport/choose_marker/within_range_else_nearest with storage fossil_frights:chorus_cola calc
-execute if predicate fossil_frights:game_state/heist_mode_active if score #choose ff_dummy matches 14..18 run function fossil_frights:items/chorus_cola/teleport/choose_marker/within_range_else_within_32_else_any_loaded with storage fossil_frights:chorus_cola calc
-execute if predicate fossil_frights:game_state/heist_mode_active if score #choose ff_dummy matches 19..20 run function fossil_frights:items/chorus_cola/teleport/choose_marker/within_range_else_any_loaded with storage fossil_frights:chorus_cola calc
-execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/chorus_cola/teleport/choose_marker/frights_task
+# Teleport player
+execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/chorus_cola/teleport/choose_marker/frights
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_thief] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_guard
 
+# Unload markers
 tp @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] 0 0 0
 kill @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location]
