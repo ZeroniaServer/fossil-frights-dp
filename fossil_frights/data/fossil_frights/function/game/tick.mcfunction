@@ -45,3 +45,4 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run function fossil_frights:messages/bossbar/update_day_name
 function fossil_frights:game/start_room/day_tracker/refresh
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/timeout/day
+execute if predicate fossil_frights:game_state/game_running if items entity @a[gamemode=!spectator] weapon.* minecraft:fishing_rod run schedule function fossil_frights:items/fishing_rod/tick 1t append
