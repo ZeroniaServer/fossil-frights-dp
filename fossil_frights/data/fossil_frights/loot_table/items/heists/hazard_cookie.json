@@ -19,7 +19,7 @@
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.hazard_cookie.description",
-                    "color": "yellow",
+                    "color": "white",
                     "italic": false
                   }
                 ],
