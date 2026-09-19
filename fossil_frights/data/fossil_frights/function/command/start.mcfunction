@@ -1,4 +1,4 @@
-# Public default start route. Starts Frights when idle, otherwise follows the current lobby.
+# Default start route.
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/already_active
