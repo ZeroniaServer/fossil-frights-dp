@@ -5,6 +5,7 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 tag @s remove ff_tutorial
 function fossil_frights:tutorial/camera/kill_owned
+function fossil_frights:join/lobby
 scoreboard players set @s ff_tutorial 0
 scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0
@@ -12,6 +13,7 @@ spectate
 clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset
+effect clear @s minecraft:invisibility
 title @s actionbar ""
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
