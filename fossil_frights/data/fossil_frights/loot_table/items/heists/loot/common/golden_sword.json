@@ -16,10 +16,10 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/loot/golden_sword",
-                "minecraft:max_damage": 32,
                 "minecraft:max_stack_size": 1,
-                "unbreakable": {},
-                "minecraft:weapon": {},
+                "minecraft:weapon": {
+                  "item_damage_per_attack": 0
+                },
                 "minecraft:attribute_modifiers": [
                   {
                     "type": "minecraft:attack_damage",

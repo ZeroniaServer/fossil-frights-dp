@@ -11,11 +11,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "!minecraft:max_damage": {},
+                "!minecraft:damage": {},
                 "minecraft:item_name": {
                   "translate": "ff.item.fishing_rod",
                   "color": "yellow"
                 },
-                "unbreakable": {},
                 "minecraft:item_model": "fossil-frights:items/heists/loot/fishing_rod",
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
