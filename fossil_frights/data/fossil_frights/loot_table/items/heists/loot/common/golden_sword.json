@@ -15,7 +15,7 @@
                   "translate": "ff.item.golden_sword",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:golden_sword",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/golden_sword",
                 "minecraft:max_damage": 32,
                 "minecraft:max_stack_size": 1,
                 "unbreakable": {},

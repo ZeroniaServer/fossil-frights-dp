@@ -14,7 +14,7 @@
                 "minecraft:item_name": {
                   "translate": "item.minecraft.leather_boots"
                 },
-                "minecraft:item_model": "minecraft:leather_boots",
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/leather_boots",
                 "minecraft:custom_data": {
                   "itemID": "leather_boots"
                 }

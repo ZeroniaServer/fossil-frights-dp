@@ -15,10 +15,7 @@
                   "color": "gold",
                   "translate": "ff.item.basketball"
                 },
-                "minecraft:item_model": "minecraft:player_head",
-                "minecraft:profile": {
-                  "texture": "fossil-frights:items/frights/hard_items/basketball"
-                },
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/basketball",
                 "minecraft:lore": [
                   {
                     "color": "yellow",

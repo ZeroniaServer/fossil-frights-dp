@@ -15,7 +15,7 @@
                   "translate": "ff.item.spyglass",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:spyglass",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/spyglass",
                 "minecraft:custom_data": {
                   "itemID": "spyglass",
                   "ff_heist_common_loot": true,

@@ -15,7 +15,7 @@
                   "translate": "ff.item.copper_shuffle",
                   "color": "gold"
                 },
-                "minecraft:item_model": "minecraft:music_disc_creator_music_box",
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/copper_shuffle",
                 "minecraft:custom_data": {
                   "itemID": "copper_shuffle",
                   "ff_heist_loot": true

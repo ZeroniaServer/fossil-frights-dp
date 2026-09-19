@@ -15,7 +15,7 @@
                   "color": "yellow",
                   "translate": "ff.item.brush"
                 },
-                "minecraft:item_model": "minecraft:brush",
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/brush",
                 "minecraft:custom_data": {
                   "itemID": "brush",
                   "ff_heist_loot": true

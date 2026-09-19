@@ -15,7 +15,7 @@
                   "translate": "ff.item.piglin_head",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:piglin_head",
+                "minecraft:item_model": "fossil-frights:items/heists/loot/piglin_head",
                 "minecraft:custom_data": {
                   "itemID": "piglin_head",
                   "ff_heist_common_loot": true,

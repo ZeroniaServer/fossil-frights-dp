@@ -15,7 +15,7 @@
                   "color": "yellow",
                   "translate": "ff.item.sponge"
                 },
-                "minecraft:item_model": "minecraft:sponge",
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/sponge",
                 "minecraft:custom_data": {
                   "itemID": "sponge",
                   "ff_heist_loot": true,

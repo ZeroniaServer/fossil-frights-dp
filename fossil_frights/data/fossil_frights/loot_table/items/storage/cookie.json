@@ -15,7 +15,7 @@
                   "translate": "ff.item.cookie",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "minecraft:cookie",
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/cookie",
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
                   "itemID": "cookie",
