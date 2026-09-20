@@ -10,6 +10,7 @@ effect give @s minecraft:slowness 5 9 true
 tag @s add ff_ice_frozen
 function fossil_frights:items/heists/ice_cannon/overlay_show
 function fossil_frights:items/heists/ice_cannon/freeze_player/apply_attribute_modifiers
+function fossil_frights:util/player/extinguish
 scoreboard players set @s ff_heist_thaw_fx 0
 summon minecraft:block_display ~ ~ ~ {Tags:["ff_ice_freeze","ff_ice_freeze_new","ff_trap_freeze_block"],block_state:{Name:"minecraft:frosted_ice",Properties:{age:"0"}},teleport_duration:1,start_interpolation:0,interpolation_duration:2,transformation:{right_rotation:[0,0,0,1],scale:[2,2,2],left_rotation:[0,0,0,1],translation:[-1,0,-1]},width:2,height:2}
 function fossil_frights:items/heists/ice_cannon/claim_new_display
