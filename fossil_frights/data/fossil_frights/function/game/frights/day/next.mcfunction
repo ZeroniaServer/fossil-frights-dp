@@ -5,6 +5,7 @@ execute if score $day_active ff_day matches 1 run function fossil_frights:messag
 execute if score $day_active ff_day matches 1 run return 0
 execute if score $day_current ff_day matches 10.. run function fossil_frights:messages/error/final_day_reached
 execute if score $day_current ff_day matches 10.. run return 0
+execute if score $day_current ff_day matches 0 if score $settings_speedrun_show ff_game_state matches 1 unless data storage fossil_frights:run_breakdown current{active:1b,finalized:0b} run function fossil_frights:run_breakdown/start
 execute if score $day_current ff_day matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
 execute if score $day_current ff_day matches 1..9 run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/capture_button
 scoreboard players add $day_current ff_day 1
