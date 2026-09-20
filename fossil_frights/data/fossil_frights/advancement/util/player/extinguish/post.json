@@ -1,0 +1,27 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "hurt_second_bat": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:entity_tags": {
+                "all_of": [
+                  "ff_extinguish",
+                  "ff_extinguish.post"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:util/player/extinguish/post"
+  }
+}
