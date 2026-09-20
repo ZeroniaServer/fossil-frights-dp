@@ -8,6 +8,7 @@ execute as @a[tag=ff_ice_cannon_shooter] at @s if entity @a[tag=ff_ice_cannon_hi
 execute positioned ~-0.5 ~-0.55 ~-0.5 run tag @e[type=player,dx=0,dy=0.1,dz=0,gamemode=!spectator,team=ff_thief] add ff_ice_cannon_impact_candidate
 execute positioned ~ ~-1 ~ as @p[tag=ff_ice_cannon_impact_candidate] at @s run function fossil_frights:items/heists/ice_cannon/freeze_player
 tag @a[tag=ff_ice_cannon_impact_candidate] remove ff_ice_cannon_impact_candidate
+execute positioned ~-1 ~-0.55 ~-1 as @a[dx=1,dy=0.1,dz=1,gamemode=!spectator,team=ff_guard] at @s run function fossil_frights:util/player/extinguish
 particle minecraft:snowflake ~ ~ ~ 0.45 0.45 0.45 0.03 55 force
 particle minecraft:dust{color:[0.62f,0.9f,1.0f],scale:1.0f} ~ ~ ~ 0.42 0.32 0.42 0.01 20 force
 particle minecraft:dust{color:[0.85f,0.96f,1.0f],scale:0.75f} ~ ~ ~ 0.35 0.25 0.35 0.01 14 force
