@@ -12,6 +12,7 @@ execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minec
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset
+execute as @a[team=ff_thief] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $day_active ff_day 0

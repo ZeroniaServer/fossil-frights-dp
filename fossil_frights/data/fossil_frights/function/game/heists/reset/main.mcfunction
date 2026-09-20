@@ -43,6 +43,7 @@ execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range
 execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
 execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset
+execute as @a[team=ff_thief] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:jump_strength base reset
 scoreboard players set @a ff_heist_punch_cd 0
 scoreboard players set @a ff_heist_punch_bar 0

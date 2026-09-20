@@ -1,7 +1,4 @@
-attribute @s minecraft:jump_strength base reset
-attribute @s minecraft:entity_interaction_range base reset
-attribute @s minecraft:movement_speed base reset
-attribute @s minecraft:friction_modifier base reset
+function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 scoreboard players set @s ff_heist_thaw_fx 60
 effect clear @s minecraft:slowness
 function fossil_frights:items/heists/ice_cannon/overlay_hide
