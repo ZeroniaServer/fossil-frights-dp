@@ -265,6 +265,7 @@ scoreboard objectives add ff_security_gate_cache.y dummy
 scoreboard objectives add ff_security_gate_cache.min_y dummy
 scoreboard objectives add ff_security_gate_cache.max_y dummy
 scoreboard objectives add ff_security_gate_sound_delay dummy
+scoreboard objectives add ff_security_gate_close_timestamp dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2

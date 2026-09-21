@@ -5,6 +5,10 @@ execute if entity @s[tag=ff_security_gate.final_step] run execute store result s
 execute if entity @s[tag=ff_security_gate.final_step] run execute store result storage fossil_frights:security_gate gate_data.half_width float 0.5 run scoreboard players operation #width_minus_one ff_dummy = @s ff_security_gate_cache.width
 execute if entity @s[tag=ff_security_gate.final_step] run execute store result storage fossil_frights:security_gate gate_data.width_minus_one float 1 run scoreboard players remove #width_minus_one ff_dummy 1
 execute if entity @s[tag=ff_security_gate.final_step] run function fossil_frights:animations/security_gate/open_close/fill_remove with storage fossil_frights:security_gate gate_data
+execute if entity @s[tag=ff_security_gate.final_step,tag=ff_security_gate.manually_opened] run execute store result score @s ff_security_gate_close_timestamp run time query gametime
+execute if entity @s[tag=ff_security_gate.final_step,tag=ff_security_gate.manually_opened] run scoreboard players add @s ff_security_gate_close_timestamp 40
+execute if entity @s[tag=ff_security_gate.final_step,tag=ff_security_gate.manually_opened] run schedule function fossil_frights:animations/security_gate/check_scheduled_close 40t append
+execute if entity @s[tag=ff_security_gate.final_step,tag=ff_security_gate.manually_opened] run tag @s remove ff_security_gate.manually_opened
 execute if entity @s[tag=ff_security_gate.final_step] run return run tag @s remove ff_security_gate.final_step
 
 scoreboard players operation #open_amount ff_dummy = @s ff_security_gate_cache.max_y
