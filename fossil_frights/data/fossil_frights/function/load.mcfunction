@@ -37,7 +37,6 @@ scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_penny_pincher_coins dummy
 scoreboard objectives add ff_hazard_rng dummy
-scoreboard objectives add ff_gate_timer dummy
 scoreboard objectives add ff_door_angle dummy
 scoreboard objectives add ff_door_target dummy
 scoreboard objectives add ff_door_tick dummy
@@ -260,6 +259,12 @@ scoreboard objectives add ff_block_door_interaction_until_timestamp dummy
 scoreboard objectives add ff_paint_water_time dummy
 scoreboard objectives add ff_invisimask_variant dummy
 scoreboard objectives add ff_glowing_fx_frame dummy
+scoreboard objectives add ff_security_gate_cache.speed dummy
+scoreboard objectives add ff_security_gate_cache.width dummy
+scoreboard objectives add ff_security_gate_cache.y dummy
+scoreboard objectives add ff_security_gate_cache.min_y dummy
+scoreboard objectives add ff_security_gate_cache.max_y dummy
+scoreboard objectives add ff_security_gate_sound_delay dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2
@@ -487,6 +492,7 @@ function fossil_frights:animations/tasks/medium/feed_the_plants/flytrap/default
 function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/dinocoin/sarcophagus/talking_skull_default
 function fossil_frights:animations/interactions/load
+function fossil_frights:animations/security_gate/load
 function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load

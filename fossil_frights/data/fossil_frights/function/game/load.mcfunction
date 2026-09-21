@@ -18,3 +18,4 @@ team join ff_lobby @a[team=ff_guard]
 team join ff_lobby @a[team=ff_thief]
 team join ff_lobby @a[team=ff_spectator]
 function fossil_frights:tasks/task_book_shelf/reset
+function fossil_frights:animations/security_gate/load
