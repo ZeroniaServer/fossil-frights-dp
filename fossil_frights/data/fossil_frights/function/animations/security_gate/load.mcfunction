@@ -26,6 +26,7 @@ execute positioned -14.5 80.0 61.5 run function fossil_frights:animations/securi
 execute positioned 15.5 80.0 16.5 run function fossil_frights:animations/security_gate/summon/main {type:"5x6",facing:"east"}
 execute positioned -14.5 80.0 16.5 run function fossil_frights:animations/security_gate/summon/main {type:"5x6",facing:"east"}
 execute positioned 22.5 94.0 23.5 run function fossil_frights:animations/security_gate/summon/main {type:"3x3",facing:"north"}
+execute positioned 27.5 80.0 48.5 run function fossil_frights:animations/security_gate/summon/main {type:"3x3",facing:"east"}
 execute positioned -22.5 70.0 48.0 run function fossil_frights:animations/security_gate/summon/main {type:"2x2",facing:"east"}
 execute positioned -2.5 70.0 39.5 run function fossil_frights:animations/security_gate/summon/main {type:"garage",facing:"north"}
 execute positioned -25.5 80.0 63.0 run function fossil_frights:animations/security_gate/summon/main {type:"2x2",facing:"east"}
