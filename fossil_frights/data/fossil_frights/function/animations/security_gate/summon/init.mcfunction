@@ -1,5 +1,7 @@
 tag @s remove ff_security_gate.new
 
+execute store result score @s ff_security_gate_cache.speed run data get storage fossil_frights:security_gate gate_data.speed 1000
+
 execute store result score @s ff_security_gate_cache.min_y run data get entity @s Pos[1] 1000
 execute store result score @s ff_security_gate_cache.max_y run data get storage fossil_frights:security_gate gate_data.height 1000
 scoreboard players operation @s ff_security_gate_cache.max_y += @s ff_security_gate_cache.min_y
