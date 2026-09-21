@@ -1,5 +1,6 @@
 execute if entity @s[tag=ff_security_gate.final_step] run tag @s remove ff_security_gate.closing
 execute if entity @s[tag=ff_security_gate.final_step] run function fossil_frights:animations/security_gate/close/particles
+execute if entity @s[tag=ff_security_gate.final_step] run tag @s add ff_security_gate.closed
 execute if entity @s[tag=ff_security_gate.final_step] run return run tag @s remove ff_security_gate.final_step
 
 scoreboard players operation @s ff_security_gate_cache.y -= @s ff_security_gate_cache.speed
