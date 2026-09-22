@@ -7,7 +7,7 @@ execute if score #slot ff_task_book_shelf matches 4 if items block 18 71 29 cont
 execute if score #slot ff_task_book_shelf matches 5 if items block 18 71 29 container.5 * run scoreboard players set #slot_occupied ff_task_book_shelf 1
 
 setblock 0 0 0 air strict
-setblock 0 0 0 yellow_shulker_box{lock:{count:-1}} strict
+setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict
 
 execute if score #slot_occupied ff_task_book_shelf matches 1 if predicate fossil_frights:player/input/sneak run return run function fossil_frights:tasks/task_book_shelf/pick_up_all
 execute if score #slot_occupied ff_task_book_shelf matches 0 if predicate fossil_frights:player/input/sneak run return run function fossil_frights:tasks/task_book_shelf/insert_all

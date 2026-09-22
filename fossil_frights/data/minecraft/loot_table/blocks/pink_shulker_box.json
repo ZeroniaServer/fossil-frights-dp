@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:yellow_shulker_box",
+          "name": "minecraft:pink_shulker_box",
           "functions": [
             {
               "function": "minecraft:copy_components",
@@ -61,5 +61,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/yellow_shulker_box"
+  "random_sequence": "minecraft:blocks/pink_shulker_box"
 }

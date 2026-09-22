@@ -4,7 +4,7 @@ data modify storage fossil_frights:world settings.packs_enabled set value {}
 function #fossil_frights:query_packs_enabled
 
 execute in minecraft:overworld run setworldspawn 0 80 0 0 0
-setblock 0 0 0 yellow_shulker_box{lock:{count:-1}} strict
+setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict
 scoreboard objectives add ff_dummy dummy
 scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_lock_look dummy
