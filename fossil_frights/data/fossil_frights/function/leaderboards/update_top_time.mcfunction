@@ -4,6 +4,6 @@ scoreboard players set $run_breakdown_new_best ff_run_breakdown 0
 execute unless score @s ff_top_time matches 1.. run scoreboard players set $run_breakdown_new_best ff_run_breakdown 1
 execute if score @s ff_top_time matches 1.. if score @s ff_top_time > $timer_ticks ff_day run scoreboard players set $run_breakdown_new_best ff_run_breakdown 1
 execute if score $run_breakdown_new_best ff_run_breakdown matches 1 run scoreboard players operation @s ff_top_time = $timer_ticks ff_day
-execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/sync_entry
-execute if score $present ff_plugin matches 1 run function fossil_frights:leaderboards/plugin/sync_current
+execute unless predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:leaderboards/sync_entry
+execute if predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:leaderboards/plugin/sync_current
 scoreboard players set $run_breakdown_new_best ff_run_breakdown 0

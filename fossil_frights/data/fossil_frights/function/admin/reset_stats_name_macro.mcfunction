@@ -1,5 +1,5 @@
-execute if score $present ff_plugin matches 1 run tellraw @s [{"text":"Fossil Frights plugin is managing stats. Use /admin leaderboard remove <player> or edit leaderboard.yml, then /admin leaderboard reload.","color":"red"}]
-execute if score $present ff_plugin matches 1 run return 0
+execute if predicate fossil_frights:world/packs_enabled/plugin run tellraw @s [{"text":"Fossil Frights plugin is managing stats. Use /admin leaderboard remove <player> or edit leaderboard.yml, then /admin leaderboard reload.","color":"red"}]
+execute if predicate fossil_frights:world/packs_enabled/plugin run return 0
 $scoreboard players set $(name) ff_top_time 0
 $scoreboard players set $(name) ff_top_day 0
 $scoreboard players set $(name) ff_run_count 0

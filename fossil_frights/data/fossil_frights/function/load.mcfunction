@@ -197,7 +197,6 @@ scoreboard objectives add ff_speedrun_button8 dummy
 scoreboard objectives add ff_speedrun_button9 dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
-scoreboard objectives add ff_plugin dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
 scoreboard players set @a ff_tp_delay 0

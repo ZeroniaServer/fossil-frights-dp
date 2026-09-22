@@ -7,6 +7,10 @@
     {
       "required": false,
       "id": "fossil_frights.experimental:set_pack_enabled"
+    },
+    {
+      "required": false,
+      "id": "fossil_frights.plugin:set_pack_enabled"
     }
   ]
 }

@@ -1,5 +1,5 @@
-execute if score $present ff_plugin matches 1 run function fossil_frights:admin/menu/plugin/heists/loot/show
-execute if score $present ff_plugin matches 1 run return 0
+execute if predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:admin/menu/plugin/heists/loot/show
+execute if predicate fossil_frights:world/packs_enabled/plugin run return 0
 execute unless predicate fossil_frights:game_state/game_running run function fossil_frights:messages/error/no_game_running
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless predicate fossil_frights:game_state/heist_mode_active run return 0

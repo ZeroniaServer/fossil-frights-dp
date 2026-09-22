@@ -165,5 +165,5 @@ effect give @s minecraft:instant_health 100 0 true
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
 function fossil_frights:items/plushies/restore
-execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/sync_entry
-execute unless score $present ff_plugin matches 1 run function fossil_frights:leaderboards/display/refresh
+execute unless predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:leaderboards/sync_entry
+execute unless predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:leaderboards/display/refresh

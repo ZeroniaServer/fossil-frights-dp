@@ -1,5 +1,5 @@
-execute if score $present ff_plugin matches 1 run tellraw @s [{"text":"Fossil Frights plugin is managing leaderboard data. Use /admin leaderboard reset instead.","color":"red"}]
-execute if score $present ff_plugin matches 1 run return 0
+execute if predicate fossil_frights:world/packs_enabled/plugin run tellraw @s [{"text":"Fossil Frights plugin is managing leaderboard data. Use /admin leaderboard reset instead.","color":"red"}]
+execute if predicate fossil_frights:world/packs_enabled/plugin run return 0
 scoreboard players add $current ff_lb_generation 1
 data modify storage fossil_frights:leaderboards entries set value []
 data modify storage fossil_frights:leaderboards revoked set value []
