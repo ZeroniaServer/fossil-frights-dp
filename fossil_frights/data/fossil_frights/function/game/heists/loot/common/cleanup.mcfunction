@@ -1,4 +1,5 @@
 execute as @e[tag=fh_poster] run data merge entity @s {view_range:1f}
+setblock -21 81 14 pink_stained_glass_pane[east=true,west=true] strict
 execute as @e[tag=fh_ghast_plushie] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_lollipop] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_fishing_rod] run data merge entity @s {view_range:1f}
