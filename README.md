@@ -15,7 +15,6 @@
 | Join guard team | `/trigger join_guard` |
 | Join thief team | `/trigger join_thief` |
 | Invite dialog | `/trigger invite` |
-
 | Return to spawn | `/trigger spawn` |
 | Tp to Ant Fight | `/trigger spawn` |
 | Tp to Parkour | `/trigger parkour` |
