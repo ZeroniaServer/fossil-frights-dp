@@ -12,23 +12,11 @@ execute as @a[scores={ff_actionbar_manager.slot.camera_thief_visible=1..}] if sc
 scoreboard players add @a[scores={ff_actionbar_manager.slot.camera_thief_visible=1..}] ff_actionbar_manager.result 1
 scoreboard players remove @a[scores={ff_actionbar_manager.slot.camera_thief_visible=1..}] ff_actionbar_manager.slot.camera_thief_visible 1
 
-scoreboard players reset @a[scores={ff_actionbar_manager.slot.hovered_info=..0}] ff_actionbar_manager.slot.hovered_info
-execute as @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.hovered_info"}}]
-execute as @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.hovered_info"}}]
-scoreboard players add @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] ff_actionbar_manager.result 1
-scoreboard players remove @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] ff_actionbar_manager.slot.hovered_info 1
-
 scoreboard players reset @a[scores={ff_actionbar_manager.slot.held_item_info=..0}] ff_actionbar_manager.slot.held_item_info
 execute as @a[scores={ff_actionbar_manager.slot.held_item_info=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.held_item_info"}}]
 execute as @a[scores={ff_actionbar_manager.slot.held_item_info=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.held_item_info"}}]
 scoreboard players add @a[scores={ff_actionbar_manager.slot.held_item_info=1..}] ff_actionbar_manager.result 1
 scoreboard players remove @a[scores={ff_actionbar_manager.slot.held_item_info=1..}] ff_actionbar_manager.slot.held_item_info 1
-
-scoreboard players reset @a[scores={ff_actionbar_manager.slot.key_cooldown=..0}] ff_actionbar_manager.slot.key_cooldown
-execute as @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.key_cooldown"}}]
-execute as @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.key_cooldown"}}]
-scoreboard players add @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] ff_actionbar_manager.result 1
-scoreboard players remove @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] ff_actionbar_manager.slot.key_cooldown 1
 
 scoreboard players reset @a[scores={ff_actionbar_manager.slot.invisipunch_cooldown=..0}] ff_actionbar_manager.slot.invisipunch_cooldown
 execute as @a[scores={ff_actionbar_manager.slot.invisipunch_cooldown=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.invisipunch_cooldown"}}]
@@ -59,6 +47,17 @@ execute as @a[scores={ff_actionbar_manager.slot.lobby_game=1..}] if score @s ff_
 execute as @a[scores={ff_actionbar_manager.slot.lobby_game=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.lobby_game"}}]
 scoreboard players add @a[scores={ff_actionbar_manager.slot.lobby_game=1..}] ff_actionbar_manager.result 1
 scoreboard players remove @a[scores={ff_actionbar_manager.slot.lobby_game=1..}] ff_actionbar_manager.slot.lobby_game 1
+scoreboard players reset @a[scores={ff_actionbar_manager.slot.scissors_run_warning=..0}] ff_actionbar_manager.slot.scissors_run_warning
+execute as @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.scissors_run_warning"}}]
+execute as @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.scissors_run_warning"}}]
+scoreboard players add @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] ff_actionbar_manager.result 1
+scoreboard players remove @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] ff_actionbar_manager.slot.scissors_run_warning 1
+
+scoreboard players reset @a[scores={ff_actionbar_manager.slot.loot_securing=..0}] ff_actionbar_manager.slot.loot_securing
+execute as @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.loot_securing"}}]
+execute as @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.loot_securing"}}]
+scoreboard players add @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] ff_actionbar_manager.result 1
+scoreboard players remove @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] ff_actionbar_manager.slot.loot_securing 1
 
 scoreboard players reset @a[scores={ff_actionbar_manager.slot.scissors_found=..0}] ff_actionbar_manager.slot.scissors_found
 execute as @a[scores={ff_actionbar_manager.slot.scissors_found=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.scissors_found"}}]
@@ -78,17 +77,17 @@ execute as @a[scores={ff_actionbar_manager.slot.thief_spotted=1..}] if score @s 
 scoreboard players add @a[scores={ff_actionbar_manager.slot.thief_spotted=1..}] ff_actionbar_manager.result 1
 scoreboard players remove @a[scores={ff_actionbar_manager.slot.thief_spotted=1..}] ff_actionbar_manager.slot.thief_spotted 1
 
-scoreboard players reset @a[scores={ff_actionbar_manager.slot.scissors_run_warning=..0}] ff_actionbar_manager.slot.scissors_run_warning
-execute as @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.scissors_run_warning"}}]
-execute as @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.scissors_run_warning"}}]
-scoreboard players add @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] ff_actionbar_manager.result 1
-scoreboard players remove @a[scores={ff_actionbar_manager.slot.scissors_run_warning=1..}] ff_actionbar_manager.slot.scissors_run_warning 1
+scoreboard players reset @a[scores={ff_actionbar_manager.slot.hovered_info=..0}] ff_actionbar_manager.slot.hovered_info
+execute as @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.hovered_info"}}]
+execute as @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.hovered_info"}}]
+scoreboard players add @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] ff_actionbar_manager.result 1
+scoreboard players remove @a[scores={ff_actionbar_manager.slot.hovered_info=1..}] ff_actionbar_manager.slot.hovered_info 1
 
-scoreboard players reset @a[scores={ff_actionbar_manager.slot.loot_securing=..0}] ff_actionbar_manager.slot.loot_securing
-execute as @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.loot_securing"}}]
-execute as @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.loot_securing"}}]
-scoreboard players add @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] ff_actionbar_manager.result 1
-scoreboard players remove @a[scores={ff_actionbar_manager.slot.loot_securing=1..}] ff_actionbar_manager.slot.loot_securing 1
+scoreboard players reset @a[scores={ff_actionbar_manager.slot.key_cooldown=..0}] ff_actionbar_manager.slot.key_cooldown
+execute as @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.key_cooldown"}}]
+execute as @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.key_cooldown"}}]
+scoreboard players add @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] ff_actionbar_manager.result 1
+scoreboard players remove @a[scores={ff_actionbar_manager.slot.key_cooldown=1..}] ff_actionbar_manager.slot.key_cooldown 1
 
 scoreboard players reset @a[scores={ff_actionbar_manager.slot.generic=..0}] ff_actionbar_manager.slot.generic
 execute as @a[scores={ff_actionbar_manager.slot.generic=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.generic"}}]
