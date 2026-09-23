@@ -15,7 +15,7 @@
                   "translate": "ff.item.infinileaf",
                   "color": "green"
                 },
-                "minecraft:item_model": "minecraft:snowball",
+                "minecraft:item_model": "fossil-frights:items/lobby/infinileaf",
                 "minecraft:lore": [
                   {
                     "translate": "%s - %s",
