@@ -16,6 +16,28 @@
           "ff_invisible": false
         }
       }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "ff_painted": true
+          }
+        }
+      },
+      "on_fail": {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+          "ff_painted": false
+        }
+      }
+    },
+    {
+      "function": "minecraft:toggle_tooltips",
+      "toggles": {
+        "minecraft:trim": false
+      }
     }
   ]
 }

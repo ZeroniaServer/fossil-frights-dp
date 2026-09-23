@@ -27,3 +27,6 @@ execute if predicate fossil_frights:game_state/heist_mode_active if items entity
 
 # Prevent pickup from non-playing players
 execute if dimension minecraft:overworld run data modify entity @s Owner set value [I;0,0,0,0]
+
+# Remove paint
+item modify entity @s contents fossil_frights:game/heists/remove_paint

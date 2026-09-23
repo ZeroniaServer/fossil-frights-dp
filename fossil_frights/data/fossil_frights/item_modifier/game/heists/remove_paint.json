@@ -1,6 +1,17 @@
 {
-  "function": "minecraft:set_components",
-  "components": {
-    "!minecraft:trim": {}
-  }
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "ff_painted": false
+      }
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "!minecraft:trim": {}
+      }
+    }
+  ]
 }

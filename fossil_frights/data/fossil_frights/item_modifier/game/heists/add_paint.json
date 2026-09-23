@@ -2,18 +2,18 @@
   "function": "minecraft:sequence",
   "functions": [
     {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "ff_painted": true
+      }
+    },
+    {
       "function": "minecraft:set_components",
       "components": {
         "minecraft:trim": {
           "material": "fossil_frights:paint",
           "pattern": "fossil_frights:paint"
         }
-      }
-    },
-    {
-      "function": "minecraft:toggle_tooltips",
-      "toggles": {
-        "minecraft:trim": false
       }
     }
   ]
