@@ -33,17 +33,8 @@ kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
 effect clear @a[team=ff_thief] minecraft:invisibility
 execute as @a[team=ff_thief] run function fossil_frights:game/heists/invisibility_fx/check_player
-effect clear @a[team=ff_thief] minecraft:speed
-effect clear @a[team=ff_thief] minecraft:night_vision
-effect clear @a[team=ff_thief] minecraft:slowness
-effect clear @a[tag=ff_heist_guard_sneak_glowing] minecraft:glowing
-execute as @a[tag=ff_ice_frozen] run attribute @s minecraft:jump_strength base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:entity_interaction_range base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset
-execute as @a[team=ff_thief] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
-execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:jump_strength base reset
+execute as @a run function fossil_frights:player/reset_attributes
+execute as @a run function fossil_frights:player/reset_effects
 scoreboard players set @a ff_heist_punch_cd 0
 scoreboard players set @a ff_heist_punch_bar 0
 scoreboard players set @a ff_heist_punch_fx 0

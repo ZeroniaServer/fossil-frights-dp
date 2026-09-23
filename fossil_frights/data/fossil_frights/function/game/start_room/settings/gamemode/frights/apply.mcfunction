@@ -15,6 +15,7 @@ scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $party_mode_active ff_game_state 0
 function fossil_frights:hazard/lava/map/update
 scoreboard players set $run_multiplayer ff_game_state 0
+scoreboard players set $run_admin_modified ff_game_state 0
 function fossil_frights:join/join_pads/setup
 scoreboard players set $heist_button_lock ff_game_state 40
 scoreboard players set $party_button_lock ff_game_state 40

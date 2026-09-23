@@ -9,6 +9,8 @@ execute store result score @s ff_active_uuid_1 run data get storage fossil_frigh
 execute store result score @s ff_active_uuid_2 run data get storage fossil_frights:nbt uuid[2]
 execute store result score @s ff_active_uuid_3 run data get storage fossil_frights:nbt uuid[3]
 data remove storage fossil_frights:nbt uuid
+function fossil_frights:player/reset_attributes
+function fossil_frights:player/reset_effects
 function fossil_frights:game/rejoin/login_restore
 execute if entity @s[tag=ff_rejoin_restored] run return 0
 tag @s add ff_rejoin_login_reset_source
@@ -84,7 +86,6 @@ tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_in_queue
 tag @s remove ff_ant_fight
-attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight
 tag @s remove ff_dropped_infinileaf
 tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
