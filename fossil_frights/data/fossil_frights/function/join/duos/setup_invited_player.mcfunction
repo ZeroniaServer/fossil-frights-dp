@@ -25,7 +25,7 @@ effect give @s minecraft:instant_health 100 0 true
 effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
-title @s actionbar ""
+function fossil_frights:player/actionbar/clear
 function fossil_frights:player/equip_security_hat
 function fossil_frights:key/give_waiting
 title @s times 5 3 10

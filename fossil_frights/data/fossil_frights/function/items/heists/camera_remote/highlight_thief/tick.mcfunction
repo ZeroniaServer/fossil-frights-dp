@@ -5,6 +5,7 @@ execute unless entity @p[team=ff_thief,dx=0] positioned ^ ^ ^0.25 run return run
 execute unless function fossil_frights:items/heists/camera_remote/highlight_thief/thief_visible run return fail
 
 tag @s add ff_camera_thief_visible
-scoreboard players set @s ff_security_camera_visible 3
-execute if entity @s[tag=!ff_heist_scissors_actionbar_priority,tag=!ff_heist_guard_coin_actionbar_priority] run title @s actionbar [{translate:"ff.security_camera.actionbar.thief_visible.exclamation",color:"yellow"}," ",{translate:"ff.security_camera.actionbar.thief_visible.prompt",color:"gray",with:[{keybind:"key.back",color:"white"}]}]
+scoreboard players set @s ff_actionbar_manager.slot.camera_thief_visible 1
+scoreboard players display numberformat @s ff_actionbar_manager.slot.camera_thief_visible fixed [{translate:"ff.security_camera.actionbar.thief_visible.exclamation",color:"yellow"}," ",{translate:"ff.security_camera.actionbar.thief_visible.prompt",color:"gray",with:[{keybind:"key.back",color:"white"}]}]
+schedule function fossil_frights:player/actionbar/manager 1t append
 execute if predicate fossil_frights:player/input/backward run function fossil_frights:items/heists/camera_remote/highlight_thief/capture

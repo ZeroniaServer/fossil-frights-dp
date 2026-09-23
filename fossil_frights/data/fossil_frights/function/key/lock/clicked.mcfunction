@@ -13,6 +13,6 @@ execute at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,
 execute if score @s ff_lock_look matches 1 run playsound fossil-frights:animations.key master @s ~ ~ ~ 1 1
 scoreboard players set @s ff_scan 6
 execute unless score @s ff_lock_look matches 1 anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/anim_raycast
-execute if score @s ff_lock_look matches 1 run title @s actionbar {translate:"ff.unlocking"}
+execute if score @s ff_lock_look matches 1 run function fossil_frights:player/actionbar/show/generic/key.unlocking
 execute if score @s ff_lock_look matches 1 if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/items/consume_key
 execute if score @s ff_lock_look matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:key/start_cooldown

@@ -27,7 +27,6 @@ scoreboard objectives add ff_dna_hover_found dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
-scoreboard objectives add ff_security_camera_visible dummy
 scoreboard objectives add ff_camera_swivel dummy
 scoreboard objectives add ff_forced_spec_x dummy
 scoreboard objectives add ff_forced_spec_y dummy
@@ -113,10 +112,6 @@ scoreboard objectives add ff_trap_jelly_cooldown dummy
 scoreboard objectives add ff_trap_explosive_cooldown dummy
 scoreboard objectives add ff_trap_ui_progress dummy
 scoreboard objectives add ff_trap_balance dummy
-scoreboard objectives add ff_trap_warn dummy
-scoreboard objectives add ff_trap_invalid dummy
-scoreboard objectives add ff_trap_pickup_feedback dummy
-scoreboard objectives add ff_trap_no_pickup_feedback dummy
 scoreboard objectives add ff_trap_pending_ticks dummy
 scoreboard objectives add ff_double_jump_boost_timer dummy
 scoreboard objectives add ff_double_jump_cooldown dummy
@@ -235,7 +230,6 @@ scoreboard objectives add ff_heist_guard_unsneak_ticks dummy
 scoreboard objectives add ff_heist_loot_security_ticks dummy
 scoreboard objectives add ff_heist_loot_security_hold dummy
 scoreboard objectives add ff_heist_loot_security_phase dummy
-scoreboard objectives add ff_heist_loot_security_actionbar dummy
 scoreboard objectives add ff_heist_loot_security_recent dummy
 scoreboard objectives add ff_heist_loot_security_ui dummy
 scoreboard objectives add ff_heist_loot_security_cooldown dummy
@@ -486,6 +480,7 @@ team modify ff_evolution_mannequin collisionRule never
 team add ff_security_camera
 team modify ff_security_camera collisionRule never
 advancement revoke @a from fossil_frights:detection_root
+function fossil_frights:player/actionbar/load
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
 function fossil_frights:animations/tasks/easy/tnt_test/detonator/rig/on_load
 function fossil_frights:animations/tasks/medium/feed_the_plants/flytrap/rig/on_load

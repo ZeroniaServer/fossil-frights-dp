@@ -1,4 +1,3 @@
-execute if score @s ff_heist_loot_security_actionbar matches 1.. run scoreboard players remove @s ff_heist_loot_security_actionbar 1
 execute if score @s ff_heist_loot_security_recent matches 1.. run scoreboard players remove @s ff_heist_loot_security_recent 1
 execute unless entity @s[tag=ff_heist_loot_security_active] run return 0
 execute unless entity @e[type=minecraft:interaction,tag=ff_heist_loot_security_active,distance=..6,limit=1] run function fossil_frights:game/heists/loot/secure_loot/clear_player

@@ -17,7 +17,7 @@ function fossil_frights:locator_bar/markers/sync
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/bossbar/set_break
-execute as @a[team=ff_guard] run title @s actionbar {"translate":"ff.messages.info.custom_day_complete","color":"gold","italic":false}
+execute as @a[team=ff_guard] run function fossil_frights:player/actionbar/show/generic/custom_day_complete
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/board/refresh

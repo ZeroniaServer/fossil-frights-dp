@@ -28,7 +28,7 @@ scoreboard players set @s ff_bat_bug_bar 0
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""
-title @s actionbar ""
+function fossil_frights:player/actionbar/clear
 function fossil_frights:player/equip_security_hat
 function fossil_frights:key/give_waiting
 function fossil_frights:key/refresh

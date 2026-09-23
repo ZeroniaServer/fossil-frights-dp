@@ -1,3 +1,3 @@
-execute if entity @s[tag=ff_heist_guard_coin_actionbar_priority] run return 0
-title @s actionbar {"translate":"ff.actionbar.heists.loot_security.in_progress","color":"red","italic":false}
-scoreboard players set @s ff_heist_loot_security_actionbar 20
+scoreboard players set @s ff_actionbar_manager.slot.loot_securing 65
+scoreboard players display numberformat @s ff_actionbar_manager.slot.loot_securing fixed {translate:"ff.actionbar.heists.loot_security.in_progress",color:"red"}
+schedule function fossil_frights:player/actionbar/manager 1t append

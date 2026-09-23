@@ -32,4 +32,7 @@ execute if score @s ff_bat_bug_bar matches 30 run data modify storage fossil_fri
 execute if score @s ff_bat_bug_bar matches 31 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue59f"
 execute if score @s ff_bat_bug_bar matches 32 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue5a0"
 execute if score @s ff_bat_bug_bar matches 33 run data modify storage fossil_frights:lady_bug_ui glyph set value "\ue5a1"
-function fossil_frights:tasks/hard/feed_the_bats/show_timer_bar_macro with storage fossil_frights:lady_bug_ui
+
+scoreboard players set @s ff_actionbar_manager.slot.ladybug_timer 1
+scoreboard players display numberformat @s ff_actionbar_manager.slot.ladybug_timer fixed {storage:"fossil_frights:lady_bug_ui",nbt:"glyph",interpret:true,font:"fossil-frights:actionbar/ladybug"}
+schedule function fossil_frights:player/actionbar/manager 1t append

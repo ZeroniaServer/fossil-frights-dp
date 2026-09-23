@@ -5,7 +5,11 @@ execute if score @s ff_trap_type matches 3 at @s run function fossil_frights:ite
 execute if score @s ff_trap_type matches 4.. at @s run function fossil_frights:items/heists/trap/types/explosive/fx/pickup
 execute at @s run playsound minecraft:block.bell.resonate player @a[tag=ff_trap_picker,limit=1] ~ ~ ~ 0.8 1.4
 scoreboard players operation @a[tag=ff_trap_picker,limit=1] ff_trap_selected = @s ff_trap_type
-scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_pickup_feedback 20
+execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches ..0 run function fossil_frights:player/actionbar/show/generic/trap/picked_up_glow
+execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 1 run function fossil_frights:player/actionbar/show/generic/trap/picked_up_freeze
+execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 2 run function fossil_frights:player/actionbar/show/generic/trap/picked_up_antigravity
+execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 3 run function fossil_frights:player/actionbar/show/generic/trap/picked_up_jelly
+execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 4.. run function fossil_frights:player/actionbar/show/generic/trap/picked_up_explosive
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase 0
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_timer 0
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_cooldown 0

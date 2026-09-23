@@ -1,0 +1,39 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "ff_guard"
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "gamemode": [
+                "spectator"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:location/room/floor_2"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:reference",
+        "name": "fossil_frights:location/room/floor_2/a_c_vents"
+      }
+    }
+  ]
+}

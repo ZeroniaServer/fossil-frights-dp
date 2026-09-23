@@ -1,1 +1,1 @@
-title @s actionbar {"translate":"ff.dinocoins.required","color":"red","with":[{"translate":"ff.dinocoins.number","with":["2"]}]}
+function fossil_frights:player/actionbar/show/generic/requires_dinocoins.2

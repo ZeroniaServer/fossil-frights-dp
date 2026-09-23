@@ -21,7 +21,7 @@ scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_bat_bug_timer 0
 scoreboard players set @s ff_bat_bug_bar 0
-title @s actionbar ""
+function fossil_frights:player/actionbar/clear
 clear @s
 function fossil_frights:items/plushies/restore
 spawnpoint @s 0 80 0

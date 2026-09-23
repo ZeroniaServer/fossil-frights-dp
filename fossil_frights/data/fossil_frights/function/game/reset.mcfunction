@@ -58,7 +58,7 @@ scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_bat_bug
 scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_speedrun_delta 0
 scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_speedrun_sign 0
 title @a[predicate=fossil_frights:player/is_playing] subtitle ""
-title @a[predicate=fossil_frights:player/is_playing] actionbar ""
+execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/actionbar/clear
 clear @a[predicate=fossil_frights:player/is_playing] *
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s times 5 3 10
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}

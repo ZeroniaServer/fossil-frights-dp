@@ -15,7 +15,6 @@ gamemode spectator @s
 team join ff_security_camera @e[type=cave_spider,tag=security_camera]
 scoreboard players set @s ff_security_camera 1
 scoreboard players set @s ff_security_camera_nav 0
-scoreboard players set @s ff_security_camera_visible 0
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models

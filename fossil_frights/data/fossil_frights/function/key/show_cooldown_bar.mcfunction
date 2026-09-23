@@ -29,4 +29,7 @@ execute if score @s ff_key_bar matches 27 run data modify storage fossil_frights
 execute if score @s ff_key_bar matches 28 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53c"
 execute if score @s ff_key_bar matches 29 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53d"
 execute if score @s ff_key_bar matches 30 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53e"
-function fossil_frights:key/show_cooldown_bar_macro with storage fossil_frights:key_cooldown_ui
+
+scoreboard players set @s ff_actionbar_manager.slot.key_cooldown 1
+scoreboard players display numberformat @s ff_actionbar_manager.slot.key_cooldown fixed {storage:"fossil_frights:key_cooldown_ui",nbt:"glyph",interpret:true,font:"fossil-frights:actionbar/key_cooldown"}
+schedule function fossil_frights:player/actionbar/manager 1t append

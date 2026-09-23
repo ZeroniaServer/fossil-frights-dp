@@ -1,1 +1,0 @@
-tag @a remove ff_heist_guard_coin_actionbar_priority

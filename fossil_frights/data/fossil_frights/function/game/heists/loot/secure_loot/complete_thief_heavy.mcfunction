@@ -11,4 +11,4 @@ execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run tag @s
 execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_ticks 0
 execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_hold 0
 execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_phase 0
-execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_actionbar 0
+execute as @p[distance=..6,limit=1] run scoreboard players reset @s ff_actionbar_manager.slot.loot_securing

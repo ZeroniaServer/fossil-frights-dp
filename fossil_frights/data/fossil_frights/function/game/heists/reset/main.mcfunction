@@ -11,7 +11,6 @@ function fossil_frights:game/heists/loot/secure_loot/reset
 function fossil_frights:game/heists/loot/rare/pickup/lady_bug/clear_all
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/lady_bug]
 kill @e[type=minecraft:item,tag=ff_heist_guard_coin]
-tag @a remove ff_heist_guard_coin_actionbar_priority
 schedule clear fossil_frights:game/heists/guard_coin/clear_actionbar_priority
 kill @e[type=minecraft:armor_stand,tag=ff_loot_compass_target]
 scoreboard players set $heist_compass_available ff_compass 0
@@ -69,15 +68,10 @@ scoreboard players set @a ff_heist_guard_unsneak_ticks 0
 scoreboard players set @a ff_heist_loot_security_ticks 0
 scoreboard players set @a ff_heist_loot_security_hold 0
 scoreboard players set @a ff_heist_loot_security_phase 0
-scoreboard players set @a ff_heist_loot_security_actionbar 0
 scoreboard players set @a ff_heist_loot_security_recent 0
 scoreboard players set @a ff_heist_loot_security_ui 0
 tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
-scoreboard players set @a ff_trap_warn 0
-scoreboard players set @a ff_trap_invalid 0
-scoreboard players set @a ff_trap_pickup_feedback 0
-scoreboard players set @a ff_trap_no_pickup_feedback 0
 scoreboard players set @a ff_trap_pending_ticks 0
 scoreboard players set @a ff_trap_glow_phase 0
 scoreboard players set @a ff_trap_glow_timer 0

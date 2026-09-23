@@ -14,7 +14,7 @@ clear @s
 item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset
 effect clear @s minecraft:invisibility
-title @s actionbar ""
+function fossil_frights:player/actionbar/clear
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 14
