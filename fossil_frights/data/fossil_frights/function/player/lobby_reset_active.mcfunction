@@ -1,8 +1,7 @@
 function fossil_frights:player/reset_attributes
+function fossil_frights:player/reset_effects
 function fossil_frights:items/plushies/restore
-tag @s remove ff_ice_frozen
 tag @s remove ff_pteranadon_jump_reduced
-function fossil_frights:items/heists/ice_cannon/overlay_hide
 function fossil_frights:game/heists/paint_fx/clear
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 19 run return 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 19 run tp @s 0 80 0 0 0
