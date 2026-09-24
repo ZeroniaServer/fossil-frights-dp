@@ -15,7 +15,7 @@
                   "translate": "ff.item.hoverboard",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard_item",
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
                   "ff_heist_loot": true
