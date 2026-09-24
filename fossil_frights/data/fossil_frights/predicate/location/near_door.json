@@ -213,8 +213,17 @@
           }
         }
       }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:stepping_on": {
+          "block": {
+            "blocks": "minecraft:oxidized_copper_door"
+          }
+        }
+      }
     }
-
-
   ]
 }
