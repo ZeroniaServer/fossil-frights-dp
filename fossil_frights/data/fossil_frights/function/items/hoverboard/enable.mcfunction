@@ -8,3 +8,4 @@ ride @s mount @e[type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..2,s
 tag @e[type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..2] remove ff_hoverboard_new
 tag @s remove ff_hoverboard_owner_current
 tag @s add ff_hoverboard_active
+function fossil_frights:items/hoverboard/visibility

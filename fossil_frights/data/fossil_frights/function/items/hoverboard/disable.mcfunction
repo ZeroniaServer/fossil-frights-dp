@@ -3,3 +3,4 @@ execute as @e[type=minecraft:happy_ghast,tag=ff_hoverboard] if score @s ff_hover
 execute at @s if block ~ ~ ~ #fossil_frights:air_like if block ~ ~-1 ~ #fossil_frights:air_like run tp @s ~ ~-1 ~
 tag @s remove ff_hoverboard_owner_current
 tag @s remove ff_hoverboard_active
+function fossil_frights:items/hoverboard/visibility
