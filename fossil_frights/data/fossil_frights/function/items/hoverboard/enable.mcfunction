@@ -1,5 +1,7 @@
 tag @s add ff_hoverboard_owner_current
-summon minecraft:happy_ghast ~ ~ ~ {Tags:["ff_hoverboard","ff_hoverboard_new"],Silent:true,Invulnerable:true,PersistenceRequired:true,equipment:{body:{id:"minecraft:white_harness"}},attributes:[{id:"minecraft:scale",base:0.2}],Passengers:[{id:"minecraft:item_display",Tags:["ff_hoverboard","ff_hoverboard_display","ff_hoverboard_display_side"]},{id:"minecraft:item_display",Tags:["ff_hoverboard","ff_hoverboard_display","ff_hoverboard_display_model"],item:{id:"minecraft:stone",components:{"minecraft:item_model":"fossil-frights:items/frights/hard_items/hoverboard/hoverboard"}},teleport_duration:2,transformation:{right_rotation:[0,0,0,1],scale:[1,1,1],left_rotation:[0,0,0,1],translation:[0,-0.25,0.75]}},{id:"minecraft:item_display",Tags:["ff_hoverboard","ff_hoverboard_display","ff_hoverboard_display_side"]}]}
+tp 0-0-0-0-0 ~ ~ ~ ~ ~
+execute as 0-0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
+function fossil_frights:items/hoverboard/enable_summon with storage fossil_frights:position_cache
 ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
 execute on vehicle run tag @s remove ff_hoverboard_new
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_0 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_0
