@@ -1,0 +1,21 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:set_damage",
+      "damage": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "ff_hoverboard_restore_damage",
+        "scale": 0.0003333333333333333
+      }
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "ff_hoverboard_active": false,
+        "ff_hoverboard_use": false
+      }
+    }
+  ]
+}
