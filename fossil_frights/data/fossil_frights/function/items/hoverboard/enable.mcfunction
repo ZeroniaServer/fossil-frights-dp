@@ -1,8 +1,8 @@
 tag @s add ff_hoverboard_owner_current
 tp 0-0-0-0-0 ~ ~ ~ ~ ~
 execute as 0-0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
-function fossil_frights:items/hoverboard/enable_summon with storage fossil_frights:position_cache
-ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
+execute at @s align xz positioned ~0.5 ~ ~0.5 run function fossil_frights:items/hoverboard/enable_summon with storage fossil_frights:position_cache
+execute at @s align xz positioned ~0.5 ~ ~0.5 run ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
 execute on vehicle run tag @s remove ff_hoverboard_new
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_0 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_0
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_1 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_1
