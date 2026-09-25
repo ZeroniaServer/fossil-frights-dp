@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:vehicle": {
+      "minecraft:entity_tags": {
+        "all_of": [
+          "ff_hoverboard"
+        ]
+      }
+    }
+  }
+}
