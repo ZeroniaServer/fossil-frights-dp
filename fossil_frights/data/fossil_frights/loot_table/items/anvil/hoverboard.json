@@ -18,7 +18,7 @@
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                 "minecraft:max_stack_size": 1,
                 "minecraft:use_cooldown": {
-                  "seconds": 0.25,
+                  "seconds": 2.0,
                   "cooldown_group": "fossil_frights:hoverboard"
                 },
                 "minecraft:consumable": {
@@ -37,7 +37,7 @@
                     "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                     "minecraft:max_stack_size": 1,
                     "minecraft:use_cooldown": {
-                      "seconds": 0.25,
+                      "seconds": 2.0,
                       "cooldown_group": "fossil_frights:hoverboard"
                     },
                     "minecraft:consumable": {
