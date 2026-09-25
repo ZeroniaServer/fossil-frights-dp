@@ -8,4 +8,5 @@ execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = @a
 execute on vehicle run tag @s remove ff_hoverboard_new
 tag @s remove ff_hoverboard_owner_current
 tag @s add ff_hoverboard_active
+execute at @s run playsound fossil-frights:task.hoveraptor master @a[distance=..5] ~ ~ ~ 1 1
 function fossil_frights:items/hoverboard/visibility
