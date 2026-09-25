@@ -75,6 +75,7 @@ tag @a[predicate=fossil_frights:player/is_playing] remove ff_muted_chat
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_claimed
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_auto_given
 team join ff_lobby @a[predicate=fossil_frights:player/is_playing]
+execute as @a[team=ff_lobby] run function fossil_frights:items/creator_hoverboards/grant_creators
 function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset/main
 scoreboard players set $active_set ff_game_state 0

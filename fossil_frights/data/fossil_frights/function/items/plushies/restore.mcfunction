@@ -6,3 +6,4 @@ execute if entity @s[tag=obtained_t_rex_plushie] run function fossil_frights:ite
 execute if entity @s[tag=obtained_gold_t_rex_plushie] run function fossil_frights:items/plushies/grant/gold_t_rex
 execute if entity @s[tag=obtained_pterodactyl_plushie] run function fossil_frights:items/plushies/grant/pterodactyl
 execute if entity @s[tag=obtained_sniffer_plushie] run function fossil_frights:items/plushies/grant/sniffer
+function fossil_frights:items/creator_hoverboards/grant_creators
