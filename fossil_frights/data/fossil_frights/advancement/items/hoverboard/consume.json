@@ -1,0 +1,20 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "itemID": "hoverboard"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/hoverboard/use_consumed"
+  }
+}

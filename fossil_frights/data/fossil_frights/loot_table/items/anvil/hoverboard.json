@@ -16,6 +16,42 @@
                   "color": "aqua"
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:max_stack_size": 1,
+                "minecraft:use_cooldown": {
+                  "seconds": 0.25,
+                  "cooldown_group": "fossil_frights:hoverboard"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:paper",
+                  "components": {
+                    "minecraft:item_name": {
+                      "translate": "ff.item.hoverboard",
+                      "color": "aqua"
+                    },
+                    "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:use_cooldown": {
+                      "seconds": 0.25,
+                      "cooldown_group": "fossil_frights:hoverboard"
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "itemID": "hoverboard",
+                      "ff_heist_loot": true
+                    }
+                  }
+                },
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
                   "ff_heist_loot": true

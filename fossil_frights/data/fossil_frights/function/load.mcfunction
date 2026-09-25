@@ -86,6 +86,10 @@ scoreboard objectives add speedruntask trigger
 scoreboard objectives add ff_lootbook trigger
 scoreboard objectives add ff_confetti_uses dummy
 scoreboard objectives add ff_confetti_age dummy
+scoreboard objectives add ff_hoverboard_uuid_0 dummy
+scoreboard objectives add ff_hoverboard_uuid_1 dummy
+scoreboard objectives add ff_hoverboard_uuid_2 dummy
+scoreboard objectives add ff_hoverboard_uuid_3 dummy
 scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_trap_item_age dummy

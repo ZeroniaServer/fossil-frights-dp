@@ -11,6 +11,7 @@ function fossil_frights:map/replace_powder_snow
 fill -5 68 8 -3 68 8 air
 function fossil_frights:game/reset/hazards
 function fossil_frights:game/reset/cleanup_dropped_items
+function fossil_frights:items/hoverboard/cleanup
 execute as @e[type=minecraft:item_display,tag=ff_pizza_box] run function fossil_frights:interactions/pizza_box/reset
 function fossil_frights:tasks/reset
 scoreboard players set $ancient_portal_timer ff_task_state 0
