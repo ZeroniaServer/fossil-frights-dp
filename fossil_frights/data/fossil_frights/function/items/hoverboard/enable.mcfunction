@@ -19,4 +19,5 @@ execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uu
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1143768566 if score @s ff_active_uuid_1 matches 1044072941 if score @s ff_active_uuid_2 matches -1808662431 if score @s ff_active_uuid_3 matches 483304317 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["evtema3"],mode:"replace_all"}}
 
 tag @s add ff_hoverboard_active
+tag @s add ff_hoverboard_activation_grace
 execute at @s run playsound fossil-frights:task.hoveraptor master @a[distance=..5] ~ ~ ~ 1 1
