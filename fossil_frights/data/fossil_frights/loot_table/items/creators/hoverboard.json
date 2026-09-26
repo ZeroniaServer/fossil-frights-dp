@@ -12,9 +12,33 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Creator Hoverboard",
+                  "translate": "ff.item.creator_hoverboard",
                   "color": "aqua"
                 },
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.hoverboard.description.activate",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  },
+                  {
+                    "translate": "ff.item.hoverboard.description.dismount",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.sneak",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/creator_hoverboard_item",
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
@@ -39,9 +63,33 @@
                   "id": "minecraft:paper",
                   "components": {
                     "minecraft:item_name": {
-                      "text": "Creator Hoverboard",
+                      "translate": "ff.item.creator_hoverboard",
                       "color": "aqua"
                     },
+                    "minecraft:lore": [
+                      {
+                        "translate": "ff.item.hoverboard.description.activate",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.use",
+                            "color": "yellow"
+                          }
+                        ]
+                      },
+                      {
+                        "translate": "ff.item.hoverboard.description.dismount",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sneak",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ],
                     "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                     "minecraft:max_stack_size": 1,
                     "minecraft:max_damage": 3000,
