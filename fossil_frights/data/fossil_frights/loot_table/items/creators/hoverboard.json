@@ -12,13 +12,14 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.hoverboard",
+                  "text": "Creator Hoverboard",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/creator_hoverboard_item",
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
                 "minecraft:damage": 0,
+                "minecraft:unbreakable": {},
                 "minecraft:use_cooldown": {
                   "seconds": 2.0,
                   "cooldown_group": "fossil_frights:hoverboard"
@@ -38,13 +39,14 @@
                   "id": "minecraft:paper",
                   "components": {
                     "minecraft:item_name": {
-                      "translate": "ff.item.hoverboard",
+                      "text": "Creator Hoverboard",
                       "color": "aqua"
                     },
                     "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                     "minecraft:max_stack_size": 1,
                     "minecraft:max_damage": 3000,
                     "minecraft:damage": 0,
+                    "minecraft:unbreakable": {},
                     "minecraft:use_cooldown": {
                       "seconds": 2.0,
                       "cooldown_group": "fossil_frights:hoverboard"
@@ -56,7 +58,9 @@
                     },
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
+                      "ff_creator_hoverboard": true,
                       "ff_heist_loot": true,
+                      "ff_prevent_drop": true,
                       "ff_hoverboard_active": false,
                       "ff_hoverboard_use": true
                     }
@@ -64,7 +68,9 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
+                  "ff_creator_hoverboard": true,
                   "ff_heist_loot": true,
+                  "ff_prevent_drop": true,
                   "ff_hoverboard_active": false,
                   "ff_hoverboard_use": false
                 }

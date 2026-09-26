@@ -1,4 +1,5 @@
 scoreboard players set $holding_heavy ff_game_state 0
+tag @s remove ff_holding_heavy
 # These should all be given a "heavy" custom data tag rather than having these item IDs be hardcoded here
 execute if predicate fossil_frights:player/inventory/treasure_chest run scoreboard players set $holding_heavy ff_game_state 1
 execute if predicate fossil_frights:player/inventory/warden run scoreboard players set $holding_heavy ff_game_state 1
@@ -8,6 +9,7 @@ execute if predicate fossil_frights:player/inventory/raptor_skull run scoreboard
 execute if predicate fossil_frights:player/inventory/biplane run scoreboard players set $holding_heavy ff_game_state 1
 execute if predicate fossil_frights:player/inventory/vault run scoreboard players set $holding_heavy ff_game_state 1
 execute if predicate fossil_frights:player/inventory/velociraptor_statue run scoreboard players set $holding_heavy ff_game_state 1
+execute if score $holding_heavy ff_game_state matches 1 run tag @s add ff_holding_heavy
 execute if score $holding_heavy ff_game_state matches 1 run attribute @s minecraft:movement_speed base set 0.055
 execute if score $holding_heavy ff_game_state matches 1 if predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:air_drag_modifier base set 3.0
 execute if score $holding_heavy ff_game_state matches 1 unless predicate fossil_frights:entity/effects/luck unless entity @s[tag=ff_ice_frozen] run attribute @s minecraft:air_drag_modifier base reset

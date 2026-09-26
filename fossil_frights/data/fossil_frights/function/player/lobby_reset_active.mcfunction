@@ -1,3 +1,4 @@
+execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/disable
 function fossil_frights:player/reset_attributes
 function fossil_frights:player/reset_effects
 function fossil_frights:items/plushies/restore
