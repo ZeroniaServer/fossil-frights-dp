@@ -4,6 +4,8 @@ execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frig
 execute if entity @s[tag=ff_hoverboard_active] run return run function fossil_frights:items/hoverboard/disable
 execute if predicate fossil_frights:entity/is_swimming run return 0
 execute positioned ~ ~0.601 ~ unless entity @s[dx=0] run return 0
+#deny if feet in solid full-cube block
+execute if block ~ ~ ~ #fossil_frights:is_full_cube run return 0
 #deny if head in block
 execute positioned ~ ~1 ~ unless block ~ ~ ~ #fossil_frights:air_like run return 0
 #deny if block above player
