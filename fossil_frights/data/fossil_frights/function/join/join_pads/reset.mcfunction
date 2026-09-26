@@ -1,6 +1,5 @@
 scoreboard players set @a ff_join_cooldown 0
 kill @e[type=minecraft:mannequin,tag=ff_queue_mannequin]
-scoreboard players set @a ff_join_cooldown 0
 scoreboard players set @a ff_queue_order 0
 scoreboard players set @a ff_queue_start 0
 scoreboard players set @a ff_queue_start_token 0
