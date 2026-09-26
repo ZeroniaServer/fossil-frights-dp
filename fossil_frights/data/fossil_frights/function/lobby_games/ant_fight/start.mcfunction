@@ -1,5 +1,4 @@
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
+function fossil_frights:lobby_games/stop_all
 function fossil_frights:lobby_games/ant_fight/lobby_sneak/reset
 scoreboard players add @s ff_ant_score 0
 tag @s add ff_ant_fight

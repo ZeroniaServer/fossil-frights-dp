@@ -1,4 +1,5 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 3 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 3 run function fossil_frights:lobby_games/stop_all
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 3 run tp @s -15.5 75.00 -20.5 90 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 3 run tag @s add ff_skip_plushie_restore
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 3 run function fossil_frights:lobby_games/parkour/reset_player
