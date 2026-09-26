@@ -15,7 +15,7 @@
                   "text": "Creator Hoverboard",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/creator_hoverboard_item",
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
                 "minecraft:damage": 0,
