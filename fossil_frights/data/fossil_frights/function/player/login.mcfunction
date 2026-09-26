@@ -14,6 +14,13 @@ data remove storage fossil_frights:nbt uuid
 function fossil_frights:player/reset_attributes
 function fossil_frights:player/reset_effects
 function fossil_frights:game/rejoin/login_restore
+scoreboard players set @s ff_hoverboard_color -11407105
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1300708287 if score @s ff_active_uuid_1 matches -451722474 if score @s ff_active_uuid_2 matches -2043793213 if score @s ff_active_uuid_3 matches -261303526 run scoreboard players set @s ff_hoverboard_color -8186127
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches -1781696582 if score @s ff_active_uuid_1 matches -1261550174 if score @s ff_active_uuid_2 matches -1449356478 if score @s ff_active_uuid_3 matches -439859366 run scoreboard players set @s ff_hoverboard_color -207511
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 2009084637 if score @s ff_active_uuid_1 matches 495144206 if score @s ff_active_uuid_2 matches -1518548158 if score @s ff_active_uuid_3 matches 776196456 run scoreboard players set @s ff_hoverboard_color -5649972
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1898580004 if score @s ff_active_uuid_1 matches -1815065167 if score @s ff_active_uuid_2 matches -1877372255 if score @s ff_active_uuid_3 matches -917365838 run scoreboard players set @s ff_hoverboard_color -15439069
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 754748853 if score @s ff_active_uuid_1 matches 1911377587 if score @s ff_active_uuid_2 matches -1429384264 if score @s ff_active_uuid_3 matches -1409327390 run scoreboard players set @s ff_hoverboard_color -13142841
+execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1143768566 if score @s ff_active_uuid_1 matches 1044072941 if score @s ff_active_uuid_2 matches -1808662431 if score @s ff_active_uuid_3 matches 483304317 run scoreboard players set @s ff_hoverboard_color -327680
 execute if entity @s[tag=ff_rejoin_restored] run return 0
 tag @s add ff_rejoin_login_reset_source
 execute if predicate fossil_frights:game_state/game_running unless entity @a[team=ff_guard,tag=!ff_rejoin_login_reset_source] unless entity @a[team=ff_thief,tag=!ff_rejoin_login_reset_source] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect

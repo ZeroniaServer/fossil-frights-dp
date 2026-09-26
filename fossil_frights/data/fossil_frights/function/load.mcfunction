@@ -102,6 +102,7 @@ scoreboard objectives add ff_hoverboard_damage_8 dummy
 scoreboard objectives add ff_hoverboard_damage_off dummy
 scoreboard objectives add ff_hoverboard_restore_damage dummy
 scoreboard objectives add ff_hoverboard_restore_slot dummy
+scoreboard objectives add ff_hoverboard_color dummy
 scoreboard objectives add ff_ice_cannon_age dummy
 scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_trap_item_age dummy

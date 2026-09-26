@@ -39,7 +39,7 @@
                     ]
                   }
                 ],
-                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/creator_hoverboard_item",
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
                 "minecraft:damage": 0,
@@ -127,6 +127,19 @@
             {
               "function": "minecraft:reference",
               "name": "fossil_frights:base_item_data"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "colors": {
+                "values": [
+                  {
+                    "type": "minecraft:score",
+                    "target": "this",
+                    "score": "ff_hoverboard_color"
+                  }
+                ],
+                "mode": "replace_all"
+              }
             }
           ]
         }
