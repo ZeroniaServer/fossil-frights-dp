@@ -1,19 +1,22 @@
-tag @s add ff_hoverboard_owner_current
 tp 0-0-0-0-0 ~ ~ ~ ~ ~
 execute as 0-0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
 execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run function fossil_frights:items/hoverboard/enable_summon with storage fossil_frights:position_cache
 execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
 execute on vehicle run tag @s remove ff_hoverboard_new
+
+tag @s add ff_hoverboard_owner_current
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_0 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_0
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_1 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_1
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_2 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_2
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_3
+tag @s remove ff_hoverboard_owner_current
+
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1300708287 if score @s ff_active_uuid_1 matches -451722474 if score @s ff_active_uuid_2 matches -2043793213 if score @s ff_active_uuid_3 matches -261303526 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["polysquarazoid"],mode:"replace_all"}}
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches -1781696582 if score @s ff_active_uuid_1 matches -1261550174 if score @s ff_active_uuid_2 matches -1449356478 if score @s ff_active_uuid_3 matches -439859366 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["rivertiger76"],mode:"replace_all"}}
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 2009084637 if score @s ff_active_uuid_1 matches 495144206 if score @s ff_active_uuid_2 matches -1518548158 if score @s ff_active_uuid_3 matches 776196456 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["dorkorc_"],mode:"replace_all"}}
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1898580004 if score @s ff_active_uuid_1 matches -1815065167 if score @s ff_active_uuid_2 matches -1877372255 if score @s ff_active_uuid_3 matches -917365838 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["endyblaze201"],mode:"replace_all"}}
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 754748853 if score @s ff_active_uuid_1 matches 1911377587 if score @s ff_active_uuid_2 matches -1429384264 if score @s ff_active_uuid_3 matches -1409327390 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["stuffy"],mode:"replace_all"}}
 execute unless predicate fossil_frights:world/is_realms if score @s ff_active_uuid_0 matches 1143768566 if score @s ff_active_uuid_1 matches 1044072941 if score @s ff_active_uuid_2 matches -1808662431 if score @s ff_active_uuid_3 matches 483304317 on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["evtema3"],mode:"replace_all"}}
-tag @s remove ff_hoverboard_owner_current
+
 tag @s add ff_hoverboard_active
 execute at @s run playsound fossil-frights:task.hoveraptor master @a[distance=..5] ~ ~ ~ 1 1

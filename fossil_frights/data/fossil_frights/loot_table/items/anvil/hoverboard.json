@@ -29,6 +29,11 @@
                   "sound": "minecraft:entity.item.pickup",
                   "has_consume_particles": false
                 },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:damage"
+                  ]
+                },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",
                   "components": {
@@ -44,22 +49,24 @@
                       "seconds": 2.0,
                       "cooldown_group": "fossil_frights:hoverboard"
                     },
-                    "minecraft:consumable": {
-                      "consume_seconds": 0.001,
-                      "animation": "none",
-                      "sound": "minecraft:entity.item.pickup",
-                      "has_consume_particles": false
+                    "minecraft:tooltip_display": {
+                      "hidden_components": [
+                        "minecraft:damage"
+                      ]
                     },
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
                       "ff_heist_loot": true,
+                      "ff_hoverboard_active": false,
                       "ff_hoverboard_use": true
                     }
                   }
                 },
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_hoverboard_active": false,
+                  "ff_hoverboard_use": false
                 }
               }
             },
