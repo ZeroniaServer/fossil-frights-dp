@@ -1,6 +1,8 @@
 advancement revoke @s only fossil_frights:items/hoverboard/consume
 
 execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frights:items/hoverboard/restore_used_item
+execute if predicate fossil_frights:entity/is_swimming run return 0
+execute positioned ~ ~0.601 ~ unless entity @s[dx=0] run return 0
 
 execute unless entity @s[gamemode=creative] run tag @s add ff_hoverboard_restore_pending
 execute unless entity @s[gamemode=creative] if items entity @s weapon.mainhand *[custom_data~{itemID:"hoverboard"}] run item replace entity @s enderchest.0 from entity @s weapon.mainhand
