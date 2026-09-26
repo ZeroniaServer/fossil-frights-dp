@@ -1,5 +1,5 @@
 tp 0-0-0-0-0 ~ ~ ~ ~ ~
-execute as 0-0-0-0-0 at @s rotated as @s run function fossil_frights:player/position_cache/store
+execute as 0-0-0-0-0 at @s rotated as @s rotated ~ 0 run function fossil_frights:player/position_cache/store
 execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run function fossil_frights:items/hoverboard/enable_summon with storage fossil_frights:position_cache
 execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
 execute on vehicle run tag @s remove ff_hoverboard_new
