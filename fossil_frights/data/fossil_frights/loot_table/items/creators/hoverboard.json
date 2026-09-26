@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Creator Hoverboard",
+                  "color": "aqua"
+                },
+                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 3000,
+                "minecraft:damage": 0,
+                "minecraft:unbreakable": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 2.0,
+                  "cooldown_group": "fossil_frights:hoverboard"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:paper",
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "Creator Hoverboard",
+                      "color": "aqua"
+                    },
+                    "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:max_damage": 3000,
+                    "minecraft:damage": 0,
+                    "minecraft:unbreakable": {},
+                    "minecraft:use_cooldown": {
+                      "seconds": 2.0,
+                      "cooldown_group": "fossil_frights:hoverboard"
+                    },
+                    "minecraft:consumable": {
+                      "consume_seconds": 0.001,
+                      "animation": "none",
+                      "sound": "minecraft:entity.item.pickup",
+                      "has_consume_particles": false
+                    },
+                    "minecraft:custom_data": {
+                      "itemID": "hoverboard",
+                      "ff_creator_hoverboard": true,
+                      "ff_heist_loot": true,
+                      "ff_hoverboard_use": true
+                    }
+                  }
+                },
+                "minecraft:custom_data": {
+                  "itemID": "hoverboard",
+                  "ff_creator_hoverboard": true,
+                  "ff_heist_loot": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

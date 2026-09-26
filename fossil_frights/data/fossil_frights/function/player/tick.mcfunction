@@ -56,7 +56,7 @@ function fossil_frights:items/other/confetti_cannon/player_tick
 execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frights:items/hoverboard/durability/restore
 function fossil_frights:items/hoverboard/durability/sync_damage
 execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/player_tick
-execute if entity @s[tag=ff_hoverboard_active,gamemode=!creative] run function fossil_frights:items/hoverboard/durability/durability_tick
+execute if entity @s[tag=ff_hoverboard_active,gamemode=!creative] unless predicate fossil_frights:player/inventory/creator_hoverboard run function fossil_frights:items/hoverboard/durability/durability_tick
 function fossil_frights:items/hoverboard/durability/sync_damage
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
 execute if entity @s[gamemode=spectator,team=!ff_dev_mode] run function fossil_frights:admin/spectator/tick
