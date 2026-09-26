@@ -2,6 +2,7 @@ execute unless predicate fossil_frights:game_state/game_running run function fos
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $day_active ff_day matches 1 run function fossil_frights:messages/error/no_day_active
 execute unless score $day_active ff_day matches 1 run return 0
+execute as @e[type=minecraft:item,predicate=fossil_frights:entity/contents/brush] run kill @s
 execute if score $custom_day_active ff_day matches 1 run return run function fossil_frights:game/frights/day/custom_completed
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/task_book_shelf/clear
