@@ -56,6 +56,7 @@
                       "itemID": "hoverboard",
                       "ff_creator_hoverboard": true,
                       "ff_heist_loot": true,
+                      "ff_prevent_drop": true,
                       "ff_hoverboard_use": true
                     }
                   }
@@ -63,7 +64,8 @@
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
                   "ff_creator_hoverboard": true,
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_prevent_drop": true
                 }
               }
             },
