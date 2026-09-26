@@ -1,4 +1,5 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 10 run return 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 10 run function fossil_frights:lobby_games/stop_all
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 10 run tp @s 45 77 -62 240 0
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
