@@ -40,6 +40,11 @@
                   }
                 ],
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:custom_model_data": {
+                  "colors": [
+                    0
+                  ]
+                },
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
                 "minecraft:damage": 0,
@@ -91,6 +96,11 @@
                       }
                     ],
                     "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                    "minecraft:custom_model_data": {
+                      "colors": [
+                        0
+                      ]
+                    },
                     "minecraft:max_stack_size": 1,
                     "minecraft:max_damage": 3000,
                     "minecraft:damage": 0,
