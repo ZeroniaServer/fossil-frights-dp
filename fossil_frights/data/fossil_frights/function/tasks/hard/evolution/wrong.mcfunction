@@ -1,5 +1,6 @@
 execute at @s run function fossil_frights:tasks/hard/evolution/wrong_fx
 function fossil_frights:tasks/hard/evolution/wrong_return
+function fossil_frights:tasks/hard/evolution/restore_hitboxes
 scoreboard players set $evolution_step ff_task_state 1
 scoreboard players set $evolution_flash_red ff_task_state 20
 tag @e[type=minecraft:mannequin,tag=ff_evolution] remove ff_evolution_locked
