@@ -1,22 +1,19 @@
 advancement revoke @s only fossil_frights:items/hoverboard/consume
 
 execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frights:items/hoverboard/restore_used_item
-execute if entity @s[tag=ff_hoverboard_active] run return run function fossil_frights:items/hoverboard/disable
-execute if predicate fossil_frights:entity/is_swimming run return 0
-execute positioned ~ ~0.601 ~ unless entity @s[dx=0] run return 0
-#deny if feet in solid full-cube block
-execute if block ~ ~ ~ #fossil_frights:is_full_cube run return 0
-#deny if head in block
-execute positioned ~ ~1 ~ unless block ~ ~ ~ #fossil_frights:air_like run return 0
-#deny if block above player
-execute positioned ~ ~2 ~ unless block ~ ~ ~ #fossil_frights:air_like run return 0
 
 execute unless entity @s[gamemode=creative] run tag @s add ff_hoverboard_restore_pending
 execute unless entity @s[gamemode=creative] if items entity @s weapon.mainhand *[custom_data~{itemID:"hoverboard"}] run item replace entity @s enderchest.0 from entity @s weapon.mainhand
 execute unless entity @s[gamemode=creative] unless items entity @s weapon.mainhand *[custom_data~{itemID:"hoverboard"}] run item replace entity @s enderchest.0 from entity @s weapon.offhand
 
+execute if entity @s[tag=ff_hoverboard_active] run return run function fossil_frights:items/hoverboard/disable
 execute if predicate fossil_frights:player/input/sneak run return 0
 execute if entity @s[gamemode=spectator] run return 0
+execute if predicate fossil_frights:entity/is_swimming run return 0
+execute positioned ~ ~0.601 ~ unless entity @s[dx=0] run return 0
+execute if block ~ ~ ~ #fossil_frights:is_full_cube run return 0
+execute unless block ~ ~1 ~ #fossil_frights:never_has_solid_collision run return 0
+execute unless block ~ ~2 ~ #fossil_frights:never_has_solid_collision run return 0
 
 execute unless entity @s[gamemode=creative] run item modify entity @s enderchest.0 fossil_frights:items/hoverboard/set_active
 execute if entity @s[gamemode=creative] if items entity @s weapon.mainhand *[custom_data~{itemID:"hoverboard"}] run item modify entity @s weapon.mainhand fossil_frights:items/hoverboard/set_active
