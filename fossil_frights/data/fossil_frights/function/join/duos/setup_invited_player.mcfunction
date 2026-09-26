@@ -16,6 +16,7 @@ tag @s add ff_invite_join_source
 function fossil_frights:join/guard
 tag @s remove ff_invite_join_source
 gamemode adventure @s
+effect clear @s minecraft:invisibility
 attribute @s minecraft:scale base reset
 function fossil_frights:player/protection_disable
 clear @s
