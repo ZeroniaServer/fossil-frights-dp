@@ -1,5 +1,6 @@
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:game/bossbar/sync_login_player
 tag @s remove ff_hoverboard_active
+function fossil_frights:items/hoverboard/durability/clear_all_active
 tag @s remove ff_hoverboard_owner_current
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
