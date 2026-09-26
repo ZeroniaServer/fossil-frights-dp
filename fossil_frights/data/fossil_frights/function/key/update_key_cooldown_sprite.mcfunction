@@ -40,3 +40,4 @@ execute if items entity @s player.crafting.0 *[custom_data~{itemID:"key_cooldown
 execute if items entity @s player.crafting.1 *[custom_data~{itemID:"key_cooldown"}] run return run item modify entity @s player.crafting.1 fossil_frights:key/set_cooldown_model
 execute if items entity @s player.crafting.2 *[custom_data~{itemID:"key_cooldown"}] run return run item modify entity @s player.crafting.2 fossil_frights:key/set_cooldown_model
 execute if items entity @s player.crafting.3 *[custom_data~{itemID:"key_cooldown"}] run return run item modify entity @s player.crafting.3 fossil_frights:key/set_cooldown_model
+execute if items entity @s enderchest.0 *[custom_data~{itemID:"key_cooldown"}] run return run item modify entity @s enderchest.0 fossil_frights:key/set_cooldown_model

@@ -46,3 +46,4 @@ execute if items entity @s armor.chest *[custom_data~{itemID:"hoverboard",ff_hov
 execute if items entity @s armor.head *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] run item modify entity @s armor.head fossil_frights:items/hoverboard/set_inactive
 execute if items entity @s armor.body *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] run item modify entity @s armor.body fossil_frights:items/hoverboard/set_inactive
 execute if items entity @s saddle *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] run item modify entity @s saddle fossil_frights:items/hoverboard/set_inactive
+execute if items entity @s enderchest.0 *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] run item modify entity @s enderchest.0 fossil_frights:items/hoverboard/set_inactive

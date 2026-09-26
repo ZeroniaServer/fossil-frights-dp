@@ -46,3 +46,4 @@ item modify entity @s player.crafting.0 fossil_frights:game/heists/set_invisible
 item modify entity @s player.crafting.1 fossil_frights:game/heists/set_invisible/off
 item modify entity @s player.crafting.2 fossil_frights:game/heists/set_invisible/off
 item modify entity @s player.crafting.3 fossil_frights:game/heists/set_invisible/off
+item modify entity @s enderchest.0 fossil_frights:game/heists/set_invisible/off
