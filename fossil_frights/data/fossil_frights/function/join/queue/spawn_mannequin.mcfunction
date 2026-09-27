@@ -1,9 +1,12 @@
-data remove storage fossil_frights:queue mannequin
-execute store result storage fossil_frights:queue mannequin.u0 int 1 run scoreboard players get @s ff_active_uuid_0
-execute store result storage fossil_frights:queue mannequin.u1 int 1 run scoreboard players get @s ff_active_uuid_1
-execute store result storage fossil_frights:queue mannequin.u2 int 1 run scoreboard players get @s ff_active_uuid_2
-execute store result storage fossil_frights:queue mannequin.u3 int 1 run scoreboard players get @s ff_active_uuid_3
+data modify storage fossil_frights:queue mannequin set value {uuid:[I;0,0,0,0]}
+execute store result storage fossil_frights:queue mannequin.uuid[0] int 1 run scoreboard players get @s ff_active_uuid_0
+execute store result storage fossil_frights:queue mannequin.uuid[1] int 1 run scoreboard players get @s ff_active_uuid_1
+execute store result storage fossil_frights:queue mannequin.uuid[2] int 1 run scoreboard players get @s ff_active_uuid_2
+execute store result storage fossil_frights:queue mannequin.uuid[3] int 1 run scoreboard players get @s ff_active_uuid_3
+function fossil_frights:player/util/write_username {to:"storage fossil_frights:queue mannequin.name"}
 function fossil_frights:join/queue/spawn_mannequin_macro with storage fossil_frights:queue mannequin
+data remove storage fossil_frights:queue mannequin
+
 attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:max_health base set 1000
 attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:knockback_resistance base set 2
 data merge entity @e[type=mannequin,tag=ff_queue_new,limit=1] {Health:1000.0f}
