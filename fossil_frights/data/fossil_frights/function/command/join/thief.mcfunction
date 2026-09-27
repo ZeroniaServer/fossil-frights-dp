@@ -1,3 +1,5 @@
+execute if entity @s[gamemode=spectator] if predicate fossil_frights:game_state/game_running run return run function fossil_frights:messages/error/cannot_spawn_while_active
+execute if entity @s[gamemode=spectator] run function fossil_frights:join/spectator/command_exit
 execute unless predicate fossil_frights:game_state/game_running unless entity @a[limit=1,tag=ff_in_queue] run return run function fossil_frights:join/heists/start_thief
 execute unless predicate fossil_frights:game_state/game_running run tellraw @s {"text":"⚠ You can choose a Heists team only in the waiting lobby.","color":"red"}
 execute unless predicate fossil_frights:game_state/game_running run return 0
