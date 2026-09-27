@@ -95,5 +95,12 @@ execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=
 execute if score #ant_fight_active ff_dummy matches 1 run scoreboard objectives setdisplay below_name ff_ant_score_below_name
 execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name
 
+scoreboard players reset @a ff_queue_order_display
+execute as @a[scores={ff_queue_order=1..}] run scoreboard players operation @s ff_queue_order_display = @s ff_queue_order
+execute if entity @a[limit=1,scores={ff_queue_order=1..,ff_queue_prompt_time=1..}] as @a[scores={ff_queue_order=1..}] run scoreboard players remove @s ff_queue_order_display 1
+execute as @a unless score @s ff_queue_order matches 1.. run scoreboard players display numberformat @s ff_tablist_text
+execute as @a[scores={ff_queue_order=1..,ff_queue_prompt_time=1..}] run scoreboard players display numberformat @s ff_tablist_text fixed {color:"gold",font:"fossil-frights:small_caps",translate:"ff.tablist.in_queue.up_next"}
+execute as @a[scores={ff_queue_order=1..,ff_queue_prompt_time=0}] run scoreboard players display numberformat @s ff_tablist_text fixed {color:"yellow",font:"fossil-frights:small_caps",translate:"ff.tablist.in_queue",with:[{score:{name:"@s",objective:"ff_queue_order_display"}}]}
+
 bossbar set fossil_frights:resource_pack_disclaimer players
 execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]

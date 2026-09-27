@@ -7,6 +7,9 @@ execute in minecraft:overworld run setworldspawn 0 80 0 0 0
 setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict
 scoreboard objectives add ff_dummy dummy
 scoreboard objectives add ff_constant dummy
+scoreboard objectives add ff_tablist_text dummy
+scoreboard objectives modify ff_tablist_text numberformat blank
+scoreboard objectives setdisplay list ff_tablist_text
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
@@ -65,6 +68,7 @@ scoreboard objectives add ff_msg_cooldown dummy
 scoreboard objectives add ff_settings_mode_cooldown dummy
 scoreboard objectives add ff_settings_confirm trigger
 scoreboard objectives add ff_queue_order dummy
+scoreboard objectives add ff_queue_order_display dummy
 scoreboard objectives add ff_queue_start trigger
 scoreboard objectives add start trigger
 scoreboard objectives add ff_join_balance dummy
