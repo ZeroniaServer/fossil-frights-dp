@@ -12,6 +12,7 @@ execute at @s run function fossil_frights:items/heists/camera_remote/spawn_dummy
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] armor.head loot fossil_frights:items/other/security_guard_hat
 loot replace entity @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] weapon.mainhand loot fossil_frights:items/heists/camera_remote
 execute as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] run function fossil_frights:util/protect_mannequin
+execute as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] store result score @s ff_camera_remote_health_prev run data get entity @s Health 100
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_0 = @s ff_active_uuid_0
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_1 = @s ff_active_uuid_1
 scoreboard players operation @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limit=1] ff_active_uuid_2 = @s ff_active_uuid_2

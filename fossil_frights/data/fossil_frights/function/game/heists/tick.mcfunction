@@ -1,6 +1,7 @@
 execute if score $heist_button_lock ff_game_state matches 1.. run scoreboard players remove $heist_button_lock ff_game_state 1
 execute if score $heist_button_lock ff_game_state matches ..0 run scoreboard players set $heist_button_lock ff_game_state 0
 execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
+function fossil_frights:items/heists/camera_remote/damage_tick
 function fossil_frights:game/heists/regen_lock_tick
 function fossil_frights:game/heists/capture_point/tick
 execute if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
