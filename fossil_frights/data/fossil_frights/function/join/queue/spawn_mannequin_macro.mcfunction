@@ -1,1 +1,1 @@
-$summon mannequin 0 80 -2 {Tags:["ff_queue_mannequin","ff_queue_new"],pose:"standing",Rotation:[0,0],profile:{id:$(uuid)},CustomName:{italic:true,text:"$(name)"},description:{translate:"ff.queue_mannequin.description"}}
+$summon mannequin 0 80 -2 {Tags:["ff_queue_mannequin","ff_queue_new"],immovable:true,profile:{id:$(uuid)},CustomName:{italic:true,text:"$(name)"},description:{translate:"ff.queue_mannequin.description.in_queue"}}
