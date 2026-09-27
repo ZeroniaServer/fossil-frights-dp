@@ -5,6 +5,7 @@ execute as @a[gamemode=!creative] run attribute @s minecraft:block_interaction_r
 execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_range base reset
 tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
 execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
+execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
