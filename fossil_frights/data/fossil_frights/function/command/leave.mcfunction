@@ -1,5 +1,7 @@
 # Public leave route.
 execute if entity @s[tag=ff_tutorial] run return run function fossil_frights:tutorial/stop_silent
+execute if entity @s[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
+execute if entity @s[tag=ff_forced_spectate] run function fossil_frights:cameras/forced_spectate_exit
 execute unless entity @s[tag=ff_game_end_cleanup] unless score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run function fossil_frights:messages/leave/player_left
 execute if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave/active
 execute if entity @s[gamemode=spectator] run return run function fossil_frights:command/leave/spectator

@@ -4,6 +4,7 @@ execute if score @s ff_tp_action matches 14 run tag @s remove ff_fade_tp_active
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
 execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
+function fossil_frights:lobby_games/stop_all
 function fossil_frights:join/lobby
 team join ff_guard @s
 scoreboard players set @s ff_join_cooldown 40
