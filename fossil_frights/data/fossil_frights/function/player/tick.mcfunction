@@ -67,6 +67,10 @@ execute unless predicate fossil_frights:player/is_playing if entity @s[tag=ff_pl
 tag @s[tag=ff_plushie_restore_pending] remove ff_plushie_restore_pending
 tag @s[tag=ff_plushie_restore_queued] add ff_plushie_restore_pending
 tag @s[tag=ff_plushie_restore_queued] remove ff_plushie_restore_queued
+execute if score @s leave matches 1.. run function fossil_frights:command/leave
+execute if score @s leave matches 1.. run scoreboard players enable @s leave
+execute if score @s leave matches 1.. run scoreboard players set @s leave 0
+execute if entity @s[tag=ff_tutorial] run function fossil_frights:command/tutorial_blocked
 execute if score @s invite matches 1.. run function fossil_frights:command/invite
 execute if score @s invite matches 1.. run scoreboard players enable @s invite
 execute if score @s invite matches 1.. run scoreboard players set @s invite 0
@@ -80,9 +84,6 @@ execute if score @s ff_queue_start matches 1.. run function fossil_frights:join/
 execute if score @s start matches 1.. run function fossil_frights:command/start
 execute if score @s start matches 1.. run scoreboard players enable @s start
 execute if score @s start matches 1.. run scoreboard players set @s start 0
-execute if score @s leave matches 1.. run function fossil_frights:command/leave
-execute if score @s leave matches 1.. run scoreboard players enable @s leave
-execute if score @s leave matches 1.. run scoreboard players set @s leave 0
 execute if score @s spectate matches 1.. run function fossil_frights:command/spectate
 execute if score @s spectate matches 1.. run scoreboard players enable @s spectate
 execute if score @s spectate matches 1.. run scoreboard players set @s spectate 0
