@@ -13,4 +13,4 @@ tag @s remove ff_camera_remote_active
 function fossil_frights:game/rejoin/state/clear_camera_current
 function fossil_frights:items/heists/camera_remote/kill_owned
 function fossil_frights:cameras/update_camera_models
-execute at @s run playsound fossil-frights:camera.close master @s ~ ~ ~ 1 1
+execute at @s[tag=!ff_rejoin_camera_return] run playsound fossil-frights:camera.close master @s ~ ~ ~ 1 1
