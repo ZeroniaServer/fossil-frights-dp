@@ -16,4 +16,4 @@ execute on vehicle on passengers run item modify entity @s[type=minecraft:item_d
 
 tag @s add ff_hoverboard_active
 tag @s add ff_hoverboard_activation_grace
-execute at @s run playsound fossil-frights:task.hoveraptor master @a[distance=..5] ~ ~ ~ 1 1
+execute at @s run playsound fossil-frights:hoverboard.enable master @a[distance=..5] ~ ~ ~ 1 1
