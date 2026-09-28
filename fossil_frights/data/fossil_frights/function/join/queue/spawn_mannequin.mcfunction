@@ -10,7 +10,7 @@ data remove storage fossil_frights:queue mannequin
 attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:max_health base set 1000
 data modify entity @e[type=mannequin,tag=ff_queue_new,limit=1] Health set value 1000
 effect give @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:regeneration infinite 99 true
-attribute @e[type=mannequin,tag=ff_queue_new,limit=1] minecraft:scale base set 0.8
+loot replace entity @e[type=mannequin,tag=ff_queue_new,limit=1] weapon.mainhand loot fossil_frights:items/other/security_guard_hat
 scoreboard players operation @e[type=mannequin,tag=ff_queue_new,limit=1] ff_queue_order = @s ff_queue_order
 scoreboard players operation @e[type=mannequin,tag=ff_queue_new,limit=1] ff_active_uuid_0 = @s ff_active_uuid_0
 scoreboard players operation @e[type=mannequin,tag=ff_queue_new,limit=1] ff_active_uuid_1 = @s ff_active_uuid_1
