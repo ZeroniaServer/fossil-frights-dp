@@ -116,3 +116,4 @@ scoreboard players set $alarm_effects_on ff_heist 0
 schedule function fossil_frights:game/reset_all_interaction_entity_memories 1t
 function fossil_frights:join/thief/reset_invisimask_pool
 function fossil_frights:animations/security_gate/load
+schedule function fossil_frights:items/water_balloon/temporary_water/cleanup 1t
