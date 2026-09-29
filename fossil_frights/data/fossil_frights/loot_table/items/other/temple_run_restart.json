@@ -55,7 +55,8 @@
                   "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
-                  "itemID": "temple_run_restart"
+                  "itemID": "temple_run_restart",
+                  "ff_prevent_drop": true
                 }
               }
             },

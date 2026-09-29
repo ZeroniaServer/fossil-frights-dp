@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "gui.back",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "fossil-frights:items/lobby/return_to_lobby",
+                "minecraft:consumable": {
+                  "consume_seconds": 0.001,
+                  "animation": "none",
+                  "sound": "minecraft:entity.item.pickup",
+                  "has_consume_particles": false
+                },
+                "minecraft:custom_data": {
+                  "itemID": "return_to_lobby",
+                  "ff_prevent_drop": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "fossil_frights:base_item_data"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -55,7 +55,8 @@
                   "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
-                  "itemID": "parkour_restart"
+                  "itemID": "parkour_restart",
+                  "ff_prevent_drop": true
                 }
               }
             },

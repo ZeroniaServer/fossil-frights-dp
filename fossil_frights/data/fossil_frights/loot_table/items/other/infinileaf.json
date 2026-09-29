@@ -54,7 +54,8 @@
                 },
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
-                  "itemID": "infinileaf"
+                  "itemID": "infinileaf",
+                  "ff_prevent_drop": true
                 }
               }
             },

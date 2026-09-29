@@ -97,6 +97,7 @@ execute if score #ant_fight_active ff_dummy matches 1 run scoreboard objectives 
 execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name
 function fossil_frights:join/queue/tick
 function fossil_frights:items/water_balloon/tick
+function fossil_frights:items/return_to_lobby/tick
 
 bossbar set fossil_frights:resource_pack_disclaimer players
 execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]
