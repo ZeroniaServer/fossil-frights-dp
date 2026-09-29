@@ -6,7 +6,6 @@ attribute @s minecraft:entity_interaction_range base reset
 attribute @s minecraft:scale base reset
 attribute @s minecraft:waypoint_transmit_range base reset
 attribute @s minecraft:waypoint_receive_range base reset
-attribute @s minecraft:below_name_distance base reset
 attribute @s minecraft:knockback_resistance base reset
 attribute @s minecraft:safe_fall_distance base reset
 function fossil_frights:player/reset_attribute_modifiers
