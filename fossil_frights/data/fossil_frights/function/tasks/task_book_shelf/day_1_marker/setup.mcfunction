@@ -1,5 +1,5 @@
 kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
-kill @e[type=minecraft:block_display,tag=ff_day_1_book_marker]
+kill @e[type=minecraft:item_display,tag=ff_day_1_book_marker]
 scoreboard players set $day_1_book_marker_flash ff_day 0
 scoreboard players set $day_1_book_taken ff_day 0
 execute if score $day_current ff_day matches 1..2 if entity @a[limit=1,team=ff_guard,scores={ff_run_count=..2}] run summon minecraft:text_display 18.5 72.1 28.97 {Tags:["ff_day_1_book_marker"],text:{text:"!",bold:true},Rotation:[180,0],background:0,brightness:{sky:15,block:15},transformation:{right_rotation:[0,0,0,1],scale:[2,2,2],left_rotation:[0,0,0,1],translation:[0,0,0]},width:2,height:1}
