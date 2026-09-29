@@ -1,0 +1,61 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "fossil_frights:player/is_lobby_freeplay"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:location": {
+                "position": {
+                  "x": {
+                    "min": -29.5,
+                    "max": 30.5
+                  },
+                  "y": {
+                    "min": 80,
+                    "max": 109
+                  },
+                  "z": {
+                    "min": -10.5,
+                    "max": 7.5
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:location": {
+                "position": {
+                  "x": {
+                    "min": -3,
+                    "max": 4
+                  },
+                  "y": {
+                    "min": 75,
+                    "max": 82
+                  },
+                  "z": {
+                    "min": -13,
+                    "max": -8
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
