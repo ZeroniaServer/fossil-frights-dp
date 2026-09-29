@@ -2,23 +2,22 @@ scoreboard objectives add ff_actionbar_manager.result dummy
 scoreboard objectives modify ff_actionbar_manager.result numberformat blank
 
 
+scoreboard objectives add ff_actionbar_manager.slot.traps dummy
+scoreboard objectives modify ff_actionbar_manager.slot.traps numberformat blank
+
 scoreboard objectives add ff_actionbar_manager.slot.generic dummy
 scoreboard objectives modify ff_actionbar_manager.slot.generic numberformat blank
 
-scoreboard objectives add ff_actionbar_manager.slot.camera_navigation dummy
-scoreboard objectives modify ff_actionbar_manager.slot.camera_navigation numberformat blank
+scoreboard objectives add ff_actionbar_manager.slot.cameras dummy
+scoreboard objectives modify ff_actionbar_manager.slot.cameras numberformat blank
 
-scoreboard objectives add ff_actionbar_manager.slot.camera_thief_visible dummy
-scoreboard objectives modify ff_actionbar_manager.slot.camera_thief_visible numberformat blank
+scoreboard objectives add ff_actionbar_manager.slot.keys dummy
+scoreboard objectives modify ff_actionbar_manager.slot.keys numberformat blank
 
 scoreboard objectives add ff_actionbar_manager.slot.hovered_info dummy
 scoreboard objectives modify ff_actionbar_manager.slot.hovered_info numberformat blank
 
-scoreboard objectives add ff_actionbar_manager.slot.held_item_info dummy
-scoreboard objectives modify ff_actionbar_manager.slot.held_item_info numberformat blank
 
-scoreboard objectives add ff_actionbar_manager.slot.key_cooldown dummy
-scoreboard objectives modify ff_actionbar_manager.slot.key_cooldown numberformat blank
 
 scoreboard objectives add ff_actionbar_manager.slot.invisipunch_cooldown dummy
 scoreboard objectives modify ff_actionbar_manager.slot.invisipunch_cooldown numberformat blank
@@ -47,8 +46,6 @@ scoreboard objectives modify ff_actionbar_manager.slot.scissors_run_warning numb
 scoreboard objectives add ff_actionbar_manager.slot.loot_securing dummy
 scoreboard objectives modify ff_actionbar_manager.slot.loot_securing numberformat blank
 
-scoreboard objectives add ff_actionbar_manager.slot.thief_spotted dummy
-scoreboard objectives modify ff_actionbar_manager.slot.thief_spotted numberformat blank
 
 scoreboard objectives add ff_actionbar_manager.slot.fallback_instruction dummy
 scoreboard objectives modify ff_actionbar_manager.slot.fallback_instruction numberformat blank

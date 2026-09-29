@@ -11,4 +11,4 @@ execute if entity @s[tag=ff_trap_restore_pending] run function fossil_frights:it
 tag @s remove ff_trap_restore_pending
 execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_mainhand
 execute if items entity @s weapon.offhand *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/refresh_selected_offhand
-execute if items entity @s weapon.* *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/ui/show
+execute unless score @s ff_actionbar_manager.slot.traps matches 2.. if items entity @s weapon.* *[custom_data~{ff_heist_trap:true}] run function fossil_frights:items/heists/trap/ui/show
