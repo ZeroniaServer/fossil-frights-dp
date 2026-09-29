@@ -35,6 +35,7 @@ scoreboard players enable @s join_thief
 scoreboard players enable @s spawn
 scoreboard players enable @s speedruntask
 scoreboard players enable @s ff_invite_accept
+scoreboard players enable @s ff_tutorial_prompt
 execute if score @s ff_settings_confirm matches 1 run function fossil_frights:game/start_room/settings/gamemode/frights/apply
 execute if score @s ff_settings_confirm matches 2 run function fossil_frights:game/start_room/settings/gamemode/party/request
 execute if score @s ff_settings_confirm matches 3 run function fossil_frights:game/start_room/settings/gamemode/heists/request
@@ -48,6 +49,10 @@ execute if score @s ff_settings_confirm matches 10 run function fossil_frights:g
 execute if score @s ff_settings_confirm matches 11 run function fossil_frights:game/start_room/settings/speedrun/click
 execute if score @s ff_settings_confirm matches 12 run function fossil_frights:game/start_room/settings/randomizer/click
 execute if score @s ff_settings_confirm matches 1.. run scoreboard players set @s ff_settings_confirm 0
+execute if score @s ff_tutorial_prompt matches 1 run function fossil_frights:game/frights/day/tutorial_prompt/yes
+execute if score @s ff_tutorial_prompt matches 2 run function fossil_frights:game/frights/day/tutorial_prompt/no
+execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players enable @s ff_tutorial_prompt
+execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players set @s ff_tutorial_prompt 0
 scoreboard players add @s ff_msg_cooldown 0
 scoreboard players add @s ff_settings_mode_cooldown 0
 execute if score @s ff_settings_mode_cooldown matches 1.. run scoreboard players remove @s ff_settings_mode_cooldown 1

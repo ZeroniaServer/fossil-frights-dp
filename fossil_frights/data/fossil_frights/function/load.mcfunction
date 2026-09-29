@@ -67,6 +67,7 @@ scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_msg_cooldown dummy
 scoreboard objectives add ff_settings_mode_cooldown dummy
 scoreboard objectives add ff_settings_confirm trigger
+scoreboard objectives add ff_tutorial_prompt trigger
 scoreboard objectives add ff_queue_order dummy
 scoreboard objectives add ff_queue_order_display dummy
 scoreboard objectives add ff_queue_start trigger

@@ -5,7 +5,7 @@ function fossil_frights:game/heists/tick
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
 function fossil_frights:game/frights/timer/tick
-execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $heist_button_lock ff_game_state matches 0 if score $party_button_lock ff_game_state matches 0 unless score $defeat_lock ff_game_state matches 1.. if block 20 71 28 minecraft:warped_button[powered=true] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/frights/day/next
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $heist_button_lock ff_game_state matches 0 if score $party_button_lock ff_game_state matches 0 unless score $defeat_lock ff_game_state matches 1.. if block 20 71 28 minecraft:warped_button[powered=true] run function fossil_frights:game/frights/day/start
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $day_current ff_day matches ..9 run scoreboard players add $day_flash ff_day 1
 execute if score $day_flash ff_day matches 20.. run scoreboard players set $day_flash ff_day 0
 execute unless predicate fossil_frights:game_state/game_running run scoreboard players set $day_flash ff_day 0
