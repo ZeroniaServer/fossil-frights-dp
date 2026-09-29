@@ -18,6 +18,7 @@
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/dna/microfiber_cloth",
                 "minecraft:custom_data": {
                   "ff_dna": true,
+                  "ff_heist_loot": true,
                   "itemID": "microfiber_cloth"
                 }
               }
