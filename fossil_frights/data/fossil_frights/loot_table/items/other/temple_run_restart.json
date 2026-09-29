@@ -31,21 +31,6 @@
                         "color": "white"
                       }
                     ]
-                  },
-                  {
-                    "translate": "%s - %s",
-                    "italic": false,
-                    "color": "white",
-                    "with": [
-                      {
-                        "translate": "ff.item.temple_run_restart.lore.end",
-                        "color": "red"
-                      },
-                      {
-                        "keybind": "key.drop",
-                        "color": "white"
-                      }
-                    ]
                   }
                 ],
                 "minecraft:consumable": {
