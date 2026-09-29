@@ -12,6 +12,7 @@ execute if entity @s[tag=ff_hoverboard_setup_owner] run ride @s dismount
 execute if entity @s[tag=ff_hoverboard_setup_owner] run ride @s mount @e[type=minecraft:happy_ghast,tag=ff_hoverboard_setup_vehicle,distance=..2,sort=nearest,limit=1]
 function fossil_frights:lobby_games/stop_all
 execute as @a[tag=ff_hoverboard_setup_passenger,limit=1] run function fossil_frights:lobby_games/stop_all
+tag @a[tag=ff_hoverboard_setup_passenger] add ff_hoverboard_back_rider
 tag @a[tag=ff_hoverboard_setup_passenger] remove ff_hoverboard_setup_passenger
 execute if entity @s[tag=ff_hoverboard_setup_vehicle] on vehicle run tag @s remove ff_hoverboard_setup_vehicle
 tag @s remove ff_hoverboard_setup_owner
