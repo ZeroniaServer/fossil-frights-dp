@@ -60,6 +60,7 @@ scoreboard players set @a[team=ff_guard] ff_key_cooldown 0
 scoreboard players set @a[team=ff_guard] ff_key_bar 0
 scoreboard players set @a[team=ff_guard] ff_bat_bug_timer 0
 scoreboard players set @a[team=ff_guard] ff_bat_bug_bar 0
+scoreboard players set @a[team=ff_guard] ff_coin_used_run 0
 scoreboard players set @a[team=ff_guard] ff_speedrun_delta 0
 scoreboard players set @a[team=ff_guard] ff_speedrun_sign 0
 execute as @a[team=ff_guard] run function fossil_frights:player/actionbar/clear

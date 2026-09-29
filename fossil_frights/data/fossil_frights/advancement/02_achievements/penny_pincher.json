@@ -17,7 +17,7 @@
     "announce_to_chat": true
   },
   "criteria": {
-    "complete_run_with_ten_coins": {
+    "complete_run_without_using_coins": {
       "trigger": "minecraft:impossible"
     }
   }
