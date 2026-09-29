@@ -1,6 +1,7 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 4 run return 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 4 run function fossil_frights:lobby_games/stop_all
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 4 run tp @s -31.5 78.00 98.5 275 -10
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 4 run function fossil_frights:messages/lobby_games/ant_fight_teleported
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 advancement revoke @s only fossil_frights:lobby/ant_fight_teleporter_click

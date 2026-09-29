@@ -1,6 +1,7 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 5 run return 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 5 run function fossil_frights:lobby_games/stop_all
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 5 run tp @s -31.5 78.00 98.5 275 -10
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 5 run function fossil_frights:messages/lobby_games/ant_fight_teleported
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-25,y=80,z=1,dx=0,dy=1,dz=0] run title @s times 5 3 10
