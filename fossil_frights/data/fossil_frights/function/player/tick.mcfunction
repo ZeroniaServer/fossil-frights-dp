@@ -187,3 +187,4 @@ execute if predicate fossil_frights:entity/effects/water_breathing run attribute
 execute unless predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier remove fossil_frights:fossil_fizz
 execute if entity @s[team=ff_spectator,gamemode=spectator] run attribute @s minecraft:scale modifier add fossil_frights:hide_spectator_head -1 add_multiplied_total
 execute unless entity @s[team=ff_spectator,gamemode=spectator] run attribute @s minecraft:scale modifier remove fossil_frights:hide_spectator_head
+execute if entity @s[team=ff_spectator,gamemode=spectator] at @s run function fossil_frights:player/spectator/tick
