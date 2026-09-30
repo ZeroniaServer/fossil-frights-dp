@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:filtered",
+  "slot_source": "fossil_frights:player/all",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "hoverboard",
+        "ff_hoverboard_active": true
+      },
+      "minecraft:damage": {
+        "damage": {
+          "min": 3000
+        }
+      }
+    }
+  }
+}
