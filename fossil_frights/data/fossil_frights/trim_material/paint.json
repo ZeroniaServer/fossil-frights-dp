@@ -1,4 +1,7 @@
 {
   "palette_id": "fossil-frights:trim/paint",
-  "description": "Paint"
+  "description": {
+    "color": "#E70095",
+    "translate": "ff.item.paint_armor"
+  }
 }
