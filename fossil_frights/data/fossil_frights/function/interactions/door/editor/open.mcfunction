@@ -29,7 +29,7 @@ data modify storage fossil_frights:door editor_dialog set value {\
   no: {label:{translate:"gui.cancel"}}\
 }
 
-loot replace block 0 0 0 container.0 loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:stone"}],functions:[{function:"minecraft:set_name",entity:"this",name:{selector:"@s"}}]}]}
+loot replace block 0 0 0 container.0 loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:stone"}],modifier:{type:"minecraft:set_name",entity:"this",name:{selector:"@s"}}}]}
 data modify storage fossil_frights:door editor_dialog.inputs[{key:"uuid"}].options[0].id set from block 0 0 0 Items[0].components.minecraft:custom_name.insertion
 
 function fossil_frights:interactions/door/editor/open_set_remove_command with storage fossil_frights:door editor_dialog.inputs[{key:"uuid"}].options[0]

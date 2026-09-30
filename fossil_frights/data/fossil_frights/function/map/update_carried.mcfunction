@@ -1,5 +1,5 @@
 loot replace block 0 0 0 container.0 loot fossil_frights:items/other/museum_map
-$item modify block 0 0 0 container.0 {function:"minecraft:set_components",components:{"minecraft:item_name":{color:"gold",translate:"ff.museum_map.$(name)"},"minecraft:custom_model_data":{strings:["$(name)"]}}}
+$item modify block 0 0 0 container.0 {type:"minecraft:set_components",components:{"minecraft:item_name":{color:"gold",translate:"ff.museum_map.$(name)"},"minecraft:custom_model_data":{strings:["$(name)"]}}}
 
 execute if items entity @s hotbar.0 *[minecraft:custom_data~{itemID:"museum_map"}] run item replace entity @s hotbar.0 from block 0 0 0 container.0
 execute if items entity @s hotbar.1 *[minecraft:custom_data~{itemID:"museum_map"}] run item replace entity @s hotbar.1 from block 0 0 0 container.0

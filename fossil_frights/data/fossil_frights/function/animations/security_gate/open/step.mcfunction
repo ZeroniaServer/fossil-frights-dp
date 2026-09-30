@@ -1,5 +1,5 @@
 execute if entity @s[tag=ff_security_gate.final_step] run tag @s remove ff_security_gate.opening
-execute if entity @s[tag=ff_security_gate.final_step] run item modify entity @s contents {function:"minecraft:set_custom_model_data",floats:{values:[0],mode:"replace_all"}}
+execute if entity @s[tag=ff_security_gate.final_step] run item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[0],mode:"replace_all"}}
 execute if entity @s[tag=ff_security_gate.final_step] run execute store result storage fossil_frights:security_gate gate_data.min_y float 0.001 run scoreboard players get @s ff_security_gate_cache.min_y
 execute if entity @s[tag=ff_security_gate.final_step] run execute store result storage fossil_frights:security_gate gate_data.max_y_minus_one int 0.00099999 run scoreboard players get @s ff_security_gate_cache.max_y
 execute if entity @s[tag=ff_security_gate.final_step] run execute store result storage fossil_frights:security_gate gate_data.half_width float 0.5 run scoreboard players operation #width_minus_one ff_dummy = @s ff_security_gate_cache.width
@@ -13,7 +13,7 @@ execute if entity @s[tag=ff_security_gate.final_step] run return run tag @s remo
 
 scoreboard players operation #open_amount ff_dummy = @s ff_security_gate_cache.max_y
 scoreboard players operation #open_amount ff_dummy -= @s ff_security_gate_cache.y
-item modify entity @s contents {function:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#open_amount"},score:"ff_dummy",scale:0.001}],mode:"replace_all"}}
+item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:mul",inputs:[0.001,{type:"minecraft:from_int",input:{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#open_amount"},score:"ff_dummy"}}]}],mode:"replace_all"}}
 
 scoreboard players operation @s ff_security_gate_cache.y += @s ff_security_gate_cache.speed
 execute if score @s ff_security_gate_cache.y > @s ff_security_gate_cache.max_y run scoreboard players operation @s ff_security_gate_cache.y = @s ff_security_gate_cache.max_y

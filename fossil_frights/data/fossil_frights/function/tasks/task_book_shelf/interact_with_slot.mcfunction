@@ -34,10 +34,10 @@ execute if score #mainhand ff_task_book_shelf matches 1 unless items entity @s w
 execute if score #mainhand ff_task_book_shelf matches 0 unless items entity @s weapon.offhand *[custom_data~{ff_any_task_book:true}] run return run playsound minecraft:block.chiseled_bookshelf.hit player @s
 
 execute if score #mainhand ff_task_book_shelf matches 1 run item replace block 0 0 0 container.0 from entity @s weapon.mainhand
-execute if score #mainhand ff_task_book_shelf matches 1 run item modify entity @s weapon.mainhand {function:"minecraft:set_count",count:-1,add:true}
+execute if score #mainhand ff_task_book_shelf matches 1 run item modify entity @s weapon.mainhand fossil_frights:deduct_1
 execute if score #mainhand ff_task_book_shelf matches 0 run item replace block 0 0 0 container.0 from entity @s weapon.offhand
-execute if score #mainhand ff_task_book_shelf matches 0 run item modify entity @s weapon.offhand {function:"minecraft:set_count",count:-1,add:true}
-item modify block 0 0 0 container.0 {function:"minecraft:set_count",count:1}
+execute if score #mainhand ff_task_book_shelf matches 0 run item modify entity @s weapon.offhand fossil_frights:deduct_1
+item modify block 0 0 0 container.0 {type:"minecraft:set_count",count:1}
 execute if score #slot ff_task_book_shelf matches 0 run item replace block 18 71 29 container.0 from block 0 0 0 container.0
 execute if score #slot ff_task_book_shelf matches 1 run item replace block 18 71 29 container.1 from block 0 0 0 container.0
 execute if score #slot ff_task_book_shelf matches 2 run item replace block 18 71 29 container.2 from block 0 0 0 container.0

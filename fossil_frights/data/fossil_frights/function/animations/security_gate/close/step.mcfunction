@@ -9,7 +9,7 @@ execute if score @s ff_security_gate_cache.y = @s ff_security_gate_cache.min_y r
 
 scoreboard players operation #open_amount ff_dummy = @s ff_security_gate_cache.max_y
 scoreboard players operation #open_amount ff_dummy -= @s ff_security_gate_cache.y
-item modify entity @s contents {function:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#open_amount"},score:"ff_dummy",scale:0.001}],mode:"replace_all"}}
+item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:mul",inputs:[0.001,{type:"minecraft:from_int",input:{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#open_amount"},score:"ff_dummy"}}]}],mode:"replace_all"}}
 
 data modify storage fossil_frights:security_gate gate_data set value {}
 execute store result storage fossil_frights:security_gate gate_data.y double 0.001 run scoreboard players get @s ff_security_gate_cache.y

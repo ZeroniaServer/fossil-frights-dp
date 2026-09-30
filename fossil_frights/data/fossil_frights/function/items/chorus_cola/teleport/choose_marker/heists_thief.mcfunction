@@ -3,9 +3,9 @@
 # Go toward capture point if holding loot
 execute store success score #go_toward_capture_point ff_dummy if predicate fossil_frights:player/inventory/heist_loot
 execute if score #go_toward_capture_point ff_dummy matches 1 run scoreboard players set #is_near_capture_point ff_dummy 0
-execute if score #go_toward_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 store success score #is_near_capture_point ff_dummy if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:20}}}}
-execute if score #go_toward_capture_point ff_dummy matches 1 if score #is_near_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:20}}}} run kill @s
-execute if score #go_toward_capture_point ff_dummy matches 1 if score #is_near_capture_point ff_dummy matches 0 facing 0.5 80.0 12.5 rotated ~ 0 positioned ^ ^ ^20 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:20}}}} run kill @s
+execute if score #go_toward_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 store success score #is_near_capture_point ff_dummy if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:20}}}}
+execute if score #go_toward_capture_point ff_dummy matches 1 if score #is_near_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:20}}}} run kill @s
+execute if score #go_toward_capture_point ff_dummy matches 1 if score #is_near_capture_point ff_dummy matches 0 facing 0.5 80.0 12.5 rotated ~ 0 positioned ^ ^ ^20 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:20}}}} run kill @s
 
 # Try to avoid going within 15 blocks of a guard
 execute at @a[team=ff_guard,gamemode=!spectator] run tag @e[distance=..15,type=minecraft:marker,tag=ff_chorus_cola_teleport_location] add ff_chorus_cola_teleport_location.near_guard

@@ -36,7 +36,7 @@ execute as @a[tag=ff_ice_frozen] run function fossil_frights:items/heists/ice_ca
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
 execute unless entity @a[tag=ff_dna_holder] as @e[type=minecraft:item_display,tag=ff_dna_hover] run function fossil_frights:tasks/final/dna/clear_hover
 execute unless entity @a[tag=ff_dna_holder] run tag @e[type=minecraft:item_display,tag=ff_dna_hover] remove ff_dna_hover
-execute as @e[type=minecraft:item_display,tag=ff_lock_hovered] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/general/lock"}}
+execute as @e[type=minecraft:item_display,tag=ff_lock_hovered] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:item_model":"fossil-frights:display/general/lock"}}
 tag @e[type=minecraft:item_display,tag=ff_lock_hovered] remove ff_lock_hovered
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
 execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run function fossil_frights:animations/front_door/tick

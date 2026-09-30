@@ -25,7 +25,7 @@ execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = @a
 tag @s remove ff_hoverboard_owner_current
 
 scoreboard players operation #hoverboard_color ff_dummy = @s ff_hoverboard_color
-execute on vehicle on passengers run item modify entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] contents {function:"minecraft:set_custom_model_data",colors:{values:[{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#hoverboard_color"},score:"ff_dummy"}],mode:"replace_all"}}
+execute on vehicle on passengers run item modify entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] contents {type:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:from_int",input:{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#hoverboard_color"},score:"ff_dummy"}}],mode:"replace_all"}}
 
 tag @s add ff_hoverboard_active
 tag @s add ff_hoverboard_activation_grace

@@ -17,10 +17,10 @@ data modify entity @s data.ff_door set from storage fossil_frights:door door_dat
 function fossil_frights:interactions/door/reset/set_position with storage fossil_frights:door door_data
 
 function fossil_frights:interactions/door/reset/set_item_model with storage fossil_frights:door door_data
-execute if data storage fossil_frights:door door_data{hinge:"left"} run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[false]}}}
-execute if data storage fossil_frights:door door_data{hinge:"right"} run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[true]}}}
+execute if data storage fossil_frights:door door_data{hinge:"left"} run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[false]}}}
+execute if data storage fossil_frights:door door_data{hinge:"right"} run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:custom_model_data":{flags:[true]}}}
 
-execute align xyz as @e[type=minecraft:interaction,dx=0,tag=ff_door.interaction] positioned ~0.5 ~0.5 ~0.5 if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:0.5},y:{max:0.5},z:{max:0.5}}}} run kill @s
+execute align xyz as @e[type=minecraft:interaction,dx=0,tag=ff_door.interaction] positioned ~0.5 ~0.5 ~0.5 if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{x:{max:0.5},y:{max:0.5},z:{max:0.5}}}} run kill @s
 summon minecraft:interaction ~ ~ ~ {Tags:["ff_door.interaction","ff_door.interaction.0"],width:0.252,height:2.001,response:true}
 summon minecraft:interaction ~ ~ ~ {Tags:["ff_door.interaction","ff_door.interaction.1"],width:0.252,height:2.001,response:true}
 summon minecraft:interaction ~ ~ ~ {Tags:["ff_door.interaction","ff_door.interaction.2"],width:0.252,height:2.001,response:true}

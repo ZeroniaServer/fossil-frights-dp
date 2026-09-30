@@ -7,6 +7,6 @@ execute if entity @e[limit=1,type=minecraft:item_display,tag=ff_anvil.process] r
 
 item replace block 0 0 0 container.0 with air
 function fossil_frights:animations/anvil/clicked/use
-item modify block 0 0 0 container.0 {function:"minecraft:set_count",count:1}
+item modify block 0 0 0 container.0 {type:"minecraft:set_count",count:1}
 
 function fossil_frights:animations/anvil/input

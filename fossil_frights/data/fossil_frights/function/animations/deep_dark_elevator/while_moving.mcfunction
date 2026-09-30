@@ -6,7 +6,7 @@ scoreboard players operation $elevator_height ff_deep_dark_elevator *= $step ff_
 scoreboard players operation $elevator_height ff_deep_dark_elevator /= $duration_ticks ff_deep_dark_elevator
 execute store result storage fossil_frights:deep_dark_elevator args.y double 0.01 run scoreboard players add $elevator_height ff_deep_dark_elevator 6800
 execute as @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] run function fossil_frights:animations/deep_dark_elevator/set_height_macro with storage fossil_frights:deep_dark_elevator args
-item modify entity @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] contents {function:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:sum",summands:[84,{type:"minecraft:score",target:{type:"minecraft:fixed",name:"$elevator_height"},score:"ff_deep_dark_elevator",scale:-0.01}]}],mode:"replace_all"}}
+item modify entity @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] contents {type:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:sub",left:84,right:{type:"minecraft:mul",inputs:[0.01,{type:"minecraft:from_int",input:{type:"minecraft:score",target:{type:"minecraft:fixed",name:"$elevator_height"},score:"ff_deep_dark_elevator"}}]}}],mode:"replace_all"}}
 
 # Knock standing players off ("they lose balance") as a fix for falling through when moving up and bumpy ride while moving down.
 execute at @e[limit=1,type=minecraft:item_display,tag=ff_deep_dark_elevator] positioned ~-0.5 ~1 ~-1.2 as @a[dx=0,gamemode=!spectator,predicate=!fossil_frights:entity/has_vehicle] positioned ~ ~ ~0.7 if entity @s[dx=0] at @s run tp @s ~ ~ ~0.3
