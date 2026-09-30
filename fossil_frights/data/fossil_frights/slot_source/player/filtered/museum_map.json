@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:filtered",
+  "slot_source": "fossil_frights:player/all",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "museum_map"
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ execute if items block 18 71 29 container.4 * run scoreboard players remove #slo
 execute if items block 18 71 29 container.5 * run scoreboard players remove #slots_empty ff_task_book_shelf 1
 execute if score #slots_empty ff_task_book_shelf matches 0 run return run playsound minecraft:block.chiseled_bookshelf.hit player @s
 
-execute store result score #task_books_in_inventory ff_task_book_shelf run clear @s *[custom_data~{ff_any_task_book:true}] 0
+execute store result score #task_books_in_inventory ff_task_book_shelf if items entity @s fossil_frights:player/all *[custom_data~{ff_any_task_book:true}]
 execute if score #task_books_in_inventory ff_task_book_shelf matches 0 run return run playsound minecraft:block.chiseled_bookshelf.hit player @s
 
 playsound minecraft:block.chiseled_bookshelf.insert player @a

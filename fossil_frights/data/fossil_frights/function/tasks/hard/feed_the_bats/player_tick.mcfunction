@@ -1,4 +1,4 @@
-execute store result score @s ff_bat_bug_inventory_count run clear @s *[custom_data~{itemID:"lady_bug"}] 0
+execute store result score @s ff_bat_bug_inventory_count if items entity @s fossil_frights:player/all *[custom_data~{itemID:"lady_bug"}]
 execute if score @s ff_bat_bug_inventory_count matches 2.. run function fossil_frights:tasks/hard/feed_the_bats/replace_duplicate
 execute if score @s ff_bat_bug_timer matches 0 if predicate fossil_frights:player/inventory/lady_bug run function fossil_frights:tasks/hard/feed_the_bats/start_timer
 execute unless predicate fossil_frights:game_state/heist_mode_active if score $feed_the_bats_sel ff_task_state matches 1 unless score $feed_the_bats_done ff_task_state matches 1 if score @s ff_bat_bug_timer matches 1.. positioned 25 106 87 if entity @s[distance=..2] unless predicate fossil_frights:player/inventory/lady_bug if entity @e[limit=1,type=minecraft:item,distance=..3,predicate=fossil_frights:entity/contents/lady_bug] run function fossil_frights:tasks/hard/feed_the_bats/complete

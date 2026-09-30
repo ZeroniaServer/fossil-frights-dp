@@ -9,7 +9,7 @@ execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[te
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard,gamemode=!spectator] run return 0
 scoreboard players set $duration_ticks ff_deep_dark_elevator 30
 scoreboard players set $crane_activation_team ff_game_state 2
-execute store result score #crane_coin_count ff_game_state run clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 0
+execute store result score #crane_coin_count ff_game_state if items entity @s fossil_frights:player/all *[minecraft:custom_data~{itemID:"dinocoin"}]
 execute if score #crane_coin_count ff_game_state matches 1.. run clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 1
 execute if score #crane_coin_count ff_game_state matches 1.. run function fossil_frights:player/coins/add_used_this_run
 execute if score #crane_coin_count ff_game_state matches 1.. run function fossil_frights:run_breakdown/event/add {code:"C",id:"02"}
