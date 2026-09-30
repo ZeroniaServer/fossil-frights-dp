@@ -17,7 +17,7 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run data mo
 execute if predicate fossil_frights:game_state/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_loot:true}] run data modify entity @s Age set value -32768
 
 # Despawn heist loot after 20 seconds
-execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_loot:true}] run function fossil_frights:items/dropped_items/init_heist_loot
+execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_loot:true}] unless entity @s[tag=ff_anvil.display] run function fossil_frights:items/dropped_items/init_heist_loot
 
 # Prevent pickup from non-playing players
 execute if dimension minecraft:overworld run data modify entity @s Owner set value [I;0,0,0,0]

@@ -1,4 +1,5 @@
 # Default start route.
+execute if entity @s[tag=ff_day_tutorial_prompt_open] run return run function fossil_frights:game/frights/day/tutorial_prompt
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if entity @s[gamemode=spectator] if predicate fossil_frights:game_state/game_running run return run function fossil_frights:messages/error/cannot_spawn_while_active
 execute if entity @s[gamemode=spectator] run function fossil_frights:join/spectator/command_exit

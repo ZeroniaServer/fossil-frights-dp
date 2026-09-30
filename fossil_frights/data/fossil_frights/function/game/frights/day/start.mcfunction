@@ -1,2 +1,2 @@
-execute as @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6,tag=!tutorial_complete,tag=!ff_day_tutorial_prompt_open] if score $day_current ff_day matches 0 unless predicate fossil_frights:game_state/party_mode_active run function fossil_frights:game/frights/day/tutorial_prompt
-execute if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6,tag=!ff_day_tutorial_prompt_open] run function fossil_frights:game/frights/day/next
+execute as @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6,tag=!tutorial_complete,tag=!ff_day_tutorial_prompt_button_latched] if score $day_current ff_day matches 0 unless predicate fossil_frights:game_state/party_mode_active run function fossil_frights:game/frights/day/tutorial_prompt
+execute unless entity @a[tag=ff_day_tutorial_prompt_open] if entity @a[limit=1,team=ff_guard,x=18,y=70,z=24,dx=5,dy=3,dz=6] run function fossil_frights:game/frights/day/next
