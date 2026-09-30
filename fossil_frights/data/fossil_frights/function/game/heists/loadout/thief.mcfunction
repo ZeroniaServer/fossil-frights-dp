@@ -8,9 +8,6 @@ function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_m
 tag @s remove ff_ice_frozen
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 clear @s
-item replace entity @s weapon.mainhand with air
-item replace entity @s weapon.offhand with air
-item replace entity @s armor.head with air
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_heist_punch_cd 0

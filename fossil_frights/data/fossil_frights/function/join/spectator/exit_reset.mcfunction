@@ -6,7 +6,6 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 function fossil_frights:join/lobby
 clear @s
-item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset
 stopsound @s music fossil-frights:ff_night_shift
 stopsound @s master fossil-frights:ff_night_shift

@@ -11,7 +11,6 @@ scoreboard players set @s ff_tutorial_scene 0
 scoreboard players set @s ff_tutorial_tick 0
 spectate
 clear @s
-item replace entity @s armor.head with air
 attribute @s minecraft:scale base reset
 effect clear @s minecraft:invisibility
 function fossil_frights:player/actionbar/clear

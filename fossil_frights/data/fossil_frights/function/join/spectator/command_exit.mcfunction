@@ -2,7 +2,6 @@ tag @s remove ff_forced_spectate
 function fossil_frights:join/lobby
 gamemode adventure @s[team=!ff_dev_mode]
 clear @s[team=!ff_dev_mode]
-item replace entity @s[team=!ff_dev_mode] armor.head with air
 attribute @s[team=!ff_dev_mode] minecraft:scale base reset
 stopsound @s music fossil-frights:ff_night_shift
 stopsound @s master fossil-frights:ff_night_shift
