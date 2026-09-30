@@ -3,3 +3,4 @@ function fossil_frights:game/heists/heavy_loot/remove_attribute_modifiers
 attribute @s minecraft:water_movement_efficiency modifier remove fossil_frights:fossil_fizz
 attribute @s minecraft:scale modifier remove fossil_frights:hide_spectator_head
 attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight
+attribute @s minecraft:movement_speed modifier remove fossil_frights:hoverboard_sprinting
