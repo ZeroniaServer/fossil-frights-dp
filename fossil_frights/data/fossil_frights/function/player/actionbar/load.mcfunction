@@ -1,5 +1,6 @@
 scoreboard objectives add ff_actionbar_manager.result dummy
 scoreboard objectives modify ff_actionbar_manager.result numberformat blank
+scoreboard objectives add ff_actionbar_manager.max_ttl dummy
 
 
 scoreboard objectives add ff_actionbar_manager.slot.traps dummy
