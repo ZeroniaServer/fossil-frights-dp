@@ -5,11 +5,15 @@
       "trigger": "minecraft:enter_block",
       "conditions": {
         "player": {
-          "minecraft:flags": {
-            "is_on_fire": true
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_fire": true
+            }
           }
         },
-        "block": "minecraft:water_cauldron"
+        "blocks": "minecraft:water_cauldron"
       }
     }
   },

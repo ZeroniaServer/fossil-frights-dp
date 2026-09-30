@@ -1,9 +1,9 @@
 {
-  "condition": "minecraft:value_check",
+  "type": "minecraft:int_value_check",
   "value": {
     "type": "minecraft:storage",
     "storage": "fossil_frights:world",
     "path": "settings.realms"
   },
-  "range": 1
+  "test": 1
 }

@@ -5,22 +5,30 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
-          "slots": {
-            "weapon.*": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "itemID": "key"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.*": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "itemID": "key"
+                  }
                 }
               }
             }
           }
         },
         "entity": {
-          "entity_type": "minecraft:interaction",
-          "entity_tags": {
-            "all_of": [
-              "ff_lock_click"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {
+              "all_of": [
+                "ff_lock_click"
+              ]
+            }
           }
         }
       }

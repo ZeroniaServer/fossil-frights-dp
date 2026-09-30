@@ -1,5 +1,5 @@
 {
-  "function": "minecraft:set_components",
+  "type": "minecraft:set_components",
   "components": {
     "minecraft:item_model": "fossil-frights:display/tasks/lab_experiment/eggs/sniffer_egg_cracked"
   }

@@ -6,31 +6,29 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "fossil-frights:display/general/signs/logo/fossil_frights",
-                "minecraft:item_name": {
-                  "text": "Fossil Frights Banner",
-                  "italic": false
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "",
-                    "extra": [
-                      "fossil_frights"
-                    ]
-                  }
-                ],
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:lore"
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "fossil-frights:display/general/signs/logo/fossil_frights",
+              "minecraft:item_name": {
+                "text": "Fossil Frights Banner",
+                "italic": false
+              },
+              "minecraft:lore": [
+                {
+                  "text": "",
+                  "extra": [
+                    "fossil_frights"
                   ]
                 }
+              ],
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:lore"
+                ]
               }
             }
-          ]
+          }
         }
       ]
     }

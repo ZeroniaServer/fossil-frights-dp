@@ -7,58 +7,56 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:written_book",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ff_task_book": "water_temp",
-                  "ff_task_book_difficulty": "easy",
-                  "ff_any_task_book": true
-                },
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
-                "minecraft:item_name": {
-                  "color": "green",
-                  "translate": "ff.task.water_temp",
-                  "font": "fossil-frights:small_caps"
-                },
-                "minecraft:max_stack_size": 99,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:written_book_content"
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {
+                "ff_task_book": "water_temp",
+                "ff_task_book_difficulty": "easy",
+                "ff_any_task_book": true
+              },
+              "minecraft:enchantment_glint_override": false,
+              "minecraft:item_model": "fossil-frights:items/frights/task_book_easy",
+              "minecraft:item_name": {
+                "color": "green",
+                "translate": "ff.task.water_temp",
+                "font": "fossil-frights:small_caps"
+              },
+              "minecraft:max_stack_size": 99,
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:written_book_content"
+                ]
+              },
+              "minecraft:written_book_content": {
+                "title": "",
+                "author": "",
+                "pages": [
+                  [
+                    "",
+                    {
+                      "translate": "ff.task.water_temp",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    "\n-------------------\n",
+                    {
+                      "translate": "ff.task_book.location.terrarium",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    {
+                      "translate": "ff.task_book.difficulty.easy",
+                      "color": "green",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    "\n\n",
+                    {
+                      "translate": "ff.task_book.task.water_temp.description.0"
+                    }
                   ]
-                },
-                "minecraft:written_book_content": {
-                  "title": "",
-                  "author": "",
-                  "pages": [
-                    [
-                      "",
-                      {
-                        "translate": "ff.task.water_temp",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      "\n-------------------\n",
-                      {
-                        "translate": "ff.task_book.location.terrarium",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      {
-                        "translate": "ff.task_book.difficulty.easy",
-                        "color": "green",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      "\n\n",
-                      {
-                        "translate": "ff.task_book.task.water_temp.description.0"
-                      }
-                    ]
-                  ]
-                }
+                ]
               }
             }
-          ]
+          }
         }
       ]
     }

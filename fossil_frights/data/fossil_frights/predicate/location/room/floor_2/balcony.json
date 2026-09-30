@@ -1,14 +1,14 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:any_of",
+      "type": "minecraft:any_of",
       "terms": [
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "position": {
                   "x": {
@@ -27,12 +27,12 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:any_of",
+                "type": "minecraft:any_of",
                 "terms": [
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "x": -8.0
@@ -40,7 +40,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "y": 101.0
@@ -48,7 +48,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "z": 36.0
@@ -61,10 +61,10 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "position": {
                   "x": {
@@ -83,12 +83,12 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:any_of",
+                "type": "minecraft:any_of",
                 "terms": [
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "x": 15.0
@@ -96,7 +96,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "y": 102.0
@@ -104,7 +104,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "z": 42.5
@@ -117,10 +117,10 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "position": {
                   "x": {
@@ -139,12 +139,12 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:any_of",
+                "type": "minecraft:any_of",
                 "terms": [
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "x": 15.0
@@ -152,7 +152,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "y": 102.0
@@ -160,7 +160,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "z": 36.0
@@ -173,10 +173,10 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "position": {
                   "x": {
@@ -195,12 +195,12 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:any_of",
+                "type": "minecraft:any_of",
                 "terms": [
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "x": 20.0
@@ -208,7 +208,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "y": 100.0
@@ -216,7 +216,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "z": 23.5
@@ -229,10 +229,10 @@
           ]
         },
         {
-          "condition": "minecraft:all_of",
+          "type": "minecraft:all_of",
           "terms": [
             {
-              "condition": "minecraft:location_check",
+              "type": "minecraft:location_check",
               "predicate": {
                 "position": {
                   "x": {
@@ -251,12 +251,12 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:any_of",
+                "type": "minecraft:any_of",
                 "terms": [
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "x": -14.0
@@ -264,7 +264,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "y": 100.0
@@ -272,7 +272,7 @@
                     }
                   },
                   {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                       "position": {
                         "z": 23.5
@@ -287,15 +287,15 @@
       ]
     },
     {
-      "condition": "minecraft:inverted",
+      "type": "minecraft:inverted",
       "term": {
-        "condition": "minecraft:any_of",
+        "type": "minecraft:any_of",
         "terms": [
           {
-            "condition": "minecraft:all_of",
+            "type": "minecraft:all_of",
             "terms": [
               {
-                "condition": "minecraft:location_check",
+                "type": "minecraft:location_check",
                 "predicate": {
                   "position": {
                     "x": {
@@ -314,12 +314,12 @@
                 }
               },
               {
-                "condition": "minecraft:inverted",
+                "type": "minecraft:inverted",
                 "term": {
-                  "condition": "minecraft:any_of",
+                  "type": "minecraft:any_of",
                   "terms": [
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "x": 20.0
@@ -327,7 +327,7 @@
                       }
                     },
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "y": 98.0
@@ -335,7 +335,7 @@
                       }
                     },
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "z": 15.0
@@ -348,10 +348,10 @@
             ]
           },
           {
-            "condition": "minecraft:all_of",
+            "type": "minecraft:all_of",
             "terms": [
               {
-                "condition": "minecraft:location_check",
+                "type": "minecraft:location_check",
                 "predicate": {
                   "position": {
                     "x": {
@@ -370,12 +370,12 @@
                 }
               },
               {
-                "condition": "minecraft:inverted",
+                "type": "minecraft:inverted",
                 "term": {
-                  "condition": "minecraft:any_of",
+                  "type": "minecraft:any_of",
                   "terms": [
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "x": -17.0
@@ -383,7 +383,7 @@
                       }
                     },
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "y": 98.0
@@ -391,7 +391,7 @@
                       }
                     },
                     {
-                      "condition": "minecraft:location_check",
+                      "type": "minecraft:location_check",
                       "predicate": {
                         "position": {
                           "z": 15.0

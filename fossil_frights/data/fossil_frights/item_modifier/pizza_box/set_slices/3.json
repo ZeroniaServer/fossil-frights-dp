@@ -1,12 +1,12 @@
 {
-  "function": "minecraft:sequence",
+  "type": "minecraft:sequence",
   "functions": [
     {
-      "function": "minecraft:set_custom_data",
+      "type": "minecraft:set_custom_data",
       "tag": "{ff_pizza_box:{slices_left:3}}"
     },
     {
-      "function": "minecraft:set_custom_model_data",
+      "type": "minecraft:set_custom_model_data",
       "strings": {
         "values": [
           "3"

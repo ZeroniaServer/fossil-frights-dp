@@ -1,5 +1,5 @@
 {
-  "function": "minecraft:filtered",
+  "type": "minecraft:filtered",
   "item_filter": {
     "predicates": {
       "minecraft:custom_data": {
@@ -8,28 +8,26 @@
     }
   },
   "on_pass": {
-    "function": "minecraft:sequence",
+    "type": "minecraft:sequence",
     "functions": [
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 0
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 0
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -37,18 +35,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/1"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 1
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 1
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -56,18 +52,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/2"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 2
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 2
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -75,18 +69,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/3"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 3
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 3
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -94,18 +86,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/4"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 4
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 4
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -113,18 +103,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/5"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 5
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 5
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -132,18 +120,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/6"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 6
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 6
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -151,18 +137,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/7"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 7
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 7
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -170,18 +154,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/8"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 8
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 8
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -189,18 +171,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/9"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 9
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 9
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -208,18 +188,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/10"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 10
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 10
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -227,18 +205,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/11"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 11
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 11
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -246,18 +222,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/12"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 12
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 12
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -265,18 +239,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/13"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 13
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 13
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -284,18 +256,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/14"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 14
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 14
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -303,18 +273,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/15"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 15
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 15
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -322,18 +290,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/16"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 16
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 16
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -341,18 +307,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/17"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 17
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 17
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -360,18 +324,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/18"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 18
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 18
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -379,18 +341,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/19"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 19
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 19
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -398,18 +358,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/20"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 20
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 20
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -417,18 +375,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/21"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 21
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 21
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -436,18 +392,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/22"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 22
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 22
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -455,18 +409,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/23"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 23
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 23
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -474,18 +426,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/24"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 24
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 24
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -493,18 +443,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/25"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 25
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 25
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -512,18 +460,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/26"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 26
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 26
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -531,18 +477,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/27"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 27
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 27
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -550,18 +494,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/28"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 28
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 28
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -569,18 +511,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/29"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 29
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 29
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -588,18 +528,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/30"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 30
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 30
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -607,18 +545,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/31"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 31
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 31
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -626,18 +562,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/32"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 32
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 32
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -645,18 +579,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/33"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 33
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 33
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -664,18 +596,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/34"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 34
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 34
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -683,18 +613,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/35"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 35
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 35
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -702,18 +630,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/36"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 36
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 36
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -721,18 +647,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/37"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 37
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 37
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -740,18 +664,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/38"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 38
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 38
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -759,18 +681,16 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/39"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 39
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 39
           }
-        ]
+        }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -778,15 +698,13 @@
             "camera_overlay": "fossil-frights:overlays/glowing/guard/40"
           }
         },
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "ff_glowing_fx_frame": 40
-            }
+        "condition": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_glowing_fx_frame": 40
           }
-        ]
+        }
       }
     ]
   }

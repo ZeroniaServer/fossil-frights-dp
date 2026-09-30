@@ -1,25 +1,16 @@
 {
-  "condition": "minecraft:any_of",
+  "type": "minecraft:any_of",
   "terms": [
     {
-      "condition": "minecraft:all_of",
+      "type": "minecraft:all_of",
       "terms": [
+        "fossil_frights:location/room/floor_1",
         {
-          "condition": "minecraft:reference",
-          "name": "fossil_frights:location/room/floor_1"
-        },
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:location/room/floor_1/foyer"
-          }
+          "type": "minecraft:inverted",
+          "term": "fossil_frights:location/room/floor_1/foyer"
         }
       ]
     },
-    {
-      "condition": "minecraft:reference",
-      "name": "fossil_frights:location/room/floor_2/balcony"
-    }
+    "fossil_frights:location/room/floor_2/balcony"
   ]
 }

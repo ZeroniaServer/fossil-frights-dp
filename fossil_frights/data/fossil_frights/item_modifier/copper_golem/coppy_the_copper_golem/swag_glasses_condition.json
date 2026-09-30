@@ -1,12 +1,29 @@
 {
-  "function": "minecraft:sequence",
+  "type": "minecraft:sequence",
   "functions": [
     {
-      "function": "minecraft:reference",
-      "name": "fossil_frights:copper_golem/set_swag_glasses/on",
-      "conditions": [
-        {
-          "condition": "minecraft:value_check",
+      "type": "minecraft:sequence",
+      "functions": "fossil_frights:copper_golem/set_swag_glasses/on",
+      "condition": {
+        "type": "minecraft:int_value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$basketball_dance_head_tossed_once"
+          },
+          "score": "ff_task_state"
+        },
+        "test": 1
+      }
+    },
+    {
+      "type": "minecraft:sequence",
+      "functions": "fossil_frights:copper_golem/set_swag_glasses/off",
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": {
+          "type": "minecraft:int_value_check",
           "value": {
             "type": "minecraft:score",
             "target": {
@@ -15,30 +32,9 @@
             },
             "score": "ff_task_state"
           },
-          "range": 1
+          "test": 1
         }
-      ]
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "fossil_frights:copper_golem/set_swag_glasses/off",
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "$basketball_dance_head_tossed_once"
-              },
-              "score": "ff_task_state"
-            },
-            "range": 1
-          }
-        }
-      ]
+      }
     }
   ]
 }

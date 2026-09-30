@@ -1,17 +1,14 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "fossil_frights:player/is_lobby_freeplay",
     {
-      "condition": "minecraft:reference",
-      "name": "fossil_frights:player/is_lobby_freeplay"
-    },
-    {
-      "condition": "minecraft:inverted",
+      "type": "minecraft:inverted",
       "term": {
-        "condition": "minecraft:any_of",
+        "type": "minecraft:any_of",
         "terms": [
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:location": {
@@ -33,7 +30,7 @@
             }
           },
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "minecraft:location": {

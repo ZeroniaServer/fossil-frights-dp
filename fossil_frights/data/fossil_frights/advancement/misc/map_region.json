@@ -4,12 +4,7 @@
     "moved_in_dynamic_map_region": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:location/in_dynamic_region"
-          }
-        ]
+        "player": "fossil_frights:location/in_dynamic_region"
       }
     }
   },

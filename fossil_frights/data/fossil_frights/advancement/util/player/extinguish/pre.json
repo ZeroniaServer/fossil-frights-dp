@@ -4,20 +4,18 @@
     "hurt_first_bat": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_tags": {
-                "all_of": [
-                  "ff_extinguish",
-                  "ff_extinguish.pre"
-                ]
-              }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "all_of": [
+                "ff_extinguish",
+                "ff_extinguish.pre"
+              ]
             }
           }
-        ]
+        }
       }
     }
   },

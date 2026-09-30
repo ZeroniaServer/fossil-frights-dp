@@ -5,11 +5,15 @@
       "trigger": "minecraft:enter_block",
       "conditions": {
         "player": {
-          "minecraft:flags": {
-            "is_on_fire": true
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:flags": {
+              "is_on_fire": true
+            }
           }
         },
-        "block": "minecraft:powder_snow"
+        "blocks": "minecraft:powder_snow"
       }
     }
   },

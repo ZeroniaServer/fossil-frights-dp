@@ -16,16 +16,16 @@ for line in lines:
             [
                 groups[0],
                 {
-                    "condition": "minecraft:all_of",
+                    "type": "minecraft:all_of",
                     "terms": [
                         {
-                            "condition": "minecraft:any_of",
+                            "type": "minecraft:any_of",
                             "terms": []
                         },
                         {
-                            "condition": "minecraft:inverted",
+                            "type": "minecraft:inverted",
                             "term": {
-                                "condition": "minecraft:any_of",
+                                "type": "minecraft:any_of",
                                 "terms": []
                             }
                         }
@@ -45,10 +45,10 @@ for line in lines:
         from_z, to_z = min(from_z,to_z), max(from_z,to_z)
         
         predicate = {
-            "condition": "minecraft:all_of",
+            "type": "minecraft:all_of",
             "terms": [
                 {
-                    "condition": "minecraft:location_check",
+                    "type": "minecraft:location_check",
                     "predicate": {
                         "position": {
                             "x": {
@@ -67,12 +67,12 @@ for line in lines:
                     }
                 },
                 {
-                    "condition": "minecraft:inverted",
+                    "type": "minecraft:inverted",
                     "term": {
-                        "condition": "minecraft:any_of",
+                        "type": "minecraft:any_of",
                         "terms": [
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "position": {
                                         "x": to_x
@@ -80,7 +80,7 @@ for line in lines:
                                 }
                             },
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "position": {
                                         "y": to_y
@@ -88,7 +88,7 @@ for line in lines:
                                 }
                             },
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "position": {
                                         "z": to_z
@@ -111,10 +111,7 @@ for line in lines:
     match = re.search(r'^\s+((?:AND(?=\s))?)\s*REFERENCE(?=\s)\s*([\w_/]+)$',line)
     if match != None:
         groups = match.groups()
-        predicate = {
-            "condition": "minecraft:reference",
-            "name": f"fossil_frights:location/room/{groups[1]}"
-        }
+        predicate = f"fossil_frights:location/room/{groups[1]}"
 
         if groups[0] == "AND":
             rooms[-1][1]["terms"].append(predicate)

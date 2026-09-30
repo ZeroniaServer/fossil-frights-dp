@@ -6,17 +6,15 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "fossil-frights:display/tasks/feed_plants/cotton_candy_blue",
-                "minecraft:custom_data": {
-                  "itemID": "cotton_candy_blue"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "fossil-frights:display/tasks/feed_plants/cotton_candy_blue",
+              "minecraft:custom_data": {
+                "itemID": "cotton_candy_blue"
               }
             }
-          ]
+          }
         }
       ]
     }

@@ -9,19 +9,17 @@
           "value": "fossil_frights:items/heists/invisimask/template"
         }
       ],
-      "functions": [
-        {
-          "function": "minecraft:set_custom_model_data",
-          "strings": {
-            "values": [
-              "zombie"
-            ],
-            "mode": "replace_section",
-            "offset": 0,
-            "size": 1
-          }
+      "modifier": {
+        "type": "minecraft:set_custom_model_data",
+        "strings": {
+          "values": [
+            "zombie"
+          ],
+          "mode": "replace_section",
+          "offset": 0,
+          "size": 1
         }
-      ]
+      }
     }
   ]
 }

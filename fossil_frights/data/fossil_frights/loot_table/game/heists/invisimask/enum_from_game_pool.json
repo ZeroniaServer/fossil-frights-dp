@@ -6,242 +6,202 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#blaze"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#blaze"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 2
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#breeze"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#breeze"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 2
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 3
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#creeper"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#creeper"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 3
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 4
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#enderman"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#enderman"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 4
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 5
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#guardian"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#guardian"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 5
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 6
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#piglin"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#piglin"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 6
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 7
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#skeleton"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#skeleton"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 7
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 8
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#slime"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#slime"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 8
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 9
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#spider"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#spider"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 9
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 10
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:score",
-                "target": {
-                  "type": "minecraft:fixed",
-                  "name": "#zombie"
-                },
-                "score": "ff_invisimask_variant"
+          "condition": {
+            "type": "minecraft:int_value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#zombie"
               },
-              "range": 1
-            }
-          ]
+              "score": "ff_invisimask_variant"
+            },
+            "test": 1
+          },
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 10
+          }
         }
       ]
     }

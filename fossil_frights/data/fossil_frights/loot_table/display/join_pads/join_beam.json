@@ -6,14 +6,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "fossil-frights:display/lobby/join_pads/join_beam"
-              }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "fossil-frights:display/lobby/join_pads/join_beam"
             }
-          ]
+          }
         }
       ]
     }

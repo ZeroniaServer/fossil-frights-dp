@@ -5,11 +5,15 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "entity_type": "minecraft:interaction",
-          "entity_tags": {
-            "all_of": [
-              "ff_door.interaction"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {
+              "all_of": [
+                "ff_door.interaction"
+              ]
+            }
           }
         }
       }
@@ -17,16 +21,14 @@
     "block": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "#minecraft:doors"
-              }
+        "location": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "#minecraft:doors"
             }
           }
-        ]
+        }
       }
     }
   },

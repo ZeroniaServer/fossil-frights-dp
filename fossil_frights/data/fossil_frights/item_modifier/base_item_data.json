@@ -1,8 +1,8 @@
 {
-  "function": "minecraft:sequence",
+  "type": "minecraft:sequence",
   "functions": [
     {
-      "function": "minecraft:filtered",
+      "type": "minecraft:filtered",
       "item_filter": {
         "predicates": {
           "minecraft:custom_data": {
@@ -11,14 +11,14 @@
         }
       },
       "on_fail": {
-        "function": "minecraft:set_custom_data",
+        "type": "minecraft:set_custom_data",
         "tag": {
           "ff_invisible": false
         }
       }
     },
     {
-      "function": "minecraft:filtered",
+      "type": "minecraft:filtered",
       "item_filter": {
         "predicates": {
           "minecraft:custom_data": {
@@ -27,14 +27,14 @@
         }
       },
       "on_fail": {
-        "function": "minecraft:set_custom_data",
+        "type": "minecraft:set_custom_data",
         "tag": {
           "ff_painted": false
         }
       }
     },
     {
-      "function": "minecraft:toggle_tooltips",
+      "type": "minecraft:toggle_tooltips",
       "toggles": {
         "minecraft:trim": false
       }

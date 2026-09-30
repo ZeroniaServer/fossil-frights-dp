@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:leather_boots",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.minecraft.leather_boots"
@@ -20,10 +20,7 @@
                 }
               }
             },
-            {
-              "function": "minecraft:reference",
-              "name": "fossil_frights:base_item_data"
-            }
+            "fossil_frights:base_item_data"
           ]
         }
       ]

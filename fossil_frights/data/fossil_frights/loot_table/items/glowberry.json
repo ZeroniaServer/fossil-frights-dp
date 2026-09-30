@@ -7,22 +7,20 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_name": {
-                  "translate": "ff.item.glowberry",
-                  "color": "yellow"
-                },
-                "minecraft:item_model": "minecraft:glow_berries",
-                "minecraft:consumable": {},
-                "minecraft:custom_data": {
-                  "itemID": "glowberry"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_name": {
+                "translate": "ff.item.glowberry",
+                "color": "yellow"
+              },
+              "minecraft:item_model": "minecraft:glow_berries",
+              "minecraft:consumable": {},
+              "minecraft:custom_data": {
+                "itemID": "glowberry"
               }
             }
-          ]
+          }
         }
       ]
     }

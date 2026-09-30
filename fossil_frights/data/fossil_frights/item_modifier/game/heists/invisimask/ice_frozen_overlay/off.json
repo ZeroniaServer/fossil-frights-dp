@@ -1,5 +1,5 @@
 {
-  "function": "minecraft:filtered",
+  "type": "minecraft:filtered",
   "item_filter": {
     "predicates": {
       "minecraft:custom_data": {
@@ -8,10 +8,10 @@
     }
   },
   "on_pass": {
-    "function": "minecraft:sequence",
+    "type": "minecraft:sequence",
     "functions": [
       {
-        "function": "minecraft:set_custom_data",
+        "type": "minecraft:set_custom_data",
         "tag": {
           "ff_invisimask": {
             "frozen": false
@@ -19,7 +19,7 @@
         }
       },
       {
-        "function": "minecraft:set_components",
+        "type": "minecraft:set_components",
         "components": {
           "minecraft:equippable": {
             "slot": "head",
@@ -28,14 +28,9 @@
         }
       },
       {
-        "function": "minecraft:reference",
-        "name": "fossil_frights:game/heists/invisimask/glowing_overlay/on",
-        "conditions": [
-          {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:entity/effects/glowing"
-          }
-        ]
+        "type": "minecraft:sequence",
+        "functions": "fossil_frights:game/heists/invisimask/glowing_overlay/on",
+        "condition": "fossil_frights:entity/effects/glowing"
       }
     ]
   }

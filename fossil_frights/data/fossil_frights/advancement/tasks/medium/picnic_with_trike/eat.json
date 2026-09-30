@@ -4,12 +4,7 @@
     "eat": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:location/in_picnic_with_trike_area"
-          }
-        ],
+        "player": "fossil_frights:location/in_picnic_with_trike_area",
         "item": {
           "predicates": {
             "minecraft:custom_data": {

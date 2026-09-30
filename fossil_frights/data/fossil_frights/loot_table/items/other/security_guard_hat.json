@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.security_hat",
@@ -27,7 +27,7 @@
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:equippable": {
                   "slot": "head",
@@ -42,17 +42,9 @@
                   ]
                 }
               },
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "fossil_frights:game_state/heist_mode_active"
-                }
-              ]
+              "condition": "fossil_frights:game_state/heist_mode_active"
             },
-            {
-              "function": "minecraft:reference",
-              "name": "fossil_frights:base_item_data"
-            }
+            "fossil_frights:base_item_data"
           ]
         }
       ]

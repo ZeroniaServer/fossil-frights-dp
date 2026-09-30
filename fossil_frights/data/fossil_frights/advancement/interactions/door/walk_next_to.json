@@ -4,16 +4,13 @@
     "walk_next_to": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:location/near_closed_door"
-          },
-          {
-            "condition": "minecraft:reference",
-            "name": "fossil_frights:player/can_automatically_open_doors"
-          }
-        ]
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "fossil_frights:location/near_closed_door",
+            "fossil_frights:player/can_automatically_open_doors"
+          ]
+        }
       }
     }
   },

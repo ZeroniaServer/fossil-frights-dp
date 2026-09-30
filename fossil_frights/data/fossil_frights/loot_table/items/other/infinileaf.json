@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:snowball",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.infinileaf",
@@ -58,10 +58,7 @@
                 }
               }
             },
-            {
-              "function": "minecraft:reference",
-              "name": "fossil_frights:base_item_data"
-            }
+            "fossil_frights:base_item_data"
           ]
         }
       ]

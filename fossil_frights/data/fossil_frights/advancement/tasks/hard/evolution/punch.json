@@ -5,11 +5,15 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "entity_type": "minecraft:interaction",
-          "entity_tags": {
-            "all_of": [
-              "ff_evolution_hitbox"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {
+              "all_of": [
+                "ff_evolution_hitbox"
+              ]
+            }
           }
         }
       }
@@ -18,11 +22,15 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "entity_type": "minecraft:interaction",
-          "entity_tags": {
-            "all_of": [
-              "ff_evolution_hitbox"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {
+              "all_of": [
+                "ff_evolution_hitbox"
+              ]
+            }
           }
         }
       }
@@ -31,11 +39,15 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "entity_type": "mannequin",
-          "entity_tags": {
-            "all_of": [
-              "ff_evolution"
-            ]
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "mannequin",
+            "entity_tags": {
+              "all_of": [
+                "ff_evolution"
+              ]
+            }
           }
         }
       }

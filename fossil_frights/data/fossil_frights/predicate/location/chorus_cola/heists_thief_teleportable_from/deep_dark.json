@@ -1,12 +1,9 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
+    "fossil_frights:location/room/ruins",
     {
-      "condition": "minecraft:reference",
-      "name": "fossil_frights:location/room/ruins"
-    },
-    {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "predicate": {
         "position": {
           "x": {

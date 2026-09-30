@@ -4,27 +4,30 @@
     "obtain_invisible_item_while_not_invisible": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:team": "ff_thief"
-            }
-          },
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_properties",
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "minecraft:effects": {
-                  "minecraft:invisibility": {}
+                "minecraft:team": "ff_thief"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:effects": {
+                    "minecraft:invisibility": {}
+                  }
                 }
               }
             }
-          }
-        ],
+          ]
+        },
         "items": [
           {
             "predicates": {
@@ -39,24 +42,27 @@
     "obtain_any_item_while_invisible": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:team": "ff_thief"
-            }
-          },
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:effects": {
-                "minecraft:invisibility": {}
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:team": "ff_thief"
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:effects": {
+                  "minecraft:invisibility": {}
+                }
               }
             }
-          }
-        ]
+          ]
+        }
       }
     }
   },

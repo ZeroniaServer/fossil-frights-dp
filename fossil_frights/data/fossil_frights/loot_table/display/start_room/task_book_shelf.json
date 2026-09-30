@@ -6,14 +6,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "fossil-frights:display/exhibits/start_room/task_book_shelf/task_book_shelf"
-              }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "fossil-frights:display/exhibits/start_room/task_book_shelf/task_book_shelf"
             }
-          ]
+          }
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "function": "minecraft:set_custom_data",
+  "type": "minecraft:set_custom_data",
   "tag": {
     "ff_invisible": false
   }

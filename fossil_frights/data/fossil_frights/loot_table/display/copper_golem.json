@@ -6,12 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone",
-          "functions": [
-            {
-              "function": "minecraft:reference",
-              "name": "fossil_frights:copper_golem/reset"
-            }
-          ]
+          "modifier": "fossil_frights:copper_golem/reset"
         }
       ]
     }

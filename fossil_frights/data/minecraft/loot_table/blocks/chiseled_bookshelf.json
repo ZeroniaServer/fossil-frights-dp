@@ -9,34 +9,37 @@
           "name": "minecraft:chiseled_bookshelf"
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "drop_contents": true
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:inverted",
+            "term": {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "drop_contents": true
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "minecraft:inverted",
+            "term": {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "drop_contents": {}
+                  }
                 }
               }
             }
           }
-        },
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "drop_contents": {}
-                }
-              }
-            }
-          }
-        }
-      ]
+        ]
+      }
     },
     {
       "rolls": 1,
@@ -50,18 +53,16 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": {
-                "drop_contents": true
-              }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "drop_contents": true
             }
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -75,16 +76,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:0}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:0}}"
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -98,16 +97,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:1}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:1}}"
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -121,16 +118,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:2}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:2}}"
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -144,16 +139,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:3}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:3}}"
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -167,16 +160,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:4}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:4}}"
           }
         }
-      ]
+      }
     },
     {
       "rolls": 1,
@@ -190,16 +181,14 @@
           }
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "predicates": {
-              "minecraft:custom_data": "{drop_contents:{slot:5}}"
-            }
+      "condition": {
+        "type": "minecraft:match_tool",
+        "predicate": {
+          "predicates": {
+            "minecraft:custom_data": "{drop_contents:{slot:5}}"
           }
         }
-      ]
+      }
     }
   ],
   "random_sequence": "minecraft:blocks/chiseled_bookshelf"

@@ -7,63 +7,61 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:written_book",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ff_task_book": "evolution",
-                  "ff_task_book_difficulty": "hard",
-                  "ff_any_task_book": true
-                },
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
-                "minecraft:item_name": {
-                  "color": "red",
-                  "translate": "ff.task.evolution",
-                  "font": "fossil-frights:small_caps"
-                },
-                "minecraft:max_stack_size": 99,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:written_book_content"
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {
+                "ff_task_book": "evolution",
+                "ff_task_book_difficulty": "hard",
+                "ff_any_task_book": true
+              },
+              "minecraft:enchantment_glint_override": false,
+              "minecraft:item_model": "fossil-frights:items/frights/task_book_hard",
+              "minecraft:item_name": {
+                "color": "red",
+                "translate": "ff.task.evolution",
+                "font": "fossil-frights:small_caps"
+              },
+              "minecraft:max_stack_size": 99,
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:written_book_content"
+                ]
+              },
+              "minecraft:written_book_content": {
+                "title": "",
+                "author": "",
+                "pages": [
+                  [
+                    "",
+                    {
+                      "translate": "ff.task.evolution",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    "\n-------------------\n",
+                    {
+                      "translate": "ff.task_book.location.unknown",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    {
+                      "translate": "ff.task_book.difficulty.hard",
+                      "color": "red",
+                      "font": "fossil-frights:small_caps"
+                    },
+                    "\n\n",
+                    {
+                      "translate": "ff.task_book.task.evolution.description.0"
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "ff.task_book.task.evolution.description.1"
+                    }
                   ]
-                },
-                "minecraft:written_book_content": {
-                  "title": "",
-                  "author": "",
-                  "pages": [
-                    [
-                      "",
-                      {
-                        "translate": "ff.task.evolution",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      "\n-------------------\n",
-                      {
-                        "translate": "ff.task_book.location.unknown",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      {
-                        "translate": "ff.task_book.difficulty.hard",
-                        "color": "red",
-                        "font": "fossil-frights:small_caps"
-                      },
-                      "\n\n",
-                      {
-                        "translate": "ff.task_book.task.evolution.description.0"
-                      }
-                    ],
-                    [
-                      {
-                        "translate": "ff.task_book.task.evolution.description.1"
-                      }
-                    ]
-                  ]
-                }
+                ]
               }
             }
-          ]
+          }
         }
       ]
     }
