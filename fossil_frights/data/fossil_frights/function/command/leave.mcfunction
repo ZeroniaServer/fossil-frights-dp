@@ -1,4 +1,8 @@
 # Public leave route.
+tag @s remove ff_day_tutorial_prompt_open
+tag @s remove ff_day_tutorial_prompt_button_latched
+tag @s remove ff_tutorial_pending
+scoreboard players set @s ff_tutorial_prompt 0
 execute if entity @s[tag=ff_tutorial] run return run function fossil_frights:tutorial/stop_silent
 execute if entity @s[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate] run function fossil_frights:cameras/forced_spectate_exit
