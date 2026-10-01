@@ -9,7 +9,7 @@
     "score": "ff_global"
   },
   "test": {
-    "max": {
+    "min": {
       "type": "minecraft:add",
       "inputs": [
         {
