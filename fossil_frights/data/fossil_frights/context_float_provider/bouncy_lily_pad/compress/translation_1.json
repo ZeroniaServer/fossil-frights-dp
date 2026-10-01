@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:add",
+  "inputs": [
+    {
+      "type": "minecraft:storage",
+      "storage": "fossil_frights:bouncy_lily_pad",
+      "path": "animation.transformation.scale[2]"
+    },
+    -0.5
+  ]
+}
