@@ -10,8 +10,8 @@ execute positioned -19 87 26 run function fossil_frights:hazard/floods/drain_wat
 #Aquatic Exhibit
 execute positioned 15 90 63 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned -15 90 64 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned 11 90 70 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned -8 90 70 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned 11 90 71 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -8 90 71 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned 8 90 86 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned -12 90 87 run function fossil_frights:hazard/floods/drain_water/start_here
 #First Floor Misc
