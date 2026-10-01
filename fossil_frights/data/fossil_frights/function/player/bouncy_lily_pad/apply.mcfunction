@@ -1,4 +1,4 @@
-effect give @s minecraft:levitation 1 50 true
+effect give @s minecraft:levitation 1 100 true
 tag @s add ff_bouncy_lily_pad_boost
 playsound fossil-frights:lily_pad_bounce master @s ~ ~ ~ 1 1
 execute as @n[distance=..3,type=minecraft:item_display,tag=bouncy_lily_pad,tag=!ff_bouncy_lily_pad_animating] at @s run function fossil_frights:player/bouncy_lily_pad/compress
