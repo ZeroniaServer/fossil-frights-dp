@@ -1,12 +1,68 @@
 {
-  "type": "minecraft:inverted",
-  "term": {
-    "type": "minecraft:any_of",
-    "terms": [
-      "fossil_frights:player/bouncy_lily_pad/bounce_cooldown",
-      "fossil_frights:entity/has_vehicle",
-      "fossil_frights:entity/effects/levitation",
-      "fossil_frights:player/is_flying"
-    ]
-  }
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "#fossil_frights:air_like"
+        }
+      }
+    },
+    {
+      "type": "minecraft:any_of",
+      "terms": [
+        {
+          "type": "minecraft:location_check",
+          "offsetY": -1,
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:barrier",
+              "state": {
+                "waterlogged": "true"
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:location_check",
+          "offsetY": -2,
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:barrier",
+              "state": {
+                "waterlogged": "true"
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:stepping_on": {
+              "block": {
+                "blocks": "minecraft:barrier",
+                "state": {
+                  "waterlogged": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:inverted",
+      "term": {
+        "type": "minecraft:any_of",
+        "terms": [
+          "fossil_frights:player/bouncy_lily_pad/bounce_on_cooldown",
+          "fossil_frights:entity/has_vehicle",
+          "fossil_frights:entity/effects/levitation",
+          "fossil_frights:player/is_flying"
+        ]
+      }
+    }
+  ]
 }
