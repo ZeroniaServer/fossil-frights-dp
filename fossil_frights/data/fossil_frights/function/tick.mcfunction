@@ -1,5 +1,7 @@
 execute in minecraft:overworld if loaded 0 0 0 unless entity 0-0-0-0-0 run summon minecraft:marker 0 0 0 {UUID:[I;0,0,0,0],Tags:["ff_position_cache"]}
 
+execute store result score #gametime ff_global run time query gametime
+
 scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
 execute as @a[gamemode=!creative] run attribute @s minecraft:block_interaction_range base set 0
 execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_range base reset

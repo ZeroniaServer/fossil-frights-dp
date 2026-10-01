@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#gametime"
+        },
+        "score": "ff_global"
+      },
+      "test": {
+        "min": {
+          "type": "minecraft:score",
+          "target": "this",
+          "score": "ff_bouncy_lily_pad_cooldown_end_timestamp",
+          "fallback": -2147483648
+        }
+      }
+    },
+    {
+      "type": "minecraft:inverted",
+      "term": {
+        "type": "minecraft:any_of",
+        "terms": [
+          "fossil_frights:entity/has_vehicle",
+          "fossil_frights:entity/effects/levitation",
+          "fossil_frights:player/is_flying"
+        ]
+      }
+    }
+  ]
+}
