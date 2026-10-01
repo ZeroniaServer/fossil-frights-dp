@@ -9,5 +9,5 @@ data modify entity @s {} merge from storage fossil_frights:bouncy_lily_pad anima
 data remove storage fossil_frights:bouncy_lily_pad animation
 
 tag @s add ff_bouncy_lily_pad_animating
-particle minecraft:bubble ~ ~1 ~ 0.5 0.2 0.5 0 20 force
+particle minecraft:bubble ~ ~1.5 ~ 0.5 0.2 0.5 0 20 force
 schedule function fossil_frights:player/bouncy_lily_pad/restore 5t append
