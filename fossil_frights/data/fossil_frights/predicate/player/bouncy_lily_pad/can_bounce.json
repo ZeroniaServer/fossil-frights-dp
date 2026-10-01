@@ -3,7 +3,7 @@
   "term": {
     "type": "minecraft:any_of",
     "terms": [
-      "fossil_frights:player/bouncy_lily_pad/cooldown",
+      "fossil_frights:player/bouncy_lily_pad/bounce_cooldown",
       "fossil_frights:entity/has_vehicle",
       "fossil_frights:entity/effects/levitation",
       "fossil_frights:player/is_flying"
