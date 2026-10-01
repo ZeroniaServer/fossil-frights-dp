@@ -16,10 +16,10 @@
 | Join thief team | `/trigger join_thief` |
 | Invite dialog | `/trigger invite` |
 | Return to spawn | `/trigger spawn` |
-| Tp to Ant Fight | `/trigger spawn` |
+| Tp to Ant Fight | `/trigger antfight` |
 | Tp to Parkour | `/trigger parkour` |
 | Tp to Temple Run | `/trigger templerun` |
-| Tp to Sulfur Strikers | `/trigger sulfurstrikers` |
+| Tp to Sulfur Strikers | `/trigger sulfurstriker` |
 
 Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/antfight`, `/sulfurstriker`, `/templerun`, `/parkour`, `/challenge`, `/stats`, `/invite`, `/tutorial`, `/info`, `/spawn`. 
 
@@ -30,10 +30,10 @@ Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/
 | Admin menu | `/function fossil_frights:command/admin/show` |
 | Admin item boxes | `/function fossil_frights:command/admin/item` |
 | Admin heist loot boxes | `/function fossil_frights:command/admin/loot` |
-| Reset parkour display | `/function fossil_frights:parkour/reset` |
-| Reset temple run display | `/function fossil_frights:temple_run/reset` |
-| Reset ant fight display | `/function fossil_frights:ant_fight/reset` |
-| Reset sulfur strikers | `/function fossil_frights:sulfur_strikers/reset` |
+| Reset parkour display | `/function fossil_frights:lobby_games/parkour/reset` |
+| Reset temple run display | `/function fossil_frights:lobby_games/temple_run/reset` |
+| Reset ant fight display | `/function fossil_frights:lobby_games/ant_fight/reset` |
+| Reset sulfur strikers | `/function fossil_frights:lobby_games/sulfur_strikers/reset` |
 
 Fossil Frights plugin adds admin menu alias: `/admin`.
 
