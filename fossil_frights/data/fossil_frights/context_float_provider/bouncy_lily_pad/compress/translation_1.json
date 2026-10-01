@@ -4,8 +4,8 @@
     {
       "type": "minecraft:storage",
       "storage": "fossil_frights:bouncy_lily_pad",
-      "path": "animation.transformation.scale[2]"
+      "path": "animation.transformation.translation[1]"
     },
-    -0.5
+    -0.25
   ]
 }
