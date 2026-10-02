@@ -52,7 +52,7 @@ execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 ru
 execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
 execute unless score @s ff_temple_run_time matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_time 0
 execute unless score @s ff_temple_run_best matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_best 0
-execute unless score @s ff_temple_run_running matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_running 0
+scoreboard players set @s ff_temple_run_running 0
 execute unless score @s ff_temple_run_start_plate matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_start_plate 0
 execute unless score @s ff_temple_run_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_restart_seen 0
 execute unless score @s ff_temple_run_min matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_min 0
