@@ -2,15 +2,6 @@
   "type": "minecraft:all_of",
   "terms": [
     {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "minecraft:movement": {
-          "fall_distance": 0
-        }
-      }
-    },
-    {
       "type": "minecraft:location_check",
       "predicate": {
         "block": {
