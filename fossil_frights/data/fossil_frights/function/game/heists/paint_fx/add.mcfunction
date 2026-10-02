@@ -1,9 +1,9 @@
 scoreboard players set @s ff_heist_paint_fx 200
 
-execute if items entity @s armor.feet *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.feet fossil_frights:game/heists/add_paint
-execute if items entity @s armor.legs *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.legs fossil_frights:game/heists/add_paint
-execute if items entity @s armor.chest *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.chest fossil_frights:game/heists/add_paint
-execute if items entity @s armor.head *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.head fossil_frights:game/heists/add_paint
+execute if items entity @s armor.feet *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.feet fossil_frights:game/heists/set_paint/on
+execute if items entity @s armor.legs *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.legs fossil_frights:game/heists/set_paint/on
+execute if items entity @s armor.chest *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.chest fossil_frights:game/heists/set_paint/on
+execute if items entity @s armor.head *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.head fossil_frights:game/heists/set_paint/on
 
 execute unless items entity @s armor.feet * run loot replace entity @s armor.feet loot fossil_frights:items/other/paint_armor/paint_boots
 execute unless items entity @s armor.legs * run loot replace entity @s armor.legs loot fossil_frights:items/other/paint_armor/paint_leggings

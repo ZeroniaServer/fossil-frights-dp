@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "ff_painted": true
+      }
+    },
+    {
+  "type": "minecraft:sequence",
+  "functions": "#fossil_frights:game/heists/set_paint/on"
+}
+
+  ]
+}

@@ -24,5 +24,5 @@ execute if dimension minecraft:overworld run data modify entity @s Owner set val
 
 # Remove effects
 item modify entity @s contents fossil_frights:game/heists/set_invisible/off
-item modify entity @s contents fossil_frights:game/heists/remove_paint
+item modify entity @s contents fossil_frights:game/heists/set_paint/off
 execute if items entity @s contents *[custom_data~{itemID:"hoverboard"}] run item modify entity @s contents fossil_frights:items/hoverboard/set_inactive
