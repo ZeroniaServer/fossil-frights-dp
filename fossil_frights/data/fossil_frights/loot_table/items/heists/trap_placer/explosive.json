@@ -17,14 +17,10 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.trap.description.1",
+                    "translate": "ff.item.trap.description.place.realms",
                     "color": "white",
                     "italic": false,
                     "with": [
-                      {
-                        "keybind": "key.attack",
-                        "color": "yellow"
-                      },
                       {
                         "keybind": "key.drop",
                         "color": "yellow"
@@ -43,7 +39,7 @@
                     ]
                   },
                   {
-                    "translate": "ff.item.trap.description.2",
+                    "translate": "ff.item.trap.description.pick_up",
                     "color": "white",
                     "italic": false,
                     "with": [
@@ -57,13 +53,14 @@
                       }
                     ]
                   },
+                  "",
                   {
                     "translate": "ff.item.trap_explosive.description.2",
                     "color": "white",
                     "italic": false
                   },
                   {
-                    "translate": "ff.item.storage_key.one_time_use",
+                    "translate": "ff.item.trap_explosive.description.one_time_use",
                     "color": "red",
                     "italic": false
                   }
@@ -75,9 +72,6 @@
                   "hitbox_margin": 0
                 },
                 "minecraft:piercing_weapon": {},
-                "minecraft:enchantments": {
-                  "fossil_frights:trap_click": 1
-                },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
                     "minecraft:enchantments"
@@ -97,81 +91,7 @@
                       "translate": "ff.item.trap_explosive",
                       "color": "#FB3823"
                     },
-                    "minecraft:lore": [
-                      {
-                        "translate": "ff.item.trap.description.1",
-                        "color": "white",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.attack",
-                            "color": "yellow"
-                          },
-                          {
-                            "keybind": "key.drop",
-                            "color": "yellow"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.trap.description.cycle",
-                        "color": "white",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.use",
-                            "color": "yellow"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.trap.description.2",
-                        "color": "white",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.sneak",
-                            "color": "yellow"
-                          },
-                          {
-                            "keybind": "key.use",
-                            "color": "yellow"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.trap_explosive.description.2",
-                        "color": "white",
-                        "italic": false
-                      },
-                      {
-                        "translate": "ff.item.storage_key.one_time_use",
-                        "color": "red",
-                        "italic": false
-                      }
-                    ],
                     "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_explosive",
-                    "minecraft:attack_range": {
-                      "min_reach": 0,
-                      "max_reach": 0,
-                      "hitbox_margin": 0
-                    },
-                    "minecraft:piercing_weapon": {},
-                    "minecraft:enchantments": {
-                      "fossil_frights:trap_click": 1
-                    },
-                    "minecraft:tooltip_display": {
-                      "hidden_components": [
-                        "minecraft:enchantments"
-                      ]
-                    },
-                    "minecraft:enchantment_glint_override": false,
-                    "minecraft:consumable": {
-                      "consume_seconds": 0.001,
-                      "animation": "none",
-                      "sound": "minecraft:entity.item.pickup",
-                      "has_consume_particles": false
-                    },
                     "minecraft:custom_data": {
                       "ff_heist_trap": true,
                       "itemID": "trap_explosive"
@@ -183,6 +103,39 @@
                   "ff_heist_trap": true
                 }
               }
+            },
+            {
+              "type": "minecraft:sequence",
+              "functions": [
+                {
+                  "type": "minecraft:sequence",
+                  "functions": "#fossil_frights:items/trap_placer/apply_trap_click_enchantment"
+                },
+                {
+                  "type": "minecraft:set_lore",
+                  "lore": [
+                      {
+                      "translate": "ff.item.trap.description.place.experimental",
+                      "color": "white",
+                      "italic": false,
+                      "with": [
+                        {
+                          "keybind": "key.attack",
+                          "color": "yellow"
+                        },
+                        {
+                          "keybind": "key.drop",
+                          "color": "yellow"
+                        }
+                      ]
+                    }
+                  ],
+                  "mode": "replace_section",
+                  "offset": 0,
+                  "size": 1
+                }
+              ],
+              "condition": "fossil_frights:world/packs_enabled/experimental"
             },
             "fossil_frights:base_item_data"
           ]

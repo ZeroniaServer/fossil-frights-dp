@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "fossil_frights.experimental:items/trap_placer/apply_trap_click_enchantment",
+      "required": false
+    }
+  ]
+}

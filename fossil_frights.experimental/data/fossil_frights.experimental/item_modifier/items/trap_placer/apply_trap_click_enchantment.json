@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:set_enchantments",
+  "enchantments": {
+    "fossil_frights:trap_click": 1
+  }
+}

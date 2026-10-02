@@ -32,7 +32,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/trap_glow"
+                  "value": "fossil_frights:items/heists/trap_placer/glow"
                 },
                 {
                   "type": "minecraft:loot_table",
