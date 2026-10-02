@@ -139,11 +139,7 @@
               "type": "minecraft:set_custom_model_data",
               "colors": {
                 "values": [
-                  {
-                    "type": "minecraft:score",
-                    "target": "this",
-                    "score": "ff_hoverboard_color"
-                  }
+                  "fossil_frights:hoverboard/color"
                 ],
                 "mode": "replace_all"
               }

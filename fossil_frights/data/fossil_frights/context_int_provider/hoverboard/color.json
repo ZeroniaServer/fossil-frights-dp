@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:number_dispatcher",
+  "cases": [
+    {
+      "condition": "fossil_frights:world/is_realms",
+      "value": "fossil_frights:hoverboard/default_color"
+    },
+    {
+      "condition": "fossil_frights:player/identity/polysquarazoid",
+      "value": -8186127
+    },
+    {
+      "condition": "fossil_frights:player/identity/rivertiger76",
+      "value": -207511
+    },
+    {
+      "condition": "fossil_frights:player/identity/dorkorc_",
+      "value": -10304246
+    },
+    {
+      "condition": "fossil_frights:player/identity/endyblaze201",
+      "value": -15439069
+    },
+    {
+      "condition": "fossil_frights:player/identity/stuffy",
+      "value": -13142841
+    },
+    {
+      "condition": "fossil_frights:player/identity/evtema3",
+      "value": -327680
+    }
+  ],
+  "default": "fossil_frights:hoverboard/default_color"
+}

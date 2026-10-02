@@ -24,8 +24,8 @@ execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_2 = @a
 execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_3
 tag @s remove ff_hoverboard_owner_current
 
-scoreboard players operation #hoverboard_color ff_dummy = @s ff_hoverboard_color
-execute on vehicle on passengers run item modify entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] contents {type:"minecraft:set_custom_model_data",floats:{values:[{type:"minecraft:from_int",input:{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#hoverboard_color"},score:"ff_dummy"}}],mode:"replace_all"}}
+execute store result score #hoverboard_color ff_dummy run compute default integer fossil_frights:hoverboard/color
+execute on vehicle on passengers run item modify entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] contents {type:"minecraft:set_custom_model_data",colors:{values:[{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#hoverboard_color"},score:"ff_dummy"}],mode:"replace_all"}}
 
 tag @s add ff_hoverboard_active
 tag @s add ff_hoverboard_activation_grace
