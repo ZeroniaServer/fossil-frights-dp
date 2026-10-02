@@ -8,9 +8,8 @@
       }
     },
     {
-  "type": "minecraft:sequence",
-  "functions": "#fossil_frights:game/heists/set_paint/on"
-}
-
+      "type": "minecraft:sequence",
+      "functions": "#fossil_frights:game/heists/set_paint/on"
+    }
   ]
 }
