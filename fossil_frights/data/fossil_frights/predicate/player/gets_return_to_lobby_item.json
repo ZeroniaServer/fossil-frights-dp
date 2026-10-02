@@ -1,7 +1,13 @@
 {
   "type": "minecraft:all_of",
   "terms": [
-    "fossil_frights:player/is_lobby_freeplay",
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:team": "ff_lobby"
+      }
+    },
     {
       "type": "minecraft:inverted",
       "term": {
