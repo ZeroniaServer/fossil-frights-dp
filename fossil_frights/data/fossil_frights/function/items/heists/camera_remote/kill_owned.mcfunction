@@ -1,4 +1,2 @@
-tag @s add ff_camera_remote_owner_check
-execute as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] if score @s ff_active_uuid_0 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_3 run tp @s 0 -200 0
-execute as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] if score @s ff_active_uuid_0 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @a[tag=ff_camera_remote_owner_check,limit=1] ff_active_uuid_3 run kill @s
-tag @s remove ff_camera_remote_owner_check
+function fossil_frights:entity/match/active
+execute as @e[limit=1,type=minecraft:mannequin,tag=ff_camera_remote_dummy,predicate=fossil_frights:entity/match/active] run function fossil_frights:util/entity/kill_discretely

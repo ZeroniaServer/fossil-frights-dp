@@ -1,3 +1,4 @@
 tag @s add ff_run_sync_source
-execute as @e[type=minecraft:marker,tag=ff_run_member] if score @s ff_active_uuid_0 = @a[tag=ff_run_sync_source,limit=1] ff_active_uuid_0 if score @s ff_active_uuid_1 = @a[tag=ff_run_sync_source,limit=1] ff_active_uuid_1 if score @s ff_active_uuid_2 = @a[tag=ff_run_sync_source,limit=1] ff_active_uuid_2 if score @s ff_active_uuid_3 = @a[tag=ff_run_sync_source,limit=1] ff_active_uuid_3 run function fossil_frights:game/party/sync_member
+function fossil_frights:entity/match/active
+execute as @e[limit=1,type=minecraft:marker,tag=ff_run_member,predicate=fossil_frights:entity/match/active] run function fossil_frights:game/party/sync_member
 tag @s remove ff_run_sync_source

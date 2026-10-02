@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "ff_hoverboard_uuid_0"
+      },
+      "test": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#match"
+        },
+        "score": "ff_hoverboard_uuid_0"
+      }
+    },
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "ff_hoverboard_uuid_1"
+      },
+      "test": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#match"
+        },
+        "score": "ff_hoverboard_uuid_1"
+      }
+    },
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "ff_hoverboard_uuid_2"
+      },
+      "test": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#match"
+        },
+        "score": "ff_hoverboard_uuid_2"
+      }
+    },
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "ff_hoverboard_uuid_3"
+      },
+      "test": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#match"
+        },
+        "score": "ff_hoverboard_uuid_3"
+      }
+    }
+  ]
+}

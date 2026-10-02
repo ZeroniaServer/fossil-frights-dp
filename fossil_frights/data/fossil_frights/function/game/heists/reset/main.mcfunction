@@ -92,8 +92,6 @@ tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
-tag @e[type=minecraft:item] remove ff_heist_capture_credit_snapshot
-tag @e[type=minecraft:item] remove ff_heist_capture_credit_source
 tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_stat_participant
 tag @a remove ff_heist_stat_thief

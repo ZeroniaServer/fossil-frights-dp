@@ -14,7 +14,3 @@ function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @s remove ff_ice_frozen
 tag @s remove ff_ice_frozen_overlay
 tag @s remove ff_ice_freeze_owner
-tag @s remove ff_ice_freeze_syncing
-tag @s remove ff_ice_freeze_hurt_owner
-tag @s remove ff_ice_freeze_orphan_source
-tag @s remove ff_ice_freeze_cleanup_source
