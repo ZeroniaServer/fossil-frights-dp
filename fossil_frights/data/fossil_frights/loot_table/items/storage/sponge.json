@@ -19,6 +19,16 @@
                 "minecraft:custom_data": {
                   "itemID": "sponge",
                   "ff_heist_loot": true,
+                  "ff_heist_rules": {
+                    "warns_about_loot": [
+                      "sniffer_dna_cloth",
+                      "trike_dna_cloth",
+                      "t_rex_dna_cloth",
+                      "velociraptor_dna_cloth",
+                      "plesiosaur_dna_cloth",
+                      "pterodactyl_dna_cloth"
+                    ]
+                  },
                   "ff_anvil_ingredient": {
                     "result": "fossil_frights:items/anvil/microfiber_cloth"
                   }

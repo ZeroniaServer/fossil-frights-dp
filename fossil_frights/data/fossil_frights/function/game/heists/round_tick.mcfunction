@@ -12,7 +12,6 @@ function fossil_frights:game/heists/timer/update_display
 function fossil_frights:game/heists/guard_coin/tick
 scoreboard players add $heist_flash ff_heist 1
 execute if score $heist_flash ff_heist matches 20.. run scoreboard players set $heist_flash ff_heist 0
-function fossil_frights:game/heists/loot/common/update_drops
 execute as @e[type=minecraft:interaction,tag=ff_heist_common_loot_click,scores={ff_heist_loot_security_cooldown=1..}] run scoreboard players remove @s ff_heist_loot_security_cooldown 1
 execute as @e[type=minecraft:interaction,tag=ff_heist_heavy_loot_click,scores={ff_heist_loot_security_cooldown=1..}] run scoreboard players remove @s ff_heist_loot_security_cooldown 1
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_resecure_cooldown,scores={ff_heist_loot_security_cooldown=..0}] run tag @s remove ff_heist_loot_resecure_cooldown
@@ -24,9 +23,6 @@ execute as @e[type=minecraft:interaction,tag=ff_heist_loot_security_active,score
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_security_active,scores={ff_heist_loot_security_lease=..0}] run tag @s remove ff_heist_loot_security_active
 execute as @e[type=minecraft:interaction,tag=ff_heist_common_loot_click,tag=!ff_heist_loot_security_active] run scoreboard players set @s ff_heist_loot_security_progress 0
 execute as @e[type=minecraft:interaction,tag=ff_heist_heavy_loot_click,tag=!ff_heist_loot_security_active] run scoreboard players set @s ff_heist_loot_security_progress 0
-function fossil_frights:game/heists/loot/uncommon/update_drops
-function fossil_frights:game/heists/loot/rare/update_drops
-function fossil_frights:game/heists/loot/heavy/update_drops
 function fossil_frights:game/heists/loot/clear_guard_loot
 function fossil_frights:game/heists/loot/update_pickup_delay
 function fossil_frights:game/heists/loot/update_held

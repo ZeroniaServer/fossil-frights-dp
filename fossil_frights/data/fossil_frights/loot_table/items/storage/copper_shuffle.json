@@ -18,7 +18,12 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/copper_shuffle",
                 "minecraft:custom_data": {
                   "itemID": "copper_shuffle",
-                  "ff_heist_loot": true
+                  "ff_heist_loot": true,
+                  "ff_heist_rules": {
+                    "warns_about_loot": [
+                      "basketball"
+                    ]
+                  }
                 }
               }
             },

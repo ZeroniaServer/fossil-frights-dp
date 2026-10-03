@@ -17,9 +17,19 @@
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/dna/microfiber_cloth",
                 "minecraft:custom_data": {
+                  "itemID": "microfiber_cloth",
                   "ff_dna": true,
                   "ff_heist_loot": true,
-                  "itemID": "microfiber_cloth"
+                  "ff_heist_rules": {
+                    "warns_about_loot": [
+                      "sniffer_dna_cloth",
+                      "trike_dna_cloth",
+                      "t_rex_dna_cloth",
+                      "velociraptor_dna_cloth",
+                      "plesiosaur_dna_cloth",
+                      "pterodactyl_dna_cloth"
+                    ]
+                  }
                 }
               }
             },

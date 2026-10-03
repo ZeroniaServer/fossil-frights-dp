@@ -19,6 +19,11 @@
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
                   "ff_heist_loot": true,
+                  "ff_heist_rules": {
+                    "warns_about_loot": [
+                      "hoverboard"
+                    ]
+                  },
                   "ff_anvil_ingredient": {
                     "result": "fossil_frights:items/anvil/hoverboard"
                   }
