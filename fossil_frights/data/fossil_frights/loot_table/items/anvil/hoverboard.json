@@ -80,7 +80,6 @@
                     },
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
-                      "ff_heist_loot": true,
                       "ff_hoverboard_active": false,
                       "ff_hoverboard_use": true
                     }
@@ -88,14 +87,16 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
-                  "ff_heist_loot": true,
                   "ff_hoverboard_active": false,
-                  "ff_hoverboard_use": false
+                  "ff_hoverboard_use": false,
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/hoverboard",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/hoverboard",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

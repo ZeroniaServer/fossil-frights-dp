@@ -21,12 +21,14 @@
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
                   "ff_heist_common_loot": true,
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/fishing_rod",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/fishing_rod",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

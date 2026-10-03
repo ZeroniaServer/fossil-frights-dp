@@ -18,12 +18,14 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/instant_coffee",
                 "minecraft:custom_data": {
                   "itemID": "instant_coffee",
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/instant_coffee",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/instant_coffee",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

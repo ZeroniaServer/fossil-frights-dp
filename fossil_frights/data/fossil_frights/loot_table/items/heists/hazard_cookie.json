@@ -25,11 +25,14 @@
                 ],
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {
-                  "itemID": "hazard_cookie"
+                  "itemID": "hazard_cookie",
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

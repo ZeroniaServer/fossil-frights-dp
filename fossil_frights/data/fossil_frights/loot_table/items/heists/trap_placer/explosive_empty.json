@@ -139,7 +139,7 @@
               ],
               "condition": "fossil_frights:world/packs_enabled/experimental"
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

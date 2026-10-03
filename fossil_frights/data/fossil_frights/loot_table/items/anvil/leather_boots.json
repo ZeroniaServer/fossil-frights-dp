@@ -16,11 +16,14 @@
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/hard_items/leather_boots",
                 "minecraft:custom_data": {
-                  "itemID": "leather_boots"
+                  "itemID": "leather_boots",
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

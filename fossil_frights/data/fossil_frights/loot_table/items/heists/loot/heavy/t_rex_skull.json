@@ -19,13 +19,15 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "t_rex_skull",
-                  "ff_heist_loot": true,
-                  "ff_heist_heavy_loot": true
+                  "ff_heist_heavy_loot": true,
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/t_rex_skull",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/t_rex_skull",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

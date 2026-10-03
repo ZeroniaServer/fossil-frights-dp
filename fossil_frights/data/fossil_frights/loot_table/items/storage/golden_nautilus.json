@@ -21,12 +21,14 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "golden_nautilus",
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/golden_nautilus",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/golden_nautilus",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

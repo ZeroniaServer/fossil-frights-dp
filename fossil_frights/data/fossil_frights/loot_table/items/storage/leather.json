@@ -18,15 +18,17 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/leather",
                 "minecraft:custom_data": {
                   "itemID": "leather",
-                  "ff_heist_loot": true,
                   "ff_anvil_ingredient": {
                     "result": "fossil_frights:items/anvil/leather_boots"
+                  },
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
                   }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/leather",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/leather",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

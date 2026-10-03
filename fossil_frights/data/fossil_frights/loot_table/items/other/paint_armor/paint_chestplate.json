@@ -38,7 +38,7 @@
                 }
               }
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

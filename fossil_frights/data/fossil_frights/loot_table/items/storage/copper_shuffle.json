@@ -18,8 +18,8 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/copper_shuffle",
                 "minecraft:custom_data": {
                   "itemID": "copper_shuffle",
-                  "ff_heist_loot": true,
                   "ff_heist_rules": {
+                    "delete_on_guard_pickup": true,
                     "warns_about_loot": [
                       "basketball"
                     ]
@@ -27,8 +27,8 @@
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/copper_shuffle",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/copper_shuffle",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

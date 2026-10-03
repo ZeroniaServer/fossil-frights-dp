@@ -18,12 +18,14 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/chlorine_tablet",
                 "minecraft:custom_data": {
                   "itemID": "chlorine_tablet",
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/chlorine_tablet",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/chlorine_tablet",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

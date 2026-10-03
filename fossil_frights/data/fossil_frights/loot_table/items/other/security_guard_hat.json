@@ -44,7 +44,7 @@
               },
               "condition": "fossil_frights:game_state/heist_mode_active"
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

@@ -19,12 +19,14 @@
                 "minecraft:custom_data": {
                   "itemID": "ancient_scripture",
                   "ff_heist_common_loot": true,
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/ancient_scripture",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/ancient_scripture",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

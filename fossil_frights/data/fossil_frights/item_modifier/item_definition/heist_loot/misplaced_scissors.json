@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:sequence",
+  "condition": {
+    "type": "minecraft:all_of",
+    "terms": [
+      "fossil_frights:game_state/heist_mode_active",
+      {
+        "type": "minecraft:int_value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$loot_misplaced_scissors"
+          },
+          "score": "ff_heist_loot_state"
+        },
+        "test": {
+          "min": 1
+        }
+      }
+    ]
+  },
+  "functions": [
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "ff_heist_rules": {
+          "is_loot": true
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "color": "white",
+          "italic": false,
+          "translate": "Throw into the capture point for %s",
+          "with": [
+            {
+              "color": "yellow",
+              "translate": "$%s",
+              "with": [
+                {
+                  "score": {
+                    "objective": "ff_heist_loot_value",
+                    "name": "$loot_misplaced_scissors"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}

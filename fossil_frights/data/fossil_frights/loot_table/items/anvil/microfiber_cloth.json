@@ -19,8 +19,8 @@
                 "minecraft:custom_data": {
                   "itemID": "microfiber_cloth",
                   "ff_dna": true,
-                  "ff_heist_loot": true,
                   "ff_heist_rules": {
+                    "delete_on_guard_pickup": true,
                     "warns_about_loot": [
                       "sniffer_dna_cloth",
                       "trike_dna_cloth",
@@ -33,7 +33,7 @@
                 }
               }
             },
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

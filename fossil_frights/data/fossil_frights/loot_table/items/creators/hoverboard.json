@@ -117,7 +117,6 @@
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
                       "ff_creator_hoverboard": true,
-                      "ff_heist_loot": true,
                       "ff_prevent_drop": true,
                       "ff_hoverboard_active": false,
                       "ff_hoverboard_use": true
@@ -127,14 +126,13 @@
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
                   "ff_creator_hoverboard": true,
-                  "ff_heist_loot": true,
                   "ff_prevent_drop": true,
                   "ff_hoverboard_active": false,
                   "ff_hoverboard_use": false
                 }
               }
             },
-            "fossil_frights:base_item_data",
+            "fossil_frights:item_definition/base_item_data",
             {
               "type": "minecraft:set_custom_model_data",
               "colors": {

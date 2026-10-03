@@ -18,8 +18,8 @@
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/scrap_metal",
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
-                  "ff_heist_loot": true,
                   "ff_heist_rules": {
+                    "delete_on_guard_pickup": true,
                     "warns_about_loot": [
                       "hoverboard"
                     ]
@@ -30,8 +30,8 @@
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/scrap_metal",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/scrap_metal",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]

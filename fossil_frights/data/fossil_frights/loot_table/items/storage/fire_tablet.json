@@ -22,12 +22,14 @@
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",
-                  "ff_heist_loot": true
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
                 }
               }
             },
-            "fossil_frights:game/heists/append_loot_tooltip/fire_tablet",
-            "fossil_frights:base_item_data"
+            "fossil_frights:item_definition/heist_loot/fire_tablet",
+            "fossil_frights:item_definition/base_item_data"
           ]
         }
       ]
