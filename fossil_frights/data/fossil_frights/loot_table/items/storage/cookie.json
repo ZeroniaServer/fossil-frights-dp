@@ -24,6 +24,7 @@
                 }
               }
             },
+            "fossil_frights:game/heists/append_loot_tooltip/cookie",
             "fossil_frights:base_item_data"
           ]
         }

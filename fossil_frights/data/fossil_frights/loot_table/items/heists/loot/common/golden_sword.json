@@ -44,6 +44,7 @@
                 }
               }
             },
+            "fossil_frights:game/heists/append_loot_tooltip/golden_sword",
             "fossil_frights:base_item_data"
           ]
         }

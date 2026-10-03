@@ -23,6 +23,7 @@
                 }
               }
             },
+            "fossil_frights:game/heists/append_loot_tooltip/ghast_plushie",
             "fossil_frights:base_item_data"
           ]
         }

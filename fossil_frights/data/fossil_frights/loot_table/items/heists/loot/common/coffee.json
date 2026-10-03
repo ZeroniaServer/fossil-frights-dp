@@ -34,6 +34,7 @@
                 }
               }
             },
+            "fossil_frights:game/heists/append_loot_tooltip/coffee",
             "fossil_frights:base_item_data"
           ]
         }

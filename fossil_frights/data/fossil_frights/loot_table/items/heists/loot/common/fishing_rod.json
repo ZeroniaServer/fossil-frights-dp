@@ -25,6 +25,7 @@
                 }
               }
             },
+            "fossil_frights:game/heists/append_loot_tooltip/fishing_rod",
             "fossil_frights:base_item_data"
           ]
         }
