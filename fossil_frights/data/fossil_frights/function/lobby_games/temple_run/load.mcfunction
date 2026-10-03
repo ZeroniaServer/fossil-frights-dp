@@ -23,6 +23,7 @@ scoreboard players set #60 ff_temple_run_math 60
 scoreboard players set #100 ff_temple_run_math 100
 scoreboard players set #30 ff_temple_run_math 30
 scoreboard players set #50 ff_temple_run_math 50
+scoreboard players set #40 ff_temple_run_math 40
 scoreboard players set #2 ff_temple_run_math 2
 scoreboard players add $temple_run_best_exists ff_temple_run_display 0
 scoreboard players add $temple_run_best_time ff_temple_run_display 0

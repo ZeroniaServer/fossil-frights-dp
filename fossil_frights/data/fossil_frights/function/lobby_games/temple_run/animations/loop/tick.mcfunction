@@ -1,2 +1,3 @@
 scoreboard players set $temple_run_animation_active ff_temple_run_anim 1
 function fossil_frights:lobby_games/temple_run/animations/loop/swinging_axis/tick
+function fossil_frights:lobby_games/temple_run/animations/loop/rotating_axes/tick
