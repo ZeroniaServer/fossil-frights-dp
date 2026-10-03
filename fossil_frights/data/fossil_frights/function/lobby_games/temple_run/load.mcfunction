@@ -26,6 +26,9 @@ scoreboard players set #50 ff_temple_run_math 50
 scoreboard players set #40 ff_temple_run_math 40
 scoreboard players set #160 ff_temple_run_math 160
 scoreboard players set #2 ff_temple_run_math 2
+scoreboard players set $spear_trap_trigger_active ff_temple_run_anim 0
+scoreboard players set $spear_trap_trigger_cooldown ff_temple_run_anim 0
+scoreboard players set #spear_trap_trigger_phase ff_temple_run_anim 0
 scoreboard players add $temple_run_best_exists ff_temple_run_display 0
 scoreboard players add $temple_run_best_time ff_temple_run_display 0
 scoreboard players add $temple_run_best_min ff_temple_run_display 0

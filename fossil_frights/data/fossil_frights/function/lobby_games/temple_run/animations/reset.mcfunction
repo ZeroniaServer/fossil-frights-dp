@@ -3,6 +3,7 @@ kill @e[type=minecraft:item_display,tag=tr_axe2]
 kill @e[type=minecraft:item_display,tag=tr_axe3]
 kill @e[type=minecraft:item_display,tag=tr_axe4]
 kill @e[type=minecraft:item_display,tag=tr_axe5]
+kill @e[type=minecraft:item_display,tag=tr_spear_trap]
 kill @e[type=minecraft:item_display,tag=spear_trap_spiral_1]
 kill @e[type=minecraft:item_display,tag=spear_trap_spiral_2]
 kill @e[type=minecraft:item_display,tag=spear_trap_spiral_3]
@@ -20,3 +21,8 @@ fill 147 77 81 149 77 79 minecraft:air strict
 fill 147 79 87 149 79 85 minecraft:air strict
 fill 153 81 87 155 81 85 minecraft:air strict
 fill 156 81 84 158 81 82 minecraft:air strict
+fill 126 82 81 128 82 79 minecraft:air strict
+summon minecraft:item_display 127.5 82.0 80.5 {Tags:["tr_spear_trap"],item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/spear_trap"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,-1.5f,0.0f]},interpolation_duration:5}
+scoreboard players set $spear_trap_trigger_active ff_temple_run_anim 0
+scoreboard players set $spear_trap_trigger_cooldown ff_temple_run_anim 0
+scoreboard players set #spear_trap_trigger_phase ff_temple_run_anim 0
