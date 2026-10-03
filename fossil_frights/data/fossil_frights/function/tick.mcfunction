@@ -85,6 +85,7 @@ execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initializ
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
 function fossil_frights:join/join_pads/tick
 function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
+function fossil_frights:lobby_games/temple_run/animations/tick
 function fossil_frights:lobby_games/ant_fight/teleporter_walk_tick
 function fossil_frights:lobby_games/parkour/teleporter_walk_tick
 function fossil_frights:lobby_games/sulfur_strikers/teleporter_walk_tick

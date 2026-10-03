@@ -3,7 +3,6 @@ execute if score @s ff_temple_run_running matches 1.. unless entity @s[gamemode=
 execute unless entity @s[gamemode=adventure] run return 0
 execute positioned 91.5 79 82.5 unless entity @s[distance=..1] run scoreboard players set @s ff_temple_run_start_plate 0
 execute if score @s ff_temple_run_running matches 1 run function fossil_frights:lobby_games/temple_run/music/tick
-execute if predicate fossil_frights:player/temple_run_active run function fossil_frights:lobby_games/temple_run/animations/tick
 execute if score @s ff_temple_run_start_plate matches 0 positioned 91.5 79 82.5 if entity @s[distance=..1] if block 91 79 82 minecraft:light_weighted_pressure_plate[power=1] run function fossil_frights:lobby_games/temple_run/start
 execute positioned 91.5 79 82.5 if entity @s[distance=..1] if block 91 79 82 minecraft:light_weighted_pressure_plate[power=1] run scoreboard players set @s ff_temple_run_start_plate 1
 execute if score @s ff_temple_run_running matches 1 positioned 97.5 80 70.5 if entity @s[distance=..1] if block 97 80 70 minecraft:light_weighted_pressure_plate[power=1] run function fossil_frights:lobby_games/temple_run/finish

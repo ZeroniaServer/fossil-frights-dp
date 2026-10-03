@@ -15,9 +15,15 @@ scoreboard objectives add ff_temple_run_centi_tens dummy
 scoreboard objectives add ff_temple_run_centi_ones dummy
 scoreboard objectives add ff_temple_run_display dummy
 scoreboard objectives add ff_temple_run_math dummy
+scoreboard objectives add ff_temple_run_anim dummy
+scoreboard players set $temple_run_animation_active ff_temple_run_anim 0
+scoreboard players set $temple_run_animation_present ff_temple_run_anim 0
 scoreboard players set #10 ff_temple_run_math 10
 scoreboard players set #60 ff_temple_run_math 60
 scoreboard players set #100 ff_temple_run_math 100
+scoreboard players set #30 ff_temple_run_math 30
+scoreboard players set #50 ff_temple_run_math 50
+scoreboard players set #2 ff_temple_run_math 2
 scoreboard players add $temple_run_best_exists ff_temple_run_display 0
 scoreboard players add $temple_run_best_time ff_temple_run_display 0
 scoreboard players add $temple_run_best_min ff_temple_run_display 0
@@ -31,3 +37,4 @@ setblock 91 79 82 minecraft:light_weighted_pressure_plate
 setblock 97 80 70 minecraft:light_weighted_pressure_plate
 scoreboard players set $temple_run_display_ready ff_temple_run_display 0
 function fossil_frights:lobby_games/temple_run/teleporter_setup
+function fossil_frights:lobby_games/temple_run/animations/reset

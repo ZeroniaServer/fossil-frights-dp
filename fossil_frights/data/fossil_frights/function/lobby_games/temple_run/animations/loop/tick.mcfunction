@@ -1,1 +1,2 @@
-return 0
+scoreboard players set $temple_run_animation_active ff_temple_run_anim 1
+function fossil_frights:lobby_games/temple_run/animations/loop/swinging_axis/tick
