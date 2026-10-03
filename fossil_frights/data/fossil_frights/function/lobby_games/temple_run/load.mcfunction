@@ -29,6 +29,8 @@ scoreboard players set #30 ff_temple_run_math 30
 scoreboard players set #50 ff_temple_run_math 50
 scoreboard players set #40 ff_temple_run_math 40
 scoreboard players set #160 ff_temple_run_math 160
+scoreboard players set #120 ff_temple_run_math 120
+scoreboard players set #130 ff_temple_run_math 130
 scoreboard players set #2 ff_temple_run_math 2
 scoreboard players set $spear_trap_trigger_active ff_temple_run_anim 0
 scoreboard players set $spear_trap_trigger_cooldown ff_temple_run_anim 0
