@@ -1,5 +1,5 @@
 execute if entity @s[tag=ff_temple_run_exit_pending] run return 0
-execute if score @s ff_temple_run_running matches 1.. unless entity @s[gamemode=adventure] run function fossil_frights:lobby_games/temple_run/end
+execute if predicate fossil_frights:player/is_playing_temple_run unless entity @s[gamemode=adventure] run function fossil_frights:lobby_games/temple_run/end
 execute unless entity @s[gamemode=adventure] run return 0
 execute positioned 91.5 79 82.5 unless entity @s[distance=..1] run scoreboard players set @s ff_temple_run_start_plate 0
 execute if score @s ff_temple_run_running matches 1 run function fossil_frights:lobby_games/temple_run/music/tick

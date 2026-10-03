@@ -1,4 +1,4 @@
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/reset_player
+execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/reset_player
 execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/disable
 function fossil_frights:player/reset_attributes
 function fossil_frights:player/reset_effects

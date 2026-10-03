@@ -1,6 +1,6 @@
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/end
+execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
 function fossil_frights:lobby_games/stop_all
 tag @s remove ff_trap_place_pending
