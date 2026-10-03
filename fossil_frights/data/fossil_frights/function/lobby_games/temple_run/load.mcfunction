@@ -18,6 +18,8 @@ scoreboard objectives add ff_temple_run_math dummy
 scoreboard objectives add ff_temple_run_anim dummy
 scoreboard players set $temple_run_animation_active ff_temple_run_anim 0
 scoreboard players set $temple_run_animation_present ff_temple_run_anim 0
+scoreboard players set $darts2_active ff_temple_run_anim 0
+scoreboard players set #darts2_phase ff_temple_run_anim 0
 scoreboard players set #10 ff_temple_run_math 10
 scoreboard players set #60 ff_temple_run_math 60
 scoreboard players set #100 ff_temple_run_math 100
