@@ -3,3 +3,4 @@ function fossil_frights:lobby_games/temple_run/animations/loop/swinging_axis/tic
 function fossil_frights:lobby_games/temple_run/animations/loop/rotating_axes/tick
 function fossil_frights:lobby_games/temple_run/animations/loop/spear_trap_spiral/tick
 function fossil_frights:lobby_games/temple_run/animations/triggered/spear_trap/tick
+function fossil_frights:lobby_games/temple_run/animations/triggered/darts1/tick
