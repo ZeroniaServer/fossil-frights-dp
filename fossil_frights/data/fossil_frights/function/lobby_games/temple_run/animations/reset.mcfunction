@@ -1,6 +1,7 @@
 kill @e[type=minecraft:item_display,tag=tr_axe1]
 kill @e[type=minecraft:arrow,tag=ff_darts1_arrow]
 kill @e[type=minecraft:arrow,tag=ff_darts2_arrow]
+kill @e[type=minecraft:arrow,tag=ff_darts3_arrow]
 kill @e[type=minecraft:item_display,tag=tr_axe2]
 kill @e[type=minecraft:item_display,tag=tr_axe3]
 kill @e[type=minecraft:item_display,tag=tr_axe4]
@@ -32,3 +33,5 @@ scoreboard players set $darts1_active ff_temple_run_anim 0
 scoreboard players set #darts1_phase ff_temple_run_anim 0
 scoreboard players set $darts2_active ff_temple_run_anim 0
 scoreboard players set #darts2_phase ff_temple_run_anim 0
+scoreboard players set $darts3_active ff_temple_run_anim 0
+scoreboard players set #darts3_phase ff_temple_run_anim 0
