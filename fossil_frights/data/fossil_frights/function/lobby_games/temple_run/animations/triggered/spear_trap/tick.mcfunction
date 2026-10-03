@@ -1,6 +1,7 @@
 execute if score $spear_trap_trigger_cooldown ff_temple_run_anim matches 1.. run scoreboard players remove $spear_trap_trigger_cooldown ff_temple_run_anim 1
 
 execute if score $spear_trap_trigger_active ff_temple_run_anim matches 1 if score #spear_trap_trigger_phase ff_temple_run_anim matches 15 run execute as @e[type=minecraft:item_display,tag=tr_spear_trap,limit=1] run data merge entity @s {start_interpolation:0,interpolation_duration:25,transformation:{translation:[0.0f,-1.5f,0.0f]}}
+execute if score $spear_trap_trigger_active ff_temple_run_anim matches 1 if score #spear_trap_trigger_phase ff_temple_run_anim matches 0..39 if entity @a[x=126,y=82,z=79,dx=2,dy=1,dz=2] run effect give @a[x=126,y=82,z=79,dx=2,dy=1,dz=2] minecraft:poison 2 0 true
 execute if score $spear_trap_trigger_active ff_temple_run_anim matches 1 if score #spear_trap_trigger_phase ff_temple_run_anim matches 40 run fill 126 82 81 128 82 79 minecraft:air strict
 execute if score $spear_trap_trigger_active ff_temple_run_anim matches 1 if score #spear_trap_trigger_phase ff_temple_run_anim matches 40 run scoreboard players set $spear_trap_trigger_active ff_temple_run_anim 0
 execute if score $spear_trap_trigger_active ff_temple_run_anim matches 1 run scoreboard players add #spear_trap_trigger_phase ff_temple_run_anim 1
