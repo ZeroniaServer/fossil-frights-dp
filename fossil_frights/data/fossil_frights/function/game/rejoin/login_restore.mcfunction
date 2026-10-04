@@ -3,7 +3,9 @@ function fossil_frights:entity/match/active
 tag @e[limit=1,type=minecraft:marker,tag=ff_rejoin_marker,tag=ff_rejoin_ghosted,predicate=fossil_frights:entity/match/active] add ff_rejoin_login_match
 execute unless entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match] run return 0
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] if entity @s[tag=ff_camera_remote_active] run tag @s add ff_rejoin_camera_return
-execute if entity @s[tag=ff_rejoin_camera_return] run function fossil_frights:items/heists/camera_remote/exit
+execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_frights] if entity @s[tag=ff_forced_spectate] run tag @s add ff_rejoin_camera_return
+execute if entity @s[tag=ff_rejoin_camera_return,tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
+execute if entity @s[tag=ff_rejoin_camera_return,tag=ff_forced_spectate] run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_frights] run team join ff_guard @s
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run team join ff_guard @s
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run function fossil_frights:items/heists/trap/common/reconcile_owner_state
