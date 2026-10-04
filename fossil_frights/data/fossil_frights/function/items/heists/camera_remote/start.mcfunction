@@ -21,9 +21,9 @@ tag @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limi
 tag @s add ff_forced_spectate
 tag @s add ff_camera_remote_active
 gamemode spectator @s
-team join ff_security_camera @e[type=cave_spider,tag=security_camera]
+team join ff_security_camera @e[type=item_display,tag=ff_security_camera_model]
 
-execute store result score @s ff_security_camera run scoreboard players get @n[tag=security_camera] ff_security_camera
+execute store result score @s ff_security_camera run scoreboard players get @n[type=item_display,tag=ff_security_camera_model] ff_security_camera
 execute at @s run function fossil_frights:items/heists/camera_remote/get_camera_region
 
 scoreboard players set @s ff_security_camera_nav 0

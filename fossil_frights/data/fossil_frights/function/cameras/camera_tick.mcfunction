@@ -7,6 +7,7 @@ execute if score @s ff_security_camera_heist matches 0 if entity @s[tag=!ff_came
 execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights:player/input/left run function fossil_frights:cameras/prev_camera
 execute if score @s ff_security_camera_nav matches 0 if predicate fossil_frights:player/input/right run function fossil_frights:cameras/next_camera
 function fossil_frights:cameras/update_camera_models
-execute unless entity @e[type=cave_spider,tag=security_camera,distance=..2] run function fossil_frights:cameras/invalid_target
+execute if score @s ff_security_camera_nav matches 0 if score @s ff_security_camera matches 4 unless entity @e[type=minecraft:item_display,tag=ff_security_camera_4,distance=..2] run function fossil_frights:cameras/invalid_target
+execute if score @s ff_security_camera_nav matches 0 if score @s ff_security_camera matches 6 unless entity @e[type=minecraft:item_display,tag=ff_security_camera_6,distance=..2] run function fossil_frights:cameras/invalid_target
 execute if entity @s[tag=ff_camera_thief_visible] if predicate fossil_frights:player/input/backward run return 0
 execute if entity @s[tag=ff_forced_spectate] run function fossil_frights:cameras/select_camera

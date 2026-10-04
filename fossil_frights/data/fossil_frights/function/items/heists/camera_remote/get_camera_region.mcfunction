@@ -12,4 +12,4 @@ execute if score @s ff_map_region matches 23 run return run scoreboard players s
 execute if score @s ff_map_region matches 2 run return run scoreboard players set @s ff_security_camera 5
 execute if score @s ff_map_region matches 1 run return run scoreboard players set @s ff_security_camera 4
 
-execute store result score @s ff_security_camera run scoreboard players get @n[tag=security_camera] ff_security_camera
+execute store result score @s ff_security_camera run scoreboard players get @n[type=item_display,tag=ff_security_camera_model] ff_security_camera
