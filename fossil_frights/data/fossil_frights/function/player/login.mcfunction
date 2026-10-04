@@ -1,4 +1,5 @@
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:game/bossbar/sync_login_player
+function fossil_frights:cameras/clear_posteffect
 tag @s remove ff_hoverboard_active
 function fossil_frights:items/hoverboard/durability/clear_all_active
 tag @s remove ff_hoverboard_owner_current

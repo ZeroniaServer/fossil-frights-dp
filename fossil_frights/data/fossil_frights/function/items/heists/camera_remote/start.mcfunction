@@ -21,6 +21,7 @@ tag @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy_new,sort=nearest,limi
 tag @s add ff_forced_spectate
 tag @s add ff_camera_remote_active
 gamemode spectator @s
+function fossil_frights:cameras/apply_posteffect
 team join ff_security_camera @e[type=item_display,tag=ff_security_camera_model]
 
 execute store result score @s ff_security_camera run scoreboard players get @n[type=item_display,tag=ff_security_camera_model] ff_security_camera

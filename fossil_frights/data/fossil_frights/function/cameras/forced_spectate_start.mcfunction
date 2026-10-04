@@ -12,6 +12,7 @@ function fossil_frights:cameras/save_return_position
 function fossil_frights:cameras/spawn_dummy_macro with storage fossil_frights:forced_spectate mannequin
 tag @s add ff_forced_spectate
 gamemode spectator @s
+function fossil_frights:cameras/apply_posteffect
 team join ff_security_camera @e[type=item_display,tag=ff_security_camera_model]
 scoreboard players set @s ff_security_camera 1
 scoreboard players set @s ff_security_camera_nav 0

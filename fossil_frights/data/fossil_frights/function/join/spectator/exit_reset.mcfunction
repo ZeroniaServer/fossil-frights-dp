@@ -4,6 +4,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 18 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
+function fossil_frights:cameras/clear_posteffect
 function fossil_frights:join/lobby
 clear @s
 attribute @s minecraft:scale base reset

@@ -1,4 +1,5 @@
 execute unless entity @s[tag=ff_camera_remote_active] run return 0
+function fossil_frights:cameras/clear_posteffect
 function fossil_frights:cameras/lights_disabled/hide
 function fossil_frights:items/heists/camera_remote/save_return_position
 execute store result storage fossil_frights:forced_spectate return.x double 0.00001 run scoreboard players get @s ff_forced_spec_x
