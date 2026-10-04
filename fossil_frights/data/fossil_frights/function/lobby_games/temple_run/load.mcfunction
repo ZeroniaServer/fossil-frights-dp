@@ -25,8 +25,8 @@ scoreboard players set #darts3_phase ff_temple_run_anim 0
 scoreboard players set #10 ff_temple_run_math 10
 scoreboard players set #60 ff_temple_run_math 60
 scoreboard players set #100 ff_temple_run_math 100
-scoreboard players set #30 ff_temple_run_math 30
-scoreboard players set #50 ff_temple_run_math 50
+scoreboard players set #32 ff_temple_run_math 32
+scoreboard players set #56 ff_temple_run_math 56
 scoreboard players set #40 ff_temple_run_math 40
 scoreboard players set #160 ff_temple_run_math 160
 scoreboard players set #120 ff_temple_run_math 120
