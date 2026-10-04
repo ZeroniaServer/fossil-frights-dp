@@ -1,19 +1,24 @@
 kill @e[type=minecraft:item_display,tag=tr_axe1]
 kill @e[type=minecraft:item_display,tag=tr_axe1_collision_display]
 kill @e[type=minecraft:shulker,tag=tr_axe1_collision]
+kill @e[type=minecraft:silverfish,tag=tr_axe1_attacker]
 kill @e[type=minecraft:item_display,tag=tr_axe3_collision_display]
 kill @e[type=minecraft:shulker,tag=tr_axe3_collision]
+kill @e[type=minecraft:silverfish,tag=tr_axe3_attacker]
 kill @e[type=minecraft:arrow,tag=ff_darts1_arrow]
 kill @e[type=minecraft:arrow,tag=ff_darts2_arrow]
 kill @e[type=minecraft:arrow,tag=ff_darts3_arrow]
 kill @e[type=minecraft:item_display,tag=tr_axe2]
 kill @e[type=minecraft:item_display,tag=tr_axe2_collision_display]
 kill @e[type=minecraft:shulker,tag=tr_axe2_collision]
+kill @e[type=minecraft:silverfish,tag=tr_axe2_attacker]
 kill @e[type=minecraft:item_display,tag=tr_axe3]
 kill @e[type=minecraft:item_display,tag=tr_axe4_collision_display]
 kill @e[type=minecraft:shulker,tag=tr_axe4_collision]
+kill @e[type=minecraft:silverfish,tag=tr_axe4_attacker]
 kill @e[type=minecraft:item_display,tag=tr_axe5_collision_display]
 kill @e[type=minecraft:shulker,tag=tr_axe5_collision]
+kill @e[type=minecraft:silverfish,tag=tr_axe5_attacker]
 kill @e[type=minecraft:item_display,tag=tr_axe4]
 kill @e[type=minecraft:item_display,tag=tr_axe5]
 kill @e[type=minecraft:item_display,tag=tr_spear_trap]
@@ -32,15 +37,17 @@ kill @e[type=minecraft:item_display,tag=spear_trap_spiral_2_4]
 kill @e[type=minecraft:item_display,tag=spear_trap_spiral_1_5]
 kill @e[type=minecraft:item_display,tag=spear_trap_spiral_2_5]
 summon minecraft:item_display 114.5 83.5 75.5 {Tags:["tr_axe1"],brightness:{block:10,sky:0},interpolation_duration:8,item:{components:{"minecraft:custom_data":{ff_invisible:0b,ff_painted:0b},"minecraft:item_model":"fossil-frights:display/lobby/temple_run/swinging_axe"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[2.0f,2.0f,2.0f],translation:[0.0f,0.0f,0.0f]}}
-summon minecraft:item_display 114.25 80.5 75.5 {Tags:["tr_axe1_collision_display"],view_range:0.0f,teleport_duration:4,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe1_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}]}]}
+summon minecraft:item_display 114.25 80.5 75.5 {Tags:["tr_axe1_collision_display"],view_range:0.0f,teleport_duration:4,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe1_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}],Passengers:[{id:"minecraft:silverfish",Tags:["tr_axe1_attacker"],Invulnerable:true,Silent:true,NoGravity:true,PersistenceRequired:true,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.25d}]}]}]}
 summon minecraft:item_display 111.5 83.5 75.5 {Tags:["tr_axe2"],brightness:{block:10,sky:0},interpolation_duration:14,item:{components:{"minecraft:custom_data":{ff_invisible:0b,ff_painted:0b},"minecraft:item_model":"fossil-frights:display/lobby/temple_run/swinging_axe"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[2.0f,2.0f,2.0f],translation:[0.0f,0.0f,0.0f]}}
-summon minecraft:item_display 111.25 81.37868 77.62132 {Tags:["tr_axe2_collision_display"],view_range:0.0f,teleport_duration:7,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe2_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}]}]}
+summon minecraft:item_display 111.25 81.37868 77.62132 {Tags:["tr_axe2_collision_display"],view_range:0.0f,teleport_duration:7,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe2_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}],Passengers:[{id:"minecraft:silverfish",Tags:["tr_axe2_attacker"],Invulnerable:true,Silent:true,NoGravity:true,PersistenceRequired:true,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.25d}]}]}]}
 summon minecraft:item_display 108.5 83.5 75.5 {Tags:["tr_axe3"],brightness:{block:10,sky:0},item:{components:{"minecraft:custom_data":{ff_invisible:0b,ff_painted:0b},"minecraft:item_model":"fossil-frights:display/lobby/temple_run/swinging_axe"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[1.0f,0.0f,0.0f,0.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[2.0f,2.0f,2.0f],translation:[0.0f,0.0f,0.0f]}}
-summon minecraft:item_display 108.25 85.62132 77.62132 {Tags:["tr_axe3_collision_display"],view_range:0.0f,teleport_duration:4,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe3_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}]}]}
+summon minecraft:item_display 108.25 85.62132 77.62132 {Tags:["tr_axe3_collision_display"],view_range:0.0f,teleport_duration:4,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe3_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:0.9}],Passengers:[{id:"minecraft:silverfish",Tags:["tr_axe3_attacker"],Invulnerable:true,Silent:true,NoGravity:true,PersistenceRequired:true,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.25d}]}]}]}
 summon minecraft:item_display 114.0 77.5 66.0 {Tags:["tr_axe4"],brightness:{block:9,sky:9},item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/swinging_axe"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.70710677f,0.70710677f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],translation:[0.0f,0.0f,0.0f]}}
 summon minecraft:item_display 111.5 77.6 66.0 {Tags:["tr_axe4_collision_display"],view_range:0.0f,teleport_duration:0,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe4_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:1.1}]}]}
+summon minecraft:silverfish 111.5 77.1 66.0 {Tags:["tr_axe4_attacker"],Invulnerable:true,Silent:true,NoGravity:true,PersistenceRequired:true,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.25d}]}
 summon minecraft:item_display 111.0 78.5 69.0 {Tags:["tr_axe5"],brightness:{block:9,sky:9},item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/swinging_axe"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.70710677f,0.70710677f],scale:[2.0f,2.0f,2.0f],translation:[0.0f,0.0f,0.0f]}}
 summon minecraft:item_display 113.5 78.6 69.0 {Tags:["tr_axe5_collision_display"],view_range:0.0f,teleport_duration:0,item:{id:"minecraft:air",count:1},Passengers:[{id:"minecraft:shulker",Tags:["tr_axe5_collision"],Invulnerable:true,NoAI:true,NoGravity:true,Silent:true,PersistenceRequired:true,Color:6,attributes:[{id:"minecraft:scale",base:1.1}]}]}
+summon minecraft:silverfish 113.5 78.1 69.0 {Tags:["tr_axe5_attacker"],Invulnerable:true,Silent:true,NoGravity:true,PersistenceRequired:true,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.25d}]}
 summon minecraft:item_display 146.5 77.0 85.5 {Tags:["spear_trap_spiral_1_1"],item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/spear_trap"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,-1.5f,0.0f]},interpolation_duration:5}
 summon minecraft:item_display 151.5 78.0 88.5 {Tags:["spear_trap_spiral_1_2"],item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/spear_trap"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,-1.5f,0.0f]},interpolation_duration:5}
 summon minecraft:item_display 156.5 79.0 85.5 {Tags:["spear_trap_spiral_1_3"],item:{components:{"minecraft:item_model":"fossil-frights:display/lobby/temple_run/spear_trap"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,-1.5f,0.0f]},interpolation_duration:5}

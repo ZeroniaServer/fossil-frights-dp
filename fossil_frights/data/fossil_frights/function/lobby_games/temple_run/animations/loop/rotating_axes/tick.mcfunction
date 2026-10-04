@@ -111,3 +111,5 @@ execute if score #rotating_axes_phase ff_temple_run_anim matches 38 run tp @e[ty
 execute if score #rotating_axes_phase ff_temple_run_anim matches 39 run tp @e[type=minecraft:item_display,tag=tr_axe5_collision_display,limit=1] 111.0 78.6 69.0 261 0
 execute as @e[type=minecraft:item_display,tag=tr_axe5_collision_display,limit=1] at @s run tp @s ~ ~ ~ ~-90 ~
 execute as @e[type=minecraft:item_display,tag=tr_axe5_collision_display,limit=1] at @s run tp @s ^ ^ ^2.5
+execute as @e[type=minecraft:item_display,tag=tr_axe4_collision_display,limit=1] at @s run tp @e[type=minecraft:silverfish,tag=tr_axe4_attacker,limit=1] ~ ~-0.5 ~
+execute as @e[type=minecraft:item_display,tag=tr_axe5_collision_display,limit=1] at @s run tp @e[type=minecraft:silverfish,tag=tr_axe5_attacker,limit=1] ~ ~-0.5 ~

@@ -1,7 +1,6 @@
 scoreboard objectives add ff_temple_run_time dummy
 scoreboard objectives add ff_temple_run_best dummy
 scoreboard objectives add ff_temple_run_running dummy
-scoreboard objectives add ff_temple_run_axe_damage_cooldown dummy
 scoreboard players set @a ff_temple_run_running 0
 scoreboard objectives add ff_temple_run_start_plate dummy
 scoreboard objectives remove ff_temple_run_restart_use
