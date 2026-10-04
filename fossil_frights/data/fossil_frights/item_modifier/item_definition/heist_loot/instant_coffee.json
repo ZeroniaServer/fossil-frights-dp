@@ -51,11 +51,11 @@
         {
           "color": "white",
           "italic": false,
-          "translate": "Throw into the capture point for %s",
+          "translate": "ff.tooltip.heist_loot",
           "with": [
             {
               "color": "yellow",
-              "translate": "$%s",
+              "translate": "ff.tooltip.heist_loot.amount",
               "with": [
                 {
                   "score": {
