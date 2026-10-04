@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:items/heists/invisimask/template"
+        }
+      ],
+      "modifier": {
+        "type": "minecraft:set_custom_model_data",
+        "strings": {
+          "values": [
+            "golden_shark"
+          ],
+          "mode": "replace_section",
+          "offset": 0,
+          "size": 1
+        }
+      }
+    }
+  ]
+}
