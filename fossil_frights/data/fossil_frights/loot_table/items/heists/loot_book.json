@@ -19,8 +19,13 @@
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.loot_book.description",
-                    "color": "gray",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {
+                        "color": "yellow",
+                        "keybind": "key.use"
+                      }
+                    ]
                   }
                 ],
                 "minecraft:enchantment_glint_override": false,
