@@ -1,0 +1,1 @@
+function fossil_frights:game/start_room/settings/dialog/show_chat_visible_plugin with storage fossil_frights:ui command_strings

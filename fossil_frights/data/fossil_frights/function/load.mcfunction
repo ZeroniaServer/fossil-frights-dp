@@ -2,6 +2,7 @@ execute unless data storage fossil_frights:world settings{} run data modify stor
 execute unless data storage fossil_frights:world settings.realms run data modify storage fossil_frights:world settings.realms set value false
 data modify storage fossil_frights:world settings.packs_enabled set value {}
 function #fossil_frights:query_packs_enabled
+function fossil_frights:ui/command_syntax/refresh
 
 execute in minecraft:overworld run setworldspawn 0 80 0 0 0
 setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict

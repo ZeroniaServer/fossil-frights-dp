@@ -1,1 +1,1 @@
-tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.cannot_spawn_while_tutorial"}]}
+tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.cannot_spawn_while_tutorial","with":[{"storage":"fossil_frights:ui","nbt":"commands.spawn","interpret":true},{"storage":"fossil_frights:ui","nbt":"commands.leave","interpret":true}]}]}

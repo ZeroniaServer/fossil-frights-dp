@@ -1,1 +1,1 @@
-function fossil_frights:game/start_room/settings/dialog/show {title:{translate:"ff.settings.info.title",color:"white",with:[{translate:"ff.messages.info.settings.speedrun"},{translate:"ff.settings.state.on",color:"green"}]},body:[{type:"minecraft:plain_message",contents:{translate:"ff.messages.info.settings.speedrun.description",color:"white"},width:360}],action_label:"ff.settings.disable",action_color:"red",trigger:11}
+function fossil_frights:game/start_room/settings/dialog/show_speedrun_shown with storage fossil_frights:ui command_strings
