@@ -114,7 +114,7 @@ function fossil_frights:interactions/door/close_all
 function fossil_frights:interactions/fence_gate/reset
 function fossil_frights:cameras/update_camera_models
 function fossil_frights:tasks/task_book_shelf/reset
-scoreboard players set $alarm_effects_on ff_heist 0
+function fossil_frights:game/heists/alarm_effects/stop
 schedule function fossil_frights:game/reset_all_interaction_entity_memories 1t
 function fossil_frights:join/thief/reset_invisimask_pool
 function fossil_frights:animations/security_gate/load

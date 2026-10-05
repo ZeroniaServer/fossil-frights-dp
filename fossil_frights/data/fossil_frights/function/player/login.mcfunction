@@ -82,6 +82,7 @@ function fossil_frights:game/bossbar/available/sync_players
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
 team leave @s
+posteffect clear @s
 tag @s remove ff_tp_dispatch
 tag @s remove ff_fade_tp_active
 tag @s remove ff_join_spectator_zone

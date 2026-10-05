@@ -1,2 +1,2 @@
-execute if score $alarm_effects_on ff_heist matches 0 if predicate {type:"minecraft:time_check",clock:"fossil_frights:alarm",value:0,period:40} run time of fossil_frights:alarm pause
-execute if score $alarm_effects_on ff_heist matches 1 run time of fossil_frights:alarm resume
+execute if predicate fossil_frights:world/packs_enabled/experimental run function fossil_frights:game/heists/alarm_effects/tick_experimental
+execute unless predicate fossil_frights:world/packs_enabled/experimental run function fossil_frights:game/heists/alarm_effects/tick_non_experimental

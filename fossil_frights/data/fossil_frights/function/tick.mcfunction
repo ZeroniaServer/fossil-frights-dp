@@ -8,6 +8,7 @@ execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_ra
 tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
 execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
+execute as @a[tag=ff_tp_dispatch] run posteffect clear @s
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
@@ -95,7 +96,6 @@ execute as @a at @s run function fossil_frights:player/tick
 execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,team=!ff_guard,team=!ff_thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
-function fossil_frights:game/heists/alarm_effects/tick
 execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=ff_ant_fight,gamemode=!spectator]
 execute if score #ant_fight_active ff_dummy matches 1 run scoreboard objectives setdisplay below_name ff_ant_score_below_name
 execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name

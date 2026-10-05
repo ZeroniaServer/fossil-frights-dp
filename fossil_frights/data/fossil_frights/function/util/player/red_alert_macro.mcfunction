@@ -1,1 +1,0 @@
-$posteffect add @s fossil-frights:red_alert/$(gametime)
