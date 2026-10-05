@@ -10,7 +10,7 @@ function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"chocolat
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ancient_scripture"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"chondrite"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"sand_dollar"}
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"trilobite_fossil"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"fossilized_trilobite"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"golden_sword"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ancient_portal_core"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"febreeze_rod"}

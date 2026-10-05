@@ -10,7 +10,7 @@ execute if score $heist_roll ff_heist matches 9 run function fossil_frights:game
 execute if score $heist_roll ff_heist matches 10 run function fossil_frights:game/heists/loot/select/common/ancient_scripture
 execute if score $heist_roll ff_heist matches 11 run function fossil_frights:game/heists/loot/select/common/chondrite
 execute if score $heist_roll ff_heist matches 12 run function fossil_frights:game/heists/loot/select/common/sand_dollar
-execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/common/trilobite_fossil
+execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/common/fossilized_trilobite
 execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/common/golden_sword
 execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/common/ancient_portal_core
 execute if score $heist_roll ff_heist matches 16 run function fossil_frights:game/heists/loot/select/common/spyglass

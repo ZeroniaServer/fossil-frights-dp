@@ -15,7 +15,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/chondrite",page:"page_1",slot:9}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/ancient_scripture",page:"page_1",slot:10}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/sand_dollar",page:"page_1",slot:11}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/trilobite_fossil",page:"page_1",slot:12}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/fossilized_trilobite",page:"page_1",slot:12}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/golden_sword",page:"page_1",slot:13}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/ancient_portal_core",page:"page_1",slot:14}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/spyglass",page:"page_1",slot:15}

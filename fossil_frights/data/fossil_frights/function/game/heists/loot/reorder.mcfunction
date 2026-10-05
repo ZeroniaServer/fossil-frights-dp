@@ -44,7 +44,7 @@ scoreboard players reset $loot_chocolate_cake ff_heist_sidebar
 scoreboard players reset $loot_ancient_scripture ff_heist_sidebar
 scoreboard players reset $loot_chondrite ff_heist_sidebar
 scoreboard players reset $loot_sand_dollar ff_heist_sidebar
-scoreboard players reset $loot_trilobite_fossil ff_heist_sidebar
+scoreboard players reset $loot_fossilized_trilobite ff_heist_sidebar
 scoreboard players reset $loot_golden_sword ff_heist_sidebar
 scoreboard players reset $loot_ancient_portal_core ff_heist_sidebar
 scoreboard players reset $loot_spyglass ff_heist_sidebar
@@ -72,8 +72,8 @@ execute if score $loot_chondrite ff_heist_loot_state matches 1..3 run scoreboard
 execute if score $loot_chondrite ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_sand_dollar ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_sand_dollar ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_sand_dollar ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_trilobite_fossil ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_trilobite_fossil ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_trilobite_fossil ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_fossilized_trilobite ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_fossilized_trilobite ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_fossilized_trilobite ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_golden_sword ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_golden_sword ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_golden_sword ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_ancient_portal_core ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_ancient_portal_core ff_heist_sidebar = $heist_sidebar_slot ff_heist

@@ -4,9 +4,9 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run return 
 execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/heists_start_round_before_edit_loot
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
-execute if score $loot_trilobite_fossil ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
-execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/common/trilobite_fossil
-execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/trilobite_fossil
+execute if score $loot_fossilized_trilobite ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/common/fossilized_trilobite
+execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/fossilized_trilobite
 function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render

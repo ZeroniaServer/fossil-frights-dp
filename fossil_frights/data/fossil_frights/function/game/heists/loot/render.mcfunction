@@ -11,7 +11,7 @@ function fossil_frights:game/heists/loot/render_helper {"lootId":"chocolate_cake
 function fossil_frights:game/heists/loot/render_helper {"lootId":"ancient_scripture"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"chondrite"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"sand_dollar"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"trilobite_fossil"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"fossilized_trilobite"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"golden_sword"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"ancient_portal_core"}
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"febreeze_rod"}

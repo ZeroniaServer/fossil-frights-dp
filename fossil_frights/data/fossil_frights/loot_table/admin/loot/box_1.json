@@ -72,7 +72,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/loot/common/trilobite_fossil"
+                  "value": "fossil_frights:items/heists/loot/common/fossilized_trilobite"
                 },
                 {
                   "type": "minecraft:loot_table",

@@ -43,9 +43,9 @@ scoreboard players reset $loot_chondrite ff_heist_sidebar
 scoreboard players set $loot_sand_dollar ff_heist_loot_state 0
 scoreboard players set $loot_sand_dollar ff_heist_loot_value 0
 scoreboard players reset $loot_sand_dollar ff_heist_sidebar
-scoreboard players set $loot_trilobite_fossil ff_heist_loot_state 0
-scoreboard players set $loot_trilobite_fossil ff_heist_loot_value 0
-scoreboard players reset $loot_trilobite_fossil ff_heist_sidebar
+scoreboard players set $loot_fossilized_trilobite ff_heist_loot_state 0
+scoreboard players set $loot_fossilized_trilobite ff_heist_loot_value 0
+scoreboard players reset $loot_fossilized_trilobite ff_heist_sidebar
 scoreboard players set $loot_golden_sword ff_heist_loot_state 0
 scoreboard players set $loot_golden_sword ff_heist_loot_value 0
 scoreboard players reset $loot_golden_sword ff_heist_sidebar
