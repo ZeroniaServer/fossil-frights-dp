@@ -2,14 +2,9 @@
   "parent": "fossil_frights:03_lobby/root",
   "display": {
     "icon": {
-      "id": "minecraft:snowball",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.infinileaf",
-          "color": "green",
-          "italic": false
-        },
-        "minecraft:enchantment_glint_override": false
+        "minecraft:item_model": "fossil-frights:items/lobby/infinileaf"
       }
     },
     "title": {
