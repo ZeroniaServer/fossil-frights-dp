@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "ff_drink": "chorus_cola"
+              "itemID": "chorus_cola_drink"
             }
           }
         }

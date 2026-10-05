@@ -4,24 +4,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.t_rex_plushie",
-          "italic": false
-        },
-        "minecraft:item_model": "fossil-frights:items/plushies/t-rex_plushie",
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "t-rex_plushie"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "fossil-frights:items/plushies/t_rex_plushie"
       }
     },
     "title": {

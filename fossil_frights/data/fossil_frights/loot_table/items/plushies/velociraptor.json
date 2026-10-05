@@ -20,8 +20,8 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "velociraptor",
                   "itemID": "velociraptor_plushie",
+                  "ff_plushie": "velociraptor",
                   "ff_prevent_drop": true
                 }
               }

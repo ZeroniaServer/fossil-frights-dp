@@ -20,8 +20,8 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "trike",
                   "itemID": "trike_plushie",
+                  "ff_plushie": "trike",
                   "ff_prevent_drop": true
                 }
               }

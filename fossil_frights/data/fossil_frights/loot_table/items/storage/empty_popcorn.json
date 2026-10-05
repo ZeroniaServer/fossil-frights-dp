@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.empty_popcorn",
+                  "translate": "ff.item.empty_popcorn_bucket",
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/frights/medium_items/empty_popcorn",

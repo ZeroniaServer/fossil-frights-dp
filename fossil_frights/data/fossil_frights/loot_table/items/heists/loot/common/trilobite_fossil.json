@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.trilobite_fossil",
+                  "translate": "ff.item.fossilized_trilobite",
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/loot/fossilized_trilobite",

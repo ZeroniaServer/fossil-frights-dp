@@ -20,8 +20,8 @@
                   "slot": "head"
                 },
                 "minecraft:custom_data": {
-                  "ff_plushie": "plesiosaur",
                   "itemID": "plesiosaur_plushie",
+                  "ff_plushie": "plesiosaur",
                   "ff_prevent_drop": true
                 }
               }
