@@ -1,3 +1,7 @@
 execute as @a[team=ff_spectator,gamemode=spectator,tag=!ff_camera_posteffect] at @s if entity @e[type=minecraft:item_display,tag=ff_security_camera_model,distance=..0.01,limit=1] run function fossil_frights:cameras/spectator_apply_posteffect
 execute as @a[tag=ff_camera_posteffect,team=ff_spectator,gamemode=spectator] at @s unless entity @e[type=minecraft:item_display,tag=ff_security_camera_model,distance=..0.01,limit=1] run function fossil_frights:cameras/clear_posteffect
 execute as @a[tag=ff_camera_posteffect] unless entity @s[team=ff_spectator,gamemode=spectator] run function fossil_frights:cameras/clear_posteffect
+execute as @a[team=ff_spectator,gamemode=spectator,tag=!ff_camera_glitch_posteffect] at @s if score lights ff_hazard_active matches 1 if entity @e[type=minecraft:item_display,tag=ff_security_camera_model,distance=..0.01,limit=1] run function fossil_frights:cameras/lights_disabled/show
+execute as @a[tag=ff_camera_glitch_posteffect,team=ff_spectator,gamemode=spectator] at @s unless score lights ff_hazard_active matches 1 run function fossil_frights:cameras/lights_disabled/hide
+execute as @a[tag=ff_camera_glitch_posteffect,team=ff_spectator,gamemode=spectator] at @s unless entity @e[type=minecraft:item_display,tag=ff_security_camera_model,distance=..0.01,limit=1] run function fossil_frights:cameras/lights_disabled/hide
+execute as @a[tag=ff_camera_glitch_posteffect,tag=!ff_forced_spectate] unless entity @s[team=ff_spectator,gamemode=spectator] run function fossil_frights:cameras/lights_disabled/hide
