@@ -1,1 +1,1 @@
-$summon minecraft:sulfur_cube 62 70 -76 {Tags:["sulfer_striker_ball"],equipment:{body:{id:"$(block)"}},Size:1,attributes:[{id:"minecraft:scale",base:$(size)}]}
+$summon minecraft:sulfur_cube 62 70 -76 {Tags:["sulfer_striker_ball"],equipment:{body:{id:"$(block)"}},Size:1,attributes:[{id:"minecraft:scale",base:$(size)}],active_effects:[{id:"minecraft:invisibility",duration:-1,amplifier:0,show_particles:false}]}
