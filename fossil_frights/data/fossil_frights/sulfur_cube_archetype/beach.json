@@ -1,0 +1,13 @@
+{
+  "attribute_modifiers": [
+    {"amount": -1.0, "attribute": "minecraft:knockback_resistance", "id": "fossil_frights:sulfur_strikers_beach_knockback_resistance", "operation": "add_value"},
+    {"amount": -1.0, "attribute": "minecraft:explosion_knockback_resistance", "id": "fossil_frights:sulfur_strikers_beach_explosion_knockback_resistance", "operation": "add_value"},
+    {"amount": 1.0, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_beach_bounciness", "operation": "add_value"},
+    {"amount": -0.699999988079071, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_beach_friction", "operation": "add_multiplied_total"},
+    {"amount": 0.7999999523162842, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_beach_air_drag", "operation": "add_multiplied_total"}
+  ],
+  "buoyant": true,
+  "items": "#fossil_frights:sulfur_cube_archetype/beach",
+  "knockback_modifiers": {"horizontal_power": 0.4125, "vertical_power": 0.18},
+  "sound_settings": {"hit_sound": "minecraft:entity.sulfur_cube.light.hit", "push_sound": "minecraft:entity.sulfur_cube.light.push", "push_sound_cooldown": 0.7, "push_sound_impulse_threshold": 0.2}
+}

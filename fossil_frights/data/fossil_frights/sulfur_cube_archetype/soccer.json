@@ -1,0 +1,13 @@
+{
+  "attribute_modifiers": [
+    {"amount": -1.0, "attribute": "minecraft:knockback_resistance", "id": "fossil_frights:sulfur_strikers_soccer_knockback_resistance", "operation": "add_value"},
+    {"amount": -1.0, "attribute": "minecraft:explosion_knockback_resistance", "id": "fossil_frights:sulfur_strikers_soccer_explosion_knockback_resistance", "operation": "add_value"},
+    {"amount": 0.5, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_soccer_bounciness", "operation": "add_value"},
+    {"amount": -0.699999988079071, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_soccer_friction", "operation": "add_multiplied_total"},
+    {"amount": -0.8999999985098839, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_soccer_air_drag", "operation": "add_multiplied_total"}
+  ],
+  "buoyant": true,
+  "items": "#fossil_frights:sulfur_cube_archetype/soccer",
+  "knockback_modifiers": {"horizontal_power": 0.4125, "vertical_power": 0.09},
+  "sound_settings": {"hit_sound": "minecraft:entity.sulfur_cube.regular.hit", "push_sound": "minecraft:entity.sulfur_cube.regular.push", "push_sound_cooldown": 0.5, "push_sound_impulse_threshold": 0.2}
+}
