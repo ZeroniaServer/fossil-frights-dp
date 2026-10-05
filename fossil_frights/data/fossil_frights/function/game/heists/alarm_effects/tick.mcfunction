@@ -1,2 +1,2 @@
-execute if predicate fossil_frights:world/packs_enabled/experimental run function fossil_frights:game/heists/alarm_effects/tick_experimental
+execute if predicate fossil_frights:world/packs_enabled/experimental run function #fossil_frights:game/heists/alarm_effects/tick_experimental
 execute unless predicate fossil_frights:world/packs_enabled/experimental run function fossil_frights:game/heists/alarm_effects/tick_non_experimental

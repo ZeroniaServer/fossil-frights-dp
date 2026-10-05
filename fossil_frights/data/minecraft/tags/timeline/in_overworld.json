@@ -1,5 +1,8 @@
 {
   "values": [
-    "fossil_frights:alarm"
+    {
+      "id": "fossil_frights:alarm",
+      "required": false
+    }
   ]
 }
