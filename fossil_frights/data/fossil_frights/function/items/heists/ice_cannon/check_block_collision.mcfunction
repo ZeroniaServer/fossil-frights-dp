@@ -5,6 +5,7 @@ execute if block ~ ~ ~ #minecraft:doors[open=true] run return 0
 execute if block ~ ~ ~ #fossil_frights:floor_heads_and_skulls align xyz positioned ^ ^ ^-0.9 positioned ~ ~0.5 ~ if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:slabs[type=bottom] align xyz positioned ^ ^ ^-0.9 positioned ~ ~0.5 ~ if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:slabs[type=top] align xyz positioned ^ ^ ^-0.9 positioned ~ ~-0.5 ~ if entity @s[dx=0] run return 0
+execute if block ~ ~ ~ minecraft:straw_bed[type=bottom] align xyz positioned ^ ^ ^-0.9 positioned ~ ~0.5 ~ if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:wooden_shelves[facing=north] align xyz positioned ^ ^ ^-0.9 positioned ~ ~ ~-0.5 if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:wooden_shelves[facing=east] align xyz positioned ^ ^ ^-0.9 positioned ~0.5 ~ ~ if entity @s[dx=0] run return 0
 execute if block ~ ~ ~ #minecraft:wooden_shelves[facing=south] align xyz positioned ^ ^ ^-0.9 positioned ~ ~ ~0.5 if entity @s[dx=0] run return 0

@@ -15,6 +15,7 @@
     "#fossil_frights:center_collision_height/12",
     "#fossil_frights:center_collision_height/13",
     "#fossil_frights:center_collision_height/14",
-    "#fossil_frights:center_collision_height/15"
+    "#fossil_frights:center_collision_height/15",
+    "minecraft:straw_bed"
   ]
 }
