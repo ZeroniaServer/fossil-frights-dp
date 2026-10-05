@@ -1,4 +1,4 @@
-execute if predicate fossil_frights:entity_touching_water_or_location_in_water_cauldron run function fossil_frights:game/heists/paint_fx/clear_from_water
+execute if predicate fossil_frights:entity/touching_water_any run function fossil_frights:game/heists/paint_fx/clear_from_water
 
 scoreboard players remove @s ff_heist_paint_fx 1
 execute if score @s ff_heist_paint_fx matches ..-1 run scoreboard players set @s ff_heist_paint_fx 0

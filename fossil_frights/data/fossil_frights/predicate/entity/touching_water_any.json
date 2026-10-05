@@ -11,10 +11,13 @@
       }
     },
     {
-      "type": "minecraft:location_check",
+      "type": "minecraft:entity_properties",
+      "entity": "this",
       "predicate": {
-        "block": {
-          "blocks": "minecraft:water_cauldron"
+        "minecraft:location": {
+          "block": {
+            "blocks": "minecraft:water_cauldron"
+          }
         }
       }
     }

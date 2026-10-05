@@ -26,12 +26,12 @@ execute unless predicate fossil_frights:entity/effects/luck run tag @s remove ff
 execute unless predicate fossil_frights:entity/effects/luck if entity @s[tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
 execute unless predicate fossil_frights:entity/effects/luck run return 0
 
-execute if predicate fossil_frights:entity/touching_water run tag @s remove ff_double_jump_ready
-execute if predicate fossil_frights:entity/touching_water run tag @s remove ff_double_jump_released
-execute if predicate fossil_frights:entity/touching_water run tag @s remove ff_double_jump_jumping
-execute if predicate fossil_frights:entity/touching_water run tag @s remove ff_double_jump_used
-execute if predicate fossil_frights:entity/touching_water if entity @s[tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
-execute if predicate fossil_frights:entity/touching_water run return 0
+execute if predicate fossil_frights:entity/touching_water_fluid run tag @s remove ff_double_jump_ready
+execute if predicate fossil_frights:entity/touching_water_fluid run tag @s remove ff_double_jump_released
+execute if predicate fossil_frights:entity/touching_water_fluid run tag @s remove ff_double_jump_jumping
+execute if predicate fossil_frights:entity/touching_water_fluid run tag @s remove ff_double_jump_used
+execute if predicate fossil_frights:entity/touching_water_fluid if entity @s[tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
+execute if predicate fossil_frights:entity/touching_water_fluid run return 0
 
 scoreboard players add @s ff_double_jump_cooldown 0
 execute if score @s ff_double_jump_cooldown matches 1.. run scoreboard players remove @s ff_double_jump_cooldown 1
