@@ -42,7 +42,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/dna/trike",page:"pa
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/t_rex",page:"page_2",slot:7}
 function fossil_frights:items/catalog/from_loot {loot:"items/key/storage_key",page:"page_2",slot:8}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/confetti_cannon/remote",page:"page_2",slot:9}
-function fossil_frights:items/catalog/from_loot {loot:"items/plushies/gold_t_rex",page:"page_2",slot:10}
+function fossil_frights:items/catalog/from_loot {loot:"items/plushies/golden_t_rex",page:"page_2",slot:10}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/sniffer",page:"page_2",slot:11}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/pterodactyl",page:"page_2",slot:12}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/plesiosaur",page:"page_2",slot:13}

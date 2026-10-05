@@ -64,7 +64,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/plushies/gold_t_rex"
+                  "value": "fossil_frights:items/plushies/golden_t_rex"
                 },
                 {
                   "type": "minecraft:loot_table",
