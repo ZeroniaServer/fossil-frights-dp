@@ -1,4 +1,4 @@
-execute store result score #grow_before_timestamp ff_paint_splat_spawn_timestamp store result score #shrink_before_timestamp ff_paint_splat_spawn_timestamp store result score #kill_before_timestamp ff_paint_splat_spawn_timestamp store result score #become_old_before_timestamp ff_paint_splat_spawn_timestamp run time query gametime
+execute store result score #grow_before_timestamp ff_paint_splat_spawn_timestamp store result score #shrink_before_timestamp ff_paint_splat_spawn_timestamp store result score #kill_before_timestamp ff_paint_splat_spawn_timestamp store result score #become_old_before_timestamp ff_paint_splat_spawn_timestamp run scoreboard players get #gametime ff_global
 scoreboard players remove #grow_before_timestamp ff_paint_splat_spawn_timestamp 2
 scoreboard players remove #shrink_before_timestamp ff_paint_splat_spawn_timestamp 20
 scoreboard players remove #become_old_before_timestamp ff_paint_splat_spawn_timestamp 150

@@ -154,7 +154,6 @@ execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frig
 execute if entity @s[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/thief_tick
 function fossil_frights:lobby_games/parkour/player_tick
 function fossil_frights:lobby_games/temple_run/player_tick
-execute store result score #gametime ff_ant_combo_shown_until_timestamp run time query gametime
 function fossil_frights:lobby_games/ant_fight/player_tick
 function fossil_frights:lobby_games/sulfur_strikers/player_tick
 function fossil_frights:advancements/checks/reach_the_sun

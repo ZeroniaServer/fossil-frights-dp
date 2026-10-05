@@ -1,6 +1,6 @@
-execute in minecraft:overworld if loaded 0 0 0 unless entity 0-0-0-0-0 run summon minecraft:marker 0 0 0 {UUID:[I;0,0,0,0],Tags:["ff_position_cache"]}
-
 execute store result score #gametime ff_global run time query gametime
+
+execute in minecraft:overworld if loaded 0 0 0 unless entity 0-0-0-0-0 run summon minecraft:marker 0 0 0 {UUID:[I;0,0,0,0],Tags:["ff_position_cache"]}
 
 scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
 execute as @a[gamemode=!creative] run attribute @s minecraft:block_interaction_range base set 0
@@ -107,3 +107,6 @@ item replace entity @a[tag=!ff_hoverboard_restore_pending] enderchest.0 with air
 
 bossbar set fossil_frights:resource_pack_disclaimer players
 execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]
+
+# The game increments gametime *after* `#tick` functions run, so this must be incremented at the end of this function so that *scheduled* functions have the correct gametime without re-querying
+scoreboard players add #gametime ff_global 1

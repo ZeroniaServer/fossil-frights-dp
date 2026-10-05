@@ -2,7 +2,7 @@ function fossil_frights:game/heists/loot/capture/credit/snapshot_owner
 
 data modify entity @s Age set value 5600
 
-execute store result score @s ff_dropped_item_despawn_timestamp run time query gametime
+scoreboard players operation @s ff_dropped_item_despawn_timestamp = #gametime ff_global
 scoreboard players add @s ff_dropped_item_despawn_timestamp 400
 
 summon minecraft:text_display ~ ~ ~ {Tags:["ff_dropped_heist_loot_text","ff_dropped_heist_loot_text_new"],billboard:"center",text:"",background:0,shadow:true,width:1,height:1.5}
