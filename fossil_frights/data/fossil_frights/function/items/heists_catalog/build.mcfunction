@@ -17,7 +17,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/sand_dollar",page:"page_1",slot:11}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/trilobite_fossil",page:"page_1",slot:12}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/golden_sword",page:"page_1",slot:13}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/portal_core",page:"page_1",slot:14}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/ancient_portal_core",page:"page_1",slot:14}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/common/spyglass",page:"page_1",slot:15}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/rare/misplaced_scissors",page:"page_1",slot:16}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/heavy/t_rex_skull",page:"page_1",slot:18}

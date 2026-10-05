@@ -10,7 +10,7 @@
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "$loot_portal_core"
+            "name": "$loot_ancient_portal_core"
           },
           "score": "ff_heist_loot_state"
         },
@@ -60,7 +60,7 @@
                 {
                   "score": {
                     "objective": "ff_heist_loot_value",
-                    "name": "$loot_portal_core"
+                    "name": "$loot_ancient_portal_core"
                   }
                 }
               ]

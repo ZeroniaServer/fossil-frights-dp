@@ -73,8 +73,8 @@ execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 2.. run 
 execute if score $loot_plesiosaur_dna_cloth ff_heist_loot_state matches 2.. if score $loot_plesiosaur_dna_cloth ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_popcorn ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_popcorn ff_heist_loot_state matches 2.. if score $loot_popcorn ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_portal_core ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_portal_core ff_heist_loot_state matches 2.. if score $loot_portal_core ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
+execute if score $loot_ancient_portal_core ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_ancient_portal_core ff_heist_loot_state matches 2.. if score $loot_ancient_portal_core ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_poster_tube ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_poster_tube ff_heist_loot_state matches 2.. if score $loot_poster_tube ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1

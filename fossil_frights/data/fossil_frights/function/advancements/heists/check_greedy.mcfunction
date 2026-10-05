@@ -12,7 +12,7 @@ execute if score $loot_chondrite ff_heist_loot_state matches 1 run return 0
 execute if score $loot_sand_dollar ff_heist_loot_state matches 1 run return 0
 execute if score $loot_trilobite_fossil ff_heist_loot_state matches 1 run return 0
 execute if score $loot_golden_sword ff_heist_loot_state matches 1 run return 0
-execute if score $loot_portal_core ff_heist_loot_state matches 1 run return 0
+execute if score $loot_ancient_portal_core ff_heist_loot_state matches 1 run return 0
 execute if score $loot_spyglass ff_heist_loot_state matches 1 run return 0
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1 run return 0
 execute if score $loot_credit_reel ff_heist_loot_state matches 1 run return 0

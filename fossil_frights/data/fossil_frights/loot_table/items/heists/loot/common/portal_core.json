@@ -17,7 +17,7 @@
                 },
                 "minecraft:item_model": "fossil-frights:items/heists/loot/ancient_portal_core",
                 "minecraft:custom_data": {
-                  "itemID": "portal_core",
+                  "itemID": "ancient_portal_core",
                   "ff_heist_common_loot": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
@@ -25,7 +25,7 @@
                 }
               }
             },
-            "fossil_frights:item_definition/heist_loot/portal_core",
+            "fossil_frights:item_definition/heist_loot/ancient_portal_core",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

@@ -13,7 +13,7 @@ function fossil_frights:game/heists/loot/render_helper {"lootId":"chondrite"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"sand_dollar"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"trilobite_fossil"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"golden_sword"}
-function fossil_frights:game/heists/loot/render_helper {"lootId":"portal_core"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"ancient_portal_core"}
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"febreeze_rod"}
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"fertilizer"}
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"water_balloon"}

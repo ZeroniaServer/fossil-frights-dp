@@ -80,7 +80,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/loot/common/portal_core"
+                  "value": "fossil_frights:items/heists/loot/common/ancient_portal_core"
                 },
                 {
                   "type": "minecraft:loot_table",

@@ -49,9 +49,9 @@ scoreboard players reset $loot_trilobite_fossil ff_heist_sidebar
 scoreboard players set $loot_golden_sword ff_heist_loot_state 0
 scoreboard players set $loot_golden_sword ff_heist_loot_value 0
 scoreboard players reset $loot_golden_sword ff_heist_sidebar
-scoreboard players set $loot_portal_core ff_heist_loot_state 0
-scoreboard players set $loot_portal_core ff_heist_loot_value 0
-scoreboard players reset $loot_portal_core ff_heist_sidebar
+scoreboard players set $loot_ancient_portal_core ff_heist_loot_state 0
+scoreboard players set $loot_ancient_portal_core ff_heist_loot_value 0
+scoreboard players reset $loot_ancient_portal_core ff_heist_sidebar
 scoreboard players set $loot_febreeze_rod ff_heist_loot_state 0
 scoreboard players set $loot_febreeze_rod ff_heist_loot_value 0
 scoreboard players reset $loot_febreeze_rod ff_heist_sidebar

@@ -12,7 +12,7 @@ execute if items entity @s contents *[custom_data~{itemID:"chondrite"}] run func
 execute if items entity @s contents *[custom_data~{itemID:"sand_dollar"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_sand_dollar"}
 execute if items entity @s contents *[custom_data~{itemID:"trilobite_fossil"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_trilobite_fossil"}
 execute if items entity @s contents *[custom_data~{itemID:"golden_sword"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_golden_sword"}
-execute if items entity @s contents *[custom_data~{itemID:"portal_core"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_portal_core"}
+execute if items entity @s contents *[custom_data~{itemID:"ancient_portal_core"}] run function fossil_frights:game/heists/loot/capture/apply {key:"$loot_ancient_portal_core"}
 execute if items entity @s contents *[custom_data~{itemID:"febreeze_rod"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_febreeze_rod"}
 execute if items entity @s contents *[custom_data~{itemID:"fertilizer"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_fertilizer"}
 execute if items entity @s contents *[custom_data~{itemID:"water_balloon"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_water_balloon"}

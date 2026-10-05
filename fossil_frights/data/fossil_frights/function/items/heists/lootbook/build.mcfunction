@@ -1,6 +1,6 @@
 data modify storage fossil_frights:lootbook ui.body set value []
 $function fossil_frights:items/heists/lootbook/header/$(header) {category:"common"}
-$function fossil_frights:items/heists/lootbook/entry/add_$(mode) {key:"$loot_portal_core",name_key:"ff.lootbook.loot.portal_core.name",description_key:"ff.lootbook.loot.portal_core.description",loot_table:"fossil_frights:items/heists/loot/common/portal_core",prefix:[""]}
+$function fossil_frights:items/heists/lootbook/entry/add_$(mode) {key:"$loot_ancient_portal_core",name_key:"ff.lootbook.loot.ancient_portal_core.name",description_key:"ff.lootbook.loot.ancient_portal_core.description",loot_table:"fossil_frights:items/heists/loot/common/ancient_portal_core",prefix:[""]}
 $function fossil_frights:items/heists/lootbook/entry/add_$(mode) {key:"$loot_ancient_scripture",name_key:"ff.lootbook.loot.ancient_scripture.name",description_key:"ff.lootbook.loot.ancient_scripture.description",loot_table:"fossil_frights:items/heists/loot/common/ancient_scripture",prefix:[""]}
 $function fossil_frights:items/heists/lootbook/entry/add_$(mode) {key:"$loot_burger",name_key:"ff.lootbook.loot.burger.name",description_key:"ff.lootbook.loot.burger.description",loot_table:"fossil_frights:items/heists/loot/common/burger",prefix:[""]}
 $function fossil_frights:items/heists/lootbook/entry/add_$(mode) {key:"$loot_chocolate_cake",name_key:"ff.lootbook.loot.chocolate_cake.name",description_key:"ff.lootbook.loot.chocolate_cake.description",loot_table:"fossil_frights:items/heists/loot/common/chocolate_cake",prefix:[""]}

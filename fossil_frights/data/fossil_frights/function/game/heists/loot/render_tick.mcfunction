@@ -14,7 +14,7 @@ execute unless score $heist_loot_render_state_chondrite ff_heist_loot_state = $l
 execute unless score $heist_loot_render_state_sand_dollar ff_heist_loot_state = $loot_sand_dollar ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_trilobite_fossil ff_heist_loot_state = $loot_trilobite_fossil ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_golden_sword ff_heist_loot_state = $loot_golden_sword ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-execute unless score $heist_loot_render_state_portal_core ff_heist_loot_state = $loot_portal_core ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_ancient_portal_core ff_heist_loot_state = $loot_ancient_portal_core ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_febreeze_rod ff_heist_loot_state = $loot_febreeze_rod ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_fertilizer ff_heist_loot_state = $loot_fertilizer ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_water_balloon ff_heist_loot_state = $loot_water_balloon ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
@@ -98,7 +98,7 @@ scoreboard players operation $heist_loot_render_state_chondrite ff_heist_loot_st
 scoreboard players operation $heist_loot_render_state_sand_dollar ff_heist_loot_state = $loot_sand_dollar ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_trilobite_fossil ff_heist_loot_state = $loot_trilobite_fossil ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_golden_sword ff_heist_loot_state = $loot_golden_sword ff_heist_loot_state
-scoreboard players operation $heist_loot_render_state_portal_core ff_heist_loot_state = $loot_portal_core ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_ancient_portal_core ff_heist_loot_state = $loot_ancient_portal_core ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_febreeze_rod ff_heist_loot_state = $loot_febreeze_rod ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_fertilizer ff_heist_loot_state = $loot_fertilizer ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_water_balloon ff_heist_loot_state = $loot_water_balloon ff_heist_loot_state
