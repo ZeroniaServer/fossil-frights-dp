@@ -2,11 +2,11 @@
   "attribute_modifiers": [
     {"amount": -1.0, "attribute": "minecraft:knockback_resistance", "id": "fossil_frights:sulfur_strikers_basket_knockback_resistance", "operation": "add_value"},
     {"amount": -1.0, "attribute": "minecraft:explosion_knockback_resistance", "id": "fossil_frights:sulfur_strikers_basket_explosion_knockback_resistance", "operation": "add_value"},
-    {"amount": 0.5, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_basket_bounciness", "operation": "add_value"},
-    {"amount": -0.7999999970197678, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_basket_friction", "operation": "add_multiplied_total"},
-    {"amount": -0.9900000002235174, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_basket_air_drag", "operation": "add_multiplied_total"}
+    {"amount": 0.6, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_basket_bounciness", "operation": "add_value"},
+    {"amount": -0.2, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_basket_friction", "operation": "add_multiplied_total"},
+    {"amount": -1.5, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_basket_air_drag", "operation": "add_multiplied_total"}
   ],
   "items": "#fossil_frights:sulfur_cube_archetype/basket",
-  "knockback_modifiers": {"horizontal_power": 0.9125, "vertical_power": 0.09},
+  "knockback_modifiers": {"horizontal_power": 0.35, "vertical_power": 0.25},
   "sound_settings": {"hit_sound": "minecraft:entity.sulfur_cube.fast_flat.hit", "push_sound": "minecraft:entity.sulfur_cube.fast_flat.push", "push_sound_cooldown": 0.9, "push_sound_impulse_threshold": 0.03}
 }

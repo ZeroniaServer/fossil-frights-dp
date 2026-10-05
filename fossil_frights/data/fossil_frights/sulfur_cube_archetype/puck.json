@@ -1,12 +1,13 @@
 {
   "attribute_modifiers": [
-    {"amount": 0.5, "attribute": "minecraft:knockback_resistance", "id": "fossil_frights:sulfur_strikers_puck_knockback_resistance", "operation": "add_value"},
-    {"amount": 0.5, "attribute": "minecraft:explosion_knockback_resistance", "id": "fossil_frights:sulfur_strikers_puck_explosion_knockback_resistance", "operation": "add_value"},
-    {"amount": 0.4000000059604645, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_puck_bounciness", "operation": "add_value"},
-    {"amount": -0.5999999940395355, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_puck_friction", "operation": "add_multiplied_total"},
-    {"amount": -0.8999999985098839, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_puck_air_drag", "operation": "add_multiplied_total"}
+    {"amount": 0.4, "attribute": "minecraft:knockback_resistance", "id": "fossil_frights:sulfur_strikers_puck_knockback_resistance", "operation": "add_value"},
+    {"amount": 0.4, "attribute": "minecraft:explosion_knockback_resistance", "id": "fossil_frights:sulfur_strikers_puck_explosion_knockback_resistance", "operation": "add_value"},
+    {"amount": 0.4, "attribute": "minecraft:bounciness", "id": "fossil_frights:sulfur_strikers_puck_bounciness", "operation": "add_value"},
+    {"amount": -0.6, "attribute": "minecraft:friction_modifier", "id": "fossil_frights:sulfur_strikers_puck_friction", "operation": "add_multiplied_total"},
+    {"amount": -0.9, "attribute": "minecraft:air_drag_modifier", "id": "fossil_frights:sulfur_strikers_puck_air_drag", "operation": "add_multiplied_total"},
+    {"amount": 0.04, "attribute": "minecraft:gravity", "id": "fossil_frights:sulfur_strikers_puck_gravity", "operation": "add_value"}
   ],
   "items": "#fossil_frights:sulfur_cube_archetype/puck",
-  "knockback_modifiers": {"horizontal_power": 0.4125, "vertical_power": 0.105},
+  "knockback_modifiers": {"horizontal_power": 0.4125, "vertical_power": 0.0},
   "sound_settings": {"hit_sound": "minecraft:entity.sulfur_cube.slow_flat.hit", "push_sound": "minecraft:entity.sulfur_cube.slow_flat.push", "push_sound_cooldown": 0.9, "push_sound_impulse_threshold": 0.03}
 }
