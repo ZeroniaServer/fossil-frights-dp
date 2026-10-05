@@ -1,7 +1,7 @@
 execute unless score $popcorn_buckets_sel ff_task_state matches 1 run return 0
 execute unless score $popcorn_buckets_done ff_task_state matches 0 run return 0
 execute unless entity @s[team=ff_guard] run return 0
-execute unless items entity @s weapon.* *[minecraft:custom_data~{itemID:"empty_popcorn"}] run return 0
+execute unless items entity @s weapon.* *[minecraft:custom_data~{itemID:"empty_popcorn_bucket"}] run return 0
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run data modify storage fossil_frights:tasks complete.task_name set value "popcorn_buckets"
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76 82.5 run playsound fossil-frights:task.popcorn_buckets master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 27.375 75.5 83 as @e[type=minecraft:item_display,tag=animation.popcorn_machine.root,distance=..3,sort=nearest,limit=1] at @s run function fossil_frights:animations/tasks/medium/popcorn_buckets/popcorn_machine/rig/animations/run/play_exclusive
@@ -12,7 +12,7 @@ execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 positioned 26.5 76.4 82.5 run particle minecraft:poof ~ ~ ~ 0.35 0.25 0.35 0.04 18 force
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @s *[minecraft:custom_data~{itemID:"empty_popcorn"}] 1
+execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @s *[minecraft:custom_data~{itemID:"empty_popcorn_bucket"}] 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"popcorn_buckets"}] 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard players set $popcorn_buckets_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh

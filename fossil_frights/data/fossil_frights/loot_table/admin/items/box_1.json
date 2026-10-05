@@ -76,7 +76,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/empty_popcorn"
+                  "value": "fossil_frights:items/storage/empty_popcorn_bucket"
                 },
                 {
                   "type": "minecraft:loot_table",

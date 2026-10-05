@@ -26,7 +26,7 @@ execute if items entity @s contents *[custom_data~{itemID:"skeleton_plushie"}] r
 execute if items entity @s contents *[custom_data~{itemID:"fish_food"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_fish_food"}
 execute if items entity @s contents *[custom_data~{itemID:"copper_shuffle"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_copper_shuffle"}
 execute if items entity @s contents *[custom_data~{itemID:"instant_coffee"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_instant_coffee"}
-execute if items entity @s contents *[custom_data~{itemID:"empty_popcorn"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_empty_popcorn"}
+execute if items entity @s contents *[custom_data~{itemID:"empty_popcorn_bucket"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_empty_popcorn_bucket"}
 execute if items entity @s contents *[custom_data~{itemID:"pink_jelly"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_pink_jelly"}
 execute if items entity @s contents *[custom_data~{itemID:"leather"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_leather"}
 execute if items entity @s contents *[custom_data~{itemID:"brush"}] run function fossil_frights:game/heists/loot/capture/apply_keyed {key:"$loot_brush"}

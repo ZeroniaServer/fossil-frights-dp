@@ -33,8 +33,8 @@ execute if score $loot_credit_reel ff_heist_loot_state matches 2.. run scoreboar
 execute if score $loot_credit_reel ff_heist_loot_state matches 2.. if score $loot_credit_reel ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_dry_ice ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_dry_ice ff_heist_loot_state matches 2.. if score $loot_dry_ice ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_empty_popcorn ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_empty_popcorn ff_heist_loot_state matches 2.. if score $loot_empty_popcorn ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
+execute if score $loot_empty_popcorn_bucket ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_empty_popcorn_bucket ff_heist_loot_state matches 2.. if score $loot_empty_popcorn_bucket ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_febreeze_rod ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_febreeze_rod ff_heist_loot_state matches 2.. if score $loot_febreeze_rod ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_fertilizer ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1

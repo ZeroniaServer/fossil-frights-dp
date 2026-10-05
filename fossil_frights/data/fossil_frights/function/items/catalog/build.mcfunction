@@ -16,7 +16,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/skeleton_pl
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/fish_food",page:"page_1",slot:10}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/copper_shuffle",page:"page_1",slot:11}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/instant_coffee",page:"page_1",slot:12}
-function fossil_frights:items/catalog/from_loot {loot:"items/storage/empty_popcorn",page:"page_1",slot:13}
+function fossil_frights:items/catalog/from_loot {loot:"items/storage/empty_popcorn_bucket",page:"page_1",slot:13}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/pink_jelly",page:"page_1",slot:14}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/leather",page:"page_1",slot:15}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/brush",page:"page_1",slot:16}

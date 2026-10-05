@@ -18,7 +18,7 @@
       "value": 0.85
     },
     {
-      "condition": "fossil_frights:entity/contents/empty_popcorn",
+      "condition": "fossil_frights:entity/contents/empty_popcorn_bucket",
       "value": 0.5
     },
     {

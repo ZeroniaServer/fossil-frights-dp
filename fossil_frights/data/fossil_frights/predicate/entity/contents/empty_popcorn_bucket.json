@@ -6,7 +6,7 @@
             "contents": {
                 "predicates": {
                     "minecraft:custom_data": {
-                        "itemID": "empty_popcorn"
+                        "itemID": "empty_popcorn_bucket"
                     }
                 }
             }

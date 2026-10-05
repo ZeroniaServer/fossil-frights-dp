@@ -26,7 +26,7 @@ function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_fish_food"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_copper_shuffle"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_instant_coffee"}
-function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_empty_popcorn"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_empty_popcorn_bucket"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_pink_jelly"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_leather"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_brush"}

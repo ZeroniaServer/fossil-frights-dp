@@ -38,7 +38,7 @@ execute if score $loot_skeleton_plushie ff_heist_loot_state matches 1 run return
 execute if score $loot_fish_food ff_heist_loot_state matches 1 run return 0
 execute if score $loot_copper_shuffle ff_heist_loot_state matches 1 run return 0
 execute if score $loot_instant_coffee ff_heist_loot_state matches 1 run return 0
-execute if score $loot_empty_popcorn ff_heist_loot_state matches 1 run return 0
+execute if score $loot_empty_popcorn_bucket ff_heist_loot_state matches 1 run return 0
 execute if score $loot_pink_jelly ff_heist_loot_state matches 1 run return 0
 execute if score $loot_leather ff_heist_loot_state matches 1 run return 0
 execute if score $loot_brush ff_heist_loot_state matches 1 run return 0

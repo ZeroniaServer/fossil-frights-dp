@@ -15,16 +15,16 @@
                   "translate": "ff.item.empty_popcorn_bucket",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/empty_popcorn",
+                "minecraft:item_model": "fossil-frights:items/frights/medium_items/empty_popcorn_bucket",
                 "minecraft:custom_data": {
-                  "itemID": "empty_popcorn",
+                  "itemID": "empty_popcorn_bucket",
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }
                 }
               }
             },
-            "fossil_frights:item_definition/heist_loot/empty_popcorn",
+            "fossil_frights:item_definition/heist_loot/empty_popcorn_bucket",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

@@ -91,9 +91,9 @@ scoreboard players reset $loot_copper_shuffle ff_heist_sidebar
 scoreboard players set $loot_instant_coffee ff_heist_loot_state 0
 scoreboard players set $loot_instant_coffee ff_heist_loot_value 0
 scoreboard players reset $loot_instant_coffee ff_heist_sidebar
-scoreboard players set $loot_empty_popcorn ff_heist_loot_state 0
-scoreboard players set $loot_empty_popcorn ff_heist_loot_value 0
-scoreboard players reset $loot_empty_popcorn ff_heist_sidebar
+scoreboard players set $loot_empty_popcorn_bucket ff_heist_loot_state 0
+scoreboard players set $loot_empty_popcorn_bucket ff_heist_loot_value 0
+scoreboard players reset $loot_empty_popcorn_bucket ff_heist_sidebar
 scoreboard players set $loot_pink_jelly ff_heist_loot_state 0
 scoreboard players set $loot_pink_jelly ff_heist_loot_value 0
 scoreboard players reset $loot_pink_jelly ff_heist_sidebar

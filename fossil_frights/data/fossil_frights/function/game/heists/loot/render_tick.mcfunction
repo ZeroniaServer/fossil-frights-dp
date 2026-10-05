@@ -28,7 +28,7 @@ execute unless score $heist_loot_render_state_skeleton_plushie ff_heist_loot_sta
 execute unless score $heist_loot_render_state_fish_food ff_heist_loot_state = $loot_fish_food ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_copper_shuffle ff_heist_loot_state = $loot_copper_shuffle ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_instant_coffee ff_heist_loot_state = $loot_instant_coffee ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-execute unless score $heist_loot_render_state_empty_popcorn ff_heist_loot_state = $loot_empty_popcorn ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_empty_popcorn_bucket ff_heist_loot_state = $loot_empty_popcorn_bucket ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_pink_jelly ff_heist_loot_state = $loot_pink_jelly ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_brush ff_heist_loot_state = $loot_brush ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
@@ -112,7 +112,7 @@ scoreboard players operation $heist_loot_render_state_skeleton_plushie ff_heist_
 scoreboard players operation $heist_loot_render_state_fish_food ff_heist_loot_state = $loot_fish_food ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_copper_shuffle ff_heist_loot_state = $loot_copper_shuffle ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_instant_coffee ff_heist_loot_state = $loot_instant_coffee ff_heist_loot_state
-scoreboard players operation $heist_loot_render_state_empty_popcorn ff_heist_loot_state = $loot_empty_popcorn ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_empty_popcorn_bucket ff_heist_loot_state = $loot_empty_popcorn_bucket ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_pink_jelly ff_heist_loot_state = $loot_pink_jelly ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_brush ff_heist_loot_state = $loot_brush ff_heist_loot_state

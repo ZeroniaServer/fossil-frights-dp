@@ -4,7 +4,7 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run return 
 execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/heists_start_round_before_edit_loot
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
-execute if score $loot_empty_popcorn ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
+execute if score $loot_empty_popcorn_bucket ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
 execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/uncommon/empty_popcorn
 execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/empty_popcorn
 function fossil_frights:game/heists/loot/sync_all

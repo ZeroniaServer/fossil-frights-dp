@@ -11,7 +11,7 @@ execute if score $heist_roll ff_heist matches 10 run function fossil_frights:gam
 execute if score $heist_roll ff_heist matches 11 run function fossil_frights:game/heists/loot/select/uncommon/fish_food
 execute if score $heist_roll ff_heist matches 12 run function fossil_frights:game/heists/loot/select/uncommon/copper_shuffle
 execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/uncommon/instant_coffee
-execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/uncommon/empty_popcorn
+execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/uncommon/empty_popcorn_bucket
 execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/uncommon/pink_jelly
 execute if score $heist_roll ff_heist matches 16 run function fossil_frights:game/heists/loot/select/uncommon/leather
 execute if score $heist_roll ff_heist matches 17 run function fossil_frights:game/heists/loot/select/uncommon/brush
