@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_spear",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Launcher",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:max_damage": 4,
+                "minecraft:damage": 0,
+                "minecraft:enchantments": {
+                  "minecraft:lunge": 3
+                },
+                "minecraft:custom_data": {
+                  "sulfur_striker_powerup": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

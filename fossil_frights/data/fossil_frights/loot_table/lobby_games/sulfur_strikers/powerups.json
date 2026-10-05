@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/wacker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/mega_wacker"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/grabber"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/guster"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/launcher"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/super_launcher"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/raptor_rush"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/veloci_tea"
+        }
+      ]
+    }
+  ]
+}

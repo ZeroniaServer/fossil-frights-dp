@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Grabber",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:max_damage": 10,
+                "minecraft:damage": 0,
+                "minecraft:custom_data": {
+                  "sulfur_striker_powerup": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

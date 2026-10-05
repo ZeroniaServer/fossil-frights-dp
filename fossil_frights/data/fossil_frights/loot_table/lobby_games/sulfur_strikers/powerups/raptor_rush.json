@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.drink.raptor_rush",
+                  "color": "green"
+                },
+                "minecraft:item_model": "fossil-frights:items/drinks/raptor_rush",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.drink.raptor_rush.effect.speed",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.drink.raptor_rush.description",
+                    "color": "gray"
+                  }
+                ],
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 4,
+                          "duration": 300
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "itemID": "raptor_rush_drink",
+                  "ff_completes_picnic_with_trike_task": true,
+                  "ff_heist_rules": {
+                    "prevent_ground_despawn": true
+                  },
+                  "sulfur_striker_powerup": true
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}
