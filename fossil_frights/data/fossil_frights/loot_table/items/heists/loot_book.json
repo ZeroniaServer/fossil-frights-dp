@@ -19,6 +19,7 @@
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.loot_book.description",
+                    "color": "white",
                     "italic": false,
                     "with": [
                       {
