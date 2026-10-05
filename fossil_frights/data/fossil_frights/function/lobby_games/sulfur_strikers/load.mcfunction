@@ -5,6 +5,10 @@ scoreboard players set $size_roll ff_sulfur 0
 scoreboard players set $ball_count ff_sulfur 0
 scoreboard players set $score_cooldown ff_sulfur 0
 scoreboard players set $display_ready ff_sulfur 0
+scoreboard players set $powerup_cooldown ff_sulfur 300
+scoreboard players set $powerup_particle_cooldown ff_sulfur 0
+scoreboard players set $powerup_roll ff_sulfur 0
+scoreboard players set $powerup_spawn ff_sulfur 0
 scoreboard players set #sulfur_strikers_active ff_sulfur 0
 scoreboard players set #sulfur_strikers_was_active ff_sulfur 0
 function fossil_frights:lobby_games/sulfur_strikers/teleporter_setup
