@@ -530,7 +530,7 @@ gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:mob_griefing false
 gamerule minecraft:random_tick_speed 0
 gamerule minecraft:keep_inventory true
-gamerule minecraft:send_command_feedback false
+execute unless predicate fossil_frights:world/packs_enabled/dev run gamerule minecraft:send_command_feedback false
 gamerule minecraft:command_block_output false
 gamerule minecraft:show_advancement_messages false
 gamerule minecraft:spawn_mobs false
