@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "entity_tags": {
+      "all_of": [
+        "ff_sulfur_strikers_music"
+      ]
+    }
+  }
+}
