@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:div",
+  "left": {
+    "type": "minecraft:mul",
+    "inputs": [
+      {
+        "type": "minecraft:mod",
+        "left": {
+          "type": "minecraft:sub",
+          "left": {
+            "type": "minecraft:score",
+            "target": "this",
+            "score": "ff_dropped_item_despawn_timestamp"
+          },
+          "right": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#gametime"
+            },
+            "score": "ff_dropped_item_despawn_timestamp"
+          }
+        },
+        "right": 20
+      },
+      10
+    ]
+  },
+  "right": 20
+}

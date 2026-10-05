@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:number_dispatcher",
+  "cases": [
+    {
+      "condition": "fossil_frights:entity/contents/ghast_plushie",
+      "value": 1.05
+    },
+    {
+      "condition": "fossil_frights:entity/contents/cotton_candy_blue",
+      "value": 0.95
+    },
+    {
+      "condition": "fossil_frights:entity/contents/cotton_candy_pink",
+      "value": 0.95
+    },
+    {
+      "condition": "fossil_frights:entity/contents/lollipop",
+      "value": 0.85
+    },
+    {
+      "condition": "fossil_frights:entity/contents/empty_popcorn",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/popcorn",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/instant_coffee",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/febreeze_rod",
+      "value": 0.85
+    },
+    {
+      "condition": "fossil_frights:entity/contents/golden_nautilus",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/fish_food",
+      "value": 0.75
+    },
+    {
+      "condition": "fossil_frights:entity/contents/skeleton_plushie",
+      "value": 0.8
+    },
+    {
+      "condition": "fossil_frights:entity/contents/pink_jelly",
+      "value": 0.75
+    },
+    {
+      "condition": "fossil_frights:entity/contents/water_balloon",
+      "value": 0.5
+    }
+  ],
+  "default": 0.4
+}
