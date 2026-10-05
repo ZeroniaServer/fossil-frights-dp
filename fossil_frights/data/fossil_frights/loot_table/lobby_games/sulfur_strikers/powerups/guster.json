@@ -16,7 +16,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Guster",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.guster",
                   "color": "yellow",
                   "italic": false
                 },

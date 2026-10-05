@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Launcher",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.launcher",
                   "color": "yellow",
                   "italic": false
                 },

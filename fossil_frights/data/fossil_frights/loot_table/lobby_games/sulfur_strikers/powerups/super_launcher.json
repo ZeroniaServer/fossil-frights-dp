@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Super Launcher",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.super_launcher",
                   "color": "yellow",
                   "italic": false
                 },

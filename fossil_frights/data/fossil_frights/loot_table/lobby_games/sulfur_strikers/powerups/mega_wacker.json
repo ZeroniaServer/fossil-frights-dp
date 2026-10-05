@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "text": "Mega Wacker",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.mega_wacker",
                   "color": "yellow",
                   "italic": false
                 },
