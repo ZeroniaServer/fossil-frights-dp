@@ -1,5 +1,5 @@
 data modify storage fossil_frights:show_invisibile_blocks tick set compute default integer fossil_frights:gametime/mod_80
 execute in minecraft:overworld as @a[gamemode=creative,sort=random] if items entity @s weapon.* minecraft:structure_void at @s anchored eyes positioned ^ ^ ^ run function fossil_frights.dev:show_invisible_blocks/scan_structure_voids with storage fossil_frights:show_invisible_blocks {}
 execute in minecraft:overworld as @a[gamemode=creative,sort=random] if items entity @s weapon.* minecraft:zombie_head at @s anchored eyes positioned ^ ^ ^ run function fossil_frights.dev:show_invisible_blocks/scan_zombie_heads with storage fossil_frights:show_invisible_blocks {}
-execute in minecraft:overworld as @a[gamemode=creative,sort=random] if items entity @s weapon.* #fossil_frights:weathered_copper_golem_statues at @s anchored eyes positioned ^ ^ ^ run function fossil_frights.dev:show_invisible_blocks/scan_weathered_copper_golem_statues with storage fossil_frights:show_invisible_blocks {}
+execute in minecraft:overworld as @a[gamemode=creative,sort=random] if items entity @s weapon.* minecraft:chorus_plant at @s anchored eyes positioned ^ ^ ^ run function fossil_frights.dev:show_invisible_blocks/scan_chorus_plants with storage fossil_frights:show_invisible_blocks {}
 data remove storage fossil_frights:show_invisible_blocks tick

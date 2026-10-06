@@ -2,7 +2,7 @@
   "values": [
     "#fossil_frights:air_like",
     "#fossil_frights:zombie_heads",
-    "#fossil_frights:weathered_copper_golem_statues",
+    "minecraft:chorus_plant",
     "minecraft:barrier"
   ]
 }
