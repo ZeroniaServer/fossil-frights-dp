@@ -15,7 +15,7 @@
                   "translate": "ff.item.golden_t_rex_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/plushies/golden_t_rex_plushie",
+                "minecraft:item_model": "fossil_frights:items/plushies/golden_t_rex_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

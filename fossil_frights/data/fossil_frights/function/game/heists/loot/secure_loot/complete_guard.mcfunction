@@ -6,9 +6,9 @@ execute if entity @s[tag=ff_heist_loot_chondrite_click] run scoreboard players s
 execute if entity @s[tag=ff_heist_loot_coffee_click] run scoreboard players set $loot_coffee ff_heist_loot_security_locked 1
 execute if entity @s[tag=ff_heist_loot_spyglass_click] run scoreboard players set $loot_spyglass ff_heist_loot_security_locked 1
 tag @s remove ff_heist_loot_security_active
-execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] at @s run playsound fossil-frights:heists.loot_secured player @s ~ ~ ~ 0.9 1
+execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] at @s run playsound fossil_frights:heists.loot_secured player @s ~ ~ ~ 0.9 1
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run title @s times 0 10 0
-execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run title @s subtitle {"text":"","font":"fossil-frights:actionbar/loot_lock","italic":false}
+execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run title @s title {"text":" "}
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_recent 30
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run tag @s remove ff_heist_loot_security_active

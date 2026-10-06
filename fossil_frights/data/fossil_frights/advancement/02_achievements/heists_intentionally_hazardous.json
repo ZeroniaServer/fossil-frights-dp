@@ -9,7 +9,7 @@
           "color": "yellow",
           "italic": false
         },
-        "minecraft:item_model": "fossil-frights:display/exhibits/basement/wet_floor_sign",
+        "minecraft:item_model": "fossil_frights:display/exhibits/basement/wet_floor_sign",
         "minecraft:lore": [
           {
             "text": "",

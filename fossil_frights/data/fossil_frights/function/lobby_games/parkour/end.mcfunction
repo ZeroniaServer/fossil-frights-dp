@@ -13,7 +13,7 @@ execute unless entity @s[tag=ff_parkour_leave] run scoreboard players operation 
 execute unless entity @s[tag=ff_parkour_leave] run tp @s -15.5 75.00 -20.5 90 0
 execute unless entity @s[tag=ff_parkour_leave] run return 0
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 26
 tag @s add ff_parkour_exit_pending
 tag @s add ff_fade_tp_active

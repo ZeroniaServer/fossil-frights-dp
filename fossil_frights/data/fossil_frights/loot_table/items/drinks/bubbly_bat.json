@@ -15,7 +15,7 @@
                   "translate": "ff.drink.bubbly_bat",
                   "color": "light_purple"
                 },
-                "minecraft:item_model": "fossil-frights:items/drinks/bubbly_bat",
+                "minecraft:item_model": "fossil_frights:items/drinks/bubbly_bat",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.bubbly_bat.effect.levitation",

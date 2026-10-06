@@ -15,7 +15,7 @@
                   "translate": "ff.item.temple_run_restart",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/lobby/temple_run_restart",
+                "minecraft:item_model": "fossil_frights:items/lobby/temple_run_restart",
                 "minecraft:lore": [
                   {
                     "translate": "%s - %s",

@@ -15,7 +15,7 @@
                   "color": "gold",
                   "translate": "ff.museum_map.foyer"
                 },
-                "minecraft:item_model": "fossil-frights:items/map/dynamic_map_item/museum_map",
+                "minecraft:item_model": "fossil_frights:items/map/dynamic_map_item/museum_map",
                 "minecraft:custom_model_data": {
                   "strings": [
                     "foyer"

@@ -15,7 +15,7 @@
                   "translate": "ff.item.instant_coffee",
                   "color": "red"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/instant_coffee",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/instant_coffee",
                 "minecraft:custom_data": {
                   "itemID": "instant_coffee",
                   "ff_heist_rules": {

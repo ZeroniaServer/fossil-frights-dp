@@ -11,7 +11,7 @@ scoreboard players set @s ff_heist_stolen_keys 0
 function fossil_frights:join/thief/assign_invisimask
 function fossil_frights:game/heists/loadout/thief
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 16
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

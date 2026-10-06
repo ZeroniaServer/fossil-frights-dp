@@ -15,7 +15,7 @@
                   "translate": "ff.item.confetti_cannon",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/misc/confetti_cannon",
+                "minecraft:item_model": "fossil_frights:items/misc/confetti_cannon",
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:intentionally_empty"

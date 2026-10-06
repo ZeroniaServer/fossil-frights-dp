@@ -15,7 +15,7 @@
                   "translate": "ff.item.loot_book",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/gear/loot_book",
+                "minecraft:item_model": "fossil_frights:items/heists/gear/loot_book",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.loot_book.description",
@@ -43,7 +43,7 @@
                       "translate": "ff.item.loot_book",
                       "color": "gold"
                     },
-                    "minecraft:item_model": "fossil-frights:items/heists/lootbook/loot_book",
+                    "minecraft:item_model": "fossil_frights:items/heists/lootbook/loot_book",
                     "minecraft:custom_data": {
                       "itemID": "loot_book",
                       "ff_heist_loot_book": true,

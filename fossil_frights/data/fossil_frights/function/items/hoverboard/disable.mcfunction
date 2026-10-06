@@ -1,4 +1,4 @@
-execute if entity @s[tag=ff_hoverboard_active] unless entity @s[tag=ff_hoverboard_breaking] at @s run playsound fossil-frights:hoverboard.disable master @a[distance=..5] ~ ~ ~ 1 1
+execute if entity @s[tag=ff_hoverboard_active] unless entity @s[tag=ff_hoverboard_breaking] at @s run playsound fossil_frights:hoverboard.disable master @a[distance=..5] ~ ~ ~ 1 1
 execute if entity @s[tag=ff_hoverboard_sprinting] run function fossil_frights:items/hoverboard/sprint/disable
 execute if predicate fossil_frights:entity/is_riding_hoverboard run execute on vehicle run function fossil_frights:items/hoverboard/remove
 execute unless predicate fossil_frights:entity/is_riding_hoverboard run scoreboard players operation #match ff_hoverboard_uuid_0 = @s ff_active_uuid_0

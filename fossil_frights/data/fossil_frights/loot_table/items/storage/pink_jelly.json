@@ -15,7 +15,7 @@
                   "translate": "ff.item.pink_jelly",
                   "color": "light_purple"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/pink_jelly",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/pink_jelly",
                 "minecraft:custom_data": {
                   "itemID": "pink_jelly",
                   "ff_heist_rules": {

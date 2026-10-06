@@ -15,7 +15,7 @@
                   "translate": "ff.item.fish_food",
                   "color": "red"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fish_food",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/fish_food",
                 "minecraft:custom_data": {
                   "itemID": "fish_food",
                   "ff_heist_rules": {

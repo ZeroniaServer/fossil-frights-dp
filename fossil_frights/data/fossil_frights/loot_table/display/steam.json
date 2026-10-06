@@ -9,7 +9,7 @@
           "modifier": {
             "type": "minecraft:set_components",
             "components": {
-              "minecraft:item_model": "fossil-frights:display/general/steam",
+              "minecraft:item_model": "fossil_frights:display/general/steam",
               "minecraft:custom_model_data": {
                 "colors": [
                   -1

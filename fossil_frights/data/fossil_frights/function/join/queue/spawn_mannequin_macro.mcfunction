@@ -1,1 +1,1 @@
-$summon mannequin 0 80 -2 {Tags:["ff_queue_mannequin","ff_queue_new"],immovable:true,profile:{id:$(uuid)},CustomName:"$(name)",description:{translate:"ff.queue_mannequin.description.in_queue",color:"yellow",font:"fossil-frights:small_caps"}}
+$summon mannequin 0 80 -2 {Tags:["ff_queue_mannequin","ff_queue_new"],immovable:true,profile:{id:$(uuid)},CustomName:"$(name)",description:{translate:"ff.queue_mannequin.description.in_queue",color:"yellow",font:"fossil_frights:small_caps"}}

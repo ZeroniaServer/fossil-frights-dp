@@ -34,7 +34,7 @@ function fossil_frights:key/give_waiting
 function fossil_frights:key/refresh
 spawnpoint @s 20 70 20
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 22
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

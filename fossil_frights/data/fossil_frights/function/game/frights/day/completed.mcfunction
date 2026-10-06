@@ -9,10 +9,10 @@ function fossil_frights:tasks/task_book_shelf/clear
 execute as @a[team=ff_guard] run function fossil_frights:game/rewards/give_dinocoin
 execute if score $day_current ff_day matches 10 as @a[team=ff_guard] unless score @s ff_coin_used_run matches 1.. run advancement grant @s only fossil_frights:02_achievements/penny_pincher
 execute as @a[team=ff_guard] run function fossil_frights:advancements/progression/grant_day_completed
-execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
-stopsound @a music fossil-frights:ff_night_shift
-stopsound @a master fossil-frights:ff_night_shift
-stopsound @a record fossil-frights:ff_night_shift
+execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil_frights:ff_day_complete master @s ~ ~ ~ 1.5 1
+stopsound @a music fossil_frights:ff_night_shift
+stopsound @a master fossil_frights:ff_night_shift
+stopsound @a record fossil_frights:ff_night_shift
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_stopwatch_active ff_day 0

@@ -15,7 +15,7 @@
                   "translate": "ff.item.parkour_restart",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/lobby/parkour_restart",
+                "minecraft:item_model": "fossil_frights:items/lobby/parkour_restart",
                 "minecraft:lore": [
                   {
                     "translate": "%s - %s",

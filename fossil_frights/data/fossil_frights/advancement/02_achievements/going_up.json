@@ -4,7 +4,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "fossil-frights:display/exhibits/deep_dark/sculkadillo"
+        "minecraft:item_model": "fossil_frights:display/exhibits/deep_dark/sculkadillo"
       }
     },
     "title": {

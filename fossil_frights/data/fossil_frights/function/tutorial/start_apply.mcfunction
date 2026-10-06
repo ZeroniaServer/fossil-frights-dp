@@ -18,7 +18,7 @@ gamemode spectator @s
 execute at @s as @a[distance=..0.000001,gamemode=spectator,team=ff_spectator] run spectate
 spectate @e[type=minecraft:text_display,tag=ff_tutorial_camera_current,limit=1] @s
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 13
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

@@ -41,7 +41,7 @@ function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
-execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @a[team=ff_guard,tag=!ff_fade_tp_active] ff_tp_action 23
 scoreboard players set @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] ff_tp_delay 18
 tag @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] add ff_fade_tp_active

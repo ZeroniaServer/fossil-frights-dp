@@ -15,7 +15,7 @@
                   "translate": "ff.drink.raptor_rush",
                   "color": "green"
                 },
-                "minecraft:item_model": "fossil-frights:items/drinks/raptor_rush",
+                "minecraft:item_model": "fossil_frights:items/drinks/raptor_rush",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.raptor_rush.effect.speed",

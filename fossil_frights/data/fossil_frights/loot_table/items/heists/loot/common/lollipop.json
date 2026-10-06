@@ -15,7 +15,7 @@
                   "translate": "ff.item.lollipop",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/lollipop",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/lollipop",
                 "minecraft:custom_data": {
                   "itemID": "lollipop",
                   "ff_heist_common_loot": true,

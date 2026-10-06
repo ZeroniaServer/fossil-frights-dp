@@ -15,7 +15,7 @@
                   "translate": "ff.item.popcorn",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/popcorn",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/popcorn",
                 "minecraft:custom_data": {
                   "itemID": "popcorn",
                   "ff_heist_common_loot": true,

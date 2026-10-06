@@ -15,7 +15,7 @@
                   "translate": "ff.item.pterodactyl_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/plushies/pterodactyl_plushie",
+                "minecraft:item_model": "fossil_frights:items/plushies/pterodactyl_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

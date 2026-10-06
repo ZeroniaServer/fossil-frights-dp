@@ -31,5 +31,5 @@ execute if score @s ff_key_bar matches 29 run data modify storage fossil_frights
 execute if score @s ff_key_bar matches 30 run data modify storage fossil_frights:key_cooldown_ui glyph set value "\ue53e"
 
 scoreboard players set @s ff_actionbar_manager.slot.keys 1
-scoreboard players display numberformat @s ff_actionbar_manager.slot.keys fixed {storage:"fossil_frights:key_cooldown_ui",nbt:"glyph",interpret:true,font:"fossil-frights:actionbar/key_cooldown"}
+scoreboard players display numberformat @s ff_actionbar_manager.slot.keys fixed {storage:"fossil_frights:key_cooldown_ui",nbt:"glyph",interpret:true,font:"fossil_frights:actionbar/key_cooldown"}
 schedule function fossil_frights:player/actionbar/manager 1t append

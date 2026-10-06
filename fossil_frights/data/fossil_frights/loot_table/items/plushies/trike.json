@@ -15,7 +15,7 @@
                   "translate": "ff.item.trike_plushie",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/plushies/trike_plushie",
+                "minecraft:item_model": "fossil_frights:items/plushies/trike_plushie",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

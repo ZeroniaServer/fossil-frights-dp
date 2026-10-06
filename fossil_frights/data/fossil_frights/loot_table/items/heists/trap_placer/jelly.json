@@ -60,7 +60,7 @@
                     "italic": false
                   }
                 ],
-                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_jelly",
+                "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_jelly",
                 "minecraft:attack_range": {
                   "min_reach": 0,
                   "max_reach": 0,
@@ -86,7 +86,7 @@
                       "translate": "ff.item.trap_jelly",
                       "color": "#F43CA1"
                     },
-                    "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_jelly",
+                    "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_jelly",
                     "minecraft:custom_data": {
                       "ff_heist_trap": true,
                       "itemID": "trap_jelly"

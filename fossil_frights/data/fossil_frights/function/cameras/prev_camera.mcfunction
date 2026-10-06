@@ -4,4 +4,4 @@ scoreboard players set @s ff_security_camera_nav 8
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
-execute at @s run playsound fossil-frights:camera.switch master @s ~ ~ ~ 1 1
+execute at @s run playsound fossil_frights:camera.switch master @s ~ ~ ~ 1 1

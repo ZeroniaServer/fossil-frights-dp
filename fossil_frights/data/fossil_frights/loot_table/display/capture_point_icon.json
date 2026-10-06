@@ -9,7 +9,7 @@
           "modifier": {
             "type": "minecraft:set_components",
             "components": {
-              "minecraft:item_model": "fossil-frights:display/heists/capture_point_icon"
+              "minecraft:item_model": "fossil_frights:display/heists/capture_point_icon"
             }
           }
         }

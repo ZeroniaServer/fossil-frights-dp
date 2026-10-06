@@ -19,7 +19,7 @@ gamemode spectator @s
 
 effect give @s minecraft:invisibility infinite 0 true
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 17
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

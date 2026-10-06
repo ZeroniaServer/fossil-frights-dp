@@ -12,5 +12,5 @@ execute if score security ff_hazard_active matches 1 run data modify storage fos
 # curse
 execute if score curse ff_hazard_active matches 1 run data modify storage fossil_frights:bossbar components append value "\ue124"
 
-bossbar set fossil_frights:hazards name {font:"fossil-frights:icons/hazards",storage:"fossil_frights:bossbar",nbt:"components[]",interpret:true,separator:""}
+bossbar set fossil_frights:hazards name {font:"fossil_frights:icons/hazards",storage:"fossil_frights:bossbar",nbt:"components[]",interpret:true,separator:""}
 bossbar set fossil_frights:hazards visible true

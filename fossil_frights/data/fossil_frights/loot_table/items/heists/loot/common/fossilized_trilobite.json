@@ -15,7 +15,7 @@
                   "translate": "ff.item.fossilized_trilobite",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/fossilized_trilobite",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/fossilized_trilobite",
                 "minecraft:custom_data": {
                   "itemID": "fossilized_trilobite",
                   "ff_heist_common_loot": true,

@@ -42,10 +42,10 @@ function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 function fossil_frights:game/heists/reset/blocks
-stopsound @a record fossil-frights:heists.music
-stopsound @a music fossil-frights:ff_night_shift
-stopsound @a master fossil-frights:ff_night_shift
-stopsound @a record fossil-frights:ff_night_shift
+stopsound @a record fossil_frights:heists.music
+stopsound @a music fossil_frights:ff_night_shift
+stopsound @a master fossil_frights:ff_night_shift
+stopsound @a record fossil_frights:ff_night_shift
 execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 execute unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/game/exit_day_reached
@@ -64,7 +64,7 @@ title @a[predicate=fossil_frights:player/is_playing] subtitle ""
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/actionbar/clear
 clear @a[predicate=fossil_frights:player/is_playing] *
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s times 5 3 10
-execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] ff_tp_action 24
 scoreboard players set @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] ff_tp_delay 18
 tag @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] add ff_fade_tp_active

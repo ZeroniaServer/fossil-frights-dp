@@ -15,7 +15,7 @@
                   "translate": "ff.drink.veloci_tea",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/drinks/veloci_tea",
+                "minecraft:item_model": "fossil_frights:items/drinks/veloci_tea",
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.veloci_tea.effect.speed",

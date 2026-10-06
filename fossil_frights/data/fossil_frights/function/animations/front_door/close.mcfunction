@@ -3,5 +3,5 @@ execute as @e[type=minecraft:item_display,tag=ff_front_door] unless score @s ff_
 tag @e[type=minecraft:item_display,tag=ff_front_door] add ff_front_door.closing
 scoreboard players set @e[type=minecraft:item_display,tag=ff_front_door] ff_door_tick 0
 scoreboard players set @e[type=minecraft:item_display,tag=ff_front_door] ff_door_delay 4
-execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run playsound fossil-frights:front_door_close block @a[distance=..24] ~ ~ ~ 1 1
+execute as @e[type=minecraft:item_display,tag=ff_front_door] at @s run playsound fossil_frights:front_door_close block @a[distance=..24] ~ ~ ~ 1 1
 scoreboard players set @e[type=minecraft:item_display,tag=ff_front_door] ff_door_target 0

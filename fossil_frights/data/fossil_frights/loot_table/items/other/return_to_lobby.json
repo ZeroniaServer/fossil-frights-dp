@@ -15,7 +15,7 @@
                   "translate": "gui.back",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/lobby/return_to_lobby",
+                "minecraft:item_model": "fossil_frights:items/lobby/return_to_lobby",
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,
                   "animation": "none",

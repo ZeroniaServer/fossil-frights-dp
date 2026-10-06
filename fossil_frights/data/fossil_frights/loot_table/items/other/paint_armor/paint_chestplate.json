@@ -15,12 +15,12 @@
                   "translate": "ff.item.paint_armor",
                   "color": "#E70095"
                 },
-                "minecraft:item_model": "fossil-frights:display/misc/paint_armour/paint_armor_3",
+                "minecraft:item_model": "fossil_frights:display/misc/paint_armour/paint_armor_3",
                 "minecraft:equippable": {
                   "slot": "chest",
-                  "asset_id": "fossil-frights:paint",
+                  "asset_id": "fossil_frights:paint",
                   "equip_sound": "minecraft:intentionally_empty",
-                  "camera_overlay": "fossil-frights:overlays/paint"
+                  "camera_overlay": "fossil_frights:overlays/paint"
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1

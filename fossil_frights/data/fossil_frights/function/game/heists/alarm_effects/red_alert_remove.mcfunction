@@ -1,1 +1,1 @@
-$posteffect remove @a fossil-frights:red_alert/$(period_offset)
+$posteffect remove @a fossil_frights:red_alert/$(period_offset)

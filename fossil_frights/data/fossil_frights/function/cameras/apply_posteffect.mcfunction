@@ -1,1 +1,1 @@
-posteffect add @s fossil-frights:camera
+posteffect add @s fossil_frights:camera

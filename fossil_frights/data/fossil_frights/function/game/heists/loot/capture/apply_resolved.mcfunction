@@ -11,9 +11,9 @@ execute as @a[team=ff_thief,gamemode=!spectator] run scoreboard players operatio
 execute as @a[gamemode=spectator,tag=!ff_tutorial] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
 execute as @a[team=ff_thief,gamemode=!spectator] run scoreboard players set @s ff_msg_cooldown 20
 function fossil_frights:game/heists/loot/capture/announce
-execute as @a[team=ff_guard,gamemode=!spectator] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
-execute as @a[team=ff_thief,gamemode=!spectator] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
-execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil-frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
+execute as @a[team=ff_guard,gamemode=!spectator] at @s run playsound fossil_frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
+execute as @a[team=ff_thief,gamemode=!spectator] at @s run playsound fossil_frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
+execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil_frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
 particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 tag @a remove ff_heist_capture_credit_recipient
 kill @s

@@ -32,7 +32,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/1"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/1"
           }
         },
         "condition": {
@@ -49,7 +49,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/2"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/2"
           }
         },
         "condition": {
@@ -66,7 +66,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/3"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/3"
           }
         },
         "condition": {
@@ -83,7 +83,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/4"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/4"
           }
         },
         "condition": {
@@ -100,7 +100,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/5"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/5"
           }
         },
         "condition": {
@@ -117,7 +117,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/6"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/6"
           }
         },
         "condition": {
@@ -134,7 +134,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/7"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/7"
           }
         },
         "condition": {
@@ -151,7 +151,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/8"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/8"
           }
         },
         "condition": {
@@ -168,7 +168,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/9"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/9"
           }
         },
         "condition": {
@@ -185,7 +185,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/10"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/10"
           }
         },
         "condition": {
@@ -202,7 +202,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/11"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/11"
           }
         },
         "condition": {
@@ -219,7 +219,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/12"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/12"
           }
         },
         "condition": {
@@ -236,7 +236,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/13"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/13"
           }
         },
         "condition": {
@@ -253,7 +253,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/14"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/14"
           }
         },
         "condition": {
@@ -270,7 +270,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/15"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/15"
           }
         },
         "condition": {
@@ -287,7 +287,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/16"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/16"
           }
         },
         "condition": {
@@ -304,7 +304,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/17"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/17"
           }
         },
         "condition": {
@@ -321,7 +321,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/18"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/18"
           }
         },
         "condition": {
@@ -338,7 +338,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/19"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/19"
           }
         },
         "condition": {
@@ -355,7 +355,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/20"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/20"
           }
         },
         "condition": {
@@ -372,7 +372,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/21"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/21"
           }
         },
         "condition": {
@@ -389,7 +389,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/22"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/22"
           }
         },
         "condition": {
@@ -406,7 +406,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/23"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/23"
           }
         },
         "condition": {
@@ -423,7 +423,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/24"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/24"
           }
         },
         "condition": {
@@ -440,7 +440,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/25"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/25"
           }
         },
         "condition": {
@@ -457,7 +457,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/26"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/26"
           }
         },
         "condition": {
@@ -474,7 +474,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/27"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/27"
           }
         },
         "condition": {
@@ -491,7 +491,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/28"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/28"
           }
         },
         "condition": {
@@ -508,7 +508,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/29"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/29"
           }
         },
         "condition": {
@@ -525,7 +525,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/30"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/30"
           }
         },
         "condition": {
@@ -542,7 +542,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/31"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/31"
           }
         },
         "condition": {
@@ -559,7 +559,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/32"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/32"
           }
         },
         "condition": {
@@ -576,7 +576,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/33"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/33"
           }
         },
         "condition": {
@@ -593,7 +593,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/34"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/34"
           }
         },
         "condition": {
@@ -610,7 +610,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/35"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/35"
           }
         },
         "condition": {
@@ -627,7 +627,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/36"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/36"
           }
         },
         "condition": {
@@ -644,7 +644,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/37"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/37"
           }
         },
         "condition": {
@@ -661,7 +661,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/38"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/38"
           }
         },
         "condition": {
@@ -678,7 +678,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/39"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/39"
           }
         },
         "condition": {
@@ -695,7 +695,7 @@
           "minecraft:equippable": {
             "slot": "head",
             "equip_sound": "minecraft:intentionally_empty",
-            "camera_overlay": "fossil-frights:overlays/glowing/guard/40"
+            "camera_overlay": "fossil_frights:overlays/glowing/guard/40"
           }
         },
         "condition": {

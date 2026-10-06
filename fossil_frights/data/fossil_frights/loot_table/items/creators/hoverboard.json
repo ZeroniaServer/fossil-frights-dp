@@ -39,7 +39,7 @@
                     ]
                   }
                 ],
-                "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:item_model": "fossil_frights:items/frights/hard_items/hoverboard/hoverboard_item",
                 "minecraft:custom_model_data": {
                   "colors": [
                     0
@@ -95,7 +95,7 @@
                         ]
                       }
                     ],
-                    "minecraft:item_model": "fossil-frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                    "minecraft:item_model": "fossil_frights:items/frights/hard_items/hoverboard/hoverboard_item",
                     "minecraft:custom_model_data": {
                       "colors": [
                         0

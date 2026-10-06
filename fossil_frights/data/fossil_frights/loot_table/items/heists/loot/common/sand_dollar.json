@@ -15,7 +15,7 @@
                   "translate": "ff.item.sand_dollar",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/sand_dollar",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/sand_dollar",
                 "minecraft:custom_data": {
                   "itemID": "sand_dollar",
                   "ff_heist_common_loot": true,

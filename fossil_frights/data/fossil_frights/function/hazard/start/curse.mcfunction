@@ -5,7 +5,7 @@ function fossil_frights:run_breakdown/event/add {code:"H",id:"51"}
 scoreboard players set #curse_forcefield_sound ff_hazard_rng 40
 function fossil_frights:hazard/curse/update_forcefield
 function fossil_frights:game/bossbar/update_hazards
-execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fossil-frights:hazards.curse master @s ~ ~ ~ 1 1
+execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fossil_frights:hazards.curse master @s ~ ~ ~ 1 1
 scoreboard players set #curse_indicator ff_hazard_rng 0
 scoreboard players set #curse_indicator_timer ff_hazard_rng 8
 function fossil_frights:hazard/curse/remove_toggle

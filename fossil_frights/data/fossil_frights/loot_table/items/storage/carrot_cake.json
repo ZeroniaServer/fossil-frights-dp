@@ -15,7 +15,7 @@
                   "translate": "ff.item.carrot_cake",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/carrot_cake",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/carrot_cake",
                 "minecraft:custom_data": {
                   "itemID": "carrot_cake",
                   "ff_heist_rules": {

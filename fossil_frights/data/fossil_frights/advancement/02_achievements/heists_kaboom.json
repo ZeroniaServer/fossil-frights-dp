@@ -4,7 +4,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_empty"
+        "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_empty"
       }
     },
     "title": {

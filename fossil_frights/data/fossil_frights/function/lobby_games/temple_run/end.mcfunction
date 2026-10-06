@@ -14,7 +14,7 @@ execute unless entity @s[tag=ff_temple_run_leave] run scoreboard players operati
 execute unless entity @s[tag=ff_temple_run_leave] run tp @s 89.5 79.00 82.5 -90 0
 execute unless entity @s[tag=ff_temple_run_leave] run return 0
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 27
 tag @s add ff_temple_run_exit_pending
 tag @s add ff_fade_tp_active

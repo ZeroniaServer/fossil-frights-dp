@@ -1,4 +1,4 @@
-$data modify storage fossil_frights:security_gate entity_data set value {data:{ff_security_gate:{type:"$(type)",facing:"$(facing)"}},item:{components:{item_model:"fossil-frights:display/general/security_gate/$(type)"}}}
+$data modify storage fossil_frights:security_gate entity_data set value {data:{ff_security_gate:{type:"$(type)",facing:"$(facing)"}},item:{components:{item_model:"fossil_frights:display/general/security_gate/$(type)"}}}
 data modify storage fossil_frights:security_gate entity_data merge value {Tags:["ff_security_gate"],Rotation:[0,0],item:{id:"minecraft:stone",components:{custom_model_data:{floats:[0]}}},teleport_duration:1}
 
 execute if data storage fossil_frights:security_gate entity_data.data.ff_security_gate{facing:"north"} run data modify storage fossil_frights:security_gate entity_data.Rotation[0] set value 180

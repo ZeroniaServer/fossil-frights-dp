@@ -4,7 +4,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "fossil-frights:items/heists/gear/guards/camera_remote"
+        "minecraft:item_model": "fossil_frights:items/heists/gear/guards/camera_remote"
       }
     },
     "title": {

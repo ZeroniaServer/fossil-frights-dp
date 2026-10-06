@@ -1,9 +1,9 @@
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/task_book_shelf/clear
-execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil-frights:ff_day_complete master @s ~ ~ ~ 1.5 1
-stopsound @a music fossil-frights:ff_night_shift
-stopsound @a master fossil-frights:ff_night_shift
-stopsound @a record fossil-frights:ff_night_shift
+execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil_frights:ff_day_complete master @s ~ ~ ~ 1.5 1
+stopsound @a music fossil_frights:ff_night_shift
+stopsound @a master fossil_frights:ff_night_shift
+stopsound @a record fossil_frights:ff_night_shift
 scoreboard players set $custom_day_active ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_current ff_day 0

@@ -11,7 +11,7 @@ function fossil_frights:lobby_games/stop_all
 execute if predicate fossil_frights:player/is_playing run function fossil_frights:messages/error/cannot_spawn_while_active
 execute if predicate fossil_frights:player/is_playing run return 0
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 25
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

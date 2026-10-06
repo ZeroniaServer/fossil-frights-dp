@@ -15,7 +15,7 @@
                   "translate": "ff.item.ancient_portal_core",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/loot/ancient_portal_core",
+                "minecraft:item_model": "fossil_frights:items/heists/loot/ancient_portal_core",
                 "minecraft:custom_data": {
                   "itemID": "ancient_portal_core",
                   "ff_heist_common_loot": true,

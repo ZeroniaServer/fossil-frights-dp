@@ -1,7 +1,7 @@
 # Swing the pre-placed breaker door closed over one second.
 execute as @e[tag=ff_breaker_door] run data merge entity @s {teleport_duration:20}
 execute as @e[tag=ff_breaker_door] at @s run tp @s ~ ~ ~ 0 0
-execute positioned -26.0 71.5 21.5 run playsound fossil-frights:hazards.breaker_close master @a[distance=..10] ~ ~ ~ 1 1
+execute positioned -26.0 71.5 21.5 run playsound fossil_frights:hazards.breaker_close master @a[distance=..10] ~ ~ ~ 1 1
 execute as @a[tag=ff_forced_spectate] run function fossil_frights:cameras/lights_disabled/hide
 
 # Snap to the complete Axiom-authored hazard-reset lever pose; the lever itself does not animate.

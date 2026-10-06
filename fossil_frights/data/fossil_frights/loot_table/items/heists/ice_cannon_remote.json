@@ -15,7 +15,7 @@
                   "translate": "ff.item.ice_cannon_remote",
                   "color": "aqua"
                 },
-                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon_remote",
+                "minecraft:item_model": "fossil_frights:items/heists/gear/guards/ice_cannon_remote",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.ice_cannon_remote.description.1",
@@ -50,7 +50,7 @@
                       "translate": "ff.item.ice_cannon_remote",
                       "color": "aqua"
                     },
-                    "minecraft:item_model": "fossil-frights:items/heists/gear/guards/ice_cannon_remote",
+                    "minecraft:item_model": "fossil_frights:items/heists/gear/guards/ice_cannon_remote",
                     "minecraft:lore": [
                       {
                         "translate": "ff.item.ice_cannon_remote.description.1",

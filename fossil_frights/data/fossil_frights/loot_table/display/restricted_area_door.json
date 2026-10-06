@@ -9,7 +9,7 @@
           "modifier": {
             "type": "minecraft:set_components",
             "components": {
-              "minecraft:item_model": "fossil-frights:display/general/doors/restricted_area_door",
+              "minecraft:item_model": "fossil_frights:display/general/doors/restricted_area_door",
               "minecraft:custom_model_data": {
                 "flags": [
                   true

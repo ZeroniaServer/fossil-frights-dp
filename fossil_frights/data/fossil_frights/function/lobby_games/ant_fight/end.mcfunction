@@ -8,7 +8,7 @@ execute if entity @s[tag=ff_ant_fight_exit_pending] run return 0
 execute unless entity @s[tag=ff_ant_fight_leave] run function fossil_frights:lobby_games/ant_fight/hit
 execute unless entity @s[tag=ff_ant_fight_leave] run return 0
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 28
 tag @s add ff_ant_fight_exit_pending
 tag @s add ff_fade_tp_active

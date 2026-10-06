@@ -15,7 +15,7 @@
                   "translate": "ff.item.fertilizer",
                   "color": "dark_green"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fertilizer",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/fertilizer",
                 "minecraft:custom_data": {
                   "itemID": "fertilizer",
                   "ff_heist_rules": {

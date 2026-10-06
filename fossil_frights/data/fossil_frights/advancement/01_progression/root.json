@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_model": "fossil-frights:items/frights/security_guard_hat"
+        "minecraft:item_model": "fossil_frights:items/frights/security_guard_hat"
       }
     },
     "title": {

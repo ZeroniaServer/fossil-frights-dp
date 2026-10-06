@@ -33,4 +33,4 @@ function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
 function fossil_frights:cameras/lights_disabled/update
-execute at @s run playsound fossil-frights:camera.open master @s ~ ~ ~ 1 1
+execute at @s run playsound fossil_frights:camera.open master @s ~ ~ ~ 1 1

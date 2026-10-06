@@ -15,7 +15,7 @@
                   "color": "gold",
                   "translate": "ff.item.golden_nautilus"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/golden_nautilus",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/golden_nautilus",
                 "minecraft:equippable": {
                   "slot": "head"
                 },

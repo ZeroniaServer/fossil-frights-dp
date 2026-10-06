@@ -8,11 +8,11 @@ function fossil_frights:cameras/clear_posteffect
 function fossil_frights:join/lobby
 clear @s
 attribute @s minecraft:scale base reset
-stopsound @s music fossil-frights:ff_night_shift
-stopsound @s master fossil-frights:ff_night_shift
-stopsound @s record fossil-frights:ff_night_shift
+stopsound @s music fossil_frights:ff_night_shift
+stopsound @s master fossil_frights:ff_night_shift
+stopsound @s record fossil_frights:ff_night_shift
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 18
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

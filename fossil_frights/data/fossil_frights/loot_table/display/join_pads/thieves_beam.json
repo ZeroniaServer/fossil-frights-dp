@@ -9,7 +9,7 @@
           "modifier": {
             "type": "minecraft:set_components",
             "components": {
-              "minecraft:item_model": "fossil-frights:display/lobby/join_pads/thieves_beam"
+              "minecraft:item_model": "fossil_frights:display/lobby/join_pads/thieves_beam"
             }
           }
         }

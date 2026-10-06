@@ -8,7 +8,7 @@ advancement revoke @s only fossil_frights:lobby/sulfur_strikers_teleporter_click
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute unless entity @s[gamemode=adventure] run return 0
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 9
 function fossil_frights:lobby_games/sulfur_strikers/start
 tag @s add ff_fade_tp_active

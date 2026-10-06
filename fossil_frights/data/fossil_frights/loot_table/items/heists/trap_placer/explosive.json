@@ -65,7 +65,7 @@
                     "italic": false
                   }
                 ],
-                "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_explosive",
+                "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_explosive",
                 "minecraft:attack_range": {
                   "min_reach": 0,
                   "max_reach": 0,
@@ -91,7 +91,7 @@
                       "translate": "ff.item.trap_explosive",
                       "color": "#FB3823"
                     },
-                    "minecraft:item_model": "fossil-frights:items/heists/gear/guards/trap_placer/trap_explosive",
+                    "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_explosive",
                     "minecraft:custom_data": {
                       "ff_heist_trap": true,
                       "itemID": "trap_explosive"

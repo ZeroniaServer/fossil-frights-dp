@@ -15,7 +15,7 @@
                   "translate": "ff.item.empty_popcorn_bucket",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/empty_popcorn_bucket",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/empty_popcorn_bucket",
                 "minecraft:custom_data": {
                   "itemID": "empty_popcorn_bucket",
                   "ff_heist_rules": {

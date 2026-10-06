@@ -1,7 +1,7 @@
 execute unless score $hoveraptor_sel ff_task_state matches 1 run return 0
 execute unless score $hoveraptor_done ff_task_state matches 0 run return 0
 data modify storage fossil_frights:tasks complete.task_name set value "hoveraptor"
-execute positioned 21.5 104.5 42.5 run playsound fossil-frights:hoverboard.enable master @a[tag=ff_frights_feedback_viewer,distance=..24] ~ ~ ~ 0.9 1.0
+execute positioned 21.5 104.5 42.5 run playsound fossil_frights:hoverboard.enable master @a[tag=ff_frights_feedback_viewer,distance=..24] ~ ~ ~ 0.9 1.0
 function fossil_frights:tasks/hard/hoveraptor/set_frame_hoverboard
 execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
 execute if entity @s[type=minecraft:item] run kill @s

@@ -1,7 +1,7 @@
 scoreboard players operation $day_result ff_day = $day_current ff_day
-stopsound @a music fossil-frights:ff_night_shift
-stopsound @a master fossil-frights:ff_night_shift
-stopsound @a record fossil-frights:ff_night_shift
+stopsound @a music fossil_frights:ff_night_shift
+stopsound @a master fossil_frights:ff_night_shift
+stopsound @a record fossil_frights:ff_night_shift
 scoreboard players set $defeat_lock ff_game_state 1
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 6000

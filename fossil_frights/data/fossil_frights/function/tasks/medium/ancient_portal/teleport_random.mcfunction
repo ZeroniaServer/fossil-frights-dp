@@ -12,7 +12,7 @@ advancement grant @s only fossil_frights:02_achievements/portal_travel
 execute if score $settings_speedrun_show ff_game_state matches 1 store result score $ancient_portal_dest ff_task_state run random value 2..5
 execute unless score $settings_speedrun_show ff_game_state matches 1 store result score $ancient_portal_dest ff_task_state run random value 1..5
 title @s times 5 3 10
-title @s title {"text":"","font":"fossil-frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 11
 tag @s add ff_fade_tp_active
 scoreboard players set @s ff_tp_delay 18

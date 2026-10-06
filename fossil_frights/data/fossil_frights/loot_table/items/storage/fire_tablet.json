@@ -15,7 +15,7 @@
                   "translate": "ff.item.fire_tablet",
                   "color": "red"
                 },
-                "minecraft:item_model": "fossil-frights:items/frights/medium_items/fire_tablet",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/fire_tablet",
                 "minecraft:enchantments": {
                   "minecraft:fire_aspect": 1
                 },

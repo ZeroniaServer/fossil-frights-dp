@@ -7,7 +7,7 @@
           "translate": "ff.item.carnivorous_fly_trap",
           "italic": false
         },
-        "minecraft:item_model": "fossil-frights:display/exhibits/terrarium/item/plants/carnivorous_flytrap",
+        "minecraft:item_model": "fossil_frights:display/exhibits/terrarium/item/plants/carnivorous_flytrap",
         "minecraft:lore": [
           {
             "text": "",
