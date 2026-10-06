@@ -1,13 +1,12 @@
 scoreboard players add @s ff_heist_deaths_round 1
 function fossil_frights:game/heists/loot/secure_loot/clear_player
 function fossil_frights:game/heists/loot/rare/pickup/lady_bug/death
-tag @s add ff_heist_stat_subject
-tag @a remove ff_heist_killer_guard
-execute if score @s ff_heist_killer_pending matches 1 as @a[team=ff_guard] if score @s ff_active_uuid_0 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_0 if score @s ff_active_uuid_1 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_1 if score @s ff_active_uuid_2 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_2 if score @s ff_active_uuid_3 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_3 run tag @s add ff_heist_killer_guard
-execute if entity @a[tag=ff_heist_killer_guard,limit=1] if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[tag=ff_heist_killer_guard] only fossil_frights:02_achievements/heists_stop_right_there
-execute if score @s ff_heist_killer_pending matches 1 as @a[team=ff_guard] if score @s ff_active_uuid_0 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_0 if score @s ff_active_uuid_1 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_1 if score @s ff_active_uuid_2 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_2 if score @s ff_active_uuid_3 = @a[tag=ff_heist_stat_subject,limit=1] ff_heist_killer_uuid_3 run scoreboard players add @s ff_heist_thieves_killed_round 1
-tag @a remove ff_heist_killer_guard
-tag @s remove ff_heist_stat_subject
+scoreboard players operation #match ff_active_uuid_0 = @s ff_heist_killer_uuid_0
+scoreboard players operation #match ff_active_uuid_1 = @s ff_heist_killer_uuid_1
+scoreboard players operation #match ff_active_uuid_2 = @s ff_heist_killer_uuid_2
+scoreboard players operation #match ff_active_uuid_3 = @s ff_heist_killer_uuid_3
+execute if score @s ff_heist_killer_pending matches 1 if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[team=ff_guard,predicate=fossil_frights:entity/match/active] only fossil_frights:02_achievements/heists_stop_right_there
+execute if score @s ff_heist_killer_pending matches 1 run scoreboard players add @a[team=ff_guard,predicate=fossil_frights:entity/match/active] ff_heist_thieves_killed_round 1
 scoreboard players set @s ff_heist_killer_pending 0
 scoreboard players set @s ff_heist_killer_uuid_0 0
 scoreboard players set @s ff_heist_killer_uuid_1 0

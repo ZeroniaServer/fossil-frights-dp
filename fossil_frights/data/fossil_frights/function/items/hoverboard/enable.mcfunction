@@ -17,12 +17,14 @@ tag @a[tag=ff_hoverboard_setup_passenger] remove ff_hoverboard_setup_passenger
 execute if entity @s[tag=ff_hoverboard_setup_vehicle] on vehicle run tag @s remove ff_hoverboard_setup_vehicle
 tag @s remove ff_hoverboard_setup_owner
 
-tag @s add ff_hoverboard_owner_current
-execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_0 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_0
-execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_1 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_1
-execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_2 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_2
-execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = @a[tag=ff_hoverboard_owner_current,limit=1] ff_active_uuid_3
-tag @s remove ff_hoverboard_owner_current
+scoreboard players operation #this ff_active_uuid_0 = @s ff_active_uuid_0
+scoreboard players operation #this ff_active_uuid_1 = @s ff_active_uuid_1
+scoreboard players operation #this ff_active_uuid_2 = @s ff_active_uuid_2
+scoreboard players operation #this ff_active_uuid_3 = @s ff_active_uuid_3
+execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_0 = #this ff_active_uuid_0
+execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_1 = #this ff_active_uuid_1
+execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_2 = #this ff_active_uuid_2
+execute on vehicle run scoreboard players operation @s ff_hoverboard_uuid_3 = #this ff_active_uuid_3
 
 execute store result score #hoverboard_color ff_dummy run compute default integer fossil_frights:hoverboard/color
 execute on vehicle on passengers run item modify entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] contents {type:"minecraft:set_custom_model_data",colors:{values:[{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#hoverboard_color"},score:"ff_dummy"}],mode:"replace_all"}}

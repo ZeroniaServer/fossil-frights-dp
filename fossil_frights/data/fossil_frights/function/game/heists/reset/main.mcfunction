@@ -47,10 +47,10 @@ scoreboard players set @a ff_heist_deaths_round 0
 scoreboard players set @a ff_heist_deaths_baseline 0
 scoreboard players set @a ff_heist_thieves_killed_round 0
 scoreboard players set @a ff_heist_killer_pending 0
-scoreboard players set @a ff_heist_killer_uuid_0 0
-scoreboard players set @a ff_heist_killer_uuid_1 0
-scoreboard players set @a ff_heist_killer_uuid_2 0
-scoreboard players set @a ff_heist_killer_uuid_3 0
+scoreboard players reset @a ff_heist_killer_uuid_0
+scoreboard players reset @a ff_heist_killer_uuid_1
+scoreboard players reset @a ff_heist_killer_uuid_2
+scoreboard players reset @a ff_heist_killer_uuid_3
 scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players set @a ff_heist_thaw_fx 0
 scoreboard players set @a ff_heist_paint_fx 0
@@ -89,7 +89,6 @@ execute as @a[tag=ff_pteranadon_jump_reduced] run function fossil_frights:game/h
 execute as @a run function fossil_frights:items/heists/ice_cannon/overlay_hide
 execute as @a run function fossil_frights:game/heists/paint_fx/clear
 tag @a remove ff_heist_stat_winner
-tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
 tag @a remove ff_heist_kill_target

@@ -48,12 +48,11 @@ execute as @a[team=ff_guard] run scoreboard players operation @s ff_heist_deaths
 execute as @a[team=ff_thief] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
 scoreboard players set @a ff_heist_thieves_killed_round 0
 scoreboard players set @a ff_heist_killer_pending 0
-scoreboard players set @a ff_heist_killer_uuid_0 0
-scoreboard players set @a ff_heist_killer_uuid_1 0
-scoreboard players set @a ff_heist_killer_uuid_2 0
-scoreboard players set @a ff_heist_killer_uuid_3 0
+scoreboard players reset @a ff_heist_killer_uuid_0
+scoreboard players reset @a ff_heist_killer_uuid_1
+scoreboard players reset @a ff_heist_killer_uuid_2
+scoreboard players reset @a ff_heist_killer_uuid_3
 tag @a remove ff_heist_stat_winner
-tag @a remove ff_heist_stat_subject
 tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known

@@ -2,7 +2,6 @@ execute if predicate fossil_frights:game_state/game_running run function fossil_
 function fossil_frights:cameras/clear_posteffect
 tag @s remove ff_hoverboard_active
 function fossil_frights:items/hoverboard/durability/clear_all_active
-tag @s remove ff_hoverboard_owner_current
 tag @s remove ff_muted_chat
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given
