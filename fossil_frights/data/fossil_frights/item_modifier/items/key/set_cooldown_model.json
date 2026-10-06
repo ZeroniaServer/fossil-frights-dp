@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:set_custom_model_data",
+  "floats": {
+    "values": [
+      {
+        "type": "minecraft:sub",
+        "left": 1,
+        "right": {
+          "type": "minecraft:div",
+          "left": {
+            "type": "minecraft:from_int",
+            "input": {
+              "type": "minecraft:score",
+              "target": "this",
+              "score": "ff_key_cooldown"
+            }
+          },
+          "right": 600
+        }
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 0,
+    "size": 1
+  }
+}
