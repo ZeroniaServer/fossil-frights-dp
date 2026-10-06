@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_sword",
+          "name": "minecraft:diamond_sword",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.lobby.sulfur_strikers.powerup.mega_wacker",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.whacker",
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:max_damage": 2,
+                "minecraft:max_damage": 3,
                 "minecraft:damage": 0,
                 "minecraft:enchantments": {
-                  "minecraft:knockback": 3
+                  "minecraft:knockback": 2
                 },
                 "minecraft:custom_data": {
                   "sulfur_striker_powerup": true

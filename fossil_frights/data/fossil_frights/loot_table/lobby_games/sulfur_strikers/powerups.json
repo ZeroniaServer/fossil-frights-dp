@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/wacker"
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/whacker"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/mega_wacker"
+          "value": "fossil_frights:lobby_games/sulfur_strikers/powerups/mega_whacker"
         },
         {
           "type": "minecraft:loot_table",
