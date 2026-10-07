@@ -1,5 +1,5 @@
-# One file per day keeps the task mix easy to edit later.
 function fossil_frights:tasks/reset
+function fossil_frights:tasks/task_book_shelf/onboarding_marker/setup
 execute if score $day_current ff_day matches 1 run function fossil_frights:tasks/encoder/day_1
 execute if score $day_current ff_day matches 2 run function fossil_frights:tasks/encoder/day_2
 execute if score $day_current ff_day matches 3 run function fossil_frights:tasks/encoder/day_3
