@@ -7,3 +7,11 @@ execute unless entity @e[type=minecraft:interaction,tag=ff_bookshelf_creature_hi
 effect give @e[type=minecraft:strider,tag=ff_bookshelf_creature_visual] minecraft:regeneration 1000000 10 true
 execute as @e[type=minecraft:strider,tag=ff_bookshelf_creature_visual,limit=1] at @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1] run tp @s ~ ~ ~ ~ 0
 execute as @e[type=minecraft:interaction,tag=ff_bookshelf_creature_hitbox,limit=1] at @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1] run tp @s ~ ~ ~
+scoreboard players set #bookshelf_creature_far ff_task_book_shelf 0
+execute at @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1] if entity @a[tag=ff_bookshelf_creature_target,distance=24..] run scoreboard players set #bookshelf_creature_far ff_task_book_shelf 1
+execute if score #bookshelf_creature_far ff_task_book_shelf matches 1 run scoreboard players add #bookshelf_creature_flash ff_task_book_shelf 1
+execute if score #bookshelf_creature_far ff_task_book_shelf matches 0 run scoreboard players set #bookshelf_creature_flash ff_task_book_shelf 0
+execute if score #bookshelf_creature_flash ff_task_book_shelf matches 20.. run scoreboard players set #bookshelf_creature_flash ff_task_book_shelf 0
+execute if score #bookshelf_creature_far ff_task_book_shelf matches 1 if score #bookshelf_creature_flash ff_task_book_shelf matches ..9 run data merge entity @e[type=minecraft:strider,tag=ff_bookshelf_creature_visual,limit=1] {Glowing:true}
+execute unless score #bookshelf_creature_far ff_task_book_shelf matches 1 run data merge entity @e[type=minecraft:strider,tag=ff_bookshelf_creature_visual,limit=1] {Glowing:false}
+execute if score #bookshelf_creature_far ff_task_book_shelf matches 1 if score #bookshelf_creature_flash ff_task_book_shelf matches 10..19 run data merge entity @e[type=minecraft:strider,tag=ff_bookshelf_creature_visual,limit=1] {Glowing:false}

@@ -1,0 +1,1 @@
+execute unless entity @e[type=minecraft:text_display,tag=ff_day_1_book_marker,limit=1] run summon minecraft:text_display 18.5 72.1 28.97 {Tags:["ff_day_1_book_marker"],text:{text:"!",bold:true},Rotation:[180,0],background:0,brightness:{sky:15,block:15},transformation:{right_rotation:[0,0,0,1],scale:[2,2,2],left_rotation:[0,0,0,1],translation:[0,0,0]},width:2,height:1}
