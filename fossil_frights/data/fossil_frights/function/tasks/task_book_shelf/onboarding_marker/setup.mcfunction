@@ -1,5 +1,3 @@
 kill @e[type=minecraft:text_display,tag=ff_day_1_book_marker]
 kill @e[type=minecraft:item_display,tag=ff_day_1_book_marker]
 scoreboard players set $bookshelf_onboarding_marker_flash ff_day 0
-execute if entity @a[limit=1,team=ff_guard,tag=!ff_bookshelf_acknowledged] run summon minecraft:text_display 18.5 72.1 28.97 {Tags:["ff_day_1_book_marker"],text:{text:"!",bold:true},Rotation:[180,0],background:0,brightness:{sky:15,block:15},transformation:{right_rotation:[0,0,0,1],scale:[2,2,2],left_rotation:[0,0,0,1],translation:[0,0,0]},width:2,height:1}
-execute if entity @a[limit=1,team=ff_guard,tag=!ff_bookshelf_acknowledged] run summon minecraft:item_display 18.5 71.0 29.5 {Tags:["ff_day_1_book_marker"],item:{id:"minecraft:stone",components:{"minecraft:item_model":"fossil_frights:display/misc/transparent_cube"}},Glowing:true,glow_color_override:65280,transformation:{right_rotation:[0,0,0,1],scale:[1,1,1],left_rotation:[0,0,0,1],translation:[0,0.5,0]},width:1,height:1}

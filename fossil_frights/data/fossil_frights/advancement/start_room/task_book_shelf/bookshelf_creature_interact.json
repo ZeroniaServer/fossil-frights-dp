@@ -1,0 +1,37 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_bookshelf_creature_hitbox"]}}
+        }
+      }
+    },
+    "punch": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {"entity_type": "minecraft:interaction", "entity_tags": {"all_of": ["ff_bookshelf_creature_hitbox"]}}
+        }
+      }
+    },
+    "punch_visual": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {"entity_type": "minecraft:strider", "entity_tags": {"all_of": ["ff_bookshelf_creature_visual"]}}
+        }
+      }
+    }
+  },
+  "requirements": [["click", "punch", "punch_visual"]],
+  "rewards": {"function": "fossil_frights:tasks/task_book_shelf/bookshelf_creature/interact"}
+}

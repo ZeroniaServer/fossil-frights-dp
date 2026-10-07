@@ -1,0 +1,2 @@
+function fossil_frights:tasks/task_book_shelf/pick_up_all_unacknowledged
+function fossil_frights:tasks/task_book_shelf/bookshelf_creature/cleanup

@@ -493,6 +493,8 @@ team add ff_queue_mannequin
 team modify ff_queue_mannequin collisionRule never
 team add ff_evolution_mannequin
 team modify ff_evolution_mannequin collisionRule never
+team add ff_bookshelf_creature
+team modify ff_bookshelf_creature collisionRule never
 team add ff_security_camera
 team modify ff_security_camera collisionRule never
 advancement revoke @a from fossil_frights:detection_root
