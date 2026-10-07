@@ -6,6 +6,12 @@ execute if score #slot ff_task_book_shelf matches 3 if items block 18 71 29 cont
 execute if score #slot ff_task_book_shelf matches 4 if items block 18 71 29 container.4 * run scoreboard players set #slot_occupied ff_task_book_shelf 1
 execute if score #slot ff_task_book_shelf matches 5 if items block 18 71 29 container.5 * run scoreboard players set #slot_occupied ff_task_book_shelf 1
 
+# Easter egg: coffee + bookshelf summons bookshelf creature.
+execute if items entity @s weapon.mainhand *[custom_data~{itemID:"instant_coffee"}] run return run function fossil_frights:tasks/task_book_shelf/passive_creature/summon
+execute if items entity @s weapon.mainhand *[custom_data~{itemID:"coffee"}] run return run function fossil_frights:tasks/task_book_shelf/passive_creature/summon
+execute if items entity @s weapon.offhand *[custom_data~{itemID:"instant_coffee"}] run return run function fossil_frights:tasks/task_book_shelf/passive_creature/summon
+execute if items entity @s weapon.offhand *[custom_data~{itemID:"coffee"}] run return run function fossil_frights:tasks/task_book_shelf/passive_creature/summon
+
 setblock 0 0 0 air strict
 setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict
 
