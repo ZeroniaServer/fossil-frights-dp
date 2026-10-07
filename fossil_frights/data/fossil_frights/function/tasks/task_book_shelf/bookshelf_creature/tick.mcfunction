@@ -1,3 +1,8 @@
+# Bookshelf Creature:
+# Spawn when exiting startroom and no ff_bookshelf_acknowledged tag
+# Glow when player is 24+ blocks away.
+# Teleport behind player at 36+ blocks away.
+
 execute unless entity @a[tag=ff_bookshelf_creature_target] as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged,sort=nearest,limit=1] run tag @s add ff_bookshelf_creature_target
 execute as @a[tag=ff_bookshelf_creature_target] if predicate fossil_frights:location/room/start_room run function fossil_frights:tasks/task_book_shelf/bookshelf_creature/cleanup
 execute unless entity @a[tag=ff_bookshelf_creature_target] run return 0
