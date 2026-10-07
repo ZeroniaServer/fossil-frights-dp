@@ -23,7 +23,8 @@ execute if score $bookshelf_onboarding_marker_flash ff_day matches 20.. run scor
 execute if score $bookshelf_onboarding_marker_flash ff_day matches ..9 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:100,brightness:{sky:15,block:15}}
 execute if score $bookshelf_onboarding_marker_flash ff_day matches 10..19 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:0}
 
-execute if score $day_timer ff_day matches ..3599 as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged] run function fossil_frights:player/actionbar/show/fallback_instruction/task_book
+execute if score $day_timer ff_day matches 400..3599 as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged] run function fossil_frights:player/actionbar/show/fallback_instruction/task_book
+execute unless score $day_current ff_day matches 1 if score $day_timer ff_day matches ..399 as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged] run function fossil_frights:player/actionbar/show/fallback_instruction/task_book
 execute if score $day_timer ff_day matches 3600.. if score $bookshelf_onboarding_marker_flash ff_day matches ..9 as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged] run function fossil_frights:player/actionbar/show/fallback_instruction/task_book
 execute if score $day_current ff_day matches 1..2 if score $day_timer ff_day matches ..3599 as @a[team=ff_guard,tag=ff_bookshelf_acknowledged,scores={ff_run_count=..2}] run function fossil_frights:player/actionbar/show/fallback_instruction/locator_bar.yellow
 execute if score $day_current ff_day matches 1..2 if score $day_timer ff_day matches 3600.. if score $bookshelf_onboarding_marker_flash ff_day matches ..9 as @a[team=ff_guard,tag=ff_bookshelf_acknowledged,scores={ff_run_count=..2}] run function fossil_frights:player/actionbar/show/fallback_instruction/locator_bar.yellow
