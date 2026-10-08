@@ -12,14 +12,7 @@
             "target": "this",
             "score": "ff_dropped_item_despawn_timestamp"
           },
-          "right": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "#gametime"
-            },
-            "score": "ff_dropped_item_despawn_timestamp"
-          }
+          "right": "fossil_frights:gametime"
         },
         "right": 20
       },
