@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:filtered",
+  "slot_source": "fossil_frights:player/all",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "lady_bug",
+        "ff_lady_bug": {
+          "resolved": false
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-execute store result score #bat_bug_bar ff_dummy run compute default integer {type:"minecraft:from_float",input:{type:"minecraft:mul",inputs:[33,{type:"minecraft:div",left:{type:"minecraft:storage",storage:"fossil_frights:lady_bug",path:"inputs[0]"},right:{type:"minecraft:from_int",input:"fossil_frights:items/lady_bug/max_age"}}]}}
+execute store result score #bat_bug_bar ff_dummy run compute default integer {type:"minecraft:from_float",input:{type:"minecraft:mul",inputs:[33,{type:"minecraft:sub",left:1,right:{type:"minecraft:div",left:{type:"minecraft:sub",left:{type:"minecraft:storage",storage:"fossil_frights:lady_bug",path:"inputs[0]"},right:{type:"minecraft:from_int",input:"fossil_frights:gametime"}},right:{type:"minecraft:from_int",input:"fossil_frights:items/lady_bug/max_age"}}}]}}
 data remove storage fossil_frights:lady_bug inputs[0]
 
 execute if score #bat_bug_bar ff_dummy matches ..0 run data modify storage fossil_frights:lady_bug outputs append value ["",{text:"\ue580",font:"fossil_frights:actionbar/ladybug"}]

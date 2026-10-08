@@ -1,0 +1,2 @@
+$item modify entity @e[type=#fossil_frights:players_and_thrown_items] fossil_frights:player/filtered/lady_bug_unresolved {type:set_custom_data,tag:{ff_lady_bug:{resolved:true,despawn_timestamp:$(despawn_timestamp)}}}
+$item modify entity @e[type=#fossil_frights:players_and_thrown_items] {type:filtered,slot_source:"fossil_frights:player/filtered/lady_bug",item_filter:{predicates:{custom_data:{ff_lady_bug:{despawn_timestamp:$(gametime)}}}}} {type:set_custom_data,tag:{ff_lady_bug:{fly_away:true}}}
