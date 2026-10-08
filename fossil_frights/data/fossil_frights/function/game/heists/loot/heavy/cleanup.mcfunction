@@ -10,3 +10,4 @@ execute as @e[tag=fh_raptor_skull] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_biplane] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_vault] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_velociraptor] run data merge entity @s {view_range:1f}
+function fossil_frights:game/heists/loot/heavy/velociraptor_statue/place_collision
