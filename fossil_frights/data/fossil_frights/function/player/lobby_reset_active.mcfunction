@@ -20,8 +20,6 @@ tag @s remove ff_camera_remote_active
 tag @s remove ff_muted_chat
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
-scoreboard players set @s ff_bat_bug_timer 0
-scoreboard players set @s ff_bat_bug_bar 0
 function fossil_frights:player/actionbar/clear
 clear @s
 function fossil_frights:items/plushies/restore

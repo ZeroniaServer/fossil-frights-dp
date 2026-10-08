@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:number_dispatcher",
+  "cases": [
+    {
+      "condition": "fossil_frights:game_state/heist_mode_active",
+      "value": 600
+    }
+  ],
+  "default": 740
+}

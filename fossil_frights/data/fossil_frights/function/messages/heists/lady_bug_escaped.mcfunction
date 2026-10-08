@@ -1,2 +1,5 @@
-playsound minecraft:entity.bee.loop_aggressive master @s ~ ~ ~ 0.7 1.5
+execute at @s run playsound minecraft:entity.bee.loop_aggressive master @s ~ ~ ~ 0.7 1.5
 tellraw @s [{"text":"<"},{"translate":"ff.item.lady_bug","color":"red"},{"text":"> "},{"translate":"ff.lady_bug.escaped"}]
+
+execute if entity @s[type=item] on origin run tellraw @s [{"text":"<"},{"translate":"ff.item.lady_bug","color":"red"},{"text":"> "},{"translate":"ff.lady_bug.escaped"}]
+execute if entity @s[type=item] on origin at @s run playsound minecraft:entity.bee.loop_aggressive master @s ~ ~ ~ 0.7 1.5

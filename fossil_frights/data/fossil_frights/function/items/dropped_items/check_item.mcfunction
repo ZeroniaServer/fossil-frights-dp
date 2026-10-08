@@ -12,12 +12,20 @@ execute if items entity @s contents *[custom_data~{ff_heist_trap:true}] if funct
 execute if items entity @s contents *[custom_data~{ff_prevent_drop:true}] if function fossil_frights:items/dropped_items/check_thrower run return run function fossil_frights:items/dropped_items/return_item
 
 ## Allow throw
-# Cancel item despawn
-execute unless predicate fossil_frights:game_state/heist_mode_active run data modify entity @s Age set value -32768
-execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_rules:{prevent_ground_despawn:true}}] run data modify entity @s Age set value -32768
+# Item despawning 
+# - In Heists Mode, despawn all thrown items after 20 seconds (unless they have `ff_heist_rules.prevent_ground_despawn` set to true)
+# - In any game mode, ladybugs inherit the despawn timer based on their `ff_lady_bug.age` value.
+# - Everything else does not despawn
+scoreboard players set #despawns ff_dummy 0
+execute if predicate fossil_frights:game_state/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_rules:{prevent_ground_despawn:true}}] run scoreboard players set #despawns ff_dummy 1
+execute if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run scoreboard players set #despawns ff_dummy 1
+execute if entity @s[tag=ff_anvil.display] run scoreboard players set #despawns ff_dummy 0
 
-# Despawn heist loot after 20 seconds
-execute if predicate fossil_frights:game_state/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_rules:{prevent_ground_despawn:true}}] unless entity @s[tag=ff_anvil.display] run function fossil_frights:items/dropped_items/init_heist_loot
+execute if score #despawns ff_dummy matches 0 run data modify entity @s Age set value -32768
+execute if score #despawns ff_dummy matches 1 run function fossil_frights:items/dropped_items/despawn_timer/init
+
+# Heist items
+execute if predicate fossil_frights:game_state/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_rules:{prevent_ground_despawn:true}}] unless entity @s[tag=ff_anvil.display] run function fossil_frights:game/heists/loot/capture/credit/snapshot_owner
 
 # Prevent pickup from non-playing players
 execute if dimension minecraft:overworld run data modify entity @s Owner set value [I;0,0,0,0]

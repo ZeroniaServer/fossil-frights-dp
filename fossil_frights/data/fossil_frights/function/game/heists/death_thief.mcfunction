@@ -1,6 +1,5 @@
 scoreboard players add @s ff_heist_deaths_round 1
 function fossil_frights:game/heists/loot/secure_loot/clear_player
-function fossil_frights:game/heists/loot/rare/pickup/lady_bug/death
 scoreboard players operation #match ff_active_uuid_0 = @s ff_heist_killer_uuid_0
 scoreboard players operation #match ff_active_uuid_1 = @s ff_heist_killer_uuid_1
 scoreboard players operation #match ff_active_uuid_2 = @s ff_heist_killer_uuid_2

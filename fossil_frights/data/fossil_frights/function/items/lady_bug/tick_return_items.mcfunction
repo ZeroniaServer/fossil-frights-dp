@@ -1,0 +1,2 @@
+item replace entity @s fossil_frights:player/filtered/lady_bug from block 0 0 0 {type:"minecraft:contents",slot_source:{type:"minecraft:limit_slots",slot_source:{type:"minecraft:contents",slot_source:{type:"minecraft:slot_range",slots:"container.0"},component:"minecraft:charged_projectiles"},limit:1},component:"minecraft:charged_projectiles"}
+item fill block 0 0 0 {type:"minecraft:limit_slots",slot_source:{type:"minecraft:contents",slot_source:{type:"minecraft:slot_range",slots:"container.0"},component:"minecraft:charged_projectiles"},limit:1} with air

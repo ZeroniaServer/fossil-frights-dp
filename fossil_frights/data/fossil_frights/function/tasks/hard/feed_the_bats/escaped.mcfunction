@@ -1,3 +1,0 @@
-function fossil_frights:tasks/hard/feed_the_bats/clear_timer
-clear @s *[custom_data~{itemID:"lady_bug"}]
-function fossil_frights:messages/heists/lady_bug_escaped

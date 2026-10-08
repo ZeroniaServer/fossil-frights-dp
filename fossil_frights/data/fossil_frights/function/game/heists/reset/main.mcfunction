@@ -8,7 +8,7 @@ function fossil_frights:game/heists/capture_point/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
 function fossil_frights:game/heists/loot/secure_loot/reset
-function fossil_frights:game/heists/loot/rare/pickup/lady_bug/clear_all
+clear @a *[custom_data~{itemID:"lady_bug"}]
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/lady_bug]
 kill @e[type=minecraft:item,tag=ff_heist_guard_coin]
 schedule clear fossil_frights:game/heists/guard_coin/clear_actionbar_priority

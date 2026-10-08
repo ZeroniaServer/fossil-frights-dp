@@ -1,0 +1,22 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "obtain_lady_bug": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "lady_bug"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/lady_bug/trigger"
+  }
+}

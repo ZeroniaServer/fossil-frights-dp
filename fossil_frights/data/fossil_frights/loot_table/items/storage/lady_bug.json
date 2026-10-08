@@ -16,6 +16,7 @@
                   "color": "red"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/lady_bug",
+                "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "lady_bug",
                   "ff_heist_rules": {
