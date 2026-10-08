@@ -1,1 +1,0 @@
-$data modify entity @e[type=minecraft:text_display,tag=ff_rejoin_display,predicate=fossil_frights:entity/match/active,limit=1] text set value {translate:"ff.rejoin.countdown",font:"fossil_frights:small_caps",color:"gray",with:[{text:"$(minutes):$(tens)$(ones)",font:"fossil_frights:small_caps"}]}
