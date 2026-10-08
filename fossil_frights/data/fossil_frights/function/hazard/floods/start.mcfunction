@@ -29,7 +29,7 @@ setblock -24 100 57 minecraft:water
 #Aviary
 setblock -13 108 68 minecraft:water
 setblock -15 108 78 minecraft:water
-setblock 9 108 87 minecraft:water
+setblock 9 108 86 minecraft:water
 setblock 4 108 88 minecraft:water
 #Second Floor Misc
 setblock -13 100 14 minecraft:water
