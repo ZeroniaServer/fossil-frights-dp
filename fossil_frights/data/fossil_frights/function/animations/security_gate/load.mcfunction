@@ -5,6 +5,7 @@ data modify storage fossil_frights:security_gate gates set value {\
     "stairwell_entry": {speed: 5.0, height: 2, width: 2, visual_height: 3}, \
     "garage": {speed: 3.33333333333, height: 3, width: 3, thick: true}, \
     "ruins": {speed: 5.0, height: 3, width: 3}, \
+    "observatory": {speed: 3.0, height: 4, width: 4}, \
 }
 
 kill @e[tag=ff_security_gate]
@@ -20,3 +21,4 @@ execute positioned -22.5 70.0 48.0 run function fossil_frights:animations/securi
 execute positioned -2.5 70.0 39.5 run function fossil_frights:animations/security_gate/summon/main {type:"garage",facing:"north"}
 execute positioned -25.5 80.0 63.0 run function fossil_frights:animations/security_gate/summon/main {type:"stairwell_entry",facing:"east"}
 execute positioned -26.5 94.0 62.0 run function fossil_frights:animations/security_gate/summon/main {type:"stairwell_entry",facing:"east"}
+execute positioned -19.5 101.0 85.0 run function fossil_frights:animations/security_gate/summon/main {type:"observatory",facing:"east"}
