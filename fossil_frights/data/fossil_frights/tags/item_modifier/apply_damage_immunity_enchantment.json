@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "fossil_frights.experimental:apply_damage_immunity_enchantment",
+      "required": false
+    }
+  ]
+}

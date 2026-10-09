@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:equippable": {
+                  "slot": "saddle",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:custom_data": {
+                  "ff_damage_immunity_item": true
+                }
+              }
+            },
+            {
+              "type": "minecraft:sequence",
+              "functions": "#fossil_frights:apply_damage_immunity_enchantment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
