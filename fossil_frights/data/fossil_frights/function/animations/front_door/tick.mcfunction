@@ -110,8 +110,8 @@ execute if entity @s[tag=ff_front_door.right] if score @s ff_door_angle matches 
 execute if entity @s[tag=ff_front_door.right] if score @s ff_door_angle matches 49 run data merge entity @s {start_interpolation:0,interpolation_duration:1,transformation:{left_rotation:[0,0.82358449,0,0.56719361]}}
 execute if entity @s[tag=ff_front_door.right] if score @s ff_door_angle matches 50 run data merge entity @s {start_interpolation:0,interpolation_duration:1,transformation:{left_rotation:[0,0.82412619,0,0.56640624]}}
 
-execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 80 9 2 80 9 minecraft:resin_brick_stairs[facing=south,half=top] strict
-execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 81 9 2 85 9 minecraft:resin_brick_stairs[facing=south,half=bottom] strict
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 80 9 2 80 9 minecraft:pink_wool_stairs[facing=south,half=top] strict
+execute if entity @s[tag=ff_front_door.left] if score @s ff_door_angle matches 0 run fill -2 81 9 2 85 9 minecraft:pink_wool_stairs[facing=south,half=bottom] strict
 execute if entity @s[tag=ff_front_door.left] unless score @s ff_door_angle matches 0 run fill -2 80 9 2 85 9 minecraft:barrier strict
 
 execute if entity @s[tag=ff_front_door.left,tag=!ff_front_door.closing] if score @s ff_door_angle matches 49 as @e[type=player,gamemode=!spectator,predicate=fossil_frights:location/front_door_suffocation_region] run function fossil_frights:animations/front_door/kill
