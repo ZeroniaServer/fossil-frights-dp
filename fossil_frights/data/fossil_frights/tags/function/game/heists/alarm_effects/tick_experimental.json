@@ -2,7 +2,7 @@
   "values": [
     {
       "required": false,
-      "id": "fossil_frights:game/heists/alarm_effects/tick_experimental"
+      "id": "fossil_frights.experimental:game/heists/alarm_effects/tick_experimental"
     }
   ]
 }
