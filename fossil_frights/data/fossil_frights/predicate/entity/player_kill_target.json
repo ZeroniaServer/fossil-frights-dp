@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:entity_type": "minecraft:player",
+        "minecraft:type_specific/player": {
+          "gamemode": [
+            "adventure",
+            "survival"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:entity_type": "minecraft:mannequin",
+        "minecraft:entity_tags": {
+          "all_of": [
+            "ff_camera_remote_dummy"
+          ]
+        }
+      }
+    }
+  ]
+}

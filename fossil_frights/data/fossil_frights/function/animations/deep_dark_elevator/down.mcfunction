@@ -11,4 +11,4 @@ execute if score $step ff_deep_dark_elevator matches 1.. run return run schedule
 function fossil_frights:animations/deep_dark_elevator/stopped_moving
 scoreboard players set $crane_wait ff_game_state 0
 
-execute positioned 51.0 67.5 59.0 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,gamemode=!creative] run function fossil_frights:animations/deep_dark_elevator/crush_player
+execute positioned 51.0 67.5 59.0 as @e[dx=0,dy=0,dz=0,type=#fossil_frights:players_and_mannequins,predicate=fossil_frights:entity/player_kill_target] run function fossil_frights:animations/deep_dark_elevator/crush
