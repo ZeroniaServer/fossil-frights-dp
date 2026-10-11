@@ -3,5 +3,6 @@ execute if entity @s[type=minecraft:mannequin] run return run execute as @a[limi
 
 gamerule minecraft:show_death_messages false
 tellraw @a {translate:"ff.death.forklift",with:[{selector:"@s"}]}
+advancement grant @s only fossil_frights:02_achievements/days_without_incident_0
 kill @s
 gamerule minecraft:show_death_messages true
