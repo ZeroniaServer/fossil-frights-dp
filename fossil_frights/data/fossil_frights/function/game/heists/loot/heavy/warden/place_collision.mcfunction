@@ -1,5 +1,5 @@
-setblock 59 74 72 minecraft:barrier[waterlogged=false] strict
-setblock 59 73 72 minecraft:barrier[waterlogged=false] strict
+setblock 59 74 72 minecraft:pink_stained_glass strict
+setblock 59 73 72 minecraft:pink_stained_glass strict
 setblock 59 74 71 minecraft:zombie_wall_head[facing=north,powered=false]{components:{}} strict
 setblock 60 73 71 minecraft:zombie_wall_head[facing=east,powered=false]{components:{}} strict
 setblock 60 73 72 minecraft:zombie_wall_head[facing=south,powered=false]{components:{}} strict
