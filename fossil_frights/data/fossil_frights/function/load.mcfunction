@@ -1,5 +1,6 @@
 execute unless data storage fossil_frights:world settings{} run data modify storage fossil_frights:world settings set value {}
 execute unless data storage fossil_frights:world settings.realms run data modify storage fossil_frights:world settings.realms set value false
+data modify storage fossil_frights:world settings.singleplayer set value false
 data modify storage fossil_frights:world settings.packs_enabled set value {}
 function #fossil_frights:query_packs_enabled
 function fossil_frights:ui/command_syntax/refresh
@@ -140,6 +141,8 @@ scoreboard objectives add ff_bat_fright_timer dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
+scoreboard objectives add ff_singleplayer_play_time minecraft.custom:minecraft.play_time
+scoreboard objectives add ff_singleplayer_world_time minecraft.custom:minecraft.total_world_time
 scoreboard objectives add ff_task_state dummy
 scoreboard objectives add ff_task_tracker dummy
 scoreboard objectives add ff_top_time dummy
@@ -329,6 +332,7 @@ scoreboard players set $heist_basement_lava_lock ff_heist 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
+scoreboard players set $day_timer_play_time_start ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_minutes ff_day 0
 scoreboard players set $day_seconds ff_day 0

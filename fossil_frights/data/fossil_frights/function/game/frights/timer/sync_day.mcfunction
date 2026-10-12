@@ -1,4 +1,5 @@
-
+execute if predicate fossil_frights:world/is_singleplayer run function fossil_frights:game/frights/timer/detect_singleplayer/sync_day
+execute if predicate fossil_frights:world/is_singleplayer run return 0
 execute unless score $day_stopwatch_active ff_day matches 1 run return 0
 execute store success score $day_stopwatch_active ff_day store result score $day_timer_query_now ff_day run stopwatch query fossil_frights:day_duration 20
 execute unless score $day_stopwatch_active ff_day matches 1 run return 0

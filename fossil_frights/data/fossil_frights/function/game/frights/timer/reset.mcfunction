@@ -8,6 +8,7 @@ scoreboard players set $timer_frozen ff_day 0
 scoreboard players set $timer_pause_offset ff_day 0
 scoreboard players set $timer_pause_now ff_day 0
 scoreboard players set $day_timer_offset ff_day 0
+scoreboard players set $day_timer_play_time_start ff_day 0
 scoreboard players set $day_timer_pause_now ff_day 0
 scoreboard players set $timer_query_now ff_day 0
 scoreboard players set $day_timer_query_now ff_day 0

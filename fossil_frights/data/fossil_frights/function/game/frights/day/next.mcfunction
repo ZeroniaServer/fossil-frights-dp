@@ -15,6 +15,7 @@ scoreboard players set $day_timer_offset ff_day 0
 scoreboard players set $day_stopwatch_active ff_day 0
 stopwatch remove fossil_frights:day_duration
 execute store success score $day_stopwatch_active ff_day run stopwatch create fossil_frights:day_duration
+execute as @a[team=ff_guard,limit=1] run scoreboard players operation $day_timer_play_time_start ff_day = @s ff_singleplayer_play_time
 scoreboard players set $day_active ff_day 1
 execute if score $day_current ff_day matches 1 run scoreboard players set $speedrunner_restart_window ff_game_state 100
 scoreboard players set $day_flash ff_day 0
