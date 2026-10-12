@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:equippable": {
-                  "slot": "saddle",
+                  "slot": "body",
                   "equip_sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:custom_data": {
