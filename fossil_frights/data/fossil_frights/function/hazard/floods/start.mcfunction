@@ -10,7 +10,7 @@ setblock 24 87 37 minecraft:water
 setblock 17 87 40 minecraft:water
 #Gift Shop
 setblock -25 87 18 minecraft:water
-setblock -19 87 26 minecraft:water
+setblock -19 87 27 minecraft:water
 #Aquatic Exhibit
 setblock 15 90 63 minecraft:water
 setblock -15 90 64 minecraft:water

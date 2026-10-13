@@ -6,7 +6,7 @@ execute positioned 24 87 37 run function fossil_frights:hazard/floods/drain_wate
 execute positioned 17 87 40 run function fossil_frights:hazard/floods/drain_water/start_here
 #Gift Shop
 execute positioned -25 87 18 run function fossil_frights:hazard/floods/drain_water/start_here
-execute positioned -19 87 26 run function fossil_frights:hazard/floods/drain_water/start_here
+execute positioned -19 87 27 run function fossil_frights:hazard/floods/drain_water/start_here
 #Aquatic Exhibit
 execute positioned 15 90 63 run function fossil_frights:hazard/floods/drain_water/start_here
 execute positioned -15 90 64 run function fossil_frights:hazard/floods/drain_water/start_here
