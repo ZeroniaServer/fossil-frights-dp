@@ -1,4 +1,4 @@
-# Pick exactly one unique medium task from the remaining unselected pool.
+# Select 1 random medium task.
 scoreboard players set #task_remaining ff_task_state 0
 execute unless score $chlorinify_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $credit_reel_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1

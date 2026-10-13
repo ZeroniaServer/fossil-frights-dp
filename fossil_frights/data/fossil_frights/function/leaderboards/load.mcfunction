@@ -1,4 +1,4 @@
-# Leaderboard scores persist automatically; this only resets helper state.
+# Reset helper state
 scoreboard players set $lb_pending_day ff_day 0
 scoreboard players set $lb_pending ff_active_uuid_0 0
 scoreboard players set $lb_pending ff_active_uuid_1 0

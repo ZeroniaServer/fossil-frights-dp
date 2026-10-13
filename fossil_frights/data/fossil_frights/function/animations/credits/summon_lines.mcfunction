@@ -1,6 +1,4 @@
-# Edit the text in this file to change the credits.
-# Each role/name pair uses two text displays, movie-credit style.
-# Spawn positions are relative to the anchor summoned by start.mcfunction.
+# Credit reel, relative to anchor
 
 execute as @e[limit=1,sort=nearest,type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run execute positioned ~ ~-1.52 ~ rotated 90 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/fossil_frights_banner",nbt:{Tags:["ff_credits","ff_credits_scroll","ff_credits_scroll.title","credits"],width:9,height:2.5,teleport_duration:1,brightness:{sky:15,block:15},item_display:"fixed",transformation:{right_rotation:[0,0,0,1],left_rotation:[0,0,0,1],translation:[0,1.52,0],scale:[0.725,0.725,0.725]}}}
 

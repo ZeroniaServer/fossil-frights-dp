@@ -1,4 +1,4 @@
-#> Remove lootName down the line when translation keys are added. The key will reference the lootId
+#> Use lootId for translation
 function fossil_frights:game/heists/loot/render_helper {"lootId":"coffee"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"poster_tube"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"ghast_plushie"}

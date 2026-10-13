@@ -1,4 +1,3 @@
-# Restore the lights in smaller waves using glowstone and full-bright light blocks.
 execute if score #lights_stop_phase ff_hazard_rng matches 0 run schedule clear fossil_frights:hazard/lights/start
 execute if score #lights_stop_phase ff_hazard_rng matches 0 run function fossil_frights:hazard/lights/close_breaker_panel
 execute if score #lights_stop_phase ff_hazard_rng matches 0 run scoreboard players set #lights_stop_phase ff_hazard_rng 1

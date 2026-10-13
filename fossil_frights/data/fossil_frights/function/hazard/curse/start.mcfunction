@@ -1,4 +1,3 @@
-# Reset the curse flicker state and begin the first cycle after 4 seconds.
 scoreboard players set #curse_timer ff_hazard_rng 80
 scoreboard players set #curse_restore_timer ff_hazard_rng 0
 scoreboard players set #curse_second_timer ff_hazard_rng 0

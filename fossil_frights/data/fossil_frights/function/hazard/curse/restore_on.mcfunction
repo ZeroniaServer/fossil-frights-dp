@@ -1,4 +1,4 @@
-# Match the "lights on" state used by the lights hazard.
+# Restore lights-on state
 fill -28 72 8 22 78 97 minecraft:glowstone replace minecraft:redstone_lamp
 fill 23 72 8 73 78 97 minecraft:glowstone replace minecraft:redstone_lamp
 fill -28 79 8 22 85 97 minecraft:glowstone replace minecraft:redstone_lamp

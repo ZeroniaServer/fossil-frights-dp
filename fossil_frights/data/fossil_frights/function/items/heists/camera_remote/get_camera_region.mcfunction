@@ -1,4 +1,3 @@
-# Resolve the current room even when the player is carrying only the remote.
 function fossil_frights:map/resolve_region
 
 execute if score @s ff_map_region matches 3 run return run scoreboard players set @s ff_security_camera 3
