@@ -1,5 +1,6 @@
 {
   "values": [
-    "minecraft:generic_kill"
+    "minecraft:generic_kill",
+    "minecraft:wither"
   ]
 }
