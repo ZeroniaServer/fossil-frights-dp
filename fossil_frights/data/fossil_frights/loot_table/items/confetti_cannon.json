@@ -25,6 +25,7 @@
                 },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
+                    "minecraft:container",
                     "minecraft:enchantments"
                   ]
                 },

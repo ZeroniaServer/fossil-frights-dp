@@ -60,7 +60,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/other/confetti_cannon/remote"
+                  "value": "fossil_frights:items/confetti_cannon_remote"
                 },
                 {
                   "type": "minecraft:loot_table",

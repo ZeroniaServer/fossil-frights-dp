@@ -31,8 +31,7 @@
                   "has_consume_particles": false
                 },
                 "minecraft:custom_data": {
-                  "itemID": "confetti_remote",
-                  "ff_confetti_remote": true,
+                  "itemID": "confetti_cannon_remote",
                   "ff_prevent_drop": true
                 }
               }

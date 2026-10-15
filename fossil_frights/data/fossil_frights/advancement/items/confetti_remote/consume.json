@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "ff_confetti_remote": true
+              "itemID": "confetti_cannon_remote"
             }
           }
         }
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:items/other/confetti_cannon/use_consumed"
+    "function": "fossil_frights:items/confetti_cannon/use_consumed"
   }
 }
