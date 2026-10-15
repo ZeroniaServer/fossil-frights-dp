@@ -85,6 +85,10 @@ execute unless predicate fossil_frights:world/is_singleplayer as @a if score @s 
 function fossil_frights:game/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
+execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches ..4 if predicate fossil_frights:player/leaderboard/looking_at_next run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_next
+execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 1.. if predicate fossil_frights:player/leaderboard/looking_at_previous run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_previous
+execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 5.. if predicate fossil_frights:player/leaderboard/looking_at_next run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_next_disabled
+execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 0 if predicate fossil_frights:player/leaderboard/looking_at_previous run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_previous_disabled
 function fossil_frights:join/join_pads/tick
 function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
 function fossil_frights:lobby_games/temple_run/animations/tick

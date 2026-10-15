@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:type_specific/player": {
+      "looking_at": {
+        "minecraft:entity_type": "minecraft:interaction",
+        "minecraft:distance": {
+          "absolute": {
+            "max": 3.5
+          }
+        },
+        "minecraft:entity_tags": {
+          "all_of": [
+            "ff_lb_nav_v8_prev"
+          ]
+        }
+      }
+    }
+  }
+}
