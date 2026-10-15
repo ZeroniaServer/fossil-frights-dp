@@ -6,7 +6,7 @@ execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/a
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run tag @s add ff_ant_fight_leave
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run function fossil_frights:lobby_games/ant_fight/end
 execute if entity @s[tag=ff_ant_fight] run item replace entity @s weapon.offhand with air
-execute if entity @s[tag=ff_ant_fight] unless predicate fossil_frights:player/inventory/infinileaf run loot give @s loot fossil_frights:items/other/infinileaf
+execute if entity @s[tag=ff_ant_fight] unless predicate fossil_frights:player/inventory/infinileaf run loot give @s loot fossil_frights:items/lobby/infinileaf
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_top_score 0
 execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_immunity 0

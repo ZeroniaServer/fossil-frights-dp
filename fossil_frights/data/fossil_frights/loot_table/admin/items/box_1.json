@@ -116,11 +116,11 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/other/basketball"
+                  "value": "fossil_frights:items/tasks/basketball_dance/basketball"
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/other/vault_key"
+                  "value": "fossil_frights:items/tasks/return_the_key/vault_key"
                 },
                 {
                   "type": "minecraft:loot_table",

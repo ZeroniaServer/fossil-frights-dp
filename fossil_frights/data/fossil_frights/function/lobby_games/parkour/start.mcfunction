@@ -11,7 +11,7 @@ scoreboard players set @s ff_parkour_centi 0
 scoreboard players set @s ff_parkour_centi_tens 0
 scoreboard players set @s ff_parkour_centi_ones 0
 clear @s
-loot replace entity @s hotbar.0 loot fossil_frights:items/other/parkour_restart
+loot replace entity @s hotbar.0 loot fossil_frights:items/lobby/parkour_restart
 scoreboard players operation @s ff_parkour_restart_seen = @s ff_parkour_restart_use
 function fossil_frights:lobby_games/parkour/update_display
 function fossil_frights:lobby_games/parkour/music/start

@@ -52,7 +52,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/other/dinocoin",
+                  "value": "fossil_frights:items/dinocoin",
                   "modifier": {
                     "type": "minecraft:set_count",
                     "count": 64

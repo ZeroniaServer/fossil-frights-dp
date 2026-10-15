@@ -11,7 +11,7 @@ scoreboard players set @s ff_temple_run_centi 0
 scoreboard players set @s ff_temple_run_centi_tens 0
 scoreboard players set @s ff_temple_run_centi_ones 0
 clear @s
-loot replace entity @s hotbar.0 loot fossil_frights:items/other/temple_run_restart
+loot replace entity @s hotbar.0 loot fossil_frights:items/lobby/temple_run_restart
 scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use
 function fossil_frights:lobby_games/temple_run/update_display
 function fossil_frights:lobby_games/temple_run/music/start

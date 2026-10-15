@@ -5,7 +5,7 @@ execute if items entity @s armor.legs *[!custom_data~{ff_paint_armor:true}] run 
 execute if items entity @s armor.chest *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.chest fossil_frights:game/heists/set_paint/on
 execute if items entity @s armor.head *[!custom_data~{ff_paint_armor:true}] run item modify entity @s armor.head fossil_frights:game/heists/set_paint/on
 
-execute unless items entity @s armor.feet * run loot replace entity @s armor.feet loot fossil_frights:items/other/paint_armor/paint_boots
-execute unless items entity @s armor.legs * run loot replace entity @s armor.legs loot fossil_frights:items/other/paint_armor/paint_leggings
-execute unless items entity @s armor.chest * run loot replace entity @s armor.chest loot fossil_frights:items/other/paint_armor/paint_chestplate
-execute unless items entity @s armor.head * run loot replace entity @s armor.head loot fossil_frights:items/other/paint_armor/paint_helmet
+execute unless items entity @s armor.feet * run loot replace entity @s armor.feet loot fossil_frights:items/heists/paint_armor/paint_boots
+execute unless items entity @s armor.legs * run loot replace entity @s armor.legs loot fossil_frights:items/heists/paint_armor/paint_leggings
+execute unless items entity @s armor.chest * run loot replace entity @s armor.chest loot fossil_frights:items/heists/paint_armor/paint_chestplate
+execute unless items entity @s armor.head * run loot replace entity @s armor.head loot fossil_frights:items/heists/paint_armor/paint_helmet

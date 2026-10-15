@@ -4,7 +4,7 @@ execute if score $victory_complete ff_game_state matches 1 run return 0
 execute unless entity @s[team=ff_guard] run return 0
 execute if entity @s[tag=ff_map_claimed] run function fossil_frights:player/actionbar/show/generic/museum_map_already_claimed
 execute if entity @s[tag=ff_map_claimed] run return 0
-loot give @s loot fossil_frights:items/other/museum_map
+loot give @s loot fossil_frights:items/museum_map
 scoreboard players set @s ff_map_region 1
 tag @s add ff_map_claimed
 scoreboard players add $museum_map_claims ff_game_state 1

@@ -27,7 +27,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/muddy_sherd
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/carrot_cake",page:"page_1",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/cookie",page:"page_1",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/other/basketball",page:"page_1",slot:23}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/vault_key",page:"page_1",slot:24}
+function fossil_frights:items/catalog/from_loot {loot:"items/tasks/return_the_key/vault_key",page:"page_1",slot:24}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/hoverboard",page:"page_1",slot:25}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/leather_boots",page:"page_1",slot:26}
 
