@@ -29,6 +29,7 @@ execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day mat
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_time
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_duo_best
+execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 run function fossil_frights:leaderboards/party_record/consider
 execute as @a[team=ff_guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/process_day_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_victory
 execute if score $day_current ff_day matches 10 run scoreboard players set $speedrun_victory_blink ff_speedrun_blink -1

@@ -8,6 +8,13 @@ execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_
 execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_frights:leaderboards slot_2.color set value "white"
 execute if score #lb_page ff_lb_calc matches 1.. run data modify storage fossil_frights:leaderboards slot_3.color set value "white"
 function fossil_frights:leaderboards/display/update_navigation
+execute if score #lb_page ff_lb_calc matches 5.. run function fossil_frights:leaderboards/display/render_party_page
+execute if score #lb_page ff_lb_calc matches 5.. run return 0
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_index] run data modify entity @s text_opacity set value -1b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_best] run data modify entity @s text_opacity set value -1b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_player] run data modify entity @s text_opacity set value -1b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_time] run data modify entity @s text_opacity set value 0b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players] run data modify entity @s text_opacity set value 0b
 scoreboard players set #lb_slot_1_rank ff_lb_calc 1
 execute if score #lb_page ff_lb_calc matches 1.. run scoreboard players add #lb_slot_1_rank ff_lb_calc 10
 execute if score #lb_page ff_lb_calc matches 2.. run scoreboard players add #lb_slot_1_rank ff_lb_calc 10

@@ -7,7 +7,6 @@ execute unless score $day_current ff_day matches 0 run return 0
 scoreboard players set $heist_button_lock ff_game_state 20
 function fossil_frights:game/rejoin/cleanup/all
 scoreboard players set $run_multiplayer ff_game_state 1
-scoreboard players set $run_admin_modified ff_game_state 1
 scoreboard players set $heist_mode_active ff_game_state 1
 function fossil_frights:hazard/lava/map/update
 scoreboard players set $heist_round_active ff_game_state 0
