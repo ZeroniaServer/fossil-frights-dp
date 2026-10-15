@@ -6,23 +6,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:fishing_rod",
+          "name": "minecraft:golden_spear",
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.lobby.sulfur_strikers.powerup.grabber",
+                  "translate": "ff.lobby.sulfur_strikers.powerup.launcher",
                   "color": "yellow",
                   "italic": false
                 },
-                "minecraft:max_damage": 10,
+                "minecraft:max_damage": 4,
                 "minecraft:damage": 0,
+                "minecraft:enchantments": {
+                  "minecraft:lunge": 3
+                },
                 "minecraft:custom_data": {
-                  "sulfur_striker_powerup": true
+                  "itemID": "sulfur_strikers/launcher"
                 }
               }
-            }
+            },
+            "fossil_frights:item_definition/sulfur_strikers_powerup"
           ]
         }
       ]
