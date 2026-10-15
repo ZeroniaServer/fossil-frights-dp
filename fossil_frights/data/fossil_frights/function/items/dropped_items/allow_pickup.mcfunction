@@ -10,6 +10,11 @@ execute align xz if block ~-1 ~ ~ #fossil_frights:is_full_cube if block ~ ~ ~1 #
 execute align xz if block ~1 ~ ~ #fossil_frights:is_full_cube if block ~ ~ ~-1 #fossil_frights:is_full_cube positioned ~1 ~-5 ~-10 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
 execute align xz if block ~1 ~ ~ #fossil_frights:is_full_cube if block ~ ~ ~1 #fossil_frights:is_full_cube positioned ~1 ~-5 ~1 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
 
+execute align xz if block ~ ~ ~-1 crimson_shelf[facing=north] positioned ~-5 ~-5 ~-10 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
+execute align xz if block ~-1 ~ ~ crimson_shelf[facing=west] positioned ~-10 ~-5 ~-5 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
+execute align xz if block ~1 ~ ~ crimson_shelf[facing=east] positioned ~1 ~-5 ~-5 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
+execute align xz if block ~ ~ ~1 crimson_shelf[facing=south] positioned ~-5 ~-5 ~1 run tag @a[dx=9,dy=9,dz=9,tag=ff_item_entity_pickup.target_candidate] remove ff_item_entity_pickup.target_candidate
+
 execute align xz if block ~-1 ~ ~ #fossil_frights:fences_bars_and_panes[north=true,south=true] positioned ~-0.5 ~-5 ~-5 as @a[x=0,tag=ff_item_entity_pickup.target_candidate] unless entity @s[dx=9,dy=9,dz=9] run tag @s remove ff_item_entity_pickup.target_candidate
 execute positioned ~ ~ ~-1 align xz if block ~-1 ~ ~ #fossil_frights:fences_bars_and_panes[south=true] positioned ~-0.5 ~-5 ~-5 as @a[x=0,tag=ff_item_entity_pickup.target_candidate] unless entity @s[dx=9,dy=9,dz=9] run tag @s remove ff_item_entity_pickup.target_candidate
 execute positioned ~ ~ ~1 align xz if block ~-1 ~ ~ #fossil_frights:fences_bars_and_panes[north=true] positioned ~-0.5 ~-5 ~-5 as @a[x=0,tag=ff_item_entity_pickup.target_candidate] unless entity @s[dx=9,dy=9,dz=9] run tag @s remove ff_item_entity_pickup.target_candidate
