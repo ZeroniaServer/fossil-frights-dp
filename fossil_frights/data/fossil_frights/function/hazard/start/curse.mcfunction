@@ -1,6 +1,13 @@
 execute if score curse ff_hazard_active matches 1 run return 0
 
 scoreboard players set curse ff_hazard_active 1
+scoreboard players set @a[team=ff_guard] ff_actionbar_manager.slot.generic 65
+scoreboard players set @a[team=ff_thief] ff_actionbar_manager.slot.generic 65
+scoreboard players set @a[team=ff_spectator] ff_actionbar_manager.slot.generic 65
+scoreboard players display numberformat @a[team=ff_guard] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.curse",color:"light_purple"}]
+scoreboard players display numberformat @a[team=ff_thief] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.curse",color:"light_purple"}]
+scoreboard players display numberformat @a[team=ff_spectator] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.curse",color:"light_purple"}]
+schedule function fossil_frights:player/actionbar/manager 1t append
 function fossil_frights:run_breakdown/event/add {code:"H",id:"51"}
 scoreboard players set #curse_forcefield_sound ff_hazard_rng 40
 function fossil_frights:hazard/curse/update_forcefield

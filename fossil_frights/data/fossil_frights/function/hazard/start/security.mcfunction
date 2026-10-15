@@ -1,6 +1,13 @@
 execute if score security ff_hazard_active matches 1 run return 0
 
 scoreboard players set security ff_hazard_active 1
+scoreboard players set @a[team=ff_guard] ff_actionbar_manager.slot.generic 65
+scoreboard players set @a[team=ff_thief] ff_actionbar_manager.slot.generic 65
+scoreboard players set @a[team=ff_spectator] ff_actionbar_manager.slot.generic 65
+scoreboard players display numberformat @a[team=ff_guard] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.security_gates",color:"red"}]
+scoreboard players display numberformat @a[team=ff_thief] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.security_gates",color:"red"}]
+scoreboard players display numberformat @a[team=ff_spectator] ff_actionbar_manager.slot.generic fixed [{translate:"ff.actionbar.hazard.prefix",color:"gray"},{translate:"ff.actionbar.hazard.security_gates",color:"red"}]
+schedule function fossil_frights:player/actionbar/manager 1t append
 function fossil_frights:run_breakdown/event/add {code:"H",id:"41"}
 function fossil_frights:game/bossbar/update_hazards
 execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fossil_frights:hazards.security master @s ~ ~ ~ 1 1
