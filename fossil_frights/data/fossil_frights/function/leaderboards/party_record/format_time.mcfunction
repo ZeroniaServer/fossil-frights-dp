@@ -1,5 +1,9 @@
 scoreboard players operation $party_record_minutes ff_lb_calc = $party_record_time ff_lb_calc
 scoreboard players operation $party_record_minutes ff_lb_calc /= #lb_twelve_hundred ff_lb_calc
+scoreboard players operation $party_record_min_tens ff_lb_calc = $party_record_minutes ff_lb_calc
+scoreboard players operation $party_record_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
+scoreboard players operation $party_record_min_ones ff_lb_calc = $party_record_minutes ff_lb_calc
+scoreboard players operation $party_record_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
 scoreboard players operation $party_record_seconds_total ff_lb_calc = $party_record_time ff_lb_calc
 scoreboard players operation $party_record_seconds_total ff_lb_calc /= #lb_twenty ff_lb_calc
 scoreboard players operation $party_record_seconds ff_lb_calc = $party_record_seconds_total ff_lb_calc
