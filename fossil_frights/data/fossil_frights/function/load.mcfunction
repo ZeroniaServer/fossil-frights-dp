@@ -5,6 +5,9 @@ data modify storage fossil_frights:world settings.packs_enabled set value {}
 function #fossil_frights:query_packs_enabled
 function fossil_frights:ui/command_syntax/refresh
 
+scoreboard objectives add ff_session_state minecraft.custom:minecraft.leave_game
+function fossil_frights:player/session/force_end_all_sessions
+
 execute in minecraft:overworld run setworldspawn 0 80 0 0 0
 setblock 0 0 0 pink_shulker_box{lock:{count:-1}} strict
 scoreboard objectives add ff_global dummy
