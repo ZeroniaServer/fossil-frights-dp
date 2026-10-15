@@ -1,19 +1,43 @@
 {
-  "type": "minecraft:location_check",
-  "predicate": {
-    "position": {
-      "x": {
-        "min": 45.0,
-        "max": 78.99
-      },
-      "y": {
-        "min": 66.0,
-        "max": 76.0
-      },
-      "z": {
-        "min": -86.0,
-        "max": -57.0
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "position": {
+          "x": {
+            "min": 45.0,
+            "max": 78.99
+          },
+          "y": {
+            "min": 66.0,
+            "max": 76.0
+          },
+          "z": {
+            "min": -86.0,
+            "max": -57.0
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "position": {
+          "x": {
+            "min": 61.0,
+            "max": 76.0
+          },
+          "y": {
+            "min": 66.0,
+            "max": 78.0
+          },
+          "z": {
+            "min": -57.0,
+            "max": -48.0
+          }
+        }
       }
     }
-  }
+  ]
 }
