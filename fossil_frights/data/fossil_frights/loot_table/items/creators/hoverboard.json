@@ -137,7 +137,7 @@
               "type": "minecraft:set_custom_model_data",
               "colors": {
                 "values": [
-                  "fossil_frights:hoverboard/color"
+                  "fossil_frights:items/hoverboard/color"
                 ],
                 "mode": "replace_all"
               }

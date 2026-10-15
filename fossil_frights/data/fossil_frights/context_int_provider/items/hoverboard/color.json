@@ -3,7 +3,7 @@
   "cases": [
     {
       "condition": "fossil_frights:world/is_realms",
-      "value": "fossil_frights:hoverboard/default_color"
+      "value": "fossil_frights:items/hoverboard/default_color"
     },
     {
       "condition": "fossil_frights:player/identity/polysquarazoid",
@@ -30,5 +30,5 @@
       "value": -327680
     }
   ],
-  "default": "fossil_frights:hoverboard/default_color"
+  "default": "fossil_frights:items/hoverboard/default_color"
 }
