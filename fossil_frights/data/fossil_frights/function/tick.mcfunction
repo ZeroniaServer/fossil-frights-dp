@@ -89,6 +89,7 @@ execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches ..4 if p
 execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 1.. if predicate fossil_frights:player/leaderboard/looking_at_previous run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_previous
 execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 5.. if predicate fossil_frights:player/leaderboard/looking_at_next run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_next_disabled
 execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 0 if predicate fossil_frights:player/leaderboard/looking_at_previous run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_previous_disabled
+execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches 5 if score $party_record_time ff_lb_calc matches 1.. if predicate fossil_frights:player/leaderboard/looking_at_party_names run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_names
 function fossil_frights:join/join_pads/tick
 function fossil_frights:lobby_games/temple_run/teleporter_walk_tick
 function fossil_frights:lobby_games/temple_run/animations/tick

@@ -1,4 +1,5 @@
 data modify storage fossil_frights:party_record display_players set value []
+data modify storage fossil_frights:party_record display_names set value []
 scoreboard players set #party_record_head_column ff_lb_calc 0
 execute as @e[type=minecraft:marker,tag=ff_lb_party_record_member] run function fossil_frights:leaderboards/party_record/append_head
 execute if score $party_record_time ff_lb_calc matches 1.. run function fossil_frights:leaderboards/party_record/format_time

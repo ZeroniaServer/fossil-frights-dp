@@ -1,0 +1,4 @@
+advancement revoke @s only fossil_frights:leaderboards/party_names
+execute unless score #lb_page ff_lb_calc matches 5 run return 0
+execute unless score $party_record_time ff_lb_calc matches 1.. run return 0
+tellraw @s {translate:"ff.messages.info",color:"gold",with:[{translate:"%s %s",color:"gold",with:[{translate:"ff.lobby.leaderboard.party_record",color:"gold"},{translate:"%s%s:%s%s.%s%s: %s",color:"gold",with:[{score:{name:"$party_record_min_tens",objective:"ff_lb_calc"}},{score:{name:"$party_record_min_ones",objective:"ff_lb_calc"}},{score:{name:"$party_record_sec_tens",objective:"ff_lb_calc"}},{score:{name:"$party_record_sec_ones",objective:"ff_lb_calc"}},{score:{name:"$party_record_centi_tens",objective:"ff_lb_calc"}},{score:{name:"$party_record_centi_ones",objective:"ff_lb_calc"}},{nbt:"display_names[]",storage:"fossil_frights:party_record",interpret:true,separator:{text:", ",color:"yellow"}}] }]}]}
