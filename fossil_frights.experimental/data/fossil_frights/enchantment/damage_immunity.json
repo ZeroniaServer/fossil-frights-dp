@@ -21,15 +21,47 @@
         "requirements": {
           "type": "minecraft:inverted",
           "term": {
-            "type": "minecraft:damage_source_properties",
-            "predicate": {
-              "tags": [
-                {
-                  "id": "#fossil_frights:is_generic_kill",
-                  "expected": true
+            "type": "minecraft:any_of",
+            "terms": [
+              {
+                "type": "minecraft:damage_source_properties",
+                "predicate": {
+                  "tags": [
+                    {
+                      "id": "#fossil_frights:damage_immunity_general_exceptions",
+                      "expected": true
+                    }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:int_value_check",
+                    "value": {
+                      "type": "minecraft:score",
+                      "target": "this",
+                      "score": "ff_temple_run_running"
+                    },
+                    "test": {
+                      "min": 1
+                    }
+                  },
+                  {
+                    "type": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "tags": [
+                        {
+                          "id": "#fossil_frights:damage_immunity_temple_run_exceptions",
+                          "expected": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
           }
         },
         "effect": {}
