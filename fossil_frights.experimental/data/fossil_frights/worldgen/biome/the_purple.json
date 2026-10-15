@@ -1,8 +1,18 @@
 {
+  "attributes": {
+    "minecraft:visual/fog_color": 9488294,
+    "minecraft:visual/water_fog_color": 8388736,
+    "minecraft:visual/sky_color": 8314623,
+    "minecraft:audio/ambient_sounds": {},
+    "minecraft:audio/background_music": {},
+    "minecraft:audio/music_volume": 0
+  },
   "temperature": 0.92,
   "downfall": 0,
   "has_precipitation": true,
   "effects": {
+    "foliage_color": 5939514,
+    "grass_color": 7060286,
     "water_color": 8388736
   },
   "carvers": [],
