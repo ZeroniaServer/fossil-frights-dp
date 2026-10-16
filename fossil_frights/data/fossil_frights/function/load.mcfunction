@@ -271,11 +271,11 @@ scoreboard objectives add ff_paint_water_time dummy
 scoreboard objectives add ff_invisimask_variant dummy
 scoreboard objectives add ff_glowing_fx_frame dummy
 scoreboard objectives add ff_security_gate_cache.speed dummy
+scoreboard objectives add ff_security_gate_cache.shut_y dummy
 scoreboard objectives add ff_security_gate_cache.width dummy
 scoreboard objectives add ff_security_gate_cache.y dummy
 scoreboard objectives add ff_security_gate_cache.min_y dummy
 scoreboard objectives add ff_security_gate_cache.max_y dummy
-scoreboard objectives add ff_security_gate_sound_delay dummy
 scoreboard objectives add ff_security_gate_close_timestamp dummy
 scoreboard objectives add ff_thrown_water_balloon used:splash_potion
 scoreboard objectives add ff_bouncy_lily_pad_bounce_timestamp dummy

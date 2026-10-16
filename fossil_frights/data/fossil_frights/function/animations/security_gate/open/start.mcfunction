@@ -1,4 +1,8 @@
-execute unless entity @s[tag=ff_security_gate.opening] run scoreboard players set @s ff_security_gate_sound_delay 0
+execute unless entity @s[tag=ff_security_gate.opening] unless entity @s[tag=ff_security_gate.silent] if predicate fossil_frights:entity/security_gate/type/5x6 run playsound fossil_frights:security_gate.moving block @a[distance=..6] ~ ~ ~ 1 1.0071429
+execute unless entity @s[tag=ff_security_gate.opening] unless entity @s[tag=ff_security_gate.silent] unless predicate fossil_frights:entity/security_gate/type/5x6 if score @s ff_security_gate_cache.width matches 4 run playsound fossil_frights:security_gate.moving.medium block @a[distance=..6] ~ ~ ~ 1 1
+execute unless entity @s[tag=ff_security_gate.opening] unless entity @s[tag=ff_security_gate.silent] unless predicate fossil_frights:entity/security_gate/type/5x6 unless score @s ff_security_gate_cache.width matches 4 if predicate fossil_frights:entity/security_gate/type/garage run playsound fossil_frights:security_gate.moving.medium block @a[distance=..6] ~ ~ ~ 1 1
+execute unless entity @s[tag=ff_security_gate.opening] unless entity @s[tag=ff_security_gate.silent] unless predicate fossil_frights:entity/security_gate/type/5x6 unless score @s ff_security_gate_cache.width matches 4 unless predicate fossil_frights:entity/security_gate/type/garage run playsound fossil_frights:security_gate.moving.short block @a[distance=..6] ~ ~ ~ 1 1
+tag @s remove ff_security_gate.silent
 tag @s remove ff_security_gate.closed
 tag @s remove ff_security_gate.closing
 tag @s add ff_security_gate.opening

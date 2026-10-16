@@ -31,8 +31,3 @@ execute unless entity @s[tag=ff_security_gate.thick] if predicate fossil_frights
 execute unless entity @s[tag=ff_security_gate.thick] if predicate fossil_frights:entity/security_gate/facing/east positioned as @s positioned ~ ~0.25 ~ run function fossil_frights:animations/security_gate/open_close/fill_east_west with storage fossil_frights:security_gate gate_data
 execute unless entity @s[tag=ff_security_gate.thick] if predicate fossil_frights:entity/security_gate/facing/west positioned as @s positioned ~ ~0.25 ~ run function fossil_frights:animations/security_gate/open_close/fill_east_west with storage fossil_frights:security_gate gate_data
 execute if entity @s[tag=ff_security_gate.thick] positioned as @s positioned ~ ~0.25 ~ run function fossil_frights:animations/security_gate/open_close/fill_thick with storage fossil_frights:security_gate gate_data
-
-scoreboard players remove @s ff_security_gate_sound_delay 1
-execute if score @s ff_security_gate_sound_delay matches ..0 run playsound minecraft:block.piston.contract block @a ~ ~ ~ 1.25 1.05
-execute if score @s ff_security_gate_sound_delay matches ..0 run scoreboard players set #delay ff_dummy 1000
-execute if score @s ff_security_gate_sound_delay matches ..0 store result score @s ff_security_gate_sound_delay run scoreboard players operation #delay ff_dummy /= @s ff_security_gate_cache.speed

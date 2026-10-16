@@ -7,6 +7,9 @@ execute store result score @s ff_security_gate_cache.max_y run data get storage 
 scoreboard players operation @s ff_security_gate_cache.max_y += @s ff_security_gate_cache.min_y
 execute store result score @s ff_security_gate_cache.width run data get storage fossil_frights:security_gate gate_data.width
 execute store result score @s ff_security_gate_cache.speed run data get storage fossil_frights:security_gate gate_data.speed 50
+scoreboard players operation @s ff_security_gate_cache.shut_y = @s ff_security_gate_cache.speed
+scoreboard players operation @s ff_security_gate_cache.shut_y *= #5 ff_constant
+scoreboard players operation @s ff_security_gate_cache.shut_y += @s ff_security_gate_cache.min_y
 
 execute store result storage fossil_frights:security_gate gate_data.min_y int 0.001 run scoreboard players get @s ff_security_gate_cache.min_y
 execute store result storage fossil_frights:security_gate gate_data.max_y int 0.001 store result storage fossil_frights:security_gate gate_data.max_y_minus_one int 0.00099999 run scoreboard players get @s ff_security_gate_cache.max_y
