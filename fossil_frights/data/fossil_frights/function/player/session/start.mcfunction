@@ -8,6 +8,8 @@ execute store result score @s ff_active_uuid_3 run data get storage fossil_frigh
 
 execute positioned 0.5 0.5 16.5 summon minecraft:area_effect_cloud run function fossil_frights:player/session/tracker/init with storage fossil_frights:session {}
 
+function fossil_frights:player/session/start/update_leaderboards with storage fossil_frights:session player_data
+
 data remove storage fossil_frights:session player_data
 data remove storage fossil_frights:session player_name
 scoreboard players set @s ff_session_state -1
