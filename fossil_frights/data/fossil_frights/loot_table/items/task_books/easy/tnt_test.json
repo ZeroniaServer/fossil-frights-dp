@@ -34,6 +34,7 @@
                 "pages": [
                   [
                     "",
+                    {"text":"\ue001\ue100","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task.tnt_test",
                       "font": "fossil_frights:small_caps"

@@ -34,6 +34,7 @@
                 "pages": [
                   [
                     "",
+                    {"text":"\ue001\ue200","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task.heat_it_up",
                       "font": "fossil_frights:small_caps"
@@ -54,6 +55,8 @@
                     }
                   ],
                   [
+                    "",
+                    {"text":"\ue001\ue200","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task_book.task.heat_it_up.description.1"
                     }
