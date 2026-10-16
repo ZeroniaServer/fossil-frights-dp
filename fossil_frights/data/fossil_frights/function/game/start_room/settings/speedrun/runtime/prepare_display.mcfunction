@@ -7,9 +7,6 @@ scoreboard players operation $speedrun_delta_seconds ff_lb_calc %= #60 ff_consta
 scoreboard players operation $speedrun_delta_centis ff_lb_calc = $speedrun_delta_abs ff_lb_calc
 scoreboard players operation $speedrun_delta_centis ff_lb_calc %= #ticks_per_second ff_constant
 scoreboard players operation $speedrun_delta_centis ff_lb_calc *= #5 ff_constant
-execute if score $speedrun_delta_abs ff_lb_calc matches 1200000.. run scoreboard players set $speedrun_delta_minutes ff_lb_calc 999
-execute if score $speedrun_delta_abs ff_lb_calc matches 1200000.. run scoreboard players set $speedrun_delta_seconds ff_lb_calc 59
-execute if score $speedrun_delta_abs ff_lb_calc matches 1200000.. run scoreboard players set $speedrun_delta_centis ff_lb_calc 99
 scoreboard players operation $speedrun_delta_min_tens ff_lb_calc = $speedrun_delta_minutes ff_lb_calc
 scoreboard players operation $speedrun_delta_min_tens ff_lb_calc /= #10 ff_constant
 scoreboard players operation $speedrun_delta_min_tens ff_lb_calc %= #10 ff_constant
