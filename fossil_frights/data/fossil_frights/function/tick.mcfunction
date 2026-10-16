@@ -11,6 +11,7 @@ tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
 execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
 execute as @a[tag=ff_tp_dispatch] run posteffect clear @s
+execute as @a[tag=ff_tp_dispatch] run function fossil_frights:cameras/clear_posteffect
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
@@ -57,6 +58,7 @@ execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard 
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:animations/dinocoin/crab/message/check
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/spider/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[team=ff_guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick

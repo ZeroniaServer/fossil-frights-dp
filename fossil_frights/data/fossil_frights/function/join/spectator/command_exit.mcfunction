@@ -1,3 +1,4 @@
+function fossil_frights:cameras/clear_posteffect
 tag @s remove ff_forced_spectate
 function fossil_frights:join/lobby
 gamemode adventure @s[team=!ff_dev_mode]

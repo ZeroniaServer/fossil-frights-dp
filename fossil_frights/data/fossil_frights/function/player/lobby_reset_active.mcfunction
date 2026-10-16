@@ -9,6 +9,7 @@ execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 19
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 19 run tp @s 0 80 0 0 0
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
+function fossil_frights:cameras/clear_posteffect
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 function fossil_frights:lobby_games/ant_fight/music/stop
 function fossil_frights:lobby_games/parkour/music/stop

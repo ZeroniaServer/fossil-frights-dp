@@ -11,6 +11,7 @@ execute if score @s ff_parkour_running matches 1.. run function fossil_frights:l
 execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/end
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
 function fossil_frights:lobby_games/stop_all
+function fossil_frights:cameras/clear_posteffect
 tag @s remove ff_join_spectator_zone
 tag @s remove ff_forced_spectate
 gamemode adventure @s

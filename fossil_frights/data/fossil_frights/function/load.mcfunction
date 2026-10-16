@@ -34,6 +34,7 @@ scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
 scoreboard objectives add ff_fright_roll dummy
+scoreboard objectives add ff_spider_fright_delay dummy
 scoreboard objectives add ff_camera_remote_health dummy
 scoreboard objectives add ff_camera_remote_health_prev dummy
 scoreboard objectives add ff_camera_swivel dummy
@@ -215,6 +216,7 @@ scoreboard players set @a ff_tp_delay 0
 scoreboard players set @a ff_tp_action 0
 tag @a remove ff_tp_dispatch
 tag @a remove ff_fade_tp_active
+execute as @a run function fossil_frights:cameras/clear_posteffect
 posteffect clear @a
 scoreboard objectives add ff_heist dummy
 scoreboard objectives add ff_heist_sidebar dummy
