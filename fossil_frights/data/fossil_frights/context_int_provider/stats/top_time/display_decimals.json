@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:floor_mod",
+  "left": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "ff_top_time"
+  },
+  "right": 100
+}

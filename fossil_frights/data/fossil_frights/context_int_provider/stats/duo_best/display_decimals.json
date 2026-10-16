@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:floor_mod",
+  "left": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "ff_duo_best"
+  },
+  "right": 100
+}
