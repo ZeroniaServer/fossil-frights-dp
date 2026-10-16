@@ -4,6 +4,7 @@ $scoreboard players set $(name) ff_top_time 0
 $scoreboard players set $(name) ff_top_day 0
 $scoreboard players set $(name) ff_run_count 0
 $scoreboard players set $(name) ff_duo_best 0
+$scoreboard players set $(name) ff_party_best 0
 $scoreboard players set $(name) ff_day1_best 0
 $scoreboard players set $(name) ff_day2_best 0
 $scoreboard players set $(name) ff_day3_best 0

@@ -19,6 +19,7 @@ execute unless score @s ff_top_time matches -2147483648..2147483647 run scoreboa
 execute unless score @s ff_top_day matches -2147483648..2147483647 run scoreboard players set @s ff_top_day 0
 execute unless score @s ff_run_count matches -2147483648..2147483647 run scoreboard players set @s ff_run_count 0
 execute unless score @s ff_duo_best matches -2147483648..2147483647 run scoreboard players set @s ff_duo_best 0
+execute unless score @s ff_party_best matches -2147483648..2147483647 run scoreboard players set @s ff_party_best 0
 execute unless score @s ff_day1_best matches -2147483648..2147483647 run scoreboard players set @s ff_day1_best 0
 execute unless score @s ff_day2_best matches -2147483648..2147483647 run scoreboard players set @s ff_day2_best 0
 execute unless score @s ff_day3_best matches -2147483648..2147483647 run scoreboard players set @s ff_day3_best 0

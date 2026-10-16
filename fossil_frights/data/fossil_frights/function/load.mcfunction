@@ -156,6 +156,7 @@ scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
 scoreboard objectives add ff_duo_best dummy
+scoreboard objectives add ff_party_best dummy
 scoreboard objectives add ff_day1_best dummy
 scoreboard objectives add ff_day2_best dummy
 scoreboard objectives add ff_day3_best dummy
