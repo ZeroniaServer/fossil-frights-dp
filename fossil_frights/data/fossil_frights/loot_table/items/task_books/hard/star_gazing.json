@@ -34,6 +34,7 @@
                 "pages": [
                   [
                     "",
+                    {"text":"\uE003\uE000\uE200\uE000\uE000\uE001\uE201\uE000\uE002","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task.star_gazing",
                       "font": "fossil_frights:small_caps"
@@ -54,6 +55,8 @@
                     }
                   ],
                   [
+                    "",
+                    {"text":"\uE003\uE000\uE200\uE000\uE000\uE001\uE201\uE000\uE002","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task_book.task.star_gazing.description.1"
                     }
