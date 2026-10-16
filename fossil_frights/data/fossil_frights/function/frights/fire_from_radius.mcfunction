@@ -1,3 +1,4 @@
+execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless entity @s[tag=ff_fright_target] run return 0
 advancement grant @s only fossil_frights:02_achievements/frightful
 scoreboard players set @s ff_fright_timer 0

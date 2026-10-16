@@ -1,3 +1,4 @@
+execute if predicate fossil_frights:game_state/heist_mode_active run return 0
 scoreboard players set $puffer_fright ff_game_state 1
 scoreboard players set $puffer_timer ff_game_state 0
 data merge entity @e[type=minecraft:pufferfish,tag=ff_pufferfish_fright,sort=nearest,limit=1] {PuffState:2}
