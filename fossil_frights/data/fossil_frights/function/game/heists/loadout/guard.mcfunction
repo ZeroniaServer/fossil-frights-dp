@@ -1,4 +1,6 @@
 clear @s
+tag @s remove ff_map_claimed
+tag @s remove ff_map_auto_given
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_trap_selected 0

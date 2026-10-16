@@ -1,4 +1,6 @@
 clear @s
+tag @s remove ff_map_claimed
+tag @s remove ff_map_auto_given
 effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect clear @s minecraft:invisibility
