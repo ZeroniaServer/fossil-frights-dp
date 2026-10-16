@@ -33,6 +33,7 @@ scoreboard objectives add ff_dna_hover_found dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
+scoreboard objectives add ff_fright_roll dummy
 scoreboard objectives add ff_camera_remote_health dummy
 scoreboard objectives add ff_camera_remote_health_prev dummy
 scoreboard objectives add ff_camera_swivel dummy

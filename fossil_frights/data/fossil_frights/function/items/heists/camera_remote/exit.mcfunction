@@ -13,6 +13,7 @@ tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 function fossil_frights:game/rejoin/state/clear_camera_current
 function fossil_frights:items/heists/camera_remote/kill_owned
+kill @e[type=minecraft:item_display,tag=ff_spider_fright]
 function fossil_frights:cameras/update_camera_models
 execute at @s[tag=!ff_camera_remote_restore_pending] run playsound fossil_frights:camera.close master @s ~ ~ ~ 1 1
 return 1

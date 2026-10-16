@@ -41,6 +41,7 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
+function fossil_frights:frights/spider/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 function fossil_frights:game/heists/reset/blocks
 stopsound @a record fossil_frights:heists.music

@@ -12,5 +12,6 @@ tag @s remove ff_forced_spectate
 setblock -28 70 38 air
 tp @e[type=mannequin,tag=ff_check_security_dummy] 0 -200 0
 kill @e[type=mannequin,tag=ff_check_security_dummy]
+kill @e[type=minecraft:item_display,tag=ff_spider_fright]
 function fossil_frights:cameras/update_camera_models
 execute at @s run playsound fossil_frights:camera.close master @s ~ ~ ~ 1 1
