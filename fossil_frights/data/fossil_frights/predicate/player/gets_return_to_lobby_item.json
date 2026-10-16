@@ -1,13 +1,7 @@
 {
   "type": "minecraft:all_of",
   "terms": [
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "minecraft:team": "ff_lobby"
-      }
-    },
+    "fossil_frights:player/team/lobby",
     {
       "type": "minecraft:inverted",
       "term": {

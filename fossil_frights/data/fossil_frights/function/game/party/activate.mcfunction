@@ -6,7 +6,7 @@ scoreboard players set $party_button_lock ff_game_state 20
 execute unless score $day_current ff_day matches 0 run tellraw @s {"translate":"ff.messages.warning","color":"red","with":[{"translate":"ff.messages.warning.party_mode.3"}]}
 execute unless score $day_current ff_day matches 0 run return 0
 execute if predicate fossil_frights:game_state/party_mode_active run return 0
-execute as @a[team=ff_guard] run function fossil_frights:game/party/add_current_if_missing
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/party/add_current_if_missing
 scoreboard players set $run_multiplayer ff_game_state 1
 scoreboard players set $party_mode_active ff_game_state 1
 function fossil_frights:game/start_room/settings/sync_message_state

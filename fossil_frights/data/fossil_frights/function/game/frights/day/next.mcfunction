@@ -8,22 +8,22 @@ execute if score $day_current ff_day matches 10.. run return 0
 scoreboard players set $run_multiplayer ff_game_state 0
 execute if predicate fossil_frights:game_state/party_mode_active run scoreboard players set $run_multiplayer ff_game_state 1
 execute if score $day_current ff_day matches 0 if score $settings_speedrun_show ff_game_state matches 1 unless data storage fossil_frights:run_breakdown current{active:1b,finalized:0b} run function fossil_frights:run_breakdown/start
-execute if score $day_current ff_day matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/increment_run_count
+execute if score $day_current ff_day matches 0 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/increment_run_count
 execute if score $day_current ff_day matches 1..9 run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/capture_button
 scoreboard players add $day_current ff_day 1
-execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
+execute if score $run_multiplayer ff_game_state matches 0 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/update_top_day_from_current
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_timer_offset ff_day 0
 scoreboard players set $day_stopwatch_active ff_day 0
 stopwatch remove fossil_frights:day_duration
 execute store success score $day_stopwatch_active ff_day run stopwatch create fossil_frights:day_duration
-execute as @a[team=ff_guard,limit=1] run scoreboard players operation $day_timer_play_time_start ff_day = @s ff_singleplayer_play_time
+execute as @a[predicate=fossil_frights:player/team/guard,limit=1] run scoreboard players operation $day_timer_play_time_start ff_day = @s ff_singleplayer_play_time
 scoreboard players set $day_active ff_day 1
 execute if score $day_current ff_day matches 1 run scoreboard players set $speedrunner_restart_window ff_game_state 100
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
-execute as @a[team=ff_guard] run function fossil_frights:key/refresh
-clear @a[team=ff_guard] minecraft:written_book
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]
 function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:tasks/encoder/start_day
@@ -32,9 +32,9 @@ function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/pre
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:game/start_room/locked_door/clear
-execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
-execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_guard] run stopsound @s music
-execute unless score $settings_music_off ff_game_state matches 1 as @a[team=ff_guard] at @s run playsound fossil_frights:ff_night_shift record @s ~ ~ ~ 1 1
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
+execute unless score $settings_music_off ff_game_state matches 1 as @a[predicate=fossil_frights:player/team/guard] run stopsound @s music
+execute unless score $settings_music_off ff_game_state matches 1 as @a[predicate=fossil_frights:player/team/guard] at @s run playsound fossil_frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator,tag=!ff_tutorial] run stopsound @s music
 execute unless score $settings_music_off ff_game_state matches 1 as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil_frights:ff_night_shift record @s ~ ~ ~ 1 1
 execute if score $day_current ff_day matches 1 run function fossil_frights:game/frights/timer/start

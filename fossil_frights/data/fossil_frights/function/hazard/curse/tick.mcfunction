@@ -6,11 +6,11 @@ execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 positioned -2
 execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 run scoreboard players set #curse_forcefield_sound ff_hazard_rng 80
 
 # Trigger room levitation
-tag @a[team=ff_guard] remove ff_curse_room_now
-tag @a[team=ff_guard,x=-23,y=70,z=29,dx=4,dy=6,dz=4] add ff_curse_room_now
-execute as @a[team=ff_guard,tag=ff_curse_room_now] unless entity @s[tag=ff_curse_room_seen] run effect give @s minecraft:levitation 5 0 true
-tag @a[team=ff_guard,tag=ff_curse_room_now] add ff_curse_room_seen
-tag @a[team=ff_guard,tag=ff_curse_room_seen,tag=!ff_curse_room_now] remove ff_curse_room_seen
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_curse_room_now
+tag @a[predicate=fossil_frights:player/team/guard,x=-23,y=70,z=29,dx=4,dy=6,dz=4] add ff_curse_room_now
+execute as @a[predicate=fossil_frights:player/team/guard,tag=ff_curse_room_now] unless entity @s[tag=ff_curse_room_seen] run effect give @s minecraft:levitation 5 0 true
+tag @a[predicate=fossil_frights:player/team/guard,tag=ff_curse_room_now] add ff_curse_room_seen
+tag @a[predicate=fossil_frights:player/team/guard,tag=ff_curse_room_seen,tag=!ff_curse_room_now] remove ff_curse_room_seen
 
 # State 0 waits 4 seconds between flicker bursts.
 execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 0 run scoreboard players remove #curse_timer ff_hazard_rng 1

@@ -2,12 +2,6 @@
   "type": "minecraft:any_of",
   "terms": [
     "fossil_frights:player/is_playing",
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "ff_spectator"
-      }
-    }
+    "fossil_frights:player/team/spectator"
   ]
 }

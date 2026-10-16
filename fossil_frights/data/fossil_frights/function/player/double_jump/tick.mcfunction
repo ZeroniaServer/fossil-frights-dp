@@ -12,12 +12,12 @@ execute if entity @s[tag=ff_ice_frozen] run tag @s remove ff_double_jump_used
 execute if entity @s[tag=ff_ice_frozen,tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
 execute if entity @s[tag=ff_ice_frozen] run return 0
 
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_ready
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_released
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_jumping
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] if entity @s[tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
-execute if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run return 0
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_ready
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_released
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_jumping
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] if entity @s[tag=ff_double_jump_boosting] run function fossil_frights:player/double_jump/clear_boost
+execute if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run return 0
 
 execute unless predicate fossil_frights:entity/effects/luck run tag @s remove ff_double_jump_ready
 execute unless predicate fossil_frights:entity/effects/luck run tag @s remove ff_double_jump_released
@@ -44,8 +44,8 @@ execute if entity @s[tag=ff_double_jump_boosting] if score @s ff_double_jump_boo
 
 execute if predicate fossil_frights:entity/on_ground run tag @s add ff_double_jump_ready
 execute if predicate fossil_frights:entity/on_ground run tag @s remove ff_double_jump_released
-execute if predicate fossil_frights:entity/on_ground unless entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
-execute if score @s ff_double_jump_ground_ticks matches 3.. if entity @s[team=ff_thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
+execute if predicate fossil_frights:entity/on_ground unless entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
+execute if score @s ff_double_jump_ground_ticks matches 3.. if entity @s[predicate=fossil_frights:player/team/thief,predicate=fossil_frights:player/inventory/heavy_loot] run tag @s remove ff_double_jump_used
 execute unless predicate fossil_frights:entity/on_ground unless predicate fossil_frights:player/input/jump if entity @s[tag=ff_double_jump_ready,tag=!ff_double_jump_used] run tag @s add ff_double_jump_released
 execute unless predicate fossil_frights:entity/on_ground if score @s ff_double_jump_cooldown matches 0 if entity @s[tag=ff_double_jump_ready,tag=ff_double_jump_released,tag=!ff_double_jump_jumping,tag=!ff_double_jump_used] if predicate fossil_frights:player/input/jump run function fossil_frights:player/double_jump/use
 execute if predicate fossil_frights:player/input/jump run tag @s add ff_double_jump_jumping

@@ -4,14 +4,7 @@
     "night_stick_hit": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "entity": {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "entity_type": "minecraft:player",
-            "team": "ff_thief"
-          }
-        }
+        "entity": "fossil_frights:player/team/thief"
       }
     }
   },

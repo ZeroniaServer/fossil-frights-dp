@@ -9,8 +9,8 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_attributes
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_effects
 execute if predicate fossil_frights:game_state/heist_mode_active run return run function fossil_frights:game/heists/start/start_round
-execute unless entity @a[limit=1,team=ff_guard] run function fossil_frights:messages/error/no_active_player
-execute unless entity @a[limit=1,team=ff_guard] run return 0
+execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run function fossil_frights:messages/error/no_active_player
+execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run return 0
 
 function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:game/reset/cleanup_dropped_items
@@ -40,34 +40,34 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
-execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
-execute as @a[team=ff_guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
-scoreboard players set @a[team=ff_guard,tag=!ff_fade_tp_active] ff_tp_action 23
+execute as @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
+execute as @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
+scoreboard players set @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] ff_tp_action 23
 scoreboard players set @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] ff_tp_delay 18
 tag @a[scores={ff_tp_action=23},tag=!ff_fade_tp_active] add ff_fade_tp_active
-gamemode adventure @a[team=ff_guard]
-execute as @a[team=ff_guard] run attribute @s minecraft:scale base reset
-execute as @a[team=ff_guard] run function fossil_frights:player/protection_disable
-clear @a[team=ff_guard]
-tag @a[team=ff_guard] remove ff_plushie_restore_pending
-tag @a[team=ff_guard] remove ff_plushie_restore_queued
-execute as @a[team=ff_guard] run function fossil_frights:items/plushies/clear_items
-effect clear @a[team=ff_guard] minecraft:absorption
-effect clear @a[team=ff_guard] minecraft:health_boost
-effect give @a[team=ff_guard] minecraft:instant_health 100 0 true
-effect give @a[team=ff_guard] minecraft:saturation infinite 255 true
-scoreboard players set @a[team=ff_guard] ff_key_cooldown 0
-scoreboard players set @a[team=ff_guard] ff_key_bar 0
-scoreboard players set @a[team=ff_guard] ff_coin_used_run 0
-scoreboard players set @a[team=ff_guard] ff_speedrun_delta 0
-scoreboard players set @a[team=ff_guard] ff_speedrun_sign 0
-execute as @a[team=ff_guard] run function fossil_frights:player/actionbar/clear
-tag @a[team=ff_guard] remove ff_map_auto_given
-tag @a[team=ff_guard] remove ff_map_claimed
-execute as @a[team=ff_guard] run function fossil_frights:player/equip_security_hat
-execute as @a[team=ff_guard] run function fossil_frights:key/give_waiting
-execute as @a[team=ff_guard,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
-execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
+gamemode adventure @a[predicate=fossil_frights:player/team/guard]
+execute as @a[predicate=fossil_frights:player/team/guard] run attribute @s minecraft:scale base reset
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/protection_disable
+clear @a[predicate=fossil_frights:player/team/guard]
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_plushie_restore_pending
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_plushie_restore_queued
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:items/plushies/clear_items
+effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:absorption
+effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:health_boost
+effect give @a[predicate=fossil_frights:player/team/guard] minecraft:instant_health 100 0 true
+effect give @a[predicate=fossil_frights:player/team/guard] minecraft:saturation infinite 255 true
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_cooldown 0
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_bar 0
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_coin_used_run 0
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_delta 0
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_sign 0
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/clear
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_map_auto_given
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_map_claimed
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/equip_security_hat
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/give_waiting
+execute as @a[predicate=fossil_frights:player/team/guard,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
@@ -86,13 +86,13 @@ scoreboard players set $museum_map_flash ff_game_state 0
 tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_click
 tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
-execute as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register_frights
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run function fossil_frights:game/rejoin/state/register_frights
 function fossil_frights:animations/geyser/start
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0
 scoreboard players set $speedrun_victory_blink ff_speedrun_blink 0
 scoreboard players set $defeat_lock ff_game_state 0
-execute as @a[team=ff_guard] run function fossil_frights:key/refresh
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $idle_queue_present ff_game_state 0
 scoreboard players set $forklift_watch ff_game_state 1

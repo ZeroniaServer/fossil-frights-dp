@@ -6,9 +6,9 @@ execute as @e[type=minecraft:item,predicate=fossil_frights:entity/contents/brush
 execute if score $custom_day_active ff_day matches 1 run return run function fossil_frights:game/frights/day/custom_completed
 function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/task_book_shelf/clear
-execute as @a[team=ff_guard] run function fossil_frights:game/rewards/give_dinocoin
-execute if score $day_current ff_day matches 10 as @a[team=ff_guard] unless score @s ff_coin_used_run matches 1.. run advancement grant @s only fossil_frights:02_achievements/penny_pincher
-execute as @a[team=ff_guard] run function fossil_frights:advancements/progression/grant_day_completed
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/rewards/give_dinocoin
+execute if score $day_current ff_day matches 10 as @a[predicate=fossil_frights:player/team/guard] unless score @s ff_coin_used_run matches 1.. run advancement grant @s only fossil_frights:02_achievements/penny_pincher
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:advancements/progression/grant_day_completed
 execute as @a[tag=!ff_ant_fight_music,tag=!ff_parkour_music,tag=!ff_sulfur_strikers_music,tag=!ff_temple_run_music] at @s run playsound fossil_frights:ff_day_complete master @s ~ ~ ~ 1.5 1
 stopsound @a music fossil_frights:ff_night_shift
 stopsound @a master fossil_frights:ff_night_shift
@@ -19,18 +19,18 @@ scoreboard players set $day_stopwatch_active ff_day 0
 stopwatch remove fossil_frights:day_duration
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
-execute as @a[team=ff_guard] run function fossil_frights:key/refresh
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
 function fossil_frights:locator_bar/markers/sync
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/frights/timer/freeze
 execute if score $day_current ff_day matches 10 run function fossil_frights:run_breakdown/finish/victory
-execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day matches ..24000 as @a[team=ff_guard] run advancement grant @s only fossil_frights:02_achievements/twenty_minute_club
-execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
-execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_time
-execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_duo_best
+execute if score $day_current ff_day matches 10 if score $timer_ticks ff_day matches ..24000 as @a[predicate=fossil_frights:player/team/guard] run advancement grant @s only fossil_frights:02_achievements/twenty_minute_club
+execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/update_top_day_from_current
+execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 0 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/update_top_time
+execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/update_duo_best
 execute if score $day_current ff_day matches 10 if score $run_multiplayer ff_game_state matches 1 run function fossil_frights:leaderboards/party_record/consider
-execute as @a[team=ff_guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/process_day_best
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/start_room/settings/speedrun/runtime/process_day_best
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_victory
 execute if score $day_current ff_day matches 10 run scoreboard players set $speedrun_victory_blink ff_speedrun_blink -1
 execute if score $day_current ff_day matches 10 run scoreboard players set $victory_complete ff_game_state 1
@@ -40,7 +40,7 @@ execute if score $day_current ff_day matches 10 run function fossil_frights:game
 execute if score $day_current ff_day matches 10 run function fossil_frights:game/reset/spectators
 execute if score $day_current ff_day matches 10 run function fossil_frights:messages/game/victory_leave_prompt
 execute unless score $day_current ff_day matches 10 run function fossil_frights:game/bossbar/set_break
-execute as @a[team=ff_guard] run function fossil_frights:player/actionbar/show/generic/day_complete
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/show/generic/day_complete
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/board/refresh

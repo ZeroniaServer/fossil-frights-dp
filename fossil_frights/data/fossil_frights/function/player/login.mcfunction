@@ -10,9 +10,9 @@ function fossil_frights:player/reset_effects
 function fossil_frights:game/rejoin/login_restore
 execute if entity @s[tag=ff_rejoin_restored] run return 0
 tag @s add ff_rejoin_login_reset_source
-execute if predicate fossil_frights:game_state/game_running unless entity @a[team=ff_guard,tag=!ff_rejoin_login_reset_source] unless entity @a[team=ff_thief,tag=!ff_rejoin_login_reset_source] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
+execute if predicate fossil_frights:game_state/game_running unless entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_rejoin_login_reset_source] unless entity @a[predicate=fossil_frights:player/team/thief,tag=!ff_rejoin_login_reset_source] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
 tag @s remove ff_rejoin_login_reset_source
-execute if entity @s[team=ff_dev_mode] run return 0
+execute if entity @s[predicate=fossil_frights:player/team/dev_mode] run return 0
 experience set @s 0 levels
 experience set @s 0 points
 execute unless score @s ff_top_time matches -2147483648..2147483647 run scoreboard players set @s ff_top_time 0
@@ -73,7 +73,7 @@ function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:game/bossbar/available/sync_players
 scoreboard players operation @s ff_deaths_seen = @s ff_deaths
 execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s ff_active_uuid_1 = $lb_pending ff_active_uuid_1 if score @s ff_active_uuid_2 = $lb_pending ff_active_uuid_2 if score @s ff_active_uuid_3 = $lb_pending ff_active_uuid_3 run function fossil_frights:leaderboards/claim_pending_disconnect
-team leave @s
+function fossil_frights:player/set_team/none
 posteffect clear @s
 tag @s remove ff_tp_dispatch
 tag @s remove ff_fade_tp_active

@@ -1,19 +1,7 @@
 {
   "type": "minecraft:any_of",
   "terms": [
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "ff_lobby"
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "ff_dev_mode"
-      }
-    }
+    "fossil_frights:player/team/lobby",
+    "fossil_frights:player/team/dev_mode"
   ]
 }

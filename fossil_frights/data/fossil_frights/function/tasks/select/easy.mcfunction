@@ -1,5 +1,5 @@
 # Select 1 random easy task.
-execute if score $day_current ff_day matches 1 if entity @a[team=ff_guard,predicate=fossil_frights:player/is_playing,scores={ff_run_count=..5}] run return run function fossil_frights:tasks/select/easy_speedrun
+execute if score $day_current ff_day matches 1 if entity @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:player/is_playing,scores={ff_run_count=..5}] run return run function fossil_frights:tasks/select/easy_speedrun
 execute if score $day_current ff_day matches 1 if score $settings_speedrun_show ff_game_state matches 1 run return run function fossil_frights:tasks/select/easy_speedrun
 scoreboard players set #task_remaining ff_task_state 0
 execute unless score $check_security_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1

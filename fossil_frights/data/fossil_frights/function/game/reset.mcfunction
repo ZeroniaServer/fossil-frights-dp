@@ -6,7 +6,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 24 if 
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 function fossil_frights:run_breakdown/finish/defeat
-execute unless predicate fossil_frights:game_state/party_mode_active if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[team=ff_guard] only fossil_frights:02_achievements/speedrunner
+execute unless predicate fossil_frights:game_state/party_mode_active if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[predicate=fossil_frights:player/team/guard] only fossil_frights:02_achievements/speedrunner
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
 function fossil_frights:animations/geyser/stop
@@ -48,7 +48,7 @@ stopsound @a record fossil_frights:heists.music
 stopsound @a music fossil_frights:ff_night_shift
 stopsound @a master fossil_frights:ff_night_shift
 stopsound @a record fossil_frights:ff_night_shift
-execute if score $run_multiplayer ff_game_state matches 0 as @a[team=ff_guard] run function fossil_frights:leaderboards/update_top_day_from_current
+execute if score $run_multiplayer ff_game_state matches 0 as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:leaderboards/update_top_day_from_current
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 execute unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/game/exit_day_reached
 function fossil_frights:game/reset/spectators
@@ -77,7 +77,7 @@ tag @a[predicate=fossil_frights:player/is_playing] remove ff_camera_remote_activ
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_muted_chat
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_claimed
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_auto_given
-team join ff_lobby @a[predicate=fossil_frights:player/is_playing]
+execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/set_team/lobby
 function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset/main
 scoreboard players set $active_set ff_game_state 0

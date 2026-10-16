@@ -3,7 +3,7 @@
 # Glow when player is 24+ blocks away.
 # Teleport behind player at 36+ blocks away.
 
-execute unless entity @a[tag=ff_bookshelf_creature_target] as @a[team=ff_guard,tag=!ff_bookshelf_acknowledged,sort=nearest,limit=1] run tag @s add ff_bookshelf_creature_target
+execute unless entity @a[tag=ff_bookshelf_creature_target] as @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged,sort=nearest,limit=1] run tag @s add ff_bookshelf_creature_target
 execute as @a[tag=ff_bookshelf_creature_target] if predicate fossil_frights:location/room/start_room run function fossil_frights:tasks/task_book_shelf/bookshelf_creature/cleanup
 execute unless entity @a[tag=ff_bookshelf_creature_target] run return 0
 execute unless entity @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1] run summon minecraft:zombie 18 70 28 {Tags:["ff_bookshelf_creature_driver"],Team:"ff_bookshelf_creature",Rotation:[180f,0f],Silent:true,PersistenceRequired:true,CanPickUpLoot:false,active_effects:[{id:"minecraft:resistance",amplifier:4,duration:-1,show_particles:false}],attributes:[{id:"minecraft:movement_speed",base:0.4d},{id:"minecraft:follow_range",base:2048d},{id:"minecraft:attack_damage",base:0d},{id:"minecraft:knockback_resistance",base:1d},{id:"minecraft:spawn_reinforcements",base:0d}]}

@@ -1,7 +1,7 @@
 execute if score $victory_complete ff_game_state matches 1 run return 0
 scoreboard players set $heist_round_active ff_game_state 1
-execute as @a[team=ff_guard] at @s run function fossil_frights:game/rejoin/state/register
-execute as @a[team=ff_thief] at @s run function fossil_frights:game/rejoin/state/register
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run function fossil_frights:game/rejoin/state/register
+execute as @a[predicate=fossil_frights:player/team/thief] at @s run function fossil_frights:game/rejoin/state/register
 function fossil_frights:game/start_room/settings/board/refresh
 scoreboard players set $heist_capture_disabled ff_game_state 0
 function fossil_frights:animations/dinocoin/vending_machine/setup
@@ -40,12 +40,12 @@ scoreboard players set @a ff_heist_deaths_round 0
 tag @a remove ff_heist_stat_participant
 tag @a remove ff_heist_stat_thief
 tag @a remove ff_heist_stat_guard
-tag @a[team=ff_guard] add ff_heist_stat_participant
-tag @a[team=ff_guard] add ff_heist_stat_guard
-tag @a[team=ff_thief] add ff_heist_stat_participant
-tag @a[team=ff_thief] add ff_heist_stat_thief
-execute as @a[team=ff_guard] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
-execute as @a[team=ff_thief] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
+tag @a[predicate=fossil_frights:player/team/guard] add ff_heist_stat_participant
+tag @a[predicate=fossil_frights:player/team/guard] add ff_heist_stat_guard
+tag @a[predicate=fossil_frights:player/team/thief] add ff_heist_stat_participant
+tag @a[predicate=fossil_frights:player/team/thief] add ff_heist_stat_thief
+execute as @a[predicate=fossil_frights:player/team/guard] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
+execute as @a[predicate=fossil_frights:player/team/thief] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
 scoreboard players set @a ff_heist_thieves_killed_round 0
 scoreboard players set @a ff_heist_killer_pending 0
 scoreboard players reset @a ff_heist_killer_uuid_0
@@ -56,11 +56,11 @@ tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
-execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
-execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
-scoreboard players set @a[team=ff_thief] ff_heist_stolen_keys 0
-execute as @a[team=ff_thief] run function fossil_frights:game/heists/loadout/thief
-execute as @a[team=ff_thief] at @s run spawnpoint @s -1 109 55
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/loadout/guard
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
+scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_heist_stolen_keys 0
+execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:game/heists/loadout/thief
+execute as @a[predicate=fossil_frights:player/team/thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/close_release_doors
 function fossil_frights:game/heists/items/generate_loot
 execute if score $heist_challenge_all ff_heist matches 1 run function fossil_frights:game/heists/challenge/apply_all

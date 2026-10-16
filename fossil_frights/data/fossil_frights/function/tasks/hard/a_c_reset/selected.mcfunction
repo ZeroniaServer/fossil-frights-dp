@@ -17,5 +17,5 @@ execute if score lava ff_hazard_active matches 1 run scoreboard players set $a_c
 execute if score lava ff_hazard_active matches 1 run function fossil_frights:tasks/hard/a_c_reset/place_melted
 execute unless score lava ff_hazard_active matches 1 run execute store result score $a_c_reset_variant ff_task_state run random value 1..3
 execute unless score lava ff_hazard_active matches 1 run function fossil_frights:tasks/hard/a_c_reset/place_variant
-tag @a[team=ff_guard] remove ff_a_c_reset_in_range
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_a_c_reset_in_range
 function fossil_frights:tasks/tracker/refresh

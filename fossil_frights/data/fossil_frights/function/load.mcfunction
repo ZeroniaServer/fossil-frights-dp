@@ -16,6 +16,7 @@ scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_tablist_text dummy
 scoreboard objectives modify ff_tablist_text numberformat blank
 scoreboard objectives setdisplay list ff_tablist_text
+scoreboard objectives add ff_player_team dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy

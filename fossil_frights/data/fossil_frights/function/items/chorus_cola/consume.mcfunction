@@ -8,9 +8,9 @@ tag @s remove chorus_cola.player
 
 # Teleport
 scoreboard players set #position_at_nearest_thief ff_dummy 0
-execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard] run scoreboard players set #position_at_nearest_thief ff_dummy 1
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] run scoreboard players set #position_at_nearest_thief ff_dummy 1
 execute if score #position_at_nearest_thief ff_dummy matches 0 run function fossil_frights:items/chorus_cola/teleport/main
-execute if score #position_at_nearest_thief ff_dummy matches 1 positioned as @n[team=ff_thief,gamemode=adventure] run function fossil_frights:items/chorus_cola/teleport/main
+execute if score #position_at_nearest_thief ff_dummy matches 1 positioned as @n[predicate=fossil_frights:player/team/thief,gamemode=adventure] run function fossil_frights:items/chorus_cola/teleport/main
 
 # Appear effects
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0 0.5 0 0.5 50

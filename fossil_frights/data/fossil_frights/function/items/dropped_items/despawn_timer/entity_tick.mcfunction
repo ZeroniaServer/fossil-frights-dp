@@ -5,6 +5,6 @@ execute on vehicle run data modify storage fossil_frights:dropped_items seconds 
 execute on vehicle run data modify storage fossil_frights:dropped_items tenths set compute default integer fossil_frights:items/dropped_items/despawn_tenths
 data modify entity @s text set value [{color:"red",text:""},{font:"fossil_frights:small_caps",nbt:"seconds",storage:"fossil_frights:dropped_items",plain:true},".",{font:"fossil_frights:small_caps",nbt:"tenths",storage:"fossil_frights:dropped_items",plain:true},"\u17b5\u17b5"]
 
-execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:raid_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[team=ff_thief]
-execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:trial_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[team=ff_guard,gamemode=!spectator]
-execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:trial_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[team=ff_spectator]
+execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:raid_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[predicate=fossil_frights:player/team/thief]
+execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:trial_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator]
+execute if predicate fossil_frights:entity/periodic_tick/15 run particle minecraft:trial_omen ~ ~0.25 ~ 0.1 0 0.1 0 1 force @a[predicate=fossil_frights:player/team/spectator]

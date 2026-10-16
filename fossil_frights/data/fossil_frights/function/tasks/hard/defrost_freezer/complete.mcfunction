@@ -7,7 +7,7 @@ execute positioned -13.5 73.5 41.5 run particle minecraft:snowflake ~ ~ ~ 0.3 0.
 execute positioned -13.5 73.5 41.5 run particle minecraft:item_snowball ~ ~ ~ 0.18 0.22 0.18 0.02 10 force
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"defrost_freezer"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"defrost_freezer"}] 1
 scoreboard players set $defrost_freezer_done ff_task_state 1
 function fossil_frights:tasks/hard/defrost_freezer/cleanup
 function fossil_frights:tasks/tracker/refresh

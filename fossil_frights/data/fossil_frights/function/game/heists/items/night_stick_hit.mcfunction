@@ -1,11 +1,11 @@
 advancement revoke @s only fossil_frights:misc/heists_night_stick_hit
 execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
-execute unless entity @s[team=ff_guard,gamemode=!spectator] run return 0
+execute unless entity @s[predicate=fossil_frights:player/team/guard,gamemode=!spectator] run return 0
 execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"night_stick"}] run return 0
 scoreboard players set $heist_regen_lock_timer ff_heist 20
 gamerule minecraft:natural_health_regeneration false
-tag @a[team=ff_thief,gamemode=!spectator,distance=..4,sort=nearest,limit=1] add ff_heist_kill_target
+tag @a[predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..4,sort=nearest,limit=1] add ff_heist_kill_target
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players set @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_pending 1
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players operation @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_uuid_0 = @s ff_active_uuid_0
 execute if entity @a[tag=ff_heist_kill_target,limit=1] run scoreboard players operation @a[tag=ff_heist_kill_target,limit=1] ff_heist_killer_uuid_1 = @s ff_active_uuid_1

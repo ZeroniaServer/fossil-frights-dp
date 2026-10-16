@@ -12,4 +12,4 @@ scoreboard players set @a ff_top_day 0
 scoreboard players set @a ff_run_count 0
 scoreboard players operation @a ff_lb_generation = $current ff_lb_generation
 function fossil_frights:leaderboards/display/refresh
-tellraw @a[team=ff_dev_mode] [{"text":"Fossil Frights leaderboard reset.","color":"green"}]
+tellraw @a[predicate=fossil_frights:player/team/dev_mode] [{"text":"Fossil Frights leaderboard reset.","color":"green"}]

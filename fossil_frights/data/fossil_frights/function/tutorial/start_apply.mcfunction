@@ -15,7 +15,7 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:saturation infinite 255 true
 gamemode spectator @s
-execute at @s as @a[distance=..0.000001,gamemode=spectator,team=ff_spectator] run spectate
+execute at @s as @a[distance=..0.000001,gamemode=spectator,predicate=fossil_frights:player/team/spectator] run spectate
 spectate @e[type=minecraft:text_display,tag=ff_tutorial_camera_current,limit=1] @s
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}

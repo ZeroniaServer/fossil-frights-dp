@@ -1,6 +1,6 @@
 tag @s add ff_admin_random_target
 execute unless predicate fossil_frights:game_state/game_running unless entity @a[limit=1,tag=ff_in_queue] run function fossil_frights:join/heists/admin_bootstrap
-team join ff_lobby @s
+function fossil_frights:player/set_team/lobby
 tag @s remove ff_fade_tp_active
 scoreboard players set @s ff_tp_action 0
 scoreboard players set @s ff_tp_delay 0

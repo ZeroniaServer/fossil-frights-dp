@@ -1,4 +1,4 @@
-execute at @s as @a[distance=..0.000001,gamemode=spectator,team=ff_spectator] run spectate
+execute at @s as @a[distance=..0.000001,gamemode=spectator,predicate=fossil_frights:player/team/spectator] run spectate
 execute if score @s ff_security_camera matches 1 if entity @e[type=minecraft:item_display,tag=ff_security_camera_1,limit=1] run spectate @e[type=minecraft:item_display,tag=ff_security_camera_1,limit=1] @s
 execute if score @s ff_security_camera matches 2 if entity @e[type=minecraft:item_display,tag=ff_security_camera_2,limit=1] run spectate @e[type=minecraft:item_display,tag=ff_security_camera_2,limit=1] @s
 execute if score @s ff_security_camera matches 3 if entity @e[type=minecraft:item_display,tag=ff_security_camera_3,limit=1] run spectate @e[type=minecraft:item_display,tag=ff_security_camera_3,limit=1] @s

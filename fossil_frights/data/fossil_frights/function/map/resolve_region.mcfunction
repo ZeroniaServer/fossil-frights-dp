@@ -1,5 +1,5 @@
 execute unless predicate fossil_frights:game_state/game_running run return 0
-execute unless entity @s[team=ff_guard] run return 0
+execute unless entity @s[predicate=fossil_frights:player/team/guard] run return 0
 
 # floor 1
 execute at @s if predicate fossil_frights:location/room/floor_1/foyer run return run function fossil_frights:map/region/foyer

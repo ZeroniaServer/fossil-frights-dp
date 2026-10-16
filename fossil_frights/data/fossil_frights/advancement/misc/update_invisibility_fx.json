@@ -7,13 +7,7 @@
         "player": {
           "type": "minecraft:all_of",
           "terms": [
-            {
-              "type": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:team": "ff_thief"
-              }
-            },
+            "fossil_frights:player/team/thief",
             {
               "type": "minecraft:inverted",
               "term": {
@@ -45,13 +39,7 @@
         "player": {
           "type": "minecraft:all_of",
           "terms": [
-            {
-              "type": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "minecraft:team": "ff_thief"
-              }
-            },
+            "fossil_frights:player/team/thief",
             {
               "type": "minecraft:entity_properties",
               "entity": "this",

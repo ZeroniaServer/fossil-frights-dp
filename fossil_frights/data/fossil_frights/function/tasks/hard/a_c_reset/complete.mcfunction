@@ -10,10 +10,10 @@ function fossil_frights:tasks/hard/a_c_reset/fan_loop
 scoreboard players set $a_c_fan_spin ff_task_state 100
 scoreboard players set $a_c_fan_rot_state ff_task_state 0
 function fossil_frights:tasks/hard/a_c_reset/fan_spin
-tag @a[team=ff_guard] remove ff_a_c_reset_in_range
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_a_c_reset_in_range
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"a_c_reset"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"a_c_reset"}] 1
 scoreboard players set $a_c_reset_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

@@ -6,7 +6,7 @@ execute if predicate fossil_frights:player/is_playing_temple_run run function fo
 execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
 function fossil_frights:lobby_games/stop_all
 function fossil_frights:join/lobby
-team join ff_guard @s
+function fossil_frights:player/set_team/guard
 scoreboard players set @s ff_join_cooldown 40
 execute unless entity @s[tag=ff_invite_join_source] unless predicate fossil_frights:game_state/game_running if score $active_set ff_game_state matches 0 run function fossil_frights:game/players/set_active
 execute unless entity @s[tag=ff_invite_join_source] unless predicate fossil_frights:game_state/game_running if score $active_set ff_game_state matches 1 run function fossil_frights:messages/start/entering_museum

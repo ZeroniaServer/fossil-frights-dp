@@ -9,10 +9,10 @@ function fossil_frights:game/heists/loot/cleanup
 function fossil_frights:game/start_room/locked_door/clear
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:jump_strength base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:movement_speed base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:friction_modifier base reset
-execute as @a[team=ff_thief] run attribute @s minecraft:air_drag_modifier base reset
-execute as @a[team=ff_thief] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
+execute as @a[predicate=fossil_frights:player/team/thief] run attribute @s minecraft:movement_speed base reset
+execute as @a[predicate=fossil_frights:player/team/thief] run attribute @s minecraft:friction_modifier base reset
+execute as @a[predicate=fossil_frights:player/team/thief] run attribute @s minecraft:air_drag_modifier base reset
+execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $day_active ff_day 0

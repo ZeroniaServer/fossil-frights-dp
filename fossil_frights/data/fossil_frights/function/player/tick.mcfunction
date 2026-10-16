@@ -62,7 +62,7 @@ execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frig
 execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/player_tick
 execute if entity @s[tag=ff_hoverboard_active,gamemode=!creative] unless predicate fossil_frights:player/inventory/creator_hoverboard run function fossil_frights:items/hoverboard/durability/durability_tick
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
-execute if entity @s[gamemode=spectator,team=!ff_dev_mode] run function fossil_frights:admin/spectator/tick
+execute if entity @s[gamemode=spectator,predicate=!fossil_frights:player/team/dev_mode] run function fossil_frights:admin/spectator/tick
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_pending
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_queued
 execute if predicate fossil_frights:player/is_playing run function fossil_frights:items/plushies/clear_items
@@ -144,14 +144,14 @@ execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Heal
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/respawn_lobby
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:player/is_playing run function fossil_frights:player/respawn_lobby
 execute unless entity @s[nbt={Health:0.0f}] unless score @s ff_deaths = @s ff_deaths_seen run scoreboard players operation @s ff_deaths_seen = @s ff_deaths
-execute if entity @s[tag=ff_damage_guard] if predicate fossil_frights:game_state/game_running if entity @s[team=ff_guard,gamemode=!spectator] run function fossil_frights:player/protection_disable
+execute if entity @s[tag=ff_damage_guard] if predicate fossil_frights:game_state/game_running if entity @s[predicate=fossil_frights:player/team/guard,gamemode=!spectator] run function fossil_frights:player/protection_disable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/protection_enable
 execute if entity @s[gamemode=!spectator,tag=!ff_damage_guard] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:player/is_playing run function fossil_frights:player/protection_enable
 function fossil_frights:player/effects/tick
-execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/ice_cannon/player_tick
-execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/trap/player_tick
-execute if entity @s[team=ff_guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/guard_tick
-execute if entity @s[team=ff_thief,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/thief_tick
+execute if entity @s[predicate=fossil_frights:player/team/guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/ice_cannon/player_tick
+execute if entity @s[predicate=fossil_frights:player/team/guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/heists/trap/player_tick
+execute if entity @s[predicate=fossil_frights:player/team/guard,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/guard_tick
+execute if entity @s[predicate=fossil_frights:player/team/thief,gamemode=!spectator] if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/thief_tick
 function fossil_frights:lobby_games/parkour/player_tick
 function fossil_frights:lobby_games/temple_run/player_tick
 function fossil_frights:lobby_games/ant_fight/player_tick
@@ -159,12 +159,12 @@ function fossil_frights:lobby_games/sulfur_strikers/player_tick
 function fossil_frights:advancements/checks/reach_the_sun
 execute if entity @s[tag=ff_camera_remote_active,gamemode=!spectator] run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=!spectator] run function fossil_frights:cameras/forced_spectate_exit
-execute if entity @s[tag=ff_camera_glitch_posteffect,tag=!ff_forced_spectate] unless entity @s[team=ff_spectator,gamemode=spectator] run function fossil_frights:cameras/lights_disabled/hide
+execute if entity @s[tag=ff_camera_glitch_posteffect,tag=!ff_forced_spectate] unless entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] run function fossil_frights:cameras/lights_disabled/hide
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fossil_frights:cameras/camera_tick
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
-execute if entity @s[team=ff_guard] if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/check_radius
-execute if entity @s[team=ff_guard] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:tasks/hard/feed_the_bats/player_tick
+execute if entity @s[predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/check_radius
+execute if entity @s[predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:tasks/hard/feed_the_bats/player_tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:tasks/hard/basketball_dance/player_tick
 tag @s add ff_microfiber_cloth_holder
 execute unless items entity @s weapon.* *[custom_data~{itemID:"microfiber_cloth"}] run tag @s remove ff_microfiber_cloth_holder
@@ -175,13 +175,13 @@ scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
 execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
 attribute @s minecraft:waypoint_transmit_range base set 0
-attribute @s[team=ff_lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
+attribute @s[predicate=fossil_frights:player/team/lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[predicate=fossil_frights:player/is_playing] minecraft:waypoint_receive_range base set 60000000
 attribute @s[gamemode=spectator] minecraft:waypoint_receive_range base set 60000000
-execute if entity @s[team=ff_spectator] run effect give @s minecraft:invisibility infinite 0 true
+execute if entity @s[predicate=fossil_frights:player/team/spectator] run effect give @s minecraft:invisibility infinite 0 true
 attribute @s[tag=ff_forced_spectate,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[tag=ff_camera_remote_active,gamemode=spectator] minecraft:waypoint_receive_range base set 0
 execute if predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier add fossil_frights:fossil_fizz 0.9 add_value
 execute unless predicate fossil_frights:entity/effects/water_breathing run attribute @s minecraft:water_movement_efficiency modifier remove fossil_frights:fossil_fizz
-execute if entity @s[team=ff_spectator,gamemode=spectator] run attribute @s minecraft:scale modifier add fossil_frights:hide_spectator_head -1 add_multiplied_total
-execute unless entity @s[team=ff_spectator,gamemode=spectator] run attribute @s minecraft:scale modifier remove fossil_frights:hide_spectator_head
+execute if entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] run attribute @s minecraft:scale modifier add fossil_frights:hide_spectator_head -1 add_multiplied_total
+execute unless entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] run attribute @s minecraft:scale modifier remove fossil_frights:hide_spectator_head

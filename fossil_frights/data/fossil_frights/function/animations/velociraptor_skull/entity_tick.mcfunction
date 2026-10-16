@@ -1,8 +1,8 @@
 # Try looking at a nearby player. If possible, face them and report as watching. If not possible or out of range, return to previous angle and report as not watching.
 tp @s 7.5 84.0 46.5
 scoreboard players set #watching ff_dummy 0
-execute unless entity @s[tag=ff_velociraptor_skull.watching] positioned as @a[limit=1,sort=nearest,distance=..8,team=ff_guard,gamemode=!spectator] positioned ~ ~1 ~ store success score #watching ff_dummy run rotate @s facing ~ ~ ~
-execute if entity @s[tag=ff_velociraptor_skull.watching] positioned as @a[limit=1,sort=nearest,distance=..15,team=ff_guard,gamemode=!spectator] positioned ~ ~1 ~ store success score #watching ff_dummy run rotate @s facing ~ ~ ~
+execute unless entity @s[tag=ff_velociraptor_skull.watching] positioned as @a[limit=1,sort=nearest,distance=..8,predicate=fossil_frights:player/team/guard,gamemode=!spectator] positioned ~ ~1 ~ store success score #watching ff_dummy run rotate @s facing ~ ~ ~
+execute if entity @s[tag=ff_velociraptor_skull.watching] positioned as @a[limit=1,sort=nearest,distance=..15,predicate=fossil_frights:player/team/guard,gamemode=!spectator] positioned ~ ~1 ~ store success score #watching ff_dummy run rotate @s facing ~ ~ ~
 scoreboard players set #valid_angle ff_dummy 1
 execute if score #watching ff_dummy matches 1 unless entity @s[y_rotation=-20..130] run scoreboard players set #valid_angle ff_dummy 0
 execute if score #valid_angle ff_dummy matches 0 run rotate @s ~ ~

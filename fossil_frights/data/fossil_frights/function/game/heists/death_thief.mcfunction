@@ -4,8 +4,8 @@ scoreboard players operation #match ff_active_uuid_0 = @s ff_heist_killer_uuid_0
 scoreboard players operation #match ff_active_uuid_1 = @s ff_heist_killer_uuid_1
 scoreboard players operation #match ff_active_uuid_2 = @s ff_heist_killer_uuid_2
 scoreboard players operation #match ff_active_uuid_3 = @s ff_heist_killer_uuid_3
-execute if score @s ff_heist_killer_pending matches 1 if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[team=ff_guard,predicate=fossil_frights:entity/match/active] only fossil_frights:02_achievements/heists_stop_right_there
-execute if score @s ff_heist_killer_pending matches 1 run scoreboard players add @a[team=ff_guard,predicate=fossil_frights:entity/match/active] ff_heist_thieves_killed_round 1
+execute if score @s ff_heist_killer_pending matches 1 if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] only fossil_frights:02_achievements/heists_stop_right_there
+execute if score @s ff_heist_killer_pending matches 1 run scoreboard players add @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] ff_heist_thieves_killed_round 1
 scoreboard players set @s ff_heist_killer_pending 0
 scoreboard players set @s ff_heist_killer_uuid_0 0
 scoreboard players set @s ff_heist_killer_uuid_1 0

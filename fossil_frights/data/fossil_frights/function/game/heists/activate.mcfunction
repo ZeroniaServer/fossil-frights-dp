@@ -22,8 +22,8 @@ scoreboard players set $heist_seconds ff_heist 0
 scoreboard players set $heist_sec_tens ff_heist 0
 scoreboard players set $heist_sec_ones ff_heist 0
 scoreboard players reset $loot ff_heist_sidebar
-execute as @a[team=ff_guard] run function fossil_frights:game/heists/loadout/guard
-execute as @a[team=ff_guard] at @s run spawnpoint @s 20 70 20
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/loadout/guard
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
 function fossil_frights:game/start_room/settings/sync_message_state
 function fossil_frights:game/start_room/settings/board/refresh
 function fossil_frights:animations/front_door/open
