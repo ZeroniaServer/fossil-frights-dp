@@ -59,6 +59,10 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/spider/tick
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 1200..1239 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 2400..2439 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 3600..3639 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if entity @e[type=minecraft:mannequin,tag=ff_herobrine,limit=1] run function fossil_frights:frights/herobrine/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
