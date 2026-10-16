@@ -8,6 +8,9 @@ scoreboard players operation $delta_seconds ff_speedrun_live %= #60 ff_constant
 scoreboard players operation $delta_centis ff_speedrun_live = $delta_abs ff_speedrun_live
 scoreboard players operation $delta_centis ff_speedrun_live %= #ticks_per_second ff_constant
 scoreboard players operation $delta_centis ff_speedrun_live *= #5 ff_constant
+execute if score $delta_abs ff_speedrun_live matches 1200000.. run scoreboard players set $delta_minutes ff_speedrun_live 999
+execute if score $delta_abs ff_speedrun_live matches 1200000.. run scoreboard players set $delta_seconds ff_speedrun_live 59
+execute if score $delta_abs ff_speedrun_live matches 1200000.. run scoreboard players set $delta_centis ff_speedrun_live 99
 scoreboard players operation $delta_min_tens ff_speedrun_live = $delta_minutes ff_speedrun_live
 scoreboard players operation $delta_min_tens ff_speedrun_live /= #10 ff_constant
 scoreboard players operation $delta_min_tens ff_speedrun_live %= #10 ff_constant

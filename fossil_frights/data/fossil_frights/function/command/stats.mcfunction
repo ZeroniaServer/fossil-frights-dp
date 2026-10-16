@@ -67,6 +67,9 @@ execute if score @s ff_top_time matches 1.. run scoreboard players operation $st
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc = $stats_top_time ff_lb_calc
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc %= #lb_twenty ff_lb_calc
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc *= #lb_five ff_lb_calc
+execute if score @s ff_top_time matches 1200000.. run scoreboard players set $stats_minutes ff_lb_calc 999
+execute if score @s ff_top_time matches 1200000.. run scoreboard players set $stats_seconds ff_lb_calc 59
+execute if score @s ff_top_time matches 1200000.. run scoreboard players set $stats_centis ff_lb_calc 99
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_tens ff_lb_calc = $stats_minutes ff_lb_calc
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
 execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_ones ff_lb_calc = $stats_minutes ff_lb_calc

@@ -12,6 +12,9 @@ scoreboard players operation $timer_seconds ff_day %= #60 ff_constant
 scoreboard players operation $timer_centis ff_day = $timer_ticks ff_day
 scoreboard players operation $timer_centis ff_day %= #ticks_per_second ff_constant
 scoreboard players operation $timer_centis ff_day *= #5 ff_constant
+execute if score $timer_ticks ff_day matches 1200000.. run scoreboard players set $timer_minutes ff_day 999
+execute if score $timer_ticks ff_day matches 1200000.. run scoreboard players set $timer_seconds ff_day 59
+execute if score $timer_ticks ff_day matches 1200000.. run scoreboard players set $timer_centis ff_day 99
 scoreboard players operation $timer_sec_tens ff_day = $timer_seconds ff_day
 scoreboard players operation $timer_sec_tens ff_day /= #10 ff_constant
 scoreboard players operation $timer_sec_ones ff_day = $timer_seconds ff_day
