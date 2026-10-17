@@ -3,3 +3,4 @@ execute unless predicate fossil_frights:location/lobby_games/sulfur_strikers_buf
 execute if entity @s[tag=ff_sulfur_strikers_music] run function fossil_frights:lobby_games/sulfur_strikers/music/tick
 execute if entity @s[gamemode=adventure] if predicate fossil_frights:location/lobby_games/sulfur_strikers run function fossil_frights:lobby_games/sulfur_strikers/music/start
 execute unless predicate fossil_frights:player/is_playing_sulfur_strikers run clear @s *[minecraft:custom_data~{ff_sulfur_strikers_powerup:true}]
+execute at @s unless predicate fossil_frights:location/lobby_games/sulfur_strikers_court_items_allowed run clear @s *[minecraft:custom_data~{ff_sulfur_strikers_powerup:true}]
