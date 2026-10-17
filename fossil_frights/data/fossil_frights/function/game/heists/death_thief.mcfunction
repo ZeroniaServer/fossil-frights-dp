@@ -20,7 +20,7 @@ tag @s remove ff_ice_frozen
 function fossil_frights:game/heists/jump_boost/restore
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 function fossil_frights:game/heists/paint_fx/clear
-tp @s -1.00 109.00 55.5 180 0
+tp @s -1.00 109.1875 55.5 180 0
 spawnpoint @s -1 109 55
 function fossil_frights:player/protection_disable
 clear @s
