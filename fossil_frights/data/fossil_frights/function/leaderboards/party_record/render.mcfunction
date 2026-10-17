@@ -1,3 +1,6 @@
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_1] run data remove entity @s text
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_2] run data remove entity @s text
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_3] run data remove entity @s text
 data modify storage fossil_frights:party_record display_players_1 set value []
 data modify storage fossil_frights:party_record display_players_2 set value []
 data modify storage fossil_frights:party_record display_players_3 set value []
