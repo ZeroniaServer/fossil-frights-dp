@@ -5,7 +5,7 @@ kill @e[tag=ff_bookshelf_creature_driver]
 kill @e[tag=ff_bookshelf_creature_visual]
 kill @e[tag=ff_bookshelf_creature_hitbox]
 kill @e[tag=ff_bookshelf_passive_creature]
-execute positioned 18.5 71.0 28.5 rotated 180 0 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/start_room/task_book_shelf",nbt:{Tags:["ff_task_book_shelf_display"],transformation:{left_rotation:[0,0,0,1],translation:[0,0.5,-0.999],right_rotation:[0,0,0,1],scale:[1,1,1]},item_display:"none",width:1,height:1}}
+summon minecraft:item_display 18.5 71.0 28.5 {Tags:["ff_task_book_shelf_display"],Rotation:[180,0],transformation:{left_rotation:[0,0,0,1],translation:[0,0.5,-0.999],right_rotation:[0,0,0,1],scale:[1,1,1]},width:1,height:1}
 function fossil_frights:tasks/task_book_shelf/update
 
 kill @e[type=minecraft:interaction,tag=ff_task_book_shelf_slot]
