@@ -83,6 +83,7 @@ fill 126 83 81 128 83 79 minecraft:air strict
 summon minecraft:item_display 127.5 82.0 80.5 {Tags:["tr_spear_trap"],width:3.0f,height:3.0f,item:{components:{"minecraft:item_model":"fossil_frights:display/lobby/temple_run/spear_trap"},count:1,id:"minecraft:stone"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,-1.5f,0.0f]},interpolation_duration:5}
 scoreboard players set $spear_trap_trigger_active ff_temple_run_anim 0
 scoreboard players set $spear_trap_trigger_cooldown ff_temple_run_anim 0
+scoreboard players set $spear_trap_trigger_delay ff_temple_run_anim 0
 scoreboard players set #spear_trap_trigger_phase ff_temple_run_anim 0
 scoreboard players set $darts1_active ff_temple_run_anim 0
 scoreboard players set #darts1_phase ff_temple_run_anim 0
