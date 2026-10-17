@@ -16,6 +16,7 @@ scoreboard objectives add ff_constant dummy
 scoreboard objectives add ff_tablist_text dummy
 scoreboard objectives modify ff_tablist_text numberformat blank
 scoreboard objectives setdisplay list ff_tablist_text
+scoreboard objectives add ff_player_team dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
@@ -142,6 +143,7 @@ scoreboard objectives add ff_queue_start_token dummy
 scoreboard objectives add ff_queue_prompt_time dummy
 scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
+scoreboard objectives add ff_herobrine_delay dummy
 scoreboard objectives add ff_bat_fright_timer dummy
 scoreboard objectives add ff_credits_time dummy
 scoreboard objectives add ff_boss_skin dummy
@@ -154,6 +156,7 @@ scoreboard objectives add ff_top_time dummy
 scoreboard objectives add ff_top_day dummy
 scoreboard objectives add ff_run_count dummy
 scoreboard objectives add ff_duo_best dummy
+scoreboard objectives add ff_party_best dummy
 scoreboard objectives add ff_day1_best dummy
 scoreboard objectives add ff_day2_best dummy
 scoreboard objectives add ff_day3_best dummy
@@ -550,6 +553,7 @@ gamerule minecraft:advance_weather false
 gamerule minecraft:locator_bar true
 gamerule minecraft:mob_drops false
 gamerule minecraft:advance_time true
+gamerule minecraft:spectators_generate_chunks false
 
 # This text is purposefully not translated, so that non-rp players see it
 bossbar add fossil_frights:resource_pack_disclaimer ""

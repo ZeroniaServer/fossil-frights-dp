@@ -4,24 +4,8 @@
     {
       "type": "minecraft:any_of",
       "terms": [
-        {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "minecraft:team": "ff_guard"
-          }
-        },
-        {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "minecraft:type_specific/player": {
-              "gamemode": [
-                "spectator"
-              ]
-            }
-          }
-        }
+        "fossil_frights:player/team/guard",
+        "fossil_frights:player/team/spectator"
       ]
     },
     "fossil_frights:location/room/floor_2",

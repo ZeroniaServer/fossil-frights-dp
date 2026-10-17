@@ -9,7 +9,6 @@
           "entity": "this",
           "predicate": {
             "minecraft:entity_type": "minecraft:player",
-            "minecraft:team": "ff_thief",
             "minecraft:type_specific/player": {
               "gamemode": [
                 "survival",
@@ -19,6 +18,7 @@
             }
           }
         },
+        "fossil_frights:player/team/thief",
         "fossil_frights:player/is_playing"
       ]
     },

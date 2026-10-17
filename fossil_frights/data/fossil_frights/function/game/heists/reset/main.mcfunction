@@ -31,8 +31,8 @@ tag @a remove ff_trap_place_pending
 tp @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy] 0 -200 0
 kill @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy]
 execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/heists/camera_remote/exit
-effect clear @a[team=ff_thief] minecraft:invisibility
-execute as @a[team=ff_thief] run function fossil_frights:game/heists/invisibility_fx/check_player
+effect clear @a[predicate=fossil_frights:player/team/thief] minecraft:invisibility
+execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:game/heists/invisibility_fx/check_player
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_attributes
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_effects
 scoreboard players set @a ff_heist_punch_cd 0
@@ -95,7 +95,7 @@ tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_stat_participant
 tag @a remove ff_heist_stat_thief
 tag @a remove ff_heist_stat_guard
-team join ff_lobby @a[team=ff_thief]
+execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:player/set_team/lobby
 scoreboard players set $heist_mode_active ff_game_state 0
 scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_admin_bypass_team_check ff_game_state 0

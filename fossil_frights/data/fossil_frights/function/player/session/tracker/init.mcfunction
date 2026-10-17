@@ -5,5 +5,3 @@ data modify storage fossil_frights:session tracker_data.Owner set from storage f
 data modify storage fossil_frights:session tracker_data.data.name set from storage fossil_frights:session player_name
 data modify entity @s {} merge from storage fossil_frights:session tracker_data
 data remove storage fossil_frights:session tracker_data
-
-$say "$(player_name)" session STARTED

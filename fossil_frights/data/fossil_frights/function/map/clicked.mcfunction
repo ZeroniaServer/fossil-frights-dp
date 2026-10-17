@@ -1,7 +1,7 @@
 advancement revoke @s only fossil_frights:misc/museum_map_click
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute if score $victory_complete ff_game_state matches 1 run return 0
-execute unless entity @s[team=ff_guard] run return 0
+execute unless entity @s[predicate=fossil_frights:player/team/guard] run return 0
 execute if entity @s[tag=ff_map_claimed] run function fossil_frights:player/actionbar/show/generic/museum_map_already_claimed
 execute if entity @s[tag=ff_map_claimed] run return 0
 loot give @s loot fossil_frights:items/museum_map

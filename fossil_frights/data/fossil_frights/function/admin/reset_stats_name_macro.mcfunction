@@ -4,6 +4,7 @@ $scoreboard players set $(name) ff_top_time 0
 $scoreboard players set $(name) ff_top_day 0
 $scoreboard players set $(name) ff_run_count 0
 $scoreboard players set $(name) ff_duo_best 0
+$scoreboard players set $(name) ff_party_best 0
 $scoreboard players set $(name) ff_day1_best 0
 $scoreboard players set $(name) ff_day2_best 0
 $scoreboard players set $(name) ff_day3_best 0
@@ -63,4 +64,4 @@ $data remove storage fossil_frights:leaderboards entries[{name:"$(name)"}]
 $data remove storage fossil_frights:leaderboards revoked[{name:"$(name)"}]
 $data modify storage fossil_frights:leaderboards revoked append value {name:"$(name)"}
 function fossil_frights:leaderboards/display/refresh
-$tellraw @a[team=ff_dev_mode] [{"text":"Fossil Frights stats reset for $(name).","color":"green"}]
+$tellraw @a[predicate=fossil_frights:player/team/dev_mode] [{"text":"Fossil Frights stats reset for $(name).","color":"green"}]

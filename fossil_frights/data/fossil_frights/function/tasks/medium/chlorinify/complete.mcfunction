@@ -6,7 +6,7 @@ execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_do
 execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_done ff_task_state matches 0 at @s run playsound minecraft:entity.generic.splash master @a[tag=ff_frights_feedback_viewer,distance=..16] ~ ~ ~ 0.9 1.2
 execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_done ff_task_state matches 0 run clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"chlorinify"}] 1
+execute if score $chlorinify_sel ff_task_state matches 1 if score $chlorinify_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"chlorinify"}] 1
 execute if score $chlorinify_sel ff_task_state matches 1 run scoreboard players set $chlorinify_done ff_task_state 1
 function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s

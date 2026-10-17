@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:floor_div",
+  "left": {
+    "type": "minecraft:floor_div",
+    "left": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "ff_top_time"
+    },
+    "right": 100
+  },
+  "right": 60
+}

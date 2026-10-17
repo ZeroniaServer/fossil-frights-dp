@@ -43,8 +43,8 @@ execute if predicate fossil_frights:game_state/heist_mode_active run kill @e[typ
 
 # Teleport player
 execute unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:items/chorus_cola/teleport/choose_marker/frights
-execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_thief] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief
-execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[team=ff_guard] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_guard
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/thief] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_thief
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] run function fossil_frights:items/chorus_cola/teleport/choose_marker/heists_guard
 
 # Unload markers
 tp @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] 0 0 0

@@ -22,14 +22,14 @@ function fossil_frights:items/heists/lootbook/tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_tick
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/on_tick
 tag @a remove ff_frights_feedback_viewer
-tag @a[team=ff_guard] add ff_frights_feedback_viewer
-tag @a[team=ff_spectator] add ff_frights_feedback_viewer
+tag @a[predicate=fossil_frights:player/team/guard] add ff_frights_feedback_viewer
+tag @a[predicate=fossil_frights:player/team/spectator] add ff_frights_feedback_viewer
 function fossil_frights:locator_bar/tick
 scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=1..}] ff_lock_click_ttl 1
 tag @a remove ff_trap_viewer
-tag @a[team=ff_guard] add ff_trap_viewer
-tag @a[team=ff_spectator] add ff_trap_viewer
-execute if score curse ff_hazard_active matches 1 run tag @a[team=ff_thief] add ff_trap_viewer
+tag @a[predicate=fossil_frights:player/team/guard] add ff_trap_viewer
+tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
+execute if score curse ff_hazard_active matches 1 run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
@@ -59,9 +59,13 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/spider/tick
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 1200..1239 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 2400..2439 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_current ff_day matches 4 if score $day_timer ff_day matches 3600..3639 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:frights/herobrine/check
+execute if entity @e[type=minecraft:mannequin,tag=ff_herobrine,limit=1] run function fossil_frights:frights/herobrine/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
-execute if entity @a[team=ff_guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
+execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
 execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
@@ -102,7 +106,7 @@ function fossil_frights:lobby_games/parkour/teleporter_walk_tick
 function fossil_frights:lobby_games/sulfur_strikers/teleporter_walk_tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
-execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,team=!ff_guard,team=!ff_thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
+execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,predicate=!fossil_frights:player/team/guard,predicate=!fossil_frights:player/team/thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
 execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=ff_ant_fight,gamemode=!spectator]

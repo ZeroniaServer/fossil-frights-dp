@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:arrow",
-    "minecraft:wither"
+    "minecraft:wither",
+    "minecraft:mob_attack"
   ]
 }

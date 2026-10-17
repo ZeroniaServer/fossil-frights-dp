@@ -2,25 +2,9 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:milk_bucket",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.drink_with_straw",
-          "italic": false
-        },
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "drink_with_straw"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "fossil_frights:items/drinks/pteranadon_twist"
       }
     },
     "title": {

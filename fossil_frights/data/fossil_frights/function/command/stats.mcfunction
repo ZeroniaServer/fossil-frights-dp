@@ -1,153 +1,76 @@
-scoreboard players set $stats_top_time ff_lb_calc 0
-scoreboard players set $stats_duo_best ff_lb_calc 0
-scoreboard players set $stats_duo_minutes ff_lb_calc 0
-scoreboard players set $stats_duo_seconds_total ff_lb_calc 0
-scoreboard players set $stats_duo_seconds ff_lb_calc 0
-scoreboard players set $stats_duo_centis ff_lb_calc 0
-scoreboard players set $stats_duo_min_tens ff_lb_calc 0
-scoreboard players set $stats_duo_min_ones ff_lb_calc 0
-scoreboard players set $stats_duo_sec_tens ff_lb_calc 0
-scoreboard players set $stats_duo_sec_ones ff_lb_calc 0
-scoreboard players set $stats_duo_centi_tens ff_lb_calc 0
-scoreboard players set $stats_duo_centi_ones ff_lb_calc 0
-scoreboard players set $stats_top_day ff_lb_calc 0
-scoreboard players set $stats_run_total ff_lb_calc 0
-scoreboard players set $stats_parkour_best ff_lb_calc 0
-scoreboard players set $stats_parkour_minutes ff_lb_calc 0
-scoreboard players set $stats_parkour_seconds ff_lb_calc 0
-scoreboard players set $stats_parkour_centis ff_lb_calc 0
-scoreboard players set $stats_parkour_min_tens ff_lb_calc 0
-scoreboard players set $stats_parkour_min_ones ff_lb_calc 0
-scoreboard players set $stats_parkour_sec_tens ff_lb_calc 0
-scoreboard players set $stats_parkour_sec_ones ff_lb_calc 0
-scoreboard players set $stats_parkour_centi_tens ff_lb_calc 0
-scoreboard players set $stats_parkour_centi_ones ff_lb_calc 0
-scoreboard players set $stats_temple_run_best ff_lb_calc 0
-scoreboard players set $stats_temple_run_minutes ff_lb_calc 0
-scoreboard players set $stats_temple_run_seconds ff_lb_calc 0
-scoreboard players set $stats_temple_run_centis ff_lb_calc 0
-scoreboard players set $stats_temple_run_min_tens ff_lb_calc 0
-scoreboard players set $stats_temple_run_min_ones ff_lb_calc 0
-scoreboard players set $stats_temple_run_sec_tens ff_lb_calc 0
-scoreboard players set $stats_temple_run_sec_ones ff_lb_calc 0
-scoreboard players set $stats_temple_run_centi_tens ff_lb_calc 0
-scoreboard players set $stats_temple_run_centi_ones ff_lb_calc 0
-scoreboard players set $stats_ant_score ff_lb_calc 0
-scoreboard players set $stats_ant_top_score ff_lb_calc 0
-scoreboard players set $stats_minutes ff_lb_calc 0
-scoreboard players set $stats_seconds_total ff_lb_calc 0
-scoreboard players set $stats_seconds ff_lb_calc 0
-scoreboard players set $stats_centis ff_lb_calc 0
-scoreboard players set $stats_min_tens ff_lb_calc 0
-scoreboard players set $stats_min_ones ff_lb_calc 0
-scoreboard players set $stats_sec_tens ff_lb_calc 0
-scoreboard players set $stats_sec_ones ff_lb_calc 0
-scoreboard players set $stats_centi_tens ff_lb_calc 0
-scoreboard players set $stats_centi_ones ff_lb_calc 0
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_top_time ff_lb_calc = @s ff_top_time
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_best ff_lb_calc = @s ff_duo_best
-execute if score @s ff_top_day matches 1.. run scoreboard players operation $stats_top_day ff_lb_calc = @s ff_top_day
-scoreboard players operation $stats_run_total ff_lb_calc = @s ff_run_count
-scoreboard players operation $stats_ant_score ff_lb_calc = @s ff_ant_score
-scoreboard players operation $stats_ant_top_score ff_lb_calc = @s ff_ant_top_score
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_best ff_lb_calc = @s ff_parkour_best
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_minutes ff_lb_calc = $stats_parkour_best ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_minutes ff_lb_calc /= #100 ff_parkour_math
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_minutes ff_lb_calc /= #60 ff_parkour_math
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_best ff_lb_calc = @s ff_temple_run_best
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_minutes ff_lb_calc = $stats_temple_run_best ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_minutes ff_lb_calc /= #100 ff_temple_run_math
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_minutes ff_lb_calc /= #60 ff_temple_run_math
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_minutes ff_lb_calc = $stats_top_time ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_minutes ff_lb_calc /= #lb_twelve_hundred ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_seconds_total ff_lb_calc = $stats_top_time ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_seconds_total ff_lb_calc /= #lb_twenty ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_seconds ff_lb_calc = $stats_seconds_total ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_seconds ff_lb_calc %= #lb_sixty ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc = $stats_top_time ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc %= #lb_twenty ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centis ff_lb_calc *= #lb_five ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_tens ff_lb_calc = $stats_minutes ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_ones ff_lb_calc = $stats_minutes ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_sec_tens ff_lb_calc = $stats_seconds ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_sec_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_sec_ones ff_lb_calc = $stats_seconds ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_sec_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centi_tens ff_lb_calc = $stats_centis ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centi_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centi_ones ff_lb_calc = $stats_centis ff_lb_calc
-execute if score @s ff_top_time matches 1.. run scoreboard players operation $stats_centi_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_minutes ff_lb_calc = $stats_duo_best ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_minutes ff_lb_calc /= #lb_twelve_hundred ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_seconds_total ff_lb_calc = $stats_duo_best ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_seconds_total ff_lb_calc /= #lb_twenty ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_seconds ff_lb_calc = $stats_duo_seconds_total ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_seconds ff_lb_calc %= #lb_sixty ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centis ff_lb_calc = $stats_duo_best ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centis ff_lb_calc %= #lb_twenty ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centis ff_lb_calc *= #lb_five ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_min_tens ff_lb_calc = $stats_duo_minutes ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_min_ones ff_lb_calc = $stats_duo_minutes ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_sec_tens ff_lb_calc = $stats_duo_seconds ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_sec_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_sec_ones ff_lb_calc = $stats_duo_seconds ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_sec_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centi_tens ff_lb_calc = $stats_duo_centis ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centi_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centi_ones ff_lb_calc = $stats_duo_centis ff_lb_calc
-execute if score @s ff_duo_best matches 1.. run scoreboard players operation $stats_duo_centi_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_seconds ff_lb_calc = $stats_parkour_best ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_seconds ff_lb_calc /= #100 ff_parkour_math
-execute if score @s ff_parkour_best matches 1.. if score $stats_parkour_minutes ff_lb_calc matches 1.. run scoreboard players operation $stats_parkour_seconds ff_lb_calc %= #lb_sixty ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centis ff_lb_calc = $stats_parkour_best ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centis ff_lb_calc %= #100 ff_parkour_math
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_min_tens ff_lb_calc = $stats_parkour_minutes ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_min_ones ff_lb_calc = $stats_parkour_minutes ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_sec_tens ff_lb_calc = $stats_parkour_seconds ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_sec_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_sec_ones ff_lb_calc = $stats_parkour_seconds ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_sec_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centi_tens ff_lb_calc = $stats_parkour_centis ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centi_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centi_ones ff_lb_calc = $stats_parkour_centis ff_lb_calc
-execute if score @s ff_parkour_best matches 1.. run scoreboard players operation $stats_parkour_centi_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_seconds ff_lb_calc = $stats_temple_run_best ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_seconds ff_lb_calc /= #100 ff_temple_run_math
-execute if score @s ff_temple_run_best matches 1.. if score $stats_temple_run_minutes ff_lb_calc matches 1.. run scoreboard players operation $stats_temple_run_seconds ff_lb_calc %= #lb_sixty ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centis ff_lb_calc = $stats_temple_run_best ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centis ff_lb_calc %= #100 ff_temple_run_math
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_min_tens ff_lb_calc = $stats_temple_run_minutes ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_min_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_min_ones ff_lb_calc = $stats_temple_run_minutes ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_min_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_sec_tens ff_lb_calc = $stats_temple_run_seconds ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_sec_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_sec_ones ff_lb_calc = $stats_temple_run_seconds ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_sec_ones ff_lb_calc %= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centi_tens ff_lb_calc = $stats_temple_run_centis ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centi_tens ff_lb_calc /= #lb_ten ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centi_ones ff_lb_calc = $stats_temple_run_centis ff_lb_calc
-execute if score @s ff_temple_run_best matches 1.. run scoreboard players operation $stats_temple_run_centi_ones ff_lb_calc %= #lb_ten ff_lb_calc
-tellraw @s {"translate":"ff.stats.title","color":"gold"}
-execute if score @s ff_top_time matches 1.. run tellraw @s [{"translate":"ff.stats.best_time","color":"yellow","with":[{"translate":"%s:%s%s.%s%s","color":"white","with":[{"score":{"name":"$stats_minutes","objective":"ff_lb_calc"}},{"score":{"name":"$stats_sec_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_sec_ones","objective":"ff_lb_calc"}},{"score":{"name":"$stats_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute unless score @s ff_top_time matches 1.. run tellraw @s [{"translate":"ff.stats.best_time","color":"yellow","with":[{"text":"--:--.--","color":"gray"}]}]
-execute if score @s ff_top_day matches 1.. run tellraw @s [{"translate":"ff.stats.best_day","color":"yellow","with": [{"score":{"name":"$stats_top_day","objective":"ff_lb_calc"}}]}]
-execute unless score @s ff_top_day matches 1.. run tellraw @s [{"translate":"ff.stats.best_day","color":"yellow","with": [{"text":"--","color":"gray"}]}]
-tellraw @s [{"translate":"ff.stats.total_runs","color":"yellow","with": [{"score":{"name":"$stats_run_total","objective":"ff_lb_calc"}}]}]
-execute if score @s ff_duo_best matches 1.. run tellraw @s [{"translate":"ff.stats.duos_best_time","color":"yellow","with": [{"translate":"%s:%s%s.%s%s","color":"white","with":[{"score":{"name":"$stats_duo_minutes","objective":"ff_lb_calc"}},{"score":{"name":"$stats_duo_sec_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_duo_sec_ones","objective":"ff_lb_calc"}},{"score":{"name":"$stats_duo_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_duo_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute unless score @s ff_duo_best matches 1.. run tellraw @s [{"translate":"ff.stats.duos_best_time","color":"yellow","with": [{"text":"--:--.--","color":"gray"}]}]
-tellraw @s {"translate":"ff.stats.separator","color":"gold"}
-execute if score @s ff_parkour_best matches 1.. if score $stats_parkour_minutes ff_lb_calc matches 1.. run tellraw @s [{"translate":"ff.stats.parkour","color":"yellow","with": [{"translate":"%s:%s%s.%s%s","color":"white","with":[{"score":{"name":"$stats_parkour_minutes","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_sec_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_sec_ones","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute if score @s ff_parkour_best matches 1.. unless score $stats_parkour_minutes ff_lb_calc matches 1.. run tellraw @s [{"translate":"ff.stats.parkour","color":"yellow","with": [{"translate":"%s.%s%s","color":"white","with":[{"score":{"name":"$stats_parkour_seconds","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_parkour_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute unless score @s ff_parkour_best matches 1.. run tellraw @s [{"translate":"ff.stats.parkour","color":"yellow","with": [{"text":"--.--s","color":"gray"}]}]
-execute if score @s ff_temple_run_best matches 1.. if score $stats_temple_run_minutes ff_lb_calc matches 1.. run tellraw @s [{"translate":"ff.stats.temple_run","color":"yellow","with": [{"translate":"%s:%s%s.%s%s","color":"white","with":[{"score":{"name":"$stats_temple_run_minutes","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_sec_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_sec_ones","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute if score @s ff_temple_run_best matches 1.. unless score $stats_temple_run_minutes ff_lb_calc matches 1.. run tellraw @s [{"translate":"ff.stats.temple_run","color":"yellow","with": [{"translate":"%s.%s%s","color":"white","with":[{"score":{"name":"$stats_temple_run_seconds","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_centi_tens","objective":"ff_lb_calc"}},{"score":{"name":"$stats_temple_run_centi_ones","objective":"ff_lb_calc"}}]}]}]
-execute unless score @s ff_temple_run_best matches 1.. run tellraw @s [{"translate":"ff.stats.temple_run","color":"yellow","with": [{"text":"--.--s","color":"gray"}]}]
-tellraw @s [{"translate":"ff.stats.ant_score","color":"yellow","with": [{"score":{"name":"$stats_ant_score","objective":"ff_lb_calc"}}]}]
-tellraw @s [{"translate":"ff.stats.ant_top_score","color":"yellow","with": [{"score":{"name":"$stats_ant_top_score","objective":"ff_lb_calc"}}]}]
+tellraw @s {translate:"ff.stats.title",color:"gold"}
+
+# Best Time
+data modify storage fossil_frights:stats_command top_time set value {result:"",minutes:0,seconds_digits:[0,0],decimals_digits:[0,0]}
+data modify storage fossil_frights:stats_command top_time.minutes set compute default integer fossil_frights:stats/top_time/display_minutes
+data modify storage fossil_frights:stats_command top_time.seconds_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/top_time/display_seconds",right:10}
+data modify storage fossil_frights:stats_command top_time.seconds_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/top_time/display_seconds",right:10}
+data modify storage fossil_frights:stats_command top_time.decimals_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/top_time/display_decimals",right:10}
+data modify storage fossil_frights:stats_command top_time.decimals_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/top_time/display_decimals",right:10}
+execute unless score @s ff_top_time matches 1.. run data modify storage fossil_frights:stats_command top_time.result set value {color:"gray",text:"--:--.--"}
+execute if score @s ff_top_time matches 1.. run data modify storage fossil_frights:stats_command top_time.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"top_time.minutes",plain:true},":",{storage:"fossil_frights:stats_command",nbt:"top_time.seconds_digits[]",separator:"",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"top_time.decimals_digits[]",separator:"",plain:true}]}
+tellraw @s [{translate:"ff.stats.best_time",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"top_time.result",interpret:true}]}]
+
+# Best Day
+data modify storage fossil_frights:stats_command top_day set value {result:"",day:0}
+execute store result storage fossil_frights:stats_command top_day.day int 1 run scoreboard players get @s ff_top_day
+data modify storage fossil_frights:stats_command top_day.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"top_day.day",plain:true}]}
+tellraw @s [{translate:"ff.stats.best_day",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"top_day.result",interpret:true}]}]
+
+# Total Runs
+data modify storage fossil_frights:stats_command run_count set value {result:"",runs:0}
+execute store result storage fossil_frights:stats_command run_count.runs int 1 run scoreboard players get @s ff_run_count
+data modify storage fossil_frights:stats_command run_count.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"run_count.runs",plain:true}]}
+tellraw @s [{translate:"ff.stats.total_runs",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"run_count.result",interpret:true}]}]
+
+# Duo's Best Time
+data modify storage fossil_frights:stats_command duo_best set value {result:"",minutes:0,seconds_digits:[0,0],decimals_digits:[0,0]}
+data modify storage fossil_frights:stats_command duo_best.minutes set compute default integer fossil_frights:stats/duo_best/display_minutes
+data modify storage fossil_frights:stats_command duo_best.seconds_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/duo_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command duo_best.seconds_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/duo_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command duo_best.decimals_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/duo_best/display_decimals",right:10}
+data modify storage fossil_frights:stats_command duo_best.decimals_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/duo_best/display_decimals",right:10}
+execute unless score @s ff_duo_best matches 1.. run data modify storage fossil_frights:stats_command duo_best.result set value {color:"gray",text:"--:--.--"}
+execute if score @s ff_duo_best matches 1.. run data modify storage fossil_frights:stats_command duo_best.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"duo_best.minutes",plain:true},":",{storage:"fossil_frights:stats_command",nbt:"duo_best.seconds_digits[]",separator:"",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"duo_best.decimals_digits[]",separator:"",plain:true}]}
+tellraw @s [{translate:"ff.stats.duos_best_time",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"duo_best.result",interpret:true}]}]
+
+#
+tellraw @s {translate:"ff.stats.separator",color:"gold"}
+
+# Parkour
+data modify storage fossil_frights:stats_command parkour_best set value {result:"",minutes:0,seconds_digits:[0,0],decimals_digits:[0,0]}
+data modify storage fossil_frights:stats_command parkour_best.minutes set compute default integer fossil_frights:stats/parkour_best/display_minutes
+data modify storage fossil_frights:stats_command parkour_best.seconds set compute default integer fossil_frights:stats/parkour_best/display_seconds
+data modify storage fossil_frights:stats_command parkour_best.seconds_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/parkour_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command parkour_best.seconds_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/parkour_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command parkour_best.decimals_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/parkour_best/display_decimals",right:10}
+data modify storage fossil_frights:stats_command parkour_best.decimals_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/parkour_best/display_decimals",right:10}
+execute unless score @s ff_parkour_best matches 1.. run data modify storage fossil_frights:stats_command parkour_best.result set value {color:"gray",text:"--.--s"}
+execute if score @s ff_parkour_best matches 1..5999 run data modify storage fossil_frights:stats_command parkour_best.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"parkour_best.seconds",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"parkour_best.decimals_digits[]",separator:"",plain:true},"s"]}
+execute if score @s ff_parkour_best matches 6000.. run data modify storage fossil_frights:stats_command parkour_best.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"parkour_best.minutes",plain:true},":",{storage:"fossil_frights:stats_command",nbt:"parkour_best.seconds_digits[]",separator:"",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"parkour_best.decimals_digits[]",separator:"",plain:true}]}
+tellraw @s [{translate:"ff.stats.parkour",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"parkour_best.result",interpret:true}]}]
+
+# Temple Run
+data modify storage fossil_frights:stats_command temple_run_best set value {result:"",minutes:0,seconds_digits:[0,0],decimals_digits:[0,0]}
+data modify storage fossil_frights:stats_command temple_run_best.minutes set compute default integer fossil_frights:stats/temple_run_best/display_minutes
+data modify storage fossil_frights:stats_command temple_run_best.seconds set compute default integer fossil_frights:stats/temple_run_best/display_seconds
+data modify storage fossil_frights:stats_command temple_run_best.seconds_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/temple_run_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command temple_run_best.seconds_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/temple_run_best/display_seconds",right:10}
+data modify storage fossil_frights:stats_command temple_run_best.decimals_digits[0] set compute default integer {type:"minecraft:floor_div",left:"fossil_frights:stats/temple_run_best/display_decimals",right:10}
+data modify storage fossil_frights:stats_command temple_run_best.decimals_digits[1] set compute default integer {type:"minecraft:floor_mod",left:"fossil_frights:stats/temple_run_best/display_decimals",right:10}
+execute unless score @s ff_temple_run_best matches 1.. run data modify storage fossil_frights:stats_command temple_run_best.result set value {color:"gray",text:"--.--s"}
+execute if score @s ff_temple_run_best matches 1..5999 run data modify storage fossil_frights:stats_command temple_run_best.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"temple_run_best.seconds",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"temple_run_best.decimals_digits[]",separator:"",plain:true},"s"]}
+execute if score @s ff_temple_run_best matches 6000.. run data modify storage fossil_frights:stats_command temple_run_best.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"temple_run_best.minutes",plain:true},":",{storage:"fossil_frights:stats_command",nbt:"temple_run_best.seconds_digits[]",separator:"",plain:true},".",{storage:"fossil_frights:stats_command",nbt:"temple_run_best.decimals_digits[]",separator:"",plain:true}]}
+tellraw @s [{translate:"ff.stats.temple_run",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"temple_run_best.result",interpret:true}]}]
+
+# Ant Score
+data modify storage fossil_frights:stats_command ant_score set value {result:"",score:0}
+execute store result storage fossil_frights:stats_command ant_score.score int 1 run scoreboard players get @s ff_ant_score
+data modify storage fossil_frights:stats_command ant_score.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"ant_score.score",plain:true}]}
+tellraw @s [{translate:"ff.stats.ant_score",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"ant_score.result",interpret:true}]}]
+
+# Ant Top Score
+data modify storage fossil_frights:stats_command ant_top_score set value {result:"",score:0}
+execute store result storage fossil_frights:stats_command ant_top_score.score int 1 run scoreboard players get @s ff_ant_top_score
+data modify storage fossil_frights:stats_command ant_top_score.result set value {text:"",color:"white",extra:[{storage:"fossil_frights:stats_command",nbt:"ant_top_score.score",plain:true}]}
+tellraw @s [{translate:"ff.stats.ant_top_score",color:"yellow",with:[{storage:"fossil_frights:stats_command",nbt:"ant_top_score.result",interpret:true}]}]

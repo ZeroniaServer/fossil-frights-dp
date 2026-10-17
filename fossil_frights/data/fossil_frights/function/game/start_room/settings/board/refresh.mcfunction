@@ -10,8 +10,8 @@ execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard 
 
 scoreboard players set $settings_guard_count ff_game_state 0
 scoreboard players set $settings_thief_count ff_game_state 0
-execute as @a[team=ff_guard] run scoreboard players add $settings_guard_count ff_game_state 1
-execute as @a[team=ff_thief] run scoreboard players add $settings_thief_count ff_game_state 1
+execute as @a[predicate=fossil_frights:player/team/guard] run scoreboard players add $settings_guard_count ff_game_state 1
+execute as @a[predicate=fossil_frights:player/team/thief] run scoreboard players add $settings_thief_count ff_game_state 1
 
 # Modes
 data modify entity @e[type=minecraft:text_display,tag=ff_settings_mode_label_frights,limit=1] alignment set value "center"

@@ -32,11 +32,11 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/
 # Admin Heist Loot 2/2
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/night_stick",page:"page_2",slot:0}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/ice_cannon_remote",page:"page_2",slot:1}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/trap_glow",page:"page_2",slot:2}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/trap_placer/glow",page:"page_2",slot:2}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/camera_remote",page:"page_2",slot:3}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot_book",page:"page_2",slot:4}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/invisimask/random",page:"page_2",slot:9}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/hazard_cookie",page:"page_2",slot:10}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/other/dinocoin",page:"page_2",slot:11}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/dinocoin",page:"page_2",slot:11}
 item modify entity @e[type=minecraft:chest_minecart,tag=ff_admin_loot_page_2,distance=..2,limit=1] container.11 fossil_frights:admin/dinocoin_stack
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/one_time_key",page:"page_2",slot:12}

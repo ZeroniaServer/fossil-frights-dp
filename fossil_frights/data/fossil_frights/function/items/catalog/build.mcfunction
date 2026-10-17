@@ -26,7 +26,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/lady_bug",p
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/muddy_sherd",page:"page_1",slot:20}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/carrot_cake",page:"page_1",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/cookie",page:"page_1",slot:22}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/basketball",page:"page_1",slot:23}
+function fossil_frights:items/catalog/from_loot {loot:"items/tasks/basketball_dance/basketball",page:"page_1",slot:23}
 function fossil_frights:items/catalog/from_loot {loot:"items/tasks/return_the_key/vault_key",page:"page_1",slot:24}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/hoverboard",page:"page_1",slot:25}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/leather_boots",page:"page_1",slot:26}
@@ -41,7 +41,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/dna/velociraptor",p
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/trike",page:"page_2",slot:6}
 function fossil_frights:items/catalog/from_loot {loot:"items/dna/t_rex",page:"page_2",slot:7}
 function fossil_frights:items/catalog/from_loot {loot:"items/key/storage_key",page:"page_2",slot:8}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/confetti_cannon/remote",page:"page_2",slot:9}
+function fossil_frights:items/catalog/from_loot {loot:"items/confetti_cannon_remote",page:"page_2",slot:9}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/golden_t_rex",page:"page_2",slot:10}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/sniffer",page:"page_2",slot:11}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/pterodactyl",page:"page_2",slot:12}
@@ -49,7 +49,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/plushies/plesiosaur
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/velociraptor",page:"page_2",slot:14}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/trike",page:"page_2",slot:15}
 function fossil_frights:items/catalog/from_loot {loot:"items/plushies/t_rex",page:"page_2",slot:16}
-function fossil_frights:items/catalog/from_loot {loot:"items/other/dinocoin",page:"page_2",slot:17}
+function fossil_frights:items/catalog/from_loot {loot:"items/dinocoin",page:"page_2",slot:17}
 item modify entity @e[type=minecraft:chest_minecart,tag=ff_admin_item_page_2,distance=..2,limit=1] container.17 fossil_frights:admin/dinocoin_stack
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/bubbly_bat",page:"page_2",slot:18}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/fossil_fizz",page:"page_2",slot:19}

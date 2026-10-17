@@ -12,7 +12,7 @@ execute positioned 21.5 104.5 42.5 run playsound minecraft:block.beacon.power_se
 execute positioned 21.5 104.5 42.5 run playsound minecraft:entity.breeze.idle_air master @a[tag=ff_frights_feedback_viewer,distance=..24] ~ ~ ~ 0.8 1.25
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"hoveraptor"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"hoveraptor"}] 1
 scoreboard players set $hoveraptor_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

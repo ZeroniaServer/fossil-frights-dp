@@ -7,8 +7,8 @@ scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed_once ff_task_state 0
-scoreboard players set @a[team=ff_guard] ff_bb_shift_count 0
-scoreboard players set @a[team=ff_guard] ff_bb_sneak_state 0
-scoreboard players operation @a[team=ff_guard] ff_bb_sneak_seen = @a[team=ff_guard] ff_ant_sneak_time
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_bb_shift_count 0
+scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_bb_sneak_state 0
+scoreboard players operation @a[predicate=fossil_frights:player/team/guard] ff_bb_sneak_seen = @a[predicate=fossil_frights:player/team/guard] ff_ant_sneak_time
 function fossil_frights:tasks/hard/basketball_dance/spawn_click
 function fossil_frights:tasks/tracker/refresh

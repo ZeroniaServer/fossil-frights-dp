@@ -5,8 +5,8 @@
 
 scoreboard players set $trap_guard_count ff_trap_balance 0
 scoreboard players set $trap_thief_count ff_trap_balance 0
-execute as @a[team=ff_guard,gamemode=!spectator] run scoreboard players add $trap_guard_count ff_trap_balance 1
-execute as @a[team=ff_thief,gamemode=!spectator] run scoreboard players add $trap_thief_count ff_trap_balance 1
+execute as @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator] run scoreboard players add $trap_guard_count ff_trap_balance 1
+execute as @a[predicate=fossil_frights:player/team/thief,gamemode=!spectator] run scoreboard players add $trap_thief_count ff_trap_balance 1
 
 scoreboard players set $trap_cooldown_ticks ff_trap_balance 200
 scoreboard players operation $trap_cooldown_ticks ff_trap_balance *= $trap_guard_count ff_trap_balance

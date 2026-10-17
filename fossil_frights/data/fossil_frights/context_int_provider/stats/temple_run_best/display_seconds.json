@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:floor_mod",
+  "left": {
+    "type": "minecraft:floor_div",
+    "left": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "ff_temple_run_best"
+    },
+    "right": 100
+  },
+  "right": 60
+}

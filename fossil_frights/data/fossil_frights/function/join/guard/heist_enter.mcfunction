@@ -6,7 +6,7 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 function fossil_frights:game/heists/setup/current_player
 function fossil_frights:join/lobby
-team join ff_guard @s
+function fossil_frights:player/set_team/guard
 function fossil_frights:game/heists/loadout/guard
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}

@@ -4,4 +4,5 @@ scoreboard players set @s ff_security_camera_nav 8
 function fossil_frights:cameras/select_camera
 function fossil_frights:cameras/show_nav
 function fossil_frights:cameras/update_camera_models
+execute if entity @s[tag=ff_spider_fright_active] run function fossil_frights:frights/spider/clear_camera_effect
 execute at @s run playsound fossil_frights:camera.switch master @s ~ ~ ~ 1 1

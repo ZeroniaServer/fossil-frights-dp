@@ -4,8 +4,8 @@ execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run function fossil_frights:it
 execute at @s align xyz positioned ~0.5 ~0.0 ~0.5 run ride @s mount @e[limit=1,type=minecraft:happy_ghast,tag=ff_hoverboard_new,distance=..0.001]
 execute on vehicle run tag @s remove ff_hoverboard_new
 
-execute if entity @s[team=ff_lobby] run tag @s add ff_hoverboard_setup_owner
-execute if entity @s[tag=ff_hoverboard_setup_owner] as @a[team=ff_lobby,tag=!ff_hoverboard_setup_owner,gamemode=!spectator,distance=..0.5,sort=nearest,limit=1] unless predicate fossil_frights:entity/has_vehicle run tag @s add ff_hoverboard_setup_passenger
+execute if entity @s[predicate=fossil_frights:player/team/lobby] run tag @s add ff_hoverboard_setup_owner
+execute if entity @s[tag=ff_hoverboard_setup_owner] as @a[predicate=fossil_frights:player/team/lobby,tag=!ff_hoverboard_setup_owner,gamemode=!spectator,distance=..0.5,sort=nearest,limit=1] unless predicate fossil_frights:entity/has_vehicle run tag @s add ff_hoverboard_setup_passenger
 execute if entity @s[tag=ff_hoverboard_setup_owner] on vehicle run tag @s add ff_hoverboard_setup_vehicle
 execute if entity @s[tag=ff_hoverboard_setup_owner] on vehicle on passengers if entity @s[tag=ff_hoverboard_display_model] run ride @a[tag=ff_hoverboard_setup_passenger,limit=1] mount @s
 execute if entity @s[tag=ff_hoverboard_setup_owner] run ride @s dismount

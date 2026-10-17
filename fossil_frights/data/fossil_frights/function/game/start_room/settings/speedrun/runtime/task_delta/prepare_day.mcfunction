@@ -6,4 +6,4 @@ scoreboard players operation $day_final_index ff_speedrun_live += $task_selected
 execute unless score $day_final_index ff_speedrun_live matches 1..30 run return 0
 execute store result storage fossil_frights:speedrun runtime.task int 1 run scoreboard players get $day_final_index ff_speedrun_live
 execute store result storage fossil_frights:speedrun runtime.day int 1 run scoreboard players get $day_current ff_day
-execute as @a[team=ff_guard,limit=1] run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/migrate_day_best_macro with storage fossil_frights:speedrun runtime
+execute as @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:game/start_room/settings/speedrun/runtime/task_delta/migrate_day_best_macro with storage fossil_frights:speedrun runtime

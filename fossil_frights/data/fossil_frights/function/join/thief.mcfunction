@@ -1,12 +1,12 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 16 run return 0
-execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 16 run tp @s -1.00 109.00 55.5 180 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 16 run tp @s -1.00 109.1875 55.5 180 0
 execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 16 run spawnpoint @s -1 109 55
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] unless entity @s[tag=ff_quick_start_heists_assigning] unless entity @s[tag=ff_join_start_heists] run return 0
 function fossil_frights:game/heists/setup/current_player
 function fossil_frights:join/lobby
-team join ff_thief @s
+function fossil_frights:player/set_team/thief
 scoreboard players set @s ff_heist_stolen_keys 0
 function fossil_frights:join/thief/assign_invisimask
 function fossil_frights:game/heists/loadout/thief

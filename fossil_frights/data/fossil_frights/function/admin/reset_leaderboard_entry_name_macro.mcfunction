@@ -7,4 +7,4 @@ $data remove storage fossil_frights:leaderboards entries[{name:"$(name)"}]
 $data remove storage fossil_frights:leaderboards revoked[{name:"$(name)"}]
 $data modify storage fossil_frights:leaderboards revoked append value {name:"$(name)"}
 function fossil_frights:leaderboards/display/refresh
-$tellraw @a[team=ff_dev_mode] [{"text":"Fossil Frights leaderboard entry reset for $(name).","color":"green"}]
+$tellraw @a[predicate=fossil_frights:player/team/dev_mode] [{"text":"Fossil Frights leaderboard entry reset for $(name).","color":"green"}]

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:floor_div",
+  "left": {
+    "type": "minecraft:floor_div",
+    "left": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "ff_duo_best"
+    },
+    "right": 100
+  },
+  "right": 60
+}

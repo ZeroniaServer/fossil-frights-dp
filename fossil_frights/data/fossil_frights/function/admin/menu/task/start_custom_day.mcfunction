@@ -7,14 +7,14 @@ execute store success score $day_stopwatch_active ff_day run stopwatch create fo
 scoreboard players set $day_active ff_day 1
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
-execute as @a[team=ff_guard] run function fossil_frights:key/refresh
-clear @a[team=ff_guard] minecraft:written_book
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book
 kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vanilla/written_book]
 function fossil_frights:tasks/task_book_shelf/clear
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/tracker/show
 function fossil_frights:tasks/tracker/refresh
-execute as @a[team=ff_guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
+execute as @a[predicate=fossil_frights:player/team/guard] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1.5
 function fossil_frights:game/bossbar/set_day
 function fossil_frights:game/time/start_night
 function fossil_frights:game/start_room/day_tracker/refresh

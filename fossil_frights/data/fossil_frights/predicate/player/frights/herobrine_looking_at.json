@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:type_specific/player": {
+      "looking_at": {
+        "minecraft:entity_type": "minecraft:mannequin",
+        "minecraft:distance": {
+          "absolute": {
+            "max": 100.0
+          }
+        },
+        "minecraft:entity_tags": {
+          "all_of": [
+            "ff_herobrine"
+          ],
+          "none_of": [
+            "ff_herobrine_seen"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 kill @e[type=minecraft:marker,tag=ff_run_member]
-tag @a[team=ff_guard] remove ff_muted_chat
+tag @a[predicate=fossil_frights:player/team/guard] remove ff_muted_chat
 tag @a remove ff_run_sync_source
 tag @a remove ff_run_login_source
 tag @a remove ff_title_first

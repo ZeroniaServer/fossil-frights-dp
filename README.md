@@ -45,7 +45,7 @@ The datapack stores leaderboard entries in `storage fossil_frights:leaderboards 
 
 | Process | Behavior |
 | --- | --- |
-| 1. Player stat changes | Scoreboards update (`ff_top_time`, `ff_top_day`, `ff_run_count`, `ff_duo_best`) |
+| 1. Player stat changes | Scoreboards update (`ff_top_time`, `ff_top_day`, `ff_run_count`, `ff_duo_best`, `ff_party_best`) |
 | 2. Sync entry | `fossil_frights:leaderboards/sync_entry` copies the player into storage |
 | 3. Board render | Display functions sort storage entries and render text displays |
 
@@ -64,7 +64,8 @@ Tracked stat objectives:
 | `ff_top_time` | Best solo victory time, in ticks |
 | `ff_top_day` | Highest solo day reached |
 | `ff_run_count` | Solo run count |
-| `ff_duo_best` | Best multiplayer victory time, in ticks |
+| `ff_duo_best` | Best Duo victory time, in ticks |
+| `ff_party_best` | Best Party victory time, in ticks |
 | `ff_parkour_best` | Parkour best |
 | `ff_temple_run_best` | Temple run best |
 | `ff_ant_score` | Current ant fight score |

@@ -55,4 +55,4 @@ execute if score $loot_pterodactyl_dna_cloth ff_heist_loot_state matches 1 run r
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1 run return 0
 execute if score $loot_crab ff_heist_loot_state matches 1 run return 0
 execute if score $loot_vault ff_heist_loot_state matches 1 run return 0
-advancement grant @a[team=ff_thief] only fossil_frights:02_achievements/heists_greedy
+advancement grant @a[predicate=fossil_frights:player/team/thief] only fossil_frights:02_achievements/heists_greedy

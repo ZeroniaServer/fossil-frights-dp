@@ -12,12 +12,12 @@ scoreboard players set $day_stopwatch_active ff_day 0
 stopwatch remove fossil_frights:day_duration
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $idle_ticks ff_game_state 0
-execute as @a[team=ff_guard] run function fossil_frights:key/refresh
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
 function fossil_frights:locator_bar/markers/sync
 function fossil_frights:game/frights/worldborder/reset
 function fossil_frights:game/time/start_rest
 function fossil_frights:game/bossbar/set_break
-execute as @a[team=ff_guard] run function fossil_frights:player/actionbar/show/generic/custom_day_complete
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/show/generic/custom_day_complete
 function fossil_frights:game/start_room/day_tracker/refresh
 function fossil_frights:game/start_room/day_button/refresh
 function fossil_frights:game/start_room/settings/board/refresh

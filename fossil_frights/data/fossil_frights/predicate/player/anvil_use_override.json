@@ -1,12 +1,17 @@
 {
-  "type": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "minecraft:type_specific/player": {
-      "gamemode": [
-        "creative"
-      ]
-    },
-    "minecraft:team": "ff_dev_mode"
-  }
+  "type": "minecraft:all_of",
+  "terms": [
+    "fossil_frights:player/team/dev_mode",
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:type_specific/player": {
+          "gamemode": [
+            "creative"
+          ]
+        }
+      }
+    }
+  ]
 }

@@ -10,7 +10,7 @@ execute positioned 0 107 16 run particle minecraft:bubble ~ ~ ~ 0.55 0.55 0.55 0
 execute positioned 0 107 16 run particle minecraft:fishing ~ ~ ~ 0.65 0.35 0.65 0.08 18 force
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[team=ff_guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"skincare_routine"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"skincare_routine"}] 1
 scoreboard players set $skincare_routine_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
