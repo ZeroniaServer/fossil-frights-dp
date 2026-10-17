@@ -35,4 +35,11 @@ execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book_difficul
 execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book_difficulty:"final"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["final"],mode:"replace_section",offset:4,size:1}}
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book_difficulty:"final"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["final"],mode:"replace_section",offset:5,size:1}}
 
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:0,size:1}}
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:1,size:1}}
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:2,size:1}}
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:3,size:1}}
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:4,size:1}}
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:"pig_wrangler"}] run item modify block 0 0 0 container.0 {type:"minecraft:set_custom_model_data",strings:{values:["custom/pig_wrangler"],mode:"replace_section",offset:5,size:1}}
+
 item replace entity @s contents from block 0 0 0 container.0

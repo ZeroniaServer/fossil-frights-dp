@@ -9,10 +9,10 @@
           "modifier": {
             "type": "minecraft:set_components",
             "components": {
-              "minecraft:item_model": "fossil_frights:display/exhibits/start_room/task_book_shelf/task_book_shelf",
+              "minecraft:item_model": "fossil_frights:display/exhibits/start_room/task_book_shelf",
               "minecraft:custom_model_data": {
                 "flags": [false,false,false,false,false,false],
-                "strings": ["none","none","none","none","none","none"]
+                "strings": ["","","","","",""]
               }
             }
           }
