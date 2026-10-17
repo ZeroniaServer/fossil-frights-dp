@@ -1,6 +1,8 @@
 scoreboard objectives add ff_temple_run_time dummy
 scoreboard objectives add ff_temple_run_best dummy
 scoreboard objectives add ff_temple_run_running dummy
+execute as @a run function fossil_frights:lobby_games/temple_run/timer/prepare
+execute as @a run function fossil_frights:lobby_games/temple_run/timer/remove with storage fossil_frights:temple_run_timer
 scoreboard players set @a ff_temple_run_running 0
 scoreboard objectives add ff_temple_run_start_plate dummy
 scoreboard objectives remove ff_temple_run_restart_use

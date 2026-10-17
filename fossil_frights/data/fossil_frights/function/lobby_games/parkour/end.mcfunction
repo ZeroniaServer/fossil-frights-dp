@@ -7,6 +7,8 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 26 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_parkour_exit_pending] run return 0
+execute if entity @s[tag=ff_parkour_leave] run function fossil_frights:lobby_games/parkour/timer/prepare
+execute if entity @s[tag=ff_parkour_leave] run function fossil_frights:lobby_games/parkour/timer/remove with storage fossil_frights:parkour_timer
 function fossil_frights:lobby_games/parkour/music/stop
 execute unless entity @s[tag=ff_parkour_leave] run function fossil_frights:lobby_games/parkour/reset_player
 execute unless entity @s[tag=ff_parkour_leave] run scoreboard players operation @s ff_parkour_restart_seen = @s ff_parkour_restart_use

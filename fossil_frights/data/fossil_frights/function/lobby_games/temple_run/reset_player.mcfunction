@@ -1,3 +1,5 @@
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/timer/prepare
+execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/timer/remove with storage fossil_frights:temple_run_timer
 scoreboard players set @s ff_temple_run_running 0
 scoreboard players set @s ff_temple_run_time 0
 scoreboard players set @s ff_temple_run_min 0

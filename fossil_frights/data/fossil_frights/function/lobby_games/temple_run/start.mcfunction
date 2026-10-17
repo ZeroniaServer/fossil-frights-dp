@@ -1,6 +1,8 @@
 execute unless entity @s[gamemode=adventure] run return 0
 function fossil_frights:lobby_games/stop_all
 effect clear @s
+function fossil_frights:lobby_games/temple_run/timer/prepare
+function fossil_frights:lobby_games/temple_run/timer/start with storage fossil_frights:temple_run_timer
 scoreboard players set @s ff_temple_run_running 1
 scoreboard players set @s ff_temple_run_time 0
 scoreboard players set @s ff_temple_run_min 0

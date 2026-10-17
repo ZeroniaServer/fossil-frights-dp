@@ -1,6 +1,8 @@
 execute unless entity @s[gamemode=adventure] run return 0
 function fossil_frights:lobby_games/stop_all
 effect clear @s
+function fossil_frights:lobby_games/parkour/timer/prepare
+function fossil_frights:lobby_games/parkour/timer/start with storage fossil_frights:parkour_timer
 scoreboard players set @s ff_parkour_running 1
 scoreboard players set @s ff_parkour_time 0
 scoreboard players set @s ff_parkour_min 0
