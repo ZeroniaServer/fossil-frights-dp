@@ -16,7 +16,7 @@
                 "ff_any_task_book": true
               },
               "minecraft:enchantment_glint_override": false,
-              "minecraft:item_model": "fossil_frights:items/frights/task_book_medium",
+              "minecraft:item_model": "fossil_frights:items/frights/task_books/medium",
               "minecraft:item_name": {
                 "color": "gold",
                 "translate": "ff.task.bring_brush",
@@ -34,6 +34,7 @@
                 "pages": [
                   [
                     "",
+                    {"text":"\ue001\ue200","font":"fossil_frights:books","color":"#7b7b01"},
                     {
                       "translate": "ff.task.bring_brush",
                       "font": "fossil_frights:small_caps"
