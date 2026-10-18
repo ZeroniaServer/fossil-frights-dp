@@ -4,12 +4,12 @@
   "external_title": [
     "",
     {
-      "bold": true,
+      "color": "white",
       "text": "Fossil"
     },
     " ",
     {
-      "bold": true,
+      "color": "white",
       "text": "Frights"
     }
   ],
@@ -19,7 +19,7 @@
       "contents": [
         "",
         {
-          "bold": true,
+          "color": "gray",
           "text": "Created by Zeronia"
         },
         "\n",
@@ -60,7 +60,7 @@
               "text": "Join our "
             },
             {
-              "bold": true,
+              "underlined": true,
               "text": "Discord"
             },
             " community today!"
@@ -73,6 +73,42 @@
           "text": "Stay up to date with our projects:"
         },
         "\n",
+        "\n",
+        [
+          {
+            "color": "gray",
+            "text": "",
+            "hover_event": {
+              "action": "show_text",
+              "value": {
+                "color": "gold",
+                "text": "Click to visit our website!"
+              }
+            },
+            "click_event": {
+              "action": "open_url",
+              "url": "https://zeronia.org/"
+            }
+          },
+          {
+            "color": "#FFFFFF",
+            "shadow_color": 0,
+            "player": {
+              "properties": [
+                {
+                  "name": "textures",
+                  "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNkZmYzNTM1NDE5MzBjZWU4MWE0NTJlYzc3M2I1ZjQ4ODFhNGY0YmM5NzRlMzVkZDdjNzZhYzc0ZjVlYTM2YSJ9fX0="
+                }
+              ]
+            }
+          },
+          " ",
+          {
+            "underlined": true,
+            "color": "gold",
+            "text": "Zeronia.org"
+          }
+        ],
         "\n",
         [
           {
@@ -104,12 +140,12 @@
           },
           " ",
           {
-            "bold": true,
+            "underlined": true,
             "color": "#6EC310",
             "text": "PlanetMinecraft"
           }
         ],
-        "  \n",
+        "\n",
         [
           {
             "color": "gray",
@@ -140,12 +176,12 @@
           },
           " ",
           {
-            "bold": true,
+            "underlined": true,
             "color": "#E41B36",
             "text": "YouTube"
           }
         ],
-        "             \n",
+        "\n",
         [
           {
             "color": "gray",
@@ -176,12 +212,13 @@
           },
           " ",
           {
-            "bold": true,
+            "underlined": true,
             "color": "#FFFFFF",
             "text": "X"
           },
           {
             "italic": true,
+            "color": "gray",
             "text": " (formerly Twitter)"
           }
         ],
@@ -216,12 +253,12 @@
           },
           " ",
           {
-            "bold": true,
+            "underlined": true,
             "color": "#0E7EFF",
             "text": "BlueSky"
           }
         ],
-        "              \n"
+        "\n"
       ]
     }
   ],
