@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "picnic_with_trike",
-                    "difficulty": "medium"
+                    "id": "picnic_with_trike"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

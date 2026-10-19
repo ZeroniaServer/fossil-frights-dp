@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "glowberry_trees",
-                    "difficulty": "hard"
+                    "id": "glowberry_trees"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

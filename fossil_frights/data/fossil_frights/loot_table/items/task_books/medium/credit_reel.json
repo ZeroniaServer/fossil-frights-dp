@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "credit_reel",
-                    "difficulty": "medium"
+                    "id": "credit_reel"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

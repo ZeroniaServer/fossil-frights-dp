@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "reset_salt_level",
-                    "difficulty": "easy"
+                    "id": "reset_salt_level"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "restock_plushies",
-                    "difficulty": "medium"
+                    "id": "restock_plushies"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

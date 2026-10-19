@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "star_gazing",
-                    "difficulty": "hard"
+                    "id": "star_gazing"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

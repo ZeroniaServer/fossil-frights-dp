@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "heat_it_up",
-                    "difficulty": "medium"
+                    "id": "heat_it_up"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

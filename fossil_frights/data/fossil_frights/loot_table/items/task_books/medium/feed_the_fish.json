@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "feed_the_fish",
-                    "difficulty": "medium"
+                    "id": "feed_the_fish"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

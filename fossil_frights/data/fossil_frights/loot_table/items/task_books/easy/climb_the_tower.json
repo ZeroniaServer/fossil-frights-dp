@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "climb_the_tower",
-                    "difficulty": "easy"
+                    "id": "climb_the_tower"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

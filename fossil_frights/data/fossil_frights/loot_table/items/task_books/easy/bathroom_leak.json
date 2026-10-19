@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "bathroom_leak",
-                    "difficulty": "easy"
+                    "id": "bathroom_leak"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

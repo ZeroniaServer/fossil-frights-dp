@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "coffee_top_up",
-                    "difficulty": "medium"
+                    "id": "coffee_top_up"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

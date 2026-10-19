@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "check_ankylo",
-                    "difficulty": "easy"
+                    "id": "check_ankylo"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

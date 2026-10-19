@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "fix_sculker",
-                    "difficulty": "medium"
+                    "id": "fix_sculker"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "wash_muddy_sherd",
-                    "difficulty": "medium"
+                    "id": "wash_muddy_sherd"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

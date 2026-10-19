@@ -5,6 +5,7 @@ kill @e[tag=ff_bookshelf_creature_driver]
 kill @e[tag=ff_bookshelf_creature_visual]
 kill @e[tag=ff_bookshelf_creature_hitbox]
 kill @e[tag=ff_bookshelf_passive_creature]
+data modify storage fossil_frights:task_book_shelf cached_contents set value []
 summon minecraft:item_display 18.5 71.0 28.5 {Tags:["ff_task_book_shelf_display"],Rotation:[180,0],transformation:{left_rotation:[0,0,0,1],translation:[0,0.5,-0.999],right_rotation:[0,0,0,1],scale:[1,1,1]},width:1,height:1}
 function fossil_frights:tasks/task_book_shelf/update
 

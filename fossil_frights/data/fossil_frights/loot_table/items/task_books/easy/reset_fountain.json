@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "reset_fountain",
-                    "difficulty": "easy"
+                    "id": "reset_fountain"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

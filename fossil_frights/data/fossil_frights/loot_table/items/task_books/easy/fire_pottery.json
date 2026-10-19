@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "fire_pottery",
-                    "difficulty": "easy"
+                    "id": "fire_pottery"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

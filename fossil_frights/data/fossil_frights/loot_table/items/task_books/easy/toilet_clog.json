@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "toilet_clog",
-                    "difficulty": "easy"
+                    "id": "toilet_clog"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

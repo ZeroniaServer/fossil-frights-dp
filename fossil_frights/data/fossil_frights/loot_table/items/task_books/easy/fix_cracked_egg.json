@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "fix_cracked_egg",
-                    "difficulty": "easy"
+                    "id": "fix_cracked_egg"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

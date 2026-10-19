@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "dig_sand",
-                    "difficulty": "easy"
+                    "id": "dig_sand"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

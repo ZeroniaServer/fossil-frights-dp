@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "water_crops",
-                    "difficulty": "medium"
+                    "id": "water_crops"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

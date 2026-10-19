@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "feed_the_bats",
-                    "difficulty": "hard"
+                    "id": "feed_the_bats"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

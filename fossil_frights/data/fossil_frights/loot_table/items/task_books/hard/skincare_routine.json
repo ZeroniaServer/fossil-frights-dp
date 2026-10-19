@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "skincare_routine",
-                    "difficulty": "hard"
+                    "id": "skincare_routine"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

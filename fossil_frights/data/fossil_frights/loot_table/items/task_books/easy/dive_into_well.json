@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "dive_into_well",
-                    "difficulty": "easy"
+                    "id": "dive_into_well"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

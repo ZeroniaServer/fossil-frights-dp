@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "the_lost_code",
-                    "difficulty": "hard"
+                    "id": "the_lost_code"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,

@@ -13,8 +13,7 @@
               "components": {
                 "minecraft:custom_data": {
                   "ff_task_book": {
-                    "id": "count_shells",
-                    "difficulty": "easy"
+                    "id": "count_shells"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,
