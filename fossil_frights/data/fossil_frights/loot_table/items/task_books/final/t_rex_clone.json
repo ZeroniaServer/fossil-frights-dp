@@ -14,7 +14,7 @@
                 "minecraft:custom_data": {
                   "ff_task_book": {
                     "id": "t_rex_clone",
-                    "parent_id": "final_task"
+                    "shelf_texture_override": "final"
                   }
                 },
                 "minecraft:enchantment_glint_override": false,
