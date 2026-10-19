@@ -5,252 +5,82 @@ scoreboard players set $task_completed_total ff_task_state 0
 scoreboard players set $hazard_pending ff_task_state 0
 scoreboard players set $hazard_delay ff_task_state 0
 
-scoreboard players set #easy_pool_count ff_task_state 26
-scoreboard players set #medium_pool_count ff_task_state 25
-scoreboard players set #hard_pool_count ff_task_state 14
-scoreboard players set #final_pool_count ff_task_state 1
+data modify storage fossil_frights:tasks tasks set value []
+scoreboard players set #easy_pool_count ff_task_state 0
+scoreboard players set #medium_pool_count ff_task_state 0
+scoreboard players set #hard_pool_count ff_task_state 0
+scoreboard players set #final_pool_count ff_task_state 0
 
-scoreboard players set $check_security_avail ff_task_state 1
-scoreboard players set $check_security_sel ff_task_state 0
-scoreboard players set $check_security_done ff_task_state 0
-scoreboard players set #line_check_security ff_task_state 39
-
-scoreboard players set $fire_pottery_avail ff_task_state 1
-scoreboard players set $fire_pottery_sel ff_task_state 0
-scoreboard players set $fire_pottery_done ff_task_state 0
-scoreboard players set #line_fire_pottery ff_task_state 38
-scoreboard players set $check_ankylo_avail ff_task_state 1
-scoreboard players set $check_ankylo_sel ff_task_state 0
-scoreboard players set $check_ankylo_done ff_task_state 0
-scoreboard players set #line_check_ankylo ff_task_state 37
-scoreboard players set $climb_the_tower_avail ff_task_state 1
-scoreboard players set $climb_the_tower_sel ff_task_state 0
-scoreboard players set $climb_the_tower_done ff_task_state 0
-scoreboard players set #line_climb_the_tower ff_task_state 36
-scoreboard players set $count_shells_avail ff_task_state 1
-scoreboard players set $count_shells_sel ff_task_state 0
-scoreboard players set $count_shells_done ff_task_state 0
-scoreboard players set #line_count_shells ff_task_state 35
-scoreboard players set $count_toes_avail ff_task_state 1
-scoreboard players set $count_toes_sel ff_task_state 0
-scoreboard players set $count_toes_done ff_task_state 0
-scoreboard players set #line_count_toes ff_task_state 34
-scoreboard players set $bathroom_leak_avail ff_task_state 1
-scoreboard players set $bathroom_leak_sel ff_task_state 0
-scoreboard players set $bathroom_leak_done ff_task_state 0
-scoreboard players set #line_bathroom_leak ff_task_state 33
-scoreboard players set $toilet_clog_avail ff_task_state 1
-scoreboard players set $toilet_clog_sel ff_task_state 0
-scoreboard players set $toilet_clog_done ff_task_state 0
-scoreboard players set #line_toilet_clog ff_task_state 32
-scoreboard players set $polish_bell_avail ff_task_state 1
-scoreboard players set $polish_bell_sel ff_task_state 0
-scoreboard players set $polish_bell_done ff_task_state 0
-scoreboard players set #line_polish_bell ff_task_state 31
-scoreboard players set $lock_register_avail ff_task_state 1
-scoreboard players set $lock_register_sel ff_task_state 0
-scoreboard players set $lock_register_done ff_task_state 0
-scoreboard players set #line_lock_register ff_task_state 30
-scoreboard players set $static_buildup_avail ff_task_state 1
-scoreboard players set $static_buildup_sel ff_task_state 0
-scoreboard players set $static_buildup_done ff_task_state 0
-scoreboard players set #line_static_buildup ff_task_state 29
-scoreboard players set $reset_salt_level_avail ff_task_state 1
-scoreboard players set $reset_salt_level_sel ff_task_state 0
-scoreboard players set $reset_salt_level_done ff_task_state 0
-scoreboard players set #line_reset_salt_level ff_task_state 28
-scoreboard players set $reset_fountain_avail ff_task_state 1
-scoreboard players set $reset_fountain_sel ff_task_state 0
-scoreboard players set $reset_fountain_done ff_task_state 0
-scoreboard players set #line_reset_fountain ff_task_state 27
-scoreboard players set $visit_jurassic_avail ff_task_state 1
-scoreboard players set $visit_jurassic_sel ff_task_state 0
-scoreboard players set $visit_jurassic_done ff_task_state 0
-scoreboard players set #line_visit_jurassic ff_task_state 26
-scoreboard players set $visit_neogene_avail ff_task_state 1
-scoreboard players set $visit_neogene_sel ff_task_state 0
-scoreboard players set $visit_neogene_done ff_task_state 0
-scoreboard players set #line_visit_neogene ff_task_state 25
-scoreboard players set $visit_silurian_avail ff_task_state 1
-scoreboard players set $visit_silurian_sel ff_task_state 0
-scoreboard players set $visit_silurian_done ff_task_state 0
-scoreboard players set #line_visit_silurian ff_task_state 24
-scoreboard players set $visit_archean_avail ff_task_state 1
-scoreboard players set $visit_archean_sel ff_task_state 0
-scoreboard players set $visit_archean_done ff_task_state 0
-scoreboard players set #line_visit_archean ff_task_state 23
-scoreboard players set $dive_into_well_avail ff_task_state 1
-scoreboard players set $dive_into_well_sel ff_task_state 0
-scoreboard players set $dive_into_well_done ff_task_state 0
-scoreboard players set #line_dive_into_well ff_task_state 22
-scoreboard players set $swat_flies_avail ff_task_state 1
-scoreboard players set $swat_flies_sel ff_task_state 0
-scoreboard players set $swat_flies_done ff_task_state 0
-scoreboard players set #line_swat_flies ff_task_state 40
-scoreboard players set $water_temp_avail ff_task_state 1
-scoreboard players set $water_temp_sel ff_task_state 0
-scoreboard players set $water_temp_done ff_task_state 0
-scoreboard players set #line_water_temp ff_task_state 41
-scoreboard players set $fix_cracked_egg_avail ff_task_state 1
-scoreboard players set $fix_cracked_egg_sel ff_task_state 0
-scoreboard players set $fix_cracked_egg_done ff_task_state 0
-scoreboard players set #line_fix_cracked_egg ff_task_state 42
-scoreboard players set $tnt_test_avail ff_task_state 1
-scoreboard players set $tnt_test_sel ff_task_state 0
-scoreboard players set $tnt_test_done ff_task_state 0
-scoreboard players set #line_tnt_test ff_task_state 43
-scoreboard players set $sweep_popcorn_avail ff_task_state 1
-scoreboard players set $sweep_popcorn_sel ff_task_state 0
-scoreboard players set $sweep_popcorn_done ff_task_state 0
-scoreboard players set #line_sweep_popcorn ff_task_state 44
-scoreboard players set $dig_sand_avail ff_task_state 1
-scoreboard players set $dig_sand_sel ff_task_state 0
-scoreboard players set $dig_sand_done ff_task_state 0
-scoreboard players set #line_dig_sand ff_task_state 45
-scoreboard players set $fix_mars_avail ff_task_state 1
-scoreboard players set $fix_mars_sel ff_task_state 0
-scoreboard players set $fix_mars_done ff_task_state 0
-scoreboard players set #line_fix_mars ff_task_state 46
+function fossil_frights:tasks/register {id: "check_security", difficulty: "easy", custom_icon: false, sidebar_index: 39}
+function fossil_frights:tasks/register {id: "fire_pottery", difficulty: "easy", custom_icon: false, sidebar_index: 38}
+function fossil_frights:tasks/register {id: "check_ankylo", difficulty: "easy", custom_icon: false, sidebar_index: 37}
+function fossil_frights:tasks/register {id: "climb_the_tower", difficulty: "easy", custom_icon: false, sidebar_index: 36}
+function fossil_frights:tasks/register {id: "count_shells", difficulty: "easy", custom_icon: false, sidebar_index: 35}
+function fossil_frights:tasks/register {id: "count_toes", difficulty: "easy", custom_icon: false, sidebar_index: 34}
+function fossil_frights:tasks/register {id: "bathroom_leak", difficulty: "easy", custom_icon: false, sidebar_index: 33}
+function fossil_frights:tasks/register {id: "toilet_clog", difficulty: "easy", custom_icon: false, sidebar_index: 32}
+function fossil_frights:tasks/register {id: "polish_bell", difficulty: "easy", custom_icon: false, sidebar_index: 31}
+function fossil_frights:tasks/register {id: "lock_register", difficulty: "easy", custom_icon: false, sidebar_index: 30}
+function fossil_frights:tasks/register {id: "static_buildup", difficulty: "easy", custom_icon: false, sidebar_index: 29}
+function fossil_frights:tasks/register {id: "reset_salt_level", difficulty: "easy", custom_icon: false, sidebar_index: 28}
+function fossil_frights:tasks/register {id: "reset_fountain", difficulty: "easy", custom_icon: false, sidebar_index: 27}
+function fossil_frights:tasks/register {id: "visit_jurassic", difficulty: "easy", custom_icon: false, sidebar_index: 26}
+function fossil_frights:tasks/register {id: "visit_neogene", difficulty: "easy", custom_icon: false, sidebar_index: 25}
+function fossil_frights:tasks/register {id: "visit_silurian", difficulty: "easy", custom_icon: false, sidebar_index: 24}
+function fossil_frights:tasks/register {id: "visit_archean", difficulty: "easy", custom_icon: false, sidebar_index: 23}
+function fossil_frights:tasks/register {id: "dive_into_well", difficulty: "easy", custom_icon: false, sidebar_index: 22}
+function fossil_frights:tasks/register {id: "swat_flies", difficulty: "easy", custom_icon: false, sidebar_index: 40}
+function fossil_frights:tasks/register {id: "water_temp", difficulty: "easy", custom_icon: false, sidebar_index: 41}
+function fossil_frights:tasks/register {id: "fix_cracked_egg", difficulty: "easy", custom_icon: false, sidebar_index: 42}
+function fossil_frights:tasks/register {id: "tnt_test", difficulty: "easy", custom_icon: false, sidebar_index: 43}
+function fossil_frights:tasks/register {id: "sweep_popcorn", difficulty: "easy", custom_icon: false, sidebar_index: 44}
+function fossil_frights:tasks/register {id: "dig_sand", difficulty: "easy", custom_icon: false, sidebar_index: 45}
+function fossil_frights:tasks/register {id: "fix_mars", difficulty: "easy", custom_icon: false, sidebar_index: 46}
 function fossil_frights:tasks/easy/fix_mars/cleanup
-scoreboard players set $make_some_noise_avail ff_task_state 1
-scoreboard players set $make_some_noise_sel ff_task_state 0
-scoreboard players set $make_some_noise_done ff_task_state 0
-scoreboard players set #line_make_some_noise ff_task_state 47
+function fossil_frights:tasks/register {id: "make_some_noise", difficulty: "easy", custom_icon: false, sidebar_index: 47}
 
-scoreboard players set $chlorinify_avail ff_task_state 1
-scoreboard players set $chlorinify_sel ff_task_state 0
-scoreboard players set $chlorinify_done ff_task_state 0
-scoreboard players set #line_chlorinify ff_task_state 21
-scoreboard players set $credit_reel_avail ff_task_state 1
-scoreboard players set $credit_reel_sel ff_task_state 0
-scoreboard players set $credit_reel_done ff_task_state 0
-scoreboard players set #line_credit_reel ff_task_state 20
-scoreboard players set $cool_it_avail ff_task_state 1
-scoreboard players set $cool_it_sel ff_task_state 0
-scoreboard players set $cool_it_done ff_task_state 0
-scoreboard players set #line_cool_it ff_task_state 19
-scoreboard players set $heat_it_up_avail ff_task_state 1
-scoreboard players set $heat_it_up_sel ff_task_state 0
-scoreboard players set $heat_it_up_done ff_task_state 0
-scoreboard players set #line_heat_it_up ff_task_state 18
-scoreboard players set $sponge_up_spill_avail ff_task_state 1
-scoreboard players set $sponge_up_spill_sel ff_task_state 0
-scoreboard players set $sponge_up_spill_done ff_task_state 0
-scoreboard players set #line_sponge_up_spill ff_task_state 17
-scoreboard players set $feed_the_plants_avail ff_task_state 1
-scoreboard players set $feed_the_plants_sel ff_task_state 0
-scoreboard players set $feed_the_plants_done ff_task_state 0
-scoreboard players set #line_feed_the_plants ff_task_state 16
-scoreboard players set $refill_coffee_avail ff_task_state 1
-scoreboard players set $refill_coffee_sel ff_task_state 0
-scoreboard players set $refill_coffee_done ff_task_state 0
-scoreboard players set #line_refill_coffee ff_task_state 15
-scoreboard players set $coffee_top_up_avail ff_task_state 1
-scoreboard players set $coffee_top_up_sel ff_task_state 0
-scoreboard players set $coffee_top_up_done ff_task_state 0
-scoreboard players set #line_coffee_top_up ff_task_state 14
-scoreboard players set $replenish_soap_avail ff_task_state 1
-scoreboard players set $replenish_soap_sel ff_task_state 0
-scoreboard players set $replenish_soap_done ff_task_state 0
-scoreboard players set #line_replenish_soap ff_task_state 13
-scoreboard players set $restock_plushies_avail ff_task_state 1
-scoreboard players set $restock_plushies_sel ff_task_state 0
-scoreboard players set $restock_plushies_done ff_task_state 0
-scoreboard players set #line_restock_plushies ff_task_state 12
-scoreboard players set $revitalize_coral_avail ff_task_state 1
-scoreboard players set $revitalize_coral_sel ff_task_state 0
-scoreboard players set $revitalize_coral_done ff_task_state 0
-scoreboard players set #line_revitalize_coral ff_task_state 46
-scoreboard players set $shark_bait_avail ff_task_state 1
-scoreboard players set $shark_bait_sel ff_task_state 0
-scoreboard players set $shark_bait_done ff_task_state 0
-scoreboard players set #line_shark_bait ff_task_state 47
-scoreboard players set $smelly_toilet_avail ff_task_state 1
-scoreboard players set $smelly_toilet_sel ff_task_state 0
-scoreboard players set $smelly_toilet_done ff_task_state 0
-scoreboard players set #line_smelly_toilet ff_task_state 48
-scoreboard players set $wash_muddy_sherd_avail ff_task_state 1
-scoreboard players set $wash_muddy_sherd_sel ff_task_state 0
-scoreboard players set $wash_muddy_sherd_done ff_task_state 0
-scoreboard players set #line_wash_muddy_sherd ff_task_state 49
-scoreboard players set $feed_parrot_avail ff_task_state 1
-scoreboard players set $feed_parrot_sel ff_task_state 0
-scoreboard players set $feed_parrot_done ff_task_state 0
-scoreboard players set #line_feed_parrot ff_task_state 50
-scoreboard players set $water_crops_avail ff_task_state 1
-scoreboard players set $water_crops_sel ff_task_state 0
-scoreboard players set $water_crops_done ff_task_state 0
+function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}
+function fossil_frights:tasks/register {id: "credit_reel", difficulty: "medium", custom_icon: false, sidebar_index: 20}
+function fossil_frights:tasks/register {id: "cool_it", difficulty: "medium", custom_icon: false, sidebar_index: 19}
+function fossil_frights:tasks/register {id: "heat_it_up", difficulty: "medium", custom_icon: false, sidebar_index: 18}
+function fossil_frights:tasks/register {id: "sponge_up_spill", difficulty: "medium", custom_icon: false, sidebar_index: 17}
+function fossil_frights:tasks/register {id: "feed_the_plants", difficulty: "medium", custom_icon: false, sidebar_index: 16}
+function fossil_frights:tasks/register {id: "refill_coffee", difficulty: "medium", custom_icon: false, sidebar_index: 15}
+function fossil_frights:tasks/register {id: "coffee_top_up", difficulty: "medium", custom_icon: false, sidebar_index: 14}
+function fossil_frights:tasks/register {id: "replenish_soap", difficulty: "medium", custom_icon: false, sidebar_index: 13}
+function fossil_frights:tasks/register {id: "restock_plushies", difficulty: "medium", custom_icon: false, sidebar_index: 12}
+function fossil_frights:tasks/register {id: "revitalize_coral", difficulty: "medium", custom_icon: false, sidebar_index: 46}
+function fossil_frights:tasks/register {id: "shark_bait", difficulty: "medium", custom_icon: false, sidebar_index: 47}
+function fossil_frights:tasks/register {id: "smelly_toilet", difficulty: "medium", custom_icon: false, sidebar_index: 48}
+function fossil_frights:tasks/register {id: "wash_muddy_sherd", difficulty: "medium", custom_icon: false, sidebar_index: 49}
+function fossil_frights:tasks/register {id: "feed_parrot", difficulty: "medium", custom_icon: false, sidebar_index: 50}
+function fossil_frights:tasks/register {id: "water_crops", difficulty: "medium", custom_icon: false, sidebar_index: 51}
 scoreboard players set $water_crops_pending ff_task_state 0
-scoreboard players set #line_water_crops ff_task_state 51
-scoreboard players set $picnic_with_trike_avail ff_task_state 1
-scoreboard players set $picnic_with_trike_sel ff_task_state 0
-scoreboard players set $picnic_with_trike_done ff_task_state 0
-scoreboard players set #line_picnic_with_trike ff_task_state 52
-scoreboard players set $nautilus_guard_avail ff_task_state 1
-scoreboard players set $nautilus_guard_sel ff_task_state 0
-scoreboard players set $nautilus_guard_done ff_task_state 0
-scoreboard players set #line_nautilus_guard ff_task_state 53
-scoreboard players set $feed_the_fish_avail ff_task_state 1
-scoreboard players set $feed_the_fish_sel ff_task_state 0
-scoreboard players set $feed_the_fish_done ff_task_state 0
-scoreboard players set #line_feed_the_fish ff_task_state 54
-scoreboard players set $popcorn_buckets_avail ff_task_state 1
-scoreboard players set $popcorn_buckets_sel ff_task_state 0
-scoreboard players set $popcorn_buckets_done ff_task_state 0
-scoreboard players set #line_popcorn_buckets ff_task_state 55
-scoreboard players set $bring_brush_avail ff_task_state 1
-scoreboard players set $bring_brush_sel ff_task_state 0
-scoreboard players set $bring_brush_done ff_task_state 0
-scoreboard players set #line_bring_brush ff_task_state 56
-scoreboard players set $brush_delivery_avail ff_task_state 1
-scoreboard players set $brush_delivery_sel ff_task_state 0
-scoreboard players set $brush_delivery_done ff_task_state 0
-scoreboard players set #line_brush_delivery ff_task_state 57
-scoreboard players set $fix_sculker_avail ff_task_state 1
-scoreboard players set $fix_sculker_sel ff_task_state 0
-scoreboard players set $fix_sculker_done ff_task_state 0
-scoreboard players set #line_fix_sculker ff_task_state 58
-scoreboard players set $ancient_portal_avail ff_task_state 1
-scoreboard players set $ancient_portal_sel ff_task_state 0
-scoreboard players set $ancient_portal_done ff_task_state 0
+function fossil_frights:tasks/register {id: "picnic_with_trike", difficulty: "medium", custom_icon: false, sidebar_index: 52}
+function fossil_frights:tasks/register {id: "nautilus_guard", difficulty: "medium", custom_icon: false, sidebar_index: 53}
+function fossil_frights:tasks/register {id: "feed_the_fish", difficulty: "medium", custom_icon: false, sidebar_index: 54}
+function fossil_frights:tasks/register {id: "popcorn_buckets", difficulty: "medium", custom_icon: false, sidebar_index: 55}
+function fossil_frights:tasks/register {id: "bring_brush", difficulty: "medium", custom_icon: false, sidebar_index: 56}
+function fossil_frights:tasks/register {id: "brush_delivery", difficulty: "medium", custom_icon: false, sidebar_index: 57}
+function fossil_frights:tasks/register {id: "fix_sculker", difficulty: "medium", custom_icon: false, sidebar_index: 58}
+function fossil_frights:tasks/register {id: "ancient_portal", difficulty: "medium", custom_icon: false, sidebar_index: 59}
 scoreboard players set $ancient_portal_timer ff_task_state 0
 scoreboard players set $ancient_portal_dest ff_task_state 0
-scoreboard players set #line_ancient_portal ff_task_state 59
-scoreboard players set $refill_ice_avail ff_task_state 1
-scoreboard players set $refill_ice_sel ff_task_state 0
-scoreboard players set $refill_ice_done ff_task_state 0
-scoreboard players set #line_refill_ice ff_task_state 60
+function fossil_frights:tasks/register {id: "refill_ice", difficulty: "medium", custom_icon: false, sidebar_index: 60}
 
-scoreboard players set $star_gazing_avail ff_task_state 1
-scoreboard players set $star_gazing_sel ff_task_state 0
-scoreboard players set $star_gazing_done ff_task_state 0
+function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $star_gazing_answer ff_task_state 0
 scoreboard players set $star_gazing_rotation ff_task_state 0
-scoreboard players set #line_star_gazing ff_task_state 11
-scoreboard players set $glowberry_trees_avail ff_task_state 1
-scoreboard players set $glowberry_trees_sel ff_task_state 0
-scoreboard players set $glowberry_trees_done ff_task_state 0
+function fossil_frights:tasks/register {id: "glowberry_trees", difficulty: "hard", custom_icon: false, sidebar_index: 10}
 scoreboard players set $glowberry_tree_1_watered ff_task_state 0
 scoreboard players set $glowberry_tree_2_watered ff_task_state 0
 scoreboard players set $glowberry_tree_1_pending ff_task_state 0
 scoreboard players set $glowberry_tree_2_pending ff_task_state 0
-scoreboard players set #line_glowberry_trees ff_task_state 10
-scoreboard players set $return_the_key_avail ff_task_state 1
-scoreboard players set $return_the_key_sel ff_task_state 0
-scoreboard players set $return_the_key_done ff_task_state 0
-scoreboard players set #line_return_the_key ff_task_state 9
-scoreboard players set $skincare_routine_avail ff_task_state 1
-scoreboard players set $skincare_routine_sel ff_task_state 0
-scoreboard players set $skincare_routine_done ff_task_state 0
+function fossil_frights:tasks/register {id: "return_the_key", difficulty: "hard", custom_icon: false, sidebar_index: 9}
+function fossil_frights:tasks/register {id: "skincare_routine", difficulty: "hard", custom_icon: false, sidebar_index: 8}
 scoreboard players set $skincare_routine_pending ff_task_state 0
-scoreboard players set #line_skincare_routine ff_task_state 8
-scoreboard players set $feed_the_bats_avail ff_task_state 1
-scoreboard players set $feed_the_bats_sel ff_task_state 0
-scoreboard players set $feed_the_bats_done ff_task_state 0
-scoreboard players set #line_feed_the_bats ff_task_state 7
-scoreboard players set $a_c_reset_avail ff_task_state 1
-scoreboard players set $a_c_reset_sel ff_task_state 0
-scoreboard players set $a_c_reset_done ff_task_state 0
+function fossil_frights:tasks/register {id: "feed_the_bats", difficulty: "hard", custom_icon: false, sidebar_index: 7}
+function fossil_frights:tasks/register {id: "a_c_reset", difficulty: "hard", custom_icon: false, sidebar_index: 6}
 scoreboard players set $a_c_reset_variant ff_task_state 0
 scoreboard players set $a_c_btn_1_pressed ff_task_state 0
 scoreboard players set $a_c_btn_2_pressed ff_task_state 0
@@ -260,59 +90,33 @@ scoreboard players set $a_c_fan_timer ff_task_state 0
 scoreboard players set $a_c_timer_active ff_task_state 0
 scoreboard players set $a_c_fan_spin ff_task_state 0
 scoreboard players set $a_c_fan_rot_state ff_task_state 0
-scoreboard players set #line_a_c_reset ff_task_state 6
-scoreboard players set $defrost_freezer_avail ff_task_state 1
-scoreboard players set $defrost_freezer_sel ff_task_state 0
-scoreboard players set $defrost_freezer_done ff_task_state 0
-scoreboard players set #line_defrost_freezer ff_task_state 5
-scoreboard players set $the_lost_code_avail ff_task_state 1
-scoreboard players set $the_lost_code_sel ff_task_state 0
-scoreboard players set $the_lost_code_done ff_task_state 0
+function fossil_frights:tasks/register {id: "defrost_freezer", difficulty: "hard", custom_icon: false, sidebar_index: 5}
+function fossil_frights:tasks/register {id: "the_lost_code", difficulty: "hard", custom_icon: false, sidebar_index: 4}
 scoreboard players set $the_lost_code_seq ff_task_state 0
-scoreboard players set #line_the_lost_code ff_task_state 4
-scoreboard players set $pig_wrangler_avail ff_task_state 1
-scoreboard players set $pig_wrangler_sel ff_task_state 0
-scoreboard players set $pig_wrangler_done ff_task_state 0
+function fossil_frights:tasks/register {id: "pig_wrangler", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $pig_wrangler_pick ff_task_state 0
 scoreboard players set $pig_wrangler_in_pen ff_task_state 0
 scoreboard players set $pig_wrangler_fed ff_task_state 0
 scoreboard players set $pig_wrangler_tower_seen ff_task_state 0
-scoreboard players set #line_pig_wrangler ff_task_state 11
-scoreboard players set $holy_grail_avail ff_task_state 1
-scoreboard players set $holy_grail_sel ff_task_state 0
-scoreboard players set $holy_grail_done ff_task_state 0
+function fossil_frights:tasks/register {id: "holy_grail", difficulty: "hard", custom_icon: false, sidebar_index: 10}
 scoreboard players set $holy_grail_pick ff_task_state 0
 scoreboard players set $holy_grail_reward ff_task_state 0
-scoreboard players set #line_holy_grail ff_task_state 10
-scoreboard players set $hoveraptor_avail ff_task_state 1
-scoreboard players set $hoveraptor_sel ff_task_state 0
-scoreboard players set $hoveraptor_done ff_task_state 0
-scoreboard players set #line_hoveraptor ff_task_state 9
-scoreboard players set $fertilize_plant_avail ff_task_state 1
-scoreboard players set $fertilize_plant_sel ff_task_state 0
-scoreboard players set $fertilize_plant_done ff_task_state 0
+function fossil_frights:tasks/register {id: "hoveraptor", difficulty: "hard", custom_icon: false, sidebar_index: 9}
+function fossil_frights:tasks/register {id: "fertilize_plant", difficulty: "hard", custom_icon: false, sidebar_index: 3}
 scoreboard players set $fertilize_plant_pick ff_task_state 0
-scoreboard players set #line_fertilize_plant ff_task_state 3
-scoreboard players set $basketball_dance_avail ff_task_state 1
-scoreboard players set $basketball_dance_sel ff_task_state 0
-scoreboard players set $basketball_dance_done ff_task_state 0
+function fossil_frights:tasks/register {id: "basketball_dance", difficulty: "hard", custom_icon: false, sidebar_index: 2}
 scoreboard players set $basketball_dance_timer ff_task_state 0
 scoreboard players set $basketball_dance_pose ff_task_state 0
 scoreboard players set $basketball_dance_pose_tick ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed ff_task_state 0
 scoreboard players set $basketball_dance_head_tossed_once ff_task_state 0
-scoreboard players set #line_basketball_dance ff_task_state 2
-scoreboard players set $evolution_sel ff_task_state 0
-scoreboard players set $evolution_done ff_task_state 0
+function fossil_frights:tasks/register {id: "evolution", difficulty: "hard", custom_icon: false, sidebar_index: 1}
 scoreboard players set $evolution_step ff_task_state 0
 scoreboard players set $evolution_flash_red ff_task_state 0
 scoreboard players set $evolution_hit ff_task_state 0
 scoreboard players set $evolution_was_correct ff_task_state 0
-scoreboard players set #line_evolution ff_task_state 1
 
-scoreboard players set $final_task_avail ff_task_state 1
-scoreboard players set $final_task_sel ff_task_state 0
-scoreboard players set $final_task_done ff_task_state 0
+function fossil_frights:tasks/register {id: "final_task", difficulty: "final", custom_icon: false, sidebar_index: 1}
 scoreboard players set $final_task_dino ff_task_state 0
 scoreboard players set $final_task_dna_done ff_task_state 0
 scoreboard players set $final_task_fx_timer ff_task_state 0
@@ -320,7 +124,6 @@ scoreboard players set $final_task_preview_delay ff_task_state 0
 scoreboard players set $final_task_item ff_task_state 0
 scoreboard players set $final_task_item_done ff_task_state 0
 scoreboard players set $final_task_centrifuge_timer ff_task_state 0
-scoreboard players set #line_final_task ff_task_state 1
 
 function fossil_frights:tasks/tracker/refresh
 
