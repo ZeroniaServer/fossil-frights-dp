@@ -10,7 +10,7 @@ execute positioned 60.5 82 73.5 run playsound minecraft:entity.generic.splash bl
 execute positioned 60.5 82 73.5 run playsound minecraft:item.crop.plant block @a[tag=ff_frights_feedback_viewer,distance=..22] ~ ~ ~ 0.65 1.2
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"water_crops"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"water_crops"}}] 1
 scoreboard players set $water_crops_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

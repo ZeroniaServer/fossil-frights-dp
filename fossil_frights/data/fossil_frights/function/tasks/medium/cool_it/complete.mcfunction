@@ -11,7 +11,7 @@ execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 positioned 23.5 103.5 9.5 run playsound minecraft:block.fire.extinguish block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.65 1.45
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"cool_it"}] 1
+execute if score $cool_it_sel ff_task_state matches 1 if score $cool_it_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"cool_it"}}] 1
 execute if score $cool_it_sel ff_task_state matches 1 run scoreboard players set $cool_it_done ff_task_state 1
 function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s

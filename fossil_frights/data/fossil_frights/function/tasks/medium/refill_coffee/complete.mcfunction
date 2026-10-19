@@ -8,7 +8,7 @@ execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_cof
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 positioned 16.5 81.5 23.5 run playsound minecraft:block.fire.extinguish block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.28 1.8
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"refill_coffee"}] 1
+execute if score $refill_coffee_sel ff_task_state matches 1 if score $refill_coffee_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"refill_coffee"}}] 1
 execute if score $refill_coffee_sel ff_task_state matches 1 run scoreboard players set $refill_coffee_done ff_task_state 1
 execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
 execute if entity @s[type=minecraft:item] run kill @s

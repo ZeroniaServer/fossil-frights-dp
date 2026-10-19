@@ -93,7 +93,7 @@ scoreboard players set $a_c_fan_rot_state ff_task_state 0
 function fossil_frights:tasks/register {id: "defrost_freezer", difficulty: "hard", custom_icon: false, sidebar_index: 5}
 function fossil_frights:tasks/register {id: "the_lost_code", difficulty: "hard", custom_icon: false, sidebar_index: 4}
 scoreboard players set $the_lost_code_seq ff_task_state 0
-function fossil_frights:tasks/register {id: "pig_wrangler", difficulty: "hard", custom_icon: false, sidebar_index: 11}
+function fossil_frights:tasks/register {id: "pig_wrangler", difficulty: "hard", custom_icon: true, sidebar_index: 11}
 scoreboard players set $pig_wrangler_pick ff_task_state 0
 scoreboard players set $pig_wrangler_in_pen ff_task_state 0
 scoreboard players set $pig_wrangler_fed ff_task_state 0
