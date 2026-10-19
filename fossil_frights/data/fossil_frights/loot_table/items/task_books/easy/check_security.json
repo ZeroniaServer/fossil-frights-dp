@@ -12,9 +12,10 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
-                  "ff_task_book": "check_security",
-                  "ff_task_book_difficulty": "easy",
-                  "ff_any_task_book": true
+                  "ff_task_book": {
+                    "id": "check_security",
+                    "difficulty": "easy"
+                  }
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:item_model": "fossil_frights:items/frights/task_books/easy",

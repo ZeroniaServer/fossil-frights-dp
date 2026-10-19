@@ -6,7 +6,7 @@ execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_mu
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 positioned 55.5 68.5 61.5 run playsound minecraft:entity.generic.splash block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.8 1.2
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"wash_muddy_sherd"}] 1
+execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"wash_muddy_sherd"}}] 1
 execute if score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players set $wash_muddy_sherd_done ff_task_state 1
 function fossil_frights:items/util/return_all_but_one_to_thrower
 kill @s

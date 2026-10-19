@@ -13,7 +13,7 @@ particle minecraft:happy_villager 17 94 12 1.0 0.9 2.2 0.08 36 force
 playsound minecraft:entity.player.levelup master @a[tag=ff_frights_feedback_viewer,distance=..28] 17 94 12 0.8 1.35
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"evolution"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"evolution"}}] 1
 scoreboard players set $evolution_done ff_task_state 1
 scoreboard players set $evolution_flash_red ff_task_state 0
 function fossil_frights:tasks/tracker/refresh

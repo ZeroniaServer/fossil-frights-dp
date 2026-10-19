@@ -7,7 +7,7 @@ playsound minecraft:entity.elder_guardian.curse hostile @a[tag=ff_frights_feedba
 playsound minecraft:entity.elder_guardian.ambient hostile @a[tag=ff_frights_feedback_viewer,distance=..28] ~ ~ ~ 0.8 0.8
 function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 scoreboard players add $task_completed_total ff_task_state 1
-clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"nautilus_guard"}] 1
+clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"nautilus_guard"}}] 1
 scoreboard players set $nautilus_guard_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete

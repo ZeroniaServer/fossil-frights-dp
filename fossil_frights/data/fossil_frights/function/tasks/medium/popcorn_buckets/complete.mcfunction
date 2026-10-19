@@ -13,7 +13,7 @@ execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @s *[minecraft:custom_data~{itemID:"empty_popcorn_bucket"}] 1
-execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:"popcorn_buckets"}] 1
+execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"popcorn_buckets"}}] 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard players set $popcorn_buckets_done ff_task_state 1
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
