@@ -13,14 +13,21 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.hazard_cookie",
-                  "color": "yellow"
+                  "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/gear/thief/hazard_cookie",
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.hazard_cookie.description",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "ff.item.hazard_cookie.description.eat",
+                        "color": "yellow",
+                        "italic": false
+                      }
+                    ]
                   }
                 ],
                 "minecraft:consumable": {},

@@ -16,6 +16,19 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/dna/microfiber_cloth",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.microfiber_cloth.description",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "microfiber_cloth",
                   "ff_heist_rules": {

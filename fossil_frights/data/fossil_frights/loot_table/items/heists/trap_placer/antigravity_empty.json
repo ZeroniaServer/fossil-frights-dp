@@ -15,51 +15,6 @@
                   "translate": "ff.item.trap_antigravity",
                   "color": "gray"
                 },
-                "minecraft:lore": [
-                  {
-                    "translate": "ff.item.trap.description.place.realms",
-                    "color": "white",
-                    "italic": false,
-                    "with": [
-                      {
-                        "keybind": "key.drop",
-                        "color": "yellow"
-                      }
-                    ]
-                  },
-                  {
-                    "translate": "ff.item.trap.description.cycle",
-                    "color": "white",
-                    "italic": false,
-                    "with": [
-                      {
-                        "keybind": "key.use",
-                        "color": "yellow"
-                      }
-                    ]
-                  },
-                  {
-                    "translate": "ff.item.trap.description.pick_up",
-                    "color": "white",
-                    "italic": false,
-                    "with": [
-                      {
-                        "keybind": "key.sneak",
-                        "color": "yellow"
-                      },
-                      {
-                        "keybind": "key.use",
-                        "color": "yellow"
-                      }
-                    ]
-                  },
-                  "",
-                  {
-                    "translate": "ff.item.trap_antigravity.description.2",
-                    "color": "white",
-                    "italic": false
-                  }
-                ],
                 "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_empty",
                 "minecraft:attack_range": {
                   "min_reach": 0,
@@ -101,39 +56,8 @@
                 }
               }
             },
-            {
-              "type": "minecraft:sequence",
-              "functions": [
-                {
-                  "type": "minecraft:sequence",
-                  "functions": "#fossil_frights:items/trap_placer/apply_trap_click_enchantment"
-                },
-                {
-                  "type": "minecraft:set_lore",
-                  "lore": [
-                      {
-                      "translate": "ff.item.trap.description.place.experimental",
-                      "color": "white",
-                      "italic": false,
-                      "with": [
-                        {
-                          "keybind": "key.attack",
-                          "color": "yellow"
-                        },
-                        {
-                          "keybind": "key.drop",
-                          "color": "yellow"
-                        }
-                      ]
-                    }
-                  ],
-                  "mode": "replace_section",
-                  "offset": 0,
-                  "size": 1
-                }
-              ],
-              "condition": "fossil_frights:world/packs_enabled/experimental"
-            },
+            "fossil_frights:item_definition/trap_placer/tooltip",
+            "fossil_frights:item_definition/trap_placer/description/antigravity",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

@@ -20,17 +20,54 @@
                   {
                     "translate": "ff.item.ice_cannon_remote.description.1",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
                   },
                   {
                     "translate": "ff.item.ice_cannon_remote.description.2",
                     "color": "red",
                     "italic": false
                   },
+                  "",
                   {
-                    "translate": "ff.item.ice_cannon_remote.description.3",
-                    "color": "red",
+                    "translate": "ff.item.ice_cannon_remote.description.on_impact",
+                    "color": "gray",
                     "italic": false
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.ice_cannon_remote.description.on_impact.freezes_thieves",
+                        "color": "white",
+                        "italic": false
+                      }  
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.ice_cannon_remote.description.on_impact.extinguishes_guards",
+                        "color": "white",
+                        "italic": false
+                      }  
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.ice_cannon_remote.description.on_impact.lava_hazard_warning",
+                        "color": "red",
+                        "italic": false
+                      }  
+                    ]
                   }
                 ],
                 "minecraft:use_cooldown": {

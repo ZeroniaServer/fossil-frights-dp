@@ -18,37 +18,78 @@
                 "minecraft:item_model": "fossil_frights:items/heists/gear/guards/camera_remote",
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.camera_remote.description.1",
+                    "translate": "ff.item.camera_remote.description.use",
                     "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "ff.item.camera_remote.description.2",
-                    "color": "yellow",
                     "italic": false,
                     "with": [
                       {
-                        "keybind": "key.attack"
-                      },
-                      {
-                        "keybind": "key.use"
+                        "keybind": "key.use",
+                        "color": "yellow"
                       }
                     ]
                   },
                   {
-                    "translate": "ff.item.camera_remote.description.3",
-                    "color": "yellow",
-                    "italic": false,
-                    "with": [
-                      {
-                        "keybind": "key.sneak"
-                      }
-                    ]
-                  },
-                  {
-                    "translate": "ff.item.camera_remote.description.4",
+                    "translate": "ff.item.camera_remote.description.lights_warning",
                     "color": "red",
                     "italic": false
+                  },
+                  "",
+                  {
+                    "translate": "ff.item.camera_remote.description.when_in_use",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.camera_remote.description.when_in_use.switch_camera",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.left",
+                            "color": "yellow"
+                          },
+                          {
+                            "keybind": "key.right",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.camera_remote.description.when_in_use.report_thief",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.back",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.camera_remote.description.when_in_use.exit",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sneak",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "minecraft:use_cooldown": {
@@ -69,50 +110,9 @@
                       "color": "yellow"
                     },
                     "minecraft:item_model": "fossil_frights:items/heists/gear/guards/camera_remote",
-                    "minecraft:lore": [
-                      {
-                        "translate": "ff.item.camera_remote.description.1",
-                        "color": "white",
-                        "italic": false
-                      },
-                      {
-                        "translate": "ff.item.camera_remote.description.2",
-                        "color": "yellow",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.attack"
-                          },
-                          {
-                            "keybind": "key.use"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.camera_remote.description.3",
-                        "color": "yellow",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.sneak"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.camera_remote.description.4",
-                        "color": "red",
-                        "italic": false
-                      }
-                    ],
                     "minecraft:use_cooldown": {
                       "seconds": 1,
                       "cooldown_group": "fossil_frights:camera_remote"
-                    },
-                    "minecraft:consumable": {
-                      "consume_seconds": 0.001,
-                      "animation": "none",
-                      "sound": "minecraft:entity.item.pickup",
-                      "has_consume_particles": false
                     },
                     "minecraft:custom_data": {
                       "itemID": "camera_remote",
