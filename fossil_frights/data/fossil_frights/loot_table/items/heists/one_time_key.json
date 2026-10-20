@@ -23,7 +23,7 @@
                     "italic": false
                   },
                   {
-                    "translate": "ff.item.storage_key.one_time_use",
+                    "translate": "ff.tooltip.one_time_use",
                     "color": "red",
                     "italic": false
                   }

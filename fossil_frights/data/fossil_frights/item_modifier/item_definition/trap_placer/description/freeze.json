@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "lore": [
+        {
+          "translate": "ff.item.trap_freeze.description",
+          "color": "#7ED4FF",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}

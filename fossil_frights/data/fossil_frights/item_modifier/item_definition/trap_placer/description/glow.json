@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "lore": [
+        {
+          "translate": "ff.item.trap_glow.description",
+          "color": "#FFDE24",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}

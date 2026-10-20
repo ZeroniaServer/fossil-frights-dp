@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "insert",
+        "offset": 0
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "lore": [
+        {
+          "translate": "ff.item.trap.description.cycle",
+          "color": "white",
+          "italic": false,
+          "with": [
+            {
+              "keybind": "key.use",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "translate": "ff.item.trap.description.place.realms",
+          "color": "white",
+          "italic": false,
+          "with": [
+            {
+              "keybind": "key.drop",
+              "color": "yellow"
+            }
+          ]
+        },
+        {
+          "translate": "ff.item.trap.description.pick_up",
+          "color": "white",
+          "italic": false,
+          "with": [
+            {
+              "keybind": "key.sneak",
+              "color": "yellow"
+            },
+            {
+              "keybind": "key.use",
+              "color": "yellow"
+            }
+          ]
+        }
+      ],
+      "mode": "insert",
+      "offset": 0
+    },
+    {
+      "type": "minecraft:sequence",
+      "condition": "fossil_frights:world/packs_enabled/experimental",
+      "functions": [
+        {
+          "type": "minecraft:sequence",
+          "functions": "#fossil_frights:items/trap_placer/apply_trap_click_enchantment"
+        },
+        {
+          "type": "minecraft:set_lore",
+          "lore": [
+            {
+              "translate": "ff.item.trap.description.place.experimental",
+              "color": "white",
+              "italic": false,
+              "with": [
+                {
+                  "keybind": "key.attack",
+                  "color": "yellow"
+                },
+                {
+                  "keybind": "key.drop",
+                  "color": "yellow"
+                }
+              ]
+            }
+          ],
+          "mode": "replace_section",
+          "offset": 1,
+          "size": 1
+        }
+      ]
+    }
+  ]
+}
