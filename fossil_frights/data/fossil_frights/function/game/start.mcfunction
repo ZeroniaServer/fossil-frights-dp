@@ -68,7 +68,6 @@ execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_fr
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/give_waiting
 execute as @a[predicate=fossil_frights:player/team/guard,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
-scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0

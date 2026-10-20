@@ -415,7 +415,6 @@ scoreboard players set $size_roll ff_sulfur 0
 scoreboard players set $ball_count ff_sulfur 0
 scoreboard players set $score_cooldown ff_sulfur 0
 scoreboard players set $display_ready ff_sulfur 0
-scoreboard players set $sniffer_fright ff_game_state 0
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
