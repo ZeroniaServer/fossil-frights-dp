@@ -55,7 +55,6 @@ function fossil_frights:tasks/register {id: "smelly_toilet", difficulty: "medium
 function fossil_frights:tasks/register {id: "wash_muddy_sherd", difficulty: "medium", custom_icon: false, sidebar_index: 49}
 function fossil_frights:tasks/register {id: "feed_parrot", difficulty: "medium", custom_icon: false, sidebar_index: 50}
 function fossil_frights:tasks/register {id: "water_crops", difficulty: "medium", custom_icon: false, sidebar_index: 51}
-scoreboard players set $water_crops_pending ff_task_state 0
 function fossil_frights:tasks/register {id: "picnic_with_trike", difficulty: "medium", custom_icon: false, sidebar_index: 52}
 function fossil_frights:tasks/register {id: "nautilus_guard", difficulty: "medium", custom_icon: false, sidebar_index: 53}
 function fossil_frights:tasks/register {id: "feed_the_fish", difficulty: "medium", custom_icon: false, sidebar_index: 54}

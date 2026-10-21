@@ -1,5 +1,8 @@
 kill @s
 
+# complete tasks
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if entity @s[x=58,y=81,z=69,dx=5,dy=3,dz=9] at @s run function fossil_frights:tasks/medium/water_crops/complete
+
 # fx
 playsound minecraft:entity.player.splash neutral @a ~ ~ ~ 1 1.1
 particle minecraft:splash ~ ~ ~ 1 1 1 0 30
