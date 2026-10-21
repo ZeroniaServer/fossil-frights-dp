@@ -1,6 +1,0 @@
-execute unless score $water_crops_sel ff_task_state matches 1 run scoreboard players set $water_crops_pending ff_task_state 0
-execute unless score $water_crops_sel ff_task_state matches 1 run return 0
-execute if score $water_crops_done ff_task_state matches 1 run scoreboard players set $water_crops_pending ff_task_state 0
-execute if score $water_crops_done ff_task_state matches 1 run return 0
-execute if entity @e[limit=1,tag=ff_water_crops_potion] run schedule function fossil_frights:tasks/medium/water_crops/check_splash 5t
-execute unless entity @e[limit=1,tag=ff_water_crops_potion] run function fossil_frights:tasks/medium/water_crops/complete

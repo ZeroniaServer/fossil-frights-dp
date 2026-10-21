@@ -95,7 +95,6 @@ scoreboard players set $feed_parrot_sel ff_task_state 0
 scoreboard players set $feed_parrot_done ff_task_state 0
 scoreboard players set $water_crops_sel ff_task_state 0
 scoreboard players set $water_crops_done ff_task_state 0
-scoreboard players set $water_crops_pending ff_task_state 0
 scoreboard players set $picnic_with_trike_sel ff_task_state 0
 scoreboard players set $picnic_with_trike_done ff_task_state 0
 scoreboard players set $nautilus_guard_sel ff_task_state 0

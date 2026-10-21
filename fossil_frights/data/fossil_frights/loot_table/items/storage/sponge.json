@@ -12,10 +12,27 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "color": "yellow",
-                  "translate": "ff.item.sponge"
+                  "translate": "ff.item.sponge",
+                  "color": "#D6E42F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/sponge",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.sponge.description.use_on_anvil",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      },
+                      {
+                        "translate": "ff.item.microfiber_cloth",
+                        "color": "#D6E42F"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "sponge",
                   "ff_heist_rules": {
