@@ -12,7 +12,8 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "item.minecraft.leather_boots"
+                  "translate": "item.minecraft.leather_boots",
+                  "color": "#78552F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/leather_boots",
                 "minecraft:custom_data": {
