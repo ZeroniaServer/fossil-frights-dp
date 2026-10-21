@@ -35,7 +35,6 @@ function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset
 function fossil_frights:animations/dinocoin/vending_machine/setup
-function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
@@ -94,8 +93,6 @@ scoreboard players set $defeat_lock ff_game_state 0
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/refresh
 scoreboard players set $idle_ticks ff_game_state 0
 scoreboard players set $idle_queue_present ff_game_state 0
-scoreboard players set $forklift_watch ff_game_state 1
-scoreboard players set $forklift_paid ff_game_state 0
 function fossil_frights:game/start_room/settings/apply_preferences
 function fossil_frights:game/start_room/settings/sync_message_state
 function fossil_frights:run_breakdown/start

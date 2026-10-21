@@ -34,7 +34,6 @@ function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset
 function fossil_frights:animations/dinocoin/vending_machine/setup
-function fossil_frights:animations/forklift/reset
 function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/creeper/reset
@@ -82,8 +81,6 @@ function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset/main
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
-scoreboard players set $forklift_watch ff_game_state 0
-scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0

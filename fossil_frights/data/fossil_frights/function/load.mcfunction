@@ -370,8 +370,6 @@ scoreboard players set $timer_centi_ones ff_day 0
 scoreboard players set $lb_pending_day ff_day 0
 scoreboard players set $active_set ff_game_state 0
 scoreboard players set $game_running ff_game_state 0
-scoreboard players set $forklift_watch ff_game_state 0
-scoreboard players set $forklift_paid ff_game_state 0
 scoreboard players set $crane_wait ff_game_state 0
 scoreboard players set $crane_rat_cooldown ff_game_state 0
 scoreboard players set $sarcophagus_timer ff_game_state 0

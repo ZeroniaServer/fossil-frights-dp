@@ -1,2 +1,0 @@
-function fossil_frights:animations/forklift/clear_schedules
-function fossil_frights:animations/forklift/place_0
