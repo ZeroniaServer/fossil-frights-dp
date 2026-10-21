@@ -17,6 +17,19 @@
                   "italic": false
                 },
                 "minecraft:item_model": "fossil_frights:items/misc/confetti_remote",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.confetti_cannon_remote.description.use",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:use_cooldown": {
                   "seconds": 0.25,
                   "cooldown_group": "fossil_frights:confetti_cannon_remote"

@@ -16,6 +16,13 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/misc/dinocoin",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.dinocoin.description",
+                    "color": "white",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "dinocoin",
                   "ff_heist_rules": {

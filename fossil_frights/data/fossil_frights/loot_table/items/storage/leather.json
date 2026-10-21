@@ -16,6 +16,23 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/leather",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.scrap_metal.description.use_on_anvil",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      },
+                      {
+                        "translate": "item.minecraft.leather_boots",
+                        "color": "#78552F"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "leather",
                   "ff_anvil_ingredient": {

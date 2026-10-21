@@ -16,6 +16,19 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/copper_shuffle",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.copper_shuffle.description.use",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "copper_shuffle",
                   "ff_heist_rules": {
