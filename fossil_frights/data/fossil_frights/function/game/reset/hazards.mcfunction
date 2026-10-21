@@ -12,7 +12,7 @@ function fossil_frights:interactions/glowberry_vine/reset
 function fossil_frights:hazard/lights/stop
 tag @e[type=minecraft:item_display,tag=ff_security_gate] add ff_security_gate.silent
 
-place template fossil_frights:lava/phase_0 -26 69 17
+# place template fossil_frights:lava/phase_0 -26 69 17
 scoreboard players set #lava_mode ff_hazard_rng 0
 scoreboard players set #lava_phase ff_hazard_rng 0
 scoreboard players set #lava_anim_phase ff_hazard_rng 0
