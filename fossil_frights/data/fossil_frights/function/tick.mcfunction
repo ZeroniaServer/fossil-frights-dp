@@ -106,7 +106,7 @@ function fossil_frights:lobby_games/parkour/teleporter_walk_tick
 function fossil_frights:lobby_games/sulfur_strikers/teleporter_walk_tick
 execute as @e[type=minecraft:text_display,tag=ff_tutorial_camera] run function fossil_frights:tutorial/camera/cleanup
 execute as @a at @s run function fossil_frights:player/tick
-execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,predicate=!fossil_frights:player/team/guard,predicate=!fossil_frights:player/team/thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
+execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,tag=!ff_fade_tp_active,predicate=!fossil_frights:player/team/guard,predicate=!fossil_frights:player/team/thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
 execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=ff_ant_fight,gamemode=!spectator]
