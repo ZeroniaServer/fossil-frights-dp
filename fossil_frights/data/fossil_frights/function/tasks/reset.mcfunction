@@ -126,7 +126,6 @@ scoreboard players set $return_the_key_sel ff_task_state 0
 scoreboard players set $return_the_key_done ff_task_state 0
 scoreboard players set $skincare_routine_sel ff_task_state 0
 scoreboard players set $skincare_routine_done ff_task_state 0
-scoreboard players set $skincare_routine_pending ff_task_state 0
 scoreboard players set $feed_the_bats_sel ff_task_state 0
 scoreboard players set $feed_the_bats_done ff_task_state 0
 scoreboard players set $a_c_reset_sel ff_task_state 0

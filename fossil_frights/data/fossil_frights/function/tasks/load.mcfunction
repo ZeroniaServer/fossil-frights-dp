@@ -77,7 +77,6 @@ scoreboard players set $glowberry_tree_1_pending ff_task_state 0
 scoreboard players set $glowberry_tree_2_pending ff_task_state 0
 function fossil_frights:tasks/register {id: "return_the_key", difficulty: "hard", custom_icon: false, sidebar_index: 9}
 function fossil_frights:tasks/register {id: "skincare_routine", difficulty: "hard", custom_icon: false, sidebar_index: 8}
-scoreboard players set $skincare_routine_pending ff_task_state 0
 function fossil_frights:tasks/register {id: "feed_the_bats", difficulty: "hard", custom_icon: false, sidebar_index: 7}
 function fossil_frights:tasks/register {id: "a_c_reset", difficulty: "hard", custom_icon: false, sidebar_index: 6}
 scoreboard players set $a_c_reset_variant ff_task_state 0
