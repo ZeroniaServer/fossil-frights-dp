@@ -18,17 +18,13 @@
                 "minecraft:item_model": "fossil_frights:items/lobby/parkour_restart",
                 "minecraft:lore": [
                   {
-                    "translate": "%s - %s",
-                    "italic": false,
+                    "translate": "ff.item.parkour_restart.description.use",
                     "color": "white",
+                    "italic": false,
                     "with": [
                       {
-                        "translate": "ff.item.parkour_restart.lore.restart",
-                        "color": "yellow"
-                      },
-                      {
                         "keybind": "key.use",
-                        "color": "white"
+                        "color": "yellow"
                       }
                     ]
                   }
