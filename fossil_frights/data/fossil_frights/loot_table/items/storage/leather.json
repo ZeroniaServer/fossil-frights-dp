@@ -18,7 +18,7 @@
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/leather",
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.scrap_metal.description.use_on_anvil",
+                    "translate": "ff.item.leather.description.use_on_anvil",
                     "color": "white",
                     "italic": false,
                     "with": [
