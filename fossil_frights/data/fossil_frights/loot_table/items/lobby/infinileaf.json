@@ -18,32 +18,24 @@
                 "minecraft:item_model": "fossil_frights:items/lobby/infinileaf",
                 "minecraft:lore": [
                   {
-                    "translate": "%s - %s",
+                    "translate": "ff.item.infinileaf.description.use",
                     "italic": false,
                     "color": "white",
                     "with": [
                       {
-                        "translate": "ff.item.infinileaf.lore.shoot",
-                        "color": "dark_green"
-                      },
-                      {
                         "keybind": "key.use",
-                        "color": "white"
+                        "color": "yellow"
                       }
                     ]
                   },
                   {
-                    "translate": "%s - %s",
+                    "translate": "ff.item.infinileaf.description.leave",
                     "italic": false,
                     "color": "white",
                     "with": [
                       {
-                        "translate": "ff.item.infinileaf.lore.leave",
-                        "color": "red"
-                      },
-                      {
                         "keybind": "key.drop",
-                        "color": "white"
+                        "color": "yellow"
                       }
                     ]
                   }

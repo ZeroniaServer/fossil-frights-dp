@@ -12,10 +12,29 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "gui.back",
-                  "color": "yellow"
+                  "translate": "ff.item.return_to_lobby",
+                  "color": "yellow",
+                  "fallback": "%1$s",
+                  "with": [
+                    {
+                      "translate": "gui.back"
+                    }
+                  ]
                 },
                 "minecraft:item_model": "fossil_frights:items/lobby/return_to_lobby",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.return_to_lobby.description.use",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,
                   "animation": "none",

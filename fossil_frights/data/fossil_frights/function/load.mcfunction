@@ -553,6 +553,7 @@ gamerule minecraft:locator_bar true
 gamerule minecraft:mob_drops false
 gamerule minecraft:advance_time true
 gamerule minecraft:spectators_generate_chunks false
+execute unless predicate fossil_frights:world/packs_enabled/dev run gamerule reduced_debug_info true
 
 # This text is purposefully not translated, so that non-rp players see it
 bossbar add fossil_frights:resource_pack_disclaimer ""
