@@ -1,2 +1,2 @@
-scoreboard players reset $(name) ff_login_state
+$scoreboard players reset $(name) ff_session_state
 $team leave $(name)

@@ -21,7 +21,7 @@ execute if predicate fossil_frights:game_state/heist_mode_active unless items en
 execute if items entity @s contents *[custom_data~{itemID:"lady_bug"}] run scoreboard players set #despawns ff_dummy 1
 execute if entity @s[tag=ff_anvil.display] run scoreboard players set #despawns ff_dummy 0
 
-execute if score #despawns ff_dummy matches 0 run data modify entity @s Age set value -32768
+data modify entity @s Age set value -32768
 execute if score #despawns ff_dummy matches 1 run function fossil_frights:items/dropped_items/despawn_timer/init
 
 # Heist items
