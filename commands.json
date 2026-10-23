@@ -1,0 +1,633 @@
+{
+    "type": "root",
+    "children": {
+        "gitmc:git": {
+            "type": "literal",
+            "children": {
+                "pull": {
+                    "type": "literal",
+                    "executable": true
+                }
+            }
+        },
+        "admin": {
+            "type": "literal",
+            "children": {
+                "end_show": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "hazard": {
+                    "type": "literal",
+                    "children": {
+                        "curse": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "end_all": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "floods": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "lava": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "lights": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "security": {
+                            "type": "literal",
+                            "executable": true
+                        }
+                    }
+                },
+                "hazards": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "heist_add_loot": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "heist_loot": {
+                    "type": "literal",
+                    "children": {
+                        "coffee": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "poster_tube": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "ghast_plushie": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "piglin_head": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "popcorn": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "lollipop": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "fishing_rod": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "burger": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "chocolate_cake": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "ancient_scripture": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "chondrite": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "sand_dollar": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "fossilized_trilobite": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "golden_sword": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "ancient_portal_core": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "spyglass": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "febreeze_rod": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "fertilizer": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "water_balloon": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "chlorine_tablet": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "scrap_metal": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "soap": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "dry_ice": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "fire_tablet": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "golden_nautilus": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "skeleton_plushie": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "fish_food": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "copper_shuffle": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "instant_coffee": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "empty_popcorn_bucket": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "pink_jelly": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "leather": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "brush": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "sponge": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "cotton_candy": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "credit_reel": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "muddy_sherd": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "carrot_cake": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "cookie": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "lady_bug": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "basketball": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "misplaced_scissors": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "hoverboard": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "sniffer_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "trike_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "t_rex_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "velociraptor_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "plesiosaur_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "pterodactyl_dna_cloth": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "treasure_chest": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "warden": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "crab": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "t_rex_skull": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "raptor_skull": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "biplane": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "vault": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "velociraptor_statue": {
+                            "type": "literal",
+                            "executable": true
+                        }
+                    }
+                },
+                "progress": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "set_day": {
+                    "type": "literal",
+                    "children": {
+                        "day": {
+                            "type": "argument",
+                            "executable": true,
+                            "parser": "brigadier:integer",
+                            "properties": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    }
+                },
+                "set_day_menu": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "set_time_menu": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "show": {
+                    "type": "literal",
+                    "executable": true
+                },
+                "start": {
+                    "type": "literal",
+                    "children": {
+                        "frights": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "heists": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "party": {
+                            "type": "literal",
+                            "executable": true
+                        }
+                    }
+                },
+                "task": {
+                    "type": "literal",
+                    "children": {
+                        "easy": {
+                            "type": "literal",
+                            "children": {
+                                "bathroom_leak": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "check_ankylo": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "check_security": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "climb_the_tower": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "count_shells": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "count_toes": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "dig_sand": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "dive_into_well": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "fire_pottery": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "fix_cracked_egg": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "fix_mars": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "make_some_noise": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "lock_register": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "polish_bell": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "reset_fountain": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "reset_salt_level": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "static_buildup": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "swat_flies": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "sweep_popcorn": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "tnt_test": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "toilet_clog": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "visit_archean": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "visit_jurassic": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "visit_neogene": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "visit_silurian": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "water_temp": {
+                                    "type": "literal",
+                                    "executable": true
+                                }
+                            }
+                        },
+                        "medium": {
+                            "type": "literal",
+                            "children": {
+                                "ancient_portal": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "bring_brush": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "brush_delivery": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "chlorinify": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "coffee_top_up": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "cool_it": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "credit_reel": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "feed_parrot": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "feed_the_fish": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "feed_the_plants": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "fix_sculker": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "heat_it_up": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "nautilus_guard": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "picnic_with_trike": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "popcorn_buckets": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "refill_coffee": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "refill_ice": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "replenish_soap": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "restock_plushies": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "revitalize_coral": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "shark_bait": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "smelly_toilet": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "sponge_up_spill": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "wash_muddy_sherd": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "water_crops": {
+                                    "type": "literal",
+                                    "executable": true
+                                }
+                            }
+                        },
+                        "hard": {
+                            "type": "literal",
+                            "children": {
+                                "a_c_reset": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "basketball_dance": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "defrost_freezer": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "evolution": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "feed_the_bats": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "fertilize_plant": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "glowberry_trees": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "holy_grail": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "hoveraptor": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "pig_wrangler": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "return_the_key": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "skincare_routine": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "star_gazing": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "the_lost_code": {
+                                    "type": "literal",
+                                    "executable": true
+                                }
+                            }
+                        },
+                        "final": {
+                            "type": "literal",
+                            "children": {
+                                "final_task": {
+                                    "type": "literal",
+                                    "executable": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "tasks": {
+                    "type": "literal",
+                    "executable": true
+                }
+            }
+        }
+    }
+}

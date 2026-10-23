@@ -4,4 +4,4 @@ execute if score #lb_page ff_lb_calc matches 2 as @e[type=minecraft:text_display
 execute if score #lb_page ff_lb_calc matches 3 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value {text:"<  4/6  >",font:"fossil_frights:small_caps",color:"#F6E7B0"}
 execute if score #lb_page ff_lb_calc matches 4 as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value {text:"<  5/6  >",font:"fossil_frights:small_caps",color:"#F6E7B0"}
 execute if score #lb_page ff_lb_calc matches 5.. as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text set value [{text:"<  ",font:"fossil_frights:small_caps",color:"#F6E7B0"},{text:"",font:"fossil_frights:settings_board"},{text:"/6  ",font:"fossil_frights:small_caps",color:"#F6E7B0"},{text:">",font:"fossil_frights:small_caps",color:"#777777"}]
-execute as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text_opacity set value -1b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_pagination] run data modify entity @s text_opacity set value 255

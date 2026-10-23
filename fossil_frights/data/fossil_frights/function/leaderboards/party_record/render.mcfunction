@@ -19,5 +19,5 @@ execute if entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1
 execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_3] run data modify entity @s text set from storage fossil_frights:party_record display_players_3
 execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_1] run data modify entity @s transformation.scale set value [0.7f,0.7f,0.7f]
 execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_1] run data modify entity @s text set value [{translate:"ff.lobby.ant_fight.no_scores_yet",font:"fossil_frights:small_caps",color:"#F6E7B0",italic:false}]
-execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_2] run data modify entity @s text set value []
-execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_3] run data modify entity @s text set value []
+execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_2] run data modify entity @s text set value ""
+execute unless entity @e[type=minecraft:marker,tag=ff_lb_party_record_member,limit=1] as @e[type=minecraft:text_display,tag=ff_lb_board_party_players_3] run data modify entity @s text set value ""
