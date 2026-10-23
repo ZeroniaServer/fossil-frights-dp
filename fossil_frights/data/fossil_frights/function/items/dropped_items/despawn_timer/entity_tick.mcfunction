@@ -1,3 +1,6 @@
+execute unless predicate fossil_frights:entity/has_vehicle run return run kill @s
+
+execute on vehicle if entity @s[type=minecraft:item] unless items entity @s contents *[custom_data~{itemID:"lady_bug"}] if predicate {type:"int_value_check",value:"fossil_frights:gametime",test:{min:{type:"minecraft:score",target:"this",score:"ff_dropped_item_despawn_timestamp"}}} run kill @s
 execute unless predicate fossil_frights:entity/has_vehicle if predicate fossil_frights:game_state/game_running run particle minecraft:white_smoke ~ ~0.125 ~ 0.05 0 0.05 0.02 10
 execute unless predicate fossil_frights:entity/has_vehicle run return run kill @s
 
