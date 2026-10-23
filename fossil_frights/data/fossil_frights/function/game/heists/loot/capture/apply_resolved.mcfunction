@@ -17,4 +17,5 @@ execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil_fr
 particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 tag @a remove ff_heist_capture_credit_recipient
 item modify entity @s contents fossil_frights:deduct_1
+execute if items entity @s contents *[count~{min:1}] run function fossil_frights:items/dropped_items/util/set_guard_pickup_delay
 execute if score $heist_loot ff_heist >= #heist_goal ff_heist unless score $victory_complete ff_game_state matches 1 run function fossil_frights:game/heists/end/thieves_win
