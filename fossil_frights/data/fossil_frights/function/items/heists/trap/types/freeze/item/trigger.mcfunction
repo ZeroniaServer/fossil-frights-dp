@@ -1,4 +1,4 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:["ff_trap_freeze_item_anchor","ff_trap_freeze_item_anchor_new"],Invisible:true,Small:true,NoGravity:false,Invulnerable:true,Silent:true,PersistenceRequired:true}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["ff_trap_freeze_item_anchor","ff_trap_freeze_item_anchor_new"],Invisible:true,Small:true,NoGravity:false,Invulnerable:true,Silent:true}
 summon minecraft:item_display ~ ~0.375 ~ {Tags:["ff_trap_freeze_item","ff_trap_freeze_item_new"],Glowing:true,item:{id:"minecraft:stone",count:1},item_display:"ground",teleport_duration:1,interpolation_duration:1}
 data modify entity @e[type=minecraft:item_display,tag=ff_trap_freeze_item_new,sort=nearest,limit=1,distance=..0.5] item set from entity @s Item
 tag @e[type=minecraft:item_display,tag=ff_trap_freeze_item_new,sort=nearest,limit=1,distance=..0.5] remove ff_trap_freeze_item_new

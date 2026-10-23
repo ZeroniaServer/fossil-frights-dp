@@ -1,0 +1,10 @@
+{
+    "env": {
+        "mcmetaSummaryOverrides": {
+            "commands": {
+                "path": "./commands.json",
+                "replace": false
+            }
+        }
+    }
+}

@@ -11,9 +11,9 @@ function fossil_frights:leaderboards/display/update_navigation
 execute unless score #lb_page ff_lb_calc matches 5.. run kill @e[type=minecraft:interaction,tag=ff_lb_party_names_click]
 execute if score #lb_page ff_lb_calc matches 5.. run function fossil_frights:leaderboards/display/render_party_page
 execute if score #lb_page ff_lb_calc matches 5.. run return 0
-execute as @e[type=minecraft:text_display,tag=ff_lb_board_index] run data modify entity @s text_opacity set value -1b
-execute as @e[type=minecraft:text_display,tag=ff_lb_board_best] run data modify entity @s text_opacity set value -1b
-execute as @e[type=minecraft:text_display,tag=ff_lb_board_player] run data modify entity @s text_opacity set value -1b
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_index] run data modify entity @s text_opacity set value 255
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_best] run data modify entity @s text_opacity set value 255
+execute as @e[type=minecraft:text_display,tag=ff_lb_board_player] run data modify entity @s text_opacity set value 255
 execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_time] run data modify entity @s text_opacity set value 0b
 execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_players] run data modify entity @s text_opacity set value 0b
 execute as @e[type=minecraft:text_display,tag=ff_lb_board_party_label] run data modify entity @s text_opacity set value 0b
