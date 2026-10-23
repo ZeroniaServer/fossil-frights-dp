@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.drink.dinonog",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "fossil_frights:items/frightmas/dinonog",
+                "minecraft:custom_model_data": {
+                  "flags": [
+                    true
+                  ]
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "dinonog_drink",
+                  "ff_completes_picnic_with_trike_task": true,
+                  "ff_heist_rules": {
+                    "prevent_ground_despawn": true
+                  }
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}
