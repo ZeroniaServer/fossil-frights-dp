@@ -16,5 +16,5 @@ execute as @a[predicate=fossil_frights:player/team/thief,gamemode=!spectator] at
 execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil_frights:heists.loot_capture master @s ~ ~ ~ 0.95 1
 particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 tag @a remove ff_heist_capture_credit_recipient
-kill @s
+item modify entity @s contents fossil_frights:deduct_1
 execute if score $heist_loot ff_heist >= #heist_goal ff_heist unless score $victory_complete ff_game_state matches 1 run function fossil_frights:game/heists/end/thieves_win
