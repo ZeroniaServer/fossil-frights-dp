@@ -1,5 +1,5 @@
 execute if entity @s[tag=ff_tp_dispatch] unless score @s ff_tp_action matches 12 run return 0
-execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 12 run tp @s -1.8 70 52.5 90 0
+execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 12 run tp @s -18.6 70.00 31.0 90 0
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active,x=79,y=74,z=78,dx=0,dy=0,dz=1] run title @s times 5 3 10
