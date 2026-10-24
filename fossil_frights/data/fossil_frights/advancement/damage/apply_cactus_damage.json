@@ -1,0 +1,14 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "enter_cactus": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "blocks": "minecraft:cactus"
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/damage/apply_cactus_damage"
+  }
+}

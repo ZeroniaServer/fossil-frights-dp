@@ -21,11 +21,11 @@ execute unless predicate fossil_frights:game_state/party_mode_active unless enti
 execute unless predicate fossil_frights:game_state/party_mode_active if entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged,predicate=fossil_frights:location/room/start_room] run function fossil_frights:tasks/task_book_shelf/bookshelf_creature/cleanup
 execute unless predicate fossil_frights:game_state/party_mode_active unless entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged,predicate=fossil_frights:location/room/start_room] if entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged] run scoreboard players set #bookshelf_creature_seen ff_task_book_shelf 1
 execute unless predicate fossil_frights:game_state/party_mode_active unless entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged,predicate=fossil_frights:location/room/start_room] if entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_bookshelf_acknowledged] run function fossil_frights:tasks/task_book_shelf/bookshelf_creature/tick
-scoreboard players add $bookshelf_onboarding_marker_flash ff_day 1
-execute if score $bookshelf_onboarding_marker_flash ff_day matches 20.. run scoreboard players set $bookshelf_onboarding_marker_flash ff_day 0
-execute if score $bookshelf_onboarding_marker_flash ff_day matches ..9 run data merge entity @e[type=minecraft:text_display,tag=ff_day_1_book_marker,limit=1] {text:[{"text":"!","color":"white","bold":true,"italic":false}],background:0,brightness:{sky:15,block:15}}
-execute if score $bookshelf_onboarding_marker_flash ff_day matches ..9 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:100,brightness:{sky:15,block:15}}
-execute if score $bookshelf_onboarding_marker_flash ff_day matches 10..19 run data merge entity @e[type=minecraft:text_display,tag=ff_day_1_book_marker,limit=1] {text:""}
-execute if score $bookshelf_onboarding_marker_flash ff_day matches 10..19 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:0}
+execute if score $day_timer ff_day matches 3600.. run scoreboard players add $bookshelf_onboarding_marker_flash ff_day 1
+execute if score $bookshelf_onboarding_marker_flash ff_day matches 40.. run scoreboard players set $bookshelf_onboarding_marker_flash ff_day 0
+execute if score $bookshelf_onboarding_marker_flash ff_day matches ..19 run data merge entity @e[type=minecraft:text_display,tag=ff_day_1_book_marker,limit=1] {text:[{"text":"!","color":"white","bold":true,"italic":false}],background:0,brightness:{sky:15,block:15}}
+execute if score $bookshelf_onboarding_marker_flash ff_day matches ..19 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:100,brightness:{sky:15,block:15}}
+execute if score $bookshelf_onboarding_marker_flash ff_day matches 20..39 run data merge entity @e[type=minecraft:text_display,tag=ff_day_1_book_marker,limit=1] {text:""}
+execute if score $bookshelf_onboarding_marker_flash ff_day matches 20..39 run data merge entity @e[type=minecraft:item_display,tag=ff_day_1_book_marker,limit=1] {view_range:0}
 
 function fossil_frights:tasks/task_book_shelf/onboarding_marker/actionbar
