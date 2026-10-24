@@ -286,6 +286,8 @@ scoreboard objectives add ff_security_gate_cache.max_y dummy
 scoreboard objectives add ff_security_gate_close_timestamp dummy
 scoreboard objectives add ff_thrown_water_balloon used:splash_potion
 scoreboard objectives add ff_bouncy_lily_pad_bounce_timestamp dummy
+scoreboard objectives add ff_damage_cooldown_until_timestamp dummy
+scoreboard objectives add ff_fire_damage_cooldown_until_timestamp dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2
@@ -537,6 +539,7 @@ function fossil_frights:leaderboards/display/rebuild
 function fossil_frights:animations/deep_dark_elevator/load
 function fossil_frights:game/reset/reload
 schedule function fossil_frights:util/player/extinguish/cleanup 1t
+schedule function fossil_frights:player/damage/tick 1t
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:mob_griefing false
 gamerule minecraft:random_tick_speed 0
@@ -556,6 +559,8 @@ gamerule minecraft:mob_drops false
 gamerule minecraft:advance_time true
 gamerule minecraft:spectators_generate_chunks false
 execute unless predicate fossil_frights:world/packs_enabled/dev run gamerule reduced_debug_info true
+# the drowning_damage gamerule is repurposed for handling custom fire damage, doesn't actually disable drowning damage
+gamerule minecraft:drowning_damage false
 
 # This text is purposefully not translated, so that non-rp players see it
 bossbar add fossil_frights:resource_pack_disclaimer ""

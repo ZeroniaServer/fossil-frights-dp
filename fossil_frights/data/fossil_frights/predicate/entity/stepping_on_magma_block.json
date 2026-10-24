@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:stepping_on": {
+      "block": {
+        "blocks": "minecraft:magma_block"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:stepping_on": {
+      "block": {
+        "blocks": "#minecraft:campfires",
+        "state": {
+          "lit": "true"
+        }
+      }
+    }
+  }
+}
