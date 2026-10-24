@@ -1,0 +1,17 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "enter_lava": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "blocks": [
+          "minecraft:lava",
+          "minecraft:lava_cauldron"
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/damage/apply_lava_damage"
+  }
+}

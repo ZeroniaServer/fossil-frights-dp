@@ -1,0 +1,17 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "enter_fire": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "blocks": [
+          "minecraft:fire",
+          "minecraft:soul_fire"
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/damage/apply_fire_damage"
+  }
+}

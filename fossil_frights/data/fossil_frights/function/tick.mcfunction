@@ -5,8 +5,8 @@ execute in minecraft:overworld if loaded 0 0 0 unless entity 0-0-0-0-0 run summo
 function fossil_frights:player/session/tick
 
 scoreboard players remove @a[scores={ff_tp_delay=1..}] ff_tp_delay 1
-execute as @a[gamemode=!creative] run attribute @s minecraft:block_interaction_range base set 0
-execute as @a[gamemode=creative] run attribute @s minecraft:block_interaction_range base reset
+execute as @a[predicate=fossil_frights:player/cancel_block_interactions] run attribute @s minecraft:block_interaction_range base set 0
+execute as @a[predicate=!fossil_frights:player/cancel_block_interactions] run attribute @s minecraft:block_interaction_range base reset
 tag @a[scores={ff_tp_delay=12,ff_tp_action=1..}] add ff_tp_dispatch
 execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
@@ -118,7 +118,7 @@ function fossil_frights:items/return_to_lobby/tick
 function fossil_frights:player/bouncy_lily_pad/tick
 item replace entity @a[tag=!ff_hoverboard_restore_pending] enderchest.0 with air
 
-loot replace entity @a[predicate=fossil_frights:player/is_lobby_freeplay] armor.body loot fossil_frights:damage_immunity_item
+loot replace entity @a[predicate=fossil_frights:player/team/lobby] armor.body loot fossil_frights:damage_immunity_item
 execute as @a[predicate=!fossil_frights:player/is_lobby_freeplay] if items entity @s armor.body *[custom_data~{ff_damage_immunity_item:true}] run item fill entity @s armor.body with air
 
 bossbar set fossil_frights:resource_pack_disclaimer players

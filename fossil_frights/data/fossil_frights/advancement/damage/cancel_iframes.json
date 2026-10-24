@@ -1,0 +1,23 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "#fossil_frights:cancel_iframes",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/damage/cancel_iframes"
+  }
+}
