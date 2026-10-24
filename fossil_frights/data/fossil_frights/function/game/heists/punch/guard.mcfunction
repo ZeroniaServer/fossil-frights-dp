@@ -10,7 +10,6 @@ scoreboard players add @s ff_heist_keys_stolen_round 1
 execute if score @s ff_heist_stolen_keys matches 5.. if score @s ff_heist_keyed_loot_captured_round matches ..199 run effect give @s minecraft:speed 10 1 true
 execute unless score @s ff_heist_stolen_keys matches 5.. run effect give @s minecraft:speed 10 0 true
 execute if score @s ff_heist_stolen_keys matches 5.. unless score @s ff_heist_keyed_loot_captured_round matches ..199 run effect give @s minecraft:speed 10 0 true
-item modify entity @s armor.head fossil_frights:game/heists/invisimask/hidden/on
 function fossil_frights:game/heists/items/reward_key
 function fossil_frights:game/rewards/give_dinocoin
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.8 1.8
