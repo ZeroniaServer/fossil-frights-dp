@@ -17,3 +17,4 @@ summon minecraft:turtle 2.7 83 66.2 {Tags:["ff_fish_decor"],Age:-1,AgeLocked:tru
 summon minecraft:turtle 1.3 83 67.0 {Tags:["ff_fish_decor"],Age:-1,AgeLocked:true,Invulnerable:true,PersistenceRequired:true}
 summon minecraft:nautilus 2.6 83 67.0 {Tags:["ff_fish_decor"],Age:-1,AgeLocked:true,PersistenceRequired:true}
 summon minecraft:nautilus 1.8 83 67.0 {Tags:["ff_fish_decor"],Age:-1,AgeLocked:true,PersistenceRequired:true}
+execute positioned 7.82 81.0 66.66 run function fossil_frights:animations/goldfish/setup
