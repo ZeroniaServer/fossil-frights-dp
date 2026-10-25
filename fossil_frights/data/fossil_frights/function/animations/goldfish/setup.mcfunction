@@ -1,0 +1,3 @@
+kill @e[tag=goldfish]
+summon interaction ~ ~ ~ {Tags:["goldfish"],height:0.5f,response:1b,width:0.5f}
+summon item_display ~ ~0.5 ~ {glow_color_override:-1,teleport_duration:0,shadow_radius:0.0f,Tags:["goldfish"],item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"fossil_frights:display/exhibits/aquatic/goldfish"}},transformation:{translation:[0.0f,0.0f,0.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.4375f,0.4375f,0.4375f],left_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:1.0f,height:1.0f,item_display:"head",billboard:"fixed",width:1.0f,interpolation_duration:2}

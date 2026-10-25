@@ -1,0 +1,1 @@
+execute as @e[limit=1,type=minecraft:item_display,tag=goldfish] at @s run function fossil_frights:animations/goldfish/unsquish
