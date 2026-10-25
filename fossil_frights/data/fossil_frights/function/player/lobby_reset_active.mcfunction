@@ -27,7 +27,6 @@ function fossil_frights:items/plushies/restore
 spawnpoint @s 0 80 0
 gamemode adventure @s
 function fossil_frights:player/effects/lobby_reset
-effect give @s minecraft:instant_health 100 0 true
 title @s times 5 3 10
 title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @s ff_tp_action 19
