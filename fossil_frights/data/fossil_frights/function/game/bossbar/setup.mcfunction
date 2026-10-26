@@ -14,4 +14,8 @@ bossbar set fossil_frights:hazards color blue
 bossbar set fossil_frights:hazards style progress
 bossbar set fossil_frights:hazards max 1
 bossbar set fossil_frights:hazards value 1
+bossbar remove fossil_frights:dinonog
+bossbar add fossil_frights:dinonog {text:"\ue700",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}
+bossbar set fossil_frights:dinonog color blue
+bossbar set fossil_frights:dinonog players @a
 function fossil_frights:game/bossbar/speedrun/setup

@@ -20,6 +20,8 @@ bossbar set fossil_frights:hazards color blue
 bossbar set fossil_frights:hazards style progress
 bossbar set fossil_frights:hazards max 1
 bossbar set fossil_frights:hazards value 1
+bossbar set fossil_frights:dinonog players
+bossbar set fossil_frights:dinonog visible false
 function fossil_frights:game/bossbar/speedrun/setup
 function fossil_frights:game/bossbar/update_hazards
 time of minecraft:overworld resume
