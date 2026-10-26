@@ -24,7 +24,7 @@ data modify storage fossil_frights:credits credits set value [\
             "nightlibra",\
             "",\
             "",\
-            {translate:"ff.credits.role.plugin_developer",bold:true},\
+            {translate:"ff.credits.role.plugin_developers",bold:true},\
             "Polysquarazoid",\
             "CAG2",\
             "",\
