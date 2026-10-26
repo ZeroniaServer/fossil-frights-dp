@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.rock",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:items/misc/rock",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.rock.description",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "itemID": "rock",
+                  "ff_heist_rules": {
+                    "prevent_ground_despawn": true
+                  }
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

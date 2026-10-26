@@ -1,0 +1,1 @@
+function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:items/rock",nbt:{Tags:["ff_rock","ff_rock.brain","ff_rock.decorative"],transformation:{right_rotation:[0,0,0,1],scale:[1,1,1],left_rotation:[0,0,0,1],translation:[0,0.25,0]},width:1,height:1,Passengers:[{id:"minecraft:interaction",Tags:["ff_rock","ff_rock.interaction"],width:0.502,height:0.502}]}}

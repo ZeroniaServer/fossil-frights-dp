@@ -1,0 +1,1 @@
+function fossil_frights:items/rock/kill/to_bottom

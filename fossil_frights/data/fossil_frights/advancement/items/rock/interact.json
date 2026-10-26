@@ -1,0 +1,24 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "all_of": [
+                "ff_rock.interaction"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/rock/interact"
+  }
+}
