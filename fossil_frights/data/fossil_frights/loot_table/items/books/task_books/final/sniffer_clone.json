@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ff_task_book": "sniffer_clone",
+                  "ff_task_book_difficulty": "final",
+                  "ff_any_task_book": true
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_model": "fossil_frights:items/frights/task_books/final",
+                "minecraft:item_name": {
+                  "color": "gold",
+                  "translate": "ff.task.final_task",
+                  "font": "fossil_frights:small_caps"
+                },
+                "minecraft:max_stack_size": 99,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:written_book_content"
+                  ]
+                },
+                "minecraft:written_book_content": {
+                  "title": "",
+                  "author": "",
+                  "pages": [
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task.final_task",
+                        "font": "fossil_frights:small_caps"
+                      },
+                      "\n-------------------\n",
+                      {
+                        "translate": "ff.task_book.location.unknown",
+                        "font": "fossil_frights:small_caps"
+                      },
+                      {
+                        "translate": "ff.task_book.difficulty.final",
+                        "color": "gold",
+                        "font": "fossil_frights:small_caps"
+                      },
+                      "\n\n",
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.0"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.1"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.2"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.3"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.4"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue400",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "translate": "ff.task_book.task.sniffer_clone.description.5"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

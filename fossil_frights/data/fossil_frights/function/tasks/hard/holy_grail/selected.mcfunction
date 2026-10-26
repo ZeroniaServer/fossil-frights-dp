@@ -1,5 +1,5 @@
 execute if score $holy_grail_sel ff_task_state matches 0 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $holy_grail_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/task_books/hard/holy_grail
+execute if score $holy_grail_sel ff_task_state matches 0 run loot insert 18 71 29 loot fossil_frights:items/books/task_books/hard/holy_grail
 scoreboard players set $holy_grail_sel ff_task_state 1
 scoreboard players set $holy_grail_done ff_task_state 0
 tag @e[type=minecraft:interaction,tag=ff_holy_grail.selected] remove ff_holy_grail.selected
