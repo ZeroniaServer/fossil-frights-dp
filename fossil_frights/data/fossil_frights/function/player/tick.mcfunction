@@ -62,7 +62,7 @@ execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frig
 execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/player_tick
 execute if entity @s[tag=ff_hoverboard_active,gamemode=!creative] unless predicate fossil_frights:player/inventory/creator_hoverboard run function fossil_frights:items/hoverboard/durability/durability_tick
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
-execute if entity @s[gamemode=spectator,predicate=!fossil_frights:player/team/dev_mode] run function fossil_frights:admin/spectator/tick
+execute if entity @s[gamemode=spectator,predicate=!fossil_frights:player/team/dev_mode] unless entity @s[x=-200,y=50,z=-200,dx=400,dy=1000,dz=400] run tp @s 0 80 0 0 0
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_pending
 execute if predicate fossil_frights:player/is_playing run tag @s remove ff_plushie_restore_queued
 execute if predicate fossil_frights:player/is_playing run function fossil_frights:items/plushies/clear_items
