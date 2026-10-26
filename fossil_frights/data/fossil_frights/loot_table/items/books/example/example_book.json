@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_model": "minecraft:enchanted_book",
+                "minecraft:item_name": {
+                  "color": "green",
+                  "translate": "Book Gui Example",
+                  "font": "fossil_frights:small_caps"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:written_book_content"
+                  ]
+                },
+                "minecraft:written_book_content": {
+                  "title": "",
+                  "author": "",
+                  "pages": [
+                    [
+                      "",
+                      {
+                        "text": "\ue001\uef00",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
+                      {
+                        "text": "\ue001\uef01",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b02"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}
