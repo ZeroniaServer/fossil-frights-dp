@@ -4,6 +4,8 @@
     "#minecraft:copper_golem_statues",
     "minecraft:chest",
     "minecraft:ender_chest",
-    "minecraft:lectern"
+    "minecraft:lectern",
+    "minecraft:mud",
+    "minecraft:soul_sand"
   ]
 }

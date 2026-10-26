@@ -1,8 +1,6 @@
 {
   "values": [
     "minecraft:dirt_path",
-    "minecraft:farmland",
-    "minecraft:mud",
-    "minecraft:soul_sand"
+    "minecraft:farmland"
   ]
 }
