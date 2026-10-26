@@ -66,7 +66,6 @@ execute if entity @e[type=minecraft:mannequin,tag=ff_herobrine,limit=1] run func
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
-execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick

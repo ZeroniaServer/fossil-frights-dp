@@ -1,4 +1,4 @@
-scoreboard players add @s ff_credits_time 1
+scoreboard players add #credits_animation_time ff_global 1
 
 execute as @e[type=minecraft:item_display,tag=ff_credits_reel] run scoreboard players add @s ff_credits_time 1
 execute as @e[type=minecraft:item_display,tag=ff_credits_reel,scores={ff_credits_time=32..}] run scoreboard players set @s ff_credits_time 0
@@ -25,4 +25,4 @@ execute positioned 7.75 77.616 75.0 as @e[limit=1,type=minecraft:item_display,ta
 execute positioned 7.75 77.616 75.0 as @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll.title,dx=0,dy=0,dz=0,tag=!ff_credits_scroll.squeezing] run tag @s add ff_credits_scroll.squeezing
 execute unless entity @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll] unless entity @e[limit=1,type=minecraft:text_display,tag=ff_credits_scroll] run function fossil_frights:animations/credits/cleanup
 
-execute if score @s ff_credits_time matches 1501.. run function fossil_frights:animations/credits/cleanup
+execute unless score #credits_animation_time ff_global matches 1501.. run schedule function fossil_frights:animations/credits/tick 1t
