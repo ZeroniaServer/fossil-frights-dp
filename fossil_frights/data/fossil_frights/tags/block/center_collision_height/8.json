@@ -2,6 +2,7 @@
   "values": [
     "#fossil_frights:floor_heads_and_skulls",
     "minecraft:calibrated_sculk_sensor",
-    "minecraft:sculk_sensor"
+    "minecraft:sculk_sensor",
+    "minecraft:sculk_shrieker"
   ]
 }

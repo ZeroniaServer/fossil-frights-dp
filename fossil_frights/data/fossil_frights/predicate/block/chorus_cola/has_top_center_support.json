@@ -97,6 +97,39 @@
           }
         }
       }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:bell",
+          "state": {
+            "attachment": "floor"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:bell",
+          "state": {
+            "attachment": "ceiling"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:chorus_plant",
+          "state": {
+            "up": "true"
+          }
+        }
+      }
     }
   ]
 }

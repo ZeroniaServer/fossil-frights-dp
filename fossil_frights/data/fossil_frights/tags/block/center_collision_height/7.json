@@ -1,5 +1,6 @@
 {
   "values": [
-    "#minecraft:campfires"
+    "#minecraft:campfires",
+    "minecraft:turtle_egg"
   ]
 }

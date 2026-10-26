@@ -5,10 +5,15 @@
     "#minecraft:anvil",
     "#minecraft:bars",
     "#minecraft:stairs",
+    "#minecraft:wall_hanging_signs",
+    "#minecraft:wooden_shelves",
     "minecraft:azalea",
     "minecraft:big_dripleaf",
     "minecraft:cactus",
+    "minecraft:chorus_flower",
+    "minecraft:decorated_pot",
     "minecraft:flowering_azalea",
-    "minecraft:scaffolding"
+    "minecraft:scaffolding",
+    "minecraft:sniffer_egg"
   ]
 }

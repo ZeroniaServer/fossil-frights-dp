@@ -45,6 +45,39 @@
           }
         }
       }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:bell",
+          "state": {
+            "attachment": "single_wall"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:bell",
+          "state": {
+            "attachment": "double_wall"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": "minecraft:chorus_plant",
+          "state": {
+            "up": "false"
+          }
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    "fossil_frights:block/chorus_cola/has_top_center_support",
+    {
+      "type": "minecraft:inverted",
+      "term": {
+        "type": "minecraft:location_check",
+        "predicate": {
+          "block": {
+            "blocks": "#fossil_frights:chorus_cola/cannot_roam_onto"
+          }
+        }
+      }
+    }
+  ]
+}

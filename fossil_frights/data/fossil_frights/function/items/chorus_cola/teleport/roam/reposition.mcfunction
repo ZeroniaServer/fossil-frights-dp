@@ -25,3 +25,6 @@ execute if block ~ ~ ~ minecraft:snow[layers=7] run return run tp @s ~ ~0.75 ~
 execute if block ~ ~ ~ minecraft:snow[layers=8] run return run tp @s ~ ~0.875 ~
 execute if block ~ ~ ~ minecraft:straw_bed[part=foot] run return run tp @s ~ ~0.25 ~
 execute if block ~ ~ ~ minecraft:straw_bed[part=head] run return run tp @s ~ ~0.3125 ~
+execute if block ~ ~ ~ minecraft:chorus_plant[up=false] run return run tp @s ~ ~0.9375 ~
+execute if block ~ ~ ~ minecraft:bell[attachment=single_wall] run return run tp @s ~ ~0.9375 ~
+execute if block ~ ~ ~ minecraft:bell[attachment=double_wall] run return run tp @s ~ ~0.9375 ~

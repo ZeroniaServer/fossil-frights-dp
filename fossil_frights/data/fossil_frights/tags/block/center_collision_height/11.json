@@ -1,5 +1,7 @@
 {
   "values": [
+    "minecraft:conduit",
+    "minecraft:hopper",
     "minecraft:shelf_mushroom"
   ]
 }

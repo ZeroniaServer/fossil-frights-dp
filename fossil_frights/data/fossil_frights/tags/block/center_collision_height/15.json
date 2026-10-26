@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:dirt_path",
-    "minecraft:farmland"
+    "minecraft:farmland",
+    "minecraft:honey_block"
   ]
 }
