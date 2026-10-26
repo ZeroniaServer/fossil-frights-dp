@@ -19,6 +19,7 @@ execute as @e[type=minecraft:interaction,tag=ff_bookshelf_creature_hitbox,limit=
 scoreboard players set #bookshelf_creature_far ff_task_book_shelf 0
 execute at @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1] if entity @a[tag=ff_bookshelf_creature_target,distance=24..] run scoreboard players set #bookshelf_creature_far ff_task_book_shelf 1
 execute as @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1,predicate=fossil_frights:entity/is_on_fire] run data modify entity @s Fire set value 0
+execute as @e[type=minecraft:zombie,tag=ff_bookshelf_creature_driver,limit=1,predicate=fossil_frights:entity/touching_water_fluid] run data merge entity @s {InWaterTime:-1,DrownedConversionTime:-1}
 execute if score #bookshelf_creature_far ff_task_book_shelf matches 1 run scoreboard players add #bookshelf_creature_flash ff_task_book_shelf 1
 execute if score #bookshelf_creature_far ff_task_book_shelf matches 0 run scoreboard players set #bookshelf_creature_flash ff_task_book_shelf 0
 execute if score #bookshelf_creature_flash ff_task_book_shelf matches 20.. run scoreboard players set #bookshelf_creature_flash ff_task_book_shelf 0

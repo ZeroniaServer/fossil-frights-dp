@@ -1,0 +1,1 @@
+scoreboard players set $goldfish_clicked ff_dummy 0
