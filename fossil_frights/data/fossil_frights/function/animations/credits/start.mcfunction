@@ -40,6 +40,11 @@ data modify storage fossil_frights:credits credits set value [\
             "Evtema3",\
             "",\
             "",\
+            {translate:"ff.credits.role.music",bold:true},\
+            "Evtema3",\
+            "Polysquarazoid",\
+            "",\
+            "",\
             {translate:"ff.credits.role.builders",bold:true},\
             "RiverTiger76",\
             "Polysquarazoid",\
