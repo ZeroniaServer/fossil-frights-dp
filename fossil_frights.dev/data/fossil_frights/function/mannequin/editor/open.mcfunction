@@ -19,4 +19,16 @@ data modify storage fossil_frights:mannequin_editor dialog set value {\
     {label:{text:"Save",color:"white"},action:{type:"dynamic/run_command",template:"execute as $(target) run function fossil_frights:mannequin/editor/set_skin {skin:\"$(skin)\"}"}},\
     {label:{text:"Cancel",color:"gray"},action:{type:"run_command",command:"dialog clear @s"}}\
   ]\
-}\n+\n+loot replace block 0 0 0 container.0 loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:stone"}],modifier:{type:"minecraft:set_name",entity:"this",name:{selector:"@s"}}}]}\n+data modify storage fossil_frights:mannequin_editor dialog.inputs[{key:"target"}].options[0].id set from block 0 0 0 Items[0].components.minecraft:custom_name.insertion\n+function fossil_frights:mannequin/editor/set_delete_command with storage fossil_frights:mannequin_editor dialog.inputs[{key:"target"}]\n+\n+execute if data entity @s profile.texture run data modify storage fossil_frights:mannequin_editor dialog.inputs[{key:"skin"}].initial set string entity @s profile.texture 29\n+\n+execute if data entity @s equipment.mainhand run data modify storage fossil_frights:mannequin_editor dialog.actions[2].label.text set string entity @s equipment.mainhand.id\n+execute if data entity @s equipment.offhand run data modify storage fossil_frights:mannequin_editor dialog.actions[4].label.text set string entity @s equipment.offhand.id\n+\n+function fossil_frights:mannequin/editor/show with storage fossil_frights:mannequin_editor\n+data remove storage fossil_frights:mannequin_editor dialog
+}
+
+loot replace block 0 0 0 container.0 loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"minecraft:stone"}],modifier:{type:"minecraft:set_name",entity:"this",name:{selector:"@s"}}}]}
+data modify storage fossil_frights:mannequin_editor dialog.inputs[{key:"target"}].options[0].id set from block 0 0 0 Items[0].components.minecraft:custom_name.insertion
+function fossil_frights:mannequin/editor/set_delete_command with storage fossil_frights:mannequin_editor dialog.inputs[{key:"target"}]
+
+execute if data entity @s profile.texture run data modify storage fossil_frights:mannequin_editor dialog.inputs[{key:"skin"}].initial set string entity @s profile.texture 29
+
+execute if data entity @s equipment.mainhand run data modify storage fossil_frights:mannequin_editor dialog.actions[2].label.text set string entity @s equipment.mainhand.id
+execute if data entity @s equipment.offhand run data modify storage fossil_frights:mannequin_editor dialog.actions[4].label.text set string entity @s equipment.offhand.id
+
+function fossil_frights:mannequin/editor/show with storage fossil_frights:mannequin_editor
+data remove storage fossil_frights:mannequin_editor dialog
