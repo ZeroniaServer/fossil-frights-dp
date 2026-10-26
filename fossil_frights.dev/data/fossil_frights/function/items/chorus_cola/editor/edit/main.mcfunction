@@ -8,6 +8,7 @@ execute if block ~ ~ ~ #minecraft:stairs[half=top] positioned ~-0.5 ~ ~-0.5 run 
 
 execute if block ~ ~ ~ #minecraft:stairs run return run execute align y positioned ~ ~1 ~ run function fossil_frights:items/chorus_cola/editor/edit/here
 execute if block ~ ~ ~ #minecraft:cauldrons run return run execute align y positioned ~ ~0.25 ~ run function fossil_frights:items/chorus_cola/editor/edit/here
+execute if block ~ ~ ~ #fossil_frights:center_collision_height/14 run return run execute align y positioned ~ ~0.875 ~ run function fossil_frights:items/chorus_cola/editor/edit/here
 execute if block ~ ~ ~ #fossil_frights:center_collision_height/15 run return run execute align y positioned ~ ~0.9375 ~ run function fossil_frights:items/chorus_cola/editor/edit/here
 execute if block ~ ~ ~ minecraft:lily_pad run return run execute align y positioned ~ ~0.09375 ~ run function fossil_frights:items/chorus_cola/editor/edit/here
 function fossil_frights:items/chorus_cola/editor/edit/here

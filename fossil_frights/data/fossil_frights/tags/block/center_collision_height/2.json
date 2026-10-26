@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:composter"
+    "minecraft:composter",
+    "minecraft:comparator",
+    "minecraft:repeater"
   ]
 }

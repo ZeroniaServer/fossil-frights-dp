@@ -1,5 +1,8 @@
 {
   "values": [
-    "minecraft:daylight_detector"
+    "#minecraft:candles",
+    "#minecraft:flower_pots",
+    "minecraft:daylight_detector",
+    "minecraft:sea_pickle"
   ]
 }

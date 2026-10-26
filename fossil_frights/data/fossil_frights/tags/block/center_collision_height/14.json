@@ -2,8 +2,11 @@
   "values": [
     "#minecraft:copper_chests",
     "#minecraft:copper_golem_statues",
+    "minecraft:brewing_stand",
     "minecraft:chest",
     "minecraft:ender_chest",
-    "minecraft:lectern"
+    "minecraft:lectern",
+    "minecraft:mud",
+    "minecraft:soul_sand"
   ]
 }
