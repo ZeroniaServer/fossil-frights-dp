@@ -39,6 +39,11 @@
                         "text": "\ue001\uef01",
                         "font": "fossil_frights:books",
                         "color": "#7b7b02"
+                      },
+                      {
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida ex dui, eu placerat ipsum aliquet vehicula. Cras pulvinar lorem in purus venenatis, et lobortis purus varius. Sed laoreet fermentum luctus. Vivamus non nibh varius, egestas est eget, placerat orci.",
+                        "font": "fossil_frights:small_caps",
+                        "color": "white"
                       }
                     ]
                   ]
