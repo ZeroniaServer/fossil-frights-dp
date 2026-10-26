@@ -545,3 +545,7 @@ gamerule minecraft:advance_time true
 bossbar add fossil_frights:resource_pack_disclaimer ""
 bossbar set fossil_frights:resource_pack_disclaimer name {color:"#E80018",translate:"ff.empty",fallback:"%1$s",with:[["Please enable the ",{underlined:true,text:"Resource Pack"}]]}
 bossbar set fossil_frights:resource_pack_disclaimer color blue
+
+#temp hotfix for hoverboard escapes
+fill 29 103 49 29 103 47 barrier
+fill 20 111 53 19 111 54 cobbled_deepslate
