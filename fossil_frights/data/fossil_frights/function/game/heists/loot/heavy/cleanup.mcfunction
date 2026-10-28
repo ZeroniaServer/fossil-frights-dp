@@ -4,8 +4,8 @@ setblock -2 82 66 minecraft:bubble_column[drag=false]
 execute as @e[tag=fh_warden] run data merge entity @s {view_range:1f}
 function fossil_frights:game/heists/loot/heavy/warden/place_collision
 execute as @e[tag=fh_crab] run data merge entity @s {view_range:1f}
-execute as @e[tag=fh_t_rex_skull] run data merge entity @s {view_range:1f}
-function fossil_frights:game/heists/loot/heavy/t_rex_skull/place_collision
+# execute as @e[tag=fh_t_rex_skull] run data merge entity @s {view_range:1f}
+# function fossil_frights:game/heists/loot/heavy/t_rex_skull/place_collision
 execute as @e[tag=fh_raptor_skull] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_biplane] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_vault] run data merge entity @s {view_range:1f}
