@@ -17,14 +17,14 @@ data modify storage fossil_frights:credits credits set value [\
             "",\
             {translate:"ff.credits.role.developers",bold:true},\
             "Polysquarazoid",\
-            "DorkOrc",\
+            "dork_orc",\
             "RiverTiger76",\
             "Stuffy",\
             "Evtema3",\
             "nightlibra",\
             "",\
             "",\
-            {translate:"ff.credits.role.plugin_developer",bold:true},\
+            {translate:"ff.credits.role.plugin_developers",bold:true},\
             "Polysquarazoid",\
             "CAG2",\
             "",\
@@ -32,12 +32,17 @@ data modify storage fossil_frights:credits credits set value [\
             {translate:"ff.credits.role.resource_pack",bold:true},\
             "Polysquarazoid",\
             "RiverTiger76",\
-            "DorkOrc",\
+            "dork_orc",\
             "marten213",\
             "",\
             "",\
             {translate:"ff.credits.role.shaders",bold:true},\
             "Evtema3",\
+            "",\
+            "",\
+            {translate:"ff.credits.role.music",bold:true},\
+            "Evtema3",\
+            "Polysquarazoid",\
             "",\
             "",\
             {translate:"ff.credits.role.builders",bold:true},\
@@ -63,7 +68,7 @@ data modify storage fossil_frights:credits credits set value [\
             ["tainoji_z - ",{translate:"ff.credits.translation.japanese"}],\
             ["Shiro - ",{translate:"ff.credits.translation.spanish"}],\
             ["Zeronia - ",{translate:"ff.credits.translation.cave_man"}],\
-            ["DorkOrc - ",{translate:"ff.credits.translation.english_localizations"}],\
+            ["dork_orc - ",{translate:"ff.credits.translation.english_localizations"}],\
             "",\
             "",\
             {translate:"ff.credits.role.playtesters",bold:true},\
