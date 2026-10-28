@@ -15,7 +15,7 @@
                   "translate": "item.minecraft.coal",
                   "color": "white"
                 },
-                "minecraft:item_model": "fossil_frights:display/frightmas/coal"
+                "minecraft:item_model": "fossil_frights:display/frightmas/task/coal"
               }
             },
             "fossil_frights:item_definition/base_item_data"

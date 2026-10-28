@@ -15,7 +15,7 @@
                   "translate": "ff.item.frightmas_star",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil_frights:display/frightmas/star"
+                "minecraft:item_model": "fossil_frights:display/frightmas/task/star"
               }
             },
             "fossil_frights:item_definition/base_item_data"
