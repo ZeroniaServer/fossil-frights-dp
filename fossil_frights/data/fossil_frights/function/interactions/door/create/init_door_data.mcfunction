@@ -20,6 +20,7 @@ execute if block ~ ~ ~ minecraft:dark_oak_door run data modify storage fossil_fr
 execute if block ~ ~ ~ minecraft:exposed_copper_door run data modify storage fossil_frights:door door_data.model_type set value "exposed_copper"
 execute if block ~ ~ ~ minecraft:iron_door run data modify storage fossil_frights:door door_data.model_type set value "iron"
 execute if block ~ ~ ~ minecraft:jungle_door run data modify storage fossil_frights:door door_data.model_type set value "jungle"
+execute if block ~ ~ ~ minecraft:mangrove_door run data modify storage fossil_frights:door door_data.model_type set value "mangrove"
 execute if block ~ ~ ~ minecraft:oak_door run data modify storage fossil_frights:door door_data.model_type set value "oak"
 execute if block ~ ~ ~ minecraft:oxidized_copper_door run data modify storage fossil_frights:door door_data.model_type set value "oxidized_copper"
 execute if block ~ ~ ~ minecraft:pale_oak_door run data modify storage fossil_frights:door door_data.model_type set value "pale_oak"
