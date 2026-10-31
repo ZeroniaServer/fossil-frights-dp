@@ -61,6 +61,7 @@ scoreboard players reset @a ff_heist_loot_security_recent
 scoreboard players set @a ff_heist_loot_security_ui 0
 tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
+scoreboard players reset @a ff_trap_selected
 scoreboard players reset @a ff_trap_pending_ticks
 scoreboard players reset @a ff_trap_glow_phase
 scoreboard players reset @a ff_trap_glow_timer
