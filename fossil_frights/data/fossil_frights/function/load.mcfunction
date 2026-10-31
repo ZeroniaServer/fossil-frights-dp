@@ -568,7 +568,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "forced_spec_yaw",\
     "forced_spec_pitch",\
     "coin_used_run",\
-    "map_region",\
     "leave_game",\
     "leave_game_seen",\
     "deaths",\
