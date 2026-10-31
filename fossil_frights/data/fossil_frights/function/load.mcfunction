@@ -570,15 +570,11 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_security_camera",\
     "ff_security_camera_nav",\
     "ff_security_camera_heist",\
-    "ff_camera_remote_health",\
-    "ff_camera_remote_health_prev",\
-    "ff_camera_swivel",\
     "ff_forced_spec_x",\
     "ff_forced_spec_y",\
     "ff_forced_spec_z",\
     "ff_forced_spec_yaw",\
     "ff_forced_spec_pitch",\
-    "ff_lock_click_ttl",\
     "ff_hazard_active",\
     "ff_coin_used_run",\
     "ff_hazard_rng",\
