@@ -1,6 +1,6 @@
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/timer/prepare
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/timer/remove with storage fossil_frights:parkour_timer
-scoreboard players set @s ff_parkour_running 0
+execute if predicate fossil_frights:player/is_playing_parkour run function fossil_frights:lobby_games/parkour/timer/prepare
+execute if predicate fossil_frights:player/is_playing_parkour run function fossil_frights:lobby_games/parkour/timer/remove with storage fossil_frights:parkour_timer
+scoreboard players reset @s ff_parkour_running
 scoreboard players set @s ff_parkour_time 0
 scoreboard players set @s ff_parkour_min 0
 scoreboard players set @s ff_parkour_sec 0

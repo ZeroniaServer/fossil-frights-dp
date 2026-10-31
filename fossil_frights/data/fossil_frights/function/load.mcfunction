@@ -698,24 +698,14 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "heist_loot_security_locked",\
     "invisimask_variant",\
     \
-    "ant_fight",\
-    "ant_leaf_use",\
-    "ant_leaf_seen",\
     "ant_score",\
     "ant_top_score",\
-    "ant_immunity",\
-    "ant_sneak_time",\
-    "ant_sneak_seen",\
-    "ant_sneak_ticks",\
-    "ant_unsneak_ticks",\
-    "ant_blind_ticks",\
-    "ant_combo",\
     \
+    "parkour_running",\
     "parkour_time",\
     "parkour_best",\
-    "parkour_running",\
     \
+    "temple_run_running",\
     "temple_run_time",\
     "temple_run_best",\
-    "temple_run_running",\
 ]

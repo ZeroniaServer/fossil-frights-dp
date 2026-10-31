@@ -1,27 +1,27 @@
 execute if entity @s[tag=ff_ant_fight_exit_pending] run return 0
-execute if entity @s[tag=ff_ant_fight] unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] run function fossil_frights:lobby_games/ant_fight/hit
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:lobby_games/ant_fight/mark_projectile
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/check_hits
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/music/tick
+execute if predicate fossil_frights:player/is_playing_ant_fight unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] run function fossil_frights:lobby_games/ant_fight/hit
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_leaf_use > @s ff_ant_leaf_seen run function fossil_frights:lobby_games/ant_fight/mark_projectile
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/check_hits
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/music/tick
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run tag @s add ff_ant_fight_leave
 execute if entity @s[tag=ff_ant_fight,tag=ff_dropped_infinileaf] run function fossil_frights:lobby_games/ant_fight/end
-execute if entity @s[tag=ff_ant_fight] run item replace entity @s weapon.offhand with air
-execute if entity @s[tag=ff_ant_fight] unless predicate fossil_frights:player/inventory/infinileaf run loot give @s loot fossil_frights:items/lobby/infinileaf
-execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_score 0
-execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_top_score 0
-execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_immunity 0
-execute if entity @s[tag=ff_ant_fight] run scoreboard players add @s ff_ant_combo 0
+execute if predicate fossil_frights:player/is_playing_ant_fight run item replace entity @s weapon.offhand with air
+execute if predicate fossil_frights:player/is_playing_ant_fight unless predicate fossil_frights:player/inventory/infinileaf run loot give @s loot fossil_frights:items/lobby/infinileaf
+execute if predicate fossil_frights:player/is_playing_ant_fight run scoreboard players add @s ff_ant_score 0
+execute if predicate fossil_frights:player/is_playing_ant_fight run scoreboard players add @s ff_ant_top_score 0
+execute if predicate fossil_frights:player/is_playing_ant_fight run scoreboard players add @s ff_ant_immunity 0
+execute if predicate fossil_frights:player/is_playing_ant_fight run scoreboard players add @s ff_ant_combo 0
 execute if entity @s[tag=ff_ant_fight,scores={ff_ant_immunity=1..}] run scoreboard players remove @s ff_ant_immunity 1
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score > @s ff_ant_top_score run scoreboard players operation @s ff_ant_top_score = @s ff_ant_score
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_score matches 10.. run advancement grant @s only fossil_frights:03_lobby/warrior_ant
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/check_best
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/lobby_sneak_tick
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run function fossil_frights:player/actionbar/show/lobby_game/ant_fight.score_and_combo
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo
-execute if entity @s[tag=ff_ant_fight] if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo_shown_until_timestamp
-execute if entity @s[tag=ff_ant_fight] unless score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run function fossil_frights:player/actionbar/show/lobby_game/ant_fight.score
-execute if entity @s[tag=ff_ant_fight] run scoreboard players display numberformat @s ff_ant_score_below_name fixed [" ",{color:"green",translate:"ff.lobby.ant_fight.below_name",font:"fossil_frights:small_caps",with:[{color:"white",score:{name:"@s",objective:"ff_ant_score"}}]}]
-execute if entity @s[tag=ff_ant_fight] run return 0
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_score > @s ff_ant_top_score run scoreboard players operation @s ff_ant_top_score = @s ff_ant_score
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_score matches 10.. run advancement grant @s only fossil_frights:03_lobby/warrior_ant
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/check_best
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/lobby_sneak_tick
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run function fossil_frights:player/actionbar/show/lobby_game/ant_fight.score_and_combo
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo
+execute if predicate fossil_frights:player/is_playing_ant_fight if score @s ff_ant_combo_shown_until_timestamp <= #gametime ff_ant_combo_shown_until_timestamp run scoreboard players reset @s ff_ant_combo_shown_until_timestamp
+execute if predicate fossil_frights:player/is_playing_ant_fight unless score @s ff_ant_combo_shown_until_timestamp > #gametime ff_ant_combo_shown_until_timestamp run function fossil_frights:player/actionbar/show/lobby_game/ant_fight.score
+execute if predicate fossil_frights:player/is_playing_ant_fight run scoreboard players display numberformat @s ff_ant_score_below_name fixed [" ",{color:"green",translate:"ff.lobby.ant_fight.below_name",font:"fossil_frights:small_caps",with:[{color:"white",score:{name:"@s",objective:"ff_ant_score"}}]}]
+execute if predicate fossil_frights:player/is_playing_ant_fight run return 0
 execute unless entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] if entity @s[tag=ff_ant_lobby_blind] run function fossil_frights:lobby_games/ant_fight/lobby_sneak/reset
 execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -36.5 76 104.5 if entity @s[distance=..24] run function fossil_frights:lobby_games/ant_fight/lobby_sneak_tick
 execute if entity @s[gamemode=adventure,predicate=fossil_frights:player/is_lobby_freeplay] positioned -36.5 76 104.5 unless entity @s[distance=..24] run function fossil_frights:lobby_games/ant_fight/lobby_sneak/reset
