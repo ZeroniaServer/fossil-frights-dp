@@ -1,6 +1,6 @@
 tag @a remove ff_ice_cannon_hit_thief
 tag @a remove ff_ice_cannon_shooter
-execute if score lava ff_hazard_active matches 1 run function fossil_frights:items/heists/ice_cannon/lava_impact
+execute if predicate fossil_frights:game_state/hazard_active/lava run function fossil_frights:items/heists/ice_cannon/lava_impact
 execute as @a[predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..2.5] run tag @s add ff_ice_cannon_hit_thief
 function fossil_frights:entity/match/active
 tag @a[limit=1,predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] add ff_ice_cannon_shooter

@@ -575,7 +575,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_forced_spec_z",\
     "ff_forced_spec_yaw",\
     "ff_forced_spec_pitch",\
-    "ff_hazard_active",\
     "ff_coin_used_run",\
     "ff_hazard_rng",\
     "ff_door_angle",\

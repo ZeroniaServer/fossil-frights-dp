@@ -29,7 +29,7 @@ scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores
 tag @a remove ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/guard] add ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
-execute if score curse ff_hazard_active matches 1 run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
+execute if predicate fossil_frights:game_state/hazard_active/curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
@@ -73,7 +73,7 @@ function fossil_frights:tasks/final/final_task/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
-execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
+execute if predicate fossil_frights:game_state/hazard_active/floods run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick

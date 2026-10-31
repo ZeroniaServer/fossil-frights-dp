@@ -2,7 +2,7 @@ execute as @a[predicate=fossil_frights:player/team/guard] at @s run playsound fo
 execute as @a[predicate=fossil_frights:player/team/thief] at @s run playsound fossil_frights:heists.highlight_thief master @s ~ ~ ~ 1 1
 execute as @a[predicate=fossil_frights:player/team/spectator] at @s run playsound fossil_frights:heists.highlight_thief master @s ~ ~ ~ 1 1
 advancement grant @s only fossil_frights:02_achievements/heists_under_surveillance
-execute if score lights ff_hazard_active matches 1 run return 0
+execute if predicate fossil_frights:game_state/hazard_active/lights run return 0
 scoreboard players set @s ff_security_camera_heist 50
 
 effect give @p[predicate=fossil_frights:player/team/thief] glowing 3 0 true
