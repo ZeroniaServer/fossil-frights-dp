@@ -22,19 +22,19 @@ scoreboard players set @s ff_trap_input_delay 0
 scoreboard players reset @s ff_trap_pending_ticks
 scoreboard players reset @s ff_trap_glow_phase
 scoreboard players reset @s ff_trap_glow_timer
-scoreboard players set @s ff_trap_glow_cooldown 0
+scoreboard players reset @s ff_trap_glow_cooldown
 scoreboard players reset @s ff_trap_freeze_phase
 scoreboard players reset @s ff_trap_freeze_timer
-scoreboard players set @s ff_trap_freeze_cooldown 0
+scoreboard players reset @s ff_trap_freeze_cooldown
 scoreboard players reset @s ff_trap_antigravity_phase
 scoreboard players reset @s ff_trap_antigravity_timer
-scoreboard players set @s ff_trap_antigravity_cooldown 0
+scoreboard players reset @s ff_trap_antigravity_cooldown
 scoreboard players reset @s ff_trap_jelly_phase
 scoreboard players reset @s ff_trap_jelly_timer
-scoreboard players set @s ff_trap_jelly_cooldown 0
+scoreboard players reset @s ff_trap_jelly_cooldown
 scoreboard players reset @s ff_trap_explosive_phase
 scoreboard players reset @s ff_trap_explosive_timer
-scoreboard players set @s ff_trap_explosive_cooldown 0
+scoreboard players reset @s ff_trap_explosive_cooldown
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""

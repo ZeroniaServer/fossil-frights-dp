@@ -8,7 +8,7 @@ scoreboard players reset @s ff_trap_jelly_phase
 scoreboard players reset @s ff_trap_jelly_timer
 execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 4
 execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players reset @s ff_trap_explosive_timer
-execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_cooldown 0
+execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players reset @s ff_trap_explosive_cooldown
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 3
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 1200
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_cooldown 1200
