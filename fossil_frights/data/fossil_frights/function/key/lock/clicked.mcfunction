@@ -1,7 +1,6 @@
 advancement revoke @s only fossil_frights:items/key/click
-scoreboard players add @s ff_key_cooldown 0
-execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set @s ff_key_cooldown 0
-execute unless score @s ff_key_cooldown matches 0 run return 0
+execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players reset @s ff_key_cooldown
+execute if score @s ff_key_cooldown matches 1.. run return 0
 execute unless items entity @s weapon.* *[custom_data~{itemID:"key"}] run return 0
 
 execute if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] run swing @s mainhand

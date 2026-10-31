@@ -19,7 +19,7 @@ function fossil_frights:join/lobby
 tag @s remove ff_forced_spectate
 tag @s remove ff_camera_remote_active
 tag @s remove ff_muted_chat
-scoreboard players set @s ff_key_cooldown 0
+scoreboard players reset @s ff_key_cooldown
 function fossil_frights:player/actionbar/clear
 clear @s
 function fossil_frights:items/plushies/restore

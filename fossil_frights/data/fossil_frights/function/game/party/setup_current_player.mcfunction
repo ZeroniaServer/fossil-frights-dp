@@ -22,7 +22,7 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:instant_health 100 0 true
 effect give @s minecraft:saturation infinite 255 true
-scoreboard players set @s ff_key_cooldown 0
+scoreboard players reset @s ff_key_cooldown
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""
