@@ -690,7 +690,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "heist_loot_security_hold",\
     "heist_loot_security_phase",\
     "heist_loot_security_recent",\
-    "heist_loot_security_ui",\
     "heist_loot_security_cooldown",\
     "heist_loot_security_progress",\
     "heist_loot_security_flash",\

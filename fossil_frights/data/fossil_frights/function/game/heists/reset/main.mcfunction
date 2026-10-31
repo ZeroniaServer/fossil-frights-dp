@@ -44,20 +44,20 @@ scoreboard players reset @a ff_heist_keys_stolen_round
 scoreboard players reset @a ff_heist_deaths_round
 scoreboard players set @a ff_heist_deaths_baseline 0
 scoreboard players reset @a ff_heist_thieves_killed_round
-scoreboard players set @a ff_heist_killer_pending 0
+scoreboard players reset @a ff_heist_killer_pending
 scoreboard players reset @a ff_heist_killer_uuid_0
 scoreboard players reset @a ff_heist_killer_uuid_1
 scoreboard players reset @a ff_heist_killer_uuid_2
 scoreboard players reset @a ff_heist_killer_uuid_3
 scoreboard players set @a ff_heist_regen_lock 0
-scoreboard players set @a ff_heist_thaw_fx 0
-scoreboard players set @a ff_heist_paint_fx 0
-scoreboard players set @a ff_heist_guard_sneak_ticks 0
-scoreboard players set @a ff_heist_guard_unsneak_ticks 0
-scoreboard players set @a ff_heist_loot_security_ticks 0
-scoreboard players set @a ff_heist_loot_security_hold 0
-scoreboard players set @a ff_heist_loot_security_phase 0
-scoreboard players set @a ff_heist_loot_security_recent 0
+scoreboard players reset @a ff_heist_thaw_fx
+scoreboard players reset @a ff_heist_paint_fx
+scoreboard players reset @a ff_heist_guard_sneak_ticks
+scoreboard players reset @a ff_heist_guard_unsneak_ticks
+scoreboard players reset @a ff_heist_loot_security_ticks
+scoreboard players reset @a ff_heist_loot_security_hold
+scoreboard players reset @a ff_heist_loot_security_phase
+scoreboard players reset @a ff_heist_loot_security_recent
 scoreboard players set @a ff_heist_loot_security_ui 0
 tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0

@@ -47,7 +47,7 @@ tag @a[predicate=fossil_frights:player/team/thief] add ff_heist_stat_thief
 execute as @a[predicate=fossil_frights:player/team/guard] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
 execute as @a[predicate=fossil_frights:player/team/thief] run scoreboard players operation @s ff_heist_deaths_baseline = @s ff_deaths
 scoreboard players reset @a ff_heist_thieves_killed_round
-scoreboard players set @a ff_heist_killer_pending 0
+scoreboard players reset @a ff_heist_killer_pending
 scoreboard players reset @a ff_heist_killer_uuid_0
 scoreboard players reset @a ff_heist_killer_uuid_1
 scoreboard players reset @a ff_heist_killer_uuid_2

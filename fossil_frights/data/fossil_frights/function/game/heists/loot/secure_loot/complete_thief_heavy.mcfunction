@@ -8,7 +8,7 @@ scoreboard players set @s ff_heist_loot_security_progress 0
 scoreboard players set @s ff_heist_loot_security_flash 20
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run title @s subtitle ""
 execute as @p[tag=ff_heist_loot_security_active,distance=..6,limit=1] run tag @s remove ff_heist_loot_security_active
-execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_ticks 0
-execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_hold 0
-execute as @p[distance=..6,limit=1] run scoreboard players set @s ff_heist_loot_security_phase 0
+execute as @p[distance=..6,limit=1] run scoreboard players reset @s ff_heist_loot_security_ticks
+execute as @p[distance=..6,limit=1] run scoreboard players reset @s ff_heist_loot_security_hold
+execute as @p[distance=..6,limit=1] run scoreboard players reset @s ff_heist_loot_security_phase
 execute as @p[distance=..6,limit=1] run scoreboard players reset @s ff_actionbar_manager.slot.loot_securing

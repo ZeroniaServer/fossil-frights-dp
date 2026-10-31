@@ -12,8 +12,8 @@ scoreboard players reset @s ff_key_cooldown
 scoreboard players reset @s ff_heist_punch_cd
 scoreboard players set @s ff_heist_punch_fx 0
 scoreboard players reset @s ff_heist_invis_ticks
-scoreboard players set @s ff_heist_thaw_fx 0
-scoreboard players set @s ff_heist_paint_fx 0
+scoreboard players reset @s ff_heist_thaw_fx
+scoreboard players reset @s ff_heist_paint_fx
 effect clear @s minecraft:invisibility
 function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @s minecraft:speed
