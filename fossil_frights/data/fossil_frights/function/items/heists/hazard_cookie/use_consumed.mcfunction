@@ -4,7 +4,7 @@ execute unless entity @s[predicate=fossil_frights:player/team/thief,gamemode=!sp
 advancement grant @s only fossil_frights:02_achievements/heists_intentionally_hazardous
 
 # Guards in the basement make a consumed cookie favour lava, unless lava is active already.
-execute if score lava ff_hazard_active matches 1 run return run function fossil_frights:hazard/start/random_no_security
+execute if predicate fossil_frights:game_state/hazard_active/lava run return run function fossil_frights:hazard/start/random_no_security
 scoreboard players set #basement_guard_count ff_hazard_rng 0
 execute as @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator,x=-33,y=68,z=9,dx=39,dy=9,dz=58] run scoreboard players add #basement_guard_count ff_hazard_rng 1
 execute if score #basement_guard_count ff_hazard_rng matches 2.. run return run function fossil_frights:hazard/start/lava

@@ -56,7 +56,6 @@ effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:health_boo
 effect give @a[predicate=fossil_frights:player/team/guard] minecraft:instant_health 100 0 true
 effect give @a[predicate=fossil_frights:player/team/guard] minecraft:saturation infinite 255 true
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_cooldown 0
-scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_bar 0
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_coin_used_run 0
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_delta 0
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_sign 0

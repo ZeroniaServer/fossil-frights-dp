@@ -1,6 +1,6 @@
 # Manual shutdown button for the curse room.
 execute if score #curse_manual_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #curse_manual_cooldown ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 0 run return 0
+execute unless predicate fossil_frights:game_state/hazard_active/curse run return 0
 execute if score #curse_forcefield_sound ff_hazard_rng matches 1.. run scoreboard players remove #curse_forcefield_sound ff_hazard_rng 1
 execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 positioned -20 71 32 run playsound minecraft:block.note_block.chime master @a[distance=..12] ~ ~ ~ 0.35 1.35
 execute if score #curse_forcefield_sound ff_hazard_rng matches ..0 run scoreboard players set #curse_forcefield_sound ff_hazard_rng 80
@@ -13,17 +13,17 @@ tag @a[predicate=fossil_frights:player/team/guard,tag=ff_curse_room_now] add ff_
 tag @a[predicate=fossil_frights:player/team/guard,tag=ff_curse_room_seen,tag=!ff_curse_room_now] remove ff_curse_room_seen
 
 # State 0 waits 4 seconds between flicker bursts.
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 0 run scoreboard players remove #curse_timer ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 0 if score #curse_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/cycle
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 0 run scoreboard players remove #curse_timer ff_hazard_rng 1
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 0 if score #curse_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/cycle
 
 # Player debuff every 5s while active.
-execute if score curse ff_hazard_active matches 1 run scoreboard players remove #curse_effect_timer ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_effect_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/effect_roll
+execute if predicate fossil_frights:game_state/hazard_active/curse run scoreboard players remove #curse_effect_timer ff_hazard_rng 1
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_effect_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/effect_roll
 
 # State 1: dark for 5–10 ticks.
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 1 run scoreboard players remove #curse_restore_timer ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 1 if score #curse_restore_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/advance_off
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 1 run scoreboard players remove #curse_restore_timer ff_hazard_rng 1
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 1 if score #curse_restore_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/advance_off
 
 # State 2: gap for 2–5 ticks.
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 2 run scoreboard players remove #curse_second_timer ff_hazard_rng 1
-execute if score curse ff_hazard_active matches 1 if score #curse_state ff_hazard_rng matches 2 if score #curse_second_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/resume_flicker
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 2 run scoreboard players remove #curse_second_timer ff_hazard_rng 1
+execute if predicate fossil_frights:game_state/hazard_active/curse if score #curse_state ff_hazard_rng matches 2 if score #curse_second_timer ff_hazard_rng matches ..0 run function fossil_frights:hazard/curse/resume_flicker

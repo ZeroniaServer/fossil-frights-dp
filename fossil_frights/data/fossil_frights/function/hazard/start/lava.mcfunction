@@ -1,6 +1,6 @@
-execute if score lava ff_hazard_active matches 1 run return 0
+execute if predicate fossil_frights:game_state/hazard_active/lava run return 0
 
-scoreboard players set lava ff_hazard_active 1
+scoreboard players set $lava ff_hazard_active 1
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_actionbar_manager.slot.generic 65
 scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_actionbar_manager.slot.generic 65
 scoreboard players set @a[predicate=fossil_frights:player/team/spectator] ff_actionbar_manager.slot.generic 65

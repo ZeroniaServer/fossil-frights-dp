@@ -20,11 +20,11 @@ execute if score @s ff_heist_thaw_fx matches 1.. run scoreboard players remove @
 execute if score @s ff_heist_paint_fx matches 1.. run function fossil_frights:game/heists/paint_fx/tick
 execute if score @s ff_heist_invis_ticks matches 1 run function fossil_frights:game/heists/restore_invisimask
 execute if score @s ff_heist_invis_ticks matches 1.. run scoreboard players remove @s ff_heist_invis_ticks 1
-execute if score lights ff_hazard_active matches 1 unless entity @s[predicate=fossil_frights:entity/effects/blindness] run effect give @s minecraft:night_vision infinite 0 true
-execute if score lights ff_hazard_active matches 1 if entity @s[predicate=fossil_frights:entity/effects/blindness] run effect clear @s minecraft:night_vision
-execute unless score lights ff_hazard_active matches 1 run effect clear @s minecraft:night_vision
-execute if score floods ff_hazard_active matches 1 run effect give @s minecraft:dolphins_grace 2 0 true
-execute if score lava ff_hazard_active matches 1 run effect give @s minecraft:fire_resistance 2 0 true
+execute if predicate fossil_frights:game_state/hazard_active/lights unless entity @s[predicate=fossil_frights:entity/effects/blindness] run effect give @s minecraft:night_vision infinite 0 true
+execute if predicate fossil_frights:game_state/hazard_active/lights if entity @s[predicate=fossil_frights:entity/effects/blindness] run effect clear @s minecraft:night_vision
+execute unless predicate fossil_frights:game_state/hazard_active/lights run effect clear @s minecraft:night_vision
+execute if predicate fossil_frights:game_state/hazard_active/floods run effect give @s minecraft:dolphins_grace 2 0 true
+execute if predicate fossil_frights:game_state/hazard_active/lava run effect give @s minecraft:fire_resistance 2 0 true
 function fossil_frights:game/heists/heavy_loot/hold_check
 execute if entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/reduce
 execute unless entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/restore

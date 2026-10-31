@@ -1,3 +1,4 @@
+scoreboard players reset @s ff_crab_timer
 scoreboard players set @s ff_key_cooldown 0
 advancement grant @s only fossil_frights:02_achievements/shiny
 function fossil_frights:key/refresh
