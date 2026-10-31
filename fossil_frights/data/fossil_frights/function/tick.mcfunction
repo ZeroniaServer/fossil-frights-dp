@@ -54,7 +54,7 @@ execute if predicate fossil_frights:game_state/game_running if score $crane_wait
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/deep_dark_elevator/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/lady_bug_revolutionary/check
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/dinocoin/sarcophagus/tick
-execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set @a ff_crab_timer 0
+execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players reset @a ff_crab_timer
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:animations/dinocoin/crab/message/check
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick

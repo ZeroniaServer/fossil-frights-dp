@@ -9,7 +9,6 @@ tag @s remove ff_ice_frozen
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 clear @s
 scoreboard players set @s ff_key_cooldown 0
-scoreboard players set @s ff_key_bar 0
 scoreboard players set @s ff_heist_punch_cd 0
 scoreboard players set @s ff_heist_punch_bar 0
 scoreboard players set @s ff_heist_punch_fx 0

@@ -20,21 +20,14 @@ scoreboard objectives add ff_player_team dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
-scoreboard objectives add ff_key_cd_cfg dummy
-scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
-scoreboard objectives add ff_bb_disc_use minecraft.used:minecraft.music_disc_creator_music_box
-scoreboard objectives add ff_bb_disc_seen dummy
 scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
-scoreboard objectives add ff_dna_scan dummy
-scoreboard objectives add ff_dna_hover_found dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
-scoreboard objectives add ff_fright_roll dummy
 scoreboard objectives add ff_spider_fright_delay dummy
 scoreboard objectives add ff_camera_remote_health dummy
 scoreboard objectives add ff_camera_remote_health_prev dummy
@@ -315,7 +308,6 @@ scoreboard players set #ticks_per_minute ff_constant 1200
 scoreboard players set #rejoin_grace ff_constant 2400
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
 scoreboard players set #hazard_count ff_hazard_rng 5
-scoreboard players set $key_cooldown_length ff_key_cd_cfg 600
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #heist_full ff_heist 12000
 scoreboard players set #heist_goal ff_heist 1000
@@ -570,24 +562,14 @@ bossbar set fossil_frights:resource_pack_disclaimer color blue
 # These scoreboard objectives get saved when a player logs out, and restored when they log back in. All other scores will be reset when the player leaves the game.
 data modify storage fossil_frights:session saved_scoreboard_objectives set value [\
     "ff_player_team",\
-    "ff_scan",\
     "ff_key_cooldown",\
-    "ff_key_cd_cfg",\
-    "ff_key_bar",\
-    "ff_key_anim",\
     "ff_crab_timer",\
-    "ff_bb_disc_use",\
-    "ff_bb_disc_seen",\
     "ff_bb_sneak_seen",\
     "ff_bb_sneak_state",\
     "ff_bb_shift_count",\
-    "ff_dna_scan",\
-    "ff_dna_hover_found",\
     "ff_security_camera",\
     "ff_security_camera_nav",\
     "ff_security_camera_heist",\
-    "ff_fright_roll",\
-    "ff_spider_fright_delay",\
     "ff_camera_remote_health",\
     "ff_camera_remote_health_prev",\
     "ff_camera_swivel",\

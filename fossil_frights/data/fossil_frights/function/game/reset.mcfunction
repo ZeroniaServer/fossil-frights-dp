@@ -58,7 +58,6 @@ gamemode adventure @a[predicate=fossil_frights:player/is_playing]
 execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:scale base reset
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/effects/lobby_reset
 scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_key_cooldown 0
-scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_key_bar 0
 scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_speedrun_delta 0
 scoreboard players set @a[predicate=fossil_frights:player/is_playing] ff_speedrun_sign 0
 title @a[predicate=fossil_frights:player/is_playing] subtitle ""
