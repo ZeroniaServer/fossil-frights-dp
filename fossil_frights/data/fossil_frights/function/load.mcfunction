@@ -22,7 +22,6 @@ scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
-scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_security_camera dummy
@@ -560,9 +559,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "player_team",\
     "key_cooldown",\
     "crab_timer",\
-    "bb_sneak_seen",\
-    "bb_sneak_state",\
-    "bb_shift_count",\
     "security_camera",\
     "security_camera_nav",\
     "security_camera_heist",\

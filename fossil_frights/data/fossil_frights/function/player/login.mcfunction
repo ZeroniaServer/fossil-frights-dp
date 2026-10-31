@@ -103,13 +103,9 @@ scoreboard players set @s ff_join_cooldown 0
 scoreboard players set @s ff_msg_cooldown 0
 scoreboard players set @s ff_tp_action 0
 scoreboard players set @s ff_tp_delay 0
-execute unless score @s ff_bb_sneak_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
-execute unless score @s ff_bb_sneak_state matches -2147483648..2147483647 run scoreboard players set @s ff_bb_sneak_state 0
-execute unless score @s ff_bb_shift_count matches -2147483648..2147483647 run scoreboard players set @s ff_bb_shift_count 0
-scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
 scoreboard players reset @s ff_key_cooldown
 scoreboard players set @s ff_bb_sneak_state 0
-scoreboard players set @s ff_bb_shift_count 0
+scoreboard players reset @s ff_bb_shift_count
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
 scoreboard players set @s start 0
