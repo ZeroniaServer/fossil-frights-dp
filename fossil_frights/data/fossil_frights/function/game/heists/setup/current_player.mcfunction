@@ -19,7 +19,7 @@ effect give @s minecraft:saturation infinite 255 true
 scoreboard players set @s ff_key_cooldown 0
 scoreboard players set @s ff_trap_selected 0
 scoreboard players set @s ff_trap_input_delay 0
-scoreboard players set @s ff_trap_pending_ticks 0
+scoreboard players reset @s ff_trap_pending_ticks
 scoreboard players set @s ff_trap_glow_phase 0
 scoreboard players set @s ff_trap_glow_timer 0
 scoreboard players set @s ff_trap_glow_cooldown 0

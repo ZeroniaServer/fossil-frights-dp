@@ -34,10 +34,9 @@ effect clear @a[predicate=fossil_frights:player/team/thief] minecraft:invisibili
 execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:game/heists/invisibility_fx/check_player
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_attributes
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/reset_effects
-scoreboard players set @a ff_heist_punch_cd 0
-scoreboard players set @a ff_heist_punch_bar 0
+scoreboard players reset @a ff_heist_punch_cd
 scoreboard players set @a ff_heist_punch_fx 0
-scoreboard players set @a ff_heist_invis_ticks 0
+scoreboard players reset @a ff_heist_invis_ticks
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players set @a ff_heist_loot_captured_round 0
 scoreboard players set @a ff_heist_keyed_loot_captured_round 0
@@ -62,7 +61,7 @@ scoreboard players set @a ff_heist_loot_security_recent 0
 scoreboard players set @a ff_heist_loot_security_ui 0
 tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
-scoreboard players set @a ff_trap_pending_ticks 0
+scoreboard players reset @a ff_trap_pending_ticks
 scoreboard players set @a ff_trap_glow_phase 0
 scoreboard players set @a ff_trap_glow_timer 0
 scoreboard players set @a ff_trap_glow_cooldown 0
