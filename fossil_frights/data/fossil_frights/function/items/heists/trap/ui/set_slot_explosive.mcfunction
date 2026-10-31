@@ -1,5 +1,5 @@
 data modify storage fossil_frights:trap_ui slot5 set value "\ue341"
-execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress = @s ff_trap_explosive_timer
+execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. store result score @s ff_trap_ui_progress run scoreboard players get @s ff_trap_explosive_timer
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress *= $trap_ui_six ff_trap_balance
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress /= @s ff_trap_explosive_cooldown
 execute if score @s ff_trap_explosive_phase matches 1 if score @s ff_trap_explosive_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot5 set value "\ue342"

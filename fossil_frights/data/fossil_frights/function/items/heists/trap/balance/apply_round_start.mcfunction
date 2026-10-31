@@ -1,13 +1,13 @@
 scoreboard players reset @s ff_trap_glow_phase
-scoreboard players set @s ff_trap_glow_timer 0
+scoreboard players reset @s ff_trap_glow_timer
 scoreboard players reset @s ff_trap_freeze_phase
-scoreboard players set @s ff_trap_freeze_timer 0
+scoreboard players reset @s ff_trap_freeze_timer
 scoreboard players reset @s ff_trap_antigravity_phase
-scoreboard players set @s ff_trap_antigravity_timer 0
+scoreboard players reset @s ff_trap_antigravity_timer
 scoreboard players reset @s ff_trap_jelly_phase
-scoreboard players set @s ff_trap_jelly_timer 0
+scoreboard players reset @s ff_trap_jelly_timer
 execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 4
-execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 0
+execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players reset @s ff_trap_explosive_timer
 execute if score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_cooldown 0
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 3
 execute unless score $trap_guard_count ff_trap_balance > $trap_thief_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 1200

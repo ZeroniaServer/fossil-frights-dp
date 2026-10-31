@@ -11,19 +11,19 @@ execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 2
 execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 3 run function fossil_frights:player/actionbar/show/generic/trap/picked_up_jelly
 execute as @a[tag=ff_trap_picker,limit=1] if score @s ff_trap_selected matches 4.. run function fossil_frights:player/actionbar/show/generic/trap/picked_up_explosive
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase
-execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_timer 0
+execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_glow_timer
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_cooldown 0
 execute if score @s ff_trap_type matches 1 if score @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_phase
-execute if score @s ff_trap_type matches 1 if score @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_timer 0
+execute if score @s ff_trap_type matches 1 if score @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_timer
 execute if score @s ff_trap_type matches 1 if score @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_freeze_cooldown 0
 execute if score @s ff_trap_type matches 2 if score @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_phase
-execute if score @s ff_trap_type matches 2 if score @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_timer 0
+execute if score @s ff_trap_type matches 2 if score @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_timer
 execute if score @s ff_trap_type matches 2 if score @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_antigravity_cooldown 0
 execute if score @s ff_trap_type matches 3 if score @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_phase
-execute if score @s ff_trap_type matches 3 if score @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_timer 0
+execute if score @s ff_trap_type matches 3 if score @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_timer
 execute if score @s ff_trap_type matches 3 if score @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_jelly_cooldown 0
 execute if score @s ff_trap_type matches 4.. if score @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_phase
-execute if score @s ff_trap_type matches 4.. if score @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_timer 0
+execute if score @s ff_trap_type matches 4.. if score @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_phase matches 1 run scoreboard players reset @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_timer
 execute if score @s ff_trap_type matches 4.. if score @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_phase matches 1 run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_explosive_cooldown 0
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1.. run scoreboard players set @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase 3
 execute if score @s ff_trap_type matches ..0 if score @a[tag=ff_trap_picker,limit=1] ff_trap_glow_phase matches 1.. run scoreboard players operation @a[tag=ff_trap_picker,limit=1] ff_trap_glow_timer = $trap_cooldown_ticks ff_trap_balance

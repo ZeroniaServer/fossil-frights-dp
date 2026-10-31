@@ -23,3 +23,13 @@ execute if predicate fossil_frights:player/team/lobby run team join ff_lobby
 execute if predicate fossil_frights:player/team/guard run team join ff_guard
 execute if predicate fossil_frights:player/team/thief run team join ff_thief
 execute if predicate fossil_frights:player/team/spectator run team join ff_spectator
+
+execute if score @s ff_trap_glow_timer matches 0 run scoreboard players reset @s ff_trap_glow_timer
+execute if score @s ff_trap_freeze_phase matches 0 run scoreboard players reset @s ff_trap_freeze_phase
+execute if score @s ff_trap_freeze_timer matches 0 run scoreboard players reset @s ff_trap_freeze_timer
+execute if score @s ff_trap_antigravity_phase matches 0 run scoreboard players reset @s ff_trap_antigravity_phase
+execute if score @s ff_trap_antigravity_timer matches 0 run scoreboard players reset @s ff_trap_antigravity_timer
+execute if score @s ff_trap_jelly_phase matches 0 run scoreboard players reset @s ff_trap_jelly_phase
+execute if score @s ff_trap_jelly_timer matches 0 run scoreboard players reset @s ff_trap_jelly_timer
+execute if score @s ff_trap_explosive_phase matches 0 run scoreboard players reset @s ff_trap_explosive_phase
+execute if score @s ff_trap_explosive_timer matches 0 run scoreboard players reset @s ff_trap_explosive_timer

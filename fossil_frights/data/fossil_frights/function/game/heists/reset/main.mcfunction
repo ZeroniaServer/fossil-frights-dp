@@ -63,19 +63,19 @@ tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
 scoreboard players reset @a ff_trap_pending_ticks
 scoreboard players reset @a ff_trap_glow_phase
-scoreboard players set @a ff_trap_glow_timer 0
+scoreboard players reset @a ff_trap_glow_timer
 scoreboard players set @a ff_trap_glow_cooldown 0
 scoreboard players reset @a ff_trap_freeze_phase
-scoreboard players set @a ff_trap_freeze_timer 0
+scoreboard players reset @a ff_trap_freeze_timer
 scoreboard players set @a ff_trap_freeze_cooldown 0
 scoreboard players reset @a ff_trap_antigravity_phase
-scoreboard players set @a ff_trap_antigravity_timer 0
+scoreboard players reset @a ff_trap_antigravity_timer
 scoreboard players set @a ff_trap_antigravity_cooldown 0
 scoreboard players reset @a ff_trap_jelly_phase
-scoreboard players set @a ff_trap_jelly_timer 0
+scoreboard players reset @a ff_trap_jelly_timer
 scoreboard players set @a ff_trap_jelly_cooldown 0
 scoreboard players reset @a ff_trap_explosive_phase
-scoreboard players set @a ff_trap_explosive_timer 0
+scoreboard players reset @a ff_trap_explosive_timer
 scoreboard players set @a ff_trap_explosive_cooldown 0
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0

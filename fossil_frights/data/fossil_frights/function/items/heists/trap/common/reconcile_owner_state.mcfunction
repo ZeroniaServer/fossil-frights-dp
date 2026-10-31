@@ -19,7 +19,7 @@ execute if entity @s[tag=ff_rejoin_trap_explosive] if score $trap_thief_count ff
 execute if entity @s[tag=ff_rejoin_trap_explosive] if score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 1200
 execute if entity @s[tag=ff_rejoin_trap_explosive] if score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_cooldown 1200
 execute if entity @s[tag=ff_rejoin_trap_explosive] unless score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_phase 4
-execute if entity @s[tag=ff_rejoin_trap_explosive] unless score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_timer 0
+execute if entity @s[tag=ff_rejoin_trap_explosive] unless score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players reset @s ff_trap_explosive_timer
 execute if entity @s[tag=ff_rejoin_trap_explosive] unless score $trap_thief_count ff_trap_balance > $trap_guard_count ff_trap_balance run scoreboard players set @s ff_trap_explosive_cooldown 0
 tag @s remove ff_rejoin_trap_glow
 tag @s remove ff_rejoin_trap_freeze
