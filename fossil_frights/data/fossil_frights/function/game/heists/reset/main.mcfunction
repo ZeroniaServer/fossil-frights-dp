@@ -38,12 +38,12 @@ scoreboard players reset @a ff_heist_punch_cd
 scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players reset @a ff_heist_invis_ticks
 scoreboard players set @a ff_heist_stolen_keys 0
-scoreboard players set @a ff_heist_loot_captured_round 0
-scoreboard players set @a ff_heist_keyed_loot_captured_round 0
-scoreboard players set @a ff_heist_keys_stolen_round 0
-scoreboard players set @a ff_heist_deaths_round 0
+scoreboard players reset @a ff_heist_loot_captured_round
+scoreboard players reset @a ff_heist_keyed_loot_captured_round
+scoreboard players reset @a ff_heist_keys_stolen_round
+scoreboard players reset @a ff_heist_deaths_round
 scoreboard players set @a ff_heist_deaths_baseline 0
-scoreboard players set @a ff_heist_thieves_killed_round 0
+scoreboard players reset @a ff_heist_thieves_killed_round
 scoreboard players set @a ff_heist_killer_pending 0
 scoreboard players reset @a ff_heist_killer_uuid_0
 scoreboard players reset @a ff_heist_killer_uuid_1
