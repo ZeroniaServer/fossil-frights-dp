@@ -51,7 +51,7 @@ execute if score $run_multiplayer ff_game_state matches 0 as @a[predicate=fossil
 execute if score $run_multiplayer ff_game_state matches 0 run function fossil_frights:leaderboards/display/refresh
 execute unless score $victory_complete ff_game_state matches 1 run function fossil_frights:messages/game/exit_day_reached
 function fossil_frights:game/reset/spectators
-scoreboard players set @a ff_fright_timer 0
+scoreboard players reset @a ff_fright_timer
 gamemode adventure @a[predicate=fossil_frights:player/is_playing]
 execute as @a[predicate=fossil_frights:player/is_playing] run attribute @s minecraft:scale base reset
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/effects/lobby_reset

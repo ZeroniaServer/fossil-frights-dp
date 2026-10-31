@@ -102,7 +102,6 @@ scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_trap_item_age dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
-scoreboard objectives add ff_glowtrap_scan dummy
 scoreboard objectives add ff_trap_type dummy
 scoreboard objectives add ff_trap_selected dummy
 scoreboard objectives add ff_trap_input_delay dummy
@@ -139,7 +138,6 @@ scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
 scoreboard objectives add ff_herobrine_delay dummy
 scoreboard objectives add ff_bat_fright_timer dummy
-scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
 scoreboard objectives add ff_singleplayer_play_time minecraft.custom:minecraft.play_time
 scoreboard objectives add ff_singleplayer_world_time minecraft.custom:minecraft.total_world_time
@@ -208,8 +206,8 @@ scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
-scoreboard players set @a ff_tp_delay 0
-scoreboard players set @a ff_tp_action 0
+scoreboard players reset @a ff_tp_delay
+scoreboard players reset @a ff_tp_action
 tag @a remove ff_tp_dispatch
 tag @a remove ff_fade_tp_active
 execute as @a run function fossil_frights:cameras/clear_posteffect
@@ -217,7 +215,6 @@ posteffect clear @a
 scoreboard objectives add ff_heist dummy
 scoreboard objectives add ff_heist_sidebar dummy
 scoreboard objectives add ff_heist_punch_cd dummy
-scoreboard objectives add ff_heist_punch_bar dummy
 scoreboard objectives add ff_heist_punch_fx dummy
 scoreboard objectives add ff_heist_invis_ticks dummy
 scoreboard objectives add ff_heist_stolen_keys dummy
@@ -413,7 +410,6 @@ scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $defeat_anim ff_game_state 0
 scoreboard players set $defeat_lock ff_game_state 0
-scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set $bogged_fright ff_game_state 0
@@ -575,19 +571,7 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_forced_spec_yaw",\
     "ff_forced_spec_pitch",\
     "ff_coin_used_run",\
-    "ff_hazard_rng",\
-    "ff_door_angle",\
-    "ff_door_target",\
-    "ff_door_tick",\
-    "ff_door_delay",\
-    "ff_game_state",\
-    "ff_party_sync_grace",\
     "ff_map_region",\
-    "ff_rejoin_ticks",\
-    "ff_rejoin_minutes",\
-    "ff_rejoin_sec_tens",\
-    "ff_rejoin_sec_ones",\
-    "ff_run_order",\
     "ff_leave_game",\
     "ff_leave_game_seen",\
     "ff_deaths",\
@@ -597,19 +581,8 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_msg_cooldown",\
     "ff_settings_mode_cooldown",\
     "ff_queue_order",\
-    "ff_queue_order_display",\
-    "ff_join_balance",\
     "ff_confetti_uses",\
-    "ff_confetti_age",\
-    "ff_ice_cannon_age",\
-    "ff_ice_freeze_age",\
-    "ff_trap_item_age",\
-    "ff_glowtrap_age",\
-    "ff_glowtrap_fx",\
-    "ff_glowtrap_scan",\
-    "ff_trap_type",\
     "ff_trap_selected",\
-    "ff_trap_input_delay",\
     "ff_trap_glow_phase",\
     "ff_trap_glow_timer",\
     "ff_trap_freeze_phase",\
@@ -625,28 +598,16 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_trap_antigravity_cooldown",\
     "ff_trap_jelly_cooldown",\
     "ff_trap_explosive_cooldown",\
-    "ff_trap_ui_progress",\
-    "ff_trap_balance",\
     "ff_trap_pending_ticks",\
     "ff_double_jump_boost_timer",\
     "ff_double_jump_cooldown",\
     "ff_double_jump_ground_ticks",\
-    "ff_tutorial",\
-    "ff_tutorial_scene",\
-    "ff_tutorial_tick",\
-    "ff_gui",\
     "ff_queue_start_token",\
     "ff_queue_prompt_time",\
     "ff_queue_prompt_display",\
     "ff_fright_timer",\
-    "ff_herobrine_delay",\
-    "ff_bat_fright_timer",\
-    "ff_boss_skin",\
-    "ff_day",\
     "ff_singleplayer_play_time",\
     "ff_singleplayer_world_time",\
-    "ff_task_state",\
-    "ff_task_tracker",\
     "ff_top_time",\
     "ff_top_day",\
     "ff_run_count",\
@@ -710,18 +671,10 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_tp_delay",\
     "ff_tp_action",\
     \
-    "ff_heist",\
     "ff_heist_punch_cd",\
-    "ff_heist_punch_bar",\
     "ff_heist_punch_fx",\
     "ff_heist_invis_ticks",\
     "ff_heist_stolen_keys",\
-    "ff_heist_reward",\
-    "ff_heist_loot_state",\
-    "ff_heist_loot_value",\
-    "ff_heist_reveal",\
-    "ff_heist_flash",\
-    "ff_heist_guard_coin",\
     "ff_heist_loot_captured_round",\
     "ff_heist_keyed_loot_captured_round",\
     "ff_heist_keys_stolen_round",\
@@ -747,16 +700,7 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_heist_loot_security_flash",\
     "ff_heist_loot_security_lease",\
     "ff_heist_loot_security_locked",\
-    "ff_task_book_shelf",\
-    "ff_compass",\
-    "ff_compass_scan",\
-    "ff_compass_found",\
-    "ff_sulfur",\
-    "ff_lobby_music_ticks",\
-    "ff_chorus_cola_editor",\
-    "ff_paint_water_time",\
     "ff_invisimask_variant",\
-    "ff_glowing_fx_frame",\
     \
     "ff_ant_fight",\
     "ff_ant_leaf_use",\
@@ -769,39 +713,13 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "ff_ant_sneak_ticks",\
     "ff_ant_unsneak_ticks",\
     "ff_ant_blind_ticks",\
-    "ff_ant_display",\
     "ff_ant_combo",\
     \
     "ff_parkour_time",\
     "ff_parkour_best",\
     "ff_parkour_running",\
-    "ff_parkour_start_plate",\
-    "ff_parkour_restart_use",\
-    "ff_parkour_restart_seen",\
-    "ff_parkour_min",\
-    "ff_parkour_sec",\
-    "ff_parkour_sec_tens",\
-    "ff_parkour_sec_ones",\
-    "ff_parkour_centi",\
-    "ff_parkour_centi_tens",\
-    "ff_parkour_centi_ones",\
-    "ff_parkour_display",\
-    "ff_parkour_math",\
     \
     "ff_temple_run_time",\
     "ff_temple_run_best",\
     "ff_temple_run_running",\
-    "ff_temple_run_start_plate",\
-    "ff_temple_run_restart_use",\
-    "ff_temple_run_restart_seen",\
-    "ff_temple_run_min",\
-    "ff_temple_run_sec",\
-    "ff_temple_run_sec_tens",\
-    "ff_temple_run_sec_ones",\
-    "ff_temple_run_centi",\
-    "ff_temple_run_centi_tens",\
-    "ff_temple_run_centi_ones",\
-    "ff_temple_run_display",\
-    "ff_temple_run_math",\
-    "ff_temple_run_anim",\
 ]
