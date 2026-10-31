@@ -13,7 +13,7 @@ execute if score @s ff_trap_jelly_phase matches 3 if score @s ff_trap_ui_progres
 execute if score @s ff_trap_jelly_phase matches 3 if score @s ff_trap_ui_progress matches 2 run data modify storage fossil_frights:trap_ui slot4 set value "\ue334"
 execute if score @s ff_trap_jelly_phase matches 3 if score @s ff_trap_ui_progress matches 3 run data modify storage fossil_frights:trap_ui slot4 set value "\ue335"
 execute if score @s ff_trap_jelly_phase matches 3 if score @s ff_trap_ui_progress matches 4.. run data modify storage fossil_frights:trap_ui slot4 set value "\ue336"
-execute if score @s ff_trap_selected matches 3 if score @s ff_trap_jelly_phase matches 0 run data modify storage fossil_frights:trap_ui slot4 set value "\ue330"
+execute if score @s ff_trap_selected matches 3 unless score @s ff_trap_jelly_phase matches 1.. run data modify storage fossil_frights:trap_ui slot4 set value "\ue330"
 execute if score @s ff_trap_selected matches 3 if score @s ff_trap_jelly_phase matches 1 if score @s ff_trap_jelly_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot4 set value "\ue337"
 execute if score @s ff_trap_selected matches 3 if score @s ff_trap_jelly_phase matches 1 if score @s ff_trap_jelly_timer matches 10..19 run data modify storage fossil_frights:trap_ui slot4 set value "\ue338"
 execute if score @s ff_trap_selected matches 3 if score @s ff_trap_jelly_phase matches 1 if score @s ff_trap_jelly_timer matches 20..29 run data modify storage fossil_frights:trap_ui slot4 set value "\ue339"
