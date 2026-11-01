@@ -27,7 +27,7 @@ function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"pi
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"leather"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"cotton_candy"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"credit_reel"}
-function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"icey_sherd"}
+function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"icy_sherd"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"carrot_cake"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"hot_chocolate"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"lady_bug"}

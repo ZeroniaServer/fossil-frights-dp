@@ -94,9 +94,9 @@ scoreboard players reset $loot_cotton_candy ff_heist_sidebar
 scoreboard players set $loot_credit_reel ff_heist_loot_state 0
 scoreboard players set $loot_credit_reel ff_heist_loot_value 0
 scoreboard players reset $loot_credit_reel ff_heist_sidebar
-scoreboard players set $loot_icey_sherd ff_heist_loot_state 0
-scoreboard players set $loot_icey_sherd ff_heist_loot_value 0
-scoreboard players reset $loot_icey_sherd ff_heist_sidebar
+scoreboard players set $loot_icy_sherd ff_heist_loot_state 0
+scoreboard players set $loot_icy_sherd ff_heist_loot_value 0
+scoreboard players reset $loot_icy_sherd ff_heist_sidebar
 scoreboard players set $loot_carrot_cake ff_heist_loot_state 0
 scoreboard players set $loot_hot_chocolate ff_heist_loot_state 0
 scoreboard players set $loot_carrot_cake ff_heist_loot_value 0

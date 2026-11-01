@@ -23,7 +23,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/hot_chocola
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/cotton_candy",page:"page_1",slot:17}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/credit_reel",page:"page_1",slot:18}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/lady_bug",page:"page_1",slot:19}
-function fossil_frights:items/catalog/from_loot {loot:"items/storage/icey_sherd",page:"page_1",slot:20}
+function fossil_frights:items/catalog/from_loot {loot:"items/storage/icy_sherd",page:"page_1",slot:20}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/carrot_cake",page:"page_1",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/tasks/return_the_key/vault_key",page:"page_1",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/hoverboard",page:"page_1",slot:23}

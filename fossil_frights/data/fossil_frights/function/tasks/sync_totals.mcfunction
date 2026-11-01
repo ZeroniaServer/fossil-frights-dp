@@ -76,8 +76,8 @@ execute if score $shark_bait_sel ff_task_state matches 1 run scoreboard players 
 execute if score $shark_bait_sel ff_task_state matches 1 if score $shark_bait_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $smelly_toilet_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $wash_icey_sherd_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $wash_icey_sherd_sel ff_task_state matches 1 if score $wash_icey_sherd_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $wash_icy_sherd_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $wash_icy_sherd_sel ff_task_state matches 1 if score $wash_icy_sherd_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $a_c_reset_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $a_c_reset_sel ff_task_state matches 1 if score $a_c_reset_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $defrost_freezer_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

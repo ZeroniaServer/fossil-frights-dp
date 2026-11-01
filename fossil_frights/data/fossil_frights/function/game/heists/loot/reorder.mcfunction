@@ -16,7 +16,7 @@ scoreboard players reset $loot_pink_jelly ff_heist_sidebar
 scoreboard players reset $loot_leather ff_heist_sidebar
 scoreboard players reset $loot_cotton_candy ff_heist_sidebar
 scoreboard players reset $loot_credit_reel ff_heist_sidebar
-scoreboard players reset $loot_icey_sherd ff_heist_sidebar
+scoreboard players reset $loot_icy_sherd ff_heist_sidebar
 scoreboard players reset $loot_carrot_cake ff_heist_sidebar
 scoreboard players reset $loot_hot_chocolate ff_heist_sidebar
 scoreboard players reset $loot_coffee ff_heist_sidebar
@@ -103,8 +103,8 @@ execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $l
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $loot_cotton_candy ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 200 run scoreboard players operation $loot_credit_reel ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_icey_sherd ff_heist_loot_state matches 1..3 if score $loot_icey_sherd ff_heist_loot_value matches 200 run scoreboard players operation $loot_icey_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_icey_sherd ff_heist_loot_state matches 1..3 if score $loot_icey_sherd ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_icy_sherd ff_heist_loot_state matches 1..3 if score $loot_icy_sherd ff_heist_loot_value matches 200 run scoreboard players operation $loot_icy_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_icy_sherd ff_heist_loot_state matches 1..3 if score $loot_icy_sherd ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 200 run scoreboard players operation $loot_carrot_cake ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_hot_chocolate ff_heist_loot_state matches 1..3 if score $loot_hot_chocolate ff_heist_loot_value matches 200 run scoreboard players operation $loot_hot_chocolate ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 200 run scoreboard players remove $heist_sidebar_slot ff_heist 1
@@ -145,8 +145,8 @@ execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $l
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1..3 if score $loot_cotton_candy ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 250 run scoreboard players operation $loot_credit_reel ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_credit_reel ff_heist_loot_state matches 1..3 if score $loot_credit_reel ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
-execute if score $loot_icey_sherd ff_heist_loot_state matches 1..3 if score $loot_icey_sherd ff_heist_loot_value matches 250 run scoreboard players operation $loot_icey_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
-execute if score $loot_icey_sherd ff_heist_loot_state matches 1..3 if score $loot_icey_sherd ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+execute if score $loot_icy_sherd ff_heist_loot_state matches 1..3 if score $loot_icy_sherd ff_heist_loot_value matches 250 run scoreboard players operation $loot_icy_sherd ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_icy_sherd ff_heist_loot_state matches 1..3 if score $loot_icy_sherd ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 250 run scoreboard players operation $loot_carrot_cake ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_hot_chocolate ff_heist_loot_state matches 1..3 if score $loot_hot_chocolate ff_heist_loot_value matches 250 run scoreboard players operation $loot_hot_chocolate ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..3 if score $loot_carrot_cake ff_heist_loot_value matches 250 run scoreboard players remove $heist_sidebar_slot ff_heist 1

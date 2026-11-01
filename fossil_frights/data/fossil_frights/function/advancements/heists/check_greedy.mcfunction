@@ -16,7 +16,7 @@ execute if score $loot_ancient_portal_core ff_heist_loot_state matches 1 run ret
 execute if score $loot_spyglass ff_heist_loot_state matches 1 run return 0
 execute if score $loot_cotton_candy ff_heist_loot_state matches 1 run return 0
 execute if score $loot_credit_reel ff_heist_loot_state matches 1 run return 0
-execute if score $loot_icey_sherd ff_heist_loot_state matches 1 run return 0
+execute if score $loot_icy_sherd ff_heist_loot_state matches 1 run return 0
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1 run return 0
 execute if score $loot_hot_chocolate ff_heist_loot_state matches 1 run return 0
 execute if score $loot_lady_bug ff_heist_loot_state matches 1 run return 0

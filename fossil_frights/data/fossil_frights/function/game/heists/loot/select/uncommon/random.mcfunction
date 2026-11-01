@@ -12,7 +12,7 @@ execute if score $heist_roll ff_heist matches 11 run function fossil_frights:gam
 execute if score $heist_roll ff_heist matches 12 run function fossil_frights:game/heists/loot/select/uncommon/leather
 execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/uncommon/cotton_candy
 execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/uncommon/credit_reel
-execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/uncommon/icey_sherd
+execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/uncommon/icy_sherd
 execute if score $heist_roll ff_heist matches 16 run function fossil_frights:game/heists/loot/select/uncommon/carrot_cake
 execute if score $heist_roll ff_heist matches 17 run function fossil_frights:game/heists/loot/select/uncommon/star
 execute if score $heist_roll ff_heist matches 18 run function fossil_frights:game/heists/loot/select/uncommon/pumpkin

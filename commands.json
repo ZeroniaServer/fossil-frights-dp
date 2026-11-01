@@ -201,7 +201,7 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "icey_sherd": {
+                        "icy_sherd": {
                             "type": "literal",
                             "executable": true
                         },
@@ -541,7 +541,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "wash_icey_sherd": {
+                                "wash_icy_sherd": {
                                     "type": "literal",
                                     "executable": true
                                 },

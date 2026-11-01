@@ -74,8 +74,8 @@ execute if score $shark_bait_done ff_task_state matches 1 unless score $shark_ba
 execute if score $shark_bait_done ff_task_state matches 1 run scoreboard players set $shark_bait_rb ff_run_breakdown 1
 execute if score $smelly_toilet_done ff_task_state matches 1 unless score $smelly_toilet_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"48"}
 execute if score $smelly_toilet_done ff_task_state matches 1 run scoreboard players set $smelly_toilet_rb ff_run_breakdown 1
-execute if score $wash_icey_sherd_done ff_task_state matches 1 unless score $wash_icey_sherd_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"50"}
-execute if score $wash_icey_sherd_done ff_task_state matches 1 run scoreboard players set $wash_icey_sherd_rb ff_run_breakdown 1
+execute if score $wash_icy_sherd_done ff_task_state matches 1 unless score $wash_icy_sherd_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"50"}
+execute if score $wash_icy_sherd_done ff_task_state matches 1 run scoreboard players set $wash_icy_sherd_rb ff_run_breakdown 1
 execute if score $a_c_reset_done ff_task_state matches 1 unless score $a_c_reset_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"52"}
 execute if score $a_c_reset_done ff_task_state matches 1 run scoreboard players set $a_c_reset_rb ff_run_breakdown 1
 execute if score $defrost_freezer_done ff_task_state matches 1 unless score $defrost_freezer_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"54"}

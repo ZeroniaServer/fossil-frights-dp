@@ -84,7 +84,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/icey_sherd"
+                  "value": "fossil_frights:items/storage/icy_sherd"
                 },
                 {
                   "type": "minecraft:loot_table",
