@@ -274,7 +274,6 @@ scoreboard objectives add ff_security_gate_cache.y dummy
 scoreboard objectives add ff_security_gate_cache.min_y dummy
 scoreboard objectives add ff_security_gate_cache.max_y dummy
 scoreboard objectives add ff_security_gate_close_timestamp dummy
-scoreboard objectives add ff_thrown_water_balloon used:splash_potion
 scoreboard objectives add ff_bouncy_lily_pad_bounce_timestamp dummy
 scoreboard objectives add ff_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_fire_damage_cooldown_until_timestamp dummy

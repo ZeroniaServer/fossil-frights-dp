@@ -74,8 +74,7 @@ execute if score #lights_phase_now ff_hazard_rng matches 1 run fill -31 75 30 -3
 # Glowberry vines
 execute if score #lights_phase_now ff_hazard_rng matches 7 run function fossil_frights:interactions/glowberry_vine/show
 
-# Cafe Campfire
-execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 28 81 30 28 81 26 minecraft:campfire[lit=true]
+# execute if score #lights_phase_now ff_hazard_rng matches 7 run fill 28 81 30 28 81 26 minecraft:campfire[lit=true]
 
 # Boss's Office / Hallway
 execute if score #lights_phase_now ff_hazard_rng matches 2 run fill -33 85 67 -33 86 79 minecraft:glowstone replace minecraft:redstone_lamp

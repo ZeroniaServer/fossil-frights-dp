@@ -28,14 +28,6 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/fertilizer"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/water_balloon"
-                },
-                {
-                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/storage/chlorine_tablet"
                 },
                 {
@@ -68,14 +60,6 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/copper_shuffle"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/instant_coffee"
-                },
-                {
-                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/storage/empty_popcorn_bucket"
                 },
                 {
@@ -85,10 +69,6 @@
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/storage/leather"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/brush"
                 },
                 {
                   "type": "minecraft:loot_table",
@@ -112,14 +92,6 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/cookie"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/tasks/basketball_dance/basketball"
-                },
-                {
-                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/tasks/return_the_key/vault_key"
                 },
                 {
@@ -129,6 +101,26 @@
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/anvil/leather_boots"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/star"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/pumpkin"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/frightmas/dinonog"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/coal"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/hot_chocolate"
                 }
               ]
             }

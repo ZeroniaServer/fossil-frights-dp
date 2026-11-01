@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "item.minecraft.coal",
+                  "color": "white"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/task/coal",
+                "minecraft:custom_data": {
+                  "itemID": "coal",
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
+                }
+              }
+            },
+            "fossil_frights:item_definition/heist_loot/coal",
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

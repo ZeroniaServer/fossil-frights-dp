@@ -113,7 +113,6 @@ execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=
 execute if score #ant_fight_active ff_dummy matches 1 run scoreboard objectives setdisplay below_name ff_ant_score_below_name
 execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name
 function fossil_frights:join/queue/tick
-function fossil_frights:items/water_balloon/tick
 function fossil_frights:items/return_to_lobby/tick
 function fossil_frights:player/bouncy_lily_pad/tick
 item replace entity @a[tag=!ff_hoverboard_restore_pending] enderchest.0 with air

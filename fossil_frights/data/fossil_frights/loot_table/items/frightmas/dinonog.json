@@ -27,14 +27,16 @@
                   "sound": "minecraft:entity.generic.drink"
                 },
                 "minecraft:custom_data": {
-                  "itemID": "dinonog_drink",
+                  "itemID": "dinonog",
                   "ff_completes_picnic_with_trike_task": true,
                   "ff_heist_rules": {
-                    "prevent_ground_despawn": true
+                    "prevent_ground_despawn": true,
+                    "delete_on_guard_pickup": true
                   }
                 }
               }
             },
+            "fossil_frights:item_definition/heist_loot/dinonog",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

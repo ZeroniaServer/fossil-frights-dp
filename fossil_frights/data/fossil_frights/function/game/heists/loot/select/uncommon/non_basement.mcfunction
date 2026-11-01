@@ -3,4 +3,4 @@ execute if score $heist_roll ff_heist matches 1 run function fossil_frights:game
 execute if score $heist_roll ff_heist matches 2 run function fossil_frights:game/heists/loot/select/uncommon/credit_reel
 execute if score $heist_roll ff_heist matches 3 run function fossil_frights:game/heists/loot/select/uncommon/muddy_sherd
 execute if score $heist_roll ff_heist matches 4 run function fossil_frights:game/heists/loot/select/uncommon/carrot_cake
-execute if score $heist_roll ff_heist matches 5 run function fossil_frights:game/heists/loot/select/uncommon/cookie
+execute if score $heist_roll ff_heist matches 5 run function fossil_frights:game/heists/loot/select/uncommon/hot_chocolate
