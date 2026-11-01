@@ -1,6 +1,5 @@
 execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_compass_return_the_key_pickup] at @s run particle minecraft:trial_omen ~ ~0.5 ~ 1.5 0.35 1.5 0 2 force @a[tag=ff_frights_feedback_viewer]
 execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_compass_return_the_key_return] at @s run particle minecraft:trial_omen ~ ~0.5 ~ 0.75 0.35 0.75 0 2 force @a[tag=ff_frights_feedback_viewer]
-execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_compass_basketball_dance_net] at @s run particle minecraft:trial_omen ~0.5 ~-0.15 ~0.5 0.22 0.16 0.22 0 2 force @a[tag=ff_frights_feedback_viewer]
 execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_area_5x5,tag=!ff_task_compass_no_particles] at @s run particle minecraft:trial_omen ~ ~0.5 ~ 2 0.35 2 0 2 force @a[tag=ff_frights_feedback_viewer]
 execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_area_3x3,tag=!ff_task_compass_no_particles] at @s run particle minecraft:trial_omen ~ ~0.5 ~ 1 0.35 1 0 2 force @a[tag=ff_frights_feedback_viewer]
 execute as @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_task_visit_area,tag=!ff_task_compass_no_particles] at @s run particle minecraft:trial_omen ~ ~0.5 ~ 0.8 0.35 0.8 0 2 force @a[tag=ff_frights_feedback_viewer]

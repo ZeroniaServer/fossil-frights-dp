@@ -20,8 +20,6 @@ scoreboard players set $ancient_portal_timer ff_task_state 0
 execute as @e[type=#fossil_frights:display_entities,tag=ff_ancient_portal] run data modify entity @s view_range set value 0
 function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
-function fossil_frights:tasks/final/final_task/close_lab_door
-function fossil_frights:tasks/final/final_task/reset
 function fossil_frights:game/bossbar/setup
 function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup

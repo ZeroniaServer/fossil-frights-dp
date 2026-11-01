@@ -164,10 +164,6 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fos
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/check_radius
-execute if predicate fossil_frights:game_state/game_running run function fossil_frights:tasks/hard/basketball_dance/player_tick
-tag @s add ff_microfiber_cloth_holder
-execute unless items entity @s weapon.* *[custom_data~{itemID:"microfiber_cloth"}] run tag @s remove ff_microfiber_cloth_holder
-execute if entity @s[tag=ff_microfiber_cloth_holder] run function fossil_frights:tasks/final/dna/hover_check
 scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0

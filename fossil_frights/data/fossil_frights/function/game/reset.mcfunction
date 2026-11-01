@@ -20,8 +20,6 @@ kill @e[tag=purple_mobs]
 scoreboard players set $ancient_portal_timer ff_task_state 0
 execute as @e[type=#fossil_frights:display_entities,tag=ff_ancient_portal] run data modify entity @s view_range set value 0
 function fossil_frights:tasks/medium/feed_parrot/cleanup
-function fossil_frights:tasks/final/final_task/close_lab_door
-function fossil_frights:tasks/final/final_task/reset
 function fossil_frights:game/bossbar/clear
 function fossil_frights:animations/game_start/stop
 execute unless score $defeat_anim ff_game_state matches 1 run function fossil_frights:animations/defeat/stop

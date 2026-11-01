@@ -32,5 +32,4 @@ function fossil_frights:game/heists/loot/steal_alert
 function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/render_tick
 function fossil_frights:locator_bar/markers/sync_heist_if_changed
-execute if score $basketball_dance_timer ff_task_state matches 1.. run function fossil_frights:tasks/hard/basketball_dance/tick
 function fossil_frights:game/heists/loot/header

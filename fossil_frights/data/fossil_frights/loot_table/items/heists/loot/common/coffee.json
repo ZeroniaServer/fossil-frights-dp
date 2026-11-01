@@ -29,7 +29,6 @@
                 "minecraft:custom_data": {
                   "itemID": "coffee",
                   "ff_heist_common_loot": true,
-                  "ff_completes_picnic_with_trike_task": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

@@ -28,7 +28,6 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "dinonog",
-                  "ff_completes_picnic_with_trike_task": true,
                   "ff_heist_rules": {
                     "prevent_ground_despawn": true,
                     "delete_on_guard_pickup": true

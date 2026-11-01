@@ -2,4 +2,3 @@
 function fossil_frights:tasks/select/hard
 function fossil_frights:tasks/select/hard
 function fossil_frights:tasks/select/hard
-function fossil_frights:tasks/select/final

@@ -76,7 +76,6 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "fossil_fizz_drink",
-                  "ff_completes_picnic_with_trike_task": true,
                   "ff_heist_rules": {
                     "prevent_ground_despawn": true
                   }

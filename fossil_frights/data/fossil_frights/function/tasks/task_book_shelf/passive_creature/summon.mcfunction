@@ -1,9 +1,6 @@
 execute if entity @e[type=minecraft:strider,tag=ff_bookshelf_passive_creature,limit=1] run return 0
 
-execute if items entity @s weapon.mainhand *[custom_data~{itemID:"instant_coffee"}] run item modify entity @s weapon.mainhand fossil_frights:deduct_1
 execute if items entity @s weapon.mainhand *[custom_data~{itemID:"coffee"}] run item modify entity @s weapon.mainhand fossil_frights:deduct_1
-execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"instant_coffee"}] unless items entity @s weapon.mainhand *[custom_data~{itemID:"coffee"}] if items entity @s weapon.offhand *[custom_data~{itemID:"instant_coffee"}] run item modify entity @s weapon.offhand fossil_frights:deduct_1
-execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"instant_coffee"}] unless items entity @s weapon.mainhand *[custom_data~{itemID:"coffee"}] if items entity @s weapon.offhand *[custom_data~{itemID:"coffee"}] run item modify entity @s weapon.offhand fossil_frights:deduct_1
 
 particle minecraft:poof 18 70 28 0.45 0.75 0.45 0.08 32 force
 particle minecraft:block{block_state:"minecraft:chiseled_bookshelf"} 18 70 28 0.45 0.75 0.45 0.08 32 force

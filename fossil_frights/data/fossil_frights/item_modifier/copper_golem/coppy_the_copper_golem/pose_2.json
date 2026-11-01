@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:sequence",
-  "functions": [
-    "fossil_frights:copper_golem/set_eyes/on",
-    "fossil_frights:copper_golem/set_pose/sitting",
-    "fossil_frights:copper_golem/coppy_the_copper_golem/swag_glasses_condition"
-  ]
-}

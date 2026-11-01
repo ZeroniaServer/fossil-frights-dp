@@ -1,12 +1,10 @@
 execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_check_security] run return run function fossil_frights:tasks/easy/check_security/selected
-execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_check_ankylo] run return run function fossil_frights:tasks/easy/check_ankylo/selected
 execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_toilet_clog] run return run function fossil_frights:tasks/easy/toilet_clog/selected
 execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_polish_bell] run return run function fossil_frights:tasks/easy/polish_bell/selected
 execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_lock_register] run return run function fossil_frights:tasks/easy/lock_register/selected
 execute if entity @a[predicate=fossil_frights:player/is_playing,tag=ff_speedruntask_reset_salt_level] run return run function fossil_frights:tasks/easy/reset_salt_level/selected
 scoreboard players set #task_remaining ff_task_state 0
 execute unless score $check_security_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $check_ankylo_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $toilet_clog_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $polish_bell_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $lock_register_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -27,9 +25,6 @@ execute unless score $check_security_sel ff_task_state matches 1 run scoreboard 
 execute unless score $check_security_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/check_security/selected
 execute unless score $check_security_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 
-execute unless score $check_ankylo_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $check_ankylo_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/check_ankylo/selected
-execute unless score $check_ankylo_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 
 execute unless score $toilet_clog_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $toilet_clog_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/toilet_clog/selected

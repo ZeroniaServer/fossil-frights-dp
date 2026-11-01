@@ -40,8 +40,6 @@ execute as @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice] at @s un
 execute as @e[type=minecraft:marker,tag=ff_trap] at @s run function fossil_frights:items/heists/trap/tick
 execute as @a[tag=ff_ice_frozen] run function fossil_frights:items/heists/ice_cannon/cleanup_orphan
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
-execute unless entity @a[tag=ff_microfiber_cloth_holder] as @e[type=minecraft:item_display,tag=ff_dna_hover] run function fossil_frights:tasks/final/dna/clear_hover
-execute unless entity @a[tag=ff_microfiber_cloth_holder] run tag @e[type=minecraft:item_display,tag=ff_dna_hover] remove ff_dna_hover
 execute as @e[type=minecraft:item_display,tag=ff_lock_hovered] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:item_model":"fossil_frights:display/general/lock"}}
 tag @e[type=minecraft:item_display,tag=ff_lock_hovered] remove ff_lock_hovered
 execute as @e[type=minecraft:item_display,tag=ff_key_anim] at @s run function fossil_frights:key/anim_tick
@@ -70,7 +68,6 @@ execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run fun
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
-function fossil_frights:tasks/final/final_task/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1

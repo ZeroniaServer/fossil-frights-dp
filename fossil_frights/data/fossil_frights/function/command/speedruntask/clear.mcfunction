@@ -1,5 +1,4 @@
 tag @s remove ff_speedruntask_check_security
-tag @s remove ff_speedruntask_check_ankylo
 tag @s remove ff_speedruntask_toilet_clog
 tag @s remove ff_speedruntask_polish_bell
 tag @s remove ff_speedruntask_lock_register
