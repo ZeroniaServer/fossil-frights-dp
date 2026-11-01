@@ -36,8 +36,8 @@ scoreboard players set $visit_silurian_sel ff_task_state 0
 scoreboard players set $visit_silurian_done ff_task_state 0
 scoreboard players set $visit_archean_sel ff_task_state 0
 scoreboard players set $visit_archean_done ff_task_state 0
-scoreboard players set $dive_into_well_sel ff_task_state 0
-scoreboard players set $dive_into_well_done ff_task_state 0
+scoreboard players set $dive_into_outhouse_sel ff_task_state 0
+scoreboard players set $dive_into_outhouse_done ff_task_state 0
 scoreboard players set $water_temp_sel ff_task_state 0
 scoreboard players set $water_temp_done ff_task_state 0
 scoreboard players set $fix_cracked_egg_sel ff_task_state 0
@@ -136,7 +136,7 @@ scoreboard players reset $tt_reset_fountain ff_task_tracker
 scoreboard players reset $tt_visit_neogene ff_task_tracker
 scoreboard players reset $tt_visit_silurian ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
-scoreboard players reset $tt_dive_into_well ff_task_tracker
+scoreboard players reset $tt_dive_into_outhouse ff_task_tracker
 scoreboard players reset $tt_water_temp ff_task_tracker
 scoreboard players reset $tt_fix_cracked_egg ff_task_tracker
 scoreboard players reset $tt_tnt_test ff_task_tracker
@@ -183,7 +183,7 @@ function fossil_frights:tasks/easy/reset_fountain/reset
 function fossil_frights:tasks/easy/visit_neogene/reset
 function fossil_frights:tasks/easy/visit_silurian/reset
 function fossil_frights:tasks/easy/visit_archean/reset
-function fossil_frights:tasks/easy/dive_into_well/reset
+function fossil_frights:tasks/easy/dive_into_outhouse/reset
 function fossil_frights:tasks/easy/water_temp/reset
 function fossil_frights:tasks/easy/fix_cracked_egg/reset
 function fossil_frights:tasks/easy/tnt_test/reset

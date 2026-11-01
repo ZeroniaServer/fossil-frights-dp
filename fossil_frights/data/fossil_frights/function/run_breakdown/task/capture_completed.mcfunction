@@ -8,8 +8,8 @@ execute if score $count_shells_done ff_task_state matches 1 unless score $count_
 execute if score $count_shells_done ff_task_state matches 1 run scoreboard players set $count_shells_rb ff_run_breakdown 1
 execute if score $count_toes_done ff_task_state matches 1 unless score $count_toes_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"06"}
 execute if score $count_toes_done ff_task_state matches 1 run scoreboard players set $count_toes_rb ff_run_breakdown 1
-execute if score $dive_into_well_done ff_task_state matches 1 unless score $dive_into_well_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"08"}
-execute if score $dive_into_well_done ff_task_state matches 1 run scoreboard players set $dive_into_well_rb ff_run_breakdown 1
+execute if score $dive_into_outhouse_done ff_task_state matches 1 unless score $dive_into_outhouse_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"08"}
+execute if score $dive_into_outhouse_done ff_task_state matches 1 run scoreboard players set $dive_into_outhouse_rb ff_run_breakdown 1
 execute if score $fix_cracked_egg_done ff_task_state matches 1 unless score $fix_cracked_egg_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"10"}
 execute if score $fix_cracked_egg_done ff_task_state matches 1 run scoreboard players set $fix_cracked_egg_rb ff_run_breakdown 1
 execute if score $fix_mars_done ff_task_state matches 1 unless score $fix_mars_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"11"}

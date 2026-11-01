@@ -16,7 +16,7 @@ execute unless score $reset_fountain_sel ff_task_state matches 1 run scoreboard 
 execute unless score $visit_neogene_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $visit_silurian_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $dive_into_outhouse_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $tnt_test_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -97,9 +97,9 @@ execute unless score $visit_silurian_sel ff_task_state matches 1 if score #task_
 execute unless score $visit_archean_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $visit_archean_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/visit_archean/selected
 execute unless score $visit_archean_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $dive_into_well_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/dive_into_well/selected
-execute unless score $dive_into_well_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $dive_into_outhouse_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $dive_into_outhouse_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/dive_into_outhouse/selected
+execute unless score $dive_into_outhouse_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $water_temp_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/water_temp/selected
 execute unless score $water_temp_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

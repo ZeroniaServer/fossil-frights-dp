@@ -10,8 +10,8 @@ execute if score $count_shells_sel ff_task_state matches 1 run scoreboard player
 execute if score $count_shells_sel ff_task_state matches 1 if score $count_shells_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $count_toes_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $count_toes_sel ff_task_state matches 1 if score $count_toes_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $dive_into_well_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $dive_into_well_sel ff_task_state matches 1 if score $dive_into_well_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $dive_into_outhouse_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $dive_into_outhouse_sel ff_task_state matches 1 if score $dive_into_outhouse_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $fix_cracked_egg_sel ff_task_state matches 1 if score $fix_cracked_egg_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $fix_mars_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

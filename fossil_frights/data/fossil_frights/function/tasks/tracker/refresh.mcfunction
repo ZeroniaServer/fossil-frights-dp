@@ -9,7 +9,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"check_security"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"climb_the_tower"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"count_shells"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"count_toes"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"dive_into_well"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"dive_into_outhouse"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"fix_cracked_egg"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"fix_mars"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"lock_register"}
