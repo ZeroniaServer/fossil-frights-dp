@@ -29,7 +29,7 @@ execute unless score $heist_loot_render_state_pink_jelly ff_heist_loot_state = $
 execute unless score $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_cotton_candy ff_heist_loot_state = $loot_cotton_candy ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_credit_reel ff_heist_loot_state = $loot_credit_reel ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-execute unless score $heist_loot_render_state_muddy_sherd ff_heist_loot_state = $loot_muddy_sherd ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_icey_sherd ff_heist_loot_state = $loot_icey_sherd ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_carrot_cake ff_heist_loot_state = $loot_carrot_cake ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_hot_chocolate ff_heist_loot_state = $loot_hot_chocolate ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
@@ -93,7 +93,7 @@ scoreboard players operation $heist_loot_render_state_pink_jelly ff_heist_loot_s
 scoreboard players operation $heist_loot_render_state_leather ff_heist_loot_state = $loot_leather ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_cotton_candy ff_heist_loot_state = $loot_cotton_candy ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_credit_reel ff_heist_loot_state = $loot_credit_reel ff_heist_loot_state
-scoreboard players operation $heist_loot_render_state_muddy_sherd ff_heist_loot_state = $loot_muddy_sherd ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_icey_sherd ff_heist_loot_state = $loot_icey_sherd ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_carrot_cake ff_heist_loot_state = $loot_carrot_cake ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_hot_chocolate ff_heist_loot_state = $loot_hot_chocolate ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state

@@ -47,7 +47,7 @@ scoreboard players set $revitalize_coral_rb ff_run_breakdown 0
 scoreboard players set $shark_bait_rb ff_run_breakdown 0
 scoreboard players set $smelly_toilet_rb ff_run_breakdown 0
 scoreboard players set $sponge_up_spill_rb ff_run_breakdown 0
-scoreboard players set $wash_muddy_sherd_rb ff_run_breakdown 0
+scoreboard players set $wash_icey_sherd_rb ff_run_breakdown 0
 scoreboard players set $water_crops_rb ff_run_breakdown 0
 scoreboard players set $a_c_reset_rb ff_run_breakdown 0
 scoreboard players set $basketball_dance_rb ff_run_breakdown 0

@@ -201,7 +201,7 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "muddy_sherd": {
+                        "icey_sherd": {
                             "type": "literal",
                             "executable": true
                         },
@@ -541,7 +541,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "wash_muddy_sherd": {
+                                "wash_icey_sherd": {
                                     "type": "literal",
                                     "executable": true
                                 },

@@ -12,19 +12,19 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.muddy_sherd",
+                  "translate": "ff.item.icey_sherd",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil_frights:items/frights/medium_items/muddy_sherd",
+                "minecraft:item_model": "fossil_frights:items/frights/medium_items/icey_sherd",
                 "minecraft:custom_data": {
-                  "itemID": "muddy_sherd",
+                  "itemID": "icey_sherd",
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }
                 }
               }
             },
-            "fossil_frights:item_definition/heist_loot/muddy_sherd",
+            "fossil_frights:item_definition/heist_loot/icey_sherd",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

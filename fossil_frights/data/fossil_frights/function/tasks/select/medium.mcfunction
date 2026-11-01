@@ -13,7 +13,7 @@ execute unless score $restock_plushies_sel ff_task_state matches 1 run scoreboar
 execute unless score $revitalize_coral_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $shark_bait_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $smelly_toilet_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $wash_icey_sherd_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $feed_parrot_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $water_crops_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $picnic_with_trike_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -95,9 +95,9 @@ execute unless score $shark_bait_sel ff_task_state matches 1 if score #task_done
 execute unless score $smelly_toilet_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $smelly_toilet_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/smelly_toilet/selected
 execute unless score $smelly_toilet_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $wash_muddy_sherd_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/wash_muddy_sherd/selected
-execute unless score $wash_muddy_sherd_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $wash_icey_sherd_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $wash_icey_sherd_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/wash_icey_sherd/selected
+execute unless score $wash_icey_sherd_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $feed_parrot_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $feed_parrot_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/feed_parrot/selected
 execute unless score $feed_parrot_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

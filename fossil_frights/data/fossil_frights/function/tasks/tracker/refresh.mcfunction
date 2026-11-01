@@ -54,7 +54,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"revitalize_coral"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"shark_bait"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"smelly_toilet"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"sponge_up_spill"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"wash_muddy_sherd"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"wash_icey_sherd"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"water_crops"}
 
 function fossil_frights:tasks/tracker/update_sidebar {task:"a_c_reset"}

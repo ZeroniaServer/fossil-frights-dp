@@ -98,8 +98,8 @@ execute if score $smelly_toilet_sel ff_task_state matches 1 run scoreboard playe
 execute if score $smelly_toilet_sel ff_task_state matches 1 if score $smelly_toilet_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $sponge_up_spill_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $sponge_up_spill_sel ff_task_state matches 1 if score $sponge_up_spill_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $wash_muddy_sherd_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $wash_muddy_sherd_sel ff_task_state matches 1 if score $wash_muddy_sherd_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $wash_icey_sherd_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $wash_icey_sherd_sel ff_task_state matches 1 if score $wash_icey_sherd_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $water_crops_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $water_crops_sel ff_task_state matches 1 if score $water_crops_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $a_c_reset_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
