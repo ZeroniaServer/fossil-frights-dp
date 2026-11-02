@@ -30,6 +30,8 @@ execute if score $chimney_sweep_sel ff_task_state matches 1 run scoreboard playe
 execute if score $chimney_sweep_sel ff_task_state matches 1 if score $chimney_sweep_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $scrape_resin_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $scrape_resin_sel ff_task_state matches 1 if score $scrape_resin_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $sweep_snow_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $sweep_snow_sel ff_task_state matches 1 if score $sweep_snow_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 if score $polish_bell_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

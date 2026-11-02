@@ -28,6 +28,7 @@ execute unless score $smell_gingerbread_sel ff_task_state matches 1 run scoreboa
 execute unless score $kiss_t_rex_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $chimney_sweep_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $scrape_resin_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $sweep_snow_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run scoreboard players get #task_remaining ff_task_state
@@ -56,6 +57,7 @@ execute if score #task_remaining ff_task_state matches 23 store result score #ta
 execute if score #task_remaining ff_task_state matches 24 store result score #task_pick ff_task_state run random value 1..24
 execute if score #task_remaining ff_task_state matches 25 store result score #task_pick ff_task_state run random value 1..25
 execute if score #task_remaining ff_task_state matches 26 store result score #task_pick ff_task_state run random value 1..26
+execute if score #task_remaining ff_task_state matches 27 store result score #task_pick ff_task_state run random value 1..27
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -138,3 +140,6 @@ execute unless score $chimney_sweep_sel ff_task_state matches 1 if score #task_d
 execute unless score $scrape_resin_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $scrape_resin_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/scrape_resin/selected
 execute unless score $scrape_resin_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $sweep_snow_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $sweep_snow_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/sweep_snow/selected
+execute unless score $sweep_snow_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

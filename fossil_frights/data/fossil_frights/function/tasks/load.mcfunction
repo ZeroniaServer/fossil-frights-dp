@@ -40,6 +40,8 @@ function fossil_frights:tasks/register {id: "chimney_sweep", difficulty: "easy",
 function fossil_frights:tasks/easy/chimney_sweep/cleanup
 function fossil_frights:tasks/register {id: "scrape_resin", difficulty: "easy", custom_icon: false, sidebar_index: 52}
 function fossil_frights:tasks/easy/scrape_resin/cleanup
+function fossil_frights:tasks/register {id: "sweep_snow", difficulty: "easy", custom_icon: false, sidebar_index: 53}
+function fossil_frights:tasks/easy/sweep_snow/cleanup
 
 function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}
 function fossil_frights:tasks/register {id: "credit_reel", difficulty: "medium", custom_icon: false, sidebar_index: 20}

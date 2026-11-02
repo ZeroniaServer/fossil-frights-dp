@@ -443,6 +443,10 @@
                                 "scrape_resin": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "sweep_snow": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },
