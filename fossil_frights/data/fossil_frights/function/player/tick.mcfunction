@@ -54,8 +54,8 @@ execute if score @s ff_tutorial_prompt matches 2 run function fossil_frights:gam
 execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players enable @s ff_tutorial_prompt
 execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players set @s ff_tutorial_prompt 0
 scoreboard players add @s ff_msg_cooldown 0
-scoreboard players add @s ff_settings_mode_cooldown 0
 execute if score @s ff_settings_mode_cooldown matches 1.. run scoreboard players remove @s ff_settings_mode_cooldown 1
+execute if score @s ff_settings_mode_cooldown matches ..0 run scoreboard players reset @s ff_settings_mode_cooldown
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
 function fossil_frights:items/confetti_cannon/player_tick
 execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frights:items/hoverboard/restore_used_item
@@ -164,11 +164,10 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fos
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/check_radius
-scoreboard players add @s ff_key_cooldown 0
 advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
-execute if score @s ff_key_cooldown matches 0 if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
+execute unless score @s ff_key_cooldown matches 1.. if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s[predicate=fossil_frights:player/team/lobby,gamemode=!spectator] minecraft:waypoint_receive_range base set 0
 attribute @s[predicate=fossil_frights:player/is_playing] minecraft:waypoint_receive_range base set 60000000

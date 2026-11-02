@@ -2,9 +2,9 @@ execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if entity @s[gamemode=spectator] if predicate fossil_frights:game_state/game_running run return run function fossil_frights:messages/error/cannot_spawn_while_active
 execute if entity @s[gamemode=spectator] run function fossil_frights:join/spectator/command_exit
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if predicate fossil_frights:player/is_playing_parkour run function fossil_frights:lobby_games/parkour/end
 execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/end
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/end
 execute unless predicate fossil_frights:game_state/game_running if score $active_set ff_game_state matches 0 unless entity @a[limit=1,tag=ff_in_queue] run function fossil_frights:join/guard/enter
 execute if predicate fossil_frights:player/is_playing run return run function fossil_frights:game/start_room/settings/gamemode/party/click
 execute unless predicate fossil_frights:player/is_playing if predicate fossil_frights:game_state/game_running run function fossil_frights:join/queue/enter

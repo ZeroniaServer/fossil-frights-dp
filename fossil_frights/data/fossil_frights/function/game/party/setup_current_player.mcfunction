@@ -7,9 +7,9 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if predicate fossil_frights:player/is_playing_parkour run function fossil_frights:lobby_games/parkour/end
 execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/end
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/end
 function fossil_frights:lobby_games/stop_all
 function fossil_frights:cameras/clear_posteffect
 tag @s remove ff_join_spectator_zone
@@ -22,7 +22,7 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect give @s minecraft:instant_health 100 0 true
 effect give @s minecraft:saturation infinite 255 true
-scoreboard players set @s ff_key_cooldown 0
+scoreboard players reset @s ff_key_cooldown
 scoreboard players set @s ff_speedrun_delta 0
 scoreboard players set @s ff_speedrun_sign 0
 title @s subtitle ""

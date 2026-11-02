@@ -19,8 +19,8 @@ execute if score #credit_reel_animation_time ff_global matches 30 run data merge
 
 execute as @e[type=#fossil_frights:display_entities,tag=ff_credits_scroll] at @s run tp @s ~ ~0.032 ~
 execute positioned 8.0 78.00 75.5 positioned ~-20 ~ ~-20 run kill @e[type=#fossil_frights:display_entities,tag=ff_credits_scroll,dx=39,dy=1,dz=39]
-execute positioned 7.75 77.616 75.0 as @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll.title,dx=0,dy=0,dz=0,tag=!ff_credits_scroll.squeezing] run data merge entity @s {start_interpolation:0,interpolation_duration:20,transformation:{translation:[0,1.04827586207,0],scale:[0.725,0.5,0.725]}}
-execute positioned 7.75 77.616 75.0 as @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll.title,dx=0,dy=0,dz=0,tag=!ff_credits_scroll.squeezing] run tag @s add ff_credits_scroll.squeezing
+execute positioned 7.75 77.3 75.0 as @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll.squish,dx=0,dy=0,dz=0,tag=!ff_credits_scroll.squishing] run data merge entity @s {start_interpolation:0,interpolation_duration:40,transformation:{scale:[0.725,0.5,0.725]}}
+execute positioned 7.75 77.3 75.0 as @e[limit=1,type=minecraft:item_display,tag=ff_credits_scroll.squish,dx=0,dy=0,dz=0,tag=!ff_credits_scroll.squishing] run tag @s add ff_credits_scroll.squishing
 
 execute if entity @e[limit=1,type=#fossil_frights:display_entities,tag=ff_credits_scroll] run return run schedule function fossil_frights:animations/credits/tick 1t
 function fossil_frights:animations/credits/cleanup

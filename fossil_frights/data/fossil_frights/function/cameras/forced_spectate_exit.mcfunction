@@ -7,6 +7,11 @@ execute store result storage fossil_frights:forced_spectate return.z double 0.00
 execute store result storage fossil_frights:forced_spectate return.yaw float 0.001 run scoreboard players get @s ff_forced_spec_yaw
 execute store result storage fossil_frights:forced_spectate return.pitch float 0.001 run scoreboard players get @s ff_forced_spec_pitch
 function fossil_frights:cameras/forced_spectate_return_macro with storage fossil_frights:forced_spectate return
+scoreboard players reset @s ff_forced_spec_x
+scoreboard players reset @s ff_forced_spec_y
+scoreboard players reset @s ff_forced_spec_z
+scoreboard players reset @s ff_forced_spec_yaw
+scoreboard players reset @s ff_forced_spec_pitch
 gamemode adventure @s
 tag @s remove ff_forced_spectate
 setblock -28 70 38 air

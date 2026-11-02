@@ -5,7 +5,5 @@
     "target": "this",
     "score": "ff_temple_run_running"
   },
-  "test": {
-    "min": 1
-  }
+  "test": 1
 }

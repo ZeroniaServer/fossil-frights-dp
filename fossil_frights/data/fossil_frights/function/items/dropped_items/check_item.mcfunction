@@ -4,7 +4,7 @@ tag @s add ff_dropped_item_checked
 execute if data entity @s {Age:5999s} run return 0
 
 ## Cancel throw (and do something)
-execute if items entity @s contents *[custom_data~{itemID:"infinileaf"}] on origin run tag @s[tag=ff_ant_fight] add ff_dropped_infinileaf
+execute if items entity @s contents *[custom_data~{itemID:"infinileaf"}] on origin if predicate fossil_frights:player/is_playing_ant_fight run tag @s add ff_dropped_infinileaf
 execute if items entity @s contents *[custom_data~{itemID:"infinileaf"}] run return run kill @s
 
 execute if items entity @s contents *[custom_data~{ff_heist_trap:true}] if function fossil_frights:items/dropped_items/check_thrower run execute on origin run function fossil_frights:items/heists/trap/left_click

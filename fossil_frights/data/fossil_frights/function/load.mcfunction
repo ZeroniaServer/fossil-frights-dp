@@ -22,7 +22,6 @@ scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
-scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
 scoreboard objectives add ff_security_camera dummy
@@ -558,9 +557,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "player_team",\
     "key_cooldown",\
     "crab_timer",\
-    "bb_sneak_seen",\
-    "bb_sneak_state",\
-    "bb_shift_count",\
     "security_camera",\
     "security_camera_nav",\
     "security_camera_heist",\
@@ -570,7 +566,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "forced_spec_yaw",\
     "forced_spec_pitch",\
     "coin_used_run",\
-    "map_region",\
     "leave_game",\
     "leave_game_seen",\
     "deaths",\
@@ -693,7 +688,6 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "heist_loot_security_hold",\
     "heist_loot_security_phase",\
     "heist_loot_security_recent",\
-    "heist_loot_security_ui",\
     "heist_loot_security_cooldown",\
     "heist_loot_security_progress",\
     "heist_loot_security_flash",\
@@ -701,24 +695,14 @@ data modify storage fossil_frights:session saved_scoreboard_objectives set value
     "heist_loot_security_locked",\
     "invisimask_variant",\
     \
-    "ant_fight",\
-    "ant_leaf_use",\
-    "ant_leaf_seen",\
     "ant_score",\
     "ant_top_score",\
-    "ant_immunity",\
-    "ant_sneak_time",\
-    "ant_sneak_seen",\
-    "ant_sneak_ticks",\
-    "ant_unsneak_ticks",\
-    "ant_blind_ticks",\
-    "ant_combo",\
     \
+    "parkour_running",\
     "parkour_time",\
     "parkour_best",\
-    "parkour_running",\
     \
+    "temple_run_running",\
     "temple_run_time",\
     "temple_run_best",\
-    "temple_run_running",\
 ]

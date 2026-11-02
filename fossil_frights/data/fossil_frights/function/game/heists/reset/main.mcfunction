@@ -38,45 +38,46 @@ scoreboard players reset @a ff_heist_punch_cd
 scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players reset @a ff_heist_invis_ticks
 scoreboard players set @a ff_heist_stolen_keys 0
-scoreboard players set @a ff_heist_loot_captured_round 0
-scoreboard players set @a ff_heist_keyed_loot_captured_round 0
-scoreboard players set @a ff_heist_keys_stolen_round 0
-scoreboard players set @a ff_heist_deaths_round 0
+scoreboard players reset @a ff_heist_loot_captured_round
+scoreboard players reset @a ff_heist_keyed_loot_captured_round
+scoreboard players reset @a ff_heist_keys_stolen_round
+scoreboard players reset @a ff_heist_deaths_round
 scoreboard players set @a ff_heist_deaths_baseline 0
-scoreboard players set @a ff_heist_thieves_killed_round 0
-scoreboard players set @a ff_heist_killer_pending 0
+scoreboard players reset @a ff_heist_thieves_killed_round
+scoreboard players reset @a ff_heist_killer_pending
 scoreboard players reset @a ff_heist_killer_uuid_0
 scoreboard players reset @a ff_heist_killer_uuid_1
 scoreboard players reset @a ff_heist_killer_uuid_2
 scoreboard players reset @a ff_heist_killer_uuid_3
 scoreboard players set @a ff_heist_regen_lock 0
-scoreboard players set @a ff_heist_thaw_fx 0
-scoreboard players set @a ff_heist_paint_fx 0
-scoreboard players set @a ff_heist_guard_sneak_ticks 0
-scoreboard players set @a ff_heist_guard_unsneak_ticks 0
-scoreboard players set @a ff_heist_loot_security_ticks 0
-scoreboard players set @a ff_heist_loot_security_hold 0
-scoreboard players set @a ff_heist_loot_security_phase 0
-scoreboard players set @a ff_heist_loot_security_recent 0
+scoreboard players reset @a ff_heist_thaw_fx
+scoreboard players reset @a ff_heist_paint_fx
+scoreboard players reset @a ff_heist_guard_sneak_ticks
+scoreboard players reset @a ff_heist_guard_unsneak_ticks
+scoreboard players reset @a ff_heist_loot_security_ticks
+scoreboard players reset @a ff_heist_loot_security_hold
+scoreboard players reset @a ff_heist_loot_security_phase
+scoreboard players reset @a ff_heist_loot_security_recent
 scoreboard players set @a ff_heist_loot_security_ui 0
 tag @a remove ff_heist_loot_security_active
 scoreboard players set @a ff_trap_input_delay 0
+scoreboard players reset @a ff_trap_selected
 scoreboard players reset @a ff_trap_pending_ticks
-scoreboard players set @a ff_trap_glow_phase 0
-scoreboard players set @a ff_trap_glow_timer 0
-scoreboard players set @a ff_trap_glow_cooldown 0
-scoreboard players set @a ff_trap_freeze_phase 0
-scoreboard players set @a ff_trap_freeze_timer 0
-scoreboard players set @a ff_trap_freeze_cooldown 0
-scoreboard players set @a ff_trap_antigravity_phase 0
-scoreboard players set @a ff_trap_antigravity_timer 0
-scoreboard players set @a ff_trap_antigravity_cooldown 0
-scoreboard players set @a ff_trap_jelly_phase 0
-scoreboard players set @a ff_trap_jelly_timer 0
-scoreboard players set @a ff_trap_jelly_cooldown 0
-scoreboard players set @a ff_trap_explosive_phase 0
-scoreboard players set @a ff_trap_explosive_timer 0
-scoreboard players set @a ff_trap_explosive_cooldown 0
+scoreboard players reset @a ff_trap_glow_phase
+scoreboard players reset @a ff_trap_glow_timer
+scoreboard players reset @a ff_trap_glow_cooldown
+scoreboard players reset @a ff_trap_freeze_phase
+scoreboard players reset @a ff_trap_freeze_timer
+scoreboard players reset @a ff_trap_freeze_cooldown
+scoreboard players reset @a ff_trap_antigravity_phase
+scoreboard players reset @a ff_trap_antigravity_timer
+scoreboard players reset @a ff_trap_antigravity_cooldown
+scoreboard players reset @a ff_trap_jelly_phase
+scoreboard players reset @a ff_trap_jelly_timer
+scoreboard players reset @a ff_trap_jelly_cooldown
+scoreboard players reset @a ff_trap_explosive_phase
+scoreboard players reset @a ff_trap_explosive_timer
+scoreboard players reset @a ff_trap_explosive_cooldown
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0
 gamerule minecraft:natural_health_regeneration true

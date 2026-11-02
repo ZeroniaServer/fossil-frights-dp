@@ -10,7 +10,7 @@ execute if entity @s[tag=ff_fade_tp_active] unless score @s ff_tp_action matches
 execute if predicate fossil_frights:game_state/game_running if score $settings_spectator_deny ff_game_state matches 1 run function fossil_frights:messages/error/spectating_disabled
 execute if predicate fossil_frights:game_state/game_running if score $settings_spectator_deny ff_game_state matches 1 run return 0
 execute unless entity @a[predicate=fossil_frights:player/team/guard,limit=1] unless entity @a[predicate=fossil_frights:player/team/thief,limit=1] run return 0
-execute if entity @s[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
+execute if predicate fossil_frights:player/is_playing_ant_fight run function fossil_frights:lobby_games/ant_fight/end
 execute if entity @s[predicate=fossil_frights:player/team/spectator] run tag @s add ff_spectate_message_suppressed
 function fossil_frights:player/set_team/none
 execute unless entity @s[predicate=fossil_frights:player/team/dev_mode] run function fossil_frights:player/set_team/spectator

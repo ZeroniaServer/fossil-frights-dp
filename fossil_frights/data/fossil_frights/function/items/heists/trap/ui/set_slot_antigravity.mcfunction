@@ -1,5 +1,5 @@
 data modify storage fossil_frights:trap_ui slot3 set value "\ue321"
-execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_antigravity_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress = @s ff_trap_antigravity_timer
+execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_antigravity_cooldown matches 1.. store result score @s ff_trap_ui_progress run scoreboard players get @s ff_trap_antigravity_timer
 execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_antigravity_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress *= $trap_ui_six ff_trap_balance
 execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_antigravity_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress /= @s ff_trap_antigravity_cooldown
 execute if score @s ff_trap_antigravity_phase matches 1 if score @s ff_trap_antigravity_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot3 set value "\ue322"
@@ -13,7 +13,7 @@ execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_ui_p
 execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_ui_progress matches 2 run data modify storage fossil_frights:trap_ui slot3 set value "\ue324"
 execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_ui_progress matches 3 run data modify storage fossil_frights:trap_ui slot3 set value "\ue325"
 execute if score @s ff_trap_antigravity_phase matches 3 if score @s ff_trap_ui_progress matches 4.. run data modify storage fossil_frights:trap_ui slot3 set value "\ue326"
-execute if score @s ff_trap_selected matches 2 if score @s ff_trap_antigravity_phase matches 0 run data modify storage fossil_frights:trap_ui slot3 set value "\ue320"
+execute if score @s ff_trap_selected matches 2 unless score @s ff_trap_antigravity_phase matches 1.. run data modify storage fossil_frights:trap_ui slot3 set value "\ue320"
 execute if score @s ff_trap_selected matches 2 if score @s ff_trap_antigravity_phase matches 1 if score @s ff_trap_antigravity_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot3 set value "\ue327"
 execute if score @s ff_trap_selected matches 2 if score @s ff_trap_antigravity_phase matches 1 if score @s ff_trap_antigravity_timer matches 10..19 run data modify storage fossil_frights:trap_ui slot3 set value "\ue328"
 execute if score @s ff_trap_selected matches 2 if score @s ff_trap_antigravity_phase matches 1 if score @s ff_trap_antigravity_timer matches 20..29 run data modify storage fossil_frights:trap_ui slot3 set value "\ue329"
