@@ -56,6 +56,8 @@ scoreboard players set $smell_gingerbread_sel ff_task_state 0
 scoreboard players set $smell_gingerbread_done ff_task_state 0
 scoreboard players set $kiss_t_rex_sel ff_task_state 0
 scoreboard players set $kiss_t_rex_done ff_task_state 0
+scoreboard players set $chimney_sweep_sel ff_task_state 0
+scoreboard players set $chimney_sweep_done ff_task_state 0
 
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
@@ -141,6 +143,7 @@ scoreboard players reset $tt_visit_silurian ff_task_tracker
 scoreboard players reset $tt_sit_on_lap ff_task_tracker
 scoreboard players reset $tt_smell_gingerbread ff_task_tracker
 scoreboard players reset $tt_kiss_t_rex ff_task_tracker
+scoreboard players reset $tt_chimney_sweep ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_outhouse ff_task_tracker
 scoreboard players reset $tt_water_temp ff_task_tracker
@@ -198,6 +201,7 @@ function fossil_frights:tasks/easy/make_some_noise/reset
 function fossil_frights:tasks/easy/sit_on_lap/reset
 function fossil_frights:tasks/easy/smell_gingerbread/reset
 function fossil_frights:tasks/easy/kiss_t_rex/reset
+function fossil_frights:tasks/easy/chimney_sweep/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset

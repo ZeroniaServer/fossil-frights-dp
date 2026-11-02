@@ -36,6 +36,8 @@ function fossil_frights:tasks/register {id: "make_some_noise", difficulty: "easy
 function fossil_frights:tasks/register {id: "sit_on_lap", difficulty: "easy", custom_icon: false, sidebar_index: 48}
 function fossil_frights:tasks/register {id: "smell_gingerbread", difficulty: "easy", custom_icon: false, sidebar_index: 49}
 function fossil_frights:tasks/register {id: "kiss_t_rex", difficulty: "easy", custom_icon: false, sidebar_index: 50}
+function fossil_frights:tasks/register {id: "chimney_sweep", difficulty: "easy", custom_icon: false, sidebar_index: 51}
+function fossil_frights:tasks/easy/chimney_sweep/cleanup
 
 function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}
 function fossil_frights:tasks/register {id: "credit_reel", difficulty: "medium", custom_icon: false, sidebar_index: 20}

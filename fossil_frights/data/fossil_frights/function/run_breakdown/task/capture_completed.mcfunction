@@ -40,6 +40,14 @@ execute if score $visit_silurian_done ff_task_state matches 1 unless score $visi
 execute if score $visit_silurian_done ff_task_state matches 1 run scoreboard players set $visit_silurian_rb ff_run_breakdown 1
 execute if score $water_temp_done ff_task_state matches 1 unless score $water_temp_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"26"}
 execute if score $water_temp_done ff_task_state matches 1 run scoreboard players set $water_temp_rb ff_run_breakdown 1
+execute if score $sit_on_lap_done ff_task_state matches 1 unless score $sit_on_lap_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"65"}
+execute if score $sit_on_lap_done ff_task_state matches 1 run scoreboard players set $sit_on_lap_rb ff_run_breakdown 1
+execute if score $smell_gingerbread_done ff_task_state matches 1 unless score $smell_gingerbread_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"66"}
+execute if score $smell_gingerbread_done ff_task_state matches 1 run scoreboard players set $smell_gingerbread_rb ff_run_breakdown 1
+execute if score $kiss_t_rex_done ff_task_state matches 1 unless score $kiss_t_rex_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"67"}
+execute if score $kiss_t_rex_done ff_task_state matches 1 run scoreboard players set $kiss_t_rex_rb ff_run_breakdown 1
+execute if score $chimney_sweep_done ff_task_state matches 1 unless score $chimney_sweep_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"68"}
+execute if score $chimney_sweep_done ff_task_state matches 1 run scoreboard players set $chimney_sweep_rb ff_run_breakdown 1
 execute if score $ancient_portal_done ff_task_state matches 1 unless score $ancient_portal_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"27"}
 execute if score $ancient_portal_done ff_task_state matches 1 run scoreboard players set $ancient_portal_rb ff_run_breakdown 1
 execute if score $chlorinify_done ff_task_state matches 1 unless score $chlorinify_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"30"}

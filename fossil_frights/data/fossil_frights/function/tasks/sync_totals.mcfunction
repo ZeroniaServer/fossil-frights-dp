@@ -26,6 +26,8 @@ execute if score $smell_gingerbread_sel ff_task_state matches 1 run scoreboard p
 execute if score $smell_gingerbread_sel ff_task_state matches 1 if score $smell_gingerbread_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $kiss_t_rex_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $kiss_t_rex_sel ff_task_state matches 1 if score $kiss_t_rex_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $chimney_sweep_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $chimney_sweep_sel ff_task_state matches 1 if score $chimney_sweep_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 if score $polish_bell_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

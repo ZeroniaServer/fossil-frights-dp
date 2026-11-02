@@ -435,6 +435,10 @@
                                 "kiss_t_rex": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "chimney_sweep": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },
