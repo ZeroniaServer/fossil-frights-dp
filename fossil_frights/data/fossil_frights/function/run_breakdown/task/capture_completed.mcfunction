@@ -54,6 +54,10 @@ execute if score $sweep_snow_done ff_task_state matches 1 unless score $sweep_sn
 execute if score $sweep_snow_done ff_task_state matches 1 run scoreboard players set $sweep_snow_rb ff_run_breakdown 1
 execute if score $remove_dart_done ff_task_state matches 1 unless score $remove_dart_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"71"}
 execute if score $remove_dart_done ff_task_state matches 1 run scoreboard players set $remove_dart_rb ff_run_breakdown 1
+execute if score $close_clam_done ff_task_state matches 1 unless score $close_clam_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"72"}
+execute if score $close_clam_done ff_task_state matches 1 run scoreboard players set $close_clam_rb ff_run_breakdown 1
+execute if score $open_clam_done ff_task_state matches 1 unless score $open_clam_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"73"}
+execute if score $open_clam_done ff_task_state matches 1 run scoreboard players set $open_clam_rb ff_run_breakdown 1
 execute if score $ancient_portal_done ff_task_state matches 1 unless score $ancient_portal_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"27"}
 execute if score $ancient_portal_done ff_task_state matches 1 run scoreboard players set $ancient_portal_rb ff_run_breakdown 1
 execute if score $chlorinify_done ff_task_state matches 1 unless score $chlorinify_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"30"}

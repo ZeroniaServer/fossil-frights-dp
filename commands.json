@@ -451,6 +451,14 @@
                                 "remove_dart": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "close_clam": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "open_clam": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },

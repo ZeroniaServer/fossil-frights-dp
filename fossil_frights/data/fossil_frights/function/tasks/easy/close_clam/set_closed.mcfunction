@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=ff_close_clam] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:item_model":"fossil_frights:display/frightmas/task/clam"}}

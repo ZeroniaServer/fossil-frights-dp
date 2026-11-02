@@ -34,6 +34,10 @@ execute if score $sweep_snow_sel ff_task_state matches 1 run scoreboard players 
 execute if score $sweep_snow_sel ff_task_state matches 1 if score $sweep_snow_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $remove_dart_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $remove_dart_sel ff_task_state matches 1 if score $remove_dart_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $close_clam_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $close_clam_sel ff_task_state matches 1 if score $close_clam_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $open_clam_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $open_clam_sel ff_task_state matches 1 if score $open_clam_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 if score $polish_bell_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

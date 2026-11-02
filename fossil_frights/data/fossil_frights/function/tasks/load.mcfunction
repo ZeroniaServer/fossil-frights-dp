@@ -44,6 +44,10 @@ function fossil_frights:tasks/register {id: "sweep_snow", difficulty: "easy", cu
 function fossil_frights:tasks/easy/sweep_snow/cleanup
 function fossil_frights:tasks/register {id: "remove_dart", difficulty: "easy", custom_icon: false, sidebar_index: 54}
 function fossil_frights:tasks/easy/remove_dart/cleanup
+function fossil_frights:tasks/register {id: "close_clam", difficulty: "easy", custom_icon: false, sidebar_index: 55}
+function fossil_frights:tasks/easy/close_clam/cleanup
+function fossil_frights:tasks/register {id: "open_clam", difficulty: "easy", custom_icon: false, sidebar_index: 56}
+function fossil_frights:tasks/easy/open_clam/cleanup
 
 function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}
 function fossil_frights:tasks/register {id: "credit_reel", difficulty: "medium", custom_icon: false, sidebar_index: 20}
