@@ -46,7 +46,6 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"smelly_toilet"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"wash_icy_sherd"}
 
 function fossil_frights:tasks/tracker/update_sidebar {task:"a_c_reset"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"defrost_freezer"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"evolution"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"feed_the_bats"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"holy_grail"}

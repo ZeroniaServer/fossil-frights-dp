@@ -344,10 +344,6 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "check_ankylo": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "check_security": {
                                     "type": "literal",
                                     "executable": true
@@ -364,15 +360,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "dig_sand": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "dive_into_outhouse": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "fire_pottery": {
                                     "type": "literal",
                                     "executable": true
                                 },
@@ -408,10 +396,6 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "swat_flies": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "sweep_popcorn": {
                                     "type": "literal",
                                     "executable": true
@@ -425,10 +409,6 @@
                                     "executable": true
                                 },
                                 "visit_archean": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "visit_jurassic": {
                                     "type": "literal",
                                     "executable": true
                                 },
@@ -453,19 +433,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "bring_brush": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "brush_delivery": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "chlorinify": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "coffee_top_up": {
                                     "type": "literal",
                                     "executable": true
                                 },
@@ -493,10 +461,6 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "heat_it_up": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "nautilus_guard": {
                                     "type": "literal",
                                     "executable": true
@@ -506,10 +470,6 @@
                                     "executable": true
                                 },
                                 "popcorn_buckets": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "refill_coffee": {
                                     "type": "literal",
                                     "executable": true
                                 },
@@ -537,15 +497,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "sponge_up_spill": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "wash_icy_sherd": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "water_crops": {
                                     "type": "literal",
                                     "executable": true
                                 }
@@ -558,27 +510,11 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "basketball_dance": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "defrost_freezer": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "evolution": {
                                     "type": "literal",
                                     "executable": true
                                 },
                                 "feed_the_bats": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "fertilize_plant": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "glowberry_trees": {
                                     "type": "literal",
                                     "executable": true
                                 },
@@ -598,24 +534,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "skincare_routine": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "star_gazing": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
-                                "the_lost_code": {
-                                    "type": "literal",
-                                    "executable": true
-                                }
-                            }
-                        },
-                        "final": {
-                            "type": "literal",
-                            "children": {
-                                "final_task": {
                                     "type": "literal",
                                     "executable": true
                                 }

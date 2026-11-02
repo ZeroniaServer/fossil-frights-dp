@@ -74,7 +74,6 @@ scoreboard players set $a_c_fan_timer ff_task_state 0
 scoreboard players set $a_c_timer_active ff_task_state 0
 scoreboard players set $a_c_fan_spin ff_task_state 0
 scoreboard players set $a_c_fan_rot_state ff_task_state 0
-function fossil_frights:tasks/register {id: "defrost_freezer", difficulty: "hard", custom_icon: false, sidebar_index: 5}
 function fossil_frights:tasks/register {id: "pig_wrangler", difficulty: "hard", custom_icon: true, sidebar_index: 11}
 scoreboard players set $pig_wrangler_pick ff_task_state 0
 scoreboard players set $pig_wrangler_in_pen ff_task_state 0

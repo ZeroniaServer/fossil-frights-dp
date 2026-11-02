@@ -4,7 +4,6 @@ execute unless score $star_gazing_sel ff_task_state matches 1 run scoreboard pla
 execute unless score $return_the_key_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $feed_the_bats_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $a_c_reset_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $defrost_freezer_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $pig_wrangler_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $holy_grail_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $hoveraptor_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -41,9 +40,6 @@ execute unless score $feed_the_bats_sel ff_task_state matches 1 if score #task_d
 execute unless score $a_c_reset_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $a_c_reset_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/a_c_reset/selected
 execute unless score $a_c_reset_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $defrost_freezer_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $defrost_freezer_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/defrost_freezer/selected
-execute unless score $defrost_freezer_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $pig_wrangler_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $pig_wrangler_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/pig_wrangler/selected
 execute unless score $pig_wrangler_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

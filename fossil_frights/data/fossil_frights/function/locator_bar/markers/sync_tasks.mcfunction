@@ -89,10 +89,6 @@ execute if score $feed_the_bats_sel ff_task_state matches 1 unless score $feed_t
 execute if score $feed_the_bats_sel ff_task_state matches 1 unless score $feed_the_bats_done ff_task_state matches 1 if score $task_compass_item ff_compass matches 1 positioned 24 106 87 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_feed_the_bats",tags:"\"ff_task_compass_target\",\"ff_task_compass_feed_the_bats\"",style:"task_hard"}
 execute if score $a_c_reset_sel ff_task_state matches 1 unless score $a_c_reset_done ff_task_state matches 1 positioned -3 104 66 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_a_c_reset",tags:"\"ff_task_compass_target\",\"ff_task_compass_a_c_reset\"",style:"task_hard"}
 function fossil_frights:locator_bar/markers/check_item {item:"leather"}
-execute if score $defrost_freezer_sel ff_task_state matches 1 unless score $defrost_freezer_done ff_task_state matches 1 if score $task_compass_item ff_compass matches 1 run scoreboard players set $defrost_freezer_compass_stage ff_compass 1
-execute if score $defrost_freezer_sel ff_task_state matches 1 unless score $defrost_freezer_done ff_task_state matches 1 if score $defrost_freezer_compass_stage ff_compass matches 0 if score $task_compass_item ff_compass matches 0 as @e[type=minecraft:item_display,tag=ff_lock_leather,limit=1] at @s run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_lock,tag=ff_task_compass_defrost_freezer_lock",tags:"\"ff_task_compass_target\",\"ff_task_compass_lock\",\"ff_task_compass_defrost_freezer_lock\"",style:"task_hard"}
-execute if score $defrost_freezer_sel ff_task_state matches 1 unless score $defrost_freezer_done ff_task_state matches 1 if score $task_compass_item ff_compass matches 1 positioned 39 81 62 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_defrost_freezer_anvil",tags:"\"ff_task_compass_target\",\"ff_task_compass_defrost_freezer_anvil\"",style:"task_hard"}
-execute if score $defrost_freezer_sel ff_task_state matches 1 unless score $defrost_freezer_done ff_task_state matches 1 if score $defrost_freezer_compass_stage ff_compass matches 1 if score $task_compass_item ff_compass matches 0 positioned -17 70 36 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_defrost_freezer_door",tags:"\"ff_task_compass_target\",\"ff_task_compass_defrost_freezer_door\"",style:"task_hard"}
 execute if score $pig_wrangler_sel ff_task_state matches 1 unless score $pig_wrangler_done ff_task_state matches 1 if score $pig_wrangler_in_pen ff_task_state matches 1 unless score $pig_wrangler_fed ff_task_state matches 1 positioned 70 80 57 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_pig_wrangler,tag=ff_task_visit_area",tags:"\"ff_task_compass_target\",\"ff_task_compass_pig_wrangler\",\"ff_task_visit_area\"",style:"task_hard"}
 function fossil_frights:locator_bar/markers/check_item {item:"carrot_cake"}
 function fossil_frights:locator_bar/markers/check_item {item:"hot_chocolate"}
@@ -110,14 +106,4 @@ execute if score $hoveraptor_sel ff_task_state matches 1 unless score $hoverapto
 execute if score $evolution_sel ff_task_state matches 1 unless score $evolution_done ff_task_state matches 1 positioned 17 92 12 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_evolution,tag=ff_task_visit_area",tags:"\"ff_task_compass_target\",\"ff_task_compass_evolution\",\"ff_task_visit_area\"",style:"task_hard"}
 
 
-function fossil_frights:locator_bar/markers/check_final_item {item:"fish_food"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"dry_ice"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"fire_tablet"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"soap"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"chlorine_tablet"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"pink_jelly"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"febreeze_rod"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"leather"}
-function fossil_frights:locator_bar/markers/check_final_item {item:"cotton_candy_pink"}
-function fossil_frights:locator_bar/markers/style_final
 kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_compass_stale]

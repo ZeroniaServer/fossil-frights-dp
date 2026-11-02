@@ -78,8 +78,6 @@ execute if score $wash_icy_sherd_done ff_task_state matches 1 unless score $wash
 execute if score $wash_icy_sherd_done ff_task_state matches 1 run scoreboard players set $wash_icy_sherd_rb ff_run_breakdown 1
 execute if score $a_c_reset_done ff_task_state matches 1 unless score $a_c_reset_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"52"}
 execute if score $a_c_reset_done ff_task_state matches 1 run scoreboard players set $a_c_reset_rb ff_run_breakdown 1
-execute if score $defrost_freezer_done ff_task_state matches 1 unless score $defrost_freezer_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"54"}
-execute if score $defrost_freezer_done ff_task_state matches 1 run scoreboard players set $defrost_freezer_rb ff_run_breakdown 1
 execute if score $evolution_done ff_task_state matches 1 unless score $evolution_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"55"}
 execute if score $evolution_done ff_task_state matches 1 run scoreboard players set $evolution_rb ff_run_breakdown 1
 execute if score $feed_the_bats_done ff_task_state matches 1 unless score $feed_the_bats_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"56"}

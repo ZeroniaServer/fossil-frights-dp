@@ -38,7 +38,6 @@ scoreboard players set $shark_bait_rb ff_run_breakdown 0
 scoreboard players set $smelly_toilet_rb ff_run_breakdown 0
 scoreboard players set $wash_icy_sherd_rb ff_run_breakdown 0
 scoreboard players set $a_c_reset_rb ff_run_breakdown 0
-scoreboard players set $defrost_freezer_rb ff_run_breakdown 0
 scoreboard players set $evolution_rb ff_run_breakdown 0
 scoreboard players set $feed_the_bats_rb ff_run_breakdown 0
 scoreboard players set $holy_grail_rb ff_run_breakdown 0
