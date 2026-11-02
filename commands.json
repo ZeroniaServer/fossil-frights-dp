@@ -439,6 +439,10 @@
                                 "chimney_sweep": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "scrape_resin": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },

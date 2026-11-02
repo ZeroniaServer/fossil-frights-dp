@@ -23,6 +23,7 @@ scoreboard players set $sit_on_lap_rb ff_run_breakdown 0
 scoreboard players set $smell_gingerbread_rb ff_run_breakdown 0
 scoreboard players set $kiss_t_rex_rb ff_run_breakdown 0
 scoreboard players set $chimney_sweep_rb ff_run_breakdown 0
+scoreboard players set $scrape_resin_rb ff_run_breakdown 0
 scoreboard players set $ancient_portal_rb ff_run_breakdown 0
 scoreboard players set $chlorinify_rb ff_run_breakdown 0
 scoreboard players set $cool_it_rb ff_run_breakdown 0

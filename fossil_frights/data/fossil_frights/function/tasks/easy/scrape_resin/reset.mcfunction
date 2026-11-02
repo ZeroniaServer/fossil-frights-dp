@@ -1,0 +1,3 @@
+function fossil_frights:tasks/easy/scrape_resin/cleanup
+function fossil_frights:tasks/easy/scrape_resin/apply_clean
+function fossil_frights:tasks/easy/scrape_resin/set_display_visible
