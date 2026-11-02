@@ -537,7 +537,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "wash_icy_sherd": {
+                                "thaw_icy_sherd": {
                                     "type": "literal",
                                     "executable": true
                                 }

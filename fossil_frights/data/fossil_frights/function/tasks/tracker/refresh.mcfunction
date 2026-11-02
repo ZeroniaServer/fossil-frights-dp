@@ -53,7 +53,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"restock_plushies"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"revitalize_coral"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"shark_bait"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"smelly_toilet"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"wash_icy_sherd"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"thaw_icy_sherd"}
 
 function fossil_frights:tasks/tracker/update_sidebar {task:"a_c_reset"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"evolution"}
