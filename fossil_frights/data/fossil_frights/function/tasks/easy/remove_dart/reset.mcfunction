@@ -1,0 +1,2 @@
+function fossil_frights:tasks/easy/remove_dart/cleanup
+function fossil_frights:tasks/easy/remove_dart/set_display_hidden

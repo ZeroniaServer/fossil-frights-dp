@@ -20,6 +20,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"kiss_t_rex"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"chimney_sweep"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"scrape_resin"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"sweep_snow"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"remove_dart"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"polish_bell"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"reset_fountain"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"reset_salt_level"}

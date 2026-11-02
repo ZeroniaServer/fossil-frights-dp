@@ -113,6 +113,12 @@ execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"swe
 execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"sweep_snow"}}] run scoreboard players set #line_sweep_snow ff_task_state 996
 execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"sweep_snow"}}] run scoreboard players set #line_sweep_snow ff_task_state 995
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"sweep_snow"}}] run scoreboard players set #line_sweep_snow ff_task_state 994
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 999
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 998
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 997
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 996
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 995
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"remove_dart"}}] run scoreboard players set #line_remove_dart ff_task_state 994
 execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"visit_archean"}}] run scoreboard players set #line_visit_archean ff_task_state 999
 execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"visit_archean"}}] run scoreboard players set #line_visit_archean ff_task_state 998
 execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"visit_archean"}}] run scoreboard players set #line_visit_archean ff_task_state 997

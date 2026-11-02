@@ -62,6 +62,8 @@ scoreboard players set $scrape_resin_sel ff_task_state 0
 scoreboard players set $scrape_resin_done ff_task_state 0
 scoreboard players set $sweep_snow_sel ff_task_state 0
 scoreboard players set $sweep_snow_done ff_task_state 0
+scoreboard players set $remove_dart_sel ff_task_state 0
+scoreboard players set $remove_dart_done ff_task_state 0
 
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
@@ -150,6 +152,7 @@ scoreboard players reset $tt_kiss_t_rex ff_task_tracker
 scoreboard players reset $tt_chimney_sweep ff_task_tracker
 scoreboard players reset $tt_scrape_resin ff_task_tracker
 scoreboard players reset $tt_sweep_snow ff_task_tracker
+scoreboard players reset $tt_remove_dart ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_outhouse ff_task_tracker
 scoreboard players reset $tt_water_temp ff_task_tracker
@@ -210,6 +213,7 @@ function fossil_frights:tasks/easy/kiss_t_rex/reset
 function fossil_frights:tasks/easy/chimney_sweep/reset
 function fossil_frights:tasks/easy/scrape_resin/reset
 function fossil_frights:tasks/easy/sweep_snow/reset
+function fossil_frights:tasks/easy/remove_dart/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset

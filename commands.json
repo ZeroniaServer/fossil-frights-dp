@@ -447,6 +447,10 @@
                                 "sweep_snow": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "remove_dart": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },

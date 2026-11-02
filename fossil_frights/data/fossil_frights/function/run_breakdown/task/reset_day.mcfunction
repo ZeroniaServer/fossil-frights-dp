@@ -25,6 +25,7 @@ scoreboard players set $kiss_t_rex_rb ff_run_breakdown 0
 scoreboard players set $chimney_sweep_rb ff_run_breakdown 0
 scoreboard players set $scrape_resin_rb ff_run_breakdown 0
 scoreboard players set $sweep_snow_rb ff_run_breakdown 0
+scoreboard players set $remove_dart_rb ff_run_breakdown 0
 scoreboard players set $ancient_portal_rb ff_run_breakdown 0
 scoreboard players set $chlorinify_rb ff_run_breakdown 0
 scoreboard players set $cool_it_rb ff_run_breakdown 0
