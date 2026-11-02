@@ -45,7 +45,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"feed_the_fish"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"feed_the_plants"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"fix_sculker"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"nautilus_guard"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"picnic_with_trike"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"drink_with_trike"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"popcorn_buckets"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"refill_ice"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"replenish_soap"}

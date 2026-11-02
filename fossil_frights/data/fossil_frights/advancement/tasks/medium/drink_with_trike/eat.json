@@ -4,11 +4,11 @@
     "eat": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "player": "fossil_frights:location/in_picnic_with_trike_area",
+        "player": "fossil_frights:location/in_drink_with_trike_area",
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "ff_completes_picnic_with_trike_task": true
+              "ff_completes_drink_with_trike_task": true
             }
           }
         }
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:tasks/medium/picnic_with_trike/eaten"
+    "function": "fossil_frights:tasks/medium/drink_with_trike/eaten"
   }
 }

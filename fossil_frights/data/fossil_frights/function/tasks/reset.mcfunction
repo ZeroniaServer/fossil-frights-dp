@@ -95,8 +95,8 @@ scoreboard players set $thaw_icy_sherd_sel ff_task_state 0
 scoreboard players set $thaw_icy_sherd_done ff_task_state 0
 scoreboard players set $feed_parrot_sel ff_task_state 0
 scoreboard players set $feed_parrot_done ff_task_state 0
-scoreboard players set $picnic_with_trike_sel ff_task_state 0
-scoreboard players set $picnic_with_trike_done ff_task_state 0
+scoreboard players set $drink_with_trike_sel ff_task_state 0
+scoreboard players set $drink_with_trike_done ff_task_state 0
 scoreboard players set $nautilus_guard_sel ff_task_state 0
 scoreboard players set $nautilus_guard_done ff_task_state 0
 scoreboard players set $feed_the_fish_sel ff_task_state 0
@@ -180,7 +180,7 @@ scoreboard players reset $tt_shark_bait ff_task_tracker
 scoreboard players reset $tt_smelly_toilet ff_task_tracker
 scoreboard players reset $tt_thaw_icy_sherd ff_task_tracker
 scoreboard players reset $tt_feed_parrot ff_task_tracker
-scoreboard players reset $tt_picnic_with_trike ff_task_tracker
+scoreboard players reset $tt_drink_with_trike ff_task_tracker
 scoreboard players reset $tt_nautilus_guard ff_task_tracker
 scoreboard players reset $tt_feed_the_fish ff_task_tracker
 scoreboard players reset $tt_popcorn_buckets ff_task_tracker
@@ -238,7 +238,7 @@ function fossil_frights:tasks/medium/shark_bait/reset
 function fossil_frights:tasks/medium/smelly_toilet/reset
 function fossil_frights:tasks/medium/thaw_icy_sherd/reset
 function fossil_frights:tasks/medium/feed_parrot/reset
-function fossil_frights:tasks/medium/picnic_with_trike/reset
+function fossil_frights:tasks/medium/drink_with_trike/reset
 function fossil_frights:tasks/medium/nautilus_guard/reset
 function fossil_frights:tasks/medium/feed_the_fish/reset
 function fossil_frights:tasks/medium/popcorn_buckets/reset

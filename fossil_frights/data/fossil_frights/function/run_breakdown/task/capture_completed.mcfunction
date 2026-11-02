@@ -78,8 +78,8 @@ execute if score $fix_sculker_done ff_task_state matches 1 unless score $fix_scu
 execute if score $fix_sculker_done ff_task_state matches 1 run scoreboard players set $fix_sculker_rb ff_run_breakdown 1
 execute if score $nautilus_guard_done ff_task_state matches 1 unless score $nautilus_guard_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"39"}
 execute if score $nautilus_guard_done ff_task_state matches 1 run scoreboard players set $nautilus_guard_rb ff_run_breakdown 1
-execute if score $picnic_with_trike_done ff_task_state matches 1 unless score $picnic_with_trike_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"40"}
-execute if score $picnic_with_trike_done ff_task_state matches 1 run scoreboard players set $picnic_with_trike_rb ff_run_breakdown 1
+execute if score $drink_with_trike_done ff_task_state matches 1 unless score $drink_with_trike_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"40"}
+execute if score $drink_with_trike_done ff_task_state matches 1 run scoreboard players set $drink_with_trike_rb ff_run_breakdown 1
 execute if score $popcorn_buckets_done ff_task_state matches 1 unless score $popcorn_buckets_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"41"}
 execute if score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players set $popcorn_buckets_rb ff_run_breakdown 1
 execute if score $refill_ice_done ff_task_state matches 1 unless score $refill_ice_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"43"}

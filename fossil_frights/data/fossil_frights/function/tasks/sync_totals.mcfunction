@@ -80,8 +80,8 @@ execute if score $fix_sculker_sel ff_task_state matches 1 run scoreboard players
 execute if score $fix_sculker_sel ff_task_state matches 1 if score $fix_sculker_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $nautilus_guard_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $nautilus_guard_sel ff_task_state matches 1 if score $nautilus_guard_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $picnic_with_trike_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $picnic_with_trike_sel ff_task_state matches 1 if score $picnic_with_trike_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $drink_with_trike_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $drink_with_trike_sel ff_task_state matches 1 if score $drink_with_trike_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $popcorn_buckets_sel ff_task_state matches 1 if score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $refill_ice_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

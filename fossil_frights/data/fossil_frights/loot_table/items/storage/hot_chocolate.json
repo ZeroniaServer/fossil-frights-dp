@@ -16,8 +16,14 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/coffee",
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink"
+                },
                 "minecraft:custom_data": {
                   "itemID": "hot_chocolate",
+                  "ff_completes_drink_with_trike_task": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

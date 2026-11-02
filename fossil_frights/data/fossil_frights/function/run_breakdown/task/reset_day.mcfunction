@@ -38,7 +38,7 @@ scoreboard players set $feed_the_fish_rb ff_run_breakdown 0
 scoreboard players set $feed_the_plants_rb ff_run_breakdown 0
 scoreboard players set $fix_sculker_rb ff_run_breakdown 0
 scoreboard players set $nautilus_guard_rb ff_run_breakdown 0
-scoreboard players set $picnic_with_trike_rb ff_run_breakdown 0
+scoreboard players set $drink_with_trike_rb ff_run_breakdown 0
 scoreboard players set $popcorn_buckets_rb ff_run_breakdown 0
 scoreboard players set $refill_ice_rb ff_run_breakdown 0
 scoreboard players set $replenish_soap_rb ff_run_breakdown 0
