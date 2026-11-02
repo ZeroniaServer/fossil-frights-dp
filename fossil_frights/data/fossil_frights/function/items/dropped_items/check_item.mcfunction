@@ -30,6 +30,10 @@ execute if predicate fossil_frights:game_state/heist_mode_active unless items en
 # Prevent pickup from non-playing players
 execute if dimension minecraft:overworld run data modify entity @s Owner set value [I;0,0,0,0]
 
+# Add thief pickup priority
+execute if predicate fossil_frights:game_state/heist_mode_active store result score #pickup_delay ff_dummy run data get entity @s PickupDelay
+execute if predicate fossil_frights:game_state/heist_mode_active store result score @s ff_dropped_item_guard_pickup_blocked_until_timestamp run compute default integer {type:"minecraft:add",inputs:["fossil_frights:gametime",{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#pickup_delay"},score:"ff_dummy"},10]}
+
 # Remove effects
 item modify entity @s contents fossil_frights:game/heists/set_invisible/off
 item modify entity @s contents fossil_frights:game/heists/set_paint/off
