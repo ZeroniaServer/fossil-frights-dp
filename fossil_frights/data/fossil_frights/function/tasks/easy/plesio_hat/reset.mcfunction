@@ -1,0 +1,3 @@
+function fossil_frights:tasks/easy/plesio_hat/cleanup
+function fossil_frights:tasks/easy/plesio_hat/set_hat_visible
+function fossil_frights:tasks/easy/plesio_hat/set_water_hidden

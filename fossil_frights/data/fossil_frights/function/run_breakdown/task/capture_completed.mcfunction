@@ -58,6 +58,8 @@ execute if score $close_clam_done ff_task_state matches 1 unless score $close_cl
 execute if score $close_clam_done ff_task_state matches 1 run scoreboard players set $close_clam_rb ff_run_breakdown 1
 execute if score $open_clam_done ff_task_state matches 1 unless score $open_clam_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"73"}
 execute if score $open_clam_done ff_task_state matches 1 run scoreboard players set $open_clam_rb ff_run_breakdown 1
+execute if score $plesio_hat_done ff_task_state matches 1 unless score $plesio_hat_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"74"}
+execute if score $plesio_hat_done ff_task_state matches 1 run scoreboard players set $plesio_hat_rb ff_run_breakdown 1
 execute if score $ancient_portal_done ff_task_state matches 1 unless score $ancient_portal_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"27"}
 execute if score $ancient_portal_done ff_task_state matches 1 run scoreboard players set $ancient_portal_rb ff_run_breakdown 1
 execute if score $chlorinify_done ff_task_state matches 1 unless score $chlorinify_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"30"}
