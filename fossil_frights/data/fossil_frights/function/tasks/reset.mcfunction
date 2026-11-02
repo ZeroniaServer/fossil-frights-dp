@@ -50,6 +50,12 @@ scoreboard players set $fix_neptune_sel ff_task_state 0
 scoreboard players set $fix_neptune_done ff_task_state 0
 scoreboard players set $make_some_noise_sel ff_task_state 0
 scoreboard players set $make_some_noise_done ff_task_state 0
+scoreboard players set $sit_on_lap_sel ff_task_state 0
+scoreboard players set $sit_on_lap_done ff_task_state 0
+scoreboard players set $smell_gingerbread_sel ff_task_state 0
+scoreboard players set $smell_gingerbread_done ff_task_state 0
+scoreboard players set $kiss_t_rex_sel ff_task_state 0
+scoreboard players set $kiss_t_rex_done ff_task_state 0
 
 scoreboard players set $chlorinify_sel ff_task_state 0
 scoreboard players set $chlorinify_done ff_task_state 0
@@ -132,6 +138,9 @@ scoreboard players reset $tt_reset_salt_level ff_task_tracker
 scoreboard players reset $tt_reset_fountain ff_task_tracker
 scoreboard players reset $tt_visit_neogene ff_task_tracker
 scoreboard players reset $tt_visit_silurian ff_task_tracker
+scoreboard players reset $tt_sit_on_lap ff_task_tracker
+scoreboard players reset $tt_smell_gingerbread ff_task_tracker
+scoreboard players reset $tt_kiss_t_rex ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_outhouse ff_task_tracker
 scoreboard players reset $tt_water_temp ff_task_tracker
@@ -186,6 +195,9 @@ function fossil_frights:tasks/easy/tnt_test/reset
 function fossil_frights:tasks/easy/sweep_popcorn/reset
 function fossil_frights:tasks/easy/fix_neptune/reset
 function fossil_frights:tasks/easy/make_some_noise/reset
+function fossil_frights:tasks/easy/sit_on_lap/reset
+function fossil_frights:tasks/easy/smell_gingerbread/reset
+function fossil_frights:tasks/easy/kiss_t_rex/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset
 function fossil_frights:tasks/medium/cool_it/reset

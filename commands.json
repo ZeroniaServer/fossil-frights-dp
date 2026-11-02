@@ -423,6 +423,18 @@
                                 "water_temp": {
                                     "type": "literal",
                                     "executable": true
+                                },
+                                "sit_on_lap": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "smell_gingerbread": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
+                                "kiss_t_rex": {
+                                    "type": "literal",
+                                    "executable": true
                                 }
                             }
                         },

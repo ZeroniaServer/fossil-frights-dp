@@ -14,6 +14,9 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"fix_cracked_egg"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"fix_neptune"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"lock_register"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"make_some_noise"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"sit_on_lap"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"smell_gingerbread"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"kiss_t_rex"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"polish_bell"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"reset_fountain"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"reset_salt_level"}

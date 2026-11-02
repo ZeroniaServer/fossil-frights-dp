@@ -33,6 +33,9 @@ function fossil_frights:tasks/register {id: "sweep_popcorn", difficulty: "easy",
 function fossil_frights:tasks/register {id: "fix_neptune", difficulty: "easy", custom_icon: false, sidebar_index: 46}
 function fossil_frights:tasks/easy/fix_neptune/cleanup
 function fossil_frights:tasks/register {id: "make_some_noise", difficulty: "easy", custom_icon: false, sidebar_index: 47}
+function fossil_frights:tasks/register {id: "sit_on_lap", difficulty: "easy", custom_icon: false, sidebar_index: 48}
+function fossil_frights:tasks/register {id: "smell_gingerbread", difficulty: "easy", custom_icon: false, sidebar_index: 49}
+function fossil_frights:tasks/register {id: "kiss_t_rex", difficulty: "easy", custom_icon: false, sidebar_index: 50}
 
 function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}
 function fossil_frights:tasks/register {id: "credit_reel", difficulty: "medium", custom_icon: false, sidebar_index: 20}

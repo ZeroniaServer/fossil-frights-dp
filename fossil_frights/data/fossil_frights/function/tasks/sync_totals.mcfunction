@@ -20,6 +20,12 @@ execute if score $lock_register_sel ff_task_state matches 1 run scoreboard playe
 execute if score $lock_register_sel ff_task_state matches 1 if score $lock_register_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $make_some_noise_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $make_some_noise_sel ff_task_state matches 1 if score $make_some_noise_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $sit_on_lap_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $sit_on_lap_sel ff_task_state matches 1 if score $sit_on_lap_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $smell_gingerbread_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $smell_gingerbread_sel ff_task_state matches 1 if score $smell_gingerbread_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $kiss_t_rex_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $kiss_t_rex_sel ff_task_state matches 1 if score $kiss_t_rex_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $polish_bell_sel ff_task_state matches 1 if score $polish_bell_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $reset_fountain_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
