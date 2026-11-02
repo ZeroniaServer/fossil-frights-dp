@@ -12,8 +12,8 @@ execute if score $dive_into_outhouse_done ff_task_state matches 1 unless score $
 execute if score $dive_into_outhouse_done ff_task_state matches 1 run scoreboard players set $dive_into_outhouse_rb ff_run_breakdown 1
 execute if score $fix_cracked_egg_done ff_task_state matches 1 unless score $fix_cracked_egg_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"10"}
 execute if score $fix_cracked_egg_done ff_task_state matches 1 run scoreboard players set $fix_cracked_egg_rb ff_run_breakdown 1
-execute if score $fix_mars_done ff_task_state matches 1 unless score $fix_mars_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"11"}
-execute if score $fix_mars_done ff_task_state matches 1 run scoreboard players set $fix_mars_rb ff_run_breakdown 1
+execute if score $fix_neptune_done ff_task_state matches 1 unless score $fix_neptune_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"11"}
+execute if score $fix_neptune_done ff_task_state matches 1 run scoreboard players set $fix_neptune_rb ff_run_breakdown 1
 execute if score $lock_register_done ff_task_state matches 1 unless score $lock_register_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"12"}
 execute if score $lock_register_done ff_task_state matches 1 run scoreboard players set $lock_register_rb ff_run_breakdown 1
 execute if score $make_some_noise_done ff_task_state matches 1 unless score $make_some_noise_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"13"}

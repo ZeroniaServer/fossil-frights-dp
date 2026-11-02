@@ -11,7 +11,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"count_shells"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"count_toes"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"dive_into_outhouse"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"fix_cracked_egg"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"fix_mars"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"fix_neptune"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"lock_register"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"make_some_noise"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"polish_bell"}

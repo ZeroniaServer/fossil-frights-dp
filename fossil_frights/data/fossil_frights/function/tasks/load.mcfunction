@@ -30,8 +30,8 @@ function fossil_frights:tasks/register {id: "water_temp", difficulty: "easy", cu
 function fossil_frights:tasks/register {id: "fix_cracked_egg", difficulty: "easy", custom_icon: false, sidebar_index: 42}
 function fossil_frights:tasks/register {id: "tnt_test", difficulty: "easy", custom_icon: false, sidebar_index: 43}
 function fossil_frights:tasks/register {id: "sweep_popcorn", difficulty: "easy", custom_icon: false, sidebar_index: 44}
-function fossil_frights:tasks/register {id: "fix_mars", difficulty: "easy", custom_icon: false, sidebar_index: 46}
-function fossil_frights:tasks/easy/fix_mars/cleanup
+function fossil_frights:tasks/register {id: "fix_neptune", difficulty: "easy", custom_icon: false, sidebar_index: 46}
+function fossil_frights:tasks/easy/fix_neptune/cleanup
 function fossil_frights:tasks/register {id: "make_some_noise", difficulty: "easy", custom_icon: false, sidebar_index: 47}
 
 function fossil_frights:tasks/register {id: "chlorinify", difficulty: "medium", custom_icon: false, sidebar_index: 21}

@@ -4,7 +4,7 @@ execute unless score $day_active ff_day matches 1 run function fossil_frights:ad
 execute unless score $day_active ff_day matches 1 run return 0
 function fossil_frights:admin/menu/mark_modified
 scoreboard players set $admin_task_was_selected ff_gui 0
-execute if score $fix_mars_sel ff_task_state matches 1 run scoreboard players set $admin_task_was_selected ff_gui 1
-execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/complete_macro {difficulty:"easy",task:"fix_mars"}
-execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/easy/fix_mars/selected
+execute if score $fix_neptune_sel ff_task_state matches 1 run scoreboard players set $admin_task_was_selected ff_gui 1
+execute if score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:admin/menu/task/complete_macro {difficulty:"easy",task:"fix_neptune"}
+execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/easy/fix_neptune/selected
 execute unless score $admin_task_was_selected ff_gui matches 1 run function fossil_frights:tasks/tracker/refresh

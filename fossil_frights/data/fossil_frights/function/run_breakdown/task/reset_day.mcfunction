@@ -5,7 +5,7 @@ scoreboard players set $count_shells_rb ff_run_breakdown 0
 scoreboard players set $count_toes_rb ff_run_breakdown 0
 scoreboard players set $dive_into_outhouse_rb ff_run_breakdown 0
 scoreboard players set $fix_cracked_egg_rb ff_run_breakdown 0
-scoreboard players set $fix_mars_rb ff_run_breakdown 0
+scoreboard players set $fix_neptune_rb ff_run_breakdown 0
 scoreboard players set $lock_register_rb ff_run_breakdown 0
 scoreboard players set $make_some_noise_rb ff_run_breakdown 0
 scoreboard players set $polish_bell_rb ff_run_breakdown 0

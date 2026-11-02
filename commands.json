@@ -380,7 +380,7 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "fix_mars": {
+                                "fix_neptune": {
                                     "type": "literal",
                                     "executable": true
                                 },
