@@ -22,7 +22,6 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "Evtema3",\
             "nightlibra",\
-            "Snakemaster",\
             "",\
             "",\
             {translate:"ff.credits.role.plugin_developers",bold:true},\
@@ -35,6 +34,7 @@ data modify storage fossil_frights:credits credits set value [\
             "RiverTiger76",\
             "dork_orc",\
             "marten213",\
+            "Snakemaster",\
             "",\
             "",\
             {translate:"ff.credits.role.shaders",bold:true},\
