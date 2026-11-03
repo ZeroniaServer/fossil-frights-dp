@@ -34,6 +34,7 @@ data modify storage fossil_frights:credits credits set value [\
             "RiverTiger76",\
             "dork_orc",\
             "marten213",\
+            "Snakemaster",\
             "",\
             "",\
             {translate:"ff.credits.role.shaders",bold:true},\
@@ -53,6 +54,8 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "SirSpaceWalker",\
             "SaffronWizard",\
+            "Hydrintegral",\
+            "Ialo01",\
             "",\
             "",\
             {translate:"ff.credits.role.quality_assurance",bold:true},\
