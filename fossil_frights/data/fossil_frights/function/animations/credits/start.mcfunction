@@ -22,6 +22,7 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "Evtema3",\
             "nightlibra",\
+            "Snakemaster",\
             "",\
             "",\
             {translate:"ff.credits.role.plugin_developers",bold:true},\
@@ -43,10 +44,6 @@ data modify storage fossil_frights:credits credits set value [\
             {translate:"ff.credits.role.music",bold:true},\
             "Evtema3",\
             "Polysquarazoid",\
-            "",\
-            "",\
-            {translate:"ff.credits.role.art",fallback:"Art",bold:true},\
-            "Snakemaster",\
             "",\
             "",\
             {translate:"ff.credits.role.builders",bold:true},\
