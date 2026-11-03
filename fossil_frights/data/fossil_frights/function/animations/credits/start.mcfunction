@@ -45,6 +45,10 @@ data modify storage fossil_frights:credits credits set value [\
             "Polysquarazoid",\
             "",\
             "",\
+            {translate:"ff.credits.role.art",fallback:"Art",bold:true},\
+            "Snakemaster",\
+            "",\
+            "",\
             {translate:"ff.credits.role.builders",bold:true},\
             "RiverTiger76",\
             "Polysquarazoid",\
@@ -53,6 +57,8 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "SirSpaceWalker",\
             "SaffronWizard",\
+            "Hydrintegral",\
+            "Ialo01",\
             "",\
             "",\
             {translate:"ff.credits.role.quality_assurance",bold:true},\
