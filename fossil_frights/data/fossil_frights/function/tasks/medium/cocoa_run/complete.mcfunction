@@ -7,6 +7,8 @@ function fossil_frights:tasks/messages/show_complete_macro with storage fossil_f
 scoreboard players add $task_completed_total ff_task_state 1
 clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"cocoa_run"}}] 1
 scoreboard players set $cocoa_run_done ff_task_state 1
+execute if entity @s[type=minecraft:item] run function fossil_frights:items/util/return_all_but_one_to_thrower
+execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/medium/cocoa_run/cleanup
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
