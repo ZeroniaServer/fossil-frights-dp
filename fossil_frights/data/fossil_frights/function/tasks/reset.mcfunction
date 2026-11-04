@@ -161,6 +161,8 @@ scoreboard players set $evolution_hit ff_task_state 0
 scoreboard players set $evolution_was_correct ff_task_state 0
 scoreboard players set $decorate_tree_sel ff_task_state 0
 scoreboard players set $decorate_tree_done ff_task_state 0
+scoreboard players set $defrost_timeline_sel ff_task_state 0
+scoreboard players set $defrost_timeline_done ff_task_state 0
 
 
 scoreboard players reset $tt_check_security ff_task_tracker
@@ -230,6 +232,7 @@ scoreboard players reset $tt_holy_grail ff_task_tracker
 scoreboard players reset $tt_hoveraptor ff_task_tracker
 scoreboard players reset $tt_evolution ff_task_tracker
 scoreboard players reset $tt_decorate_tree ff_task_tracker
+scoreboard players reset $tt_defrost_timeline ff_task_tracker
 
 function fossil_frights:cameras/reset
 function fossil_frights:tasks/easy/climb_the_tower/reset
@@ -299,3 +302,4 @@ function fossil_frights:tasks/hard/holy_grail/reset
 function fossil_frights:tasks/hard/hoveraptor/reset
 function fossil_frights:tasks/hard/evolution/reset
 function fossil_frights:tasks/hard/decorate_tree/reset
+function fossil_frights:tasks/hard/defrost_timeline/reset
