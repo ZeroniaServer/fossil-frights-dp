@@ -84,6 +84,8 @@ execute if score $popcorn_buckets_done ff_task_state matches 1 unless score $pop
 execute if score $popcorn_buckets_done ff_task_state matches 1 run scoreboard players set $popcorn_buckets_rb ff_run_breakdown 1
 execute if score $refill_ice_done ff_task_state matches 1 unless score $refill_ice_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"43"}
 execute if score $refill_ice_done ff_task_state matches 1 run scoreboard players set $refill_ice_rb ff_run_breakdown 1
+execute if score $stuff_stocking_done ff_task_state matches 1 unless score $stuff_stocking_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"51"}
+execute if score $stuff_stocking_done ff_task_state matches 1 run scoreboard players set $stuff_stocking_rb ff_run_breakdown 1
 execute if score $replenish_soap_done ff_task_state matches 1 unless score $replenish_soap_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"44"}
 execute if score $replenish_soap_done ff_task_state matches 1 run scoreboard players set $replenish_soap_rb ff_run_breakdown 1
 execute if score $restock_plushies_done ff_task_state matches 1 unless score $restock_plushies_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"45"}

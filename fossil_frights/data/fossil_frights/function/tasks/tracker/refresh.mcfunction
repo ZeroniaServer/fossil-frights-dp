@@ -48,6 +48,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"nautilus_guard"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"drink_with_trike"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"popcorn_buckets"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"refill_ice"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"stuff_stocking"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"replenish_soap"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"restock_plushies"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"revitalize_coral"}

@@ -41,6 +41,7 @@ scoreboard players set $nautilus_guard_rb ff_run_breakdown 0
 scoreboard players set $drink_with_trike_rb ff_run_breakdown 0
 scoreboard players set $popcorn_buckets_rb ff_run_breakdown 0
 scoreboard players set $refill_ice_rb ff_run_breakdown 0
+scoreboard players set $stuff_stocking_rb ff_run_breakdown 0
 scoreboard players set $replenish_soap_rb ff_run_breakdown 0
 scoreboard players set $restock_plushies_rb ff_run_breakdown 0
 scoreboard players set $revitalize_coral_rb ff_run_breakdown 0

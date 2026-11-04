@@ -517,6 +517,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "stuff_stocking": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true
