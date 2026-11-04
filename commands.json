@@ -537,6 +537,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "paint_candy_cane": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true

@@ -96,6 +96,8 @@ execute if score $relight_campfire_sel ff_task_state matches 1 run scoreboard pl
 execute if score $relight_campfire_sel ff_task_state matches 1 if score $relight_campfire_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $cocoa_run_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $cocoa_run_sel ff_task_state matches 1 if score $cocoa_run_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $paint_candy_cane_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $paint_candy_cane_sel ff_task_state matches 1 if score $paint_candy_cane_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $replenish_soap_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $restock_plushies_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1

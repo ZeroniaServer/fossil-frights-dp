@@ -53,6 +53,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"feed_bees"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"ice_top_up"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"relight_campfire"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"cocoa_run"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"paint_candy_cane"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"replenish_soap"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"restock_plushies"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"revitalize_coral"}
