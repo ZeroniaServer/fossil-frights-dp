@@ -548,5 +548,6 @@ bossbar set fossil_frights:resource_pack_disclaimer name {color:"#E80018",transl
 bossbar set fossil_frights:resource_pack_disclaimer color blue
 
 #temp hotfix for hoverboard escapes
+fill -26 109 61 -26 109 58 barrier
 fill 29 103 49 29 103 47 barrier
 fill 20 111 53 19 111 54 cobbled_deepslate
