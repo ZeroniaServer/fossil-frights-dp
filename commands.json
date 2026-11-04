@@ -533,6 +533,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "cocoa_run": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true

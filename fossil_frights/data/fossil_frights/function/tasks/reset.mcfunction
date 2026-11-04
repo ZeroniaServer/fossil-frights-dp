@@ -115,6 +115,8 @@ scoreboard players set $ice_top_up_sel ff_task_state 0
 scoreboard players set $ice_top_up_done ff_task_state 0
 scoreboard players set $relight_campfire_sel ff_task_state 0
 scoreboard players set $relight_campfire_done ff_task_state 0
+scoreboard players set $cocoa_run_sel ff_task_state 0
+scoreboard players set $cocoa_run_done ff_task_state 0
 
 scoreboard players set $star_gazing_sel ff_task_state 0
 scoreboard players set $star_gazing_done ff_task_state 0
@@ -198,6 +200,7 @@ scoreboard players reset $tt_stuff_stocking ff_task_tracker
 scoreboard players reset $tt_feed_bees ff_task_tracker
 scoreboard players reset $tt_ice_top_up ff_task_tracker
 scoreboard players reset $tt_relight_campfire ff_task_tracker
+scoreboard players reset $tt_cocoa_run ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
@@ -260,6 +263,7 @@ function fossil_frights:tasks/medium/stuff_stocking/reset
 function fossil_frights:tasks/medium/feed_bees/reset
 function fossil_frights:tasks/medium/ice_top_up/reset
 function fossil_frights:tasks/medium/relight_campfire/reset
+function fossil_frights:tasks/medium/cocoa_run/reset
 function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/return_the_key/reset
 function fossil_frights:tasks/hard/feed_the_bats/reset

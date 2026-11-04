@@ -45,6 +45,7 @@ scoreboard players set $stuff_stocking_rb ff_run_breakdown 0
 scoreboard players set $feed_bees_rb ff_run_breakdown 0
 scoreboard players set $ice_top_up_rb ff_run_breakdown 0
 scoreboard players set $relight_campfire_rb ff_run_breakdown 0
+scoreboard players set $cocoa_run_rb ff_run_breakdown 0
 scoreboard players set $replenish_soap_rb ff_run_breakdown 0
 scoreboard players set $restock_plushies_rb ff_run_breakdown 0
 scoreboard players set $revitalize_coral_rb ff_run_breakdown 0

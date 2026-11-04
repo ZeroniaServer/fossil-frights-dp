@@ -75,6 +75,7 @@ function fossil_frights:tasks/register {id: "stuff_stocking", difficulty: "mediu
 function fossil_frights:tasks/register {id: "feed_bees", difficulty: "medium", custom_icon: false, sidebar_index: 62}
 function fossil_frights:tasks/register {id: "ice_top_up", difficulty: "medium", custom_icon: false, sidebar_index: 63}
 function fossil_frights:tasks/register {id: "relight_campfire", difficulty: "medium", custom_icon: false, sidebar_index: 64}
+function fossil_frights:tasks/register {id: "cocoa_run", difficulty: "medium", custom_icon: false, sidebar_index: 65}
 
 function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $star_gazing_answer ff_task_state 0
