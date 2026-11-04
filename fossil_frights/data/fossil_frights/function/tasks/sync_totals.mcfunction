@@ -104,6 +104,8 @@ execute if score $build_snowman_sel ff_task_state matches 1 run scoreboard playe
 execute if score $build_snowman_sel ff_task_state matches 1 if score $build_snowman_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $free_caveman_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $free_caveman_sel ff_task_state matches 1 if score $free_caveman_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $feed_mammoth_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $feed_mammoth_sel ff_task_state matches 1 if score $feed_mammoth_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $replenish_soap_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $replenish_soap_sel ff_task_state matches 1 if score $replenish_soap_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $restock_plushies_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
