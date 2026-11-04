@@ -6,8 +6,9 @@ scoreboard players set $pig_wrangler_in_pen ff_task_state 0
 scoreboard players set $pig_wrangler_fed ff_task_state 0
 scoreboard players set $pig_wrangler_tower_seen ff_task_state 0
 kill @e[type=minecraft:pig,tag=ff_pig_wrangler_pig]
-execute store result score $pig_wrangler_pick ff_task_state run random value 1..3
-execute if score $pig_wrangler_pick ff_task_state matches 1 run summon minecraft:pig 60 82 74 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[60,82,74],home_radius:5}
-execute if score $pig_wrangler_pick ff_task_state matches 2 run summon minecraft:pig 37 80 55 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[37,80,55],home_radius:5}
-execute if score $pig_wrangler_pick ff_task_state matches 3 run summon minecraft:pig 5 80 57 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[5,80,57],home_radius:5}
+execute store result score $pig_wrangler_pick ff_task_state run random value 1..4
+execute if score $pig_wrangler_pick ff_task_state matches 1 run summon minecraft:pig 21 85 48 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[21,85,48],home_radius:5}
+execute if score $pig_wrangler_pick ff_task_state matches 2 run summon minecraft:pig 41 80 34 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[41,80,34],home_radius:5}
+execute if score $pig_wrangler_pick ff_task_state matches 3 run summon minecraft:pig 68 80 37 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[68,80,37],home_radius:5}
+execute if score $pig_wrangler_pick ff_task_state matches 4 run summon minecraft:pig 66 85 70 {Invulnerable:true,PersistenceRequired:true,Tags:["ff_pig_wrangler_pig","ff_pig_wrangler_homebound"],Team:"ff_pink_pig",home_pos:[66,85,70],home_radius:5}
 function fossil_frights:tasks/tracker/refresh
