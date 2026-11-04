@@ -1,0 +1,19 @@
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 25 94 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 25 95 40 minecraft:frosted_ice[age=1] strict
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 24 95 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 26 94 40 minecraft:frosted_ice[age=0] strict
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 26 95 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 1 run setblock 26 96 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 25 94 40 minecraft:frosted_ice[age=1] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 25 95 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 24 95 40 minecraft:frosted_ice[age=2] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 26 94 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 26 95 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 2 run setblock 26 96 40 minecraft:frosted_ice[age=1] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 25 94 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 25 95 40 minecraft:frosted_ice[age=0] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 24 95 40 minecraft:frosted_ice[age=2] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 26 94 40 minecraft:frosted_ice[age=3] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 26 95 40 minecraft:frosted_ice[age=1] strict
+execute if score $free_caveman_variant ff_task_state matches 3 run setblock 26 96 40 minecraft:frosted_ice[age=3] strict
+schedule function fossil_frights:tasks/medium/free_caveman/remove_1 3t replace

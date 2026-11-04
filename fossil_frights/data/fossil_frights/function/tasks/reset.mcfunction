@@ -123,6 +123,9 @@ scoreboard players set $defrost_village_sel ff_task_state 0
 scoreboard players set $defrost_village_done ff_task_state 0
 scoreboard players set $build_snowman_sel ff_task_state 0
 scoreboard players set $build_snowman_done ff_task_state 0
+scoreboard players set $free_caveman_sel ff_task_state 0
+scoreboard players set $free_caveman_done ff_task_state 0
+scoreboard players set $free_caveman_variant ff_task_state 0
 
 scoreboard players set $star_gazing_sel ff_task_state 0
 scoreboard players set $star_gazing_done ff_task_state 0
@@ -210,6 +213,7 @@ scoreboard players reset $tt_cocoa_run ff_task_tracker
 scoreboard players reset $tt_paint_candy_cane ff_task_tracker
 scoreboard players reset $tt_defrost_village ff_task_tracker
 scoreboard players reset $tt_build_snowman ff_task_tracker
+scoreboard players reset $tt_free_caveman ff_task_tracker
 scoreboard players reset $tt_star_gazing ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
@@ -276,6 +280,7 @@ function fossil_frights:tasks/medium/cocoa_run/reset
 function fossil_frights:tasks/medium/paint_candy_cane/reset
 function fossil_frights:tasks/medium/defrost_village/reset
 function fossil_frights:tasks/medium/build_snowman/reset
+function fossil_frights:tasks/medium/free_caveman/reset
 function fossil_frights:tasks/hard/star_gazing/reset
 function fossil_frights:tasks/hard/return_the_key/reset
 function fossil_frights:tasks/hard/feed_the_bats/reset

@@ -49,6 +49,7 @@ scoreboard players set $cocoa_run_rb ff_run_breakdown 0
 scoreboard players set $paint_candy_cane_rb ff_run_breakdown 0
 scoreboard players set $defrost_village_rb ff_run_breakdown 0
 scoreboard players set $build_snowman_rb ff_run_breakdown 0
+scoreboard players set $free_caveman_rb ff_run_breakdown 0
 scoreboard players set $replenish_soap_rb ff_run_breakdown 0
 scoreboard players set $restock_plushies_rb ff_run_breakdown 0
 scoreboard players set $revitalize_coral_rb ff_run_breakdown 0

@@ -100,6 +100,8 @@ execute if score $defrost_village_done ff_task_state matches 1 unless score $def
 execute if score $defrost_village_done ff_task_state matches 1 run scoreboard players set $defrost_village_rb ff_run_breakdown 1
 execute if score $build_snowman_done ff_task_state matches 1 unless score $build_snowman_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"81"}
 execute if score $build_snowman_done ff_task_state matches 1 run scoreboard players set $build_snowman_rb ff_run_breakdown 1
+execute if score $free_caveman_done ff_task_state matches 1 unless score $free_caveman_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"82"}
+execute if score $free_caveman_done ff_task_state matches 1 run scoreboard players set $free_caveman_rb ff_run_breakdown 1
 execute if score $replenish_soap_done ff_task_state matches 1 unless score $replenish_soap_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"44"}
 execute if score $replenish_soap_done ff_task_state matches 1 run scoreboard players set $replenish_soap_rb ff_run_breakdown 1
 execute if score $restock_plushies_done ff_task_state matches 1 unless score $restock_plushies_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"45"}
