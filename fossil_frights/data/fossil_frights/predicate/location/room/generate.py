@@ -8,6 +8,7 @@ with open("ROOMS.txt","r") as file:
 rooms: list[tuple] = []
 
 for line in lines:
+    line = line.rstrip()
 
     match = re.search(r'^([\w_/]+):$',line)
     if match != None:
