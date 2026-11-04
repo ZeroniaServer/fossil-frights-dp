@@ -6,5 +6,6 @@ execute unless predicate fossil_frights:entity/is_riding_hoverboard as @e[type=m
 execute at @s if block ~ ~ ~ #fossil_frights:air_like if block ~ ~-1 ~ #fossil_frights:air_like align xyz positioned ~0.5 ~-1 ~0.5 run tp @s ~ ~ ~
 tag @s remove ff_hoverboard_active
 tag @s remove ff_hoverboard_activation_grace
+execute unless predicate fossil_frights:entity/is_riding_hoverboard run scoreboard players set @s ff_hoverboard_levitation 10
 function fossil_frights:items/hoverboard/durability/clear_all_active
 tag @s remove ff_hoverboard_owner_current
