@@ -72,6 +72,7 @@ scoreboard players set $ancient_portal_timer ff_task_state 0
 scoreboard players set $ancient_portal_dest ff_task_state 0
 function fossil_frights:tasks/register {id: "refill_ice", difficulty: "medium", custom_icon: false, sidebar_index: 60}
 function fossil_frights:tasks/register {id: "stuff_stocking", difficulty: "medium", custom_icon: false, sidebar_index: 61}
+function fossil_frights:tasks/register {id: "feed_bees", difficulty: "medium", custom_icon: false, sidebar_index: 62}
 
 function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $star_gazing_answer ff_task_state 0

@@ -521,6 +521,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "feed_bees": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true
