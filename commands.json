@@ -529,6 +529,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "relight_campfire": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true

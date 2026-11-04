@@ -313,6 +313,12 @@ execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"ice
 execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"ice_top_up"}}] run scoreboard players set #line_ice_top_up ff_task_state 896
 execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"ice_top_up"}}] run scoreboard players set #line_ice_top_up ff_task_state 895
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"ice_top_up"}}] run scoreboard players set #line_ice_top_up ff_task_state 894
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 899
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 898
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 897
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 896
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 895
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"relight_campfire"}}] run scoreboard players set #line_relight_campfire ff_task_state 894
 
 # Hard
 execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 799
