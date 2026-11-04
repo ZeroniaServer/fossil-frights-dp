@@ -68,6 +68,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"thaw_icy_sherd"}
 
 function fossil_frights:tasks/tracker/update_sidebar {task:"a_c_reset"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"evolution"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"decorate_tree"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"feed_the_bats"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"holy_grail"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"hoveraptor"}

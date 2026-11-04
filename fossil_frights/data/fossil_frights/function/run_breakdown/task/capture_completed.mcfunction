@@ -134,3 +134,5 @@ execute if score $return_the_key_done ff_task_state matches 1 unless score $retu
 execute if score $return_the_key_done ff_task_state matches 1 run scoreboard players set $return_the_key_rb ff_run_breakdown 1
 execute if score $star_gazing_done ff_task_state matches 1 unless score $star_gazing_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"64"}
 execute if score $star_gazing_done ff_task_state matches 1 run scoreboard players set $star_gazing_rb ff_run_breakdown 1
+execute if score $decorate_tree_done ff_task_state matches 1 unless score $decorate_tree_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"85"}
+execute if score $decorate_tree_done ff_task_state matches 1 run scoreboard players set $decorate_tree_rb ff_run_breakdown 1

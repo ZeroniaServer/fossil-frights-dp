@@ -117,6 +117,7 @@ scoreboard players set $evolution_step ff_task_state 0
 scoreboard players set $evolution_flash_red ff_task_state 0
 scoreboard players set $evolution_hit ff_task_state 0
 scoreboard players set $evolution_was_correct ff_task_state 0
+function fossil_frights:tasks/register {id: "decorate_tree", difficulty: "hard", custom_icon: false, sidebar_index: 8}
 
 
 function fossil_frights:tasks/tracker/refresh
