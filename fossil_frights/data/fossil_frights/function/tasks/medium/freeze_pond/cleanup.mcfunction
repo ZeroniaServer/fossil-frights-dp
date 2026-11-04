@@ -1,0 +1,13 @@
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_1
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_2
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_3
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_4
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_5
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_6
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_7
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_8
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_9
+schedule clear fossil_frights:tasks/medium/freeze_pond/freeze_10
+schedule clear fossil_frights:tasks/medium/freeze_pond/penguin_1
+schedule clear fossil_frights:tasks/medium/freeze_pond/penguin_2
+schedule clear fossil_frights:tasks/medium/freeze_pond/penguin_3

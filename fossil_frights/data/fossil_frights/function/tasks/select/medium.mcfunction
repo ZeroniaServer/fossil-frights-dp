@@ -28,6 +28,7 @@ execute unless score $defrost_village_sel ff_task_state matches 1 run scoreboard
 execute unless score $build_snowman_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $free_caveman_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $feed_mammoth_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $freeze_pond_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run scoreboard players get #task_remaining ff_task_state
@@ -58,6 +59,7 @@ execute if score #task_remaining ff_task_state matches 25 store result score #ta
 execute if score #task_remaining ff_task_state matches 26 store result score #task_pick ff_task_state run random value 1..26
 execute if score #task_remaining ff_task_state matches 27 store result score #task_pick ff_task_state run random value 1..27
 execute if score #task_remaining ff_task_state matches 28 store result score #task_pick ff_task_state run random value 1..28
+execute if score #task_remaining ff_task_state matches 29 store result score #task_pick ff_task_state run random value 1..29
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -146,3 +148,6 @@ execute unless score $free_caveman_sel ff_task_state matches 1 if score #task_do
 execute unless score $feed_mammoth_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $feed_mammoth_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/feed_mammoth/selected
 execute unless score $feed_mammoth_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $freeze_pond_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $freeze_pond_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/freeze_pond/selected
+execute unless score $freeze_pond_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

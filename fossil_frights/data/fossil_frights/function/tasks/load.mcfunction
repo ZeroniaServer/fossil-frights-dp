@@ -82,6 +82,7 @@ function fossil_frights:tasks/register {id: "build_snowman", difficulty: "medium
 function fossil_frights:tasks/register {id: "free_caveman", difficulty: "medium", custom_icon: false, sidebar_index: 69}
 function fossil_frights:tasks/medium/free_caveman/cleanup
 function fossil_frights:tasks/register {id: "feed_mammoth", difficulty: "medium", custom_icon: false, sidebar_index: 70}
+function fossil_frights:tasks/register {id: "freeze_pond", difficulty: "medium", custom_icon: false, sidebar_index: 71}
 function fossil_frights:tasks/medium/feed_mammoth/cleanup
 
 function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}

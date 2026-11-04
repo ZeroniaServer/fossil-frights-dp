@@ -58,6 +58,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"defrost_village"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"build_snowman"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"free_caveman"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"feed_mammoth"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"freeze_pond"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"replenish_soap"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"restock_plushies"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"revitalize_coral"}
