@@ -24,6 +24,7 @@ execute unless score $ice_top_up_sel ff_task_state matches 1 run scoreboard play
 execute unless score $relight_campfire_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $cocoa_run_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $paint_candy_cane_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $defrost_village_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run scoreboard players get #task_remaining ff_task_state
@@ -127,3 +128,6 @@ execute unless score $cocoa_run_sel ff_task_state matches 1 if score #task_done 
 execute unless score $paint_candy_cane_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $paint_candy_cane_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/paint_candy_cane/selected
 execute unless score $paint_candy_cane_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $defrost_village_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $defrost_village_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/medium/defrost_village/selected
+execute unless score $defrost_village_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

@@ -77,6 +77,7 @@ function fossil_frights:tasks/register {id: "ice_top_up", difficulty: "medium", 
 function fossil_frights:tasks/register {id: "relight_campfire", difficulty: "medium", custom_icon: false, sidebar_index: 64}
 function fossil_frights:tasks/register {id: "cocoa_run", difficulty: "medium", custom_icon: false, sidebar_index: 65}
 function fossil_frights:tasks/register {id: "paint_candy_cane", difficulty: "medium", custom_icon: false, sidebar_index: 66}
+function fossil_frights:tasks/register {id: "defrost_village", difficulty: "medium", custom_icon: false, sidebar_index: 67}
 
 function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $star_gazing_answer ff_task_state 0

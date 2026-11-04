@@ -541,6 +541,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "defrost_village": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true
