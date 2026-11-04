@@ -13,9 +13,6 @@ scoreboard players set $a_c_timer_active ff_task_state 0
 data modify entity @e[tag=ff_a_c_fan,limit=1] transformation.left_rotation set value [0f,0f,0f,1f]
 data merge entity @e[tag=ff_a_c_fan,limit=1] {start_interpolation:0,interpolation_duration:0}
 data merge storage fossil_frights:a_c_reset {display:{c1:"\ue500",c2:"\ue500",c3:"\ue500",c4:"\ue500"}}
-execute if predicate fossil_frights:game_state/hazard_active/lava run scoreboard players set $a_c_reset_variant ff_task_state 0
-execute if predicate fossil_frights:game_state/hazard_active/lava run function fossil_frights:tasks/hard/a_c_reset/place_melted
-execute unless predicate fossil_frights:game_state/hazard_active/lava run execute store result score $a_c_reset_variant ff_task_state run random value 1..3
-execute unless predicate fossil_frights:game_state/hazard_active/lava run function fossil_frights:tasks/hard/a_c_reset/place_variant
+place template fossil_frights:a_c/frightmas -10 103 56 none none 1 0 strict
 tag @a[predicate=fossil_frights:player/team/guard] remove ff_a_c_reset_in_range
 function fossil_frights:tasks/tracker/refresh

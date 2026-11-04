@@ -1,4 +1,3 @@
-scoreboard players set $a_c_reset_variant ff_task_state 0
 scoreboard players set $a_c_btn_1_pressed ff_task_state 0
 scoreboard players set $a_c_btn_2_pressed ff_task_state 0
 scoreboard players set $a_c_btn_3_pressed ff_task_state 0

@@ -4,7 +4,6 @@ data modify storage fossil_frights:tasks complete.task_name set value "a_c_reset
 execute positioned -1 107 58 run playsound fossil_frights:task.a_c_reset master @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
 execute positioned -1 107 58 run playsound minecraft:block.copper_bulb.turn_on block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.8 1.0
 execute positioned -1 107 58 run playsound minecraft:block.fire.extinguish block @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.9 1.0
-function fossil_frights:tasks/hard/a_c_reset/place_melted
 scoreboard players set $a_c_fan_timer ff_task_state 8
 function fossil_frights:tasks/hard/a_c_reset/fan_loop
 scoreboard players set $a_c_fan_spin ff_task_state 100

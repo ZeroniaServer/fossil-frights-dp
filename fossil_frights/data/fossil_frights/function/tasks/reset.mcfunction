@@ -145,7 +145,6 @@ scoreboard players set $feed_the_bats_sel ff_task_state 0
 scoreboard players set $feed_the_bats_done ff_task_state 0
 scoreboard players set $a_c_reset_sel ff_task_state 0
 scoreboard players set $a_c_reset_done ff_task_state 0
-scoreboard players set $a_c_reset_variant ff_task_state 0
 scoreboard players set $pig_wrangler_sel ff_task_state 0
 scoreboard players set $pig_wrangler_done ff_task_state 0
 scoreboard players set $pig_wrangler_tower_seen ff_task_state 0
