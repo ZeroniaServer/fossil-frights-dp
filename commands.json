@@ -525,6 +525,10 @@
                                     "type": "literal",
                                     "executable": true
                                 },
+                                "ice_top_up": {
+                                    "type": "literal",
+                                    "executable": true
+                                },
                                 "replenish_soap": {
                                     "type": "literal",
                                     "executable": true

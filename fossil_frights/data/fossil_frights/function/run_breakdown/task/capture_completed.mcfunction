@@ -88,6 +88,8 @@ execute if score $stuff_stocking_done ff_task_state matches 1 unless score $stuf
 execute if score $stuff_stocking_done ff_task_state matches 1 run scoreboard players set $stuff_stocking_rb ff_run_breakdown 1
 execute if score $feed_bees_done ff_task_state matches 1 unless score $feed_bees_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"75"}
 execute if score $feed_bees_done ff_task_state matches 1 run scoreboard players set $feed_bees_rb ff_run_breakdown 1
+execute if score $ice_top_up_done ff_task_state matches 1 unless score $ice_top_up_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"76"}
+execute if score $ice_top_up_done ff_task_state matches 1 run scoreboard players set $ice_top_up_rb ff_run_breakdown 1
 execute if score $replenish_soap_done ff_task_state matches 1 unless score $replenish_soap_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"44"}
 execute if score $replenish_soap_done ff_task_state matches 1 run scoreboard players set $replenish_soap_rb ff_run_breakdown 1
 execute if score $restock_plushies_done ff_task_state matches 1 unless score $restock_plushies_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"45"}
