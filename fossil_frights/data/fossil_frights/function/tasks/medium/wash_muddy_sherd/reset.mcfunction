@@ -1,1 +1,1 @@
-
+function fossil_frights:tasks/medium/wash_muddy_sherd/cleanup
