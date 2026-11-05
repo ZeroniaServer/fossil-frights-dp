@@ -2,7 +2,8 @@ advancement revoke @s only fossil_frights:misc/crab_click
 execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $day_active ff_day matches 1 run return 0
 execute if entity @a[limit=1,scores={ff_crab_timer=1..}] run return 0
-execute unless score @s ff_key_cooldown matches 1.. run function fossil_frights:messages/dinocoin/crab/general_cooldown
+execute unless score @s ff_key_cooldown matches 1.. if predicate {type:"minecraft:int_value_check",value:{type:"minecraft:score",target:"this",score:"ff_cannot_trigger_npc_messages_until_timestamp",fallback:-2147483648},test:{max:"fossil_frights:gametime"}} run function fossil_frights:messages/dinocoin/crab/general_cooldown
+execute unless score @s ff_key_cooldown matches 1.. if predicate {type:"minecraft:int_value_check",value:{type:"minecraft:score",target:"this",score:"ff_cannot_trigger_npc_messages_until_timestamp",fallback:-2147483648},test:{max:"fossil_frights:gametime"}} run function fossil_frights:messages/block_npc_messages_for_10_seconds
 execute unless score @s ff_key_cooldown matches 1.. run return 0
 execute store result score #crab_coin_count ff_game_state if items entity @s fossil_frights:player/all *[minecraft:custom_data~{itemID:"dinocoin"}]
 execute if score #crab_coin_count ff_game_state matches ..1 run function fossil_frights:messages/dinocoin/crab/needs_coins

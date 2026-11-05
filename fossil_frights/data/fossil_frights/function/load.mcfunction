@@ -277,6 +277,7 @@ scoreboard objectives add ff_security_gate_close_timestamp dummy
 scoreboard objectives add ff_bouncy_lily_pad_bounce_timestamp dummy
 scoreboard objectives add ff_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_fire_damage_cooldown_until_timestamp dummy
+scoreboard objectives add ff_febreeze_rod_using_state dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2
