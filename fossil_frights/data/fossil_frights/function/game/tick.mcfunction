@@ -50,3 +50,5 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run function fossil_frights:messages/bossbar/update_day_name
 function fossil_frights:game/start_room/day_tracker/refresh
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_timer ff_day matches 6000.. run function fossil_frights:game/timeout/day
+
+execute if predicate fossil_frights:game_state/game_running as @e[type=minecraft:sulfur_cube,tag=ff_ice_sculpture_driver] at @s align xyz positioned ~-1.001 ~-1.001 ~-1.001 as @e[dx=2.002,dy=2.002,dz=2.002,type=minecraft:item_display,tag=ff_door,tag=!ff_door.automatic] at @s run function fossil_frights:interactions/door/walk_next_to/open_automatic
