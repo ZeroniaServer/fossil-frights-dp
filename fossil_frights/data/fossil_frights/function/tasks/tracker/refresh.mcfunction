@@ -79,7 +79,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"holy_grail"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"hoveraptor"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"pig_wrangler"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"return_the_key"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"star_gazing"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"reindeer_counting"}
 
 
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:locator_bar/markers/sync

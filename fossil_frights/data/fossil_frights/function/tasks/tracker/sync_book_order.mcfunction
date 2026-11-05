@@ -363,12 +363,12 @@ execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"fre
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"freeze_pond"}}] run scoreboard players set #line_freeze_pond ff_task_state 894
 
 # Hard
-execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 799
-execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 798
-execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 797
-execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 796
-execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 795
-execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"star_gazing"}}] run scoreboard players set #line_star_gazing ff_task_state 794
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 799
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 798
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 797
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 796
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 795
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"reindeer_counting"}}] run scoreboard players set #line_reindeer_counting ff_task_state 794
 execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"decorate_tree"}}] run scoreboard players set #line_decorate_tree ff_task_state 799
 execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"decorate_tree"}}] run scoreboard players set #line_decorate_tree ff_task_state 798
 execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"decorate_tree"}}] run scoreboard players set #line_decorate_tree ff_task_state 797

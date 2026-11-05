@@ -1,6 +1,6 @@
 # Pick exactly one unique hard task from the remaining unselected pool.
 scoreboard players set #task_remaining ff_task_state 0
-execute unless score $star_gazing_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $reindeer_counting_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $return_the_key_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $feed_the_bats_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $a_c_reset_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
@@ -34,9 +34,9 @@ execute if score #task_remaining ff_task_state matches 14 store result score #ta
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
 
-execute unless score $star_gazing_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $star_gazing_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/star_gazing/selected
-execute unless score $star_gazing_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $reindeer_counting_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $reindeer_counting_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/reindeer_counting/selected
+execute unless score $reindeer_counting_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $return_the_key_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $return_the_key_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/return_the_key/selected
 execute unless score $return_the_key_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

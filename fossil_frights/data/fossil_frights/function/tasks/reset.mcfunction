@@ -131,10 +131,8 @@ scoreboard players set $feed_mammoth_done ff_task_state 0
 scoreboard players set $freeze_pond_sel ff_task_state 0
 scoreboard players set $freeze_pond_done ff_task_state 0
 
-scoreboard players set $star_gazing_sel ff_task_state 0
-scoreboard players set $star_gazing_done ff_task_state 0
-scoreboard players set $star_gazing_answer ff_task_state 0
-scoreboard players set $star_gazing_rotation ff_task_state 0
+scoreboard players set $reindeer_counting_sel ff_task_state 0
+scoreboard players set $reindeer_counting_done ff_task_state 0
 scoreboard players set $glowberry_tree_1_watered ff_task_state 0
 scoreboard players set $glowberry_tree_2_watered ff_task_state 0
 scoreboard players set $glowberry_tree_1_pending ff_task_state 0
@@ -231,7 +229,7 @@ scoreboard players reset $tt_build_snowman ff_task_tracker
 scoreboard players reset $tt_free_caveman ff_task_tracker
 scoreboard players reset $tt_feed_mammoth ff_task_tracker
 scoreboard players reset $tt_freeze_pond ff_task_tracker
-scoreboard players reset $tt_star_gazing ff_task_tracker
+scoreboard players reset $tt_reindeer_counting ff_task_tracker
 scoreboard players reset $tt_return_the_key ff_task_tracker
 scoreboard players reset $tt_feed_the_bats ff_task_tracker
 scoreboard players reset $tt_a_c_reset ff_task_tracker
@@ -306,7 +304,7 @@ function fossil_frights:tasks/medium/build_snowman/reset
 function fossil_frights:tasks/medium/free_caveman/reset
 function fossil_frights:tasks/medium/feed_mammoth/reset
 function fossil_frights:tasks/medium/freeze_pond/reset
-function fossil_frights:tasks/hard/star_gazing/reset
+function fossil_frights:tasks/hard/reindeer_counting/reset
 function fossil_frights:tasks/hard/return_the_key/reset
 function fossil_frights:tasks/hard/feed_the_bats/reset
 function fossil_frights:tasks/hard/a_c_reset/reset

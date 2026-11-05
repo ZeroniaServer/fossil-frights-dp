@@ -1,0 +1,43 @@
+execute store result score $reindeer_counting_sky_1 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_1 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_1] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_1 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_1] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_2 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_2 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_2] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_2 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_2] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_3 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_3 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_3] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_3 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_3] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_4 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_4 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_4] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_4 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_4] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_5 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_5 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_5] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_5 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_5] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_6 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_6 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_6] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_6 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_6] run data modify entity @s view_range set value 2
+execute store result score $reindeer_counting_sky_7 ff_task_state run random value 0..1
+execute if score $reindeer_counting_sky_7 ff_task_state matches 0 as @e[type=minecraft:item_display,tag=ff_reindeer_7] run data modify entity @s view_range set value 0
+execute if score $reindeer_counting_sky_7 ff_task_state matches 1 as @e[type=minecraft:item_display,tag=ff_reindeer_7] run data modify entity @s view_range set value 2
+function fossil_frights:tasks/hard/reindeer_counting/randomize_board
+summon minecraft:text_display -25.937500 102.5 86.05 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_1"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 102.5 86.05 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_1"]}
+summon minecraft:text_display -25.937500 102.5 85.40 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_2"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 102.5 85.40 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_2"]}
+summon minecraft:text_display -25.937500 102.5 84.75 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_3"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 102.5 84.75 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_3"]}
+summon minecraft:text_display -25.937500 103 86.05 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_4"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 103 86.05 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_4"]}
+summon minecraft:text_display -25.937500 103 85.40 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_5"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 103 85.40 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_5"]}
+summon minecraft:text_display -25.937500 103 84.75 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_6"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 103 84.75 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_6"]}
+summon minecraft:text_display -25.937500 102.75 84.10 {Tags:["ff_reindeer_counting_board","ff_reindeer_counting_board_7"],Rotation:[-90f,0f],billboard:"fixed",transformation:{translation:[0f,0f,0f],scale:[2f,2f,2f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]},background:0,brightness:{sky:15,block:15},text:{text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}}
+summon minecraft:interaction -25.483125 102.75 84.10 {width:0.4f,height:0.4f,response:true,Tags:["ff_reindeer_counting_click","ff_reindeer_counting_click_7"]}
+execute if score $reindeer_counting_board_1 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_1] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_2 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_2] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_3 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_3] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_4 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_4] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_5 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_5] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_6 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_6] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}
+execute if score $reindeer_counting_board_7 ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_reindeer_counting_board_7] run data modify entity @s text set value {text:"",font:"fossil_frights:frightmas/reindeer_counting",color:"white"}

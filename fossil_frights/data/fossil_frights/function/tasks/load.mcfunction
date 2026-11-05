@@ -85,9 +85,7 @@ function fossil_frights:tasks/register {id: "feed_mammoth", difficulty: "medium"
 function fossil_frights:tasks/register {id: "freeze_pond", difficulty: "medium", custom_icon: false, sidebar_index: 71}
 function fossil_frights:tasks/medium/feed_mammoth/cleanup
 
-function fossil_frights:tasks/register {id: "star_gazing", difficulty: "hard", custom_icon: false, sidebar_index: 11}
-scoreboard players set $star_gazing_answer ff_task_state 0
-scoreboard players set $star_gazing_rotation ff_task_state 0
+function fossil_frights:tasks/register {id: "reindeer_counting", difficulty: "hard", custom_icon: false, sidebar_index: 11}
 scoreboard players set $glowberry_tree_1_watered ff_task_state 0
 scoreboard players set $glowberry_tree_2_watered ff_task_state 0
 scoreboard players set $glowberry_tree_1_pending ff_task_state 0

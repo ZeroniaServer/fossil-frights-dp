@@ -146,5 +146,5 @@ execute if score $pig_wrangler_sel ff_task_state matches 1 run scoreboard player
 execute if score $pig_wrangler_sel ff_task_state matches 1 if score $pig_wrangler_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $return_the_key_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
-execute if score $star_gazing_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
-execute if score $star_gazing_sel ff_task_state matches 1 if score $star_gazing_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $reindeer_counting_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $reindeer_counting_sel ff_task_state matches 1 if score $reindeer_counting_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1

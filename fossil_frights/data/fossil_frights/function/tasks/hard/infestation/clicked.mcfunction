@@ -9,4 +9,4 @@ execute if predicate fossil_frights:player/is_sneaking run scoreboard players re
 execute if score $infestation_answer ff_task_state matches 11.. run scoreboard players set $infestation_answer ff_task_state 1
 execute if score $infestation_answer ff_task_state matches ..0 run scoreboard players set $infestation_answer ff_task_state 10
 function fossil_frights:tasks/hard/infestation/update_display
-execute positioned -32 82 79 run playsound minecraft:block.comparator.click master @a[tag=ff_frights_feedback_viewer,distance=..16] ~ ~ ~ 1 1
+execute positioned -32 82 79 run playsound fossil_frights:task.scribble master @a[tag=ff_frights_feedback_viewer,distance=..16] ~ ~ ~ 1 1

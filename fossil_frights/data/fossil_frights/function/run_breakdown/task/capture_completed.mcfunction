@@ -132,8 +132,8 @@ execute if score $pig_wrangler_done ff_task_state matches 1 unless score $pig_wr
 execute if score $pig_wrangler_done ff_task_state matches 1 run scoreboard players set $pig_wrangler_rb ff_run_breakdown 1
 execute if score $return_the_key_done ff_task_state matches 1 unless score $return_the_key_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"62"}
 execute if score $return_the_key_done ff_task_state matches 1 run scoreboard players set $return_the_key_rb ff_run_breakdown 1
-execute if score $star_gazing_done ff_task_state matches 1 unless score $star_gazing_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"64"}
-execute if score $star_gazing_done ff_task_state matches 1 run scoreboard players set $star_gazing_rb ff_run_breakdown 1
+execute if score $reindeer_counting_done ff_task_state matches 1 unless score $reindeer_counting_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"64"}
+execute if score $reindeer_counting_done ff_task_state matches 1 run scoreboard players set $reindeer_counting_rb ff_run_breakdown 1
 execute if score $decorate_tree_done ff_task_state matches 1 unless score $decorate_tree_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"85"}
 execute if score $decorate_tree_done ff_task_state matches 1 run scoreboard players set $decorate_tree_rb ff_run_breakdown 1
 execute if score $defrost_timeline_done ff_task_state matches 1 unless score $defrost_timeline_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"86"}

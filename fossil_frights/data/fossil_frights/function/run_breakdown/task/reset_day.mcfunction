@@ -65,7 +65,7 @@ scoreboard players set $holy_grail_rb ff_run_breakdown 0
 scoreboard players set $hoveraptor_rb ff_run_breakdown 0
 scoreboard players set $pig_wrangler_rb ff_run_breakdown 0
 scoreboard players set $return_the_key_rb ff_run_breakdown 0
-scoreboard players set $star_gazing_rb ff_run_breakdown 0
+scoreboard players set $reindeer_counting_rb ff_run_breakdown 0
 scoreboard players set $decorate_tree_rb ff_run_breakdown 0
 scoreboard players set $defrost_timeline_rb ff_run_breakdown 0
 scoreboard players set $return_lost_egg_rb ff_run_breakdown 0
