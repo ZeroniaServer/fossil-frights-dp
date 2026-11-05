@@ -54,6 +54,6 @@ item modify entity @e[type=minecraft:chest_minecart,tag=ff_admin_item_page_2,dis
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/bubbly_bat",page:"page_2",slot:18}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/fossil_fizz",page:"page_2",slot:19}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/chorus_cola",page:"page_2",slot:20}
-function fossil_frights:items/catalog/from_loot {loot:"items/drinks/pteranadon_twist",page:"page_2",slot:21}
+function fossil_frights:items/catalog/from_loot {loot:"items/drinks/pteranodon_twist",page:"page_2",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/raptor_rush",page:"page_2",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/drinks/veloci_tea",page:"page_2",slot:23}

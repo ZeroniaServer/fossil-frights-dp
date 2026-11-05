@@ -3,8 +3,8 @@
 execute store result storage fossil_frights:vending_machine_aj_temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/read with storage fossil_frights:vending_machine_aj_temp args
-tag @s add animation.vending_machine.animation.fill_pteranadontwist.playing
-scoreboard players set @s aj.fill_pteranadontwist.frame 0
+tag @s add animation.vending_machine.animation.fill_pteranodontwist.playing
+scoreboard players set @s aj.fill_pteranodontwist.frame 0
 tag @s add aj.transforms_only
-execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_pteranadontwist/zzz/set_frame {frame: 0}
+execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_pteranodontwist/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

@@ -14,7 +14,7 @@ execute if score $vending_current ff_game_state matches 6 run function fossil_fr
 advancement grant @s only fossil_frights:02_achievements/quenched
 scoreboard players set $vending_busy ff_game_state 1
 execute if score $vending_current ff_game_state matches 1 run loot give @s loot fossil_frights:items/drinks/veloci_tea
-execute if score $vending_current ff_game_state matches 2 run loot give @s loot fossil_frights:items/drinks/pteranadon_twist
+execute if score $vending_current ff_game_state matches 2 run loot give @s loot fossil_frights:items/drinks/pteranodon_twist
 execute if score $vending_current ff_game_state matches 3 run loot give @s loot fossil_frights:items/drinks/raptor_rush
 execute if score $vending_current ff_game_state matches 4 run loot give @s loot fossil_frights:items/drinks/bubbly_bat
 execute if score $vending_current ff_game_state matches 5 run loot give @s loot fossil_frights:items/drinks/chorus_cola
