@@ -96,6 +96,10 @@
                 },
                 {
                   "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/tasks/return_lost_egg/lost_egg"
+                },
+                {
+                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/anvil/hoverboard"
                 },
                 {

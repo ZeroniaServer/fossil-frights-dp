@@ -138,3 +138,5 @@ execute if score $decorate_tree_done ff_task_state matches 1 unless score $decor
 execute if score $decorate_tree_done ff_task_state matches 1 run scoreboard players set $decorate_tree_rb ff_run_breakdown 1
 execute if score $defrost_timeline_done ff_task_state matches 1 unless score $defrost_timeline_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"86"}
 execute if score $defrost_timeline_done ff_task_state matches 1 run scoreboard players set $defrost_timeline_rb ff_run_breakdown 1
+execute if score $return_lost_egg_done ff_task_state matches 1 unless score $return_lost_egg_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"87"}
+execute if score $return_lost_egg_done ff_task_state matches 1 run scoreboard players set $return_lost_egg_rb ff_run_breakdown 1

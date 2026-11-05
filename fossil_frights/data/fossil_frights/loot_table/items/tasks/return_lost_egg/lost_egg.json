@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.lost_egg",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/tasks/lab_experiment/eggs/lost_egg",
+                "minecraft:custom_data": {
+                  "itemID": "lost_egg"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

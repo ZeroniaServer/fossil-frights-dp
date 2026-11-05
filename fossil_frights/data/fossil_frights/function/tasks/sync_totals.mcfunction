@@ -128,6 +128,8 @@ execute if score $decorate_tree_sel ff_task_state matches 1 run scoreboard playe
 execute if score $decorate_tree_sel ff_task_state matches 1 if score $decorate_tree_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $defrost_timeline_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $defrost_timeline_sel ff_task_state matches 1 if score $defrost_timeline_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $return_lost_egg_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $return_lost_egg_sel ff_task_state matches 1 if score $return_lost_egg_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $feed_the_bats_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $feed_the_bats_sel ff_task_state matches 1 if score $feed_the_bats_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $holy_grail_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
