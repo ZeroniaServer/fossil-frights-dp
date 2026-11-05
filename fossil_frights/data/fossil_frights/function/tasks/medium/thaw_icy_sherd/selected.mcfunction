@@ -3,3 +3,4 @@ execute if score $thaw_icy_sherd_sel ff_task_state matches 0 run loot insert 18 
 scoreboard players set $thaw_icy_sherd_sel ff_task_state 1
 scoreboard players set $thaw_icy_sherd_done ff_task_state 0
 function fossil_frights:tasks/tracker/refresh
+function fossil_frights:tasks/medium/thaw_icy_sherd/spawn

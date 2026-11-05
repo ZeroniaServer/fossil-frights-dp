@@ -11,7 +11,7 @@
             "entity_type": "minecraft:interaction",
             "entity_tags": {
               "all_of": [
-                "ff_wash_muddy_sherd_click"
+                "ff_thaw_icy_sherd_click"
               ]
             }
           }
@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:tasks/medium/wash_muddy_sherd/clicked"
+    "function": "fossil_frights:tasks/medium/thaw_icy_sherd/clicked"
   }
 }
