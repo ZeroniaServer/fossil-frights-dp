@@ -15,7 +15,27 @@
                   "translate": "ff.item.febreeze_rod",
                   "color": "aqua"
                 },
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.febreeze_rod.description.spray",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "keybind": "key.use",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/febreeze_rod",
+                "minecraft:consumable": {
+                  "animation": "toot_horn",
+                  "consume_seconds": 1.0,
+                  "has_consume_particles": false,
+                  "sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "febreeze_rod",
                   "ff_heist_rules": {
