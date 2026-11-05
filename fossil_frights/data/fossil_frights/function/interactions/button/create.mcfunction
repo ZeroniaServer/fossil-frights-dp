@@ -1,7 +1,7 @@
 execute unless block ~ ~ ~ #buttons run tellraw @s {color:"red",text:"There is no button block here"}
 execute unless block ~ ~ ~ #buttons run return fail
 
-data modify storage fossil_frights:button entity_data set value {Tags:["ff_button"],data:{ff_button:{}},response:true}
+data modify storage fossil_frights:button entity_data set value {Tags:["ff_button"],data:{ff_button:{}},response:false}
 $data modify storage fossil_frights:button entity_data.data.ff_button.function set value "$(runs_function)"
 
 execute if block ~ ~ ~ #buttons[face=floor] run data modify storage fossil_frights:button entity_data.data.ff_button.block_face set value "floor"
