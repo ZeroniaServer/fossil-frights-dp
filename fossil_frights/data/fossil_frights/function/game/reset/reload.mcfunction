@@ -5,7 +5,7 @@ execute as @a run function fossil_frights:lobby_games/parkour/reset_player
 execute as @a run function fossil_frights:lobby_games/temple_run/reset_player
 execute as @a run function fossil_frights:player/reset_attributes
 execute as @a run function fossil_frights:player/reset_effects
-execute as @a[tag=ff_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
+execute as @a[predicate=fossil_frights:player/is_playing_ant_fight] run function fossil_frights:lobby_games/ant_fight/end
 execute as @a[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 tag @a[scores={ff_tp_action=14}] remove ff_fade_tp_active
 tag @a remove ff_skip_plushie_restore

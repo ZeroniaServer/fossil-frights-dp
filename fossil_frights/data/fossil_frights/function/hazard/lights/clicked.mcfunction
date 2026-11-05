@@ -1,2 +1,2 @@
 advancement revoke @s only fossil_frights:hazards/lights/click
-execute if score lights ff_hazard_active matches 1 run function fossil_frights:hazard/stop/lights
+execute if predicate fossil_frights:game_state/hazard_active/lights run function fossil_frights:hazard/stop/lights

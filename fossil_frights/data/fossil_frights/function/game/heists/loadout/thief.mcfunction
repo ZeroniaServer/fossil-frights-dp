@@ -8,14 +8,12 @@ function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_m
 tag @s remove ff_ice_frozen
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 clear @s
-scoreboard players set @s ff_key_cooldown 0
-scoreboard players set @s ff_key_bar 0
-scoreboard players set @s ff_heist_punch_cd 0
-scoreboard players set @s ff_heist_punch_bar 0
+scoreboard players reset @s ff_key_cooldown
+scoreboard players reset @s ff_heist_punch_cd
 scoreboard players set @s ff_heist_punch_fx 0
-scoreboard players set @s ff_heist_invis_ticks 0
-scoreboard players set @s ff_heist_thaw_fx 0
-scoreboard players set @s ff_heist_paint_fx 0
+scoreboard players reset @s ff_heist_invis_ticks
+scoreboard players reset @s ff_heist_thaw_fx
+scoreboard players reset @s ff_heist_paint_fx
 effect clear @s minecraft:invisibility
 function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @s minecraft:speed

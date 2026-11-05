@@ -56,9 +56,8 @@ effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:absorption
 effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:health_boost
 effect give @a[predicate=fossil_frights:player/team/guard] minecraft:instant_health 100 0 true
 effect give @a[predicate=fossil_frights:player/team/guard] minecraft:saturation infinite 255 true
-scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_cooldown 0
-scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_key_bar 0
-scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_coin_used_run 0
+scoreboard players reset @a[predicate=fossil_frights:player/team/guard] ff_key_cooldown
+scoreboard players reset @a[predicate=fossil_frights:player/team/guard] ff_coin_used_run
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_delta 0
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_sign 0
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/clear
@@ -75,7 +74,7 @@ scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set $bogged_fright ff_game_state 0
-scoreboard players set @a ff_fright_timer 0
+scoreboard players reset @a ff_fright_timer
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0

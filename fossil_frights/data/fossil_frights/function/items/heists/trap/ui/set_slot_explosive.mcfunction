@@ -1,5 +1,5 @@
 data modify storage fossil_frights:trap_ui slot5 set value "\ue341"
-execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress = @s ff_trap_explosive_timer
+execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. store result score @s ff_trap_ui_progress run scoreboard players get @s ff_trap_explosive_timer
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress *= $trap_ui_six ff_trap_balance
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_explosive_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress /= @s ff_trap_explosive_cooldown
 execute if score @s ff_trap_explosive_phase matches 1 if score @s ff_trap_explosive_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot5 set value "\ue342"
@@ -14,7 +14,7 @@ execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_ui_pro
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_ui_progress matches 3 run data modify storage fossil_frights:trap_ui slot5 set value "\ue345"
 execute if score @s ff_trap_explosive_phase matches 3 if score @s ff_trap_ui_progress matches 4.. run data modify storage fossil_frights:trap_ui slot5 set value "\ue346"
 execute if score @s ff_trap_explosive_phase matches 4.. run data modify storage fossil_frights:trap_ui slot5 set value "\ue34c"
-execute if score @s ff_trap_selected matches 4.. if score @s ff_trap_explosive_phase matches 0 run data modify storage fossil_frights:trap_ui slot5 set value "\ue340"
+execute if score @s ff_trap_selected matches 4.. unless score @s ff_trap_explosive_phase matches 1.. run data modify storage fossil_frights:trap_ui slot5 set value "\ue340"
 execute if score @s ff_trap_selected matches 4.. if score @s ff_trap_explosive_phase matches 1 if score @s ff_trap_explosive_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot5 set value "\ue347"
 execute if score @s ff_trap_selected matches 4.. if score @s ff_trap_explosive_phase matches 1 if score @s ff_trap_explosive_timer matches 10..19 run data modify storage fossil_frights:trap_ui slot5 set value "\ue348"
 execute if score @s ff_trap_selected matches 4.. if score @s ff_trap_explosive_phase matches 1 if score @s ff_trap_explosive_timer matches 20..29 run data modify storage fossil_frights:trap_ui slot5 set value "\ue349"

@@ -1,3 +1,3 @@
 # Restore curse baseline
-execute if score lights ff_hazard_active matches 1 run function fossil_frights:hazard/curse/restore_off
-execute if score lights ff_hazard_active matches 0 run function fossil_frights:hazard/curse/restore_on
+execute if predicate fossil_frights:game_state/hazard_active/lights run function fossil_frights:hazard/curse/restore_off
+execute unless predicate fossil_frights:game_state/hazard_active/lights run function fossil_frights:hazard/curse/restore_on

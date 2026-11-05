@@ -1,4 +1,4 @@
-scoreboard players set @s ff_dna_hover_found 1
+scoreboard players set #ff_dna_hover_found ff_dummy 1
 tag @s add ff_dna_candidate
 execute as @e[type=minecraft:item_display,tag=ff_dna_hover,tag=!ff_dna_candidate] run function fossil_frights:tasks/final/dna/clear_hover
 tag @e[type=minecraft:item_display,tag=ff_dna_hover,tag=!ff_dna_candidate] remove ff_dna_hover

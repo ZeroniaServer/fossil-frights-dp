@@ -20,21 +20,13 @@ scoreboard objectives add ff_player_team dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
-scoreboard objectives add ff_key_cd_cfg dummy
-scoreboard objectives add ff_key_bar dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
-scoreboard objectives add ff_bb_disc_use minecraft.used:minecraft.music_disc_creator_music_box
-scoreboard objectives add ff_bb_disc_seen dummy
-scoreboard objectives add ff_bb_sneak_seen dummy
 scoreboard objectives add ff_bb_sneak_state dummy
 scoreboard objectives add ff_bb_shift_count dummy
-scoreboard objectives add ff_dna_scan dummy
-scoreboard objectives add ff_dna_hover_found dummy
 scoreboard objectives add ff_security_camera dummy
 scoreboard objectives add ff_security_camera_nav dummy
 scoreboard objectives add ff_security_camera_heist dummy
-scoreboard objectives add ff_fright_roll dummy
 scoreboard objectives add ff_spider_fright_delay dummy
 scoreboard objectives add ff_camera_remote_health dummy
 scoreboard objectives add ff_camera_remote_health_prev dummy
@@ -103,12 +95,13 @@ scoreboard objectives add ff_hoverboard_uuid_0 dummy
 scoreboard objectives add ff_hoverboard_uuid_1 dummy
 scoreboard objectives add ff_hoverboard_uuid_2 dummy
 scoreboard objectives add ff_hoverboard_uuid_3 dummy
+scoreboard objectives add ff_hoverboard_levitation dummy
 scoreboard objectives add ff_ice_cannon_age dummy
+scoreboard objectives add ff_ice_cannon_id dummy
 scoreboard objectives add ff_ice_freeze_age dummy
 scoreboard objectives add ff_trap_item_age dummy
 scoreboard objectives add ff_glowtrap_age dummy
 scoreboard objectives add ff_glowtrap_fx dummy
-scoreboard objectives add ff_glowtrap_scan dummy
 scoreboard objectives add ff_trap_type dummy
 scoreboard objectives add ff_trap_selected dummy
 scoreboard objectives add ff_trap_input_delay dummy
@@ -145,8 +138,6 @@ scoreboard objectives add ff_queue_prompt_display dummy
 scoreboard objectives add ff_fright_timer dummy
 scoreboard objectives add ff_herobrine_delay dummy
 scoreboard objectives add ff_bat_fright_timer dummy
-scoreboard objectives add ff_credits_time dummy
-scoreboard objectives add ff_boss_skin dummy
 scoreboard objectives add ff_day dummy
 scoreboard objectives add ff_singleplayer_play_time minecraft.custom:minecraft.play_time
 scoreboard objectives add ff_singleplayer_world_time minecraft.custom:minecraft.total_world_time
@@ -215,8 +206,8 @@ scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
-scoreboard players set @a ff_tp_delay 0
-scoreboard players set @a ff_tp_action 0
+scoreboard players reset @a ff_tp_delay
+scoreboard players reset @a ff_tp_action
 tag @a remove ff_tp_dispatch
 tag @a remove ff_fade_tp_active
 execute as @a run function fossil_frights:cameras/clear_posteffect
@@ -224,7 +215,6 @@ posteffect clear @a
 scoreboard objectives add ff_heist dummy
 scoreboard objectives add ff_heist_sidebar dummy
 scoreboard objectives add ff_heist_punch_cd dummy
-scoreboard objectives add ff_heist_punch_bar dummy
 scoreboard objectives add ff_heist_punch_fx dummy
 scoreboard objectives add ff_heist_invis_ticks dummy
 scoreboard objectives add ff_heist_stolen_keys dummy
@@ -317,7 +307,6 @@ scoreboard players set #ticks_per_minute ff_constant 1200
 scoreboard players set #rejoin_grace ff_constant 2400
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
 scoreboard players set #hazard_count ff_hazard_rng 5
-scoreboard players set $key_cooldown_length ff_key_cd_cfg 600
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #heist_full ff_heist 12000
 scoreboard players set #heist_goal ff_heist 1000
@@ -426,7 +415,6 @@ scoreboard players set $puffer_fright ff_game_state 0
 scoreboard players set $puffer_timer ff_game_state 0
 scoreboard players set $defeat_anim ff_game_state 0
 scoreboard players set $defeat_lock ff_game_state 0
-scoreboard players set #boss_skin ff_boss_skin 0
 scoreboard players set $creeper_fright ff_game_state 0
 scoreboard players set $skeleton_fright ff_game_state 0
 scoreboard players set $bogged_fright ff_game_state 0
@@ -569,3 +557,158 @@ gamerule minecraft:drowning_damage false
 bossbar add fossil_frights:resource_pack_disclaimer ""
 bossbar set fossil_frights:resource_pack_disclaimer name {color:"#E80018",translate:"ff.empty",fallback:"%1$s",with:[["Please enable the ",{underlined:true,text:"Resource Pack"}]]}
 bossbar set fossil_frights:resource_pack_disclaimer color blue
+
+# These scoreboard objectives get saved when a player logs out, and restored when they log back in. All other scores will be reset when the player leaves the game.
+data modify storage fossil_frights:session saved_scoreboard_objectives set value [\
+    "player_team",\
+    "key_cooldown",\
+    "crab_timer",\
+    "security_camera",\
+    "security_camera_nav",\
+    "security_camera_heist",\
+    "forced_spec_x",\
+    "forced_spec_y",\
+    "forced_spec_z",\
+    "forced_spec_yaw",\
+    "forced_spec_pitch",\
+    "coin_used_run",\
+    "leave_game",\
+    "leave_game_seen",\
+    "deaths",\
+    "deaths_seen",\
+    "heist_deaths_baseline",\
+    "join_cooldown",\
+    "msg_cooldown",\
+    "settings_mode_cooldown",\
+    "queue_order",\
+    "confetti_uses",\
+    "trap_selected",\
+    "trap_glow_phase",\
+    "trap_glow_timer",\
+    "trap_freeze_phase",\
+    "trap_freeze_timer",\
+    "trap_antigravity_phase",\
+    "trap_antigravity_timer",\
+    "trap_jelly_phase",\
+    "trap_jelly_timer",\
+    "trap_explosive_phase",\
+    "trap_explosive_timer",\
+    "trap_glow_cooldown",\
+    "trap_freeze_cooldown",\
+    "trap_antigravity_cooldown",\
+    "trap_jelly_cooldown",\
+    "trap_explosive_cooldown",\
+    "trap_pending_ticks",\
+    "double_jump_boost_timer",\
+    "double_jump_cooldown",\
+    "double_jump_ground_ticks",\
+    "queue_start_token",\
+    "queue_prompt_time",\
+    "queue_prompt_display",\
+    "fright_timer",\
+    "singleplayer_play_time",\
+    "singleplayer_world_time",\
+    "top_time",\
+    "top_day",\
+    "run_count",\
+    "duo_best",\
+    "party_best",\
+    "day1_best",\
+    "day2_best",\
+    "day3_best",\
+    "day4_best",\
+    "day5_best",\
+    "day6_best",\
+    "day7_best",\
+    "day8_best",\
+    "day9_best",\
+    "day10_best",\
+    "speedrun_delta",\
+    "speedrun_sign",\
+    "speedrun_blink",\
+    "speedrun_live",\
+    "run_breakdown",\
+    "speedrun_task1",\
+    "speedrun_task2",\
+    "speedrun_task3",\
+    "speedrun_task4",\
+    "speedrun_task5",\
+    "speedrun_task6",\
+    "speedrun_task7",\
+    "speedrun_task8",\
+    "speedrun_task9",\
+    "speedrun_task10",\
+    "speedrun_task11",\
+    "speedrun_task12",\
+    "speedrun_task13",\
+    "speedrun_task14",\
+    "speedrun_task15",\
+    "speedrun_task16",\
+    "speedrun_task17",\
+    "speedrun_task18",\
+    "speedrun_task19",\
+    "speedrun_task20",\
+    "speedrun_task21",\
+    "speedrun_task22",\
+    "speedrun_task23",\
+    "speedrun_task24",\
+    "speedrun_task25",\
+    "speedrun_task26",\
+    "speedrun_task27",\
+    "speedrun_task28",\
+    "speedrun_task29",\
+    "speedrun_task30",\
+    "speedrun_button1",\
+    "speedrun_button2",\
+    "speedrun_button3",\
+    "speedrun_button4",\
+    "speedrun_button5",\
+    "speedrun_button6",\
+    "speedrun_button7",\
+    "speedrun_button8",\
+    "speedrun_button9",\
+    "lb_generation",\
+    "tp_delay",\
+    "tp_action",\
+    \
+    "heist_punch_cd",\
+    "heist_punch_fx",\
+    "heist_invis_ticks",\
+    "heist_stolen_keys",\
+    "heist_loot_captured_round",\
+    "heist_keyed_loot_captured_round",\
+    "heist_keys_stolen_round",\
+    "heist_deaths_round",\
+    "heist_thieves_killed_round",\
+    "heist_killer_pending",\
+    "heist_killer_uuid_0",\
+    "heist_killer_uuid_1",\
+    "heist_killer_uuid_2",\
+    "heist_killer_uuid_3",\
+    "heist_regen_lock",\
+    "heist_thaw_fx",\
+    "heist_paint_fx",\
+    "heist_guard_sneak_ticks",\
+    "heist_guard_unsneak_ticks",\
+    "heist_loot_security_ticks",\
+    "heist_loot_security_hold",\
+    "heist_loot_security_phase",\
+    "heist_loot_security_recent",\
+    "heist_loot_security_cooldown",\
+    "heist_loot_security_progress",\
+    "heist_loot_security_flash",\
+    "heist_loot_security_lease",\
+    "heist_loot_security_locked",\
+    "invisimask_variant",\
+    \
+    "ant_score",\
+    "ant_top_score",\
+    \
+    "parkour_running",\
+    "parkour_time",\
+    "parkour_best",\
+    \
+    "temple_run_running",\
+    "temple_run_time",\
+    "temple_run_best",\
+]

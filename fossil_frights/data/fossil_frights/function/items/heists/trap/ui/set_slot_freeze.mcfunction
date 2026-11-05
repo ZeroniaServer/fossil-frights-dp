@@ -1,5 +1,5 @@
 data modify storage fossil_frights:trap_ui slot2 set value "\ue311"
-execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_freeze_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress = @s ff_trap_freeze_timer
+execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_freeze_cooldown matches 1.. store result score @s ff_trap_ui_progress run scoreboard players get @s ff_trap_freeze_timer
 execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_freeze_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress *= $trap_ui_six ff_trap_balance
 execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_freeze_cooldown matches 1.. run scoreboard players operation @s ff_trap_ui_progress /= @s ff_trap_freeze_cooldown
 execute if score @s ff_trap_freeze_phase matches 1 if score @s ff_trap_freeze_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot2 set value "\ue312"
@@ -13,7 +13,7 @@ execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_ui_progre
 execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_ui_progress matches 2 run data modify storage fossil_frights:trap_ui slot2 set value "\ue314"
 execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_ui_progress matches 3 run data modify storage fossil_frights:trap_ui slot2 set value "\ue315"
 execute if score @s ff_trap_freeze_phase matches 3 if score @s ff_trap_ui_progress matches 4.. run data modify storage fossil_frights:trap_ui slot2 set value "\ue316"
-execute if score @s ff_trap_selected matches 1 if score @s ff_trap_freeze_phase matches 0 run data modify storage fossil_frights:trap_ui slot2 set value "\ue310"
+execute if score @s ff_trap_selected matches 1 unless score @s ff_trap_freeze_phase matches 1.. run data modify storage fossil_frights:trap_ui slot2 set value "\ue310"
 execute if score @s ff_trap_selected matches 1 if score @s ff_trap_freeze_phase matches 1 if score @s ff_trap_freeze_timer matches 1..9 run data modify storage fossil_frights:trap_ui slot2 set value "\ue317"
 execute if score @s ff_trap_selected matches 1 if score @s ff_trap_freeze_phase matches 1 if score @s ff_trap_freeze_timer matches 10..19 run data modify storage fossil_frights:trap_ui slot2 set value "\ue318"
 execute if score @s ff_trap_selected matches 1 if score @s ff_trap_freeze_phase matches 1 if score @s ff_trap_freeze_timer matches 20..29 run data modify storage fossil_frights:trap_ui slot2 set value "\ue319"

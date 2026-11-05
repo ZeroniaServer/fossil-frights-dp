@@ -9,7 +9,7 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 execute if entity @s[tag=ff_temple_run_exit_pending] run return 0
 execute if entity @s[tag=ff_temple_run_leave] run function fossil_frights:lobby_games/temple_run/timer/prepare
 execute if entity @s[tag=ff_temple_run_leave] run function fossil_frights:lobby_games/temple_run/timer/remove with storage fossil_frights:temple_run_timer
-execute if entity @s[tag=ff_temple_run_leave] run scoreboard players set @s ff_temple_run_running 0
+execute if entity @s[tag=ff_temple_run_leave] run scoreboard players reset @s ff_temple_run_running
 function fossil_frights:lobby_games/temple_run/music/stop
 execute unless entity @s[tag=ff_temple_run_leave] run function fossil_frights:lobby_games/temple_run/reset_player
 execute unless entity @s[tag=ff_temple_run_leave] run scoreboard players operation @s ff_temple_run_restart_seen = @s ff_temple_run_restart_use

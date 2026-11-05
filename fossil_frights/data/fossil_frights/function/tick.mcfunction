@@ -15,6 +15,9 @@ execute as @a[tag=ff_tp_dispatch] run function fossil_frights:cameras/clear_post
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
+scoreboard players reset @a[scores={ff_tp_delay=..0}] ff_tp_delay
+
+execute as @e[type=minecraft:player,gamemode=!spectator,tag=!ff_fade_tp_active,predicate=fossil_frights:player/is_playing,predicate=!fossil_frights:location/room/rough_museum_bounds] at @s run function fossil_frights:player/kill/left_museum_bounds
 
 function fossil_frights:items/dropped_items/tick
 function fossil_frights:items/hoverboard/tick
@@ -29,7 +32,7 @@ scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores
 tag @a remove ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/guard] add ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
-execute if score curse ff_hazard_active matches 1 run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
+execute if predicate fossil_frights:game_state/hazard_active/curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
@@ -54,7 +57,7 @@ execute if predicate fossil_frights:game_state/game_running if score $crane_wait
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/deep_dark_elevator/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/lady_bug_revolutionary/check
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/dinocoin/sarcophagus/tick
-execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players set @a ff_crab_timer 0
+execute if predicate fossil_frights:game_state/heist_mode_active run scoreboard players reset @a ff_crab_timer
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:animations/dinocoin/crab/message/check
 execute unless predicate fossil_frights:game_state/heist_mode_active as @a[scores={ff_crab_timer=1..}] run function fossil_frights:animations/dinocoin/crab/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/puffer/tick
@@ -66,7 +69,6 @@ execute if entity @e[type=minecraft:mannequin,tag=ff_herobrine,limit=1] run func
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
-execute as @e[type=minecraft:armor_stand,tag=ff_credits_anchor] at @s run function fossil_frights:animations/credits/tick
 function fossil_frights:tasks/easy/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
@@ -74,7 +76,7 @@ function fossil_frights:tasks/final/final_task/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
-execute if score floods ff_hazard_active matches 1 run function fossil_frights:hazard/floods/tick
+execute if predicate fossil_frights:game_state/hazard_active/floods run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/curse/tick
@@ -109,7 +111,7 @@ execute as @a at @s run function fossil_frights:player/tick
 execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,tag=!ff_fade_tp_active,predicate=!fossil_frights:player/team/guard,predicate=!fossil_frights:player/team/thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
-execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,tag=ff_ant_fight,gamemode=!spectator]
+execute store success score #ant_fight_active ff_dummy if entity @a[limit=1,predicate=fossil_frights:player/is_playing_ant_fight,gamemode=!spectator]
 execute if score #ant_fight_active ff_dummy matches 1 run scoreboard objectives setdisplay below_name ff_ant_score_below_name
 execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives setdisplay below_name
 function fossil_frights:join/queue/tick

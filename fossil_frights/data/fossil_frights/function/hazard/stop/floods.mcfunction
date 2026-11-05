@@ -1,6 +1,6 @@
-execute if score floods ff_hazard_active matches 0 run return 0
+execute unless predicate fossil_frights:game_state/hazard_active/floods run return 0
 
-scoreboard players set floods ff_hazard_active 0
+scoreboard players set $floods ff_hazard_active 0
 function fossil_frights:run_breakdown/event/add {code:"H",id:"30"}
 scoreboard players set #floods_turns ff_hazard_rng 0
 scoreboard players set #floods_turn_on ff_hazard_rng 0

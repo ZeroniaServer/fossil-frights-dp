@@ -16,7 +16,6 @@ effect clear @s minecraft:health_boost
 effect clear @s minecraft:slowness
 effect clear @s minecraft:blindness
 effect give @s minecraft:saturation infinite 255 true
-scoreboard players set @s ff_key_cooldown 0
-scoreboard players set @s ff_key_bar 0
+scoreboard players reset @s ff_key_cooldown
 function fossil_frights:game/heists/loadout/guard
 function fossil_frights:items/heists/trap/load_state

@@ -1,8 +1,8 @@
 # Progress Frames
 title @s times 0 7 0
-execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 0 unless score @s ff_heist_loot_security_ui matches 0 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.780}
-execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 0 run scoreboard players set @s ff_heist_loot_security_ui 0
-execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 0 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
+execute if score @s ff_heist_loot_security_phase matches 1 unless score @s ff_heist_loot_security_ticks matches 1.. unless score @s ff_heist_loot_security_ui matches 0 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.780}
+execute if score @s ff_heist_loot_security_phase matches 1 unless score @s ff_heist_loot_security_ticks matches 1.. run scoreboard players set @s ff_heist_loot_security_ui 0
+execute if score @s ff_heist_loot_security_phase matches 1 unless score @s ff_heist_loot_security_ticks matches 1.. run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 2 run scoreboard players set @s ff_heist_loot_security_ui 1
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 2 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 4 unless score @s ff_heist_loot_security_ui matches 3 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.850}
@@ -50,8 +50,9 @@ execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 36 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 38 run scoreboard players set @s ff_heist_loot_security_ui 29
 execute if score @s ff_heist_loot_security_phase matches 1 if score @s ff_heist_loot_security_ticks matches 38 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
-execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 0 run scoreboard players set @s ff_heist_loot_security_ui 30
-execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 0 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
+
+execute if score @s ff_heist_loot_security_phase matches 2 unless score @s ff_heist_loot_security_ticks matches 1.. run scoreboard players set @s ff_heist_loot_security_ui 30
+execute if score @s ff_heist_loot_security_phase matches 2 unless score @s ff_heist_loot_security_ticks matches 1.. run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 6 run scoreboard players set @s ff_heist_loot_security_ui 29
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 6 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 12 unless score @s ff_heist_loot_security_ui matches 27 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.850}
@@ -98,9 +99,10 @@ execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 108 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 114 run scoreboard players set @s ff_heist_loot_security_ui 2
 execute if score @s ff_heist_loot_security_phase matches 2 if score @s ff_heist_loot_security_ticks matches 114 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
-execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 0 unless score @s ff_heist_loot_security_ui matches 0 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.780}
-execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 0 run scoreboard players set @s ff_heist_loot_security_ui 0
-execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 0 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
+
+execute if score @s ff_heist_loot_security_phase matches 3 unless score @s ff_heist_loot_security_ticks matches 1.. unless score @s ff_heist_loot_security_ui matches 0 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.780}
+execute if score @s ff_heist_loot_security_phase matches 3 unless score @s ff_heist_loot_security_ticks matches 1.. run scoreboard players set @s ff_heist_loot_security_ui 0
+execute if score @s ff_heist_loot_security_phase matches 3 unless score @s ff_heist_loot_security_ticks matches 1.. run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 6 run scoreboard players set @s ff_heist_loot_security_ui 1
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 6 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 12 unless score @s ff_heist_loot_security_ui matches 3 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.850}
@@ -148,8 +150,9 @@ execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 108 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 114 run scoreboard players set @s ff_heist_loot_security_ui 29
 execute if score @s ff_heist_loot_security_phase matches 3 if score @s ff_heist_loot_security_ticks matches 114 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
-execute if score @s ff_heist_loot_security_phase matches 4 if score @s ff_heist_loot_security_ticks matches 0 run scoreboard players set @s ff_heist_loot_security_ui 30
-execute if score @s ff_heist_loot_security_phase matches 4 if score @s ff_heist_loot_security_ticks matches 0 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
+
+execute if score @s ff_heist_loot_security_phase matches 4 unless score @s ff_heist_loot_security_ticks matches 1.. run scoreboard players set @s ff_heist_loot_security_ui 30
+execute if score @s ff_heist_loot_security_phase matches 4 unless score @s ff_heist_loot_security_ticks matches 1.. run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 4 if score @s ff_heist_loot_security_ticks matches 3 run scoreboard players set @s ff_heist_loot_security_ui 29
 execute if score @s ff_heist_loot_security_phase matches 4 if score @s ff_heist_loot_security_ticks matches 3 run title @s subtitle {"text":"","font":"fossil_frights:actionbar/loot_lock","italic":false}
 execute if score @s ff_heist_loot_security_phase matches 4 if score @s ff_heist_loot_security_ticks matches 6 unless score @s ff_heist_loot_security_ui matches 27 run function fossil_frights:game/heists/loot/secure_loot/ui/click {pitch:0.850}

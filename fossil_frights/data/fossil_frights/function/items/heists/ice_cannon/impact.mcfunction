@@ -1,6 +1,6 @@
 tag @a remove ff_ice_cannon_hit_thief
 tag @a remove ff_ice_cannon_shooter
-execute if score lava ff_hazard_active matches 1 run function fossil_frights:items/heists/ice_cannon/lava_impact
+execute if predicate fossil_frights:game_state/hazard_active/lava run function fossil_frights:items/heists/ice_cannon/lava_impact
 execute as @a[predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..2.5] run tag @s add ff_ice_cannon_hit_thief
 function fossil_frights:entity/match/active
 tag @a[limit=1,predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] add ff_ice_cannon_shooter
@@ -13,7 +13,8 @@ particle minecraft:snowflake ~ ~ ~ 0.45 0.45 0.45 0.03 55 force
 particle minecraft:dust{color:[0.62f,0.9f,1.0f],scale:1.0f} ~ ~ ~ 0.42 0.32 0.42 0.01 20 force
 particle minecraft:dust{color:[0.85f,0.96f,1.0f],scale:0.75f} ~ ~ ~ 0.35 0.25 0.35 0.01 14 force
 playsound minecraft:block.glass.break player @a[distance=..24] ~ ~ ~ 0.9 0.55
-kill @e[type=minecraft:block_display,tag=ff_ice_cannon_block,sort=nearest,limit=1,distance=..1.5]
+scoreboard players operation $ice_cannon_current_id ff_ice_cannon_id = @s ff_ice_cannon_id
+execute as @e[type=minecraft:block_display,tag=ff_ice_cannon_block] if score @s ff_ice_cannon_id = $ice_cannon_current_id ff_ice_cannon_id run kill @s
 tag @a remove ff_ice_cannon_hit_thief
 tag @a remove ff_ice_cannon_shooter
 kill @s

@@ -34,7 +34,6 @@ execute unless score @s ff_speedrun_delta matches -2147483648..2147483647 run sc
 execute unless score @s ff_speedrun_sign matches -2147483648..2147483647 run scoreboard players set @s ff_speedrun_sign 0
 execute unless score @s ff_parkour_time matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_time 0
 execute unless score @s ff_parkour_best matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_best 0
-execute unless score @s ff_parkour_running matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_running 0
 execute unless score @s ff_parkour_start_plate matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_start_plate 0
 execute unless score @s ff_parkour_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_restart_seen 0
 execute unless score @s ff_parkour_min matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_min 0
@@ -46,9 +45,9 @@ execute unless score @s ff_parkour_centi_tens matches -2147483648..2147483647 ru
 execute unless score @s ff_parkour_centi_ones matches -2147483648..2147483647 run scoreboard players set @s ff_parkour_centi_ones 0
 execute unless score @s ff_temple_run_time matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_time 0
 execute unless score @s ff_temple_run_best matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_best 0
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/timer/prepare
-execute if score @s ff_temple_run_running matches 1.. run function fossil_frights:lobby_games/temple_run/timer/remove with storage fossil_frights:temple_run_timer
-scoreboard players set @s ff_temple_run_running 0
+execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/timer/prepare
+execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/timer/remove with storage fossil_frights:temple_run_timer
+scoreboard players reset @s ff_temple_run_running
 execute unless score @s ff_temple_run_start_plate matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_start_plate 0
 execute unless score @s ff_temple_run_restart_seen matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_restart_seen 0
 execute unless score @s ff_temple_run_min matches -2147483648..2147483647 run scoreboard players set @s ff_temple_run_min 0
@@ -66,8 +65,6 @@ execute unless score @s ff_ant_sneak_seen matches -2147483648..2147483647 run sc
 execute unless score @s ff_ant_sneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_sneak_ticks 0
 execute unless score @s ff_ant_unsneak_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_unsneak_ticks 0
 execute unless score @s ff_ant_blind_ticks matches -2147483648..2147483647 run scoreboard players set @s ff_ant_blind_ticks 0
-scoreboard players add @s ff_heist_guard_sneak_ticks 0
-scoreboard players add @s ff_heist_guard_unsneak_ticks 0
 function fossil_frights:tutorial/camera/kill_owned
 function fossil_frights:items/heists/camera_remote/exit
 function fossil_frights:leaderboards/check_login_resets
@@ -103,17 +100,9 @@ scoreboard players set @s ff_join_cooldown 0
 scoreboard players set @s ff_msg_cooldown 0
 scoreboard players set @s ff_tp_action 0
 scoreboard players set @s ff_tp_delay 0
-scoreboard players set @s ff_key_cooldown 0
-scoreboard players set @s ff_key_bar 0
-scoreboard players add @s ff_bb_disc_use 0
-execute unless score @s ff_bb_disc_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_bb_disc_seen = @s ff_bb_disc_use
-execute unless score @s ff_bb_sneak_seen matches -2147483648..2147483647 run scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
-execute unless score @s ff_bb_sneak_state matches -2147483648..2147483647 run scoreboard players set @s ff_bb_sneak_state 0
-execute unless score @s ff_bb_shift_count matches -2147483648..2147483647 run scoreboard players set @s ff_bb_shift_count 0
-scoreboard players operation @s ff_bb_disc_seen = @s ff_bb_disc_use
-scoreboard players operation @s ff_bb_sneak_seen = @s ff_ant_sneak_time
+scoreboard players reset @s ff_key_cooldown
 scoreboard players set @s ff_bb_sneak_state 0
-scoreboard players set @s ff_bb_shift_count 0
+scoreboard players reset @s ff_bb_shift_count
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
 scoreboard players set @s start 0
@@ -160,7 +149,7 @@ gamemode adventure @s
 function fossil_frights:join/lobby
 function fossil_frights:player/effects/lobby_reset
 effect give @s minecraft:instant_health 100 0 true
-execute if score @s ff_parkour_running matches 1.. run function fossil_frights:lobby_games/parkour/end
+execute if predicate fossil_frights:player/is_playing_parkour run function fossil_frights:lobby_games/parkour/end
 execute if predicate fossil_frights:player/is_playing_temple_run run function fossil_frights:lobby_games/temple_run/end
 function fossil_frights:items/plushies/restore
 execute unless predicate fossil_frights:world/packs_enabled/plugin run function fossil_frights:leaderboards/sync_entry
