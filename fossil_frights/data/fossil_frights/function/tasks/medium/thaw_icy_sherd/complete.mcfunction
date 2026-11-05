@@ -8,5 +8,6 @@ execute if score $thaw_icy_sherd_sel ff_task_state matches 1 if score $thaw_icy_
 execute if score $thaw_icy_sherd_sel ff_task_state matches 1 if score $thaw_icy_sherd_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $thaw_icy_sherd_sel ff_task_state matches 1 if score $thaw_icy_sherd_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"thaw_icy_sherd"}}] 1
 execute if score $thaw_icy_sherd_sel ff_task_state matches 1 run scoreboard players set $thaw_icy_sherd_done ff_task_state 1
+function fossil_frights:tasks/medium/thaw_icy_sherd/cleanup
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
