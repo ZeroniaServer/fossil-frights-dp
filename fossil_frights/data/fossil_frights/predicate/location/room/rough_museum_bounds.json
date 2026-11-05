@@ -283,6 +283,62 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "position": {
+                  "x": {
+                    "min": -39.68,
+                    "max": -27.98
+                  },
+                  "y": {
+                    "min": 68.55,
+                    "max": 78.74
+                  },
+                  "z": {
+                    "min": 24.0,
+                    "max": 49.67
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:any_of",
+                "terms": [
+                  {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "x": -27.98
+                      }
+                    }
+                  },
+                  {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "y": 78.74
+                      }
+                    }
+                  },
+                  {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                      "position": {
+                        "z": 49.67
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     },
