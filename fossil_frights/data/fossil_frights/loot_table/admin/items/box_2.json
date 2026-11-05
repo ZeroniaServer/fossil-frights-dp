@@ -80,7 +80,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/drinks/pteranadon_twist"
+                  "value": "fossil_frights:items/drinks/pteranodon_twist"
                 },
                 {
                   "type": "minecraft:loot_table",

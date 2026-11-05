@@ -12,23 +12,23 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.drink.pteranadon_twist",
+                  "translate": "ff.drink.pteranodon_twist",
                   "color": "gold"
                 },
-                "minecraft:item_model": "fossil_frights:items/drinks/pteranadon_twist",
+                "minecraft:item_model": "fossil_frights:items/drinks/pteranodon_twist",
                 "minecraft:lore": [
                   {
-                    "translate": "ff.drink.pteranadon_twist.effect.double_jump",
+                    "translate": "ff.drink.pteranodon_twist.effect.double_jump",
                     "color": "blue",
                     "italic": false
                   },
                   {
-                    "translate": "ff.drink.pteranadon_twist.effect.jump_boost",
+                    "translate": "ff.drink.pteranodon_twist.effect.jump_boost",
                     "color": "blue",
                     "italic": false
                   },
                   {
-                    "translate": "ff.drink.pteranadon_twist.description",
+                    "translate": "ff.drink.pteranodon_twist.description",
                     "color": "gray"
                   }
                 ],

@@ -4,5 +4,5 @@ execute store result storage fossil_frights:vending_machine_aj_temp args.id int 
 # Data Manager: Read
 function fossil_frights:animations/dinocoin/vending_machine/runtime/data_manager/read with storage fossil_frights:vending_machine_aj_temp args
 data remove storage fossil_frights:vending_machine_aj_temp args
-$execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players set @s aj.fill_pteranadontwist.frame $(frame)
-execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_pteranadontwist/zzz/set_frame with storage fossil_frights:vending_machine_aj_temp args
+$execute store result storage fossil_frights:vending_machine_aj_temp args.frame int 1 run scoreboard players set @s aj.fill_pteranodontwist.frame $(frame)
+execute at @s run function fossil_frights:animations/dinocoin/vending_machine/rig/animations/fill_pteranodontwist/zzz/apply_frame with storage fossil_frights:vending_machine_aj_temp args

@@ -84,7 +84,7 @@ gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_heist_guard_sneak_glowing
 tag @a remove ff_ice_frozen
-execute as @a[tag=ff_pteranadon_jump_reduced] run function fossil_frights:game/heists/jump_boost/restore
+execute as @a[tag=ff_pteranodon_jump_reduced] run function fossil_frights:game/heists/jump_boost/restore
 execute as @a run function fossil_frights:items/heists/ice_cannon/overlay_hide
 execute as @a run function fossil_frights:game/heists/paint_fx/clear
 tag @a remove ff_heist_stat_winner
