@@ -40,6 +40,7 @@ function fossil_frights:frights/puffer/reset
 function fossil_frights:frights/puffer/summon
 function fossil_frights:frights/creeper/reset
 function fossil_frights:frights/skeleton/reset
+function fossil_frights:frights/falling_bone/reset
 execute as @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] run title @s times 5 3 10
 execute as @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 scoreboard players set @a[predicate=fossil_frights:player/team/guard,tag=!ff_fade_tp_active] ff_tp_action 23
