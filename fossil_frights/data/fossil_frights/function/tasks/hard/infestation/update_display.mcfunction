@@ -1,0 +1,10 @@
+execute if score $infestation_answer ff_task_state matches 1 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"1",color:"black"}
+execute if score $infestation_answer ff_task_state matches 2 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"2",color:"black"}
+execute if score $infestation_answer ff_task_state matches 3 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"3",color:"black"}
+execute if score $infestation_answer ff_task_state matches 4 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"4",color:"black"}
+execute if score $infestation_answer ff_task_state matches 5 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"5",color:"black"}
+execute if score $infestation_answer ff_task_state matches 6 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"6",color:"black"}
+execute if score $infestation_answer ff_task_state matches 7 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"7",color:"black"}
+execute if score $infestation_answer ff_task_state matches 8 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"8",color:"black"}
+execute if score $infestation_answer ff_task_state matches 9 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"9",color:"black"}
+execute if score $infestation_answer ff_task_state matches 10 as @e[type=minecraft:text_display,tag=ff_infestation_count] run data modify entity @s text set value {text:"10",color:"black"}

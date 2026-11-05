@@ -142,3 +142,5 @@ execute if score $return_lost_egg_done ff_task_state matches 1 unless score $ret
 execute if score $return_lost_egg_done ff_task_state matches 1 run scoreboard players set $return_lost_egg_rb ff_run_breakdown 1
 execute if score $snowball_fight_done ff_task_state matches 1 unless score $snowball_fight_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"88"}
 execute if score $snowball_fight_done ff_task_state matches 1 run scoreboard players set $snowball_fight_rb ff_run_breakdown 1
+execute if score $infestation_done ff_task_state matches 1 unless score $infestation_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"89"}
+execute if score $infestation_done ff_task_state matches 1 run scoreboard players set $infestation_rb ff_run_breakdown 1

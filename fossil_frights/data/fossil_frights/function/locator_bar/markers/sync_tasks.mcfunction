@@ -165,4 +165,6 @@ execute if score $return_lost_egg_sel ff_task_state matches 1 unless score $retu
 
 execute if score $snowball_fight_sel ff_task_state matches 1 unless score $snowball_fight_done ff_task_state matches 1 positioned 42 80 35 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_snowball_fight",tags:"\"ff_task_compass_target\",\"ff_task_compass_snowball_fight\"",style:"task_hard"}
 
+execute if score $infestation_sel ff_task_state matches 1 unless score $infestation_done ff_task_state matches 1 positioned -17 95 54 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_infestation,tag=ff_task_area_infestation",tags:"\"ff_task_compass_target\",\"ff_task_compass_infestation\",\"ff_task_area_infestation\"",style:"task_hard"}
+
 kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_compass_stale]

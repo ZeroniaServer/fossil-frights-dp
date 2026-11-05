@@ -70,3 +70,4 @@ scoreboard players set $decorate_tree_rb ff_run_breakdown 0
 scoreboard players set $defrost_timeline_rb ff_run_breakdown 0
 scoreboard players set $return_lost_egg_rb ff_run_breakdown 0
 scoreboard players set $snowball_fight_rb ff_run_breakdown 0
+scoreboard players set $infestation_rb ff_run_breakdown 0

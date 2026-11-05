@@ -132,6 +132,8 @@ execute if score $return_lost_egg_sel ff_task_state matches 1 run scoreboard pla
 execute if score $return_lost_egg_sel ff_task_state matches 1 if score $return_lost_egg_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $snowball_fight_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $snowball_fight_sel ff_task_state matches 1 if score $snowball_fight_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
+execute if score $infestation_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
+execute if score $infestation_sel ff_task_state matches 1 if score $infestation_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $feed_the_bats_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
 execute if score $feed_the_bats_sel ff_task_state matches 1 if score $feed_the_bats_done ff_task_state matches 1 run scoreboard players add $task_completed_total ff_task_state 1
 execute if score $holy_grail_sel ff_task_state matches 1 run scoreboard players add $task_selected_total ff_task_state 1
