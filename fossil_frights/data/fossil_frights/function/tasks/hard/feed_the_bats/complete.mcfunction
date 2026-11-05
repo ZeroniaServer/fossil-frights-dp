@@ -9,5 +9,6 @@ scoreboard players add $task_completed_total ff_task_state 1
 clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"feed_the_bats"}}] 1
 scoreboard players set $feed_the_bats_done ff_task_state 1
 execute as @e[limit=1,sort=nearest,type=minecraft:item,x=22,y=104,z=84,dx=6,dy=4,dz=6,predicate=fossil_frights:entity/contents/lady_bug] run kill @s
+function fossil_frights:tasks/hard/feed_the_bats/cleanup
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
