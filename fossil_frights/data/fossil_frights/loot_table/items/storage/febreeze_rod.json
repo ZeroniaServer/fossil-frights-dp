@@ -36,7 +36,7 @@
                   "sound": "minecraft:intentionally_empty"
                 },
                 "minecraft:use_effects": {
-                  "can_sprint": true,
+                  "can_sprint": false,
                   "speed_multiplier": 1,
                   "interact_vibrations": true
                 },
