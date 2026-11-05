@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$toilet_clog_sel"
+        },
+        "score": "ff_task_state"
+      },
+      "test": 1
+    },
+    {
+      "type": "minecraft:int_value_check",
+      "value": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$toilet_clog_done"
+        },
+        "score": "ff_task_state"
+      },
+      "test": 0
+    }
+  ]
+}
