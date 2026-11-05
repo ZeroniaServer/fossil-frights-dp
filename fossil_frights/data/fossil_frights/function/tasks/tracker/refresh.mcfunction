@@ -73,6 +73,7 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"defrost_timeline"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"return_lost_egg"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"snowball_fight"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"infestation"}
+function fossil_frights:tasks/tracker/update_sidebar {task:"ice_sculpture"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"feed_the_bats"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"holy_grail"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"hoveraptor"}

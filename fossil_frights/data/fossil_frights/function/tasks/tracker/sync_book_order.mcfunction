@@ -399,6 +399,12 @@ execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"inf
 execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"infestation"}}] run scoreboard players set #line_infestation ff_task_state 796
 execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"infestation"}}] run scoreboard players set #line_infestation ff_task_state 795
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"infestation"}}] run scoreboard players set #line_infestation ff_task_state 794
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 799
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 798
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 797
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 796
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 795
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"ice_sculpture"}}] run scoreboard players set #line_ice_sculpture ff_task_state 794
 execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"return_the_key"}}] run scoreboard players set #line_return_the_key ff_task_state 799
 execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"return_the_key"}}] run scoreboard players set #line_return_the_key ff_task_state 798
 execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"return_the_key"}}] run scoreboard players set #line_return_the_key ff_task_state 797

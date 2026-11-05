@@ -13,6 +13,7 @@ execute unless score $defrost_timeline_sel ff_task_state matches 1 run scoreboar
 execute unless score $return_lost_egg_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $snowball_fight_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $infestation_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
+execute unless score $ice_sculpture_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
 execute if score #task_remaining ff_task_state matches 1 store result score #task_pick ff_task_state run scoreboard players get #task_remaining ff_task_state
@@ -72,3 +73,6 @@ execute unless score $snowball_fight_sel ff_task_state matches 1 if score #task_
 execute unless score $infestation_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $infestation_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/infestation/selected
 execute unless score $infestation_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
+execute unless score $ice_sculpture_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
+execute unless score $ice_sculpture_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/hard/ice_sculpture/selected
+execute unless score $ice_sculpture_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

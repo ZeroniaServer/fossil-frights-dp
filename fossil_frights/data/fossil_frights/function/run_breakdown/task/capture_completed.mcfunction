@@ -144,3 +144,5 @@ execute if score $snowball_fight_done ff_task_state matches 1 unless score $snow
 execute if score $snowball_fight_done ff_task_state matches 1 run scoreboard players set $snowball_fight_rb ff_run_breakdown 1
 execute if score $infestation_done ff_task_state matches 1 unless score $infestation_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"89"}
 execute if score $infestation_done ff_task_state matches 1 run scoreboard players set $infestation_rb ff_run_breakdown 1
+execute if score $ice_sculpture_done ff_task_state matches 1 unless score $ice_sculpture_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"90"}
+execute if score $ice_sculpture_done ff_task_state matches 1 run scoreboard players set $ice_sculpture_rb ff_run_breakdown 1

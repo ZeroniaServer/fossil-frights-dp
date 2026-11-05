@@ -169,6 +169,8 @@ scoreboard players set $snowball_fight_sel ff_task_state 0
 scoreboard players set $snowball_fight_done ff_task_state 0
 scoreboard players set $infestation_sel ff_task_state 0
 scoreboard players set $infestation_done ff_task_state 0
+scoreboard players set $ice_sculpture_sel ff_task_state 0
+scoreboard players set $ice_sculpture_done ff_task_state 0
 
 
 scoreboard players reset $tt_check_security ff_task_tracker
@@ -242,6 +244,7 @@ scoreboard players reset $tt_defrost_timeline ff_task_tracker
 scoreboard players reset $tt_return_lost_egg ff_task_tracker
 scoreboard players reset $tt_snowball_fight ff_task_tracker
 scoreboard players reset $tt_infestation ff_task_tracker
+scoreboard players reset $tt_ice_sculpture ff_task_tracker
 
 function fossil_frights:cameras/reset
 function fossil_frights:tasks/easy/climb_the_tower/reset
@@ -315,3 +318,4 @@ function fossil_frights:tasks/hard/defrost_timeline/reset
 function fossil_frights:tasks/hard/return_lost_egg/reset
 function fossil_frights:tasks/hard/snowball_fight/reset
 function fossil_frights:tasks/hard/infestation/reset
+function fossil_frights:tasks/hard/ice_sculpture/reset

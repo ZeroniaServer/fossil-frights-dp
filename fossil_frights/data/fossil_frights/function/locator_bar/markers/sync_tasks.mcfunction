@@ -167,4 +167,7 @@ execute if score $snowball_fight_sel ff_task_state matches 1 unless score $snowb
 
 execute if score $infestation_sel ff_task_state matches 1 unless score $infestation_done ff_task_state matches 1 positioned -17 95 54 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_infestation,tag=ff_task_area_infestation",tags:"\"ff_task_compass_target\",\"ff_task_compass_infestation\",\"ff_task_area_infestation\"",style:"task_hard"}
 
+execute if score $ice_sculpture_sel ff_task_state matches 1 unless score $ice_sculpture_done ff_task_state matches 1 if score $ice_sculpture_moved ff_task_state matches 0 as @e[type=minecraft:sulfur_cube,tag=ff_ice_sculpture_driver,limit=1] at @s run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_ice_sculpture_pickup",tags:"\"ff_task_compass_target\",\"ff_task_compass_ice_sculpture_pickup\"",style:"task_hard"}
+execute if score $ice_sculpture_sel ff_task_state matches 1 unless score $ice_sculpture_done ff_task_state matches 1 if score $ice_sculpture_moved ff_task_state matches 1 positioned 8 70 59 run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_task_compass_target,tag=ff_task_compass_ice_sculpture_return,tag=ff_task_area_ice_sculpture",tags:"\"ff_task_compass_target\",\"ff_task_compass_ice_sculpture_return\",\"ff_task_area_ice_sculpture\"",style:"task_hard"}
+
 kill @e[type=minecraft:armor_stand,tag=ff_task_compass_target,tag=ff_compass_stale]
