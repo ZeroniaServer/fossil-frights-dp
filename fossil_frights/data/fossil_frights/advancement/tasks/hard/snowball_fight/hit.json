@@ -1,0 +1,32 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:snow_golem",
+            "entity_tags": {
+              "all_of": [
+                "ff_snowball_fight_golem"
+              ]
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "entity_type": "minecraft:snowball"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:tasks/hard/snowball_fight/hit"
+  }
+}

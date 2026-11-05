@@ -36,6 +36,12 @@ execute as @a[scores={ff_actionbar_manager.slot.evolution_task_info=1..}] if sco
 scoreboard players add @a[scores={ff_actionbar_manager.slot.evolution_task_info=1..}] ff_actionbar_manager.result 1
 scoreboard players remove @a[scores={ff_actionbar_manager.slot.evolution_task_info=1..}] ff_actionbar_manager.slot.evolution_task_info 1
 
+scoreboard players reset @a[scores={ff_actionbar_manager.slot.snowball_fight=..0}] ff_actionbar_manager.slot.snowball_fight
+execute as @a[scores={ff_actionbar_manager.slot.snowball_fight=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.snowball_fight"}}]
+execute as @a[scores={ff_actionbar_manager.slot.snowball_fight=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.snowball_fight"}}]
+scoreboard players add @a[scores={ff_actionbar_manager.slot.snowball_fight=1..}] ff_actionbar_manager.result 1
+scoreboard players remove @a[scores={ff_actionbar_manager.slot.snowball_fight=1..}] ff_actionbar_manager.slot.snowball_fight 1
+
 scoreboard players reset @a[scores={ff_actionbar_manager.slot.a_c_vents_task_info=..0}] ff_actionbar_manager.slot.a_c_vents_task_info
 execute as @a[scores={ff_actionbar_manager.slot.a_c_vents_task_info=1..}] if score @s ff_actionbar_manager.result matches 1.. run scoreboard players display numberformat @s ff_actionbar_manager.result fixed [{score:{name:"@s",objective:"ff_actionbar_manager.result"}},"   ",{score:{name:"@s",objective:"ff_actionbar_manager.slot.a_c_vents_task_info"}}]
 execute as @a[scores={ff_actionbar_manager.slot.a_c_vents_task_info=1..}] if score @s ff_actionbar_manager.result matches 0 run scoreboard players display numberformat @s ff_actionbar_manager.result fixed ["",{score:{name:"@s",objective:"ff_actionbar_manager.slot.a_c_vents_task_info"}}]
@@ -101,6 +107,7 @@ execute as @a[scores={ff_actionbar_manager.result=1..}] store result score @s ff
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.ladybug_timer"}, \
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.a_c_vents_task_info"}, \
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.evolution_task_info"}, \
+  {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.snowball_fight"}, \
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.lobby_game"}, \
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.scissors_found"}, \
   {type:"minecraft:score",target:"target_entity",score:"ff_actionbar_manager.slot.guard_coin_found"}, \

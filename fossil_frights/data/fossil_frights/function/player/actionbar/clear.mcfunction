@@ -16,3 +16,4 @@ scoreboard players reset @s ff_actionbar_manager.slot.guard_coin_found
 scoreboard players reset @s ff_actionbar_manager.slot.scissors_run_warning
 scoreboard players reset @s ff_actionbar_manager.slot.loot_securing
 scoreboard players reset @s ff_actionbar_manager.slot.fallback_instruction
+scoreboard players reset @s ff_actionbar_manager.slot.snowball_fight

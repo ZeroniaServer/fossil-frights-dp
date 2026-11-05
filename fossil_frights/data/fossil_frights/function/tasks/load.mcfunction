@@ -120,6 +120,11 @@ scoreboard players set $evolution_was_correct ff_task_state 0
 function fossil_frights:tasks/register {id: "decorate_tree", difficulty: "hard", custom_icon: false, sidebar_index: 8}
 function fossil_frights:tasks/register {id: "defrost_timeline", difficulty: "hard", custom_icon: false, sidebar_index: 72}
 function fossil_frights:tasks/register {id: "return_lost_egg", difficulty: "hard", custom_icon: false, sidebar_index: 73}
+function fossil_frights:tasks/register {id: "snowball_fight", difficulty: "hard", custom_icon: false, sidebar_index: 74}
 
 
 function fossil_frights:tasks/tracker/refresh
+
+team add ff_snow_fight
+team modify ff_snow_fight color aqua
+scoreboard objectives add ff_snowball_fight_count dummy

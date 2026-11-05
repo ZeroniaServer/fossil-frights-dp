@@ -140,3 +140,5 @@ execute if score $defrost_timeline_done ff_task_state matches 1 unless score $de
 execute if score $defrost_timeline_done ff_task_state matches 1 run scoreboard players set $defrost_timeline_rb ff_run_breakdown 1
 execute if score $return_lost_egg_done ff_task_state matches 1 unless score $return_lost_egg_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"87"}
 execute if score $return_lost_egg_done ff_task_state matches 1 run scoreboard players set $return_lost_egg_rb ff_run_breakdown 1
+execute if score $snowball_fight_done ff_task_state matches 1 unless score $snowball_fight_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"88"}
+execute if score $snowball_fight_done ff_task_state matches 1 run scoreboard players set $snowball_fight_rb ff_run_breakdown 1

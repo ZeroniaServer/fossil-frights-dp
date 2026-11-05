@@ -50,3 +50,6 @@ scoreboard objectives modify ff_actionbar_manager.slot.loot_securing numberforma
 
 scoreboard objectives add ff_actionbar_manager.slot.fallback_instruction dummy
 scoreboard objectives modify ff_actionbar_manager.slot.fallback_instruction numberformat blank
+
+scoreboard objectives add ff_actionbar_manager.slot.snowball_fight dummy
+scoreboard objectives modify ff_actionbar_manager.slot.snowball_fight numberformat blank
