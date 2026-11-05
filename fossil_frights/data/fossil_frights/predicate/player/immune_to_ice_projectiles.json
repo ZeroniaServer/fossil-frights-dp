@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:all_of",
+  "terms": [
+    "fossil_frights:player/team/guard",
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:flags": {
+          "is_on_fire": false
+        }
+      }
+    }
+  ]
+}

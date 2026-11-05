@@ -39,3 +39,5 @@ execute if score @s ff_trap_jelly_cooldown matches 0 run scoreboard players rese
 execute if score @s ff_trap_explosive_phase matches 0 run scoreboard players reset @s ff_trap_explosive_phase
 execute if score @s ff_trap_explosive_timer matches 0 run scoreboard players reset @s ff_trap_explosive_timer
 execute if score @s ff_trap_explosive_cooldown matches 0 run scoreboard players reset @s ff_trap_explosive_cooldown
+
+tag @s remove ff_well_teleporting

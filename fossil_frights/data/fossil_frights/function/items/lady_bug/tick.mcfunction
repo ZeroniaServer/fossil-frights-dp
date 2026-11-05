@@ -8,4 +8,4 @@ item fill entity @e[type=#fossil_frights:players_and_thrown_items,tag=!ff_anvil.
 
 execute as @a[predicate=fossil_frights:player/inventory/lady_bug] run function fossil_frights:items/lady_bug/actionbar
 
-execute if entity @e[type=minecraft:item,predicate=fossil_frights:entity/contents/lady_bug,tag=!ff_anvil.display] run schedule function fossil_frights:items/lady_bug/tick 1t
+execute if entity @e[limit=1,type=#fossil_frights:players_and_thrown_items,predicate=fossil_frights:player/inventory/lady_bug,tag=!ff_anvil.display] run schedule function fossil_frights:items/lady_bug/tick 1t

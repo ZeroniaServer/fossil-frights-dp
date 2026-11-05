@@ -60,6 +60,9 @@ execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s
 function fossil_frights:items/confetti_cannon/player_tick
 execute if entity @s[tag=ff_hoverboard_restore_pending] run function fossil_frights:items/hoverboard/restore_used_item
 execute if entity @s[tag=ff_hoverboard_active] run function fossil_frights:items/hoverboard/player_tick
+scoreboard players add @s ff_hoverboard_levitation 0
+execute if score @s ff_hoverboard_levitation matches 1.. run effect clear @s minecraft:levitation
+execute if score @s ff_hoverboard_levitation matches 1.. run scoreboard players remove @s ff_hoverboard_levitation 1
 execute if entity @s[tag=ff_hoverboard_active,gamemode=!creative] unless predicate fossil_frights:player/inventory/creator_hoverboard run function fossil_frights:items/hoverboard/durability/durability_tick
 execute unless entity @s[gamemode=spectator] run function fossil_frights:player/double_jump/tick
 execute if entity @s[gamemode=spectator,predicate=!fossil_frights:player/team/dev_mode] unless entity @s[x=-200,y=50,z=-200,dx=400,dy=1000,dz=400] run tp @s 0 80 0 0 0

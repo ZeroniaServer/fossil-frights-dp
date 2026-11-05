@@ -4,12 +4,34 @@
     "punch_guard": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "none_of": [
+                "ff_fishing_rod.origin"
+              ]
+            }
+          }
+        },
         "entity": "fossil_frights:player/team/guard"
       }
     },
     "punch_rejoin_guard": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "none_of": [
+                "ff_fishing_rod.origin"
+              ]
+            }
+          }
+        },
         "entity": {
           "type": "minecraft:entity_properties",
           "entity": "this",
