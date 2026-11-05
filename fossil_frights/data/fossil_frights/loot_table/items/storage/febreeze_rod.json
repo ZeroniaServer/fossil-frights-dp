@@ -31,9 +31,14 @@
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/febreeze_rod",
                 "minecraft:consumable": {
                   "animation": "toot_horn",
-                  "consume_seconds": 1.0,
+                  "consume_seconds": 1,
                   "has_consume_particles": false,
                   "sound": "minecraft:intentionally_empty"
+                },
+                "minecraft:use_effects": {
+                  "can_sprint": true,
+                  "speed_multiplier": 1,
+                  "interact_vibrations": true
                 },
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
