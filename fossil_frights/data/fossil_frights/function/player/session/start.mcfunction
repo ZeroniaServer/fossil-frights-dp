@@ -17,6 +17,7 @@ function fossil_frights:player/session/start/update_leaderboards with storage fo
 data remove storage fossil_frights:session player_data
 scoreboard players set @s ff_session_state -1
 
+# Resolve team
 team leave @s
 execute if predicate fossil_frights:player/team/dev_mode run team join ff_dev_mode
 execute if predicate fossil_frights:player/team/lobby run team join ff_lobby
@@ -24,6 +25,7 @@ execute if predicate fossil_frights:player/team/guard run team join ff_guard
 execute if predicate fossil_frights:player/team/thief run team join ff_thief
 execute if predicate fossil_frights:player/team/spectator run team join ff_spectator
 
+# Clean up stale data
 execute if score @s ff_trap_glow_phase matches 0 run scoreboard players reset @s ff_trap_glow_phase
 execute if score @s ff_trap_glow_timer matches 0 run scoreboard players reset @s ff_trap_glow_timer
 execute if score @s ff_trap_glow_cooldown matches 0 run scoreboard players reset @s ff_trap_glow_cooldown
@@ -41,3 +43,4 @@ execute if score @s ff_trap_explosive_timer matches 0 run scoreboard players res
 execute if score @s ff_trap_explosive_cooldown matches 0 run scoreboard players reset @s ff_trap_explosive_cooldown
 
 tag @s remove ff_well_teleporting
+attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight

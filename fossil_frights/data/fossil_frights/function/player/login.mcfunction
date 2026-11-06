@@ -139,7 +139,6 @@ clear @s
 attribute @s minecraft:scale base reset
 attribute @s minecraft:waypoint_transmit_range base set 0
 attribute @s minecraft:waypoint_receive_range base set 0
-attribute @s minecraft:below_name_distance base set 0
 function fossil_frights:player/actionbar/clear
 tp @s 0 80 0 0 0
 spawnpoint @s 0 80 0
