@@ -55,6 +55,8 @@ tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
+scoreboard players set #heist_guard_key_serial ff_heist_key_serial 0
+execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/key/assign_id
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_heist_stolen_keys 0

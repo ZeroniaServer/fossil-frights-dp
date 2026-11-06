@@ -1,0 +1,4 @@
+$execute unless score @s ff_heist_key_stolen_this_punch matches 1 store success score @s ff_heist_key_stolen_this_punch run item replace entity @s fossil_frights:game/heists/first_empty_inventory with minecraft:paper[minecraft:item_model="fossil_frights:items/frights/key/key",minecraft:item_name={translate:'ff.item.guard_key',color:'yellow'},minecraft:custom_data={itemID:"key",guard_key_id:$(id),ff_prevent_drop:true}] 1
+$execute if score @s ff_heist_key_stolen_this_punch matches 1 run execute as @a[scores={ff_heist_guard_key_id=$(id)},limit=1] run item modify entity @a[tag=ff_heist_key_return_thief,limit=1] {type:"minecraft:filtered",slot_source:{type:"minecraft:slot_range",slots:"container.*"},item_filter:{predicates:{"minecraft:custom_data":{guard_key_id:$(id)}}}} fossil_frights:game/heists/key/set_owner_name
+execute if score @s ff_heist_key_stolen_this_punch matches 1 run return 1
+return 0

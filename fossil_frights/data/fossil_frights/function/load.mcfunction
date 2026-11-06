@@ -20,6 +20,10 @@ scoreboard objectives add ff_player_team dummy
 scoreboard objectives add ff_lock_look dummy
 scoreboard objectives add ff_scan dummy
 scoreboard objectives add ff_key_cooldown dummy
+scoreboard objectives add ff_heist_guard_key_id dummy
+scoreboard objectives add ff_heist_guard_has_key dummy
+scoreboard objectives add ff_heist_key_serial dummy
+scoreboard objectives add ff_heist_key_stolen_this_punch dummy
 scoreboard objectives add ff_key_anim dummy
 scoreboard objectives add ff_crab_timer dummy
 scoreboard objectives add ff_bb_sneak_state dummy

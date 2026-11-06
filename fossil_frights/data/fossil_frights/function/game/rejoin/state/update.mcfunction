@@ -3,6 +3,7 @@ tag @e[type=minecraft:marker,tag=ff_rejoin_match] remove ff_rejoin_frights
 tag @e[type=minecraft:marker,tag=ff_rejoin_match] remove ff_rejoin_heists_guard
 tag @e[type=minecraft:marker,tag=ff_rejoin_match] remove ff_rejoin_heists_thief
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] run tag @e[type=minecraft:marker,tag=ff_rejoin_match] add ff_rejoin_heists_guard
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] run scoreboard players operation @e[type=minecraft:marker,tag=ff_rejoin_match,limit=1] ff_heist_guard_key_id = @s ff_heist_guard_key_id
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/thief] run tag @e[type=minecraft:marker,tag=ff_rejoin_match] add ff_rejoin_heists_thief
 execute unless predicate fossil_frights:game_state/heist_mode_active run tag @e[type=minecraft:marker,tag=ff_rejoin_match] add ff_rejoin_frights
 execute if entity @s[tag=ff_camera_remote_active] run tag @e[type=minecraft:marker,tag=ff_rejoin_match] add ff_rejoin_camera

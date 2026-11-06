@@ -1,0 +1,2 @@
+$execute if items entity @a[tag=ff_heist_key_return_thief,limit=1] weapon.mainhand *[custom_data~{guard_key_id:$(id)}] run function fossil_frights:game/heists/key/return_held_match
+$execute unless items entity @a[tag=ff_heist_key_return_thief,limit=1] weapon.mainhand *[custom_data~{itemID:"key"}] if items entity @a[tag=ff_heist_key_return_thief,limit=1] weapon.offhand *[custom_data~{guard_key_id:$(id)}] run function fossil_frights:game/heists/key/return_held_match

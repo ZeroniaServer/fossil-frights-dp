@@ -9,6 +9,8 @@ execute if entity @s[tag=ff_rejoin_camera_return,tag=ff_forced_spectate] run fun
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_frights] run function fossil_frights:player/set_team/guard
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run function fossil_frights:player/set_team/guard
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run function fossil_frights:items/heists/trap/common/reconcile_owner_state
+execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] as @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run function fossil_frights:game/heists/key/clear_owned
+execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_guard] run function fossil_frights:game/heists/key/refresh_after_rejoin
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=!ff_rejoin_heists_thief] unless entity @s[tag=ff_rejoin_camera_return] run tp @s @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match]
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_thief] run tag @s add ff_rejoin_thief_restore
 execute if entity @e[limit=1,type=minecraft:marker,tag=ff_rejoin_login_match,tag=ff_rejoin_heists_thief] run function fossil_frights:game/heists/death_thief

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:set_name",
+  "entity": "this",
+  "name": {
+    "translate": "ff.item.player_key",
+    "with": [
+      {
+        "selector": "@s",
+        "color": "yellow"
+      }
+    ],
+    "color": "yellow"
+  },
+  "target": "item_name"
+}
