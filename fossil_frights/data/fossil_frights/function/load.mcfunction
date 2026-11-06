@@ -493,6 +493,7 @@ team modify ff_bookshelf_creature color green
 team add ff_security_camera
 team modify ff_security_camera collisionRule never
 advancement revoke @a from fossil_frights:detection_root
+
 function fossil_frights:player/actionbar/load
 function fossil_frights:animations/dinocoin/vending_machine/runtime/on_load
 function fossil_frights:animations/tasks/easy/tnt_test/detonator/rig/on_load
@@ -527,6 +528,8 @@ function fossil_frights:game/reset/reload
 function fossil_frights:frightmas/santasaurus/reset
 schedule function fossil_frights:util/player/extinguish/cleanup 1t
 schedule function fossil_frights:player/damage/tick 1t
+schedule function fossil_frights:player/name_tag/load 1t
+
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:mob_griefing false
 gamerule minecraft:random_tick_speed 0
