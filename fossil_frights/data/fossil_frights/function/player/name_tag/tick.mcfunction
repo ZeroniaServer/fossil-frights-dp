@@ -6,8 +6,8 @@ execute as @a[gamemode=!spectator,predicate=fossil_frights:player/is_playing_ant
 execute as @a[gamemode=!spectator,predicate=fossil_frights:player/is_playing_ant_fight] run scoreboard players display numberformat @s ff_below_name_text.unresolved fixed ["",{color:"green",translate:"ff.lobby.ant_fight.below_name",font:"fossil_frights:small_caps",with:[{color:"white",score:{name:"@s",objective:"ff_ant_score"}}]}]
 
 #(heist keys)
-#execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @a[gamemode=!spectator,predicate=fossil_frights:player/team/guard] run attribute @s minecraft:below_name_distance base set 64
-#execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @a[gamemode=!spectator,predicate=fossil_frights:player/team/guard] run scoreboard players display numberformat @s ff_below_name_text.unresolved fixed "key shenanigans go here"
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @a[gamemode=!spectator,predicate=fossil_frights:player/team/guard] run attribute @s minecraft:below_name_distance base set 64
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @a[gamemode=!spectator,predicate=fossil_frights:player/team/guard] run scoreboard players display numberformat @s ff_below_name_text.unresolved fixed "key shenanigans go here"
 
 # Display manager
 execute as @a unless score @s ff_below_name_text.unresolved matches 0 run attribute @s minecraft:below_name_distance base set 0
