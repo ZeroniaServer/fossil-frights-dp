@@ -6,8 +6,9 @@ scoreboard players set $naughty_or_nice_sel ff_task_state 1
 scoreboard players set $naughty_or_nice_done ff_task_state 0
 scoreboard players set $naughty_or_nice_started ff_task_state 0
 function fossil_frights:tasks/final/naughty_or_nice/cleanup
+function fossil_frights:tasks/final/naughty_or_nice/recipients/hide_stockings
 function fossil_frights:tasks/final/naughty_or_nice/recipients/roll
-function fossil_frights:tasks/final/naughty_or_nice/delivery/configure
+function fossil_frights:tasks/final/naughty_or_nice/recipients/spawn_interactions
 function fossil_frights:tasks/final/naughty_or_nice/recipients/update_lists
 function fossil_frights:tasks/final/naughty_or_nice/door/open
 function fossil_frights:tasks/tracker/refresh

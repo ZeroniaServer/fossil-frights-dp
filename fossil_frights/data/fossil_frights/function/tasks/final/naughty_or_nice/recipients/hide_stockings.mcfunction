@@ -1,0 +1,21 @@
+execute as @e[type=minecraft:item_display,tag=ff_stocking_g_shark] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_t_rex] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_trike] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_crab] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_raptor] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_cavemen] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_coppy] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_mammoth] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_polysquarazoid] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_sculkadillo] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_pterodactyl] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_the_bats] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_warden] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_penguins] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_snowmen] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_hungry_plant] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_plesiosaur] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_p_bear] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_ladybug_24] run data merge entity @s {view_range:0f}
+execute as @e[type=minecraft:item_display,tag=ff_stocking_bronto] run data merge entity @s {view_range:0f}
+tag @e[type=minecraft:item_display,tag=ff_naughty_or_nice_stocking] remove ff_naughty_or_nice_stocking
