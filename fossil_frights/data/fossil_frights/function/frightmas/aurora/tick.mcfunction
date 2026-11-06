@@ -1,0 +1,3 @@
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $time_anim_active ff_day matches 1 if score $time_dist ff_day matches ..2400 as @e[type=minecraft:item_display,tag=aurora,tag=aurora.hidden] run function fossil_frights:frightmas/aurora/show
+execute unless predicate fossil_frights:game_state/game_running run execute as @e[type=minecraft:item_display,tag=aurora,tag=!aurora.hidden] run function fossil_frights:frightmas/aurora/hide
+execute if predicate fossil_frights:game_state/game_running unless score $day_active ff_day matches 1 as @e[type=minecraft:item_display,tag=aurora,tag=!aurora.hidden] run function fossil_frights:frightmas/aurora/hide

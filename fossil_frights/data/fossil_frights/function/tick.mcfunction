@@ -90,6 +90,7 @@ function fossil_frights:lobby_games/sulfur_strikers/tick
 execute if predicate fossil_frights:game_state/game_running unless entity @a[limit=1,predicate=fossil_frights:player/is_playing] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
 execute unless predicate fossil_frights:world/is_singleplayer as @a if score @s ff_singleplayer_world_time > @s ff_singleplayer_play_time run function fossil_frights:game/frights/timer/detect_singleplayer/activate
 function fossil_frights:game/tick
+function fossil_frights:frightmas/aurora/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick
 execute as @a[gamemode=!spectator] if score #lb_page ff_lb_calc matches ..4 if predicate fossil_frights:player/leaderboard/looking_at_next run function fossil_frights:player/actionbar/show/hovered_info/leaderboard_hover_next
