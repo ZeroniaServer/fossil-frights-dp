@@ -7,4 +7,4 @@ execute unless entity @s[predicate=fossil_frights:player/team/guard,gamemode=!sp
 execute store result score #snowball_fight_count ff_task_state run clear @s minecraft:snowball 0
 execute if score #snowball_fight_count ff_task_state matches 16.. run function fossil_frights:player/actionbar/show/generic {message:{translate:"ff.task.snowball_fight.too_many",color:"red"}}
 execute if score #snowball_fight_count ff_task_state matches 16.. run return 0
-give @s minecraft:snowball 1
+give @s minecraft:snowball[minecraft:custom_data={itemID:"snowball_fight_snowball"}] 1

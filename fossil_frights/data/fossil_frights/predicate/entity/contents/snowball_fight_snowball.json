@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "items": "minecraft:snowball",
+        "predicates": {
+          "minecraft:custom_data": {
+            "itemID": "snowball_fight_snowball"
+          }
+        }
+      }
+    }
+  }
+}
