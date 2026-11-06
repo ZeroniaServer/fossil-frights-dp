@@ -12,7 +12,7 @@ execute if predicate fossil_frights:game_state/game_running if predicate fossil_
 # Display manager
 execute as @a unless score @s ff_below_name_text.unresolved matches 0 run attribute @s minecraft:below_name_distance base set 0
 execute as @a unless score @s ff_below_name_text.unresolved matches 0 run scoreboard players reset @s ff_below_name_text
-execute as @a[limit=1,scores={ff_below_name_text.unresolved=0}] run scoreboard players display numberformat @s ff_below_name_text fixed ["",{score:{name:"@s",objective:"ff_below_name_text.unresolved"}},"\u17b6"]
+execute as @a[limit=1,scores={ff_below_name_text.unresolved=0}] run scoreboard players display numberformat @s ff_below_name_text fixed ["",{score:{name:"@s",objective:"ff_below_name_text.unresolved"}},"\u17b8\u17b9"]
 execute if entity @a[limit=1,scores={ff_below_name_text=0}] run scoreboard objectives setdisplay below_name ff_below_name_text
 execute unless entity @a[limit=1,scores={ff_below_name_text=0}] run scoreboard objectives setdisplay below_name
 
