@@ -1,0 +1,1 @@
+execute as @e[type=block_display,tag=ff_falling_bone_prop] at @s run teleport @s ~ ~-6 ~

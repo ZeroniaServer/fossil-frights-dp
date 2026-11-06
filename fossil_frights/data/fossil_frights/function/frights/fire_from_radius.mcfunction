@@ -6,3 +6,4 @@ execute if entity @s[tag=ff_fright_target_bats] unless score $bats_fright ff_gam
 execute if entity @s[tag=ff_fright_target_creeper] unless score $creeper_fright ff_game_state matches 1 run function fossil_frights:frights/creeper/trigger
 execute if entity @s[tag=ff_fright_target_skeleton] unless score $skeleton_fright ff_game_state matches 1 run function fossil_frights:frights/skeleton/trigger
 execute if entity @s[tag=ff_fright_target_bogged] unless score $bogged_fright ff_game_state matches 1 run function fossil_frights:frights/bogged/trigger
+execute if entity @s[tag=ff_fright_target_falling_bone] unless score $falling_bone_fright ff_game_state matches 1 run function fossil_frights:frights/falling_bone/trigger

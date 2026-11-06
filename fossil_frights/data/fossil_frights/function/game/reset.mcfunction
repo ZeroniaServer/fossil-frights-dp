@@ -39,6 +39,7 @@ function fossil_frights:frights/skeleton/reset
 function fossil_frights:frights/bogged/reset
 function fossil_frights:frights/spider/reset
 function fossil_frights:frights/herobrine/reset
+function fossil_frights:frights/falling_bone/reset
 function fossil_frights:animations/velociraptor_skull/reset_rotation
 function fossil_frights:game/heists/reset/blocks
 stopsound @a record fossil_frights:heists.music
@@ -61,7 +62,6 @@ execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_fr
 clear @a[predicate=fossil_frights:player/is_playing] *
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s times 5 3 10
 execute as @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
-posteffect clear @a
 scoreboard players set @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active] ff_tp_action 24
 scoreboard players set @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] ff_tp_delay 18
 tag @a[scores={ff_tp_action=24},tag=!ff_fade_tp_active] add ff_fade_tp_active
