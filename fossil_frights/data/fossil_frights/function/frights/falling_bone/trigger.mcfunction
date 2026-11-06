@@ -13,3 +13,4 @@ summon block_display 6.5 87.5 58.5 {"transformation":{"translation":[-0.5,-0.5,-
 
 schedule function fossil_frights:frights/falling_bone/frame1 1t
 schedule function fossil_frights:frights/falling_bone/frame5 5t
+schedule function fossil_frights:frights/falling_bone/clear_screen_shake 2s

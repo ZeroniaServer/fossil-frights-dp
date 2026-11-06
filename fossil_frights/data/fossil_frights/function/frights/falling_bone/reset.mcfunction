@@ -10,3 +10,5 @@ kill @e[type=block_display,tag=ff_falling_bone_prop]
 
 schedule clear fossil_frights:frights/falling_bone/frame1
 schedule clear fossil_frights:frights/falling_bone/frame5
+
+execute as @a run posteffect remove @s fossil_frights:screen_shake

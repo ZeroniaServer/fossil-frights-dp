@@ -1,1 +1,1 @@
-execute if score $defeat_anim ff_game_state matches 1 run posteffect add @a[predicate=fossil_frights:player/team/guard] fossil_frights:desaturate/activate
+execute if score $defeat_anim ff_game_state matches 1 run posteffect add @a[predicate=fossil_frights:player/team/guard] fossil_frights:desaturate
