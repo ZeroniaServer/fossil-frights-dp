@@ -1,1 +1,1 @@
-execute as @a run posteffect remove @s fossil_frights:screen_shake
+posteffect remove @a fossil_frights:screen_shake
