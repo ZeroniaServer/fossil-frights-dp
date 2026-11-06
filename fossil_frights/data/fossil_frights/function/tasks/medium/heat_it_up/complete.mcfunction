@@ -12,6 +12,6 @@ execute if score $heat_it_up_sel ff_task_state matches 1 if score $heat_it_up_do
 execute if score $heat_it_up_sel ff_task_state matches 1 if score $heat_it_up_done ff_task_state matches 0 run clear @a[predicate=fossil_frights:player/team/guard] minecraft:written_book[minecraft:custom_data~{ff_task_book:{id:"heat_it_up"}}] 1
 execute if score $heat_it_up_sel ff_task_state matches 1 run scoreboard players set $heat_it_up_done ff_task_state 1
 function fossil_frights:items/util/return_all_but_one_to_thrower
-kill @s
+execute if entity @s[type=minecraft:item] run kill @s
 function fossil_frights:tasks/tracker/refresh
 function fossil_frights:tasks/check_day_complete
