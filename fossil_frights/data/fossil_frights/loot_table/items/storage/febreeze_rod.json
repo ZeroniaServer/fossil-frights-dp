@@ -45,6 +45,7 @@
                 }
               }
             },
+            "fossil_frights:item_definition/febreeze_rod/heists_mode",
             "fossil_frights:item_definition/heist_loot/febreeze_rod",
             "fossil_frights:item_definition/base_item_data"
           ]
