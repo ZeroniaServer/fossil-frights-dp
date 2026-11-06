@@ -22,6 +22,11 @@ data modify storage fossil_frights:febreeze_rod velocity.y set compute default f
 data modify storage fossil_frights:febreeze_rod velocity.z set compute default float {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"fossil_frights:febreeze_rod",path:"direction[2]"},{type:"minecraft:uniform",min:-0.5,max:0.5}]}
 execute anchored eyes positioned ^ ^-0.4 ^0.5 run function fossil_frights:items/febreeze_rod/particles/create_particle with storage fossil_frights:febreeze_rod velocity
 
-# tracking
-execute if predicate fossil_frights:game_state/game_running unless entity @s[tag=ff_febreeze_rod.sprayed_smelly_toilet] anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/check/smelly_toilet
-execute if predicate fossil_frights:game_state/game_running unless entity @s[tag=ff_febreeze_rod.sprayed_ancient_portal] anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/check/ancient_portal
+# Frights Mode tracking
+execute if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:game_state/heist_mode_active unless entity @s[tag=ff_febreeze_rod.sprayed_smelly_toilet] anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/check/smelly_toilet
+execute if predicate fossil_frights:game_state/game_running unless predicate fossil_frights:game_state/heist_mode_active unless entity @s[tag=ff_febreeze_rod.sprayed_ancient_portal] anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/check/ancient_portal
+
+# Heists Mode attacking
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:player/team/thief anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/attack/as_thief
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:player/team/guard anchored eyes positioned ^ ^ ^ run function fossil_frights:items/febreeze_rod/attack/as_guard
+execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active if entity @a[tag=ff_febreeze_rod.target] run function fossil_frights:items/febreeze_rod/attack/attack_targets
