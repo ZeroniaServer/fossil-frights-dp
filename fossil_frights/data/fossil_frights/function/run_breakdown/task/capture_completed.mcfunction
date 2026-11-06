@@ -146,3 +146,5 @@ execute if score $infestation_done ff_task_state matches 1 unless score $infesta
 execute if score $infestation_done ff_task_state matches 1 run scoreboard players set $infestation_rb ff_run_breakdown 1
 execute if score $ice_sculpture_done ff_task_state matches 1 unless score $ice_sculpture_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"90"}
 execute if score $ice_sculpture_done ff_task_state matches 1 run scoreboard players set $ice_sculpture_rb ff_run_breakdown 1
+execute if score $naughty_or_nice_done ff_task_state matches 1 unless score $naughty_or_nice_rb ff_run_breakdown matches 1 run function fossil_frights:run_breakdown/event/add {code:"T",id:"91"}
+execute if score $naughty_or_nice_done ff_task_state matches 1 run scoreboard players set $naughty_or_nice_rb ff_run_breakdown 1

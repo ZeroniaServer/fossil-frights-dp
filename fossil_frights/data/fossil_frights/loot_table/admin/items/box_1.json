@@ -125,6 +125,10 @@
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/storage/hot_chocolate"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/tasks/naughty_or_nice/present"
                 }
               ]
             }

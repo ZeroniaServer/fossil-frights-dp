@@ -1,0 +1,1 @@
+$execute as @e[type=minecraft:item,x=$(x),y=$(y),z=$(z),dx=$(dx),dy=$(dy),dz=$(dz),predicate=$(predicate),limit=1] at @s run function fossil_frights:tasks/final/naughty_or_nice/delivery/drop {slot:$(slot)}

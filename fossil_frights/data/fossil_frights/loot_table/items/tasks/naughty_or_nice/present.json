@@ -1,0 +1,136 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_gold",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_lime",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_aqua",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_dark_red",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_red",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.naughty_or_nice_present",
+                  "color": "gold"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/presents/present_dark_green",
+                "minecraft:custom_data": {
+                  "itemID": "naughty_or_nice_present"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

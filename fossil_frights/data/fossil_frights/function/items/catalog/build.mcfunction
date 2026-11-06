@@ -27,6 +27,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/icy_sherd",
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/carrot_cake",page:"page_1",slot:21}
 function fossil_frights:items/catalog/from_loot {loot:"items/tasks/return_the_key/vault_key",page:"page_1",slot:22}
 function fossil_frights:items/catalog/from_loot {loot:"items/tasks/return_lost_egg/lost_egg",page:"page_1",slot:25}
+function fossil_frights:items/catalog/from_loot {loot:"items/tasks/naughty_or_nice/present",page:"page_1",slot:26}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/hoverboard",page:"page_1",slot:23}
 function fossil_frights:items/catalog/from_loot {loot:"items/anvil/leather_boots",page:"page_1",slot:24}
 

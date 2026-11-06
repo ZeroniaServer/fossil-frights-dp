@@ -121,6 +121,7 @@ function fossil_frights:tasks/register {id: "return_lost_egg", difficulty: "hard
 function fossil_frights:tasks/register {id: "snowball_fight", difficulty: "hard", custom_icon: false, sidebar_index: 74}
 function fossil_frights:tasks/register {id: "infestation", difficulty: "hard", custom_icon: false, sidebar_index: 75}
 function fossil_frights:tasks/register {id: "ice_sculpture", difficulty: "hard", custom_icon: false, sidebar_index: 76}
+function fossil_frights:tasks/register {id: "naughty_or_nice", difficulty: "final", custom_icon: false, sidebar_index: 77}
 
 
 function fossil_frights:tasks/tracker/refresh

@@ -72,3 +72,4 @@ scoreboard players set $return_lost_egg_rb ff_run_breakdown 0
 scoreboard players set $snowball_fight_rb ff_run_breakdown 0
 scoreboard players set $infestation_rb ff_run_breakdown 0
 scoreboard players set $ice_sculpture_rb ff_run_breakdown 0
+scoreboard players set $naughty_or_nice_rb ff_run_breakdown 0

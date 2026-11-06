@@ -449,4 +449,10 @@ execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"evo
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"evolution"}}] run scoreboard players set #line_evolution ff_task_state 794
 
 # Final
+execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 799
+execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 798
+execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 797
+execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 796
+execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 795
+execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"naughty_or_nice"}}] run scoreboard players set #line_naughty_or_nice ff_task_state 794
 

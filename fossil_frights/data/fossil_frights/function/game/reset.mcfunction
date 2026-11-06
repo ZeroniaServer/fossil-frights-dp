@@ -15,6 +15,7 @@ function fossil_frights:player/bouncy_lily_pad/reset
 function fossil_frights:items/hoverboard/cleanup
 execute as @e[type=minecraft:item_display,tag=ff_pizza_box] run function fossil_frights:interactions/pizza_box/reset
 function fossil_frights:tasks/reset
+function fossil_frights:tasks/final/naughty_or_nice/door/closed
 kill @e[tag=purple_mobs]
 scoreboard players set $ancient_portal_timer ff_task_state 0
 execute as @e[type=#fossil_frights:display_entities,tag=ff_ancient_portal] run data modify entity @s view_range set value 0

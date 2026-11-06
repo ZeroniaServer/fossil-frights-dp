@@ -1,0 +1,1 @@
+function fossil_frights:tasks/final/naughty_or_nice/selected
