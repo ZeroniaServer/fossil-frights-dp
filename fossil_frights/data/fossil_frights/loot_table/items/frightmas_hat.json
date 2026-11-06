@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "fossil_frights:display/frightmas/frightmas_hat",
+              "minecraft:equippable": {
+                "slot": "head"
+              },
+              "minecraft:custom_data": {
+                "ff_invisible": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

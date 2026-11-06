@@ -1,1 +1,2 @@
 $summon armor_stand -33 79.5 80 {Tags:["animation_boss_chair","game_over_animation"],NoGravity:true,Invulnerable:true,Invisible:true,Passengers:[{id:"minecraft:mannequin",Tags:["animation_boss","game_over_animation"],CustomName:"Boss",profile:$(boss_skin),NoGravity:true,hide_description:true,Invulnerable:true,CustomNameVisible:true,Rotation:[-180,0],attributes:[{id:"minecraft:scale",base:1.2}]}],Rotation:[-180,0]}
+loot replace entity @e[type=minecraft:mannequin,tag=animation_boss,limit=1] armor.head loot fossil_frights:items/frightmas_hat
