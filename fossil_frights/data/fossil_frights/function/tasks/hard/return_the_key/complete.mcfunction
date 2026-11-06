@@ -6,6 +6,8 @@ execute if score $return_the_key_sel ff_task_state matches 1 if score $return_th
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 positioned -5.25 73.8 46.0 run playsound minecraft:block.iron_door.open master @a[tag=ff_frights_feedback_viewer,distance=..16] ~ ~ ~ 0.8 0.7
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 positioned -5.25 73.8 46.0 run playsound minecraft:block.note_block.chime master @a[tag=ff_frights_feedback_viewer,distance=..16] ~ ~ ~ 0.8 0.6
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 positioned -5.25 73.8 46.0 run particle minecraft:glow ~ ~ ~ 0.4 0.45 0.4 0.02 18 force
+clear @a *[minecraft:custom_data~{itemID:"vault_key"}]
+kill @e[type=minecraft:item,predicate=fossil_frights:entity/contents/vault_key]
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 run function fossil_frights:tasks/hard/return_the_key/cleanup
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 run function fossil_frights:tasks/messages/show_complete_macro with storage fossil_frights:tasks complete
 execute if score $return_the_key_sel ff_task_state matches 1 if score $return_the_key_done ff_task_state matches 0 run scoreboard players add $task_completed_total ff_task_state 1
