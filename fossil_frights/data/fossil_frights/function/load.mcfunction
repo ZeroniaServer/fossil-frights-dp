@@ -282,6 +282,7 @@ scoreboard objectives add ff_bouncy_lily_pad_bounce_timestamp dummy
 scoreboard objectives add ff_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_fire_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_febreeze_rod_using_state dummy
+scoreboard objectives add ff_febreeze_rod_fx dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2
@@ -315,7 +316,6 @@ scoreboard players set #heist_goal ff_heist 1000
 scoreboard players set $heist_challenge_all ff_heist 0
 scoreboard players set $heist_challenge_total ff_heist 0
 scoreboard players set #heist_tick ff_heist 20
-scoreboard players set #heist_punch_cooldown ff_heist 400
 scoreboard players set #heist_invis_duration ff_heist 160
 scoreboard players set #compass_refresh_interval ff_compass 10
 scoreboard players operation $compass_marker_refresh ff_compass = #compass_refresh_interval ff_compass

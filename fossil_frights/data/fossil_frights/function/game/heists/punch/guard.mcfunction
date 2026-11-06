@@ -7,7 +7,7 @@ tag @s add ff_heist_key_return_thief
 execute unless entity @s[tag=ff_heist_camera_punch] as @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator,distance=..4,sort=nearest,limit=1] run function fossil_frights:game/heists/key/steal
 execute if entity @s[tag=ff_heist_camera_punch] at @s as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy,distance=..4,sort=nearest,limit=1] run function fossil_frights:game/heists/key/steal_camera_owner
 tag @s remove ff_heist_key_return_thief
-scoreboard players operation @s ff_heist_punch_cd = #heist_punch_cooldown ff_heist
+execute store result score @s ff_heist_punch_cd run compute default integer fossil_frights:invisipunch_cooldown
 scoreboard players operation @s ff_heist_invis_ticks = #heist_invis_duration ff_heist
 execute if score @s ff_heist_key_stolen_this_punch matches 1 run scoreboard players add @s ff_heist_stolen_keys 1
 execute if score @s ff_heist_key_stolen_this_punch matches 1 run scoreboard players add @s ff_heist_keys_stolen_round 1

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {"type": "minecraft:filtered", "item_filter": {"predicates": {"minecraft:damage": {"damage": {"min": 19}}}}, "on_pass": {"type": "minecraft:discard"}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 18}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 19}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 17}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 18}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 16}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 17}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 15}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 16}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 14}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 15}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 13}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 14}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 12}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 13}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 11}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 12}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 10}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 11}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 9}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 10}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 8}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 9}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 7}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 8}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 6}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 7}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 5}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 6}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 4}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 5}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 3}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 4}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 2}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 3}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 1}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 2}}},
+    {"type": "minecraft:filtered", "item_filter": {"components": {"minecraft:damage": 0}}, "on_pass": {"type": "minecraft:set_components", "components": {"minecraft:damage": 1}}}
+  ]
+}

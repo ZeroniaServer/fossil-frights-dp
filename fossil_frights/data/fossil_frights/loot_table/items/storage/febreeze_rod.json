@@ -38,12 +38,14 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "febreeze_rod",
+                  "ff_febreeze_rod": {},
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }
                 }
               }
             },
+            "fossil_frights:item_definition/febreeze_rod/heists_mode",
             "fossil_frights:item_definition/heist_loot/febreeze_rod",
             "fossil_frights:item_definition/base_item_data"
           ]

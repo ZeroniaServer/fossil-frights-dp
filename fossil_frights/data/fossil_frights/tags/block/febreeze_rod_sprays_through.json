@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#fossil_frights:never_has_solid_collision",
+    "#fossil_frights:carpets",
+    "#fossil_frights:heads_and_skulls",
+    "#fossil_frights:lightning_rods",
+    "#minecraft:bars",
+    "#minecraft:candles",
+    "#minecraft:chains",
+    "#minecraft:flower_pots",
+    "#minecraft:lanterns",
+    "#minecraft:fences",
+    "#minecraft:wall_hanging_signs",
+    "minecraft:big_dripleaf",
+    "minecraft:ladder",
+    "minecraft:sea_pickle",
+    "minecraft:snow"
+  ]
+}

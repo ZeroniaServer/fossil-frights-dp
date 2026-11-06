@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "itemID": "febreeze_rod"
+              "ff_febreeze_rod": {}
             }
           }
         }
