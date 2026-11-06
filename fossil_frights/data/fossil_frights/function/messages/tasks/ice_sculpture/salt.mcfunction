@@ -1,1 +1,1 @@
-tellraw @a [{"text":"<"},{"translate":"ff.messages.ice_sculpture.copper_golem","color":"#f28e50"},{"text":"> "},{"translate":"ff.messages.ice_sculpture.salt"}]
+tellraw @a[predicate=fossil_frights:player/team/guard] [{"text":"<"},{"translate":"ff.messages.ice_sculpture.copper_golem","color":"#f28e50"},{"text":"> "},{"translate":"ff.messages.ice_sculpture.salt"}]
