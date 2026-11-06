@@ -109,7 +109,7 @@ execute as @a at @s run function fossil_frights:player/tick
 execute unless predicate fossil_frights:game_state/game_running as @a[gamemode=adventure,tag=!ff_fade_tp_active,predicate=!fossil_frights:player/team/guard,predicate=!fossil_frights:player/team/thief,predicate=fossil_frights:location/room/start_room] at @s run tp @s 0 80 0 0 0
 function fossil_frights:game/bossbar/available/refresh
 function fossil_frights:tasks/task_book_shelf/update
-execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $naughty_or_nice_sel ff_task_state matches 1 unless score $naughty_or_nice_done ff_task_state matches 1 if score $naughty_or_nice_started ff_task_state matches 0 run function fossil_frights:tasks/final/naughty_or_nice/tick
+execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $naughty_or_nice_sel ff_task_state matches 1 unless score $naughty_or_nice_done ff_task_state matches 1 run function fossil_frights:tasks/final/naughty_or_nice/tick
 function fossil_frights:join/queue/tick
 function fossil_frights:items/return_to_lobby/tick
 function fossil_frights:player/bouncy_lily_pad/tick
