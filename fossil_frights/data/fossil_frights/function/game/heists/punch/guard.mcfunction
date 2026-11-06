@@ -3,7 +3,7 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run return 
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 execute unless entity @s[predicate=fossil_frights:player/team/thief,gamemode=!spectator] run return 0
 execute if score @s ff_heist_punch_cd matches 1.. run return 0
-scoreboard players operation @s ff_heist_punch_cd = #heist_punch_cooldown ff_heist
+execute store result score @s ff_heist_punch_cd run compute default integer fossil_frights:invisipunch_cooldown
 scoreboard players operation @s ff_heist_invis_ticks = #heist_invis_duration ff_heist
 scoreboard players add @s ff_heist_stolen_keys 1
 scoreboard players add @s ff_heist_keys_stolen_round 1
