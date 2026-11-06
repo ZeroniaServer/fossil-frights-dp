@@ -1,5 +1,4 @@
 {
-  "values": [
-    "fossil_frights:init_tick"
-  ]
+	"replace": false,
+	"values": ["animated_java:global/data_manager/on_tick", "fossil_frights:init_tick", "animated_java:global/on_tick"]
 }

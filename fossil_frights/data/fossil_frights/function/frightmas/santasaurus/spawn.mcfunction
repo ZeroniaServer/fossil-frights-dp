@@ -1,0 +1,2 @@
+execute positioned 0 81 30 unless entity @e[type=minecraft:item_display,tag=aj.my_blueprint.root,distance=..0.1,limit=1] rotated 0 0 run function aj:my_blueprint/summon {args:{}}
+execute positioned 0 81 30 as @e[type=minecraft:item_display,tag=aj.my_blueprint.root,tag=!aj.my_blueprint.animation.ambient.playing,distance=..0.1,limit=1] at @s run function aj:my_blueprint/animations/ambient/play

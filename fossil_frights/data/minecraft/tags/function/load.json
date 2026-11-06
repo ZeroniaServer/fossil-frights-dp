@@ -1,5 +1,4 @@
 {
-  "values": [
-    "fossil_frights:init_load"
-  ]
+	"replace": false,
+	"values": ["animated_java:global/on_load", "fossil_frights:init_load"]
 }

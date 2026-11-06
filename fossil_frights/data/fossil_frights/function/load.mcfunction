@@ -524,6 +524,7 @@ function fossil_frights:leaderboards/load
 function fossil_frights:leaderboards/display/rebuild
 function fossil_frights:animations/deep_dark_elevator/load
 function fossil_frights:game/reset/reload
+function fossil_frights:frightmas/santasaurus/reset
 schedule function fossil_frights:util/player/extinguish/cleanup 1t
 schedule function fossil_frights:player/damage/tick 1t
 gamerule minecraft:fire_spread_radius_around_player 0

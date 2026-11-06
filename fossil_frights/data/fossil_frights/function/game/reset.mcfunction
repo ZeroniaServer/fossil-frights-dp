@@ -113,3 +113,4 @@ function fossil_frights:game/heists/alarm_effects/stop
 schedule function fossil_frights:game/reset_all_interaction_entity_memories 1t
 function fossil_frights:join/thief/reset_invisimask_pool
 function fossil_frights:animations/security_gate/load
+function fossil_frights:frightmas/santasaurus/reset
