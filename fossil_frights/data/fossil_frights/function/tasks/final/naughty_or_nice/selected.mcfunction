@@ -5,6 +5,7 @@ loot insert 18 71 29 loot fossil_frights:items/task_books/final/naughty_or_nice
 scoreboard players set $naughty_or_nice_sel ff_task_state 1
 scoreboard players set $naughty_or_nice_done ff_task_state 0
 scoreboard players set $naughty_or_nice_started ff_task_state 0
+execute as @e[type=minecraft:item_display,tag=aj.my_blueprint.root,limit=1] run tp @s -0.8 69 11.4 0 0
 function fossil_frights:tasks/final/naughty_or_nice/cleanup
 function fossil_frights:tasks/final/naughty_or_nice/recipients/hide_stockings
 function fossil_frights:tasks/final/naughty_or_nice/recipients/roll
