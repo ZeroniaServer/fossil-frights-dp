@@ -37,6 +37,7 @@ execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_fr
 scoreboard players reset @a ff_heist_punch_cd
 scoreboard players set @a ff_heist_punch_fx 0
 scoreboard players reset @a ff_heist_invis_ticks
+scoreboard players set @a ff_heist_invisipunches 0
 scoreboard players set @a ff_heist_stolen_keys 0
 scoreboard players reset @a ff_heist_loot_captured_round
 scoreboard players reset @a ff_heist_keyed_loot_captured_round

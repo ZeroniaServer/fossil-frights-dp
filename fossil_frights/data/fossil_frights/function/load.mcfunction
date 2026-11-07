@@ -221,6 +221,7 @@ scoreboard objectives add ff_heist_sidebar dummy
 scoreboard objectives add ff_heist_punch_cd dummy
 scoreboard objectives add ff_heist_punch_fx dummy
 scoreboard objectives add ff_heist_invis_ticks dummy
+scoreboard objectives add ff_heist_invisipunches dummy
 scoreboard objectives add ff_heist_stolen_keys dummy
 scoreboard objectives add ff_heist_reward dummy
 scoreboard objectives add ff_heist_loot_state dummy

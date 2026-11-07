@@ -9,11 +9,12 @@ execute if entity @s[tag=ff_heist_camera_punch] at @s as @e[type=minecraft:manne
 tag @s remove ff_heist_key_return_thief
 execute store result score @s ff_heist_punch_cd run compute default integer fossil_frights:invisipunch_cooldown
 scoreboard players operation @s ff_heist_invis_ticks = #heist_invis_duration ff_heist
+scoreboard players add @s ff_heist_invisipunches 1
 execute if score @s ff_heist_key_stolen_this_punch matches 1 run scoreboard players add @s ff_heist_stolen_keys 1
 execute if score @s ff_heist_key_stolen_this_punch matches 1 run scoreboard players add @s ff_heist_keys_stolen_round 1
-execute if score @s ff_heist_stolen_keys matches 5.. unless score @s ff_heist_keyed_loot_captured_round matches 200.. run effect give @s minecraft:speed 10 1 true
-execute unless score @s ff_heist_stolen_keys matches 5.. run effect give @s minecraft:speed 10 0 true
-execute if score @s ff_heist_stolen_keys matches 5.. if score @s ff_heist_keyed_loot_captured_round matches 200.. run effect give @s minecraft:speed 10 0 true
+execute if score @s ff_heist_stolen_keys matches 5.. unless score @s ff_heist_keyed_loot_captured_round matches 200.. run effect give @s minecraft:speed 8 1 true
+execute unless score @s ff_heist_stolen_keys matches 5.. run effect give @s minecraft:speed 8 0 true
+execute if score @s ff_heist_stolen_keys matches 5.. if score @s ff_heist_keyed_loot_captured_round matches 200.. run effect give @s minecraft:speed 8 0 true
 function fossil_frights:game/rewards/give_dinocoin
 scoreboard players reset @s ff_heist_key_stolen_this_punch
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.8 1.8

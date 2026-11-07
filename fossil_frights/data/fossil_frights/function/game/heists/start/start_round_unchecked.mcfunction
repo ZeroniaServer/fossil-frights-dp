@@ -60,6 +60,7 @@ execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_fr
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/loadout/guard
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_heist_stolen_keys 0
+scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_heist_invisipunches 0
 execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:game/heists/loadout/thief
 execute as @a[predicate=fossil_frights:player/team/thief] at @s run spawnpoint @s -1 109 55
 function fossil_frights:game/heists/close_release_doors

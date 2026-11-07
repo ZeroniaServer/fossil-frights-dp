@@ -1,4 +1,5 @@
 scoreboard players add @s ff_heist_punch_fx 0
+scoreboard players add @s ff_heist_invisipunches 0
 scoreboard players add @s ff_heist_stolen_keys 0
 scoreboard players add @s ff_heist_regen_lock 0
 function fossil_frights:game/heists/loot/secure_loot/player_tick
