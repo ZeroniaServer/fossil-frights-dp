@@ -17,6 +17,13 @@
                 },
                 "minecraft:item_model": "minecraft:sugar",
                 "minecraft:max_stack_size": 1,
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.item.ice_sculpture_salt.description",
+                    "color": "white",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "ice_sculpture_salt"
                 }
