@@ -1,0 +1,20 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "punched_by_player": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "entity_type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:game/heists/punch/guard_victim"
+  }
+}

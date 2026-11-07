@@ -4,7 +4,7 @@ execute unless score $heist_round_active ff_game_state matches 1 run return 0
 execute unless entity @s[predicate=fossil_frights:player/team/thief,gamemode=!spectator] run return 0
 execute if score @s ff_heist_punch_cd matches 1.. run return 0
 tag @s add ff_heist_key_return_thief
-execute unless entity @s[tag=ff_heist_camera_punch] as @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator,distance=..4,sort=nearest,limit=1] run function fossil_frights:game/heists/key/steal
+execute unless entity @s[tag=ff_heist_camera_punch] as @a[tag=ff_heist_punched_guard,predicate=fossil_frights:player/team/guard,gamemode=!spectator,limit=1] run function fossil_frights:game/heists/key/steal
 execute if entity @s[tag=ff_heist_camera_punch] at @s as @e[type=minecraft:mannequin,tag=ff_camera_remote_dummy,distance=..4,sort=nearest,limit=1] run function fossil_frights:game/heists/key/steal_camera_owner
 tag @s remove ff_heist_key_return_thief
 execute store result score @s ff_heist_punch_cd run compute default integer fossil_frights:invisipunch_cooldown
