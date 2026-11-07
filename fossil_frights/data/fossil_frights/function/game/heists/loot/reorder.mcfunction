@@ -182,6 +182,9 @@ execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1..3 run s
 execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_hoverboard ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_hoverboard ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
+scoreboard players reset $loot_ice_sculpture ff_heist_sidebar
+execute if score $loot_ice_sculpture ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_ice_sculpture ff_heist_sidebar = $heist_sidebar_slot ff_heist
+execute if score $loot_ice_sculpture ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_treasure_chest ff_heist_sidebar = $heist_sidebar_slot ff_heist
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1..3 run scoreboard players remove $heist_sidebar_slot ff_heist 1
 execute if score $loot_warden ff_heist_loot_state matches 1..3 run scoreboard players operation $loot_warden ff_heist_sidebar = $heist_sidebar_slot ff_heist

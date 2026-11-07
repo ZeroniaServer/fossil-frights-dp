@@ -34,6 +34,7 @@ execute unless score $heist_loot_render_state_hot_chocolate ff_heist_loot_state 
 execute unless score $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_misplaced_scissors ff_heist_loot_state = $loot_misplaced_scissors ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_hoverboard ff_heist_loot_state = $loot_hoverboard ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_ice_sculpture ff_heist_loot_state = $loot_ice_sculpture ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_spyglass ff_heist_loot_state = $loot_spyglass ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
@@ -106,6 +107,7 @@ scoreboard players operation $heist_loot_render_state_hot_chocolate ff_heist_loo
 scoreboard players operation $heist_loot_render_state_lady_bug ff_heist_loot_state = $loot_lady_bug ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_misplaced_scissors ff_heist_loot_state = $loot_misplaced_scissors ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_hoverboard ff_heist_loot_state = $loot_hoverboard ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_ice_sculpture ff_heist_loot_state = $loot_ice_sculpture ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_spyglass ff_heist_loot_state = $loot_spyglass ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state

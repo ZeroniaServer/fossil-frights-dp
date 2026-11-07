@@ -104,6 +104,13 @@ scoreboard players set $loot_lady_bug ff_heist_loot_state 0
 scoreboard players set $loot_lady_bug ff_heist_loot_value 0
 scoreboard players reset $loot_lady_bug ff_heist_sidebar
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_state 0
+scoreboard players set $loot_ice_sculpture ff_heist_loot_state 0
+scoreboard players set $loot_ice_sculpture ff_heist_loot_value 0
+scoreboard players set $loot_ice_sculpture ff_heist_flash 0
+scoreboard players reset $loot_ice_sculpture ff_heist_sidebar
+setblock 71 83 46 minecraft:air
+setblock 68 83 46 minecraft:chorus_plant
+function fossil_frights:game/heists/loot/rare/ice_sculpture/reset_location
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0
 scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
 scoreboard players set $loot_star ff_heist_loot_state 0

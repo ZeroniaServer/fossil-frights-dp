@@ -25,6 +25,7 @@ scoreboard players operation $heist_challenge_total ff_heist += $loot_lady_bug f
 scoreboard players operation $heist_challenge_total ff_heist += $loot_leather ff_heist_loot_value
 scoreboard players operation $heist_challenge_total ff_heist += $loot_lollipop ff_heist_loot_value
 scoreboard players operation $heist_challenge_total ff_heist += $loot_misplaced_scissors ff_heist_loot_value
+scoreboard players operation $heist_challenge_total ff_heist += $loot_ice_sculpture ff_heist_loot_value
 scoreboard players operation $heist_challenge_total ff_heist += $loot_icy_sherd ff_heist_loot_value
 scoreboard players operation $heist_challenge_total ff_heist += $loot_piglin_head ff_heist_loot_value
 scoreboard players operation $heist_challenge_total ff_heist += $loot_pink_jelly ff_heist_loot_value

@@ -33,6 +33,7 @@ function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"hot_choc
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"lady_bug"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"misplaced_scissors"}
 function fossil_frights:game/heists/loot/render_helper_keyed {"lootId":"hoverboard"}
+function fossil_frights:game/heists/loot/render_helper {"lootId":"ice_sculpture"}
 function fossil_frights:game/heists/loot/render_helper {"lootId":"spyglass"}
 function fossil_frights:game/heists/loot/render_helper_heavy {"lootId":"treasure_chest"}
 function fossil_frights:game/heists/loot/render_helper_heavy {"lootId":"warden"}

@@ -1,4 +1,5 @@
 tag @e[type=minecraft:armor_stand,tag=ff_loot_compass_target] add ff_compass_stale
+execute if score $loot_ice_sculpture ff_heist_loot_state matches 1..2 as @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,limit=1] at @s run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_loot_compass_target,tag=ff_loot_ice_sculpture",tags:"\"ff_loot_compass_target\",\"ff_loot_ice_sculpture\"",style:"loot"}
 
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_poster_tube_click,limit=1] at @s run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_loot_compass_target,tag=ff_loot_poster_tube",tags:"\"ff_loot_compass_target\",\"ff_loot_poster_tube\"",style:"loot"}
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_ghast_plushie_click,limit=1] at @s run function fossil_frights:locator_bar/markers/refresh {selector:"tag=ff_loot_compass_target,tag=ff_loot_ghast_plushie",tags:"\"ff_loot_compass_target\",\"ff_loot_ghast_plushie\"",style:"loot"}

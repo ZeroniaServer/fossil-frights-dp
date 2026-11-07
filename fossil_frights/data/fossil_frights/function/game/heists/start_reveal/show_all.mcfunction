@@ -31,6 +31,7 @@ function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"ca
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"hot_chocolate"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"lady_bug"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"misplaced_scissors"}
+function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ice_sculpture"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {"lootId":"hoverboard"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"spyglass"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"treasure_chest"}

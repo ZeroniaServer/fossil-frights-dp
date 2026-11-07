@@ -35,6 +35,7 @@ execute if score $loot_empty_popcorn_bucket ff_heist_loot_state matches 1 run re
 execute if score $loot_pink_jelly ff_heist_loot_state matches 1 run return 0
 execute if score $loot_leather ff_heist_loot_state matches 1 run return 0
 execute if score $loot_misplaced_scissors ff_heist_loot_state matches 1 run return 0
+execute if score $loot_ice_sculpture ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_hoverboard ff_heist_loot_state matches 1 run return 0
 execute if score $loot_treasure_chest ff_heist_loot_state matches 1 run return 0
 execute if score $loot_crab ff_heist_loot_state matches 1 run return 0
