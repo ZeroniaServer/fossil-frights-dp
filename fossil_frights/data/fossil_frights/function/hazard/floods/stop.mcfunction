@@ -55,4 +55,4 @@ execute positioned -2 75 42 run function fossil_frights:hazard/floods/drain_wate
 execute positioned -19 75 44 run function fossil_frights:hazard/floods/drain_water/start_here
 #Basement Misc
 execute positioned -19 72 10 run function fossil_frights:hazard/floods/drain_water/start_here
-setblock -12 71 20 minecraft:polished_tuff_stairs[waterlogged=false,facing=north]
+
