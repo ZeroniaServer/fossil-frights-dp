@@ -5,7 +5,6 @@ execute if score $loot_poster_tube ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_ghast_plushie ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_piglin_head ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_popcorn ff_heist_loot_state matches 1..2 run return 0
-execute if score $loot_lollipop ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_fishing_rod ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_burger ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_chocolate_cake ff_heist_loot_state matches 1..2 run return 0
@@ -26,6 +25,7 @@ execute if score $loot_raptor_skull ff_heist_loot_state matches 1..2 run return 
 execute if score $loot_biplane ff_heist_loot_state matches 1..2 run return 0
 
 execute if score $loot_febreeze_rod ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
+execute if score $loot_lollipop ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_chlorine_tablet ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_scrap_metal ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_soap ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
