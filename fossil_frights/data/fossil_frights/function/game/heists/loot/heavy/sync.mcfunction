@@ -10,3 +10,9 @@ execute as @e[type=minecraft:interaction,tag=ff_heist_loot_crab_click,tag=!ff_he
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_raptor_skull_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_biplane_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_vault_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click
+function fossil_frights:game/heists/loot/heavy/sync/mammoth_tusk
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_mammoth_tusk_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click
+function fossil_frights:game/heists/loot/heavy/sync/gold_shark
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_gold_shark_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click
+function fossil_frights:game/heists/loot/heavy/sync/giant_acorn
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_giant_acorn_click,tag=!ff_heist_heavy_loot_click] run tag @s add ff_heist_heavy_loot_click

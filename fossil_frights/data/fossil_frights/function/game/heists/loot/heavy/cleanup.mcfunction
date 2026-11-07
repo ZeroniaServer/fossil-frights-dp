@@ -8,3 +8,6 @@ execute as @e[tag=fh_raptor_skull] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_biplane] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_vault] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_velociraptor] run data merge entity @s {view_range:1f}
+execute as @e[tag=fh_mammoth_tusk] run data merge entity @s {view_range:1f}
+execute as @e[tag=fh_gold_shark] run data merge entity @s {view_range:1f}
+execute as @e[tag=fh_giant_acorn] run data merge entity @s {view_range:1f}

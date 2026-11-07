@@ -1,6 +1,20 @@
 # Detect newly-stolen loot (state 1->2) per value tier and fire alarms.
 scoreboard players set $taken_total ff_heist 0
 scoreboard players set $taken_rare_heavy ff_heist 0
+execute if score $loot_diamond ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_gingerbread_man ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_stockings ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_pearl ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_lost_egg ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_armor_trim ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_penguin_eggs ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_claw ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_mammoth_tusk ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_mammoth_tusk ff_heist_loot_state matches 2.. if score $loot_mammoth_tusk ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
+execute if score $loot_gold_shark ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_gold_shark ff_heist_loot_state matches 2.. if score $loot_gold_shark ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
+execute if score $loot_giant_acorn ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_giant_acorn ff_heist_loot_state matches 2.. if score $loot_giant_acorn ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_ancient_scripture ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_ancient_scripture ff_heist_loot_state matches 2.. if score $loot_ancient_scripture ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_biplane ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1

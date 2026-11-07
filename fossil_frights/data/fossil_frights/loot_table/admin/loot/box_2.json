@@ -61,6 +61,70 @@
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/heists/one_time_key"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/diamond"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/gingerbread_man"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/stockings"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/pearl"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/lost_egg"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/armor_trim"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/penguin_eggs"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/common/claw"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/mammoth_tusk"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/gold_shark"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/heists/loot/heavy/giant_acorn"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/star"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/pumpkin"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/frightmas/dinonog"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/coal"
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "fossil_frights:items/storage/hot_chocolate"
                 }
               ]
             }

@@ -143,4 +143,37 @@ scoreboard players reset $loot_biplane ff_heist_sidebar
 scoreboard players set $loot_vault ff_heist_loot_state 0
 scoreboard players set $loot_vault ff_heist_loot_value 0
 scoreboard players reset $loot_vault ff_heist_sidebar
+scoreboard players set $loot_diamond ff_heist_loot_state 0
+scoreboard players set $loot_diamond ff_heist_loot_value 0
+scoreboard players reset $loot_diamond ff_heist_sidebar
+scoreboard players set $loot_gingerbread_man ff_heist_loot_state 0
+scoreboard players set $loot_gingerbread_man ff_heist_loot_value 0
+scoreboard players reset $loot_gingerbread_man ff_heist_sidebar
+scoreboard players set $loot_stockings ff_heist_loot_state 0
+scoreboard players set $loot_stockings ff_heist_loot_value 0
+scoreboard players reset $loot_stockings ff_heist_sidebar
+scoreboard players set $loot_pearl ff_heist_loot_state 0
+scoreboard players set $loot_pearl ff_heist_loot_value 0
+scoreboard players reset $loot_pearl ff_heist_sidebar
+scoreboard players set $loot_lost_egg ff_heist_loot_state 0
+scoreboard players set $loot_lost_egg ff_heist_loot_value 0
+scoreboard players reset $loot_lost_egg ff_heist_sidebar
+scoreboard players set $loot_armor_trim ff_heist_loot_state 0
+scoreboard players set $loot_armor_trim ff_heist_loot_value 0
+scoreboard players reset $loot_armor_trim ff_heist_sidebar
+scoreboard players set $loot_penguin_eggs ff_heist_loot_state 0
+scoreboard players set $loot_penguin_eggs ff_heist_loot_value 0
+scoreboard players reset $loot_penguin_eggs ff_heist_sidebar
+scoreboard players set $loot_claw ff_heist_loot_state 0
+scoreboard players set $loot_claw ff_heist_loot_value 0
+scoreboard players reset $loot_claw ff_heist_sidebar
+scoreboard players set $loot_mammoth_tusk ff_heist_loot_state 0
+scoreboard players set $loot_mammoth_tusk ff_heist_loot_value 0
+scoreboard players reset $loot_mammoth_tusk ff_heist_sidebar
+scoreboard players set $loot_gold_shark ff_heist_loot_state 0
+scoreboard players set $loot_gold_shark ff_heist_loot_value 0
+scoreboard players reset $loot_gold_shark ff_heist_sidebar
+scoreboard players set $loot_giant_acorn ff_heist_loot_state 0
+scoreboard players set $loot_giant_acorn ff_heist_loot_value 0
+scoreboard players reset $loot_giant_acorn ff_heist_sidebar
 function fossil_frights:game/heists/loot/cleanup

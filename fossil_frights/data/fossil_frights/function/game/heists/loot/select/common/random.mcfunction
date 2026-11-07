@@ -13,3 +13,11 @@ execute if score $heist_roll ff_heist matches 12 run function fossil_frights:gam
 execute if score $heist_roll ff_heist matches 13 run function fossil_frights:game/heists/loot/select/common/golden_sword
 execute if score $heist_roll ff_heist matches 14 run function fossil_frights:game/heists/loot/select/common/ancient_portal_core
 execute if score $heist_roll ff_heist matches 15 run function fossil_frights:game/heists/loot/select/common/spyglass
+execute if score $heist_roll ff_heist matches 16 run function fossil_frights:game/heists/loot/select/common/diamond
+execute if score $heist_roll ff_heist matches 17 run function fossil_frights:game/heists/loot/select/common/gingerbread_man
+execute if score $heist_roll ff_heist matches 18 run function fossil_frights:game/heists/loot/select/common/stockings
+execute if score $heist_roll ff_heist matches 19 run function fossil_frights:game/heists/loot/select/common/pearl
+execute if score $heist_roll ff_heist matches 20 run function fossil_frights:game/heists/loot/select/common/lost_egg
+execute if score $heist_roll ff_heist matches 21 run function fossil_frights:game/heists/loot/select/common/armor_trim
+execute if score $heist_roll ff_heist matches 22 run function fossil_frights:game/heists/loot/select/common/penguin_eggs
+execute if score $heist_roll ff_heist matches 23 run function fossil_frights:game/heists/loot/select/common/claw

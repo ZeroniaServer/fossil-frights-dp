@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.armor_trim",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "fossil_frights:items/heists/loot/armor_trim",
+                "minecraft:custom_data": {
+                  "itemID": "armor_trim",
+                  "ff_heist_common_loot": true,
+                  "ff_heist_rules": {
+                    "delete_on_guard_pickup": true
+                  }
+                }
+              }
+            },
+            "fossil_frights:item_definition/heist_loot/armor_trim",
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

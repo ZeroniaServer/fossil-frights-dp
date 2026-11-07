@@ -43,3 +43,14 @@ function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_st
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_pumpkin"}
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_dinonog"}
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_coal"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_diamond"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_gingerbread_man"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_stockings"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_pearl"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_lost_egg"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_armor_trim"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_penguin_eggs"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_claw"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_mammoth_tusk"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_gold_shark"}
+function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_giant_acorn"}

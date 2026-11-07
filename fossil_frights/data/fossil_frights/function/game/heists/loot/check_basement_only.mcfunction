@@ -19,11 +19,26 @@ execute if score $loot_cotton_candy ff_heist_loot_state matches 1..2 run return 
 execute if score $loot_icy_sherd ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_carrot_cake ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_hot_chocolate ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_dinonog ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_coal ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_lady_bug ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_warden ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_raptor_skull ff_heist_loot_state matches 1..2 run return 0
 execute if score $loot_biplane ff_heist_loot_state matches 1..2 run return 0
 
+execute if score $loot_diamond ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_gingerbread_man ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_stockings ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_lost_egg ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_armor_trim ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_penguin_eggs ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_mammoth_tusk ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_gold_shark ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_giant_acorn ff_heist_loot_state matches 1..2 run return 0
+execute if score $loot_pearl ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
+execute if score $loot_star ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
+execute if score $loot_pumpkin ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
+execute if score $loot_claw ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_febreeze_rod ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_lollipop ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1
 execute if score $loot_chlorine_tablet ff_heist_loot_state matches 1..2 run scoreboard players set $heist_basement_remaining ff_heist 1

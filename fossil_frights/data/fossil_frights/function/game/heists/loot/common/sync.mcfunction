@@ -28,3 +28,19 @@ execute as @e[type=minecraft:interaction,tag=ff_heist_loot_fossilized_trilobite_
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_golden_sword_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_ancient_portal_core_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
 execute as @e[type=minecraft:interaction,tag=ff_heist_loot_spyglass_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/diamond
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_diamond_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/gingerbread_man
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_gingerbread_man_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/stockings
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_stockings_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/pearl
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_pearl_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/lost_egg
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_lost_egg_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/armor_trim
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_armor_trim_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/penguin_eggs
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_penguin_eggs_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click
+function fossil_frights:game/heists/loot/common/sync/claw
+execute as @e[type=minecraft:interaction,tag=ff_heist_loot_claw_click,tag=!ff_heist_common_loot_click] run tag @s add ff_heist_common_loot_click

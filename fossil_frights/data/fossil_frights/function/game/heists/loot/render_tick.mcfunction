@@ -56,6 +56,17 @@ scoreboard players set $heist_loot_render_flash_phase ff_heist 0
 execute if score $heist_flash ff_heist matches 10.. run scoreboard players set $heist_loot_render_flash_phase ff_heist 1
 execute unless score $heist_loot_render_flash_phase ff_heist = $heist_loot_render_flash_phase_prev ff_heist run scoreboard players set $heist_loot_render_dirty ff_heist 1
 scoreboard players operation $heist_loot_render_flash_phase_prev ff_heist = $heist_loot_render_flash_phase ff_heist
+execute unless score $heist_loot_render_state_diamond ff_heist_loot_state = $loot_diamond ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_gingerbread_man ff_heist_loot_state = $loot_gingerbread_man ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_stockings ff_heist_loot_state = $loot_stockings ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_pearl ff_heist_loot_state = $loot_pearl ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_lost_egg ff_heist_loot_state = $loot_lost_egg ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_armor_trim ff_heist_loot_state = $loot_armor_trim ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_penguin_eggs ff_heist_loot_state = $loot_penguin_eggs ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_claw ff_heist_loot_state = $loot_claw ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_mammoth_tusk ff_heist_loot_state = $loot_mammoth_tusk ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_gold_shark ff_heist_loot_state = $loot_gold_shark ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+execute unless score $heist_loot_render_state_giant_acorn ff_heist_loot_state = $loot_giant_acorn ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_available ff_compass 0
 execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_available_hash ff_compass 0
 execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_counting ff_compass 1
@@ -111,3 +122,14 @@ execute unless score $heist_loot_render_state_dinonog ff_heist_loot_state = $loo
 scoreboard players operation $heist_loot_render_state_dinonog ff_heist_loot_state = $loot_dinonog ff_heist_loot_state
 execute unless score $heist_loot_render_state_coal ff_heist_loot_state = $loot_coal ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 scoreboard players operation $heist_loot_render_state_coal ff_heist_loot_state = $loot_coal ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_diamond ff_heist_loot_state = $loot_diamond ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_gingerbread_man ff_heist_loot_state = $loot_gingerbread_man ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_stockings ff_heist_loot_state = $loot_stockings ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_pearl ff_heist_loot_state = $loot_pearl ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_lost_egg ff_heist_loot_state = $loot_lost_egg ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_armor_trim ff_heist_loot_state = $loot_armor_trim ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_penguin_eggs ff_heist_loot_state = $loot_penguin_eggs ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_claw ff_heist_loot_state = $loot_claw ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_mammoth_tusk ff_heist_loot_state = $loot_mammoth_tusk ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_gold_shark ff_heist_loot_state = $loot_gold_shark ff_heist_loot_state
+scoreboard players operation $heist_loot_render_state_giant_acorn ff_heist_loot_state = $loot_giant_acorn ff_heist_loot_state
