@@ -24,6 +24,7 @@ execute as @a[gamemode=spectator,tag=!ff_tutorial] at @s run playsound fossil_fr
 particle minecraft:poof ~ ~0.1 ~ 0.08 0.08 0.08 0.03 8 force
 particle minecraft:snowflake ~ ~0.8 ~ 0.55 0.55 0.55 0.03 40 force
 tag @a remove ff_heist_capture_credit_recipient
+tp @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver] 0 -1000 0
 kill @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver]
 tp @e[type=minecraft:item_display,tag=ff_ice_sculpture] 68.5 82.0 46.5 0 0
 data merge entity @e[type=minecraft:item_display,tag=ff_ice_sculpture,limit=1] {view_range:0f}
