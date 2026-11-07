@@ -7,9 +7,6 @@ scoreboard players set $heist_rare_selected ff_heist 0
 scoreboard players set $heist_heavy_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
 scoreboard players set $heist_basement_remaining ff_heist 0
-scoreboard players set $loot_coffee ff_heist_loot_state 0
-scoreboard players set $loot_coffee ff_heist_loot_value 0
-scoreboard players reset $loot_coffee ff_heist_sidebar
 scoreboard players set $loot_poster_tube ff_heist_loot_state 0
 scoreboard players set $loot_poster_tube ff_heist_loot_value 0
 scoreboard players reset $loot_poster_tube ff_heist_sidebar
@@ -137,9 +134,6 @@ scoreboard players reset $loot_warden ff_heist_sidebar
 scoreboard players set $loot_crab ff_heist_loot_state 0
 scoreboard players set $loot_crab ff_heist_loot_value 0
 scoreboard players reset $loot_crab ff_heist_sidebar
-scoreboard players set $loot_t_rex_skull ff_heist_loot_state 0
-scoreboard players set $loot_t_rex_skull ff_heist_loot_value 0
-scoreboard players reset $loot_t_rex_skull ff_heist_sidebar
 scoreboard players set $loot_raptor_skull ff_heist_loot_state 0
 scoreboard players set $loot_raptor_skull ff_heist_loot_value 0
 scoreboard players reset $loot_raptor_skull ff_heist_sidebar
@@ -149,7 +143,4 @@ scoreboard players reset $loot_biplane ff_heist_sidebar
 scoreboard players set $loot_vault ff_heist_loot_state 0
 scoreboard players set $loot_vault ff_heist_loot_value 0
 scoreboard players reset $loot_vault ff_heist_sidebar
-scoreboard players set $loot_velociraptor_statue ff_heist_loot_state 0
-scoreboard players set $loot_velociraptor_statue ff_heist_loot_value 0
-scoreboard players reset $loot_velociraptor_statue ff_heist_sidebar
 function fossil_frights:game/heists/loot/cleanup

@@ -57,10 +57,6 @@
                 "heist_loot": {
                     "type": "literal",
                     "children": {
-                        "coffee": {
-                            "type": "literal",
-                            "executable": true
-                        },
                         "poster_tube": {
                             "type": "literal",
                             "executable": true
@@ -125,14 +121,6 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "fertilizer": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "water_balloon": {
-                            "type": "literal",
-                            "executable": true
-                        },
                         "chlorine_tablet": {
                             "type": "literal",
                             "executable": true
@@ -165,14 +153,6 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "copper_shuffle": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "instant_coffee": {
-                            "type": "literal",
-                            "executable": true
-                        },
                         "empty_popcorn_bucket": {
                             "type": "literal",
                             "executable": true
@@ -182,14 +162,6 @@
                             "executable": true
                         },
                         "leather": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "brush": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "sponge": {
                             "type": "literal",
                             "executable": true
                         },
@@ -209,15 +181,7 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "cookie": {
-                            "type": "literal",
-                            "executable": true
-                        },
                         "lady_bug": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "basketball": {
                             "type": "literal",
                             "executable": true
                         },
@@ -226,30 +190,6 @@
                             "executable": true
                         },
                         "hoverboard": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "sniffer_dna_cloth": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "trike_dna_cloth": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "t_rex_dna_cloth": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "velociraptor_dna_cloth": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "plesiosaur_dna_cloth": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "pterodactyl_dna_cloth": {
                             "type": "literal",
                             "executable": true
                         },
@@ -265,10 +205,6 @@
                             "type": "literal",
                             "executable": true
                         },
-                        "t_rex_skull": {
-                            "type": "literal",
-                            "executable": true
-                        },
                         "raptor_skull": {
                             "type": "literal",
                             "executable": true
@@ -278,10 +214,6 @@
                             "executable": true
                         },
                         "vault": {
-                            "type": "literal",
-                            "executable": true
-                        },
-                        "velociraptor_statue": {
                             "type": "literal",
                             "executable": true
                         }

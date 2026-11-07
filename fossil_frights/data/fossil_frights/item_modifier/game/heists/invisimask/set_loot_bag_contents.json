@@ -5,30 +5,6 @@
       "type": "minecraft:set_custom_model_data",
       "strings": {
         "values": [
-          "t_rex_skull"
-        ],
-        "mode": "replace_section",
-        "offset": 1,
-        "size": 1
-      },
-      "condition": "fossil_frights:player/inventory/t_rex_skull"
-    },
-    {
-      "type": "minecraft:set_custom_model_data",
-      "strings": {
-        "values": [
-          "velociraptor_statue"
-        ],
-        "mode": "replace_section",
-        "offset": 1,
-        "size": 1
-      },
-      "condition": "fossil_frights:player/inventory/velociraptor_statue"
-    },
-    {
-      "type": "minecraft:set_custom_model_data",
-      "strings": {
-        "values": [
           "vault"
         ],
         "mode": "replace_section",

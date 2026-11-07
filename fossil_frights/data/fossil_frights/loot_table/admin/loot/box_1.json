@@ -24,10 +24,6 @@
               "entries": [
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/loot/common/coffee"
-                },
-                {
-                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/heists/loot/common/poster_tube"
                 },
                 {
@@ -89,14 +85,6 @@
                 {
                   "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/heists/loot/rare/misplaced_scissors"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/loot/heavy/t_rex_skull"
-                },
-                {
-                  "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/loot/heavy/velociraptor_statue"
                 },
                 {
                   "type": "minecraft:loot_table",

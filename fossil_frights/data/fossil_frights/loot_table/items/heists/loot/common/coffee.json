@@ -27,15 +27,10 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "itemID": "coffee",
-                  "ff_heist_common_loot": true,
-                  "ff_heist_rules": {
-                    "delete_on_guard_pickup": true
-                  }
+                  "itemID": "coffee"
                 }
               }
             },
-            "fossil_frights:item_definition/heist_loot/coffee",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

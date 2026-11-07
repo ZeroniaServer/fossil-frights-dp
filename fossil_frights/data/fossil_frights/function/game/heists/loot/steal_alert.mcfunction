@@ -17,8 +17,6 @@ execute if score $loot_chocolate_cake ff_heist_loot_state matches 2.. run scoreb
 execute if score $loot_chocolate_cake ff_heist_loot_state matches 2.. if score $loot_chocolate_cake ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_chondrite ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_chondrite ff_heist_loot_state matches 2.. if score $loot_chondrite ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_coffee ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_coffee ff_heist_loot_state matches 2.. if score $loot_coffee ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_cotton_candy ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_cotton_candy ff_heist_loot_state matches 2.. if score $loot_cotton_candy ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_crab ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
@@ -87,14 +85,10 @@ execute if score $loot_spyglass ff_heist_loot_state matches 2.. run scoreboard p
 execute if score $loot_spyglass ff_heist_loot_state matches 2.. if score $loot_spyglass ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_treasure_chest ff_heist_loot_state matches 2.. if score $loot_treasure_chest ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_t_rex_skull ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_t_rex_skull ff_heist_loot_state matches 2.. if score $loot_t_rex_skull ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_fossilized_trilobite ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_fossilized_trilobite ff_heist_loot_state matches 2.. if score $loot_fossilized_trilobite ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_vault ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_vault ff_heist_loot_state matches 2.. if score $loot_vault ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_velociraptor_statue ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_velociraptor_statue ff_heist_loot_state matches 2.. if score $loot_velociraptor_statue ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_warden ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_warden ff_heist_loot_state matches 2.. if score $loot_warden ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 scoreboard players operation $taken_common_uncommon ff_heist = $taken_total ff_heist

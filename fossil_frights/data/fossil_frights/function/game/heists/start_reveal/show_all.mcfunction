@@ -1,4 +1,3 @@
-function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"coffee"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"poster_tube"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"ghast_plushie"}
 function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"piglin_head"}
@@ -37,11 +36,9 @@ function fossil_frights:game/heists/start_reveal/show_helper {"lootId":"spyglass
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"treasure_chest"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"warden"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"crab"}
-function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"t_rex_skull"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"raptor_skull"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"biplane"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"vault"}
-function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"velociraptor_statue"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"star"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"pumpkin"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"dinonog"}

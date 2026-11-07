@@ -1,4 +1,3 @@
-function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_coffee"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_poster_tube"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_ghast_plushie"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_piglin_head"}
@@ -37,11 +36,9 @@ function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_treasure_chest"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_warden"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_crab"}
-function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_t_rex_skull"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_raptor_skull"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_biplane"}
 function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_vault"}
-function fossil_frights:game/heists/start_reveal/capture_helper {"lootId":"loot_velociraptor_statue"}
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_star"}
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_pumpkin"}
 function fossil_frights:game/heists/start_reveal/capture_helper {lootId:"loot_dinonog"}

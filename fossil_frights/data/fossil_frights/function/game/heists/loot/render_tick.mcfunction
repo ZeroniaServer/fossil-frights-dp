@@ -1,6 +1,5 @@
 # rerender on changes only
 scoreboard players set $heist_loot_render_dirty ff_heist 0
-execute unless score $heist_loot_render_state_coffee ff_heist_loot_state = $loot_coffee ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_poster_tube ff_heist_loot_state = $loot_poster_tube ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_ghast_plushie ff_heist_loot_state = $loot_ghast_plushie ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_piglin_head ff_heist_loot_state = $loot_piglin_head ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
@@ -39,11 +38,9 @@ execute unless score $heist_loot_render_state_spyglass ff_heist_loot_state = $lo
 execute unless score $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_crab ff_heist_loot_state = $loot_crab ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-execute unless score $heist_loot_render_state_t_rex_skull ff_heist_loot_state = $loot_t_rex_skull ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_raptor_skull ff_heist_loot_state = $loot_raptor_skull ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_biplane ff_heist_loot_state = $loot_biplane ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_state_vault ff_heist_loot_state = $loot_vault ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-execute unless score $heist_loot_render_state_velociraptor_statue ff_heist_loot_state = $loot_velociraptor_statue ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 execute unless score $heist_loot_render_flash_hoverboard ff_heist_flash = $loot_hoverboard ff_heist_flash run scoreboard players set $heist_loot_render_dirty ff_heist 1
 scoreboard players set $heist_loot_render_security_active ff_heist 0
 execute if entity @e[type=minecraft:interaction,tag=ff_heist_loot_security_active,limit=1] run scoreboard players set $heist_loot_render_security_active ff_heist 1
@@ -64,7 +61,6 @@ execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard play
 execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_counting ff_compass 1
 execute if score $heist_loot_render_dirty ff_heist matches 1 run function fossil_frights:game/heists/loot/render
 execute if score $heist_loot_render_dirty ff_heist matches 1 run scoreboard players set $heist_compass_counting ff_compass 0
-scoreboard players operation $heist_loot_render_state_coffee ff_heist_loot_state = $loot_coffee ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_poster_tube ff_heist_loot_state = $loot_poster_tube ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_ghast_plushie ff_heist_loot_state = $loot_ghast_plushie ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_piglin_head ff_heist_loot_state = $loot_piglin_head ff_heist_loot_state
@@ -103,11 +99,9 @@ scoreboard players operation $heist_loot_render_state_spyglass ff_heist_loot_sta
 scoreboard players operation $heist_loot_render_state_treasure_chest ff_heist_loot_state = $loot_treasure_chest ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_warden ff_heist_loot_state = $loot_warden ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_crab ff_heist_loot_state = $loot_crab ff_heist_loot_state
-scoreboard players operation $heist_loot_render_state_t_rex_skull ff_heist_loot_state = $loot_t_rex_skull ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_raptor_skull ff_heist_loot_state = $loot_raptor_skull ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_biplane ff_heist_loot_state = $loot_biplane ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_vault ff_heist_loot_state = $loot_vault ff_heist_loot_state
-scoreboard players operation $heist_loot_render_state_velociraptor_statue ff_heist_loot_state = $loot_velociraptor_statue ff_heist_loot_state
 scoreboard players operation $heist_loot_render_flash_hoverboard ff_heist_flash = $loot_hoverboard ff_heist_flash
 execute unless score $heist_loot_render_state_star ff_heist_loot_state = $loot_star ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 scoreboard players operation $heist_loot_render_state_star ff_heist_loot_state = $loot_star ff_heist_loot_state
