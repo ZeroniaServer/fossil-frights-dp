@@ -1,3 +1,5 @@
+execute as @e[type=minecraft:item_display,tag=ff_ice_sculpture,limit=1] run data merge entity @s {Glowing:0b}
+execute as @e[type=minecraft:item_display,tag=ff_ice_sculpture,limit=1] run scoreboard players reset @s ff_glowtrap_age
 execute unless score $loot_ice_sculpture ff_heist_loot_state matches 1..2 run return 0
 scoreboard players set $loot_ice_sculpture ff_heist_loot_state 1
 scoreboard players set $loot_ice_sculpture ff_heist_flash 0

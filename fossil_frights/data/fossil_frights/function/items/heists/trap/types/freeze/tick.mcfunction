@@ -8,6 +8,9 @@ execute if score @s ff_glowtrap_age matches 40..49 run return 0
 execute if score @s ff_glowtrap_age matches 50 run function fossil_frights:items/heists/trap/types/freeze/fx/activate
 execute if score @s ff_glowtrap_fx matches 5.. run scoreboard players set @s ff_glowtrap_fx 0
 execute if score @s ff_glowtrap_fx matches 0 run function fossil_frights:items/heists/trap/types/freeze/fx/ring
+execute if score @s ff_glowtrap_age matches 50.. if entity @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,distance=..1.6,limit=1] run return run function fossil_frights:items/heists/trap/types/freeze/trigger_ice_sculpture
+execute if score @s ff_glowtrap_age matches 50.. positioned ~ ~1 ~ if entity @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,distance=..1.6,limit=1] run return run function fossil_frights:items/heists/trap/types/freeze/trigger_ice_sculpture
+execute if score @s ff_glowtrap_age matches 50.. positioned ~ ~-1 ~ if entity @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,distance=..1.6,limit=1] run return run function fossil_frights:items/heists/trap/types/freeze/trigger_ice_sculpture
 execute if score @s ff_glowtrap_age matches 50.. if function fossil_frights:items/heists/trap/types/freeze/trigger_item/check_for run function fossil_frights:items/heists/trap/types/freeze/trigger_item
 execute if entity @a[limit=1,predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..1.6] run function fossil_frights:items/heists/trap/types/freeze/trigger
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..1.6] positioned ~ ~1 ~ if entity @a[limit=1,predicate=fossil_frights:player/team/thief,gamemode=!spectator,distance=..1.6] run function fossil_frights:items/heists/trap/types/freeze/trigger
