@@ -21,4 +21,5 @@ execute as @e[tag=fh_pearl] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_lost_egg] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_armor_trim] run data merge entity @s {view_range:1f}
 execute as @e[tag=fh_penguin_eggs] run data merge entity @s {view_range:1f}
-execute as @e[tag=fh_claw] run data merge entity @s {view_range:1f}
+execute as @e[type=minecraft:item_display,tag=fh_claw,limit=1] run data merge entity @s {view_range:1f}
+tp @e[type=minecraft:item_display,tag=ff_clawed_present,limit=1] -1.3125 72.75 28.5
