@@ -15,7 +15,7 @@
                   "translate": "ff.item.claw",
                   "color": "yellow"
                 },
-                "minecraft:item_model": "fossil_frights:items/heists/loot/claw",
+                "minecraft:item_model": "fossil_frights:display/frightmas/loot/common/claw",
                 "minecraft:custom_data": {
                   "itemID": "claw",
                   "ff_heist_common_loot": true,
