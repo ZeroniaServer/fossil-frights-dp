@@ -1,7 +1,6 @@
 execute unless score $loot_ice_sculpture ff_heist_loot_state matches 1..2 run return 0
+execute unless function fossil_frights:game/heists/loot/capture/credit/resolve run return 0
 execute if score $loot_ice_sculpture ff_heist_loot_state matches 1 run function fossil_frights:game/heists/loot/rare/ice_sculpture/mark_stolen
-tag @a remove ff_heist_capture_credit_recipient
-execute as @p[tag=ff_heist_stat_thief,gamemode=!spectator,sort=nearest,limit=1] run tag @s add ff_heist_capture_credit_recipient
 function fossil_frights:game/heists/loot/steal_alert
 execute if score $heist_elapsed ff_heist matches ..600 run advancement grant @a[tag=ff_heist_capture_credit_recipient,limit=1] only fossil_frights:02_achievements/heists_quick_hands
 scoreboard players operation #capture_value ff_heist_loot_value = $loot_ice_sculpture ff_heist_loot_value
