@@ -6,6 +6,6 @@ execute if score $sarcophagus_item_timer ff_game_state matches 1.. as @e[type=mi
 execute if score $sarcophagus_item_timer ff_game_state matches 1.. as @e[type=minecraft:item,x=52,y=72,z=80,dx=0,dy=0.125,dz=0] at @s run function fossil_frights:animations/dinocoin/sarcophagus/eject_item
 execute if score $sarcophagus_timer ff_game_state matches 0 positioned 51 73 81 if entity @e[type=minecraft:item,distance=..1.5,predicate=fossil_frights:entity/contents/dinocoin,predicate=fossil_frights:entity/contents/count/1,limit=1] run function fossil_frights:animations/dinocoin/sarcophagus/payment/pay
 execute if score $sarcophagus_timer ff_game_state matches 1.. run particle minecraft:portal 52.5 72 79.5 0.5 0.1 0 0.8 12 force
-execute if score $sarcophagus_timer ff_game_state matches 1.. if entity @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active,x=52,y=72,z=80,dx=0,dy=0,dz=1,limit=1] run function fossil_frights:animations/dinocoin/sarcophagus/start_ride
+execute if score $sarcophagus_timer ff_game_state matches 1.. if entity @a[predicate=fossil_frights:player/is_playing,tag=!ff_fade_tp_active,x=52,y=72,z=79,dx=0,dy=0,dz=1,limit=1] run function fossil_frights:animations/dinocoin/sarcophagus/start_ride
 execute if score $sarcophagus_timer ff_game_state matches 1.. run scoreboard players remove $sarcophagus_timer ff_game_state 1
 execute if score $sarcophagus_timer ff_game_state matches 0 if block 52 73 79 air run function fossil_frights:animations/dinocoin/sarcophagus/reset
