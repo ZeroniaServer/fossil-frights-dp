@@ -116,10 +116,6 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/frightmas/dinonog"
-                },
-                {
-                  "type": "minecraft:loot_table",
                   "value": "fossil_frights:items/storage/coal"
                 },
                 {

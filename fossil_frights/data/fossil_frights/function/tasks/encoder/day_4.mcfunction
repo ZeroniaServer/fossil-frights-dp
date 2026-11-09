@@ -1,4 +1,3 @@
-# Day 4: 2 medium, 1 hazard
+# Day 4: 2 medium
 function fossil_frights:tasks/select/medium
 function fossil_frights:tasks/select/medium
-function fossil_frights:tasks/hazard/schedule_random

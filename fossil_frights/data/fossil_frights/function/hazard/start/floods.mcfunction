@@ -14,4 +14,3 @@ execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fo
 function fossil_frights:hazard/floods/init_monitor
 
 function fossil_frights:hazard/floods/start
-function fossil_frights:advancements/checks/hazardous

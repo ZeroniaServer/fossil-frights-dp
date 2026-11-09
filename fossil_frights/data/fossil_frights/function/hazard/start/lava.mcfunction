@@ -15,4 +15,3 @@ execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fo
 # setblock -1 71 15 minecraft:magma_block
 
 function fossil_frights:hazard/lava/start
-function fossil_frights:advancements/checks/hazardous

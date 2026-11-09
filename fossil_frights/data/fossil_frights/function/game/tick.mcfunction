@@ -3,6 +3,7 @@ function fossil_frights:game/party/sync
 function fossil_frights:game/party/tick
 function fossil_frights:game/heists/tick
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/dinonog/tick
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
 function fossil_frights:game/frights/timer/tick
 execute unless block 20 71 28 minecraft:warped_button[powered=true] run tag @a remove ff_day_tutorial_prompt_button_latched
@@ -45,7 +46,6 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_timer ff_day matches 4800..5999 run scoreboard players operation $day_sound_tmp ff_day = $day_timer ff_day
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_timer ff_day matches 4800..5999 run scoreboard players operation $day_sound_tmp ff_day %= #ticks_per_second ff_constant
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 if score $day_timer ff_day matches 4800..5999 if score $day_sound_tmp ff_day matches 0 if score $settings_music_off ff_game_state matches 1 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1.5 1
-execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run function fossil_frights:tasks/hazard/tick
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run function fossil_frights:game/frights/worldborder/update_warning
 execute if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 1 run function fossil_frights:messages/bossbar/update_day_name
 function fossil_frights:game/start_room/day_tracker/refresh
