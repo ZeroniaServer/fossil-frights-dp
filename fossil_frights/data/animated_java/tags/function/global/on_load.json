@@ -1,1 +1,4 @@
-{"values":["aj:my_blueprint/on_load"]}
+{
+	"replace": false,
+	"values": ["aj:elfsembly_line/on_load", "aj:my_blueprint/on_load"]
+}

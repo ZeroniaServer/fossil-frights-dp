@@ -7,3 +7,5 @@ scoreboard players add aj.last_id aj.id 0
 function animated_java:global/gu/on_load
 function animated_java:global/data_manager/on_load
 function #animated_java:global/on_load
+scoreboard players reset * aj.is_rig_loaded
+execute as @e[type=item_display,tag=aj.global.root] at @s run function animated_java:global/root/on_load
