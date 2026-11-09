@@ -9,9 +9,9 @@
     "minecraft:visual/ambient_particles": [
       {
         "particle": {
-          "type": "minecraft:snowflake"
+          "type": "minecraft:spore_blossom_air"
         },
-        "probability": 0.005
+        "probability": 0.002
       }
     ],
     "minecraft:visual/ambient_light_color": "#00ff00"
