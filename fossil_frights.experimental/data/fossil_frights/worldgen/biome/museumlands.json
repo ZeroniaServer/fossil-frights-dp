@@ -11,7 +11,7 @@
         "particle": {
           "type": "minecraft:snowflake"
         },
-        "probability": 0.1
+        "probability": 0.075
       }
     ]
   },
