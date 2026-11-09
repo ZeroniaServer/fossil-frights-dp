@@ -39,7 +39,7 @@
                     "result": "fossil_frights:items/anvil/leather_boots"
                   },
                   "ff_heist_rules": {
-                    "delete_on_guard_pickup": true
+                    "keep_for_guard": true
                   }
                 }
               }

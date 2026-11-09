@@ -25,7 +25,7 @@
                   "itemID": "hot_chocolate",
                   "ff_completes_drink_with_trike_task": true,
                   "ff_heist_rules": {
-                    "delete_on_guard_pickup": true
+                    "keep_for_guard": true
                   }
                 }
               }

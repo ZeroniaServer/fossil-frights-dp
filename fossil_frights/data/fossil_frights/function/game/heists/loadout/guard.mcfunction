@@ -1,6 +1,6 @@
 clear @s
 loot replace entity @s armor.feet loot fossil_frights:items/heists/guard_boots
-execute if score @s ff_heist_guard_has_key matches 1 run item replace entity @s container.8 with minecraft:paper[minecraft:item_model="fossil_frights:items/frights/key/key",minecraft:item_name={translate:'ff.item.guard_key',color:'yellow'},minecraft:custom_data={ff_heist_guard_key:true,ff_prevent_drop:true}] 1
+execute if score @s ff_heist_guard_has_key matches 1 run item replace entity @s container.8 with minecraft:paper[minecraft:item_model="fossil_frights:items/frights/key/key",minecraft:item_name={translate:'ff.item.guard_key',color:'yellow'},minecraft:custom_data={itemID:"key",ff_heist_guard_key:true,ff_prevent_drop:true}] 1
 execute unless score @s ff_heist_guard_has_key matches 1 run item replace entity @s container.8 with minecraft:paper[minecraft:item_model="fossil_frights:items/frights/key/cooldown/key_cooldown",minecraft:item_name={translate:'ff.item.missing_key',color:'gray'},minecraft:custom_data={ff_heist_missing_key:true,ff_prevent_drop:true}] 1
 tag @s remove ff_map_claimed
 tag @s remove ff_map_auto_given

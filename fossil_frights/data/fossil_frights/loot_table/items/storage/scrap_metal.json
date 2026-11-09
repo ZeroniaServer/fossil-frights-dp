@@ -36,7 +36,7 @@
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
                   "ff_heist_rules": {
-                    "delete_on_guard_pickup": true,
+                    "keep_for_guard": true,
                     "warns_about_loot": [
                       "hoverboard"
                     ]

@@ -19,7 +19,7 @@
                 "minecraft:custom_data": {
                   "itemID": "dry_ice",
                   "ff_heist_rules": {
-                    "delete_on_guard_pickup": true
+                    "keep_for_guard": true
                   }
                 }
               }
