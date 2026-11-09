@@ -559,6 +559,7 @@ gamerule minecraft:spectators_generate_chunks false
 execute unless predicate fossil_frights:world/packs_enabled/dev run gamerule reduced_debug_info true
 # the drowning_damage gamerule is repurposed for handling custom fire damage, doesn't actually disable drowning damage
 gamerule minecraft:drowning_damage false
+gamerule minecraft:max_snow_accumulation_height 0
 
 # This text is purposefully not translated, so that non-rp players see it
 bossbar add fossil_frights:resource_pack_disclaimer ""
