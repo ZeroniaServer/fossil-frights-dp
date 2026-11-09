@@ -45,4 +45,4 @@ scoreboard players reset @s ff_heist_invis_ticks
 scoreboard players reset @s ff_heist_thaw_fx
 scoreboard players reset @s ff_heist_paint_fx
 function fossil_frights:game/heists/loadout/thief
-execute unless entity @s[tag=ff_rejoin_thief_restore] run function fossil_frights:game/heists/items/grant_hazard_cookie
+execute unless entity @s[tag=ff_rejoin_thief_restore] run function fossil_frights:game/heists/items/grant_evilnog

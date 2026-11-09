@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "itemID": "hazard_cookie"
+              "itemID": "evilnog"
             }
           }
         }
@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:items/heists/hazard_cookie/use_consumed"
+    "function": "fossil_frights:items/frightmas/evilnog/use_consumed"
   }
 }

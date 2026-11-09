@@ -12,28 +12,29 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "ff.item.hazard_cookie",
-                  "color": "gold"
+                  "translate": "ff.drink.evilnog",
+                  "color": "red"
                 },
-                "minecraft:item_model": "fossil_frights:items/heists/gear/thief/hazard_cookie",
+                "minecraft:item_model": "fossil_frights:items/frightmas/evilnog",
+                "minecraft:custom_model_data": {
+                  "flags": [true]
+                },
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.hazard_cookie.description",
+                    "translate": "ff.drink.evilnog.description",
                     "color": "white",
-                    "italic": false,
-                    "with": [
-                      {
-                        "translate": "ff.item.hazard_cookie.description.eat",
-                        "color": "yellow",
-                        "italic": false
-                      }
-                    ]
+                    "italic": false
                   }
                 ],
-                "minecraft:consumable": {},
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "has_consume_particles": false,
+                  "sound": "minecraft:entity.generic.drink"
+                },
                 "minecraft:custom_data": {
-                  "itemID": "hazard_cookie",
+                  "itemID": "evilnog",
                   "ff_heist_rules": {
+                    "prevent_ground_despawn": true,
                     "delete_on_guard_pickup": true
                   }
                 }

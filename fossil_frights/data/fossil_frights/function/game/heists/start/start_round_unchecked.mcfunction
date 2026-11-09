@@ -1,5 +1,14 @@
 execute if score $victory_complete ff_game_state matches 1 run return 0
 scoreboard players set $heist_round_active ff_game_state 1
+scoreboard players set #dinonog_max ff_dinonog 100
+scoreboard players set #dinonog_bar ff_dinonog 100
+scoreboard players set #dinonog_last_frame ff_dinonog -1
+bossbar remove fossil_frights:dinonog
+bossbar add fossil_frights:dinonog {text:"\ue700",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}
+bossbar set fossil_frights:dinonog color blue
+bossbar set fossil_frights:dinonog players @a
+bossbar set fossil_frights:dinonog max 100
+function fossil_frights:frights/dinonog/update
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run function fossil_frights:game/rejoin/state/register
 execute as @a[predicate=fossil_frights:player/team/thief] at @s run function fossil_frights:game/rejoin/state/register
 function fossil_frights:game/start_room/settings/board/refresh
