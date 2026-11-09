@@ -3,7 +3,6 @@ execute unless predicate fossil_frights:game_state/game_running run return 0
 execute unless score $day_active ff_day matches 1 run function fossil_frights:messages/error/no_day_active
 execute unless score $day_active ff_day matches 1 run return 0
 execute if score $custom_day_active ff_day matches 1 run return run function fossil_frights:game/frights/day/custom_completed
-function fossil_frights:tasks/hazard/force_pending
 function fossil_frights:tasks/task_book_shelf/clear
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/rewards/give_dinocoin
 execute if score $day_current ff_day matches 10 as @a[predicate=fossil_frights:player/team/guard] unless score @s ff_coin_used_run matches 1.. run advancement grant @s only fossil_frights:02_achievements/penny_pincher

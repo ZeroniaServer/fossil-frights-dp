@@ -1,4 +1,3 @@
-# Day 7: 1 medium, 1 hard, 1 hazard
+# Day 7: 1 medium, 1 hard
 function fossil_frights:tasks/select/medium
 function fossil_frights:tasks/select/hard
-function fossil_frights:tasks/hazard/schedule_random

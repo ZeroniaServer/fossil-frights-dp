@@ -16,4 +16,3 @@ scoreboard players set #lights_start_phase ff_hazard_rng 0
 scoreboard players set #lights_stop_phase ff_hazard_rng 0
 
 function fossil_frights:hazard/lights/start
-function fossil_frights:advancements/checks/hazardous

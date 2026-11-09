@@ -18,4 +18,3 @@ scoreboard players set #curse_indicator_timer ff_hazard_rng 8
 function fossil_frights:hazard/curse/remove_toggle
 
 function fossil_frights:hazard/curse/start
-function fossil_frights:advancements/checks/hazardous

@@ -1,3 +1,4 @@
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 execute if predicate fossil_frights:game_state/hazard_active/security run return 0
 
 scoreboard players set $security ff_hazard_active 1
@@ -16,4 +17,3 @@ scoreboard players set #security_indicator_timer ff_hazard_rng 8
 scoreboard players set #security_alarm_timer ff_hazard_rng 10
 
 function fossil_frights:hazard/security/start
-function fossil_frights:advancements/checks/hazardous
