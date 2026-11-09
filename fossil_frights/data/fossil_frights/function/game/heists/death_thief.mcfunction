@@ -10,7 +10,7 @@ scoreboard players operation #match ff_active_uuid_2 = @s ff_heist_killer_uuid_2
 scoreboard players operation #match ff_active_uuid_3 = @s ff_heist_killer_uuid_3
 execute if score @s ff_heist_killer_pending matches 1 if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] only fossil_frights:02_achievements/heists_stop_right_there
 execute if score @s ff_heist_killer_pending matches 1 run scoreboard players add @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] ff_heist_thieves_killed_round 1
-execute if predicate fossil_frights:entity/contents/dinocoin tag add fh_has_coin
+execute if predicate fossil_frights:entity/contents/dinocoin run tag add @s fh_has_coin
 execute if entity @s[tag=fh_has_coin] run execute at @s run summon minecraft:item ~ ~ ~ {nbt:{Tags:["fh_death_coin"],PickupDelay:0,Age:-32768,Motion:[0.0d,0.0d,0.0d]},loot_table:"fossil_frights:items/dinocoin"}
 execute if entity @s[tag=fh_has_coin] run execute as @n[type=item,tag=fh_death_coin] at @s run playsound minecraft:block.note_block.bell player @a[distance=0..10]
 tag @s remove fh_has_coin
