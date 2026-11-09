@@ -15,6 +15,20 @@
                   "translate": "ff.item.pink_jelly",
                   "color": "light_purple"
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Hit Player ",
+                    "color": "yellow",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "translate": "ff.item.pink_jelly.description.hit",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/pink_jelly",
                 "minecraft:custom_data": {
                   "itemID": "pink_jelly",

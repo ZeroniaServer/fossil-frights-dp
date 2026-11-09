@@ -15,6 +15,20 @@
                   "translate": "ff.item.dry_ice",
                   "color": "aqua"
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Hit Player ",
+                    "color": "yellow",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "translate": "ff.item.dry_ice.description.hit",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/dry_ice",
                 "minecraft:custom_data": {
                   "itemID": "dry_ice",

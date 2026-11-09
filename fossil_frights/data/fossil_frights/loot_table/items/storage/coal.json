@@ -13,8 +13,22 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.minecraft.coal",
-                  "color": "white"
+                  "color": "gray"
                 },
+                "minecraft:lore": [
+                  {
+                    "text": "Hit Player ",
+                    "color": "yellow",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "translate": "ff.item.coal.description.hit",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  }
+                ],
                 "minecraft:item_model": "fossil_frights:display/frightmas/task/coal",
                 "minecraft:custom_data": {
                   "itemID": "coal",

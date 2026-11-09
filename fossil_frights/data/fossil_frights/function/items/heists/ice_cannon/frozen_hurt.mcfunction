@@ -1,6 +1,7 @@
 advancement revoke @s only fossil_frights:misc/ice_frozen_hurt
 execute unless entity @s[tag=ff_ice_frozen] run return 0
 function fossil_frights:entity/match/active
+execute at @s if entity @e[limit=1,type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5,scores={ff_ice_freeze_age=0},predicate=fossil_frights:entity/match/active] run return 0
 execute at @s as @e[limit=1,type=minecraft:block_display,tag=ff_ice_freeze,distance=..2.5,predicate=fossil_frights:entity/match/active] at @s run function fossil_frights:items/heists/ice_cannon/freeze_end
 execute unless entity @s[tag=ff_ice_frozen] run return 0
 function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
