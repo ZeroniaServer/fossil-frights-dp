@@ -21,6 +21,9 @@ execute as @e[type=#fossil_frights:display_entities,tag=ff_ancient_portal] run d
 function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
 function fossil_frights:game/bossbar/setup
+scoreboard players set #dinonog_bar ff_dinonog 6000
+scoreboard players set #dinonog_last_frame ff_dinonog -1
+function fossil_frights:frights/dinonog/update
 function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup
 function fossil_frights:game/frights/worldborder/reset

@@ -3,6 +3,7 @@ function fossil_frights:game/party/sync
 function fossil_frights:game/party/tick
 function fossil_frights:game/heists/tick
 execute if predicate fossil_frights:game_state/heist_mode_active run return 0
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/dinonog/tick
 execute if score $time_anim_active ff_day matches 1 run function fossil_frights:game/time/tick
 function fossil_frights:game/frights/timer/tick
 execute unless block 20 71 28 minecraft:warped_button[powered=true] run tag @a remove ff_day_tutorial_prompt_button_latched
