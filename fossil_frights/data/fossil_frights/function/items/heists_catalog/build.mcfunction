@@ -34,7 +34,7 @@ function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/trap_
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/camera_remote",page:"page_2",slot:3}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot_book",page:"page_2",slot:4}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/invisimask/random",page:"page_2",slot:5}
-function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/hazard_cookie",page:"page_2",slot:6}
+function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/evilnog",page:"page_2",slot:6}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/dinocoin",page:"page_2",slot:7}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/one_time_key",page:"page_2",slot:8}
 function fossil_frights:items/heists_catalog/from_loot {loot:"items/heists/loot/heavy/biplane",page:"page_2",slot:18}

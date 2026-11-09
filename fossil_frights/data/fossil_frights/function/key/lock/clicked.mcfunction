@@ -13,5 +13,7 @@ execute if score @s ff_lock_look matches 1 run playsound fossil_frights:animatio
 scoreboard players set @s ff_scan 6
 execute unless score @s ff_lock_look matches 1 anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/anim_raycast
 execute if score @s ff_lock_look matches 1 run function fossil_frights:player/actionbar/show/generic/key.unlocking
+execute if score @s ff_lock_look matches 1 if predicate fossil_frights:game_state/heist_mode_active if entity @e[type=minecraft:item_display,tag=ff_lock_dinonog,sort=nearest,limit=1,distance=..3] if entity @s[predicate=fossil_frights:player/team/thief] run loot give @s loot fossil_frights:items/heists/evilnog
+execute if score @s ff_lock_look matches 1 if predicate fossil_frights:game_state/heist_mode_active if entity @e[type=minecraft:item_display,tag=ff_lock_dinonog,sort=nearest,limit=1,distance=..3] if entity @s[predicate=fossil_frights:player/team/guard] run loot give @s loot fossil_frights:items/frightmas/dinonog
 execute if score @s ff_lock_look matches 1 if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/items/consume_key
 execute if score @s ff_lock_look matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:key/start_cooldown

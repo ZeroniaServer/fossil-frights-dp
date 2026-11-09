@@ -48,7 +48,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/heists/hazard_cookie"
+                  "value": "fossil_frights:items/heists/evilnog"
                 },
                 {
                   "type": "minecraft:loot_table",
