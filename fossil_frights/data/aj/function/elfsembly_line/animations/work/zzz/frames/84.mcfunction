@@ -38,3 +38,4 @@ $data merge entity $(head4) {transformation: [-0.169f,0.1951f,-0.9661f,3.125f,0.
 $data merge entity $(left_arm4) {transformation: [0f,0.2588f,-0.9659f,3.125f,-0.0872f,0.9623f,0.2578f,0.6875f,0.9962f,0.0842f,0.0226f,-4.25f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(right_arm4) {transformation: [-0.4093f,-0.8802f,-0.2403f,3.125f,0.1806f,0.1801f,-0.9669f,0.6875f,0.8943f,-0.4392f,0.0852f,-3.6875f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(stick) {transformation: [-0.3105f,-0.4086f,-0.4093f,3.4715f,0.4115f,-0.3698f,0.1806f,0.3018f,-0.2252f,-0.1124f,0.8943f,-3.451f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+execute unless entity @s[tag=aj.transforms_only] run function aj:elfsembly_line/animations/work/zzz/frame_effects/84
