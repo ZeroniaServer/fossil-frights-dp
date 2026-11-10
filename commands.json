@@ -388,10 +388,6 @@
                                     "type": "literal",
                                     "executable": true
                                 },
-                                "open_clam": {
-                                    "type": "literal",
-                                    "executable": true
-                                },
                                 "plesio_hat": {
                                     "type": "literal",
                                     "executable": true

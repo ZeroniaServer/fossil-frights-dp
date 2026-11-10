@@ -31,7 +31,6 @@ execute unless score $scrape_resin_sel ff_task_state matches 1 run scoreboard pl
 execute unless score $sweep_snow_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $remove_dart_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $close_clam_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
-execute unless score $open_clam_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute unless score $plesio_hat_sel ff_task_state matches 1 run scoreboard players add #task_remaining ff_task_state 1
 execute if score #task_remaining ff_task_state matches ..0 run return 0
 
@@ -65,7 +64,6 @@ execute if score #task_remaining ff_task_state matches 27 store result score #ta
 execute if score #task_remaining ff_task_state matches 28 store result score #task_pick ff_task_state run random value 1..28
 execute if score #task_remaining ff_task_state matches 29 store result score #task_pick ff_task_state run random value 1..29
 execute if score #task_remaining ff_task_state matches 30 store result score #task_pick ff_task_state run random value 1..30
-execute if score #task_remaining ff_task_state matches 31 store result score #task_pick ff_task_state run random value 1..31
 
 scoreboard players set #task_cursor ff_task_state 0
 scoreboard players set #task_done ff_task_state 0
@@ -157,9 +155,6 @@ execute unless score $remove_dart_sel ff_task_state matches 1 if score #task_don
 execute unless score $close_clam_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $close_clam_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/close_clam/selected
 execute unless score $close_clam_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
-execute unless score $open_clam_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
-execute unless score $open_clam_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/open_clam/selected
-execute unless score $open_clam_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1
 execute unless score $plesio_hat_sel ff_task_state matches 1 run scoreboard players add #task_cursor ff_task_state 1
 execute unless score $plesio_hat_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run function fossil_frights:tasks/easy/plesio_hat/selected
 execute unless score $plesio_hat_sel ff_task_state matches 1 if score #task_done ff_task_state matches 0 if score #task_cursor ff_task_state = #task_pick ff_task_state run scoreboard players set #task_done ff_task_state 1

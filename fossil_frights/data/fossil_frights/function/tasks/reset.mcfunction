@@ -64,8 +64,6 @@ scoreboard players set $remove_dart_sel ff_task_state 0
 scoreboard players set $remove_dart_done ff_task_state 0
 scoreboard players set $close_clam_sel ff_task_state 0
 scoreboard players set $close_clam_done ff_task_state 0
-scoreboard players set $open_clam_sel ff_task_state 0
-scoreboard players set $open_clam_done ff_task_state 0
 scoreboard players set $plesio_hat_sel ff_task_state 0
 scoreboard players set $plesio_hat_done ff_task_state 0
 
@@ -192,7 +190,6 @@ scoreboard players reset $tt_scrape_resin ff_task_tracker
 scoreboard players reset $tt_sweep_snow ff_task_tracker
 scoreboard players reset $tt_remove_dart ff_task_tracker
 scoreboard players reset $tt_close_clam ff_task_tracker
-scoreboard players reset $tt_open_clam ff_task_tracker
 scoreboard players reset $tt_plesio_hat ff_task_tracker
 scoreboard players reset $tt_visit_archean ff_task_tracker
 scoreboard players reset $tt_dive_into_outhouse ff_task_tracker
@@ -274,7 +271,6 @@ function fossil_frights:tasks/easy/scrape_resin/reset
 function fossil_frights:tasks/easy/sweep_snow/reset
 function fossil_frights:tasks/easy/remove_dart/reset
 function fossil_frights:tasks/easy/close_clam/reset
-function fossil_frights:tasks/easy/open_clam/reset
 function fossil_frights:tasks/easy/plesio_hat/reset
 function fossil_frights:tasks/medium/chlorinify/reset
 function fossil_frights:tasks/medium/credit_reel/reset

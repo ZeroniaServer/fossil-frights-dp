@@ -125,12 +125,6 @@ execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"clo
 execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"close_clam"}}] run scoreboard players set #line_close_clam ff_task_state 996
 execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"close_clam"}}] run scoreboard players set #line_close_clam ff_task_state 995
 execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"close_clam"}}] run scoreboard players set #line_close_clam ff_task_state 994
-execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 999
-execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 998
-execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 997
-execute if items block 18 71 29 container.3 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 996
-execute if items block 18 71 29 container.4 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 995
-execute if items block 18 71 29 container.5 *[custom_data~{ff_task_book:{id:"open_clam"}}] run scoreboard players set #line_open_clam ff_task_state 994
 execute if items block 18 71 29 container.0 *[custom_data~{ff_task_book:{id:"plesio_hat"}}] run scoreboard players set #line_plesio_hat ff_task_state 999
 execute if items block 18 71 29 container.1 *[custom_data~{ff_task_book:{id:"plesio_hat"}}] run scoreboard players set #line_plesio_hat ff_task_state 998
 execute if items block 18 71 29 container.2 *[custom_data~{ff_task_book:{id:"plesio_hat"}}] run scoreboard players set #line_plesio_hat ff_task_state 997

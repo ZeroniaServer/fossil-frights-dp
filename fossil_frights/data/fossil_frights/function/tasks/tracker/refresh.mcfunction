@@ -22,7 +22,6 @@ function fossil_frights:tasks/tracker/update_sidebar {task:"scrape_resin"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"sweep_snow"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"remove_dart"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"close_clam"}
-function fossil_frights:tasks/tracker/update_sidebar {task:"open_clam"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"plesio_hat"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"polish_bell"}
 function fossil_frights:tasks/tracker/update_sidebar {task:"reset_fountain"}

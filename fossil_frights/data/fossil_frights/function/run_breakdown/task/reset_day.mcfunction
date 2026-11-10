@@ -27,7 +27,6 @@ scoreboard players set $scrape_resin_rb ff_run_breakdown 0
 scoreboard players set $sweep_snow_rb ff_run_breakdown 0
 scoreboard players set $remove_dart_rb ff_run_breakdown 0
 scoreboard players set $close_clam_rb ff_run_breakdown 0
-scoreboard players set $open_clam_rb ff_run_breakdown 0
 scoreboard players set $plesio_hat_rb ff_run_breakdown 0
 scoreboard players set $ancient_portal_rb ff_run_breakdown 0
 scoreboard players set $chlorinify_rb ff_run_breakdown 0
