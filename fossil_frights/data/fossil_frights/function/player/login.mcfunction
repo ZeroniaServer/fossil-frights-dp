@@ -1,6 +1,7 @@
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:game/bossbar/sync_login_player
 function fossil_frights:player/clear_posteffects
 execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:hallucination/effects/snowstorm/apply
+execute if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/apply
 tag @s remove ff_hoverboard_active
 function fossil_frights:items/hoverboard/durability/clear_all_active
 tag @s remove ff_muted_chat
@@ -77,6 +78,7 @@ execute if score @s ff_active_uuid_0 = $lb_pending ff_active_uuid_0 if score @s 
 function fossil_frights:player/set_team/none
 function fossil_frights:player/clear_posteffects
 execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:hallucination/effects/snowstorm/apply
+execute if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/apply
 tag @s remove ff_tp_dispatch
 tag @s remove ff_fade_tp_active
 tag @s remove ff_join_spectator_zone

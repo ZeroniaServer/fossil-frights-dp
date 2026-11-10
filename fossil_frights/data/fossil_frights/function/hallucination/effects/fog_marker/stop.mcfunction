@@ -1,0 +1,2 @@
+schedule clear fossil_frights:hallucination/effects/fog_marker/clear_transition
+schedule function fossil_frights:hallucination/effects/fog_marker/clear_transition 2s

@@ -6,10 +6,11 @@ scoreboard players set $h_darkness ff_hallucination 0
 scoreboard players set $h_freezing_floods ff_hallucination 0
 execute if score $h_snowstorm ff_hallucination matches 1 run function fossil_frights:hallucination/effects/snowstorm/stop
 scoreboard players set $h_snowstorm ff_hallucination 0
-function fossil_frights:hallucination/effects/snowstorm/clear_all
 scoreboard players set #snowstorm_particle_timer ff_hallucination 0
 scoreboard players set $h_elf_infestation ff_hallucination 0
 scoreboard players set $h_chimney_smoke ff_hallucination 0
+function fossil_frights:hallucination/effects/fog_marker/clear_all
+scoreboard players set #chimney_smoke_particle_timer ff_hallucination 0
 scoreboard players set #h_active_count ff_hallucination 0
 scoreboard players set #h_timer ff_hallucination 0
 scoreboard players set #h_was_zero ff_hallucination 0

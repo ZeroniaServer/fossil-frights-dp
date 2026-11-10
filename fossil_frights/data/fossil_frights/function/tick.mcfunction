@@ -12,6 +12,7 @@ execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:player/clear_posteffects
 execute as @a[tag=ff_tp_dispatch,predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:hallucination/effects/snowstorm/apply
+execute as @a[tag=ff_tp_dispatch,predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/apply
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
@@ -93,6 +94,8 @@ function fossil_frights:game/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:hallucination/tick
 execute if predicate fossil_frights:game_state/hallucination_active/darkness run function fossil_frights:hallucination/effects/darkness/tick
 execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:hallucination/effects/snowstorm/tick
+execute if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/tick
+execute if predicate fossil_frights:game_state/hallucination_active/fog_marker run function fossil_frights:hallucination/effects/fog_marker/tick
 function fossil_frights:hallucination/effects/jolly_curse/tick
 function fossil_frights:frightmas/aurora/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick

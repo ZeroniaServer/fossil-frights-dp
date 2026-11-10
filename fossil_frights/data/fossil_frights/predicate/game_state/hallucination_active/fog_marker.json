@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "fossil_frights:game_state/hallucination_active/snowstorm",
+    "fossil_frights:game_state/hallucination_active/chimney_smoke"
+  ]
+}

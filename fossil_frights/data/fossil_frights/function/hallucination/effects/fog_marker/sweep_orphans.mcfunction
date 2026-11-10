@@ -1,0 +1,2 @@
+execute if predicate fossil_frights:game_state/hallucination_active/fog_marker as @e[type=minecraft:item_display,tag=fog_marker,tag=ff_hallucination_fog_marker] run function fossil_frights:hallucination/effects/fog_marker/cleanup_orphan_markers
+execute if predicate fossil_frights:game_state/hallucination_active/fog_marker run schedule function fossil_frights:hallucination/effects/fog_marker/sweep_orphans 5s
