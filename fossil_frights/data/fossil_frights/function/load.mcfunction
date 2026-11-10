@@ -314,7 +314,7 @@ scoreboard players set #rejoin_grace ff_constant 2400
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
 scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set #day_full ff_day 6000
-scoreboard players set #dinonog_max ff_dinonog 6000
+scoreboard players set #dinonog_max ff_dinonog 3600
 scoreboard players set #dinonog_glyph_max ff_dinonog 39
 scoreboard players set #h_interval ff_hallucination 600
 scoreboard players set #h_options ff_hallucination 7
