@@ -1,6 +1,9 @@
 execute unless score $loot_ice_sculpture ff_heist_loot_state matches 0 run return 0
 setblock 68 83 46 minecraft:air
+
+execute as @e[limit=1,type=minecraft:interaction,tag=ff_heist_loot_ice_sculpture_button] at @s run function fossil_frights:interactions/button/enable
 setblock 71 83 46 minecraft:cherry_button[facing=west]
+
 scoreboard players set $loot_ice_sculpture ff_heist_loot_state 1
 execute store result score $loot_ice_sculpture ff_heist_loot_value run random value 1..5
 execute if score $loot_ice_sculpture ff_heist_loot_value matches 1 run scoreboard players set $loot_ice_sculpture ff_heist_loot_value 550

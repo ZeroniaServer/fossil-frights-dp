@@ -108,7 +108,10 @@ scoreboard players set $loot_ice_sculpture ff_heist_loot_state 0
 scoreboard players set $loot_ice_sculpture ff_heist_loot_value 0
 scoreboard players set $loot_ice_sculpture ff_heist_flash 0
 scoreboard players reset $loot_ice_sculpture ff_heist_sidebar
+
+execute as @e[limit=1,type=minecraft:interaction,tag=ff_heist_loot_ice_sculpture_button] at @s run function fossil_frights:interactions/button/disable
 setblock 71 83 46 minecraft:air
+
 setblock 68 83 46 minecraft:chorus_plant
 function fossil_frights:game/heists/loot/rare/ice_sculpture/reset_location
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0

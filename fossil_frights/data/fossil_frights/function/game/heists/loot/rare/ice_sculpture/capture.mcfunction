@@ -9,7 +9,10 @@ scoreboard players operation $heist_loot ff_heist += $loot_ice_sculpture ff_heis
 function fossil_frights:game/heists/loot/header
 scoreboard players set $loot_ice_sculpture ff_heist_loot_state 3
 scoreboard players set $loot_ice_sculpture ff_heist_flash 0
+
+execute as @e[limit=1,type=minecraft:interaction,tag=ff_heist_loot_ice_sculpture_button] at @s run function fossil_frights:interactions/button/disable
 setblock 71 83 46 minecraft:air
+
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
 execute as @a[predicate=fossil_frights:player/team/guard,gamemode=!spectator] run scoreboard players operation @s ff_heist_reward = #capture_value ff_heist_loot_value
