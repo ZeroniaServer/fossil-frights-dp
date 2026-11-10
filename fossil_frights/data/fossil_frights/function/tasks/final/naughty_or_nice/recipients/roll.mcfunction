@@ -1,10 +1,8 @@
 execute store result score #naughty_or_nice_slot_1 ff_task_state run random value 1..10
 execute store result score #naughty_or_nice_slot_2 ff_task_state run random value 1..9
 execute if score #naughty_or_nice_slot_2 ff_task_state >= #naughty_or_nice_slot_1 ff_task_state run scoreboard players add #naughty_or_nice_slot_2 ff_task_state 1
-execute if score #naughty_or_nice_slot_1 ff_task_state matches 10 run scoreboard players set #naughty_or_nice_slot_1 ff_task_state 20
-execute if score #naughty_or_nice_slot_2 ff_task_state matches 10 run scoreboard players set #naughty_or_nice_slot_2 ff_task_state 20
-execute store result score #naughty_or_nice_slot_3 ff_task_state run random value 10..19
-execute store result score #naughty_or_nice_slot_4 ff_task_state run random value 10..18
+execute store result score #naughty_or_nice_slot_3 ff_task_state run random value 11..20
+execute store result score #naughty_or_nice_slot_4 ff_task_state run random value 11..19
 execute if score #naughty_or_nice_slot_4 ff_task_state >= #naughty_or_nice_slot_3 ff_task_state run scoreboard players add #naughty_or_nice_slot_4 ff_task_state 1
 execute store result score #naughty_or_nice_naughty ff_task_state run random value 1..4
 scoreboard players operation #naughty_or_nice_tmp ff_task_state = #naughty_or_nice_slot_4 ff_task_state
