@@ -27,4 +27,5 @@ function fossil_frights:hazard/floods/stop
 function fossil_frights:hazard/security/stop
 function fossil_frights:hazard/curse/stop
 function fossil_frights:hazard/lava/map/update
+function fossil_frights:hallucination/reset
 function fossil_frights:game/bossbar/update_hazards
