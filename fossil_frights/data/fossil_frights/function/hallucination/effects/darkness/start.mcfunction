@@ -1,4 +1,4 @@
-execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fossil_frights:hallucinations.darkness master @s ~ ~ ~ 1 1
+execute if score #lights_start_phase ff_hazard_rng matches 0 as @a[predicate=fossil_frights:player/is_playing] at @s run playsound fossil_frights:hallucinations.darkness master @s ~ ~ ~ 1 1
 execute if score #lights_start_phase ff_hazard_rng matches 0 run schedule clear fossil_frights:hallucination/effects/darkness/stop
 execute if score #lights_start_phase ff_hazard_rng matches 0 run scoreboard players set #lights_stop_phase ff_hazard_rng 0
 execute if score #lights_start_phase ff_hazard_rng matches 0 run scoreboard players set #darkness_waves_restored ff_hallucination 0
