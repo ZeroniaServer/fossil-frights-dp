@@ -65,7 +65,6 @@ scoreboard objectives add ff_run_order dummy
 scoreboard objectives add ff_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ff_leave_game_seen dummy
 scoreboard objectives add ff_deaths deathCount
-scoreboard objectives add death deathCount
 scoreboard objectives add ff_deaths_seen dummy
 scoreboard objectives add ff_heist_deaths_baseline dummy
 scoreboard objectives add ff_join_cooldown dummy
@@ -213,6 +212,7 @@ scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
+scoreboard objectives add ff_immediately_detect_death minecraft.custom:minecraft.deaths
 scoreboard players reset @a ff_tp_delay
 scoreboard players reset @a ff_tp_action
 tag @a remove ff_tp_dispatch

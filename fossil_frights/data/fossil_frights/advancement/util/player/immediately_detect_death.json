@@ -1,13 +1,14 @@
 {
+  "parent": "fossil_frights:detection_root",
   "criteria": {
-    "playerDied": {
+    "immediately_detect_death": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "player": {
           "type": "minecraft:entity_scores",
           "entity": "this",
           "scores": {
-            "death": {
+            "ff_immediately_detect_death": {
               "min": 1
             }
           }
@@ -16,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:player/coins/drop_coin"
+    "function": "fossil_frights:player/death/immediately_on_death"
   }
 }
