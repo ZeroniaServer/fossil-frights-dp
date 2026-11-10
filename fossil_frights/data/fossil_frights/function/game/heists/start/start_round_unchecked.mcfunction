@@ -3,11 +3,19 @@ scoreboard players set $heist_round_active ff_game_state 1
 scoreboard players set #dinonog_max ff_dinonog 100
 scoreboard players set #dinonog_bar ff_dinonog 100
 scoreboard players set #dinonog_last_frame ff_dinonog -1
-bossbar remove fossil_frights:dinonog
+function fossil_frights:messages/bossbar/game_starting
+bossbar add fossil_frights:hazards [{"text":""}]
+bossbar set fossil_frights:hazards players @a
+bossbar set fossil_frights:hazards visible true
+bossbar set fossil_frights:hazards color blue
+bossbar set fossil_frights:hazards style progress
+bossbar set fossil_frights:hazards max 1
+bossbar set fossil_frights:hazards value 1
 bossbar add fossil_frights:dinonog {text:"\ue700",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}
 bossbar set fossil_frights:dinonog color blue
-bossbar set fossil_frights:dinonog players @a
 bossbar set fossil_frights:dinonog max 100
+bossbar set fossil_frights:dinonog players @a
+bossbar set fossil_frights:dinonog visible true
 function fossil_frights:frights/dinonog/update
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run function fossil_frights:game/rejoin/state/register
 execute as @a[predicate=fossil_frights:player/team/thief] at @s run function fossil_frights:game/rejoin/state/register
@@ -38,7 +46,6 @@ scoreboard players set $heist_compass_counting ff_compass 0
 schedule clear fossil_frights:game/heists/start_reveal/next
 schedule clear fossil_frights:game/heists/start_reveal/goodluck
 schedule clear fossil_frights:game/heists/start_reveal/go
-function fossil_frights:messages/bossbar/game_starting
 scoreboard objectives setdisplay sidebar
 scoreboard players reset $loot ff_heist_sidebar
 scoreboard players reset @a ff_heist_loot_captured_round

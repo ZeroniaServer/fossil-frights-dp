@@ -3,25 +3,17 @@ function fossil_frights:game/heists/waiting_text/hide
 function fossil_frights:game/heists/release_thieves
 function fossil_frights:items/heists/trap/balance/compute
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:items/heists/trap/round_start_release
-bossbar remove fossil_frights:hazards
-bossbar remove fossil_frights:bossbar
-bossbar add fossil_frights:bossbar [{translate:"ff.heists.bossbar",font:"fossil_frights:small_caps",color:"gold",with:[{text:"10:00",font:"minecraft:default"}]}]
-bossbar set fossil_frights:bossbar players @a
+bossbar set fossil_frights:bossbar name [{translate:"ff.heists.bossbar",font:"fossil_frights:small_caps",color:"gold",with:[{text:"10:00",font:"minecraft:default"}]}]
 bossbar set fossil_frights:bossbar visible true
 bossbar set fossil_frights:bossbar color white
 bossbar set fossil_frights:bossbar style progress
 bossbar set fossil_frights:bossbar max 12000
 bossbar set fossil_frights:bossbar value 0
-bossbar add fossil_frights:hazards [{"text":""}]
-bossbar set fossil_frights:hazards players @a
 bossbar set fossil_frights:hazards visible true
 bossbar set fossil_frights:hazards color blue
 bossbar set fossil_frights:hazards style progress
 bossbar set fossil_frights:hazards max 1
 bossbar set fossil_frights:hazards value 1
-bossbar set fossil_frights:dinonog max 100
-bossbar set fossil_frights:dinonog players @a
-bossbar set fossil_frights:dinonog visible true
 function fossil_frights:game/bossbar/speedrun/setup
 function fossil_frights:game/bossbar/update_hazards
 time of minecraft:overworld resume
