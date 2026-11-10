@@ -217,8 +217,7 @@ scoreboard players reset @a ff_tp_delay
 scoreboard players reset @a ff_tp_action
 tag @a remove ff_tp_dispatch
 tag @a remove ff_fade_tp_active
-execute as @a run function fossil_frights:cameras/clear_posteffect
-posteffect clear @a
+execute as @a run function fossil_frights:player/clear_posteffects
 scoreboard objectives add ff_heist dummy
 scoreboard objectives add ff_heist_sidebar dummy
 scoreboard objectives add ff_heist_punch_cd dummy
