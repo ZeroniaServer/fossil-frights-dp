@@ -32,7 +32,7 @@ scoreboard players remove @e[type=minecraft:interaction,tag=ff_lock_click,scores
 tag @a remove ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/guard] add ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
-execute if predicate fossil_frights:game_state/hazard_active/curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
+execute if predicate fossil_frights:game_state/hallucination_active/jolly_curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
@@ -76,9 +76,7 @@ execute if score $ancient_portal_timer ff_task_state matches 1.. run function fo
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
 execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
 execute if predicate fossil_frights:game_state/hazard_active/floods run function fossil_frights:hazard/floods/tick
-function fossil_frights:hazard/lights/tick
 function fossil_frights:hazard/lava/tick
-function fossil_frights:hazard/curse/tick
 function fossil_frights:hazard/security/tick
 function fossil_frights:cameras/swivel/tick
 function fossil_frights:cameras/update_camera_models
@@ -93,6 +91,8 @@ execute if predicate fossil_frights:game_state/game_running unless entity @a[lim
 execute unless predicate fossil_frights:world/is_singleplayer as @a if score @s ff_singleplayer_world_time > @s ff_singleplayer_play_time run function fossil_frights:game/frights/timer/detect_singleplayer/activate
 function fossil_frights:game/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:hallucination/tick
+execute if predicate fossil_frights:game_state/hallucination_active/darkness run function fossil_frights:hallucination/effects/darkness/tick
+function fossil_frights:hallucination/effects/jolly_curse/tick
 function fossil_frights:frightmas/aurora/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
 execute if score $settings_locked ff_game_state matches 0 run function fossil_frights:game/start_room/settings/board/tick

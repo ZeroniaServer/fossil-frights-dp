@@ -1,0 +1,2 @@
+execute if predicate fossil_frights:game_state/hallucination_active/darkness run loot replace entity @e[type=minecraft:item_display,tag=camera_computer,limit=1] contents loot fossil_frights:display/darkness_hallucination/active
+execute unless predicate fossil_frights:game_state/hallucination_active/darkness run loot replace entity @e[type=minecraft:item_display,tag=camera_computer,limit=1] contents loot fossil_frights:display/darkness_hallucination/inactive
