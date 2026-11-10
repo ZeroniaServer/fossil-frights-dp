@@ -216,6 +216,26 @@
                         "vault": {
                             "type": "literal",
                             "executable": true
+                        },
+                        "dinonog": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "star": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "hot_chocolate": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "coal": {
+                            "type": "literal",
+                            "executable": true
+                        },
+                        "pumpkin": {
+                            "type": "literal",
+                            "executable": true
                         }
                     }
                 },
