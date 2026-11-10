@@ -1,0 +1,2 @@
+execute positioned -10.5 70.0 28.5 unless entity @e[type=minecraft:item_display,tag=aj.elfsembly_line.root,distance=..0.1,limit=1] rotated 180 0 run function aj:elfsembly_line/summon {args:{variant:"default"}}
+execute positioned -10.5 70.0 28.5 as @e[type=minecraft:item_display,tag=aj.elfsembly_line.root,tag=!aj.elfsembly_line.animation.work.playing,distance=..0.1,limit=1] at @s run function aj:elfsembly_line/animations/work/play
