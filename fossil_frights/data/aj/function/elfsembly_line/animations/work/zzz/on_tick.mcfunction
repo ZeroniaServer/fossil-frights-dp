@@ -7,5 +7,6 @@ execute if score @s aj.elfsembly_line.work.frame matches -1 run function aj:elfs
 data remove storage animated_java:temp args
 execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.elfsembly_line.work.frame
 function aj:elfsembly_line/animations/work/zzz/apply_frame with storage animated_java:temp args
+tag @s remove aj.elfsembly_line.animation.work.loop_wrap
 execute if score @s aj.elfsembly_line.work.frame matches 139.. run return run scoreboard players set @s aj.elfsembly_line.work.frame -1
 scoreboard players add @s aj.elfsembly_line.work.frame 1
