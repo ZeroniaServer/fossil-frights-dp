@@ -135,6 +135,7 @@ execute if score @s join_thief matches 1.. run scoreboard players set @s join_th
 execute if score @s spawn matches 1.. run function fossil_frights:command/spawn
 execute if score @s spawn matches 1.. run scoreboard players enable @s spawn
 execute if score @s spawn matches 1.. run scoreboard players set @s spawn 0
+execute if score @s death matches 1.. run scoreboard players reset @s death
 execute if score @s speedruntask matches ..-1 run function fossil_frights:command/speedruntask
 execute if score @s speedruntask matches 1.. run function fossil_frights:command/speedruntask
 execute if score @s speedruntask matches ..-1 run scoreboard players enable @s speedruntask
