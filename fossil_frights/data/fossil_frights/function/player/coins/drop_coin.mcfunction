@@ -1,4 +1,4 @@
-execute unless fossil_frights:game_state/game_running run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active run return 0
 
 execute if predicate execute if items entity @s fossil_frights:player/all *[minecraft:custom_data~{itemID:"dinocoin"}] run tag @s add fh_has_coin
 $execute if entity @s[tag=fh_has_coin] run loot spawn ~ ~ ~ fossil_frights:items/dinocoin
