@@ -18,6 +18,7 @@ data modify storage fossil_frights:door editor_dialog set value {\
     {type:"minecraft:single_option",key:"sound_type",label:"sound_type",options:[{id:"wooden"},{id:"bamboo_wood"},{id:"cherry_wood"},{id:"copper"},{id:"iron"},{id:"nether_wood"}]},\
     {type:"minecraft:single_option",key:"facing",label:"facing",options:[{id:"north"},{id:"east"},{id:"south"},{id:"west"}]},\
     {type:"minecraft:single_option",key:"hinge",label:"hinge",options:[{id:"left"},{id:"right"}]},\
+    {type:"minecraft:single_option",key:"one_way",label:"one_way",options:[{id:"off",display:"Not locked"},{id:"front",display:"Locked from the back"},{id:"back",display:"Locked from the front"}]},\
     {type:"minecraft:text",key:"sign_text_translation_key",label:"sign_text_translation_key",initial:"",max_length:64},\
     {type:"minecraft:text",key:"sign_text_line_1_color",label:"sign_text_line_1_color",initial:"white",max_length:64},\
     {type:"minecraft:text",key:"sign_text_line_2_color",label:"sign_text_line_2_color",initial:"white",max_length:64},\
@@ -25,7 +26,7 @@ data modify storage fossil_frights:door editor_dialog set value {\
     {type:"minecraft:text",key:"sign_text_line_4_color",label:"sign_text_line_4_color",initial:"white",max_length:64},\
   ],\
   pause: false,\
-  yes: {label:"Confirm",action:{type:"minecraft:dynamic/run_command",template:"execute as $(uuid) at @s run function fossil_frights:interactions/door/editor/input {model_type:\"$(model_type)\",sound_type:\"$(sound_type)\",facing:\"$(facing)\",hinge:\"$(hinge)\",sign_text_translation_key:\"$(sign_text_translation_key)\",sign_text_line_1_color:\"$(sign_text_line_1_color)\",sign_text_line_2_color:\"$(sign_text_line_2_color)\",sign_text_line_3_color:\"$(sign_text_line_3_color)\",sign_text_line_4_color:\"$(sign_text_line_4_color)\"}"}},\
+  yes: {label:"Confirm",action:{type:"minecraft:dynamic/run_command",template:"execute as $(uuid) at @s run function fossil_frights:interactions/door/editor/input {model_type:\"$(model_type)\",sound_type:\"$(sound_type)\",facing:\"$(facing)\",hinge:\"$(hinge)\",one_way:\"$(one_way)\",sign_text_translation_key:\"$(sign_text_translation_key)\",sign_text_line_1_color:\"$(sign_text_line_1_color)\",sign_text_line_2_color:\"$(sign_text_line_2_color)\",sign_text_line_3_color:\"$(sign_text_line_3_color)\",sign_text_line_4_color:\"$(sign_text_line_4_color)\"}"}},\
   no: {label:{translate:"gui.cancel"}}\
 }
 
@@ -48,6 +49,10 @@ execute if block ~ ~ ~ #doors[facing=south] run data modify storage fossil_frigh
 execute if block ~ ~ ~ #doors[facing=west] run data modify storage fossil_frights:door editor_dialog.inputs[{key:"facing"}].options[{id:"west"}].initial set value true
 
 execute if data storage fossil_frights:door door_data{hinge:"right"} run data modify storage fossil_frights:door editor_dialog.inputs[{key:"hinge"}].options[{id:"right"}].initial set value true
+
+execute unless predicate fossil_frights:entity/door/one_way run data modify storage fossil_frights:door editor_dialog.inputs[{key:"one_way"}].options[{id:"off"}].initial set value true
+execute if entity @s[tag=ff_door.one_way.front] run data modify storage fossil_frights:door editor_dialog.inputs[{key:"one_way"}].options[{id:"front"}].initial set value true
+execute if entity @s[tag=ff_door.one_way.back] run data modify storage fossil_frights:door editor_dialog.inputs[{key:"one_way"}].options[{id:"back"}].initial set value true
 
 data remove storage fossil_frights:door text_data
 execute on passengers run data modify storage fossil_frights:door text_data set from entity @s[type=minecraft:text_display] text
