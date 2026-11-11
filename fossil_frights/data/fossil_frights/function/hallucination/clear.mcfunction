@@ -11,7 +11,7 @@ execute if score $h_freezing_floods ff_hallucination matches 1 run function foss
 scoreboard players set $h_freezing_floods ff_hallucination 0
 execute if score $h_snowstorm ff_hallucination matches 1 run function fossil_frights:hallucination/effects/snowstorm/stop
 scoreboard players set $h_snowstorm ff_hallucination 0
-execute if score $h_elf_infestation ff_hallucination matches 1 run function fossil_frights:hallucination/effects/elf_infestation/stop
+function fossil_frights:hallucination/effects/elf_infestation/stop
 scoreboard players set $h_elf_infestation ff_hallucination 0
 execute if score $h_chimney_smoke ff_hallucination matches 1 run function fossil_frights:hallucination/effects/chimney_smoke/stop
 scoreboard players set $h_chimney_smoke ff_hallucination 0
