@@ -8,5 +8,5 @@ execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene ma
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 6 run function fossil_frights:tutorial/scene/easy_tasks
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 7 run function fossil_frights:tutorial/scene/medium_tasks
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 8 run function fossil_frights:tutorial/scene/hard_tasks
-execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 9 run function fossil_frights:tutorial/scene/hazards
+execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 9 run function fossil_frights:tutorial/scene/hallucinations
 execute unless entity @s[tag=ff_fade_tp_active] if score @s ff_tutorial_scene matches 10 run function fossil_frights:tutorial/scene/outro
