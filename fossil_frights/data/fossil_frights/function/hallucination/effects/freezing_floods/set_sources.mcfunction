@@ -1,7 +1,6 @@
 # Basement
 setblock -24 75 42 minecraft:water
 setblock -1 75 33 minecraft:water
-setblock -23 75 21 minecraft:water
 
 # Theatre
 setblock 20 78 69 minecraft:water

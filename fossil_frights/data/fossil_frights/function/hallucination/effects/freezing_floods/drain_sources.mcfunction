@@ -1,7 +1,6 @@
 # Basement
 execute positioned -24 75 42 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned -1 75 33 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
-execute positioned -23 75 21 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 
 # Theatre
 execute positioned 20 78 69 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
