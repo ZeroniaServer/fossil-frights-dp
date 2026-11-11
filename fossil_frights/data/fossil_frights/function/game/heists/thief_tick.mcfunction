@@ -23,7 +23,6 @@ execute if predicate fossil_frights:game_state/hallucination_active/darkness unl
 execute if predicate fossil_frights:game_state/hallucination_active/freezing_floods run effect give @s minecraft:dolphins_grace 2 0 true
 execute if predicate fossil_frights:game_state/hallucination_active/darkness if entity @s[predicate=fossil_frights:entity/effects/blindness] run effect clear @s minecraft:night_vision
 execute unless predicate fossil_frights:game_state/hallucination_active/darkness run effect clear @s minecraft:night_vision
-execute if predicate fossil_frights:game_state/hazard_active/lava run effect give @s minecraft:fire_resistance 2 0 true
 function fossil_frights:game/heists/heavy_loot/hold_check
 execute if entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/reduce
 execute unless entity @s[tag=ff_ice_frozen] run function fossil_frights:game/heists/jump_boost/restore

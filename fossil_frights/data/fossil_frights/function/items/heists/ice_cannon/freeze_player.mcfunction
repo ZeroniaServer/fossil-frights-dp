@@ -1,7 +1,8 @@
 function fossil_frights:util/player/extinguish
-execute if predicate fossil_frights:game_state/hazard_active/lava run function fossil_frights:items/heists/ice_cannon/lava_hit_player
-execute if predicate fossil_frights:game_state/hazard_active/lava run damage @s 1 minecraft:freeze
-execute if predicate fossil_frights:game_state/hazard_active/lava run return 0
+execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:items/heists/ice_cannon/melt_hit_player
+execute if predicate fossil_frights:game_state/hallucination_active/avalanche unless predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:items/heists/ice_cannon/melt_hit_player
+execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run return 0
+execute if predicate fossil_frights:game_state/hallucination_active/avalanche run return 0
 execute if entity @s[tag=ff_ice_frozen] run return 0
 execute unless score @s ff_active_uuid_0 matches -2147483648..2147483647 run return 0
 execute unless score @s ff_active_uuid_1 matches -2147483648..2147483647 run return 0

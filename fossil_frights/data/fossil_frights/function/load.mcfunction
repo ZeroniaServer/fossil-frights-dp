@@ -312,7 +312,6 @@ scoreboard players set #360 ff_constant 360
 scoreboard players set #ticks_per_minute ff_constant 1200
 scoreboard players set #rejoin_grace ff_constant 2400
 scoreboard players set #daylight_cycle_timeline_length ff_constant 24000
-scoreboard players set #hazard_count ff_hazard_rng 5
 scoreboard players set #day_full ff_day 6000
 scoreboard players set #dinonog_max ff_dinonog 3600
 scoreboard players set #dinonog_glyph_max ff_dinonog 39
@@ -348,8 +347,6 @@ scoreboard players set $heist_flash ff_heist 0
 scoreboard players set $heist_sidebar_slot ff_heist 12
 scoreboard players set $heist_uncommon_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
-scoreboard players set $heist_basement_remaining ff_heist 0
-scoreboard players set $heist_basement_lava_lock ff_heist 0
 scoreboard players set $day_current ff_day 0
 scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0

@@ -1,8 +1,5 @@
 data modify storage fossil_frights:bossbar components set value [""]
 
-# lava
-execute unless score $heist_basement_lava_lock ff_heist matches 1.. if predicate fossil_frights:game_state/hazard_active/lava run data modify storage fossil_frights:bossbar components append value "\ue121"
-execute if score $heist_basement_lava_lock ff_heist matches 1.. run data modify storage fossil_frights:bossbar components append value "\ue121\ue125"
 # security
 execute if predicate fossil_frights:game_state/hazard_active/security run data modify storage fossil_frights:bossbar components append value "\ue123"
 execute if predicate fossil_frights:game_state/hallucination_active/jolly_curse run data modify storage fossil_frights:bossbar components append value {text:"\ue134",font:"fossil_frights:icons/hallucinations"}

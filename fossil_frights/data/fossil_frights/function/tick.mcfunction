@@ -75,7 +75,6 @@ function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
-function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/security/tick
 function fossil_frights:cameras/swivel/tick
 function fossil_frights:cameras/update_camera_models

@@ -6,7 +6,6 @@ scoreboard players set $heist_uncommon_selected ff_heist 0
 scoreboard players set $heist_rare_selected ff_heist 0
 scoreboard players set $heist_heavy_selected ff_heist 0
 scoreboard players set $heist_roll ff_heist 0
-scoreboard players set $heist_basement_remaining ff_heist 0
 scoreboard players set $loot_poster_tube ff_heist_loot_state 0
 scoreboard players set $loot_poster_tube ff_heist_loot_value 0
 scoreboard players reset $loot_poster_tube ff_heist_sidebar

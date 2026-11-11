@@ -5,7 +5,6 @@ function fossil_frights:join/join_pads/clear
 scoreboard players set $join_pad_mode ff_game_state 0
 function fossil_frights:game/start_room/locked_door/clear
 function fossil_frights:game/heists/capture_point/clear
-function fossil_frights:game/heists/loot/reset_basement_lava_lock
 function fossil_frights:game/heists/loot/reset
 function fossil_frights:game/heists/loot/secure_loot/reset
 clear @a *[custom_data~{itemID:"lady_bug"}]

@@ -1,9 +1,9 @@
-scoreboard players set $lava ff_hazard_active 0
-scoreboard players set $security ff_hazard_active 0
-execute if score $heist_basement_lava_lock ff_heist matches 1.. run scoreboard players set $lava ff_hazard_active 1
-function fossil_frights:hazard/lava/map/update
+kill @e[type=minecraft:armor_stand,tag=ff_hazard_compass_target]
 
-function fossil_frights:hazard/lava/stop
+# direct resets
+function fossil_frights:interactions/glowberry_vine/reset
+tag @e[type=minecraft:item_display,tag=ff_security_gate] add ff_security_gate.silent
+
 function fossil_frights:hazard/security/stop
 function fossil_frights:game/bossbar/update_hazards
 function fossil_frights:hallucination/clear

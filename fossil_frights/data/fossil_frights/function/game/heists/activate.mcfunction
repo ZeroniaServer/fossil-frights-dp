@@ -8,7 +8,6 @@ scoreboard players set $heist_button_lock ff_game_state 20
 function fossil_frights:game/rejoin/cleanup/all
 scoreboard players set $run_multiplayer ff_game_state 1
 scoreboard players set $heist_mode_active ff_game_state 1
-function fossil_frights:hazard/lava/map/update
 scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_admin_bypass_team_check ff_game_state 0
 scoreboard players set $heist_thieves_ready ff_game_state 0
