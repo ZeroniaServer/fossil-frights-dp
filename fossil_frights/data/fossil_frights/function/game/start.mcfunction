@@ -63,11 +63,8 @@ scoreboard players reset @a[predicate=fossil_frights:player/team/guard] ff_coin_
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_delta 0
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_sign 0
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/clear
-tag @a[predicate=fossil_frights:player/team/guard] remove ff_map_auto_given
-tag @a[predicate=fossil_frights:player/team/guard] remove ff_map_claimed
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/equip_security_hat
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:key/give_waiting
-execute as @a[predicate=fossil_frights:player/team/guard,scores={ff_run_count=..9,ff_top_day=..9}] run function fossil_frights:map/give_start_room
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run spawnpoint @s 20 70 20
 scoreboard players set $bats_fright ff_game_state 0
 scoreboard players set $puffer_fright ff_game_state 0
@@ -81,10 +78,6 @@ scoreboard players set $day_result ff_day 0
 scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
-scoreboard players set $museum_map_claims ff_game_state 0
-scoreboard players set $museum_map_flash ff_game_state 0
-tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] add ff_museum_map_click
-tag @e[type=minecraft:interaction,tag=ff_museum_map_disabled] remove ff_museum_map_disabled
 scoreboard players set $game_running ff_game_state 1
 function fossil_frights:frightmas/santasaurus/spawn
 function fossil_frights:frightmas/elfsembly_line/spawn

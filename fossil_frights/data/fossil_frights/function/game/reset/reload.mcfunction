@@ -12,8 +12,6 @@ tag @a remove ff_skip_plushie_restore
 execute as @a run function fossil_frights:items/plushies/restore
 kill @e[type=minecraft:text_display,tag=ff_tutorial_camera]
 function fossil_frights:join/join_pads/reset
-tag @a remove ff_map_claimed
-tag @a remove ff_map_auto_given
 scoreboard players set $queue_start_token ff_queue_start_token 0
 scoreboard players set $queue_notify_lock ff_game_state 0
 scoreboard players set $join_pad_mode ff_game_state 0

@@ -4,7 +4,5 @@ execute as @a[predicate=fossil_frights:player/team/thief] at @s run playsound mi
 title @a[predicate=fossil_frights:player/team/thief] times 10 70 20
 execute as @a[predicate=fossil_frights:player/team/thief] run function fossil_frights:game/start_room/settings/speedrun/runtime/show_victory_subtitle
 title @a[predicate=fossil_frights:player/team/thief] title [{"text":"","font":"fossil_frights:title_overlays/victory_title","italic":false,"shadow_color":0}]
-tag @a[predicate=fossil_frights:player/team/thief] remove ff_map_claimed
-tag @a[predicate=fossil_frights:player/team/thief] remove ff_map_auto_given
 function fossil_frights:game/victory/fireworks/museum
 execute as @a[predicate=fossil_frights:player/team/thief] at @s run function fossil_frights:game/victory/fireworks/player

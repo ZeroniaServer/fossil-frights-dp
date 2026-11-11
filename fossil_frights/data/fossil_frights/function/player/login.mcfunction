@@ -5,8 +5,6 @@ execute if predicate fossil_frights:game_state/hallucination_active/chimney_smok
 tag @s remove ff_hoverboard_active
 function fossil_frights:items/hoverboard/durability/clear_all_active
 tag @s remove ff_muted_chat
-tag @s remove ff_map_claimed
-tag @s remove ff_map_auto_given
 function fossil_frights:player/reset_attributes
 function fossil_frights:player/reset_effects
 function fossil_frights:game/rejoin/login_restore

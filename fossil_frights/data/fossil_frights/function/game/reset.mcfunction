@@ -71,8 +71,6 @@ execute as @a[tag=ff_camera_remote_active] run function fossil_frights:items/hei
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_forced_spectate
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_camera_remote_active
 tag @a[predicate=fossil_frights:player/is_playing] remove ff_muted_chat
-tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_claimed
-tag @a[predicate=fossil_frights:player/is_playing] remove ff_map_auto_given
 execute as @a[predicate=fossil_frights:player/is_playing] run function fossil_frights:player/set_team/lobby
 function fossil_frights:game/party/reset
 function fossil_frights:game/heists/reset/main

@@ -9,36 +9,6 @@
                     "container.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "museum_map"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "slots": {
-                    "weapon.offhand": {
-                        "predicates": {
-                            "minecraft:custom_data": {
-                                "itemID": "museum_map"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "slots": {
-                    "container.*": {
-                        "predicates": {
-                            "minecraft:custom_data": {
                                 "ff_heist_camera_remote": true
                             }
                         }

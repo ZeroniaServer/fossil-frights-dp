@@ -403,8 +403,6 @@ scoreboard players set $heist_players_ready ff_game_state 0
 scoreboard players set $heist_thieves_ready ff_game_state 0
 scoreboard players set $heist_ready_click_at ff_button_unpress_timestamp -20
 scoreboard players set $heist_ready_click_diff ff_button_unpress_timestamp 0
-scoreboard players set $museum_map_claims ff_game_state 0
-scoreboard players set $museum_map_flash ff_game_state 0
 scoreboard players set $active_online ff_game_state 0
 scoreboard players set $login_is_run_member ff_game_state 0
 scoreboard players set $login_was_multiplayer ff_game_state 0
