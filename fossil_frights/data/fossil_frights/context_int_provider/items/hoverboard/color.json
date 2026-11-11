@@ -28,6 +28,14 @@
     {
       "condition": "fossil_frights:player/identity/evtema3",
       "value": -327680
+    },
+    {
+      "condition": "fossil_frights:player/identity/ialo01",
+      "value": 1841804
+    },
+    {
+      "condition": "fossil_frights:player/identity/hydrintegral",
+      "value": 5154984
     }
   ],
   "default": "fossil_frights:items/hoverboard/default_color"
