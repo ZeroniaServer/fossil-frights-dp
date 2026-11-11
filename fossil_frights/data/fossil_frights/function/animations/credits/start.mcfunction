@@ -22,6 +22,7 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "Evtema3",\
             "nightlibra",\
+            "Hydrintegral",\
             "",\
             "",\
             {translate:"ff.credits.role.plugin_developers",bold:true},\
@@ -35,6 +36,7 @@ data modify storage fossil_frights:credits credits set value [\
             "dork_orc",\
             "marten213",\
             "Snakemaster",\
+            "Hydrintegral",\
             "",\
             "",\
             {translate:"ff.credits.role.shaders",bold:true},\
