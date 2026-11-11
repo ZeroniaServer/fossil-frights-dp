@@ -15,5 +15,5 @@ execute positioned 11 90 71 run function fossil_frights:hallucination/effects/fr
 # Second floor
 execute positioned 0 100 47 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned 0 100 64 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
-execute positioned 12 108 72 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
+execute positioned 12 108 76 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned -17 100 26 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here

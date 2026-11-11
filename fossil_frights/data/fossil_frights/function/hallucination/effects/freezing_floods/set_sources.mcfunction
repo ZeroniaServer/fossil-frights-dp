@@ -15,5 +15,5 @@ setblock 11 90 71 minecraft:water
 # Second floor
 setblock 0 100 47 minecraft:water
 setblock 0 100 64 minecraft:water
-setblock 12 108 72 minecraft:water
+setblock 12 108 76 minecraft:water
 setblock -17 100 26 minecraft:water
