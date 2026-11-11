@@ -75,8 +75,6 @@ function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick
 execute as @a[scores={ff_key_cooldown=1..}] run function fossil_frights:key/cooldown_tick
-execute if score #floods_valve_cooldown ff_hazard_rng matches 1.. run scoreboard players remove #floods_valve_cooldown ff_hazard_rng 1
-execute if predicate fossil_frights:game_state/hazard_active/floods run function fossil_frights:hazard/floods/tick
 function fossil_frights:hazard/lava/tick
 function fossil_frights:hazard/security/tick
 function fossil_frights:cameras/swivel/tick
@@ -93,6 +91,7 @@ execute unless predicate fossil_frights:world/is_singleplayer as @a if score @s 
 function fossil_frights:game/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:hallucination/tick
 execute if predicate fossil_frights:game_state/hallucination_active/darkness run function fossil_frights:hallucination/effects/darkness/tick
+execute if predicate fossil_frights:game_state/hallucination_active/freezing_floods run function fossil_frights:hallucination/effects/freezing_floods/tick
 execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run function fossil_frights:hallucination/effects/snowstorm/tick
 execute if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/tick
 execute if predicate fossil_frights:game_state/hallucination_active/fog_marker run function fossil_frights:hallucination/effects/fog_marker/tick

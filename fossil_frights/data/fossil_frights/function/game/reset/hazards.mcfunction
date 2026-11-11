@@ -1,5 +1,4 @@
 scoreboard players set $lava ff_hazard_active 0
-scoreboard players set $floods ff_hazard_active 0
 scoreboard players set $security ff_hazard_active 0
 kill @e[type=minecraft:armor_stand,tag=ff_hazard_compass_target]
 
@@ -17,7 +16,6 @@ scoreboard players set #lava_anim_timer ff_hazard_rng 0
 scoreboard players set #lava_manual_cooldown ff_hazard_rng 0
 function fossil_frights:game/heists/loot/reset_basement_lava_lock
 
-function fossil_frights:hazard/floods/stop
 function fossil_frights:hazard/security/stop
 function fossil_frights:hazard/lava/map/update
 function fossil_frights:hallucination/reset

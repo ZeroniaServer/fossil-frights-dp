@@ -1,1 +1,2 @@
-# freezing floods stop
+scoreboard players set #freezing_floods_timer ff_hallucination 0
+function fossil_frights:hallucination/effects/freezing_floods/drain_sources
