@@ -7,7 +7,7 @@ execute if data entity @s {Age:5999s} run return 0
 execute if items entity @s contents *[custom_data~{itemID:"infinileaf"}] on origin if predicate fossil_frights:player/is_playing_ant_fight run tag @s add ff_dropped_infinileaf
 execute if items entity @s contents *[custom_data~{itemID:"infinileaf"}] run return run kill @s
 
-execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_common_loot:true}|custom_data~{ff_heist_rules:{keep_for_guard:true}}] if function fossil_frights:items/dropped_items/check_guard_thrower run return run function fossil_frights:items/dropped_items/return_item
+execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_common_loot:true}|custom_data~{ff_heist_rules:{prevent_drop_from_guards:true}}] if function fossil_frights:items/dropped_items/check_guard_thrower run return run function fossil_frights:items/dropped_items/return_item
 execute if items entity @s contents *[custom_data~{ff_heist_trap:true}] if function fossil_frights:items/dropped_items/check_thrower run execute on origin run function fossil_frights:items/heists/trap/left_click
 execute if items entity @s contents *[custom_data~{ff_heist_trap:true}] if function fossil_frights:items/dropped_items/check_thrower run return run function fossil_frights:items/dropped_items/return_item
 execute if items entity @s contents *[custom_data~{ff_prevent_drop:true}] if function fossil_frights:items/dropped_items/check_thrower run return run function fossil_frights:items/dropped_items/return_item

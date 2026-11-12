@@ -40,7 +40,7 @@
                   "itemID": "febreeze_rod",
                   "ff_febreeze_rod": {},
                   "ff_heist_rules": {
-                    "keep_for_guard": true
+                    "prevent_drop_from_guards": true
                   }
                 }
               }

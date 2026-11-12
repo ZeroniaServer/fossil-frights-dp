@@ -83,7 +83,7 @@
                       "ff_hoverboard_active": false,
                       "ff_hoverboard_use": true,
                       "ff_heist_rules": {
-                        "keep_for_guard": true
+                        "prevent_drop_from_guards": true
                       }
                     }
                   }
@@ -93,7 +93,7 @@
                   "ff_hoverboard_active": false,
                   "ff_hoverboard_use": false,
                   "ff_heist_rules": {
-                    "keep_for_guard": true
+                    "prevent_drop_from_guards": true
                   }
                 }
               }

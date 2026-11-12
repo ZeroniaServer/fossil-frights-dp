@@ -19,7 +19,7 @@
                 "minecraft:custom_data": {
                   "itemID": "icy_sherd",
                   "ff_heist_rules": {
-                    "keep_for_guard": true
+                    "prevent_drop_from_guards": true
                   }
                 }
               }

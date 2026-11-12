@@ -31,7 +31,7 @@
                   "ff_completes_drink_with_trike_task": true,
                   "ff_heist_rules": {
                     "prevent_ground_despawn": true,
-                    "keep_for_guard": true
+                    "prevent_drop_from_guards": true
                   }
                 }
               }
