@@ -70,6 +70,7 @@ execute if predicate fossil_frights:game_state/game_running run function fossil_
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
 execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
 function fossil_frights:tasks/easy/tick
+execute if predicate fossil_frights:game_state/game_running if score $settings_mode ff_game_state matches 0 run function fossil_frights:animations/dinocoin/good_karma/tick
 function fossil_frights:tasks/medium/tick
 function fossil_frights:tasks/hard/tick
 execute if score $ancient_portal_timer ff_task_state matches 1.. run function fossil_frights:tasks/medium/ancient_portal/portal_tick

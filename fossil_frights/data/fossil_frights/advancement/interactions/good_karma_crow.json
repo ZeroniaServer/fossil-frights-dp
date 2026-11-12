@@ -1,0 +1,23 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {
+              "all_of": ["ff_good_karma_crow_click"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:animations/dinocoin/good_karma/clicked"
+  }
+}

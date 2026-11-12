@@ -31,6 +31,7 @@ function fossil_frights:animations/front_door/open
 function fossil_frights:animations/dinocoin/crane/reset
 function fossil_frights:animations/dinocoin/sarcophagus/reset
 function fossil_frights:animations/dinocoin/crab/reset
+function fossil_frights:animations/dinocoin/good_karma/reset
 function fossil_frights:animations/dinocoin/vending_machine/setup
 function fossil_frights:frights/bats/reset
 function fossil_frights:frights/puffer/reset

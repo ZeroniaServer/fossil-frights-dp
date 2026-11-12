@@ -69,6 +69,7 @@ scoreboard objectives add ff_deaths_seen dummy
 scoreboard objectives add ff_heist_deaths_baseline dummy
 scoreboard objectives add ff_join_cooldown dummy
 scoreboard objectives add ff_msg_cooldown dummy
+scoreboard objectives add ff_good_karma_nearby dummy
 scoreboard objectives add ff_settings_mode_cooldown dummy
 scoreboard objectives add ff_settings_confirm trigger
 scoreboard objectives add ff_tutorial_prompt trigger

@@ -100,6 +100,7 @@ scoreboard players operation @s ff_ant_leaf_seen = @s ff_ant_leaf_use
 scoreboard players set @s ff_queue_prompt_time 0
 scoreboard players set @s ff_join_cooldown 0
 scoreboard players set @s ff_msg_cooldown 0
+scoreboard players set @s ff_good_karma_nearby 0
 scoreboard players set @s ff_tp_action 0
 scoreboard players set @s ff_tp_delay 0
 scoreboard players reset @s ff_key_cooldown
