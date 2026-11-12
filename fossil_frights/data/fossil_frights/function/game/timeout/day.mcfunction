@@ -7,6 +7,7 @@ scoreboard players set $day_active ff_day 0
 scoreboard players set $day_timer ff_day 6000
 scoreboard players set $day_stopwatch_active ff_day 0
 stopwatch remove fossil_frights:day_duration
+function fossil_frights:hallucination/reset
 function fossil_frights:tasks/reset
 function fossil_frights:tasks/tracker/hide
 function fossil_frights:game/start_room/day_button/refresh

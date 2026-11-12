@@ -27,3 +27,4 @@ scoreboard players set #jolly_curse_blinks ff_hazard_rng 0
 scoreboard players set #jolly_curse_effect_timer ff_hazard_rng 0
 function fossil_frights:hallucination/effects/darkness/update_camera_computer
 scoreboard players set #darkness_waves_restored ff_hallucination 0
+scoreboard players set #dinonog_bar ff_dinonog 3600
