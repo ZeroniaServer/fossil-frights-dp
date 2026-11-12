@@ -17,14 +17,13 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Hit Player ",
-                    "color": "yellow",
+                    "translate": "ff.item.dry_ice.description.attack",
+                    "color": "white",
                     "italic": false,
-                    "extra": [
+                    "with": [
                       {
-                        "translate": "ff.item.dry_ice.description.hit",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.dry_ice.description.attack.punch",
+                        "color": "yellow"
                       }
                     ]
                   }

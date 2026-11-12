@@ -17,14 +17,13 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "Hit Player ",
-                    "color": "yellow",
+                    "translate": "ff.item.coal.description.attack",
+                    "color": "white",
                     "italic": false,
-                    "extra": [
+                    "with": [
                       {
-                        "translate": "ff.item.coal.description.hit",
-                        "color": "white",
-                        "italic": false
+                        "translate": "ff.item.coal.description.attack.punch",
+                        "color": "yellow"
                       }
                     ]
                   }
