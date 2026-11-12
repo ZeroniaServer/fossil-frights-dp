@@ -1,15 +1,15 @@
 {
   "parent": "fossil_frights:detection_root",
   "criteria": {
-    "hit_player": {
+    "get_hit_by_player_wielding_dry_ice": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "type": {
             "source_entity": {
               "entity_type": "minecraft:player",
-              "slots": {
-                "weapon.*": {
+              "equipment": {
+                "mainhand": {
                   "predicates": {
                     "minecraft:custom_data": {
                       "itemID": "dry_ice"
@@ -24,6 +24,6 @@
     }
   },
   "rewards": {
-    "function": "fossil_frights:game/heists/items/dry_ice_hit"
+    "function": "fossil_frights:items/dry_ice/get_hit"
   }
 }
