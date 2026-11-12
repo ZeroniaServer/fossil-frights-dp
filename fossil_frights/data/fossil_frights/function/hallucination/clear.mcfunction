@@ -1,6 +1,7 @@
 execute if score #h_active_count ff_hallucination matches 0 run scoreboard players set #h_timer ff_hallucination 0
 execute if score #h_active_count ff_hallucination matches 0 run scoreboard players set #h_was_zero ff_hallucination 0
 execute if score #h_active_count ff_hallucination matches 0 run return 0
+function fossil_frights:hallucination/run_breakdown/clear_active
 execute if score $h_jolly_curse ff_hallucination matches 1 run function fossil_frights:hallucination/effects/jolly_curse/stop
 scoreboard players set $h_jolly_curse ff_hallucination 0
 execute if score $h_avalanche ff_hallucination matches 1 run function fossil_frights:hallucination/effects/avalanche/stop

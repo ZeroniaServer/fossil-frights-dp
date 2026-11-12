@@ -1,5 +1,6 @@
 $scoreboard players set $h_$(id) ff_hallucination 1
 scoreboard players add #h_active_count ff_hallucination 1
+$function fossil_frights:run_breakdown/event/add {code:"H",id:"$(breakdown_on)"}
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_actionbar_manager.slot.generic 65
 scoreboard players set @a[predicate=fossil_frights:player/team/thief] ff_actionbar_manager.slot.generic 65
 scoreboard players set @a[predicate=fossil_frights:player/team/spectator] ff_actionbar_manager.slot.generic 65
