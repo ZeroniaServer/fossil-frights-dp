@@ -16,6 +16,11 @@
                   "color": "#78552F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/leather_boots",
+                "minecraft:equippable": {
+                  "slot": "feet",
+                  "asset_id": "minecraft:leather",
+                  "equip_sound": "minecraft:intentionally_empty"
+                },
                 "minecraft:custom_data": {
                   "itemID": "leather_boots",
                   "ff_heist_rules": {
