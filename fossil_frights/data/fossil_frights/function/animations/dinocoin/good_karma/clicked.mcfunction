@@ -10,6 +10,7 @@ execute if score #good_karma_coins ff_game_state matches ..0 if score @s ff_msg_
 execute if score #good_karma_coins ff_game_state matches ..0 run return 0
 clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 1
 scoreboard players add @s ff_coin_used_run 1
+function fossil_frights:run_breakdown/event/add {code:"C",id:"05"}
 scoreboard players set $good_karma_pending ff_game_state 1
 execute as @e[type=minecraft:item_display,tag=ff_crow] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:item_model":"fossil_frights:display/frightmas/crow_with_coin"}}
 function fossil_frights:messages/dinocoin/good_karma/thanks
