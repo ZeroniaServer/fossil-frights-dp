@@ -108,7 +108,7 @@
                 },
                 {
                   "type": "minecraft:loot_table",
-                  "value": "fossil_frights:items/storage/star"
+                  "value": "fossil_frights:items/storage/frightmas_star"
                 },
                 {
                   "type": "minecraft:loot_table",

@@ -4,7 +4,7 @@ summon minecraft:chest_minecart ~ ~ ~ {Tags:["ff_admin_item_catalog","ff_admin_i
 
 # Admin Items 1/2
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/febreeze_rod",page:"page_1",slot:0}
-function fossil_frights:items/catalog/from_loot {loot:"items/storage/star",page:"page_1",slot:1}
+function fossil_frights:items/catalog/from_loot {loot:"items/storage/frightmas_star",page:"page_1",slot:1}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/pumpkin",page:"page_1",slot:2}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/chlorine_tablet",page:"page_1",slot:3}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/scrap_metal",page:"page_1",slot:4}

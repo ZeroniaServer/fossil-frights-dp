@@ -116,8 +116,8 @@ scoreboard players operation $heist_loot_render_state_raptor_skull ff_heist_loot
 scoreboard players operation $heist_loot_render_state_biplane ff_heist_loot_state = $loot_biplane ff_heist_loot_state
 scoreboard players operation $heist_loot_render_state_vault ff_heist_loot_state = $loot_vault ff_heist_loot_state
 scoreboard players operation $heist_loot_render_flash_hoverboard ff_heist_flash = $loot_hoverboard ff_heist_flash
-execute unless score $heist_loot_render_state_star ff_heist_loot_state = $loot_star ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
-scoreboard players operation $heist_loot_render_state_star ff_heist_loot_state = $loot_star ff_heist_loot_state
+execute unless score $heist_loot_render_state_frightmas_star ff_heist_loot_state = $loot_frightmas_star ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
+scoreboard players operation $heist_loot_render_state_frightmas_star ff_heist_loot_state = $loot_frightmas_star ff_heist_loot_state
 execute unless score $heist_loot_render_state_pumpkin ff_heist_loot_state = $loot_pumpkin ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1
 scoreboard players operation $heist_loot_render_state_pumpkin ff_heist_loot_state = $loot_pumpkin ff_heist_loot_state
 execute unless score $heist_loot_render_state_dinonog ff_heist_loot_state = $loot_dinonog ff_heist_loot_state run scoreboard players set $heist_loot_render_dirty ff_heist 1

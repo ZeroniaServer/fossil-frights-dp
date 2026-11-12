@@ -8,8 +8,8 @@ execute if entity @s[predicate=fossil_frights:player/team/guard] unless function
 execute if entity @s[predicate=fossil_frights:player/team/thief] unless function fossil_frights:game/heists/items/check_attacker_guard run return 0
 execute on attacker run tag @s remove ff_heist_star_mainhand
 execute on attacker run tag @s remove ff_heist_star_offhand
-execute on attacker if items entity @s weapon.mainhand *[custom_data~{itemID:"star"}] run tag @s add ff_heist_star_mainhand
-execute on attacker unless entity @s[tag=ff_heist_star_mainhand] if items entity @s weapon.offhand *[custom_data~{itemID:"star"}] run tag @s add ff_heist_star_offhand
+execute on attacker if items entity @s weapon.mainhand *[custom_data~{itemID:"frightmas_star"}] run tag @s add ff_heist_star_mainhand
+execute on attacker unless entity @s[tag=ff_heist_star_mainhand] if items entity @s weapon.offhand *[custom_data~{itemID:"frightmas_star"}] run tag @s add ff_heist_star_offhand
 execute on attacker unless entity @s[tag=ff_heist_star_mainhand] unless entity @s[tag=ff_heist_star_offhand] run return 0
 
 effect give @s minecraft:glowing 4 0 true

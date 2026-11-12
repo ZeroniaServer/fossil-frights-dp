@@ -40,7 +40,7 @@ function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"cr
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"raptor_skull"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"biplane"}
 function fossil_frights:game/heists/start_reveal/show_helper_heavy {"lootId":"vault"}
-function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"star"}
+function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"frightmas_star"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"pumpkin"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"dinonog"}
 function fossil_frights:game/heists/start_reveal/show_helper_keyed {lootId:"coal"}

@@ -57,8 +57,8 @@ execute if score $loot_golden_sword ff_heist_loot_state matches 2.. run scoreboa
 execute if score $loot_golden_sword ff_heist_loot_state matches 2.. if score $loot_golden_sword ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_hoverboard ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_hoverboard ff_heist_loot_state matches 2.. if score $loot_hoverboard ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
-execute if score $loot_star ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
-execute if score $loot_star ff_heist_loot_state matches 2.. if score $loot_star ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
+execute if score $loot_frightmas_star ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
+execute if score $loot_frightmas_star ff_heist_loot_state matches 2.. if score $loot_frightmas_star ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_pumpkin ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1
 execute if score $loot_pumpkin ff_heist_loot_state matches 2.. if score $loot_pumpkin ff_heist_loot_value matches 300.. run scoreboard players add $taken_rare_heavy ff_heist 1
 execute if score $loot_dinonog ff_heist_loot_state matches 2.. run scoreboard players add $taken_total ff_heist 1

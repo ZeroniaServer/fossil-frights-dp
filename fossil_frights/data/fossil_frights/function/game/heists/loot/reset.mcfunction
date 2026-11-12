@@ -115,9 +115,9 @@ setblock 68 83 46 minecraft:chorus_plant
 function fossil_frights:game/heists/loot/rare/ice_sculpture/reset_location
 scoreboard players set $loot_misplaced_scissors ff_heist_loot_value 0
 scoreboard players reset $loot_misplaced_scissors ff_heist_sidebar
-scoreboard players set $loot_star ff_heist_loot_state 0
-scoreboard players set $loot_star ff_heist_loot_value 0
-scoreboard players reset $loot_star ff_heist_sidebar
+scoreboard players set $loot_frightmas_star ff_heist_loot_state 0
+scoreboard players set $loot_frightmas_star ff_heist_loot_value 0
+scoreboard players reset $loot_frightmas_star ff_heist_sidebar
 scoreboard players set $loot_pumpkin ff_heist_loot_state 0
 scoreboard players set $loot_pumpkin ff_heist_loot_value 0
 scoreboard players reset $loot_pumpkin ff_heist_sidebar

@@ -4,9 +4,9 @@ execute unless predicate fossil_frights:game_state/heist_mode_active run return 
 execute unless score $heist_round_active ff_game_state matches 1 run function fossil_frights:messages/error/heists_start_round_before_edit_loot
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 scoreboard players set $heist_loot_toggle_was_absent ff_heist 0
-execute if score $loot_star ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
-execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/uncommon/star
-execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/star
+execute if score $loot_frightmas_star ff_heist_loot_state matches 0 run scoreboard players set $heist_loot_toggle_was_absent ff_heist 1
+execute if score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:game/heists/loot/select/uncommon/frightmas_star
+execute unless score $heist_loot_toggle_was_absent ff_heist matches 1 run function fossil_frights:admin/menu/heists/loot/remove/frightmas_star
 function fossil_frights:game/heists/loot/sync_all
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:key/lock/setup

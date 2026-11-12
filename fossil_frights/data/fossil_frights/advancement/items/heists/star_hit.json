@@ -12,7 +12,7 @@
                 "weapon.*": {
                   "predicates": {
                     "minecraft:custom_data": {
-                      "itemID": "star"
+                      "itemID": "frightmas_star"
                     }
                   }
                 }

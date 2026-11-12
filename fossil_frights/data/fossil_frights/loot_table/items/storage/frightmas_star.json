@@ -28,16 +28,16 @@
                     ]
                   }
                 ],
-                "minecraft:item_model": "fossil_frights:display/frightmas/task/star",
+                "minecraft:item_model": "fossil_frights:items/frightmas/frightmas_star",
                 "minecraft:custom_data": {
-                  "itemID": "star",
+                  "itemID": "frightmas_star",
                   "ff_heist_rules": {
                     "prevent_drop_from_guards": true
                   }
                 }
               }
             },
-            "fossil_frights:item_definition/heist_loot/star",
+            "fossil_frights:item_definition/heist_loot/frightmas_star",
             "fossil_frights:item_definition/base_item_data"
           ]
         }
