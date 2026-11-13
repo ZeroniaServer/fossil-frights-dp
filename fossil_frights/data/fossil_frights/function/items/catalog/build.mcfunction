@@ -14,7 +14,7 @@ function fossil_frights:items/catalog/from_loot {loot:"items/storage/fire_tablet
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/golden_nautilus",page:"page_1",slot:8}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/skeleton_plushie",page:"page_1",slot:9}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/fish_food",page:"page_1",slot:10}
-function fossil_frights:items/catalog/from_loot {loot:"items/frightmas/dinonog",page:"page_1",slot:11}
+function fossil_frights:items/catalog/from_loot {loot:"items/storage/dinonog",page:"page_1",slot:11}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/coal",page:"page_1",slot:12}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/empty_popcorn_bucket",page:"page_1",slot:13}
 function fossil_frights:items/catalog/from_loot {loot:"items/storage/pink_jelly",page:"page_1",slot:14}

@@ -19,5 +19,5 @@ execute if entity @s[tag=ff_lock_carrot_cake] run function fossil_frights:key/lo
 execute if entity @s[tag=ff_lock_hot_chocolate] run function fossil_frights:key/lock/set_anim_reward {loot:"items/storage/hot_chocolate"}
 execute if entity @s[tag=ff_lock_frightmas_star] run function fossil_frights:key/lock/set_anim_reward {loot:"items/storage/frightmas_star"}
 execute if entity @s[tag=ff_lock_pumpkin] run function fossil_frights:key/lock/set_anim_reward {loot:"items/storage/pumpkin"}
-execute if entity @s[tag=ff_lock_dinonog] run function fossil_frights:key/lock/set_anim_reward {loot:"items/frightmas/dinonog"}
+execute if entity @s[tag=ff_lock_dinonog] run function fossil_frights:key/lock/set_anim_reward {loot:"items/storage/dinonog"}
 execute if entity @s[tag=ff_lock_coal] run function fossil_frights:key/lock/set_anim_reward {loot:"items/storage/coal"}
