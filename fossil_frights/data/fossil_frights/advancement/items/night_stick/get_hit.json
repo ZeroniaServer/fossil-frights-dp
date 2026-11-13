@@ -1,0 +1,27 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "get_hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "itemID": "night_stick"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:items/night_stick/get_hit"
+  }
+}

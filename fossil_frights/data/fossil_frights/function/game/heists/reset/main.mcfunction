@@ -44,12 +44,6 @@ scoreboard players reset @a ff_heist_keys_stolen_round
 scoreboard players reset @a ff_heist_deaths_round
 scoreboard players set @a ff_heist_deaths_baseline 0
 scoreboard players reset @a ff_heist_thieves_killed_round
-scoreboard players reset @a ff_heist_killer_pending
-scoreboard players reset @a ff_heist_killer_uuid_0
-scoreboard players reset @a ff_heist_killer_uuid_1
-scoreboard players reset @a ff_heist_killer_uuid_2
-scoreboard players reset @a ff_heist_killer_uuid_3
-scoreboard players set @a ff_heist_regen_lock 0
 scoreboard players reset @a ff_heist_thaw_fx
 scoreboard players reset @a ff_heist_paint_fx
 scoreboard players reset @a ff_heist_guard_sneak_ticks
@@ -80,7 +74,6 @@ scoreboard players reset @a ff_trap_explosive_timer
 scoreboard players reset @a ff_trap_explosive_cooldown
 scoreboard players set $heist_regen_lock_timer ff_heist 0
 scoreboard players set $timer_frozen ff_day 0
-gamerule minecraft:natural_health_regeneration true
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_heist_guard_sneak_glowing
 tag @a remove ff_ice_frozen
@@ -90,7 +83,6 @@ execute as @a run function fossil_frights:game/heists/paint_fx/clear
 tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
-tag @a remove ff_heist_kill_target
 tag @a remove ff_heist_stat_participant
 tag @a remove ff_heist_stat_thief
 tag @a remove ff_heist_stat_guard

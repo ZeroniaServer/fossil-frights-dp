@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "fossil_frights:player/inventory/heavy_loot",
+    "fossil_frights:player/inventory/misplaced_scissors"
+  ]
+}

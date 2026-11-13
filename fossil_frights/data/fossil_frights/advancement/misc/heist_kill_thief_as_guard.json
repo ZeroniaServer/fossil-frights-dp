@@ -1,0 +1,19 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "kill_thief_as_guard": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "fossil_frights:game_state/heist_mode_active",
+            "fossil_frights:game_state/game_running",
+            "fossil_frights:player/team/guard"
+          ]
+        },
+        "entity": "fossil_frights:player/team/thief"
+      }
+    }
+  }
+}

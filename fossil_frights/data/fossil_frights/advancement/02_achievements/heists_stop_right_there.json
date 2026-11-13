@@ -18,7 +18,24 @@
   },
   "criteria": {
     "loot_carrier_killed": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "fossil_frights:game_state/heist_mode_active",
+            "fossil_frights:game_state/game_running",
+            "fossil_frights:player/team/guard"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:all_of",
+          "terms": [
+            "fossil_frights:player/team/thief",
+            "fossil_frights:player/inventory/heist_loot"
+          ]
+        }
+      }
     }
   }
 }
