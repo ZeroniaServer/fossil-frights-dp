@@ -15,7 +15,6 @@ effect clear @s minecraft:absorption
 effect clear @s minecraft:health_boost
 effect clear @s minecraft:slowness
 effect clear @s minecraft:blindness
-effect give @s minecraft:saturation infinite 255 true
 scoreboard players reset @s ff_key_cooldown
 function fossil_frights:game/heists/loadout/guard
 function fossil_frights:items/heists/trap/load_state

@@ -229,13 +229,7 @@ scoreboard objectives add ff_heist_keyed_loot_captured_round dummy
 scoreboard objectives add ff_heist_keys_stolen_round dummy
 scoreboard objectives add ff_heist_deaths_round dummy
 scoreboard objectives add ff_heist_thieves_killed_round dummy
-scoreboard objectives add ff_heist_killer_pending dummy
-scoreboard objectives add ff_heist_killer_uuid_0 dummy
-scoreboard objectives add ff_heist_killer_uuid_1 dummy
-scoreboard objectives add ff_heist_killer_uuid_2 dummy
-scoreboard objectives add ff_heist_killer_uuid_3 dummy
 scoreboard objectives add ff_button_unpress_timestamp dummy
-scoreboard objectives add ff_heist_regen_lock dummy
 scoreboard objectives add ff_heist_thaw_fx dummy
 scoreboard objectives add ff_heist_paint_fx dummy
 scoreboard objectives add ff_heist_guard_sneak_ticks dummy
@@ -280,6 +274,10 @@ scoreboard objectives add ff_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_fire_damage_cooldown_until_timestamp dummy
 scoreboard objectives add ff_febreeze_rod_using_state dummy
 scoreboard objectives add ff_febreeze_rod_fx dummy
+scoreboard objectives add ff_health_regeneration.regenerate_amount dummy
+scoreboard objectives add ff_health_regeneration.natural_delay dummy
+scoreboard objectives add ff_health_regeneration.health_tracker health
+scoreboard objectives add ff_health_regeneration.blocked_time dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2
@@ -531,6 +529,8 @@ function fossil_frights:game/reset/reload
 schedule function fossil_frights:util/player/extinguish/cleanup 1t
 schedule function fossil_frights:player/damage/tick 1t
 schedule function fossil_frights:player/name_tag/load 1t
+schedule function fossil_frights:player/health_regeneration/tick 1t
+schedule function fossil_frights:player/sprint_ability/tick 1t
 
 gamerule minecraft:fire_spread_radius_around_player 0
 gamerule minecraft:mob_griefing false
@@ -544,7 +544,7 @@ gamerule minecraft:spawn_patrols false
 gamerule minecraft:spawn_wandering_traders false
 gamerule minecraft:raids false
 gamerule minecraft:spawn_phantoms false
-gamerule minecraft:natural_health_regeneration true
+gamerule minecraft:natural_health_regeneration false
 gamerule minecraft:advance_weather false
 gamerule minecraft:locator_bar true
 gamerule minecraft:mob_drops false

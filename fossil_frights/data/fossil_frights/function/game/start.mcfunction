@@ -56,7 +56,6 @@ execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_fr
 effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:absorption
 effect clear @a[predicate=fossil_frights:player/team/guard] minecraft:health_boost
 effect give @a[predicate=fossil_frights:player/team/guard] minecraft:instant_health 100 0 true
-effect give @a[predicate=fossil_frights:player/team/guard] minecraft:saturation infinite 255 true
 scoreboard players reset @a[predicate=fossil_frights:player/team/guard] ff_key_cooldown
 scoreboard players reset @a[predicate=fossil_frights:player/team/guard] ff_coin_used_run
 scoreboard players set @a[predicate=fossil_frights:player/team/guard] ff_speedrun_delta 0

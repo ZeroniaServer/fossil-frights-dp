@@ -1,16 +1,5 @@
 scoreboard players add @s ff_heist_deaths_round 1
 function fossil_frights:game/heists/loot/secure_loot/clear_player
-scoreboard players operation #match ff_active_uuid_0 = @s ff_heist_killer_uuid_0
-scoreboard players operation #match ff_active_uuid_1 = @s ff_heist_killer_uuid_1
-scoreboard players operation #match ff_active_uuid_2 = @s ff_heist_killer_uuid_2
-scoreboard players operation #match ff_active_uuid_3 = @s ff_heist_killer_uuid_3
-execute if score @s ff_heist_killer_pending matches 1 if predicate fossil_frights:player/inventory/heist_loot run advancement grant @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] only fossil_frights:02_achievements/heists_stop_right_there
-execute if score @s ff_heist_killer_pending matches 1 run scoreboard players add @a[predicate=fossil_frights:player/team/guard,predicate=fossil_frights:entity/match/active] ff_heist_thieves_killed_round 1
-scoreboard players reset @s ff_heist_killer_pending
-scoreboard players set @s ff_heist_killer_uuid_0 0
-scoreboard players set @s ff_heist_killer_uuid_1 0
-scoreboard players set @s ff_heist_killer_uuid_2 0
-scoreboard players set @s ff_heist_killer_uuid_3 0
 function fossil_frights:items/heists/ice_cannon/remove_owned_display
 attribute @s minecraft:jump_strength base reset
 attribute @s minecraft:movement_speed base reset
@@ -33,7 +22,6 @@ function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @s minecraft:speed
 effect clear @s minecraft:water_breathing
 effect clear @s minecraft:fire_resistance
-effect give @s minecraft:saturation infinite 255 true
 scoreboard players reset @s ff_key_cooldown
 scoreboard players reset @s ff_heist_punch_cd
 scoreboard players set @s ff_heist_punch_fx 0
