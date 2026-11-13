@@ -1,4 +1,4 @@
-# Fossil Frights Datapacks
+# Fossil Frights Datapacks: Frightmas 2026
 
 ## Player Commands
 
@@ -73,16 +73,16 @@ Tracked stat objectives:
 
 ### Plugin Present
 
-The datapack always manages stats/leaderboard, but when the plugin present it helps with storage via `leaderboard.yml` file.
+The datapack always manages stats/leaderboard, but when the plugin present it helps with storage via `frightmas2026_leaderboard.yml` file.
 
 | Process | Behavior |
 | --- | --- |
 | 1. Player stat changes | Datapack updates scoreboards |
 | 2. Plugin sync | Datapack calls the plugin sync hook instead of writing leaderboard storage |
-| 3. File storage | Plugin writes `plugins/FossilFrights/leaderboard.yml` |
-| 4. Board render | Plugin rebuilds datapack display storage from `leaderboard.yml` |
+| 3. File storage | Plugin writes `plugins/FossilFrights/frightmas2026_leaderboard.yml` |
+| 4. Board render | Plugin rebuilds datapack display storage from `frightmas2026_leaderboard.yml` |
 
-`leaderboard.yml` is the source of truth while the plugin is present.
+`frightmas2026_leaderboard.yml` is the source of truth while the plugin is present.
 
 Plugin admin commands:
 
@@ -93,6 +93,6 @@ Plugin admin commands:
 | Remove player from Fossil Frights leaderboard | `/admin leaderboard remove <player>` |
 
 
-Edit `leaderboard.yml`, then run `/admin leaderboard reload`; values apply immediately
+Edit `frightmas2026_leaderboard.yml`, then run `/admin leaderboard reload`; values apply immediately
 
 > Avoid datapack leaderboard reset/stat edit commands while the plugin is present. 
