@@ -2,3 +2,4 @@ posteffect clear @s
 function fossil_frights:cameras/clear_posteffect
 function fossil_frights:hallucination/effects/snowstorm/clear_player
 function fossil_frights:hallucination/effects/chimney_smoke/clear_player
+function fossil_frights:items/febreeze_rod/fx/stop
