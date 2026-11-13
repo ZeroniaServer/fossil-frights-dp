@@ -1,6 +1,7 @@
 # Public leave route.
 posteffect clear @s
 function fossil_frights:cameras/clear_posteffect
+function fossil_frights:items/febreeze_rod/fx/stop
 tag @s remove ff_day_tutorial_prompt_open
 tag @s remove ff_day_tutorial_prompt_button_latched
 tag @s remove ff_tutorial_pending

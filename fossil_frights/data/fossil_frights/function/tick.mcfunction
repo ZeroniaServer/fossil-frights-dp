@@ -12,6 +12,7 @@ execute as @a[tag=ff_tp_dispatch] run function #fossil_frights:tp_callbacks
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:util/player/extinguish
 execute as @a[tag=ff_tp_dispatch] run posteffect clear @s
 execute as @a[tag=ff_tp_dispatch] run function fossil_frights:cameras/clear_posteffect
+execute as @a[tag=ff_tp_dispatch] run function fossil_frights:items/febreeze_rod/fx/stop
 scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active

@@ -1,2 +1,1 @@
-posteffect remove @s fossil_frights:febreeze/activate
-posteffect add @s fossil_frights:febreeze/deactivate
+execute at @s run particle entity_effect{color:0xFBFEF900} ~ ~1 ~
