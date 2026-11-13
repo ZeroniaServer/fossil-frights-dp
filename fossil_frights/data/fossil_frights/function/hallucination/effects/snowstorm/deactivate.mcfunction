@@ -1,3 +1,2 @@
-posteffect add @s fossil_frights:snow_storm/deactivate
-posteffect remove @s fossil_frights:snow_storm/activate
+execute at @s run particle entity_effect{color:0xFBFEFD00} ~ ~1 ~
 tag @s remove ff_snowstorm_active_guard
