@@ -20,7 +20,6 @@
                 "minecraft:item_model": "fossil_frights:items/heists/loot/fishing_rod",
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
-                  "ff_heist_common_loot": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

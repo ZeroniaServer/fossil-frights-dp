@@ -18,7 +18,6 @@
                 "minecraft:item_model": "fossil_frights:items/heists/loot/chocolate_cake",
                 "minecraft:custom_data": {
                   "itemID": "chocolate_cake",
-                  "ff_heist_common_loot": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

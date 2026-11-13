@@ -41,7 +41,6 @@
                 "minecraft:enchantment_glint_override": true,
                 "minecraft:custom_data": {
                   "itemID": "golden_sword",
-                  "ff_heist_common_loot": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }
