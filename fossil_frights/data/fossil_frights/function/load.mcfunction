@@ -51,6 +51,12 @@ scoreboard objectives add ff_door_delay dummy
 scoreboard objectives add ff_game_state dummy
 scoreboard objectives add ff_dinonog dummy
 scoreboard objectives add ff_hallucination dummy
+scoreboard objectives add ff_snowstorm_tick dummy
+scoreboard objectives add ff_snowstorm_clear_tick dummy
+scoreboard objectives add ff_snowstorm_deactivate_tick dummy
+scoreboard objectives add ff_chimney_smoke_tick dummy
+scoreboard objectives add ff_chimney_smoke_clear_tick dummy
+scoreboard objectives add ff_chimney_smoke_deactivate_tick dummy
 scoreboard objectives add ff_party_sync_grace dummy
 scoreboard objectives add ff_map_region dummy
 scoreboard objectives add ff_active_uuid_0 dummy

@@ -95,6 +95,13 @@ execute if predicate fossil_frights:game_state/hallucination_active/snowstorm ru
 execute if predicate fossil_frights:game_state/hallucination_active/chimney_smoke run function fossil_frights:hallucination/effects/chimney_smoke/tick
 execute if predicate fossil_frights:game_state/hallucination_active/fog_marker run function fossil_frights:hallucination/effects/fog_marker/tick
 execute if predicate fossil_frights:game_state/hallucination_active/elf_infestation run function fossil_frights:hallucination/effects/elf_infestation/tick
+
+# Extra particle commands to effectively signal jam the other ones
+execute as @a[scores={ff_chimney_smoke_deactivate_tick=0..}] run function fossil_frights:hallucination/effects/chimney_smoke/deactivate
+execute as @a[scores={ff_chimney_smoke_clear_tick=0..}] run function fossil_frights:hallucination/effects/chimney_smoke/clear_player
+execute as @a[scores={ff_snowstorm_deactivate_tick=0..}] run function fossil_frights:hallucination/effects/snowstorm/deactivate
+execute as @a[scores={ff_snowstorm_clear_tick=0..}] run function fossil_frights:hallucination/effects/snowstorm/clear_player
+
 function fossil_frights:hallucination/effects/jolly_curse/tick
 function fossil_frights:frightmas/aurora/tick
 execute as @e[type=minecraft:bat,tag=ff_bats_fright,tag=ff_bats_fright_initialized] at @s run function fossil_frights:frights/bats/tick
