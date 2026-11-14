@@ -11,84 +11,84 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 function animated_java:global/data_manager/read with storage animated_java:temp args
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.blueprint_id set value "aj:my_blueprint"
+data modify storage animated_java:temp entry.data.blueprint_id set value "aj:santasaurus"
 data modify storage animated_java:temp entry.data.rig_hash set value "c7beede727da34444309597d58737c42d86f27702d1cf680c894dd98d606a1a4"
 tp @s ~ ~ ~ ~ ~
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tctorso] run function aj:my_blueprint/zzz/summon/as_node/tctorso
+execute on passengers if entity @s[tag=aj.santasaurus.node.tctorso] run function aj:santasaurus/zzz/summon/as_node/tctorso
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tctorso set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcneck] run function aj:my_blueprint/zzz/summon/as_node/tcneck
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcneck] run function aj:santasaurus/zzz/summon/as_node/tcneck
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcneck set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tchead] run function aj:my_blueprint/zzz/summon/as_node/tchead
+execute on passengers if entity @s[tag=aj.santasaurus.node.tchead] run function aj:santasaurus/zzz/summon/as_node/tchead
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tchead set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcjaw] run function aj:my_blueprint/zzz/summon/as_node/tcjaw
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcjaw] run function aj:santasaurus/zzz/summon/as_node/tcjaw
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcjaw set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.frightmas_hat] run function aj:my_blueprint/zzz/summon/as_node/frightmas_hat
+execute on passengers if entity @s[tag=aj.santasaurus.node.frightmas_hat] run function aj:santasaurus/zzz/summon/as_node/frightmas_hat
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.frightmas_hat set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tctail] run function aj:my_blueprint/zzz/summon/as_node/tctail
+execute on passengers if entity @s[tag=aj.santasaurus.node.tctail] run function aj:santasaurus/zzz/summon/as_node/tctail
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tctail set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcarm_l] run function aj:my_blueprint/zzz/summon/as_node/tcarm_l
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcarm_l] run function aj:santasaurus/zzz/summon/as_node/tcarm_l
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcarm_l set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group] run function aj:my_blueprint/zzz/summon/as_node/group
+execute on passengers if entity @s[tag=aj.santasaurus.node.group] run function aj:santasaurus/zzz/summon/as_node/group
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group1] run function aj:my_blueprint/zzz/summon/as_node/group1
+execute on passengers if entity @s[tag=aj.santasaurus.node.group1] run function aj:santasaurus/zzz/summon/as_node/group1
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group1 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group2] run function aj:my_blueprint/zzz/summon/as_node/group2
+execute on passengers if entity @s[tag=aj.santasaurus.node.group2] run function aj:santasaurus/zzz/summon/as_node/group2
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group2 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcarm_r] run function aj:my_blueprint/zzz/summon/as_node/tcarm_r
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcarm_r] run function aj:santasaurus/zzz/summon/as_node/tcarm_r
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcarm_r set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group3] run function aj:my_blueprint/zzz/summon/as_node/group3
+execute on passengers if entity @s[tag=aj.santasaurus.node.group3] run function aj:santasaurus/zzz/summon/as_node/group3
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group3 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group4] run function aj:my_blueprint/zzz/summon/as_node/group4
+execute on passengers if entity @s[tag=aj.santasaurus.node.group4] run function aj:santasaurus/zzz/summon/as_node/group4
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group4 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.group5] run function aj:my_blueprint/zzz/summon/as_node/group5
+execute on passengers if entity @s[tag=aj.santasaurus.node.group5] run function aj:santasaurus/zzz/summon/as_node/group5
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.group5 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.present] run function aj:my_blueprint/zzz/summon/as_node/present
+execute on passengers if entity @s[tag=aj.santasaurus.node.present] run function aj:santasaurus/zzz/summon/as_node/present
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.present set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcleg_l] run function aj:my_blueprint/zzz/summon/as_node/tcleg_l
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcleg_l] run function aj:santasaurus/zzz/summon/as_node/tcleg_l
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcleg_l set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone5] run function aj:my_blueprint/zzz/summon/as_node/bone5
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone5] run function aj:santasaurus/zzz/summon/as_node/bone5
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone5 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone4] run function aj:my_blueprint/zzz/summon/as_node/bone4
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone4] run function aj:santasaurus/zzz/summon/as_node/bone4
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone4 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone3] run function aj:my_blueprint/zzz/summon/as_node/bone3
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone3] run function aj:santasaurus/zzz/summon/as_node/bone3
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone3 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.tcleg_r] run function aj:my_blueprint/zzz/summon/as_node/tcleg_r
+execute on passengers if entity @s[tag=aj.santasaurus.node.tcleg_r] run function aj:santasaurus/zzz/summon/as_node/tcleg_r
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.tcleg_r set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone] run function aj:my_blueprint/zzz/summon/as_node/bone
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone] run function aj:santasaurus/zzz/summon/as_node/bone
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone2] run function aj:my_blueprint/zzz/summon/as_node/bone2
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone2] run function aj:santasaurus/zzz/summon/as_node/bone2
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone2 set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.my_blueprint.node.bone1] run function aj:my_blueprint/zzz/summon/as_node/bone1
+execute on passengers if entity @s[tag=aj.santasaurus.node.bone1] run function aj:santasaurus/zzz/summon/as_node/bone1
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.bone1 set from storage animated_java:gu out
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
-function aj:my_blueprint/zzz/set_default_pose
-execute if data storage animated_java:temp args.variant run function aj:my_blueprint/zzz/summon/zzz/variant_arg/no_variants_warning
+function aj:santasaurus/zzz/set_default_pose
+execute if data storage animated_java:temp args.variant run function aj:santasaurus/zzz/summon/zzz/variant_arg/no_variants_warning
 execute if score #success aj.i matches 0 run return fail
-execute if data storage animated_java:temp args.animation run function aj:my_blueprint/zzz/summon/animation_arg/process with storage animated_java:temp args
+execute if data storage animated_java:temp args.animation run function aj:santasaurus/zzz/summon/animation_arg/process with storage animated_java:temp args
 execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1

@@ -5,4 +5,4 @@ $data modify storage animated_java:temp args merge value {name:'$(name)', comman
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-function aj:my_blueprint/zzz/as_node/as_data with storage animated_java:temp args
+function aj:santasaurus/zzz/as_node/as_data with storage animated_java:temp args

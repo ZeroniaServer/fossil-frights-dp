@@ -3,8 +3,8 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute if score @s aj.my_blueprint.throw.frame matches 122.. run scoreboard players set @s aj.my_blueprint.throw.frame 1
+execute if score @s aj.santasaurus.throw.frame matches 122.. run scoreboard players set @s aj.santasaurus.throw.frame 1
 data remove storage animated_java:temp args
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.my_blueprint.throw.frame
-execute at @s run function aj:my_blueprint/animations/throw/zzz/apply_frame with storage animated_java:temp args
-scoreboard players add @s aj.my_blueprint.throw.frame 1
+execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.santasaurus.throw.frame
+execute at @s run function aj:santasaurus/animations/throw/zzz/apply_frame with storage animated_java:temp args
+scoreboard players add @s aj.santasaurus.throw.frame 1

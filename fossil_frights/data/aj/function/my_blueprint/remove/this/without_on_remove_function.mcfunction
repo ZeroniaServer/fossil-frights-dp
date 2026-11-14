@@ -4,5 +4,5 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
 execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'c7beede727da34444309597d58737c42d86f27702d1cf680c894dd98d606a1a4'}}} run function animated_java:global/remove/outdated_rig
-function aj:my_blueprint/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
+function aj:santasaurus/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

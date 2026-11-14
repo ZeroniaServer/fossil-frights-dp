@@ -3,4 +3,4 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-function aj:my_blueprint/zzz/set_default_pose
+function aj:santasaurus/zzz/set_default_pose

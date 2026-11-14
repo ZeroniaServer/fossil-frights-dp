@@ -3,9 +3,9 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-function aj:my_blueprint/animations/pause_all
-tag @s add aj.my_blueprint.animation.ambient.playing
-scoreboard players set @s aj.my_blueprint.ambient.frame 0
+function aj:santasaurus/animations/pause_all
+tag @s add aj.santasaurus.animation.ambient.playing
+scoreboard players set @s aj.santasaurus.ambient.frame 0
 tag @s add aj.transforms_only
-execute at @s run function aj:my_blueprint/animations/ambient/zzz/set_frame {frame: 0}
+execute at @s run function aj:santasaurus/animations/ambient/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only
