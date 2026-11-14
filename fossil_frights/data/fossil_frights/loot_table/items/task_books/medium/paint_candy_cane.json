@@ -20,7 +20,7 @@
                 "minecraft:written_book_content": {
                   "title": "",
                   "author": "",
-                  "pages": [["", {"text": "\ue001\ue200", "font": "fossil_frights:books", "color": "#7b7b01"}, {"translate": "ff.task.paint_candy_cane", "font": "fossil_frights:small_caps"}, "\n-------------------\n", {"translate": "ff.task_book.location.basement", "font": "fossil_frights:small_caps"}, {"translate": "ff.task_book.difficulty.medium", "color": "gold", "font": "fossil_frights:small_caps"}, "\n\n", {"translate": "ff.task_book.task.paint_candy_cane.description.0"}, {"translate": "ff.task_book.task.paint_candy_cane.description.1"}], ["", {"text": "\ue001\ue200", "font": "fossil_frights:books", "color": "#7b7b01"}, {"translate": "ff.task_book.task.paint_candy_cane.description.2"}]]
+                  "pages": [["", {"text": "\ue001\ue200", "font": "fossil_frights:books", "color": "#7b7b01"}, {"translate": "ff.task.paint_candy_cane", "font": "fossil_frights:small_caps"}, "\n-------------------\n", {"translate": "ff.task_book.location.basement", "font": "fossil_frights:small_caps"}, {"translate": "ff.task_book.difficulty.medium", "color": "gold", "font": "fossil_frights:small_caps"}, "\n\n", {"translate": "ff.task_book.task.paint_candy_cane.description.0"}, "\n", {"translate": "ff.task_book.task.paint_candy_cane.description.1"}], ["", {"text": "\ue001\ue200", "font": "fossil_frights:books", "color": "#7b7b01"}, {"translate": "ff.task_book.task.paint_candy_cane.description.2"}]]
                 }
               }
             },
