@@ -25,4 +25,5 @@ execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned 23 94
 execute store result score #ff_elf_spawn_point ff_hallucination run random value 1..2
 execute if score #ff_elf_spawn_point ff_hallucination matches 1 positioned -18 80 65 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:9}
 execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned -25 70 41 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:9}
+loot replace entity @e[type=minecraft:copper_golem,tag=ff_elf_infestation_golem,sort=random,limit=1] weapon.mainhand loot fossil_frights:items/heists/loot/common/poster_tube
 execute as @a[predicate=fossil_frights:player/is_playing] at @s run playsound minecraft:entity.copper_golem.death master @s ~ ~ ~ 1 1
