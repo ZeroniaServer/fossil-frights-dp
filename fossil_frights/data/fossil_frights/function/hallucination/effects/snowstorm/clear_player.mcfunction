@@ -1,3 +1,3 @@
-execute at @s run particle entity_effect{color:0x007BFC00} ~ ~1 ~ 0 0 0 0 1 force @a[predicate=fossil_frights:player/team/guard]
+execute at @s run particle entity_effect{color:0x007BFC00} ~ ~1 ~
 tag @s remove ff_snowstorm_active_guard
 function fossil_frights:hallucination/effects/fog_marker/cleanup_player_marker
