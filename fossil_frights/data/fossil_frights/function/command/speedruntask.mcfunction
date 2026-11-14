@@ -6,4 +6,5 @@ execute if score @s speedruntask matches 4 run function fossil_frights:command/s
 execute if score @s speedruntask matches 5 run function fossil_frights:command/speedruntask/toilet_clog
 execute if score @s speedruntask matches 6 run function fossil_frights:command/speedruntask/sit_on_lap
 execute if score @s speedruntask matches 7 run function fossil_frights:command/speedruntask/sweep_popcorn
-execute unless score @s speedruntask matches -1 unless score @s speedruntask matches 1..7 run function fossil_frights:command/speedruntask/usage
+execute if score @s speedruntask matches 8 run function fossil_frights:command/speedruntask/sweep_snow
+execute unless score @s speedruntask matches -1 unless score @s speedruntask matches 1..8 run function fossil_frights:command/speedruntask/usage

@@ -5,6 +5,7 @@ tag @s remove ff_speedruntask_polish_bell
 tag @s remove ff_speedruntask_toilet_clog
 tag @s remove ff_speedruntask_sit_on_lap
 tag @s remove ff_speedruntask_sweep_popcorn
+tag @s remove ff_speedruntask_sweep_snow
 # Remove tags from the previous speedrun task list as well.
 tag @s remove ff_speedruntask_check_security
 tag @s remove ff_speedruntask_reset_salt_level
