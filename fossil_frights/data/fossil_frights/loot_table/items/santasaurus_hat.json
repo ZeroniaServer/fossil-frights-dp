@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.santasaurus_hat",
+                  "color": "white"
+                },
+                "minecraft:item_model": "fossil_frights:display/frightmas/frightmas_hat",
+                "minecraft:equippable": {
+                  "slot": "head"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "santasaurus_hat"
+                }
+              }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}
