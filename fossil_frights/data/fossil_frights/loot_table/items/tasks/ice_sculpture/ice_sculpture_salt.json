@@ -15,13 +15,19 @@
                   "translate": "ff.item.ice_sculpture_salt",
                   "color": "white"
                 },
-                "minecraft:item_model": "minecraft:sugar",
+                "minecraft:item_model": "fossil_frights:items/frights/hard_items/ice_sculpture_salt",
                 "minecraft:max_stack_size": 1,
                 "minecraft:lore": [
                   {
-                    "translate": "ff.item.ice_sculpture_salt.description",
+                    "translate": "ff.item.ice_sculpture_salt.description.melt_ice_sculpture",
                     "color": "white",
-                    "italic": false
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "ff.item.ice_sculpture_salt.description.melt_ice_sculpture.throw",
+                        "color": "yellow"
+                      }
+                    ]
                   }
                 ],
                 "minecraft:custom_data": {
