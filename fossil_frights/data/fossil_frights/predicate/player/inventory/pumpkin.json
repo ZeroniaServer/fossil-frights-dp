@@ -1,11 +1,138 @@
 {
-    "type": "minecraft:any_of",
-    "terms": [
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"weapon.mainhand":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}},
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"container.*":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}},
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"weapon.offhand":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}},
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"armor.*":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}},
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"player.cursor":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}},
-        {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"player.crafting.*":{"predicates":{"minecraft:custom_data":{"itemID":"pumpkin"}}}}}}
-    ]
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "container.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "saddle": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.head": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "confetti_cannon"
+              },
+              "minecraft:container": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "itemID": "pumpkin"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "endechest.0": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "pumpkin"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }
