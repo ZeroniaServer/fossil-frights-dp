@@ -1,7 +1,6 @@
 {
   "type": "minecraft:any_of",
   "terms": [
-    "fossil_frights:player/inventory/heavy_loot",
-    "fossil_frights:player/inventory/misplaced_scissors"
+    "fossil_frights:player/inventory/property/blocks_sprint"
   ]
 }

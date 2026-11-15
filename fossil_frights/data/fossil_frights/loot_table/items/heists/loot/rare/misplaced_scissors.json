@@ -18,6 +18,7 @@
                 "minecraft:item_model": "fossil_frights:items/heists/loot/rare/misplaced_scissors",
                 "minecraft:custom_data": {
                   "itemID": "misplaced_scissors",
+                  "ff_blocks_sprint": true,
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

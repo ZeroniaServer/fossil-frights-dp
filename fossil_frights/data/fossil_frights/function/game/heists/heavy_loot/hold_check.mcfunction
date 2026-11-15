@@ -1,4 +1,4 @@
-execute store success score $holding_heavy ff_dummy if predicate fossil_frights:player/inventory/heavy_loot
+execute store success score $holding_heavy ff_dummy if predicate fossil_frights:player/inventory/property/heist_rules/is_heavy
 
 execute if score $holding_heavy ff_dummy matches 1 run function fossil_frights:game/heists/heavy_loot/apply_attribute_modifiers
 execute if score $holding_heavy ff_dummy matches 1 unless items entity @s armor.head *[minecraft:custom_data~{ff_invisimask:{loot_bag:true}}] run item modify entity @s armor.head fossil_frights:game/heists/invisimask/set_loot_bag_contents

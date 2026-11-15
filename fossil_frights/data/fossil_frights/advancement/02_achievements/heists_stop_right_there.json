@@ -32,7 +32,7 @@
           "type": "minecraft:all_of",
           "terms": [
             "fossil_frights:player/team/thief",
-            "fossil_frights:player/inventory/heist_loot"
+            "fossil_frights:player/inventory/property/heist_rules/is_loot"
           ]
         }
       }

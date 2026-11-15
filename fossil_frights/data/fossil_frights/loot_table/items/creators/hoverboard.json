@@ -115,20 +115,22 @@
                       ]
                     },
                     "minecraft:custom_data": {
-                      "itemID": "hoverboard",
-                      "ff_creator_hoverboard": true,
-                      "ff_prevent_drop": true,
-                      "ff_hoverboard_active": false,
-                      "ff_hoverboard_use": true
+                      "itemID": "creator_hoverboard",
+                      "ff_hoverboard": {
+                        "active": false,
+                        "use_remainder": true
+                      },
+                      "ff_prevent_drop": true
                     }
                   }
                 },
                 "minecraft:custom_data": {
-                  "itemID": "hoverboard",
-                  "ff_creator_hoverboard": true,
-                  "ff_prevent_drop": true,
-                  "ff_hoverboard_active": false,
-                  "ff_hoverboard_use": false
+                  "itemID": "creator_hoverboard",
+                  "ff_hoverboard": {
+                    "active": false,
+                    "use_remainder": false
+                  },
+                  "ff_prevent_drop": true
                 }
               }
             },

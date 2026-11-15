@@ -1,7 +1,7 @@
 ## Teleport outside of the room you are in, and always on the same floor (unless connected to multiple).
 
 # Go toward capture point if holding loot
-execute store success score #go_toward_capture_point ff_dummy if predicate fossil_frights:player/inventory/heist_loot
+execute store success score #go_toward_capture_point ff_dummy if predicate fossil_frights:player/inventory/property/heist_rules/is_loot
 execute if score #go_toward_capture_point ff_dummy matches 1 run scoreboard players set #is_near_capture_point ff_dummy 0
 execute if score #go_toward_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 store success score #is_near_capture_point ff_dummy if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{max:20}}}}
 execute if score #go_toward_capture_point ff_dummy matches 1 if score #is_near_capture_point ff_dummy matches 1 positioned 0.5 80.0 12.5 as @e[type=minecraft:marker,tag=ff_chorus_cola_teleport_location] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:distance":{horizontal:{min:20}}}} run kill @s

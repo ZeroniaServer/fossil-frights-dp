@@ -2,7 +2,7 @@ execute if predicate fossil_frights:player/input/sneak unless entity @s[tag=ff_h
 tag @s remove ff_hoverboard_activation_grace
 execute unless predicate fossil_frights:entity/is_riding_hoverboard run return run function fossil_frights:items/hoverboard/disable
 effect clear @s minecraft:levitation
-execute unless items entity @s weapon.offhand *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] unless items entity @s hotbar.* *[custom_data~{itemID:"hoverboard",ff_hoverboard_active:true}] run return run function fossil_frights:items/hoverboard/disable
+execute unless items entity @s fossil_frights:player/hoverboard_usable_slots *[custom_data~{ff_hoverboard:{active:true}}] run return run function fossil_frights:items/hoverboard/disable
 execute if predicate fossil_frights:player/input/sprint unless entity @s[tag=ff_hoverboard_sprinting] run function fossil_frights:items/hoverboard/sprint/enable
 execute unless predicate fossil_frights:player/input/sprint if entity @s[tag=ff_hoverboard_sprinting] run function fossil_frights:items/hoverboard/sprint/disable
 function fossil_frights:items/hoverboard/speed_tick
