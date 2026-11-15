@@ -1,4 +1,4 @@
-clear @s *[minecraft:custom_data~{itemID:"hoverboard"}]
+clear @s *[minecraft:custom_data~{itemID:"creator_hoverboard"}]
 
 loot replace block 0 0 0 container.0 27 loot fossil_frights:empty
 loot replace block 0 0 0 container.0 1 loot fossil_frights:items/creators/hoverboard

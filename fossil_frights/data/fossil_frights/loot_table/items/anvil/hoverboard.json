@@ -80,15 +80,19 @@
                     },
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
-                      "ff_hoverboard_active": false,
-                      "ff_hoverboard_use": true
+                      "ff_hoverboard": {
+                        "active": false,
+                        "use_remainder": true
+                      }
                     }
                   }
                 },
                 "minecraft:custom_data": {
                   "itemID": "hoverboard",
-                  "ff_hoverboard_active": false,
-                  "ff_hoverboard_use": false,
+                  "ff_hoverboard": {
+                    "active": false,
+                    "use_remainder": false
+                  },
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

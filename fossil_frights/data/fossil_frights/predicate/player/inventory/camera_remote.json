@@ -9,7 +9,7 @@
                     "container.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "museum_map"
+                                "itemID": "camera_remote"
                             }
                         }
                     }
@@ -24,7 +24,7 @@
                     "weapon.offhand": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "itemID": "museum_map"
+                                "itemID": "camera_remote"
                             }
                         }
                     }
@@ -36,10 +36,10 @@
             "entity": "this",
             "predicate": {
                 "slots": {
-                    "container.*": {
+                    "armor.*": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "ff_heist_camera_remote": true
+                                "itemID": "camera_remote"
                             }
                         }
                     }
@@ -51,10 +51,25 @@
             "entity": "this",
             "predicate": {
                 "slots": {
-                    "weapon.offhand": {
+                    "player.cursor": {
                         "predicates": {
                             "minecraft:custom_data": {
-                                "ff_heist_camera_remote": true
+                                "itemID": "camera_remote"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "slots": {
+                    "player.crafting.*": {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "itemID": "camera_remote"
                             }
                         }
                     }

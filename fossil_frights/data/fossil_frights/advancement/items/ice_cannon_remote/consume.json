@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "ff_heist_ice_cannon_remote": true
+              "itemID": "ice_cannon_remote"
             }
           }
         }
