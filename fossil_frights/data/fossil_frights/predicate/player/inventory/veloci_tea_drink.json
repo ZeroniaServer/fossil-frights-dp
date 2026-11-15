@@ -51,7 +51,7 @@
       "entity": "this",
       "predicate": {
         "slots": {
-          "player.cursor": {
+          "saddle": {
             "predicates": {
               "minecraft:custom_data": {
                 "itemID": "veloci_tea_drink"
@@ -67,6 +67,64 @@
       "predicate": {
         "slots": {
           "player.crafting.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "veloci_tea_drink"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "veloci_tea_drink"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.head": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "confetti_cannon"
+              },
+              "minecraft:container": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "itemID": "veloci_tea_drink"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "endechest.0": {
             "predicates": {
               "minecraft:custom_data": {
                 "itemID": "veloci_tea_drink"
