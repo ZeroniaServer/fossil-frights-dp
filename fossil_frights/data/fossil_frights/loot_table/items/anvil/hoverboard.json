@@ -86,6 +86,7 @@
                       },
                       "ff_heist_rules": {
                         "prevent_drop_from_guards": true
+                      }
                     }
                   }
                 },
