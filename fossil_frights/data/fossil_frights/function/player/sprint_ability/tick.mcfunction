@@ -1,4 +1,4 @@
-tag @a[predicate=fossil_frights:player/block_sprinting] add ff_sprint_blocked
+tag @a[gamemode=!spectator,gamemode=!creative,predicate=fossil_frights:player/block_sprinting] add ff_sprint_blocked
 tag @a[tag=ff_sprint_blocked,predicate=!fossil_frights:entity/touching_water_fluid] add ff_sprint_blocked_true
 
 execute as @a[tag=!ff_sprint_blocked_true] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{food:{level:{max:7}}}}} run effect give @s minecraft:saturation 1 0 true
