@@ -26,6 +26,24 @@
       "slots": "player.cursor"
     },
     {
+      "type": "minecraft:contents",
+      "slot_source": {
+        "type": "minecraft:filtered",
+        "slot_source": {
+          "type": "minecraft:slot_range",
+          "slots": "armor.head"
+        },
+        "item_filter": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "itemID": "confetti_cannon"
+            }
+          }
+        }
+      },
+      "component": "minecraft:container"
+    },
+    {
       "type": "minecraft:slot_range",
       "slots": "enderchest.0"
     }
