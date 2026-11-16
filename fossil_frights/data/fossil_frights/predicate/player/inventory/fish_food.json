@@ -124,7 +124,7 @@
       "entity": "this",
       "predicate": {
         "slots": {
-          "endechest.0": {
+          "enderchest.0": {
             "predicates": {
               "minecraft:custom_data": {
                 "itemID": "fish_food"
