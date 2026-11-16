@@ -36,7 +36,9 @@
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true,
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/storage/scrap_metal"
+                    },
                     "warns_about_loot": [
                       "hoverboard"
                     ]

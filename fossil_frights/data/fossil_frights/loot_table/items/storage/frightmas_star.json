@@ -32,7 +32,9 @@
                 "minecraft:custom_data": {
                   "itemID": "frightmas_star",
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/storage/frightmas_star"
+                    }
                   }
                 }
               }

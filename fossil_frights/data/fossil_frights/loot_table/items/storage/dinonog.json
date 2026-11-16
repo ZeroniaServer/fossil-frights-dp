@@ -31,7 +31,9 @@
                   "ff_completes_drink_with_trike_task": true,
                   "ff_heist_rules": {
                     "prevent_ground_despawn": true,
-                    "prevent_drop_from_guards": true
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/storage/dinonog"
+                    }
                   }
                 }
               }

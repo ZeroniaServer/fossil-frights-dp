@@ -20,7 +20,9 @@
                 "minecraft:custom_data": {
                   "itemID": "fire_tablet",
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/storage/fire_tablet"
+                    }
                   }
                 }
               }

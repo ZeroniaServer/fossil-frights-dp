@@ -19,7 +19,7 @@
                 "minecraft:custom_data": {
                   "itemID": "fish_food",
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true
+                    "delete_on_guard_pickup": true
                   }
                 }
               }

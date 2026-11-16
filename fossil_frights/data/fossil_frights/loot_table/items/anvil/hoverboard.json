@@ -110,11 +110,6 @@
                       "seconds": 2.0,
                       "cooldown_group": "fossil_frights:hoverboard"
                     },
-                    "minecraft:tooltip_display": {
-                      "hidden_components": [
-                        "minecraft:damage"
-                      ]
-                    },
                     "minecraft:custom_data": {
                       "itemID": "hoverboard",
                       "ff_hoverboard": {
@@ -122,7 +117,9 @@
                         "use_remainder": true
                       },
                       "ff_heist_rules": {
-                        "prevent_drop_from_guards": true
+                        "refresh_on_pickup": {
+                          "loot_table": "fossil_frights:items/anvil/hoverboard"
+                        }
                       }
                     }
                   }
@@ -134,7 +131,9 @@
                     "use_remainder": false
                   },
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/anvil/hoverboard"
+                    }
                   }
                 }
               }
