@@ -12,7 +12,13 @@ execute as @a[tag=ff_sprint_blocked_true] if predicate {type:"minecraft:entity_p
 execute as @a[tag=ff_sprint_blocked_true] if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{food:{saturation:{min:1}}}}} run effect give @s minecraft:hunger 1 255 true
 execute as @a[tag=ff_sprint_blocked_true] unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{food:{saturation:{min:1}}}}} unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{food:{level:{min:7}}}}} run effect clear @s minecraft:hunger
 
+execute as @a[tag=ff_sprint_blocked] unless predicate fossil_frights:player/is_sneaking unless entity @s[predicate=!fossil_frights:player/input/sprint,predicate=!fossil_frights:player/is_sprinting] if predicate fossil_frights:player/inventory/misplaced_scissors run tag @s add ff_misplaced_scissors_cancel_sprint
+execute as @a[tag=!ff_misplaced_scissors_cancel_sprint] run attribute @s minecraft:air_drag_modifier modifier remove fossil_frights:misplaced_scissors_cancel_sprint
+execute as @a[tag=ff_misplaced_scissors_cancel_sprint] run attribute @s minecraft:air_drag_modifier modifier add fossil_frights:misplaced_scissors_cancel_sprint 1 add_value
+execute as @a[tag=ff_misplaced_scissors_cancel_sprint] run function fossil_frights:player/sprint_ability/show_scissors_run_warning
+
 tag @a remove ff_sprint_blocked
 tag @a remove ff_sprint_blocked_true
+tag @a remove ff_misplaced_scissors_cancel_sprint
 
 schedule function fossil_frights:player/sprint_ability/tick 1t
