@@ -25,14 +25,16 @@ data modify entity @s Age set value -32768
 execute if score #despawns ff_dummy matches 1 run function fossil_frights:items/dropped_items/despawn_timer/init
 
 # Heist items
+execute if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_rules:{is_loot:true}}] run tag @s add ff_dropped_item_is_capturable_heist_loot
 execute if predicate fossil_frights:game_state/heist_mode_active unless items entity @s contents *[custom_data~{ff_heist_rules:{prevent_ground_despawn:true}}] unless entity @s[tag=ff_anvil.display] run function fossil_frights:game/heists/loot/capture/credit/snapshot_owner
 
 # Prevent pickup from non-playing players
 execute if dimension minecraft:overworld run data modify entity @s Owner set value [I;0,0,0,0]
 
 # Add thief pickup priority
-execute if predicate fossil_frights:game_state/heist_mode_active store result score #pickup_delay ff_dummy run data get entity @s PickupDelay
-execute if predicate fossil_frights:game_state/heist_mode_active store result score @s ff_dropped_item_guard_pickup_blocked_until_timestamp run compute default integer {type:"minecraft:add",inputs:["fossil_frights:gametime",{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#pickup_delay"},score:"ff_dummy"},10]}
+execute store result score #pickup_delay ff_dummy run data get entity @s PickupDelay
+execute store result score @s ff_dropped_item_pickup_blocked_until_timestamp run compute default integer {type:"minecraft:add",inputs:["fossil_frights:gametime",{type:"minecraft:score",target:{type:"minecraft:fixed",name:"#pickup_delay"},score:"ff_dummy"}]}
+execute if predicate fossil_frights:game_state/heist_mode_active store result score @s ff_dropped_item_guard_pickup_blocked_until_timestamp run compute default integer {type:"minecraft:add",inputs:[{type:"minecraft:score",target:"this",score:"ff_dropped_item_pickup_blocked_until_timestamp"},10]}
 
 # Remove effects
 item modify entity @s contents fossil_frights:game/heists/set_invisible/off

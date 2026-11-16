@@ -1,8 +1,10 @@
-scoreboard players set $is_near_someone ff_dummy 0
-execute positioned ~-1.25 ~-0.499999 ~-1.25 store success score $is_near_someone ff_dummy as @e[type=player,dx=1.5,dy=0.249998,dz=1.5,predicate=fossil_frights:player/can_pick_up_items] run tag @s add ff_item_entity_pickup.target_candidate
+execute if score @s ff_dropped_item_pickup_blocked_until_timestamp matches -2147483648..2147483647 if predicate {type:"int_value_check",value:"fossil_frights:gametime",test:{min:{type:"minecraft:score",target:"this",score:"ff_dropped_item_pickup_blocked_until_timestamp"}}} run scoreboard players reset @s ff_dropped_item_pickup_blocked_until_timestamp
 
-execute if score @s ff_dropped_item_guard_pickup_blocked_until_timestamp matches -2147483648..2147483647 if predicate {type:"int_value_check",value:"fossil_frights:gametime",test:{min:{type:"minecraft:score",target:"this",score:"ff_dropped_item_guard_pickup_blocked_until_timestamp"}}} run scoreboard players reset @s ff_dropped_item_guard_pickup_blocked_until_timestamp
-execute if score @s ff_dropped_item_guard_pickup_blocked_until_timestamp matches -2147483648..2147483647 run tag @a[tag=ff_item_entity_pickup.target_candidate,predicate=fossil_frights:player/team/guard] remove ff_item_entity_pickup.target_candidate
+scoreboard players set $is_near_someone ff_dummy 0
+execute unless score @s ff_dropped_item_pickup_blocked_until_timestamp matches -2147483648..2147483647 positioned ~-1.25 ~-0.499999 ~-1.25 store success score $is_near_someone ff_dummy as @e[type=player,dx=1.5,dy=0.249998,dz=1.5,predicate=fossil_frights:player/can_pick_up_items] run tag @s add ff_item_entity_pickup.target_candidate
+
+execute unless score @s ff_dropped_item_pickup_blocked_until_timestamp matches -2147483648..2147483647 if score @s ff_dropped_item_guard_pickup_blocked_until_timestamp matches -2147483648..2147483647 if predicate {type:"int_value_check",value:"fossil_frights:gametime",test:{min:{type:"minecraft:score",target:"this",score:"ff_dropped_item_guard_pickup_blocked_until_timestamp"}}} run scoreboard players reset @s ff_dropped_item_guard_pickup_blocked_until_timestamp
+execute unless score @s ff_dropped_item_pickup_blocked_until_timestamp matches -2147483648..2147483647 if score @s ff_dropped_item_guard_pickup_blocked_until_timestamp matches -2147483648..2147483647 run tag @a[tag=ff_item_entity_pickup.target_candidate,predicate=fossil_frights:player/team/guard] remove ff_item_entity_pickup.target_candidate
 
 execute if score $is_near_someone ff_dummy matches 0 if entity @s[tag=ff_item_entity_pickup.was_near_someone] run data modify entity @s Owner set value [I;0,0,0,0]
 execute if score $is_near_someone ff_dummy matches 0 run return run tag @s remove ff_item_entity_pickup.was_near_someone
@@ -48,6 +50,7 @@ execute if score $is_near_someone ff_dummy matches 0 if entity @s[tag=ff_item_en
 execute if score $is_near_someone ff_dummy matches 0 run return run tag @s remove ff_item_entity_pickup.was_near_someone
 
 # pickup
-data modify entity @s Owner set from entity @p[distance=0..,tag=ff_item_entity_pickup.target_candidate] UUID
+execute store success score #owner_changed ff_dummy run data modify entity @s Owner set from entity @p[distance=0..,tag=ff_item_entity_pickup.target_candidate] UUID
+execute if score #owner_changed ff_dummy matches 1 if items entity @s contents *[custom_data~{ff_heist_rules:{refresh_on_pickup:{}}}] run function fossil_frights:items/dropped_items/refresh_on_pickup/replace with entity @s Item.components.minecraft:custom_data.ff_heist_rules.refresh_on_pickup
 tag @a remove ff_item_entity_pickup.target_candidate
 tag @s add ff_item_entity_pickup.was_near_someone

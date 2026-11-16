@@ -5,6 +5,10 @@
     "terms": [
       "fossil_frights:game_state/heist_mode_active",
       {
+        "type": "minecraft:inverted",
+        "term": "fossil_frights:player/team/guard"
+      },
+      {
         "type": "minecraft:int_value_check",
         "value": {
           "type": "minecraft:score",
