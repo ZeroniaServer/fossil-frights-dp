@@ -21,7 +21,6 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "pterodactyl_plushie",
-                  "ff_plushie": "pterodactyl",
                   "ff_prevent_drop": true
                 }
               }

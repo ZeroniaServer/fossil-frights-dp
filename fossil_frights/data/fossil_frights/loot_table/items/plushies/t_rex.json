@@ -21,7 +21,6 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "t_rex_plushie",
-                  "ff_plushie": "t_rex",
                   "ff_prevent_drop": true
                 }
               }

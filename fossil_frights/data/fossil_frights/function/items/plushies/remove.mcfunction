@@ -1,1 +1,1 @@
-$clear @s *[minecraft:custom_data~{ff_plushie:"$(id)"}]
+$clear @s *[minecraft:custom_data~{itemID:"$(id)_plushie"}]

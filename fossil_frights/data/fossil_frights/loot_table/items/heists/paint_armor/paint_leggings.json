@@ -15,7 +15,7 @@
                   "translate": "ff.item.paint_armor",
                   "color": "#E70095"
                 },
-                "minecraft:item_model": "fossil_frights:display/misc/paint_armour/paint_armor_2",
+                "minecraft:item_model": "fossil_frights:display/misc/paint_armor/paint_armor_2",
                 "minecraft:equippable": {
                   "slot": "legs",
                   "asset_id": "fossil_frights:paint",
