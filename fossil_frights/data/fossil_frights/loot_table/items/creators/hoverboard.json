@@ -65,16 +65,6 @@
                       }
                     ]
                   },
-                  {
-                    "translate": "ff.tooltip.indented",
-                    "with": [
-                      {
-                        "translate": "ff.item.hoverboard.description.when_riding.zoom_warning",
-                        "color": "red",
-                        "italic": false
-                      }
-                    ]
-                  },
                   "",
                   {
                     "translate": "item.unbreakable",
