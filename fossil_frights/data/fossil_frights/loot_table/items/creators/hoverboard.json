@@ -27,16 +27,49 @@
                       }
                     ]
                   },
+                  "",
                   {
-                    "translate": "ff.item.hoverboard.description.dismount",
-                    "color": "white",
-                    "italic": false,
+                    "translate": "ff.item.hoverboard.description.when_riding",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
                     "with": [
                       {
-                        "keybind": "key.sneak",
-                        "color": "yellow"
+                        "translate": "ff.item.hoverboard.description.when_riding.dismount",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sneak",
+                            "color": "yellow"
+                          }
+                        ]
                       }
                     ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.hoverboard.description.when_riding.zoom",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sprint",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "",
+                  {
+                    "translate": "item.unbreakable",
+                    "color": "blue",
+                    "italic": false
                   }
                 ],
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/hoverboard/hoverboard_item",
@@ -61,7 +94,8 @@
                 },
                 "minecraft:tooltip_display": {
                   "hidden_components": [
-                    "minecraft:damage"
+                    "minecraft:damage",
+                    "minecraft:unbreakable"
                   ]
                 },
                 "minecraft:use_remainder": {
@@ -71,30 +105,6 @@
                       "translate": "ff.item.creator_hoverboard",
                       "color": "aqua"
                     },
-                    "minecraft:lore": [
-                      {
-                        "translate": "ff.item.hoverboard.description.activate",
-                        "color": "white",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.use",
-                            "color": "yellow"
-                          }
-                        ]
-                      },
-                      {
-                        "translate": "ff.item.hoverboard.description.dismount",
-                        "color": "white",
-                        "italic": false,
-                        "with": [
-                          {
-                            "keybind": "key.sneak",
-                            "color": "yellow"
-                          }
-                        ]
-                      }
-                    ],
                     "minecraft:item_model": "fossil_frights:items/frights/hard_items/hoverboard/hoverboard_item",
                     "minecraft:custom_model_data": {
                       "colors": [

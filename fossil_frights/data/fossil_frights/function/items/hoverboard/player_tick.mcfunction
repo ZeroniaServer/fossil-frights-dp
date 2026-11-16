@@ -3,7 +3,8 @@ tag @s remove ff_hoverboard_activation_grace
 execute unless predicate fossil_frights:entity/is_riding_hoverboard run return run function fossil_frights:items/hoverboard/disable
 effect clear @s minecraft:levitation
 execute unless items entity @s fossil_frights:player/hoverboard_usable_slots *[custom_data~{ff_hoverboard:{active:true}}] run return run function fossil_frights:items/hoverboard/disable
-execute if predicate fossil_frights:player/input/sprint unless entity @s[tag=ff_hoverboard_sprinting] run function fossil_frights:items/hoverboard/sprint/enable
-execute unless predicate fossil_frights:player/input/sprint if entity @s[tag=ff_hoverboard_sprinting] run function fossil_frights:items/hoverboard/sprint/disable
+execute unless entity @s[tag=ff_hoverboard_sprinting] if predicate fossil_frights:player/input/sprint unless predicate fossil_frights:player/block_sprinting run function fossil_frights:items/hoverboard/sprint/enable
+execute if entity @s[tag=ff_hoverboard_sprinting] unless predicate fossil_frights:player/input/sprint run function fossil_frights:items/hoverboard/sprint/disable
+execute if entity @s[tag=ff_hoverboard_sprinting] if predicate fossil_frights:player/block_sprinting run function fossil_frights:items/hoverboard/sprint/disable
 function fossil_frights:items/hoverboard/speed_tick
 execute on vehicle rotated as @s on passengers if entity @s[type=minecraft:item_display,tag=ff_hoverboard_display_model] run rotate @s ~ 0
