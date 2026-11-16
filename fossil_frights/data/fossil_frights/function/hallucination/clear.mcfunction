@@ -21,3 +21,6 @@ function fossil_frights:hallucination/effects/darkness/update_camera_computer
 scoreboard players set #h_timer ff_hallucination 0
 scoreboard players set #h_was_zero ff_hallucination 0
 function fossil_frights:game/bossbar/update_hazards
+posteffect remove @a[predicate=fossil_frights:player/team/guard] fossil_frights:radial_blur/activate
+posteffect add @a[predicate=fossil_frights:player/team/guard] fossil_frights:radial_blur/deactivate
+schedule function fossil_frights:hallucination/clear_posteffect 2s

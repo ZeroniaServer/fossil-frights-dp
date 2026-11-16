@@ -1,0 +1,1 @@
+posteffect remove @a[predicate=fossil_frights:player/team/guard] fossil_frights:radial_blur/deactivate
