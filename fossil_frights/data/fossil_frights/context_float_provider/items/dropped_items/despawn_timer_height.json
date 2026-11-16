@@ -44,6 +44,38 @@
     {
       "condition": "fossil_frights:entity/contents/pink_jelly",
       "value": 0.75
+    },
+    {
+      "condition": "fossil_frights:entity/contents/gingerbread_man",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/penguin_eggs",
+      "value": 0.7
+    },
+    {
+      "condition": "fossil_frights:entity/contents/lost_egg",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/pearl",
+      "value": 0.3
+    },
+    {
+      "condition": "fossil_frights:entity/contents/stockings",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/armor_trim",
+      "value": 0.5
+    },
+    {
+      "condition": "fossil_frights:entity/contents/frightmas_star",
+      "value": 0.45
+    },
+    {
+      "condition": "fossil_frights:entity/contents/claw",
+      "value": 1.1
     }
   ],
   "default": 0.4
