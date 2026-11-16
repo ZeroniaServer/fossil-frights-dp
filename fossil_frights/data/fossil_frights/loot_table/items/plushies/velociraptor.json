@@ -21,7 +21,6 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "velociraptor_plushie",
-                  "ff_plushie": "velociraptor",
                   "ff_prevent_drop": true
                 }
               }
