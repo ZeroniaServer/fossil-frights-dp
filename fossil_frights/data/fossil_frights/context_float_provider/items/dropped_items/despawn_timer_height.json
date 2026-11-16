@@ -31,7 +31,7 @@
     },
     {
       "condition": "fossil_frights:entity/contents/febreeze_rod",
-      "value": 0.85
+      "value": 0.7
     },
     {
       "condition": "fossil_frights:entity/contents/golden_nautilus",
