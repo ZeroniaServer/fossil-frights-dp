@@ -4,4 +4,6 @@ execute as @a[scores={ff_febreeze_rod_fx=-40..},tag=ff_forced_spectate] at @s ru
 execute as @a[scores={ff_febreeze_rod_fx=-40..},tag=!ff_forced_spectate] at @s run particle entity_effect{color:0x007BF700} ~ ~1 ~
 # execute as @a[scores={ff_febreeze_rod_fx=..-40}] run function fossil_frights:items/febreeze_rod/fx/stop
 
+execute as @a[scores={ff_febreeze_rod_fx=20..}] run effect give @s minecraft:slowness 1 1 true
+
 execute if entity @a[limit=1,scores={ff_febreeze_rod_fx=-2147483648..}] run schedule function fossil_frights:items/febreeze_rod/fx/tick 1t
