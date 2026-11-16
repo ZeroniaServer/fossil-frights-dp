@@ -40,7 +40,10 @@
                   "itemID": "febreeze_rod",
                   "ff_febreeze_rod": {},
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true
+                    "prevent_drop_from_guards": true,
+                    "refresh_on_pickup": {
+                      "loot_table": "fossil_frights:items/storage/febreeze_rod"
+                    }
                   }
                 }
               }

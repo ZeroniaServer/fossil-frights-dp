@@ -259,6 +259,7 @@ scoreboard objectives add ff_heist_loot_security_flash dummy
 scoreboard objectives add ff_heist_loot_security_lease dummy
 scoreboard objectives add ff_heist_loot_security_locked dummy
 scoreboard objectives add ff_dropped_item_despawn_timestamp dummy
+scoreboard objectives add ff_dropped_item_pickup_blocked_until_timestamp dummy
 scoreboard objectives add ff_dropped_item_guard_pickup_blocked_until_timestamp dummy
 scoreboard objectives add ff_task_book_shelf dummy
 scoreboard objectives add ff_compass dummy
