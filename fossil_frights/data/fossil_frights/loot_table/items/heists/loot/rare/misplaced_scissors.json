@@ -13,9 +13,16 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.item.misplaced_scissors",
-                  "color": "red"
+                  "color": "#C7332D"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/rare/misplaced_scissors",
+                "minecraft:lore": [
+                  {
+                    "translate": "ff.actionbar.scissors.unsafe_to_run",
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
                 "minecraft:custom_data": {
                   "itemID": "misplaced_scissors",
                   "ff_blocks_sprint": true,
