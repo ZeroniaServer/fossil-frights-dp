@@ -1,4 +1,4 @@
-execute at @s run particle entity_effect{color:0x007BF9FF} ~ ~1 ~
+execute at @s run particle entity_effect{color:0x007BF9FF} ~ ~1 ~ 0 0 0 0 1 force @s
 
 scoreboard players set @s ff_febreeze_rod_fx 40
 effect give @s minecraft:slowness 2 1 true
