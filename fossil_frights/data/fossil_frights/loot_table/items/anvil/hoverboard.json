@@ -27,14 +27,51 @@
                       }
                     ]
                   },
+                  "",
                   {
-                    "translate": "ff.item.hoverboard.description.dismount",
-                    "color": "white",
-                    "italic": false,
+                    "translate": "ff.item.hoverboard.description.when_riding",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
                     "with": [
                       {
-                        "keybind": "key.sneak",
-                        "color": "yellow"
+                        "translate": "ff.item.hoverboard.description.when_riding.dismount",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sneak",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.hoverboard.description.when_riding.zoom",
+                        "color": "white",
+                        "italic": false,
+                        "with": [
+                          {
+                            "keybind": "key.sprint",
+                            "color": "yellow"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "translate": "ff.tooltip.indented",
+                    "with": [
+                      {
+                        "translate": "ff.item.hoverboard.description.when_riding.zoom_warning",
+                        "color": "red",
+                        "italic": false
                       }
                     ]
                   }
