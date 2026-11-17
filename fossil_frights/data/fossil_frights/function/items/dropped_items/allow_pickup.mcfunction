@@ -51,6 +51,6 @@ execute if score $is_near_someone ff_dummy matches 0 run return run tag @s remov
 
 # pickup
 execute store success score #owner_changed ff_dummy run data modify entity @s Owner set from entity @p[distance=0..,tag=ff_item_entity_pickup.target_candidate] UUID
-execute if score #owner_changed ff_dummy matches 1 if items entity @s contents *[custom_data~{ff_heist_rules:{refresh_on_pickup:{}}}] run function fossil_frights:items/dropped_items/refresh_on_pickup/replace with entity @s Item.components.minecraft:custom_data.ff_heist_rules.refresh_on_pickup
+execute if score #owner_changed ff_dummy matches 1 if predicate fossil_frights:game_state/heist_mode_active if items entity @s contents *[custom_data~{ff_heist_rules:{refresh_on_pickup:{}}}] run function fossil_frights:items/dropped_items/refresh_on_pickup/replace with entity @s Item.components.minecraft:custom_data.ff_heist_rules.refresh_on_pickup
 tag @a remove ff_item_entity_pickup.target_candidate
 tag @s add ff_item_entity_pickup.was_near_someone
