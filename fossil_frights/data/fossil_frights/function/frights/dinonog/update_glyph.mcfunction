@@ -1,3 +1,5 @@
+execute if score #dinonog_bar ff_evilnog matches 1..10 run return run function fossil_frights:frights/dinonog/update_glyph_evil
+
 execute if score #dinonog_frame ff_dinonog matches 0 run bossbar set fossil_frights:dinonog name {text:"\ue700",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}
 execute if score #dinonog_frame ff_dinonog matches 1 run bossbar set fossil_frights:dinonog name {text:"\ue701",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}
 execute if score #dinonog_frame ff_dinonog matches 2 run bossbar set fossil_frights:dinonog name {text:"\ue702",font:"fossil_frights:dinonog_meter/meter",color:"#7c7c08",shadow_color:[0,0,0,0]}

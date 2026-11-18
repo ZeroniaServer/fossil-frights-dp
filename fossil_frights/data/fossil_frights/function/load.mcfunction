@@ -50,6 +50,7 @@ scoreboard objectives add ff_door_tick dummy
 scoreboard objectives add ff_door_delay dummy
 scoreboard objectives add ff_game_state dummy
 scoreboard objectives add ff_dinonog dummy
+scoreboard objectives add ff_evilnog dummy
 scoreboard objectives add ff_hallucination dummy
 scoreboard objectives add ff_snowstorm_tick dummy
 scoreboard objectives add ff_snowstorm_clear_tick dummy
