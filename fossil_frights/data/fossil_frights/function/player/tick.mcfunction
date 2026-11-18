@@ -142,7 +142,7 @@ execute if score @s speedruntask matches 1.. run scoreboard players enable @s sp
 execute if score @s speedruntask matches ..-1 run scoreboard players set @s speedruntask 0
 execute if score @s speedruntask matches 1.. run scoreboard players set @s speedruntask 0
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/tick
-execute if entity @s[tag=ff_tutorial_return_to_game,tag=!ff_fade_tp_active] run function fossil_frights:tutorial/return_to_game
+execute if entity @s[tag=ff_tutorial_return_to_game,tag=ff_tutorial_return_started,tag=!ff_tutorial,tag=!ff_fade_tp_active] run function fossil_frights:tutorial/return_to_game
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:player/is_playing run return run function fossil_frights:command/leave
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] if predicate fossil_frights:game_state/game_running if predicate fossil_frights:player/is_playing run function fossil_frights:player/death_active
 execute unless score @s ff_deaths = @s ff_deaths_seen unless entity @s[nbt={Health:0.0f}] if entity @s[gamemode=!spectator] unless predicate fossil_frights:game_state/game_running run function fossil_frights:player/respawn_lobby
