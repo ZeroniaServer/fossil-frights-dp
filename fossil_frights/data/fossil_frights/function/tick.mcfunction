@@ -17,6 +17,7 @@ scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
 scoreboard players reset @a[scores={ff_tp_delay=..0}] ff_tp_delay
+execute as @a[predicate=!fossil_frights:location/lobby_games/teleporter_pad] run scoreboard players set @s ff_tp_time 0
 
 execute as @e[type=minecraft:player,gamemode=!spectator,gamemode=!creative,tag=!ff_fade_tp_active,predicate=fossil_frights:player/is_playing,predicate=!fossil_frights:location/room/rough_museum_bounds] at @s run function fossil_frights:player/kill/left_museum_bounds
 
