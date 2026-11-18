@@ -24,6 +24,7 @@ function fossil_frights:game/bossbar/setup
 scoreboard players set #dinonog_bar ff_dinonog 3600
 scoreboard players set #dinonog_max ff_dinonog 3600
 scoreboard players set #dinonog_last_frame ff_dinonog -1
+scoreboard players set #dinonog_bar ff_evilnog 0
 function fossil_frights:frights/dinonog/update
 function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup

@@ -3,6 +3,7 @@ scoreboard players set $heist_round_active ff_game_state 1
 scoreboard players set #dinonog_max ff_dinonog 100
 scoreboard players set #dinonog_bar ff_dinonog 100
 scoreboard players set #dinonog_last_frame ff_dinonog -1
+scoreboard players set #dinonog_bar ff_evilnog 0
 function fossil_frights:messages/bossbar/game_starting
 bossbar add fossil_frights:hazards [{"text":""}]
 bossbar set fossil_frights:hazards players @a
