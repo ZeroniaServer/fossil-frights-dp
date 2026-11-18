@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    "fossil_frights:location/lobby_games/teleporters/temple_run",
+    "fossil_frights:location/lobby_games/teleporters/sulfur_strikers",
+    "fossil_frights:location/lobby_games/teleporters/parkour",
+    "fossil_frights:location/lobby_games/teleporters/ant_fight"
+  ]
+}
