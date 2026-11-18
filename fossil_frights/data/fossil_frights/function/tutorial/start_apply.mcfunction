@@ -3,6 +3,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 13 run
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute if entity @s[tag=ff_fade_tp_active] run return 0
+execute if entity @s[tag=ff_tutorial_return_to_game] run tag @s add ff_tutorial_return_started
 execute if entity @s[tag=ff_tutorial] run function fossil_frights:tutorial/stop_silent
 tag @s add ff_tutorial
 scoreboard players set @s ff_tutorial 1
