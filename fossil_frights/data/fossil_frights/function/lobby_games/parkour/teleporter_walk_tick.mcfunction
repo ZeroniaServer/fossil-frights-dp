@@ -10,7 +10,7 @@ execute if entity @s[tag=ff_tp_dispatch] if score @s ff_tp_action matches 3 run 
 execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches ..10 run scoreboard players add @s ff_tp_time 1
-execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches 1 run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
+execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches 1 at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches 10.. run title @s times 5 3 10
 execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches 10.. run title @s title {"text":"","font":"fossil_frights:title_overlays/fade_black","italic":false,"shadow_color":0}
 execute as @a[gamemode=adventure,tag=!ff_fade_tp_active,x=-18,y=80,z=-4,dx=0,dy=1,dz=0] if score @s ff_tp_time matches 10.. run scoreboard players set @s ff_tp_action 3
