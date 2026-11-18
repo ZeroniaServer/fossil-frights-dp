@@ -124,5 +124,4 @@ execute if score $rare_heavy_exact ff_heist matches 1.. run scoreboard players s
 execute if score $rare_heavy_exact ff_heist matches 0 run scoreboard players add $reopen_grace ff_heist 1
 execute if score $reopen_grace ff_heist matches 4.. if score $security_by_loot ff_heist matches 1 run function fossil_frights:game/heists/loot/restore_security_alert
 scoreboard players operation $rare_heavy_exact_prev ff_heist = $rare_heavy_exact ff_heist
-execute unless score $taken_common_uncommon_prev ff_heist = $taken_common_uncommon ff_heist run tellraw Evtema3 [{text:"set common uncommon prev to "},{score:{name:"$taken_common_uncommon",objective:"ff_heist"}}]
 scoreboard players operation $taken_common_uncommon_prev ff_heist = $taken_common_uncommon ff_heist

@@ -1,6 +1,5 @@
 scoreboard players set $heist_flash ff_heist 0
 scoreboard players set $taken_common_uncommon_prev ff_heist 0
-tellraw Evtema3 {text:"reset triggered"}
 scoreboard players set $heist_sidebar_slot ff_heist 11
 scoreboard players set $heist_common_selected ff_heist 0
 scoreboard players set $heist_uncommon_selected ff_heist 0
