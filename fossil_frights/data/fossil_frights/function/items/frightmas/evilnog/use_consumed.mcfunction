@@ -4,7 +4,7 @@ execute unless entity @s[predicate=fossil_frights:player/team/thief,gamemode=!sp
 execute if score #dinonog_bar ff_dinonog matches 0 run function fossil_frights:hallucination/add_random
 execute if score #dinonog_bar ff_dinonog matches 0 run scoreboard players set #h_was_zero ff_hallucination 1
 execute if score #dinonog_bar ff_dinonog matches 0 run scoreboard players set #h_timer ff_hallucination 0
-execute if score #dinonog_bar ff_dinonog matches 1.. run scoreboard players set #dinonog_bar ff_evilnog 10
+execute if score #dinonog_bar ff_dinonog matches 1.. run scoreboard players set #dinonog_bar ff_evilnog 30
 execute if score #dinonog_bar ff_dinonog matches ..50 run scoreboard players set #dinonog_bar ff_dinonog 0
 execute if score #dinonog_bar ff_dinonog matches 51.. run scoreboard players remove #dinonog_bar ff_dinonog 50
 function fossil_frights:frights/dinonog/update

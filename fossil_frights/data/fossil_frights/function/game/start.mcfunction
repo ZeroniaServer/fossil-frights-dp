@@ -22,9 +22,11 @@ function fossil_frights:cameras/camera_setup
 function fossil_frights:tasks/hard/pig_wrangler/spawn_waiting
 function fossil_frights:game/bossbar/setup
 scoreboard players set #dinonog_bar ff_dinonog 3600
+scoreboard players set #dinonog_display ff_dinonog 3600
 scoreboard players set #dinonog_max ff_dinonog 3600
 scoreboard players set #dinonog_last_frame ff_dinonog -1
 scoreboard players set #dinonog_bar ff_evilnog 0
+scoreboard players set #dinonog_evil_state ff_evilnog 0
 function fossil_frights:frights/dinonog/update
 function fossil_frights:animations/defeat/stop
 function fossil_frights:join/join_pads/setup
