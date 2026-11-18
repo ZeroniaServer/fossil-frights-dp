@@ -6,4 +6,5 @@ execute if predicate fossil_frights:game_state/heist_mode_active if score #dinon
 execute if predicate fossil_frights:game_state/heist_mode_active run return run function fossil_frights:frights/dinonog/update
 scoreboard players add #dinonog_bar ff_dinonog 1800
 execute if score #dinonog_bar ff_dinonog matches 3601.. run scoreboard players set #dinonog_bar ff_dinonog 3600
+scoreboard players set #dinonog_bar ff_evilnog 0
 function fossil_frights:frights/dinonog/update
