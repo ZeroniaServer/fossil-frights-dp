@@ -1,4 +1,3 @@
-execute unless predicate fossil_frights:game_state/game_running run scoreboard players operation #dinonog_display ff_dinonog = #dinonog_bar ff_dinonog
 scoreboard players operation #dinonog_frame ff_dinonog = #dinonog_max ff_dinonog
 scoreboard players operation #dinonog_frame ff_dinonog -= #dinonog_display ff_dinonog
 scoreboard players operation #dinonog_frame ff_dinonog *= #dinonog_glyph_max ff_dinonog
