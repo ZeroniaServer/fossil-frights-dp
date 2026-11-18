@@ -1,0 +1,22 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "immediately_detect_death": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ff_immediately_detect_death": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fossil_frights:player/death/immediately_on_death"
+  }
+}

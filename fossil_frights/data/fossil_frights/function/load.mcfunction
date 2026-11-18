@@ -207,6 +207,7 @@ scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_tp_time dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
+scoreboard objectives add ff_immediately_detect_death minecraft.custom:minecraft.deaths
 scoreboard players reset @a ff_tp_time
 scoreboard players reset @a ff_tp_delay
 scoreboard players reset @a ff_tp_action
