@@ -87,6 +87,8 @@ tag @s remove ff_ant_fight
 tag @s remove ff_dropped_infinileaf
 tag @s remove ff_ant_lobby_blind
 tag @s remove ff_tutorial
+tag @s remove ff_tutorial_return_to_game
+tag @s remove ff_tutorial_return_started
 tag @s remove ff_day_tutorial_prompt_open
 scoreboard players set @s ff_queue_order 0
 scoreboard players set @s ff_ant_fight 0
