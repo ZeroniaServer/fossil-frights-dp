@@ -33,7 +33,10 @@
                 "minecraft:custom_data": {
                   "itemID": "paint_helmet",
                   "ff_paint_armor": true,
-                  "ff_prevent_drop": true
+                  "ff_prevent_drop": true,
+                  "ff_heist_rules": {
+                    "keep_on_thief_death": true
+                  }
                 }
               }
             },

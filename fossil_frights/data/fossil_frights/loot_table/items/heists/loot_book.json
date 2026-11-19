@@ -46,15 +46,15 @@
                     "minecraft:item_model": "fossil_frights:items/heists/lootbook/loot_book",
                     "minecraft:custom_data": {
                       "itemID": "loot_book",
-                      "ff_heist_loot_book": true,
-                      "ff_heist_lootbook_remainder": true,
+                      "ff_loot_book": {
+                        "use_remainder": true
+                      },
                       "ff_prevent_drop": true
                     }
                   }
                 },
                 "minecraft:custom_data": {
                   "itemID": "loot_book",
-                  "ff_heist_loot_book": true,
                   "ff_prevent_drop": true
                 }
               }

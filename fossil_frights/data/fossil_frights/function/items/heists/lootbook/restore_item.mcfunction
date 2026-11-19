@@ -1,3 +1,3 @@
-execute if items entity @s weapon.mainhand *[custom_data~{ff_heist_lootbook_remainder:true}] run loot replace entity @s weapon.mainhand loot fossil_frights:items/heists/loot_book
-execute if items entity @s weapon.offhand *[custom_data~{ff_heist_lootbook_remainder:true}] run loot replace entity @s weapon.offhand loot fossil_frights:items/heists/loot_book
+loot replace block 0 0 0 container.0 loot fossil_frights:items/heists/loot_book
+item fill entity @s fossil_frights:player/filtered/loot_book_use_remainder from block 0 0 0 container.0
 tag @s remove ff_lootbook_restore_pending

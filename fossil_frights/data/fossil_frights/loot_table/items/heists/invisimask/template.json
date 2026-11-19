@@ -82,7 +82,10 @@
                 "minecraft:custom_data": {
                   "itemID": "invisimask",
                   "ff_invisimask": {},
-                  "ff_prevent_drop": true
+                  "ff_prevent_drop": true,
+                  "ff_heist_rules": {
+                    "keep_on_thief_death": true
+                  }
                 }
               }
             },
