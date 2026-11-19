@@ -30,4 +30,7 @@ execute if score #heist_punch_bar ff_dummy matches 27 run data modify storage fo
 execute if score #heist_punch_bar ff_dummy matches 28 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55c"
 execute if score #heist_punch_bar ff_dummy matches 29 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55d"
 execute if score #heist_punch_bar ff_dummy matches 30 run data modify storage fossil_frights:thief_cooldown_ui glyph set value "\ue55e"
-function fossil_frights:game/heists/punch/show_cooldown_macro with storage fossil_frights:thief_cooldown_ui
+
+scoreboard players set @s ff_actionbar_manager.slot.invisipunch_cooldown 1
+scoreboard players display numberformat @s ff_actionbar_manager.slot.invisipunch_cooldown fixed [{text:"Invisi",font:"fossil_frights:small_caps",color:"#7c7c10"},{text:"punch",font:"fossil_frights:small_caps",color:"#7c7c0c"},{text:"\uE601",font:"fossil_frights:invisipunch_layout"},{storage:"fossil_frights:thief_cooldown_ui",nbt:"glyph",interpret:true,font:"fossil_frights:actionbar/thief_ability_cooldown",color:"#7c7c14"},{text:"\uE602",font:"fossil_frights:invisipunch_layout"}]
+schedule function fossil_frights:player/actionbar/manager 1t append
