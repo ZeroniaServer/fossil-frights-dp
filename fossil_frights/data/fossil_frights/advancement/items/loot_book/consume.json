@@ -7,7 +7,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "ff_heist_loot_book": true
+              "itemID": "loot_book"
             }
           }
         }

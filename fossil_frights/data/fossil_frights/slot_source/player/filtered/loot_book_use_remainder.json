@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:filtered",
+  "slot_source": "fossil_frights:player/all",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "ff_loot_book": {
+          "use_remainder": true
+        }
+      }
+    }
+  }
+}
