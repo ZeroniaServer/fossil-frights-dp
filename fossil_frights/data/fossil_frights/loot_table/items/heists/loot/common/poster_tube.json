@@ -16,10 +16,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/poster_tube",
-                "minecraft:enchantments": {
-                  "minecraft:knockback": 2
-                },
-                "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
                   "itemID": "poster_tube",
                   "ff_heist_rules": {
@@ -29,6 +25,20 @@
               }
             },
             "fossil_frights:item_definition/heist_loot/poster_tube",
+            {
+              "type": "minecraft:sequence",
+              "functions": {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:enchantment_glint_override": false,
+                  "minecraft:enchantments": {
+                    "minecraft:knockback": 2
+                  }
+                }
+              },
+              "condition": "fossil_frights:game_state/heist_mode_active"
+            },
+            "fossil_frights:item_definition/extra_properties_in_heists",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

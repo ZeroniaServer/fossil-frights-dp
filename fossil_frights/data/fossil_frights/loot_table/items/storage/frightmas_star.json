@@ -15,19 +15,6 @@
                   "translate": "ff.item.frightmas_star",
                   "color": "yellow"
                 },
-                "minecraft:lore": [
-                  {
-                    "translate": "ff.item.frightmas_star.description.attack",
-                    "color": "white",
-                    "italic": false,
-                    "with": [
-                      {
-                        "translate": "ff.item.frightmas_star.description.attack.punch",
-                        "color": "yellow"
-                      }
-                    ]
-                  }
-                ],
                 "minecraft:item_model": "fossil_frights:items/frightmas/frightmas_star",
                 "minecraft:custom_data": {
                   "itemID": "frightmas_star",
@@ -40,6 +27,28 @@
               }
             },
             "fossil_frights:item_definition/heist_loot/frightmas_star",
+            {
+              "type": "minecraft:sequence",
+              "functions": {
+                "type": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "ff.item.frightmas_star.description.attack",
+                    "color": "white",
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "ff.item.frightmas_star.description.attack.punch",
+                        "color": "yellow"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "append"
+              },
+              "condition": "fossil_frights:game_state/heist_mode_active"
+            },
+            "fossil_frights:item_definition/extra_properties_in_heists",
             "fossil_frights:item_definition/base_item_data"
           ]
         }

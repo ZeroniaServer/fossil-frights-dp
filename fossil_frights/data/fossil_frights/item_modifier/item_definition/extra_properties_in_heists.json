@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:sequence",
+  "condition": {
+    "type": "minecraft:inverted",
+    "term": "fossil_frights:game_state/heist_mode_active"
+  },
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "lore": [
+        {
+          "translate": "ff.tooltip.extra_properties_in_heists",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}
