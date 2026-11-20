@@ -3,24 +3,7 @@
     "icon": {
       "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.carnivorous_fly_trap",
-          "italic": false
-        },
-        "minecraft:item_model": "fossil_frights:display/exhibits/terrarium/item/plants/carnivorous_flytrap",
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "carnivorous_flytrap"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "fossil_frights:display/exhibits/terrarium/item/plants/carnivorous_flytrap"
       }
     },
     "title": {

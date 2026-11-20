@@ -2,7 +2,10 @@
   "parent": "fossil_frights:03_lobby/root",
   "display": {
     "icon": {
-      "id": "minecraft:sulfur_cube_bucket"
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:sulfur_cube_bucket"
+      }
     },
     "title": {
       "translate": "ff.advancement.striker"

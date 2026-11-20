@@ -2,7 +2,10 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:clock"
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:clock"
+      }
     },
     "title": {
       "translate": "ff.advancement.twenty_minute_club"
