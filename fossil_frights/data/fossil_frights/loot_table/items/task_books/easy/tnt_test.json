@@ -60,6 +60,12 @@
                       }
                     ],
                     [
+                      "",
+                      {
+                        "text": "\ue001\ue100",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
+                      },
                       {
                         "translate": "ff.task_book.task.tnt_test.description.1"
                       }
