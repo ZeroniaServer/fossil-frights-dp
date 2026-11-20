@@ -2,7 +2,10 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:mangrove_button"
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:mangrove_button"
+      }
     },
     "title": {
       "translate": "ff.advancement.days_without_incident_0"

@@ -2,7 +2,10 @@
   "parent": "fossil_frights:02_achievements/root",
   "display": {
     "icon": {
-      "id": "minecraft:minecart"
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "minecraft:minecart"
+      }
     },
     "title": {
       "translate": "ff.advancement.forklift_certified"

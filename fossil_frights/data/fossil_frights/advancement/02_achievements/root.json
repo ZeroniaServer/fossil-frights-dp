@@ -1,25 +1,9 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:cookie",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.cookie_jar",
-          "italic": false
-        },
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": [
-              "cookie_jar"
-            ]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": [
-            "minecraft:lore"
-          ]
-        }
+        "minecraft:item_model": "minecraft:cookie"
       }
     },
     "title": {

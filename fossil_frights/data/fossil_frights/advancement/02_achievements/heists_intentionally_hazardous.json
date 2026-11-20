@@ -2,26 +2,9 @@
   "parent": "fossil_frights:04_heists/root",
   "display": {
     "icon": {
-      "id": "minecraft:light_blue_stained_glass_pane",
+      "id": "minecraft:stone",
       "components": {
-        "minecraft:item_name": {
-          "translate": "ff.item.wet_floor_sign",
-          "color": "yellow",
-          "italic": false
-        },
-        "minecraft:item_model": "fossil_frights:display/exhibits/basement/wet_floor_sign",
-        "minecraft:lore": [
-          {
-            "text": "",
-            "extra": ["wet_floor_sign"]
-          }
-        ],
-        "minecraft:tooltip_display": {
-          "hidden_components": ["minecraft:lore"]
-        },
-        "minecraft:custom_data": {
-          "itemID": "wet_floor_sign"
-        }
+        "minecraft:item_model": "fossil_frights:display/exhibits/basement/wet_floor_sign"
       }
     },
     "title": {
