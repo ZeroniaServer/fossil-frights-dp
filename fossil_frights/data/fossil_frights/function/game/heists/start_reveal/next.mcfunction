@@ -8,5 +8,5 @@ execute if score $heist_reveal_slot ff_heist matches 50 if score $heist_stairway
 scoreboard players remove $heist_reveal_slot ff_heist 1
 execute if score $heist_reveal_slot ff_heist matches 40.. run schedule function fossil_frights:game/heists/start_reveal/next 20t replace
 execute if score $heist_reveal_slot ff_heist matches ..39 run schedule function fossil_frights:game/heists/start_reveal/goodluck 30t replace
-execute if score $heist_reveal_slot ff_heist matches ..39 run schedule function fossil_frights:game/heists/detonator/animate 5t replace
+execute if score $heist_reveal_slot ff_heist matches ..39 run function fossil_frights:game/heists/detonator/animate
 execute if score $heist_reveal_slot ff_heist matches ..39 run schedule function fossil_frights:game/heists/detonator/activate 10t replace
