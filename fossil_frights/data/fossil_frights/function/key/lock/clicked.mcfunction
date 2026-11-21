@@ -6,6 +6,8 @@ execute unless items entity @s weapon.* *[custom_data~{itemID:"key"}] run return
 execute if items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] run swing @s mainhand
 execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] run swing @s offhand
 
+tag @s add ff_key_lock_clicked_player
+
 execute at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_key_anim,distance=..1.25,limit=1] run return 0
 scoreboard players set @s ff_lock_look 0
 execute at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ run function fossil_frights:key/anim_from_click
@@ -15,3 +17,5 @@ execute unless score @s ff_lock_look matches 1 anchored eyes positioned ^ ^ ^0.5
 execute if score @s ff_lock_look matches 1 run function fossil_frights:player/actionbar/show/generic/key.unlocking
 execute if score @s ff_lock_look matches 1 if predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:game/heists/items/consume_key
 execute if score @s ff_lock_look matches 1 unless predicate fossil_frights:game_state/heist_mode_active run function fossil_frights:key/start_cooldown
+
+tag @s remove ff_key_lock_clicked_player

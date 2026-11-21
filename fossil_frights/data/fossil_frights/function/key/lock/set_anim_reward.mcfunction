@@ -1,1 +1,1 @@
-$item modify entity @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] contents {type:"minecraft:set_contents",component:"minecraft:container",entries:[{type:"minecraft:loot_table",value:"fossil_frights:$(loot)"}]}
+$execute as @a[limit=1,tag=ff_key_lock_clicked_player] run item modify entity @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] contents {type:"minecraft:set_contents",component:"minecraft:container",entries:[{type:"minecraft:loot_table",value:"fossil_frights:$(loot)"}]}
