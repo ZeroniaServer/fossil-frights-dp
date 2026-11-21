@@ -1,3 +1,4 @@
+execute as @e[type=minecraft:painting] run data merge entity @s {Invulnerable:1b}
 execute unless data storage fossil_frights:world settings{} run data modify storage fossil_frights:world settings set value {}
 execute unless data storage fossil_frights:world settings.realms run data modify storage fossil_frights:world settings.realms set value false
 data modify storage fossil_frights:world settings.singleplayer set value false
