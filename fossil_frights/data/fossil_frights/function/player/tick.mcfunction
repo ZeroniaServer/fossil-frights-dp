@@ -54,6 +54,7 @@ execute if score @s ff_tutorial_prompt matches 2 run function fossil_frights:gam
 execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players enable @s ff_tutorial_prompt
 execute if score @s ff_tutorial_prompt matches 1.. run scoreboard players set @s ff_tutorial_prompt 0
 scoreboard players add @s ff_msg_cooldown 0
+execute if score @s ff_heist_ui_cooldown matches 1.. run scoreboard players remove @s ff_heist_ui_cooldown 1
 execute if score @s ff_settings_mode_cooldown matches 1.. run scoreboard players remove @s ff_settings_mode_cooldown 1
 execute if score @s ff_settings_mode_cooldown matches ..0 run scoreboard players reset @s ff_settings_mode_cooldown
 execute if score @s ff_msg_cooldown matches 1.. run scoreboard players remove @s ff_msg_cooldown 1
