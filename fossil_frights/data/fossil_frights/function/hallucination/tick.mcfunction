@@ -9,6 +9,9 @@ execute if score #h_entered_zero ff_hallucination matches 1 run function fossil_
 execute if score #h_entered_zero ff_hallucination matches 1 run scoreboard players set #h_timer ff_hallucination 0
 execute if score #h_active_count ff_hallucination matches 1 unless entity @a[tag=ff_dinonog_onboarded] as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/show/fallback_instruction/drink_dinonog
 execute if score #h_entered_zero ff_hallucination matches 1 run return 0
+execute unless score $timer_frozen ff_day matches 0 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active unless score $day_active ff_day matches 1 run return 0
+execute unless predicate fossil_frights:game_state/heist_mode_active unless score $timer_started ff_day matches 1 run return 0
 scoreboard players add #h_timer ff_hallucination 1
 execute if score #h_timer ff_hallucination matches 600.. run function fossil_frights:hallucination/add_random
 execute if score #h_timer ff_hallucination matches 600.. run scoreboard players set #h_timer ff_hallucination 0
