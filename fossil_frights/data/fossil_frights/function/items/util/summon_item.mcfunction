@@ -1,6 +1,7 @@
 $data modify storage fossil_frights:summon_item entity_data set value $(nbt)
 data modify storage fossil_frights:summon_item entity_data.Item set value {id:"minecraft:stone",components:{"minecraft:item_model":"minecraft:air","minecraft:custom_data":{ff_summon_item_delete:true}}}
 data modify storage fossil_frights:summon_item entity_data.Tags append value "ff_summon_item_new"
+data modify storage fossil_frights:summon_item entity_data.PickupDelay set compute default integer {type:"minecraft:max",inputs:[{type:"minecraft:storage",storage:"fossil_frights:summon_item",path:"entity_data.PickupDelay"},1]}
 function fossil_frights:items/util/summon_item_macro with storage fossil_frights:summon_item
 $loot replace entity @e[limit=1,dx=0,type=minecraft:item,tag=ff_summon_item_new] contents loot $(loot_table)
 execute as @e[limit=1,dx=0,type=minecraft:item,tag=ff_summon_item_new] if items entity @s contents *[custom_data={ff_summon_item_delete:true}] run kill @s
