@@ -10,4 +10,5 @@ execute if score #h_entered_zero ff_hallucination matches 1 run scoreboard playe
 execute if score #h_active_count ff_hallucination matches 1 unless entity @a[tag=ff_dinonog_onboarded] as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:player/actionbar/show/fallback_instruction/drink_dinonog
 execute if score #h_entered_zero ff_hallucination matches 1 run return 0
 scoreboard players add #h_timer ff_hallucination 1
+execute if score #h_timer ff_hallucination matches 600.. run function fossil_frights:hallucination/add_random
 execute if score #h_timer ff_hallucination matches 600.. run scoreboard players set #h_timer ff_hallucination 0
