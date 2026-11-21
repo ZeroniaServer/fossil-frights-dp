@@ -1,0 +1,2 @@
+advancement revoke @s only fossil_frights:misc/levitation_water_fix_trigger
+function fossil_frights:player/effects/levitation_water_fix/tick
