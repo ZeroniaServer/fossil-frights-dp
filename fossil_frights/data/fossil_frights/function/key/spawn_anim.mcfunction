@@ -4,3 +4,8 @@ execute if entity @s[tag=ff_lock_west] run execute positioned ~-0.22 ~0.375 ~ ro
 execute if entity @s[tag=ff_lock_east] run execute positioned ~0.22 ~0.375 ~ rotated 180 90 run function fossil_frights:items/util/summon_item_display {loot_table:"fossil_frights:display/key_animated",nbt:{Tags:["ff_key_anim","ff_key_anim_east"],item_display:"fixed",transformation:{right_rotation:[0,0,0,1],scale:[0.7,0.7,0.7],left_rotation:[0.7071068,0,0,0.7071068],translation:[0,0,0]},width:1,height:1}}
 function fossil_frights:key/lock/load_anim_reward
 scoreboard players set @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] ff_key_anim 0
+
+scoreboard players operation @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] ff_active_uuid_0 = @a[limit=1,tag=ff_key_lock_clicked_player] ff_active_uuid_0
+scoreboard players operation @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] ff_active_uuid_1 = @a[limit=1,tag=ff_key_lock_clicked_player] ff_active_uuid_1
+scoreboard players operation @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] ff_active_uuid_2 = @a[limit=1,tag=ff_key_lock_clicked_player] ff_active_uuid_2
+scoreboard players operation @e[type=minecraft:item_display,tag=ff_key_anim,sort=nearest,limit=1,distance=..1.25] ff_active_uuid_3 = @a[limit=1,tag=ff_key_lock_clicked_player] ff_active_uuid_3
