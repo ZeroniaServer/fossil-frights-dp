@@ -16,9 +16,6 @@
                   "color": "red"
                 },
                 "minecraft:item_model": "fossil_frights:items/frightmas/evilnog",
-                "minecraft:custom_model_data": {
-                  "flags": [true]
-                },
                 "minecraft:lore": [
                   {
                     "translate": "ff.drink.evilnog.description",

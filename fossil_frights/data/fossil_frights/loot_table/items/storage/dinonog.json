@@ -16,11 +16,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/frightmas/dinonog",
-                "minecraft:custom_model_data": {
-                  "flags": [
-                    true
-                  ]
-                },
                 "minecraft:consumable": {
                   "animation": "drink",
                   "has_consume_particles": false,
