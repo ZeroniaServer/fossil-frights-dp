@@ -1,6 +1,7 @@
 execute unless score $heist_round_active ff_game_state matches 1 run return 0
 function fossil_frights:game/heists/waiting_text/hide
 function fossil_frights:game/heists/release_thieves
+function fossil_frights:game/heists/detonator/explode
 function fossil_frights:items/heists/trap/balance/compute
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:items/heists/trap/round_start_release
 bossbar set fossil_frights:bossbar name [{translate:"ff.heists.bossbar",font:"fossil_frights:small_caps",color:"gold",with:[{text:"10:00",font:"minecraft:default"}]}]
