@@ -6,7 +6,7 @@ execute positioned -1 75 33 run function fossil_frights:hallucination/effects/fr
 execute positioned 20 78 69 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 
 # First floor
-execute positioned 19 90 46 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
+execute positioned 10 90 54 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned -2 90 45 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned -15 90 64 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here
 execute positioned -17 87 16 run function fossil_frights:hallucination/effects/freezing_floods/drain_water/start_here

@@ -6,7 +6,7 @@ setblock -1 75 33 minecraft:water
 setblock 20 78 69 minecraft:water
 
 # First floor
-setblock 19 90 46 minecraft:water
+setblock 10 90 54 minecraft:water
 setblock -2 90 45 minecraft:water
 setblock -15 90 64 minecraft:water
 setblock -17 87 16 minecraft:water
