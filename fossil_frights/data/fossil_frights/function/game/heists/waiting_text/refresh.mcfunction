@@ -7,14 +7,17 @@ scoreboard players operation $heist_flash ff_heist %= #20 ff_constant
 execute if score $heist_round_active ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] text set value {"translate":"ff.heist.game_starting","color":"green","italic":false}
 execute if score $heist_round_active ff_game_state matches 1 run kill @e[type=minecraft:text_display,tag=ff_heist_ready_button]
 execute if score $heist_round_active ff_game_state matches 1 run kill @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click]
+execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:game/heists/waiting_text/bounty/hide
 execute if score $heist_round_active ff_game_state matches 1 run return 0
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run data modify entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] text set value {"translate":"ff.heist.waiting_for_thief","color":"yellow","italic":false}
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run kill @e[type=minecraft:text_display,tag=ff_heist_ready_button]
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run kill @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click]
+execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run function fossil_frights:game/heists/waiting_text/bounty/hide
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run return 0
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run data modify entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] text set value {"translate":"ff.heist.waiting_for_guard","color":"gray","italic":false}
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run kill @e[type=minecraft:text_display,tag=ff_heist_ready_button]
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run kill @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click]
+execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/waiting_text/bounty/hide
 execute unless entity @a[limit=1,predicate=fossil_frights:player/team/guard] run return 0
 execute if score $heist_thieves_ready ff_game_state matches 1 run data modify entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] text set value {"translate":"ff.heist.waiting_for_guards_hologram","color":"gray","italic":false}
 execute unless score $heist_thieves_ready ff_game_state matches 1 if score $heist_flash ff_heist matches ..9 run data modify entity @e[type=minecraft:text_display,tag=ff_heist_waiting_for_guards,limit=1] text set value {"translate":"ff.heist.click_to_ready","color":"yellow","italic":false}
@@ -28,3 +31,4 @@ execute unless entity @e[type=minecraft:interaction,tag=ff_heist_waiting_text_cl
 tp @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click,tag=!ff_heist_ready_position_v4] -1.0 110.65 51.500
 execute as @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click,tag=!ff_heist_ready_position_v4] run data merge entity @s {height:0.5f,width:2.0f}
 tag @e[type=minecraft:interaction,tag=ff_heist_waiting_text_click,tag=!ff_heist_ready_position_v4] add ff_heist_ready_position_v4
+function fossil_frights:game/heists/waiting_text/bounty/refresh
