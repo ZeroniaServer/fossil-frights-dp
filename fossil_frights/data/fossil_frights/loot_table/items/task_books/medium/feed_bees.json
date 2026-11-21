@@ -55,6 +55,14 @@
                       "\n\n",
                       {
                         "translate": "ff.task_book.task.feed_bees.description.0"
+                      }
+                    ],
+                    [
+                      "",
+                      {
+                        "text": "\ue001\ue200",
+                        "font": "fossil_frights:books",
+                        "color": "#7b7b01"
                       },
                       {
                         "translate": "ff.task_book.task.feed_bees.description.1"
