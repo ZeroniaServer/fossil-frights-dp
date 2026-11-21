@@ -27,8 +27,9 @@
                   "ff_heist_rules": {
                     "prevent_ground_despawn": true,
                     "refresh_on_pickup": {
-                      "loot_table": "fossil_frights:items/storage/dinonog"
-                    }
+                      "loot_table": "fossil_frights:game/nog"
+                    },
+                    "give_directly_from_lock": true
                   }
                 }
               }

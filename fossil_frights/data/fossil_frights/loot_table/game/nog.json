@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "fossil_frights:items/storage/dinonog",
+              "condition": "fossil_frights:player/team/guard"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "fossil_frights:items/heists/evilnog",
+              "condition": "fossil_frights:player/team/thief"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
