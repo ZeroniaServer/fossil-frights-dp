@@ -1,3 +1,4 @@
+function fossil_frights:game/heists/loot/reset_avalanche_lock
 scoreboard players set $heist_round_active ff_game_state 0
 scoreboard players set $heist_stopwatch_active ff_heist 0
 stopwatch remove fossil_frights:heist_round

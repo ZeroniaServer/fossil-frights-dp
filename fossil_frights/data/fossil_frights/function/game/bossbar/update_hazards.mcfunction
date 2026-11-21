@@ -3,7 +3,8 @@ data modify storage fossil_frights:bossbar components set value [""]
 # security
 execute if predicate fossil_frights:game_state/hazard_active/security run data modify storage fossil_frights:bossbar components append value "\ue123"
 execute if predicate fossil_frights:game_state/hallucination_active/jolly_curse run data modify storage fossil_frights:bossbar components append value {text:"\ue134",font:"fossil_frights:icons/hallucinations"}
-execute if predicate fossil_frights:game_state/hallucination_active/avalanche run data modify storage fossil_frights:bossbar components append value {text:"\ue130",font:"fossil_frights:icons/hallucinations"}
+execute unless score $heist_avalanche_lock ff_heist matches 1 if predicate fossil_frights:game_state/hallucination_active/avalanche run data modify storage fossil_frights:bossbar components append value {text:"\ue130",font:"fossil_frights:icons/hallucinations"}
+execute if score $heist_avalanche_lock ff_heist matches 1 run data modify storage fossil_frights:bossbar components append value {text:"\ue130\ue137",font:"fossil_frights:icons/hallucinations"}
 execute if predicate fossil_frights:game_state/hallucination_active/darkness run data modify storage fossil_frights:bossbar components append value {text:"\ue135",font:"fossil_frights:icons/hallucinations"}
 execute if predicate fossil_frights:game_state/hallucination_active/freezing_floods run data modify storage fossil_frights:bossbar components append value {text:"\ue133",font:"fossil_frights:icons/hallucinations"}
 execute if predicate fossil_frights:game_state/hallucination_active/snowstorm run data modify storage fossil_frights:bossbar components append value {text:"\ue136",font:"fossil_frights:icons/hallucinations"}

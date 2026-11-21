@@ -1,3 +1,4 @@
+function fossil_frights:game/heists/loot/reset_avalanche_lock
 function fossil_frights:hallucination/run_breakdown/clear_active
 function fossil_frights:hallucination/effects/jolly_curse/cleanup
 scoreboard players set $h_jolly_curse ff_hallucination 0

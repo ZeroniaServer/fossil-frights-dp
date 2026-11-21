@@ -19,3 +19,6 @@ function fossil_frights:game/heists/invisibility_fx/check_player
 effect clear @s minecraft:speed
 loot replace entity @s armor.head 1 loot fossil_frights:items/heists/invisimask/assigned
 loot replace entity @s container.0 loot fossil_frights:items/heists/loot_book
+
+execute if predicate fossil_frights:game_state/hallucination_active/avalanche run loot replace entity @s armor.feet loot fossil_frights:items/heists/thief_avalanche_boots
+execute unless predicate fossil_frights:game_state/hallucination_active/avalanche if score $heist_avalanche_lock ff_heist matches 1 run loot replace entity @s armor.feet loot fossil_frights:items/heists/thief_avalanche_boots

@@ -1,3 +1,4 @@
+function fossil_frights:game/heists/loot/reset_avalanche_lock
 function fossil_frights:game/heists/detonator/cleanup
 function fossil_frights:game/rejoin/cleanup/all
 scoreboard players set $heist_stopwatch_active ff_heist 0

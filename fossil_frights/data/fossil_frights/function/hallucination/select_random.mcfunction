@@ -3,8 +3,8 @@ execute if score #h_available ff_hallucination matches 1 run scoreboard players 
 scoreboard players set #h_cursor ff_hallucination 0
 execute unless score $h_jolly_curse ff_hallucination matches 1 run scoreboard players add #h_cursor ff_hallucination 1
 execute unless score $h_jolly_curse ff_hallucination matches 1 if score #h_cursor ff_hallucination = #h_pick ff_hallucination run function fossil_frights:hallucination/select/jolly_curse
-execute unless score $h_avalanche ff_hallucination matches 1 run scoreboard players add #h_cursor ff_hallucination 1
-execute unless score $h_avalanche ff_hallucination matches 1 if score #h_cursor ff_hallucination = #h_pick ff_hallucination run function fossil_frights:hallucination/select/avalanche
+execute unless score $heist_avalanche_lock ff_heist matches 1 unless score $h_avalanche ff_hallucination matches 1 run scoreboard players add #h_cursor ff_hallucination 1
+execute unless score $heist_avalanche_lock ff_heist matches 1 unless score $h_avalanche ff_hallucination matches 1 if score #h_cursor ff_hallucination = #h_pick ff_hallucination run function fossil_frights:hallucination/select/avalanche
 execute unless score $h_darkness ff_hallucination matches 1 run scoreboard players add #h_cursor ff_hallucination 1
 execute unless score $h_darkness ff_hallucination matches 1 if score #h_cursor ff_hallucination = #h_pick ff_hallucination run function fossil_frights:hallucination/select/darkness
 execute unless score $h_freezing_floods ff_hallucination matches 1 run scoreboard players add #h_cursor ff_hallucination 1

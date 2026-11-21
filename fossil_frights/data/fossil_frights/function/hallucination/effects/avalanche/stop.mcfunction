@@ -1,4 +1,5 @@
 place template fossil_frights:avalanche/empty -26 69 21 none none 1 0 strict
+clear @a minecraft:leather_boots[custom_data~{itemID:"thief_avalanche_boots"}]
 execute if predicate fossil_frights:game_state/heist_mode_active as @a[predicate=fossil_frights:player/team/guard] run loot replace entity @s armor.feet loot fossil_frights:items/heists/guard_boots
 particle minecraft:snowflake -19.50 71.50 23.50 0 0 0 0.5 75
 particle minecraft:snowflake -7.50 72.50 23.50 0 0 0 0.5 75

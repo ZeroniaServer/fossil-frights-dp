@@ -9,5 +9,7 @@ execute if score $h_chimney_smoke ff_hallucination matches 1 run scoreboard play
 execute if score #h_active_count ff_hallucination matches 7.. run return 0
 scoreboard players operation #h_available ff_hallucination = #h_options ff_hallucination
 scoreboard players operation #h_available ff_hallucination -= #h_active_count ff_hallucination
+execute if score $heist_avalanche_lock ff_heist matches 1 unless score $h_avalanche ff_hallucination matches 1 run scoreboard players remove #h_available ff_hallucination 1
+execute if score #h_available ff_hallucination matches ..0 run return 0
 execute store result storage fossil_frights:hallucinations inactive_count int 1 run scoreboard players get #h_available ff_hallucination
 function fossil_frights:hallucination/select_random with storage fossil_frights:hallucinations

@@ -29,6 +29,7 @@ function fossil_frights:game/heists/loot/update_held
 function fossil_frights:advancements/heists/check_greedy
 function fossil_frights:game/heists/loot/steal_alert
 function fossil_frights:game/heists/loot/sync_all
+function fossil_frights:game/heists/loot/check_basement_only
 function fossil_frights:game/heists/loot/render_tick
 function fossil_frights:locator_bar/markers/sync_heist_if_changed
 function fossil_frights:game/heists/loot/header
