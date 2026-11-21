@@ -21,10 +21,7 @@
                 "minecraft:custom_data": {
                   "itemID": "golden_sword",
                   "ff_heist_rules": {
-                    "prevent_drop_from_guards": true,
-                    "refresh_on_pickup": {
-                      "loot_table": "fossil_frights:items/heists/loot/common/golden_sword"
-                    }
+                    "delete_on_guard_pickup": true
                   }
                 }
               }
