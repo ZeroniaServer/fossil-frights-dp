@@ -5,5 +5,6 @@ execute as @a[tag=ff_heist_key_return_thief,limit=1] run function fossil_frights
 execute unless entity @a[tag=ff_heist_key_return_thief,scores={ff_heist_key_stolen_this_punch=1},limit=1] run return 0
 scoreboard players set @s ff_heist_guard_has_key 0
 scoreboard players reset @s ff_key_cooldown
+item fill entity @s fossil_frights:player/filtered/heist_guard_key with air
 item replace entity @s container.8 with minecraft:paper[minecraft:item_model="fossil_frights:items/frights/key/cooldown/key_cooldown",minecraft:item_name={translate:'ff.item.missing_key',color:'gray'},minecraft:custom_data={ff_heist_missing_key:true,ff_prevent_drop:true}] 1
 scoreboard players set @a[tag=ff_heist_key_return_thief,limit=1] ff_heist_key_stolen_this_punch 1
