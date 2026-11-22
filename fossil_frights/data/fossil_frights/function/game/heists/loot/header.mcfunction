@@ -1,1 +1,1 @@
-scoreboard objectives modify ff_heist_sidebar displayname ["",{text:"$",color:"gold",extra:[{score:{name:"$heist_loot",objective:"ff_heist"}}]},{text:"/",color:"dark_gray"},{text:"$",color:"#B05000",extra:[{color:"#B05000",score:{name:"#heist_goal",objective:"ff_heist"}}]}]
+scoreboard objectives modify ff_heist_sidebar displayname ["",{text:"$",color:"gold",extra:[{score:{name:"#heist_loot_display",objective:"ff_heist"}}]},{text:"/",color:"dark_gray"},{text:"$",color:"#B05000",extra:[{color:"#B05000",score:{name:"#heist_goal",objective:"ff_heist"}}]}]

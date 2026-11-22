@@ -2,7 +2,6 @@ execute if score $heist_elapsed ff_heist matches ..600 run advancement grant @a[
 $scoreboard players operation #capture_value ff_heist_loot_value = $(key) ff_heist_loot_value
 scoreboard players operation @a[tag=ff_heist_capture_credit_recipient,limit=1] ff_heist_loot_captured_round += #capture_value ff_heist_loot_value
 $scoreboard players operation $heist_loot ff_heist += $(key) ff_heist_loot_value
-function fossil_frights:game/heists/loot/header
 $scoreboard players set $(key) ff_heist_loot_state 3
 function fossil_frights:game/heists/loot/reorder
 function fossil_frights:game/heists/loot/render
