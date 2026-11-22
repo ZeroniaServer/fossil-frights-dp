@@ -22,6 +22,7 @@ data modify storage fossil_frights:credits credits set value [\
             "Stuffy",\
             "Evtema3",\
             "nightlibra",\
+            "Hydrintegral",\
             "",\
             "",\
             {translate:"ff.credits.role.plugin_developers",bold:true},\
