@@ -1,3 +1,4 @@
+tag @s remove ff_has_dinonog
 clear @s
 loot replace entity @s armor.feet loot fossil_frights:items/heists/guard_boots
 execute if predicate fossil_frights:game_state/hallucination_active/avalanche run clear @s minecraft:leather_boots[custom_data~{itemID:"guard_boots"}]

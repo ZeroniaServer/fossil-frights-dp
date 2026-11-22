@@ -10,6 +10,7 @@ function fossil_frights:player/reset_attributes
 function fossil_frights:player/reset_effects
 function fossil_frights:game/rejoin/login_restore
 execute if entity @s[tag=ff_rejoin_restored] run return 0
+tag @s remove ff_has_dinonog
 tag @s add ff_rejoin_login_reset_source
 execute if predicate fossil_frights:game_state/game_running unless entity @a[predicate=fossil_frights:player/team/guard,tag=!ff_rejoin_login_reset_source] unless entity @a[predicate=fossil_frights:player/team/thief,tag=!ff_rejoin_login_reset_source] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker] run function fossil_frights:game/reset/active_disconnect
 tag @s remove ff_rejoin_login_reset_source

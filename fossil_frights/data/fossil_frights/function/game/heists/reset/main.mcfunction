@@ -1,3 +1,4 @@
+tag @a remove ff_has_dinonog
 function fossil_frights:game/heists/loot/reset_avalanche_lock
 function fossil_frights:game/heists/detonator/cleanup
 function fossil_frights:game/rejoin/cleanup/all

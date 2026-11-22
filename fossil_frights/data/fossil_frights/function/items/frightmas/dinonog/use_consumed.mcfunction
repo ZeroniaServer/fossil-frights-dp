@@ -1,3 +1,4 @@
+tag @s remove ff_has_dinonog
 advancement revoke @s only fossil_frights:items/frightmas/dinonog/consume
 tag @s add ff_dinonog_onboarded
 execute unless predicate fossil_frights:game_state/game_running run return 0

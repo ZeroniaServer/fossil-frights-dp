@@ -1,3 +1,4 @@
+tag @s remove ff_has_dinonog
 advancement revoke @s only fossil_frights:util/player/immediately_detect_death
 scoreboard players reset @s ff_immediately_detect_death
 
