@@ -1,0 +1,10 @@
+{
+  "components": {
+    "minecraft:equippable": {
+      "slot": "feet",
+      "equip_sound": "minecraft:intentionally_empty",
+      "asset_id": "minecraft:leather"
+    }
+  },
+  "type": "minecraft:set_components"
+}
