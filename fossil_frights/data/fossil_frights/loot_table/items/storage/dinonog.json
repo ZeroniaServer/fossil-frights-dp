@@ -25,6 +25,7 @@
                   "itemID": "dinonog",
                   "ff_completes_drink_with_trike_task": true,
                   "ff_heist_rules": {
+                    "prevent_drop_from_guards": true,
                     "prevent_ground_despawn": true,
                     "refresh_on_pickup": {
                       "loot_table": "fossil_frights:game/nog"
