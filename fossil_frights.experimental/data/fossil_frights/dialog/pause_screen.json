@@ -1,7 +1,8 @@
 {
   "type": "minecraft:notice",
   "title": {
-    "translate": "ff.pause_screen"
+    "translate": "ff.pause_screen",
+    "fallback": "Fossil Frights"
   },
   "body": [
     {
@@ -10,7 +11,8 @@
         "",
         {
           "color": "gray",
-          "translate": "ff.pause_screen.created_by_zeronia"
+          "translate": "ff.pause_screen.created_by_zeronia",
+          "fallback": "Created by Zeronia"
         },
         "\n",
         "\n",
@@ -21,7 +23,8 @@
               "action": "show_text",
               "value": {
                 "color": "#5865F2",
-                "translate": "ff.socials.discord.hover"
+                "translate": "ff.socials.discord.hover",
+                "fallback": "Click to join our Discord community"
               }
             },
             "click_event": {
@@ -46,14 +49,16 @@
           {
             "color": "#5865F2",
             "underlined": true,
-            "translate": "ff.socials.discord.join_today"
+            "translate": "ff.socials.discord.join_today",
+            "fallback": "Join our Discord community today!"
           }
         ],
         "\n",
         "\n",
         {
           "color": "gray",
-          "translate": "ff.socials.intro"
+          "translate": "ff.socials.intro",
+          "fallback": "Stay up to date with our projects:"
         },
         "\n",
         "\n",
@@ -65,7 +70,8 @@
               "action": "show_text",
               "value": {
                 "color": "gold",
-                "translate": "ff.socials.zeronia.hover"
+                "translate": "ff.socials.zeronia.hover",
+                "fallback": "Click to visit our website!"
               }
             },
             "click_event": {
@@ -89,7 +95,8 @@
           {
             "underlined": true,
             "color": "gold",
-            "translate": "ff.socials.zeronia"
+            "translate": "ff.socials.zeronia",
+            "fallback": "Zeronia.org"
           }
         ],
         "\n",
@@ -101,7 +108,8 @@
               "action": "show_text",
               "value": {
                 "color": "#6EC310",
-                "translate": "ff.socials.planetminecraft.hover"
+                "translate": "ff.socials.planetminecraft.hover",
+                "fallback": "Click to visit our PlanetMinecraft page"
               }
             },
             "click_event": {
@@ -125,7 +133,8 @@
           {
             "underlined": true,
             "color": "#6EC310",
-            "translate": "ff.socials.planetminecraft"
+            "translate": "ff.socials.planetminecraft",
+            "fallback": "PlanetMinecraft"
           }
         ],
         "\n",
@@ -137,7 +146,8 @@
               "action": "show_text",
               "value": {
                 "color": "#E41B36",
-                "translate": "ff.socials.youtube.hover"
+                "translate": "ff.socials.youtube.hover",
+                "fallback": "Click to visit our YouTube channel"
               }
             },
             "click_event": {
@@ -161,7 +171,8 @@
           {
             "underlined": true,
             "color": "#E41B36",
-            "translate": "ff.socials.youtube"
+            "translate": "ff.socials.youtube",
+            "fallback": "YouTube"
           }
         ],
         "\n",
@@ -173,7 +184,8 @@
               "action": "show_text",
               "value": {
                 "color": "#FFFFFF",
-                "translate": "ff.socials.x.hover"
+                "translate": "ff.socials.x.hover",
+                "fallback": "Click to visit our X (formerly Twitter) page"
               }
             },
             "click_event": {
@@ -197,12 +209,14 @@
           {
             "underlined": true,
             "color": "#FFFFFF",
-            "translate": "ff.socials.x"
+            "translate": "ff.socials.x",
+            "fallback": "X"
           },
           {
             "italic": true,
             "color": "gray",
-            "translate": "ff.socials.x.formerly_twitter"
+            "translate": "ff.socials.x.formerly_twitter",
+            "fallback": " (formerly Twitter)"
           }
         ],
         "\n",
@@ -214,7 +228,8 @@
               "action": "show_text",
               "value": {
                 "color": "#0E7EFF",
-                "translate": "ff.socials.bluesky.hover"
+                "translate": "ff.socials.bluesky.hover",
+                "fallback": "Click to visit our Bluesky page"
               }
             },
             "click_event": {
@@ -238,7 +253,8 @@
           {
             "underlined": true,
             "color": "#0E7EFF",
-            "translate": "ff.socials.bluesky"
+            "translate": "ff.socials.bluesky",
+            "fallback": "Bluesky"
           }
         ],
         "\n"
