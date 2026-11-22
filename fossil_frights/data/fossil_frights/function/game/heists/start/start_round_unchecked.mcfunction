@@ -2,6 +2,7 @@ execute if score $victory_complete ff_game_state matches 1 run return 0
 scoreboard players set $heist_round_active ff_game_state 1
 scoreboard players set #dinonog_max ff_dinonog 100
 scoreboard players set #dinonog_bar ff_dinonog 100
+scoreboard players set #heist_drain ff_dinonog -1
 scoreboard players set #dinonog_display ff_dinonog 100
 scoreboard players set #dinonog_last_frame ff_dinonog -1
 scoreboard players set #dinonog_bar ff_evilnog 0

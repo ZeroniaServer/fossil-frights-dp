@@ -7,6 +7,9 @@ function fossil_frights:game/heists/loot/capture/tick
 execute if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 run scoreboard players add $idle_ticks ff_game_state 1
 execute if score $victory_complete ff_game_state matches 1 if predicate fossil_frights:game_state/game_running if score $day_active ff_day matches 0 if score $idle_ticks ff_game_state matches 600.. run function fossil_frights:game/reset
 execute if score $victory_complete ff_game_state matches 1 run return 0
+execute if score $heist_round_active ff_game_state matches 1 if score #heist_drain ff_dinonog matches 0.. run scoreboard players add #heist_drain ff_dinonog 1
+execute if score $heist_round_active ff_game_state matches 1 if score #heist_drain ff_dinonog matches 60.. if score #dinonog_bar ff_dinonog matches 1.. run scoreboard players remove #dinonog_bar ff_dinonog 1
+execute if score $heist_round_active ff_game_state matches 1 if score #heist_drain ff_dinonog matches 60.. run scoreboard players set #heist_drain ff_dinonog 0
 execute if score $heist_round_active ff_game_state matches 1 run function fossil_frights:frights/dinonog/tick
 execute if score $heist_round_active ff_game_state matches 0 unless entity @a[predicate=fossil_frights:player/team/guard] unless entity @a[predicate=fossil_frights:player/team/thief] run return run function fossil_frights:game/reset
 execute if score $heist_round_active ff_game_state matches 0 unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] run scoreboard players set $heist_thieves_ready ff_game_state 0
