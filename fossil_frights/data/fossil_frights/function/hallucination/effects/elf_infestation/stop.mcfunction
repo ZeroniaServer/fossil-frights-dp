@@ -3,3 +3,4 @@ tp @e[tag=ff_elf_infestation_golem] 0 -64 0
 tp @e[tag=ff_elf_infestation_driver] 0 -64 0
 kill @e[tag=ff_elf_infestation_golem]
 kill @e[tag=ff_elf_infestation_driver]
+team empty ff_elf_infestation

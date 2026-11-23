@@ -1,3 +1,5 @@
+execute if predicate fossil_frights:game_state/heist_mode_active as @a[team=ff_thief] run team join ff_elf_infestation
+
 execute store result score #ff_elf_spawn_point ff_hallucination run random value 1..2
 execute if score #ff_elf_spawn_point ff_hallucination matches 1 positioned 0 80 37 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:1}
 execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned -4 69 35 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:1}
