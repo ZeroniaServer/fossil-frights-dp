@@ -82,7 +82,7 @@ scoreboard objectives add party trigger
 scoreboard objectives add heists trigger
 scoreboard objectives add challenge trigger
 scoreboard objectives add antfight trigger
-scoreboard objectives add sulfurstriker trigger
+scoreboard objectives add sulfurstrikers trigger
 scoreboard objectives add templerun trigger
 scoreboard objectives add parkour trigger
 scoreboard objectives add join_guard trigger
