@@ -1,2 +1,2 @@
-execute as @a unless items entity @s armor.feet * run item override entity @s armor.feet with stone[item_model="stone",enchantments={"minecraft:binding_curse":1},custom_data={ff_boots_patch_dummy_item:true},equippable={slot:"feet",equip_sound:"minecraft:intentionally_empty"}]
+execute as @a unless items entity @s armor.feet * run item override entity @s armor.feet with stone[item_model="fossil_frights:display/misc/boots_patch_dummy_item",enchantments={"minecraft:binding_curse":1},custom_data={ff_boots_patch_dummy_item:true},equippable={slot:"feet",equip_sound:"minecraft:intentionally_empty"}]
 execute as @a if items entity @s armor.feet *[custom_data={ff_boots_patch_dummy_item:true}] run item fill entity @s armor.feet with air
