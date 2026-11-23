@@ -490,7 +490,7 @@ team modify ff_thief color red
 team modify ff_thief friendlyFire false
 team modify ff_thief nametagVisibility hideForOtherTeams
 team modify ff_thief seeFriendlyInvisibles true
-team modify ff_thief collisionRule never
+team modify ff_thief collisionRule pushOwnTeam
 team add ff_lobby
 team modify ff_lobby displayName {"text":"Lobby"}
 team modify ff_lobby friendlyFire false
