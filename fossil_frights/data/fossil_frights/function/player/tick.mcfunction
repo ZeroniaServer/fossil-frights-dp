@@ -27,7 +27,7 @@ scoreboard players enable @s party
 scoreboard players enable @s heists
 scoreboard players enable @s challenge
 scoreboard players enable @s antfight
-scoreboard players enable @s sulfurstriker
+scoreboard players enable @s sulfurstrikers
 scoreboard players enable @s templerun
 scoreboard players enable @s parkour
 scoreboard players enable @s join_guard
@@ -117,10 +117,11 @@ execute if score @s challenge matches 1.. run scoreboard players enable @s chall
 execute if score @s challenge matches 1.. run scoreboard players set @s challenge 0
 execute if score @s antfight matches 1.. run function fossil_frights:command/antfight
 execute if score @s antfight matches 1.. run scoreboard players enable @s antfight
+execute if score @s antfight matches 1.. run scoreboard players enable @s antfight
 execute if score @s antfight matches 1.. run scoreboard players set @s antfight 0
-execute if score @s sulfurstriker matches 1.. run function fossil_frights:command/sulfurstriker
-execute if score @s sulfurstriker matches 1.. run scoreboard players enable @s sulfurstriker
-execute if score @s sulfurstriker matches 1.. run scoreboard players set @s sulfurstriker 0
+execute if score @s sulfurstrikers matches 1.. run function fossil_frights:command/sulfurstrikers
+execute if score @s sulfurstrikers matches 1.. run scoreboard players enable @s sulfurstrikers
+execute if score @s sulfurstrikers matches 1.. run scoreboard players set @s sulfurstrikers 0
 execute if score @s templerun matches 1.. run function fossil_frights:command/templerun
 execute if score @s templerun matches 1.. run scoreboard players enable @s templerun
 execute if score @s templerun matches 1.. run scoreboard players set @s templerun 0

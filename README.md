@@ -19,9 +19,9 @@
 | Tp to Ant Fight | `/trigger antfight` |
 | Tp to Parkour | `/trigger parkour` |
 | Tp to Temple Run | `/trigger templerun` |
-| Tp to Sulfur Strikers | `/trigger sulfurstriker` |
+| Tp to Sulfur Strikers | `/trigger sulfurstrikers` |
 
-Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/antfight`, `/sulfurstriker`, `/templerun`, `/parkour`, `/challenge`, `/stats`, `/invite`, `/tutorial`, `/info`, `/spawn`. 
+Fossil Frights plugin adds aliases: `/leave`, `/spectate`, `/start`, `/join`, `/antfight`, `/sulfurstrikers`, `/templerun`, `/parkour`, `/challenge`, `/stats`, `/invite`, `/tutorial`, `/info`, `/spawn`. 
 
 ## Admin Commands
 
