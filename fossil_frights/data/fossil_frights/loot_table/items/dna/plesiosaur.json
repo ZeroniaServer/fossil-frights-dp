@@ -16,6 +16,9 @@
                   "color": "#D6E42F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/dna/plesiosaur_dna_cloth",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "itemID": "plesiosaur_dna_cloth",

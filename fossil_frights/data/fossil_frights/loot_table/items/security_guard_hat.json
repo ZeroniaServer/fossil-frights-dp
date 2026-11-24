@@ -16,6 +16,12 @@
                   "color": "white"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/security_guard_hat",
+                "minecraft:tooltip_display": {
+                  "split_lines": false,
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:equippable": {
                   "slot": "head",
@@ -36,11 +42,6 @@
                 },
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:enchantments"
-                  ]
                 }
               },
               "condition": "fossil_frights:game_state/heist_mode_active"

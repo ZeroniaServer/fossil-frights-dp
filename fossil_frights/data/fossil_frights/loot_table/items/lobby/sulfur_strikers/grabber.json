@@ -16,6 +16,9 @@
                   "color": "yellow",
                   "italic": false
                 },
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:max_damage": 10,
                 "minecraft:damage": 0,
                 "minecraft:custom_data": {

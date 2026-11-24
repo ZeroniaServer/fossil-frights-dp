@@ -70,6 +70,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:use_cooldown": {
                   "seconds": 3,
                   "cooldown_group": "fossil_frights:ice_cannon_remote"

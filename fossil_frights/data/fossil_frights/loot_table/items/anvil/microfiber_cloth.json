@@ -29,6 +29,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "microfiber_cloth",
                   "ff_heist_rules": {

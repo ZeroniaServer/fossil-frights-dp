@@ -16,6 +16,9 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/ancient_portal_core",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "ancient_portal_core",
                   "ff_heist_rules": {
