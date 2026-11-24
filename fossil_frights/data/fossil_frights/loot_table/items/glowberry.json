@@ -15,7 +15,9 @@
                 "color": "yellow"
               },
               "minecraft:item_model": "minecraft:glow_berries",
-              "minecraft:consumable": {},
+              "minecraft:consumable": {
+                "sound": "minecraft:entity.generic.eat"
+              },
               "minecraft:custom_data": {
                 "itemID": "glowberry"
               }
