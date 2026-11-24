@@ -16,6 +16,12 @@
                   "color": "#78552F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/leather_boots",
+                "minecraft:tooltip_display": {
+                  "split_lines": false,
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
                 "minecraft:equippable": {
                   "slot": "feet",
                   "asset_id": "minecraft:leather",
@@ -27,11 +33,6 @@
                   "minecraft:binding_curse": 1
                 },
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:enchantments"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "guard_boots"
                 }

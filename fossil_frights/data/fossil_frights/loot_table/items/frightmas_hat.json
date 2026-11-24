@@ -11,6 +11,9 @@
             "type": "minecraft:set_components",
             "components": {
               "minecraft:item_model": "fossil_frights:display/frightmas/frightmas_hat",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
               "minecraft:equippable": {
                 "slot": "head"
               },

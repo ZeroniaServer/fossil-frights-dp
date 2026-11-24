@@ -15,6 +15,9 @@
                   "translate": "ff.item.lost_egg",
                   "color": "gold"
                 },
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:item_model": "fossil_frights:display/tasks/lab_experiment/eggs/lost_egg",
                 "minecraft:custom_data": {
                   "itemID": "lost_egg"

@@ -16,6 +16,9 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/gingerbread_man",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "gingerbread_man",
                   "ff_heist_rules": {

@@ -16,6 +16,9 @@
                   "color": "gray"
                 },
                 "minecraft:item_model": "fossil_frights:display/frightmas/task/coal",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "coal",
                   "ff_heist_rules": {
