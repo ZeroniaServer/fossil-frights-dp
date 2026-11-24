@@ -10,6 +10,7 @@ execute unless predicate fossil_frights:game_state/party_mode_active if score $d
 function fossil_frights:map/replace_cauldrons
 function fossil_frights:map/replace_powder_snow
 function fossil_frights:animations/geyser/stop
+execute as @e[type=minecraft:item_display,tag=ff_anvil_outline] run data merge entity @s {view_range:0f}
 function fossil_frights:game/reset/hazards
 function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:player/bouncy_lily_pad/reset
