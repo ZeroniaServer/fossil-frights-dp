@@ -16,6 +16,12 @@
                   "color": "#E70095"
                 },
                 "minecraft:item_model": "fossil_frights:display/misc/paint_armor/paint_armor_3",
+                "minecraft:tooltip_display": {
+                  "split_lines": false,
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
                 "minecraft:equippable": {
                   "slot": "chest",
                   "asset_id": "fossil_frights:paint",
@@ -26,11 +32,6 @@
                   "minecraft:binding_curse": 1
                 },
                 "minecraft:enchantment_glint_override": false,
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:enchantments"
-                  ]
-                },
                 "minecraft:custom_data": {
                   "itemID": "paint_chestplate",
                   "ff_paint_armor": true,

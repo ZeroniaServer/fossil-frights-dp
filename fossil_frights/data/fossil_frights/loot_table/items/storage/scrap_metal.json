@@ -33,6 +33,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "scrap_metal",
                   "ff_heist_rules": {

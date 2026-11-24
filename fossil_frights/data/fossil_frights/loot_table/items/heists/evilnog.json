@@ -23,6 +23,9 @@
                     "italic": false
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:consumable": {
                   "animation": "drink",
                   "has_consume_particles": false,

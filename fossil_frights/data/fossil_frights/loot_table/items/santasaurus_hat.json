@@ -19,6 +19,9 @@
                 "minecraft:equippable": {
                   "slot": "head"
                 },
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "santasaurus_hat"
                 }

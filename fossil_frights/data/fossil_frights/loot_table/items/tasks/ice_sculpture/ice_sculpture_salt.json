@@ -30,6 +30,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "ice_sculpture_salt"
                 }

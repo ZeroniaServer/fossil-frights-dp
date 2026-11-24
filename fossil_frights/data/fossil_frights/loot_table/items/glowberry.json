@@ -7,22 +7,28 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:item_name": {
-                "translate": "ff.item.glowberry",
-                "color": "yellow"
-              },
-              "minecraft:item_model": "minecraft:glow_berries",
-              "minecraft:consumable": {
-                "sound": "minecraft:entity.generic.eat"
-              },
-              "minecraft:custom_data": {
-                "itemID": "glowberry"
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "ff.item.glowberry",
+                  "color": "yellow"
+                },
+                "minecraft:item_model": "minecraft:glow_berries",
+                  "minecraft:tooltip_display": {
+                    "split_lines": false
+                  },
+                "minecraft:consumable": {
+                  "sound": "minecraft:entity.generic.eat"
+                },
+                "minecraft:custom_data": {
+                  "itemID": "glowberry"
+                }
               }
-            }
-          }
+            },
+            "fossil_frights:item_definition/base_item_data"
+          ]
         }
       ]
     }

@@ -16,6 +16,9 @@
                   "translate": "ff.item.skeleton_plushie"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/skeleton_plushie",
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "skeleton_plushie",
                   "ff_heist_rules": {

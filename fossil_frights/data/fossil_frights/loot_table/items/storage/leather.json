@@ -33,6 +33,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "leather",
                   "ff_anvil_ingredient": {
