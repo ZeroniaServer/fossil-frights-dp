@@ -17,7 +17,8 @@
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/golden_nautilus",
                 "minecraft:equippable": {
-                  "slot": "head"
+                  "slot": "head",
+                  "equip_sound": "minecraft:item.armor.equip_generic"
                 },
                 "minecraft:custom_data": {
                   "itemID": "golden_nautilus",

@@ -16,7 +16,9 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/cookie",
-                "minecraft:consumable": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:entity.generic.eat"
+                },
                 "minecraft:custom_data": {
                   "itemID": "cookie",
                   "ff_completes_picnic_with_trike_task": true,

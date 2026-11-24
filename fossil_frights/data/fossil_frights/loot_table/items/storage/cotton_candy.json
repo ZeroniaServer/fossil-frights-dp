@@ -16,7 +16,9 @@
                   "color": "light_purple"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/cotton_candy",
-                "minecraft:consumable": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:entity.generic.eat"
+                },
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_pink",
                   "ff_completes_picnic_with_trike_task": true,

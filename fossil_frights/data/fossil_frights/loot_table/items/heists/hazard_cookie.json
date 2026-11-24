@@ -30,7 +30,9 @@
                     ]
                   }
                 ],
-                "minecraft:consumable": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:entity.generic.eat"
+                },
                 "minecraft:custom_data": {
                   "itemID": "hazard_cookie",
                   "ff_heist_rules": {
