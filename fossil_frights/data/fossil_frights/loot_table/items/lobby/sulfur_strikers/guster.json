@@ -9,16 +9,15 @@
           "name": "minecraft:wind_charge",
           "modifier": [
             {
-              "type": "minecraft:set_count",
-              "count": 5
-            },
-            {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "ff.lobby.sulfur_strikers.powerup.guster",
                   "color": "yellow",
                   "italic": false
+                },
+                "minecraft:tooltip_display": {
+                  "split_lines": false
                 },
                 "minecraft:custom_data": {
                   "itemID": "sulfur_strikers/guster"

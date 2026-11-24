@@ -77,6 +77,12 @@
                   }
                 ],
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/hoverboard/hoverboard_item",
+                "minecraft:tooltip_display": {
+                  "split_lines": false,
+                  "hidden_components": [
+                    "minecraft:damage"
+                  ]
+                },
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 3000,
                 "minecraft:damage": 0,
@@ -89,11 +95,6 @@
                   "animation": "none",
                   "sound": "minecraft:entity.item.pickup",
                   "has_consume_particles": false
-                },
-                "minecraft:tooltip_display": {
-                  "hidden_components": [
-                    "minecraft:damage"
-                  ]
                 },
                 "minecraft:use_remainder": {
                   "id": "minecraft:paper",

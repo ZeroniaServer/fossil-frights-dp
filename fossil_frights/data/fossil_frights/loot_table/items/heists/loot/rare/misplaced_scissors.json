@@ -23,6 +23,9 @@
                     "italic": false
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:custom_data": {
                   "itemID": "misplaced_scissors",
                   "ff_blocks_sprint": true,

@@ -35,6 +35,9 @@
                     ]
                   }
                 ],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,
                   "animation": "none",
