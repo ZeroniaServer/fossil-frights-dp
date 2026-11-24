@@ -69,6 +69,7 @@ execute if predicate fossil_frights:game_state/game_running if score $day_active
 execute if entity @e[type=minecraft:mannequin,tag=ff_herobrine,limit=1] run function fossil_frights:frights/herobrine/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/velociraptor_skull/tick
 execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/tick
+execute if predicate fossil_frights:game_state/game_running run function fossil_frights:animations/anvil/outline_tick
 execute if entity @a[predicate=fossil_frights:player/team/guard,limit=1] run function fossil_frights:animations/dinocoin/well/tick
 function fossil_frights:tasks/easy/tick
 execute if predicate fossil_frights:game_state/game_running if score $settings_mode ff_game_state matches 0 run function fossil_frights:animations/dinocoin/good_karma/message/check

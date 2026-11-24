@@ -7,6 +7,7 @@ execute if entity @s[tag=ff_tp_dispatch] run return 0
 
 function fossil_frights:run_breakdown/finish/defeat
 execute unless predicate fossil_frights:game_state/party_mode_active if score $day_current ff_day matches 1 if score $speedrunner_restart_window ff_game_state matches 1.. run advancement grant @a[predicate=fossil_frights:player/team/guard] only fossil_frights:02_achievements/speedrunner
+execute as @e[type=minecraft:item_display,tag=ff_anvil_outline] run data merge entity @s {view_range:0f}
 function fossil_frights:game/reset/hazards
 function fossil_frights:game/reset/cleanup_dropped_items
 function fossil_frights:player/bouncy_lily_pad/reset
