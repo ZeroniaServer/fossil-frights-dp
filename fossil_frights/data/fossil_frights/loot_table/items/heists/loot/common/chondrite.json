@@ -16,9 +16,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/chondrite",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "chondrite",
                   "ff_heist_rules": {

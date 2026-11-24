@@ -29,9 +29,6 @@
                   }
                 ],
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/febreeze_rod",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:consumable": {
                   "animation": "toot_horn",
                   "consume_seconds": 1,

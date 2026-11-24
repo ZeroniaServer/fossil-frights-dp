@@ -16,9 +16,6 @@
                   "translate": "ff.item.basketball"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/hard_items/basketball",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:lore": [
                   {
                     "color": "yellow",

@@ -16,9 +16,6 @@
                   "translate": "ff.item.cotton_candy_stick",
                   "color": "yellow"
                 },
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "cotton_candy_stick"
                 }

@@ -16,9 +16,6 @@
                   "translate": "ff.item.golden_nautilus"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/golden_nautilus",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:item.armor.equip_generic"

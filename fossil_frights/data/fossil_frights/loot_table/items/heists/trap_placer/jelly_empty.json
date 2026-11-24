@@ -16,18 +16,17 @@
                   "color": "gray"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/gear/guards/trap_placer/trap_empty",
-                "minecraft:tooltip_display": {
-                  "split_lines": false,
-                  "hidden_components": [
-                    "minecraft:enchantments"
-                  ]
-                },
                 "minecraft:attack_range": {
                   "min_reach": 0,
                   "max_reach": 0,
                   "hitbox_margin": 0
                 },
                 "minecraft:piercing_weapon": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,

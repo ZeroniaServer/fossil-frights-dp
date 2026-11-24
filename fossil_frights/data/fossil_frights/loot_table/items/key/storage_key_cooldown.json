@@ -39,9 +39,6 @@
                     "italic": false
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 30,
                   "cooldown_group": "fossil_frights:storage_key"

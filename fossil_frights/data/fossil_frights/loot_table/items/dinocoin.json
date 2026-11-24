@@ -16,9 +16,6 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/misc/dinocoin",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:lore": [
                   {
                     "translate": "ff.item.dinocoin.description",

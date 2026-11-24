@@ -16,9 +16,6 @@
                   "color": "light_purple"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/soap",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "soap",
                   "ff_heist_rules": {

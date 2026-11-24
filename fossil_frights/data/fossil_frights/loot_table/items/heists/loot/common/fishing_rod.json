@@ -18,9 +18,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/heists/loot/fishing_rod",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "fishing_rod",
                   "ff_heist_rules": {

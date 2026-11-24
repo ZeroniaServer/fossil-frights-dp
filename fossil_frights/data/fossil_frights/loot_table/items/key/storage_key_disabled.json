@@ -40,9 +40,6 @@
                     "italic": false
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "key_disabled",
                   "ff_any_key": true,

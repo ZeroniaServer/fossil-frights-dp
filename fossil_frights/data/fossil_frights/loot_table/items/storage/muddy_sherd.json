@@ -16,9 +16,6 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/muddy_sherd",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:custom_data": {
                   "itemID": "muddy_sherd",
                   "ff_heist_rules": {

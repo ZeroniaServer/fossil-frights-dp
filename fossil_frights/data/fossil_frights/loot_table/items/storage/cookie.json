@@ -16,9 +16,6 @@
                   "color": "yellow"
                 },
                 "minecraft:item_model": "fossil_frights:items/frights/medium_items/cookie",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:consumable": {
                   "sound": "minecraft:entity.generic.eat"
                 },

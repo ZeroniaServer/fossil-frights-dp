@@ -25,7 +25,6 @@
                 },
                 "minecraft:max_stack_size": 99,
                 "minecraft:tooltip_display": {
-                  "split_lines": false,
                   "hidden_components": [
                     "minecraft:written_book_content"
                   ]

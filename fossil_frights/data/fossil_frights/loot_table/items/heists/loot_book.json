@@ -29,9 +29,6 @@
                     ]
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:consumable": {
                   "consume_seconds": 0.001,

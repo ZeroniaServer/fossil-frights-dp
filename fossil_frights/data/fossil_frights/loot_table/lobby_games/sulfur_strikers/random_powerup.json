@@ -18,11 +18,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "fossil_frights:items/lobby/sulfur_strikers/guster",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": 5
-          }
+          "value": "fossil_frights:items/lobby/sulfur_strikers/guster"
         },
         {
           "type": "minecraft:loot_table",

@@ -30,9 +30,6 @@
                     ]
                   }
                 ],
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:use_cooldown": {
                   "seconds": 0.25,
                   "cooldown_group": "fossil_frights:confetti_cannon_remote"

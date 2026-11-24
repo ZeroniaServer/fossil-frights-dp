@@ -23,9 +23,6 @@
                   }
                 ],
                 "minecraft:item_model": "fossil_frights:items/heists/gear/guards/night_stick",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:max_stack_size": 1,
                 "minecraft:attribute_modifiers": [
                   {

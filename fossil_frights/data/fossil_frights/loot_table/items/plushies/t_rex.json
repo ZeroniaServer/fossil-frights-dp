@@ -16,9 +16,6 @@
                   "color": "gold"
                 },
                 "minecraft:item_model": "fossil_frights:items/plushies/t_rex_plushie",
-                "minecraft:tooltip_display": {
-                  "split_lines": false
-                },
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:item.armor.equip_generic"
