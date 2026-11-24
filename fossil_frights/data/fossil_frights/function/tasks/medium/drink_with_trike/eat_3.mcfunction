@@ -1,1 +1,1 @@
-execute if score $drink_with_trike_done ff_task_state matches 1 positioned -23 81 46 run playsound minecraft:entity.generic.eat player @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.75 0.9
+execute if score $drink_with_trike_done ff_task_state matches 1 positioned -23 81 46 run playsound minecraft:entity.generic.drink player @a[tag=ff_frights_feedback_viewer,distance=..18] ~ ~ ~ 0.75 0.9
