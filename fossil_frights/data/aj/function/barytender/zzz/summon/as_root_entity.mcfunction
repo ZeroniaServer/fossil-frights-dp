@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:barytender"
-data modify storage animated_java:temp entry.data.rig_hash set value "64f2dea78e7a5f7f9319d3266dfac3aa20950ee43ee3669ec1d2672c64971fca"
+data modify storage animated_java:temp entry.data.rig_hash set value "48914c06f9777667d83c19b9e0bb1f80d23db2c8948fdd4daeb7fc4c32a8bd9f"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.barytender.node.waist] run function aj:barytender/zzz/summon/as_node/waist
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -32,9 +32,9 @@ data modify storage animated_java:temp entry.data.uuids_by_name.left_ear set fro
 execute on passengers if entity @s[tag=aj.barytender.node.right_arm] run function aj:barytender/zzz/summon/as_node/right_arm
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.right_arm set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.barytender.node.cup] run function aj:barytender/zzz/summon/as_node/cup
+execute on passengers if entity @s[tag=aj.barytender.node.cup1] run function aj:barytender/zzz/summon/as_node/cup1
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.cup set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.cup1 set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.barytender.node.left_arm] run function aj:barytender/zzz/summon/as_node/left_arm
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.left_arm set from storage animated_java:gu out

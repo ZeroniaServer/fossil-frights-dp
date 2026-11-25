@@ -4,6 +4,6 @@ execute unless entity @s[type=minecraft:item_display,tag=aj.barytender.root] run
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: '64f2dea78e7a5f7f9319d3266dfac3aa20950ee43ee3669ec1d2672c64971fca'}}} run function animated_java:global/remove/outdated_rig
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: '48914c06f9777667d83c19b9e0bb1f80d23db2c8948fdd4daeb7fc4c32a8bd9f'}}} run function animated_java:global/remove/outdated_rig
 function aj:barytender/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

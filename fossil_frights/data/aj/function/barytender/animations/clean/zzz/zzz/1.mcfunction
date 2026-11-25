@@ -5,7 +5,7 @@ $data modify entity $(head) start_interpolation set value -1
 $data modify entity $(right_ear) start_interpolation set value -1
 $data modify entity $(left_ear) start_interpolation set value -1
 $data modify entity $(right_arm) start_interpolation set value -1
-$data modify entity $(cup) start_interpolation set value -1
+$data modify entity $(cup1) start_interpolation set value -1
 $data modify entity $(left_arm) start_interpolation set value -1
 $data modify entity $(sponge) start_interpolation set value -1
 $data modify entity $(tail1) start_interpolation set value -1

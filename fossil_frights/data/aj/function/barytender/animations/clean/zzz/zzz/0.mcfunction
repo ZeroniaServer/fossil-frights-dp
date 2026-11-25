@@ -5,7 +5,7 @@ $data modify entity $(head) interpolation_duration set value 1
 $data modify entity $(right_ear) interpolation_duration set value 1
 $data modify entity $(left_ear) interpolation_duration set value 1
 $data modify entity $(right_arm) interpolation_duration set value 1
-$data modify entity $(cup) interpolation_duration set value 1
+$data modify entity $(cup1) interpolation_duration set value 1
 $data modify entity $(left_arm) interpolation_duration set value 1
 $data modify entity $(sponge) interpolation_duration set value 1
 $data modify entity $(tail1) interpolation_duration set value 1

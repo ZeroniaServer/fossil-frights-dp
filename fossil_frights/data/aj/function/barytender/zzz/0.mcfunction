@@ -11,8 +11,8 @@ $tp $(left_ear) ~ ~ ~ ~ ~
 $execute as $(left_ear) store success entity @s OnGround byte 1 store success score @s aj.i unless score @s aj.i matches 1
 $tp $(right_arm) ~ ~ ~ ~ ~
 $execute as $(right_arm) store success entity @s OnGround byte 1 store success score @s aj.i unless score @s aj.i matches 1
-$tp $(cup) ~ ~ ~ ~ ~
-$execute as $(cup) store success entity @s OnGround byte 1 store success score @s aj.i unless score @s aj.i matches 1
+$tp $(cup1) ~ ~ ~ ~ ~
+$execute as $(cup1) store success entity @s OnGround byte 1 store success score @s aj.i unless score @s aj.i matches 1
 $tp $(left_arm) ~ ~ ~ ~ ~
 $execute as $(left_arm) store success entity @s OnGround byte 1 store success score @s aj.i unless score @s aj.i matches 1
 $tp $(sponge) ~ ~ ~ ~ ~
