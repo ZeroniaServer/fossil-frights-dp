@@ -6,3 +6,4 @@ $data merge entity $(trapdoor_nw_bone) {transformation: [-1f,0f,0f,0f,0f,1f,0f,0
 $data merge entity $(turntable_bone) {transformation: [1f,0f,0f,0.5f,0f,1f,0f,0.3188f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(mainplate_bone) {transformation: [-1f,0f,0f,0f,0f,1f,0f,0.1625f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(straw_bone4) {transformation: [-1f,0f,0f,0.1875f,0f,1f,0f,1.0781f,0f,0f,-1f,0.125f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
+$data merge entity $(lemon_bone) {transformation: [1f,0f,0f,0.5625f,0f,1f,0f,1.0438f,0f,0f,1f,-0.2187f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}

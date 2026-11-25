@@ -20,7 +20,8 @@ $data merge entity $(drink_bone2) {transformation: [0f,0f,0f,0.5f,0f,0f,0f,1f,0f
 $data merge entity $(glass_bone2) {transformation: [0f,0f,0f,0.5f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(straw_bone2) {transformation: [0f,0f,0f,0.5f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(liquid_bone2) {transformation: [0f,0f,0f,0.5f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
-$data merge entity $(lemon_bone) {transformation: [0f,0f,0f,0.5f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
+$data merge entity $(lemon_bone) {transformation: [1f,0f,0f,0.5625f,0f,1f,0f,1.5938f,0f,0f,1f,-0.2187f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
+$item modify entity $(lemon_bone) contents {type:"set_custom_model_data",strings:{mode:"replace_all",values:["chorus"]}}
 $data merge entity $(drink_bone3) {transformation: [0f,0f,0f,0.1875f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(glass_bone3) {transformation: [0f,0f,0f,0.1875f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(straw_bone3) {transformation: [0f,0f,0f,0.1875f,0f,0f,0f,1f,0f,0f,0f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}

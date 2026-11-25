@@ -2,3 +2,4 @@
 $data merge entity $(holder_l_bone) {transformation: [-1f,0f,0f,0.375f,0f,1f,0f,1f,0f,0f,-1f,0.1844f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(holder_r_bone) {transformation: [-1f,0f,0f,0.375f,0f,1f,0f,1f,0f,0f,-1f,0.1906f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
 $data merge entity $(straw_bone4) {transformation: [-1f,0f,0f,0.1875f,0f,1f,0f,1.5581f,0f,0f,-1f,0.1242f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
+$data merge entity $(lemon_bone) {transformation: [1f,0f,0f,0.5625f,0f,1f,0f,1.3594f,0f,0f,1f,-0.2187f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 0}
