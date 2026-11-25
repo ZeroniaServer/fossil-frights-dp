@@ -1,7 +1,7 @@
 execute store result score $heist_guard_coin_location ff_heist run random value 1..14
 execute if score $heist_guard_coin_location ff_heist matches 1 run execute positioned -1.25 81.0 26.75 run function fossil_frights:game/heists/guard_coin/announce {location:"behind_santasaurus"}
 execute if score $heist_guard_coin_location ff_heist matches 2 run execute positioned -2.5 69.0 29.75 run function fossil_frights:game/heists/guard_coin/announce {location:"gift_pile"}
-execute if score $heist_guard_coin_location ff_heist matches 3 run execute positioned 16.75 70.0 53.25 run function fossil_frights:game/heists/guard_coin/announce {location:"dinonog_bar"}
+execute if score $heist_guard_coin_location ff_heist matches 3 run execute positioned 9.5 75.2 41.2 run function fossil_frights:game/heists/guard_coin/announce_floating {location:"dinonog_bar_dartboard"}
 execute if score $heist_guard_coin_location ff_heist matches 4 run execute positioned -30.75 82.0 79.0 run function fossil_frights:game/heists/guard_coin/announce {location:"boss_room"}
 execute if score $heist_guard_coin_location ff_heist matches 5 run execute positioned 65.25 86.0 77.85 run function fossil_frights:game/heists/guard_coin/announce {location:"penguins_igloo"}
 execute if score $heist_guard_coin_location ff_heist matches 6 run execute positioned -24.75 97.0 40.75 run function fossil_frights:game/heists/guard_coin/announce {location:"raptor_eggs"}

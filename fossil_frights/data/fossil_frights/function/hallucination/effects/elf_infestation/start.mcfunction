@@ -6,7 +6,7 @@ execute if score #ff_elf_spawn_point ff_hallucination matches 1 positioned -19 9
 execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned -29 94 61 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:2}
 execute store result score #ff_elf_spawn_point ff_hallucination run random value 1..2
 execute if score #ff_elf_spawn_point ff_hallucination matches 1 positioned -6 80 49 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:3}
-execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned 6 70 51 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:3}
+execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned 5 69 49 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:3}
 execute store result score #ff_elf_spawn_point ff_hallucination run random value 1..2
 execute if score #ff_elf_spawn_point ff_hallucination matches 1 positioned 19 80 48 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:4}
 execute if score #ff_elf_spawn_point ff_hallucination matches 2 positioned 36 80 48 run function fossil_frights:hallucination/effects/elf_infestation/summon_pair {id:4}
