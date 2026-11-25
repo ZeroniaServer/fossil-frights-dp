@@ -5,7 +5,7 @@ $data merge entity $(head) { transformation: [-1f,0f,0f,0f,0f,1f,0f,1.3438f,0f,0
 $data merge entity $(right_ear) { transformation: [-1f,0f,0f,-0.0625f,0f,1f,0f,1.4375f,0f,0f,-1f,0.2188f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(left_ear) { transformation: [-1f,0f,0f,0.0625f,0f,1f,0f,1.4375f,0f,0f,-1f,0.2188f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(right_arm) { transformation: [-1f,0f,0f,-0.2188f,0f,1f,0f,1.125f,0f,0f,-1f,0.3438f,0f,0f,0f,1f], start_interpolation: 0 }
-$data merge entity $(cup1) { transformation: [-1f,0f,0f,-0.25f,0f,1f,0f,1.1875f,0f,0f,-1f,0.5944f,0f,0f,0f,1f], start_interpolation: 0 }
+$data merge entity $(cup1) { transformation: [-1f,0f,0f,-0.25f,0f,1f,0f,1.125f,0f,0f,-1f,0.5944f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(left_arm) { transformation: [-1f,0f,0f,0.2187f,0f,1f,0f,1.125f,0f,0f,-1f,0.3438f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(sponge) { transformation: [-1f,0f,0f,0.25f,0f,1f,0f,0.7188f,0f,0f,-1f,0.4375f,0f,0f,0f,1f], start_interpolation: 0 }
 $data merge entity $(tail1) { transformation: [-1f,0f,0f,0f,0f,1f,0f,0.4375f,0f,0f,-1f,0.0313f,0f,0f,0f,1f], start_interpolation: 0 }

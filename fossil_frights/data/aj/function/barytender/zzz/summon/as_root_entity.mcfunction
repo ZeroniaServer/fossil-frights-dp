@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:barytender"
-data modify storage animated_java:temp entry.data.rig_hash set value "48914c06f9777667d83c19b9e0bb1f80d23db2c8948fdd4daeb7fc4c32a8bd9f"
+data modify storage animated_java:temp entry.data.rig_hash set value "459d7a8bba2aa7608c3497db7b9a1c8f65508467c451f732f76629a4186cddd0"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.barytender.node.waist] run function aj:barytender/zzz/summon/as_node/waist
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
