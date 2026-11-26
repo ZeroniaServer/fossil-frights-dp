@@ -188,8 +188,3 @@ execute if entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spe
 execute if entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] unless entity @a[distance=..1,predicate=fossil_frights:player/is_playing] run item fill entity @s fossil_frights:player/spectator_inventory_mirroring_slots with air
 execute if entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] run attribute @s minecraft:scale modifier add fossil_frights:hide_spectator_head -1 add_multiplied_total
 execute unless entity @s[predicate=fossil_frights:player/team/spectator,gamemode=spectator] run attribute @s minecraft:scale modifier remove fossil_frights:hide_spectator_head
-
-execute if entity @s[tag=ff_was_wearing_leather_boots] unless items entity @s armor.* *[custom_data~{itemID:"leather_boots"}] run playsound minecraft:item.armor.equip_leather player @a ~ ~ ~
-execute unless entity @s[tag=ff_was_wearing_leather_boots] if items entity @s armor.* *[custom_data~{itemID:"leather_boots"}] run playsound minecraft:item.armor.equip_leather player @a ~ ~ ~
-tag @s remove ff_was_wearing_leather_boots
-execute if items entity @s armor.* *[custom_data~{itemID:"leather_boots"}] run tag @s add ff_was_wearing_leather_boots
