@@ -9,6 +9,7 @@ execute unless predicate fossil_frights:player/team/thief store result score #ba
 execute unless score #barytender_given ff_game_state matches 1.. run return run function fossil_frights:player/actionbar/show/generic/barytender_inventory_full
 clear @s *[minecraft:custom_data~{itemID:"dinocoin"}] 1
 function fossil_frights:player/coins/add_used_this_run
+function fossil_frights:run_breakdown/event/add {code:"C",id:"06"}
 execute if predicate fossil_frights:game_state/heist_mode_active if predicate fossil_frights:player/team/guard run tag @s add ff_has_dinonog
 function fossil_frights:messages/dinocoin/barytender/success
 execute positioned 10 69.55 49 run playsound minecraft:entity.panda.ambient master @a[distance=..16] ~ ~ ~ 1 1
