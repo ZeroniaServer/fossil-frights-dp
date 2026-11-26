@@ -14,6 +14,9 @@ scoreboard players set $heist_admin_bypass_team_check ff_game_state 0
 scoreboard players set $heist_thieves_ready ff_game_state 0
 function fossil_frights:game/heists/challenge/reset
 scoreboard players set #heist_loot_display ff_heist 0
+scoreboard players reset #heist_loot_display.from ff_heist
+scoreboard players reset #heist_loot_display.to ff_heist
+scoreboard players reset #heist_loot_display.speed ff_heist
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_timer ff_heist 0
 scoreboard players set $heist_wait_ticks ff_heist 0

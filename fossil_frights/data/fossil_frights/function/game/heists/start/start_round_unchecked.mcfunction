@@ -13,6 +13,9 @@ scoreboard players set $heist_stopwatch_active ff_heist 0
 stopwatch remove fossil_frights:heist_round
 function fossil_frights:animations/geyser/start
 scoreboard players set #heist_loot_display ff_heist 0
+scoreboard players reset #heist_loot_display.from ff_heist
+scoreboard players reset #heist_loot_display.to ff_heist
+scoreboard players reset #heist_loot_display.speed ff_heist
 scoreboard players set $heist_loot ff_heist 0
 scoreboard players set $heist_elapsed ff_heist 0
 scoreboard players set $heist_guard_coin_stage ff_heist 0
