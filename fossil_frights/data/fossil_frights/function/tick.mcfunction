@@ -10,6 +10,7 @@ scoreboard players set @a[tag=ff_tp_dispatch] ff_tp_action 0
 tag @a[tag=ff_tp_dispatch] remove ff_tp_dispatch
 tag @a[scores={ff_tp_delay=..0}] remove ff_fade_tp_active
 
+function fossil_frights:player/boots_patch/tick
 function fossil_frights:items/dropped_items/tick
 function fossil_frights:items/hoverboard/tick
 execute if predicate fossil_frights:game_state/game_running if predicate fossil_frights:game_state/heist_mode_active as @e[type=minecraft:item,tag=ff_heist_lady_bug_timed_drop] run function fossil_frights:game/heists/loot/rare/pickup/lady_bug/ground_tick
@@ -98,7 +99,6 @@ execute if score #ant_fight_active ff_dummy matches 0 run scoreboard objectives 
 function fossil_frights:join/queue/tick
 function fossil_frights:items/water_balloon/tick
 function fossil_frights:items/return_to_lobby/tick
-function fossil_frights:player/boots_patch/tick
 
 bossbar set fossil_frights:resource_pack_disclaimer players
 execute in minecraft:overworld run bossbar set fossil_frights:resource_pack_disclaimer players @a[x=0]
