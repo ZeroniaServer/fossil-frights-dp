@@ -22,11 +22,6 @@
                     "minecraft:enchantments"
                   ]
                 },
-                "minecraft:equippable": {
-                  "slot": "feet",
-                  "asset_id": "minecraft:leather",
-                  "equip_sound": "minecraft:intentionally_empty"
-                },
                 "!minecraft:max_damage": {},
                 "!minecraft:damage": {},
                 "minecraft:enchantments": {
@@ -38,6 +33,7 @@
                 }
               }
             },
+            "fossil_frights:item_definition/leather_boots_audiovisual",
             "fossil_frights:item_definition/base_item_data"
           ]
         }
