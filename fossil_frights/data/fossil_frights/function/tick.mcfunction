@@ -21,6 +21,7 @@ execute as @a[predicate=!fossil_frights:location/lobby_games/teleporters/any] ru
 
 execute as @e[type=minecraft:player,gamemode=!spectator,gamemode=!creative,tag=!ff_fade_tp_active,predicate=fossil_frights:player/is_playing,predicate=!fossil_frights:location/room/rough_museum_bounds] at @s run function fossil_frights:player/kill/left_museum_bounds
 
+function fossil_frights:player/boots_patch/tick
 function fossil_frights:items/dropped_items/tick
 function fossil_frights:items/hoverboard/tick
 function fossil_frights:items/heists/lootbook/tick
@@ -130,7 +131,6 @@ function fossil_frights:join/queue/tick
 function fossil_frights:items/return_to_lobby/tick
 function fossil_frights:player/bouncy_lily_pad/tick
 item replace entity @a[tag=!ff_hoverboard_restore_pending] enderchest.0 with air
-function fossil_frights:player/boots_patch/tick
 function fossil_frights:player/equipping_sounds/tick
 
 loot replace entity @a[predicate=fossil_frights:player/team/lobby] armor.body loot fossil_frights:damage_immunity_item

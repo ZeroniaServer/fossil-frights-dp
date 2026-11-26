@@ -1,2 +1,1 @@
-execute as @a unless items entity @s armor.feet * run item override entity @s armor.feet with stone[item_model="fossil_frights:display/misc/boots_patch_dummy_item",enchantment_glint_override=false,custom_data={ff_boots_patch_dummy_item:true},equippable={slot:"feet",equip_sound:"minecraft:intentionally_empty"},minecraft:tooltip_display={hide_tooltip:true}]
 clear @a *[custom_data~{ff_boots_patch_dummy_item:true}]
