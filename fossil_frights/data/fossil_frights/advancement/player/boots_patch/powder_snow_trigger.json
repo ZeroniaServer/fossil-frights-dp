@@ -1,0 +1,34 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "enter_powder_snow": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "blocks": "minecraft:powder_snow"
+      }
+    },
+    "powder_snow_below": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:location_check",
+          "offsetY": -1,
+          "predicate": {
+            "block": {
+              "blocks": "minecraft:powder_snow"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter_powder_snow",
+      "powder_snow_below"
+    ]
+  ],
+  "rewards": {
+    "function": "fossil_frights:player/boots_patch/powder_snow_trigger"
+  }
+}
