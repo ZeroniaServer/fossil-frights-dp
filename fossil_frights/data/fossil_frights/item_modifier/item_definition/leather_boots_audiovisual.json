@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "ff_leather_boots_audiovisual": true
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "asset_id": "minecraft:leather",
+          "equip_sound": "minecraft:intentionally_empty",
+          "slot": "feet"
+        }
+      }
+    }
+  ]
+}
