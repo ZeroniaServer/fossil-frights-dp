@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["aj:elfsembly_line/on_load", "aj:santasaurus/on_load"]
+	"values": ["aj:barytender/on_load", "aj:elfsembly_line/on_load", "aj:santasaurus/on_load"]
 }
