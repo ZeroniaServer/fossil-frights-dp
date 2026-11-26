@@ -1,0 +1,3 @@
+tag @s add ff_was_near_barytender
+function fossil_frights:messages/dinocoin/barytender/prompt
+function fossil_frights:messages/block_npc_messages_for_10_seconds

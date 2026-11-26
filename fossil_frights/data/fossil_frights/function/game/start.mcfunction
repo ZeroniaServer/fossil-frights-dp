@@ -83,6 +83,7 @@ scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
 function fossil_frights:frightmas/santasaurus/spawn
 function fossil_frights:frightmas/elfsembly_line/spawn
+function fossil_frights:frightmas/barytender/spawn
 execute as @a[predicate=fossil_frights:player/team/guard] at @s run function fossil_frights:game/rejoin/state/register_frights
 scoreboard players set $run_admin_modified ff_game_state 0
 scoreboard players set $victory_complete ff_game_state 0

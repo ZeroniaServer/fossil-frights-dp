@@ -1,0 +1,2 @@
+execute positioned 10 69.55 49 as @a[distance=..3,gamemode=!spectator,tag=!ff_was_near_barytender,predicate=fossil_frights:player/team/guard] unless score @s ff_cannot_trigger_npc_messages_until_timestamp > #gametime ff_global run function fossil_frights:animations/dinocoin/barytender/message/player_nearby
+execute positioned 10 69.55 49 run tag @a[tag=ff_was_near_barytender,distance=10..] remove ff_was_near_barytender

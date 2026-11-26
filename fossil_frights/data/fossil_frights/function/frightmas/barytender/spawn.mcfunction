@@ -1,0 +1,3 @@
+execute positioned 10 69.55 49 unless entity @e[type=minecraft:item_display,tag=aj.barytender.root,distance=..0.1,limit=1] rotated 90 0 run function aj:barytender/summon {args:{}}
+execute positioned 10 69.55 49 as @e[type=minecraft:item_display,tag=aj.barytender.root,tag=!aj.barytender.animation.clean.playing,distance=..0.1,limit=1] at @s run function aj:barytender/animations/clean/play
+execute positioned 10.3 69.75 49 unless entity @e[type=minecraft:interaction,tag=ff_barytender,distance=..0.1,limit=1] run summon minecraft:interaction ~ ~ ~ {Tags:["ff_barytender"],width:0.5f,height:1.2f,response:1b}

@@ -113,3 +113,4 @@ function fossil_frights:join/thief/reset_invisimask_pool
 function fossil_frights:animations/security_gate/load
 function fossil_frights:frightmas/santasaurus/reset
 function fossil_frights:frightmas/elfsembly_line/reset
+function fossil_frights:frightmas/barytender/reset
