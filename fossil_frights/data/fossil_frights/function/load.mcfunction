@@ -283,6 +283,7 @@ scoreboard objectives add ff_health_regeneration.regenerate_amount dummy
 scoreboard objectives add ff_health_regeneration.natural_delay dummy
 scoreboard objectives add ff_health_regeneration.health_tracker health
 scoreboard objectives add ff_health_regeneration.blocked_time dummy
+scoreboard objectives add ff_was_wearing_leather_boots dummy
 scoreboard players set #-1 ff_constant -1
 scoreboard players set #1 ff_constant 1
 scoreboard players set #2 ff_constant 2

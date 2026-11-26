@@ -120,6 +120,7 @@ function fossil_frights:items/return_to_lobby/tick
 function fossil_frights:player/bouncy_lily_pad/tick
 item replace entity @a[tag=!ff_hoverboard_restore_pending] enderchest.0 with air
 function fossil_frights:player/boots_patch/tick
+function fossil_frights:player/equipping_sounds/tick
 
 loot replace entity @a[predicate=fossil_frights:player/team/lobby] armor.body loot fossil_frights:damage_immunity_item
 execute as @a[predicate=!fossil_frights:player/is_lobby_freeplay] if items entity @s armor.body *[custom_data~{ff_damage_immunity_item:true}] run item fill entity @s armor.body with air

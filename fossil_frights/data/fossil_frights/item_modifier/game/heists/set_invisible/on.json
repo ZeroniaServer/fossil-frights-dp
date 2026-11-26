@@ -1,6 +1,31 @@
 {
-  "type": "minecraft:set_custom_data",
-  "tag": {
-    "ff_invisible": true
-  }
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "ff_invisible": true
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "ff_leather_boots_audiovisual": true
+          }
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:equippable": {
+            "asset_id": "fossil_frights:transparent",
+            "equip_sound": "minecraft:intentionally_empty",
+            "slot": "feet"
+          }
+        }
+      }
+    }
+  ]
 }
