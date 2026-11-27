@@ -1,1 +1,8 @@
-tellraw @s {"translate":"ff.barytender.success","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 0 run tellraw @s {"translate":"ff.barytender.success_0","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 1 run tellraw @s {"translate":"ff.barytender.success_1","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 2 run tellraw @s {"translate":"ff.barytender.success_2","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 3 run tellraw @s {"translate":"ff.barytender.success_3","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 4 run tellraw @s {"translate":"ff.barytender.success_4","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 5 run tellraw @s {"translate":"ff.barytender.success_5","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 6 run tellraw @s {"translate":"ff.barytender.success_6","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}
+execute if score @s ff_barytender_streak matches 7 run tellraw @s {"translate":"ff.barytender.success_7","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"}]}

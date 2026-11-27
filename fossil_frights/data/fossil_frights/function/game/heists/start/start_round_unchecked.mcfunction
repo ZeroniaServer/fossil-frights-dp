@@ -73,6 +73,7 @@ scoreboard players reset @a ff_heist_thieves_killed_round
 tag @a remove ff_heist_stat_winner
 tag @a remove ff_heist_capture_credit_recipient
 tag @e[type=minecraft:item] remove ff_heist_capture_credit_known
+scoreboard players set @a ff_barytender_streak 0
 scoreboard players set #heist_guard_key_serial ff_heist_key_serial 0
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/key/assign_id
 execute as @a[predicate=fossil_frights:player/team/guard] run function fossil_frights:game/heists/loadout/guard

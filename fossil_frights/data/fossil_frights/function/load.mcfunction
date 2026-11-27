@@ -44,6 +44,8 @@ scoreboard objectives add ff_forced_spec_pitch dummy
 scoreboard objectives add ff_lock_click_ttl dummy
 scoreboard objectives add ff_hazard_active dummy
 scoreboard objectives add ff_coin_used_run dummy
+scoreboard objectives add ff_barytender_streak dummy
+scoreboard objectives add ff_barytender_last_clicked dummy
 scoreboard objectives add ff_hazard_rng dummy
 scoreboard objectives add ff_door_angle dummy
 scoreboard objectives add ff_door_target dummy
@@ -532,6 +534,7 @@ function fossil_frights:animations/tasks/medium/feed_the_plants/flytrap/default
 function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/dinocoin/sarcophagus/talking_skull_default
 function fossil_frights:animations/dinocoin/crab/move
+function fossil_frights:animations/dinocoin/barytender/load
 execute in minecraft:overworld as @e[tag=fh_vault] run tp @s -5.25 73.0 46.0
 function fossil_frights:animations/interactions/load
 function fossil_frights:animations/security_gate/load
