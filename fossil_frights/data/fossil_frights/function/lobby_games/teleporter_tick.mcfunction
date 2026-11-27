@@ -12,7 +12,7 @@ execute if score #ff_parkour ff_tp_anim matches 10.. run scoreboard players set 
 
 execute if score #ff_sulfur_strikers ff_tp_anim matches 1 run data merge entity @e[type=item_display,tag=ff_sulfur_strikers_tp,limit=1] {view_range:1f}
 execute if score #ff_sulfur_strikers ff_tp_anim matches 1..10 run scoreboard players add #ff_sulfur_strikers ff_tp_anim 1
-execute if score #ff_sulfur_strikers ff_tp_anim matches 10.. run data merge entity @e[type=item_display,tag=ff_sulfur_strikers_tp,limit=1] {view_range:1f}
+execute if score #ff_sulfur_strikers ff_tp_anim matches 10.. run data merge entity @e[type=item_display,tag=ff_sulfur_strikers_tp,limit=1] {view_range:0f}
 execute if score #ff_sulfur_strikers ff_tp_anim matches 10.. run scoreboard players set #ff_sulfur_strikers ff_tp_anim 0
 
 execute if score #ff_temple_run ff_tp_anim matches 1 run data merge entity @e[type=item_display,tag=ff_temple_run_tp,limit=1] {view_range:1f}
