@@ -3,6 +3,7 @@ execute if score $heist_admin_bypass_team_check ff_game_state matches 0 unless e
 execute if score $heist_admin_bypass_team_check ff_game_state matches 0 unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker,tag=ff_rejoin_heists_thief] run stopsound @a record fossil_frights:heists.music
 execute if score $heist_admin_bypass_team_check ff_game_state matches 0 unless entity @a[limit=1,predicate=fossil_frights:player/team/thief] unless entity @e[type=minecraft:marker,tag=ff_rejoin_marker,tag=ff_rejoin_heists_thief] run return run function fossil_frights:game/heists/end/guards_win
 execute if score $heist_loot ff_heist >= #heist_goal ff_heist run return run function fossil_frights:game/heists/end/thieves_win
+execute as @a[predicate=fossil_frights:player/team/guard,scores={ff_heist_guard_has_key=0}] run function fossil_frights:game/heists/key/restore_if_missing
 execute unless score $heist_stopwatch_active ff_heist matches 1 run return 0
 execute if score $timer_frozen ff_day matches 1 run return 0
 function fossil_frights:game/heists/timer/sync
