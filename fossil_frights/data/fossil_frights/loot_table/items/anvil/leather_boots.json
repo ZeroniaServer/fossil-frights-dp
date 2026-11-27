@@ -15,6 +15,13 @@
                   "translate": "ff.item.bunny_slippers",
                   "color": "#E8DBEB"
                 },
+                "minecraft:lore": [
+                  {
+                    "color": "white",
+                    "italic": false,
+                    "translate": "ff.item.bunny_slippers.description.step_on_powder_snow"
+                  }
+                ],
                 "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
                 "minecraft:tooltip_display": {
                   "split_lines": false,
