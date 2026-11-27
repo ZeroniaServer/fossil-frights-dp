@@ -14,7 +14,7 @@
                 "!minecraft:max_damage": {},
                 "!minecraft:damage": {},
                 "minecraft:item_name": {
-                  "translate": "item.minecraft.leather_boots",
+                  "translate": "ff.item.bunny_slippers",
                   "color": "#78552F"
                 },
                 "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",

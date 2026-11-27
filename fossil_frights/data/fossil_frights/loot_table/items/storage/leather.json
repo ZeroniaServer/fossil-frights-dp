@@ -27,8 +27,8 @@
                         "color": "yellow"
                       },
                       {
-                        "translate": "item.minecraft.leather_boots",
-                        "color": "#78552F"
+                        "translate": "ff.item.bunny_slippers",
+                        "color": "#E8DBEB"
                       }
                     ]
                   }

@@ -12,7 +12,7 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "item.minecraft.leather_boots",
+                  "translate": "ff.item.bunny_slippers",
                   "color": "#E8DBEB"
                 },
                 "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
