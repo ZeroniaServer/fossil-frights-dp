@@ -12,7 +12,7 @@
       "item_filter": {
         "predicates": {
           "minecraft:custom_data": {
-            "ff_leather_boots_audiovisual": true
+            "ff_bunny_slippers": {}
           }
         }
       },

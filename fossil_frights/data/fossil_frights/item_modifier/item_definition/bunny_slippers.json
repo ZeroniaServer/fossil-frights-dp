@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": {
+        "ff_bunny_slippers": {
+          "unresolved": true
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
+        "minecraft:item_name": {
+          "translate": "ff.item.bunny_slippers",
+          "color": "#E8DBEB"
+        },
+        "minecraft:equippable": {
+          "asset_id": "fossil_frights:bunny_slippers",
+          "equip_sound": "minecraft:intentionally_empty",
+          "slot": "feet"
+        }
+      }
+    },
+    {
+      "type": "minecraft:toggle_tooltips",
+      "toggles": {
+        "minecraft:dyed_color": false
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:lore": []
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:set_lore",
+        "lore": [
+          ""
+        ],
+        "mode": "append"
+      }
+    },
+    {
+      "type": "minecraft:set_lore",
+      "lore": [
+        {
+          "color": "white",
+          "italic": false,
+          "translate": "ff.item.bunny_slippers.description.step_on_powder_snow"
+        }
+      ],
+      "mode": "append"
+    }
+  ]
+}

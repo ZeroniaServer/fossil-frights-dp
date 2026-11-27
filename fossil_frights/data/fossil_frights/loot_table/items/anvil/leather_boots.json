@@ -11,37 +11,23 @@
             {
               "type": "minecraft:set_components",
               "components": {
+                "!minecraft:max_damage": {},
+                "!minecraft:damage": {},
+                "!minecraft:item_model": {},
+                "!minecraft:item_name": {},
                 "minecraft:attribute_modifiers": [],
-                "minecraft:item_name": {
-                  "translate": "ff.item.bunny_slippers",
-                  "color": "#E8DBEB"
-                },
-                "minecraft:lore": [
-                  {
-                    "color": "white",
-                    "italic": false,
-                    "translate": "ff.item.bunny_slippers.description.step_on_powder_snow"
-                  }
-                ],
-                "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
                 "minecraft:tooltip_display": {
-                  "split_lines": false,
-                  "hidden_components": [
-                    "minecraft:dyed_color"
-                  ]
+                  "split_lines": false
                 },
                 "minecraft:custom_data": {
                   "itemID": "leather_boots",
-                  "ff_bunny_slippers": {
-                    "unresolved": true
-                  },
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }
                 }
               }
             },
-            "fossil_frights:item_definition/leather_boots_audiovisual",
+            "fossil_frights:item_definition/bunny_slippers",
             "fossil_frights:item_definition/base_item_data"
           ]
         }
