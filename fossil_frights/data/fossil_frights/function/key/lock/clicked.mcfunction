@@ -7,8 +7,8 @@ execute unless items entity @s weapon.mainhand *[custom_data~{itemID:"key"}] run
 
 execute at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_key_anim,distance=..1.25,limit=1] run return 0
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_lock_lady_bug,distance=..0.5,limit=1] run return 0
-execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_lock_dinonog,distance=..0.5,limit=1] run tag @s add ff_has_dinonog
 execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[tag=ff_has_dinonog,predicate=fossil_frights:player/team/guard] at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_lock_dinonog,distance=..0.5,limit=1] run return run function fossil_frights:key/lock/dinonog_denied
+execute if predicate fossil_frights:game_state/heist_mode_active if entity @s[predicate=fossil_frights:player/team/guard] at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ if entity @e[type=minecraft:item_display,tag=ff_lock_dinonog,distance=..0.5,limit=1] run tag @s add ff_has_dinonog
 scoreboard players set @s ff_lock_look 0
 execute at @e[type=minecraft:interaction,tag=ff_lock_click,sort=nearest,limit=1,distance=..3] positioned ~ ~-0.25 ~ run function fossil_frights:key/anim_from_click
 scoreboard players set @s ff_scan 6
