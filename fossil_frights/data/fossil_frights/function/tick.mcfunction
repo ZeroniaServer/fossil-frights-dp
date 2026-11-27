@@ -38,9 +38,7 @@ tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
 execute if predicate fossil_frights:game_state/hallucination_active/jolly_curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
-execute as @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor] at @s run function fossil_frights:items/heists/trap/types/freeze/item/tick
-execute as @e[type=minecraft:item_display,tag=ff_trap_freeze_item] at @s unless entity @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor,distance=..1] run kill @s
-execute as @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice] at @s unless entity @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor,distance=..1] run kill @s
+execute if score #freeze_trap_item_tick ff_global matches 1 run function fossil_frights:items/heists/trap/types/freeze/item/tick
 execute as @e[type=minecraft:marker,tag=ff_trap] at @s run function fossil_frights:items/heists/trap/tick
 execute as @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,scores={ff_heist_paint_fx=1..}] at @s run function fossil_frights:game/heists/paint_fx/ice_sculpture_tick
 execute as @e[type=minecraft:item_display,tag=ff_ice_sculpture,scores={ff_glowtrap_age=1..}] run function fossil_frights:game/heists/loot/rare/ice_sculpture/glow_tick
