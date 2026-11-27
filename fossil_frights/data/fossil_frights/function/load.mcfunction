@@ -534,7 +534,6 @@ function fossil_frights:animations/tasks/medium/feed_the_plants/flytrap/default
 function fossil_frights:animations/dinocoin/crane/rig/on_load
 function fossil_frights:animations/dinocoin/sarcophagus/talking_skull_default
 function fossil_frights:animations/dinocoin/crab/move
-function fossil_frights:animations/dinocoin/barytender/load
 execute in minecraft:overworld as @e[tag=fh_vault] run tp @s -5.25 73.0 46.0
 function fossil_frights:animations/interactions/load
 function fossil_frights:animations/security_gate/load

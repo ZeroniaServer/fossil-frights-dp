@@ -112,6 +112,8 @@ scoreboard players set @s ff_bb_sneak_state 0
 scoreboard players reset @s ff_bb_shift_count
 scoreboard players set @s ff_queue_start 0
 scoreboard players set @s ff_queue_start_token 0
+scoreboard players set @s ff_barytender_streak 0
+scoreboard players set @s ff_barytender_last_clicked 0
 scoreboard players set @s start 0
 scoreboard players set @s leave 0
 scoreboard players set @s spectate 0
