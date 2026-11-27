@@ -10,6 +10,7 @@ execute unless score @s ff_active_uuid_3 matches -2147483648..2147483647 run ret
 function fossil_frights:items/heists/ice_cannon/remove_owned_display
 effect give @s minecraft:slowness 3 9 true
 tag @s add ff_ice_frozen
+item modify entity @s fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/disable
 function fossil_frights:items/heists/ice_cannon/overlay_show
 function fossil_frights:items/heists/ice_cannon/freeze_player/apply_attribute_modifiers
 scoreboard players reset @s ff_heist_thaw_fx

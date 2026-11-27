@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:filtered",
+  "item_filter": {
+    "predicates": {
+      "minecraft:custom_data": {
+        "itemID": "fishing_rod"
+      }
+    }
+  },
+  "on_pass": {
+    "type": "minecraft:set_item",
+    "item": "minecraft:paper"
+  }
+}

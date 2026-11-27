@@ -12,5 +12,6 @@ function fossil_frights:player/reset_attribute_modifiers
 function fossil_frights:items/heists/ice_cannon/remove_owned_display
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @s remove ff_ice_frozen
+item modify entity @s fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
 tag @s remove ff_ice_frozen_overlay
 tag @s remove ff_ice_freeze_owner

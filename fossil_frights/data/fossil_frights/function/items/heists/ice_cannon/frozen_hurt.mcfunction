@@ -8,3 +8,4 @@ scoreboard players set @s ff_heist_thaw_fx 60
 effect clear @s minecraft:slowness
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @s remove ff_ice_frozen
+item modify entity @s fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
