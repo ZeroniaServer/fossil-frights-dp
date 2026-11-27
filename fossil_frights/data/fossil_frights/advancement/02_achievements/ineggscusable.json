@@ -1,0 +1,24 @@
+{
+  "parent": "fossil_frights:02_achievements/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "fossil_frights:/items/frightmas/dinonog"
+      }
+    },
+    "title": {
+      "translate": "ff.advancement.ineggscusable"
+    },
+    "description": {
+      "translate": "ff.advancement.ineggscusable.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "purchase_8_dinonog": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
