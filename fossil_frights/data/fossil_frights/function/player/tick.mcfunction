@@ -173,7 +173,6 @@ execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] run function fos
 execute if entity @s[tag=ff_camera_remote_active,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:items/heists/camera_remote/exit
 execute if entity @s[tag=ff_forced_spectate,gamemode=spectator] at @s if predicate fossil_frights:player/input/sneak run function fossil_frights:cameras/forced_spectate_exit
 execute if entity @s[predicate=fossil_frights:player/team/guard] if predicate fossil_frights:game_state/game_running run function fossil_frights:frights/check_radius
-advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
 execute unless score @s ff_key_cooldown matches 1.. if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
