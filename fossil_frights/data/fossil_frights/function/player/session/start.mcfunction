@@ -44,3 +44,5 @@ execute if score @s ff_trap_explosive_cooldown matches 0 run scoreboard players 
 
 tag @s remove ff_well_teleporting
 attribute @s minecraft:below_name_distance modifier remove fossil_frights:ant_fight
+
+advancement revoke @s from fossil_frights:detection_root

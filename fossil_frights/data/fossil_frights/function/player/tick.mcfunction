@@ -174,7 +174,6 @@ execute if predicate fossil_frights:game_state/game_running run function fossil_
 tag @s add ff_microfiber_cloth_holder
 execute unless items entity @s weapon.* *[custom_data~{itemID:"microfiber_cloth"}] run tag @s remove ff_microfiber_cloth_holder
 execute if entity @s[tag=ff_microfiber_cloth_holder] run function fossil_frights:tasks/final/dna/hover_check
-advancement revoke @s from fossil_frights:detection_root
 scoreboard players set @s ff_lock_look 0
 scoreboard players set @s ff_scan 6
 execute unless score @s ff_key_cooldown matches 1.. if items entity @s weapon.* *[custom_data~{itemID:"key"}] anchored eyes positioned ^ ^ ^0.5 run function fossil_frights:key/lock/raycast_step
