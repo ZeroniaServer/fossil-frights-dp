@@ -1,3 +1,5 @@
+scoreboard players set #freeze_trap_item_tick ff_global 1
+
 summon minecraft:armor_stand ~ ~ ~ {Tags:["ff_trap_freeze_item_anchor","ff_trap_freeze_item_anchor_new"],Invisible:true,Small:true,NoGravity:false,Invulnerable:true,Silent:true}
 data modify entity @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor_new,sort=nearest,limit=1,distance=..0.5] equipment.feet set from entity @s Item
 tag @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor_new,sort=nearest,limit=1,distance=..0.5] remove ff_trap_freeze_item_anchor_new

@@ -1,9 +1,8 @@
-scoreboard players add @s ff_trap_item_age 1
-execute if score @s ff_trap_item_age matches 20 run data modify entity @e[type=minecraft:item_display,tag=ff_trap_freeze_item,distance=..1,sort=nearest,limit=1] Glowing set value false
-tp @e[type=minecraft:item_display,tag=ff_trap_freeze_item,distance=..1,sort=nearest,limit=1] ~ ~0.375 ~
-tp @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice,distance=..1,sort=nearest,limit=1] ~ ~ ~
-execute if score @s ff_trap_item_age matches 1..29 run particle minecraft:snowflake ~ ~0.25 ~ 0.22 0.22 0.22 0.015 2 force
-execute if score @s ff_trap_item_age matches 1..29 run particle minecraft:white_ash ~ ~0.2 ~ 0.18 0.18 0.18 0.02 1 force
-execute if score @s ff_trap_item_age matches 10 run data merge entity @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice,distance=..1,sort=nearest,limit=1] {block_state:{id:"minecraft:frosted_ice",properties:{age:"1"}}}
-execute if score @s ff_trap_item_age matches 20 run data merge entity @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice,distance=..1,sort=nearest,limit=1] {block_state:{id:"minecraft:frosted_ice",properties:{age:"2"}}}
-execute if score @s ff_trap_item_age matches 30.. run function fossil_frights:items/heists/trap/types/freeze/item/break
+execute as @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor] at @s run function fossil_frights:items/heists/trap/types/freeze/item/anchor_tick
+execute as @e[type=minecraft:item_display,tag=ff_trap_freeze_item] at @s unless entity @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor,distance=..1] run kill @s
+execute as @e[type=minecraft:block_display,tag=ff_trap_freeze_item_ice] at @s unless entity @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor,distance=..1] run kill @s
+
+execute if entity @e[limit=1,type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor] run return run scoreboard players set #freeze_trap_item_tick ff_global 1
+execute if entity @e[limit=1,type=minecraft:item_display,tag=ff_trap_freeze_item] run return run scoreboard players set #freeze_trap_item_tick ff_global 1
+execute if entity @e[limit=1,type=minecraft:block_display,tag=ff_trap_freeze_item_ice] run return run scoreboard players set #freeze_trap_item_tick ff_global 1
+scoreboard players set #freeze_trap_item_tick ff_global 0
