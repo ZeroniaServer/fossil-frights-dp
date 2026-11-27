@@ -1,0 +1,66 @@
+{
+  "parent": "fossil_frights:detection_root",
+  "criteria": {
+    "obtain_enabled_fishing_rod_while_frozen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "all_of": [
+                "ff_ice_frozen"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": "minecraft:fishing_rod",
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "fishing_rod"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "obtain_disabled_fishing_rod_while_not_frozen": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_tags": {
+              "none_of": [
+                "ff_ice_frozen"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": "minecraft:paper",
+            "predicates": {
+              "minecraft:custom_data": {
+                "itemID": "fishing_rod"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_enabled_fishing_rod_while_frozen",
+      "obtain_disabled_fishing_rod_while_not_frozen"
+    ]
+  ],
+  "rewards": {
+    "function": "fossil_frights:items/fishing_rod/pick_up_fishing_rod_with_incorrect_state"
+  }
+}

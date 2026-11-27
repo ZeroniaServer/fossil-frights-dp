@@ -1,0 +1,2 @@
+advancement revoke @s only fossil_frights:items/fishing_rod/pick_up_fishing_rod_with_incorrect_state
+schedule function fossil_frights:items/fishing_rod/update_all_fishing_rods 1t
