@@ -7,6 +7,7 @@ scoreboard players set $naughty_or_nice_done ff_task_state 0
 scoreboard players set $naughty_or_nice_started ff_task_state 0
 execute as @e[type=minecraft:item_display,tag=aj.santasaurus.root,limit=1] run tp @s -0.8 69 11.4 0 0
 function fossil_frights:tasks/final/naughty_or_nice/cleanup
+execute as @e[tag=fh_stockings] run data merge entity @s {view_range:0f}
 function fossil_frights:tasks/final/naughty_or_nice/recipients/hide_stockings
 function fossil_frights:tasks/final/naughty_or_nice/recipients/roll
 function fossil_frights:tasks/final/naughty_or_nice/recipients/spawn_interactions
