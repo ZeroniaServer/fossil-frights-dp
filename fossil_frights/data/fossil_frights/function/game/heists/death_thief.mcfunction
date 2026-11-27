@@ -10,6 +10,7 @@ attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:air_drag_modifier base reset
 attribute @s minecraft:entity_interaction_range base reset
 tag @s remove ff_ice_frozen
+item modify entity @s fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
 function fossil_frights:game/heists/jump_boost/restore
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 function fossil_frights:game/heists/paint_fx/clear

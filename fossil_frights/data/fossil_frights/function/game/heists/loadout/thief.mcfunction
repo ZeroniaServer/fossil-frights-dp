@@ -6,6 +6,7 @@ attribute @s minecraft:friction_modifier base reset
 attribute @s minecraft:air_drag_modifier base reset
 function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 tag @s remove ff_ice_frozen
+item modify entity @s fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
 function fossil_frights:items/heists/ice_cannon/overlay_hide
 clear @s
 scoreboard players reset @s ff_key_cooldown

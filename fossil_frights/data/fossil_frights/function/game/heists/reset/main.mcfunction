@@ -80,6 +80,7 @@ scoreboard players set $timer_frozen ff_day 0
 tag @a remove ff_ice_cannon_shooter
 tag @a remove ff_heist_guard_sneak_glowing
 tag @a remove ff_ice_frozen
+item modify entity @a fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
 execute as @a[tag=ff_pteranodon_jump_reduced] run function fossil_frights:game/heists/jump_boost/restore
 execute as @a run function fossil_frights:items/heists/ice_cannon/overlay_hide
 execute as @a run function fossil_frights:game/heists/paint_fx/clear
