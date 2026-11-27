@@ -38,9 +38,7 @@
                 },
                 "minecraft:custom_data": {
                   "itemID": "hazard_cookie",
-                  "ff_heist_rules": {
-                    "delete_on_guard_pickup": true
-                  }
+                  "ff_prevent_drop": true
                 }
               }
             },
