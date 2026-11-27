@@ -8,8 +8,12 @@ tag @a[limit=1,predicate=fossil_frights:entity/match/active] add ff_ice_freeze_o
 execute as @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] run function fossil_frights:items/heists/ice_cannon/freeze_player/remove_attribute_modifiers
 scoreboard players set @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] ff_heist_thaw_fx 60
 effect clear @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] minecraft:slowness
-item modify entity @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
+
+tag @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] add ff_ice_frozen.update_fishing_rod
 tag @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen] remove ff_ice_frozen
+item modify entity @a[tag=ff_ice_frozen.update_fishing_rod] fossil_frights:player/filtered/fishing_rod fossil_frights:items/fishing_rod/enable
+tag @a[tag=ff_ice_frozen.update_fishing_rod] remove ff_ice_frozen.update_fishing_rod
+
 execute as @a[tag=ff_ice_freeze_owner,tag=ff_ice_frozen_overlay] run function fossil_frights:items/heists/ice_cannon/overlay_hide
 tag @a remove ff_ice_freeze_owner
 kill @s
