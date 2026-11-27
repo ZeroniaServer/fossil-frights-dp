@@ -36,7 +36,6 @@ tag @a remove ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/guard] add ff_trap_viewer
 tag @a[predicate=fossil_frights:player/team/spectator] add ff_trap_viewer
 execute if predicate fossil_frights:game_state/hallucination_active/jolly_curse run tag @a[predicate=fossil_frights:player/team/thief] add ff_trap_viewer
-execute as @e[type=minecraft:marker,tag=ff_confetti] at @s run function fossil_frights:items/confetti_cannon/tick
 execute as @e[type=minecraft:marker,tag=ff_ice_cannon] at @s run function fossil_frights:items/heists/ice_cannon/tick
 execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function fossil_frights:items/heists/ice_cannon/freeze_tick
 execute as @e[type=minecraft:armor_stand,tag=ff_trap_freeze_item_anchor] at @s run function fossil_frights:items/heists/trap/types/freeze/item/tick
