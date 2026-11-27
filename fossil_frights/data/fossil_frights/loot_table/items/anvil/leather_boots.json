@@ -11,6 +11,7 @@
             {
               "type": "minecraft:set_components",
               "components": {
+                "minecraft:attribute_modifiers": [],
                 "minecraft:item_name": {
                   "translate": "ff.item.bunny_slippers",
                   "color": "#E8DBEB"

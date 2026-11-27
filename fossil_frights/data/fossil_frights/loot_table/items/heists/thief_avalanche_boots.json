@@ -13,6 +13,7 @@
               "components": {
                 "!minecraft:max_damage": {},
                 "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": [],
                 "minecraft:item_name": {
                   "translate": "ff.item.bunny_slippers",
                   "color": "#78552F"
