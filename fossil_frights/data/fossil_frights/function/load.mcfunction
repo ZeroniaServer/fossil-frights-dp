@@ -206,6 +206,7 @@ scoreboard objectives add ff_speedrun_button9 dummy
 scoreboard objectives add ff_lb_calc dummy
 scoreboard objectives add ff_lb_generation dummy
 scoreboard objectives add ff_tp_time dummy
+scoreboard objectives add ff_tp_anim dummy
 scoreboard objectives add ff_tp_delay dummy
 scoreboard objectives add ff_tp_action dummy
 scoreboard objectives add ff_immediately_detect_death minecraft.custom:minecraft.deaths
@@ -516,6 +517,7 @@ function fossil_frights:key/lock/setup
 function fossil_frights:game/start_room/glass_box/setup
 function fossil_frights:game/load
 function fossil_frights:game/bossbar/available/setup
+function fossil_frights:lobby_games/hide_teleporter_displays
 function fossil_frights:lobby_games/parkour/load
 function fossil_frights:lobby_games/temple_run/load
 function fossil_frights:lobby_games/ant_fight/load
