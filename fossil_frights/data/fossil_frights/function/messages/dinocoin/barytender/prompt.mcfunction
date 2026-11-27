@@ -1,1 +1,1 @@
-tellraw @s {"translate":"ff.barytender.prompt","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"},{"translate": "%s %s","with":[{"translate":"ff.dinocoins.number","color":"gold","with":["1"]},{"atlas":"blocks","sprite":"fossil_frights:items/misc/dinocoin"}]}]}
+tellraw @s {"translate":"ff.barytender.prompt","color":"white","with":[{"translate":"ff.barytender.name","color":"#944D1E"},{"translate": "%s %s","with":[{"translate":"ff.dinocoin.number","color":"gold","with":["1"]},{"atlas":"blocks","sprite":"fossil_frights:items/misc/dinocoin"}]}]}
