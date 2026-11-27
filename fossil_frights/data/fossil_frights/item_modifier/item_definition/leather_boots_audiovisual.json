@@ -11,7 +11,7 @@
       "type": "minecraft:set_components",
       "components": {
         "minecraft:equippable": {
-          "asset_id": "minecraft:leather",
+          "asset_id": "fossil_frights:bunny_slippers",
           "equip_sound": "minecraft:intentionally_empty",
           "slot": "feet"
         }

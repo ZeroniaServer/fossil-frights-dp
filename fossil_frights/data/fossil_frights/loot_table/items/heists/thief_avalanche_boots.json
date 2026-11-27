@@ -11,25 +11,29 @@
             {
               "type": "minecraft:set_components",
               "components": {
+                "!minecraft:max_damage": {},
+                "!minecraft:damage": {},
                 "minecraft:item_name": {
                   "translate": "item.minecraft.leather_boots",
                   "color": "#78552F"
                 },
-                "minecraft:item_model": "fossil_frights:items/frights/hard_items/leather_boots",
+                "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
                 "minecraft:tooltip_display": {
                   "split_lines": false,
                   "hidden_components": [
+                    "minecraft:dyed_color",
                     "minecraft:enchantments"
                   ]
                 },
-                "!minecraft:max_damage": {},
-                "!minecraft:damage": {},
                 "minecraft:enchantments": {
                   "minecraft:binding_curse": 1
                 },
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:custom_data": {
-                  "itemID": "thief_avalanche_boots"
+                  "itemID": "thief_avalanche_boots",
+                  "ff_bunny_slippers": {
+                    "unresolved": true
+                  }
                 }
               }
             },

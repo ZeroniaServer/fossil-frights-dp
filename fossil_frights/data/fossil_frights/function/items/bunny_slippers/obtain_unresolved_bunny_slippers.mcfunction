@@ -1,0 +1,2 @@
+advancement revoke @s only fossil_frights:items/bunny_slippers/obtain_unresolved_bunny_slippers
+schedule function fossil_frights:items/bunny_slippers/update_all_bunny_slippers 1t

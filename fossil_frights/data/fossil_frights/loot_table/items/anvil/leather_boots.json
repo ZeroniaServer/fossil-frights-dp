@@ -13,14 +13,20 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.minecraft.leather_boots",
-                  "color": "#78552F"
+                  "color": "#E8DBEB"
                 },
-                "minecraft:item_model": "fossil_frights:items/frights/hard_items/leather_boots",
+                "minecraft:item_model": "fossil_frights:items/frightmas/bunny_slippers",
                 "minecraft:tooltip_display": {
-                  "split_lines": false
+                  "split_lines": false,
+                  "hidden_components": [
+                    "minecraft:dyed_color"
+                  ]
                 },
                 "minecraft:custom_data": {
                   "itemID": "leather_boots",
+                  "ff_bunny_slippers": {
+                    "unresolved": true
+                  },
                   "ff_heist_rules": {
                     "delete_on_guard_pickup": true
                   }

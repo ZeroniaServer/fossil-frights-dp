@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:number_dispatcher",
+  "cases": [
+    {
+      "condition": "fossil_frights:world/is_realms",
+      "value": "fossil_frights:items/bunny_slippers/default_color"
+    },
+    {
+      "condition": {
+        "type": "minecraft:inverted",
+        "term": "fossil_frights:player/is_creator"
+      },
+      "value": "fossil_frights:items/bunny_slippers/default_color"
+    }
+  ],
+  "default": "fossil_frights:items/hoverboard/color"
+}
