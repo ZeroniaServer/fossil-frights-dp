@@ -41,7 +41,7 @@ execute as @e[type=minecraft:block_display,tag=ff_ice_freeze] at @s run function
 execute if score #freeze_trap_item_tick ff_global matches 1 run function fossil_frights:items/heists/trap/types/freeze/item/tick
 execute as @e[type=minecraft:marker,tag=ff_trap] at @s run function fossil_frights:items/heists/trap/tick
 execute as @e[type=minecraft:sulfur_cube,tag=ff_heist_ice_sculpture_driver,scores={ff_heist_paint_fx=1..}] at @s run function fossil_frights:game/heists/paint_fx/ice_sculpture_tick
-execute as @e[type=minecraft:item_display,tag=ff_ice_sculpture,scores={ff_glowtrap_age=1..}] run function fossil_frights:game/heists/loot/rare/ice_sculpture/glow_tick
+execute if score $ice_sculpture ff_glowtrap_age matches 1.. run function fossil_frights:game/heists/loot/rare/ice_sculpture/glow_tick
 execute as @a[tag=ff_ice_frozen] run function fossil_frights:items/heists/ice_cannon/cleanup_orphan
 kill @e[type=minecraft:interaction,tag=ff_lock_click,scores={ff_lock_click_ttl=..0}]
 execute as @e[type=minecraft:item_display,tag=ff_lock_hovered] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:item_model":"fossil_frights:display/general/lock"}}
