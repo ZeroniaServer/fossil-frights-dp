@@ -2,7 +2,7 @@ execute unless block ~ ~ ~ #minecraft:fence_gates run tellraw @s {color:"red",te
 execute unless block ~ ~ ~ #minecraft:fence_gates run return fail
 execute if function fossil_frights:interactions/fence_gate/create/check_occupied run return run tellraw @s {color:"red",text:"This block is already occupied by a custom fence gate"}
 
-data modify storage fossil_frights:fence_gate entity_data set value {Tags:["ff_fence_gate"],data:{ff_fence_gate:{}},response:true,width:1.001,height:0.75}
+data modify storage fossil_frights:fence_gate entity_data set value {Tags:["ff_fence_gate"],data:{ff_fence_gate:{}},response:true,width:1.002,height:0.751}
 
 execute if block ~ ~ ~ #minecraft:fence_gates[facing=east] run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_facing set value "east"
 execute if block ~ ~ ~ #minecraft:fence_gates[facing=south] run data modify storage fossil_frights:fence_gate entity_data.data.ff_fence_gate.block_facing set value "south"
