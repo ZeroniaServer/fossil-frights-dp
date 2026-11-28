@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "!minecraft:max_damage": {},
+                "!minecraft:damage": {},
+                "!minecraft:item_model": {},
+                "!minecraft:item_name": {},
+                "minecraft:attribute_modifiers": [],
+                "minecraft:tooltip_display": {
+                  "split_lines": false
+                },
+                "minecraft:custom_data": {
+                  "itemID": "leather_boots"
+                }
+              }
+            },
+            "fossil_frights:item_definition/bunny_slippers",
+            "fossil_frights:item_definition/base_item_data"
+          ]
+        }
+      ]
+    }
+  ]
+}

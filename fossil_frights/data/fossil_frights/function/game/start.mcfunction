@@ -81,6 +81,7 @@ scoreboard players set $day_timer ff_day 0
 scoreboard players set $day_active ff_day 0
 scoreboard players set $day_flash ff_day 0
 scoreboard players set $game_running ff_game_state 1
+function fossil_frights:animations/bunny_slippers/spawn
 function fossil_frights:frightmas/santasaurus/spawn
 function fossil_frights:frightmas/elfsembly_line/spawn
 function fossil_frights:frightmas/barytender/spawn
